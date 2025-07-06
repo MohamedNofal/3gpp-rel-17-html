@@ -1,0 +1,4050 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38857-h00 annex C3</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#c.3-efficiency-analysis-for-nr-positioning-enhancements"
+id="toc-c.3-efficiency-analysis-for-nr-positioning-enhancements">C.3
+Efficiency analysis for NR positioning enhancements</a>
+<ul>
+<li><a
+href="#c.3.1-network-efficiency-analysis-for-nr-positioning-enhancements"
+id="toc-c.3.1-network-efficiency-analysis-for-nr-positioning-enhancements">C.3.1
+Network efficiency analysis for NR positioning enhancements</a>
+<ul>
+<li><a href="#c.3.1.1-results-from-source-4"
+id="toc-c.3.1.1-results-from-source-4">C.3.1.1 Results from source
+[4]</a>
+<ul>
+<li><a href="#c.3.1.1.1-description-of-evaluation-scenarios"
+id="toc-c.3.1.1.1-description-of-evaluation-scenarios">C.3.1.1.1
+Description of evaluation scenarios</a></li>
+<li><a
+href="#c.3.1.1.2-network-efficiency-analysis-of-nr-positioning-enhancements"
+id="toc-c.3.1.1.2-network-efficiency-analysis-of-nr-positioning-enhancements">C.3.1.1.2
+Network efficiency analysis of NR positioning enhancements </a></li>
+</ul></li>
+<li><a href="#c.3.1.2-results-from-source-8"
+id="toc-c.3.1.2-results-from-source-8">C.3.1.2 Results from source
+[8]</a>
+<ul>
+<li><a href="#c.3.1.2.1-description-of-evaluation-scenarios"
+id="toc-c.3.1.2.1-description-of-evaluation-scenarios">C.3.1.2.1
+Description of evaluation scenarios</a></li>
+<li><a
+href="#c.3.1.2.2-network-efficiency-analysis-of-nr-positioning-enhancements"
+id="toc-c.3.1.2.2-network-efficiency-analysis-of-nr-positioning-enhancements">C.3.1.2.2
+Network efficiency analysis of NR positioning enhancements </a></li>
+</ul></li>
+<li><a href="#c.3.1.3-results-from-source-5"
+id="toc-c.3.1.3-results-from-source-5">C.3.1.3 Results from source
+[5]</a>
+<ul>
+<li><a href="#c.3.1.3.1-description-of-evaluation-scenarios"
+id="toc-c.3.1.3.1-description-of-evaluation-scenarios">C.3.1.3.1
+Description of evaluation scenarios</a></li>
+<li><a
+href="#c.3.1.3.2-network-efficiency-analysis-of-nr-positioning-enhancements"
+id="toc-c.3.1.3.2-network-efficiency-analysis-of-nr-positioning-enhancements">C.3.1.3.2
+Network efficiency analysis of NR positioning enhancements </a></li>
+</ul></li>
+<li><a href="#c.3.1.4-results-from-source-12"
+id="toc-c.3.1.4-results-from-source-12">C.3.1.4 Results from source
+[12]</a>
+<ul>
+<li><a href="#c.3.1.4.1-description-of-evaluation-scenarios"
+id="toc-c.3.1.4.1-description-of-evaluation-scenarios">C.3.1.4.1
+Description of evaluation scenarios</a></li>
+</ul></li>
+<li><a href="#c.3.1.5-results-from-source-21"
+id="toc-c.3.1.5-results-from-source-21">C.3.1.5 Results from source
+[21]</a>
+<ul>
+<li><a href="#c.3.1.5.1-description-of-evaluation-scenarios"
+id="toc-c.3.1.5.1-description-of-evaluation-scenarios">C.3.1.5.1
+Description of evaluation scenarios</a></li>
+<li><a
+href="#c.3.1.5.2-network-efficiency-analysis-of-nr-positioning-enhancements"
+id="toc-c.3.1.5.2-network-efficiency-analysis-of-nr-positioning-enhancements">C.3.1.5.2
+Network efficiency analysis of NR positioning enhancements </a></li>
+</ul></li>
+<li><a href="#c.3.1.6-results-from-source-18"
+id="toc-c.3.1.6-results-from-source-18">C.3.1.6 Results from source
+[18]</a>
+<ul>
+<li><a href="#c.3.1.6.1-description-of-evaluation-scenarios"
+id="toc-c.3.1.6.1-description-of-evaluation-scenarios">C.3.1.6.1
+Description of evaluation scenarios</a></li>
+<li><a
+href="#c.3.1.6.2-network-efficiency-analysis-of-nr-positioning-enhancements"
+id="toc-c.3.1.6.2-network-efficiency-analysis-of-nr-positioning-enhancements">C.3.1.6.2
+Network efficiency analysis of NR positioning enhancements </a></li>
+</ul></li>
+</ul></li>
+<li><a
+href="#c.3.2-ue-efficiency-analysis-for-nr-positioning-enhancements"
+id="toc-c.3.2-ue-efficiency-analysis-for-nr-positioning-enhancements">C.3.2
+UE efficiency analysis for NR positioning enhancements</a>
+<ul>
+<li><a href="#c.3.2.1-results-from-source-4"
+id="toc-c.3.2.1-results-from-source-4">C.3.2.1 Results from source
+[4]</a>
+<ul>
+<li><a href="#c.3.2.1.1-description-of-evaluation-scenarios"
+id="toc-c.3.2.1.1-description-of-evaluation-scenarios">C.3.2.1.1
+Description of evaluation scenarios</a></li>
+<li><a
+href="#c.3.2.1.2-ue-efficiency-analysis-of-nr-positioning-enhancements"
+id="toc-c.3.2.1.2-ue-efficiency-analysis-of-nr-positioning-enhancements">C.3.2.1.2
+UE efficiency analysis of NR positioning enhancements </a></li>
+</ul></li>
+<li><a href="#c.3.2.2-results-from-source-5"
+id="toc-c.3.2.2-results-from-source-5">C.3.2.2 Results from source
+[5]</a>
+<ul>
+<li><a href="#c.3.2.2.1-description-of-evaluation-scenarios"
+id="toc-c.3.2.2.1-description-of-evaluation-scenarios">C.3.2.2.1
+Description of evaluation scenarios</a></li>
+<li><a
+href="#c.3.2.2.2-ue-efficiency-analysis-of-nr-positioning-enhancements"
+id="toc-c.3.2.2.2-ue-efficiency-analysis-of-nr-positioning-enhancements">C.3.2.2.2
+UE efficiency analysis of NR positioning enhancements </a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h2 id="c.3-efficiency-analysis-for-nr-positioning-enhancements">C.3
+Efficiency analysis for NR positioning enhancements</h2>
+<h3
+id="c.3.1-network-efficiency-analysis-for-nr-positioning-enhancements">C.3.1
+Network efficiency analysis for NR positioning enhancements</h3>
+<h4 id="c.3.1.1-results-from-source-4">C.3.1.1 Results from source
+[4]</h4>
+<h5 id="c.3.1.1.1-description-of-evaluation-scenarios">C.3.1.1.1
+Description of evaluation scenarios</h5>
+<p>1-symbol PRS with comb-4 and comb-12 is evaluated compared to
+4-symbol and 12-symbol, respectively, assuming</p>
+<p>- PRS transmission periodicity is 160ms</p>
+<p>- PRS numerology is 30kHz</p>
+<p>- 8 PRS resources with 12 symbols or 4 symbols per PRS resource</p>
+<p>- The PRS bandwidth is 100MHz</p>
+<p>In addition, E-CID is also compared against PRS-based methods.</p>
+<h5
+id="c.3.1.1.2-network-efficiency-analysis-of-nr-positioning-enhancements">C.3.1.1.2
+Network efficiency analysis of NR positioning enhancements </h5>
+<p>The evaluation results are summarized in Table C.3.1.1.2-1.</p>
+<p>Table C.3.1.1.2-1: NR positioning enhancements – network efficiency
+summary [4]</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Case</th>
+<th>Positioning resource utilization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case E1: PRS with 12 symbols</td>
+<td>2.14%</td>
+</tr>
+<tr>
+<td>Case E2: PRS with 4 symbols</td>
+<td>0.714%</td>
+</tr>
+<tr>
+<td>Case E3: PRS with 1 symbol</td>
+<td>0.179%</td>
+</tr>
+<tr>
+<td>Case E4: E-CID enhancement</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table>
+<p>By reducing the PRS symbols from 12 and 4 to 1 for comb-12 and
+comb-4, respectively, the overhead of PRS transmission is reduced by
+11/12 and 3/4, respectively.</p>
+<h4 id="c.3.1.2-results-from-source-8">C.3.1.2 Results from source
+[8]</h4>
+<h5 id="c.3.1.2.1-description-of-evaluation-scenarios">C.3.1.2.1
+Description of evaluation scenarios</h5>
+<p>In this section, evaluation scenarios and parameters of network
+efficiency analysis for NR positioning enhancements are given in Table
+C.3.1.2.1-1.</p>
+<p>Table C.3.1.2.1-1: NR positioning enhancements - evaluation scenarios
+and parameters [8]</p>
+<table>
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 32%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>[Case 1], [InF-HH-2D], [FR1], [DL-TDOA+ DL-CPP]</th>
+<th>[Case 2], [InF-HH-2D], [FR1], [UL-TDOA+ UL-CPP]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline)</td>
+<td>InF-HH-2D</td>
+<td>InF-HH-2D</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td>30KHz</td>
+<td>30KHz</td>
+</tr>
+<tr>
+<td>System Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern)</td>
+<td><p>DL PRS,</p>
+<p>Comb- 6</p></td>
+<td><p>UL SRS,</p>
+<p>Comb- 8</p></td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td><p>Gold sequence,</p>
+<p>Port-1</p></td>
+<td><p>ZC sequence,</p>
+<p>Port-1</p></td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td>DL-TDOA+ DL-CPP</td>
+<td>UL-TDOA+ UL-CPP</td>
+</tr>
+<tr>
+<td>Periodicity of reference signal</td>
+<td>20ms</td>
+<td>20ms</td>
+</tr>
+<tr>
+<td>Number of PRS resource sets in one periodicity</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Number of PRS Resources per PRS resource set</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Number of users per site</td>
+<td>1,30</td>
+<td>1,30</td>
+</tr>
+</tbody>
+</table>
+<h5
+id="c.3.1.2.2-network-efficiency-analysis-of-nr-positioning-enhancements">C.3.1.2.2
+Network efficiency analysis of NR positioning enhancements </h5>
+<p>For the proposed NR positioning enhancements, we use DL-TDOA+DL-CPP
+or UL-TDOA+UL-CPP as the Rel.17 enhancement scheme. Carrier Phase
+Positioning can be supported by using Rel.16 DL-PRS or UL-SRS, i.e., the
+UE or gNB can get the carrier phase measurements together with other NR
+positioning measurements without additional RF resources and new
+reference signals. Therefore, the network efficiency of our proposed NR
+positioning enhancements is the same as that of Rel.16 positioning
+solutions.</p>
+<p>The definition of DL-PRS/UL-SRS resource utilization and the
+calculation of DL-PRS/UL-SRS resource utilization according to the
+described definition are shown as in below.</p>
+<p>Definition of DL-PRS resource utilization</p>
+<p>Assume gNB x has M TRPs (the index of TRP is j, and j=1~M-1) which
+are configured to transmit DL-PRS, and each TRP is configured with N
+DL-PRS resource sets (the index of DL-PRS resource set is i, i=1~N-1).
+In order to avoid the interference among these DL-PRS resource sets,
+either the time-domain resources or the frequency-domain resources are
+orthogonal among these DL-PRS resource sets belongs to the same gNB.</p>
+<p>We use <em>DL_PRS_RU</em> to denote DL-PRS resource utilization, then
+the DL-PRS resource utilization of gNB <em>x</em> (<span
+class="math inline">\({DL\_ PRS\_ RU}_{gNB\ x}\)</span>) can be derived
+as follows,</p>
+<p><span class="math display">\[{DL\_ PRS\_ RU}_{PRS\ resource\ set\
+i}\  = \ {DL\_ PRS\_ RU}_{PRS\ resource\ set\ i,\ time - domain} \times
+{DL\_ PRS\_ RU}_{PRS\ resource\ set\ i,\ frequency -
+domain}\]</span></p>
+<p><span class="math display">\[{DL\_ PRS\_ RU}_{PRS\ resource\ set\ i,\
+time - domain} = \frac{\ {NumOfSymbols}_{PRS\
+resource}}{{Periodicity}_{PRS\ resource\ set\ i} \times
+{NumOfSymbols}_{Per\ millisecond}} \times {NumofPRSResources}_{PRS\
+resource\ set\ i} \times {RepetitionFactor}_{PRS\ resource\ set\ i}\
+\]</span></p>
+<p><span class="math display">\[{DL\_ PRS\_ RU}_{PRS\ resource\ set\ i,\
+frequency - domain} = \frac{{BandWidth}_{PRS\ resource\ set\
+i}}{{BandWidth}_{System}} \times \frac{1}{{CombSizeN}_{PRS\ resource\
+set\ i}}\]</span></p>
+<p><span class="math display">\[{DL\_ PRS\_ RU}_{TRP\ j}\  = \ \sum_{i =
+1}^{N}{DL\_ PRS\_ RU}_{PRS\ resource\ set\ i}\]</span></p>
+<p><span class="math display">\[{DL\_ PRS\_ RU}_{gNB\ x}\  = \ \sum_{j =
+1}^{M}{DL\_ PRS\_ RU}_{TRP\ j}\]</span></p>
+<p>Calculation of DL-PRS resource utilization</p>
+<p>The calculation of DL-PRS resource utilization according to the above
+described definition are shown as follows,</p>
+<p><span class="math display">\[{DL\_ PRS\_ RU}_{PRS\ resource\ set\ i,\
+time - domain} = \frac{12}{20 \times 28} \times 1 \times 1 = 2.1\%\
+\]</span></p>
+<p><span class="math display">\[{DL\_ PRS\_ RU}_{PRS\ resource\ set\ i,\
+frequency - domain} = \frac{100MHz}{100MHz} \times \frac{1}{6} =
+16.7\%\]</span></p>
+<p><span class="math display">\[{DL_{PRS_{RU}}}_{PRS\ resource\ set\
+i}\  = \ {DL\_ PRS\_ RU}_{PRS\ resource\ set\ i,\ time - domain} \times
+{DL\_ PRS\_ RU}_{PRS\ resource\ set\ i,\ frequency - domain} = 2.1\%
+\times 16.7\% = 0.36\%\]</span></p>
+<p><span class="math display">\[{DL\_ PRS\_ RU}_{TRP\ j}\  = \ \sum_{i =
+1}^{1}{{DL\_ PRS\_ RU}_{PRS\ resource\ set\ i} =}0.36\%\]</span></p>
+<p><span class="math display">\[{DL\_ PRS\_ RU}_{gNB\ x}\  = \ \sum_{j =
+1}^{6}{DL\_ PRS\_ RU}_{TRP\ j} = 2.1\%\]</span></p>
+<p><u>Definition of SRS-Pos resource utilization</u></p>
+<p>Assume gNB x serves M UEs (the index of UE is j, and j=1~M-1) which
+are configured to transmit SRS-Pos, and each UE is configured with N
+SRS-Pos resource sets (the index of SRS-Pos resource set is i, i=1~N-1).
+In order to avoid the interference among these SRS-Pos resource sets,
+either the time-domain resources or the frequency-domain resources are
+orthogonal among these SRS-Pos resource sets belongs to the same
+gNB.</p>
+<p>We use SRS_Pos_RU to denote SRS-Pos resource utilization, then the
+SRS-Pos resource utilization of gNB x (<span
+class="math inline">\({SRS\_ Pos\_ RU}_{gNB\ x}\)</span>) can be derived
+as follows,</p>
+<p><span class="math display">\[{SRS\_ Pos\_ RU}_{SRS\ resource\ set\
+i}\  = \ {SRS\_ Pos\_ RU}_{SRS\ resource\ set\ i,\ time - domain} \times
+{SRS\_ Pos\_ RU}_{SRS\ resource\ set\ i,\ frequency -
+domain}\]</span></p>
+<p><span class="math display">\[{SRS\_ Pos\_ RU}_{SRS\ resource\ set\
+i,\ time - domain} = \frac{\ {NumOfSymbols}_{SRS\
+resource}}{{Periodicity}_{SRS\ resource\ set\ i} \times
+{NumOfSymbols}_{Per\ millisecond}} \times {NumofSRSResources}_{SRS\
+resource\ set\ i}\ \]</span></p>
+<p><span class="math display">\[{SRS\_ Pos\_ RU}_{SRS\ resource\ set\
+i,\ frequency - domain} = \frac{{BandWidth}_{SRS\ resource\ set\
+i}}{{BandWidth}_{System}} \times \frac{1}{{CombSizeN}_{SRS\ resource\
+set\ i}}\]</span></p>
+<p><span class="math display">\[{SRS\_ Pos\_ RU}_{UE\ j}\  = \ \sum_{i =
+1}^{N}{SRS\_ Pos\_ RU}_{SRS\ resource\ set\ i}\]</span></p>
+<p><span class="math display">\[{SRS\_ Pos\_ RU}_{gNB\ x}\  = \ \sum_{j
+= 1}^{M}{SRS\_ Pos\_ RU}_{UE\ j}\]</span></p>
+<p><u>Calculation of SRS-Pos resource utilization</u></p>
+<p>The calculation of UL-SRS resource utilization according to the above
+described definition are shown as follows,</p>
+<p><span class="math display">\[{SRS\_ Pos\_ RU}_{SRS\ resource\ set\
+i,\ time - domain} = \frac{\ 12}{20 \times 28} \times 1 = 2.1\%\
+\]</span></p>
+<p><span class="math display">\[{SRS\_ Pos\_ RU}_{SRS\ resource\ set\
+i,\ frequency - domain} = \frac{100MHz}{100MHz} \times \frac{1}{8} =
+12.5\%\]</span></p>
+<p><span class="math display">\[{SRS\_ Pos\_ RU}_{SRS\ resource\ set\
+i}\  = \ {SRS\_ Pos\_ RU}_{SRS\ resource\ set\ i,\ time - domain} \times
+{SRS\_ Pos\_ RU}_{SRS\ resource\ set\ i,\ frequency - domain} = 4.3\%
+\times 12.5\% = 0.5\%\]</span></p>
+<p><span class="math display">\[{SRS\_ Pos\_ RU}_{UE\ j}\  = \ \sum_{i =
+1}^{1}{SRS\_ Pos\_ RU}_{SRS\ resource\ set\ i} = 0.27\%\]</span></p>
+<p>When there are 1 user per site,</p>
+<p><span class="math display">\[{SRS\_ Pos\_ RU}_{gNB\ x}\  = \ \sum_{j
+= 1}^{1 \times 6}{SRS\_ Pos\_ RU}_{UE\ j} = 1.6\%\]</span></p>
+<p>When there are 30 users per site,</p>
+<p><span class="math display">\[{SRS\_ Pos\_ RU}_{gNB\ x}\  = \ \sum_{j
+= 1}^{30 \times 6}{SRS\_ Pos\_ RU}_{UE\ j} = 48.2\%\]</span></p>
+<h4 id="c.3.1.3-results-from-source-5">C.3.1.3 Results from source
+[5]</h4>
+<h5 id="c.3.1.3.1-description-of-evaluation-scenarios">C.3.1.3.1
+Description of evaluation scenarios</h5>
+<p>Brief description of evaluation scenarios and key parameters of
+evaluation. section</p>
+<h5
+id="c.3.1.3.2-network-efficiency-analysis-of-nr-positioning-enhancements">C.3.1.3.2
+Network efficiency analysis of NR positioning enhancements </h5>
+<p>For the network efficiency based on PRS, at least the comb size,
+number of symbols, TRP number, PRS periodicity, resource repetition
+factor, muting pattern, numerology and beam sweeping assumptions of PRS
+should be included in resource utilization. It can be represented as
+equation (1)</p>
+<p><span class="math inline">\(PRS:Network\ efficiency\  = \frac{\
+TRPNum \times \frac{NumSymbols}{CombSizeN} \times BeamNum}{PRS\
+periodicity \times symbolNumOfms} \times 100\%\)</span> (1)</p>
+<p>For the network efficiency based on SRS, at least the comb size,
+number of symbols, UE number, SRS periodicity, numerology and beam
+sweeping assumptions of SRS should be included in resource utilization.
+It can be represented as below (2)</p>
+<p><span class="math inline">\(SRS:Network\ efficiency\  = \frac{\ UENum
+\times \frac{NumSymbols}{CombSizeN} \times BeamNum}{SRS\ periodicity
+\times symbolNumOfms} \times 100\%\)</span> (2)</p>
+<p>The evaluation result of network and UE efficiency in terms of the
+percentage of PRS in the total transmission being presented as Table
+C.3.1.3.2-2 based on the below assumptions listed in Table
+C.3.1.3.2-1.</p>
+<p>Table C.3.1.3.2-1: The parameter assumption for evaluation</p>
+<table>
+<colgroup>
+<col style="width: 66%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td><p>100 MHz for FR1</p>
+<p>400 MHz for FR2</p></td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern)</td>
+<td><p>Rel-16 PRS within a slot</p>
+<p>(comb-6 frequency structure, 6 symbols within a slot)</p></td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Number of beams</td>
+<td><p>1 for FR1</p>
+<p>64 for FR2</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.3.1.3.2-2 The network and UE efficiency for different
+physical layer latency</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 15%" />
+<col style="width: 11%" />
+<col style="width: 23%" />
+<col style="width: 15%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th>u</th>
+<th><span class="math inline">\(\mathbf{T}_{\mathbf{PRS}}\)</span>
+(ms)</th>
+<th><p><span class="math display">\[\mathbf{T}_{\mathbf{meas\
+Gap}}\]</span></p>
+<p>ms</p></th>
+<th><p>Physical layer Latency (ms)</p>
+<p>(case 3 in 3.1.3)</p></th>
+<th><p>MGL ms</p>
+<p>For</p>
+<p>max{<span
+class="math inline">\(\mathbf{T}_{\mathbf{PRS}}\mathbf{,}\)</span></p>
+<p><span class="math inline">\(\mathbf{T}_{\mathbf{measuement\
+gap}}\)</span>}</p></th>
+<th>Network efficiency (percentage)</th>
+<th>UE efficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="16">30K (FR1)</td>
+<td>4</td>
+<td>20</td>
+<td>55.5</td>
+<td>3ms</td>
+<td>16.07%</td>
+<td>15.00%</td>
+</tr>
+<tr>
+<td>5</td>
+<td>20</td>
+<td>55.5</td>
+<td>3ms</td>
+<td>12.85%</td>
+<td>15.00%</td>
+</tr>
+<tr>
+<td>8</td>
+<td>40</td>
+<td>75.5</td>
+<td>3ms</td>
+<td>8.03%</td>
+<td>7.50%</td>
+</tr>
+<tr>
+<td>10</td>
+<td>20</td>
+<td>55.5</td>
+<td>3ms</td>
+<td>6.42%</td>
+<td>15.00%</td>
+</tr>
+<tr>
+<td>16</td>
+<td>80</td>
+<td>115.5</td>
+<td>3ms</td>
+<td>4.01%</td>
+<td>3.75%</td>
+</tr>
+<tr>
+<td>20</td>
+<td>20</td>
+<td>55.5</td>
+<td>3ms</td>
+<td>3.21%</td>
+<td>15.00%</td>
+</tr>
+<tr>
+<td>32</td>
+<td>160</td>
+<td>195.5</td>
+<td>3ms</td>
+<td>2.0%</td>
+<td>1.88%</td>
+</tr>
+<tr>
+<td>40</td>
+<td>40</td>
+<td>75.5</td>
+<td>3ms</td>
+<td>1.6%</td>
+<td>7.50%</td>
+</tr>
+<tr>
+<td>64</td>
+<td>160</td>
+<td>355.5</td>
+<td>3ms</td>
+<td>1.0%</td>
+<td>1.88%</td>
+</tr>
+<tr>
+<td>80</td>
+<td>80</td>
+<td>115.5</td>
+<td>3ms</td>
+<td>0.8%</td>
+<td>3.75%</td>
+</tr>
+<tr>
+<td>160</td>
+<td>160</td>
+<td>195.5</td>
+<td>3ms</td>
+<td>0.4%</td>
+<td>1.88%</td>
+</tr>
+<tr>
+<td>320</td>
+<td>160</td>
+<td>355.5</td>
+<td>3ms</td>
+<td>0.2%</td>
+<td>1.88%</td>
+</tr>
+<tr>
+<td>640</td>
+<td>160</td>
+<td>675.5</td>
+<td>3ms</td>
+<td>0.1%</td>
+<td>1.88%</td>
+</tr>
+<tr>
+<td>1280</td>
+<td>160</td>
+<td>1315.5</td>
+<td>3ms</td>
+<td>0.05%</td>
+<td>1.88%</td>
+</tr>
+<tr>
+<td>5120</td>
+<td>160</td>
+<td>5155.5</td>
+<td>3ms</td>
+<td>0.01%</td>
+<td>1.88%</td>
+</tr>
+<tr>
+<td>10240</td>
+<td>160</td>
+<td>10275.5</td>
+<td>3ms</td>
+<td>0.006%</td>
+<td>1.88%</td>
+</tr>
+<tr>
+<td rowspan="16">120K (FR2)</td>
+<td>4</td>
+<td>20(160Note)</td>
+<td>55.5</td>
+<td>20ms</td>
+<td>257.14%</td>
+<td>100.00%</td>
+</tr>
+<tr>
+<td>5</td>
+<td>20(160)</td>
+<td>55.5</td>
+<td>20ms</td>
+<td>205.71%</td>
+<td>100.00%</td>
+</tr>
+<tr>
+<td>8</td>
+<td>40(160)</td>
+<td>75.5</td>
+<td>20ms</td>
+<td>128.57%</td>
+<td>50.00%</td>
+</tr>
+<tr>
+<td>10</td>
+<td>20(160)</td>
+<td>55.5</td>
+<td>20ms</td>
+<td>102.85%</td>
+<td>50.00%</td>
+</tr>
+<tr>
+<td>16</td>
+<td>80(160)</td>
+<td>115.5</td>
+<td>20ms</td>
+<td>64.28%</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>20</td>
+<td>20(160)</td>
+<td>55.5</td>
+<td>20ms</td>
+<td>51.42%</td>
+<td>100.00%</td>
+</tr>
+<tr>
+<td>32</td>
+<td>160(160)</td>
+<td>195.5</td>
+<td>20ms</td>
+<td>32.14%</td>
+<td>12.5%</td>
+</tr>
+<tr>
+<td>40</td>
+<td>40(160)</td>
+<td>75.5</td>
+<td>20ms</td>
+<td>25.71%</td>
+<td>50.00%</td>
+</tr>
+<tr>
+<td>64</td>
+<td>160(160)</td>
+<td>355.5</td>
+<td>20ms</td>
+<td>16.07%</td>
+<td>12.5%</td>
+</tr>
+<tr>
+<td>80</td>
+<td>80(160)</td>
+<td>115.5</td>
+<td>20ms</td>
+<td>12.85%</td>
+<td>12.50%</td>
+</tr>
+<tr>
+<td>160</td>
+<td>160(160)</td>
+<td>195.5</td>
+<td>20ms</td>
+<td>6.42%</td>
+<td>12.5%</td>
+</tr>
+<tr>
+<td>320</td>
+<td>160(160)</td>
+<td>355.5</td>
+<td>20ms</td>
+<td>3.21%</td>
+<td>12.5%</td>
+</tr>
+<tr>
+<td>640</td>
+<td>160(160)</td>
+<td>675.5</td>
+<td>20ms</td>
+<td>1.60%</td>
+<td>12.5%</td>
+</tr>
+<tr>
+<td>1280</td>
+<td>160(160)</td>
+<td>1315.5</td>
+<td>20ms</td>
+<td>0.80%</td>
+<td>12.5%</td>
+</tr>
+<tr>
+<td>5120</td>
+<td>160(160)</td>
+<td>5155.5</td>
+<td>20ms</td>
+<td>0.20%</td>
+<td>12.5%</td>
+</tr>
+<tr>
+<td>10240</td>
+<td>160(160)</td>
+<td>10275.5</td>
+<td>20ms</td>
+<td>0.10%</td>
+<td>12.5%</td>
+</tr>
+</tbody>
+</table>
+<p>Note: In practice, 20ms MGL is only for 160ms periodicity. So the
+real PHY latency is longer than 160ms considering 20ms MGL is needed for
+FR2. But in this table, the required network and UE efficiency are
+evaluated assuming it meets the corresponding Physical layer Latency in
+the table.</p>
+<p>For the PRS resource utilization of periodic PRS as below:</p>
+<p>- In FR1, for 20 ms DL PRS periodicity and MG periodicity, 3ms MGL,
+30 kHz subcarrier spacing, comb 6 and 6 symbols per PRS resource, 18
+positioning sites and 1 beams per site, PRS resource utilization is
+3.21% while the MGL/MGRP (UE overhead) is 15%.</p>
+<p>- In FR2, for 20 ms DL PRS periodicity, 20ms for MGL and MGRP, 120
+kHz subcarrier spacing, comb 6 and 6 symbols per PRS resource, 18
+positioning sites and 64 beams per site, PRS resource utilization is
+51.42% while the MGL/MGRP (UE overhead) is 100%</p>
+<p>- In FR1, for 20 ms DL PRS periodicity and MG periodicity, 3ms MGL,
+30 kHz subcarrier spacing, comb 6 and 6 symbols per PRS resource, 18
+positioning sites and 1 beams per site, PRS resource utilization is
+3.21% while the MGL/MGRP (UE overhead) is 15%.</p>
+<p>- In FR2, for 20 ms DL PRS periodicity, 20ms for MGL and MGRP, 120
+kHz subcarrier spacing, comb 6 and 6 symbols per PRS resource, 18
+positioning sites and 64 beams per site, PRS resource utilization is
+51.42% while the MGL/MGRP (UE overhead) is 100%</p>
+<p>It is observed that the network efficiency exceeds 100%, or the
+MGL/MGRP(UE efficiency) exceed 30% in some FR2 cases.</p>
+<p>While the PRS resource utilization of on-demand PRS can determine
+which repetition and TRP transmitting if assumed 16 repetitions in 160ms
+for every TRP. The minimum Network and UE efficiency of on-demand PRS is
+0% if no positioning requesting in 160ms or no positioning requesting
+for the UE.</p>
+<p>In addition, the network efficiency of aperiodic PRS are affected by
+the number of activations within unit time (such as 160ms). It can be
+observed the network efficiency of aperiodic PRS less than the Periodic
+PRS with 160ms periodicity if the number of activations less than 1 and
+less than the Periodic PRS with 10ms periodicity if the number of
+activations less than 10. Meanwhile, the latency can be reduced by
+nearly 20ms.</p>
+<p>Table C.3.1.3.2-3: Network efficiency analysis for periodic PRS VS on
+demand PRS [5]</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 26%" />
+<col style="width: 21%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="4"><p>[Case N1], [IIoT/ Commercial], [Frequency Band],
+[Periodic PRS VS On demand PRS]</p>
+<p>Source [UE, NW] / Destination [UE, NW]</p>
+<p>Positioning technique [DL-TDOA,AoD], type [DL], mode [UE-A],</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Option</td>
+<td colspan="2">Periodic PRS</td>
+<td>On-demand PRS</td>
+</tr>
+<tr>
+<td>Configuration</td>
+<td>Period 10ms</td>
+<td>Period 160ms</td>
+<td><p>Period 10ms, repetition :16</p>
+<p>Muting repetition for on-demand service</p></td>
+</tr>
+<tr>
+<td>PHY Latency (minimum)</td>
+<td colspan="2"><p><span class="math display">\[{Latency}_{\min} = \
+62ms\]</span></p>
+<p>Where DL measurement &amp;process delay equals MGL(20ms).</p></td>
+<td><p><span class="math inline">\({Latency}_{\min} = 46\)</span>ms</p>
+<p>Where MGL and process time for minimum TRP (such as 4ms).</p></td>
+</tr>
+<tr>
+<td>PHY Latency (maximum)</td>
+<td><span class="math display">\[{Latency}_{\max} = 64mss\]</span></td>
+<td><span class="math display">\[{Latency}_{\max} = 204ms\]</span></td>
+<td><span class="math display">\[{Latency}_{\max} = 64ms\]</span></td>
+</tr>
+<tr>
+<td>Network efficiency</td>
+<td><p><span class="math inline">\(\frac{\ TRPNum \times
+\frac{NumSymbols}{CombSizeN} \times beamNum}{PRS\ periodicity \times
+symbolNumOfms}\)</span></p>
+<p>=51.42%</p></td>
+<td>6.42%</td>
+<td><p><span class="math inline">\(\frac{\sum_{i =
+0}^{15}{{Boolean(Y}_{i} &gt; 0)*}\ TRPNum*\ NumSymbols\ /\
+CombSizeN}{160}\)</span></p>
+<p>=0~51.4%</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.3.1.3.2-4: Network efficiency analysis for periodic PRS VS
+aperiodic PRS [5]</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 25%" />
+<col style="width: 23%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="4"><p>[Case N2], [IIoT/ Commercial], [Frequency Band],
+[Periodic PRS VS Aperiodic -PRS]</p>
+<p>Source [UE, NW] / Destination [UE, NW]</p>
+<p>Positioning technique [DL-TDOA,AoD], type [DL], mode [UE-A],</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Option</td>
+<td colspan="2">Periodic PRS</td>
+<td>Aperiodic -PRS</td>
+</tr>
+<tr>
+<td>Configuration</td>
+<td><p>PRS Periodicity: 10ms</p>
+<p>MG periodicity: 20ms</p>
+<p>MGL:20ms</p></td>
+<td><p>PRS Periodicity :160ms</p>
+<p>MG periodicity: 160ms</p>
+<p>MGL:20ms</p></td>
+<td>SlotOffset INTEGER (1..32)</td>
+</tr>
+<tr>
+<td>PHY Latency (minimum)</td>
+<td colspan="2"><span class="math display">\[{Latency}_{\min} =
+62ms\]</span></td>
+<td><p><span class="math inline">\({Latency}_{\min} = 46\)</span>ms</p>
+<p>Where MGL and process time for minimum TRP (such as 4ms).</p></td>
+</tr>
+<tr>
+<td>PHY Latency (maximum)</td>
+<td><span class="math display">\[{Latency}_{\max} = 64ms\]</span></td>
+<td><span class="math display">\[{Latency}_{\max} = 204ms\]</span></td>
+<td><p><span class="math display">\[{Latency}_{max =}48ms\]</span></p>
+<p>Where MGL and process time for minimum TRP equals 6ms if slot offset
+is 32 and scs is 120kHZ</p></td>
+</tr>
+<tr>
+<td>Network efficiency</td>
+<td><p><span class="math inline">\(\frac{\ TRPNum \times
+\frac{NumSymbols}{CombSizeN} \times beamNum}{PRS\ periodicity \times
+symbolNumOfms}\)</span></p>
+<p>=51.42%</p></td>
+<td>6.42%</td>
+<td><p><span class="math inline">\(\frac{NumActivation \times TRPNum
+\times \frac{NumSymbols}{CombSizeN} \times beamNum}{160ms \times
+symbolNumOfms}\)</span></p>
+<p>=<span class="math inline">\(\ NumActivation \times
+6.42\%\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.3.1.4-results-from-source-12">C.3.1.4 Results from source
+[12]</h4>
+<h5 id="c.3.1.4.1-description-of-evaluation-scenarios">C.3.1.4.1
+Description of evaluation scenarios</h5>
+<p>We consider the measurement gap as the resource overhead for DL PRS
+reception. The UE can measure DL PRS resource outside the active BWP or
+with a numerology different from that of the active BWP. Furthermore, as
+specified in rel16 UE feature, measurement gap is necessary for a UE to
+receive and process DL PRS resource. During the measurement gap, the UE
+cannot receive and transmit the normal NR traffic. Thus we can consider
+all the radio resource within each measurement gap are ‘occupied’ by the
+NR positioning. The resource utilization can be calculated as:</p>
+<p><span class="math display">\[\rho_{PRS} =
+\frac{L_{MG}}{T_{MG}}\]</span></p>
+<p>Where <span class="math inline">\(T_{MG}\)</span> and <span
+class="math inline">\(L_{MG}\)</span> are the measurement gap repetition
+period and length of measurement gap respectively.</p>
+<p>C.3.1.4.2 Network efficiency analysis of NR positioning
+enhancements</p>
+<p>As specified in rel16, the length of measurement gap can be :
+1.5/3/3/5/4/5.5/6 ms and the periodicity of measurement gap can be
+20/40/80/160 ms. Given that, the resource overhead for DL PRS reception
+are as follows:</p>
+<table>
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr>
+<th>measurement gap repetition period</th>
+<th>Overhead of resource for DL PRS: 1.5/3/3.5/4/5.5/6 ms length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20ms</td>
+<td>7.5% 15% 17.5% 20% 27.5% 30%</td>
+</tr>
+<tr>
+<td>40ms</td>
+<td>3.75% 7.5% 8.75% 10% 13.75% 15%</td>
+</tr>
+<tr>
+<td>80ms</td>
+<td>1.875% 3.75% 4.375% 5% 6.8755 7.5%</td>
+</tr>
+<tr>
+<td>160ms</td>
+<td>0.9375% 1.875% 2.1875% 2.5% 3.4375% 3.75%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.3.1.5-results-from-source-21">C.3.1.5 Results from source
+[21]</h4>
+<h5 id="c.3.1.5.1-description-of-evaluation-scenarios">C.3.1.5.1
+Description of evaluation scenarios</h5>
+<p>Brief description of evaluation scenarios and key parameters of
+evaluation. Section</p>
+<p>Network efficiency was evaluated for 1-symbol PRS, using comb 2,4,6
+and 12.</p>
+<h5
+id="c.3.1.5.2-network-efficiency-analysis-of-nr-positioning-enhancements">C.3.1.5.2
+Network efficiency analysis of NR positioning enhancements </h5>
+<p>A comparative table of rel16 PRS with 1symbol PRS is shown for comb
+2,4,6,12 in table C.3.1.5.2-1:</p>
+<p>table C.3.1.5.2-1:1-symbol PRS resource utilization summary</p>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 49%" />
+<col style="width: 23%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Configuration details</th>
+<th>L1 RS occupancy, ms</th>
+<th>Resource utilization vs Rel16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inf-SH</td>
+<td>comb-2, 2 symbols, no interference</td>
+<td>18symbols / 0.64ms</td>
+<td></td>
+</tr>
+<tr>
+<td>Inf-SH</td>
+<td>comb-2, 1 symbol, time reuse 9, interference</td>
+<td>9symbols /0.32ms</td>
+<td>-50%</td>
+</tr>
+<tr>
+<td>Inf-SH</td>
+<td>comb-6, 6 symbols, no interference</td>
+<td>18 symbols /0.64ms</td>
+<td></td>
+</tr>
+<tr>
+<td>Inf-SH</td>
+<td>comb-6, 1 symbol, time reuse 3, interference</td>
+<td>3symbols /0.11ms</td>
+<td>-84%</td>
+</tr>
+<tr>
+<td>Inf-SH</td>
+<td>comb-12, 12 symbols, no interference</td>
+<td>24symbols /0.85ms</td>
+<td></td>
+</tr>
+<tr>
+<td>Inf-SH</td>
+<td>comb-12, 1 symbol, time reuse 1, interference</td>
+<td>2symbols /0.07ms</td>
+<td>-91%</td>
+</tr>
+<tr>
+<td>IOO</td>
+<td>comb-2, 1 symbol, time reuse 6, interference</td>
+<td>6symbols/0.22ms</td>
+<td>-50%</td>
+</tr>
+<tr>
+<td>IOO</td>
+<td>comb-2, 2 symbols, interference</td>
+<td>12symbols/0.44ms</td>
+<td></td>
+</tr>
+<tr>
+<td>IOO</td>
+<td>comb-4, 4 symbols, no interference</td>
+<td>12symbols/0.44ms</td>
+<td></td>
+</tr>
+<tr>
+<td>IOO</td>
+<td>comb-4, 1 symbol, time reuse 3, interference</td>
+<td>3symbols /0.11ms</td>
+<td>-75%</td>
+</tr>
+<tr>
+<td>IOO</td>
+<td>comb-12, 12 symbols, no interference</td>
+<td>12symbols/0.44ms</td>
+<td></td>
+</tr>
+<tr>
+<td>IOO</td>
+<td>comb-12, 1 symbol, time reuse 1, interference</td>
+<td>1symbols/0.03ms</td>
+<td>-91%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.3.1.6-results-from-source-18">C.3.1.6 Results from source
+[18]</h4>
+<h5 id="c.3.1.6.1-description-of-evaluation-scenarios">C.3.1.6.1
+Description of evaluation scenarios</h5>
+<p>Network efficiency is evaluated for UL SRS resource utilization for
+the following cases:</p>
+<p>- UL SRS resource utilization w.r.t to the cyclic shift
+enhancements</p>
+<p>- UL SRS resource utilization w.r.t to the number of OFDM symbols</p>
+<p>- UL SRS resource utilization w.r.t to the number of antenna
+ports</p>
+<h5
+id="c.3.1.6.2-network-efficiency-analysis-of-nr-positioning-enhancements">C.3.1.6.2
+Network efficiency analysis of NR positioning enhancements </h5>
+<p><u>UL SRS resource utilization w.r.t to the cyclic shift
+enhancements:</u></p>
+<p>The number of simultaneous UEs of CS separated is chosen based on the
+evaluation so that the configured with different cyclic shifts on the
+same REs are detected without ambiguity.</p>
+<p>A comparative table of Rel16 SRS with cyclic shift enhancements is
+provided in Table C.3.1.6.2-1:</p>
+<p>Table C.3.1.6.2-1: Cyclic shift SRS enhancements</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 11%" />
+<col style="width: 17%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Rel-16/ Rel-17 enhancements</th>
+<th>COMB</th>
+<th>nbSym</th>
+<th>Cyclic shift range</th>
+<th>max number of CSs</th>
+<th>Number of simultaneous UEs of CS separated</th>
+<th>Improvement factor vs Rel16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Umi</td>
+<td>CS enhancement</td>
+<td>4</td>
+<td>4</td>
+<td>fftlength</td>
+<td>48</td>
+<td>8</td>
+<td rowspan="2">4</td>
+</tr>
+<tr>
+<td>Rel-16</td>
+<td>4</td>
+<td>4</td>
+<td>fftlength/KTC</td>
+<td>12</td>
+<td>2</td>
+</tr>
+<tr>
+<td rowspan="2">Umi</td>
+<td>CS enhancement</td>
+<td>8</td>
+<td>8</td>
+<td>fftlength</td>
+<td>48</td>
+<td>8</td>
+<td rowspan="2">8</td>
+</tr>
+<tr>
+<td>Rel-16</td>
+<td>8</td>
+<td>8</td>
+<td>fftlength/KTC</td>
+<td>6</td>
+<td>1</td>
+</tr>
+<tr>
+<td rowspan="2">InF</td>
+<td>CS enhancement</td>
+<td>2</td>
+<td>1</td>
+<td>fftlength/KTC</td>
+<td>8</td>
+<td>8</td>
+<td rowspan="2">-</td>
+</tr>
+<tr>
+<td>Rel-16</td>
+<td>2</td>
+<td>1</td>
+<td>fftlength/KTC</td>
+<td>8</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>The following analysis shows that UMi performance with resource
+sharing doesn’t degrade compared with the case when no resource sharing
+is configured:</p>
+<p>Config 1011.2 (blue): resource sharing : Comb 4, 4 symbols, CS
+enhancement, phase correction in transmitter (Rel-17), 6 UEs use the
+same REs and are separated by different cyclic shift values</p>
+<p>Config 1011.2 (red) , no resource sharing : Comb 4, 4 symbols, no
+phase correction, Coherent Destaggering with phase correction in
+receiver (Rel-16)</p>
+<p><img src="media/image1.png" style="width:5.30208in;height:3.51042in"
+alt="Chart, line chart Description automatically generated" /></p>
+<p>Figure C.3.1.6.2-1 2D-Error in UMi scenario SRS (Comb 4, 4 symbols)
+applying ATOA model. Blue: CS enhancement (Rel-17), 6 UEs use the same
+REs and are separated by different cyclic shift values. Red: no resource
+sharing.</p>
+<p>UL SRS resource utilization w.r.t to the number of OFDM symbols:</p>
+<p>For scenarios with low delay spread and low propagation delay
+difference (e.g. indoor with low ISD) COMB=4 may be sufficient. Rel-16
+does not allow SRS for positioning with COMB=4, 1 Symbol. Alternatively
+a Rel-15 SRS may be supported for positioning purpose.</p>
+<p>A comparative table of Rel16 SRS and Comb-4 one symbol is provided in
+Table C.3.1.6.2-2:</p>
+<p>Table C.3.1.6.2-2: UL SRS resource utilization w.r.t to the number of
+OFDM symbols:</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Rel-16/ Rel-17 enhancements</th>
+<th>COMB</th>
+<th>nbSym</th>
+<th>max number of CSs</th>
+<th>Number of simultaneous UEs of CS separated</th>
+<th>REs per UE and per RB</th>
+<th>Improvement factor vs Rel16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">InF</td>
+<td>SRS with one symbol for COMB 4</td>
+<td>4</td>
+<td>1</td>
+<td>12</td>
+<td>6</td>
+<td>3</td>
+<td rowspan="2">2</td>
+</tr>
+<tr>
+<td>Rel-16</td>
+<td>4</td>
+<td>2</td>
+<td>12</td>
+<td>6</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p><u>UL SRS resource utilization w.r.t to the number of antenna
+ports:</u></p>
+<p>For UL SRS resource utilization we compare the improvement factor in
+terms of the Capacity per UE for Rel-16 and Rel-17 enhancements. We
+derive the improvement factor as <span
+class="math inline">\(\frac{{Capacity\ per\ UE}_{Rel - 16}\ }{{Capacity\
+per\ UE}_{Rel - 17}}\ \)</span> , here the <span
+class="math inline">\(Capacity\ per\ UE = \frac{OFDMsymbols_{UE}\
+}{CombsizeN}.\ \)</span></p>
+<p>A comparative table of Rel16 SRS and multi-port SRS configurations is
+provided in Table C.3.1.6.2-3:</p>
+<p>Table C.3.1.6.2-3 UL SRS resource utilization w.r.t to the number of
+antenna ports:</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 12%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Rel-17 enhancements</th>
+<th># of Tx Beams</th>
+<th>COMB</th>
+<th>nbSym</th>
+<th>OFDM<br />
+symbols per UE</th>
+<th>Capacity per UE</th>
+<th>Improvement factor vs Rel16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">FR1-Umi</td>
+<td>2-ports</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td rowspan="2">2</td>
+</tr>
+<tr>
+<td>Rel-16</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>8</td>
+<td>2</td>
+</tr>
+<tr>
+<td rowspan="2">FR1-InF</td>
+<td>2-ports</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0,5</td>
+<td rowspan="2">2</td>
+</tr>
+<tr>
+<td>Rel-16</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td rowspan="2">FR2-Umi</td>
+<td>4-ports</td>
+<td>4</td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+<td>2</td>
+<td rowspan="2">4</td>
+</tr>
+<tr>
+<td>Rel-16</td>
+<td>4</td>
+<td>8</td>
+<td>8</td>
+<td>32</td>
+<td>8</td>
+</tr>
+<tr>
+<td rowspan="2">FR2-InF<br />
+(SCS=120kHz)</td>
+<td>4-ports</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td rowspan="2">4</td>
+</tr>
+<tr>
+<td>Rel-16</td>
+<td>4</td>
+<td>4</td>
+<td>16</td>
+<td>16</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="c.3.2-ue-efficiency-analysis-for-nr-positioning-enhancements">C.3.2
+UE efficiency analysis for NR positioning enhancements</h3>
+<h4 id="c.3.2.1-results-from-source-4">C.3.2.1 Results from source
+[4]</h4>
+<h5 id="c.3.2.1.1-description-of-evaluation-scenarios">C.3.2.1.1
+Description of evaluation scenarios</h5>
+<p>The UE efficiency is evaluated based on UE power consumption. The
+following evaluation assumptions on UE power model besides what is
+already defined TR 38.840 are considered for PRS Rx and SRS Tx.</p>
+<p>The both DL PRS Rx related and UL SRS Tx related power
+evaluation,</p>
+<p>- The following C-DRX configuration are assumed</p>
+<p>- C-DRX cycle 160msec</p>
+<p>- 8 msec on-duration timer</p>
+<p>- 100 msec inactivity timer</p>
+<p>- The following I-DRX configuration are assumed</p>
+<p>- I-DRX cycle 1.28msec</p>
+<p>Table C.3.2.1.1-1 shows the UE power model for IDLE/INACTIVE
+state</p>
+<p>Table C.3.2.1.1-1: UE power model for IDLE/INACTIVE state [4]</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 37%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr>
+<th>Power State</th>
+<th><p>Relative Power</p>
+<p>(FR1 reference from TR 38.840)</p></th>
+<th>Relative Power <br />
+(Idle/inactive-mode operation with reception bandwidth 20 MHz)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deep Sleep (PDS)</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Light Sleep (PLS)</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Micro sleep (PMS)</td>
+<td>45</td>
+<td>45</td>
+</tr>
+<tr>
+<td>PDCCH-only (PPDCCH)</td>
+<td>100</td>
+<td>50Note</td>
+</tr>
+<tr>
+<td>PDCCH + PDSCH (PPDCCH+PDSCH)</td>
+<td>300</td>
+<td>120</td>
+</tr>
+<tr>
+<td>PDSCH-only (PPDSCH)</td>
+<td>280</td>
+<td>112</td>
+</tr>
+<tr>
+<td>SSB/CSI-RS proc. (PSSB)</td>
+<td>100 (synchronization or serving cell measurement)</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Intra-frequency RRM measurement (Pintra)</td>
+<td><p>·        150 (synchronous case, N=8, measurement only; Pintra,
+meas-only)</p>
+<p>·        200 (combined search and measurement; Pintra,
+search+meas)</p></td>
+<td><p>·        [60] (synchronous case, N=8, measurement only; Pintra,
+meas-only)</p>
+<p>·        [80] (combined search and measurement; Pintra,
+search+meas)</p></td>
+</tr>
+<tr>
+<td>Inter-frequency RRM measurement (Pinter)</td>
+<td><p>·        150 (measurement only per freq. layer; Pinter,
+meas-only)</p>
+<p>·        150 (neighbor cell search power per freq. layer; Pinter,
+search-only)</p>
+<p>·        Micro sleep power assumed for switch in/out a freq.
+layer</p></td>
+<td><p>·        [60] (measurement only per freq. layer; Pinter,
+meas-only)</p>
+<p>·        [150] (neighbor cell search power per freq. layer; Pinter,
+search-only)</p>
+<p>·        Micro sleep power assumed for switch in/out a freq.
+layer</p></td>
+</tr>
+<tr>
+<td colspan="3">Note: Power scaling to 20MHz reception bandwidth follows
+the rule in Section C.1.3 of TR 38.840, i.e., max{reference power * 0.4,
+50}.</td>
+</tr>
+</tbody>
+</table>
+<p>For DL PRS Rx related power evaluation:</p>
+<p>- Table C.3.2.1.1-2 shows the PRS Rx power model</p>
+<p>- Figures C.3.2.1.1-1 and C.3.2.1.1-2 show the UE power state transit
+for IDLE/INACTIVE state and CONNECTED state, respectively</p>
+<p>Table C.3.2.1.1-2: UE PRS Rx power model [4]</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 27%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">N: Number of TRPs for intra-frequency measurement &amp;
+search</th>
+<th colspan="2">Synchronous case</th>
+</tr>
+<tr>
+<th>FR1</th>
+<th>FR2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N=8</td>
+<td>200</td>
+<td>320</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image2.svg"
+style="width:4.79861in;height:1.87361in" /></p>
+<p>Figure C.3.2.1.1-1: UE power state transit for IDLE/INACTIVE state
+from [4]</p>
+<p><img src="media/image3.svg"
+style="width:4.80278in;height:3.06667in" /></p>
+<p>Figure C.3.2.1.1-2: UE power state transit for CONNECTED state from
+[4]</p>
+<p>For UL SRS Tx related power evaluation:</p>
+<p>- Figure C.3.2.1.1-3 shows the slot-level UE behaviour for the
+purpose SRS Tx and Paging DRX</p>
+<p>- Figures C.3.2.1.1-4 and C.3.2.1.1-5 show the UE power state transit
+for IDLE/INACTIVE state and CONNECTED state, respectively</p>
+<p><img src="media/image4.svg"
+style="width:6.47222in;height:1.2in" /></p>
+<p>Figure C.3.2.1.1-3: Slot-level behaviour for UE to transmit SRS in
+IDLE/INACTIVE state from [4]</p>
+<p><img src="media/image5.svg"
+style="width:4.79861in;height:1.87361in" /></p>
+<p>Figure C.3.2.1.1-4: UE power state transit for IDLE/INACTIVE state
+from [4]</p>
+<p><img src="media/image6.svg"
+style="width:4.79861in;height:1.88542in" /></p>
+<p>Figure C.3.2.1.1-5: UE power state transit for CONNECTED state from
+[4]</p>
+<h5
+id="c.3.2.1.2-ue-efficiency-analysis-of-nr-positioning-enhancements">C.3.2.1.2
+UE efficiency analysis of NR positioning enhancements </h5>
+<p>The UE power consumption for PRS Rx is shown in Table
+C.3.2.1.2-1.</p>
+<p>Table C.3.2.1.2-1: UE PRS Rx power consumption [4]</p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 17%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="6">Case P1: IDLE/INACTIVE state in every 1.28s</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power state</td>
+<td>Power unit</td>
+<td># slot</td>
+<td>Power</td>
+<td>Slot ratio</td>
+<td>Power ratio</td>
+</tr>
+<tr>
+<td>PDCCH-only</td>
+<td>50</td>
+<td>2</td>
+<td>100</td>
+<td>0.0781%</td>
+<td>0.3789%</td>
+</tr>
+<tr>
+<td>SSB RRM</td>
+<td>80</td>
+<td>4</td>
+<td>320</td>
+<td>0.1563%</td>
+<td>1.2125%</td>
+</tr>
+<tr>
+<td>Micro-sleep</td>
+<td>45</td>
+<td>6</td>
+<td>270</td>
+<td>0.2344%</td>
+<td>1.0230%</td>
+</tr>
+<tr>
+<td>PRS RRM</td>
+<td>200</td>
+<td>96</td>
+<td>19200</td>
+<td>3.7500%</td>
+<td>72.7493%</td>
+</tr>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>2452</td>
+<td>2452</td>
+<td rowspan="2">95.7813%</td>
+<td rowspan="2">24.6363%</td>
+</tr>
+<tr>
+<td>-- State transit</td>
+<td>450</td>
+<td>9</td>
+<td>4050</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>　</td>
+<td>2560</td>
+<td>26392</td>
+<td>100.0000%</td>
+<td>100.0000%</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="6">Case P2: CONNECTED state inside on-duration in every
+1.28s</td>
+</tr>
+<tr>
+<td>Power state</td>
+<td>Power unit</td>
+<td># slot</td>
+<td>Power</td>
+<td>Slot ratio</td>
+<td>Power ratio</td>
+</tr>
+<tr>
+<td>PDCCH-only</td>
+<td>100</td>
+<td>32</td>
+<td>3200</td>
+<td>1.2500%</td>
+<td>11.2549%</td>
+</tr>
+<tr>
+<td>PRS RRM</td>
+<td>200</td>
+<td>96</td>
+<td>19200</td>
+<td>3.7500%</td>
+<td>67.5295%</td>
+</tr>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>2432</td>
+<td>2432</td>
+<td rowspan="2">95.0000%</td>
+<td rowspan="2">21.2155%</td>
+</tr>
+<tr>
+<td>-- State transit</td>
+<td>450</td>
+<td>8</td>
+<td>3600</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>　</td>
+<td>2560</td>
+<td>28432</td>
+<td>100.0000%</td>
+<td>100.0000%</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="6">Case P3: CONNECTED state outside on-duration in every
+1.28s</td>
+</tr>
+<tr>
+<td>Power state</td>
+<td>Power unit</td>
+<td># slot</td>
+<td>Power</td>
+<td>Slot ratio</td>
+<td>Power ratio</td>
+</tr>
+<tr>
+<td>PDCCH-only</td>
+<td>100</td>
+<td>128</td>
+<td>12800</td>
+<td>5.0000%</td>
+<td>33.7410%</td>
+</tr>
+<tr>
+<td>PRS RRM</td>
+<td>200</td>
+<td>96</td>
+<td>19200</td>
+<td>3.7500%</td>
+<td>50.6116%</td>
+</tr>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>2336</td>
+<td>2336</td>
+<td rowspan="2">91.2500%</td>
+<td rowspan="2">15.6474%</td>
+</tr>
+<tr>
+<td>-- State transit</td>
+<td>450</td>
+<td>8</td>
+<td>3600</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>　</td>
+<td>2560</td>
+<td>37936</td>
+<td>100.0000%</td>
+<td>100.0000%</td>
+</tr>
+</tbody>
+</table>
+<p>The UE power consumption for SRS Tx is shown in Table
+C.3.2.1.2-2.</p>
+<p>Table C.3.2.1.2-2: UE SRS Tx power consumption [4]</p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 17%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="6">Case P4: IDLE/INACTIVE state in every 1.28s</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power state</td>
+<td>Power unit</td>
+<td># slot</td>
+<td>Power</td>
+<td>Slot ratio</td>
+<td>Power ratio</td>
+</tr>
+<tr>
+<td>PDCCH-only</td>
+<td>50</td>
+<td>2</td>
+<td>100</td>
+<td>0.0781%</td>
+<td>0.8396%</td>
+</tr>
+<tr>
+<td>SSB RRM</td>
+<td>80</td>
+<td>32</td>
+<td>2560</td>
+<td>1.2500%</td>
+<td>21.4945%</td>
+</tr>
+<tr>
+<td>Micro-sleep</td>
+<td>45</td>
+<td>33</td>
+<td>1485</td>
+<td>1.2891%</td>
+<td>12.4685%</td>
+</tr>
+<tr>
+<td>SRS Tx</td>
+<td>210</td>
+<td>8</td>
+<td>1680</td>
+<td>0.3125%</td>
+<td>14.1058%</td>
+</tr>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>2485</td>
+<td>2485</td>
+<td rowspan="2">97.0703%</td>
+<td rowspan="2">51.0915%</td>
+</tr>
+<tr>
+<td>-- State transit</td>
+<td>450</td>
+<td>8</td>
+<td>3600</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>　</td>
+<td>2560</td>
+<td>11910</td>
+<td>100.0000%</td>
+<td>100.0000%</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="6">Case P5: CONNECTED state outside on-duration in every
+1.28s</td>
+</tr>
+<tr>
+<td>Power state</td>
+<td>Power unit</td>
+<td># slot</td>
+<td>Power</td>
+<td>Slot ratio</td>
+<td>Power ratio</td>
+</tr>
+<tr>
+<td>PDCCH-only</td>
+<td>100</td>
+<td>120</td>
+<td>12000</td>
+<td>4.6875%</td>
+<td>60.8766%</td>
+</tr>
+<tr>
+<td>SRS Tx</td>
+<td>210</td>
+<td>8</td>
+<td>1680</td>
+<td>0.3125%</td>
+<td>8.5227%</td>
+</tr>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>2432</td>
+<td>2432</td>
+<td rowspan="2">95.0000%</td>
+<td rowspan="2">30.6006%</td>
+</tr>
+<tr>
+<td>-- State transit</td>
+<td>450</td>
+<td>8</td>
+<td>3600</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>　</td>
+<td>2560</td>
+<td>19712</td>
+<td>100.0000%</td>
+<td>100.0000%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.3.2.2-results-from-source-5">C.3.2.2 Results from source
+[5]</h4>
+<h5 id="c.3.2.2.1-description-of-evaluation-scenarios">C.3.2.2.1
+Description of evaluation scenarios</h5>
+<p><u>Model and assumptions of UE efficiency for power
+consumption</u></p>
+<p>General PRS measurements assumption</p>
+<p>- Frequency range: FR1 has high priority</p>
+<p>- Bandwidth: 100MHz/30kHz (connected state); 20MHz/30kHz (idle
+state)</p>
+<p>- Periodicity: 160ms (connected state); 1280ms (idle state)</p>
+<p>- RE mapping: Comb-6, 6 symbols</p>
+<p>- 2 resources per TRP and 2 resources per slot</p>
+<p>- Repetition factor=8, time gap=1</p>
+<p>- 1 positioning frequency layer is baseline</p>
+<p>- 8 TRPs per frequency layer</p>
+<p>Slot-averaged power for single positioning frequency layer
+measurements</p>
+<p>We list two tables for UE power consumption for measurement on a PRS
+slot in connected state and idle state, respectively.</p>
+<p>Table C.3.2.2.1-1: UE power consumption for PRS measurements in
+connected state（100MHz）</p>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 29%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>N: Number of TRPs for single frequency layer measurement</th>
+<th>Synchronous case</th>
+<th>Asynchronous case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N=8</td>
+<td>610</td>
+<td>690</td>
+</tr>
+<tr>
+<td>N=4</td>
+<td>490</td>
+<td>570</td>
+</tr>
+</tbody>
+</table>
+<p>Table C.3.2.2.1-2: UE power consumption for PRS measurements in idle
+state（20MHz）</p>
+<table>
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 30%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>N: Number of TRPs for single frequency layer measurement</th>
+<th>Synchronous case</th>
+<th>Asynchronous case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N=8</td>
+<td>96</td>
+<td>108</td>
+</tr>
+<tr>
+<td>N=4</td>
+<td>76</td>
+<td>88</td>
+</tr>
+</tbody>
+</table>
+<p>In the above tables, all above values are slot-averaged power (<span
+class="math inline">\(P_{PRS}\ \)</span>) in FR1. The synchronous case
+means actual PRS transmissions from TRPs are time-aligned, while the
+asynchronous case means actual PRS transmissions from TRPs are not
+time-aligned. The power values in the above tables are calculated and
+assumed based on the SSB power and scaling schemes in TR38.840.</p>
+<p><u>Total power for single and multiple positioning frequency layers
+measurements</u></p>
+<p>This model can refer to the model for inter-frequency RRM
+measurements in TR38.840 and make some minor changes.</p>
+<p>A UE is expected to process one frequency layer at a time. Therefore,
+we propose that, for frequency layer i, the power of PRS measurement is
+represented as:</p>
+<p><span class="math display">\[E_{i} = P_{PRS}*N_{PRS} + E_{MG\_
+switch}\]</span></p>
+<p>where</p>
+<p>- <span class="math inline">\(E_{i}\)</span> is total power over
+slots over which measurements are carried out in frequency layer i</p>
+<p>- <span class="math inline">\(P_{PRS}\)</span> is the slot average
+power for PRS measurements in frequency layer i</p>
+<p>- <span class="math inline">\(N_{PRS}\)</span> is the number of slot
+over which measurements are carried out</p>
+<p>- <span class="math inline">\(E_{MG\_ switch}\)</span> is the power
+for measurement gap switching, where <span class="math inline">\(E_{MG\_
+switch}\)</span>= Pt * Tt</p>
+<p>- Pt is the switching power consumption</p>
+<p>- Assume micro sleep power for Pt which equals to 45 power unit</p>
+<p>- Tt is switching time (including switching on and off) for FR1 for
+measurement gap switching, which equals to 1ms (0.5ms*2)</p>
+<p>- If gap is not configured, gap switching power is 0</p>
+<p>For Nf frequency layers, the total power is</p>
+<p><span class="math display">\[E_{Nf} = \sum_{i = 0}^{Nf -
+1}E_{i}\]</span></p>
+<p>It can be simplified to the following if Ei is the same across
+frequency layers (i.e. Ei = E for different frequency layers ).</p>
+<p><span class="math inline">\(E_{Nf}\)</span> = E*Nf</p>
+<p><u>Power components considered for PRS measurement</u></p>
+<p>In idle state, at least the following power components are
+recommended to be considered for PRS measurement power saving
+evaluation.</p>
+<p>- PRS occasion</p>
+<p>- For simplicity, UE only performs intra-frequency PRS measurements
+every I-DRX cycle (1280ms)</p>
+<p>- 4ms PRS length, 1PRS occasion</p>
+<p>- 20MHz</p>
+<p>- Relative power: 96</p>
+<p>- Paging occasion</p>
+<p>- 4ms length</p>
+<p>- PDCCH only or PDCCH+PDSCH</p>
+<p>- Relative power: 50 for PDCCH only; 120 for PDCCH+PDSCH</p>
+<p>- Note1: for PDCCH only, no PDSCH and same-slot scheduling; this
+includes time for PDCCH decoding and any micro-sleep within the slot;
+for PDCCH+PDSCH, it is used when the UE decodes the PDCCH for paging and
+obtains the need to decode the corresponding PDSCH</p>
+<p>- Note2: PDCCH only is assumed as baseline in idle state</p>
+<p>- SSB burst for inter-frequency RRM measurement</p>
+<p>- 5ms window after paging occasion, 1 SSB burst</p>
+<p>- UE performs inter-frequency RRM every I-DRX cycle (1280ms)</p>
+<p>- Relative power: 60</p>
+<p>- SSB burst for serving/intra-frequency RRM measurement</p>
+<p>- 2ms window before paging occasion, 1 SSB burst</p>
+<p>- UE performs intra-frequency RRM every I-DRX cycle (1280ms)</p>
+<p>- SSB burst period: 20ms</p>
+<p>- Relative power: 60</p>
+<p>- SSB burst for fine time-frequency sync. and RSRP measurement of
+serving/camping cell</p>
+<p>- 2ms window before paging occasion</p>
+<p>- 3 SSB bursts: 2 SSB burst is used standalone, 1 SSB burst reuse SSB
+burst for serving/intra-frequency RRM measurement</p>
+<p>- Relative power: 50</p>
+<p>- Sleep</p>
+<p>- Sleep type is determined by duration between two power conponients
+above</p>
+<p>- Deep sleep: duration&gt;20ms</p>
+<p>- Relative power: 1, transition energy: 450</p>
+<p>- Light sleep: duration=6~20ms</p>
+<p>- Relative power: 20, transition energy: 100</p>
+<p>- Micro sleep: duration&lt;6ms</p>
+<p>- Relative power: 45, transition energy: 0</p>
+<p>While in connected state, at least the following power components are
+recommended to be considered for PRS measurement power saving
+evaluation.</p>
+<p>- PRS occasion</p>
+<p>- For simplicity, UE only performs intra-frequency PRS measurements
+every C-DRX cycle (160ms)</p>
+<p>- 4ms PRS length, 1PRS occasion</p>
+<p>- 100MHz</p>
+<p>- Relative power: 610</p>
+<p>- Measurement gap for PRS measurement</p>
+<p>- Length: 5ms</p>
+<p>- Period: 160ms</p>
+<p>- Total switching time: 1ms</p>
+<p>- Relative power for switching: 45</p>
+<p>- PDCCH only monitoring during active time</p>
+<p>- For simplicity, only performs PDCCH decoding, traffic model is not
+introduced</p>
+<p>- 4ms length</p>
+<p>- Relative power: 100</p>
+<p>- Note: For PDCCH-only, no PDSCH and same-slot scheduling; this
+includes time for PDCCH decoding and any micro-sleep within the
+slot.</p>
+<p>- SSB burst for inter-frequency RRM measurement</p>
+<p>- 5ms window after PDCCH monitoring, 1 SSB burst</p>
+<p>- UE performs inter-frequency RRM every C-DRX cycle (160ms)</p>
+<p>- Relative power: 150</p>
+<p>- SSB burst for serving/intra-frequency RRM measurement</p>
+<p>- 2ms window before PDCCH monitoring, 1 SSB burst</p>
+<p>- UE performs intra-frequency RRM every C-DRX cycle (160ms)</p>
+<p>- SSB burst period: 20ms</p>
+<p>- Relative power: 150</p>
+<p>- SSB burst for fine time-frequency sync. and RSRP measurement of
+serving/camping cell</p>
+<p>- 2ms window before PDCCH monitoring</p>
+<p>- 2 SSB bursts: 1 SSB burst is used standalone, 1 SSB burst reuse SSB
+burst for serving/intra-frequency RRM measurement</p>
+<p>- Relative power: 100</p>
+<p>- Sleep</p>
+<h5
+id="c.3.2.2.2-ue-efficiency-analysis-of-nr-positioning-enhancements">C.3.2.2.2
+UE efficiency analysis of NR positioning enhancements </h5>
+<p><u>UE efficiency analysis for power consumption</u></p>
+<p>1 - Baseline power consumption evaluation results</p>
+<p>A - Power consumption for PRS measurement in idle state
+(baseline)</p>
+<p>- A procedure of PRS measurement in idle state is shown in the figure
+below.</p>
+<p><img src="media/image7.svg"
+style="width:6.67708in;height:0.78125in" /></p>
+<p>Figure C.3.2.2.2-1 Procedure of PRS measurements in idle state</p>
+<p>Then we analyze the time of multiple power components and calculate
+the average energy consumption, the specific content can refer to the
+following Table.</p>
+<p>Table C.3.2.2.2-1 Power components analysis for PRS measurement in
+idle state [5]</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 29%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>Power state</th>
+<th>Relative power</th>
+<th>Duration(ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>1215</td>
+</tr>
+<tr>
+<td>Light sleep</td>
+<td>20</td>
+<td>41.5</td>
+</tr>
+<tr>
+<td>Micro sleep</td>
+<td>45</td>
+<td>4.5</td>
+</tr>
+<tr>
+<td>SSB for Inter-frequency measurement</td>
+<td>60</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SSB for Intra-frequency measurement</td>
+<td>60</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>50</td>
+<td>2+2</td>
+</tr>
+<tr>
+<td>Single positioning frequency layer measurement</td>
+<td>96</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Paging Occasion</td>
+<td>50</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Sleep transition type</td>
+<td>Transition energy</td>
+<td>Transition times</td>
+</tr>
+<tr>
+<td>Deep sleep transition</td>
+<td>450</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Light sleep transition</td>
+<td>100</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Average power</td>
+<td colspan="2">3.3605</td>
+</tr>
+</tbody>
+</table>
+<p>B - Power consumption for PRS measurement in connected state
+(baseline)</p>
+<p>- A procedure for PRS measurement in connected state is shown in
+Figure C.3.2.2.2-2 below. Based on the above assumptions and analysis,
+Table C.3.2.2.2-2 shows the power consumption for PRS measurement in
+connected state.</p>
+<p><img src="media/image8.svg"
+style="width:6.29167in;height:0.96875in" /></p>
+<p>Figure C.3.2.2.2-2 Procedure of PRS measurements in connected
+state</p>
+<p>Table C.3.2.2.2-2 Power components analysis for PRS measurement in
+connected state [5]</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 29%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>Power state</th>
+<th>Relative power</th>
+<th>Duration(ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>115</td>
+</tr>
+<tr>
+<td>Light sleep</td>
+<td>20</td>
+<td>23</td>
+</tr>
+<tr>
+<td>Micro sleep</td>
+<td>45</td>
+<td>4</td>
+</tr>
+<tr>
+<td>SSB for Inter-frequency measurement</td>
+<td>150</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SSB for Intra-frequency measurement</td>
+<td>150</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>100</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Single positioning frequency layer measurement</td>
+<td>610</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Gap switching</td>
+<td>45</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PDCCH-only monitoring</td>
+<td>100</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Sleep transition type</td>
+<td>Transition energy</td>
+<td>Transition times</td>
+</tr>
+<tr>
+<td>Deep sleep transition</td>
+<td>450</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Light sleep transition</td>
+<td>100</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Average power</td>
+<td colspan="2">35.2500</td>
+</tr>
+</tbody>
+</table>
+<p>2 - Power consumption evaluation for different PRS configurations</p>
+<p>A - PRS measurement impacted by DRX</p>
+<p>For PRS reception impacted by DRX configuration, we set the PRS
+period to be consistent with the DRX period which is equal to 160ms (the
+actual PRS period is 80ms and the DRX cycle is 160ms) as shown in Figure
+C.3.2.2.2-2 (baseline), which assumes that the UE only measures PRS
+during DRX active time. While for PRS reception not impacted by DRX, we
+set the PRS period is 80ms and the DRX cycle is 160ms as shown in Figure
+C.3.2.2.2-3, which assumes that the UE receives PRS during DRX active
+time and DRX non active time.</p>
+<p><img src="media/image9.svg"
+style="width:5.42639in;height:1.35625in" /></p>
+<p>Figure C.3.2.2.2-3 Procedure of PRS measurements in DRX cycle (160ms)
+for PRS reception not impacted by DRX (1 DRX cycle with 2 PRS occasion
+to measure)</p>
+<p>In addition, in Table C.3.2.2.2-3, we compared the UE power
+consumption of the two cases above.</p>
+<p>Table C.3.2.2.2-3 Power components analysis for PRS measurement
+with/without DRX impact [5]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Power state</th>
+<th rowspan="2">Relative power</th>
+<th colspan="2">Duration(ms)</th>
+</tr>
+<tr>
+<th>PRS reception impacted by DRX</th>
+<th>PRS reception not impacted by DRX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>115</td>
+<td>110</td>
+</tr>
+<tr>
+<td>Light sleep</td>
+<td>20</td>
+<td>23</td>
+<td>23</td>
+</tr>
+<tr>
+<td>Micro sleep</td>
+<td>45</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>SSB for Inter-frequency measurement</td>
+<td>150</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SSB for Intra-frequency measurement</td>
+<td>150</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>100</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Single positioning frequency layer measurement</td>
+<td>610</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Gap switching</td>
+<td>45</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>PDCCH-only monitoring</td>
+<td>100</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Sleep transition type</td>
+<td>Transition energy</td>
+<td>Transition times</td>
+<td>Transition times</td>
+</tr>
+<tr>
+<td>Deep sleep transition</td>
+<td>450</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Light sleep transition</td>
+<td>100</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Calculation</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td>DRX cycle</td>
+<td>-</td>
+<td>160</td>
+<td>160</td>
+</tr>
+<tr>
+<td>Average power</td>
+<td>-</td>
+<td>35.2500</td>
+<td>53.5625</td>
+</tr>
+<tr>
+<td>Power saving gain</td>
+<td>-</td>
+<td>34.19%</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>It can be observed that,</p>
+<p>when PRS measurement is impacted by DRX (reception 1 PRS occasion
+every DRX cycle (160ms)), 34.19% power saving gain is shown, comparing
+with PRS measurement regardless of DRX(reception 2 PRS occasions every
+DRX cycle (160ms)) .</p>
+<p>B -Extending PRS period</p>
+<p>As we all know, increasing the period of PRS can reduce the power
+consumption of PRS measurement. Therefore, we extend PRS period 2 times
+(320ms) and 4 times (640ms). The procedure and power components analysis
+of PRS measurements are shown in Figure C.3.2.2.2-4 and Table
+C.3.2.2.2-4 respectively.</p>
+<p><img src="media/image10.svg"
+style="width:6.28542in;height:0.96736in" /></p>
+<p><img src="media/image11.svg"
+style="width:6.29167in;height:0.78125in" /></p>
+<p>Figure C.3.2.2.2-4: Procedure of PRS measurements in DRX cycle with
+PRS and DRX cycle without PRS in connected state</p>
+<p>Table C.3.2.2.2-4 Power components analysis for PRS measurement by
+extending PRS period in connected state [5]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Power state</th>
+<th rowspan="2">Relative power</th>
+<th colspan="2">Duration(ms)</th>
+</tr>
+<tr>
+<th>PRS period(320ms)</th>
+<th>PRS period(640ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>230</td>
+<td>460</td>
+</tr>
+<tr>
+<td>Light sleep</td>
+<td>20</td>
+<td>55</td>
+<td>119</td>
+</tr>
+<tr>
+<td>Micro sleep</td>
+<td>45</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>SSB for Inter-frequency measurement</td>
+<td>150</td>
+<td>10</td>
+<td>20</td>
+</tr>
+<tr>
+<td>SSB for Intra-frequency measurement</td>
+<td>150</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>100</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Single positioning frequency layer measurement</td>
+<td>610</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Gap switching</td>
+<td>45</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PDCCH-only monitoring</td>
+<td>100</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Sleep transition type</td>
+<td>Transition energy</td>
+<td>Transition times</td>
+<td>Transition times</td>
+</tr>
+<tr>
+<td>Deep sleep transition</td>
+<td>450</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Light sleep transition</td>
+<td>100</td>
+<td>6</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Calculation</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td>DRX cycle</td>
+<td>-</td>
+<td>160</td>
+<td>160</td>
+</tr>
+<tr>
+<td>Average power</td>
+<td>-</td>
+<td>27.4844</td>
+<td>23.6016</td>
+</tr>
+<tr>
+<td>Power saving gain</td>
+<td>-</td>
+<td>22.03%</td>
+<td>33.05%</td>
+</tr>
+</tbody>
+</table>
+<p>It can be observed that,</p>
+<p>By extending the PRS period to 2 times(160ms to 320ms), 22.03% power
+saving gain is shown ,comparing with the baseline assumption.</p>
+<p>By extending the PRS period to 4 times(160ms to 640ms), 33.05 % power
+saving gain is shown ,comparing with the baseline assumption.</p>
+<p>C - Concentrated PRS distribution</p>
+<p>In this subsection, we compare two PRS distribution methods, namely
+concentrated PRS (baseline, as in Figure C.3.2.2.2-2) and distributed
+PRS (as in Figure C.3.2.2.2-5), which is based on our power consumption
+model, method and assumptions. The duration of concentrated PRS
+distribution is 5ms with 4ms PRS length and 1ms MG switching time. While
+for distributed PRS, we divide the concentrated PRS occasion of 4ms
+(baseline) into 4 PRS occasions with 1ms, and the adjacent PRS occasions
+are separated by 40ms. In this case, 4 measurement gap occasions with
+2ms duration is assumed. Then we compare the power consumption
+performance of the 2 cases in one DRX cycle as shown in Table
+C.3.2.2.2-5.</p>
+<p><img src="media/image12.svg"
+style="width:6.26042in;height:1.41667in" /></p>
+<p>Figure C.3.2.2.2-5: Procedure of distributed PRS measurements in one
+DRX cycle</p>
+<p>Table C.3.2.2.2-5 Power components analysis for concentrated and
+distributed PRS measurement [5]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Power state</th>
+<th rowspan="2">Relative power</th>
+<th colspan="2">Duration(ms)</th>
+</tr>
+<tr>
+<th>Concentrated PRS measurement (baseline)</th>
+<th>Distributed PRS measurement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>115</td>
+<td>103</td>
+</tr>
+<tr>
+<td>Light sleep</td>
+<td>20</td>
+<td>23</td>
+<td>36</td>
+</tr>
+<tr>
+<td>Micro sleep</td>
+<td>45</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SSB for Inter-frequency measurement</td>
+<td>150</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SSB for Intra-frequency measurement</td>
+<td>150</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>100</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Single positioning frequency layer measurement</td>
+<td>610</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Gap switching</td>
+<td>45</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>PDCCH-only monitoring</td>
+<td>100</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Sleep transition type</td>
+<td>Transition energy</td>
+<td>Transition times</td>
+<td>Transition times</td>
+</tr>
+<tr>
+<td>Deep sleep transition</td>
+<td>450</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Light sleep transition</td>
+<td>100</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Calculation</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td>DRX cycle</td>
+<td>-</td>
+<td>160</td>
+<td>160</td>
+</tr>
+<tr>
+<td>Average power</td>
+<td>-</td>
+<td>35.2500</td>
+<td>43.3937</td>
+</tr>
+<tr>
+<td>Power saving gain</td>
+<td>-</td>
+<td>18.77%</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>It can be seen that</p>
+<p>when configuring concentrated PRS measurement (1 concentrated PRS
+occasion every 160ms), 18.77% power saving gain is shown, comparing with
+the distributed PRS measurement (4 distributed PRS occasion every
+160ms).</p>
+<p>Concentrated PRS measurement can mainly reduce the power consumption
+of deep sleep transition, which is ccounted for 69.07%ofof power saving
+gain.</p>
+<p>D - Adding PRS measurement window (PRS-MTC)</p>
+<p>In Rel-15, SMTC has been defined. SSB-MTC is used to configure
+measurement timing configurations and includes duration which is the
+duration of the measurement window in which to receive SS/PBCH blocks.
+When SMTC is configured, the UE is not expected to measure SSB outside
+the SMTC window which reduces unnecessary power consumption. For PRS
+measurement, a similar window within a constrained duration (which can
+be called PRS-MTC) may be introduced in Rel-17 for UE power efficient
+positioning. PRS-MTC can limit the processing for measurement within a
+constrained time window as shown in Figure C.3.2.2.2-6. In this case,
+the UE is only required to measure PRS of 2ms length when configuring
+2ms PRS MTC window.</p>
+<p><img src="media/image13.svg"
+style="width:6.29167in;height:0.96875in" /></p>
+<p>Figure C.3.2.2.2-6: Procedure of PRS measurements with PRS MTC (2ms)
+in the DRX cycle</p>
+<p>In this subsection, we compare power consumption between PRS
+measurement with 2ms PRS-MTC window and without PRS MTC window
+(baseline, as in Figure C.3.2.2.2-2). The corresponding power analysis
+is shown below in Table C.3.2.2.2-6.</p>
+<p>Table C.3.2.2.2-6 Power components analysis for PRS measurement by
+adding PRS MTC window in connected state [5]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Power state</th>
+<th rowspan="2">Relative power</th>
+<th colspan="2">Duration(ms)</th>
+</tr>
+<tr>
+<th>Without PRS-MTC(baseline)</th>
+<th>PRS MTC(2ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deep sleep 23</td>
+<td>1</td>
+<td>115</td>
+<td>115</td>
+</tr>
+<tr>
+<td>Light sleep</td>
+<td>20</td>
+<td>23</td>
+<td>24</td>
+</tr>
+<tr>
+<td>Micro sleep</td>
+<td>45</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SSB for Inter-frequency measurement</td>
+<td>150</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SSB for Intra-frequency measurement</td>
+<td>150</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>100</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Single positioning frequency layer measurement</td>
+<td>610</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Gap switching</td>
+<td>45</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PDCCH-only monitoring</td>
+<td>100</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Sleep transition type</td>
+<td>Transition energy</td>
+<td>Transition times</td>
+<td>Transition times</td>
+</tr>
+<tr>
+<td>Deep sleep transition</td>
+<td>450</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Light sleep transition</td>
+<td>100</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Calculation</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td>DRX cycle</td>
+<td>-</td>
+<td>160</td>
+<td>160</td>
+</tr>
+<tr>
+<td>Average power</td>
+<td>-</td>
+<td>35.2500</td>
+<td>28.0313</td>
+</tr>
+<tr>
+<td>Power saving gain</td>
+<td>-</td>
+<td>0</td>
+<td>20.48%</td>
+</tr>
+</tbody>
+</table>
+<p>It can be observed that,</p>
+<p>by adding the PRS MTC window to limit PRS measurement within 2ms
+(from 4ms to 2ms), 20.48% power saving gain is shown, comparing with PRS
+measurement without PRS-MTC (the baseline assumption, PRS measurement
+within 4ms).</p>
+<p>E - Reducing number of TRPs to be measured</p>
+<p>When reducing the number of TRPs to be measured, the power component
+analysis is shown in Table C.3.2.2.2-7.</p>
+<p>Table C.3.2.2.2-7: Power components analysis for PRS measurement for
+4 TRPs in connected state [5]</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 29%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>Power state</th>
+<th>Relative power</th>
+<th>Duration(ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>115</td>
+</tr>
+<tr>
+<td>Light sleep</td>
+<td>20</td>
+<td>23</td>
+</tr>
+<tr>
+<td>Micro sleep</td>
+<td>45</td>
+<td>4</td>
+</tr>
+<tr>
+<td>SSB for Inter-frequency measurement</td>
+<td>150</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SSB for Intra-frequency measurement</td>
+<td>150</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>100</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Single positioning frequency layer measurement</td>
+<td>490</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Gap switching</td>
+<td>45</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PDCCH-only monitoring</td>
+<td>100</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Sleep transition type</td>
+<td>Transition energy</td>
+<td>Transition times</td>
+</tr>
+<tr>
+<td>Deep sleep transition</td>
+<td>450</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Light sleep transition</td>
+<td>100</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Average power</td>
+<td colspan="2">32.2500</td>
+</tr>
+<tr>
+<td>Power saving gain</td>
+<td colspan="2">8.51%</td>
+</tr>
+</tbody>
+</table>
+<p>It can be observed that,</p>
+<p>by reducing the number of TRPs for PRS measurement (from 8 TRPs to 4
+TRPs), 8.51% power saving gain is shown ,comparing with the baseline
+assumption.</p>
+<p>F - Reducing number of positioning frequency layers to be
+measured</p>
+<p>To simplify the evaluation, we only list the power component analysis
+for a single frequency layer in the baseline. In this subsection, more
+analysis are shown for multiple positioning frequency layers as shown in
+Figure C.3.2.2.2-7, Figure C.3.2.2.2-8 and Table C.3.2.2.2-8.</p>
+<p><img src="media/image14.svg"
+style="width:6.29167in;height:0.96875in" /></p>
+<p>Figure C.3.2.2.2-7 Procedure of PRS measurements of 2 frequency
+layers in the DRX cycle in connected state</p>
+<p><img src="media/image15.svg"
+style="width:6.29167in;height:0.90625in" /></p>
+<p>Figure C.3.2.2.2-8 Procedure of PRS measurements of 4 frequency
+layers in the DRX cycle in connected state</p>
+<p>Table C.3.2.2.2-8 Power components analysis for multiple frequency
+layers PRS measurement in connected state [5]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Power state</th>
+<th rowspan="2">Relative power</th>
+<th colspan="2">Duration(ms)</th>
+</tr>
+<tr>
+<th>2 frequency layers</th>
+<th>4 frequency layers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>115</td>
+<td>115</td>
+</tr>
+<tr>
+<td>Light sleep</td>
+<td>20</td>
+<td>14</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Micro sleep</td>
+<td>45</td>
+<td>8</td>
+<td>12</td>
+</tr>
+<tr>
+<td>SSB for Inter-frequency measurement</td>
+<td>150</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SSB for Intra-frequency measurement</td>
+<td>150</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>100</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Multiple positioning frequency layers measurement</td>
+<td>610</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Gap switching</td>
+<td>45</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>PDCCH-only monitoring</td>
+<td>100</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Sleep transition type</td>
+<td>Transition energy</td>
+<td>Transition times</td>
+<td>Transition times</td>
+</tr>
+<tr>
+<td>Deep sleep transition</td>
+<td>450</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Light sleep transition</td>
+<td>100</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Average power</td>
+<td>-</td>
+<td>52.0313</td>
+<td>82.4688</td>
+</tr>
+<tr>
+<td>Power consumption gain</td>
+<td>-</td>
+<td>47.61%</td>
+<td>133.95%</td>
+</tr>
+</tbody>
+</table>
+<p>It can be observed that,</p>
+<p>By increasing the number of frequency layers to 2 (from 1 to 2),
+47.61% power consumption gain is shown, comparing with the baseline
+assumption.</p>
+<p>By increasing the number of frequency layers to 4 (from 1 to 4),
+133.95% power consumption gain is shown, comparing with the baseline
+assumption.</p>
+<p>Correspondingly, if we take the case of 4 frequency layers as the
+baseline, then by reducing the number of frequency layer to 2 (from 4 to
+2), 36.91% power saving gain is shown; by reducing number of frequency
+layer to 1 (from 4 to 1), 57.26% power saving gain is shown.</p>
+<p>3 - Power consumption evaluation for idle states positioning</p>
+<p>A - Idle state measurement and report</p>
+<p><img src="media/image16.svg"
+style="width:6.67708in;height:0.78125in" /></p>
+<p><img src="media/image17.svg"
+style="width:6.67708in;height:0.78125in" /></p>
+<p>Figure C.3.2.2.2-9: Procedure of PRS measurements and report in idle
+state</p>
+<p>In this subsection, we discuss power consumption for positioning
+measurement and report in idle states. For positioning report in idle
+state, let’s take the positioning information reported by EDT as an
+example. If the UE and NG-RAN node both support EDT, the UE sends an
+RRCEarlyDataRequest message to the NG-RAN node and includes a NAS
+control plane service request. The NAS control plane service request
+includes a positioning report message. From the perspective from
+physical layer, this message is carried in Msg3. Furthermore, the UE can
+receive RRCEarlyDataComplete containing positioning report completion
+information which is also included in Msg4.</p>
+<p>The average power for the components introduced by positioning report
+in idle state is listed below in Table C.3.2.2.2-9.</p>
+<p>Table C.3.2.2.2-9 Average power for the components introduced by
+positioning report in idle state [5]</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 59%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>Power State</th>
+<th>Characteristics</th>
+<th>Relative Power</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coreset0+SIB1</td>
+<td>Equivalent to PDCCH + PDSCH. For idle state, scaling factor is
+assumed as 0.4 compared with connected states.</td>
+<td>120</td>
+</tr>
+<tr>
+<td>RAR</td>
+<td>Equivalent to PDCCH + PDSCH.</td>
+<td>120</td>
+</tr>
+<tr>
+<td>Msg4</td>
+<td>Equivalent to PDCCH + PDSCH. Msg4 contains contention resolution
+information and RRCEarlyDataComplete information, doesn’t contain
+additional RRC information to establish RRC connection.</td>
+<td>120</td>
+</tr>
+<tr>
+<td>Msg3</td>
+<td><p>Equivalent to PUSCH. For idle state, scaling factor is assumed as
+0.4.</p>
+<p>Considering positioning report carried in Msg3, the length of Msg3 is
+assumed as 4ms.</p></td>
+<td>280</td>
+</tr>
+<tr>
+<td>PRACH</td>
+<td>Sequence length is 839. SCS is 1.25kHz.</td>
+<td>175</td>
+</tr>
+<tr>
+<td>Paging occasion</td>
+<td>Equivalent to PDCCH + PDSCH.</td>
+<td>120</td>
+</tr>
+</tbody>
+</table>
+<p>Therefore, the power components analysis for measurement and report
+in idle state is below in Table C.3.2.2.2-10. The power calculation
+cycle is 1280ms.</p>
+<p>Table C.3.2.2.2-10: Power components analysis for positioning
+measurement and report in idle state [[5]]</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 29%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>Power state</th>
+<th>Relative power</th>
+<th>Duration(ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>1177</td>
+</tr>
+<tr>
+<td>Light sleep</td>
+<td>20</td>
+<td>57.5</td>
+</tr>
+<tr>
+<td>Micro sleep</td>
+<td>45</td>
+<td>16.5</td>
+</tr>
+<tr>
+<td>SSB for Inter-frequency measurement</td>
+<td>60</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SSB for Intra-frequency measurement</td>
+<td>60</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>50</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Single positioning frequency layer measurement</td>
+<td>96</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Paging Occasion</td>
+<td>120</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Coreset0+SIB1</td>
+<td>120</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PRACH</td>
+<td>175</td>
+<td>1</td>
+</tr>
+<tr>
+<td>RAR</td>
+<td>120</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Msg3(carrying positioning report)</td>
+<td>280</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Msg4</td>
+<td>120</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Sleep transition type</td>
+<td>Transition energy</td>
+<td>Transition times</td>
+</tr>
+<tr>
+<td>Deep sleep transition</td>
+<td>450</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Light sleep transition</td>
+<td>100</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Average power</td>
+<td colspan="2">5.7488</td>
+</tr>
+</tbody>
+</table>
+<p>B - Idle state measurement and connected state report</p>
+<p>In this subsection, we discuss power consumption for positioning
+measurement in idle state and report in connected state. For simplicity,
+it is assumed that the only thing the UE does in the connected state is
+to report positioning information. The related procedure is shown in
+Figure C.3.2.2.2-10.</p>
+<p>Figure C.3.2.2.2-10: Procedure of PRS measurements in idle state and
+report in connected state</p>
+<p>The average power for the components introduced by positioning report
+in connected state and RRC state switching is listed below in Table
+C.3.2.2.2-11.</p>
+<p><img src="media/image18.svg"
+style="width:6.67708in;height:0.78125in" /></p>
+<p><img src="media/image19.svg"
+style="width:6.67708in;height:1.69792in" /></p>
+<p>Table C.3.2.2.2-11: Average power for the components introduced by
+positioning report in connected state and RRC state switching [5]</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 55%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">Power State</th>
+<th>Characteristics</th>
+<th>Relative Power</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="6">RRC state switching</td>
+<td>Coreset0+SIB1</td>
+<td>Equivalent to PDCCH + PDSCH. For idle state, scaling factor is
+assumed as 0.4 compared with connected states.</td>
+<td>120</td>
+</tr>
+<tr>
+<td>RAR</td>
+<td>Equivalent to PDCCH + PDSCH.</td>
+<td>120</td>
+</tr>
+<tr>
+<td>Msg4</td>
+<td>Equivalent to PDCCH + PDSCH. Msg4 contains contention resolution
+information and RRC setup information to establish RRC connection.</td>
+<td>120</td>
+</tr>
+<tr>
+<td>Msg3</td>
+<td>Equivalent to PUSCH. For idle state, scaling factor is assume as
+0.4.</td>
+<td>280</td>
+</tr>
+<tr>
+<td>PRACH</td>
+<td>Sequence length is 839. SCS is 1.25kHz.</td>
+<td>175</td>
+</tr>
+<tr>
+<td>Paging occasion</td>
+<td>Equivalent to PDCCH + PDSCH.</td>
+<td>120</td>
+</tr>
+<tr>
+<td rowspan="6">Positioning report in connected state</td>
+<td>SSB burst in connected state</td>
+<td>SSB can be used for fine time-frequency sync.</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Msg5</td>
+<td>Equivalent to PUSCH. For connected state, scaling factor is assume
+as 1.</td>
+<td>700</td>
+</tr>
+<tr>
+<td>Uplink grant</td>
+<td>Equivalent to PDCCH only.</td>
+<td>100</td>
+</tr>
+<tr>
+<td>PUCCH SR</td>
+<td>Equivalent to short PUCCH. Short PUCCH power = 0.3 x uplink
+power.</td>
+<td>210</td>
+</tr>
+<tr>
+<td>Pos report</td>
+<td>Equivalent to PUSCH.</td>
+<td>700</td>
+</tr>
+<tr>
+<td>RRC release</td>
+<td>Equivalent to PDSCH only. RRC connected state switches to idle
+state.</td>
+<td>280</td>
+</tr>
+</tbody>
+</table>
+<p>Therefore, the power components analysis for measurement in idle
+state and report in connected states is below in Table C.3.2.2.2-12. The
+power calculation cycle is 1280ms.</p>
+<p>Table C.3.2.2.2-12: Power components analysis for positioning
+measurement and report in idle state [5]</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 29%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>Power state</th>
+<th>Relative power</th>
+<th>Duration(ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3">Sleep</td>
+</tr>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>1129</td>
+</tr>
+<tr>
+<td>Light sleep</td>
+<td>20</td>
+<td>69.5</td>
+</tr>
+<tr>
+<td>Micro sleep</td>
+<td>45</td>
+<td>35.5</td>
+</tr>
+<tr>
+<td colspan="3">Idle states</td>
+</tr>
+<tr>
+<td>SSB for Inter-frequency measurement</td>
+<td>60</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SSB for Intra-frequency measurement</td>
+<td>60</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>50</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Single positioning frequency layer measurement</td>
+<td>96</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Paging Occasion</td>
+<td>120</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Coreset0+SIB1</td>
+<td>120</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PRACH</td>
+<td>175</td>
+<td>1</td>
+</tr>
+<tr>
+<td>RAR</td>
+<td>120</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Msg3</td>
+<td>280</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Msg4</td>
+<td>120</td>
+<td>5</td>
+</tr>
+<tr>
+<td colspan="3">Connected states</td>
+</tr>
+<tr>
+<td>Uplink grant</td>
+<td>100</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>100</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Msg5</td>
+<td>700</td>
+<td>2</td>
+</tr>
+<tr>
+<td>PUCCH SR</td>
+<td>210</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Positioning report</td>
+<td>700</td>
+<td>3</td>
+</tr>
+<tr>
+<td>RRC release</td>
+<td>280</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Sleep transition type</td>
+<td>Transition energy</td>
+<td>Transition times</td>
+</tr>
+<tr>
+<td>Deep sleep transition</td>
+<td>450</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Light sleep transition</td>
+<td>100</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Average power</td>
+<td colspan="2">10.3246</td>
+</tr>
+</tbody>
+</table>
+<p>It can be observed that</p>
+<p>compared to reporting in the idle state, the power consumption of
+reporting in the connected state increases 79.6%.</p>
+<p>correspondingly, if we take the case of reporting in the connected
+state as the baseline, for reporting in the idle state , 44.32% power
+saving gain is shown.</p>
+<p>C- Connected state measurement and report</p>
+<p>In this subsection, we evaluate the case for connected states
+measurement and report. In order to be comparable with the above
+subsections, it is assumed that the UE still starts positioning from
+idle state. Furthermore, for simplicity, some additional assumptions are
+below.</p>
+<p>- In connected state, LPP procedures including capability transfer,
+positioning assistant data transfer, some request signalings between the
+UE and the LMF are ignored.</p>
+<p>- One shot positioning measurement and report related procedures are
+considered in connected state.</p>
+<p>- Procedures related to measurement gap configuration are
+ignored.</p>
+<p>- Once the positioning report is completed, the RRC connection is
+released.</p>
+<p>- Measurement and report cycle is equal to idle state (1280ms).</p>
+<p>- PRS bandwidth in connected state is equal to PRS bandwidth in idle
+state.</p>
+<p>- Paging occasion power is equivalent to ‘PDCCH+PDSCH’, considering
+it may lead to RRC state transition.</p>
+<p>Therefore, related procedure is shown in Figure C.3.2.2.2-11.</p>
+<p><img src="media/image20.svg"
+style="width:6.67708in;height:0.78125in" /></p>
+<p><img src="media/image21.svg"
+style="width:6.67708in;height:1.69792in" /></p>
+<p>Figure C.3.2.2.2-11: Procedure of PRS measurements and report in
+connected state</p>
+<p>The average power for the components introduced by positioning
+measurement/report in connected state and RRC state switching is listed
+below in Table C.3.2.2.2-13.</p>
+<p>Table C.3.2.2.2-13 Average power for the components introduced by
+positioning measurement/report in connected state and RRC state
+switching [5]</p>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 54%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">Power State</th>
+<th>Characteristics</th>
+<th>Relative Power</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="6">RRC state switching</td>
+<td>Coreset0+SIB1</td>
+<td>Equivalent to PDCCH + PDSCH. For idle state, scaling factor is
+assumed as 0.4 compared with connected states.</td>
+<td>120</td>
+</tr>
+<tr>
+<td>RAR</td>
+<td>Equivalent to PDCCH + PDSCH.</td>
+<td>120</td>
+</tr>
+<tr>
+<td>Msg4</td>
+<td>Equivalent to PDCCH + PDSCH. Msg4 contains contention resolution
+information and RRC setup information to establish RRC connection.</td>
+<td>120</td>
+</tr>
+<tr>
+<td>Msg3</td>
+<td>Equivalent to PUSCH. For idle state, scaling factor is assume as
+0.4.</td>
+<td>280</td>
+</tr>
+<tr>
+<td>PRACH</td>
+<td>Sequence length is 839. SCS is 1.25kHz.</td>
+<td>175</td>
+</tr>
+<tr>
+<td>Paging occasion</td>
+<td>Equivalent to PDCCH + PDSCH.</td>
+<td>120</td>
+</tr>
+<tr>
+<td rowspan="6">Positioning measurement and report in connected
+state</td>
+<td>SSB burst in connected state</td>
+<td>SSB can be used for fine time-frequency sync.</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Msg5</td>
+<td>Equivalent to PUSCH. For connected state, scaling factor is assume
+as 1.</td>
+<td>700</td>
+</tr>
+<tr>
+<td>Uplink grant</td>
+<td>Equivalent to PDCCH only.</td>
+<td>100</td>
+</tr>
+<tr>
+<td>PUCCH SR</td>
+<td>Equivalent to short PUCCH. Short PUCCH power = 0.3 x uplink
+power.</td>
+<td>210</td>
+</tr>
+<tr>
+<td>Pos report</td>
+<td>Equivalent to PUSCH.</td>
+<td>700</td>
+</tr>
+<tr>
+<td>RRC release</td>
+<td>Equivalent to PDSCH only. RRC connected state switches to idle
+state.</td>
+<td>280</td>
+</tr>
+<tr>
+<td></td>
+<td>PRS measurement</td>
+<td>PRS bandwidth is equal to 20M.</td>
+<td>240</td>
+</tr>
+</tbody>
+</table>
+<p>Therefore, the power components analysis for measurement and report
+in connected states is below in Table C.3.2.2.2-14. The power
+calculation cycle is 1280ms.</p>
+<p>Table C.3.2.2.2-14: Power components analysis for positioning
+measurement and report in connected state [5]</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 29%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>Power state</th>
+<th>Relative power</th>
+<th>Duration(ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3">Sleep</td>
+</tr>
+<tr>
+<td>Deep sleep</td>
+<td>1</td>
+<td>1115</td>
+</tr>
+<tr>
+<td>Light sleep</td>
+<td>20</td>
+<td>84</td>
+</tr>
+<tr>
+<td>Micro sleep</td>
+<td>45</td>
+<td>32</td>
+</tr>
+<tr>
+<td colspan="3">Idle states</td>
+</tr>
+<tr>
+<td>SSB for Inter-frequency measurement</td>
+<td>60</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SSB for Intra-frequency measurement</td>
+<td>60</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>50</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Paging Occasion</td>
+<td>120</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Coreset0+SIB1</td>
+<td>120</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PRACH</td>
+<td>175</td>
+<td>1</td>
+</tr>
+<tr>
+<td>RAR</td>
+<td>120</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Msg3</td>
+<td>280</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Msg4</td>
+<td>120</td>
+<td>5</td>
+</tr>
+<tr>
+<td colspan="3">Connected states</td>
+</tr>
+<tr>
+<td>Single positioning frequency layer measurement</td>
+<td>240</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Gap switching</td>
+<td>45</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Uplink grant</td>
+<td>100</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SSB Proc.</td>
+<td>100</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Msg5</td>
+<td>700</td>
+<td>2</td>
+</tr>
+<tr>
+<td>PUCCH SR</td>
+<td>210</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Positioning report</td>
+<td>700</td>
+<td>3</td>
+</tr>
+<tr>
+<td>RRC release</td>
+<td>280</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Sleep transition type</td>
+<td>Transition energy</td>
+<td>Transition times</td>
+</tr>
+<tr>
+<td>Deep sleep transition</td>
+<td>450</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Light sleep transition</td>
+<td>100</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Average power</td>
+<td colspan="2">11.1367</td>
+</tr>
+</tbody>
+</table>
+<p>It can be observed that</p>
+<p>compared to reporting in the idle state, the power consumption of
+reporting in the connected state increases 93.72%.</p>
+<p>correspondingly, if we take the case of reporting in the connected
+state as the baseline, for reporting in the idle state, 48.38% power
+saving gain is shown.</p>
+<p>Furthermore, considering that we make some assumptions to simplify
+power consumption evaluation, such as ignoring complicated steps for LPP
+procedures, aligning the bandwidth and period with idle state
+measurement, it will consume more power when positioning in the
+connected state in general.</p>
+<p><u>UE efficiency analysis for resource utilization</u></p>
+<p>For Rel-16 UE efficiency, it is defined as the percentage of the MGL
+in the MG periodicity considering the UE is expected to process DL PRS
+within measurement gap, and the UE is not expected to conduct
+reception/transmission data from/to all carriers at least for
+measurement gap duration time. It can be represented as below equation
+(3)</p>
+<p><span class="math inline">\(UE\ efficiency = \frac{MGL}{MG\
+periodicity} \times 100\%\)</span> (3)</p>
+<p>Whether the MG is suitable or not for PRS measurement will directly
+affect to UE efficiency. e.g. 12ms length for PRS and 20ms length for
+MG, extra MG length (e.g. 8ms) will cause the wasting of UE efficiency.
+Meanwhile, the distribution of PRS also affects to UE efficiency. For
+example, 20ms MG is needed even the duration of PRS symbol only 2ms but
+the buffer window of PRS is 20ms because of the distributed PRS. So,
+on-demand MG with concentrated PRS is beneficial for reducing UE
+efficiency and the evaluation results are listed in case U1.</p>
+<p>Furthermore, the UE efficiency only is affected by the PRS that UE
+needs to measure if positioning BWP is introduced and the UE efficiency
+will be improved. It can be represented as below equation (4) and the
+evaluation results are listed in case U2.</p>
+<p><span class="math inline">\(UE\ efficiency = \frac{the\ duration\ K\
+ms\ of\ DL\ PRS\ symbols}{P\ ms\ window\ of\ unit\ time} \times
+100\%\)</span> (4)</p>
+<p>Table C.3.2.2.2-15 UE efficiency analysis for periodic MG and PRS VS
+on demand MG with concentrated PRS [5]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 23%" />
+<col style="width: 24%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="4"><p>[Case U1], [IIoT/ Commercial], [FR2], [Periodic MG
+and PRS VS On demand MG with concentrated PRS]</p>
+<p>Source [UE, NW] / Destination [UE, NW]</p>
+<p>Positioning technique [DL-TDOA,AoD], type [DL], mode [UE-A],</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Option</td>
+<td colspan="2">Periodic MG and PRS</td>
+<td>On-demand MG with concentrated PRS</td>
+</tr>
+<tr>
+<td>Configuration</td>
+<td><p>PRS Periodicity: 10ms</p>
+<p>MG periodicity: 20ms</p>
+<p>MGL:20ms</p></td>
+<td><p>PRS Periodicity :160ms</p>
+<p>MG periodicity: 160ms</p>
+<p>MGL:20ms</p></td>
+<td><p>Period 10ms, repetition :16</p>
+<p>MGL for minimum TRP: 4ms</p>
+<p>The num of MG is 0-16</p></td>
+</tr>
+<tr>
+<td>PHY Latency (minimum)</td>
+<td colspan="2"><span class="math display">\[{Latency}_{\min} =
+62ms\]</span></td>
+<td><p><span class="math inline">\({Latency}_{\min} = 46\)</span>ms</p>
+<p>Where MGL and process time for minimum TRP (such as 4ms).</p></td>
+</tr>
+<tr>
+<td>PHY Latency (maximum)</td>
+<td><span class="math display">\[{Latency}_{\max} = 64ms\]</span></td>
+<td><span class="math display">\[{Latency}_{\max} = 204ms\]</span></td>
+<td><span class="math display">\[{Latency}_{\max} = 64ms\]</span></td>
+</tr>
+<tr>
+<td>UE efficiency</td>
+<td><p><span class="math display">\[\frac{MGL}{MG\
+periodicity}\]</span></p>
+<p>=100%</p></td>
+<td>12.5%</td>
+<td><p><span class="math display">\[\frac{\sum_{i =
+0}^{15}{{Boolean(Y}_{i} &gt; 0) \times}MGL}{160}\]</span></p>
+<p>=0~16<span class="math inline">\(\times 4\)</span>/160</p>
+<p>=0%~40%</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.3.2.2.2-16 UE efficiency analysis for periodic MG and PRS VS
+positioning BWP [5]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 18%" />
+<col style="width: 17%" />
+<col style="width: 25%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="5"><p>[Case U2], [IIoT/ Commercial], [FR2], [Periodic MG
+and PRS VS Positioning BWP]</p>
+<p>Source [UE, NW] / Destination [UE, NW]</p>
+<p>Positioning technique [DL-TDOA,AoD], type [DL], mode [UE-A],</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Option</td>
+<td colspan="2">Periodic PRS</td>
+<td colspan="2">Positioning BWP Without MG</td>
+</tr>
+<tr>
+<td>Configuration</td>
+<td><p>PRS Periodicity: 10ms</p>
+<p>MG periodicity: 20ms</p>
+<p>MGL:20ms</p></td>
+<td><p>PRS Periodicity:160ms</p>
+<p>MG periodicity: 160ms</p>
+<p>MGL:20ms</p></td>
+<td><p>PRS Periodicity: 10ms</p>
+<p>The duration k ms of PRS for minimum TRP: 3ms</p></td>
+<td><p>PRS Periodicity: 160ms</p>
+<p>The duration k ms of PRS for minimum TRP: 3ms</p></td>
+</tr>
+<tr>
+<td>PHY Latency (minimum)</td>
+<td colspan="2"><span class="math display">\[{Latency}_{\min} =
+62ms\]</span></td>
+<td colspan="2"><p><span class="math display">\[{Latency}_{\min} =
+25.5ms\]</span></p>
+<p>Where DL measurement &amp;process delay equals k ms (such as
+3ms).</p></td>
+</tr>
+<tr>
+<td>PHY Latency (maximum)</td>
+<td><span class="math display">\[{Latency}_{\max} = 64ms\]</span></td>
+<td><span class="math display">\[{Latency}_{\max} = 204ms\]</span></td>
+<td><p><span class="math display">\[{Latency}_{max =}32.5ms\]</span></p>
+<p>Where DL measurement &amp;process delay equals periodicity
+10ms</p></td>
+<td><p><span class="math display">\[{Latency}_{max
+=}182.5ms\]</span></p>
+<p>Where DL measurement &amp;process delay equals periodicity
+160ms</p></td>
+</tr>
+<tr>
+<td>UE efficiency</td>
+<td><p><span class="math display">\[\frac{MGL}{MG\
+periodicity}\]</span></p>
+<p>=100%</p></td>
+<td>12.5%</td>
+<td><p><span class="math display">\[\frac{K\ ms\ of\ DL\ PRS\
+symbols}{P\ ms\ window\ of\ periodicity\ }\]</span></p>
+<p>=3/10=30%</p></td>
+<td><p><span class="math display">\[\frac{K\ ms\ of\ DL\ PRS\
+symbols}{P\ ms\ window\ of\ periodicity\ }\]</span></p>
+<p>=3/160=1.88%</p></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

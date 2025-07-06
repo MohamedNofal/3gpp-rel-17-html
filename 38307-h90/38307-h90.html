@@ -1,0 +1,4937 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38307-h90</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-symbols-and-abbreviations"
+id="toc-definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#general" id="toc-general">4 General</a></li>
+<li><a href="#release-independent-features-for-nr-frequency-range-1"
+id="toc-release-independent-features-for-nr-frequency-range-1">5 Release
+independent features for NR frequency range 1</a>
+<ul>
+<li><a
+href="#additional-nr-operating-bands-and-ue-power-classes-for-nr-frequency-range-1"
+id="toc-additional-nr-operating-bands-and-ue-power-classes-for-nr-frequency-range-1">5.1
+Additional NR operating bands and UE power classes for NR frequency
+range 1</a></li>
+<li><a href="#additional-nr-ca-configurations-for-nr-frequency-range-1"
+id="toc-additional-nr-ca-configurations-for-nr-frequency-range-1">5.2
+Additional NR CA configurations for NR frequency range 1</a>
+<ul>
+<li><a href="#intra-band-ca" id="toc-intra-band-ca">5.2.1 Intra-band
+CA</a></li>
+<li><a href="#inter-band-ca" id="toc-inter-band-ca">5.2.2 Inter-band
+CA</a></li>
+</ul></li>
+<li><a href="#additional-nr-sul-configurations-for-nr-frequency-range-1"
+id="toc-additional-nr-sul-configurations-for-nr-frequency-range-1">5.3
+Additional NR SUL configurations for NR frequency range 1</a></li>
+<li><a
+href="#other-release-independent-features-for-nr-frequency-range-1"
+id="toc-other-release-independent-features-for-nr-frequency-range-1">5.4
+Other release independent features for NR frequency range 1</a></li>
+<li><a
+href="#additional-inter-band-nr-dc-configurations-for-nr-frequency-range-1"
+id="toc-additional-inter-band-nr-dc-configurations-for-nr-frequency-range-1">5.5
+Additional Inter-band NR-DC configurations for NR frequency range
+1</a></li>
+<li><a href="#void" id="toc-void">5.6 Void</a></li>
+<li><a
+href="#additional-inter-band-en-dc-or-nr-ca-configurations-involving-shared-spectrum-access"
+id="toc-additional-inter-band-en-dc-or-nr-ca-configurations-involving-shared-spectrum-access">5.7
+Additional Inter-band EN-DC or NR CA configurations involving shared
+spectrum access</a></li>
+<li><a href="#additional-v2x-configurations-for-nr-frequency-range-1"
+id="toc-additional-v2x-configurations-for-nr-frequency-range-1">5.8
+Additional V2X configurations for NR frequency range 1</a></li>
+</ul></li>
+<li><a href="#release-independent-features-for-nr-frequency-range-2"
+id="toc-release-independent-features-for-nr-frequency-range-2">6 Release
+independent features for NR frequency range 2</a>
+<ul>
+<li><a
+href="#additional-nr-operating-bands-and-ue-power-classes-for-nr-frequency-range-2"
+id="toc-additional-nr-operating-bands-and-ue-power-classes-for-nr-frequency-range-2">6.1
+Additional NR operating bands and UE power classes for NR frequency
+range 2</a></li>
+<li><a href="#additional-nr-ca-configurations-for-nr-frequency-range-2"
+id="toc-additional-nr-ca-configurations-for-nr-frequency-range-2">6.2
+Additional NR CA configurations for NR frequency range 2</a>
+<ul>
+<li><a href="#intra-band-ca-1" id="toc-intra-band-ca-1">6.2.1 Intra-band
+CA</a></li>
+</ul></li>
+</ul></li>
+<li><a
+href="#release-independent-features-for-nr-interworking-between-nr-frequency-range-1-and-nr-frequency-range-2"
+id="toc-release-independent-features-for-nr-interworking-between-nr-frequency-range-1-and-nr-frequency-range-2">7
+Release independent features for NR interworking between NR frequency
+range 1 and NR frequency range 2</a>
+<ul>
+<li><a
+href="#additional-nr-inter-band-ca-configurations-between-frequency-range-1-and-frequency-range-2"
+id="toc-additional-nr-inter-band-ca-configurations-between-frequency-range-1-and-frequency-range-2">7.1
+Additional NR inter-band CA configurations between frequency range 1 and
+frequency range 2</a></li>
+<li><a
+href="#additional-inter-band-nr-dc-configurations-between-frequency-range-1-and-frequency-range-2"
+id="toc-additional-inter-band-nr-dc-configurations-between-frequency-range-1-and-frequency-range-2">7.2
+Additional Inter-band NR-DC configurations between frequency range 1 and
+frequency range 2</a></li>
+</ul></li>
+<li><a
+href="#release-independent-features-for-nr-interworking-between-nr-and-e-utra"
+id="toc-release-independent-features-for-nr-interworking-between-nr-and-e-utra">8
+Release independent features for NR interworking between NR and
+E-UTRA</a>
+<ul>
+<li><a href="#additional-en-dc-configurations"
+id="toc-additional-en-dc-configurations">8.1 Additional EN-DC
+configurations</a>
+<ul>
+<li><a href="#intra-band-en-dc" id="toc-intra-band-en-dc">8.1.1
+Intra-band EN-DC</a></li>
+<li><a href="#inter-band-en-dc" id="toc-inter-band-en-dc">8.1.2
+Inter-band EN-DC</a>
+<ul>
+<li><a href="#inter-band-en-dc-within-frequency-range-1"
+id="toc-inter-band-en-dc-within-frequency-range-1">8.1.2.1 Inter-band
+EN-DC within frequency range 1</a></li>
+<li><a href="#inter-band-en-dc-including-frequency-range-2"
+id="toc-inter-band-en-dc-including-frequency-range-2">8.1.2.2 Inter-band
+EN-DC including frequency range 2</a></li>
+<li><a
+href="#inter-band-en-dc-including-frequency-range-1-and-frequency-range-2"
+id="toc-inter-band-en-dc-including-frequency-range-1-and-frequency-range-2">8.1.2.3
+Inter-band EN-DC including frequency range 1 and frequency range
+2</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#additional-ne-dc-configurations"
+id="toc-additional-ne-dc-configurations">8.2 Additional NE-DC
+configurations</a>
+<ul>
+<li><a href="#interband-ne-dc" id="toc-interband-ne-dc">8.2.1 Interband
+NE-DC</a>
+<ul>
+<li><a href="#interband-ne-dc-within-frequency-range-1"
+id="toc-interband-ne-dc-within-frequency-range-1">8.2.1.1 Interband
+NE-DC within frequency range 1</a></li>
+<li><a href="#interband-en-dc-including-frequency-range-2"
+id="toc-interband-en-dc-including-frequency-range-2">8.2.1.2 Interband
+EN-DC including frequency range 2</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#b.1-purpose-of-annex" id="toc-b.1-purpose-of-annex">B.1
+Purpose of annex</a></li>
+<li><a href="#b.2-common-rrm-requirements"
+id="toc-b.2-common-rrm-requirements">B.2 Common RRM
+requirements</a></li>
+<li><a href="#b.3-common-ue-performance-requirements"
+id="toc-b.3-common-ue-performance-requirements">B.3 Common UE
+performance requirements</a>
+<ul>
+<li><a
+href="#b.3.1-common-ue-performance-requirements-for-different-ca-configurations-and-combination-sets"
+id="toc-b.3.1-common-ue-performance-requirements-for-different-ca-configurations-and-combination-sets">B.3.1
+Common UE performance requirements for different CA configurations and
+combination sets</a></li>
+<li><a
+href="#b.3.2-common-ue-performance-requirements-for-interworking-between-nr-and-e-utra"
+id="toc-b.3.2-common-ue-performance-requirements-for-interworking-between-nr-and-e-utra">B.3.2
+Common UE performance requirements for interworking between NR and
+E-UTRA</a></li>
+<li><a
+href="#b.3.3-common-pdsch-demodulation-and-csi-requirements-with-inter-cell-interference-and-intra-cell-inter-user-interference"
+id="toc-b.3.3-common-pdsch-demodulation-and-csi-requirements-with-inter-cell-interference-and-intra-cell-inter-user-interference">B.3.3
+Common PDSCH demodulation and CSI requirements with inter cell
+interference and intra cell inter user interference</a></li>
+</ul></li>
+<li><a href="#b.4-common-ue-rf-requirements"
+id="toc-b.4-common-ue-rf-requirements">B.4 Common UE RF requirements</a>
+<ul>
+<li><a
+href="#b.4.1-common-ue-rf-requirements-for-a-release-independent-band"
+id="toc-b.4.1-common-ue-rf-requirements-for-a-release-independent-band">B.4.1
+Common UE RF requirements for a release independent band</a></li>
+<li><a
+href="#b.4.2-common-ue-rf-requirements-for-ca-configurations-within-nr-frequency-range-1-or-nr-frequency-range-2"
+id="toc-b.4.2-common-ue-rf-requirements-for-ca-configurations-within-nr-frequency-range-1-or-nr-frequency-range-2">B.4.2
+Common UE RF requirements for CA configurations within NR frequency
+range 1 or NR frequency range 2</a></li>
+<li><a href="#b.4.3-common-ue-rf-requirements-for-sul"
+id="toc-b.4.3-common-ue-rf-requirements-for-sul">B.4.3 Common UE RF
+requirements for SUL</a></li>
+<li><a
+href="#b.4.4-common-ue-rf-requirements-for-interband-ca-configurations-between-nr-frequency-range-1-and-nr-frequency-range-2"
+id="toc-b.4.4-common-ue-rf-requirements-for-interband-ca-configurations-between-nr-frequency-range-1-and-nr-frequency-range-2">B.4.4
+Common UE RF requirements for interband CA configurations between NR
+frequency range 1 and NR frequency range 2</a></li>
+<li><a
+href="#b.4.5-common-ue-rf-requirements-for-inter-band-nr-dc-configurations-between-frequency-range-1-and-frequency-range-2"
+id="toc-b.4.5-common-ue-rf-requirements-for-inter-band-nr-dc-configurations-between-frequency-range-1-and-frequency-range-2">B.4.5
+Common UE RF requirements for Inter-band NR-DC configurations between
+frequency range 1 and frequency range 2</a></li>
+<li><a
+href="#b.4.6-common-ue-rf-requirements-for-nr-interworking-between-nr-and-e-utra"
+id="toc-b.4.6-common-ue-rf-requirements-for-nr-interworking-between-nr-and-e-utra">B.4.6
+Common UE RF requirements for NR interworking between NR and
+E-UTRA</a></li>
+<li><a
+href="#b.4.7-common-ue-rf-requirements-for-ul-7.5khz-shift-for-tdd-band-n40"
+id="toc-b.4.7-common-ue-rf-requirements-for-ul-7.5khz-shift-for-tdd-band-n40">B.4.7
+Common UE RF requirements for UL 7.5KHz shift for TDD band n40</a></li>
+<li><a href="#b.4.8-common-ue-rf-requirements-shared-spectrum-access"
+id="toc-b.4.8-common-ue-rf-requirements-shared-spectrum-access">B.4.8
+Common UE RF requirements shared spectrum access</a></li>
+<li><a
+href="#b.4.9-common-ue-rf-requirements-for-intra-band-and-inter-band-nr-ca-configurations-involving-shared-spectrum-access"
+id="toc-b.4.9-common-ue-rf-requirements-for-intra-band-and-inter-band-nr-ca-configurations-involving-shared-spectrum-access">B.4.9
+Common UE RF requirements for Intra-band and Inter-band NR CA
+configurations involving shared spectrum access</a></li>
+<li><a href="#b.4.10-common-ue-rf-requirements-for-4rx"
+id="toc-b.4.10-common-ue-rf-requirements-for-4rx">B.4.10 Common UE RF
+requirements for 4Rx</a></li>
+<li><a
+href="#b.4.11-common-ue-rf-requirements-for-transparent-tx-diversity"
+id="toc-b.4.11-common-ue-rf-requirements-for-transparent-tx-diversity">B.4.11
+Common UE RF requirements for transparent Tx diversity</a></li>
+<li><a href="#b.4.12-common-ue-rf-requirements-for-nr-v2x"
+id="toc-b.4.12-common-ue-rf-requirements-for-nr-v2x">B.4.12 Common UE RF
+requirements for NR V2X</a></li>
+<li><a href="#b.4.13-common-ue-rf-requirements-for-ul-mimo-bands-in-fr1"
+id="toc-b.4.13-common-ue-rf-requirements-for-ul-mimo-bands-in-fr1">B.4.13
+Common UE RF requirements for UL MIMO bands in FR1</a></li>
+<li><a href="#c.1-common-rrm-requirements-for-high-speed-train-scenario"
+id="toc-c.1-common-rrm-requirements-for-high-speed-train-scenario">C.1
+Common RRM requirements for high speed train scenario</a></li>
+<li><a
+href="#c.2-common-ue-demodulation-requirements-for-high-speed-train-scenario"
+id="toc-c.2-common-ue-demodulation-requirements-for-high-speed-train-scenario">C.2
+Common UE demodulation requirements for high speed train
+scenario</a></li>
+<li><a
+href="#c.3-common-rrm-requirements-for-fr1-high-speed-train-scenario-enhancement"
+id="toc-c.3-common-rrm-requirements-for-fr1-high-speed-train-scenario-enhancement">C.3
+Common RRM requirements for FR1 high speed train scenario
+enhancement</a></li>
+<li><a
+href="#c.4-common-ue-demodulation-requirements-for-fr1-high-speed-train-scenario-enhancement"
+id="toc-c.4-common-ue-demodulation-requirements-for-fr1-high-speed-train-scenario-enhancement">C.4
+Common UE demodulation requirements for FR1 high speed train scenario
+enhancement</a></li>
+</ul></li>
+<li><a
+href="#d.1-common-ue-pmi-reporting-requirements-for-16tx-and-32tx-typei-singlepanel-codebook"
+id="toc-d.1-common-ue-pmi-reporting-requirements-for-16tx-and-32tx-typei-singlepanel-codebook">D.1
+Common UE PMI reporting requirements for 16TX and 32TX TypeI-SinglePanel
+Codebook</a></li>
+<li><a
+href="#d.2-common-ue-pmi-reporting-requirements-for-16tx-typeii-codebook"
+id="toc-d.2-common-ue-pmi-reporting-requirements-for-16tx-typeii-codebook">D.2
+Common UE PMI reporting requirements for 16TX TypeII Codebook</a></li>
+<li><a
+href="#e.1-common-pdsch-demodulation-requirements-with-lte-crs-rate-matching"
+id="toc-e.1-common-pdsch-demodulation-requirements-with-lte-crs-rate-matching">E.1
+Common PDSCH demodulation requirements with LTE CRS rate
+matching</a></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TS 38.307 V17.9.0 (2023-03)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Specification</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NR;</p>
+<p>Requirements on User Equipments (UEs)</p>
+<p>supporting a release-independent frequency band</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.jpeg"
+style="width:1.35417in;height:0.93056in" /></td>
+<td style="text-align: right;"><img src="media/image2.png"
+style="width:1.78472in;height:1.06944in" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2023, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">5</a></p>
+<p>1 Scope <a href="#scope">7</a></p>
+<p>2 References <a href="#references">7</a></p>
+<p>3 Definitions, symbols and abbreviations <a
+href="#definitions-symbols-and-abbreviations">7</a></p>
+<p>3.1 Definitions <a href="#definitions">7</a></p>
+<p>3.2 Symbols <a href="#symbols">8</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">8</a></p>
+<p>4 General <a href="#general">8</a></p>
+<p>5 Release independent features for NR frequency range 1 <a
+href="#release-independent-features-for-nr-frequency-range-1">9</a></p>
+<p>5.1 Additional NR operating bands and UE power classes for NR
+frequency range 1 <a
+href="#additional-nr-operating-bands-and-ue-power-classes-for-nr-frequency-range-1">9</a></p>
+<p>5.2 Additional NR CA configurations for NR frequency range 1 <a
+href="#additional-nr-ca-configurations-for-nr-frequency-range-1">9</a></p>
+<p>5.2.1 Intra-band CA <a href="#intra-band-ca">9</a></p>
+<p>5.2.2 Inter-band CA <a href="#inter-band-ca">10</a></p>
+<p>5.3 Additional NR SUL configurations for NR frequency range 1 <a
+href="#additional-nr-sul-configurations-for-nr-frequency-range-1">11</a></p>
+<p>5.4 Other release independent features for NR frequency range 1 <a
+href="#other-release-independent-features-for-nr-frequency-range-1">11</a></p>
+<p>5.5 Additional Inter-band NR-DC configurations for NR frequency range
+1 <a
+href="#additional-inter-band-nr-dc-configurations-for-nr-frequency-range-1">12</a></p>
+<p>5.6 Void <a href="#void">13</a></p>
+<p>5.7 Additional Inter-band EN-DC or NR CA configurations involving
+shared spectrum access <a
+href="#additional-inter-band-en-dc-or-nr-ca-configurations-involving-shared-spectrum-access">13</a></p>
+<p>5.8 Additional V2X configurations for NR frequency range 1 <a
+href="#additional-v2x-configurations-for-nr-frequency-range-1">14</a></p>
+<p>6 Release independent features for NR frequency range 2 <a
+href="#release-independent-features-for-nr-frequency-range-2">14</a></p>
+<p>6.1 Additional NR operating bands and UE power classes for NR
+frequency range 2 <a
+href="#additional-nr-operating-bands-and-ue-power-classes-for-nr-frequency-range-2">14</a></p>
+<p>6.2 Additional NR CA configurations for NR frequency range 2 <a
+href="#additional-nr-ca-configurations-for-nr-frequency-range-2">15</a></p>
+<p>6.2.1 Intra-band CA <a href="#intra-band-ca-1">15</a></p>
+<p>7 Release independent features for NR interworking between NR
+frequency range 1 and NR frequency range 2 <a
+href="#release-independent-features-for-nr-interworking-between-nr-frequency-range-1-and-nr-frequency-range-2">16</a></p>
+<p>7.1 Additional NR inter-band CA configurations between frequency
+range 1 and frequency range 2 <a
+href="#additional-nr-inter-band-ca-configurations-between-frequency-range-1-and-frequency-range-2">16</a></p>
+<p>7.2 Additional Inter-band NR-DC configurations between frequency
+range 1 and frequency range 2 <a
+href="#additional-inter-band-nr-dc-configurations-between-frequency-range-1-and-frequency-range-2">17</a></p>
+<p>8 Release independent features for NR interworking between NR and
+E-UTRA <a
+href="#release-independent-features-for-nr-interworking-between-nr-and-e-utra">17</a></p>
+<p>8.1 Additional EN-DC configurations <a
+href="#additional-en-dc-configurations">17</a></p>
+<p>8.1.1 Intra-band EN-DC <a href="#intra-band-en-dc">17</a></p>
+<p>8.1.2 Inter-band EN-DC <a href="#inter-band-en-dc">18</a></p>
+<p>8.1.2.1 Inter-band EN-DC within frequency range 1 <a
+href="#inter-band-en-dc-within-frequency-range-1">18</a></p>
+<p>8.1.2.2 Inter-band EN-DC including frequency range 2 <a
+href="#inter-band-en-dc-including-frequency-range-2">19</a></p>
+<p>8.1.2.3 Inter-band EN-DC including frequency range 1 and frequency
+range 2 <a
+href="#inter-band-en-dc-including-frequency-range-1-and-frequency-range-2">19</a></p>
+<p>8.2 Additional NE-DC configurations <a
+href="#additional-ne-dc-configurations">20</a></p>
+<p>8.2.1 Interband NE-DC <a href="#interband-ne-dc">20</a></p>
+<p>8.2.1.1 Interband NE-DC within frequency range 1 <a
+href="#interband-ne-dc-within-frequency-range-1">20</a></p>
+<p>8.2.1.2 Interband EN-DC including frequency range 2 <a
+href="#interband-en-dc-including-frequency-range-2">20</a></p>
+<p>Annex A : Frequency arrangement for overlapping operating bands <a
+href="#annex-a-frequency-arrangement-for-overlapping-operating-bands">22</a></p>
+<p>Annex B (normative): Common Requirements for bands, CA, SUL or DC <a
+href="#annex-b-normative-common-requirements-for-bands-ca-sul-or-dc">22</a></p>
+<p>B.1 Purpose of annex <a href="#b.1-purpose-of-annex">22</a></p>
+<p>B.2 Common RRM requirements <a
+href="#b.2-common-rrm-requirements">22</a></p>
+<p>B.3 Common UE performance requirements <a
+href="#b.3-common-ue-performance-requirements">23</a></p>
+<p>B.3.1 Common UE performance requirements for different CA
+configurations and combination sets <a
+href="#b.3.1-common-ue-performance-requirements-for-different-ca-configurations-and-combination-sets">23</a></p>
+<p>B.3.2 Common UE performance requirements for interworking between NR
+and E-UTRA <a
+href="#b.3.2-common-ue-performance-requirements-for-interworking-between-nr-and-e-utra">23</a></p>
+<p>B.3.3 Common PDSCH demodulation and CSI requirements with inter cell
+interference and intra cell inter user interference <a
+href="#b.3.3-common-pdsch-demodulation-and-csi-requirements-with-inter-cell-interference-and-intra-cell-inter-user-interference">23</a></p>
+<p>B.4 Common UE RF requirements <a
+href="#b.4-common-ue-rf-requirements">24</a></p>
+<p>B.4.1 Common UE RF requirements for a release independent band <a
+href="#b.4.1-common-ue-rf-requirements-for-a-release-independent-band">24</a></p>
+<p>B.4.2 Common UE RF requirements for CA configurations within NR
+frequency range 1 or NR frequency range 2 <a
+href="#b.4.2-common-ue-rf-requirements-for-ca-configurations-within-nr-frequency-range-1-or-nr-frequency-range-2">25</a></p>
+<p>B.4.3 Common UE RF requirements for SUL <a
+href="#b.4.3-common-ue-rf-requirements-for-sul">25</a></p>
+<p>B.4.4 Common UE RF requirements for interband CA configurations
+between NR frequency range 1 and NR frequency range 2 <a
+href="#b.4.4-common-ue-rf-requirements-for-interband-ca-configurations-between-nr-frequency-range-1-and-nr-frequency-range-2">26</a></p>
+<p>B.4.5 Common UE RF requirements for Inter-band NR-DC configurations
+between frequency range 1 and frequency range 2 <a
+href="#b.4.5-common-ue-rf-requirements-for-inter-band-nr-dc-configurations-between-frequency-range-1-and-frequency-range-2">26</a></p>
+<p>B.4.6 Common UE RF requirements for NR interworking between NR and
+E-UTRA <a
+href="#b.4.6-common-ue-rf-requirements-for-nr-interworking-between-nr-and-e-utra">27</a></p>
+<p>B.4.7 Common UE RF requirements for UL 7.5KHz shift for TDD band n40
+<a
+href="#b.4.7-common-ue-rf-requirements-for-ul-7.5khz-shift-for-tdd-band-n40">27</a></p>
+<p>B.4.8 Common UE RF requirements shared spectrum access <a
+href="#b.4.8-common-ue-rf-requirements-shared-spectrum-access">27</a></p>
+<p>B.4.9 Common UE RF requirements for Intra-band and Inter-band NR CA
+configurations involving shared spectrum access <a
+href="#b.4.9-common-ue-rf-requirements-for-intra-band-and-inter-band-nr-ca-configurations-involving-shared-spectrum-access">28</a></p>
+<p>B.4.10 Common UE RF requirements for 4Rx <a
+href="#b.4.10-common-ue-rf-requirements-for-4rx">28</a></p>
+<p>B.4.11 Common UE RF requirements for transparent Tx diversity <a
+href="#b.4.11-common-ue-rf-requirements-for-transparent-tx-diversity">29</a></p>
+<p>B.4.12 Common UE RF requirements for NR V2X <a
+href="#b.4.12-common-ue-rf-requirements-for-nr-v2x">30</a></p>
+<p>B.4.13 Common UE RF requirements for UL MIMO bands in FR1 <a
+href="#b.4.13-common-ue-rf-requirements-for-ul-mimo-bands-in-fr1">31</a></p>
+<p>Annex C (normative): Common Requirements for high speed train
+scenario <a
+href="#annex-c-normative-common-requirements-for-high-speed-train-scenario">32</a></p>
+<p>C.1 Common RRM requirements for high speed train scenario <a
+href="#c.1-common-rrm-requirements-for-high-speed-train-scenario">32</a></p>
+<p>C.2 Common UE demodulation requirements for high speed train scenario
+<a
+href="#c.2-common-ue-demodulation-requirements-for-high-speed-train-scenario">32</a></p>
+<p>C.3 Common RRM requirements for FR1 high speed train scenario
+enhancement <a
+href="#c.3-common-rrm-requirements-for-fr1-high-speed-train-scenario-enhancement">33</a></p>
+<p>C.4 Common UE demodulation requirements for FR1 high speed train
+scenario enhancement <a
+href="#c.4-common-ue-demodulation-requirements-for-fr1-high-speed-train-scenario-enhancement">33</a></p>
+<p>Annex D (normative): Common PMI reporting requirements for 16TX and
+32TX <a
+href="#annex-d-normative-common-pmi-reporting-requirements-for-16tx-and-32tx">35</a></p>
+<p>D.1 Common UE PMI reporting requirements for 16TX and 32TX
+TypeI-SinglePanel Codebook <a
+href="#d.1-common-ue-pmi-reporting-requirements-for-16tx-and-32tx-typei-singlepanel-codebook">35</a></p>
+<p>D.2 Common UE PMI reporting requirements for 16TX TypeII Codebook <a
+href="#d.2-common-ue-pmi-reporting-requirements-for-16tx-typeii-codebook">35</a></p>
+<p>Annex E (normative): Common PDSCH demodulation requirements with LTE
+CRS rate matching <a
+href="#annex-e-normative-common-pdsch-demodulation-requirements-with-lte-crs-rate-matching">35</a></p>
+<p>E.1 Common PDSCH demodulation requirements with LTE CRS rate matching
+<a
+href="#e.1-common-pdsch-demodulation-requirements-with-lte-crs-rate-matching">36</a></p>
+<p>Annex F (Informative): Change history <a
+href="#annex-f-informative-change-history">37</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Specification has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<p>In the present document, modal verbs have the following meanings:</p>
+<p><strong>shall</strong> indicates a mandatory requirement to do
+something</p>
+<p><strong>shall not</strong> indicates an interdiction (prohibition) to
+do something</p>
+<p>The constructions "shall" and "shall not" are confined to the context
+of normative provisions, and do not appear in Technical Reports.</p>
+<p>The constructions "must" and "must not" are not used as substitutes
+for "shall" and "shall not". Their use is avoided insofar as possible,
+and they are not used in a normative context except in a direct citation
+from an external, referenced, non-3GPP document, or so as to maintain
+continuity of style when extending or modifying the provisions of such a
+referenced document.</p>
+<p><strong>should</strong> indicates a recommendation to do
+something</p>
+<p><strong>should not</strong> indicates a recommendation not to do
+something</p>
+<p><strong>may</strong> indicates permission to do something</p>
+<p><strong>need not</strong> indicates permission not to do
+something</p>
+<p>The construction "may not" is ambiguous and is not used in normative
+elements. The unambiguous constructions "might not" or "shall not" are
+used instead, depending upon the meaning intended.</p>
+<p><strong>can</strong> indicates that something is possible</p>
+<p><strong>cannot</strong> indicates that something is impossible</p>
+<p>The constructions "can" and "cannot" are not substitutes for "may"
+and "need not".</p>
+<p><strong>will</strong> indicates that something is certain or expected
+to happen as a result of action taken by an agency the behaviour of
+which is outside the scope of the present document</p>
+<p><strong>will not</strong> indicates that something is certain or
+expected not to happen as a result of action taken by an agency the
+behaviour of which is outside the scope of the present document</p>
+<p><strong>might</strong> indicates a likelihood that something will
+happen as a result of action taken by some agency the behaviour of which
+is outside the scope of the present document</p>
+<p><strong>might not</strong> indicates a likelihood that something will
+not happen as a result of action taken by some agency the behaviour of
+which is outside the scope of the present document</p>
+<p>In addition:</p>
+<p><strong>is</strong> (or any other verb in the indicative mood)
+indicates a statement of fact</p>
+<p><strong>is not</strong> (or any other negative verb in the indicative
+mood) indicates a statement of fact</p>
+<p>The constructions "is" and "is not" do not indicate requirements.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document specifies requirements for Rel-16 UEs supporting
+release independent features like:</p>
+<p>- additional NR operating bands and power classes on top of Rel-16 of
+TS 38.101 [2-5] and TS 38.133 [6];</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TS 38.101-1: "NR; User Equipment (UE) radio transmission and
+reception; Part 1: Range 1 Standalone".</p>
+<p>[3] 3GPP TS 38.101-2: "NR; User Equipment (UE) radio transmission and
+reception; Part 2: Range 2 Standalone".</p>
+<p>[4] 3GPP TS 38.101-3: "NR; User Equipment (UE) radio transmission and
+reception; Part 3: Range 1 and Range 2 Interworking operation with other
+radios".</p>
+<p>[5] 3GPP TS 38.101-4: "NR; User Equipment (UE) radio transmission and
+reception; Part 4: UE performance requirements".</p>
+<p>[6] 3GPP TS 38.133: "NR; Requirements for support of radio resource
+management".</p>
+<p>[7] 3GPP TS 38.306: "NR; User Equipment (UE) radio access
+capabilities".</p>
+<h1 id="definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in TR 21.905 [1] and the following apply. A term defined in the
+present document takes precedence over the definition of the same term,
+if any, in TR 21.905 [1].</p>
+<p><strong>release independent</strong>: applicable to some frozen
+releases, starting from a certain release Rel-M</p>
+<p>NOTE 1: Normally, a feature is introduced only in the latest open
+release Rel-N and future releases are based on the previous one so that
+future releases inherit the requirements of this feature. Introducing a
+feature "in a release independent way from Rel-M onwards" (M&lt;N) means
+it was decided by TSG RAN that this feature would be also beneficial in
+previous, already frozen releases starting with Rel-M until Rel-(N-1).
+In order to avoid touching TS 38.101 [2-5] or TS 38.133 [6] of these
+frozen releases, the corresponding requirements are captured in TS
+38.307 via pointers to [2-5] or [6] of the release in which the feature
+was introduced.</p>
+<p>NOTE 2: Release independent does not mean applicable to all
+releases.</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<p>N Release in which a feature is introduced into TS 38.101 [2-5] or TS
+38.133 [6]</p>
+<p>M Release from which onwards (including release M) a feature is
+release independent</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+TR 21.905 [1] and the following apply. An abbreviation defined in the
+present document takes precedence over the definition of the same
+abbreviation, if any, in TR 21.905 [1].</p>
+<p>BW Bandwidth</p>
+<p>CA Carrier Aggregation</p>
+<p>CC Component carrier</p>
+<p>DL Downlink</p>
+<p>EN-DC Dual connectivity between E-UTRA and NR</p>
+<p>FDD Frequency Division Duplex</p>
+<p>FR1 Frequency range 1</p>
+<p>FR2 Frequency range 2</p>
+<p>NR New radio</p>
+<p>REL Release</p>
+<p>SDL Supplementary downlink</p>
+<p>SUL Supplementary uplink</p>
+<p>TDD Time Division Duplex</p>
+<p>UE User Equipment</p>
+<p>UL Uplink</p>
+<h1 id="general">4 General</h1>
+<p>TSG-RAN has agreed for certain features (see the following clauses)
+to introduce them in a "release independent way".</p>
+<p>This means for each feature:</p>
+<p>- it is "introduced" in a release N, i.e. TS 38.101 [2-5] and TS
+38.133 [6] of release N define certain UE requirements for this feature;
+the feature is indicated in the tables of the following clauses;</p>
+<p>- it is "release independent" starting from a release M (M&lt;N); M
+for the given feature is provided in the tables of the following
+clauses;</p>
+<p>- UEs supporting this feature have to fulfil additional requirements
+in release M or higher which are specified in one or more Annexes of TS
+38.307 of release N; the applicable Annexes for a given feature are
+provided in the tables of the following clauses.</p>
+<p>The applicable UE Categories are specified in TS 38.306 [7] according
+to the release to which the UE conforms.</p>
+<p>In the table of release independent features in subsequent clauses,
+"FDD, TDD" refers to CA or EN-DC configuration composed by only FDD
+bands or only TDD bands, respectively. "FDD and TDD" refers to CA or
+EN-DC configuration including both FDD and TDD bands. "SDL and FDD, SDL
+and TDD" refers to CA configuration including both SDL and FDD bands or
+both SDL and TDD bands, respectively. "TDD and SUL" refers to SUL
+configuration including both TDD and SUL bands. "FDD and TDD and SUL"
+refers to EN-DC configuration including both FDD, TDD and SUL bands.
+Unless stated otherwise, the release independent for the band
+combinations are from Rel-15. Configurations with BCSs other than BCS5
+are release independent from Rel-15, where the BCSs for configurations
+are defined in TS 38.101-1 [2] and/or TS 38.101-3 [4]. Configurations
+with BCS5 are release independent from Rel-17, and BCS5 with signalling
+is allowed for early implementation from Rel-15. Note that BCS4/BCS5 is
+not applicable to intra-band EN-DC configurations.</p>
+<p>When a new feature is introduced only the latest release of release
+independent spec needs to be updated. The latest release of release
+independent spec refers to the release which the new feature is
+introduced in. If an RF feature introduced in the same release as the
+release which the feature is independent from, (i.e. M=N), the common UE
+RF requirements table in annex B.4 is specified from release N+1,
+otherwise the common UE RF requirements table is specified from release
+N.</p>
+<h1 id="release-independent-features-for-nr-frequency-range-1">5 Release
+independent features for NR frequency range 1</h1>
+<h2
+id="additional-nr-operating-bands-and-ue-power-classes-for-nr-frequency-range-1">5.1
+Additional NR operating bands and UE power classes for NR frequency
+range 1</h2>
+<p>Requirements for a Rel-17 UE for additional NR operating bands and
+power classes compared to TS 38.101-1 of Rel-17 [2] are introduced via
+this clause.</p>
+<p>Table 5.1-1: NR operating bands</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 16%" />
+<col style="width: 11%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: center;">Duplex-mode</th>
+<th style="text-align: center;"><p>Release</p>
+<p>independent from</p></th>
+<th style="text-align: center;"><p>Requirements to be fulfilled</p>
+<p>(see TS 38.307 of the release in which the band was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operating bands</td>
+<td style="text-align: center;">FDD, TDD, SDL, SUL</td>
+<td style="text-align: center;">Rel-15</td>
+<td style="text-align: center;">Table B.4.1-1, Table B.4.3-1</td>
+</tr>
+<tr>
+<td>Shared spectrum access operating bands</td>
+<td style="text-align: center;">TDD</td>
+<td style="text-align: center;">Rel-16</td>
+<td style="text-align: center;">Table B.4.7-1</td>
+</tr>
+<tr>
+<td>UL MIMO operating bands without ULFPTx</td>
+<td style="text-align: center;">FDD, TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td style="text-align: center;">Table B.4.13-1</td>
+</tr>
+<tr>
+<td>UL MIMO operating bands with ULFPTx</td>
+<td style="text-align: center;">FDD, TDD</td>
+<td style="text-align: center;">Rel-16</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>UL MIMO operating bands with or without ULFPTx</td>
+<td style="text-align: center;">SUL</td>
+<td style="text-align: center;">Rel-17</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.1-2: NR UE power class</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 16%" />
+<col style="width: 11%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>Requirements to be fulfilled</p>
+<p>(see TS 38.307 of the release in which the power class was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power Class 1</td>
+<td>FDD</td>
+<td>Rel-15</td>
+<td>Table B.4.1-1</td>
+</tr>
+<tr>
+<td>Power Class 1.5</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.1-1, Table B.4.3-1</td>
+</tr>
+<tr>
+<td>Power Class 2</td>
+<td>FDD, TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.1-1, Table B.4.3-1</td>
+</tr>
+<tr>
+<td>Power Class 3</td>
+<td>FDD, TDD, SUL</td>
+<td>Rel-15</td>
+<td>Table B.4.1-1, Table B.4.3-1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-nr-ca-configurations-for-nr-frequency-range-1">5.2
+Additional NR CA configurations for NR frequency range 1</h2>
+<h3 id="intra-band-ca">5.2.1 Intra-band CA</h3>
+<p>Requirements for a Rel-16 UE for additional NR intraband CA
+configurations within FR1 compared to TS 38.101-1 of Rel-16 [2] are
+introduced via this clause.</p>
+<p>Requirements for a Rel-17 UE for additional NR intraband CA
+configurations with UL MIMO within FR1 compared to TS 38.101-1 of Rel-17
+[2] are introduced via this clause.</p>
+<p>Table 5.2.1-1: NR intra-band CA within FR1</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 7%" />
+<col style="width: 24%" />
+<col style="width: 10%" />
+<col style="width: 14%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>CA BW Class</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intra-band contiguous CA configurations within FR1</td>
+<td>DL</td>
+<td>B, C, D, E, G, H, I, J, K, L, M, N, O</td>
+<td>FDD,TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.2-1</td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>A,B,C</td>
+<td>FDD,TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td>Intra-band contiguous CA configurations with UL MIMO within FR1</td>
+<td>UL</td>
+<td>C</td>
+<td>FDD,TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.2-2</td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.2.1-2: NR intra-band non-contiguous CA within FR1</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 7%" />
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>number of sub-blocks</th>
+<th>maximum number of CCs within a sub-block</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intra-band non-contiguous CA configurations within FR1</td>
+<td>DL</td>
+<td>2</td>
+<td>1</td>
+<td>FDD, TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.2-1</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>3</td>
+<td>1</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>4</td>
+<td>1</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>2</td>
+<td>1</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="inter-band-ca">5.2.2 Inter-band CA</h3>
+<p>Requirements for a Rel-16 UE for additional NR inter-band CA
+configurations within FR1 compared to TS 38.101-1 of Rel-16 [2] are
+introduced via this clause.</p>
+<p>Table 5.2.2-0: NR inter-band CA UE power class within FR1</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 16%" />
+<col style="width: 11%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Feature</th>
+<th style="text-align: center;">Duplex-mode</th>
+<th style="text-align: center;"><p>Release</p>
+<p>independent from</p></th>
+<th style="text-align: center;"><p>Requirements to be fulfilled</p>
+<p>(see TS 38.307 of the release in which the power class was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Inter-band CA Power Class 2</td>
+<td style="text-align: center;">TDD, FDD and TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td style="text-align: center;">Table B.4.2-1</td>
+</tr>
+<tr>
+<td style="text-align: center;">Inter-band CA Power Class 3</td>
+<td style="text-align: center;">FDD, TDD, SDL and TDD, FDD and TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.2.2-1: NR inter-band CA within FR1</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 7%" />
+<col style="width: 12%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>Maximum number of bands</th>
+<th>number of CCs</th>
+<th>CA BW Classes</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inter-band CA configurations within NR FR1</td>
+<td>DL</td>
+<td>4</td>
+<td>5</td>
+<td>A, B, C</td>
+<td>TDD, FDD, SDL and FDD, SDL and TDD, FDD and TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.2-1</td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>2</td>
+<td>2</td>
+<td>A</td>
+<td>TDD, FDD, FDD and TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>1</td>
+<td>2</td>
+<td>B, C, 2A</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>2</td>
+<td>3</td>
+<td>A, B, C</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-nr-sul-configurations-for-nr-frequency-range-1">5.3
+Additional NR SUL configurations for NR frequency range 1</h2>
+<p>Requirements for a Rel-17 UE for additional NR SUL configurations
+within FR1 compared to TS 38.101-1 of Rel-17 [2] are introduced via this
+clause.</p>
+<p>When a UE is configured with both NR UL and NR SUL carriers in a
+serving cell with active transmission either on the UL carrier or SUL
+carrier, the release independent features in clause 5.1 are applicable
+for the UL carrier and the SUL carrier, respectively.</p>
+<p>Table 5.3-1: NR SUL within FR1</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>number of bands</th>
+<th>number of CCs</th>
+<th>CA BW Classes</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the SUL configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inter-band SUL configurations within NR FR1</td>
+<td>DL</td>
+<td>3</td>
+<td>3</td>
+<td>A, C</td>
+<td>TDD, FDD, FDD and TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.3-1</td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>2</td>
+<td>3</td>
+<td>A, C</td>
+<td>TDD and SUL, FDD and SUL</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-release-independent-features-for-nr-frequency-range-1">5.4
+Other release independent features for NR frequency range 1</h2>
+<p>This clause covers requirements for a Rel-15 UE coming from all other
+release independent features that are not covered under clause 5.1, 5.2
+and 5.3, e.g. generic baseband requirements or requirements that are not
+band/CA/SUL configuration specific.</p>
+<p>Table 5.4-1: Additional requirements of other release independent
+features</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 14%" />
+<col style="width: 24%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th style="text-align: left;"><p>Requirements to be fulfilled</p>
+<p>(see 38.307 of the REL when the feature was introduced)</p></th>
+<th>Further information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">RRM requirements for high speed train
+scenario</td>
+<td>Rel-15 (NOTE 1)</td>
+<td style="text-align: left;">Table C.1-1</td>
+<td>Rel-16 WI NR_HST introduced band independent RRM requirements: see
+Table C.1-1</td>
+</tr>
+<tr>
+<td style="text-align: left;">UE demodulation requirements for high
+speed train scenario</td>
+<td>Rel-15 (NOTE 1)</td>
+<td style="text-align: left;">Table C.2-1</td>
+<td>Rel-16 WI NR_HST introduced band independent UE demodulation
+requirements: see Table C.2-1</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF requirements for 4Rx UEs</td>
+<td>Rel-15</td>
+<td style="text-align: left;">Table B.4.10-1, Table B.4.10-2</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">[Transparent Tx diversity]</td>
+<td>[Rel-15]</td>
+<td style="text-align: left;">[Table B.4.11-1]</td>
+<td>[Rel-17 WI NR_RF_TxD introduced transparent Tx diversity
+requirements: see Table B.4.11-1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">UE demodulation and CSI requirements for
+MMSE-IRC receiver for scenarios with inter cell and intra cell inter
+user interference</td>
+<td>Rel-15</td>
+<td style="text-align: left;">Table B.3.3-1</td>
+<td>Rel-17 WI NR_demod_enh2-Perf: see Table B.3.3-1. These requirements
+are optional for Rel-15 and Rel-16 UEs and can be executed based on UE
+declaration.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RRM enhancement for FR1 high speed train
+scenario enhancement</td>
+<td>Rel-16 (NOTE 2)</td>
+<td style="text-align: left;">Table C.3-1</td>
+<td>Rel-17 WI NR_HST_FR1_enh introduced band independent RRM
+enhancement: see Table C.3-1</td>
+</tr>
+<tr>
+<td style="text-align: left;">HST-SFN CA demodulation enhancement for
+FR1 high speed train scenario enhancement</td>
+<td>Rel-16 (NOTE 3)</td>
+<td style="text-align: left;">Table C.4-1</td>
+<td>Rel-17 WI NR_HST_FR1_enh introduced band independent HST-SFN CA
+demodulation enhancement: see Table C.4-1</td>
+</tr>
+<tr>
+<td style="text-align: left;">HST-DPS CA demodulation enhancement for
+FR1 high speed train scenario enhancement</td>
+<td>Rel-15 (NOTE 4)</td>
+<td style="text-align: left;">Table C.4-1</td>
+<td>Rel-17 WI NR_HST_FR1_enh introduced band independent HST-DPS CA
+demodulation enhancement: see Table C.4-1</td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: left;"><p>NOTE 1: Rel-15 UEs
+supporting the high speed train are assumed to read the Rel-16 high
+speed train scenario information, which is broadcast to all UEs.</p>
+<p>NOTE 2: Rel-16 UEs supporting the high speed train are assumed to
+read the Rel-17 high speed train scenario information, which is
+broadcast to all UEs.</p>
+<p>NOTE 3: Rel-16 UEs supporting the high speed train are assumed to
+read the Rel-17 high speed train scenario information, which is
+broadcast to all UEs.</p>
+<p>NOTE 4: Rel-15 UEs supporting the high speed train are assumed to
+read the Rel-17 high speed train scenario information, which is
+broadcast to all UEs.</p></td>
+</tr>
+</tbody>
+</table>
+<h2
+id="additional-inter-band-nr-dc-configurations-for-nr-frequency-range-1">5.5
+Additional Inter-band NR-DC configurations for NR frequency range 1</h2>
+<p>Requirements for a Rel-16 UE for additional NR-DC configurations
+within FR1 compared to TS 38.101-1 of Rel-16 [2] are introduced via this
+clause.</p>
+<p>Table 5.5.1-1: NR-DC within FR1</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 7%" />
+<col style="width: 12%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>Maximum number of bands</th>
+<th>number of CCs</th>
+<th>CA BW Classes</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the DC configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NR-DC configurations within NR FR1</td>
+<td>DL</td>
+<td>2</td>
+<td>2</td>
+<td>A</td>
+<td>FDD</td>
+<td>Rel-16</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>5.6 UL 7.5KHz shift for TDD band n40Requirements for a Rel-17 UE for
+UL 7.5KHz shift for TDD band n40 within FR1 compared to TS 38.101-1 of
+Rel-17 [2] are introduced via this clause. For Band n40, UL shift is
+only applicable to uplink transmissions using a 15 kHz SCS.</p>
+<p>Table 5.3-2: UL 7.5KHz shift for band n40 in FR1</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 11%" />
+<col style="width: 16%" />
+<col style="width: 19%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7.5KHz UL shift for band n40 in FR1</td>
+<td>UL</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.7-1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="void">5.6 Void</h2>
+<h2
+id="additional-inter-band-en-dc-or-nr-ca-configurations-involving-shared-spectrum-access">5.7
+Additional Inter-band EN-DC or NR CA configurations involving shared
+spectrum access</h2>
+<p>Requirements for a Rel-17 UE for additional NR CA, EN-DC, and NR DC
+configurations involving shared spectrum access compared to TS 38.101-1
+of Rel-16 [2] or TS 38.101-3 of Rel-17 [4] are introduced via this
+clause.</p>
+<p>Table 5.6-1: NR-DC within FR1</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>Requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the EN-DC or NR CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intra-band and Inter-band NR CA configurations involving shared
+spectrum access</td>
+<td>FDD and TDD, TDD</td>
+<td>Rel-16</td>
+<td>Table B.3.1-1, Table B.4.2-1, Table B.4.8-1</td>
+</tr>
+<tr>
+<td>Inter-band EN-DC configurations involving shared spectrum
+access</td>
+<td>FDD and TDD, TDD</td>
+<td>Rel-16</td>
+<td>Table B.4.6-1</td>
+</tr>
+<tr>
+<td>Inter-band NR DC configurations involving shared spectrum
+access</td>
+<td>FDD and TDD, TDD</td>
+<td>Rel-16</td>
+<td>Table B.4.5-1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-v2x-configurations-for-nr-frequency-range-1">5.8
+Additional V2X configurations for NR frequency range 1</h2>
+<p>Requirements for a Rel-17 UE for additional NR SL configurations
+involving V2X con-current operation compared to TS 38.101-1 of Rel-17
+[4] are introduced via this clause.</p>
+<p>Table 5.8-1: NR V2X con-current operation within in FR1</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 14%" />
+<col style="width: 24%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th style="text-align: left;"><p>Requirements to be fulfilled</p>
+<p>(see 38.307 of the REL when the feature was introduced)</p></th>
+<th>Further information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Operating bands for V2X communication with
+con-current operation</td>
+<td>Rel-16</td>
+<td style="text-align: left;">Table B.4.12-1, Table B.4.12-2</td>
+<td>NR V2X new bands, intra-band/inter-band con-current operation, SL
+MIMO/TxD are release independent according to requirements in Table
+Table B.4.12-1, Table B.4.12-2</td>
+</tr>
+</tbody>
+</table>
+<h1 id="release-independent-features-for-nr-frequency-range-2">6 Release
+independent features for NR frequency range 2</h1>
+<h2
+id="additional-nr-operating-bands-and-ue-power-classes-for-nr-frequency-range-2">6.1
+Additional NR operating bands and UE power classes for NR frequency
+range 2</h2>
+<p>Requirements for a Rel-16 UE for additional NR operating bands and
+power classes compared to TS 38.101-2 of Rel-16 [3] are introduced via
+this clause.</p>
+<p>Table 6.1-1: NR operating bands</p>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: center;">Duplex-mode</th>
+<th style="text-align: center;"><p>Release</p>
+<p>independent from</p></th>
+<th><p>Requirements to be fulfilled</p>
+<p>(see TS 38.307 of the release in which the band was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operating bands</td>
+<td style="text-align: center;">TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td>Table B.4.1-1</td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.1-2: NR UE power class</p>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: center;">Duplex-mode</th>
+<th style="text-align: center;"><p>Release</p>
+<p>independent from</p></th>
+<th><p>Requirements to be fulfilled</p>
+<p>(see TS 38.307 of the release in which the band was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power Class 1, 2, 3, 4, 5</td>
+<td style="text-align: center;">TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td>Table B.4.1-1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-nr-ca-configurations-for-nr-frequency-range-2">6.2
+Additional NR CA configurations for NR frequency range 2</h2>
+<h3 id="intra-band-ca-1">6.2.1 Intra-band CA</h3>
+<p>Requirements for a Rel-16 UE for additional NR intra-band CA
+configurations within FR2 compared to TS 38.101-2 of Rel-16 [3] are
+introduced via this clause.</p>
+<p>Table 6.2.1-1: NR intra-band contiguous CA within FR2</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 7%" />
+<col style="width: 26%" />
+<col style="width: 10%" />
+<col style="width: 13%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>CA BW Class</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intra-band contiguous CA configurations within FR2</td>
+<td>DL</td>
+<td>B, C, D, E, F, G, H, I, J, K, L, M, O, P, Q</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.2-1</td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>B, D, E, F, G, H, I, J, K, L, M, O, P, Q</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.2.1-2: NR non-contiguous intra-band CA within FR2</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 7%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 13%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>number of sub-blocks</th>
+<th>maximum number of CCs within a sub-block</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intra-band non- contiguous CA configurations within</td>
+<td>DL</td>
+<td>2</td>
+<td>4</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.2-1</td>
+</tr>
+<tr>
+<td>FR2</td>
+<td></td>
+<td>3</td>
+<td>1</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>4</td>
+<td>1</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>5</td>
+<td>2</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>6</td>
+<td>2</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>7</td>
+<td>2</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>8</td>
+<td>1</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>9</td>
+<td>1</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>10</td>
+<td>1</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.2.1-3: NR inter-band CA within FR2</p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 8%" />
+<col style="width: 14%" />
+<col style="width: 10%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>Maximum number of bands</th>
+<th>CA BW Classes</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inter-band CA configurations within NR FR2</td>
+<td>DL</td>
+<td>2</td>
+<td>B, C, D, E, F, G, H, I, J, K, L, M, O, P, Q</td>
+<td>TDD</td>
+<td>Rel-16</td>
+<td>Table B.4.2-1</td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>1</td>
+<td>B, C, D, E, F, G, H, I, J, K, L, M, O, P, Q</td>
+<td>TDD</td>
+<td>Rel-16</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1
+id="release-independent-features-for-nr-interworking-between-nr-frequency-range-1-and-nr-frequency-range-2">7
+Release independent features for NR interworking between NR frequency
+range 1 and NR frequency range 2</h1>
+<h2
+id="additional-nr-inter-band-ca-configurations-between-frequency-range-1-and-frequency-range-2">7.1
+Additional NR inter-band CA configurations between frequency range 1 and
+frequency range 2</h2>
+<p>Requirements for a Rel-16 UE for additional NR inter-band CA
+configurations between FR1 and FR2 compared to TS 38.101-3 of Rel-16 [4]
+are introduced via this clause.</p>
+<p>Table 7.1-1: NR inter-band CA between FR1 and FR2</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>number of bands</th>
+<th>maximum number of CCs</th>
+<th>CA BW Classes</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inter-band CA configurations for NR interworking between FR1 and
+FR2</td>
+<td>DL FR1</td>
+<td>3</td>
+<td>4</td>
+<td>A, C</td>
+<td>FDD, TDD, FDD and TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.4-1</td>
+</tr>
+<tr>
+<td></td>
+<td>DL FR2</td>
+<td>1</td>
+<td>4</td>
+<td>A, D, E, F, G, H, I, J, K, L, M</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UL FR1</td>
+<td>1</td>
+<td>1</td>
+<td>A</td>
+<td>FDD, TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UL FR2</td>
+<td>1</td>
+<td>1</td>
+<td>A, D, G, H, I, J, K, L,M</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2
+id="additional-inter-band-nr-dc-configurations-between-frequency-range-1-and-frequency-range-2">7.2
+Additional Inter-band NR-DC configurations between frequency range 1 and
+frequency range 2</h2>
+<p>Requirements for a Rel-16 UE for additional Inter-band NR-DC
+configurations between FR1 and FR2 compared to TS 38.101-3 of Rel-16 [4]
+are introduced via this clause.</p>
+<p>Table 7.2-1: Inter-band NR-DC between FR1 and FR2</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 14%" />
+<col style="width: 8%" />
+<col style="width: 12%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>number of bands</th>
+<th>maximum number of CCs</th>
+<th>CA BW Classes</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inter-band DC configurations for NR interworking between FR1 and
+FR2</td>
+<td>DL FR1</td>
+<td>3</td>
+<td>4</td>
+<td>A, C</td>
+<td>FDD, TDD, FDD and TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.5-1</td>
+</tr>
+<tr>
+<td></td>
+<td>DL FR2</td>
+<td>1</td>
+<td>8</td>
+<td>A, D, E, F, G, H, I, J, K, L, M</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UL FR1</td>
+<td>1</td>
+<td>1</td>
+<td>A</td>
+<td>FDD,</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UL FR2</td>
+<td>1</td>
+<td>1</td>
+<td>A, D, G, H, I, J, K, L,M</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1
+id="release-independent-features-for-nr-interworking-between-nr-and-e-utra">8
+Release independent features for NR interworking between NR and
+E-UTRA</h1>
+<h2 id="additional-en-dc-configurations">8.1 Additional EN-DC
+configurations</h2>
+<h3 id="intra-band-en-dc">8.1.1 Intra-band EN-DC</h3>
+<p>Requirements for a Rel-16 UE for additional EN-DC intra-band
+configurations within FR1 compared to TS 38.101-3 of Rel-16 [4] are
+introduced via this clause.</p>
+<p>Table 8.1.1-0: EN-DC intra-band UE power class</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 16%" />
+<col style="width: 11%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: center;">Duplex-mode</th>
+<th style="text-align: center;"><p>Release</p>
+<p>independent from</p></th>
+<th><p>Requirements to be fulfilled</p>
+<p>(see TS 38.307 of the release in which the band was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intra-band contiguous EN-DC power class 1.5</td>
+<td style="text-align: center;">TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td>Table B.4.6-1</td>
+</tr>
+<tr>
+<td>Intra-band contiguous EN-DC power class 2</td>
+<td style="text-align: center;">TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td>Intra-band contiguous EN-DC power class 3</td>
+<td style="text-align: center;">FDD, TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Intra-band non-contiguous EN-DC power class 1.5</td>
+<td style="text-align: center;">TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Intra-band non-contiguous EN-DC power class 2</td>
+<td style="text-align: center;">TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Intra-band non-contiguous EN-DC power class 3</td>
+<td style="text-align: center;">FDD, TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.1.1-1: EN-DC contiguous intra-band configurations within
+FR1</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 7%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 14%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>maximum number of E-UTRA CCs</th>
+<th>maximum number of NR CCs</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th style="text-align: center;"><p><strong>requirements to be
+fulfilled</strong></p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intra-band contiguous EN-DC</td>
+<td>DL</td>
+<td>3</td>
+<td>2</td>
+<td>FDD, TDD</td>
+<td>Rel-15</td>
+<td>Table B.3.2-1, Table B.4.6-1</td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>1</td>
+<td>1</td>
+<td>FDD, TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.1.1-2: EN-DC non-contiguous intra-band configurations within
+FR1</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 7%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 14%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>maximum number of sub-blocks</th>
+<th>maximum number of E-UTRA CCs</th>
+<th>maximum number of NR CCs</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intra-band non-contiguous EN-DC</td>
+<td>DL</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>FDD, TDD</td>
+<td>Rel-15</td>
+<td>Table B.3.2-2, Table B.4.6-1</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td>UL</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>FDD, TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="inter-band-en-dc">8.1.2 Inter-band EN-DC</h3>
+<h4 id="inter-band-en-dc-within-frequency-range-1">8.1.2.1 Inter-band
+EN-DC within frequency range 1</h4>
+<p>Requirements for a Rel-16 UE for additional EN-DC inter-band
+configurations within FR1 compared to TS 38.101-3 of Rel-16 [4] are
+introduced via this clause.</p>
+<p>Table 8.1.2.1-0: EN-DC inter-band UE power class</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 16%" />
+<col style="width: 11%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: center;">Duplex-mode</th>
+<th style="text-align: center;"><p>Release</p>
+<p>independent from</p></th>
+<th style="text-align: center;"><p>Requirements to be fulfilled</p>
+<p>(see TS 38.307 of the release in which the band was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inter-band EN-DC Power Class 2</td>
+<td style="text-align: center;">TDD, FDD and TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td style="text-align: center;">Table B.4.6-1</td>
+</tr>
+<tr>
+<td>Inter-band EN-DC Power Class 3</td>
+<td style="text-align: center;">FDD, TDD, FDD and TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.1.2.1-1: EN-DC inter-band configurations without SUL within
+FR1</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>maximum number of E-UTRA bands</th>
+<th>maximum number of E-UTRA CCs</th>
+<th>maximum number of NR bands</th>
+<th>maximum number of NR CCs</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inter-band EN-DC</td>
+<td>DL</td>
+<td>6</td>
+<td>6</td>
+<td>2</td>
+<td>3</td>
+<td><p>FDD, TDD,</p>
+<p>FDD and TDD</p></td>
+<td>Rel-15</td>
+<td>Table B.4.6-1</td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>1</td>
+<td>2 contiguous</td>
+<td>1</td>
+<td>2 contiguous</td>
+<td>FDD, TDD, FDD and TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.1.2.1-2: EN-DC inter-band configurations with SUL within
+FR1</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>maximum number of E-UTRA bands</th>
+<th>maximum number of E-UTRA CCs</th>
+<th>maximum number of NR bands</th>
+<th>maximum number of NR CCs</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inter-band EN-DC</td>
+<td>DL</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td><p>FDD, TDD,</p>
+<p>FDD and TDD</p></td>
+<td>Rel-15</td>
+<td>Table B.4.6-1</td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td><p>2</p>
+<p>contiguous</p></td>
+<td><p>FDD, TDD,</p>
+<p>FDD and TDD and SUL</p></td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="inter-band-en-dc-including-frequency-range-2">8.1.2.2 Inter-band
+EN-DC including frequency range 2</h4>
+<p>Requirements for a Rel-16 UE for additional EN-DC inter-band
+configurations including FR2 compared to TS 38.101-3 of Rel-16 [4] are
+introduced via this clause.</p>
+<p>Table 8.1.2.2-1: EN-DC inter-band configurations including FR2</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 9%" />
+<col style="width: 12%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>number of E-UTRA bands</th>
+<th>maximum number of E-UTRA CCs</th>
+<th>number of NR bands</th>
+<th>maximum number of NR CCs</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inter-band EN-DC</td>
+<td>DL</td>
+<td>4</td>
+<td>6</td>
+<td>1</td>
+<td>10</td>
+<td>TDD, FDD and TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.6-1</td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>8</td>
+<td>TDD, FDD and TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4
+id="inter-band-en-dc-including-frequency-range-1-and-frequency-range-2">8.1.2.3
+Inter-band EN-DC including frequency range 1 and frequency range 2</h4>
+<p>Requirements for a Rel-16 UE for additional EN-DC inter-band
+configurations including FR1 and FR2 compared to TS 38.101-3 of Rel-16
+[4] are introduced via this clause.</p>
+<p>Table 8.1.2.3-1: EN-DC inter-band configurations including FR1 and
+FR2</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 8%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>maximum number of E-UTRA bands</th>
+<th>maximum number of E-UTRA CCs</th>
+<th><p>maximum number of NR</p>
+<p>bands</p></th>
+<th><p>maximum number of NR</p>
+<p>CCs</p></th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inter-band EN-DC</td>
+<td>DL FR1</td>
+<td>4</td>
+<td>6</td>
+<td>1</td>
+<td>2</td>
+<td>TDD, FDD, FDD and TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.6-1</td>
+</tr>
+<tr>
+<td></td>
+<td>DL FR2</td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>8</td>
+<td>TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UL FR1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>FDD, TDD, FDD and TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UL FR2</td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>3</td>
+<td>TDD,</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-ne-dc-configurations">8.2 Additional NE-DC
+configurations</h2>
+<h3 id="interband-ne-dc">8.2.1 Interband NE-DC</h3>
+<h4 id="interband-ne-dc-within-frequency-range-1">8.2.1.1 Interband
+NE-DC within frequency range 1</h4>
+<p>Requirements for a Rel-17 UE for additional NE-DC interband
+configurations within FR1 compared to TS 38.101-3 of Rel-17 [4] are
+introduced via this clause.</p>
+<p>Table 8.2.1.1-0: NE-DC interband UE power class</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 16%" />
+<col style="width: 11%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: center;">Duplex-mode</th>
+<th style="text-align: center;"><p>Release</p>
+<p>independent from</p></th>
+<th style="text-align: center;"><p>Requirements to be fulfilled</p>
+<p>(see TS 38.307 of the release in which the band was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interband NE-DC Power Class 3</td>
+<td style="text-align: center;">FDD, TDD, FDD and TDD</td>
+<td style="text-align: center;">Rel-15</td>
+<td style="text-align: center;">Table B.4.6-1</td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.2.1.1-1: NE-DC interband configurations without SUL within
+FR1</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>maximum number of E-UTRA bands</th>
+<th>maximum number of E-UTRA CCs</th>
+<th>maximum number of NR bands</th>
+<th>maximum number of NR CCs</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interband NE-DC</td>
+<td>DL</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>1</td>
+<td><p>FDD, TDD,</p>
+<p>FDD and TDD</p></td>
+<td>Rel-15</td>
+<td>Table B.4.6-1</td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>FDD, TDD, FDD and TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="interband-en-dc-including-frequency-range-2">8.2.1.2 Interband
+EN-DC including frequency range 2</h4>
+<p>Requirements for a Rel-17 UE for additional NE-DC interband
+configurations including FR2 compared to TS 38.101-3 of Rel-17 [4] are
+introduced via this clause.</p>
+<p>Table 8.2.1.2-1: NE-DC interband configurations including FR2</p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 7%" />
+<col style="width: 9%" />
+<col style="width: 12%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>number of E-UTRA bands</th>
+<th>maximum number of E-UTRA CCs</th>
+<th>number of NR bands</th>
+<th>maximum number of NR CCs</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interband NE-DC</td>
+<td>DL</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>8</td>
+<td>FDD and TDD</td>
+<td>Rel-15</td>
+<td>Table B.4.6-1</td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>8</td>
+<td>FDD and TDD</td>
+<td>Rel-15</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="heading"
+id="annex-a-frequency-arrangement-for-overlapping-operating-bands"><br />
+Annex A :<br />
+Frequency arrangement for overlapping operating bands</p>
+<p>The following information is provided in order to assist a UE derive
+the DL NR-ARFCN and UL NR-ARFCN in a multi-band environment, in which
+multiple overlapping operating bands may be indicated in the fields
+<em>freqBandIndicatorNR</em> and
+<em>MultiFrequencyBandListNR-SIB</em>.</p>
+<p>The overlapping bands, independent of release, which may be indicated
+in a cell are shown in Table A-1 for applicable NR operating bands. The
+DL NR-ARFCN and UL NR-ARFCN are derived according to TS 38.101-1
+Rel-16.</p>
+<p>Table A-1: Overlapping bands (multi-band environments) for each NR
+band</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 43%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th><p>NR</p>
+<p>Operating Band</p></th>
+<th><p>Overlapping NR operating</p>
+<p>bands</p></th>
+<th>Duplex Mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n2</td>
+<td>n25</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n5</td>
+<td>n18, n26</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n18</td>
+<td>n5, n26</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n12</td>
+<td>n85</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n25</td>
+<td>n2</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n26</td>
+<td>n5, n18</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n38</td>
+<td>n41, n90</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n41</td>
+<td>n38, n90</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n48</td>
+<td>n78, n77</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n78</td>
+<td>n48, n77</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n77</td>
+<td>n48, n78</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n80</td>
+<td>n86</td>
+<td>SUL</td>
+</tr>
+<tr>
+<td>n85</td>
+<td>n12</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n86</td>
+<td>n80</td>
+<td>SUL</td>
+</tr>
+<tr>
+<td>n96</td>
+<td>n102</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n102</td>
+<td>n96</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n257</td>
+<td>n258</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n257</td>
+<td>n261</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n259</td>
+<td>n260</td>
+<td>TDD</td>
+</tr>
+</tbody>
+</table>
+<p class="heading"
+id="annex-b-normative-common-requirements-for-bands-ca-sul-or-dc">Annex
+B (normative):<br />
+Common Requirements for bands, CA, SUL or DC</p>
+<h1 id="b.1-purpose-of-annex">B.1 Purpose of annex</h1>
+<p>The purpose of Annex B is to group the requirements that are common
+for several bands or CA configurations in this specification and use the
+common tables as references.</p>
+<h1 id="b.2-common-rrm-requirements">B.2 Common RRM requirements</h1>
+<h1 id="b.3-common-ue-performance-requirements">B.3 Common UE
+performance requirements</h1>
+<h2
+id="b.3.1-common-ue-performance-requirements-for-different-ca-configurations-and-combination-sets">B.3.1
+Common UE performance requirements for different CA configurations and
+combination sets</h2>
+<p>The requirements and test cases listed in Table B.3.1-1 are specified
+in Rel-16 version of TS 38.101-4 [5].</p>
+<p>Table B.3.1-1: Common UE performance requirements for different CA
+configurations and combination sets</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr>
+<th>Section / Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.2A.2.1</td>
+<td>PDSCH 2RX demodulation requirements for NR FR1 CA configurations
+<sup>(Note 1)</sup></td>
+</tr>
+<tr>
+<td>5.2A.3.1</td>
+<td>PDSCH 4RX demodulation requirements for NR FR1 CA configurations
+<sup>(Note 1)</sup></td>
+</tr>
+<tr>
+<td>7.2A.2</td>
+<td>PDSCH 2RX demodulation requirements for NR FR2 CA configurations
+<sup>(Note 1)</sup></td>
+</tr>
+<tr>
+<td>5.2A.2.2</td>
+<td>PDSCH 2RX demodulation requirements for NR FR1 intra-band contiguous
+CA with power imbalance <sup>(Note 2)</sup></td>
+</tr>
+<tr>
+<td>5.2A.3.2</td>
+<td>PDSCH 4RX demodulation requirements for NR FR1 intra-band contiguous
+CA with power imbalance <sup>(Note 2)</sup></td>
+</tr>
+<tr>
+<td>6.2A</td>
+<td>Channel Quality Indicator (CQI) reporting requirements for NR FR1 CA
+<sup>(Note 3)</sup></td>
+</tr>
+<tr>
+<td>8.2A</td>
+<td>Channel Quality Indicator (CQI) reporting requirements for NR FR2 CA
+<sup>(Note 3)</sup></td>
+</tr>
+<tr>
+<td colspan="2"><p>NOTE 1: The applicability of requirements for
+different CA configurations and bandwidth combination sets is specified
+in Section 5.1.1.5 and 7.1.1.5.</p>
+<p>NOTE 2: The applicability of PDSCH performance requirements with
+power imbalance for intra-band contiguous CA is specified in Section
+5.1.1.6.</p>
+<p>NOTE 3: The applicability of Channel Quality Indicator (CQI)
+reporting requirements for CA specified in Section 6.1.1.5 and
+8.1.1.5.</p></td>
+</tr>
+</tbody>
+</table>
+<h2
+id="b.3.2-common-ue-performance-requirements-for-interworking-between-nr-and-e-utra">B.3.2
+Common UE performance requirements for interworking between NR and
+E-UTRA</h2>
+<p>The requirements and test cases listed in Table B.3.2-1 and Table
+B.3.2-2 are specified in Rel-16 version of TS 38.101-4 [5].</p>
+<p>Table B.3.2-1: Common UE performance requirements for intra-band
+contiguous EN-DC within FR1</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr>
+<th>Section / Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9.5B.1.1</td>
+<td>PDSCH demodulation for FR1 intra-band contiguous EN-DC with power
+imbalance <sup>(Note 1)</sup></td>
+</tr>
+<tr>
+<td colspan="2">NOTE 1: The requirements applicability for UE supporting
+FR1 intra-band and inter-band EN-DC is specified in Section 9.1.1.</td>
+</tr>
+</tbody>
+</table>
+<p>Table B.3.2-2: Common UE performance requirements for intra-band
+non-contiguous EN-DC within FR1</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr>
+<th>Section / Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9.5B.1.2</td>
+<td>PDSCH demodulation for FR1 intra-band non-contiguous EN-DC with
+power imbalance <sup>(Note 1)</sup></td>
+</tr>
+<tr>
+<td colspan="2">NOTE 1: The requirements applicability for UE supporting
+FR1 intra-band and inter-band EN-DC is specified in Section 9.1.1.</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="b.3.3-common-pdsch-demodulation-and-csi-requirements-with-inter-cell-interference-and-intra-cell-inter-user-interference">B.3.3
+Common PDSCH demodulation and CSI requirements with inter cell
+interference and intra cell inter user interference</h2>
+<p>The requirements and test cases listed in Table B.3.3-1 are specified
+in Rel-17 version of TS 38.101-4 [5].</p>
+<p>Table B.3.3-1: UE PDSCH demodulation and CSI requirements with
+MMSE-IRC receiver for scenarios with inter cell interference and intra
+cell inter user interference</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Section / Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[5.2.2.1.15]</td>
+<td>PDSCH demodulation requirements with inter cell interference for 2RX
+FDD</td>
+</tr>
+<tr>
+<td>[5.2.3.1.15]</td>
+<td>PDSCH demodulation requirements with inter cell interference for 4RX
+FDD</td>
+</tr>
+<tr>
+<td>[5.2.2.2.16]</td>
+<td>PDSCH demodulation requirements with inter cell interference for 2RX
+TDD</td>
+</tr>
+<tr>
+<td>[5.2.3.2.16]</td>
+<td>PDSCH demodulation requirements with inter cell interference for 4RX
+TDD</td>
+</tr>
+<tr>
+<td>[5.2.2.1.16]</td>
+<td>PDSCH demodulation requirements with intra cell inter user
+interference for 2RX FDD</td>
+</tr>
+<tr>
+<td>[5.2.3.1.16]</td>
+<td>PDSCH demodulation requirements with intra cell inter user
+interference for 4RX FDD</td>
+</tr>
+<tr>
+<td>[5.2.2.2.17]</td>
+<td>PDSCH demodulation requirements with intra cell inter user
+interference for 2RX TDD</td>
+</tr>
+<tr>
+<td>[5.2.3.2.17]</td>
+<td>PDSCH demodulation requirements with intra cell inter user
+interference for 4RX TDD</td>
+</tr>
+<tr>
+<td>[6.2.2.1.2.3]</td>
+<td>CQI requirements with inter cell interference for 2RX FDD</td>
+</tr>
+<tr>
+<td>[6.2.3.1.2.3]</td>
+<td>CQI requirements with inter cell interference for 4RX FDD</td>
+</tr>
+<tr>
+<td>[6.2.2.2.2.2]</td>
+<td>CQI requirements with inter cell interference for 2RX TDD</td>
+</tr>
+<tr>
+<td>[6.2.3.2.2.2]</td>
+<td>CQI requirements with inter cell interference for 4RX TDD</td>
+</tr>
+</tbody>
+</table>
+<h1 id="b.4-common-ue-rf-requirements">B.4 Common UE RF
+requirements</h1>
+<h2
+id="b.4.1-common-ue-rf-requirements-for-a-release-independent-band">B.4.1
+Common UE RF requirements for a release independent band</h2>
+<p>The requirements and test cases listed in Table B.4.1-1 are specified
+in REL-17 version of TS 38.101-1 [2] or TS 38.101-2 [3].</p>
+<p>Table B.4.1-1: Common UE RF requirements for a release independent
+band</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause / Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.2</td>
+<td>Operating bands</td>
+</tr>
+<tr>
+<td>5.3</td>
+<td>UE Channel bandwidth</td>
+</tr>
+<tr>
+<td>5.4</td>
+<td>Channel arrangement</td>
+</tr>
+<tr>
+<td>6.2</td>
+<td>Transmitter power</td>
+</tr>
+<tr>
+<td>6.3</td>
+<td>Output power dynamics</td>
+</tr>
+<tr>
+<td>6.4</td>
+<td>Transmit signal quality</td>
+</tr>
+<tr>
+<td>6.5</td>
+<td>Output RF spectrum emissions</td>
+</tr>
+<tr>
+<td>6.6 of [3]</td>
+<td>Beam correspondence</td>
+</tr>
+<tr>
+<td>7.3</td>
+<td>Reference sensitivity</td>
+</tr>
+<tr>
+<td>7.4</td>
+<td>Maximum input level</td>
+</tr>
+<tr>
+<td>7.5</td>
+<td>Adjacent Channel Selectivity</td>
+</tr>
+<tr>
+<td>7.6</td>
+<td>Blocking characteristics</td>
+</tr>
+<tr>
+<td>7.7 of [2]</td>
+<td>Spurious response</td>
+</tr>
+<tr>
+<td>7.8 of [2]</td>
+<td>Intermodulation characteristics</td>
+</tr>
+<tr>
+<td>7.9</td>
+<td>Spurious emissions</td>
+</tr>
+<tr>
+<td>L.1</td>
+<td>Indication of modified MPR behavior</td>
+</tr>
+<tr>
+<td colspan="2">NOTE: A UE which supports any FR2 band introduced in
+release N, where N &gt; 15, shall meet the requirements according to the
+FR2 UE multi-band relaxation factors defined in Table 6.2.1.3-4 of the
+release N version of [3] for all FR2 bands which it supports.</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="b.4.2-common-ue-rf-requirements-for-ca-configurations-within-nr-frequency-range-1-or-nr-frequency-range-2">B.4.2
+Common UE RF requirements for CA configurations within NR frequency
+range 1 or NR frequency range 2</h2>
+<p>The requirements and test cases listed in Table B.4.2-1 are specified
+in in REL-16 version of TS 38.101-1 [2] or TS 38.101-2 [3].</p>
+<p>Table B.4.2-1: Common UE RF requirements for a release independent CA
+configurations within NR frequency range 1 or NR frequency range 2</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.2A</td>
+<td>Operating bands for CA</td>
+</tr>
+<tr>
+<td>5.3A</td>
+<td>UE channel bandwidth for CA</td>
+</tr>
+<tr>
+<td>5.4A</td>
+<td>Channel arrangement for CA</td>
+</tr>
+<tr>
+<td>6.2A</td>
+<td>Transmitter power for CA</td>
+</tr>
+<tr>
+<td>6.3A</td>
+<td>Output power dynamics for CA</td>
+</tr>
+<tr>
+<td>6.4A</td>
+<td>Transmit signal quality for CA</td>
+</tr>
+<tr>
+<td>6.5A</td>
+<td>Output RF spectrum emissions for CA</td>
+</tr>
+<tr>
+<td>6.6A of [3]</td>
+<td>Beam correspondence for CA</td>
+</tr>
+<tr>
+<td>7.3A</td>
+<td>Reference sensitivity for CA</td>
+</tr>
+<tr>
+<td>7.4A</td>
+<td>Maximum input level for CA</td>
+</tr>
+<tr>
+<td>7.5A</td>
+<td>Adjacent Channel Selectivity for CA</td>
+</tr>
+<tr>
+<td>7.6A</td>
+<td>Blocking characteristics for CA</td>
+</tr>
+<tr>
+<td>7.7A of [2]</td>
+<td>Spurious response for CA</td>
+</tr>
+<tr>
+<td>7.8A of [2]</td>
+<td>Intermodulation characteristics for CA</td>
+</tr>
+<tr>
+<td>7.9A of [2]</td>
+<td>Spurious emissions for CA</td>
+</tr>
+</tbody>
+</table>
+<p>The requirements and test cases listed in Table B.4.2-2 are specified
+in in REL-17 version of TS 38.101-1 [2].</p>
+<p>Table B.4.2-2: Common UE RF requirements for a release independent
+intra-band contiguous UL CA configurations with UL MIMO within NR
+frequency range 1</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.2H</td>
+<td>Transmitter power for CA with UL MIMO</td>
+</tr>
+<tr>
+<td>6.2H.1</td>
+<td>Transmitter power for intra-band UL contiguous CA for UL MIMO</td>
+</tr>
+<tr>
+<td>6.3H</td>
+<td>Output power dynamics for intra-band UL contiguous CA for UL
+MIMO</td>
+</tr>
+<tr>
+<td>6.4H</td>
+<td>Transmit signal quality for CA with UL MIMO</td>
+</tr>
+<tr>
+<td>6.4H.1</td>
+<td>Transmit signal quality for intra-band UL contiguous CA for UL
+MIMO</td>
+</tr>
+<tr>
+<td>6.5H</td>
+<td>Output RF spectrum emissions for CA with UL MIMO</td>
+</tr>
+<tr>
+<td>6.5H.1</td>
+<td>Output RF spectrum emissions for intra-band UL contiguous CA for UL
+MIMO</td>
+</tr>
+</tbody>
+</table>
+<h2 id="b.4.3-common-ue-rf-requirements-for-sul">B.4.3 Common UE RF
+requirements for SUL</h2>
+<p>The requirements and test cases listed in Table B.4.3-1 are specified
+in REL-17 version of TS 38.101-1 [2].</p>
+<p>Table B.4.3-1: Common UE RF requirements for a release independent
+SUL</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.2</td>
+<td>Operating bands</td>
+</tr>
+<tr>
+<td>5.2C</td>
+<td>Operating band combination for SUL</td>
+</tr>
+<tr>
+<td>5.4.2.1</td>
+<td>NR-ARFCN and channel raster (7.5kHz frequency shift for SUL)</td>
+</tr>
+<tr>
+<td>5.5C</td>
+<td>Configurations for SUL</td>
+</tr>
+<tr>
+<td>6.2C</td>
+<td>Transmitter power for SUL</td>
+</tr>
+<tr>
+<td>6.4.2.2</td>
+<td>Carrier leakage (7.5 kHz shift with the carrier frequency.)</td>
+</tr>
+<tr>
+<td>7.3.3</td>
+<td>ΔRIB,c</td>
+</tr>
+<tr>
+<td>7.3C</td>
+<td>Reference sensitivity for SUL</td>
+</tr>
+<tr>
+<td>7.6C</td>
+<td>Blocking characteristics for SUL</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="b.4.4-common-ue-rf-requirements-for-interband-ca-configurations-between-nr-frequency-range-1-and-nr-frequency-range-2">B.4.4
+Common UE RF requirements for interband CA configurations between NR
+frequency range 1 and NR frequency range 2</h2>
+<p>The requirements and test cases listed in Table B.4.4-1 are specified
+in in REL-16 version of TS 38.101-3 [4].</p>
+<p>Table B.4.4-1: Common UE RF requirements for a release independent
+interband CA configurations between NR frequency range 1 and NR
+frequency range 2</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.2A</td>
+<td>Operating bands for CA</td>
+</tr>
+<tr>
+<td>5.3A</td>
+<td>UE channel bandwidth for CA</td>
+</tr>
+<tr>
+<td>5.4A</td>
+<td>Channel arrangement for CA</td>
+</tr>
+<tr>
+<td>6.2A</td>
+<td>Transmitter power for CA</td>
+</tr>
+<tr>
+<td>6.3A</td>
+<td>Output power dynamics for CA</td>
+</tr>
+<tr>
+<td>6.4A</td>
+<td>Transmit signal quality for CA</td>
+</tr>
+<tr>
+<td>6.5A</td>
+<td>Output RF spectrum emissions for CA</td>
+</tr>
+<tr>
+<td>7.3A</td>
+<td>Reference sensitivity for CA</td>
+</tr>
+<tr>
+<td>7.4A</td>
+<td>Maximum input level for CA</td>
+</tr>
+<tr>
+<td>7.5A</td>
+<td>Adjacent Channel Selectivity for CA</td>
+</tr>
+<tr>
+<td>7.6A</td>
+<td>Blocking characteristics for CA</td>
+</tr>
+<tr>
+<td>7.7A</td>
+<td>Spurious response for CA</td>
+</tr>
+<tr>
+<td>7.8A</td>
+<td>Intermodulation characteristics for CA</td>
+</tr>
+<tr>
+<td>7.9A</td>
+<td>Spurious emissions for CA</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="b.4.5-common-ue-rf-requirements-for-inter-band-nr-dc-configurations-between-frequency-range-1-and-frequency-range-2">B.4.5
+Common UE RF requirements for Inter-band NR-DC configurations between
+frequency range 1 and frequency range 2</h2>
+<p>The requirements and test cases listed in Table B.4.5-1 are specified
+in in REL-16 version of TS 38.101-3 [4].</p>
+<p>Table B.4.5-1: Common UE RF requirements for a release independent
+Inter-band NR-DC configurations between frequency range 1 and frequency
+range 2</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.2</td>
+<td>Applicability of minimum requirements</td>
+</tr>
+<tr>
+<td>5.2B</td>
+<td>Operating bands for DC</td>
+</tr>
+<tr>
+<td>6.2B.5</td>
+<td>Configured output power for NR-DC</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="b.4.6-common-ue-rf-requirements-for-nr-interworking-between-nr-and-e-utra">B.4.6
+Common UE RF requirements for NR interworking between NR and E-UTRA</h2>
+<p>The requirements and test cases listed in Table B.4.6-1 are specified
+in REL-16 version of TS 38.101-3 [4].</p>
+<p>Table B.4.6-1: Common UE RF requirements for a release independent NR
+interworking between NR and E-UTRA</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.2</td>
+<td>Applicability of minimum requirements</td>
+</tr>
+<tr>
+<td>5.2B</td>
+<td>Operating bands for DC</td>
+</tr>
+<tr>
+<td>5.3B</td>
+<td>UE channel bandwidth for DC</td>
+</tr>
+<tr>
+<td>5.4B</td>
+<td>Channel arrangement for DC</td>
+</tr>
+<tr>
+<td>6.2B</td>
+<td>Transmitter power for DC</td>
+</tr>
+<tr>
+<td>6.3B</td>
+<td>Output power dynamics for DC</td>
+</tr>
+<tr>
+<td>6.4B</td>
+<td>Transmit signal quality for DC</td>
+</tr>
+<tr>
+<td>6.5B</td>
+<td>Output RF spectrum emissions for DC</td>
+</tr>
+<tr>
+<td>6.6B</td>
+<td>Beam correspondence for DC</td>
+</tr>
+<tr>
+<td>7.3B</td>
+<td>Reference sensitivity level for DC</td>
+</tr>
+<tr>
+<td>7.4B</td>
+<td>Maximum input level for DC in FR1</td>
+</tr>
+<tr>
+<td>7.5B</td>
+<td>Adjacent Channel Selectivity for DC in FR1</td>
+</tr>
+<tr>
+<td>7.6B</td>
+<td>Blocking characteristics for DC in FR1</td>
+</tr>
+<tr>
+<td>7.7B</td>
+<td>Spurious response for DC in FR1</td>
+</tr>
+<tr>
+<td>7.8B</td>
+<td>Intermodulation characteristics for DC in FR1</td>
+</tr>
+<tr>
+<td>7.9A</td>
+<td>Spurious emissions for CA in FR1</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="b.4.7-common-ue-rf-requirements-for-ul-7.5khz-shift-for-tdd-band-n40">B.4.7
+Common UE RF requirements for UL 7.5KHz shift for TDD band n40</h2>
+<p>The requirements and test cases listed in Table B.4.7-1 are specified
+in REL-17 version of TS 38.101-1 [2]. For Band n40, UL shift is only
+applicable to uplink transmissions using a 15 kHz SCS.</p>
+<p>Table B.4.7-1: Common UE RF requirements for UL 7.5KHz shift for TDD
+Band n40</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.4.2.1</td>
+<td>NR-ARFCN and channel raster (7.5kHz frequency shift for TDD band
+n40)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="b.4.8-common-ue-rf-requirements-shared-spectrum-access">B.4.8
+Common UE RF requirements shared spectrum access</h2>
+<p>The requirements and test cases listed in Table B.4.8-1 are specified
+in REL-17 version of TS 38.101-1 [2].</p>
+<p>Table B.4.8-1: Common UE RF requirements for shared spectrum
+access</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.2A</td>
+<td>Operating bands for CA</td>
+</tr>
+<tr>
+<td>5.3A</td>
+<td>UE channel bandwidth for CA</td>
+</tr>
+<tr>
+<td>5.4A</td>
+<td>Channel arrangement for CA</td>
+</tr>
+<tr>
+<td>6.2F</td>
+<td>Transmitter power for shared spectrum channel access</td>
+</tr>
+<tr>
+<td>6.3F</td>
+<td>Output power dynamics for shared spectrum channel access</td>
+</tr>
+<tr>
+<td>6.4F</td>
+<td>Transmit signal quality for shared spectrum channel access</td>
+</tr>
+<tr>
+<td>6.5F</td>
+<td>Output RF spectrum emissions</td>
+</tr>
+<tr>
+<td>7.3F</td>
+<td>Reference sensitivity for shared spectrum channel access</td>
+</tr>
+<tr>
+<td>7.4</td>
+<td>Maximum input level</td>
+</tr>
+<tr>
+<td>7.5F</td>
+<td>Adjacent channel selectivity</td>
+</tr>
+<tr>
+<td>7.6F</td>
+<td>Blocking characteristics</td>
+</tr>
+<tr>
+<td>7.7F</td>
+<td>Spurious response for shared spectrum channel access</td>
+</tr>
+<tr>
+<td>7.8F</td>
+<td>Intermodulation characteristics for shared spectrum channel
+access</td>
+</tr>
+<tr>
+<td>7.9</td>
+<td>Spurious emissions</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="b.4.9-common-ue-rf-requirements-for-intra-band-and-inter-band-nr-ca-configurations-involving-shared-spectrum-access">B.4.9
+Common UE RF requirements for Intra-band and Inter-band NR CA
+configurations involving shared spectrum access</h2>
+<p>The requirements and test cases listed in Table B.4.9-1 are specified
+in REL-17 version of TS 38.101-1 [2].</p>
+<p>Table B.4.9-1: Common UE RF requirements for Intra-band and
+Inter-band NR CA configurations involving shared spectrum access</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.2F.1A.1</td>
+<td>UE maximum output power for inter-band CA</td>
+</tr>
+<tr>
+<td>6.2F.2A.1</td>
+<td>UE maximum output power reduction for inter-band CA</td>
+</tr>
+<tr>
+<td>6.2F.3A.1</td>
+<td>UE additional maximum output power reduction for inter-band CA</td>
+</tr>
+<tr>
+<td>6.3F.3A.1</td>
+<td>General ON/OFF mask for inter-band CA</td>
+</tr>
+<tr>
+<td>6.4F.2A.1</td>
+<td>Transmit modulation quality for inter-band CA</td>
+</tr>
+<tr>
+<td>7.3F.3</td>
+<td>ΔR<sub>IB,c</sub></td>
+</tr>
+<tr>
+<td>7.3F.4</td>
+<td>Intra-band contiguous shared spectrum channel access CA</td>
+</tr>
+<tr>
+<td>7.3G.5</td>
+<td>Inter-band CA with shared spectrum channel access</td>
+</tr>
+<tr>
+<td>7.5F.2</td>
+<td>Intra-band contiguous shared spectrum channel access CA</td>
+</tr>
+<tr>
+<td>7.7F.2</td>
+<td>Intra-band contiguous shared spectrum channel access CA</td>
+</tr>
+</tbody>
+</table>
+<h2 id="b.4.10-common-ue-rf-requirements-for-4rx">B.4.10 Common UE RF
+requirements for 4Rx</h2>
+<p>The requirements and test cases listed in Table B.4.10-1 are
+specified in REL-17 version of TS 38.101-1 [2].</p>
+<p>Table B.4.10-1: Common UE RF requirements for 4Rx for single band in
+FR1</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7.3</td>
+<td>Reference sensitivity</td>
+</tr>
+<tr>
+<td>7.4</td>
+<td>Maximum input level</td>
+</tr>
+<tr>
+<td>7.5</td>
+<td>Adjacent Channel Selectivity</td>
+</tr>
+<tr>
+<td>7.6</td>
+<td>Blocking characteristics</td>
+</tr>
+<tr>
+<td>7.7</td>
+<td>Spurious response</td>
+</tr>
+<tr>
+<td>7.8</td>
+<td>Intermodulation characteristics</td>
+</tr>
+<tr>
+<td>7.9</td>
+<td>Spurious emissions</td>
+</tr>
+</tbody>
+</table>
+<p>The requirements and test cases listed in Table B.4.10-2 are
+specified in REL-17 version of TS 38.101-1 [2].</p>
+<p>Table B.4.10-2: Common UE RF requirements for 4Rx for CA in FR1</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7.3A</td>
+<td>Reference sensitivity for CA</td>
+</tr>
+<tr>
+<td>7.4A</td>
+<td>Maximum input level for CA</td>
+</tr>
+<tr>
+<td>7.5A</td>
+<td>Adjacent Channel Selectivity for CA</td>
+</tr>
+<tr>
+<td>7.6A</td>
+<td>Blocking characteristics for CA</td>
+</tr>
+<tr>
+<td>7.7A</td>
+<td>Spurious response for CA</td>
+</tr>
+<tr>
+<td>7.8A</td>
+<td>Intermodulation characteristics for CA</td>
+</tr>
+<tr>
+<td>7.9A</td>
+<td>Spurious emissions for CA</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="b.4.11-common-ue-rf-requirements-for-transparent-tx-diversity">B.4.11
+Common UE RF requirements for transparent Tx diversity</h2>
+<p>The requirements and test cases listed in Table B.4.11-1 are
+specified in in REL-17 version of TS 38.101-1 [2].</p>
+<p>Table B.4.11-1: Common UE RF requirements for a release independent
+transparent Tx diversity</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.2G</td>
+<td>Transmitter power for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.2G.1</td>
+<td>UE maximum output power for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.2G.2</td>
+<td>UE maximum output power reduction for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.2G.3</td>
+<td>UE additional maximum output power reduction for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.2G.4</td>
+<td>Configured transmitted power for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.3G</td>
+<td>Output power dynamics for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.3G.1</td>
+<td>Minimum output power for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.3G.2</td>
+<td>Transmit OFF power for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.3G.3</td>
+<td>Transmit ON/OFF time mask for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.3G.4</td>
+<td>Power control for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.4G</td>
+<td>Transmit signal quality for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.4G.1</td>
+<td>Frequency error for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.4G.2</td>
+<td>Transmit modulation quality for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.4G.2.1</td>
+<td>Error Vector Magnitude</td>
+</tr>
+<tr>
+<td>6.4G.2.2</td>
+<td>Carrier leakage</td>
+</tr>
+<tr>
+<td>6.4G.2.3</td>
+<td>In-band emissions</td>
+</tr>
+<tr>
+<td>6.4G.2.4</td>
+<td>EVM equalizer spectrum flatness for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.5G</td>
+<td>Output RF spectrum emissions for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.5G.1</td>
+<td>Occupied bandwidth for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.5G.2</td>
+<td>Out of band emission for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.5G.3</td>
+<td>Spurious emission for Tx Diversity</td>
+</tr>
+<tr>
+<td>6.5G.4</td>
+<td>Transmit intermodulation for Tx Diversity</td>
+</tr>
+<tr>
+<td>F.8</td>
+<td>EVM measurement for dual Tx</td>
+</tr>
+</tbody>
+</table>
+<h2 id="b.4.12-common-ue-rf-requirements-for-nr-v2x">B.4.12 Common UE RF
+requirements for NR V2X</h2>
+<p>The requirements and test cases listed in Table B.4.12-1 are
+specified in REL-17 version of TS 38.101-1 [2].</p>
+<p>Table B.4.12-1: Common UE RF requirements for release independent
+operating bands and con-current operation for NR V2X</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.2E</td>
+<td>Operating band for V2X</td>
+</tr>
+<tr>
+<td>5.2E.1</td>
+<td>V2X operating bands</td>
+</tr>
+<tr>
+<td>5.2E.2</td>
+<td>V2X operating bands for con-current operation</td>
+</tr>
+<tr>
+<td>6.2E</td>
+<td>Transmitter power for V2X</td>
+</tr>
+<tr>
+<td>6.3E</td>
+<td>Output power dynamics for V2X</td>
+</tr>
+<tr>
+<td>6.4E</td>
+<td>Transmit signal quality for V2X</td>
+</tr>
+<tr>
+<td>6.5E</td>
+<td>Output RF spectrum emissions for V2X</td>
+</tr>
+<tr>
+<td>7.3E</td>
+<td>Reference sensitivity for V2X</td>
+</tr>
+<tr>
+<td>7.4E</td>
+<td>Maximum input level for V2X</td>
+</tr>
+<tr>
+<td>7.5E</td>
+<td>Adjacent channel selectivity for V2X</td>
+</tr>
+<tr>
+<td>7.6E</td>
+<td>Blocking characteristics for V2X</td>
+</tr>
+<tr>
+<td>7.7E</td>
+<td>Spurious response for V2X</td>
+</tr>
+<tr>
+<td>7.8E</td>
+<td>Intermodulation characteristics for V2X</td>
+</tr>
+</tbody>
+</table>
+<p>The requirements and test cases listed in Table B.4.12-2 are
+specified in REL-17 version of TS 38.101-3 [2].</p>
+<p>Table B.4.12-2: Common UE RF requirements for release independent
+intra-band and inter-band con-current operation for NR V2X</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.2E</td>
+<td>Transmitter power for V2X in FR1</td>
+</tr>
+<tr>
+<td>6.3E</td>
+<td>Output power dynamics for V2X</td>
+</tr>
+<tr>
+<td>6.4E</td>
+<td>Transmit signal quality for V2X operation in FR1</td>
+</tr>
+<tr>
+<td>6.5E</td>
+<td>Output RF spectrum emissions for V2X operation in FR1</td>
+</tr>
+<tr>
+<td>7.3E</td>
+<td>Reference sensitivity for V2X operation in FR1</td>
+</tr>
+<tr>
+<td>7.4E</td>
+<td>Maximum input level for V2X operation in FR1</td>
+</tr>
+<tr>
+<td>7.5E</td>
+<td>Adjacent channel selectivity for V2X operation in FR1</td>
+</tr>
+<tr>
+<td>7.6E</td>
+<td>Blocking characteristics for V2X in FR1</td>
+</tr>
+<tr>
+<td>7.7E</td>
+<td>Spurious response for V2X in FR1</td>
+</tr>
+<tr>
+<td>7.8E</td>
+<td>Intermodulation characteristics for V2X operation in FR1</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="b.4.13-common-ue-rf-requirements-for-ul-mimo-bands-in-fr1">B.4.13
+Common UE RF requirements for UL MIMO bands in FR1</h2>
+<p>The requirements and test cases listed in Table B.4.13-1 and Table
+B.4.13-2 are specified in REL-17 version of TS 38.101-1 [2].</p>
+<p>Table B.4.13-1: Common UE RF requirements for UL MIMO band in FR1</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.2D</td>
+<td>Transmitter power for UL MIMO</td>
+</tr>
+<tr>
+<td>6.3D</td>
+<td>Output power dynamics for UL MIMO</td>
+</tr>
+<tr>
+<td>6.4D</td>
+<td>Transmit signal quality for UL MIMO</td>
+</tr>
+<tr>
+<td>6.5D</td>
+<td>Output RF spectrum emissions for UL MIMO</td>
+</tr>
+<tr>
+<td>7.3D</td>
+<td>Reference sensitivity for UL MIMO</td>
+</tr>
+<tr>
+<td>7.4D</td>
+<td>Maximum input level for UL MIMO</td>
+</tr>
+<tr>
+<td>7.5D</td>
+<td>Adjacent channel selectivity for UL MIMO</td>
+</tr>
+<tr>
+<td>7.6D</td>
+<td>Blocking characteristics for UL MIMO</td>
+</tr>
+<tr>
+<td>7.7D</td>
+<td>Spurious response for UL MIMO</td>
+</tr>
+<tr>
+<td>7.8D</td>
+<td>Intermodulation characteristics for UL MIMO</td>
+</tr>
+</tbody>
+</table>
+<p>Table B.4.13-2: Common UL MIMO requirements for shared spectrum
+channel access in FR1</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.2F.1D</td>
+<td>UE maximum output power for UL MIMO</td>
+</tr>
+<tr>
+<td>6.2F.2D</td>
+<td>UE maximum output power reduction for UL MIMO</td>
+</tr>
+<tr>
+<td>6.2F.3D</td>
+<td>UE additional maximum output power reduction for UL MIMO</td>
+</tr>
+<tr>
+<td>6.2F.4D</td>
+<td>Configured transmitted power UL MIMO</td>
+</tr>
+</tbody>
+</table>
+<p class="heading"
+id="annex-c-normative-common-requirements-for-high-speed-train-scenario"><br />
+Annex C (normative): Common Requirements for high speed train
+scenario</p>
+<h2 id="c.1-common-rrm-requirements-for-high-speed-train-scenario">C.1
+Common RRM requirements for high speed train scenario</h2>
+<p>The requirements and test cases listed in Table C.1-1 are specified
+in TS 38.133 Rel-16 and TS 36.133 Rel-16.</p>
+<p>Table C.1-1: RRM requirements for high speed train scenario</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.2.2.2 in TS 38.133</td>
+<td>Cell Re-selection requirements for intra-frequency NR cells for high
+speed train scenario</td>
+</tr>
+<tr>
+<td>9.2.5 in TS 38.133</td>
+<td>NR intra-frequency measurements without measurement gaps for high
+speed train scenario</td>
+</tr>
+<tr>
+<td>9.2.6 in TS 38.133</td>
+<td>NR intra-frequency measurements with measurement gaps for high speed
+train scenario</td>
+</tr>
+<tr>
+<td>4.2.2.5 in TS 38.133</td>
+<td>Cell Re-selection measurements of inter-RAT E-UTRAN cells for high
+speed train scenario</td>
+</tr>
+<tr>
+<td>9.4.2 in TS 38.133</td>
+<td>NR − E-UTRAN FDD measurements for high speed train scenario</td>
+</tr>
+<tr>
+<td>9.4.3 in TS 38.133</td>
+<td>NR − E-UTRAN TDD measurements for high speed train scenario</td>
+</tr>
+<tr>
+<td>9.5.4 in TS 38.133</td>
+<td>L1-RSRP measurement requirements for high speed train scenario</td>
+</tr>
+<tr>
+<td>4.2.2.5.6 in TS 36.133</td>
+<td>Cell Re-selection measurements of inter-RAT NR cells for high speed
+train scenario</td>
+</tr>
+<tr>
+<td>8.1.2.4.21 in TS 36.133</td>
+<td>E-UTRAN FDD – NR measurements for high speed train scenario</td>
+</tr>
+<tr>
+<td>8.1.2.4.22 in TS 36.133</td>
+<td>E-UTRAN TDD – NR measurements for high speed train scenario</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="c.2-common-ue-demodulation-requirements-for-high-speed-train-scenario">C.2
+Common UE demodulation requirements for high speed train scenario</h2>
+<p>The requirements and test cases listed in Table C.2-1 are specified
+in TS 38.101-4 Rel-16.</p>
+<p>Table C.2-1: UE demodulation requirements for high speed train
+scenario</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.2.2.2.9 test 1-1</td>
+<td>TDD PDSCH requirements for HST-SFN for high speed train scenario
+with 2RX</td>
+</tr>
+<tr>
+<td>5.2.3.2.9 test 1-1</td>
+<td>TDD PDSCH requirements for HST-SFN for high speed train scenario
+with 4RX</td>
+</tr>
+<tr>
+<td>5.2.2.1.9 test 1-1</td>
+<td>FDD PDSCH requirements for HST-SFN for high speed train scenario
+with 2RX</td>
+</tr>
+<tr>
+<td>5.2.3.1.9 test 1-1</td>
+<td>FDD PDSCH requirements for HST-SFN for high speed train scenario
+with 4RX</td>
+</tr>
+<tr>
+<td>5.2.2.2.1 test 1-10, 1-11</td>
+<td>TDD PDSCH requirements for HST single tap and multi-path for high
+speed train scenario with 2RX</td>
+</tr>
+<tr>
+<td>5.2.3.2.1 test 1-10, 1-11</td>
+<td>TDD PDSCH requirements for HST single tap and multi-path for high
+speed train scenario with 4RX</td>
+</tr>
+<tr>
+<td>5.2.2.1.1 test 1-6, 1-7</td>
+<td>FDD PDSCH requirements for HST single tap and multi-path for high
+speed train scenario with 2RX</td>
+</tr>
+<tr>
+<td>5.2.3.1.1 test 1-6, 1-7</td>
+<td>FDD PDSCH requirements for HST single tap and multi-path for high
+speed train scenario with 4RX</td>
+</tr>
+<tr>
+<td>5.2.2.1.10 test 1-1, test 1-2</td>
+<td>FDD PDSCH requirements for HST DPS for high speed train scenario
+with 2RX</td>
+</tr>
+<tr>
+<td>5.2.2.2.10 test 1-1, test 1-2</td>
+<td>TDD PDSCH requirements for HST DPS for high speed train scenario
+with 2RX</td>
+</tr>
+<tr>
+<td>5.2.3.1.10 test 1-1, test 1-2</td>
+<td>FDD PDSCH requirements for HST DPS for high speed train scenario
+with 4RX</td>
+</tr>
+<tr>
+<td>5.2.3.2.10 test 1-1, test 1-2</td>
+<td>TDD PDSCH requirements for HST DPS for high speed train scenario
+with 4RX</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="c.3-common-rrm-requirements-for-fr1-high-speed-train-scenario-enhancement">C.3
+Common RRM requirements for FR1 high speed train scenario
+enhancement</h2>
+<p>The requirements and test cases listed in Table C.3-1 are specified
+in TS 38.133 Rel-17.</p>
+<p>Table C.3-1: RRM requirements for FR1 high speed train scenario
+enhancement</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.2.2.4 in TS 38.133</td>
+<td>Cell Re-selection requirements for inter-frequency NR cells for FR1
+high speed train scenario</td>
+</tr>
+<tr>
+<td>9.2.5 in TS 38.133</td>
+<td>NR intra-frequency measurements without measurement gaps for
+activated SCell and deactivated SCell for FR1 high speed train
+scenario</td>
+</tr>
+<tr>
+<td>9.2.6 in TS 38.133</td>
+<td>NR intra-frequency measurements with measurement gaps for active
+SCell for FR1 high speed train scenario</td>
+</tr>
+<tr>
+<td>9.3.4 in TS 38.133</td>
+<td>Inter-frequency measurement with measurement gaps for FR1 high speed
+train scenario</td>
+</tr>
+<tr>
+<td>9.3.5 in TS 38.133</td>
+<td>Inter-frequency measurement with measurement gaps for FR1 high speed
+train scenario</td>
+</tr>
+<tr>
+<td>9.3.9 in TS 38.133</td>
+<td>Inter frequency measurements without measurement gaps for FR1 high
+speed train scenario</td>
+</tr>
+<tr>
+<td>9.5.4 in TS 38.133</td>
+<td>L1-RSRP measurement requirements for FR1 high speed train
+scenario</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="c.4-common-ue-demodulation-requirements-for-fr1-high-speed-train-scenario-enhancement">C.4
+Common UE demodulation requirements for FR1 high speed train scenario
+enhancement</h2>
+<p>The requirements and test cases listed in Table C.4-1 are specified
+in TS 38.101-4 Rel-17.</p>
+<p>Table C.4-1: CA demodulation requirements for FR1 high speed train
+scenario enhancement</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.2A.2.4</td>
+<td>PDSCH requirements for HST-SFN CA for FR1 high speed train scenario
+with 2RX</td>
+</tr>
+<tr>
+<td>5.2A.3.4</td>
+<td>PDSCH requirements for HST-SFN CA for FR1 high speed train scenario
+with 4RX</td>
+</tr>
+<tr>
+<td>5.2A.2.5</td>
+<td>PDSCH requirements for HST-DPS CA for FR1 high speed train scenario
+with 2RX</td>
+</tr>
+<tr>
+<td>5.2A.3.5</td>
+<td>PDSCH requirements for HST-DPS CA for FR1 high speed train scenario
+with 4RX</td>
+</tr>
+</tbody>
+</table>
+<p class="heading"
+id="annex-d-normative-common-pmi-reporting-requirements-for-16tx-and-32tx">Annex
+D (normative):<br />
+Common PMI reporting requirements for 16TX and 32TX</p>
+<h1
+id="d.1-common-ue-pmi-reporting-requirements-for-16tx-and-32tx-typei-singlepanel-codebook">D.1
+Common UE PMI reporting requirements for 16TX and 32TX TypeI-SinglePanel
+Codebook</h1>
+<p>The requirements and test cases listed in Table D.1-1 are specified
+in Rel-16 version of TS 38.101-4 [5].</p>
+<p>Table D.1-1: UE PMI reporting requirements for 16TX and 32TX
+TypeI-SinglePanel Codebook</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Section / Clause</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">6.3.2.1.3</td>
+<td style="text-align: left;">Multiple PMI with 16TX TypeI-SinglePanel
+Codebook for 2Rx FDD</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.3.2.1.4</td>
+<td style="text-align: left;">Single PMI with 32TX TypeI-SinglePanel
+Codebook for 2Rx FDD</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.3.2.2.3</td>
+<td style="text-align: left;">Multiple PMI with 16TX TypeI-SinglePanel
+Codebook for 2Rx TDD</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.3.2.2.4</td>
+<td style="text-align: left;">Single PMI with 32TX TypeI-SinglePanel
+Codebook for 2Rx TDD</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.3.3.1.3</td>
+<td style="text-align: left;">Multiple PMI with 16TX TypeI-SinglePanel
+Codebook for 4Rx FDD</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.3.3.1.4</td>
+<td style="text-align: left;">Single PMI with 32TX TypeI-SinglePanel
+Codebook for 4Rx FDD</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.3.3.2.3</td>
+<td style="text-align: left;">Multiple PMI with 16TX TypeI-SinglePanel
+Codebook for 4Rx TDD</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.3.3.2.4</td>
+<td style="text-align: left;">Single PMI with 32TX TypeI-SinglePanel
+Codebook for 4Rx TDD</td>
+</tr>
+</tbody>
+</table>
+<h1
+id="d.2-common-ue-pmi-reporting-requirements-for-16tx-typeii-codebook">D.2
+Common UE PMI reporting requirements for 16TX TypeII Codebook</h1>
+<p>The requirements and test cases listed in Table D.2-1 are specified
+in Rel-16 version of TS 38.101-4 [5].</p>
+<p>Table D.2-1: UE PMI reporting requirements for 16TX TypeII
+Codebook</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Section / Clause</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">6.3.2.1.5</td>
+<td style="text-align: left;">Multiple PMI with 16TX TypeII Codebook for
+2Rx FDD</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.3.2.2.5</td>
+<td style="text-align: left;">Multiple PMI with 16TX TypeII Codebook for
+2Rx TDD</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.3.3.1.5</td>
+<td style="text-align: left;">Multiple PMI with 16TX TypeII Codebook for
+4Rx FDD</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.3.3.2.5</td>
+<td style="text-align: left;">Multiple PMI with 16TX TypeII Codebook for
+4Rx TDD</td>
+</tr>
+</tbody>
+</table>
+<p class="heading"
+id="annex-e-normative-common-pdsch-demodulation-requirements-with-lte-crs-rate-matching">Annex
+E (normative):<br />
+Common PDSCH demodulation requirements with LTE CRS rate matching</p>
+<h1
+id="e.1-common-pdsch-demodulation-requirements-with-lte-crs-rate-matching">E.1
+Common PDSCH demodulation requirements with LTE CRS rate matching</h1>
+<p>The requirements and test cases listed in Table E.1-1 are specified
+in Rel-16 version of TS 38.101-4 [5].</p>
+<p>Table E.1-1: UE PDSCH demodulation requirements with LTE CRS rate
+matching for TDD band</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Section / Clause</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">5.2.2.2.4</td>
+<td style="text-align: left;">PDSCH demodulation requirements with LTE
+CRS rate matching for 2Rx TDD</td>
+</tr>
+<tr>
+<td style="text-align: left;">5.2.3.2.4</td>
+<td style="text-align: left;">PDSCH demodulation requirements with LTE
+CRS rate matching for 4Rx TDD</td>
+</tr>
+</tbody>
+</table>
+<p class="heading" id="annex-f-informative-change-history">Annex F
+(Informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 50%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-09</td>
+<td style="text-align: center;">RAN4#85</td>
+<td style="text-align: center;">R4-1712166</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Skeleton TS</td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RAN4#86</td>
+<td style="text-align: center;">R4-1802107</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TS 38.307 v0.1.0</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RAN#80</td>
+<td style="text-align: center;">RP-180988</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">v1.0.0 submitted for plenary
+approval</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RAN#80</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Approved by plenary – Rel-15 spec under
+change control</td>
+<td style="text-align: center;">15.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RAN#81</td>
+<td style="text-align: center;">RP-181896</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR for FR2 Power Classes in
+TS38.307</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RAN#82</td>
+<td style="text-align: center;">RP-182362</td>
+<td style="text-align: center;">0002</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR for TS 38.307</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-06</td>
+<td style="text-align: center;">RAN#84</td>
+<td style="text-align: center;">RP-191237</td>
+<td style="text-align: center;">0005</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Addition of missing features for TS
+38.307</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-09</td>
+<td style="text-align: center;">RAN#85</td>
+<td style="text-align: center;">RP-192046</td>
+<td style="text-align: center;">0007</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">REL-16 TS 38.307 addition of Annexes for
+UE RF requirements</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-193019</td>
+<td style="text-align: center;">0009</td>
+<td style="text-align: center;"> </td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR for REL-16 TS 38.307 for PC2 EN-DC
+TDD+TDD</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-193018</td>
+<td style="text-align: center;">0012</td>
+<td style="text-align: center;"> </td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR for TS 38.307: additional UE channel
+bandwidth</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-193036</td>
+<td style="text-align: center;">0014</td>
+<td style="text-align: center;"> </td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Adding SDL to 38.307</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RAN#87</td>
+<td style="text-align: center;">RP-200404</td>
+<td style="text-align: center;">0016</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">38.307 CR power class</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88</td>
+<td style="text-align: center;">RP-201046</td>
+<td style="text-align: center;">0018</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to 38.307 on clarification of the FR2
+multi-band requirement framework</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88</td>
+<td style="text-align: center;">RP-200986</td>
+<td style="text-align: center;">0022</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Maintenance CR to 38307 on a reference
+spec number R16</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88</td>
+<td style="text-align: center;">RP-200959</td>
+<td style="text-align: center;">0023</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Endorsed CR to 38307 on applicable SUL
+requirements</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88</td>
+<td style="text-align: center;">RP-200965</td>
+<td style="text-align: center;">0019</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR for 38.307: Introduction of Power
+Class 1.5</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RAN#89</td>
+<td style="text-align: center;">RP-201503</td>
+<td style="text-align: center;">0028</td>
+<td style="text-align: center;"> </td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR for 38.307: Introduction of Power
+Class 1.5</td>
+<td style="text-align: center;">16.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-12</td>
+<td style="text-align: center;">RAN#90</td>
+<td style="text-align: center;">RP-202485</td>
+<td style="text-align: center;">0032</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on adding NR ovelapping bands list in
+TS38.307 in Rel-16</td>
+<td style="text-align: center;">16.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-12</td>
+<td style="text-align: center;">RAN#90</td>
+<td style="text-align: center;">RP-202428</td>
+<td style="text-align: center;">0040</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR to TS 38.307 on release independent
+update for the Rel.16 EN-DC and NR CA/DC</td>
+<td style="text-align: center;">16.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-12</td>
+<td style="text-align: center;">RAN#90</td>
+<td style="text-align: center;">RP-202429</td>
+<td style="text-align: center;">0041</td>
+<td style="text-align: center;"> </td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR to TS 38.307 on Release independence
+of FDD-TDD EN-DC High Power UE</td>
+<td style="text-align: center;">16.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-12</td>
+<td style="text-align: center;">RAN#90</td>
+<td style="text-align: center;">RP-202422</td>
+<td style="text-align: center;">0035</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR on release independent for Rel.16 NR
+HST RRM requirements</td>
+<td style="text-align: center;">16.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-12</td>
+<td style="text-align: center;">RAN#90</td>
+<td style="text-align: center;">RP-202422</td>
+<td style="text-align: center;">0036</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR on release independent for Rel.16 NR
+HST UE demodulation requirements</td>
+<td style="text-align: center;">16.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-12</td>
+<td style="text-align: center;">RAN#90</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0024</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">LTE/NR spectrum sharing in Band
+40/n40</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RAN#91</td>
+<td style="text-align: center;">RP-210093</td>
+<td style="text-align: center;">0042</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR for 38.307: introduction of power
+class 5 for FR2</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RAN#91</td>
+<td style="text-align: center;">RP-210065</td>
+<td style="text-align: center;">0045</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Draft CR for TS 38.307 on UE
+demodulation performance requirements (Rel-17)</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RAN#91</td>
+<td style="text-align: center;">RP-210078</td>
+<td style="text-align: center;">0048</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">CR on release independent for Rel-16 NR
+HST UE demodulation requirements</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RAN#91</td>
+<td style="text-align: center;">RP-210098</td>
+<td style="text-align: center;">0051</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR to 38.807 Release independent for UE
+power class 2 NR inter-band CA and SUL configurations (R17)</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-06</td>
+<td style="text-align: center;">RAN#92</td>
+<td style="text-align: center;">RP-211104</td>
+<td style="text-align: center;">0062</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">CR to 38.307 to add interband CA R17
+CATA</td>
+<td style="text-align: center;">17.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RAN#93</td>
+<td style="text-align: center;">RP-211921</td>
+<td style="text-align: center;">0071</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">CR to TS 38.307 on the definition of the
+duplex-mode for the band configurations</td>
+<td style="text-align: center;">17.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RAN#93</td>
+<td style="text-align: center;">RP-211922</td>
+<td style="text-align: center;">0077</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">CR Correction of common UE RF
+requirement 38.307 Annex tables R17</td>
+<td style="text-align: center;">17.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN#94</td>
+<td style="text-align: center;">RP-212828</td>
+<td style="text-align: center;">0080</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR for REL-17 TS 38.307 for FR1
+NE-DC</td>
+<td style="text-align: center;">17.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN#94</td>
+<td style="text-align: center;">RP-212837</td>
+<td style="text-align: center;">0085</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Big CR for TS 38.307 Maintenance
+(Rel-17)</td>
+<td style="text-align: center;">17.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95</td>
+<td style="text-align: center;">RP-220353</td>
+<td style="text-align: center;">0087</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR to TS 38.307 on Release independence
+of BCS4 and BCS5</td>
+<td style="text-align: center;">17.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95</td>
+<td style="text-align: center;">RP-220343</td>
+<td style="text-align: center;">0088</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR to TS38.307: Release independent for
+PC2 FDD bands</td>
+<td style="text-align: center;">17.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95</td>
+<td style="text-align: center;">RP-220349</td>
+<td style="text-align: center;">0090</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Big CR for TS 38.307: release
+independent requirements for TxD</td>
+<td style="text-align: center;">17.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95</td>
+<td style="text-align: center;">RP-220337</td>
+<td style="text-align: center;">0093</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Big CR for TS 38.307 Maintenance
+(Rel-17)</td>
+<td style="text-align: center;">17.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95</td>
+<td style="text-align: center;">RP-220352</td>
+<td style="text-align: center;">0096</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR for release independent for 4Rx
+support for NR band</td>
+<td style="text-align: center;">17.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221685</td>
+<td style="text-align: center;">0098</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR for release independent of Rel.17
+NE-DC FR1 and FR2 combinations</td>
+<td style="text-align: center;">17.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221686</td>
+<td style="text-align: center;">0099</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR for 38.307 to update the release
+independence for R17 SUL band combinations</td>
+<td style="text-align: center;">17.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221670</td>
+<td style="text-align: center;">0100</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Big CR for TS 38.307: release
+independent for UL MIMO bands (R17)</td>
+<td style="text-align: center;">17.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221661</td>
+<td style="text-align: center;">0101</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Big CR to TS 38.307: intra-band CA with
+MIMO requirements (R17)</td>
+<td style="text-align: center;">17.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221677</td>
+<td style="text-align: center;">0102</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to TS 38.307: SL requirements
+(R17)</td>
+<td style="text-align: center;">17.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221663</td>
+<td style="text-align: center;">0104</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Big CR for TS 38.307 Maintenance
+(Rel-17)</td>
+<td style="text-align: center;">17.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221680</td>
+<td style="text-align: center;">0106</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR to 38.307: release independent for
+FR1 HST demodulation (Rel-17)</td>
+<td style="text-align: center;">17.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-09</td>
+<td style="text-align: center;">RAN#97</td>
+<td style="text-align: center;">RP-222036</td>
+<td style="text-align: center;">0107</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to R17 38307 to add UL configurations
+for inter-band combinations and overlapping bands</td>
+<td style="text-align: center;">17.7.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-09</td>
+<td style="text-align: center;">RAN#97</td>
+<td style="text-align: center;">RP-222049</td>
+<td style="text-align: center;">0109</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR for introduction of release
+independence for MMSE-IRC receiver requirements</td>
+<td style="text-align: center;">17.7.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-12</td>
+<td style="text-align: center;">RAN#98-e</td>
+<td style="text-align: center;">RP-223310</td>
+<td style="text-align: center;">0111</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on release independent for Rel-17 FR1
+HST RRM</td>
+<td style="text-align: center;">17.8.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-12</td>
+<td style="text-align: center;">RAN#98-e</td>
+<td style="text-align: center;">RP-223310</td>
+<td style="text-align: center;">0112</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on release independent for FR1 HST
+demodulation</td>
+<td style="text-align: center;">17.8.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-03</td>
+<td style="text-align: center;">RAN#99</td>
+<td style="text-align: center;">RP-230501</td>
+<td style="text-align: center;">0115</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">CR 38.307 Addition of FR2 overlapping
+bands into Annex-A R17</td>
+<td style="text-align: center;">17.9.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="3.59in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 7760 3590" width="7.76in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: none; }
+.pen2 { stroke: rgb(0,0,0); stroke-width: 10; stroke-linejoin: round; }
+.font0 { font-weight: bold; font-size: 125px; font-family: Arial; }
+.font1 { font-size: 116px; font-family: Arial; }
+.font2 { font-style: italic; font-size: 150px; font-family: Times; }
+.brush1 { fill: rgb(0,0,0); }
+</style>
+    <g>
+        <path class="pen1 brush0" d="M 0,0  L 10,0 10,10 0,10 0,0 z" fill-rule="nonzero"/>
+        <path class="pen1 brush0" d="M 7750,3580  L 7760,3580 7760,3590 7750,3590 7750,3580 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="1210,-70 990,-70 990,3700 770,3700"/>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="3530,-70 3310,-70 3310,3700 3090,3700"/>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="5480,-70 5260,-70 5260,3700 5040,3700"/>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="7430,-70 7210,-70 7210,3700 6990,3700"/>
+    </g>
+    <g>
+        <path class="pen1 brush0" d="M 865,45  L 1115,45 1115,255 865,255 865,45 z" fill-rule="nonzero"/>
+        <polyline class="pen2" fill="none" points="865,45 1115,45 1115,255 865,255 865,45"/>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="893" xml:space="preserve" y="200">U</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="994" xml:space="preserve" y="200">E</text>
+    </g>
+    <g>
+        <path class="pen1 brush0" d="M 3135,45  L 3485,45 3485,255 3135,255 3135,45 z" fill-rule="nonzero"/>
+        <polyline class="pen2" fill="none" points="3135,45 3485,45 3485,255 3135,255 3135,45"/>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3166" xml:space="preserve" y="200">g</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3252" xml:space="preserve" y="200">N</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3353" xml:space="preserve" y="200">B</text>
+    </g>
+    <g>
+        <path class="pen1 brush0" d="M 5095,45  L 5425,45 5425,255 5095,255 5095,45 z" fill-rule="nonzero"/>
+        <polyline class="pen2" fill="none" points="5095,45 5425,45 5425,255 5095,255 5095,45"/>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5120" xml:space="preserve" y="200">U</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5221" xml:space="preserve" y="200">P</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5314" xml:space="preserve" y="200">F</text>
+    </g>
+    <g>
+        <path class="pen1 brush0" d="M 7025,45  L 7395,45 7395,255 7025,255 7025,45 z" fill-rule="nonzero"/>
+        <polyline class="pen2" fill="none" points="7025,45 7395,45 7395,255 7025,255 7025,45"/>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="7058" xml:space="preserve" y="200">A</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="7160" xml:space="preserve" y="200">M</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="7276" xml:space="preserve" y="200">F</text>
+    </g>
+    <g>
+        <path class="pen1 brush0" d="M 635,575  L 7575,575 7575,835 635,835 635,575 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="635,685 636,675 637,665 643,646 652,629 664,614 679,602 696,593 715,587 725,586 735,585 7465,585 7475,586 7485,587 7504,593 7521,602 7536,614 7548,629 7557,646 7563,665 7565,675 7565,685 7565,735 7565,745 7563,755 7557,774 7548,791 7536,806 7521,818 7504,827 7485,833 7475,835 7465,835 735,835 725,835 715,833 696,827 679,818 664,806 652,791 643,774 637,755 636,745 635,735 635,685"/>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2937" xml:space="preserve" y="760">0</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3009" xml:space="preserve" y="760">.</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3045" xml:space="preserve" y="760"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3081" xml:space="preserve" y="760">P</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3168" xml:space="preserve" y="760">D</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3262" xml:space="preserve" y="760">U</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3356" xml:space="preserve" y="760"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3392" xml:space="preserve" y="760">S</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3479" xml:space="preserve" y="760">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3551" xml:space="preserve" y="760">s</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3616" xml:space="preserve" y="760">s</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3681" xml:space="preserve" y="760">i</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3710" xml:space="preserve" y="760">o</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3782" xml:space="preserve" y="760">n</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3854" xml:space="preserve" y="760"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3890" xml:space="preserve" y="760">a</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3963" xml:space="preserve" y="760">n</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4035" xml:space="preserve" y="760">d</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4107" xml:space="preserve" y="760"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4143" xml:space="preserve" y="760">D</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4237" xml:space="preserve" y="760">R</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4331" xml:space="preserve" y="760">B</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4418" xml:space="preserve" y="760">(</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4461" xml:space="preserve" y="760">s</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4526" xml:space="preserve" y="760">)</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4570" xml:space="preserve" y="760"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4606" xml:space="preserve" y="760">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4678" xml:space="preserve" y="760">s</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4743" xml:space="preserve" y="760">t</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4779" xml:space="preserve" y="760">a</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4851" xml:space="preserve" y="760">b</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4924" xml:space="preserve" y="760">l</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4953" xml:space="preserve" y="760">i</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4981" xml:space="preserve" y="760">s</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5046" xml:space="preserve" y="760">h</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5119" xml:space="preserve" y="760">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5191" xml:space="preserve" y="760">d</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3487" xml:space="preserve" y="1060">1</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3562" xml:space="preserve" y="1060">.</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3600" xml:space="preserve" y="1060"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3637" xml:space="preserve" y="1060">P</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3729" xml:space="preserve" y="1060">D</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3837" xml:space="preserve" y="1060">U</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3946" xml:space="preserve" y="1060"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3983" xml:space="preserve" y="1060">S</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4058" xml:space="preserve" y="1060">E</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4150" xml:space="preserve" y="1060">S</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4225" xml:space="preserve" y="1060">S</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4300" xml:space="preserve" y="1060">I</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4350" xml:space="preserve" y="1060">O</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4458" xml:space="preserve" y="1060">N</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4558" xml:space="preserve" y="1060"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4596" xml:space="preserve" y="1060">R</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4687" xml:space="preserve" y="1060">E</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4779" xml:space="preserve" y="1060">S</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4854" xml:space="preserve" y="1060">O</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4962" xml:space="preserve" y="1060">U</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5070" xml:space="preserve" y="1060">R</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5162" xml:space="preserve" y="1060">C</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5262" xml:space="preserve" y="1060">E</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5354" xml:space="preserve" y="1060"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5391" xml:space="preserve" y="1060">M</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5516" xml:space="preserve" y="1060">O</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5625" xml:space="preserve" y="1060">D</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5733" xml:space="preserve" y="1060">I</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5783" xml:space="preserve" y="1060">F</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5874" xml:space="preserve" y="1060">Y</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5958" xml:space="preserve" y="1060"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5995" xml:space="preserve" y="1060">R</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6087" xml:space="preserve" y="1060">E</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6179" xml:space="preserve" y="1060">Q</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6287" xml:space="preserve" y="1060">U</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6395" xml:space="preserve" y="1060">E</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6487" xml:space="preserve" y="1060">S</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6562" xml:space="preserve" y="1060">T</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6645" xml:space="preserve" y="1060"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6683" xml:space="preserve" y="1060">(</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6733" xml:space="preserve" y="1060">Q</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6841" xml:space="preserve" y="1060">F</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6933" xml:space="preserve" y="1060">I</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6983" xml:space="preserve" y="1060">)</text>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="3427,1115 7205,1115"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 3427,1055  L 3315,1055 3315,1175 3427,1175 3427,1055 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <path class="pen1 brush0" d="M 2662,1295  L 3967,1295 3967,1555 2662,1555 2662,1295 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="2662,1305 3957,1305 3957,1555 2662,1555 2662,1305"/>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2757" xml:space="preserve" y="1480">2</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2830" xml:space="preserve" y="1480">.</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2866" xml:space="preserve" y="1480"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2902" xml:space="preserve" y="1480">S</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2988" xml:space="preserve" y="1480">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3061" xml:space="preserve" y="1480">t</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3097" xml:space="preserve" y="1480"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3133" xml:space="preserve" y="1480">u</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3205" xml:space="preserve" y="1480">p</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3278" xml:space="preserve" y="1480"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3314" xml:space="preserve" y="1480">n</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3386" xml:space="preserve" y="1480">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3458" xml:space="preserve" y="1480">w</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3552" xml:space="preserve" y="1480"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3588" xml:space="preserve" y="1480">D</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3682" xml:space="preserve" y="1480">R</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3776" xml:space="preserve" y="1480">B</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1446" xml:space="preserve" y="1780">3</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1521" xml:space="preserve" y="1780">.</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1558" xml:space="preserve" y="1780"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1596" xml:space="preserve" y="1780">R</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1688" xml:space="preserve" y="1780">R</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1779" xml:space="preserve" y="1780">C</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1879" xml:space="preserve" y="1780">R</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1971" xml:space="preserve" y="1780">e</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2037" xml:space="preserve" y="1780">c</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2104" xml:space="preserve" y="1780">o</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2179" xml:space="preserve" y="1780">n</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2254" xml:space="preserve" y="1780">f</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2296" xml:space="preserve" y="1780">i</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2337" xml:space="preserve" y="1780">g</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2412" xml:space="preserve" y="1780">u</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2487" xml:space="preserve" y="1780">r</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2546" xml:space="preserve" y="1780">a</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2621" xml:space="preserve" y="1780">t</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2662" xml:space="preserve" y="1780">i</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2704" xml:space="preserve" y="1780">o</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2779" xml:space="preserve" y="1780">n</text>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="1107,1835 3305,1835"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 1107,1775  L 995,1775 995,1895 1107,1895 1107,1775 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <path class="pen1 brush0" d="M 190,2015  L 1799,2015 1799,2275 190,2275 190,2015 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="190,2025 1789,2025 1789,2275 190,2275 190,2025"/>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="286" xml:space="preserve" y="2200">4</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="358" xml:space="preserve" y="2200">.</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="394" xml:space="preserve" y="2200"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="430" xml:space="preserve" y="2200">N</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="524" xml:space="preserve" y="2200">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="596" xml:space="preserve" y="2200">w</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="690" xml:space="preserve" y="2200"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="726" xml:space="preserve" y="2200">D</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="820" xml:space="preserve" y="2200">R</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="914" xml:space="preserve" y="2200">B</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1001" xml:space="preserve" y="2200"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1037" xml:space="preserve" y="2200">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1109" xml:space="preserve" y="2200">s</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1174" xml:space="preserve" y="2200">t</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1210" xml:space="preserve" y="2200">a</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1283" xml:space="preserve" y="2200">b</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1355" xml:space="preserve" y="2200">l</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1384" xml:space="preserve" y="2200">i</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1413" xml:space="preserve" y="2200">s</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1478" xml:space="preserve" y="2200">h</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1550" xml:space="preserve" y="2200">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1622" xml:space="preserve" y="2200">d</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1159" xml:space="preserve" y="2500">5</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1234" xml:space="preserve" y="2500">.</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1271" xml:space="preserve" y="2500"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1309" xml:space="preserve" y="2500">R</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1400" xml:space="preserve" y="2500">R</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1492" xml:space="preserve" y="2500">C</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1592" xml:space="preserve" y="2500">R</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1683" xml:space="preserve" y="2500">e</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1750" xml:space="preserve" y="2500">c</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1817" xml:space="preserve" y="2500">o</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1892" xml:space="preserve" y="2500">n</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1967" xml:space="preserve" y="2500">f</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2008" xml:space="preserve" y="2500">i</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2050" xml:space="preserve" y="2500">g</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2125" xml:space="preserve" y="2500">u</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2200" xml:space="preserve" y="2500">r</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2258" xml:space="preserve" y="2500">a</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2333" xml:space="preserve" y="2500">t</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2375" xml:space="preserve" y="2500">i</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2417" xml:space="preserve" y="2500">o</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2492" xml:space="preserve" y="2500">n</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2567" xml:space="preserve" y="2500">C</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2667" xml:space="preserve" y="2500">o</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2742" xml:space="preserve" y="2500">m</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2850" xml:space="preserve" y="2500">p</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2925" xml:space="preserve" y="2500">l</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2967" xml:space="preserve" y="2500">e</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3033" xml:space="preserve" y="2500">t</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3075" xml:space="preserve" y="2500">e</text>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="995,2555 3193,2555"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 3193,2495  L 3305,2495 3305,2615 3193,2615 3193,2495 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3644" xml:space="preserve" y="2850">6</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3719" xml:space="preserve" y="2850">.</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3756" xml:space="preserve" y="2850"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3794" xml:space="preserve" y="2850">P</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3885" xml:space="preserve" y="2850">D</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3994" xml:space="preserve" y="2850">U</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4102" xml:space="preserve" y="2850"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4139" xml:space="preserve" y="2850">S</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4214" xml:space="preserve" y="2850">E</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4306" xml:space="preserve" y="2850">S</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4381" xml:space="preserve" y="2850">S</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4456" xml:space="preserve" y="2850">I</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4506" xml:space="preserve" y="2850">O</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4614" xml:space="preserve" y="2850">N</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4714" xml:space="preserve" y="2850"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4752" xml:space="preserve" y="2850">R</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4843" xml:space="preserve" y="2850">E</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4935" xml:space="preserve" y="2850">S</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5010" xml:space="preserve" y="2850">O</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5118" xml:space="preserve" y="2850">U</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5227" xml:space="preserve" y="2850">R</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5318" xml:space="preserve" y="2850">C</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5418" xml:space="preserve" y="2850">E</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5510" xml:space="preserve" y="2850"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5547" xml:space="preserve" y="2850">M</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5672" xml:space="preserve" y="2850">O</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5781" xml:space="preserve" y="2850">D</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5889" xml:space="preserve" y="2850">I</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5939" xml:space="preserve" y="2850">F</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6031" xml:space="preserve" y="2850">Y</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6114" xml:space="preserve" y="2850"> </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6152" xml:space="preserve" y="2850">R</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6243" xml:space="preserve" y="2850">E</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6335" xml:space="preserve" y="2850">S</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6410" xml:space="preserve" y="2850">P</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6501" xml:space="preserve" y="2850">O</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6610" xml:space="preserve" y="2850">N</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6710" xml:space="preserve" y="2850">S</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6785" xml:space="preserve" y="2850">E</text>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="3315,2905 7093,2905"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 7093,2845  L 7205,2845 7205,2965 7093,2965 7093,2845 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1662" xml:space="preserve" y="3200">7</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1735" xml:space="preserve" y="3200">.</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1771" xml:space="preserve" y="3200"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1807" xml:space="preserve" y="3200">U</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1901" xml:space="preserve" y="3200">P</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1988" xml:space="preserve" y="3200"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2024" xml:space="preserve" y="3200">D</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2118" xml:space="preserve" y="3200">a</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2190" xml:space="preserve" y="3200">t</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2226" xml:space="preserve" y="3200">a</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2298" xml:space="preserve" y="3200"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2334" xml:space="preserve" y="3200">(</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2378" xml:space="preserve" y="3200">Q</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2479" xml:space="preserve" y="3200">F</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2558" xml:space="preserve" y="3200">I</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2594" xml:space="preserve" y="3200">)</text>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="1090,3245 3210,3245"/>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="1090,3265 3210,3265"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 1090,3195  L 995,3195 995,3315 1090,3315 1090,3195 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 3210,3195  L 3305,3195 3305,3315 3210,3315 3210,3195 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3797" xml:space="preserve" y="3200">7</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3870" xml:space="preserve" y="3200">.</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3906" xml:space="preserve" y="3200"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3942" xml:space="preserve" y="3200">U</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4036" xml:space="preserve" y="3200">P</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4123" xml:space="preserve" y="3200"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4159" xml:space="preserve" y="3200">D</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4253" xml:space="preserve" y="3200">a</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4325" xml:space="preserve" y="3200">t</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4361" xml:space="preserve" y="3200">a</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4433" xml:space="preserve" y="3200"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4469" xml:space="preserve" y="3200">(</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4513" xml:space="preserve" y="3200">Q</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4614" xml:space="preserve" y="3200">F</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4693" xml:space="preserve" y="3200">I</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4729" xml:space="preserve" y="3200">)</text>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="3410,3245 5160,3245"/>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="3410,3265 5160,3265"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 3410,3195  L 3315,3195 3315,3315 3410,3315 3410,3195 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 5160,3195  L 5255,3195 5255,3315 5160,3315 5160,3195 z" fill-rule="nonzero"/>
+    </g>
+    <g/>
+</svg>

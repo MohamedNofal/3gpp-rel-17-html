@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="2.0733333333333333in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 1588 622" width="5.293333333333333in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.font0 {  }
+.font1 { font-size: 44px; font-family: "Century Schoolbook", serif; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 3; stroke-linejoin: round; }
+.brush1 { fill: none; }
+.pen2 { stroke: rgb(0,0,0); stroke-width: 3; stroke-linejoin: round; }
+.pen3 { stroke: none; }
+.font2 { font-size: 39px; font-family: "Times New Roman", serif; }
+.font3 { font-size: 39px; font-family: "Times New Roman", serif; }
+.font4 { font-size: 44px; font-family: "Century Schoolbook", serif; }
+</style>
+    <g>
+        <polyline class="pen1" fill="none" points="910,177 910,302"/>
+        <polyline class="pen1" fill="none" points="971,177 971,302"/>
+        <polyline class="pen1" fill="none" points="1025,177 1025,302"/>
+        <polyline class="pen1" fill="none" points="1088,177 1087,302"/>
+        <rect class="pen2 brush0" height="101" width="597" x="346" y="1"/>
+        <rect class="pen3 brush1" height="57" width="553" x="369" y="21"/>
+        <g>
+            <clipPath id="clipPath0">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath0)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="369 398 418 439 451 472 484 513 532 550 572 593 608 627 646 657 687 709 730 742 758 779 791 802 817 846 875 904" xml:lang="en" xml:space="preserve" y="22">Radio Resource Control (RRC)</text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush0" height="101" width="752" x="451" y="297"/>
+        <rect class="pen3 brush1" height="57" width="568" x="558" y="320"/>
+        <g>
+            <clipPath id="clipPath1">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath1)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="558 597 616 637 650 672 705 787 818 838 857 876 893 910 991 1021 1043 1064 1076 1091 1113" xml:lang="en" xml:space="preserve" y="320">Medium Access Control</text>
+        </g>
+        <g>
+            <clipPath id="clipPath2">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath2)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="558 573 612 643 672" xml:lang="en" xml:space="preserve" y="370">(MAC)</text>
+        </g>
+    </g>
+    <g>
+        <polyline class="pen1" fill="none" points="700,396 701,494"/>
+        <polyline class="pen1" fill="none" points="763,396 763,494"/>
+        <polyline class="pen1" fill="none" points="825,396 825,494"/>
+        <polyline class="pen1" fill="none" points="887,396 887,494"/>
+        <polyline class="pen1" fill="none" points="951,396 951,494"/>
+        <polyline class="pen1" fill="none" points="1076,444 576,445"/>
+        <ellipse class="pen2 brush0" cx="827" cy="446" rx="189" ry="13"/>
+        <rect class="pen3 brush1" height="58" width="346" x="1243" y="410"/>
+        <g>
+            <clipPath id="clipPath3">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath3)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1243 1267 1282 1302 1323 1341 1363 1384 1399 1411 1422 1442 1463 1483 1505 1526 1545 1557" xml:lang="en" xml:space="preserve" y="411">Transport channels</text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush0" height="102" width="752" x="451" y="494"/>
+        <rect class="pen3 brush1" height="52" width="751" x="448" y="513"/>
+        <g>
+            <clipPath id="clipPath4">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath4)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="700 724 746 767 784 797 816 836 848 859 871 891 912 931" xml:lang="en" xml:space="preserve" y="512">Physical layer</text>
+        </g>
+    </g>
+    <g>
+        <polyline class="pen1" fill="none" points="451,543 289,543 289,52 345,52"/>
+        <polyline class="pen1" fill="none" points="397,469 397,617"/>
+        <ellipse class="pen2 brush0" cx="398" cy="545" rx="13" ry="51"/>
+        <g transform="rotate(-90.0, 193, 506)">
+            <clipPath id="clipPath5">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath5)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="193 222 244 265 277 293 314 326 337 349 360 399 418 438 455 476 491 511 544 564 586 598" xml:lang="en" xml:space="preserve" y="506">Control / Measurements</text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen3 brush1" height="58" width="151" x="0" y="20"/>
+        <g>
+            <clipPath id="clipPath6">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath6)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="0 26 46 67 86" xml:lang="en" xml:space="preserve" y="21">Layer</text>
+        </g>
+        <g>
+            <clipPath id="clipPath7">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath7)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="101 112" xml:lang="en" xml:space="preserve" y="21"> 3</text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen3 brush1" height="57" width="303" x="1243" y="214"/>
+        <g>
+            <clipPath id="clipPath8">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath8)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1243 1270 1291 1313 1325 1344 1364 1376 1387 1407 1428 1448 1470 1491 1511 1523" xml:lang="en" xml:space="preserve" y="214">Logical channels</text>
+        </g>
+    </g>
+    <g>
+        <polyline class="pen1" fill="none" points="1200,250 449,250"/>
+        <ellipse class="pen2 brush0" cx="1002" cy="249" rx="157" ry="13"/>
+        <polyline class="pen1" fill="none" points="535,177 535,302"/>
+        <polyline class="pen1" fill="none" points="619,177 619,302"/>
+        <polyline class="pen1" fill="none" points="702,177 702,302"/>
+        <polyline class="pen1" fill="none" points="744,177 744,302"/>
+        <ellipse class="pen2 brush0" cx="721" cy="249" rx="53" ry="13"/>
+        <ellipse class="pen2 brush0" cx="618" cy="249" rx="32" ry="13"/>
+        <ellipse class="pen2 brush0" cx="534" cy="249" rx="32" ry="13"/>
+        <rect class="pen3 brush1" height="58" width="151" x="0" y="270"/>
+        <g>
+            <clipPath id="clipPath9">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath9)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="0 26 46 67 86" xml:lang="en" xml:space="preserve" y="271">Layer</text>
+        </g>
+        <g>
+            <clipPath id="clipPath10">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath10)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="101 112" xml:lang="en" xml:space="preserve" y="271"> 2</text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen3 brush1" height="58" width="151" x="0" y="520"/>
+        <g>
+            <clipPath id="clipPath11">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath11)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="0 26 46 67 86" xml:lang="en" xml:space="preserve" y="521">Layer</text>
+        </g>
+        <g>
+            <clipPath id="clipPath12">
+                <rect height="622" width="1588" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath12)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="101 112" xml:lang="en" xml:space="preserve" y="521"> 1</text>
+        </g>
+    </g>
+    <g/>
+</svg>

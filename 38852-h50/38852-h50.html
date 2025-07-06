@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38852-h50</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-of-terms-symbols-and-abbreviations"
+id="toc-definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</a>
+<ul>
+<li><a href="#terms" id="toc-terms">3.1 Terms</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#regulatory-background" id="toc-regulatory-background">4
+Regulatory background</a>
+<ul>
+<li><a href="#ec-decision-20211730" id="toc-ec-decision-20211730">4.1 EC
+Decision 2021/1730</a></li>
+<li><a href="#ecc-decision2002" id="toc-ecc-decision2002">4.2 ECC
+Decision(20)02</a></li>
+<li><a href="#technical-conditions" id="toc-technical-conditions">4.3
+Technical conditions</a>
+<ul>
+<li><a href="#base-stations-using-wideband-technologies"
+id="toc-base-stations-using-wideband-technologies">4.3.1 Base stations
+using wideband technologies</a></li>
+<li><a
+href="#rmr-terminals-other-than-cab-radios-using-wideband-technologies"
+id="toc-rmr-terminals-other-than-cab-radios-using-wideband-technologies">4.3.2
+RMR terminals other than cab-radios using wideband technologies</a></li>
+<li><a href="#rmr-cab-radios-using-wideband-technologies"
+id="toc-rmr-cab-radios-using-wideband-technologies">4.3.3 RMR cab-radios
+using wideband technologies</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#frequency-band-arrangement"
+id="toc-frequency-band-arrangement">5 Frequency band
+arrangement</a></li>
+<li><a href="#nr-system-parameters" id="toc-nr-system-parameters">6 NR
+system parameters</a></li>
+<li><a href="#rf-requirements" id="toc-rf-requirements">7 RF
+requirements</a>
+<ul>
+<li><a href="#bs-specific-requirements"
+id="toc-bs-specific-requirements">7.1 BS specific requirements</a>
+<ul>
+<li><a href="#general" id="toc-general">7.1.1 General</a></li>
+<li><a href="#transmitter-characteristics"
+id="toc-transmitter-characteristics">7.1.2 Transmitter
+characteristics</a>
+<ul>
+<li><a href="#bs-maximum-output-power"
+id="toc-bs-maximum-output-power">7.1.2.1 BS maximum output
+power</a></li>
+<li><a href="#unwanted-emissions" id="toc-unwanted-emissions">7.1.2.2
+Unwanted emissions</a>
+<ul>
+<li><a href="#general-1" id="toc-general-1">7.1.2.2.1 General</a></li>
+<li><a href="#tx-spurious-emissions"
+id="toc-tx-spurious-emissions">7.1.2.2.2 Tx spurious emissions</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#receiver-characteristics"
+id="toc-receiver-characteristics">7.1.3 Receiver characteristics</a>
+<ul>
+<li><a href="#rx-blocking" id="toc-rx-blocking">7.1.3.2 Rx blocking
+</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#ue-specific-requirements"
+id="toc-ue-specific-requirements">7.2 UE specific requirements</a>
+<ul>
+<li><a href="#transmitter-characteristics-1"
+id="toc-transmitter-characteristics-1">7.2.1 Transmitter
+characteristics</a></li>
+<li><a href="#receiver-characteristics-1"
+id="toc-receiver-characteristics-1">7.2.2 Receiver
+characteristics</a></li>
+<li><a
+href="#additional-requirements-for-rmr-cab-radio-receivers-using-wideband-technologies"
+id="toc-additional-requirements-for-rmr-cab-radio-receivers-using-wideband-technologies">7.2.3
+Additional requirements for RMR cab-radio receivers using wideband
+technologies</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#performance-requirements"
+id="toc-performance-requirements">8 Performance requirements</a></li>
+<li><a href="#deployment-aspects" id="toc-deployment-aspects">9
+Deployment aspects</a></li>
+<li><a href="#conclusion" id="toc-conclusion">10 Conclusion</a></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TR 38.852 V17.5.0 (2024-09)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Report</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>Introduction of 1900MHz NR band for</p>
+<p>Europe for Rail Mobile Radio (RMR)</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.jpeg"
+style="width:1.325in;height:0.91667in" /></td>
+<td style="text-align: right;"><img src="media/image2.png"
+style="width:1.775in;height:1.03333in" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2024, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">5</a></p>
+<p>1 Scope <a href="#scope">7</a></p>
+<p>2 References <a href="#references">7</a></p>
+<p>3 Definitions of terms, symbols and abbreviations <a
+href="#definitions-of-terms-symbols-and-abbreviations">7</a></p>
+<p>3.1 Terms <a href="#terms">7</a></p>
+<p>3.2 Symbols <a href="#symbols">8</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">8</a></p>
+<p>4 Regulatory background <a href="#regulatory-background">8</a></p>
+<p>4.1 EC Decision 2021/1730 <a href="#ec-decision-20211730">8</a></p>
+<p>4.2 ECC Decision(20)02 <a href="#ecc-decision2002">8</a></p>
+<p>4.3 Technical conditions <a href="#technical-conditions">9</a></p>
+<p>4.3.1 Base stations using wideband technologies <a
+href="#base-stations-using-wideband-technologies">9</a></p>
+<p>4.3.2 RMR terminals other than cab-radios using wideband technologies
+<a
+href="#rmr-terminals-other-than-cab-radios-using-wideband-technologies">9</a></p>
+<p>4.3.3 RMR cab-radios using wideband technologies <a
+href="#rmr-cab-radios-using-wideband-technologies">9</a></p>
+<p>5 Frequency band arrangement <a
+href="#frequency-band-arrangement">10</a></p>
+<p>6 NR system parameters <a href="#nr-system-parameters">10</a></p>
+<p>7 RF requirements <a href="#rf-requirements">10</a></p>
+<p>7.1 BS specific requirements <a
+href="#bs-specific-requirements">10</a></p>
+<p>7.1.1 General <a href="#general">10</a></p>
+<p>7.1.2 Transmitter characteristics <a
+href="#transmitter-characteristics">11</a></p>
+<p>7.1.2.1 BS maximum output power <a
+href="#bs-maximum-output-power">11</a></p>
+<p>7.1.2.2 Unwanted emissions <a href="#unwanted-emissions">11</a></p>
+<p>7.1.2.2.1 General <a href="#general-1">11</a></p>
+<p>7.1.2.2.2 Tx spurious emissions <a
+href="#tx-spurious-emissions">11</a></p>
+<p>7.1.3 Receiver characteristics <a
+href="#receiver-characteristics">12</a></p>
+<p>7.1.3.2 Rx blocking <a href="#rx-blocking">12</a></p>
+<p>7.2 UE specific requirements <a
+href="#ue-specific-requirements">12</a></p>
+<p>7.2.1 Transmitter characteristics <a
+href="#transmitter-characteristics-1">12</a></p>
+<p>7.2.2 Receiver characteristics <a
+href="#receiver-characteristics-1">12</a></p>
+<p>7.2.3 Additional requirements for RMR cab-radio receivers using
+wideband technologies <a
+href="#additional-requirements-for-rmr-cab-radio-receivers-using-wideband-technologies">14</a></p>
+<p>8 Performance requirements <a
+href="#performance-requirements">14</a></p>
+<p>9 Deployment aspects <a href="#deployment-aspects">14</a></p>
+<p>10 Conclusion <a href="#conclusion">15</a></p>
+<p>Annex A (informative): Change history <a
+href="#annex-a-informative-change-history">16</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Report has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<p>In the present document, modal verbs have the following meanings:</p>
+<p><strong>shall</strong> indicates a mandatory requirement to do
+something</p>
+<p><strong>shall not</strong> indicates an interdiction (prohibition) to
+do something</p>
+<p>The constructions "shall" and "shall not" are confined to the context
+of normative provisions, and do not appear in Technical Reports.</p>
+<p>The constructions "must" and "must not" are not used as substitutes
+for "shall" and "shall not". Their use is avoided insofar as possible,
+and they are not used in a normative context except in a direct citation
+from an external, referenced, non-3GPP document, or so as to maintain
+continuity of style when extending or modifying the provisions of such a
+referenced document.</p>
+<p><strong>should</strong> indicates a recommendation to do
+something</p>
+<p><strong>should not</strong> indicates a recommendation not to do
+something</p>
+<p><strong>may</strong> indicates permission to do something</p>
+<p><strong>need not</strong> indicates permission not to do
+something</p>
+<p>The construction "may not" is ambiguous and is not used in normative
+elements. The unambiguous constructions "might not" or "shall not" are
+used instead, depending upon the meaning intended.</p>
+<p><strong>can</strong> indicates that something is possible</p>
+<p><strong>cannot</strong> indicates that something is impossible</p>
+<p>The constructions "can" and "cannot" are not substitutes for "may"
+and "need not".</p>
+<p><strong>will</strong> indicates that something is certain or expected
+to happen as a result of action taken by an agency the behaviour of
+which is outside the scope of the present document</p>
+<p><strong>will not</strong> indicates that something is certain or
+expected not to happen as a result of action taken by an agency the
+behaviour of which is outside the scope of the present document</p>
+<p><strong>might</strong> indicates a likelihood that something will
+happen as a result of action taken by some agency the behaviour of which
+is outside the scope of the present document</p>
+<p><strong>might not</strong> indicates a likelihood that something will
+not happen as a result of action taken by some agency the behaviour of
+which is outside the scope of the present document</p>
+<p>In addition:</p>
+<p><strong>is</strong> (or any other verb in the indicative mood)
+indicates a statement of fact</p>
+<p><strong>is not</strong> (or any other negative verb in the indicative
+mood) indicates a statement of fact</p>
+<p>The constructions "is" and "is not" do not indicate requirements.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document is a technical report deals with the use of the
+Rail Mobile Radio spectrum in the 1900MHz frequency band in CEPT
+countries which are subject to the ECC Decision (20)02 [1] for the use
+by the railways. The purpose is to gather the relevant background
+information and studies in order to address all the necessary
+precautions to make the unpaired spectrum of 1900-1910MHz usable for 5G
+NR.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] ECC Decision (20)02: "Harmonised use of the paired frequency
+bands 874.4-880.0 MHz and 919.4-925.0 MHz and of the unpaired frequency
+band 1900-1910 MHz for Railway Mobile Radio (RMR) ".</p>
+<p>[2] 3GPP TS 38.101-1: "NR; User Equipment (UE) radio transmission and
+reception; Part 1: Range 1 Standalone".</p>
+<p>[3] RP‑211496 Introduction of 1900MHz NR band for Europe for Rail
+Mobile Radio (RMR), WID</p>
+<p>[4] 3GPP TS 38.104: " NR; Base Station (BS) radio transmission and
+reception".</p>
+<p>[5] European Commission implementing Decision (EU) 2021/1730 on the
+harmonised use of the paired frequency bands 874,4-880,0 MHz and
+919,4-925,0 MHz and of the unpaired frequency band 1 900-1 910 MHz for
+Railway Mobile Radio, 28 September 2021.</p>
+<p>[6] ECC Report 318, Compatibility between RMR and MFCN in the 900 MHz
+range, the 1900-1920 MHz band and the 2290-2300 MHz band.</p>
+<p>[7] 3GPP TR 37.829: " High-power UE operation for
+fixed-wireless/vehicle-mounted use cases in LTE bands and NR bands for
+Rel-18".</p>
+<p>[8] R4-2400334 LS to 3GPP RAN4 on in-block output power requirements
+for bands n100 and n101 and on additional unwanted emission limits for
+band n100, LSin, CEPT ECC WG FM</p>
+<p>[9] ETSI TS 103 793: " Rail Telecommunications (RT); Future Rail
+Mobile Communication System (FRMCS); FRMCS Radio Characteristics"</p>
+<h1 id="definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</h1>
+<h2 id="terms">3.1 Terms</h2>
+<p>For the purposes of the present document, the terms given in 3GPP
+TR 21.905 [1] and the following apply. A term defined in the present
+document takes precedence over the definition of the same term, if any,
+in 3GPP TR 21.905 [1].</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<p>BW<sub>Channel</sub> <em>BS channel bandwidth</em></p>
+<p>F<sub>DL,low</sub> The lowest frequency of the downlink <em>operating
+band</em></p>
+<p>F<sub>DL,high</sub> The highest frequency of the downlink
+<em>operating band</em></p>
+<p>P<sub>REFSENS</sub> Conducted Reference Sensitivity power level</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>AAS Advanced Antenna Systems</p>
+<p>ACLR Adjacent Channel Leakage Ratio</p>
+<p>ARFCN Absolute Radio Frequency Channel Number</p>
+<p>BS Base Station</p>
+<p>BW Bandwidth</p>
+<p>CEPT Conférence Européenne des administrations des Postes et
+Télécommunications</p>
+<p>EC European Commission</p>
+<p>ECC Electronic Communications Committee</p>
+<p>EIRP Effective Isotropic Radiated Power</p>
+<p>GSCN Global Synchronization Channel Number</p>
+<p>HST High Speed Train</p>
+<p>MFCN Mobile/Fixed Communications Networks</p>
+<p>NR New Radio</p>
+<p>REFSENS Reference Sensitivity</p>
+<p>RF Radio Frequency</p>
+<p>RMR Rail Mobile Radio</p>
+<p>SCS Sub-Carrier Spacing</p>
+<p>SS Synchronization Signal</p>
+<p>TDD Time Division Duplex</p>
+<h1 id="regulatory-background">4 Regulatory background</h1>
+<h2 id="ec-decision-20211730">4.1 EC Decision 2021/1730</h2>
+<p>On 28 September 2021, the European Commission Decision 2021/1730 [5]
+establishes the harmonised conditions for the availability and efficient
+use of radio spectrum for the Railway Mobile Radio (RMR) in the band
+1900 – 1910 MHz. By 1 January 2022, Member States shall designate and
+make available on a non-exclusive basis the unpaired frequency band 1900
+– 1910 MHz for Railway Mobile Radio, in accordance with the technical
+conditions listed in clause 4.3.</p>
+<h2 id="ecc-decision2002">4.2 ECC Decision(20)02</h2>
+<p>The ECC Decision (20)02 [1] addresses the designation of the unpaired
+frequency band 1900-1910 MHz to be used for Railway Mobile Radio (RMR)
+on a CEPT wide basis.</p>
+<p>By this Decision, the CEPT administrations shall designate the
+unpaired frequency band 1900-1910 MHz for Railway Mobile Radio (RMR) on
+a non-exclusive basis, according to the technical conditions listed in
+clause 4.3.</p>
+<p>This Decision entered into force on 20 November 2020.</p>
+<h2 id="technical-conditions">4.3 Technical conditions</h2>
+<h3 id="base-stations-using-wideband-technologies">4.3.1 Base stations
+using wideband technologies</h3>
+<p>Only non-AAS Base Stations were considered, based on study outcomes
+as captured in ECC Decision (20)02 [1]. Baseline for the BS RF
+requirements derivation for the RAN4 n101 RF specific requirements were
+extracted from ECC Decision (20)02 [1] in tables 4.3.1-1 to 4.3.1-3.</p>
+<p>Table 4.3.1-1: General in-block requirement mandatory for
+uncoordinated deployment [1]</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr>
+<th>RMR channel BW</th>
+<th>Maximum EIRP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 MHz</td>
+<td>65 dBm/10 MHz (NOTE)</td>
+</tr>
+<tr>
+<td colspan="2">NOTE: In case an administration wishes to allow higher
+e.i.r.p., coordination or other mitigation measures are required.</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.1-2: Baseline requirement [1]</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr>
+<th>Frequency Range</th>
+<th>EIRP limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1920 - 1980 MHz</td>
+<td>-43 dBm/5 MHz</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.1-3: Requirements on wideband RMR BS receiver
+characteristics [1]</p>
+<table>
+<colgroup>
+<col style="width: 60%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Level of the wanted signal</td>
+<td>RefSens + 3 dB</td>
+</tr>
+<tr>
+<td>Maximum 5 MHz LTE interfering signal in 1805 - 1880 MHz</td>
+<td>-20 dBm</td>
+</tr>
+<tr>
+<td colspan="2"><p>NOTE 1: The antenna connector of the BS receiver is
+the reference point. The reference sensitivity (RefSens) is the minimum
+mean power received at the antenna connector at which a specified
+minimum performance shall be met.</p>
+<p>NOTE 2: These requirements cover both blocking and third-order
+intermodulation.</p></td>
+</tr>
+</tbody>
+</table>
+<h3
+id="rmr-terminals-other-than-cab-radios-using-wideband-technologies">4.3.2
+RMR terminals other than cab-radios using wideband technologies</h3>
+<p>The following technical conditions apply for RMR terminals other than
+cab-radios using wideband technologies:</p>
+<p>Table 4.3.2-1: RMR terminals other than cab-radio requirements using
+wideband technologies</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr>
+<th>Maximum output power</th>
+<th>23 dBm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ACLR</td>
+<td>30 dB minimum</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>Uplink power control is mandatory and shall be activated.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rmr-cab-radios-using-wideband-technologies">4.3.3 RMR cab-radios
+using wideband technologies</h3>
+<p>Cab-radios are high-power user equipments (i.e. HPUE) installed on
+trains with external antenna on top of the train roof at approximately
+4m over ground.</p>
+<p>ECC Decision (20)02 [1] has also captured transmit and receive
+requirements for cab-radios, which were not addressed in the Rel-17 WI.
+Those transmit requirements were captured in TR 37.829 [].</p>
+<p>Table 4.3.3-1: RMR cab-radio requirements using wideband
+technologies</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr>
+<th>Maximum output power</th>
+<th>31 dBm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ACLR</td>
+<td>37 dB minimum</td>
+</tr>
+<tr>
+<td style="text-align: center;"><p>Unwanted output power in</p>
+<p>1920-1980 MHz</p></td>
+<td><p>▪ -25 dBm/MHz maximum in 1920-1925 MHz;</p>
+<p>▪ -30 dBm/MHz maximum in 1925-1980 MHz;</p></td>
+</tr>
+<tr>
+<td>Other</td>
+<td>Uplink power control is mandatory and shall be activated.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="frequency-band-arrangement">5 Frequency band arrangement</h1>
+<p>The RMR 1900 MHz band is within the range of FR1 and is proposed as
+TDD band (Table 5-1).</p>
+<p>Table 5-1: New NR RMR band in FR1</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 28%" />
+<col style="width: 29%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th>Band number</th>
+<th>UL</th>
+<th>DL</th>
+<th>Duplex mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n101</td>
+<td>1900 MHz – 1910 MHz</td>
+<td>1900 MHz – 1910 MHz</td>
+<td>TDD</td>
+</tr>
+</tbody>
+</table>
+<h1 id="nr-system-parameters">6 NR system parameters</h1>
+<p>The following system parameters are defined for RMR 1900 MHz
+band:</p>
+<p>Table 6-1: RMR 1900 - Channel bandwidth</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">NR Band</th>
+<th rowspan="2">SCS (kHz)</th>
+<th colspan="13"><em>BS channel bandwidth</em> (MHz)</th>
+</tr>
+<tr>
+<th>5</th>
+<th>10</th>
+<th>15</th>
+<th>20</th>
+<th>25</th>
+<th>30</th>
+<th>40</th>
+<th>50</th>
+<th>60</th>
+<th>70</th>
+<th>80</th>
+<th>90</th>
+<th>100</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>15</td>
+<td>5</td>
+<td>10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n101</td>
+<td>30</td>
+<td></td>
+<td>10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>60</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6-2: RMR 1900 - applicable NR-ARFCN</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 14%" />
+<col style="width: 35%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR <em>operating band</em></th>
+<th><p>ΔF<sub>Raster</sub></p>
+<p>(kHz)</p></th>
+<th><p>Uplink</p>
+<p>range of N<sub>REF</sub></p>
+<p>(First – &lt;Step size&gt; – Last)</p></th>
+<th><p>Downlink</p>
+<p>range of N<sub>REF</sub></p>
+<p>(First – &lt;Step size&gt; – Last)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n101</td>
+<td>100</td>
+<td>380000 – &lt;20&gt; – 382000</td>
+<td>380000 – &lt;20&gt; – 382000</td>
+</tr>
+</tbody>
+</table>
+<p>Table 6-3: RMR 1900 – applicable SS raster entries</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR <em>operating band</em></th>
+<th>SS Block SCS</th>
+<th>SS Block pattern<br />
+(NOTE 1)</th>
+<th><p>Range of GSCN</p>
+<p>(First – &lt;Step size&gt; – Last)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">n101</td>
+<td>15 kHz</td>
+<td>Case A</td>
+<td>4754 – &lt;1&gt; – 4768</td>
+</tr>
+<tr>
+<td>30 kHz</td>
+<td>Case C</td>
+<td>4760 – &lt;1&gt; – 4764</td>
+</tr>
+</tbody>
+</table>
+<h1 id="rf-requirements">7 RF requirements</h1>
+<h2 id="bs-specific-requirements">7.1 BS specific requirements</h2>
+<h3 id="general">7.1.1 General</h3>
+<p>According to ECC Decision (20)02 [1], the BS RF work for RMR1900 is
+limited to the Wide Area Base Stations, determined by the use along
+railway lines and their corresponding characteristics defined by 3GPP TS
+38.104 [4].</p>
+<p>In accordance to ECC Decision (20)02 [1], the related studies were
+done for the non-AAS BS architectures, defined in 3GPP TS 38.104 [4].
+Therefore, the RAN4 requirements derivation was limited to the BS type
+1-C requirements, only.</p>
+<p>As the EIRP limits were defined in the ECC Decision (20)02 [1],
+consideration of non-AAS BS architecture required to convert those EIRP
+limits into the conducted requirements assuming a maximum antenna gain
+that can vary depending on the used antenna and related antenna gain as
+well as the potential losses, e.g., feeder. In the present consideration
+an antenna gain of 18 dBi and 4 dB losses in accordance to
+ECC Report 318 [6] resulting to a maximum gain value of
+G<sub>maxRMR1900</sub> = 14 dBi. Other assumptions may lead to other
+maximum gain values and conducted requirements. Also, one antenna
+connector was assumed. If the BS has more than one antenna connector,
+the limits shall be re-calculated considering the intended number of
+antenna connectors serving a cell.</p>
+<h3 id="transmitter-characteristics">7.1.2 Transmitter
+characteristics</h3>
+<h4 id="bs-maximum-output-power">7.1.2.1 BS maximum output power</h4>
+<p>Based on ECC Decision (20)02 [1] and clarifications in [8], there
+were two scenarios considered for FRMCS deployment:</p>
+<p>1. Uncoordinated FRMCS deployment, with the output power limit
+specified in ECC Decision (20)02 [1],</p>
+<p>2. Coordinated FRMCS deployment, where no output power limit was
+defined for the Wide Area BS class.</p>
+<p>For the bullet 1 above, the maximum output power for BS operating in
+band n101 applicable for uncoordinated deployment, should not exceed the
+P<sub>rated,c,AC</sub> derived based on table 4.3.1-1 EIRP limits, with
+the assumption of a maximum value of the BS G<sub>maxRMR1900</sub>, and
+assuming one antenna connector, as:</p>
+<p>(65 – G<sub>maxRMR1900</sub>) dBm / 10 MHz = 51 dBm / 10 MHz,</p>
+<p>(62 – G<sub>antRMR1900</sub>) dBm / 5 MHz = 48 dBm / 5 MHz,</p>
+<p>where G<sub>maxRMR1900</sub> is the maximum gain (antenna gain and
+losses) of the RMR 1900 BS consideration.</p>
+<p>NOTE 1: 5 MHz channel bandwidth support was not considered in ECC
+Decision (20)02 [1] and was added on request of RMR operators. The above
+limit for 5 MHz channel bandwidth was then specified based on the limit
+for 10 MHz, keeping constant PSD.</p>
+<p>NOTE 2: Based on inputs received in [8], it was further clarified by
+the CEPT ECC WG FM that both uncoordinated, as well as coordinated
+deployments shall be considered by RAN4 specification for FRMCS
+deployment in band n101. Therefore, the output power limits higher that
+65 dBm EIRP are also possible for FRMCS in band n101, subject to
+deployment coordination.</p>
+<h4 id="unwanted-emissions">7.1.2.2 Unwanted emissions</h4>
+<h5 id="general-1">7.1.2.2.1 General</h5>
+<p>Only Category B emission requirements are applicable to NR operation
+in RMR1900 band.</p>
+<h5 id="tx-spurious-emissions">7.1.2.2.2 Tx spurious emissions</h5>
+<p>Additional Tx spurious emission requirements are considered for band
+n101 in 3GPP TS 38.104 [4], based on conversion of the EIRP limits from
+ECC Decision (20)02 [1], as summarized in table 7.1.2.2.2-1. The
+requirement is derived based on table 4.3.1-5, with the assumption of
+maximum gain value of the BS G<sub>maxRMR1900</sub>:</p>
+<p>Table 7.1.2.2.2-1: Additional Tx spurious emissions requirement
+derivation for n101</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 28%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr>
+<th>Spurious frequency range</th>
+<th><em>Basic limit</em></th>
+<th><em>Measurement bandwidth</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1920 MHz – 1980 MHz</td>
+<td>- 43 - G <sub>maxRMR1900</sub> = -57 dBm (NOTE)</td>
+<td>5 MHz</td>
+</tr>
+<tr>
+<td colspan="3">NOTE: Assuming a 14dBi maximum gain (antenna gain and
+losses) for G<sub>maxRMR1900</sub>, and assuming one antenna
+connector.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="receiver-characteristics">7.1.3 Receiver characteristics</h3>
+<p>RAN4 will not specify requirements related to the CEPT assumptions
+for BS enhanced selectivity operating adjacent to band n1 and deployed
+close by the corresponding railway infrastructure.</p>
+<h4 id="rx-blocking">7.1.3.2 Rx blocking </h4>
+<p>Rx blocking requirements applicable for band n101 in
+3GPP TS 38.104 [4], based on conversion of the EIRP limits from
+ECC Decision (20)02 [1], are summarized in table 7.1.3.2-1. Interfering
+signal characteristic is 5 MHz LTE signal, as specified in
+ECC Decision (20)02 [1].</p>
+<p>Table 7.1.3.2-1: Rx blocking requirement derivation for n101</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 30%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr>
+<th><em>BS channel bandwidth</em> of the <em>lowest/highest carrier</em>
+received (MHz)</th>
+<th>Wanted signal mean power (dBm)</th>
+<th>Interfering signal mean power (dBm)</th>
+<th>Center Frequency of Interfering Signal (MHz)</th>
+<th>Type of interfering signal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5, 10</td>
+<td>P<sub>REFSENS</sub> + 3 dB</td>
+<td>Wide Area BS: -20</td>
+<td>1807.5 MHz to 1877.5 MHz</td>
+<td>5 MHz LTE signal</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ue-specific-requirements">7.2 UE specific requirements</h2>
+<h3 id="transmitter-characteristics-1">7.2.1 Transmitter
+characteristics</h3>
+<p>Rel-17 UE requirements for RMR 1900 are summarized in the upcoming
+tables applicable for 3GPP TS 38.101-1 [2].</p>
+<p>Table 7.2.1-1: UE Power Class</p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th><p>NR</p>
+<p>band</p></th>
+<th>Class 1 (dBm)</th>
+<th>Tolerance (dB)</th>
+<th>Class 1.5 (dBm)</th>
+<th>Tolerance (dB)</th>
+<th>Class 2 (dBm)</th>
+<th>Tolerance (dB)</th>
+<th>Class 3 (dBm)</th>
+<th>Tolerance (dB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n101</td>
+<td>31</td>
+<td>+2/-3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>23</td>
+<td>±2</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE: PC1 for cab-radio was introduced in Rel-18 in TR 37.829
+[7].</p>
+<p>Table 7.2.1-2: Requirements for spurious emissions for UE
+co-existence</p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 31%" />
+<col style="width: 9%" />
+<col style="width: 6%" />
+<col style="width: 9%" />
+<col style="width: 12%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR Band</th>
+<th colspan="7">Spurious emission for UE co-existence</th>
+</tr>
+<tr>
+<th></th>
+<th>Protected band</th>
+<th colspan="3">Frequency range (MHz)</th>
+<th>Maximum Level (dBm)</th>
+<th>MBW (MHz)</th>
+<th>NOTE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">n101</td>
+<td>E-UTRA Band 1, 3, 7, 8, 20, 22, 28, 31, 32, 33, 34, 38, 40, 41, 42,
+43, 50, 51, 52, 65, 67, 68, 69, 72, 74, 75, 76</td>
+<td>F<sub>DL_low</sub></td>
+<td>-</td>
+<td>F<sub>DL_high</sub></td>
+<td>-50</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>NR Band n77, n78</td>
+<td>F<sub>DL_low</sub></td>
+<td>-</td>
+<td>F<sub>DL_high</sub></td>
+<td>-50</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Frequency range</td>
+<td>758</td>
+<td>-</td>
+<td>788</td>
+<td>-50</td>
+<td>1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="receiver-characteristics-1">7.2.2 Receiver characteristics</h3>
+<p>The following 3GPP TS 38.101-1 [2] receiver characteristics changes
+were introduced for 1900 MHz RMR band:</p>
+<p><strong>Table 7.2.2-1: Two antenna port reference sensitivity QPSK
+P<sub>REFSENS</sub> for TDD, SDL and FDD with variable duplex operation
+bands</strong></p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 6%" />
+<col style="width: 44%" />
+<col style="width: 26%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="5" style="text-align: center;"><strong>Operating band / SCS
+/ Channel bandwidth / REFSENS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Operating band</strong></td>
+<td style="text-align: center;"><p><strong>SCS</strong></p>
+<p><strong>kHz</strong></p></td>
+<td style="text-align: center;"><strong>Channel bandwidth
+(MHz)</strong></td>
+<td style="text-align: center;"><strong>REFSENS
+(dBm)<sup>8</sup></strong></td>
+<td style="text-align: center;"><strong>Duplex Mode</strong></td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: center;">n101</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">5, 10</td>
+<td style="text-align: center;">-100 +
+10log<sub>10</sub>(N<sub>RB</sub>/25)</td>
+<td rowspan="2" style="text-align: center;">TDD</td>
+</tr>
+<tr>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">-97.1 +
+10log<sub>10</sub>(N<sub>RB</sub>/24)</td>
+</tr>
+</tbody>
+</table>
+<p>Table 7.2.2-2: Uplink configuration for reference sensitivity</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="18">Operating band / SCS (kHz) / Channel bandwidth (MHz) /
+Duplex mode</th>
+</tr>
+<tr>
+<th>Operating Band</th>
+<th>SCS</th>
+<th>5</th>
+<th>10</th>
+<th>15</th>
+<th>20</th>
+<th>25</th>
+<th>30</th>
+<th>35</th>
+<th>40</th>
+<th>45</th>
+<th>50</th>
+<th>60</th>
+<th>70</th>
+<th>80</th>
+<th>90</th>
+<th>100</th>
+<th>Duplex Mode</th>
+</tr>
+<tr>
+<th rowspan="2">n101</th>
+<th>15</th>
+<th>25</th>
+<th>50</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>FDD</th>
+</tr>
+<tr>
+<th>30</th>
+<th></th>
+<th>24</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 7.2.2-3: In-band blocking for NR bands with F<sub>DL_high</sub>
+&lt; 2700 MHz and F<sub>UL_high</sub> &lt; 2700 MHz</p>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 15%" />
+<col style="width: 8%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">NR band</th>
+<th>Parameter</th>
+<th>Unit</th>
+<th>Case 1</th>
+<th>Case 2</th>
+<th>Case 3</th>
+<th>Case 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"></td>
+<td>P<sub>interferer</sub></td>
+<td>dBm</td>
+<td>-56</td>
+<td>-44</td>
+<td>-15</td>
+<td>-38</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td>F<sub>interferer</sub> (offset)</td>
+<td>MHz</td>
+<td><p>-BW<sub>Channel</sub>/2 –</p>
+<p>F<sub>Ioffset, case 1</sub></p>
+<p>and</p>
+<p>BW<sub>Channel</sub>/2 +</p>
+<p>F<sub>Ioffset, case 1</sub></p></td>
+<td><p>≤ -BW<sub>Channel</sub>/2 –</p>
+<p>F<sub>Ioffset, case 2</sub></p>
+<p>and</p>
+<p>≥ BW<sub>Channel</sub>/2 +</p>
+<p>F<sub>Ioffset, case 2</sub></p></td>
+<td></td>
+<td>-BW<sub>Channel</sub>/2-11</td>
+</tr>
+<tr>
+<td style="text-align: left;">n1, n2, n3, n5, n7, n8, n12, n13, n14,
+n18, n20, n24, n25, n26, n28,n34, n38,n39, n40, n41, n48<sup>3</sup>,
+n50, n51, n53, n65, n66, n67, n70, n74, n75, n76, n85, n91, n92, n93,
+n94, n101</td>
+<td>F<sub>interferer</sub></td>
+<td>MHz</td>
+<td>NOTE 2</td>
+<td><p>F<sub>DL_low</sub> – 15</p>
+<p>to</p>
+<p>F<sub>DL_high</sub> + 15</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 7.2.2-4: Out of-band blocking for NR bands with
+F<sub>DL_high</sub> &lt; 2700 MHz and F<sub>UL_high</sub> &lt; 2700
+MHz</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 8%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR band</th>
+<th>Parameter</th>
+<th>Unit</th>
+<th>Range 1</th>
+<th>Range 2</th>
+<th>Range 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n1, n2, n3,</td>
+<td>P<sub>interferer</sub></td>
+<td>dBm</td>
+<td>-44</td>
+<td>-30</td>
+<td>-15</td>
+</tr>
+<tr>
+<td>n5, n7, n8, n12, n13, n14, n18, n20, n24, n25, n26, n28, n30, n34,
+n38, n39, n40, n41, n48<sup>5</sup>, n50, n51, n53<sup>6</sup>, n65,
+n66, n67, n70, n71, n74, n75, n76, n85, n91, n92, n93, n94, n101</td>
+<td>F<sub>interferer</sub> (CW)</td>
+<td>MHz</td>
+<td><p>-60 &lt; f – F<sub>DL_low</sub> &lt; -15</p>
+<p>or</p>
+<p>15 &lt; f – F<sub>DL_high</sub> &lt; 60</p></td>
+<td><p>-85 &lt; f – F<sub>DL_low</sub> ≤ -60</p>
+<p>or</p>
+<p>60 ≤ f – F<sub>DL_high</sub> &lt; 85</p></td>
+<td><p>1 ≤ f ≤ F<sub>DL_low</sub> – 85</p>
+<p>or</p>
+<p>F<sub>DL_high</sub> + 85 ≤ f</p>
+<p>≤ 12750</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 7.2.2-5: Narrow Band Blocking</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 10%" />
+<col style="width: 6%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR band</th>
+<th>Parameter</th>
+<th>Unit</th>
+<th colspan="5">Channel Bandwidth (MHz)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>10</td>
+<td>15</td>
+<td>20</td>
+<td>25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100</td>
+</tr>
+<tr>
+<td rowspan="5">n1, n2, n3, n5, n7, n8, n12, n13, n14, n18, n20, n24,
+n25, n26, n28, n30, n34, n38, n39, n40, n41, n48, n50, n51, n53, n65,
+n66, n67, n70, n71, n74, n75, n76, n85, n101</td>
+<td>P<sub>w</sub></td>
+<td>dBm</td>
+<td></td>
+<td colspan="4">P<sub>REFSENS</sub> + channel-bandwidth specific value
+below</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>16</td>
+<td>13</td>
+<td>14</td>
+<td>16</td>
+<td>16</td>
+</tr>
+<tr>
+<td>P<sub>uw</sub> (CW)</td>
+<td>dBm</td>
+<td colspan="5">-55</td>
+</tr>
+<tr>
+<td>F<sub>uw</sub> (offset SCS= 15 kHz) <sup>4</sup></td>
+<td>MHz</td>
+<td colspan="4"><span class="math display">\[\left( \left\lfloor
+\frac{\frac{{BW}_{Channel}}{2} + 0.2}{SCS} + 0.5 \right\rfloor + 0.5
+\right)SCS\]</span></td>
+<td>NA</td>
+</tr>
+<tr>
+<td>F<sub>uw</sub> (offset SCS= 30 kHz)<sup>4</sup></td>
+<td>MHz</td>
+<td colspan="4">NA</td>
+<td><span class="math display">\[\left( \left\lfloor
+\frac{\frac{{BW}_{Channel}}{2} + {BW}_{GB,Channel}}{SCS} + 0.5
+\right\rfloor + 0.5 \right)SCS\]</span></td>
+</tr>
+</tbody>
+</table>
+<h3
+id="additional-requirements-for-rmr-cab-radio-receivers-using-wideband-technologies">7.2.3
+Additional requirements for RMR cab-radio receivers using wideband
+technologies</h3>
+<p>In ECC Decision (20)02 [1] Annex 3, additional requirements have been
+introduced for 1900 MHz RMR cab-radio receivers that reflect the
+specific train deployment case with UE antenna placed on top of the
+trains at approximately 4m over ground and having an effective antenna
+gain of 2dBi.</p>
+<p>Table 7.2.3-1: RMR cab-radio receivers using wideband technologies
+[1]</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr>
+<th>Level of the wanted signal</th>
+<th>RefSens + 3 dB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum 5 MHz LTE interfering signal in 1805-1880 MHz</td>
+<td>-13 dBm</td>
+</tr>
+<tr>
+<td>Maximum 5 MHz LTE interfering signal in 1920-1980 MHz</td>
+<td style="text-align: center;">-39 dBm</td>
+</tr>
+<tr>
+<td colspan="2"><p>Note 1: The antenna connector of the radio module is
+the reference point. The reference sensitivity (RefSens) is the minimum
+mean power received at the antenna connector at which a specified
+minimum performance shall be met.</p>
+<p>Note 2: These requirements cover both blocking and third-order
+intermodulation.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The requirements in Table 7.2.3-1 are covered in the ETSI TS 103 793
+[9].</p>
+<h1 id="performance-requirements">8 Performance requirements</h1>
+<p>The High Speed Train (HST) BS demodulation requirements are to be
+transparently applied for the NR operation in the RMR1900 operating
+band.</p>
+<h1 id="deployment-aspects">9 Deployment aspects</h1>
+<p>In general, network deployment aspects are out of scope of the RAN4
+work. For the derivation of the BS RF requirements it was assumed that
+the RMR and MFCN base stations are not co-located. It was identified
+afterwards that such scenarios may actually happen in the field.</p>
+<p>Co-location of a MFCN BS and a RMR BS requires coordination among the
+involved parties.</p>
+<p>In accordance with ECC Decision (20)02 Decides 4 [1], in case of
+implementation of coordination procedures or other mitigation measures
+for band n101 deployments, it is possible to deploy higher E.I.R.P. than
+stated in the technical conditions in ECC Decision (20)02 Annex 3 [1].
+This has been further confirmed by the CEPT ECC WG FM feedback in [8],
+where RAN4 was asked to consider both coordinated, as well as
+uncoordinated deployments.</p>
+<p>For uncoordinated deployment the technical conditions stated in ECC
+Decision (20)02 Annex 3 [1] apply for the in-block requirements, i.e.
+output power limit applies for band n101 operation.</p>
+<p>The use of spectrum and its related conditions, e.g., E.I.R.P, in
+accordance to ECC Decision (20)02 Part B [1], are in the responsibility
+of national regulation and coordination among involved parties.</p>
+<h1 id="conclusion">10 Conclusion</h1>
+<p>The study dealt with how the 1900-1910 MHz spectrum block (RMR1900)
+can be used for rail communication using 5G NR applicable in CEPT
+countries. The subject-areas 5G NR system, BS RF and UE RF were examined
+in detail.</p>
+<p>General: The focus was on the use of RMR1900 under uncoordinated
+conditions, assuming that RMR BS operates independently of other
+operators e.g. MFCN, however based on CEPT ECC WG FM clarification
+received in R4-2400334 [8], also coordinated deployments have to be
+considered. Co-location with other operators and resulting coordination
+is subject to national regulation and will be not further detailed by
+3GPP RAN4.</p>
+<p>System Parameter: The RMR1900 spectrum block can be used by either a
+10 MHz CBW or a 5 MHz CBW. The corresponding system parameters are to be
+transferred to 3GPP TS 38.101-1 [2] and 3GPP TS 38.104 [4].</p>
+<p>BS RF: The ECC Decision (20)02 [1], i.e. EIRP limits were analysed
+accordingly and the necessary conclusions for an uncoordinated
+operational approach were derived. However, based on CEPT ECC WG FM
+clarification received in R4-2400334 [8], also coordinated deployments
+have to be considered. These include the BS rated output power using
+corresponding assumptions, the resulting emission values of the
+transmitter and the specifications of the receiver. The agreed
+parameters are to be transferred to 3GPP TS 38.104 [4]. Furthermore, the
+coexistence with other 3GPP radio technologies has been included. These
+are to be captured in the corresponding normative 3GPP technical
+specifications.</p>
+<p>UE RF: Based on ECC Decision (20)02 [1], the EIRP limits were
+analysed accordingly, and the necessary conclusions were derived for the
+use of Power Class 3 (23dBm).</p>
+<p>PC1 (31dBm) power class was introduced for the cab-radio after
+completion of Rel-17, with the derivation of Tx requirements captured in
+in TR 37.829 [7]. For related PC1 cab radio Rx characteristics for band
+n101 refer to ETSI TS 103 793 [9].</p>
+<p class="heading" id="annex-a-informative-change-history"><br />
+Annex A (informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 2%" />
+<col style="width: 4%" />
+<col style="width: 3%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-08</td>
+<td style="text-align: left;">RAN4#100-e</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Initial baseline</td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-11</td>
+<td style="text-align: left;">RAN4#101e</td>
+<td style="text-align: left;">R4-2114886</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP to 38.852 on 1900MHz RMR RAN4 system
+parameters</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-01</td>
+<td style="text-align: left;">RAN4#101-bis-e</td>
+<td style="text-align: left;">R4-2120042</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP to 38.852 on 1900MHz RMR RAN4 system
+parameters</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-01</td>
+<td style="text-align: left;">RAN4#101-bis-e</td>
+<td style="text-align: left;">R4-2120044</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP to 38.852 on 1900MHz RMR RAN4 UE RF
+requirements</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-01</td>
+<td style="text-align: left;">RAN4#101-bis-e</td>
+<td style="text-align: left;">R4-2120681</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TPs to TR 38.853: BS RF related
+agreements for RMR1900</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: left;">RAN4#102-e</td>
+<td style="text-align: left;">R4-2201328</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">RMR 900MHz band – TP to TR 38.852</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: left;">RAN4#102-e</td>
+<td style="text-align: left;">R4-2202243</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Proposed changes for clause 7.1 in 3GPP
+TR 38.852</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: left;">RAN4#102-e</td>
+<td style="text-align: left;">R4-2202244</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Proposed changes for clause 7.2 in 3GPP
+TR 38.852</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: left;">RAN4#102-e</td>
+<td style="text-align: left;">R4-2203052</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Proposed changes for clause 9 in 3GPP TR
+38.852</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: left;">RAN4#102-e</td>
+<td style="text-align: left;">R4-2203058</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP to TR 38.852: BS RF requirements</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-04</td>
+<td style="text-align: center;">RAN4#102-e</td>
+<td style="text-align: center;">R4-2207272</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP BS RF conducted requirements for
+n101</td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-04</td>
+<td style="text-align: center;">RAN4#102-e</td>
+<td style="text-align: center;">R4-2206279</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP 1900MHz RMR band – conclusion</td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-05</td>
+<td style="text-align: center;">RAN4#103-e</td>
+<td style="text-align: center;">R4-2210882</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">RMR1900 MHz band – TP to TR 38.852</td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8" style="text-align: center;"><strong>Change
+history</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date</strong></td>
+<td><strong>Meeting</strong></td>
+<td><strong>TDoc</strong></td>
+<td><strong>CR</strong></td>
+<td><strong>Rev</strong></td>
+<td><strong>Cat</strong></td>
+<td><strong>Subject/Comment</strong></td>
+<td><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td>Approved by plenary – Rel-17 spec under change control</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-03</td>
+<td style="text-align: center;">RAN#99</td>
+<td style="text-align: center;">RP-230517</td>
+<td>0001</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td>Correction to TR 38.852</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-06</td>
+<td style="text-align: center;">RAN#100</td>
+<td>RP-231339</td>
+<td>0002</td>
+<td>1</td>
+<td>F</td>
+<td>CR to TR 38.852 - clarification on the limits specified from ECC
+EIRP limits for band n101</td>
+<td style="text-align: center;">17.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-12</td>
+<td style="text-align: center;">RAN#102</td>
+<td>RP-233350</td>
+<td>0006</td>
+<td>1</td>
+<td>F</td>
+<td>Correction to TR 38.852</td>
+<td style="text-align: center;">17.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024-03</td>
+<td style="text-align: center;">RAN#103</td>
+<td>RP-240572</td>
+<td>0007</td>
+<td></td>
+<td>F</td>
+<td>(NR_RAIL_EU_1900MHz_TDD-Core) CR to TR 38.852 on correction of
+reference to EU Decision</td>
+<td style="text-align: center;">17.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024-03</td>
+<td style="text-align: center;">RAN#103</td>
+<td>RP-240572</td>
+<td>0008</td>
+<td>1</td>
+<td>F</td>
+<td>(NR_RAIL_EU_1900MHz_TDD-Core) CR to TR 38.852: Corrections on FRMCS
+n101 deployment aspects and related output power limits, Rel-17</td>
+<td style="text-align: center;">17.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024-03</td>
+<td style="text-align: center;">RAN#103</td>
+<td>RP-240572</td>
+<td>0009</td>
+<td>1</td>
+<td>F</td>
+<td>(NR_RAIL_EU_1900MHz_TDD-Core) CR to TR 38.852: complementary update
+for the n101 cab-radio aspects, Rel-17</td>
+<td style="text-align: center;">17.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024-09</td>
+<td style="text-align: center;">RAN#105</td>
+<td>RP-242183</td>
+<td>0014</td>
+<td></td>
+<td>F</td>
+<td>CR to TR 38.852: Clarification on PC1 Rx requirements for FRMCS
+operation in band n101</td>
+<td style="text-align: center;">17.5.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

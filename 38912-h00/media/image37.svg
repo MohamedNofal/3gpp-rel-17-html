@@ -1,0 +1,364 @@
+<?xml version="1.0"  encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="947.0000" height="673.0000">
+<g transform="translate(2.0000, 2.0000)">
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4025.0000,6222.0000 L 4025.0000,7922.0000 L 14607.0000,7922.0000 L 14607.0000,6222.0000 L 4025.0000,6222.0000 Z" stroke-width="1px" stroke="#F2F2F2"  fill="#F2F2F2" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4025.0000,7922.0000 L 14607.0000,7922.0000 L 14607.0000,6222.0000 L 4025.0000,6222.0000 L 4025.0000,7922.0000 Z" stroke="#000000" stroke-width="16.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="450.0000" y="408.0000" font-size="16.0000" ><![CDATA[Option ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="499.0000" y="408.0000" font-size="16.0000" ><![CDATA[2]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="507.0000" y="408.0000" font-size="16.0000" ><![CDATA[: ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="515.0000" y="408.0000" font-size="16.0000" ><![CDATA[For eNB connected to NG Core]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="412.0000" y="428.0000" font-size="16.0000" ><![CDATA[Xn or NG]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="471.0000" y="428.0000" font-size="16.0000" ><![CDATA[-]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="475.0000" y="428.0000" font-size="16.0000" ><![CDATA[C based HO with ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="587.0000" y="428.0000" font-size="13.0000" ><![CDATA[CN context transfer if required]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4663.0000,7808.0000 L 4983.0000,7808.0000 C 4989.0000,7808.0000 4994.0000,7812.0000 4994.0000,7818.0000 C 4994.0000,7824.0000 4989.0000,7829.0000 4983.0000,7829.0000 L 4663.0000,7829.0000 C 4657.0000,7829.0000 4653.0000,7824.0000 4653.0000,7818.0000 C 4653.0000,7812.0000 4657.0000,7808.0000 4663.0000,7808.0000 Z M 5175.0000,7808.0000 L 5495.0000,7808.0000 C 5501.0000,7808.0000 5506.0000,7812.0000 5506.0000,7818.0000 C 5506.0000,7824.0000 5501.0000,7829.0000 5495.0000,7829.0000 L 5175.0000,7829.0000 C 5169.0000,7829.0000 5165.0000,7824.0000 5165.0000,7818.0000 C 5165.0000,7812.0000 5169.0000,7808.0000 5175.0000,7808.0000 Z M 5687.0000,7808.0000 L 6007.0000,7808.0000 C 6013.0000,7808.0000 6018.0000,7812.0000 6018.0000,7818.0000 C 6018.0000,7824.0000 6013.0000,7829.0000 6007.0000,7829.0000 L 5687.0000,7829.0000 C 5681.0000,7829.0000 5677.0000,7824.0000 5677.0000,7818.0000 C 5677.0000,7812.0000 5681.0000,7808.0000 5687.0000,7808.0000 Z M 6199.0000,7808.0000 L 6519.0000,7808.0000 C 6525.0000,7808.0000 6530.0000,7812.0000 6530.0000,7818.0000 C 6530.0000,7824.0000 6525.0000,7829.0000 6519.0000,7829.0000 L 6199.0000,7829.0000 C 6193.0000,7829.0000 6189.0000,7824.0000 6189.0000,7818.0000 C 6189.0000,7812.0000 6193.0000,7808.0000 6199.0000,7808.0000 Z M 6711.0000,7808.0000 L 7031.0000,7808.0000 C 7037.0000,7808.0000 7042.0000,7812.0000 7042.0000,7818.0000 C 7042.0000,7824.0000 7037.0000,7829.0000 7031.0000,7829.0000 L 6711.0000,7829.0000 C 6705.0000,7829.0000 6701.0000,7824.0000 6701.0000,7818.0000 C 6701.0000,7812.0000 6705.0000,7808.0000 6711.0000,7808.0000 Z M 7223.0000,7808.0000 L 7436.0000,7808.0000 C 7442.0000,7808.0000 7447.0000,7812.0000 7447.0000,7818.0000 C 7447.0000,7824.0000 7442.0000,7829.0000 7436.0000,7829.0000 L 7223.0000,7829.0000 C 7217.0000,7829.0000 7213.0000,7824.0000 7213.0000,7818.0000 C 7213.0000,7812.0000 7217.0000,7808.0000 7223.0000,7808.0000 Z "  fill="#000000" stroke="#000000" stroke-width="16.0000"  stroke-linecap="butt"  stroke-linejoin="bevel" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4550.0000,7818.0000 L 4700.0000,7743.0000 C 4676.0000,7790.0000 4676.0000,7846.0000 4700.0000,7893.0000 L 4550.0000,7818.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4369.0000,7161.0000 L 4369.0000,7587.0000 L 7611.0000,7587.0000 L 7611.0000,7161.0000 L 4369.0000,7161.0000 Z" stroke-width="1px" stroke="#F2F2F2"  fill="#F2F2F2" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4369.0000,7587.0000 L 7611.0000,7587.0000 L 7611.0000,7161.0000 L 4369.0000,7161.0000 L 4369.0000,7587.0000 Z" stroke="#E8EBEF" stroke-width="16.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="291.0000" y="449.0000" font-size="13.0000" ><![CDATA[HO Command over NG]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="415.0000" y="449.0000" font-size="13.0000" ><![CDATA[-]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="419.0000" y="449.0000" font-size="13.0000" ><![CDATA[C or Xn ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="291.0000" y="465.0000" font-size="13.0000" ><![CDATA[[]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="295.0000" y="465.0000" font-size="13.0000" ><![CDATA[HO Command ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="374.0000" y="465.0000" font-size="13.0000" ><![CDATA[[]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="378.0000" y="465.0000" font-size="13.0000" ><![CDATA[RRC config incl ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="340.0000" y="481.0000" font-size="13.0000" ><![CDATA[DRB setups]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="401.0000" y="481.0000" font-size="13.0000" ><![CDATA[]]]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1270.0000,999.0000 L 1270.0000,9670.0000 " stroke="#000000" stroke-width="21.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#5B9BD5" style ="white-space:pre;" font-weight="400" text-anchor="start" x="863.0000" y="39.0000" font-size="13.0000" ><![CDATA[NG Core]]></text>
+<path style="fill:#5b9bd5" d="M 828.0000,4.0000 L 943.0000,4.0000 L 943.0000,67.0000 L 828.0000,67.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<defs><image id="img-1" x="0" y="0" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAALUlEQVQYlaXMMQoAIBDEwDn//+e1EBsRQU2TJqQQBxoko1kN9XVIcnmYvB927n5eLd/ehhmgAAAAAElFTkSuQmCC"  preserveAspectRatio="none" /><pattern id="img-1-ref" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse" >
+<use id="img-1-ign" xlink:href="#img-1" /></pattern></defs>
+<path d="M 13271.0000,1044.0000 L 13263.0000,1036.0000 L 15067.0000,1036.0000 L 15059.0000,1044.0000 L 15059.0000,72.0000 L 15067.0000,80.0000 L 13263.0000,80.0000 L 13271.0000,72.0000 L 13271.0000,1044.0000 Z M 13255.0000,64.0000 L 15075.0000,64.0000 L 15075.0000,1052.0000 L 13255.0000,1052.0000 L 13255.0000,64.0000 Z " fill="#img-1-ref" stroke-width="1px" stroke="#5B9BD5" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#5b9bd5" d="M 828.0000,4.0000 L 943.0000,4.0000 L 943.0000,67.0000 L 828.0000,67.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13255.0000,1002.0000 L 15059.0000,1002.0000 L 15059.0000,30.0000 L 13255.0000,30.0000 L 13255.0000,1002.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="862.0000" y="36.0000" font-size="13.0000" ><![CDATA[NG Core]]></text>
+<text font-family="Calibri" fill="#5B9BD5" style ="white-space:pre;" font-weight="400" text-anchor="start" x="74.0000" y="39.0000" font-size="13.0000" ><![CDATA[UE]]></text>
+<path style="fill:#5b9bd5" d="M 21.0000,4.0000 L 141.0000,4.0000 L 141.0000,67.0000 L 21.0000,67.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 367.0000,1044.0000 L 359.0000,1036.0000 L 2239.0000,1036.0000 L 2231.0000,1044.0000 L 2231.0000,72.0000 L 2239.0000,80.0000 L 359.0000,80.0000 L 367.0000,72.0000 L 367.0000,1044.0000 Z M 351.0000,64.0000 L 2247.0000,64.0000 L 2247.0000,1052.0000 L 351.0000,1052.0000 L 351.0000,64.0000 Z " fill="#img-1-ref" stroke-width="1px" stroke="#5B9BD5" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#5b9bd5" d="M 21.0000,4.0000 L 141.0000,4.0000 L 141.0000,67.0000 L 21.0000,67.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 351.0000,1002.0000 L 2232.0000,1002.0000 L 2232.0000,30.0000 L 351.0000,30.0000 L 351.0000,1002.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="73.0000" y="36.0000" font-size="13.0000" ><![CDATA[UE]]></text>
+<text font-family="Calibri" fill="#5B9BD5" style ="white-space:pre;" font-weight="400" text-anchor="start" x="276.0000" y="39.0000" font-size="13.0000" ><![CDATA[gNB]]></text>
+<path style="fill:#5b9bd5" d="M 230.0000,4.0000 L 346.0000,4.0000 L 346.0000,67.0000 L 230.0000,67.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 3699.0000,1044.0000 L 3691.0000,1036.0000 L 5512.0000,1036.0000 L 5504.0000,1044.0000 L 5504.0000,72.0000 L 5512.0000,80.0000 L 3691.0000,80.0000 L 3699.0000,72.0000 L 3699.0000,1044.0000 Z M 3683.0000,64.0000 L 5520.0000,64.0000 L 5520.0000,1052.0000 L 3683.0000,1052.0000 L 3683.0000,64.0000 Z " fill="#img-1-ref" stroke-width="1px" stroke="#5B9BD5" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#5b9bd5" d="M 230.0000,4.0000 L 346.0000,4.0000 L 346.0000,67.0000 L 230.0000,67.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 3683.0000,1002.0000 L 5505.0000,1002.0000 L 5505.0000,30.0000 L 3683.0000,30.0000 L 3683.0000,1002.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="276.0000" y="36.0000" font-size="13.0000" ><![CDATA[gNB]]></text>
+<text font-family="Calibri" fill="#5B9BD5" style ="white-space:pre;" font-weight="400" text-anchor="start" x="422.0000" y="98.0000" font-size="13.0000" ><![CDATA[UE connected over NR]]></text>
+<path style="fill:#5b9bd5" d="M 62.0000,80.0000 L 903.0000,80.0000 L 903.0000,109.0000 L 62.0000,109.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1019.0000,1724.0000 L 1011.0000,1716.0000 L 14434.0000,1716.0000 L 14426.0000,1724.0000 L 14426.0000,1298.0000 L 14434.0000,1306.0000 L 1011.0000,1306.0000 L 1019.0000,1298.0000 L 1019.0000,1724.0000 Z M 1003.0000,1290.0000 L 14442.0000,1290.0000 L 14442.0000,1732.0000 L 1003.0000,1732.0000 L 1003.0000,1290.0000 Z " fill="#img-1-ref" stroke-width="1px" stroke="#5B9BD5" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#5b9bd5" d="M 62.0000,80.0000 L 903.0000,80.0000 L 903.0000,109.0000 L 62.0000,109.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1004.0000,1682.0000 L 14427.0000,1682.0000 L 14427.0000,1256.0000 L 1004.0000,1256.0000 L 1004.0000,1682.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="421.0000" y="96.0000" font-size="13.0000" ><![CDATA[UE connected over NR]]></text>
+<text font-family="Calibri" fill="#5B9BD5" style ="white-space:pre;" font-weight="400" text-anchor="start" x="659.0000" y="39.0000" font-size="13.0000" ><![CDATA[EPC]]></text>
+<text font-family="Calibri" fill="#5B9BD5" style ="white-space:pre;" font-weight="400" text-anchor="start" x="679.0000" y="39.0000" font-size="13.0000" ><![CDATA[/]]></text>
+<text font-family="Calibri" fill="#5B9BD5" style ="white-space:pre;" font-weight="400" text-anchor="start" x="685.0000" y="39.0000" font-size="13.0000" ><![CDATA[NG Core]]></text>
+<path style="fill:#5b9bd5" d="M 635.0000,4.0000 L 755.0000,4.0000 L 755.0000,67.0000 L 635.0000,67.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 10181.0000,1044.0000 L 10173.0000,1036.0000 L 12053.0000,1036.0000 L 12045.0000,1044.0000 L 12045.0000,72.0000 L 12053.0000,80.0000 L 10173.0000,80.0000 L 10181.0000,72.0000 L 10181.0000,1044.0000 Z M 10165.0000,64.0000 L 12061.0000,64.0000 L 12061.0000,1052.0000 L 10165.0000,1052.0000 L 10165.0000,64.0000 Z " fill="#img-1-ref" stroke-width="1px" stroke="#5B9BD5" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#5b9bd5" d="M 635.0000,4.0000 L 755.0000,4.0000 L 755.0000,67.0000 L 635.0000,67.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 10165.0000,1002.0000 L 12046.0000,1002.0000 L 12046.0000,30.0000 L 10165.0000,30.0000 L 10165.0000,1002.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="659.0000" y="36.0000" font-size="13.0000" ><![CDATA[EPC]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="679.0000" y="36.0000" font-size="13.0000" ><![CDATA[/]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="684.0000" y="36.0000" font-size="13.0000" ><![CDATA[NG Core]]></text>
+<text font-family="Calibri" fill="#5B9BD5" style ="white-space:pre;" font-weight="400" text-anchor="start" x="456.0000" y="40.0000" font-size="13.0000" ><![CDATA[eNB]]></text>
+<path style="fill:#5b9bd5" d="M 409.0000,4.0000 L 525.0000,4.0000 L 525.0000,67.0000 L 409.0000,67.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6573.0000,1060.0000 L 6565.0000,1052.0000 L 8387.0000,1052.0000 L 8379.0000,1060.0000 L 8379.0000,87.0000 L 8387.0000,95.0000 L 6565.0000,95.0000 L 6573.0000,87.0000 L 6573.0000,1060.0000 Z M 6557.0000,79.0000 L 8395.0000,79.0000 L 8395.0000,1068.0000 L 6557.0000,1068.0000 L 6557.0000,79.0000 Z " fill="#img-1-ref" stroke-width="1px" stroke="#5B9BD5" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#5b9bd5" d="M 409.0000,4.0000 L 525.0000,4.0000 L 525.0000,67.0000 L 409.0000,67.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6558.0000,1018.0000 L 8379.0000,1018.0000 L 8379.0000,45.0000 L 6558.0000,45.0000 L 6558.0000,1018.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="456.0000" y="37.0000" font-size="13.0000" ><![CDATA[eNB]]></text>
+<defs><clipPath id="clip-1804289383"><path d="M 229.0000,164.0000 L 342.0000,164.0000 L 342.0000,211.0000 L 229.0000,211.0000 L 229.0000,164.0000 Z Z" /></clipPath></defs>
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,162.0000 L 227.0000,163.0000 L 342.0000,163.0000 L 342.0000,162.0000 L 227.0000,162.0000 Z" stroke-width="1px" stroke="#FEFFFF"  fill="#FEFFFF" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,163.0000 L 227.0000,164.0000 L 342.0000,164.0000 L 342.0000,163.0000 L 227.0000,163.0000 Z" stroke-width="1px" stroke="#EAEFF7"  fill="#EAEFF7" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,164.0000 L 227.0000,167.0000 L 342.0000,167.0000 L 342.0000,164.0000 L 227.0000,164.0000 Z" stroke-width="1px" stroke="#EBF0F8"  fill="#EBF0F8" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,167.0000 L 227.0000,168.0000 L 342.0000,168.0000 L 342.0000,167.0000 L 227.0000,167.0000 Z" stroke-width="1px" stroke="#ECF0F8"  fill="#ECF0F8" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,168.0000 L 227.0000,171.0000 L 342.0000,171.0000 L 342.0000,168.0000 L 227.0000,168.0000 Z" stroke-width="1px" stroke="#EDF1F8"  fill="#EDF1F8" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,171.0000 L 227.0000,174.0000 L 342.0000,174.0000 L 342.0000,171.0000 L 227.0000,171.0000 Z" stroke-width="1px" stroke="#EEF2F9"  fill="#EEF2F9" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,174.0000 L 227.0000,177.0000 L 342.0000,177.0000 L 342.0000,174.0000 L 227.0000,174.0000 Z" stroke-width="1px" stroke="#EFF3F9"  fill="#EFF3F9" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,177.0000 L 227.0000,179.0000 L 342.0000,179.0000 L 342.0000,177.0000 L 227.0000,177.0000 Z" stroke-width="1px" stroke="#F0F4FA"  fill="#F0F4FA" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,179.0000 L 227.0000,180.0000 L 342.0000,180.0000 L 342.0000,179.0000 L 227.0000,179.0000 Z" stroke-width="1px" stroke="#F1F4FA"  fill="#F1F4FA" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,180.0000 L 227.0000,181.0000 L 342.0000,181.0000 L 342.0000,180.0000 L 227.0000,180.0000 Z" stroke-width="1px" stroke="#F1F5FA"  fill="#F1F5FA" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,181.0000 L 227.0000,183.0000 L 342.0000,183.0000 L 342.0000,181.0000 L 227.0000,181.0000 Z" stroke-width="1px" stroke="#F2F5FA"  fill="#F2F5FA" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,183.0000 L 227.0000,186.0000 L 342.0000,186.0000 L 342.0000,183.0000 L 227.0000,183.0000 Z" stroke-width="1px" stroke="#F3F6FB"  fill="#F3F6FB" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,186.0000 L 227.0000,189.0000 L 342.0000,189.0000 L 342.0000,186.0000 L 227.0000,186.0000 Z" stroke-width="1px" stroke="#F4F7FB"  fill="#F4F7FB" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,189.0000 L 227.0000,191.0000 L 342.0000,191.0000 L 342.0000,189.0000 L 227.0000,189.0000 Z" stroke-width="1px" stroke="#F5F8FC"  fill="#F5F8FC" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,191.0000 L 227.0000,192.0000 L 342.0000,192.0000 L 342.0000,191.0000 L 227.0000,191.0000 Z" stroke-width="1px" stroke="#F6F8FC"  fill="#F6F8FC" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,192.0000 L 227.0000,193.0000 L 342.0000,193.0000 L 342.0000,192.0000 L 227.0000,192.0000 Z" stroke-width="1px" stroke="#F6F9FC"  fill="#F6F9FC" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,193.0000 L 227.0000,195.0000 L 342.0000,195.0000 L 342.0000,193.0000 L 227.0000,193.0000 Z" stroke-width="1px" stroke="#F7F9FC"  fill="#F7F9FC" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,195.0000 L 227.0000,198.0000 L 342.0000,198.0000 L 342.0000,195.0000 L 227.0000,195.0000 Z" stroke-width="1px" stroke="#F8FAFD"  fill="#F8FAFD" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,198.0000 L 227.0000,201.0000 L 342.0000,201.0000 L 342.0000,198.0000 L 227.0000,198.0000 Z" stroke-width="1px" stroke="#F9FBFD"  fill="#F9FBFD" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,201.0000 L 227.0000,204.0000 L 342.0000,204.0000 L 342.0000,201.0000 L 227.0000,201.0000 Z" stroke-width="1px" stroke="#FAFCFE"  fill="#FAFCFE" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,204.0000 L 227.0000,205.0000 L 342.0000,205.0000 L 342.0000,204.0000 L 227.0000,204.0000 Z" stroke-width="1px" stroke="#FBFDFE"  fill="#FBFDFE" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,205.0000 L 227.0000,207.0000 L 342.0000,207.0000 L 342.0000,205.0000 L 227.0000,205.0000 Z" stroke-width="1px" stroke="#FCFDFE"  fill="#FCFDFE" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,207.0000 L 227.0000,210.0000 L 342.0000,210.0000 L 342.0000,207.0000 L 227.0000,207.0000 Z" stroke-width="1px" stroke="#FDFEFF"  fill="#FDFEFF" />
+<path  clip-path="url(#clip-1804289383)" d="M 227.0000,210.0000 L 227.0000,211.0000 L 342.0000,211.0000 L 342.0000,210.0000 L 227.0000,210.0000 Z" stroke-width="1px" stroke="#FEFFFF"  fill="#FEFFFF" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 3658.0000,3368.0000 L 5462.0000,3368.0000 L 5462.0000,2616.0000 L 3658.0000,2616.0000 L 3658.0000,3368.0000 Z" stroke="#000000" stroke-width="16.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="234.0000" y="183.0000" font-size="13.0000" ><![CDATA[gNB decides to HO ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="268.0000" y="199.0000" font-size="13.0000" ><![CDATA[to LTE]]></text>
+<defs><clipPath id="clip-846930886"><path d="M 3.0000,554.0000 L 156.0000,554.0000 L 156.0000,615.0000 L 3.0000,615.0000 L 3.0000,554.0000 Z Z" /></clipPath></defs>
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,552.0000 L 1.0000,553.0000 L 157.0000,553.0000 L 157.0000,552.0000 L 1.0000,552.0000 Z" stroke-width="1px" stroke="#FEFFFF"  fill="#FEFFFF" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,553.0000 L 1.0000,555.0000 L 157.0000,555.0000 L 157.0000,553.0000 L 1.0000,553.0000 Z" stroke-width="1px" stroke="#EAEFF7"  fill="#EAEFF7" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,555.0000 L 1.0000,557.0000 L 157.0000,557.0000 L 157.0000,555.0000 L 1.0000,555.0000 Z" stroke-width="1px" stroke="#EBF0F8"  fill="#EBF0F8" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,557.0000 L 1.0000,558.0000 L 157.0000,558.0000 L 157.0000,557.0000 L 1.0000,557.0000 Z" stroke-width="1px" stroke="#ECF0F8"  fill="#ECF0F8" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,558.0000 L 1.0000,559.0000 L 157.0000,559.0000 L 157.0000,558.0000 L 1.0000,558.0000 Z" stroke-width="1px" stroke="#ECF1F8"  fill="#ECF1F8" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,559.0000 L 1.0000,562.0000 L 157.0000,562.0000 L 157.0000,559.0000 L 1.0000,559.0000 Z" stroke-width="1px" stroke="#EDF1F8"  fill="#EDF1F8" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,562.0000 L 1.0000,566.0000 L 157.0000,566.0000 L 157.0000,562.0000 L 1.0000,562.0000 Z" stroke-width="1px" stroke="#EEF2F9"  fill="#EEF2F9" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,566.0000 L 1.0000,570.0000 L 157.0000,570.0000 L 157.0000,566.0000 L 1.0000,566.0000 Z" stroke-width="1px" stroke="#EFF3F9"  fill="#EFF3F9" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,570.0000 L 1.0000,573.0000 L 157.0000,573.0000 L 157.0000,570.0000 L 1.0000,570.0000 Z" stroke-width="1px" stroke="#F0F4FA"  fill="#F0F4FA" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,573.0000 L 1.0000,574.0000 L 157.0000,574.0000 L 157.0000,573.0000 L 1.0000,573.0000 Z" stroke-width="1px" stroke="#F1F4FA"  fill="#F1F4FA" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,574.0000 L 1.0000,575.0000 L 157.0000,575.0000 L 157.0000,574.0000 L 1.0000,574.0000 Z" stroke-width="1px" stroke="#F1F5FA"  fill="#F1F5FA" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,575.0000 L 1.0000,578.0000 L 157.0000,578.0000 L 157.0000,575.0000 L 1.0000,575.0000 Z" stroke-width="1px" stroke="#F2F5FA"  fill="#F2F5FA" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,578.0000 L 1.0000,582.0000 L 157.0000,582.0000 L 157.0000,578.0000 L 1.0000,578.0000 Z" stroke-width="1px" stroke="#F3F6FB"  fill="#F3F6FB" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,582.0000 L 1.0000,586.0000 L 157.0000,586.0000 L 157.0000,582.0000 L 1.0000,582.0000 Z" stroke-width="1px" stroke="#F4F7FB"  fill="#F4F7FB" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,586.0000 L 1.0000,589.0000 L 157.0000,589.0000 L 157.0000,586.0000 L 1.0000,586.0000 Z" stroke-width="1px" stroke="#F5F8FC"  fill="#F5F8FC" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,589.0000 L 1.0000,590.0000 L 157.0000,590.0000 L 157.0000,589.0000 L 1.0000,589.0000 Z" stroke-width="1px" stroke="#F6F8FC"  fill="#F6F8FC" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,590.0000 L 1.0000,591.0000 L 157.0000,591.0000 L 157.0000,590.0000 L 1.0000,590.0000 Z" stroke-width="1px" stroke="#F6F9FC"  fill="#F6F9FC" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,591.0000 L 1.0000,594.0000 L 157.0000,594.0000 L 157.0000,591.0000 L 1.0000,591.0000 Z" stroke-width="1px" stroke="#F7F9FC"  fill="#F7F9FC" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,594.0000 L 1.0000,598.0000 L 157.0000,598.0000 L 157.0000,594.0000 L 1.0000,594.0000 Z" stroke-width="1px" stroke="#F8FAFD"  fill="#F8FAFD" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,598.0000 L 1.0000,602.0000 L 157.0000,602.0000 L 157.0000,598.0000 L 1.0000,598.0000 Z" stroke-width="1px" stroke="#F9FBFD"  fill="#F9FBFD" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,602.0000 L 1.0000,605.0000 L 157.0000,605.0000 L 157.0000,602.0000 L 1.0000,602.0000 Z" stroke-width="1px" stroke="#FAFCFE"  fill="#FAFCFE" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,605.0000 L 1.0000,606.0000 L 157.0000,606.0000 L 157.0000,605.0000 L 1.0000,605.0000 Z" stroke-width="1px" stroke="#FBFCFE"  fill="#FBFCFE" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,606.0000 L 1.0000,607.0000 L 157.0000,607.0000 L 157.0000,606.0000 L 1.0000,606.0000 Z" stroke-width="1px" stroke="#FBFDFE"  fill="#FBFDFE" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,607.0000 L 1.0000,610.0000 L 157.0000,610.0000 L 157.0000,607.0000 L 1.0000,607.0000 Z" stroke-width="1px" stroke="#FCFDFE"  fill="#FCFDFE" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,610.0000 L 1.0000,614.0000 L 157.0000,614.0000 L 157.0000,610.0000 L 1.0000,610.0000 Z" stroke-width="1px" stroke="#FDFEFF"  fill="#FDFEFF" />
+<path  clip-path="url(#clip-846930886)" d="M 1.0000,614.0000 L 1.0000,616.0000 L 157.0000,616.0000 L 157.0000,614.0000 L 1.0000,614.0000 Z" stroke-width="1px" stroke="#FEFFFF"  fill="#FEFFFF" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 40.0000,9830.0000 L 2494.0000,9830.0000 L 2494.0000,8849.0000 L 40.0000,8849.0000 L 40.0000,9830.0000 Z" stroke="#000000" stroke-width="16.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="22.0000" y="572.0000" font-size="13.0000" ><![CDATA[UE accesses LTE with ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="9.0000" y="588.0000" font-size="13.0000" ><![CDATA[configuration and DRBs in ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="42.0000" y="604.0000" font-size="13.0000" ><![CDATA[HO command]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1576.0000,8494.0000 L 4297.0000,8494.0000 L 4297.0000,8067.0000 L 1576.0000,8067.0000 L 1576.0000,8494.0000 Z" stroke="#E8EBEF" stroke-width="16.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="111.0000" y="513.0000" font-size="13.0000" ><![CDATA[NR RRC ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="154.0000" y="513.0000" font-size="13.0000" ><![CDATA[[]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="158.0000" y="513.0000" font-size="13.0000" ><![CDATA[LTE HO Command ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="108.0000" y="529.0000" font-size="13.0000" ><![CDATA[[]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="112.0000" y="529.0000" font-size="13.0000" ><![CDATA[RRC config incl DRB setups]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="255.0000" y="529.0000" font-size="13.0000" ><![CDATA[]]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4541.0000,8605.0000 L 1384.0000,8585.0000 " stroke="#000000" stroke-width="21.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1270.0000,8584.0000 L 1421.0000,8510.0000 C 1397.0000,8557.0000 1396.0000,8613.0000 1420.0000,8660.0000 L 1270.0000,8584.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path d="M 462.0000,635.0000 L 443.0000,650.0000 L 443.0000,643.0000 L 80.0000,641.0000 L 80.0000,626.0000 L 443.0000,628.0000 L 443.0000,620.0000 L 462.0000,635.0000 " fill="none" stroke="none" />
+<defs><clipPath id="clip-1681692777"><path d="M 462.0000,635.0000 L 443.0000,650.0000 L 443.0000,643.0000 L 80.0000,641.0000 L 80.0000,626.0000 L 443.0000,628.0000 L 443.0000,620.0000 L 462.0000,635.0000 Z" /></clipPath></defs>
+</g>
+<g transform="matrix(16.0000 0.0000 0.0000 16.0000 0.0000 0.0000)">
+<path d="M 7399.0000,9899.0000 L 1259.0000,9868.0000 L 1257.0000,10384.0000 L 7396.0000,10414.0000 " fill="none" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<defs><clipPath id="clip-1714636915"><path d="M 7399.0000,9899.0000 L 1259.0000,9868.0000 L 1257.0000,10384.0000 L 7396.0000,10414.0000 Z" /></clipPath></defs>
+<image width="385.0000" height="36.0000" x="78.0000" y="616.0000"  clip-path="url(#clip-1714636915)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYEAAAAkCAYAAABv/4bNAAAB80lEQVR4nO3by07DMBAF0Fjq/38oQoIdbGjZISoebqCR79jnfEGUcTzXmaQ9PL1cNjhYa230JQDfaOfLRRPgcI/Pr6MvAeKNCEvt7awJcAzhH/YZEZY0AYCBRoelk7dB3JN3/7DP6C34VLEF2GZyCRXQlxSWTtWe2bZtW7FLnl/OeuYTZcmVFJZOoy9gr5xbxwdFiSMsBQrtymYC/EnScZavPNWBQotS7iRABuEB+iqEpXIzAcYpsJ4hSoWw5CTAzQqsZxiuWlgyE+BXFY6zkKTalhrxn4BtJpeQAH2Vw9LwmYBP2QLVXc9TU5ZclcPS8JlA3Vs3MUWJIywFmqQrmwmwbVvt4+wKPKWBJinK8JMAGYQB6JsxLA2fCTDOhOsZDjVjWHISWNiE6xnubvawZCawmBmPs3Ck2bfIQ/4TsM3k0vShb6WwdPeZgE/ZAq2znktRllwrhaW7zwTWuXWFKEocYSnQol3ZTGBSKx1nK/LUBVq0KL4OmpTmDn3Ckv8EpmI9wz7CkpPAVKxn6BOWrpkJFOc4C/vY8q7d9J+AbSaXJg59wtLPujMBn7IFsp4jKUsuYeln3ZmAWxdIUeIIS4F05ZuYCRThOJvNUxRIUW7SzrpACY/Pr6MvAeIJS/u1t7MmkMp6hn2Epf00AaA0Yel/3gE2kqFdyNSQpgAAAABJRU5ErkJgggAA" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7382.0000,10157.0000 L 7079.0000,10397.0000 L 7079.0000,10276.0000 L 1273.0000,10247.0000 L 1274.0000,10005.0000 L 7081.0000,10034.0000 L 7081.0000,9913.0000 L 7382.0000,10157.0000 Z" stroke="#4F88BB" stroke-width="16.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#4F88BB" transform="rotate(-359, 242.0000, 649.7000) translate(0, 11.7000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="242.0000" y="638.0000" font-size="13.0000" ><![CDATA[L]]></text>
+<text font-family="Calibri" fill="#4F88BB" transform="rotate(-359, 248.0000, 649.7000) translate(0, 11.7000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="248.0000" y="638.0000" font-size="13.0000" ><![CDATA[T]]></text>
+<text font-family="Calibri" fill="#4F88BB" transform="rotate(-359, 254.0000, 649.7000) translate(0, 11.7000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="254.0000" y="638.0000" font-size="13.0000" ><![CDATA[E]]></text>
+<text font-family="Calibri" fill="#4F88BB" transform="rotate(-359, 261.0000, 649.7000) translate(0, 11.7000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="261.0000" y="638.0000" font-size="13.0000" ><![CDATA[ ]]></text>
+<text font-family="Calibri" fill="#4F88BB" transform="rotate(-359, 264.0000, 649.7000) translate(0, 11.7000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="264.0000" y="638.0000" font-size="13.0000" ><![CDATA[a]]></text>
+<text font-family="Calibri" fill="#4F88BB" transform="rotate(-359, 270.0000, 649.7000) translate(0, 11.7000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="270.0000" y="638.0000" font-size="13.0000" ><![CDATA[c]]></text>
+<text font-family="Calibri" fill="#4F88BB" transform="rotate(-359, 276.0000, 649.7000) translate(0, 11.7000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="276.0000" y="638.0000" font-size="13.0000" ><![CDATA[c]]></text>
+<text font-family="Calibri" fill="#4F88BB" transform="rotate(-359, 282.0000, 649.7000) translate(0, 11.7000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="282.0000" y="638.0000" font-size="13.0000" ><![CDATA[e]]></text>
+<text font-family="Calibri" fill="#4F88BB" transform="rotate(-359, 288.0000, 649.7000) translate(0, 11.7000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="288.0000" y="638.0000" font-size="13.0000" ><![CDATA[s]]></text>
+<text font-family="Calibri" fill="#4F88BB" transform="rotate(-359, 293.0000, 649.7000) translate(0, 11.7000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="293.0000" y="638.0000" font-size="13.0000" ><![CDATA[s]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4334.0000,2443.0000 L 1477.0000,2424.0000 " stroke="#000000" stroke-width="21.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4316.0000,2367.0000 L 4541.0000,2444.0000 L 4315.0000,2518.0000 L 4316.0000,2367.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1495.0000,2500.0000 L 1270.0000,2423.0000 L 1496.0000,2350.0000 L 1495.0000,2500.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="108.0000" y="130.0000" font-size="13.0000" ><![CDATA[NR RRC ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="152.0000" y="130.0000" font-size="13.0000" ><![CDATA[[]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="156.0000" y="130.0000" font-size="13.0000" ><![CDATA[LTE measurements ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="107.0000" y="146.0000" font-size="13.0000" ><![CDATA[configuration and reporting]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="257.0000" y="146.0000" font-size="13.0000" ><![CDATA[]]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7469.0000,1018.0000 L 7469.0000,1256.0000 " stroke="#000000" stroke-width="16.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1234.0000,9830.0000 L 1234.0000,10700.0000 " stroke="#000000" stroke-width="16.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="292.0000" y="551.0000" font-size="13.0000" ><![CDATA[Data forwarding for lossless ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="345.0000" y="567.0000" font-size="13.0000" ><![CDATA[scenario]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="273.0000" y="583.0000" font-size="13.0000" ><![CDATA[(]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="277.0000" y="583.0000" font-size="13.0000" ><![CDATA[Only supported for LTE connected ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="304.0000" y="599.0000" font-size="13.0000" ><![CDATA[to NG Core]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="364.0000" y="599.0000" font-size="13.0000" ><![CDATA[, ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="370.0000" y="599.0000" font-size="13.0000" ><![CDATA[details FFS]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="427.0000" y="599.0000" font-size="13.0000" ><![CDATA[)]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4025.0000,3746.0000 L 4025.0000,5862.0000 L 14607.0000,5862.0000 L 14607.0000,3746.0000 L 4025.0000,3746.0000 Z" stroke-width="1px" stroke="#F2F2F2"  fill="#F2F2F2" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4025.0000,5862.0000 L 14607.0000,5862.0000 L 14607.0000,3746.0000 L 4025.0000,3746.0000 L 4025.0000,5862.0000 Z" stroke="#000000" stroke-width="16.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="465.0000" y="259.0000" font-size="16.0000" ><![CDATA[Option ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="514.0000" y="259.0000" font-size="16.0000" ><![CDATA[1]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="522.0000" y="259.0000" font-size="16.0000" ><![CDATA[: ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="530.0000" y="259.0000" font-size="16.0000" ><![CDATA[For eNB connected to EPC]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="522.0000" y="278.0000" font-size="16.0000" ><![CDATA[S]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="529.0000" y="278.0000" font-size="16.0000" ><![CDATA[1]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="537.0000" y="278.0000" font-size="16.0000" ><![CDATA[-]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="542.0000" y="278.0000" font-size="16.0000" ><![CDATA[NG]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="563.0000" y="278.0000" font-size="16.0000" ><![CDATA[-]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="568.0000" y="278.0000" font-size="16.0000" ><![CDATA[C based HO]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="393.0000" y="295.0000" font-size="13.0000" ><![CDATA[(]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="397.0000" y="295.0000" font-size="13.0000" ><![CDATA[if NGx with context mapping between NG Core and EPC is supported]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="768.0000" y="295.0000" font-size="13.0000" ><![CDATA[)]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4541.0000,1002.0000 L 4541.0000,10677.0000 " stroke="#000000" stroke-width="21.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 10969.0000,1002.0000 L 10969.0000,10677.0000 " stroke="#000000" stroke-width="21.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 14074.0000,1013.0000 L 14074.0000,10677.0000 " stroke="#000000" stroke-width="21.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7469.0000,1019.0000 L 7416.0000,10700.0000 " stroke="#000000" stroke-width="21.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4592.0000,5698.0000 L 4912.0000,5701.0000 C 4918.0000,5701.0000 4923.0000,5706.0000 4923.0000,5712.0000 C 4923.0000,5718.0000 4918.0000,5722.0000 4912.0000,5722.0000 L 4592.0000,5719.0000 C 4586.0000,5719.0000 4581.0000,5714.0000 4581.0000,5708.0000 C 4581.0000,5702.0000 4586.0000,5698.0000 4592.0000,5698.0000 Z M 5104.0000,5703.0000 L 5424.0000,5706.0000 C 5430.0000,5706.0000 5435.0000,5711.0000 5435.0000,5717.0000 C 5435.0000,5722.0000 5430.0000,5727.0000 5424.0000,5727.0000 L 5104.0000,5724.0000 C 5098.0000,5724.0000 5093.0000,5719.0000 5093.0000,5713.0000 C 5093.0000,5707.0000 5098.0000,5703.0000 5104.0000,5703.0000 Z M 5616.0000,5708.0000 L 5936.0000,5711.0000 C 5942.0000,5711.0000 5947.0000,5716.0000 5947.0000,5722.0000 C 5946.0000,5727.0000 5942.0000,5732.0000 5936.0000,5732.0000 L 5616.0000,5729.0000 C 5610.0000,5729.0000 5605.0000,5724.0000 5605.0000,5718.0000 C 5605.0000,5712.0000 5610.0000,5708.0000 5616.0000,5708.0000 Z M 6128.0000,5713.0000 L 6448.0000,5716.0000 C 6454.0000,5716.0000 6459.0000,5721.0000 6459.0000,5727.0000 C 6458.0000,5732.0000 6454.0000,5737.0000 6448.0000,5737.0000 L 6128.0000,5734.0000 C 6122.0000,5734.0000 6117.0000,5729.0000 6117.0000,5723.0000 C 6117.0000,5717.0000 6122.0000,5713.0000 6128.0000,5713.0000 Z M 6640.0000,5718.0000 L 6960.0000,5721.0000 C 6966.0000,5721.0000 6971.0000,5726.0000 6970.0000,5732.0000 C 6970.0000,5737.0000 6966.0000,5742.0000 6960.0000,5742.0000 L 6640.0000,5739.0000 C 6634.0000,5739.0000 6629.0000,5734.0000 6629.0000,5728.0000 C 6629.0000,5722.0000 6634.0000,5718.0000 6640.0000,5718.0000 Z M 7152.0000,5723.0000 L 7472.0000,5726.0000 C 7478.0000,5726.0000 7483.0000,5731.0000 7482.0000,5736.0000 C 7482.0000,5742.0000 7478.0000,5747.0000 7472.0000,5747.0000 L 7152.0000,5744.0000 C 7146.0000,5744.0000 7141.0000,5739.0000 7141.0000,5733.0000 C 7141.0000,5727.0000 7146.0000,5723.0000 7152.0000,5723.0000 Z "  fill="#000000" stroke="#000000" stroke-width="16.0000"  stroke-linecap="butt"  stroke-linejoin="bevel" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4478.0000,5707.0000 L 4629.0000,5634.0000 C 4605.0000,5681.0000 4605.0000,5736.0000 4628.0000,5784.0000 L 4628.0000,5784.0000 L 4478.0000,5707.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4478.0000,5530.0000 L 7721.0000,5530.0000 L 7721.0000,5104.0000 L 4478.0000,5104.0000 L 4478.0000,5530.0000 Z" stroke="#E8EBEF" stroke-width="16.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="297.0000" y="320.0000" font-size="13.0000" ><![CDATA[HO Command over S]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="409.0000" y="320.0000" font-size="13.0000" ><![CDATA[1]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="416.0000" y="320.0000" font-size="13.0000" ><![CDATA[/]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="421.0000" y="320.0000" font-size="13.0000" ><![CDATA[NGx]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="444.0000" y="320.0000" font-size="13.0000" ><![CDATA[[]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="448.0000" y="320.0000" font-size="13.0000" ><![CDATA[HO ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="297.0000" y="336.0000" font-size="13.0000" ><![CDATA[Command ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="356.0000" y="336.0000" font-size="13.0000" ><![CDATA[[]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="360.0000" y="336.0000" font-size="13.0000" ><![CDATA[RRC config incl DRB ]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="359.0000" y="352.0000" font-size="13.0000" ><![CDATA[setups]]></text>
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="395.0000" y="352.0000" font-size="13.0000" ><![CDATA[]]]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4541.0000,9645.0000 L 7235.0000,9645.0000 " stroke="#000000" stroke-width="16.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7218.0000,9576.0000 L 7427.0000,9645.0000 L 7218.0000,9715.0000 L 7218.0000,9576.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+</g>
+</svg>

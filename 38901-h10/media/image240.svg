@@ -1,0 +1,310 @@
+<?xml version="1.0"  encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="747.0000" height="483.0000">
+<g transform="translate(-0.0000, -0.0000)">
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 30.0000,30.0000 L 30.0000,2334.0000 L 11934.0000,2334.0000 L 11934.0000,30.0000 L 30.0000,30.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 30.0000,2334.0000 L 11934.0000,2334.0000 L 11934.0000,30.0000 L 30.0000,30.0000 L 30.0000,2334.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 558.0000,510.0000 L 558.0000,1790.0000 L 2478.0000,1790.0000 L 2478.0000,510.0000 L 558.0000,510.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 558.0000,1790.0000 L 2478.0000,1790.0000 L 2478.0000,510.0000 L 558.0000,510.0000 L 558.0000,1790.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="60.0000" y="61.0000" font-size="12.0000" ><![CDATA[Set scenario]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="127.0000" y="61.0000" font-size="12.0000" ><![CDATA[, ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="44.0000" y="75.0000" font-size="12.0000" ><![CDATA[network layout and ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="41.0000" y="90.0000" font-size="12.0000" ><![CDATA[antenna parameters]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 30.0000,2718.0000 L 30.0000,5022.0000 L 11934.0000,5022.0000 L 11934.0000,2718.0000 L 30.0000,2718.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 30.0000,5022.0000 L 11934.0000,5022.0000 L 11934.0000,2718.0000 L 30.0000,2718.0000 L 30.0000,5022.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 414.0000,3230.0000 L 414.0000,4510.0000 L 2334.0000,4510.0000 L 2334.0000,3230.0000 L 414.0000,3230.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 414.0000,4510.0000 L 2334.0000,4510.0000 L 2334.0000,3230.0000 L 414.0000,3230.0000 L 414.0000,4510.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="44.0000" y="245.0000" font-size="12.0000" ><![CDATA[Generate XPRs]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2718.0000,3246.0000 L 2718.0000,4526.0000 L 4638.0000,4526.0000 L 4638.0000,3246.0000 L 2718.0000,3246.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2718.0000,4526.0000 L 4638.0000,4526.0000 L 4638.0000,3246.0000 L 2718.0000,3246.0000 L 2718.0000,4526.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="186.0000" y="239.0000" font-size="12.0000" ><![CDATA[Perform random ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="188.0000" y="254.0000" font-size="12.0000" ><![CDATA[coupling of rays]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5118.0000,3262.0000 L 5118.0000,4542.0000 L 7038.0000,4542.0000 L 7038.0000,3262.0000 L 5118.0000,3262.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5118.0000,4542.0000 L 7038.0000,4542.0000 L 7038.0000,3262.0000 L 5118.0000,3262.0000 L 5118.0000,4542.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="331.0000" y="240.0000" font-size="12.0000" ><![CDATA[Generate arrival ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="421.0000" y="240.0000" font-size="12.0000" ><![CDATA[& ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="335.0000" y="255.0000" font-size="12.0000" ><![CDATA[departure angles]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7470.0000,3246.0000 L 7470.0000,4526.0000 L 9390.0000,4526.0000 L 9390.0000,3246.0000 L 7470.0000,3246.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7470.0000,4526.0000 L 9390.0000,4526.0000 L 9390.0000,3246.0000 L 7470.0000,3246.0000 L 7470.0000,4526.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="482.0000" y="239.0000" font-size="12.0000" ><![CDATA[Generate cluster ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="507.0000" y="254.0000" font-size="12.0000" ><![CDATA[powers]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9774.0000,3230.0000 L 9774.0000,4510.0000 L 11694.0000,4510.0000 L 11694.0000,3230.0000 L 9774.0000,3230.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9774.0000,4510.0000 L 11694.0000,4510.0000 L 11694.0000,3230.0000 L 9774.0000,3230.0000 L 9774.0000,4510.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="627.0000" y="245.0000" font-size="12.0000" ><![CDATA[Generate delays]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2910.0000,510.0000 L 2910.0000,1790.0000 L 4830.0000,1790.0000 L 4830.0000,510.0000 L 2910.0000,510.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2910.0000,1790.0000 L 4830.0000,1790.0000 L 4830.0000,510.0000 L 2910.0000,510.0000 L 2910.0000,1790.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="190.0000" y="61.0000" font-size="12.0000" ><![CDATA[Assign propagation ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="196.0000" y="75.0000" font-size="12.0000" ><![CDATA[condition ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="248.0000" y="75.0000" font-size="12.0000" ><![CDATA[(]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="251.0000" y="75.0000" font-size="12.0000" ><![CDATA[NLOS]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="284.0000" y="75.0000" font-size="12.0000" ><![CDATA[/]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="228.0000" y="90.0000" font-size="12.0000" ><![CDATA[LOS]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="252.0000" y="90.0000" font-size="12.0000" ><![CDATA[)]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5214.0000,526.0000 L 5214.0000,1806.0000 L 7134.0000,1806.0000 L 7134.0000,526.0000 L 5214.0000,526.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5214.0000,1806.0000 L 7134.0000,1806.0000 L 7134.0000,526.0000 L 5214.0000,526.0000 L 5214.0000,1806.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="337.0000" y="76.0000" font-size="12.0000" ><![CDATA[Calculate pathloss]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7518.0000,542.0000 L 7518.0000,1822.0000 L 9438.0000,1822.0000 L 9438.0000,542.0000 L 7518.0000,542.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7518.0000,1822.0000 L 9438.0000,1822.0000 L 9438.0000,542.0000 L 7518.0000,542.0000 L 7518.0000,1822.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="476.0000" y="56.0000" font-size="12.0000" ><![CDATA[Generate correlated ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="501.0000" y="70.0000" font-size="12.0000" ><![CDATA[large scale ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="486.0000" y="85.0000" font-size="12.0000" ><![CDATA[parameters ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="550.0000" y="85.0000" font-size="12.0000" ><![CDATA[(]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="554.0000" y="85.0000" font-size="12.0000" ><![CDATA[DS]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="570.0000" y="85.0000" font-size="12.0000" ><![CDATA[, ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="501.0000" y="99.0000" font-size="12.0000" ><![CDATA[AS]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="517.0000" y="99.0000" font-size="12.0000" ><![CDATA[, ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="524.0000" y="99.0000" font-size="12.0000" ><![CDATA[SF]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="539.0000" y="99.0000" font-size="12.0000" ><![CDATA[, ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="546.0000" y="99.0000" font-size="12.0000" ><![CDATA[K]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="554.0000" y="99.0000" font-size="12.0000" ><![CDATA[)]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 30.0000,5406.0000 L 30.0000,7710.0000 L 7710.0000,7710.0000 L 7710.0000,5406.0000 L 30.0000,5406.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 30.0000,7710.0000 L 7710.0000,7710.0000 L 7710.0000,5406.0000 L 30.0000,5406.0000 L 30.0000,7710.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 414.0000,5918.0000 L 414.0000,7198.0000 L 2334.0000,7198.0000 L 2334.0000,5918.0000 L 414.0000,5918.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 414.0000,7198.0000 L 2334.0000,7198.0000 L 2334.0000,5918.0000 L 414.0000,5918.0000 L 414.0000,7198.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="34.0000" y="406.0000" font-size="12.0000" ><![CDATA[Draw random initial ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="66.0000" y="421.0000" font-size="12.0000" ><![CDATA[phases]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2718.0000,5918.0000 L 2718.0000,7198.0000 L 4638.0000,7198.0000 L 4638.0000,5918.0000 L 2718.0000,5918.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2718.0000,7198.0000 L 4638.0000,7198.0000 L 4638.0000,5918.0000 L 2718.0000,5918.0000 L 2718.0000,7198.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="182.0000" y="406.0000" font-size="12.0000" ><![CDATA[Generate channel ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="203.0000" y="421.0000" font-size="12.0000" ><![CDATA[coefficient]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5118.0000,5918.0000 L 5118.0000,7198.0000 L 7038.0000,7198.0000 L 7038.0000,5918.0000 L 5118.0000,5918.0000 Z" stroke-width="1px" stroke="#E8EEF7"  fill="#E8EEF7" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5118.0000,7198.0000 L 7038.0000,7198.0000 L 7038.0000,5918.0000 L 5118.0000,5918.0000 L 5118.0000,7198.0000 Z" stroke="#000000" stroke-width="5.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="329.0000" y="406.0000" font-size="12.0000" ><![CDATA[Apply pathloss and ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="351.0000" y="421.0000" font-size="12.0000" ><![CDATA[shadowing]]></text>
+<text font-family="Arial" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="295.0000" y="20.0000" font-size="12.0000" ><![CDATA[General parameters]]></text>
+<text font-family="Arial" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="402.0000" y="20.0000" font-size="12.0000" ><![CDATA[:]]></text>
+<text font-family="Arial" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="295.0000" y="191.0000" font-size="12.0000" ><![CDATA[Small scale parameters]]></text>
+<text font-family="Arial" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="420.0000" y="191.0000" font-size="12.0000" ><![CDATA[:]]></text>
+<text font-family="Arial" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="170.0000" y="356.0000" font-size="12.0000" ><![CDATA[Coefficient generation]]></text>
+<text font-family="Arial" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="287.0000" y="356.0000" font-size="12.0000" ><![CDATA[:]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 10734.0000,3040.0000 L 10734.0000,1182.0000 L 9438.0000,1182.0000 " stroke="#000000" stroke-width="15.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 10803.0000,3022.0000 L 10734.0000,3230.0000 L 10664.0000,3022.0000 L 10803.0000,3022.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2478.0000,1150.0000 L 2720.0000,1150.0000 " stroke="#000000" stroke-width="15.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2702.0000,1080.0000 L 2910.0000,1150.0000 L 2702.0000,1219.0000 L 2702.0000,1080.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4830.0000,1150.0000 L 5024.0000,1158.0000 " stroke="#000000" stroke-width="15.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5009.0000,1088.0000 L 5214.0000,1166.0000 L 5004.0000,1226.0000 L 5009.0000,1088.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7134.0000,1166.0000 L 7328.0000,1174.0000 " stroke="#000000" stroke-width="15.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7313.0000,1104.0000 L 7518.0000,1182.0000 L 7308.0000,1242.0000 L 7313.0000,1104.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9774.0000,3870.0000 L 9580.0000,3878.0000 " stroke="#000000" stroke-width="15.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9600.0000,3946.0000 L 9390.0000,3886.0000 L 9594.0000,3808.0000 L 9600.0000,3946.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7470.0000,3886.0000 L 7228.0000,3895.0000 " stroke="#000000" stroke-width="15.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7247.0000,3963.0000 L 7038.0000,3902.0000 L 7242.0000,3825.0000 L 7247.0000,3963.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5118.0000,3902.0000 L 4828.0000,3892.0000 " stroke="#000000" stroke-width="15.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4843.0000,3962.0000 L 4638.0000,3886.0000 L 4847.0000,3823.0000 L 4843.0000,3962.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2718.0000,3886.0000 L 2524.0000,3878.0000 " stroke="#000000" stroke-width="15.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2538.0000,3947.0000 L 2334.0000,3870.0000 L 2544.0000,3809.0000 L 2538.0000,3947.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1374.0000,4510.0000 L 1374.0000,5728.0000 " stroke="#000000" stroke-width="15.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1443.0000,5710.0000 L 1374.0000,5918.0000 L 1304.0000,5710.0000 L 1443.0000,5710.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2334.0000,6558.0000 L 2528.0000,6558.0000 " stroke="#000000" stroke-width="15.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2510.0000,6488.0000 L 2718.0000,6558.0000 L 2510.0000,6627.0000 L 2510.0000,6488.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4638.0000,6558.0000 L 4928.0000,6558.0000 " stroke="#000000" stroke-width="15.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4910.0000,6488.0000 L 5118.0000,6558.0000 L 4910.0000,6627.0000 L 4910.0000,6488.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+</g>
+</svg>

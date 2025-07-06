@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38412-h10</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-and-abbreviations"
+id="toc-definitions-and-abbreviations">3 Definitions and
+abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.2
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#ng-signalling-bearer" id="toc-ng-signalling-bearer">4 NG
+signalling bearer</a>
+<ul>
+<li><a href="#functions-and-protocol-stack"
+id="toc-functions-and-protocol-stack">4.1 Functions and protocol
+stack</a></li>
+</ul></li>
+<li><a href="#data-link-layer" id="toc-data-link-layer">5 Data link
+layer</a></li>
+<li><a href="#ip-layer" id="toc-ip-layer">6 IP layer</a></li>
+<li><a href="#transport-layer" id="toc-transport-layer">7 Transport
+layer</a></li>
+</ul>
+</nav>
+<p>3GPP TS 38.412 V17.1.0 (2023-06)</p>
+<p>Technical Specification</p>
+<p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NG-RAN;</p>
+<p>NG signalling transport</p>
+<p>(Release 17)</p>
+<p><img src="media/image1.jpeg" /> <img src="media/image2.png" /></p>
+<p>The present document has been developed within the 3<sup>rd</sup>
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP..<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</p>
+<blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote>
+<p><em><strong>Copyright Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2023, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">5</a></p>
+<p>2 References <a href="#references">5</a></p>
+<p>3 Definitions and abbreviations <a
+href="#definitions-and-abbreviations">5</a></p>
+<p>3.1 Definitions <a href="#definitions">5</a></p>
+<p>3.2 Abbreviations <a href="#abbreviations">6</a></p>
+<p>4 NG signalling bearer <a href="#ng-signalling-bearer">6</a></p>
+<p>4.1 Functions and protocol stack <a
+href="#functions-and-protocol-stack">6</a></p>
+<p>5 Data link layer <a href="#data-link-layer">6</a></p>
+<p>6 IP layer <a href="#ip-layer">7</a></p>
+<p>7 Transport layer <a href="#transport-layer">7</a></p>
+<p>Annex A (informative): Change history <a
+href="#annex-a-informative-change-history">8</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Specification has been produced by the 3<sup>rd</sup>
+Generation Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<blockquote>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+</blockquote>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document specifies the standards for signalling transport
+to be used across NG interface. NG interface is a logical interface
+between the NG-RAN and the 5GC. The present document describes how the
+NGAP signalling messages are transported over NG.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] IETF RFC 4960: "Stream Control Transmission Protocol".</p>
+<p>[3] 3GPP TS 23.501: "System Architecture for the 5G System".</p>
+<p>[4] 3GPP TS 23.502: "Procedures for the 5G System".</p>
+<p>[5] IETF RFC 8200 (2017-07): "Internet Protocol, Version 6 (IPv6)
+Specification".</p>
+<p>[6] IETF RFC 791 (1981-09): "Internet Protocol".</p>
+<p>[7] IETF RFC 2474 (1998-12): "Definition of the Differentiated
+Services Field (DS Field) in the IPv4 and IPv6 Headers".</p>
+<p>[8] IETF RFC 6083 (2011-01): "Datagram Transport Layer Security
+(DTLS) for Stream Control Transmission Protocol (SCTP)".</p>
+<p>[9] IETF RFC 6335 (2011-08): "Internet Assigned Numbers Authority
+(IANA) Procedures for the Management of the Service Name and Transport
+Protocol Port Number Registry".</p>
+<h1 id="definitions-and-abbreviations">3 Definitions and
+abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in 3GPP TR 21.905 [1] and the following apply. A term defined in
+the present document takes precedence over the definition of the same
+term, if any, in 3GPP TR 21.905 [1].</p>
+<p><strong>NG:</strong> interface between a NG-RAN node and a 5GC,
+providing an interconnection point between the NG-RAN and the 5GC.</p>
+<p><strong>NG-C</strong>: Reference point for the control plane protocol
+between NG-RAN and AMF.</p>
+<p><strong>SCTP endpoint:</strong> as defined in IETF RFC 4960 (2007-09)
+[5]</p>
+<p><strong>SCTP association:</strong> as defined in IETF RFC 4960
+(2007-09) [5]</p>
+<h2 id="abbreviations">3.2 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>5GC 5G Core Network</p>
+<p>IP Internet Protocol</p>
+<p>SCTP Stream Control Transmission Protocol</p>
+<p>DiffServ Differentiated Service</p>
+<p>PPP Point to Point Protocol</p>
+<p>IANA Internet Assigned Number Authority</p>
+<p>AMF Access and Mobility management Function</p>
+<h1 id="ng-signalling-bearer">4 NG signalling bearer</h1>
+<h2 id="functions-and-protocol-stack">4.1 Functions and protocol
+stack</h2>
+<p>NG-C signalling bearer provides the following functions:</p>
+<p>- Provision of reliable transfer of NGAP message over NG-C
+interface.</p>
+<p>- Provision of networking and routeing function.</p>
+<p>- Provision of redundancy in the signalling network.</p>
+<p>- Support for flow control and congestion control.</p>
+<p>The protocol stack for NG-C Signalling Bearer is shown in figure
+4.1-1 and details on each protocol are described in the following
+clauses.</p>
+<p><img src="media/image3.svg" /></p>
+<p>Figure 4.1-1: NG-C signalling bearer protocol stack</p>
+<p>The Transport Network Layer is based on IP transport, comprising SCTP
+on top of IP.</p>
+<h1 id="data-link-layer">5 Data link layer</h1>
+<p>The support of any suitable Data Link Layer protocol, e.g. PPP,
+Ethernet, etc., shall not be prevented.</p>
+<h1 id="ip-layer">6 IP layer</h1>
+<p>The 5GC and NG-RAN shall support IPv6 (IETF RFC 8200 [5]) and/or IPv4
+(IETF RFC 791 [6]).</p>
+<p>The IP layer of NG-C only supports point-to-point transmission for
+delivering NG AP message.</p>
+<p>The 5GC and NG-RAN shall support the Diffserv Code Point marking as
+described in IETF RFC 2474 [7].</p>
+<h1 id="transport-layer">7 Transport layer</h1>
+<p>SCTP (IETF RFC 4960 [2]) shall be supported as the transport layer of
+NG-C signalling bearer. The Payload Protocol Identifier (ppid) assigned
+by IANA to be used by SCTP for the application layer protocol NGAP is
+60, and 66 for DTLS over SCTP (IETF RFC 6083 [8]). The byte order of the
+ppid shall be big-endian.</p>
+<p>SCTP refers to the Stream Control Transmission Protocol developed by
+the Sigtran working group of the IETF for the purpose of transporting
+various signalling protocols over IP network.</p>
+<p>NG-RAN node and AMF shall support a configuration with a single SCTP
+association per NG-RAN node/AMF pair. Configurations with multiple SCTP
+endpoints per NG-RAN node/AMF pair should be supported. When
+configurations with multiple SCTP associations are supported, the AMF
+may request to dynamically add/remove SCTP associations between the
+NG-RAN node/AMF pair. Within the set of SCTP associations established
+between one AMF and NG-RAN node pair, the AMF may request the NG-RAN
+node to restrict the usage of SCTP association for certain types of NG-C
+signalling. If no restriction information is provided for an SCTP
+association, any type of NG-C signalling is allowed via the SCTP
+association. Selection of the SCTP association by the NG-RAN node and
+the AMF is specified in TS 23.501 [3] and TS 23.502 [4]. The NG-RAN node
+shall establish the SCTP association. The SCTP Destination Port number
+value assigned by IANA to be used for NGAP is 38412. When the AMF
+requests to dynamically add additional SCTP associations between the
+NG-RAN node/AMF pair, the SCTP Destination Port number value may be
+38412, or any dynamic port value (IETF RFC 6335 [9]). When the
+configuration with multiple SCTP endpoints per NG-RAN node is supported
+and the NG-RAN node wants to add additional SCTP endpoints, the RAN
+configuration update procedure shall be the first NGAP procedure
+triggered on an additional TNLA of an already setup NG-C interface
+instance after the TNL association has become operational, and the AMF
+shall associate the TNLA to the NG-C interface instance using the
+included Global RAN node ID.</p>
+<p>Between one AMF and NG-RAN node pair:</p>
+<p>- A single pair of stream identifiers shall be reserved over at least
+one SCTP association for the sole use of NGAP elementary procedures that
+utilize non UE-associated signalling.</p>
+<p>- At least one pair of stream identifiers over one or several SCTP
+associations shall be reserved for the sole use of NGAP elementary
+procedures that utilize UE-associated signallings. However, a few pairs
+(i.e. more than one) should be reserved.</p>
+<p>- For a single UE-associated signalling, the NG-RAN node shall use
+one SCTP association and one SCTP stream, and the SCTP
+association/stream should not be changed during the communication of the
+UE-associated signalling until after current SCTP association is failed
+or removed, or TNL binding update is performed as described in TS 23.502
+[3].</p>
+<p>Transport network redundancy can be achieved by SCTP multi-homing
+between two end-points, of which one or both is assigned with multiple
+IP addresses. SCTP end-points shall support a multi-homed remote SCTP
+end-point. For SCTP endpoint redundancy, an SCTP endpoint (in the NG-RAN
+node or AMF) may send an INIT, at any time for an already established
+SCTP association, which the other SCTP endpoint shall handle as defined
+in IETF RFC 4960 [2] in subclause 5.2.</p>
+<p>The SCTP congestion control may, using an implementation specific
+mechanism, initiate higher layer protocols to reduce the signalling
+traffic at the source and prioritise certain messages.</p>
+<p class="heading" id="annex-a-informative-change-history"><br />
+Annex A (informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 50%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-01</td>
+<td style="text-align: center;">RAN3-AH-1801</td>
+<td style="text-align: center;">R3-180541</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Reflected agreed TP in RAN3-AH-1801 in
+2018-01 (Sophia Antipolis)</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RAN3#99</td>
+<td style="text-align: center;">R3-181587</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Reflected agreed TP in RAN3#99 in
+2018-03 (Athens)</td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-05</td>
+<td style="text-align: center;">RAN3#100</td>
+<td style="text-align: center;">R3-183591</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Reflected agreed TP in RAN3#100 in
+2018-05 (Busan) and made some editorial corrections</td>
+<td style="text-align: center;">0.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RAN#80</td>
+<td style="text-align: center;">RP-180681</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Submitted to RAN plenary for
+Approval</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RAN#80</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Specification approved at TSG-RAN and
+placed under change control</td>
+<td style="text-align: center;">15.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RAN#81</td>
+<td style="text-align: center;">RP-181920</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Updated reference to IPv6</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RAN#81</td>
+<td style="text-align: center;">RP-181922</td>
+<td style="text-align: center;">0003</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">NR Corrections (38.412 Baseline CR
+covering RAN3#101 agreements)</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RAN#84</td>
+<td style="text-align: center;">RP-191395</td>
+<td style="text-align: center;">0008</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Clarify the support for multiple TNL
+Endpoints in the NG-RAN node</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-09</td>
+<td style="text-align: center;">RAN#85</td>
+<td style="text-align: center;">RP-192166</td>
+<td style="text-align: center;">0010</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on PPID value for DTLS over SCTP</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-09</td>
+<td style="text-align: center;">RAN#85</td>
+<td style="text-align: center;">RP-192167</td>
+<td style="text-align: center;">0011</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Use of SCTP ports for multiple TNLA</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192915</td>
+<td style="text-align: center;">0012</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Ambiguity with multiple SCTP
+associations in 38.412</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RAN#87-e</td>
+<td style="text-align: center;">RP-200425</td>
+<td style="text-align: center;">0013</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur’s Update for 38.412</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RAN#89-e</td>
+<td style="text-align: center;">RP-201954</td>
+<td style="text-align: center;">0015</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">SCTP association change when current
+SCTP association is failed</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">SA#95-e</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Promotion to Release 17 without
+technical change</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-06</td>
+<td style="text-align: center;">RAN#100</td>
+<td style="text-align: center;">RP-231075</td>
+<td style="text-align: center;">0021</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Corrections on TNL association addition,
+update and removal</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

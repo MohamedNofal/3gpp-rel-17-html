@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38836-h00</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword">Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references-1" id="toc-references-1">2 References</a></li>
+<li><a href="#definitions-of-terms-symbols-and-abbreviations"
+id="toc-definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</a>
+<ul>
+<li><a href="#terms" id="toc-terms">3.1 Terms</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.2
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#sidelink-based-ue-to-network-relay"
+id="toc-sidelink-based-ue-to-network-relay">4 Sidelink-based
+UE-to-Network Relay</a>
+<ul>
+<li><a href="#scenarios-assumptions-and-requirements"
+id="toc-scenarios-assumptions-and-requirements">4.1 Scenarios,
+Assumptions and Requirements </a></li>
+<li><a href="#discovery" id="toc-discovery">4.2 Discovery</a></li>
+<li><a href="#relay-re-selection-criterion-and-procedure"
+id="toc-relay-re-selection-criterion-and-procedure">4.3 Relay
+(re-)selection criterion and procedure</a></li>
+<li><a href="#relayremote-ue-authorization"
+id="toc-relayremote-ue-authorization">4.4 Relay/Remote UE
+authorization</a></li>
+<li><a href="#layer-2-relay" id="toc-layer-2-relay">4.5 Layer-2
+Relay</a>
+<ul>
+<li><a href="#architecture-and-protocol-stack"
+id="toc-architecture-and-protocol-stack">4.5.1 Architecture and Protocol
+Stack</a>
+<ul>
+<li><a href="#protocol-stack" id="toc-protocol-stack">4.5.1.1 Protocol
+Stack</a></li>
+<li><a href="#adaptation-layer-functionality"
+id="toc-adaptation-layer-functionality">4.5.1.2 Adaptation layer
+functionality</a></li>
+</ul></li>
+<li><a href="#qos" id="toc-qos">4.5.2 QoS</a></li>
+<li><a href="#security" id="toc-security">4.5.3 Security</a></li>
+<li><a href="#service-continuity" id="toc-service-continuity">4.5.4
+Service Continuity</a>
+<ul>
+<li><a href="#general" id="toc-general">4.5.4.0 General</a></li>
+<li><a href="#switching-from-indirect-to-direct-path"
+id="toc-switching-from-indirect-to-direct-path">4.5.4.1 Switching from
+indirect to direct path</a></li>
+<li><a href="#switching-from-direct-to-indirect-path"
+id="toc-switching-from-direct-to-indirect-path">4.5.4.2 Switching from
+direct to indirect path</a></li>
+</ul></li>
+<li><a href="#control-plane-procedure"
+id="toc-control-plane-procedure">4.5.5 Control Plane Procedure</a>
+<ul>
+<li><a href="#connection-management"
+id="toc-connection-management">4.5.5.1 Connection Management</a></li>
+<li><a href="#paging" id="toc-paging">4.5.5.2 Paging</a></li>
+<li><a href="#system-information-delivery"
+id="toc-system-information-delivery">4.5.5.3 System Information
+Delivery</a></li>
+<li><a href="#access-control" id="toc-access-control">4.5.5.4 Access
+control</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#layer-3-relay" id="toc-layer-3-relay">4.6 Layer-3
+Relay</a>
+<ul>
+<li><a href="#architecture-and-protocol-stack-1"
+id="toc-architecture-and-protocol-stack-1">4.6.1 Architecture and
+Protocol Stack</a></li>
+<li><a href="#qos-1" id="toc-qos-1">4.6.2 QoS</a></li>
+<li><a href="#security-1" id="toc-security-1">4.6.3 Security</a></li>
+<li><a href="#service-continuity-1" id="toc-service-continuity-1">4.6.4
+Service Continuity</a></li>
+<li><a href="#control-plane-procedure-1"
+id="toc-control-plane-procedure-1">4.6.5 Control Plane
+Procedure</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#sidelink-based-ue-to-ue-relay"
+id="toc-sidelink-based-ue-to-ue-relay">5 Sidelink-based UE-to-UE
+Relay</a>
+<ul>
+<li><a href="#scenario-assumption-and-requirement"
+id="toc-scenario-assumption-and-requirement">5.1 Scenario, Assumption
+and Requirement</a></li>
+<li><a href="#discovery-1" id="toc-discovery-1">5.2 Discovery</a></li>
+<li><a href="#relay-re-selection-criteria-and-procedure"
+id="toc-relay-re-selection-criteria-and-procedure">5.3 Relay
+(re-)selection criteria and procedure</a></li>
+<li><a href="#relayremote-ue-authorization-1"
+id="toc-relayremote-ue-authorization-1">5.4 Relay/Remote UE
+authorization</a></li>
+<li><a href="#layer-2-relay-1" id="toc-layer-2-relay-1">5.5 Layer-2
+Relay</a>
+<ul>
+<li><a href="#architecture-and-protocol-stack-2"
+id="toc-architecture-and-protocol-stack-2">5.5.1 Architecture and
+Protocol Stack</a></li>
+<li><a href="#qos-2" id="toc-qos-2">5.5.2 QoS</a></li>
+<li><a href="#security-2" id="toc-security-2">5.5.3 Security</a></li>
+<li><a href="#control-plane-procedure-2"
+id="toc-control-plane-procedure-2">5.5.4 Control Plane
+Procedure</a></li>
+</ul></li>
+<li><a href="#layer-3-relay-1" id="toc-layer-3-relay-1">5.6 Layer-3
+Relay</a>
+<ul>
+<li><a href="#architecture-and-protocol-stack-3"
+id="toc-architecture-and-protocol-stack-3">5.6.1 Architecture and
+Protocol Stack</a></li>
+<li><a href="#qos-3" id="toc-qos-3">5.6.2 QoS</a></li>
+<li><a href="#security-3" id="toc-security-3">5.6.3 Security</a></li>
+<li><a href="#control-plane-procedure-3"
+id="toc-control-plane-procedure-3">5.6.4 Control Plane
+Procedure</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#conclusion" id="toc-conclusion">6 Conclusion</a>
+<ul>
+<li><a href="#evaluation-and-conclusion-of-ue-to-network-relay"
+id="toc-evaluation-and-conclusion-of-ue-to-network-relay">6.1 Evaluation
+and Conclusion of UE-to-Network Relay</a>
+<ul>
+<li><a href="#layer-2-relay-2" id="toc-layer-2-relay-2">6.1.1 Layer-2
+Relay</a>
+<ul>
+<li><a href="#conclusions-of-layer-2-relay"
+id="toc-conclusions-of-layer-2-relay">6.1.1.0 Conclusions of Layer-2
+Relay</a></li>
+<li><a href="#relay-discovery-and-reselection"
+id="toc-relay-discovery-and-reselection">6.1.1.1 Relay discovery and
+(re)selection</a></li>
+<li><a href="#relay-ue-and-remote-ue-authorization"
+id="toc-relay-ue-and-remote-ue-authorization">6.1.1.2 Relay UE and
+Remote UE authorization</a></li>
+<li><a href="#qos-management" id="toc-qos-management">6.1.1.3 QoS
+management</a></li>
+<li><a href="#service-continuity-2"
+id="toc-service-continuity-2">6.1.1.4 Service continuity</a></li>
+<li><a href="#security-4" id="toc-security-4">6.1.1.5 Security</a></li>
+<li><a href="#protocol-stack-design"
+id="toc-protocol-stack-design">6.1.1.6 Protocol stack design</a></li>
+<li><a href="#cp-procedures" id="toc-cp-procedures">6.1.1.7 CP
+procedures</a></li>
+</ul></li>
+<li><a href="#layer-3-relay-2" id="toc-layer-3-relay-2">6.1.2 Layer-3
+Relay</a>
+<ul>
+<li><a href="#conclusions-of-layer-3-relay"
+id="toc-conclusions-of-layer-3-relay">6.1.2.0 Conclusions of Layer-3
+Relay</a></li>
+<li><a href="#relay-discovery-and-reselection-1"
+id="toc-relay-discovery-and-reselection-1">6.1.2.1 Relay discovery and
+(re)selection</a></li>
+<li><a href="#relay-and-remote-ue-authorization"
+id="toc-relay-and-remote-ue-authorization">6.1.2.2 Relay and Remote UE
+authorization</a></li>
+<li><a href="#qos-management-1" id="toc-qos-management-1">6.1.2.3 QoS
+management</a></li>
+<li><a href="#service-continuity-3"
+id="toc-service-continuity-3">6.1.2.4 Service continuity</a></li>
+<li><a href="#security-5" id="toc-security-5">6.1.2.5 Security</a></li>
+<li><a href="#protocol-stack-design-1"
+id="toc-protocol-stack-design-1">6.1.2.6 Protocol stack design</a></li>
+<li><a href="#cp-procedures-1" id="toc-cp-procedures-1">6.1.2.7 CP
+procedures</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#evaluation-and-conclusion-of-ue-to-ue-relay"
+id="toc-evaluation-and-conclusion-of-ue-to-ue-relay">6.2 Evaluation and
+Conclusion of UE-to-UE Relay</a>
+<ul>
+<li><a href="#layer-2-relay-3" id="toc-layer-2-relay-3">6.2.1 Layer-2
+Relay</a>
+<ul>
+<li><a href="#conclusions-of-layer-2-relay-1"
+id="toc-conclusions-of-layer-2-relay-1">6.2.1.0 Conclusions of Layer-2
+Relay</a></li>
+<li><a href="#relay-discovery-and-reselection-2"
+id="toc-relay-discovery-and-reselection-2">6.2.1.1 Relay discovery and
+(re)selection</a></li>
+<li><a href="#relay-and-remote-ue-authorization-1"
+id="toc-relay-and-remote-ue-authorization-1">6.2.1.2 Relay and Remote UE
+authorization</a></li>
+<li><a href="#qos-management-2" id="toc-qos-management-2">6.2.1.3 QoS
+management</a></li>
+<li><a href="#security-6" id="toc-security-6">6.2.1.4 Security</a></li>
+<li><a href="#protocol-stack-design-2"
+id="toc-protocol-stack-design-2">6.2.1.5 Protocol stack design</a></li>
+<li><a href="#cp-procedures-2" id="toc-cp-procedures-2">6.2.1.6 CP
+procedures</a></li>
+</ul></li>
+<li><a href="#layer-3-relay-3" id="toc-layer-3-relay-3">6.2.2 Layer-3
+Relay</a>
+<ul>
+<li><a href="#conclusions-of-layer-3-relay-1"
+id="toc-conclusions-of-layer-3-relay-1">6.2.2.0 Conclusions of Layer-3
+Relay</a></li>
+<li><a href="#relay-discovery-and-reselection-3"
+id="toc-relay-discovery-and-reselection-3">6.2.2.1 Relay discovery and
+(re)selection</a></li>
+<li><a href="#relay-ue-and-remote-ue-authorization-1"
+id="toc-relay-ue-and-remote-ue-authorization-1">6.2.2.2 Relay UE and
+Remote UE authorization</a></li>
+<li><a href="#qos-management-3" id="toc-qos-management-3">6.2.2.3 QoS
+management</a></li>
+<li><a href="#security-7" id="toc-security-7">6.2.2.4 Security</a></li>
+<li><a href="#protocol-stack-design-3"
+id="toc-protocol-stack-design-3">6.2.2.5 Protocol stack design</a></li>
+<li><a href="#cp-procedures-3" id="toc-cp-procedures-3">6.2.2.6 CP
+procedures</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#feasibility-and-recommendation"
+id="toc-feasibility-and-recommendation">6.3 Feasibility and
+Recommendation</a></li>
+</ul></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TR 38.836 V17.0.0 (2021-03)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Report</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>Study on NR sidelink relay;</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.svg" /></td>
+<td style="text-align: right;"><img src="media/image2.svg" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2021, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">5</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references-1">6</a></p>
+<p>3 Definitions of terms, symbols and abbreviations <a
+href="#definitions-of-terms-symbols-and-abbreviations">6</a></p>
+<p>3.1 Terms <a href="#terms">6</a></p>
+<p>3.2 Abbreviations <a href="#abbreviations">6</a></p>
+<p>4 Sidelink-based UE-to-Network Relay <a
+href="#sidelink-based-ue-to-network-relay">7</a></p>
+<p>4.1 Scenarios, Assumptions and Requirements <a
+href="#scenarios-assumptions-and-requirements">7</a></p>
+<p>4.2 Discovery <a href="#discovery">8</a></p>
+<p>4.3 Relay (re-)selection criterion and procedure <a
+href="#relay-re-selection-criterion-and-procedure">9</a></p>
+<p>4.4 Relay/Remote UE authorization <a
+href="#relayremote-ue-authorization">10</a></p>
+<p>4.5 Layer-2 Relay <a href="#layer-2-relay">10</a></p>
+<p>4.5.1 Architecture and Protocol Stack <a
+href="#architecture-and-protocol-stack">10</a></p>
+<p>4.5.1.1 Protocol Stack <a href="#protocol-stack">10</a></p>
+<p>4.5.1.2 Adaptation layer functionality <a
+href="#adaptation-layer-functionality">11</a></p>
+<p>4.5.2 QoS <a href="#qos">12</a></p>
+<p>4.5.3 Security <a href="#security">12</a></p>
+<p>4.5.4 Service Continuity <a href="#service-continuity">12</a></p>
+<p>4.5.4.0 General <a href="#general">12</a></p>
+<p>4.5.4.1 Switching from indirect to direct path <a
+href="#switching-from-indirect-to-direct-path">12</a></p>
+<p>4.5.4.2 Switching from direct to indirect path <a
+href="#switching-from-direct-to-indirect-path">13</a></p>
+<p>4.5.5 Control Plane Procedure <a
+href="#control-plane-procedure">14</a></p>
+<p>4.5.5.1 Connection Management <a
+href="#connection-management">14</a></p>
+<p>4.5.5.2 Paging <a href="#paging">16</a></p>
+<p>4.5.5.3 System Information Delivery <a
+href="#system-information-delivery">16</a></p>
+<p>4.5.5.4 Access control <a href="#access-control">16</a></p>
+<p>4.6 Layer-3 Relay <a href="#layer-3-relay">16</a></p>
+<p>4.6.1 Architecture and Protocol Stack <a
+href="#architecture-and-protocol-stack-1">16</a></p>
+<p>4.6.2 QoS <a href="#qos-1">17</a></p>
+<p>4.6.3 Security <a href="#security-1">17</a></p>
+<p>4.6.4 Service Continuity <a href="#service-continuity-1">17</a></p>
+<p>4.6.5 Control Plane Procedure <a
+href="#control-plane-procedure-1">18</a></p>
+<p>5 Sidelink-based UE-to-UE Relay <a
+href="#sidelink-based-ue-to-ue-relay">18</a></p>
+<p>5.1 Scenario, Assumption and Requirement <a
+href="#scenario-assumption-and-requirement">18</a></p>
+<p>5.2 Discovery <a href="#discovery-1">19</a></p>
+<p>5.3 Relay (re-)selection criteria and procedure <a
+href="#relay-re-selection-criteria-and-procedure">20</a></p>
+<p>5.4 Relay/Remote UE authorization <a
+href="#relayremote-ue-authorization-1">20</a></p>
+<p>5.5 Layer-2 Relay <a href="#layer-2-relay-1">20</a></p>
+<p>5.5.1 Architecture and Protocol Stack <a
+href="#architecture-and-protocol-stack-2">20</a></p>
+<p>5.5.2 QoS <a href="#qos-2">21</a></p>
+<p>5.5.3 Security <a href="#security-2">22</a></p>
+<p>5.5.4 Control Plane Procedure <a
+href="#control-plane-procedure-2">22</a></p>
+<p>5.6 Layer-3 Relay <a href="#layer-3-relay-1">22</a></p>
+<p>5.6.1 Architecture and Protocol Stack <a
+href="#architecture-and-protocol-stack-3">22</a></p>
+<p>5.6.2 QoS <a href="#qos-3">22</a></p>
+<p>5.6.3 Security <a href="#security-3">22</a></p>
+<p>5.6.4 Control Plane Procedure <a
+href="#control-plane-procedure-3">22</a></p>
+<p>6 Conclusion <a href="#conclusion">22</a></p>
+<p>6.1 Evaluation and Conclusion of UE-to-Network Relay <a
+href="#evaluation-and-conclusion-of-ue-to-network-relay">22</a></p>
+<p>6.1.1 Layer-2 Relay <a href="#layer-2-relay-2">22</a></p>
+<p>6.1.1.0 Conclusions of Layer-2 Relay <a
+href="#conclusions-of-layer-2-relay">22</a></p>
+<p>6.1.1.1 Relay discovery and (re)selection <a
+href="#relay-discovery-and-reselection">22</a></p>
+<p>6.1.1.2 Relay UE and Remote UE authorization <a
+href="#relay-ue-and-remote-ue-authorization">22</a></p>
+<p>6.1.1.3 QoS management <a href="#qos-management">22</a></p>
+<p>6.1.1.4 Service continuity <a href="#service-continuity-2">23</a></p>
+<p>6.1.1.5 Security <a href="#security-4">23</a></p>
+<p>6.1.1.6 Protocol stack design <a
+href="#protocol-stack-design">23</a></p>
+<p>6.1.1.7 CP procedures <a href="#cp-procedures">23</a></p>
+<p>6.1.2 Layer-3 Relay <a href="#layer-3-relay-2">23</a></p>
+<p>6.1.2.0 Conclusions of Layer-3 Relay <a
+href="#conclusions-of-layer-3-relay">23</a></p>
+<p>6.1.2.1 Relay discovery and (re)selection <a
+href="#relay-discovery-and-reselection-1">23</a></p>
+<p>6.1.2.2 Relay and Remote UE authorization <a
+href="#relay-and-remote-ue-authorization">24</a></p>
+<p>6.1.2.3 QoS management <a href="#qos-management-1">24</a></p>
+<p>6.1.2.4 Service continuity <a href="#service-continuity-3">24</a></p>
+<p>6.1.2.5 Security <a href="#security-5">24</a></p>
+<p>6.1.2.6 Protocol stack design <a
+href="#protocol-stack-design-1">24</a></p>
+<p>6.1.2.7 CP procedures <a href="#cp-procedures-1">24</a></p>
+<p>6.2 Evaluation and Conclusion of UE-to-UE Relay <a
+href="#evaluation-and-conclusion-of-ue-to-ue-relay">24</a></p>
+<p>6.2.1 Layer-2 Relay <a href="#layer-2-relay-3">24</a></p>
+<p>6.2.1.0 Conclusions of Layer-2 Relay <a
+href="#conclusions-of-layer-2-relay-1">24</a></p>
+<p>6.2.1.1 Relay discovery and (re)selection <a
+href="#relay-discovery-and-reselection-2">24</a></p>
+<p>6.2.1.2 Relay and Remote UE authorization <a
+href="#relay-and-remote-ue-authorization-1">24</a></p>
+<p>6.2.1.3 QoS management <a href="#qos-management-2">24</a></p>
+<p>6.2.1.4 Security <a href="#security-6">24</a></p>
+<p>6.2.1.5 Protocol stack design <a
+href="#protocol-stack-design-2">25</a></p>
+<p>6.2.1.6 CP procedures <a href="#cp-procedures-2">25</a></p>
+<p>6.2.2 Layer-3 Relay <a href="#layer-3-relay-3">25</a></p>
+<p>6.2.2.0 Conclusions of Layer-3 Relay <a
+href="#conclusions-of-layer-3-relay-1">25</a></p>
+<p>6.2.2.1 Relay discovery and (re)selection <a
+href="#relay-discovery-and-reselection-3">25</a></p>
+<p>6.2.2.2 Relay UE and Remote UE authorization <a
+href="#relay-ue-and-remote-ue-authorization-1">25</a></p>
+<p>6.2.2.3 QoS management <a href="#qos-management-3">25</a></p>
+<p>6.2.2.4 Security <a href="#security-7">25</a></p>
+<p>6.2.2.5 Protocol stack design <a
+href="#protocol-stack-design-3">25</a></p>
+<p>6.2.2.6 CP procedures <a href="#cp-procedures-3">25</a></p>
+<p>6.3 Feasibility and Recommendation <a
+href="#feasibility-and-recommendation">25</a></p>
+<p>Annex A: Change history <a href="#annex-a-change-history">26</a></p>
+<h1 id="foreword">Foreword</h1>
+<p>This Technical Report has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document is related to Study on NR Sidelink Relay with a
+scope as defined in [2].</p>
+<p>The document describes NR enhancements to support sidelink relay,
+which were analyzed as part of the study such as sidelink-based
+UE-to-Network and UE-to-UE Relay, and discovery model/procedure for
+sidelink relaying.</p>
+<h1 id="references-1">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP RP-193253 "New SID: Study on NR sidelink relay".</p>
+<p>[3] 3GPP TS 23.303 "Proximity-based services (ProSe);Stage 2 ".</p>
+<p>[4] 3GPP TS 38.300 "NR; Overall description; Stage-2".</p>
+<p>[5] 3GPP TS 38.321 "NR;Medium Access Control (MAC) protocol
+specification".</p>
+<p>[6] 3GPP TR 23.752 "Study on system enhancement for Proximity based
+Services (ProSe) in the 5G System (5GS)".</p>
+<p>[7] 3GPP TR 36.746 " Study on further enhancements to LTE Device to
+Device (D2D), UE to network relays for Internet of Things (IoT) and
+wearables".</p>
+<p>[8] RP-202208, Revised SID: Study on NR Sidelink Relay.</p>
+<h1 id="definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</h1>
+<h2 id="terms">3.1 Terms</h2>
+<p>For the purposes of the present document, the terms given in
+TR 21.905 [1] and the following apply. A term defined in the present
+document takes precedence over the definition of the same term, if any,
+in TR 21.905 [1].</p>
+<p><strong>UE-to-Nework Relay:</strong> A relaying architecture where a
+Relay UE relays the traffic between a Remote UE and network.</p>
+<p><strong>UE-to-UE Relay:</strong> A relaying architecture where a
+Relay UE relays the traffic between a first Remote UE (i.e., source UE)
+and a second Remote UE (i.e, destination UE).</p>
+<h2 id="abbreviations">3.2 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+TR 21.905 [1] and the following apply. An abbreviation defined in the
+present document takes precedence over the definition of the same
+abbreviation, if any, in TR 21.905 [1].</p>
+<p>L2 Layer-2</p>
+<p>L3 Layer-3</p>
+<h1 id="sidelink-based-ue-to-network-relay">4 Sidelink-based
+UE-to-Network Relay</h1>
+<h2 id="scenarios-assumptions-and-requirements">4.1 Scenarios,
+Assumptions and Requirements </h2>
+<p>The UE-to-Network Relay enables coverage extension and power saving
+for the Remote UE. The coverage scenarios considered in this study are
+the following:</p>
+<p>- UE-to-Network Relay UE is in coverage and Remote UE is out of
+coverage</p>
+<p>- UE-to-Network Relay UE and Remote UE are both in coverage</p>
+<p>- For L3 UE-to-Network Relay, Relay UE and Remote UE can be in the
+same cell or different cells, after Remote UE establishes connection via
+Relay UE</p>
+<p>- For L2 UE-to-Network Relay, it is supported as baseline that after
+Remote UE connects via Relay UE, Relay UE and Remote UE are controlled
+by the Relay UE's serving cell</p>
+<p>For L2 UE-to-Network Relay, both cases below are supported, i.e.</p>
+<p>- Before remote connection via Relay UE, Relay UE and Remote UE are
+in the same cell;</p>
+<p>- Before remote connection via Relay UE, Relay UE and Remote UE are
+in different cells;</p>
+<p><strong>The considered scenarios are reflected in Figure
+4.1-1.</strong></p>
+<p><img src="media/image3.svg" /></p>
+<p>Figure 4.1-1: Scenarios for UE-to-Network Relay</p>
+<p>NR Uu is assumed on the Uu link of the UE-to-Network Relay UE. NR
+sidelink is assumed on PC5 between the Remote UE(s) and the
+UE-to-Network Relay UE.</p>
+<p>Cross-RAT configuration/control of UE (Remote UE or UE-to-Network
+Relay UE) is not considered, i.e., eNB/ng-eNB do not control/configure
+an NR Remote UE and UE-to-Network Relay UE. For UE-to-Network Relay, the
+study focuses on unicast data traffic between the Remote UE and the
+Network.</p>
+<p>Configuring/scheduling of a UE (Remote UE or UE-to-Network Relay UE)
+by the SN to perform NR sidelink communication is out of scope of this
+study.</p>
+<p>For UE-to-Network Relay, relaying of unicast data between the Remote
+UE and the network can occur after a PC5-RRC connection is established
+between the Relay UE and the Remote UE.</p>
+<p>The Uu RRC state of the Relay UE and Remote UE can change when
+connected via PC5. Both Relay UE and Remote UE can perform relay
+discovery in any RRC state. A Remote UE can perform relay discovery
+while out of Uu coverage.</p>
+<p>A Relay UE must be in RRC_CONNECTED to perform relaying of unicast
+data.</p>
+<p>For L2 UE-to-Network Relay:</p>
+<p>- Remote UE(s) must be in RRC CONNECTED to perform
+transmission/reception of relayed unicast data.</p>
+<p>- The Relay UE can be in RRC_IDLE, RRC_INACTIVE or RRC_CONNECTED as
+long as all the PC5-connected Remote UE(s) are in RRC_IDLE.</p>
+<p>- The Relay UE can be in RRC_INACTIVE or RRC_CONNECTED as long as all
+the PC5-connected Remote UE(s) are in RRC_INACTIVE<em>.</em></p>
+<p>For L3 UE-to-Network Relay, both Relay UE and Remote UE can be in
+RRC_INACTIVE state.</p>
+<p>The requirement of service continuity is only for UE-to-Network
+Relay, but not for UE-to-UE Relay in this release.</p>
+<p>RAN2 have studied the mobility scenario of "between direct (Uu) path
+and indirect (via the relay) path" for UE-to-Nework relay. RAN2 focus on
+the mobility scenarios of intra-gNB cases in the study phase, and assume
+the inter-gNB cases will also be supported. For the inter-gNB cases,
+compared to the intra-gNB cases, potential different parts on Uu
+interface in details can be discussed in the WI phase.RAN2 deprioritize
+work specific to the mobility scenario of "between indirect (via a first
+Relay UE) and indirect (via a second Relay UE)" for path switching in
+the SI phase, which can be studied in the WI phase, if needed.</p>
+<p>RAN2 deprioritize the group mobility scenario in the SI phase, which
+may be discussed in WI phase, if needed.</p>
+<h2 id="discovery">4.2 Discovery</h2>
+<p>Model A and model B discovery model as defined in clause 5.3.1.2 of
+TS 23.303 [3] are supported for UE-to-Network Relay. The protocol stack
+of discovery message is described in Figure 4.2-1.</p>
+<p><img src="media/image4.svg" /></p>
+<p>Figure 4.2-1: Protocol Stack of Discovery Message for UE-to-Network
+Relay</p>
+<p>For Relay UE of UE-to-Network Relay:</p>
+<p>- The Relay UE needs to be within a minimum and a maximum Uu signal
+strength threshold(s) if provided by gNB before it can transmit
+discovery message when in RRC_IDLE or in RRC_INACTIVE state.</p>
+<p>- Relay UE is allowed to transmit discovery message based on NR
+sidelink communication configuration provided by gNB in all RRC
+states.</p>
+<p>- Relay UE supporting L3 UE-to-Network Relay is allowed to transmit
+discovery message based on at least pre-configuration when it is
+connected to a gNB which is not capable of sidelink relay operation, in
+case its serving carrier is not shared with carrier for sidelink
+operation.</p>
+<p>- Relay UE supporting L2 UE-to-Network Relay should be always
+connected to a gNB which is capable of sidelink relay operation
+including providing configurations for transmission of discovery
+messages.</p>
+<p>For Remote UE of UE-to-Network Relay:</p>
+<p>- The Remote UE in RRC_IDLE and RRC_INACTIVE state is allowed to
+transmit discovery message if measured signal strength of serving cell
+is lower than a configured threshold.</p>
+<p>- Whether Remote UE in RRC_CONNECTED is allowed to transmit discovery
+is based on configuration provided by serving gNB. The detail of
+configuration provided by serving gNB can be discussed in WI phase.</p>
+<p>- No additional network configuration is needed for Uu measurement by
+Remote UE in RRC_IDLE or RRC_INACTIVE.</p>
+<p>- Remote UE out of coverage is always allowed to transmit discovery
+message based on pre-configuration while not connected with network
+through a Relay UE yet.</p>
+<p>- Remote UE supporting UE-to-Network Relay is allowed to transmit
+discovery message based on at least pre-configuration when it is
+directly connected to a gNB which is not capable of sidelink relay
+operation, in case its serving carrier is not shared with SL
+carrier.</p>
+<p>- For Remote UE supporting L3 UE-to-Network Relay which is out of
+coverage and connected to a gNB indirectly, it is not feasible for the
+serving gNB to provide radio configuration to transmit discovery
+message.</p>
+<p>- For Remote UE supporting L2 UE-to-Network Relay which is out of
+coverage and connected to a gNB indirectly, whether it is allowed to
+transmit discovery message based on configuration provided by the gNB
+can be discussed in WI phase.</p>
+<p>The detailed definition of a gNB which is not capable of sidelink
+relay operation can be left for WI phase but at least should include the
+case that the gNB does not provide SL relay configuration, e.g., no
+discovery configuration.</p>
+<p>Resource pool to transmit discovery message can be either shared with
+or separated from resource pool for data transmission:</p>
+<p>- For both shared resource pool and separated resource pool, a new
+LCID is introduced for discovery message, i.e., discovery message is
+carried by a new SL SRB.</p>
+<p>- Within separated resource pool, discovery messages are treated
+equally with each other during the LCP procedure.</p>
+<h2 id="relay-re-selection-criterion-and-procedure">4.3 Relay
+(re-)selection criterion and procedure</h2>
+<p>The baseline solution for relay (re-)selection is as follow:</p>
+<p>Radio measurements at PC5 interface are considered as part of relay
+(re)selection criteria.</p>
+<p>- Remote UE at least use the radio signal strength measurements of
+sidelink discovery messages to evaluate whether PC5 link quality of a
+Relay UE satisfies relay selection and reselection criterion.</p>
+<p>- When Remote UE is connected to a Relay UE, it may use SL-RSRP
+measurements on the sidelink unicast link to evaluate whether PC5 link
+quality with the Relay UE satisfies relay reselection criterion.</p>
+<p>Further details on the PC5 radio measurements criteria, e.g., in case
+of no transmission on the sidelink unicast link can be discussed in WI
+phase. How to perform RSRP measurement based on RSRP of discovery
+message and/or SL-RSRP if Remote UE has PC5-RRC connection with Relay UE
+can be decided in WI phase.</p>
+<p>For relay selection, as in LTE, an in-coverage Remote UE searches for
+a candidate Relay UE if direct Uu link quality of the Remote UE is below
+a configured threshold.</p>
+<p>For relay (re-)selection, Remote UE compares the PC5 radio
+measurements of a Relay UE with the threshold which is configured by gNB
+or preconfigured. Higher layer criteria also need to be considered by
+Remote UE for relay (re-)selection, but details can be left to SA2 to
+decide. Relay (re-)selection can be triggered by upper layers of Remote
+UE.</p>
+<p>Relay reselection should be triggered if the NR Sidelink signal
+strength of current Sidelink relay is below a (pre)configured threshold.
+Also, relay reselection may be triggered if RLF of PC5 link with current
+Relay UE is detected by Remote UE.</p>
+<p>The above-described baseline for relay (re)selection apply to both L2
+and L3 solutions. But for RRC_CONNECTED Remote UE connected through L2
+UE-to-Network Relay scenario, gNB decision on relay
+selection/reselection is considered in WI phase under the above
+baseline. Additional AS layer criteria can be considered in WI phase for
+both L2 and L3 UE-to-Network Relay solutions.</p>
+<p>For relay (re-)selection, when Remote UE has multiple suitable Relay
+UE candidates which meet all AS-layer &amp; higher layer criteria and
+Remote UE need to select one Relay UE by itself, it is up to Remote UE
+implementation to choose one Relay UE. This does not exclude gNB
+involvement in service continuity for UE-to-Network Relay scenarios.</p>
+<h2 id="relayremote-ue-authorization">4.4 Relay/Remote UE
+authorization</h2>
+<p>It is concluded that no impact on RAN2 is foreseen due to
+authorization of both Relay UE and Remote UE. The impact on RAN3, if
+any, will be done in WI phase for UE-to-Network Relay only.</p>
+<h2 id="layer-2-relay">4.5 Layer-2 Relay</h2>
+<h3 id="architecture-and-protocol-stack">4.5.1 Architecture and Protocol
+Stack</h3>
+<h4 id="protocol-stack">4.5.1.1 Protocol Stack</h4>
+<p>The protocol stacks for the user plane and control plane of L2
+UE-to-Network Relay architecture are described in Figure 4.5.1.1-1 and
+Figure 4.5.1.1-2 for the case where adaptation layer is not supported at
+the PC5 interface, and Figure 4.5.1.1-3 and Figure 4.5.1.1-4 for the
+case where adaptation layer is supported at the PC5 interface.</p>
+<p>For L2 UE-to-Network Relay, the adaptation layer is placed over RLC
+sublayer for both CP and UP at the Uu interface between Relay UE and
+gNB. The Uu SDAP/PDCP and RRC are terminated between Remote UE and gNB,
+while RLC, MAC and PHY are terminated in each link (i.e. the link
+between Remote UE and UE-to-Network Relay UE and the link between
+UE-to-Network Relay UE and the gNB). Whether the adaptation layer is
+also supported at the PC5 interface between Remote UE and Relay UE is
+left to WI phase (assuming down-selection first before studying too much
+on the detailed PC5 adaptation layer functionalities).</p>
+<p><img src="media/image5.svg" /></p>
+<p>Figure 4.5.1.1-1: User plane protocol stack for L2 UE-to-Network
+Relay<br />
+(adaptation layer is not supported at the PC5 interface)</p>
+<p><img src="media/image6.svg" /></p>
+<p>Figure 4.5.1.1-2: Control plane protocol stack for L2 UE-to-Network
+Relay<br />
+(adaptation layer is not supported at the PC5 interface)</p>
+<p><img src="media/image7.svg" /></p>
+<p>Figure 4.5.1.1-3: User plane protocol stack for L2 UE-to-Network
+Relay<br />
+(adaptation layer is supported at the PC5 interface)</p>
+<p><img src="media/image8.svg" /></p>
+<p>Figure 4.5.1.1-4: Control plane protocol stack for L2 UE-to-Network
+Relay<br />
+(adaptation layer is supported at the PC5 interface)</p>
+<h4 id="adaptation-layer-functionality">4.5.1.2 Adaptation layer
+functionality</h4>
+<p>For L2 UE-to-Network Relay, for uplink:</p>
+<p>- The Uu adaptation layer at Relay UE supports UL bearer mapping
+between ingress PC5 RLC channels for relaying and egress Uu RLC channels
+over the Relay UE Uu path. For uplink relaying traffic, the different
+end-to-end RBs (SRB, DRB) of the same Remote UE and/or different Remote
+UEs can be subject to N:1 mapping and data multiplexing over one Uu RLC
+channel.</p>
+<p>- The Uu adaptation layer is used to support Remote UE identification
+for the UL traffic (multiplexing the data coming from multiple Remote
+UE). The identity information of Remote UE Uu Radio Bearer and Remote UE
+is included in the Uu adaptation layer at UL in order for gNB to
+correlate the received data packets for the specific PDCP entity
+associated with the right Remote UE Uu Radio Bearer of a Remote UE.</p>
+<p>For L2 UE-to-Network Relay, for downlink:</p>
+<p>- The Uu adaptation layer can be used to support DL bearer mapping at
+gNB to map end-to-end Radio Bearer (SRB, DRB) of Remote UE into Uu RLC
+channel over Relay UE Uu path. The Uu adaptation layer can be used to
+support DL N:1 bearer mapping and data multiplexing between multiple
+end-to-end Radio Bearers (SRBs, DRBs) of a Remote UE and/or different
+Remote UEs and one Uu RLC channel over the Relay UE Uu path.</p>
+<p>- The Uu adaptation layer needs to support Remote UE identification
+for Downlink traffic. The identity information of Remote UE Uu Radio
+Bearer and the identity information of Remote UE needs be put into the
+Uu adaptation layer by gNB at DL in order for Relay UE to map the
+received data packets from Remote UE Uu Radio Bearer to its associated
+PC5 RLC channel.</p>
+<h3 id="qos">4.5.2 QoS</h3>
+<p>gNB implementation can handle the QoS breakdown over Uu and PC5 for
+the end-to-end QoS enforcement of a particular session established
+between Remote UE and network in case of L2 UE-to-Network Relay. Details
+of handling in case PC5 RLC channels with different end-to-end QoS are
+mapped to the same Uu RLC channel can be discussed in WI phase.</p>
+<h3 id="security">4.5.3 Security</h3>
+<p>As described in clause 6.7.2.8 of TR 23.752, in case of L2
+UE-to-Network Relay, the security (confidentiality and integrity
+protection) is enforced at the PDCP layer between the endpoints at the
+Remote UE and the gNB. The PDCP traffic is relayed securely over two
+links, one between the Remote UE and the UE-to-Network Relay UE and the
+other between the UE-to-Network Relay UE to the gNB.</p>
+<h3 id="service-continuity">4.5.4 Service Continuity</h3>
+<h4 id="general">4.5.4.0 General</h4>
+<p>L2 UE-to-Nework Relay uses the RAN2 principle of the Rel-15 NR
+handover procedure as the baseline AS layer solution to guarantee
+service continuit, i.e. gNB hands over the Remote UE to a target cell or
+target Relay UE, including:</p>
+<p>1) Handover preparation type of procedure between gNB and Relay UE
+(if needed);</p>
+<p>2) RRCReconfiguration to Remote UE, Remote UE switching to the
+target, and;</p>
+<p>3) Handover complete message, similar to the legacy procedure.</p>
+<p>Exact content of the messages (e.g. handover command) can be
+discussed in WI phase. This does not imply that we will send inter-node
+message over Uu.</p>
+<p>Below, the common parts of intra-gNB cases and inter-gNB cases are
+captured. For the inter-gNB cases, compared to the intra-gNB cases,
+potential different parts on RAN2 Uu interface in details can be
+discussed in WI phase.</p>
+<h4 id="switching-from-indirect-to-direct-path">4.5.4.1 Switching from
+indirect to direct path</h4>
+<p>For service continuity of L2 UE-to-Network relay, the following
+baseline procedure is used, in case of Remote UE switching to direct Uu
+cell.</p>
+<p><img src="media/image9.svg" /></p>
+<p>Figure 4.5.4.1-1: Procedure for Remote UE switching to direct Uu
+cell</p>
+<p>Step 1: Measurement configuration and reporting</p>
+<p>Step 2: Decision of switching to a direct cell by gNB</p>
+<p>Step 3: RRC Reconfiguration message to Remote UE</p>
+<p>Step 4: Remote UE performs Random Access to the gNB</p>
+<p>Step 5: Remote UE feedback the RRCReconfigurationComplete to gNB via
+target path, using the target configuration provided in the RRC
+Reconfiguration message.</p>
+<p>Step 6: RRC Reconfiguration to Relay UE</p>
+<p>Step 7: The PC5 link is released between Remote UE and the Relay UE,
+if needed.</p>
+<p>Step 8: The data path switching.</p>
+<p>NOTE: The order of step 6/7/8 is not restricted. Following are
+further discussed in WI phase, including:<br />
+- Whether Remote UE suspends data transmission via relay link after step
+3;<br />
+- Whether Step 6 can be before or after step 3 and its necessity;<br />
+- Whether Step 7 can be after step 3 or step 5, and its
+necessity/replaced by PC5 reconfiguration;<br />
+- Whether Step 8 can be after step 5.</p>
+<h4 id="switching-from-direct-to-indirect-path">4.5.4.2 Switching from
+direct to indirect path</h4>
+<p>For service continuity of L2 UE-to-Network Relay, the following
+baseline procedure is used, in case of Remote UE switching to indirect
+Relay UE:</p>
+<p><img src="media/image10.svg" /></p>
+<p>Figure 4.5.4.2-1: Procedure for Remote UE switching to indirect Relay
+UE</p>
+<p>Step 1: Remote UE reports one or multiple candidate Relay UE(s),
+after Remote UE measures/discoveries the candidate Relay UE(s).</p>
+<p>- Remote UE may filter the appropriate Relay UE(s) meeting higher
+layer criteria when reporting, in step 1.</p>
+<p>- The reporting may include the Relay UE's ID and SL RSRP
+information, where the measurement on PC5 details can be left to WI
+phase, in step 1.</p>
+<p>Step 2: Decision of switching to a target Relay UE by gNB, and target
+(re)configuration is sent to Relay UE optionally (like preparation).</p>
+<p>Step 3: RRC Reconfiguration message to Remote UE. Following
+information may be included: 1) Identity of the target Relay UE; 2)
+Target Uu and PC5 configuration.</p>
+<p>Step 4: Remote UE establishes PC5 connection with target Relay UE, if
+the connection has not been setup yet.</p>
+<p>Step 5: Remote UE feedback the RRCReconfigurationComplete to gNB via
+target path, using the target configuration provided in
+RRCReconfiguration.</p>
+<p>Step 6: The data path switching.</p>
+<p>NOTE: Following are further discussed in WI phase, including:<br />
+- Whether Step 2 should be after Relay UE connects to the gNB (e.g.
+after step 4), if not yet before;<br />
+- Whether Step 4 can be before step 2/3.</p>
+<h3 id="control-plane-procedure">4.5.5 Control Plane Procedure</h3>
+<h4 id="connection-management">4.5.5.1 Connection Management</h4>
+<p>Remote UE needs to establish its own PDU sessions/DRBs with the
+network before user plane data transmission.</p>
+<p>PC5-RRC aspects of Rel-16 NR V2X PC5 unicast link establishment
+procedures can be reused to setup a secure unicast link between Remote
+UE and Relay UE for L2 UE-to-Network relaying before Remote UE
+establishes a Uu RRC connection with the network via Relay UE.</p>
+<p>For both in-coverage and out-of-coverage cases, when the Remote UE
+initiates the first RRC message for its connection establishment with
+gNB, the PC5 L2 configuration for the transmission between the Remote UE
+and the UE-to-Network Relay UE can be based on the RLC/MAC configuration
+defined in specifications.</p>
+<p>The establishment of Uu SRB1/SRB2 and DRB of the Remote UE is subject
+to legacy Uu configuration procedures for L2 UE-to-Network Relay.</p>
+<p>The following high level connection establishment procedure applies
+to L2 UE-to-Network Relay:</p>
+<p><img src="media/image11.svg" /></p>
+<p>Figure 4.5.5.1-1: Procedure for Remote UE connection
+establishment</p>
+<p>Step 1. The Remote and Relay UE perform discovery procedure, and
+establish PC5-RRC connection using the legacy Rel-16 procedure as a
+baseline.</p>
+<p>Step 2. The Remote UE sends the first RRC message (i.e.,
+<em>RRCSetupRequest</em>) for its connection establishment with gNB via
+the Relay UE, using a default L2 configuration on PC5. The gNB responds
+with an <em>RRCSetup</em> message to Remote UE. The <em>RRCSetup</em>
+delivery to the Remote UE uses the default configuration on PC5. If the
+Relay UE had not started in RRC_CONNECTED, it would need to do its own
+connection establishment upon reception of a message on the default L2
+configuration on PC5. The details for Relay UE to forward the
+<em>RRCSetupRequest</em>/<em>RRCSetup</em> message for Remote UE at this
+step can be discussed in WI phase.</p>
+<p>Step 3. The gNB and Relay UE perform relaying channel setup procedure
+over Uu. According to the configuration from gNB, the Relay/Remote UE
+establishes an RLC channel for relaying of SRB1 towards the Remote UE
+over PC5. This step prepares the relaying channel for SRB1.</p>
+<p>Step 4. Remote UE SRB1 message (e.g. an <em>RRCSetupComplete</em>
+message) is sent to the gNB via the Relay UE using SRB1 relaying channel
+over PC5. Then the Remote UE is RRC connected over Uu.</p>
+<p>Step 5. The Remote UE and gNB establish security following legacy
+procedure and the security messages are forwarded through the Relay
+UE.</p>
+<p>Step 6. The gNB sets up additional RLC channels between the gNB and
+Relay UE for traffic relaying. According to the configuration from gNB,
+the Relay/Remote UE sets up additional RLC channels between the Remote
+UE and Relay UE for traffic relaying. The gNB sends an
+<em>RRCReconfiguration</em> to the Remote UE via the Relay UE, to set up
+the relaying SRB2/DRBs. The Remote UE sends an
+<em>RRCReconfigurationComplete</em> to the gNB via the Relay UE as a
+response.</p>
+<p>Besides the connection establishment procedure, for L2 UE-to-Network
+relay:</p>
+<p>- The RRC reconfiguration and RRC connection release procedures can
+reuse the legacy RRC procedure, with the message content/configuration
+design left to WI phase.</p>
+<p>- The RRC connection re-establishment and RRC connection resume
+procedures can reuse the legacy RRC procedure as baseline, by
+considering the above connection establishment procedure of L2
+UE-to-Network Relay to handle the relay specific part, with the message
+content/configuration design left to WI phase.</p>
+<h4 id="paging">4.5.5.2 Paging</h4>
+<p>The Option 2 as studied in TR36.746 [7] for FeD2D paging is selected
+as the baseline paging relaying solution for L2 UE-to-Network relaying
+case (i.e. Relay UE monitors the Remote UE's Paging Occasion(s) in
+addition to its own Paging Occasion(s).) . The paging relaying solution
+applies to both CN paging and RAN paging via the Option 2.</p>
+<h4 id="system-information-delivery">4.5.5.3 System Information
+Delivery</h4>
+<p>Relay UE can forward the system information to Remote UE via
+broadcast, groupcast, or dedicated PC5-RRC signalling. The detailed
+mechanisms of broadcast, groupcast and PC5-RRC signalling design and
+what system information can be relayed to Remote UEs can be discussed in
+WI phase.</p>
+<p>On-demand SI request is supported for Remote UE for all RRC states
+(Idle/Inactive/Connected state). DedicatedSIBRequest procedure is
+re-used for the Remote UE in RRC_CONNECTED to request SI via the Relay
+UE. For the Remote UE in RRC_IDLE/RRC_INACTIVE, how on-demand SI
+procedure differs from legacy can be discussed in the WI phase.</p>
+<p>A Remote UE (IC or OOC) can request/receive SI via the Relay UE when
+PC5-RRC connected to a Relay UE. Reception via Uu for IC Remote UE can
+be discussed in the WI phase.</p>
+<h4 id="access-control">4.5.5.4 Access control</h4>
+<p>For L2 UE-to-Network relay, the Relay UE may provide UAC parameters
+to Remote UE. The access control check is performed at Remote UE using
+the parameters of the cell it intends to access. The UE-to-Network Relay
+UE does not perform access control check for the Remote UE's data.</p>
+<h2 id="layer-3-relay">4.6 Layer-3 Relay</h2>
+<h3 id="architecture-and-protocol-stack-1">4.6.1 Architecture and
+Protocol Stack</h3>
+<p>SA2 captured two user plane protocol stacks for L3 UE-to-Network
+Relay in TR 23.752 (Figure 6.6.1-2 of solution#6 and Figure 6.23.2-3 of
+solution#23), which are illustrated in Figure 4.6.1-1 and Figure
+4.6.1-2. No impacts are identified to support them from RAN2
+perspective.</p>
+<p><img src="media/image12.svg" /></p>
+<p>Figure 4.6.1-1: user plane protocol stack of L3 UE-to-Network Relay
+captured in solution#6 of [6]</p>
+<p><img src="media/image13.svg" /></p>
+<p>Figure 4.6.1-2: user plane protocol stack of L3 UE-to-Network Relay
+captured in solution#23 of [6]</p>
+<p>SA2 captured control plane protocol stacks of L3 UE-to-Network Relay
+in solution#6 of TR 23.752 [6]. RAN2 leaves its design to SA2.</p>
+<p>For N3IWF solution (i.e. solution#23 captured in TR 23.752 [6]),</p>
+<p>- RAN2 understanding is that Remote UE's NAS is sent over PC5/Uu-DRB.
+If any AS impact of NAS transport in solution#23 is identified by SA2,
+RAN2 can further discuss it in WI phase.</p>
+<p>- For the IP header overhead of L3 UE-to-Network Relay with N3IWF,
+RAN2 conclude that outer IP header on each hop can be compressed by ROHC
+"ESP/IP profile", but the inner IP header can't be compressed by the AS
+layer, whose impact could be evaluated by SA2.</p>
+<h3 id="qos-1">4.6.2 QoS</h3>
+<p>The basic QoS support mechanism for L3 UE-to-Network Relay is
+illustrated in Figure 4.6.2-1 from TR 23.752 [6].</p>
+<p><img src="media/image14.svg" /></p>
+<p>Figure 4.6.2-1: basic QoS support mechanism of L3 UE-to-Network Relay
+captured in [6]</p>
+<p>SA2 captured two solutions for QoS support of L3 UE-to-Network
+Relay:</p>
+<p>1) Separate Uu QoS parameters and PC5 QoS parameters as in option-2
+of solution#25 of TR 23.752 [6].</p>
+<p>2) End-to-End QoS support in solution#24 of TR 23.752 [6], where
+Relay UE can obtain a mapping between PQI and 5QI from SMF/PCF.</p>
+<p>No AS impact is identified for SA2 QoS solution#24 and #25 captured
+in TR 23.752 [6], for which legacy PC5-RRC procedure can be reused. RAN2
+can consider in WI phase SA2 conclusions on QoS solutions, including
+whether it is sufficient to enforce E2E QoS via legacy PC5-RRC
+reconfiguration of SLRB and resource allocation.</p>
+<p>Remote UE doesn't need to provide information on which QoS flows need
+to be relayed to UE-to-Network Relay UE in AS layer. RAN2 don't intend
+to study QoS enhancement for L3 UE-to-Network Relay. And RAN2 don't
+intend to study the forward compatibility solution for multi-hop
+support.</p>
+<p>Whether other QoS solutions (e.g., whether gNB can perform PDB split)
+are introduced depends on SA2.</p>
+<h3 id="security-1">4.6.3 Security</h3>
+<p>SA2 captured two solutions for security support of L3 UE-to-Network
+Relay:</p>
+<p>1) Via legacy Uu security and PC5 security;</p>
+<p>2) Via N3IWF in solution #23 of TR 23.752 [6];</p>
+<p>Solution#23 of TR 23.752 [6] with N3IWF is feasible to meet
+end-to-end security requirements.</p>
+<p>Whether the SA2 captured solutions can satisfy the security
+requirement depends on SA3.</p>
+<h3 id="service-continuity-1">4.6.4 Service Continuity</h3>
+<p>For service continuity in L3 UE-to-Network relay, RAN2 makes working
+assumption that no AS layer solution will be studied to guarantee the
+service continuity, and leave it to the upper layer (e.g. application
+layer) solution. This does not exclude studying some enhancements in
+mobility scenario for other purposes.</p>
+<h3 id="control-plane-procedure-1">4.6.5 Control Plane Procedure</h3>
+<p><img src="media/image15.svg" /></p>
+<p>Figure 4.6.5-1: basic connection setup procedure of L3 UE-to-Network
+Relay based on Figure 6.6.2-1 of [6]</p>
+<p>The basic connection setup procedure is illustrated in Figure 4.6.5-1
+which is based on Figure 6.6.2-1 in TS 23.752 [6]. Among them, the
+following procedures are identified with RAN2 impacts:</p>
+<p>- Step 2: the discovery procedure, which is described in Clause
+4.2.</p>
+<p>- Step 3: the relay (re)selection procedure, which is described in
+Clause 4.3.</p>
+<p>- Step 4: Rel-16 NR V2X PC5-RRC establishment procedure is reused to
+setup a secure unicast link between Remote UE and Relay UE before
+unicast traffic relaying.</p>
+<p>Further AS impacts (if any) can be discussed in WI phase.</p>
+<p>Whether new PC5-S signaling is also introduced depends on SA2.</p>
+<h1 id="sidelink-based-ue-to-ue-relay">5 Sidelink-based UE-to-UE
+Relay</h1>
+<h2 id="scenario-assumption-and-requirement">5.1 Scenario, Assumption
+and Requirement</h2>
+<p>The UE-to-UE Relay enables the coverage extension of the sidelink
+transmissions between two sidelink UEs and power saving. The coverage
+scenarios considered in this study are the following:</p>
+<p>1) All UEs (Source UE, Relay UE, Destination UE) are in coverage.</p>
+<p>2) All UEs (Source UE, Relay UE, Destination UE) are
+out-of-coverage.</p>
+<p>3) Partial coverage whereby at least one of the UEs involved in
+relaying (Source UE, Relay UE, Destination UE) is in-coverage, and at
+least one of the UEs involved in relaying is out-of-coverage.</p>
+<p>RAN2 will strive for a common solution to the in- and out-of-coverage
+cases. For the UE-to-UE Relay, the scenario where UEs can be in coverage
+of the different cell is supported.</p>
+<p>Figure 5.1-1 shows the scenarios considered for UE-to-UE Relay. In
+Figure 5.1-1, coverage implies that the Source/Destination UE and/or
+UE-to-UE Relay UE are in coverage and can access the network on Uu.</p>
+<p><img src="media/image16.svg" /></p>
+<p>Figure 5.1-1: Scenarios for UE-to-UE Relay (where the coverage status
+is not shown)</p>
+<p>NR sidelink is assumed on PC5 between the Remote UE(s) and the
+UE-to-UE Relay.</p>
+<p>Cross-RAT configuration/control of Source UE, UE-to-UE Relay and
+Destination UE is not considered, i.e., eNB/ng-eNB do not
+control/configure an NR Source UE, Destination UE or UE-to-UE Relay UE.
+For UE-to-UE Relay, this study focuses on unicast data traffic between
+the Source UE and the Destination UE.</p>
+<p>Configuring/scheduling of a UE (Source UE, Destination UE or UE-to-UE
+Relay UE) by the SN to perform NR sidelink communication is out of scope
+of this study.</p>
+<p>For UE-to-UE Relay, it is assumed that the Remote UE has an active
+end-to-end connection via only a single Relay UE at a given time.</p>
+<p>Relaying of data between a Source UE and a Destination UE can occur
+once a PC5 link is established between the Source UE, UE-to-UE Relay,
+and Destination UE.</p>
+<p>No restrictions are assumed on the RRC states of any UEs involved in
+UE-to-UE Relaying.</p>
+<p>The requirement of service continuity is only for UE-to-Network
+Relay, but not for UE-to-UE Relay, during mobility in this release.</p>
+<h2 id="discovery-1">5.2 Discovery</h2>
+<p>Model A and model B discovery model as defined in clause 5.3.1.2 of
+TS 23.303 [3] are supported for UE-to-UE Relay, and integrated PC5
+unicast link establishment procedure can be supported based on SA2
+conclusion. The protocol stack of discovery message is described in
+Figure 5.2-1.</p>
+<p><img src="media/image4.svg" /></p>
+<p>Figure 5.2-1: Protocol Stack of Discovery Message for UE-to-UE
+Relay</p>
+<p>Relay UE or Remote UE is allowed to transmit discovery message when
+triggered by upper layer.</p>
+<p>Both Remote UE and Relay UE can rely on pre-configuration unless
+relevant radio configuration is provided by network, either via system
+information or dedicated signalling.</p>
+<p>Resource pool to transmit discovery message can be either shared with
+or separated from resource pool for data transmission.</p>
+<p>- For both shared resource pool and separated resource pool, a new
+LCID is introduced for discovery message i.e. discovery message is
+carried by a new SL SRB.</p>
+<p>- Within separated resource pool discovery messages are treated
+equally with each other during LCP procedure.</p>
+<h2 id="relay-re-selection-criteria-and-procedure">5.3 Relay
+(re-)selection criteria and procedure</h2>
+<p>The baseline solution for relay (re-)selection is as follow:</p>
+<p>Radio measurements at PC5 interface are considered as part of relay
+(re)selection criteria.</p>
+<p>- Remote UE at least uses the radio signal strength measurements of
+sidelink discovery messages to evaluate whether PC5 link quality of a
+Relay UE satisfies relay selection and reselection criterion.</p>
+<p>- When Remote UE is connected to a Relay UE, it may use SL-RSRP
+measurements on the sidelink unicast link to evaluate whether PC5 link
+quality with the Relay UE satisfies relay reselection criterion.</p>
+<p>Further details on the PC5 radio measurements criteria, e.g., in case
+of no transmission on the sidelink unicast link can be discussed in WI
+phase. How to perform RSRP measurement based on RSRP of discovery
+message and/or SL-RSRP if Remote UE has PC5-RRC connection with Relay UE
+can be decided in WI phase.</p>
+<p>For relay (re-)selection, Remote UE compares the PC5 radio
+measurements of a Relay UE with the threshold which is configured by gNB
+or preconfigured. Higher layer criteria also need to be considered by
+Remote UE for relay (re-)selection, but details can be left to SA2 to
+decide. Relay (re-)selection can be triggered by upper layers of Remote
+UE.</p>
+<p>Relay reselection should be triggered if the NR Sidelink signal
+strength of current Sidelink relay is below a (pre)configured threshold.
+Also, relay reselection may be triggered if RLF of PC5 link with current
+Relay UE is detected by Remote UE.</p>
+<p>The above-described baseline for relay (re)selection apply to both L2
+and L3 relay solutions. Additional AS layer criteria can be considered
+in WI phase for both L2 and L3 UE-to-UE Relay solutions.</p>
+<p>For relay (re-)selection, when Remote UE has multiple suitable Relay
+UE candidates which meet all AS-layer &amp; higher layer criteria and
+Remote UE need to select one Relay UE by itself, it is up to UE
+implementation to choose one Relay UE.</p>
+<p>As captured in TR 23.752, solution#8 and solution#50 in TR 23.752 are
+taken as baseline solution for L2 and L3 UE-to-UE Relay reselection, and
+solution#8 and solution#11 in TR 23.752 are taken as baseline solution
+for L3 UE-to-UE Relay selection.</p>
+<h2 id="relayremote-ue-authorization-1">5.4 Relay/Remote UE
+authorization</h2>
+<p>RAN2 concludes that authorization of both Relay UE and Remote UE has
+no RAN2 impact.</p>
+<h2 id="layer-2-relay-1">5.5 Layer-2 Relay</h2>
+<h3 id="architecture-and-protocol-stack-2">5.5.1 Architecture and
+Protocol Stack</h3>
+<p>For L2 UE-to-UE Relay architecture, the protocol stacks are similar
+to L2 UE-to-Network Relay other than the fact that the termination
+points are two Remote UEs. The protocol stacks for the user plane and
+control plane of L2 UE-to-UE Relay architecture are described in Figure
+5.5.1-1 and Figure 5.5.1-2.</p>
+<p>An adaptation layer is supported over the second PC5 link (i.e. the
+PC5 link between Relay UE and Destination UE) for L2 UE-to-UE Relay. For
+L2 UE-to-UE Relay, the adaptation layer is put over RLC sublayer for
+both CP and UP over the second PC5 link. The sidelink SDAP/PDCP and RRC
+are terminated between two Remote UEs, while RLC, MAC and PHY are
+terminated in each PC5 link.</p>
+<p><img src="media/image17.svg" /></p>
+<p>Figure 5.5.1-1: User plane protocol stack for L2 UE-to-UE Relay</p>
+<p><img src="media/image18.svg" /></p>
+<p>Figure 5.5.1-2: Control plane protocol stack for L2 UE-to-UE
+Relay</p>
+<p>For the first hop of L2 UE-to-UE Relay:</p>
+<p>- The N:1 mapping is supported by first hop PC5 adaptation layer
+between Remote UE SL Radio Bearers and first hop PC5 RLC channels for
+relaying.</p>
+<p>- The adaptation layer over first PC5 hop between Source Remote UE
+and Relay UE supports to identify traffic destined to different
+Destination Remote UEs.</p>
+<p>For the second hop of L2 UE-to-UE Relay:</p>
+<p>- The second hop PC5 adaptation layer can be used to support bearer
+mapping between the ingress RLC channels over first PC5 hop and egress
+RLC channels over second PC5 hop at Relay UE.</p>
+<p>- PC5 Adaptation layer supports the N:1 bearer mapping between
+multiple ingress PC5 RLC channels over first PC5 hop and one egress PC5
+RLC channel over second PC5 hop and supports the Remote UE
+identification function.</p>
+<p>For L2 UE-to-UE Relay:</p>
+<p>- The identity information of Remote UE end-to-end Radio Bearer is
+included in the adaptation layer in first and second PC5 hop.</p>
+<p>- In addition, the identity information of Source Remote UE and/or
+the identity information of Destination Remote UE are candidate
+information to be included in the adaptation layer, which are to be
+decided in WI phase.</p>
+<h3 id="qos-2">5.5.2 QoS</h3>
+<p>QoS handling for L2 UE-to-UE Relay is subject to upper layer, e.g.
+solution#31 in TR 23.752 studied by SA2.</p>
+<h3 id="security-2">5.5.3 Security</h3>
+<p>As described in clause 6.9.1.2 (Solution#9) of TR 23.752, in case of
+L2 UE-to-UE Relay, the security is established at PDCP layer in an end
+to end manner between UE1 and UE2. Security aspects require confirmation
+from SA3.</p>
+<h3 id="control-plane-procedure-2">5.5.4 Control Plane Procedure</h3>
+<p>RAN2 consider the SA2 solution in TR 23.752[6] as baseline. Further
+RAN2 impacts can be discussed in WI phase, if any.</p>
+<h2 id="layer-3-relay-1">5.6 Layer-3 Relay</h2>
+<h3 id="architecture-and-protocol-stack-3">5.6.1 Architecture and
+Protocol Stack</h3>
+<p>RAN2 leaves the design of protocol stacks for L3 UE-to-UE Relay to
+SA2 (TR 23.752 [6]).</p>
+<h3 id="qos-3">5.6.2 QoS</h3>
+<p>No RAN2 impact of the solution captured in SA2 TR 23.752 [6]
+(solution#31) is identified and the design is in the scope of SA2.</p>
+<h3 id="security-3">5.6.3 Security</h3>
+<p>Security protection of L3 UE-to-UE Relay is in the scope of SA2 and
+SA3. No RAN2 impact is identified.</p>
+<p>Whether the SA2 captured solutions can satisfy the security
+requirement depends on SA3.</p>
+<h3 id="control-plane-procedure-3">5.6.4 Control Plane Procedure</h3>
+<p>No RAN2 impact of the solutions captured in SA2 TR 23.752 [6] (e.g.
+solution#10 and solution#32) is identified and the design is in the
+scope of SA2.</p>
+<h1 id="conclusion">6 Conclusion</h1>
+<h2 id="evaluation-and-conclusion-of-ue-to-network-relay">6.1 Evaluation
+and Conclusion of UE-to-Network Relay</h2>
+<h3 id="layer-2-relay-2">6.1.1 Layer-2 Relay</h3>
+<h4 id="conclusions-of-layer-2-relay">6.1.1.0 Conclusions of Layer-2
+Relay</h4>
+<p>RAN2 has studied L2 UE-to-Network Relay and has concluded that L2
+UE-to-Network Relay meets all of the objectives of the NR Sidelink Relay
+SID [8]. Specifically, RAN2 has reached the following conclusions:</p>
+<h4 id="relay-discovery-and-reselection">6.1.1.1 Relay discovery and
+(re)selection</h4>
+<p>Discovery was studied for L2 UE-to-Network Relay and the baseline
+solution for L2 relay is the same as for L3 relay (as captured in
+6.1.2.1). In addition, for L2 UE-to-Network Relay, the Relay UE should
+always be connected to a SL capable gNB. Further details of discovery
+configuration for the Remote UE can be discussed in the normative
+phase.</p>
+<p>Relay (Re)selection was studied for L2 UE-to-Network Relay and the
+baseline solution for L2 relay is the same as for L3 relay (as captured
+in 6.1.2.1). In addition, for RRC_CONNECTED Remote UE connected through
+L2 UE-to-Network Relay, gNB decision on relay (re)selection is
+considered for the normative phase.</p>
+<h4 id="relay-ue-and-remote-ue-authorization">6.1.1.2 Relay UE and
+Remote UE authorization</h4>
+<p>Both Relay UE and Remote UE separately follow Rel-16 V2X design (TS
+23.287), and no RAN2 impact is expected.</p>
+<h4 id="qos-management">6.1.1.3 QoS management</h4>
+<p>The general QoS handling for L2 UE-to-Network Relay was studied. The
+gNB implementation can handle the QoS breakdown over Uu and PC5 for
+end-to-end QoS enforcement, and this breakdown can be flexibly tailored
+to the AS conditions on sidelink and Uu. Details of handling in case PC5
+RLC channels with different E2E QoS are mapped to the same Uu RLC
+channel can be discussed in the normative phase. The end-to-end QoS
+enforcement can be supported. In case of OOC, Remote UE operates using
+the configuration provided in SIB or dedicated RRC signaling with
+overall better QoS performance than using pre-configuration. QoS can be
+enforced for each bearer as the gNB can decide whether an E2E bearer is
+admitted or not depending on the current congestion.</p>
+<h4 id="service-continuity-2">6.1.1.4 Service continuity</h4>
+<p>L2 UE-to-Network Relay uses RAN2 aspects of Rel-15 NR handover
+procedure as a baseline. The AS layer service continuity (i.e. lossless
+and in-sequence delivery of PDCP PDU with similar performance like
+legacy HO) can be guaranteed during path switch in L2 UE-to-Network
+Relay by involving also Relay UEs in the path switch procedure.</p>
+<h4 id="security-4">6.1.1.5 Security</h4>
+<p>In case of L2 UE-to-Network Relay, at AS layer, the security
+(confidentiality and integrity protection) is enforced end to end by
+legacy PDCP layer between the endpoints at the Remote UE and the
+gNB.</p>
+<h4 id="protocol-stack-design">6.1.1.6 Protocol stack design</h4>
+<p>The protocol stack and Uu adaptation layer function were studied for
+L2 UE-to-Network Relay. Whether the adaptation layer is also supported
+at the PC5 interface between Remote UE and Relay UE can be discussed in
+the normative phase. In L2 UE-to-Network Relay architecture, the Remote
+UE is visible to the gNB, and the Remote UE has its own PDU sessions. It
+supports the gNB configured/controlled bearer mapping at the Relay UE
+between multiple E2E bearers of a Remote UE and/or different Remote UEs
+to one Uu RLC channel.</p>
+<h4 id="cp-procedures">6.1.1.7 CP procedures</h4>
+<p>Both connection establishment procedure and path switching procedures
+were captured for L2 UE-to-Network Relay. The establishment of Uu
+SRB1/SRB2 and DRB of the Remote UE is subject to legacy Uu configuration
+procedures. It supports the Remote UE's RRC connection management, which
+can provide dedicated RRC configuration to Remote UE, reduce the
+interruption/avoid data loss due to RLF recovery, and speed up RRC
+connection and data resume, etc. Further details of the steps for path
+switch procedure (e.g. measurements, message content) and potential
+differences on the Uu interface for inter-gNB cases may be discussed in
+the normative phase.</p>
+<p>The Option 2 as studied in TR36.746 for FeD2D paging is selected as
+the baseline paging relaying solution for L2 UE-to-Network Relay. By
+supporting paging, for Remote UE in RRC_IDLE/RRC_INACTIVE, the DL data
+reachability can be supported during Remote UE's mobility.</p>
+<p>The system information (i.e. SI) request from Remote UE and
+forwarding mechanism from Relay UE to Remote UE was studied for L2
+UE-to-Network Relay. Specifically, the Relay UE can forward system
+information to the Remote UE via broadcast, groupcast or unicast.
+On-demand SI request is supported for all RRC states of the Remote UE.
+The detailed mechanism for such SI request and forwarding and the exact
+system information that can be relayed to Remote UEs can be discussed at
+normative phase. It supports the SI delivery in case Remote UE is OOC,
+which supports Remote UE using SIB provided configuration.</p>
+<p>For L2 UE-to- Network relay, the Relay UE may provide UAC parameters
+to Remote UE for performing Remote UE access control and RAN overload
+control. The access control check is performed at Remote UE using the
+parameters of the cell it intends to access. Remote UE access control
+can take SL congestion into account as the gNB is aware of the
+congestion status between Remote UE and Relay UE, using legacy CBR
+measurements.</p>
+<h3 id="layer-3-relay-2">6.1.2 Layer-3 Relay</h3>
+<h4 id="conclusions-of-layer-3-relay">6.1.2.0 Conclusions of Layer-3
+Relay</h4>
+<p>RAN2 has studied L3 UE-to-Network Relay and has concluded that L3
+UE-to-Network Relay meets all the objective of the NR Sidelink Relay SID
+[8]. Specifically, RAN2 has reached the following conclusions:</p>
+<h4 id="relay-discovery-and-reselection-1">6.1.2.1 Relay discovery and
+(re)selection</h4>
+<p>RAN2 concluded that both the model A and model B are to be supported,
+and similar AS criteria of LTE relay will be reused as baseline. The
+details are left to WI.</p>
+<h4 id="relay-and-remote-ue-authorization">6.1.2.2 Relay and Remote UE
+authorization</h4>
+<p>RAN2 confirmed the solution is up to SA2 and SA3 with no RAN2 impact
+foreseen.</p>
+<h4 id="qos-management-1">6.1.2.3 QoS management</h4>
+<p>This is subject to upper layer solutions defined by SA2 in TR 23.752
+[6], clause 8.3. RAN2 can consider in WI phase the SA2 conclusions on
+QoS solutions, including whether it is sufficient to enforce E2E QoS via
+legacy PC5-RRC reconfiguration of SLRB and resource allocation.</p>
+<h4 id="service-continuity-3">6.1.2.4 Service continuity</h4>
+<p>No AS layer solution is studied in RAN2 to guarantee service
+continuity, and this is left to the upper layer solutions defined by SA2
+in TR 23.752 [6].</p>
+<h4 id="security-5">6.1.2.5 Security</h4>
+<p>Solution#23 of TR 23.752 [6] with N3IWF is assumed to be feasible to
+meet end-to-end security requirements from RAN2 perspective.</p>
+<h4 id="protocol-stack-design-1">6.1.2.6 Protocol stack design</h4>
+<p>RAN2 concluded the CP and UP protocol stacks of L3 UE-to-Network
+Relay are up to SA2 and these are illustrated in TR 23.752 [6].</p>
+<h4 id="cp-procedures-1">6.1.2.7 CP procedures</h4>
+<p>For CP procedures, PC5-RRC aspects of Rel-16 NR V2X PC5 unicast link
+establishment procedures can be reused to setup a secure PC5 unicast
+link. Further AS impacts (if any) can be discussed in WI phase. Whether
+new PC5-S signalling is also introduced depends on SA2. For path switch
+procedure, there is no AS solution discussed and concluded in RAN2 to
+perform path switch procedure from indirect link to direct link in case
+there is data transmission between Remote UE and gNB via a Relay UE.</p>
+<h2 id="evaluation-and-conclusion-of-ue-to-ue-relay">6.2 Evaluation and
+Conclusion of UE-to-UE Relay</h2>
+<h3 id="layer-2-relay-3">6.2.1 Layer-2 Relay</h3>
+<h4 id="conclusions-of-layer-2-relay-1">6.2.1.0 Conclusions of Layer-2
+Relay</h4>
+<p>RAN2 has studied L2 UE-to-UE Relay and has concluded that L2 UE-to-UE
+Relay meets all of the objectives of the NR Sidelink Relay SID [8].
+Specifically, RAN2 has reached the following conclusions:</p>
+<h4 id="relay-discovery-and-reselection-2">6.2.1.1 Relay discovery and
+(re)selection</h4>
+<p>Discovery was studied for L2 UE-to-UE Relay and the baseline solution
+for L2 relay is the same as that of L3 relay.</p>
+<p>Relay (Re)selection was studied for L2 UE-to-UE Relay and the
+baseline solution for L2 relay is the same as that of L3 relay.</p>
+<h4 id="relay-and-remote-ue-authorization-1">6.2.1.2 Relay and Remote UE
+authorization</h4>
+<p>Both Relay UE and Remote UE separately follow Rel-16 V2X design (TS
+23.287), and no RAN2 impact is expected.</p>
+<h4 id="qos-management-2">6.2.1.3 QoS management</h4>
+<p>The design of QoS support for L2 UE-to-UE Relay are in the scope of
+SA2. No RAN2 impact of the solution captured in SA2 is identified thus
+far.</p>
+<h4 id="security-6">6.2.1.4 Security</h4>
+<p>In case of L2 UE-to-UE Relay, the security is established at PDCP
+layer in an end to end manner between source Remote UE and destination
+Remote UE. The end-to-end security can be supported.</p>
+<h4 id="protocol-stack-design-2">6.2.1.5 Protocol stack design</h4>
+<p>The protocol stack and PC5 adaptation layer function (both first hop
+PC5 and second hop PC5) were studied for L2 UE-to-UE Relay. The usage of
+PC5 adaptation layer header(s) enables the AS layer routing/forwarding
+via Relay UE for end-to-end UE-to-UE traffic.</p>
+<h4 id="cp-procedures-2">6.2.1.6 CP procedures</h4>
+<p>The connection establishment procedure was studied for L2 UE-to-UE
+Relay. RAN2 consider the SA2 solution in TR 23.752 as baseline. Further
+RAN2 impacts can be discussed in WI phase, if any.</p>
+<h3 id="layer-3-relay-3">6.2.2 Layer-3 Relay</h3>
+<h4 id="conclusions-of-layer-3-relay-1">6.2.2.0 Conclusions of Layer-3
+Relay</h4>
+<p>RAN2 has studied L3 UE-to-UE Relay and has concluded that L3 UE-to-UE
+Relay meets all the objective of the NR Sidelink Relay SID [8].
+Specifically, RAN2 has reached the following conclusions:</p>
+<h4 id="relay-discovery-and-reselection-3">6.2.2.1 Relay discovery and
+(re)selection</h4>
+<p>RAN2 concluded that both the model A and model B are to be supported,
+and similar AS criteria of LTE relay will be reused as baseline. The
+details are left to WI.</p>
+<h4 id="relay-ue-and-remote-ue-authorization-1">6.2.2.2 Relay UE and
+Remote UE authorization</h4>
+<p>RAN2 confirmed the solution is up to SA2 and SA3 with no RAN2 impact
+foreseen.</p>
+<h4 id="qos-management-3">6.2.2.3 QoS management</h4>
+<p>This is subject to upper layer solutions defined by SA2 in TR 23.752
+[6], clause 8.4.</p>
+<h4 id="security-7">6.2.2.4 Security</h4>
+<p>RAN2 concluded the solution is up to SA2 and SA3.</p>
+<h4 id="protocol-stack-design-3">6.2.2.5 Protocol stack design</h4>
+<p>RAN2 concluded the CP and UP protocol stacks of L3 UE-to-UE Relay are
+up to SA2 and these are illustrated in TR 23.752 [6].</p>
+<h4 id="cp-procedures-3">6.2.2.6 CP procedures</h4>
+<p>RAN2 concluded the design is left to SA2.</p>
+<h2 id="feasibility-and-recommendation">6.3 Feasibility and
+Recommendation</h2>
+<p>RAN2 has studied direct discovery procedure, UE-to-Network Relay, and
+UE-to-UE Relay solutions.</p>
+<p>Mechanisms for L2 relay and L3 relay have been studied and identified
+by RAN2, striving for minimum specification impact. The standards impact
+of L2 relay is principally in RAN and the standards impact of L3 relay
+is principally in SA. In this study, both L2 based Relay architecture
+and L3 based Relay architecture have been found feasible.</p>
+<p>RAN2 recommends both L2 and L3 UE-to-Network and UE-to-UE Relay can
+proceed to normative work (The final decision depends on both SA and RAN
+TSGs#91e outcome).</p>
+<p class="heading" id="annex-a-change-history"><br />
+Annex A: Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 50%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-08</td>
+<td style="text-align: center;">RAN2#111-E</td>
+<td style="text-align: center;">R2-2006602</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Skeleton TR</td>
+<td style="text-align: center;">0.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-08</td>
+<td style="text-align: center;">RAN2#111-E</td>
+<td style="text-align: center;">R2-2008251</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Revised Skeleton TR</td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-08</td>
+<td style="text-align: center;">RAN2#111-E</td>
+<td style="text-align: center;">R2-2008272</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Update from RAN2#111-E</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-08</td>
+<td style="text-align: center;">RAN2#111-E</td>
+<td style="text-align: center;">R2-2008274</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Correction on the protocol stack figure
+for the L2 Relay</td>
+<td style="text-align: center;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-11</td>
+<td style="text-align: center;">RAN2#112-E</td>
+<td style="text-align: center;">R2-2010856</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Update from RAN2#112-E</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-12</td>
+<td style="text-align: center;">RAN#90</td>
+<td style="text-align: center;">RP-202250</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Submit to RAN#90 for information</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-02</td>
+<td style="text-align: center;">RAN2#113-E</td>
+<td style="text-align: center;">R2-2100113</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Editorial Change</td>
+<td style="text-align: center;">1.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RAN2#113-E</td>
+<td style="text-align: center;">R2-2102060</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Evalaution and conclusion on L2 and L3
+Relay, and update based on R2-2102116, R2-2102115, R2-2102111,
+R2-2102118.</td>
+<td style="text-align: center;">1.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RAN#91</td>
+<td style="text-align: center;">RP-210245</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Submit to RAN#91 for approval</td>
+<td style="text-align: center;">2.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RAN#91</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Approved and upgraded to v17.0.0</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,2688 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38175-h50</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope">1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-symbols-and-abbreviations"
+id="toc-definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#test-conditions" id="toc-test-conditions">4 Test
+conditions</a>
+<ul>
+<li><a href="#general" id="toc-general">4.1 General</a></li>
+<li><a href="#arrangements-for-establishing-a-communication-link"
+id="toc-arrangements-for-establishing-a-communication-link">4.2
+Arrangements for establishing a communication link</a></li>
+<li><a href="#narrow-band-responses-on-receivers"
+id="toc-narrow-band-responses-on-receivers">4.3 Narrow band responses on
+receivers</a></li>
+<li><a href="#exclusion-bands" id="toc-exclusion-bands">4.4 Exclusion
+bands</a>
+<ul>
+<li><a href="#transmitter-exclusion-band"
+id="toc-transmitter-exclusion-band">4.4.1 Transmitter exclusion
+band</a></li>
+<li><a href="#receiver-exclusion-band"
+id="toc-receiver-exclusion-band">4.4.2 Receiver exclusion band</a></li>
+</ul></li>
+<li><a href="#iab-test-configurations"
+id="toc-iab-test-configurations">4.5 IAB test configurations</a></li>
+</ul></li>
+<li><a href="#performance-assessment" id="toc-performance-assessment">5
+Performance assessment</a>
+<ul>
+<li><a href="#general-1" id="toc-general-1">5.1 General</a></li>
+<li><a href="#assessment-of-throughput-of-iab-du"
+id="toc-assessment-of-throughput-of-iab-du">5.2 Assessment of throughput
+of IAB-DU</a></li>
+<li><a href="#assessment-of-throughput-of-iab-mt"
+id="toc-assessment-of-throughput-of-iab-mt">5.3 Assessment of throughput
+of IAB-MT</a></li>
+<li><a href="#ancillary-equipment" id="toc-ancillary-equipment">5.4
+Ancillary equipment</a></li>
+</ul></li>
+<li><a href="#performance-criteria" id="toc-performance-criteria">6
+Performance criteria</a>
+<ul>
+<li><a href="#performance-criteria-for-continuous-phenomena-for-iab"
+id="toc-performance-criteria-for-continuous-phenomena-for-iab">6.1
+Performance criteria for continuous phenomena for IAB</a></li>
+<li><a href="#performance-criteria-for-transient-phenomena-for-iab"
+id="toc-performance-criteria-for-transient-phenomena-for-iab">6.2
+Performance criteria for transient phenomena for IAB</a></li>
+<li><a
+href="#performance-criteria-for-continuous-phenomena-for-ancillary-equipment"
+id="toc-performance-criteria-for-continuous-phenomena-for-ancillary-equipment">6.3
+Performance criteria for continuous phenomena for Ancillary
+equipment</a></li>
+<li><a
+href="#performance-criteria-for-transient-phenomena-for-ancillary-equipment"
+id="toc-performance-criteria-for-transient-phenomena-for-ancillary-equipment">6.4
+Performance criteria for transient phenomena for Ancillary
+equipment</a></li>
+</ul></li>
+<li><a href="#applicability-overview" id="toc-applicability-overview">7
+Applicability overview</a>
+<ul>
+<li><a href="#general-2" id="toc-general-2">7.0 General</a></li>
+<li><a href="#emission" id="toc-emission">7.1 Emission</a></li>
+<li><a href="#immunity" id="toc-immunity">7.2 Immunity</a></li>
+</ul></li>
+<li><a href="#emission-1" id="toc-emission-1">8 Emission</a>
+<ul>
+<li><a href="#test-configurations" id="toc-test-configurations">8.1 Test
+configurations</a></li>
+<li><a href="#radiated-emission" id="toc-radiated-emission">8.2 Radiated
+emission</a>
+<ul>
+<li><a href="#radiated-emission-iab"
+id="toc-radiated-emission-iab">8.2.1 Radiated emission, IAB</a>
+<ul>
+<li><a href="#definition" id="toc-definition">8.2.1.1
+Definition</a></li>
+<li><a href="#test-method" id="toc-test-method">8.2.1.2 Test
+method</a></li>
+<li><a href="#limits" id="toc-limits">8.2.1.3 Limits</a></li>
+<li><a href="#interpretation-of-the-measurement-results"
+id="toc-interpretation-of-the-measurement-results">8.2.1.4
+Interpretation of the measurement results</a></li>
+</ul></li>
+<li><a href="#radiated-emission-ancillary-equipment"
+id="toc-radiated-emission-ancillary-equipment">8.2.2 Radiated emission,
+ancillary equipment</a>
+<ul>
+<li><a href="#definition-1" id="toc-definition-1">8.2.2.1
+Definition</a></li>
+<li><a href="#test-method-1" id="toc-test-method-1">8.2.2.2 Test
+method</a></li>
+<li><a href="#limits-1" id="toc-limits-1">8.2.2.3 Limits</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#conducted-emission-dc-power-inputoutput-port"
+id="toc-conducted-emission-dc-power-inputoutput-port">8.3 Conducted
+emission DC power input/output port</a>
+<ul>
+<li><a href="#definition-2" id="toc-definition-2">8.3.1
+Definition</a></li>
+<li><a href="#test-method-2" id="toc-test-method-2">8.3.2 Test
+method</a></li>
+<li><a href="#limits-2" id="toc-limits-2">8.3.3 Limits</a></li>
+</ul></li>
+<li><a href="#conducted-emissions-ac-mains-power-inputoutput-port"
+id="toc-conducted-emissions-ac-mains-power-inputoutput-port">8.4
+Conducted emissions, AC mains power input/output port</a>
+<ul>
+<li><a href="#definition-3" id="toc-definition-3">8.4.1
+Definition</a></li>
+<li><a href="#test-method-3" id="toc-test-method-3">8.4.2 Test
+method</a></li>
+<li><a href="#limits-3" id="toc-limits-3">8.4.3 Limits</a></li>
+</ul></li>
+<li><a href="#conducted-emissions-telecommunication-port"
+id="toc-conducted-emissions-telecommunication-port">8.5 Conducted
+emissions, telecommunication port</a>
+<ul>
+<li><a href="#definition-4" id="toc-definition-4">8.5.1
+Definition</a></li>
+<li><a href="#test-method-4" id="toc-test-method-4">8.5.2 Test
+method</a></li>
+<li><a href="#limits-4" id="toc-limits-4">8.5.3 Limits</a></li>
+</ul></li>
+<li><a href="#harmonic-current-emissions-ac-mains-input-port"
+id="toc-harmonic-current-emissions-ac-mains-input-port">8.6 Harmonic
+Current emissions (AC mains input port)</a></li>
+<li><a href="#voltage-fluctuations-and-flicker-ac-mains-input-port"
+id="toc-voltage-fluctuations-and-flicker-ac-mains-input-port">8.7
+Voltage fluctuations and flicker (AC mains input port)</a></li>
+</ul></li>
+<li><a href="#immunity-1" id="toc-immunity-1">9 Immunity</a>
+<ul>
+<li><a href="#test-configurations-1" id="toc-test-configurations-1">9.1
+Test configurations</a></li>
+<li><a href="#rf-electromagnetic-field-80-mhz---6000-mhz"
+id="toc-rf-electromagnetic-field-80-mhz---6000-mhz">9.2 RF
+electromagnetic field (80 MHz - 6000 MHz)</a>
+<ul>
+<li><a href="#definition-5" id="toc-definition-5">9.2.1
+Definition</a></li>
+<li><a href="#test-method-and-level"
+id="toc-test-method-and-level">9.2.2 Test method and level</a></li>
+<li><a href="#performance-criteria-1"
+id="toc-performance-criteria-1">9.2.3 Performance criteria</a></li>
+</ul></li>
+<li><a href="#electrostatic-discharge"
+id="toc-electrostatic-discharge">9.3 Electrostatic discharge</a>
+<ul>
+<li><a href="#definition-6" id="toc-definition-6">9.3.1
+Definition</a></li>
+<li><a href="#test-method-and-level-1"
+id="toc-test-method-and-level-1">9.3.2 Test method and level</a></li>
+<li><a href="#performance-criteria-2"
+id="toc-performance-criteria-2">9.3.3 Performance criteria</a></li>
+</ul></li>
+<li><a href="#fast-transients-common-mode"
+id="toc-fast-transients-common-mode">9.4 Fast transients common mode</a>
+<ul>
+<li><a href="#definition-7" id="toc-definition-7">9.4.1
+Definition</a></li>
+<li><a href="#test-method-and-level-2"
+id="toc-test-method-and-level-2">9.4.2 Test method and level</a></li>
+<li><a href="#performance-criteria-3"
+id="toc-performance-criteria-3">9.4.3 Performance criteria</a></li>
+</ul></li>
+<li><a href="#rf-common-mode-0.15-mhz---80-mhz"
+id="toc-rf-common-mode-0.15-mhz---80-mhz">9.5 RF common mode (0.15 MHz -
+80 MHz)</a>
+<ul>
+<li><a href="#definition-8" id="toc-definition-8">9.5.1
+Definition</a></li>
+<li><a href="#test-method-and-level-3"
+id="toc-test-method-and-level-3">9.5.2 Test method and level</a></li>
+<li><a href="#performance-criteria-4"
+id="toc-performance-criteria-4">9.5.3 Performance criteria</a></li>
+</ul></li>
+<li><a href="#voltage-dips-and-interruptions"
+id="toc-voltage-dips-and-interruptions">9.6 Voltage dips and
+interruptions</a>
+<ul>
+<li><a href="#definition-9" id="toc-definition-9">9.6.1
+Definition</a></li>
+<li><a href="#test-method-and-level-4"
+id="toc-test-method-and-level-4">9.6.2 Test method and level</a></li>
+<li><a href="#performance-criteria-5"
+id="toc-performance-criteria-5">9.6.3 Performance criteria</a></li>
+</ul></li>
+<li><a href="#surges-common-and-differential-mode"
+id="toc-surges-common-and-differential-mode">9.7 Surges, common and
+differential mode</a>
+<ul>
+<li><a href="#definition-10" id="toc-definition-10">9.7.1
+Definition</a></li>
+<li><a href="#test-method-and-level-5"
+id="toc-test-method-and-level-5">9.7.2 Test method and level</a>
+<ul>
+<li><a
+href="#test-method-for-telecommunication-ports-directly-connected-to-outdoor-cables"
+id="toc-test-method-for-telecommunication-ports-directly-connected-to-outdoor-cables">9.7.2.1
+Test method for telecommunication ports directly connected to outdoor
+cables</a></li>
+<li><a
+href="#test-method-for-telecommunication-ports-connected-to-indoor-cables"
+id="toc-test-method-for-telecommunication-ports-connected-to-indoor-cables">9.7.2.2
+Test method for telecommunication ports connected to indoor
+cables</a></li>
+<li><a href="#test-method-for-ac-power-ports"
+id="toc-test-method-for-ac-power-ports">9.7.2.3 Test method for AC power
+ports</a></li>
+</ul></li>
+<li><a href="#performance-criteria-6"
+id="toc-performance-criteria-6">9.7.3 Performance criteria</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TS 38.175 V17.5.0 (2023-12)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Specification</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NR;</p>
+<p>Integrated access and backhaul ElectroMagnetic Compatibility
+(EMC)</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.jpeg"
+style="width:1.32292in;height:0.91667in" /></td>
+<td style="text-align: right;"><img src="media/image2.png"
+style="width:1.77083in;height:1.04167in" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2023, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">7</a></p>
+<p>1 Scope <a href="#scope">8</a></p>
+<p>2 References <a href="#references">8</a></p>
+<p>3 Definitions, symbols and abbreviations <a
+href="#definitions-symbols-and-abbreviations">10</a></p>
+<p>3.1 Definitions <a href="#definitions">10</a></p>
+<p>3.2 Symbols <a href="#symbols">11</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">11</a></p>
+<p>4 Test conditions <a href="#test-conditions">12</a></p>
+<p>4.1 General <a href="#general">12</a></p>
+<p>4.2 Arrangements for establishing a communication link <a
+href="#arrangements-for-establishing-a-communication-link">12</a></p>
+<p>4.3 Narrow band responses on receivers <a
+href="#narrow-band-responses-on-receivers">13</a></p>
+<p>4.4 Exclusion bands <a href="#exclusion-bands">13</a></p>
+<p>4.4.1 Transmitter exclusion band <a
+href="#transmitter-exclusion-band">13</a></p>
+<p>4.4.2 Receiver exclusion band <a
+href="#receiver-exclusion-band">14</a></p>
+<p>4.5 IAB test configurations <a
+href="#iab-test-configurations">14</a></p>
+<p>5 Performance assessment <a href="#performance-assessment">15</a></p>
+<p>5.1 General <a href="#general-1">15</a></p>
+<p>5.2 Assessment of throughput of IAB-DU <a
+href="#assessment-of-throughput-of-iab-du">16</a></p>
+<p>5.3 Assessment of throughput of IAB-MT <a
+href="#assessment-of-throughput-of-iab-mt">16</a></p>
+<p>5.4 Ancillary equipment <a href="#ancillary-equipment">16</a></p>
+<p>6 Performance criteria <a href="#performance-criteria">16</a></p>
+<p>6.1 Performance criteria for continuous phenomena for IAB <a
+href="#performance-criteria-for-continuous-phenomena-for-iab">16</a></p>
+<p>6.2 Performance criteria for transient phenomena for IAB <a
+href="#performance-criteria-for-transient-phenomena-for-iab">17</a></p>
+<p>6.3 Performance criteria for continuous phenomena for Ancillary
+equipment <a
+href="#performance-criteria-for-continuous-phenomena-for-ancillary-equipment">17</a></p>
+<p>6.4 Performance criteria for transient phenomena for Ancillary
+equipment <a
+href="#performance-criteria-for-transient-phenomena-for-ancillary-equipment">18</a></p>
+<p>7 Applicability overview <a href="#applicability-overview">18</a></p>
+<p>7.0 General <a href="#general-2">18</a></p>
+<p>7.1 Emission <a href="#emission">18</a></p>
+<p>7.2 Immunity <a href="#immunity">18</a></p>
+<p>8 Emission <a href="#emission-1">19</a></p>
+<p>8.1 Test configurations <a href="#test-configurations">19</a></p>
+<p>8.2 Radiated emission <a href="#radiated-emission">20</a></p>
+<p>8.2.1 Radiated emission, IAB <a
+href="#radiated-emission-iab">20</a></p>
+<p>8.2.1.1 Definition <a href="#definition">20</a></p>
+<p>8.2.1.2 Test method <a href="#test-method">20</a></p>
+<p>8.2.1.3 Limits <a href="#limits">21</a></p>
+<p>8.2.1.4 Interpretation of the measurement results <a
+href="#interpretation-of-the-measurement-results">21</a></p>
+<p>8.2.2 Radiated emission, ancillary equipment <a
+href="#radiated-emission-ancillary-equipment">22</a></p>
+<p>8.2.2.1 Definition <a href="#definition-1">22</a></p>
+<p>8.2.2.2 Test method <a href="#test-method-1">22</a></p>
+<p>8.2.2.3 Limits <a href="#limits-1">22</a></p>
+<p>8.3 Conducted emission DC power input/output port <a
+href="#conducted-emission-dc-power-inputoutput-port">22</a></p>
+<p>8.3.1 Definition <a href="#definition-2">23</a></p>
+<p>8.3.2 Test method <a href="#test-method-2">23</a></p>
+<p>8.3.3 Limits <a href="#limits-2">23</a></p>
+<p>8.4 Conducted emissions, AC mains power input/output port <a
+href="#conducted-emissions-ac-mains-power-inputoutput-port">23</a></p>
+<p>8.4.1 Definition <a href="#definition-3">23</a></p>
+<p>8.4.2 Test method <a href="#test-method-3">23</a></p>
+<p>8.4.3 Limits <a href="#limits-3">23</a></p>
+<p>8.5 Conducted emissions, telecommunication port <a
+href="#conducted-emissions-telecommunication-port">24</a></p>
+<p>8.5.1 Definition <a href="#definition-4">24</a></p>
+<p>8.5.2 Test method <a href="#test-method-4">24</a></p>
+<p>8.5.3 Limits <a href="#limits-4">24</a></p>
+<p>8.6 Harmonic Current emissions (AC mains input port) <a
+href="#harmonic-current-emissions-ac-mains-input-port">24</a></p>
+<p>8.7 Voltage fluctuations and flicker (AC mains input port) <a
+href="#voltage-fluctuations-and-flicker-ac-mains-input-port">24</a></p>
+<p>9 Immunity <a href="#immunity-1">24</a></p>
+<p>9.1 Test configurations <a href="#test-configurations-1">24</a></p>
+<p>9.2 RF electromagnetic field (80 MHz - 6000 MHz) <a
+href="#rf-electromagnetic-field-80-mhz---6000-mhz">25</a></p>
+<p>9.2.1 Definition <a href="#definition-5">25</a></p>
+<p>9.2.2 Test method and level <a
+href="#test-method-and-level">25</a></p>
+<p>9.2.3 Performance criteria <a
+href="#performance-criteria-1">27</a></p>
+<p>9.3 Electrostatic discharge <a
+href="#electrostatic-discharge">27</a></p>
+<p>9.3.1 Definition <a href="#definition-6">27</a></p>
+<p>9.3.2 Test method and level <a
+href="#test-method-and-level-1">28</a></p>
+<p>9.3.3 Performance criteria <a
+href="#performance-criteria-2">28</a></p>
+<p>9.4 Fast transients common mode <a
+href="#fast-transients-common-mode">28</a></p>
+<p>9.4.1 Definition <a href="#definition-7">28</a></p>
+<p>9.4.2 Test method and level <a
+href="#test-method-and-level-2">28</a></p>
+<p>9.4.3 Performance criteria <a
+href="#performance-criteria-3">28</a></p>
+<p>9.5 RF common mode (0.15 MHz - 80 MHz) <a
+href="#rf-common-mode-0.15-mhz---80-mhz">29</a></p>
+<p>9.5.1 Definition <a href="#definition-8">29</a></p>
+<p>9.5.2 Test method and level <a
+href="#test-method-and-level-3">29</a></p>
+<p>9.5.3 Performance criteria <a
+href="#performance-criteria-4">29</a></p>
+<p>9.6 Voltage dips and interruptions <a
+href="#voltage-dips-and-interruptions">29</a></p>
+<p>9.6.1 Definition <a href="#definition-9">30</a></p>
+<p>9.6.2 Test method and level <a
+href="#test-method-and-level-4">30</a></p>
+<p>9.6.3 Performance criteria <a
+href="#performance-criteria-5">30</a></p>
+<p>9.7 Surges, common and differential mode <a
+href="#surges-common-and-differential-mode">30</a></p>
+<p>9.7.1 Definition <a href="#definition-10">30</a></p>
+<p>9.7.2 Test method and level <a
+href="#test-method-and-level-5">30</a></p>
+<p>9.7.2.1 Test method for telecommunication ports directly connected to
+outdoor cables <a
+href="#test-method-for-telecommunication-ports-directly-connected-to-outdoor-cables">31</a></p>
+<p>9.7.2.2 Test method for telecommunication ports connected to indoor
+cables <a
+href="#test-method-for-telecommunication-ports-connected-to-indoor-cables">31</a></p>
+<p>9.7.2.3 Test method for AC power ports <a
+href="#test-method-for-ac-power-ports">31</a></p>
+<p>9.7.3 Performance criteria <a
+href="#performance-criteria-6">31</a></p>
+<p>Annex A (informative): Change history <a
+href="#annex-a-informative-change-history">31</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Specification has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<p>In the present document, modal verbs have the following meanings:</p>
+<p><strong>shall</strong> indicates a mandatory requirement to do
+something</p>
+<p><strong>shall not</strong> indicates an interdiction (prohibition) to
+do something</p>
+<p>The constructions "shall" and "shall not" are confined to the context
+of normative provisions, and do not appear in Technical Reports.</p>
+<p>The constructions "must" and "must not" are not used as substitutes
+for "shall" and "shall not". Their use is avoided insofar as possible,
+and they are not used in a normative context except in a direct citation
+from an external, referenced, non-3GPP document, or so as to maintain
+continuity of style when extending or modifying the provisions of such a
+referenced document.</p>
+<p><strong>should</strong> indicates a recommendation to do
+something</p>
+<p><strong>should not</strong> indicates a recommendation not to do
+something</p>
+<p><strong>may</strong> indicates permission to do something</p>
+<p><strong>need not</strong> indicates permission not to do
+something</p>
+<p>The construction "may not" is ambiguous and is not used in normative
+elements. The unambiguous constructions "might not" or "shall not" are
+used instead, depending upon the meaning intended.</p>
+<p><strong>can</strong> indicates that something is possible</p>
+<p><strong>cannot</strong> indicates that something is impossible</p>
+<p>The constructions "can" and "cannot" are not substitutes for "may"
+and "need not".</p>
+<p><strong>will</strong> indicates that something is certain or expected
+to happen as a result of action taken by an agency the behaviour of
+which is outside the scope of the present document</p>
+<p><strong>will not</strong> indicates that something is certain or
+expected not to happen as a result of action taken by an agency the
+behaviour of which is outside the scope of the present document</p>
+<p><strong>might</strong> indicates a likelihood that something will
+happen as a result of action taken by some agency the behaviour of which
+is outside the scope of the present document</p>
+<p><strong>might not</strong> indicates a likelihood that something will
+not happen as a result of action taken by some agency the behaviour of
+which is outside the scope of the present document</p>
+<p>In addition:</p>
+<p><strong>is</strong> (or any other verb in the indicative mood)
+indicates a statement of fact</p>
+<p><strong>is not</strong> (or any other negative verb in the indicative
+mood) indicates a statement of fact</p>
+<p>The constructions "is" and "is not" do not indicate requirements.</p>
+<h1 id="scope">1 Scope</h1>
+<p>The present document covers the assessment for NR Integrated access
+and backhaul (IAB) node and associated ancillary equipment in respect of
+Electromagnetic Compatibility (EMC).</p>
+<p>The present document specifies the applicable test conditions,
+performance assessment and performance criteria for NR Integrated access
+and backhaul (IAB) node and associated ancillary equipment.</p>
+<p>Technical requirements related to the antenna and TAB connectors are
+not included in the present document. These are found in the relevant
+product standards [2, 24, 25].</p>
+<p>The environment classification used in the present document refers to
+the residential, commercial and light industrial environment
+classification used in IEC 61000-6-1 [4], IEC 61000-6-3 [5] and IEC
+61000-6-8 [26].</p>
+<p>The EMC requirements have been selected to ensure an adequate level
+of compatibility for apparatus at residential, commercial and light
+industrial environments. The levels, however, do not cover extreme cases
+which may occur in any location but with low probability of
+occurrence.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications"</p>
+<p>[2] 3GPP TS 38.174: "NR; Integrated access and backhaul radio
+transmission and reception".</p>
+<p>[3] 3GPP TR 38.809: "NR; Background for Integrated access and
+backhaul radio transmission and reception".</p>
+<p>[4] IEC 61000-6-1: "Electromagnetic compatibility (EMC) - Part 6-1:
+Generic standards - Immunity for residential, commercial and
+light-industrial environments".</p>
+<p>[5] IEC 61000-6-3: "Electromagnetic compatibility (EMC) - Part 6-3:
+Generic standards - Emission standard for equipment in residential
+environments".</p>
+<p>[6] CISPR 32: "Electromagnetic compatibility of multimedia equipment
+- Emission requirements".</p>
+<p>[7] IEC 60050-161: "International Electrotechnical Vocabulary (IEV) -
+Part 161: Electromagnetic compatibility".</p>
+<p>[8] IEC 61000-3-2: "Electromagnetic compatibility (EMC) - Part 3-2:
+Limits - Limits for harmonic current emissions (equipment input current
+≤ 16 A per phase)".</p>
+<p>[9] IEC 61000-3-12: "Electromagnetic compatibility (EMC) - Part 3-12:
+Limits - Limits for harmonic currents produced by equipment connected to
+public low-voltage system with input current &gt;16 A and ≤ 75 A per
+phase".</p>
+<p>[10] IEC 61000-3-3: "Electromagnetic compatibility (EMC) - Part 3-3:
+Limits - Limitation of voltage changes, voltage fluctuations and flicker
+in low-voltage supply systems, for equipment with rated current ≤ 16 A
+per phase and not subject to conditional connection".</p>
+<p>[11] IEC 61000-3-11: "Electromagnetic compatibility (EMC) - Part
+3-11: Limits – Limitation of voltage changes, voltage fluctuations and
+flicker in low-voltage supply systems - Equipment with rated current ≤
+75 A and subject to conditional connections".</p>
+<p>[12] IEC 61000-4-2: "Electromagnetic compatibility (EMC) - Part 4-2:
+Testing and measurement techniques - Electrostatic discharge immunity
+test".</p>
+<p>[13] IEC 61000-4-3: "Electromagnetic compatibility (EMC) - Part 4-3:
+Testing and measurement techniques - Radiated, radio-frequency,
+electromagnetic field immunity test".</p>
+<p>[14] IEC 61000-4-4: "Electromagnetic compatibility (EMC) - Part 4-4:
+Testing and measurement techniques - Electrical fast transient/burst
+immunity test".</p>
+<p>[15] IEC 61000-4-5: "Electromagnetic compatibility (EMC) - Part 4-5:
+Testing and measurement techniques - Surge immunity test".</p>
+<p>[16] IEC 61000-4-6: "Electromagnetic compatibility (EMC) - Part 4-6:
+Testing and measurement techniques - Immunity to conducted disturbances,
+induced by radio frequency fields".</p>
+<p>[17] IEC 61000-4-11: "Electromagnetic compatibility (EMC) - Part
+4-11: Testing and measurement techniques - Voltage dips, short
+interruptions and voltage variations immunity tests".</p>
+<p>[18] IEC 61000-4-21: "Electromagnetic compatibility (EMC) - Part
+4-21: Testing and measurement techniques - Reverberation chamber test
+methods".</p>
+<p>[19] ETSI EN 301 489-1: "ElectroMagnetic Compatibility (EMC) standard
+for radio equipment and services; Part 1: Common technical requirements;
+Harmonised Standard covering the essential requirements of article
+3.1(b) of Directive 2014/53/EU and the essential requirements of article
+6 of Directive 2014/30/EU".</p>
+<p>[20] Recommendation ITU-R SM.329: "Unwanted emissions in the spurious
+domain".</p>
+<p>[21] Recommendation ITU-R SM.1539: "Variation of the boundary between
+the out-of-band and spurious domains required for the application of
+Recommendations ITU-R SM.1541 and ITU-R SM.329".</p>
+<p>[22] 3GPP TS 38.104: “NR; Base Station (BS) radio transmission and
+reception”</p>
+<p>[23] CISPR 16-1-4: 2019-01: "Specification for radio disturbance and
+immunity measuring apparatus and methods – Part 1-4: Radio disturbance
+and immunity measuring apparatus – Antennas and test sites for radiated
+disturbance measurements"</p>
+<p>[24] 3GPP TS 38.176-1: "NR; Integrated access and backhaul (IAB)
+conformance testing; Part 1: Conducted conformance testing".</p>
+<p>[25] 3GPP TS 38.176-2: "NR; Integrated Access and Backhaul (IAB)
+conformance testing; Part 2: Radiated conformance testing;".</p>
+<p>[26] IEC 61000-6-8:"Electromagnetic compatibility (EMC) - Part 6-8:
+Generic standards - Emission standard for professional equipment in
+commercial and light-industrial locations".</p>
+<h1 id="definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in TR 21.905 [1] and the following apply. A term defined in the
+present document takes precedence over the definition of the same term,
+if any, in TR 21.905 [1].</p>
+<p><strong>channel bandwidth:</strong> the RF bandwidth supporting a
+single NR RF carrier with the transmission bandwidth configured in the
+uplink or downlink of a cell. The <em>channel bandwidth</em> is measured
+in MHz and is used as a reference for transmitter and receiver RF
+requirements.</p>
+<p><strong>continuous phenomena:</strong> electromagnetic disturbance,
+the effects of which on a particular device or equipment cannot be
+resolved into a succession of distinct effects (IEC 60050-161 [7]).</p>
+<p><strong>enclosure port:</strong> physical boundary of the equipment
+through which electromagnetic fields may radiate or impinge.</p>
+<p>NOTE: In the case of <em>integral antenna</em> equipment, this port
+is inseparable from the antenna port.</p>
+<p><strong>exclusion band:</strong> frequency range(s) not subject to
+test or assessment.</p>
+<p><strong>IAB-node</strong>: RAN node that supports wireless access to
+UEs and wirelessly backhauls the access traffic.</p>
+<p><strong>IAB type 1-H:</strong> IAB-MT and IAB-DU operating at FR1
+with a requirement set holding requirements defined at the respective
+TAB and OTA requirements defined at the respective RIB</p>
+<p><strong>IAB type 1-O:</strong> IAB-MT and IAB-DU operating at FR1
+with a requirement set consisting only of OTA requirements defined at
+the respective RIB.</p>
+<p><strong>IAB type 2-O:</strong> IAB-MT and IAB-DU operating at FR2
+with a requirement set consisting only of OTA requirements defined at
+the respective RIB</p>
+<p><strong>integral antenna:</strong> antenna designed for permanent
+connection to the equipment and considered part of the enclosure
+port.</p>
+<p>NOTE: An <em>integral antenna</em> may be fitted internally or
+externally.</p>
+<p><strong>operating band:</strong> frequency range in which NR operates
+(paired or unpaired), that is defined with a specific set of technical
+requirements.</p>
+<p><strong>port:</strong> particular interface of EUT used for EMC
+requirements testing purposes.</p>
+<p>NOTE: Any connection point on EUT intended for connection of cables
+to or from EUT during the EMC testing is considered as a port.</p>
+<p>EXAMPLE 1: Examples of ports for <em>IAB type 1-H</em> are as
+presented in figure 3.1‑1:</p>
+<p><img src="media/image3.svg"
+style="width:6.53125in;height:1.95833in" /></p>
+<p>Figure 3.1-1: Examples of <em>port</em>s for <em>IAB type
+1-H</em></p>
+<p>EXAMPLE 2: Examples of ports for <em>IAB type 1-O</em> and <em>IAB
+type 2-O</em> (i.e. with no <em>antenna ports</em>) are as presented in
+figure 3.1-2:</p>
+<p><img src="media/image4.svg"
+style="width:6.51042in;height:1.78125in" /></p>
+<p>Figure 3.1-2: Examples of <em>port</em>s for <em>IAB type 1-O</em>
+and <em>IAB type 2-O</em></p>
+<p><strong>receiver exclusion band:</strong> band of frequencies over
+which no tests of radiated immunity of a receiver are made, and
+expressed relative to the IAB receive band.</p>
+<p><strong>signal port:</strong> port intended for the interconnection
+of components of an EUT, or between an EUT and associated equipment and
+used in accordance with relevant functional specifications (for example
+for the maximum length of cable connected to it).</p>
+<p><strong>spatial exclusion zone:</strong> range of angles where no
+tests of radiated immunity are made for <em>IAB type 1-O</em> or <em>IAB
+type 2-O</em> (i.e. half sphere around the EUT's radiating
+direction).</p>
+<p><strong>Throughput:</strong> number of payload bits successfully
+received per second for a reference measurement channel in a specified
+reference condition.</p>
+<p><strong>telecommunication port:</strong> ports which are intended to
+be connected to telecommunication networks (e.g. public switched
+telecommunication networks, integrated services digital networks), local
+area networks (e.g. Ethernet, Token Ring) and similar networks.</p>
+<p>NOTE: <em>Telecommunication port</em> is called "wired network port"
+in CISPR 32 [6] and ETSI EN 301 489-1 [19].</p>
+<p><strong>transient phenomena:</strong> pertaining to or designating a
+phenomena or a quantity which varies between two consecutive steady
+states during a time interval short compared with the time-scale of
+interest (IEC 60050-161 [7]).</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<p>BW<sub>Channel</sub> Channel bandwidth</p>
+<p>Δf<sub>OBUE</sub> Maximum offset of the <em>operating band</em>
+unwanted emissions mask from the downlink <em>operating band</em>
+edge</p>
+<p>F<sub>DL,low</sub> The lowest frequency of the downlink <em>operating
+band</em></p>
+<p>F<sub>DL,high</sub> The highest frequency of the downlink
+<em>operating band</em></p>
+<p>F<sub>UL,low</sub> The lowest frequency of the uplink <em>operating
+band</em></p>
+<p>F<sub>UL,high</sub> The highest frequency of the uplink <em>operating
+band</em></p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+TR 21.905 [1] and the following apply. An abbreviation defined in the
+present document takes precedence over the definition of the same
+abbreviation, if any, in TR 21.905 [1].</p>
+<p>AC Alternating Current</p>
+<p>AMN Artificial Mains Network</p>
+<p>BC Band Category</p>
+<p>BH Backhaul</p>
+<p>CA Carrier Aggregation</p>
+<p>CDN Coupling/Decoupling Network</p>
+<p>CS Capability Set</p>
+<p>DC Direct Current</p>
+<p>EIRP Equivalent Isotropic Radiated Power</p>
+<p>EMC Electromagnetic Compatibility</p>
+<p>e.r.p. Effective Radiated Power</p>
+<p>ESD Electrostatic Discharge</p>
+<p>EUT Equipment Under Test</p>
+<p>FR Frequency Range</p>
+<p>FRC Fixed Reference Channel</p>
+<p>IAB Integrated Access and Backhaul</p>
+<p>NC Non Contiguous</p>
+<p>NG Next Generation</p>
+<p>NGC Next Generation Core</p>
+<p>NR New Radio</p>
+<p>NR-ARFCN NR Absolute Radio Frequency Channel Number</p>
+<p>NRTC NR Test Configuration</p>
+<p>NTC Test Configuration for Non-contiguous operation</p>
+<p>RAT Radio Access Technology</p>
+<p>RF Radio Frequency</p>
+<p>RIB Radiated Interface Boundary</p>
+<p>rms root mean square</p>
+<p>SC Single Carrier</p>
+<p>TC Test Configuration</p>
+<h1 id="test-conditions">4 Test conditions</h1>
+<h2 id="general">4.1 General</h2>
+<p>Requirements throughout the EMC specifications are in some cases
+defined separately for different frequency ranges (FR). The frequency
+ranges FR1 and FR2 are defined in clause 5.1 of TS 38.174 [2]. NR IAB is
+designed to operate in FR1 and FR2-1.</p>
+<p>The equipment shall be tested in normal test environment defined in
+the corresponding IAB conformance testing specification TS 38.176-1 [24]
+and TS 38.176-2 [25]. The test conditions shall be recorded in the test
+report.</p>
+<p>For IAB Node capable of multi-band operation, the requirements in the
+present document apply for each supported <em>operating band</em> unless
+otherwise stated. <em>Operating bands</em> shall be activated according
+to the test configuration in subclause 4.5. Tests shall be performed
+relating to each type of port and all <em>operating bands</em> shall be
+assessed during the tests.</p>
+<p>The manufacturer shall declare the supported <em>operating
+band(s)</em> according to the list of NR IAB <em>operating bands</em>
+defined in TS 38.174 [2].</p>
+<p>NOTE 1: NR IAB <em>operating bands</em> for IAB <em>type 1-H</em>,
+are declared by the manufacturer according to the declarations specified
+in TS 38.176-1 [24], table 4.6-1 and TS 38.176-2 [25], table 4.6-1.</p>
+<p>NOTE 2: NR IAB <em>operating bands</em> for <em>IAB type 1-O</em> and
+<em>IAB type 2-O,</em> are declared by the manufacturer according to the
+declarations specified in TS 38.176-2 [25], table 4.6-1.</p>
+<h2 id="arrangements-for-establishing-a-communication-link">4.2
+Arrangements for establishing a communication link</h2>
+<p>The wanted RF input signal nominal frequency shall be selected by
+setting the NR Absolute Radio Frequency Channel Number (NR-ARFCN) to an
+appropriate number.</p>
+<p>A communication link shall be set up with a suitable test system
+capable of evaluating the required performance criteria (hereafter
+called "the test system") at the radio interface and
+<em>telecommunication port/ports</em> (the NG interface). The test
+system shall be located outside of the test environment.</p>
+<p>When the EUT is required to be in the transmit/receive mode, the
+following conditions shall be met:</p>
+<p>- For the <em>IAB type 1-H</em> testing, the EUT shall be commanded
+to operate at rated transmit power;</p>
+<p>- For the <em>IAB type 1-O</em> and <em>IAB type 2-O</em> testing,
+the EUT transmit power shall be configured as stated in clause 8.1 for
+emission test and clause 9.1 for immunity test accordingly,</p>
+<p>- Adequate measures shall be taken to avoid the effect of the
+unwanted signal on the measuring equipment;</p>
+<p>- The wanted input signal level shall be set to a level where the
+performance is not limited by the receiver noise floor or strong signal
+effects.</p>
+<p>NOTE: 15 dB above the conducted reference sensitivity level has been
+used as an example of wanted input signal level in legacy 3GPP EMC
+specifications for establishing a communication link.</p>
+<p>For immunity tests clause 4.3 shall apply and the conditions shall be
+as follows.</p>
+<h2 id="narrow-band-responses-on-receivers">4.3 Narrow band responses on
+receivers</h2>
+<p>Responses on receivers or duplex transceivers occurring during the
+immunity test at discrete frequencies which are narrow band responses
+(spurious responses), are identified by the following method:</p>
+<p>- if during an immunity test the quantity being monitored goes
+outside the specified tolerances (clause 6), it is necessary to
+establish whether the deviation is due to a narrow band response or to a
+wide band (EMC) phenomenon. Therefore, the test shall be repeated with
+the unwanted signal frequency increased, and then decreased by 2 x
+BW<sub>Channel</sub> MHz, where BW<sub>Channel</sub> is the channel
+bandwidth as defined in TS 38.174 [2], clause 5.3;</p>
+<p>- if the deviation disappears in either one or both of the above MHz
+offset cases, then the response is considered as a narrow band
+response;</p>
+<p>- if the deviation does not disappear, this may be due to the fact
+that the offset has made the frequency of the unwanted signal correspond
+to the frequency of another narrow band response. Under these
+circumstances the procedure is repeated with the increase and decrease
+of the frequency of the unwanted signal set to 2.5 x
+BW<sub>Channel</sub> MHz;</p>
+<p>- if the deviation does not disappear with the increased and/or
+decreased frequency, the phenomenon is considered wide band and
+therefore an EMC problem and the equipment fails the test.</p>
+<p>For immunity test narrow band responses are disregarded.</p>
+<h2 id="exclusion-bands">4.4 Exclusion bands</h2>
+<h3 id="transmitter-exclusion-band">4.4.1 Transmitter exclusion
+band</h3>
+<p>The <em>transmitter exclusion band</em> for IAB is the frequency
+range over which no tests of radiated immunity of a transmitter are
+made. As the IAB node may operate its access and backhaul link in
+different NR IAB <em>operating band</em>, the <em>transmitter exclusion
+band</em> for IAB applies separately for the access and backhaul link.
+The <em>transmitter exclusion band</em> applies to <em>IAB type
+1-O</em>.</p>
+<p>The <em>transmitter exclusion band</em> is defined as:</p>
+<p>F<sub>DL,low</sub> – Δf<sub>OBUE</sub> &lt;f &lt; F<sub>DL,high</sub>
++ Δf<sub>OBUE</sub></p>
+<p>Where:</p>
+<p>- Values of F<sub>DL,low</sub> and F<sub>DL,high, FUL,low and
+FUL,high</sub> are defined for each NR IAB <em>operating band</em> in TS
+38.174 [2], clause 5.2.</p>
+<p>- The value of Δf<sub>OBUE</sub> is derived considering the width of
+the NR IAB <em>operating band</em>, and is defined as in table 4.4.1-1
+and table 4.4.1-2.</p>
+<p>Table 4.4.1-1: Δf<sub>OBUE</sub> offset value for NR IAB-DU</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 51%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">IAB-DU type</th>
+<th><em>Operating band</em> characteristics</th>
+<th>Δf<sub>OBUE</sub> (MHz)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>IAB-DU type 1-O</em></td>
+<td>F<sub>DL,high</sub> – F<sub>DL,low</sub> &lt; 100 MHz</td>
+<td>10</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td>100 MHz ≤ F<sub>DL,high</sub> – F<sub>DL,low</sub> ≤ 900 MHz</td>
+<td>40</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.4.1-2: Δf<sub>OBUE</sub> offset value for NR IAB-MT</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 51%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">IAB-MT type</th>
+<th><em>Operating band</em> characteristics</th>
+<th>Δf<sub>OBUE</sub> (MHz)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>IAB-MT type 1-O</em></td>
+<td>F<sub>UL,high</sub> – F<sub>UL,low</sub> &lt; 100 MHz</td>
+<td>10</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td>100 MHz ≤ F<sub>UL,high</sub> – F<sub>UL,low</sub> ≤ 900 MHz</td>
+<td>40</td>
+</tr>
+</tbody>
+</table>
+<p>For IAB node capable of multi-band operation, the total transmitter
+exclusion band is a combination of the exclusion bands for each
+operating band supported by IAB node.</p>
+<p>NOTE: As the radiated immunity testing is defined in the frequency
+range 80 MHz to 6 GHz, there is no <em>transmitter exclusion band</em>
+defined for <em>IAB type 2-O</em>.</p>
+<h3 id="receiver-exclusion-band">4.4.2 Receiver exclusion band</h3>
+<p>The <em>receiver exclusion band</em> for IAB is the frequency range
+over which no tests of radiated immunity of a receiver are made. As the
+IAB node may operate its access and backhaul link in different NR IAB
+<em>operating band</em>, the <em>receiver exclusion band</em> for IAB
+applies separately for the access and backhaul link. The <em>receiver
+exclusion band</em> applies to <em>IAB type 1-O</em>.</p>
+<p>The <em>receiver exclusion band</em> is defined as:</p>
+<p>F<sub>UL,low</sub> – Δf<sub>RX</sub> &lt;f &lt; F<sub>UL,high</sub> +
+Δf<sub>RX</sub></p>
+<p>Where:</p>
+<p>- Values of F<sub>UL,low</sub> and F<sub>UL,high</sub> are defined
+for each NR IAB <em>operating band</em> in in TS 38.174 [2], clause
+5.2.</p>
+<p>- The value of Δf<sub>RX</sub> is derived considering the width of
+the NR IAB <em>operating band</em>, and is defined as in table 4.4.2-1.
+Value of the Δf<sub>RX</sub> also depends on the RI test setup, i.e.
+whether or not the <em>spatial exclusion zone</em> (as described in
+subclause 9.2.2) is considered during the RI test.</p>
+<p>Table 4.4.1-1: Δf<sub>RX</sub> offset values for IAB</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 44%" />
+<col style="width: 26%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>IAB type</th>
+<th>IAB o<em>perating band</em> characteristics</th>
+<th>RI test setup</th>
+<th>Δf<sub>RX</sub> (MHz)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IAB type 1-<em>O</em></td>
+<td>F<sub>UL,high</sub> – F<sub>UL,low</sub> &lt; 100 MHz</td>
+<td>With exclusion zone</td>
+<td>20</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Without exclusion zone</td>
+<td>60</td>
+</tr>
+<tr>
+<td></td>
+<td>100 MHz ≤ F<sub>UL,high</sub> – F<sub>UL,low</sub> ≤ 900 MHz</td>
+<td>With exclusion zone</td>
+<td>60</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Without exclusion zone</td>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE: As the radiated immunity testing is defined in the frequency
+range 80 MHz to 6 GHz, there is no <em>receiver exclusion band</em>
+defined for <em>IAB type 2-O</em>.</p>
+<h2 id="iab-test-configurations">4.5 IAB test configurations</h2>
+<p>The present clause defines the IAB test configurations that shall be
+used for demonstrating conformance. A single IAB carrier shall be used
+for testing of single-carrier capable IAB.</p>
+<p>Single carrier configuration (SC) tests shall be performed using
+signal with narrowest supported <em>IAB channel bandwidth</em> with the
+smallest supported subcarrier spacing declared per <em>operating
+band</em> in TS 38.176-1 [24] clause 4.6, and TS 38.176-2 [25] clause
+4.6.</p>
+<p>For other IAB node, the test configurations in table 4.5-1 and table
+4.5-2 shall be used. The IAB test configurations (IABTCx) are defined in
+TS 38.176-1 [24], clause 4.7 for <em>IAB type 1-H</em> and in
+TS 38.176-2 [25], clause 4.7 for <em>IAB type 1-O</em> and <em>IAB type
+2-O</em>.</p>
+<p>Table 4.5-1: Test configurations for <em>IAB type 1-H</em></p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>IAB test case</th>
+<th colspan="3">IAB capable of multi-carrier and/or CA in a single
+band</th>
+<th colspan="2">IAB capable of multi-band operation</th>
+</tr>
+<tr>
+<th></th>
+<th>Contiguous spectrum capable IAB</th>
+<th>C and NC capable IAB with identical parameters</th>
+<th>C and NC capable IAB with different parameters</th>
+<th>Common connector</th>
+<th>Separate connectors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emission tests</td>
+<td>IABTC1</td>
+<td>IABTC3</td>
+<td>IABTC1, IABTC3</td>
+<td>IABTC1/3 (Note 1), IABTC5</td>
+<td>IABTC1/3 (Note 1, 2), IABTC5 (Note 2)</td>
+</tr>
+<tr>
+<td>Immunity tests</td>
+<td>IABTC1</td>
+<td>IABTC3</td>
+<td>IABTC1, IABTC3</td>
+<td>IABTC5</td>
+<td>IABTC1/3 (Note 1), IABTC5 (Note 3)</td>
+</tr>
+<tr>
+<td colspan="6"><p>Note 1: IABTC1 and/or IABTC3 shall be applied in each
+supported <em>operating band</em>.</p>
+<p>Note 2: For single-band operation test, other TAB connector(s) is
+(are) terminated.</p>
+<p>Note 3: IABTC5 is only applicable for multi-band receiver.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.5-2: Test configurations for <em>IAB type 1-O</em></p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr>
+<th>IAB test case</th>
+<th colspan="3">single-band RIB</th>
+<th>multi-band RIB</th>
+</tr>
+<tr>
+<th></th>
+<th>Contiguous spectrum capable IAB</th>
+<th>C and NC capable IAB with identical parameters</th>
+<th>C and NC capable IAB with different parameters</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emission tests</td>
+<td>IABTC1</td>
+<td>IABTC3</td>
+<td>IABTC1, IABTC3</td>
+<td>IABTC1/3 (Note 1), IABTC5</td>
+</tr>
+<tr>
+<td>Immunity tests</td>
+<td>IABTC1</td>
+<td>IABTC3</td>
+<td>IABTC1, IABTC3</td>
+<td>IABTC5</td>
+</tr>
+<tr>
+<td colspan="5">NOTE 1: IABTC1 and/or IABTC3 shall be applied in each
+supported <em>operating band</em>.</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.5-3: Test configurations for <em>IAB type 2-O</em></p>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 28%" />
+<col style="width: 28%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr>
+<th>IAB test case</th>
+<th colspan="3">single-band RIB</th>
+</tr>
+<tr>
+<th></th>
+<th>Contiguous spectrum capable IAB</th>
+<th>C and NC capable IAB with identical parameters</th>
+<th>C and NC capable IAB with different parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emission tests</td>
+<td>IABTC1</td>
+<td>IABTC3</td>
+<td>IABTC1, IABTC3</td>
+</tr>
+<tr>
+<td>Immunity tests</td>
+<td>IABTC1</td>
+<td>IABTC3</td>
+<td>IABTC1, IABTC3</td>
+</tr>
+</tbody>
+</table>
+<h1 id="performance-assessment">5 Performance assessment</h1>
+<h2 id="general-1">5.1 General</h2>
+<p>The following information shall be recorded in or annexed to the test
+report:</p>
+<p>- the primary functions of the radio equipment to be tested during
+and after the EMC testing;</p>
+<p>- the intended functions of the radio equipment which shall be in
+accordance with the documentation accompanying the equipment;</p>
+<p>- the method to be used to verify that a communications link is
+established and maintained;</p>
+<p>- the user-control functions and stored data that are required for
+normal operation and the method to be used to assess whether these have
+been lost after EMC stress;</p>
+<p>- the <em>ancillary equipment</em> to be combined with the radio
+equipment for testing (where applicable);</p>
+<p>- the information about <em>ancillary equipment</em> intended to be
+used with the radio equipment;</p>
+<p>- information about the common and/or band-specific active RF
+components and other hardware blocks for a communication link in IAB
+node capable of multi-band operation;</p>
+<p>- an exhaustive list of ports (and RIBs), classified as either power
+or signal/control. Power ports shall further be classified as AC or DC
+power.</p>
+<p>Performance assessment of a IAB Node with multiple enclosures may be
+done separately for the IAB Node part with the Radio digital unit and
+the Radio unit respectively, according to the manufacturer's choice.</p>
+<p>A communication link used by more than one operating band, shall be
+assessed on all operating bands. Communication link(s) and/or radio
+performance parameters for the operating bands can during the test be
+assessed simultaneously or separately for each band, depending on the
+test environment capability.</p>
+<h2 id="assessment-of-throughput-of-iab-du">5.2 Assessment of throughput
+of IAB-DU</h2>
+<p>For downlink assessment of the IAB-DU, a communication link shall be
+established between the transmitter (via port for the IAB type 1-H, or
+via RIB for the IAB type 1-O and IAB type 2-O) and the test equipment.
+Test equipment shall meet the requirements for the throughput assessment
+defined in TS38.176-1[24] and TS38.176-2[25] for the bearer used in the
+immunity tests. The level of the signal supplied to the equipment should
+be within the range for which the assessment of throughput is not
+impaired. Power control shall be OFF during the immunity testing.</p>
+<p>For uplink assessment of the IAB-DU, the value of the throughput at
+the output of the receiver shall be monitored at NG interface by using
+suitable test equipment.</p>
+<h2 id="assessment-of-throughput-of-iab-mt">5.3 Assessment of throughput
+of IAB-MT</h2>
+<p>The test arrangement and signals, given in clause 4, apply to IAB-MT.
+The assessment of equipment performance shall be based on data transfer
+according to the criteria in clause 6.</p>
+<h2 id="ancillary-equipment">5.4 Ancillary equipment</h2>
+<p>At the manufacturer's discretion the test may be performed on the
+ancillary equipment separately or on a representative configuration of
+the combination of radio and ancillary equipment. In each case EUT is
+tested against all applicable immunity and emission clauses of the
+present document and in each case, compliance enables the ancillary
+equipment to be used with different radio equipment.</p>
+<h1 id="performance-criteria">6 Performance criteria</h1>
+<h2 id="performance-criteria-for-continuous-phenomena-for-iab">6.1
+Performance criteria for continuous phenomena for IAB</h2>
+<p>The test should, where possible, be performed using a bearer with the
+characteristics of data rate and throughput defined in table 6.1-1 and
+table 6.1-2. If the test is not performed using one of these bearers
+(for example, none of them are supported by the IAB node), the
+characteristics of the bearer used shall be recorded in the test
+report.</p>
+<p>The throughput in table 6.1-1 and table 6.1-2 is stated relative to
+the maximum throughput of the FRC.</p>
+<p>The IAB node uplink and downlink paths shall each meet the
+performance criteria defined in table 6.1-1 and table 6.1-2 during the
+test. If the uplink and downlink paths are evaluated as a one loop then
+the criteria is two times the throughput reduction shown in table 6.1-1
+and table 6.1-2 (i.e. throughput &gt; 90 % instead of throughput &gt; 95
+%). After each test case IAB node shall operate as intended with no loss
+of user control function, stored data and the communication link to both
+UE and donor test equipments shall be maintained.</p>
+<p>Table 6.1-1: FR1 performance criteria for continuous phenomena for
+IAB</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 14%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR channel bandwidth (MHz) as defined in TS 38.174 section 5.3.2 [2]
+for IAB-MT and TS 38.104 section 5.3.2-1 [22] for IAB-DU</th>
+<th>Sub-carrier spacing (kHz)</th>
+<th>Bearer information data rate for IAB-MT</th>
+<th>Bearer information data rate for IAB-DU</th>
+<th><p>Performance criteria</p>
+<p>(Note 1, Note 2)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10, 15</td>
+<td>30</td>
+<td>G-FR1-A1-22 in annex A.1 in TS 38.174 [2]</td>
+<td>G-FR1-A1-2 in annex A.1 in TS 38.104 [22]</td>
+<td rowspan="4"><p>Throughput &gt; 95 %,</p>
+<p>no loss of service</p></td>
+</tr>
+<tr>
+<td>10, 15</td>
+<td>60</td>
+<td>G-FR1-A1-23 in annex A.1 in TS 38.174 [2]</td>
+<td>G-FR1-A1-3 in annex A.1 in TS 38.104 [22]</td>
+</tr>
+<tr>
+<td>20 to 100</td>
+<td>30</td>
+<td>G-FR1-A1-25 in annex A.1 in TS 38.174 [2]</td>
+<td>G-FR1-A1-5 in annex A.1 in TS 38.104 [22]</td>
+</tr>
+<tr>
+<td>20 to 100</td>
+<td>60</td>
+<td>G-FR1-A1-26 in annex A.1 in TS 38.174 [2]</td>
+<td>G-FR1-A1-6 in annex A.1 in TS 38.104 [22]</td>
+</tr>
+<tr>
+<td colspan="5"><p>NOTE 1: The performance criteria, throughput &gt; 95
+%, no loss of service, applies also if a bearer with another
+characteristics is used in the test.</p>
+<p>NOTE 2: The performance criteria, throughput &gt; 90 %, no loss of
+service, applies instead if the uplink and downlink paths are evaluated
+as a one loop.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.1-2: FR2-1 performance criteria for continuous phenomena for
+IAB</p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 14%" />
+<col style="width: 23%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR channel bandwidth (MHz)</th>
+<th>Sub-carrier spacing (kHz)</th>
+<th>Bearer information data rate for IAB-MT</th>
+<th>Bearer information data rate for IAB-DU</th>
+<th><p>Performance criteria</p>
+<p>(Note 1, Note 2)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50, 100, 200</td>
+<td>60</td>
+<td>G-FR2-A1-21 in annex A.1 in TS 38.174 [2]</td>
+<td>G-FR2-A1-1 in annex A.1 in TS 38.104 [22]</td>
+<td rowspan="3"><p>Throughput &gt; 95 %,</p>
+<p>no loss of service</p></td>
+</tr>
+<tr>
+<td>50</td>
+<td>120</td>
+<td>G-FR2-A1-22 in annex A.1 in TS 38.174 [2]</td>
+<td>G-FR2-A1-2 in annex A.1 in TS 38.104 [22]</td>
+</tr>
+<tr>
+<td>100, 200, 400</td>
+<td>120</td>
+<td>G-FR2-A1-23 in annex A.1 in TS 38.174 [2]</td>
+<td>G-FR2-A1-3 in annex A.1 in TS 38.104 [22]</td>
+</tr>
+<tr>
+<td colspan="5"><p>NOTE 1: The performance criteria, throughput &gt; 95
+%, no loss of service, applies also if a bearer with another
+characteristics is used in the test.</p>
+<p>NOTE 2: The performance criteria, throughput &gt; 90 %, no loss of
+service, applies instead if the uplink and downlink paths are evaluated
+as a one loop.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="performance-criteria-for-transient-phenomena-for-iab">6.2
+Performance criteria for transient phenomena for IAB</h2>
+<p>At the conclusion of the total test (comprising the series of
+individual exposures to transient phenomena) the IAB node shall operate
+as intended with no user noticeable loss of control functions or stored
+data. At the conclusion of each exposure the IAB node shall operate with
+no user noticeable loss of the communication link to both UE and donor
+test equipments.</p>
+<p>The channel bandwidth, sub-carrier spacing and bearer information
+data rate should be chosen based on manufacturer’s declaration and
+defined according to table 6.1-1 and table 6.1-2.</p>
+<h2
+id="performance-criteria-for-continuous-phenomena-for-ancillary-equipment">6.3
+Performance criteria for continuous phenomena for Ancillary
+equipment</h2>
+<p>The apparatus shall continue to operate as intended during and after
+the test. No degradation of performance or loss of function is allowed
+below the performance level specified by the manufacturer, when the
+apparatus is used as intended. The performance level may be replaced by
+a permissible performance loss. If the minimum performance level or the
+permissible performance loss is not specified by the manufacturer,
+either of these may be derived from the product description and
+documentation and what the user may reasonably expect from the apparatus
+if used as intended.</p>
+<h2
+id="performance-criteria-for-transient-phenomena-for-ancillary-equipment">6.4
+Performance criteria for transient phenomena for Ancillary
+equipment</h2>
+<p>The apparatus shall continue to operate as intended after the test.
+No degradation of performance or loss of function is allowed below the
+performance level specified by the manufacturer, when the apparatus is
+used as intended. The performance level may be replaced by a permissible
+performance loss. During the test, degradation of performance is however
+allowed. If the minimum performance level or the permissible performance
+loss is not specified by the manufacturer, either of these may be
+derived from the product description and documentation and what the user
+may reasonably expect from the apparatus if used as intended.</p>
+<h1 id="applicability-overview">7 Applicability overview</h1>
+<h2 id="general-2">7.0 General</h2>
+<p>Throughout this specification, whenever the IAB requirement is
+referred, its applicability shall be considered as applicable to the IAB
+node as a whole (i.e. IAB-MT and IAB-DU), irrespective of its
+implementation. Performance assessment of an IAB node with multiple
+enclosures may be done separately for each of them, according to the
+manufacturer's choice.</p>
+<h2 id="emission">7.1 Emission</h2>
+<p>Table 7.1-1: Emission requirements applicability</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 17%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th>Phenomenon</th>
+<th>Application</th>
+<th colspan="2">Equipment test requirement</th>
+<th><p>Reference</p>
+<p>clause in the</p></th>
+<th><p>Reference</p>
+<p>standard</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>IAB</td>
+<td>Ancillary equipment</td>
+<td>present document</td>
+<td></td>
+</tr>
+<tr>
+<td>Radiated emission</td>
+<td><p>IAB enclosure</p>
+<p>(Note 1)</p></td>
+<td><p>applicable for <em>IAB type 1-H</em></p>
+<p>(Note 2)</p></td>
+<td>not applicable</td>
+<td>8.2.1</td>
+<td>ITU-R SM.329 [20]</td>
+</tr>
+<tr>
+<td>Radiated emission</td>
+<td>Enclosure of <em>ancillary equipment</em></td>
+<td>not applicable</td>
+<td>applicable</td>
+<td>8.2.2</td>
+<td>CISPR 32 [6]</td>
+</tr>
+<tr>
+<td>Conducted emission</td>
+<td>DC power input/output port</td>
+<td>applicable</td>
+<td>applicable</td>
+<td>8.3</td>
+<td>CISPR 32 [6]</td>
+</tr>
+<tr>
+<td>Conducted emission</td>
+<td>AC mains input/output port</td>
+<td>applicable</td>
+<td>applicable</td>
+<td>8.4</td>
+<td>CISPR 32 [6]</td>
+</tr>
+<tr>
+<td>Conducted emission</td>
+<td><em>Telecommunication port</em></td>
+<td>applicable</td>
+<td>applicable</td>
+<td>8.5</td>
+<td>CISPR 32 [6]</td>
+</tr>
+<tr>
+<td>Harmonic current emissions</td>
+<td>AC mains input port</td>
+<td>applicable</td>
+<td>applicable</td>
+<td>8.6</td>
+<td>IEC 61000-3-2 [8] or<br />
+IEC 61000-3-12 [9]</td>
+</tr>
+<tr>
+<td>Voltage fluctuations and flicker</td>
+<td>AC mains input port</td>
+<td>applicable</td>
+<td>applicable</td>
+<td>8.7</td>
+<td>IEC 61000-3-3 [10] or<br />
+IEC 61000-3-11 [11]</td>
+</tr>
+<tr>
+<td colspan="6"><p>NOTE 1: Radiated emission measurement of an IAB node
+with multiple enclosures may be done separately for each of them,
+according to the manufacturer's choice.</p>
+<p>NOTE 2: Radiated emission requirements for <em>IAB type 1-O</em> and
+<em>IAB type 2-O</em> are described in clause 8.2.1.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="immunity">7.2 Immunity</h2>
+<p>Table 7.2-1: Immunity requirements applicability</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 17%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 17%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>Phenomenon</th>
+<th>Application</th>
+<th colspan="2">Equipment test requirement</th>
+<th>Reference clause</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>IAB equipment</td>
+<td>Ancillary equipment</td>
+<td>in the present document</td>
+<td>standard</td>
+</tr>
+<tr>
+<td>RF electro­magnetic field (80 – 6000 MHz)</td>
+<td>Enclosure</td>
+<td>applicable</td>
+<td>applicable</td>
+<td>9.2</td>
+<td>IEC 61000-4-3 [13]</td>
+</tr>
+<tr>
+<td>Electrostatic discharge</td>
+<td>Enclosure</td>
+<td>applicable</td>
+<td>applicable</td>
+<td>9.3</td>
+<td>IEC 61000-4-2 [12]</td>
+</tr>
+<tr>
+<td>Fast transients common mode</td>
+<td>Signal, telecommunications and control ports, DC and AC power input
+ports</td>
+<td>applicable</td>
+<td>applicable</td>
+<td>9.4</td>
+<td>IEC 61000-4-4 [14]</td>
+</tr>
+<tr>
+<td><p>RF common mode</p>
+<p>0.15 - 80 MHz</p></td>
+<td>Signal, telecommunications and control ports, DC and AC power input
+ports</td>
+<td>applicable</td>
+<td>applicable</td>
+<td>9.5</td>
+<td>IEC 61000-4-6 [16]</td>
+</tr>
+<tr>
+<td>Voltage dips and interruptions</td>
+<td>AC mains power input <em>port</em>s</td>
+<td>applicable</td>
+<td>applicable</td>
+<td>9.6</td>
+<td>IEC 61000-4-11 [17]</td>
+</tr>
+<tr>
+<td>Surges, common and differential mode</td>
+<td>AC power input <em>port</em>s and <em>telecommunications
+port</em></td>
+<td>applicable</td>
+<td>applicable</td>
+<td>9.7</td>
+<td>IEC 61000-4-5 [15]</td>
+</tr>
+</tbody>
+</table>
+<h1 id="emission-1">8 Emission</h1>
+<h2 id="test-configurations">8.1 Test configurations</h2>
+<p>This clause defines the configurations for emission tests as
+follows:</p>
+<p>- The equipment shall be tested under normal test conditions as
+specified in the functional standards;</p>
+<p>- The test configuration shall be as close to normal intended use as
+possible;</p>
+<p>- If the equipment is part of a system, or can be connected to
+ancillary equipment, then it shall be acceptable to test the equipment
+while connected to the minimum configuration of <em>ancillary
+equipment</em> necessary to exercise the ports;</p>
+<p>- If the equipment has a large number of ports, then a sufficient
+number shall be selected to simulate actual operation conditions and to
+ensure that all the different types of termination are tested;</p>
+<p>- The test conditions, test configuration and mode of operation shall
+be recorded in the test report;</p>
+<p>- Ports which in normal operation are connected shall be connected to
+an <em>ancillary equipment</em> or to a representative piece of cable
+correctly terminated to simulate the input/output characteristics of the
+<em>ancillary equipment</em>; in case of <em>IAB type 1-H</em>,
+<em>antenna port</em>s shall be correctly terminated;</p>
+<p>- For <em>IAB type 1-O</em> and <em>IAB type 2-O</em> without
+<em>antenna ports</em> but intentionally radiating through the
+<em>antenna array</em>, the equipment shall be placed in a test setup
+suitable for the radiated power;</p>
+<p>- Ports which are not connected to cables during normal operation,
+e.g. service connectors, programming connectors, temporary connectors
+etc. shall not be connected to any cables for the purpose of EMC
+testing. Where cables have to be connected to these ports, or
+interconnecting cables have to be extended in length in order to
+exercise the EUT, precautions shall be taken to ensure that the
+evaluation of the EUT is not affected by the addition or extension of
+these cables;</p>
+<p>- The test arrangements for transmitter and receiver clauses of the
+transceiver are described separately for the sake of clarity. However,
+where possible the test of the transmitter clause and receiver clause of
+the EUT may be carried out simultaneously to reduce test time.</p>
+<h2 id="radiated-emission">8.2 Radiated emission</h2>
+<h3 id="radiated-emission-iab">8.2.1 Radiated emission, IAB</h3>
+<p>This test is applicable to <em>IAB type 1-H</em>. This test shall be
+performed on a representative configuration of IAB node.</p>
+<p>For <em>IAB type 1-O</em> and <em>IAB type 2-O</em>, the radiated
+emission is covered by radiated spurious emission requirement in
+TS 38.174 [2], conforming to the test requirement in TS 38.174[2].</p>
+<h4 id="definition">8.2.1.1 Definition</h4>
+<p>This test assesses the ability of IAB node to limit unwanted emission
+from the <em>enclosure port</em>.</p>
+<h4 id="test-method">8.2.1.2 Test method</h4>
+<p>a) A test site fulfilling the requirements of ITU-R SM.329 [20] shall
+be used. The IAB node shall be placed on a non-conducting support and
+shall be operated from a power source via a RF filter to avoid radiation
+from the power leads. One of the following two alternative measurement
+methods shall be used:</p>
+<p>1) Field strength method measurement</p>
+<p>The test method shall be in accordance with CISPR 32 [6]. The field
+strength measurements shall be performed on a test site that is
+validated according to the methods and requirements of CISPR 16-1-4
+[23].</p>
+<p>Unless otherwise stated, measurements are conducted at 3 m or 10 m on
+an open area test site (OATS) or semi anechoic chamber (SAC) for
+frequencies up to 1 GHz, or at 3 m on a free space open area test site
+(FSOATS) or fully-anechoic room (FAR) for frequencies above 1 GHz.
+Unless otherwise stated, all measurements are done with RMS detector and
+with the -3 dB bandwidth of the measuring filter equal to the reference
+bandwidth in table 8.2.1.3-1.</p>
+<p>NOTE 1: Test site validation methods for radiated emissions tests are
+defined in CISPR 16-1-4 [23], clause 6 and 7. Examples of test site
+validation methods are listed below:</p>
+<p>- 30 - 1000 MHz frequency range: Normalized Site Attenuation (NSA),
+Reference Site Method (RSM).</p>
+<p>- 1 - 18 GHz frequency range: S<sub>VSWR</sub> standard test
+procedure, S<sub>VSWR</sub> reciprocal test procedure.</p>
+<p>2) Substitution method measurement (also called a substitution
+method)</p>
+<blockquote>
+<p>Mean power of any spurious components shall be detected by the test
+antenna and measuring receiver (e.g. a spectrum analyser). At each
+frequency at which a component is detected, the IAB node shall be
+rotated and the height of the test antenna adjusted to obtain maximum
+response, and the effective radiated power (e.r.p.) of that component
+determined by a substitution measurement. The measurement shall be
+repeated with the test antenna in the orthogonal polarization plane.</p>
+</blockquote>
+<p>NOTE: Effective radiated power (e.r.p.) refers to the radiation of a
+half wave tuned dipole instead of an isotropic antenna. There is a
+constant difference of 2.15 dB between e.i.r.p. and e.r.p, as defined in
+ITU-R SM.329 annex 1 [20].</p>
+<p>e.r.p. (dBm) = e.i.r.p. (dBm) - 2.15</p>
+<p>b) The IAB node shall transmit with maximum power declared by the
+manufacturer with all transmitters active. Set the base station to
+transmit a signal as stated in subclause 4.5.</p>
+<p>c) For IAB-DU the received power shall be measured over the frequency
+range from 30 MHz to F<sub>DL,low</sub> - Δf<sub>OBUE</sub> and from
+F<sub>DL,high</sub> + Δf<sub>OBUE</sub> up to 12750 MHz. The video
+bandwidth shall be approximately three times the resolution bandwidth.
+If this video bandwidth is not available on the measuring receiver, it
+shall be the maximum available and at least 1 MHz. For some
+<em>operating bands</em>, the upper limit is higher than 12.75 GHz in
+order to comply with the 5<sup>th</sup> harmonic limit of the downlink
+<em>operating band</em>, as specified in ITU-R recommendation SM.329
+[20].Unless otherwise stated, all measurements are done as mean power
+(RMS).</p>
+<p>d) For IAB-MT the received power shall be measured over the frequency
+range from 30 MHz to F<sub>UL,low</sub> - Δf<sub>OBUE</sub> and from
+F<sub>UL,high</sub> + Δf<sub>OBUE</sub> up to 12750 MHz. The video
+bandwidth shall be approximately three times the resolution bandwidth.
+If this video bandwidth is not available on the measuring receiver, it
+shall be the maximum available and at least 1 MHz. For some
+<em>operating bands</em>, the upper limit is higher than 12.75 GHz in
+order to comply with the 5<sup>th</sup> harmonic limit of the uplink
+<em>operating band</em>, as specified in ITU-R recommendation SM.329
+[20].Unless otherwise stated, all measurements are done as mean power
+(RMS).</p>
+<h4 id="limits">8.2.1.3 Limits</h4>
+<p>The frequency boundary and reference bandwidths for the detailed
+transitions of the limits between the requirements for out of band
+emissions and spurious emissions are based on ITU-R Recommendations
+SM.329 [20] and SM.1539 [21]. The <em>IAB type 1-H</em> shall meet the
+limits below:</p>
+<p>Table 8.2.1.3-1: Limits for radiated emissions from IAB type 1-H</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 18%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th>Frequency Range</th>
+<th><p>e.r.p.</p>
+<p>(dBm)</p></th>
+<th><p>Field strength at 3 m (dBµV/m)</p>
+<p>(NOTE 4)</p></th>
+<th><p>Field strength at 10 m</p>
+<p>(dBµV/m)</p>
+<p>(NOTE 4)</p></th>
+<th>Reference bandwidth</th>
+<th>NOTE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30 MHz ≤ f &lt; 1000 MHz</td>
+<td>-36</td>
+<td>65.4 (NOTE 5)</td>
+<td>54.9 (NOTE 5)</td>
+<td>100 kHz</td>
+<td></td>
+</tr>
+<tr>
+<td>1 GHz ≤ f &lt; 12.75 GHz</td>
+<td>-30</td>
+<td>67.4</td>
+<td>Not applicable</td>
+<td>1 MHz</td>
+<td></td>
+</tr>
+<tr>
+<td>12.75 GHz ≤ f &lt; 5<sup>th</sup> harmonic of the upper frequency
+edge of the DL operating band in GHz</td>
+<td>-30</td>
+<td>67.4</td>
+<td>Not applicable</td>
+<td>1 MHz</td>
+<td>1</td>
+</tr>
+<tr>
+<td>F<sub>DL,low</sub> - Δf<sub>OBUE</sub> &lt; f &lt;
+F<sub>DL,high</sub> +Δf<sub>OBUE</sub> (for IAB-DU)</td>
+<td>Not defined</td>
+<td>Not defined</td>
+<td>Not defined</td>
+<td>Not defined</td>
+<td>2,3</td>
+</tr>
+<tr>
+<td>F<sub>UL,low</sub> - Δf<sub>OBUE</sub> &lt; f &lt;
+F<sub>UL,high</sub> +Δf<sub>OBUE</sub> (for IAB-MT)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="6"><p>NOTE 1: For IAB-DU, this spurious frequency range
+applies only for <em>operating bands</em> for which the 5<sup>th</sup>
+harmonic of the upper frequency edge of the DL <em>operating band</em>
+is reaching beyond 12.75 GHz.<br />
+For IAB-MT, this spurious frequency range applies only for <em>operating
+bands</em> for which the 5<sup>th</sup> harmonic of the upper frequency
+edge of the UL <em>operating band</em> is reaching beyond 12.75 GHz.</p>
+<p>NOTE 2: For IAB node capable of multi-band operation, the frequency
+ranges relating to the RF bandwidths of all supported <em>operating
+bands</em> apply.</p>
+<p>NOTE 3: Δf<sub>OBUE</sub> is defined in clause 6.6.1 of TS 38.174
+[2].</p>
+<p>NOTE 4: The field strength measurements shall be conducted on OATS or
+SAC for frequencies up to 1 GHz, or on FSOATS or FAR for frequencies
+above 1 GHz.</p>
+<p>NOTE 5: Limits for radiated emissions are translated from the e.r.p.
+limit of -36 dBm into the field strength limit of 61.4 dBµV/m (at 3m) or
+50.9 dBµV/m (at 10m), and increased by the site gain value of 4 dB. The
+value of the site gain is based on ITU-R Recommendations SM.329
+[20].</p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="interpretation-of-the-measurement-results">8.2.1.4
+Interpretation of the measurement results</h4>
+<p>The interpretation of the results recorded in a test report for the
+radiated emission measurements described in the present document shall
+be as follows:</p>
+<p>- the measured value related to the corresponding limit will be used
+to decide whether an equipment meets the requirements of the present
+document;</p>
+<p>- the value of the measurement uncertainty for the measurement of
+each parameter shall be included in the test report;</p>
+<p>- the recorded value of the measurement uncertainty shall be, for
+each measurement, equal to or lower than the values in table 8.2.1.4-1
+for IAB node.</p>
+<p>Table 8.2.1.4-1 specifies the maximum measurement uncertainty of the
+test system. The test system shall enable the equipment under test to be
+measured with an uncertainty not exceeding the specified values. All
+tolerances and uncertainties are absolute values, and are valid for a
+confidence level of 95 %, unless otherwise stated.</p>
+<p>A confidence level of 95 % is the measurement uncertainty tolerance
+interval for a specific measurement that contains 95% of the performance
+of a population of test equipment.</p>
+<p>Table 8.2.1.4-1: Maximum measurement uncertainty (IAB node)</p>
+<table>
+<colgroup>
+<col style="width: 56%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Uncertainty for EUT dimension ≤ 1 m</th>
+<th>Uncertainty for EUT dimension &gt;1 m</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Effective radiated RF power between 30 MHz to 180 MHz</td>
+<td>±6 dB</td>
+<td>±6 dB</td>
+</tr>
+<tr>
+<td>Effective radiated RF power between 180 MHz to 4 GHz</td>
+<td>±4 dB</td>
+<td>±6 dB</td>
+</tr>
+<tr>
+<td>Effective radiated RF power between 4 GHz to 12,75 GHz</td>
+<td>±6 dB</td>
+<td>±9 dB (NOTE)</td>
+</tr>
+<tr>
+<td>Field strength between 30 MHz to 12,75 GHz</td>
+<td>±6 dB</td>
+<td>±6 dB</td>
+</tr>
+<tr>
+<td colspan="3">NOTE: This value may be reduced to ±6 dB when further
+information on the potential radiation characteristic of the EUT is
+available.</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE: If the test system for a test is known to have a measurement
+uncertainty greater than that specified in table 8.2.1.4-1, this
+equipment can still be used, provided that an adjustment is made
+follows:</p>
+<p>Any additional uncertainty in the test system over and above that
+specified in table 8.2.1.4-1 is used to tighten the test requirements -
+making the test harder to pass.</p>
+<p>This procedure will ensure that a test system not compliant with
+table 8.2.1.4-1 does not increase the probability of passing an EUT that
+would otherwise have failed a test if a test system compliant with table
+8.2.1.4-1 had been used.</p>
+<h3 id="radiated-emission-ancillary-equipment">8.2.2 Radiated emission,
+ancillary equipment</h3>
+<p>This test is only applicable to <em>ancillary equipment</em> not
+incorporated in the radio equipment and intended to be measured on a
+stand-alone basis, as declared by the manufacturer. This test shall be
+performed on a representative configuration of the <em>ancillary
+equipment</em>.</p>
+<p>This test is not applicable for <em>ancillary equipment</em>
+incorporated in the radio equipment, or for <em>ancillary equipment</em>
+intended to be measured in combination with the radio equipment. In
+these cases, the requirements of the relevant product standard for the
+effective use of the radio spectrum shall apply.</p>
+<h4 id="definition-1">8.2.2.1 Definition</h4>
+<p>This test assesses the ability of <em>ancillary equipment</em> to
+limit unwanted emission from the <em>enclosure port</em>.</p>
+<h4 id="test-method-1">8.2.2.2 Test method</h4>
+<p>The test method shall be in accordance with CISPR 32[6].</p>
+<h4 id="limits-1">8.2.2.3 Limits</h4>
+<p>The <em>ancillary equipment</em> shall meet the limits according to
+CISPR 32[6] table A.4 and table A.5.</p>
+<p>For the referred limit values, the following shall apply:</p>
+<p>Where the limits value varies over a given frequency range, it
+changes linearly with respect to the logarithm of the frequency.</p>
+<p>Where there is a step in the relevant limit, the lower value shall be
+applied at the transition frequency.</p>
+<p>Alternatively, for <em>ancillary equipment</em> intended to be used
+in telecommunication centres only, the class A limits given in CISPR 32
+[6], annex A, table A.2 and table A.3 may be used.</p>
+<h2 id="conducted-emission-dc-power-inputoutput-port">8.3 Conducted
+emission DC power input/output port</h2>
+<p>If the DC power cable of the radio equipment is intended to be less
+than 3 m in length, and intended only for direct connection to a
+dedicated AC to DC power supply, then the measurement shall be performed
+only on the AC power input of that power supply as specified in
+clause 8.4.</p>
+<p>This test shall be performed on a representative configuration of the
+radio equipment, the associated <em>ancillary equipment</em>, or
+representative configuration of the combination of radio and
+<em>ancillary equipment</em>.</p>
+<h3 id="definition-2">8.3.1 Definition</h3>
+<p>This test assesses the ability of radio equipment and <em>ancillary
+equipment</em> to limit internal noise from the DC power input/output
+ports.</p>
+<h3 id="test-method-2">8.3.2 Test method</h3>
+<p>The test method shall be in accordance with CISPR 32 [6] and the
+Artificial Mains Network (AMN) shall be connected to a DC power
+source.</p>
+<p>In the case of DC output ports, the ports shall be connected via an
+AMN to a load drawing the rated current of the source.</p>
+<p>A measuring receiver shall be connected to each AMN measurement port
+in turn and the conducted emission recorded.</p>
+<p>The equipment shall be installed with a ground plane as defined in
+CISPR 32 [6]. The reference earth point of the AMN shall be connected to
+the reference ground plane with a conductor as short as possible.</p>
+<h3 id="limits-2">8.3.3 Limits</h3>
+<p>The equipment shall meet the limits according to CISPR 32 [6] table
+A.9, which are defined for average detector receiver and for quasi-peak
+detector receiver. If the average limit is met when using a quasi‑peak
+detector, the equipment shall be deemed to meet both limits and
+measurement with the average detector receiver is not necessary.</p>
+<p>Where there is a step in the referred limit values, the lower value
+shall be applied at the transition frequency.</p>
+<h2 id="conducted-emissions-ac-mains-power-inputoutput-port">8.4
+Conducted emissions, AC mains power input/output port</h2>
+<p>This test is applicable to equipment powered by the AC mains.</p>
+<p>This test is not applicable to AC output ports which are connected
+directly (or via a circuit breaker) to the AC power port of the EUT.</p>
+<p>This test shall be performed on a representative configuration of the
+radio equipment, the associated <em>ancillary equipment</em>, or
+representative configuration of the combination of radio and
+<em>ancillary equipment</em>.</p>
+<h3 id="definition-3">8.4.1 Definition</h3>
+<p>This test assesses the ability of radio equipment and <em>ancillary
+equipment</em> to limit internal noise from the AC mains power
+input/output ports.</p>
+<h3 id="test-method-3">8.4.2 Test method</h3>
+<p>The test method shall be in accordance with CISPR 32 [6].</p>
+<h3 id="limits-3">8.4.3 Limits</h3>
+<p>The equipment shall meet the limits according to CISPR 32 [6] table
+A.10, which are defined for the average detector receiver and for
+quasi-peak detector receiver. If the average limit is met when using a
+quasi‑peak detector, the equipment shall be deemed to meet both limits
+and measurement with the average detector receiver is not necessary.</p>
+<p>For the referred limit values following shall apply:</p>
+<p>Where the limits value varies over a given frequency range, it
+changes linearly with respect to the logarithm of the frequency.</p>
+<p>Where there is a step in the relevant limit, the lower value shall be
+applied at the transition frequency.</p>
+<p>Alternatively, for equipment intended to be used in telecommunication
+centres the limits given in CISPR 32 [6] table A.9 shall be used.</p>
+<h2 id="conducted-emissions-telecommunication-port">8.5 Conducted
+emissions, telecommunication port</h2>
+<p>This test is applicable for radio equipment and/or <em>ancillary
+equipment</em> for fixed use which have <em>telecommunication
+ports</em>.</p>
+<p>This test shall be performed on a representative configuration of
+radio equipment, the associated <em>ancillary equipment</em>, or a
+representative configuration of the combination of radio and
+<em>ancillary equipment</em>.</p>
+<h3 id="definition-4">8.5.1 Definition</h3>
+<p>This test assesses the EUT unwanted emission present at the
+<em>telecommunication ports</em>.</p>
+<h3 id="test-method-4">8.5.2 Test method</h3>
+<p>The test method shall be in accordance with CISPR 32 [6].</p>
+<h3 id="limits-4">8.5.3 Limits</h3>
+<p>The <em>telecommunication po</em>rts shall meet the limits according
+to CISPR 32 [6] table A.12.</p>
+<p>For the referred limit values, following shall apply:</p>
+<p>Where the limits value varies over a given frequency range, it
+changes linearly with respect to the logarithm of the frequency.</p>
+<p>Where there is a step in the relevant limit, the lower value shall be
+applied at the transition frequency.</p>
+<p>Alternatively, for equipment intended to be used in telecommunication
+centres only, the limits given in CISPR 32 [6] table A.11 may be
+used.</p>
+<h2 id="harmonic-current-emissions-ac-mains-input-port">8.6 Harmonic
+Current emissions (AC mains input port)</h2>
+<p>The requirements of IEC 61000-3-2 [8] for harmonic current emission
+apply for equipment covered by the scope of the present document. For
+equipment with an input current of greater than 16A per phase, IEC
+61000-3-12 [9] applies.</p>
+<h2 id="voltage-fluctuations-and-flicker-ac-mains-input-port">8.7
+Voltage fluctuations and flicker (AC mains input port)</h2>
+<p>The requirements of IEC 61000-3-3 [10] for voltage fluctuations and
+flicker apply for equipment covered by the scope of the present
+document. For equipment with an input current of greater than 16 A per
+phase, IEC 61000-3-11 [11] applies.</p>
+<h1 id="immunity-1">9 Immunity</h1>
+<h2 id="test-configurations-1">9.1 Test configurations</h2>
+<p>This clause defines the configurations for immunity tests as
+follows:</p>
+<p>- the equipment shall be tested under normal test conditions as
+specified in the functional standards;</p>
+<p>- during the test, the RF output power may be reduced to a power
+level sufficient for establishing and maintaining the required
+communication link;</p>
+<p>- the test configuration shall be as close to normal intended use as
+possible;</p>
+<p>- if the equipment is part of a system, or can be connected to
+<em>ancillary equipment</em>, then it shall be acceptable to test the
+equipment while connected to the minimum configuration of <em>ancillary
+equipment</em> necessary to exercise the ports;</p>
+<p>- if the equipment has a large number of ports, then a sufficient
+number shall be selected to simulate actual operation conditions and to
+ensure that all the different types of termination are tested;</p>
+<p>- the test conditions, test configuration and mode of operation shall
+be recorded in the test report;</p>
+<p>- ports which in normal operation are connected shall be connected to
+an <em>ancillary equipment</em> or to a representative piece of cable
+correctly terminated to simulate the input/output characteristics of the
+<em>ancillary equipment</em>. In case of <em>IAB type 1-H</em>,
+<em>antenna ports</em> shall be correctly terminated;</p>
+<p>- ports which are not connected to cables during normal operation,
+e.g. service connectors, programming connectors, temporary connectors
+etc. shall not be connected to any cables for the purpose of EMC
+testing. Where cables have to be connected to these ports, or
+interconnecting cables have to be extended in length in order to
+exercise the EUT, precautions shall be taken to ensure that the
+evaluation of the EUT is not affected by the addition or extension of
+these cables;</p>
+<p>- immunity tests on the entire IAB Node shall be performed by
+establishing communication links at the radio interface (e.g. with the
+mobile simulator) and the NG interface (e.g. with an NGC simulator) and
+evaluating the throughput;</p>
+<p>- immunity tests shall be performed on both the uplink and downlink
+paths. The tests shall also include both the radio interface and the NG
+interface. Throughput evaluation may be carried out at either interface,
+where appropriate, and the measurements for the uplink and downlink
+paths may be carried out as a single path looped at either the radio
+interface or NG interface. In case of looping is used care have to be
+taken that the throughput information doesn't change due to looping;</p>
+<p>- for IAB node capable of multi-band operation, communication links
+shall be established in such a way that all <em>operating band</em>(s)
+are activated during the test according to the applicable test
+configurations in clause 4.5. Performance assessment may be done
+separately for each <em>operating band</em>.</p>
+<h2 id="rf-electromagnetic-field-80-mhz---6000-mhz">9.2 RF
+electromagnetic field (80 MHz - 6000 MHz)</h2>
+<p>The test shall be performed on a representative configuration of the
+equipment, the associated ancillary equipment, or representative
+configuration of the combination of radio and ancillary equipment.</p>
+<h3 id="definition-5">9.2.1 Definition</h3>
+<p>This test assesses the ability of radio equipment and <em>ancillary
+equipment</em> to operate as intended in the presence of a radio
+frequency electromagnetic field disturbance at the enclosure.</p>
+<h3 id="test-method-and-level">9.2.2 Test method and level</h3>
+<p>The test method shall be in accordance with IEC 61000‑4‑3 [13], which
+specifies test methodology based on anechoic chamber. The use of
+reverberation chamber test method according to IEC 61000-4-21 [18],
+clause 6.1 and Annex D as alternative method is allowed.</p>
+<p>The following requirements shall apply:</p>
+<p>- The test level shall be 3 V/m amplitude modulated to a depth of
+80 % by a sinusoidal audio signal of 1 kHz;</p>
+<p>- The stepped frequency increments shall be 1 % of the momentary
+frequency;</p>
+<p>- The test shall be performed over the frequency range 80 MHz - 6000
+MHz; with the exception of the exclusion band for receivers (see clause
+4.4);</p>
+<p>- Responses in stand-alone receivers or receivers which are part of
+transceivers occurring at discrete frequencies which are narrow band
+responses, shall be disregarded, see clause 4.3;</p>
+<p>- The frequencies selected during the test shall be recorded in the
+test report.</p>
+<p>- For the test method in accordance with IEC 61000-4-3[13], the
+<em>spatial exclusion zone</em> can be chosen to protect the IAB node
+receiver(s). For the frequency range above 690 MHz (according to ETSI EN
+301 489-50 [28]), the EMC RF electromagnetic field immunity requirement
+with a level of 10 V/m applies on the non-radiating faces of the <em>IAB
+type 1-O</em>, or <em>IAB type 2-O,</em> as depicted on figures
+9.2.2-1.</p>
+<p>NOTE: Depending on the IAB implementation, application of the spatial
+exclusion to all radiating faces of the IAB may not allow proper
+execution of the RI testing. In such cases as depicted on figures
+9.2.2‑2, to protect the IAB node receiver(s), exclusion bands shall be
+considered, as in table 4.4.1-1.</p>
+<p><img src="media/image5.png" style="width:4.78125in;height:3.70833in"
+alt="图片1" /></p>
+<p>Figure 9.2.2-1: Example of the spatial exclusion application in case
+of a single instance of the IAB radiating face (horizontal plane
+depicted)</p>
+<p><img src="media/image6.jpeg"
+style="width:6.69514in;height:5.73125in" /></p>
+<p>Figure 9.2.2-2: Example of the spatial exclusion application in case
+of a 3-panel IAB node (horizontal plane depicted) – proper execution of
+the RI test may not be feasible</p>
+<h3 id="performance-criteria-1">9.2.3 Performance criteria</h3>
+<p><strong>IAB node:</strong></p>
+<p>The performance criteria of clause 6.1 shall apply.</p>
+<p><strong>Ancillary equipment:</strong></p>
+<p>The performance criteria of clause 6.3 shall apply.</p>
+<h2 id="electrostatic-discharge">9.3 Electrostatic discharge</h2>
+<p>The test shall be performed on a representative configuration of the
+radio equipment, the associated <em>ancillary equipment</em>, or
+representative configuration of the combination of radio and
+<em>ancillary equipment</em>.</p>
+<h3 id="definition-6">9.3.1 Definition</h3>
+<p>This test assesses the ability of radio equipment and <em>ancillary
+equipment</em> to operate as intended in the event of an electrostatic
+discharge.</p>
+<h3 id="test-method-and-level-1">9.3.2 Test method and level</h3>
+<p>The test method shall be in accordance with IEC 61000‑4‑2 [12]:</p>
+<p>- for contact discharge, the equipment shall pass at ±4 kV;</p>
+<p>- for air discharge shall pass at ±8 kV;</p>
+<p>- electrostatic discharge shall be applied to all exposed surfaces of
+the EUT except where the user documentation specially indicates a
+requirement for appropriate protective measures.</p>
+<p>NOTE: Ensure that the EUT is fully discharged between each ESD
+exposure.</p>
+<h3 id="performance-criteria-2">9.3.3 Performance criteria</h3>
+<p><strong>IAB node:</strong></p>
+<p>The performance criteria of clause 6.2 shall apply.</p>
+<p><strong>Ancillary equipment:</strong></p>
+<p>The performance criteria of clause 6.4 shall apply.</p>
+<h2 id="fast-transients-common-mode">9.4 Fast transients common
+mode</h2>
+<p>The test shall be performed on AC mains power input ports.</p>
+<p>This test shall be performed on <em>signal ports</em>,
+<em>telecommunication ports</em>, <em>control ports</em> and DC power
+input/output ports if the cables may be longer than 3 m.</p>
+<p>Where this test is not carried out on a port or any other ports
+because the manufacturer declares that it is not intended to be used
+with cables longer than 3 m, a list of ports which were not tested for
+this reason shall be included in the test report.</p>
+<p>This test shall be performed on a representative configuration of the
+equipment, the associated <em>ancillary equipment</em>, or
+representative configuration of the combination of radio and
+<em>ancillary equipment</em>.</p>
+<h3 id="definition-7">9.4.1 Definition</h3>
+<p>This test assesses the ability of radio equipment and <em>ancillary
+equipment</em> to operate as intended in the event of fast transients
+present on one of the input/output ports.</p>
+<h3 id="test-method-and-level-2">9.4.2 Test method and level</h3>
+<p>The test method shall be in accordance with IEC 61000‑4‑4 [14]:</p>
+<p>- The test level for <em>signal ports</em>, <em>telecommunication
+ports</em> and <em>control ports</em> shall be 0.5 kV open circuit
+voltage as given in IEC 61000‑4‑4 [14];</p>
+<p>- The test level for DC power input/output ports shall be 0.5 kV open
+circuit voltage as given in IEC 61000‑4‑4 [14];</p>
+<p>- The test level for AC mains power input ports shall be 1 kV open
+circuit voltage as given in IEC 61000‑4‑4 [14].</p>
+<p>For AC and DC power input ports the transients shall be applied (in
+parallel) to all the conductors in the cable with reference to the
+cabinet reference earth (true common mode) and the source impedance
+shall be 50 Ω.</p>
+<h3 id="performance-criteria-3">9.4.3 Performance criteria</h3>
+<p><strong>IAB node:</strong></p>
+<p>The performance criteria of clause 6.2 shall apply.</p>
+<p><strong>Ancillary equipment:</strong></p>
+<p>The performance criteria of clause 6.4 shall apply.</p>
+<h2 id="rf-common-mode-0.15-mhz---80-mhz">9.5 RF common mode (0.15 MHz -
+80 MHz)</h2>
+<p>The test shall be performed on AC mains power input/output ports.</p>
+<p>This test shall be performed on <em>signal ports</em>,
+telecommunication <em>port</em>s, control and DC power input/output
+ports, which may have cables longer than 3 m.</p>
+<p>Where this test is not carried out on a port or any other ports
+because the manufacturer declares that it is not intended to be used
+with cables longer than stated above, a list of ports which were not
+tested shall be included in the test report.</p>
+<p>This test shall be performed on a representative configuration of the
+equipment, the associated <em>ancillary equipment</em>, or
+representative configuration of the combination of radio and
+<em>ancillary equipment</em>.</p>
+<p>NOTE: This test can also be performed using the clamp injection
+method, where appropriate, see IEC 61000‑4‑6 [16].</p>
+<h3 id="definition-8">9.5.1 Definition</h3>
+<p>This test assesses the ability of radio equipment and <em>ancillary
+equipment</em> to operate as intended in the presence of a radio
+frequency electromagnetic disturbance.</p>
+<h3 id="test-method-and-level-3">9.5.2 Test method and level</h3>
+<p>The test method shall be in accordance with IEC 61000‑4‑6 [16]:</p>
+<p>- The test signal shall be amplitude modulated to a depth of 80 % by
+a sinusoidal audio signal of 1 kHz;</p>
+<p>- The stepped frequency increments shall be 50 kHz in the frequency
+range 150 kHz to 5 MHz and 1% frequency increment of the momentary
+frequency in the frequency range 5 MHz to 80 MHz;</p>
+<p>- The test level shall be severity level 2 as given in
+IEC 61000‑4‑6 [16] corresponding to 3 V rms, at a transfer impedance of
+150 Ω;</p>
+<p>- The test shall be performed over the frequency range 150 kHz -
+80 MHz;</p>
+<p>- The injection method to be used shall be selected according to the
+basic standard IEC 61000-4-6 [16];</p>
+<p>- Responses of stand-alone receivers or receivers which are part of
+transceivers occurring at discrete frequencies which are narrow band
+responses, shall be disregarded, see clause 4.3;</p>
+<p>- The frequencies of the immunity test signal selected and used
+during the test shall be recorded in the test report.</p>
+<h3 id="performance-criteria-4">9.5.3 Performance criteria</h3>
+<p><strong>IAB node:</strong></p>
+<p>The performance criteria of clause 6.1 shall apply.</p>
+<p><strong>Ancillary equipment:</strong></p>
+<p>The performance criteria of clause 6.3 shall apply.</p>
+<h2 id="voltage-dips-and-interruptions">9.6 Voltage dips and
+interruptions</h2>
+<p>The tests shall be performed on AC mains power input ports.</p>
+<p>These tests shall be performed on a representative configuration of
+the equipment, the associated <em>ancillary equipment</em>, or
+representative configuration of the combination of radio and
+<em>ancillary equipment</em>.</p>
+<h3 id="definition-9">9.6.1 Definition</h3>
+<p>These tests assess the ability of radio equipment and <em>ancillary
+equipment</em> to operate as intended in the event of voltage dips and
+interruptions present on the AC mains power input ports.</p>
+<h3 id="test-method-and-level-4">9.6.2 Test method and level</h3>
+<p>The test method shall be in accordance with IEC 61000‑4‑11 [17],
+where the test levels shall be:</p>
+<p>- Voltage dip: 0 % residual voltage for 0.5 cycle;</p>
+<p>- Voltage dip: 0 % residual voltage for 1 cycle;</p>
+<p>- Voltage dip: 70 % residual voltage for 25/30 cycles (at 50/60
+Hz);</p>
+<p>- Voltage interruption: 0 % residual voltage for 250/300 cycles (at
+50/60 Hz).</p>
+<h3 id="performance-criteria-5">9.6.3 Performance criteria</h3>
+<p>For a 0 % residual voltage dip test, the performance criteria for
+transient phenomena shall be applied:</p>
+<p>- Criteria 6.2 for IAB node</p>
+<p>- Criteria 6.4 for <em>ancillary equipment</em></p>
+<p>For a 70% residual voltage dip test and for voltage interruption
+test, the following applies:</p>
+<p>1. In the case where the equipment is fitted with or connected to a
+battery back-up, the following performance criteria shall be
+applied:</p>
+<p>- Criteria 6.2 for IAB node</p>
+<p>- Criteria 6.4 for <em>ancillary equipment</em></p>
+<p>2. In the case where the equipment is powered solely from the AC
+mains supply (without the use of a parallel battery back-up) volatile
+user data may have been lost and if applicable the communication link
+need not to be maintained and lost functions should be recoverable by
+user or operator:</p>
+<p>- No unintentional responses shall occur at the end of the test, when
+the voltage is restored to nominal</p>
+<p>- In the event of loss of communications link or in the event of loss
+of user data, this fact shall be recorded in the test report</p>
+<h2 id="surges-common-and-differential-mode">9.7 Surges, common and
+differential mode</h2>
+<p>The tests shall be performed on AC mains power input ports.</p>
+<p>This test shall be additionally performed on <em>telecommunication
+port</em>s.</p>
+<p>These tests shall be performed on a representative configuration of
+the equipment, the associated <em>ancillary equipment</em>, or
+representative configuration of the combination of radio and
+<em>ancillary equipment</em>.</p>
+<h3 id="definition-10">9.7.1 Definition</h3>
+<p>These tests assess the ability of radio equipment and <em>ancillary
+equipment</em> to operate as intended in the event of surges being
+present at the AC mains power input ports and <em>telecommunication
+ports</em>.</p>
+<h3 id="test-method-and-level-5">9.7.2 Test method and level</h3>
+<p>The test method shall be in accordance with IEC 61000-4-5 [15].</p>
+<p>The requirements and evaluation of test results given in clause
+9.7.2.1 (t<em>elecommunication port</em>s, outdoor cables),
+clause 9.7.2.2 (<em>telecommunication ports</em>, indoor cables) and
+clause 9.7.2.3 (AC power ports) shall apply, but no test shall be
+required where normal functioning cannot be achieved, because of the
+impact of the CDN on the EUT.</p>
+<h4
+id="test-method-for-telecommunication-ports-directly-connected-to-outdoor-cables">9.7.2.1
+Test method for telecommunication ports directly connected to outdoor
+cables</h4>
+<p>The test level for t<em>elecommunications port</em>s, intended to be
+directly connected to the telecommunications network via outdoor cables,
+shall be 1 kV line to ground as given in IEC 61000-4-5 [15]. In this
+case the total output impedance of the surge generator shall be in
+accordance with the basic standard IEC 61000-4-5 [15].</p>
+<p>The test generator shall provide the 1.2/50 μs pulse as defined in
+IEC 61000-4-5 [15].</p>
+<h4
+id="test-method-for-telecommunication-ports-connected-to-indoor-cables">9.7.2.2
+Test method for telecommunication ports connected to indoor cables</h4>
+<p>The test level for telecommunication <em>port</em>s, intended to be
+connected to indoor cables (longer than 10 m) shall be 0.5 kV line to
+ground. In this case the total output impedance of the surge generator
+shall be in accordance with the basic standard IEC 61000-4-5 [15].</p>
+<p>The test generator shall provide the 1.2/50 μs pulse as defined in
+IEC 61000-4-5 [15].</p>
+<h4 id="test-method-for-ac-power-ports">9.7.2.3 Test method for AC power
+ports</h4>
+<p>The test level for AC power input <em>port</em>s shall be 2 kV line
+to ground, and 1 kV line to line, with the output impedance of the surge
+generator as given in IEC 61000-4-5 [15].</p>
+<p>In telecommunication centres 1 kV line to ground and 0.5 kV line to
+line shall be used.</p>
+<p>The test generator shall provide the 1.2/50 μs pulse as defined in
+IEC 61000-4-5 [15].</p>
+<h3 id="performance-criteria-6">9.7.3 Performance criteria</h3>
+<p><strong>IAB node:</strong></p>
+<p>The performance criteria of clause 6.2 shall apply.</p>
+<p><strong>Ancillary equipment:</strong></p>
+<p>The performance criteria of clause 6.4 shall apply.</p>
+<p class="heading" id="annex-a-informative-change-history">Annex A
+(informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 5%" />
+<col style="width: 3%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8" style="text-align: center;"><strong>Change
+history</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date</strong></td>
+<td><strong>Meeting</strong></td>
+<td><strong>TDoc</strong></td>
+<td><strong>CR</strong></td>
+<td><strong>Rev</strong></td>
+<td><strong>Cat</strong></td>
+<td><strong>Subject/Comment</strong></td>
+<td><strong>New version</strong></td>
+</tr>
+<tr>
+<td>2020-09</td>
+<td>RAN#89-e</td>
+<td>RP-201714</td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Capture contributions approved in RAN4#96-e:</p>
+<p>R4-2012636 TPs to TS on IAB EMC section 1 (Scope)</p>
+<p>R4-2012639 , Definitions and immunity of IAB EMC</p>
+<p>R4-2012640, IAB EMC specification: Exclusion bands (4.4)</p>
+<p>R4-2012641, IAB EMC specification: Emission (7.1)</p>
+<p>R4-2012642, Emission for IAB EMC</p>
+<p>R4-2012643, References for IAB EMC</p>
+<p>R4-2012638, TPs to TS on IAB EMC section 9 (Immunity)</p></td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>2020-09</td>
+<td>RAN#89</td>
+<td>RP-202108</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Approved by plenary – Rel-16 spec under change control</td>
+<td>16.0.0</td>
+</tr>
+<tr>
+<td>2020-12</td>
+<td>RAN#90</td>
+<td>RP-202504</td>
+<td>0001</td>
+<td> </td>
+<td>F</td>
+<td>CR to TS 38.175: IAB definition</td>
+<td>16.1.0</td>
+</tr>
+<tr>
+<td>2020-12</td>
+<td>RAN#90</td>
+<td>RP-202504</td>
+<td>0002</td>
+<td>1</td>
+<td>F</td>
+<td>CR to TS 38.175: Radiated emission, IAB</td>
+<td>16.1.0</td>
+</tr>
+<tr>
+<td>2020-12</td>
+<td>RAN#90</td>
+<td>RP-202504</td>
+<td>0003</td>
+<td>1</td>
+<td>F</td>
+<td>CR to TS 38.175 on Voltage dips and interruptions, Release 16</td>
+<td>16.1.0</td>
+</tr>
+<tr>
+<td>2020-12</td>
+<td>RAN#90</td>
+<td>RP-202420</td>
+<td>0007</td>
+<td>1</td>
+<td>B</td>
+<td>CR to TS 38.175 on IAB EMC performance requirements</td>
+<td>16.1.0</td>
+</tr>
+<tr>
+<td>2021-06</td>
+<td>RAN#92</td>
+<td>RP-211101</td>
+<td>0014</td>
+<td>1</td>
+<td>F</td>
+<td>CR to TS 38.175: Radiated emission, ancillary equipment</td>
+<td>16.2.0</td>
+</tr>
+<tr>
+<td>2021-06</td>
+<td>RAN#92</td>
+<td>RP-211101</td>
+<td>0015</td>
+<td>1</td>
+<td>B</td>
+<td>CR on exclusion bands and spatial exclusion for IAB EMC Radiated
+Immunity testing</td>
+<td>16.2.0</td>
+</tr>
+<tr>
+<td>2021-06</td>
+<td>RAN#92</td>
+<td>RP-211101</td>
+<td>0016</td>
+<td></td>
+<td>B</td>
+<td>Draft CR to TS 38.175: IAB EMC test configurations and performance
+requirements (updated)</td>
+<td>16.2.0</td>
+</tr>
+<tr>
+<td>2021-09</td>
+<td>RAN#93</td>
+<td>RP-211892</td>
+<td>0018</td>
+<td></td>
+<td>F</td>
+<td>Big CR for TS 38.175 Maintenance (Rel-16, CAT F)</td>
+<td>16.3.0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8" style="text-align: center;"><strong>Change
+history</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date</strong></td>
+<td><strong>Meeting</strong></td>
+<td><strong>TDoc</strong></td>
+<td><strong>CR</strong></td>
+<td><strong>Rev</strong></td>
+<td><strong>Cat</strong></td>
+<td><strong>Subject/Comment</strong></td>
+<td><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td>Update to Rel-17 version (MCC)</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-09</td>
+<td style="text-align: center;">RAN#97</td>
+<td style="text-align: center;">RP-222028</td>
+<td>0022</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td>Big CR for TS 38.175 Maintenance (Rel-17, CAT F)</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-03</td>
+<td style="text-align: center;">RAN#99</td>
+<td style="text-align: center;">RP-230502</td>
+<td>0024</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td>CR to TS 38.175 IAB clause 4.1, 5.2, 6.1, 6.2 R17</td>
+<td style="text-align: center;">17.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-03</td>
+<td style="text-align: center;">RAN#99</td>
+<td style="text-align: center;">RP-230515</td>
+<td>0026</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td><p>TS 38.175: Corrections in clause 1 Scope and clause 9
+Immunity</p>
+<p>NOTE: This CR was not implemented because the CR is actually for
+Rel-16 specification and duplicate the Rel-16 tdoc in
+R4-2302326</p></td>
+<td style="text-align: center;">17.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-06</td>
+<td style="text-align: center;">RAN#100</td>
+<td style="text-align: center;">RP-231358</td>
+<td>0028</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td>CR on TS 38.175 IAB performance criteria</td>
+<td style="text-align: center;">17.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-06</td>
+<td style="text-align: center;">RAN#100</td>
+<td style="text-align: center;">RP-231353</td>
+<td>0029</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td>TS 38.175: Corrections in clause 1 Scope and clause 9 Immunity</td>
+<td style="text-align: center;">17.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-09</td>
+<td style="text-align: center;">RAN#101</td>
+<td style="text-align: center;">RP-232502</td>
+<td>0030</td>
+<td>1</td>
+<td>F</td>
+<td>[NR_newRAT-Core] CR on TS 38.175 IAB reference maintenance R17</td>
+<td style="text-align: center;">17.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-12</td>
+<td style="text-align: center;">RAN#102</td>
+<td style="text-align: center;">RP-233347</td>
+<td>0032</td>
+<td></td>
+<td>F</td>
+<td>CR to TS 38.175 on correction of FR range to FR2-1</td>
+<td style="text-align: center;">17.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-12</td>
+<td style="text-align: center;">RAN#102</td>
+<td style="text-align: center;">RP-233338</td>
+<td>0034</td>
+<td></td>
+<td>A</td>
+<td>[NR_IAB-Core] CR to TS 38.175 correction of EMC requirements
+applicability, Rel-17</td>
+<td style="text-align: center;">17.5.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

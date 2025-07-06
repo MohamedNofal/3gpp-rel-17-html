@@ -1,0 +1,6235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38857-h00 annex C1.2</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#c.1.2-physical-layer-latency-analysis-for-rel-16"
+id="toc-c.1.2-physical-layer-latency-analysis-for-rel-16">C.1.2 Physical
+layer latency analysis for Rel-16 </a>
+<ul>
+<li><a href="#c.1.2.1-results-from-source-4"
+id="toc-c.1.2.1-results-from-source-4">C.1.2.1 Results from source
+[4]</a>
+<ul>
+<li><a href="#c.1.2.1.1-description-of-evaluation-scenarios"
+id="toc-c.1.2.1.1-description-of-evaluation-scenarios">C.1.2.1.1
+Description of evaluation scenarios</a></li>
+<li><a href="#c.1.2.1.2-latency-analysis-of-rel.16-solutions"
+id="toc-c.1.2.1.2-latency-analysis-of-rel.16-solutions">C.1.2.1.2
+Latency analysis of Rel.16 solutions</a></li>
+</ul></li>
+<li><a href="#c.1.2.2-results-from-source-7"
+id="toc-c.1.2.2-results-from-source-7">C.1.2.2 Results from source
+[7]</a>
+<ul>
+<li><a href="#c.1.2.2.1-description-of-evaluation-scenarios"
+id="toc-c.1.2.2.1-description-of-evaluation-scenarios">C.1.2.2.1
+Description of evaluation scenarios</a></li>
+<li><a href="#c.1.2.2.2-latency-analysis-for-rel.16-solutions"
+id="toc-c.1.2.2.2-latency-analysis-for-rel.16-solutions">C.1.2.2.2
+Latency analysis for Rel.16 solutions</a></li>
+</ul></li>
+<li><a href="#c.1.2.3-results-from-source-8"
+id="toc-c.1.2.3-results-from-source-8">C.1.2.3 Results from source [8]
+</a>
+<ul>
+<li><a href="#c.1.2.3.1-description-of-evaluation-scenarios"
+id="toc-c.1.2.3.1-description-of-evaluation-scenarios">C.1.2.3.1
+Description of evaluation scenarios</a></li>
+<li><a href="#c.1.2.3.2-latency-analysis-for-rel.16-solutions"
+id="toc-c.1.2.3.2-latency-analysis-for-rel.16-solutions">C.1.2.3.2
+Latency analysis for Rel.16 solutions</a></li>
+</ul></li>
+<li><a href="#c.1.2.4-results-from-source-13"
+id="toc-c.1.2.4-results-from-source-13">C.1.2.4 Results from source
+[13]</a>
+<ul>
+<li><a href="#c.1.2.4.1-description-of-evaluation-scenarios"
+id="toc-c.1.2.4.1-description-of-evaluation-scenarios">C.1.2.4.1
+Description of evaluation scenarios</a></li>
+<li><a href="#c.1.2.4.2-latency-analysis-for-rel.16-solutions"
+id="toc-c.1.2.4.2-latency-analysis-for-rel.16-solutions">C.1.2.4.2
+Latency analysis for Rel.16 solutions</a></li>
+</ul></li>
+<li><a href="#c.1.2.5-results-from-source-11"
+id="toc-c.1.2.5-results-from-source-11">C.1.2.5 Results from source
+[11]</a>
+<ul>
+<li><a href="#c.1.2.5.1-description-of-evaluation-scenarios"
+id="toc-c.1.2.5.1-description-of-evaluation-scenarios">C.1.2.5.1
+Description of evaluation scenarios</a></li>
+<li><a href="#c.1.2.5.2-latency-analysis-for-rel.16-solutions"
+id="toc-c.1.2.5.2-latency-analysis-for-rel.16-solutions">C.1.2.5.2
+Latency analysis for Rel.16 solutions</a></li>
+</ul></li>
+<li><a href="#c.1.2.6-results-from-source-5"
+id="toc-c.1.2.6-results-from-source-5">C.1.2.6 Results from source [5]
+</a>
+<ul>
+<li><a href="#c.1.2.6.1-description-of-evaluation-scenarios"
+id="toc-c.1.2.6.1-description-of-evaluation-scenarios">C.1.2.6.1
+Description of evaluation scenarios</a></li>
+<li><a href="#c.1.2.6.2-latency-analysis-for-rel.16-solutions"
+id="toc-c.1.2.6.2-latency-analysis-for-rel.16-solutions">C.1.2.6.2
+Latency analysis for Rel.16 solutions</a></li>
+</ul></li>
+<li><a href="#c.1.2.7-results-from-source-12"
+id="toc-c.1.2.7-results-from-source-12">C.1.2.7 Results from source
+[12]</a>
+<ul>
+<li><a href="#c.1.2.7.1-description-of-evaluation-scenarios"
+id="toc-c.1.2.7.1-description-of-evaluation-scenarios">C.1.2.7.1
+Description of evaluation scenarios</a></li>
+<li><a href="#c.1.2.7.2-latency-analysis-for-rel.16-solutions"
+id="toc-c.1.2.7.2-latency-analysis-for-rel.16-solutions">C.1.2.7.2
+Latency analysis for Rel.16 solutions</a></li>
+</ul></li>
+<li><a href="#c.1.2.8-results-from-source-10"
+id="toc-c.1.2.8-results-from-source-10">C.1.2.8 Results from source [10]
+</a>
+<ul>
+<li><a href="#c.1.2.8.1-description-of-evaluation-scenarios"
+id="toc-c.1.2.8.1-description-of-evaluation-scenarios">C.1.2.8.1
+Description of evaluation scenarios</a></li>
+<li><a href="#c.1.2.8.2-latency-analysis-for-rel.16-solutions"
+id="toc-c.1.2.8.2-latency-analysis-for-rel.16-solutions">C.1.2.8.2
+Latency analysis for Rel.16 solutions</a></li>
+</ul></li>
+<li><a href="#c.1.2.9-results-from-source-16"
+id="toc-c.1.2.9-results-from-source-16">C.1.2.9 Results from source
+[16]</a>
+<ul>
+<li><a href="#c.1.2.9.1-description-of-evaluation-scenarios"
+id="toc-c.1.2.9.1-description-of-evaluation-scenarios">C.1.2.9.1
+Description of evaluation scenarios</a></li>
+<li><a href="#c.1.2.9.2-latency-analysis-for-r.16-solution"
+id="toc-c.1.2.9.2-latency-analysis-for-r.16-solution">C.1.2.9.2 Latency
+analysis for R.16 solution</a></li>
+</ul></li>
+<li><a href="#c.1.2.10-results-from-source-17"
+id="toc-c.1.2.10-results-from-source-17">C.1.2.10 Results from source
+[17]</a>
+<ul>
+<li><a href="#c.1.2.10.1-description-of-evaluation-scenarios"
+id="toc-c.1.2.10.1-description-of-evaluation-scenarios">C.1.2.10.1
+Description of evaluation scenarios</a></li>
+<li><a href="#c.1.2.10.2-latency-analysis-for-rel.16-solutions"
+id="toc-c.1.2.10.2-latency-analysis-for-rel.16-solutions">C.1.2.10.2
+Latency analysis for Rel.16 solutions</a></li>
+</ul></li>
+<li><a href="#c.1.2.11-results-from-source-15"
+id="toc-c.1.2.11-results-from-source-15">C.1.2.11 Results from source
+[15]</a>
+<ul>
+<li><a href="#c.1.2.11.1-description-of-evaluation-scenarios"
+id="toc-c.1.2.11.1-description-of-evaluation-scenarios">C.1.2.11.1
+Description of evaluation scenarios</a></li>
+<li><a href="#c.1.2.11.2-latency-analysis-for-rel.16-solutions"
+id="toc-c.1.2.11.2-latency-analysis-for-rel.16-solutions">C.1.2.11.2
+Latency analysis for Rel.16 solutions</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h3 id="c.1.2-physical-layer-latency-analysis-for-rel-16">C.1.2 Physical
+layer latency analysis for Rel-16 </h3>
+<h4 id="c.1.2.1-results-from-source-4">C.1.2.1 Results from source
+[4]</h4>
+<h5 id="c.1.2.1.1-description-of-evaluation-scenarios">C.1.2.1.1
+Description of evaluation scenarios</h5>
+<p>The physical layer latency for the following positioning methods are
+provided</p>
+<p>- UE-A DL-only positioning</p>
+<p>- UL-only positioning</p>
+<p>- DL E-CID</p>
+<p>- UL E-CID</p>
+<p>- UE-B DL-only positioning</p>
+<h5 id="c.1.2.1.2-latency-analysis-of-rel.16-solutions">C.1.2.1.2
+Latency analysis of Rel.16 solutions</h5>
+<p>Latency analysis for the Rel.16 NR positioning is provided in Tables
+C.1.2.1.2-1 to C.1.2.1.2-6.</p>
+<p>The latency for multi-RTT positioning should be the maximum between
+DL-TDOA/DL-AoD and UL-TDOA/UL-AoA, which is the same as DL-TDOA/DL-AoD
+considering UL delay is much smaller than DL.</p>
+<p>Table C.1.2.1.2-1: Rel.16 NR positioning latency [4]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case L1, DL-TDOA/DL-AoD/Multi-RTT w/ Gap request and
+PRS periodicity 20ms</p>
+<p>Source NW/Destination NW</p>
+<p>Positioning technique DL-TDOA and/or DL-AoD, type DL, mode UE-A</p>
+<p>Initial and Final RRC States CONNECTED</p>
+<p>Gap is requested, and PRS periodicity is 20ms</p>
+<p>This can also be used for Multi-RTT positioning.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td></td>
+<td>Transmission of the PDSCH from the gNB carrying the LPP Request
+Location Information message</td>
+</tr>
+<tr>
+<td>UE Rx higher layer processing</td>
+<td>5ms</td>
+<td>Handling of the DL-SCH payload to upper layers, including ASN.1
+decoding of the LPP message</td>
+</tr>
+<tr>
+<td>UE Tx higher layer processing</td>
+<td>3ms</td>
+<td>UL RRC message preparation for gap request</td>
+</tr>
+<tr>
+<td>PUSCH scheduling</td>
+<td>0.5-7.5ms</td>
+<td>Considering TDD configuration DDDSU, using U to transmit PUSCH, the
+maximum delay could be SR 🡪 BSR 🡪 PUSCH using 3 cycles. The minimum
+delay could be a slot.</td>
+</tr>
+<tr>
+<td>gNB Rx higher layer processing</td>
+<td>3ms</td>
+<td>Decoding measurement gap request</td>
+</tr>
+<tr>
+<td>gNB Tx higher layer processing</td>
+<td>3ms</td>
+<td>Reconfiguration with a measurement gap of MGRP = 20ms, MGL = 3ms (MG
+pattern 10)</td>
+</tr>
+<tr>
+<td>PDSCH scheduling</td>
+<td>0.5-1ms</td>
+<td>Considering TDD configuration DDDSU, using D or S to transmit
+PDSCH.</td>
+</tr>
+<tr>
+<td>UE Rx higher layer processing</td>
+<td>10ms</td>
+<td>RRC reconfiguration delay in TS 38.331</td>
+</tr>
+<tr>
+<td>PRS measurement delay</td>
+<td><p>23 (1 samp.)</p>
+<p>83ms (4 samp. CSSF = 1)</p>
+<p>143 (4 samp. CSSF = 2)</p></td>
+<td><p>According to RAN4, assuming PRS periodicity being 20ms and single
+frequency layer processing</p>
+<p><span class="math inline">\(T_{PRS - RSTD,i} = {\left(
+{{CSSF}_{PRS,i}*N}_{RxBeam,i}*\left\lceil
+\frac{N_{PRS\text{,i}}^{slot}}{N&#39;} \right\rceil\left\lceil
+\frac{L_{PRS\text{,i}}}{N} \right\rceil*N_{sample} - 1
+\right)*T}_{effect,i} + \text{T}_{\text{last}}\)</span> ,</p>
+<p><span class="math inline">\(T_{\text{effect,i}}\)</span> = <span
+class="math inline">\(\left\lceil \frac{T_{\text{i}}}{T_{available\_
+PRS\text{,i}}} \right\rceil*T_{available\_ PRS\text{,i}}\)</span></p>
+<p>Assuming</p>
+<p>NRxBeam, i=1, i.e. the number of Rx beams is 1 at UE</p>
+<p><span class="math inline">\(\left\lceil
+\frac{N_{PRS\text{,i}}^{slot}}{N&#39;} \right\rceil\left\lceil
+\frac{L_{PRS\text{,i}}}{N} \right\rceil = 1\)</span>, i.e. UE can
+process all PRS in a slot and UE can buffer all PRS within a P-ms
+window</p>
+<p>Nsample = 1 or 4, i.e., the measurement average time is 1 or 4</p>
+<p>Ti = 20ms as the UE capability T</p>
+<p>Tavailable_PRS, i=20ms, i.e., the LCM of PRS periodicity and MGRP is
+20ms</p></td>
+</tr>
+<tr>
+<td>UE Tx higher layer processing</td>
+<td>3ms</td>
+<td>UL LPP message preparation</td>
+</tr>
+<tr>
+<td>PUSCH scheduling</td>
+<td>0.5ms-7.5ms</td>
+<td>Considering TDD configuration DDDSU, using U to transmit PUSCH, the
+maximum delay could be SR 🡪 BSR 🡪 PUSCH using 3 cycles. The minimum
+delay could be a slot.</td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td></td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><p>51.5-66ms (1 samp.)</p>
+<p>111.5-126.5ms (4 samp. CSSF = 1)</p>
+<p>171.5-186ms (4 samp. CSSF = 2)</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.1.2-2: Rel.16 NR positioning latency [4]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case L2, DL-TDOA/DL-AoD/Multi-RTT w/o Gap request and
+PRS periodicity 160ms</p>
+<p>Source NW/Destination NW</p>
+<p>Positioning technique DL-TDOA and/or DL-AoD, type DL, mode UE-A</p>
+<p>Initial and Final RRC States CONNECTED</p>
+<p>Gap is not requested, and PRS periodicity is 160ms</p>
+<p>This can also be used for Multi-RTT positioning.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td></td>
+<td>Transmission of the PDSCH from the gNB carrying the LPP Request
+Location Information message</td>
+</tr>
+<tr>
+<td>UE Rx higher layer processing</td>
+<td>5ms</td>
+<td>Handling of the DL-SCH payload to upper layers, including ASN.1
+decoding of the LPP message</td>
+</tr>
+<tr>
+<td>PRS measurement delay</td>
+<td><p>163ms (1 samp.)</p>
+<p>643ms (4 samp. CSSF = 1)</p></td>
+<td><p>According to RAN4, assuming PRS periodicity being 160ms and
+single frequency layer processing</p>
+<p><span class="math inline">\(T_{PRS - RSTD,i} = {\left(
+{{CSSF}_{PRS,i}*N}_{RxBeam,i}*\left\lceil
+\frac{N_{PRS\text{,i}}^{slot}}{N&#39;} \right\rceil\left\lceil
+\frac{L_{PRS\text{,i}}}{N} \right\rceil*N_{sample} - 1
+\right)*T}_{effect,i} + \text{T}_{\text{last}}\)</span> ,</p>
+<p><span class="math inline">\(T_{\text{effect,i}}\)</span> = <span
+class="math inline">\(\left\lceil \frac{T_{\text{i}}}{T_{available\_
+PRS\text{,i}}} \right\rceil*T_{available\_ PRS\text{,i}}\)</span></p>
+<p>Assuming</p>
+<p>NRxBeam, i=1, i.e. the number of Rx beams is 1 at UE</p>
+<p><span class="math inline">\(\left\lceil
+\frac{N_{PRS\text{,i}}^{slot}}{N&#39;} \right\rceil\left\lceil
+\frac{L_{PRS\text{,i}}}{N} \right\rceil = 1\)</span>, i.e. UE can
+process all PRS in a slot and UE can buffer all PRS within a P-ms
+window</p>
+<p>Nsample = 1 or 4, i.e., the measurement average time is 1 or 4</p>
+<p>Ti = 20ms as the UE capability T</p>
+<p>Tavailable_PRS, i=20ms, i.e., the LCM of PRS periodicity and MGRP is
+20ms</p></td>
+</tr>
+<tr>
+<td>UE Tx higher layer processing</td>
+<td>3ms</td>
+<td>UL LPP message preparation</td>
+</tr>
+<tr>
+<td>PUSCH scheduling</td>
+<td>0.5-7.5ms</td>
+<td>Considering TDD configuration DDDSU, using U to transmit PUSCH, the
+maximum delay could be SR 🡪 BSR 🡪 PUSCH using 3 cycles. The minimum
+delay could be a slot.</td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td></td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><p>171.5-178.5ms (1 samp.)</p>
+<p>651.5-658.5ms (4 samp. CSSF = 1)</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.1.2-3: Rel.16 NR positioning latency [4]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case L3, UL-TDOA/UL-AoA</p>
+<p>Source NW/Destination NW</p>
+<p>Positioning technique UL-TDOA and/or UL-AoA, type UL</p>
+<p>Initial and Final RRC States CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td></td>
+<td>Reception by the gNB of the NRPPa measurement request message</td>
+</tr>
+<tr>
+<td>gNB Rx higher layer processing</td>
+<td>3ms</td>
+<td>Processing NRPPa message from the NGAP message</td>
+</tr>
+<tr>
+<td>SRS measurement delay</td>
+<td><p>0.5-20ms (1 samp.)</p>
+<p>60.5-80ms</p>
+<p>(4 samp.)</p></td>
+<td>Assuming SRS periodicity is 20ms. Using 1 or 4 samples.</td>
+</tr>
+<tr>
+<td>gNB Tx higher layer processing</td>
+<td>3ms</td>
+<td>Processing NRPPa message into the NGAP message</td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td></td>
+<td>The transmission by the gNB of the NRPPa measurement response
+message</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><p>6.5-26ms (1 samp.)</p>
+<p>66.5-86.5ms (4 samp)</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.1.2-4: Rel.16 NR positioning latency [4]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case L4, DL E-CID</p>
+<p>Source NW/Destination NW</p>
+<p>Positioning technique DL E-CID, type DL, mode UE-A</p>
+<p>Initial and Final RRC States CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td></td>
+<td>Transmission of the PDSCH from the gNB carrying the LPP Request
+Location Information message</td>
+</tr>
+<tr>
+<td>UE Rx higher layer processing</td>
+<td>5ms</td>
+<td>Handling of the DL-SCH payload to upper layers, including ASN.1
+decoding of the LPP message</td>
+</tr>
+<tr>
+<td>DL E-CID measurement</td>
+<td>0ms</td>
+<td>Using only existing RRM measurement</td>
+</tr>
+<tr>
+<td>UE Tx higher layer processing</td>
+<td>3ms</td>
+<td>UL LPP message preparation</td>
+</tr>
+<tr>
+<td>PUSCH scheduling</td>
+<td>0.5-7.5ms</td>
+<td>Considering TDD configuration DDDSU, using U to transmit PUSCH, the
+maximum delay could be SR 🡪 BSR 🡪 PUSCH using 3 cycles. The minimum
+delay could be a slot.</td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td></td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>8.5-15ms</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.1.2-5: Rel.16 NR positioning latency [4]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case L5, UL E-CID</p>
+<p>Source NW/Destination NW</p>
+<p>Positioning technique UL-E-CID, type DL+UL, mode UE-A</p>
+<p>Initial and Final RRC States CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td></td>
+<td>Reception by the gNB of the NRPPa measurement request message</td>
+</tr>
+<tr>
+<td>gNB Rx higher layer processing</td>
+<td>3ms</td>
+<td>Processing NRPPa message from the NGAP message</td>
+</tr>
+<tr>
+<td>AoA measurement delay</td>
+<td>0-20ms</td>
+<td>Assuming SRS periodicity is 20ms. Either AoA is not measured or AoA
+is measured by 1 sample.</td>
+</tr>
+<tr>
+<td>gNB Tx higher layer processing</td>
+<td>3ms</td>
+<td>Processing NRPPa message into the NGAP message</td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td></td>
+<td>The transmission by the gNB of the NRPPa measurement response
+message</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>6-26ms</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.1.2-6: Rel.16 NR positioning latency [4]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case L6, UE-based DL-TDOA/DL-AoD w/ gap request t and
+PRS periodicity 20ms</p>
+<p>Source UE/Destination UE</p>
+<p>Positioning technique DL-TDOA and/or DL-AoD, type DL, mode UE-B</p>
+<p>Initial and Final RRC States CONNECTED</p>
+<p>MO-LR, i.e. UE as the location consumer</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td></td>
+<td>Alt. 2: Transmission of the PDSCH from the gNB carrying the LPP
+message containing the assistance data</td>
+</tr>
+<tr>
+<td>UE Rx higher layer processing</td>
+<td>5ms</td>
+<td>Handling of the DL-SCH payload to upper layers, including ASN.1
+decoding of the LPP message</td>
+</tr>
+<tr>
+<td>UE Tx higher layer processing</td>
+<td>3ms</td>
+<td>UL RRC message preparation for gap request</td>
+</tr>
+<tr>
+<td>PUSCH scheduling</td>
+<td>0.5-7.5ms</td>
+<td>Considering TDD configuration DDDSU, using U to transmit PUSCH, the
+maximum delay could be SR 🡪 BSR 🡪 PUSCH using 3 cycles. The minimum
+delay could be a slot.</td>
+</tr>
+<tr>
+<td>gNB Rx higher layer processing</td>
+<td>3ms</td>
+<td>Decoding measurement gap request</td>
+</tr>
+<tr>
+<td>gNB Tx higher layer processing</td>
+<td>3ms</td>
+<td>Reconfiguration with a measurement gap of MGRP = 20ms, MGL = 3ms (MG
+pattern 10)</td>
+</tr>
+<tr>
+<td>PDSCH scheduling</td>
+<td>0.5-1ms</td>
+<td>Considering TDD configuration DDDSU, using D or S to transmit
+PDSCH.</td>
+</tr>
+<tr>
+<td>UE Rx higher layer processing</td>
+<td>10ms</td>
+<td>RRC reconfiguration delay in TS 38.331</td>
+</tr>
+<tr>
+<td>PRS measurement delay</td>
+<td>23 (1 samp.)</td>
+<td><p>According to RAN4, assuming PRS periodicity being 20ms and single
+frequency layer processing</p>
+<p><span class="math inline">\(T_{PRS - RSTD,i} = {\left(
+{{CSSF}_{PRS,i}*N}_{RxBeam,i}*\left\lceil
+\frac{N_{PRS\text{,i}}^{slot}}{N&#39;} \right\rceil\left\lceil
+\frac{L_{PRS\text{,i}}}{N} \right\rceil*N_{sample} - 1
+\right)*T}_{effect,i} + \text{T}_{\text{last}}\)</span> ,</p>
+<p><span class="math inline">\(T_{\text{effect,i}}\)</span> = <span
+class="math inline">\(\left\lceil \frac{T_{\text{i}}}{T_{available\_
+PRS\text{,i}}} \right\rceil*T_{available\_ PRS\text{,i}}\)</span></p>
+<p>Assuming</p>
+<p>NRxBeam, i=1, i.e. the number of Rx beams is 1 at UE</p>
+<p><span class="math inline">\(\left\lceil
+\frac{N_{PRS\text{,i}}^{slot}}{N&#39;} \right\rceil\left\lceil
+\frac{L_{PRS\text{,i}}}{N} \right\rceil = 1\)</span>, i.e. UE can
+process all PRS in a slot and UE can buffer all PRS within a P-ms
+window</p>
+<p>Nsample = 1 or 4, i.e., the measurement average time is 1 or 4</p>
+<p>Ti = 20ms as the UE capability T</p>
+<p>Tavailable_PRS, i=20ms, i.e., the LCM of PRS periodicity and MGRP is
+20ms</p></td>
+</tr>
+<tr>
+<td>Location calculation</td>
+<td>3ms</td>
+<td>UE</td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td></td>
+<td>Calculation of Location Estimate at the UE</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>51-58.5ms (1 samp.)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.1.2.2-results-from-source-7">C.1.2.2 Results from source
+[7]</h4>
+<h5 id="c.1.2.2.1-description-of-evaluation-scenarios">C.1.2.2.1
+Description of evaluation scenarios</h5>
+<p>In this contribution, the following positioning methods are included
+in physical layer latency analysis,</p>
+<p>- DL-TDOA, UE-A</p>
+<p>- DL-TDOA, UE-B</p>
+<p>- DL-ECID</p>
+<h5 id="c.1.2.2.2-latency-analysis-for-rel.16-solutions">C.1.2.2.2
+Latency analysis for Rel.16 solutions</h5>
+<p>Table C.1.2.2.2-1 physical layer latency analysis for UE-assisted
+positioning based on DL-TDOA method</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 12%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>[Case PHY-L1]</p>
+<p>Source [UE]/Destination [NW]</p>
+<p>Positioning technique [DL-TDOA],type [DL], mode [UE-A]</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td><p>Value Range</p>
+<p>(ms)</p></td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger (step 1)</td>
+<td>N/A</td>
+<td>Transmission of the PDSCH from the gNB carrying the LPP Request
+Location Information message</td>
+</tr>
+<tr>
+<td>UE decodes and applies the Location Request (step 2)</td>
+<td>10</td>
+<td><p>RRC Processing time at the UE are captured in 38.331 Section 12,
+where defines the following RRC procedure delay,</p>
+<p>reception of the network -&gt; UE message on the UE physical layer up
+to when the UE shall be ready for the reception of uplink grant for the
+UE -&gt; network response message</p></td>
+</tr>
+<tr>
+<td>Measurement gap request (step 3)</td>
+<td>Corresponding values can be found in right column.</td>
+<td><p>UL user plane latency defined in 37.910 clause 5.7.1.2.2 is
+applicable to measurement gap request, where the latency includes</p>
+<p>UE processing delay</p>
+<p>UL frame alignment (transmission alignment)</p>
+<p>TTI for UL data packet transmission</p>
+<p>BS processing delay</p>
+<p>The grant free based UL transmission is assumed in this contribution,
+some typical cases can be found in 37.910 clause 5.7.1.2.2. We choose
+following cases as examples,</p>
+<p>UL user plane latency for NR FDD with grant free transmission:</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 21%" />
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3" rowspan="3">UL user plane latency (Grant free)(ms) – NR
+FDD</th>
+<th colspan="2">UE capability 2</th>
+</tr>
+<tr>
+<th colspan="2">SCS</th>
+</tr>
+<tr>
+<th>30 KHz</th>
+<th>60 KHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resource mapping Type B</td>
+<td>M=7 (7OS non-slot)</td>
+<td>p=0</td>
+<td>0.43</td>
+<td>0.30</td>
+</tr>
+</tbody>
+</table>
+<p>UL user plane latency for NR TDD with grant free transmission:</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 21%" />
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3" rowspan="3">UL user plane latency (Grant free,DDDXU,
+with ‘X’=’U’ for UL traffic)(ms) – NR TDD</th>
+<th colspan="2">UE capability 2</th>
+</tr>
+<tr>
+<th colspan="2">SCS</th>
+</tr>
+<tr>
+<th>30 KHz</th>
+<th>60 KHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resource mapping Type B</td>
+<td>M=7 (7OS non-slot)</td>
+<td>p=0</td>
+<td>1.09</td>
+<td>0.64</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td>Serving gNB decodes and interprets the measurement gap request (step
+4)</td>
+<td>3</td>
+<td>Regarding the RRC processing time at the gNB, 37.910 clause
+5.7.1.1.1 defines processing delay in gNB for L2 and RRC.</td>
+</tr>
+<tr>
+<td>Measurement gap configuration(step 5)</td>
+<td>Corresponding values can be found in right column.</td>
+<td><p>DL user plane latency defined in 37.910 clause 5.7.1.2.1 is
+applicable to measurement gap configuration, where the latency
+includes</p>
+<p>BS processing delay</p>
+<p>DL Frame alignment (transmission alignment)</p>
+<p>TTI for DL data packet transmission</p>
+<p>UE processing delay</p>
+<p>The latency may be different according to various configurations,some
+typical cases can be found in in 37.910 clause 5.7.1.2.2. We choose
+following cases as examples,</p>
+<p>DL user plane latency for NR FDD:</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 21%" />
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3" rowspan="3">DL user plane latency (ms) – NR FDD</th>
+<th colspan="2">UE capability 2</th>
+</tr>
+<tr>
+<th colspan="2">SCS</th>
+</tr>
+<tr>
+<th>30 KHz</th>
+<th>60 KHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resource mapping Type B</td>
+<td>M=4 (7OS non-slot)</td>
+<td>p=0</td>
+<td>0.37</td>
+<td>0.27</td>
+</tr>
+</tbody>
+</table>
+<p>DL user plane latency for NR TDD:</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 21%" />
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3" rowspan="3">DL user plane latency (ms – NR TDD
+(DDDXU,’X’=’D’ for DL traffic)</th>
+<th colspan="2">UE capability 2</th>
+</tr>
+<tr>
+<th colspan="2">SCS</th>
+</tr>
+<tr>
+<th>30 KHz</th>
+<th>60 KHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resource mapping Type B</td>
+<td>M=4 (7OS non-slot)</td>
+<td>p=0</td>
+<td>0.45</td>
+<td>0.32</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td>UE interprets and applies the measurement gap configuration(step
+6)</td>
+<td>10</td>
+<td><p>RRC Processing time at the UE are captured in 38.331 Section 12,
+where defines the following RRC procedure delay,</p>
+<p>reception of the network -&gt; UE message on the UE physical layer up
+to when the UE shall be ready for the reception of uplink grant for the
+UE -&gt; network response message</p></td>
+</tr>
+<tr>
+<td>UE positioning measurement(step 7)</td>
+<td>82 ( FR1) or 644 ( FR2)</td>
+<td>Measurement period requirements defined in 38.133 clause 9.9.2.5
+should be satisfied, more detailed configurations can refer to Table
+C.1.2.2.2-2.</td>
+</tr>
+<tr>
+<td>UE positioning measurement transmission(step 8)</td>
+<td>Corresponding values can be found in right column.</td>
+<td>The same latency is assumed as “Measurement gap request”.</td>
+</tr>
+<tr>
+<td>End trigger (step 9)</td>
+<td>N/A</td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>Corresponding values can be found in right column.</td>
+<td><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>FDD/TDD, SCS</th>
+<th>Total values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FDD and 30KHz SCS</td>
+<td>106.23</td>
+</tr>
+<tr>
+<td>FDD and 60KHz SCS</td>
+<td>667.87</td>
+</tr>
+<tr>
+<td>TDD and 30KHz SCS</td>
+<td>107.63</td>
+</tr>
+<tr>
+<td>TDD and 60KHz SCS</td>
+<td>668.60</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.2.2-2 Measurement period requirements for DL-TDOA
+method</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>FR1</th>
+<th>FR2</th>
+<th>Additional Explanations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MGRP ( Measurement Gap Repetition Period )</td>
+<td>20 ms</td>
+<td>20 ms</td>
+<td></td>
+</tr>
+<tr>
+<td>MGL ( Measurement Gap Length )</td>
+<td>4 ms</td>
+<td>4 ms</td>
+<td>PRS is configured in a compact way, we assume the MGL can cover all
+PRS occasions from different TRPs.</td>
+</tr>
+<tr>
+<td>TPRS ( DL PRS periodicity )</td>
+<td>4 ms</td>
+<td>4 ms</td>
+<td>All PRS resource sets have the same periodicity.</td>
+</tr>
+<tr>
+<td>(N,T) ( Duration of DL PRS symbols N in units of ms a UE can process
+every T ms )</td>
+<td>(4, 20) ms</td>
+<td>(4, 20) ms</td>
+<td>The DL PRS buffering time fully aligns the MGL.</td>
+</tr>
+<tr>
+<td>L ( Number of positioning frequency layer )</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Number of TRP</td>
+<td>4</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td>SCS ( Sub-carrier Spacing )</td>
+<td>30 KHz</td>
+<td>60 KHz</td>
+<td>MGL will span 8 slots for FR1, while the value is 16 slots for
+FR2.</td>
+</tr>
+<tr>
+<td>LPRS ( the duration of DL PRS symbols within any a window )</td>
+<td>2 ms</td>
+<td>4 ms</td>
+<td>Type II DL PRS buffering capability is assumed.</td>
+</tr>
+<tr>
+<td>( carrier-specific scaling factor )</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>( UE Rx beam sweeping factor )</td>
+<td>1</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td>( Number of PRS RSTD samples )</td>
+<td>4</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td>Total measurement period</td>
+<td>82 ms</td>
+<td>644 ms</td>
+<td></td>
+</tr>
+<tr>
+<td>Other assumptions</td>
+<td colspan="3"><p>The number of PRS resources in a slot as configured
+by the assistance data is smaller the UE capability of max number of DL
+PRS resources that UE can process in a slot.</p>
+<p>UE is not required to measure PRS resources from multiple TRPs on the
+same OFDM symbol in FR2.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.2.2-3 physical layer latency for UE-based positioning
+based on DL-TDOA method</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 25%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="4"><p>[Case PHY-L2]</p>
+<p>Source [UE]/Destination [NW]</p>
+<p>Positioning technique [DL-TDOA],type [DL], mode [UE-B]</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start trigger</td>
+<td>End trigger</td>
+<td>Components that are different from UE-assisted positioning in Table
+C.1.2.2.2-1.</td>
+<td>Total values (ms)</td>
+</tr>
+<tr>
+<td>Transmission of the PDSCH from the gNB carrying the LPP Request
+Location Information</td>
+<td>Successful decoding of the PUSCH at gNB carrying the LPP Provide
+Location Information message</td>
+<td><p>Update the start and end triggers accordingly.</p>
+<p>Step 8 should be removed since UE is the location consumer, which is
+replaced by “ UE location calculation” ( assume the latency is [1 slot
+])</p>
+<p>All other steps are the same as UE-assisted positioning in Table
+C.1.2.2.2-1.</p></td>
+<td><table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>FDD/TDD, SCS</th>
+<th>Total values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FDD and 30KHz SCS</td>
+<td>106.73</td>
+</tr>
+<tr>
+<td>FDD and 60KHz SCS</td>
+<td>668.02</td>
+</tr>
+<tr>
+<td>TDD and 30KHz SCS</td>
+<td>108.13</td>
+</tr>
+<tr>
+<td>TDD and 60KHz SCS</td>
+<td>668.85</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td>Transmission of the PDSCH from the gNB carrying the LPP Request
+Location Information</td>
+<td>Calculation of Location Estimate at the UE</td>
+<td><p>Update the start and end triggers accordingly.</p>
+<p>Step 8 should be removed since UE is the location consumer, which is
+replaced by “ UE location calculation” ( assume the latency is [1 slot
+])</p>
+<p>All other steps are the same as UE-assisted positioning in Table
+C.1.2.2.2-1.</p></td>
+<td><table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>FDD/TDD, SCS</th>
+<th>Total values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FDD and 30KHz SCS</td>
+<td>106.30</td>
+</tr>
+<tr>
+<td>FDD and 60KHz SCS</td>
+<td>667.82</td>
+</tr>
+<tr>
+<td>TDD and 30KHz SCS</td>
+<td>107.08</td>
+</tr>
+<tr>
+<td>TDD and 60KHz SCS</td>
+<td>668.51</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td>Transmission of the PDSCH from the gNB carrying the LPP message
+containing the assistance data</td>
+<td>Successful decoding of the PUSCH at gNB carrying the LPP Provide
+Location Information message</td>
+<td><p>Update the start and end triggers accordingly.</p>
+<p>Step 2 is replaced by “UE decodes and applies the LPP message
+containing the assistance data”.</p>
+<p>Another step for “ UE location calculation” ( assume the latency is
+[1 slot ] ) is added between step 7 and step 8.</p>
+<p>All other steps are the same as UE-assisted positioning in Table
+C.1.2.2.2-1.</p></td>
+<td><table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>FDD/TDD, SCS</th>
+<th>Total values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FDD and 30KHz SCS</td>
+<td>106.73</td>
+</tr>
+<tr>
+<td>FDD and 60KHz SCS</td>
+<td>668.02</td>
+</tr>
+<tr>
+<td>TDD and 30KHz SCS</td>
+<td>108.13</td>
+</tr>
+<tr>
+<td>TDD and 60KHz SCS</td>
+<td>668.85</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td>Transmission of the PDSCH from the gNB carrying the LPP message
+containing the assistance data</td>
+<td>Calculation of Location Estimate at the UE</td>
+<td><p>Update the start and end triggers accordingly.</p>
+<p>Step 2 is replaced by “UE decodes and applies the LPP message
+containing the assistance data”.</p>
+<p>Step 8 should be removed since UE is the location consumer, which is
+replaced by “ UE location calculation” ( assume the latency is [1 slot ]
+)</p>
+<p>All other steps are the same as UE-assisted positioning in Table
+C.1.2.2.2-1.</p></td>
+<td><table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>FDD/TDD, SCS</th>
+<th>Total values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FDD and 30KHz SCS</td>
+<td>106.30</td>
+</tr>
+<tr>
+<td>FDD and 60KHz SCS</td>
+<td>667.82</td>
+</tr>
+<tr>
+<td>TDD and 30KHz SCS</td>
+<td>107.08</td>
+</tr>
+<tr>
+<td>TDD and 60KHz SCS</td>
+<td>668.51</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.2.2-3 physical layer latency for UE-based positioning
+based on DL-ECID method</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 12%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>[Case PHY-L3]</p>
+<p>Source [UE]/Destination [NW]</p>
+<p>Positioning technique [DL-ECID],type [DL], mode [UE-A],</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td>Value Range (ms)</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td>N/A</td>
+<td>Transmission of the PDSCH from the gNB carrying the LPP Request
+Location Information message</td>
+</tr>
+<tr>
+<td>UE interprets and applies the measurement configuration</td>
+<td>10</td>
+<td><p>RRC Processing time at the UE are captured in 38.331 Section 12,
+where defines the following RRC procedure delay,</p>
+<p>reception of the network -&gt; UE message on the UE physical layer up
+to when the UE shall be ready for the reception of uplink grant for the
+UE -&gt; network response message</p></td>
+</tr>
+<tr>
+<td>UE ECID measurement time</td>
+<td>0</td>
+<td>If RRM measurement is available (i.e. buffered) at UE side, UE can
+forward the ECID measurement directly without consuming additional
+time.</td>
+</tr>
+<tr>
+<td>UE positioning measurement transmission</td>
+<td>Corresponding values can be found in right column.</td>
+<td><p>UL user plane latency defined in 37.910 clause 5.7.1.2.2 is
+applicable to measurement gap request, where the latency includes</p>
+<p>UE processing delay</p>
+<p>UL frame alignment (transmission alignment)</p>
+<p>TTI for UL data packet transmission</p>
+<p>BS processing delay</p>
+<p>The grant free based UL transmission is assumed in this contribution,
+some typical cases can be found in 37.910 clause 5.7.1.2.2. We choose
+following cases as examples,</p>
+<p>UL user plane latency for NR FDD with grant free transmission:</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 21%" />
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3" rowspan="3">UL user plane latency (Grant free)(ms) – NR
+FDD</th>
+<th colspan="2">UE capability 2</th>
+</tr>
+<tr>
+<th colspan="2">SCS</th>
+</tr>
+<tr>
+<th>30 KHz</th>
+<th>60 KHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resource mapping Type B</td>
+<td>M=7 (7OS non-slot)</td>
+<td>p=0</td>
+<td>0.43</td>
+<td>0.30</td>
+</tr>
+</tbody>
+</table>
+<p>UL user plane latency for NR TDD with grant free transmission:</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 21%" />
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3" rowspan="3">UL user plane latency (Grant free,DDDXU,
+with ‘X’=’U’ for UL traffic)(ms) – NR TDD</th>
+<th colspan="2">UE capability 2</th>
+</tr>
+<tr>
+<th colspan="2">SCS</th>
+</tr>
+<tr>
+<th>30 KHz</th>
+<th>60 KHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resource mapping Type B</td>
+<td>M=7 (7OS non-slot)</td>
+<td>p=0</td>
+<td>1.09</td>
+<td>0.64</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td>N/A</td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>Corresponding values can be found in right column.</td>
+<td><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>FDD/TDD, SCS</th>
+<th>Total values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FDD and 30KHz SCS</td>
+<td>10.43 ms</td>
+</tr>
+<tr>
+<td>FDD and 60KHz SCS</td>
+<td>10.30 ms</td>
+</tr>
+<tr>
+<td>TDD and 30KHz SCS</td>
+<td>11.09 ms</td>
+</tr>
+<tr>
+<td>TDD and 60KHz SCS</td>
+<td>10.64 ms</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.1.2.3-results-from-source-8">C.1.2.3 Results from source [8]
+</h4>
+<h5 id="c.1.2.3.1-description-of-evaluation-scenarios">C.1.2.3.1
+Description of evaluation scenarios</h5>
+<h5 id="c.1.2.3.2-latency-analysis-for-rel.16-solutions">C.1.2.3.2
+Latency analysis for Rel.16 solutions</h5>
+<p>In this section, we analyse the physical layer latency for both
+DL-TDOA and UL-TDOA. For DL-TDOA, the physical layer procedure is shown
+in Figure C.1.2.3.2-1.</p>
+<p><img src="media/image1.svg"
+style="width:3.04028in;height:4.18403in" /></p>
+<p>Figure C.1.2.3.2-1: PHY procedure for DL-TDOA</p>
+<p>According to Figure C.1.2.3.2-1, the total PHY delay could be
+calculated as</p>
+<p><span class="math display">\[T_{total} = T_{gap,req} + T_{gap,cfg} +
+T_{ariv} + T_{process} + T_{report}\]</span></p>
+<p>where,</p>
+<p>- <span class="math inline">\(T_{gap,req}\)</span> denotes the time
+to require measurement gap, which is 1ms according to the result of
+URLLC latency in TR 38.824.</p>
+<p>- <span class="math inline">\(T_{gap,cfg}\)</span> denotes the time
+for measurement gap configuration, which could be assumed as 10ms
+according to RRC reconfiguration procedure delay in TS 38.331.</p>
+<p>- <span class="math inline">\(T_{ariv}\)</span> denotes the delay
+between the time when DL PRS is received and the time when measurement
+gap configuration is received, which is related to the maximum value of
+the configured periodicity of PRS and measurement gap.</p>
+<p>- <span class="math inline">\(T_{process}\)</span> denotes the time
+from UE begins to measure PRS until the measurement result is ready to
+report. <span class="math inline">\(T_{process}\)</span>is related to UE
+capability and the number of PRS resources needed to be measured.</p>
+<p>- <span class="math inline">\(T_{report}\)</span> denotes the time
+for measurement reporting, which includes SR request, PDCCH-based UL
+grant and PUSCH-based measurement result reporting.</p>
+<p>The value of <span class="math inline">\(T_{report}\)</span> could be
+assumed as 0.5ms for URLLC according to section 5.2.1 of TR 36.881. The
+value of <span class="math inline">\(T_{process}\)</span> may be
+inferred from the minimum periodicity of PRS and measurement gap, since
+the measurement result has to be reported before the next PRS
+occasion.</p>
+<p>In Rel-16, the periodicity of PRS includes the following values:
+<span class="math inline">\(2^{\mu}\left\{ 4,\ 5,\ 8,\ 10,\ 16,\ 20,\
+32,\ 40,\ 64,\ 80,\ 160,\ 320,\ 640,\ 1280,\ 2560,\ 5120,\ 10240
+\right\}\)</span> slots. For the periodicity of measurement gap, the
+following values are supported: <span class="math inline">\(\left\{ 20,\
+40,\ 80,\ 160,\ \lbrack 320,\ 640\rbrack \right\}\)</span>ms.</p>
+<p>For example, assume SCS is 15kHz, the periodicity of PRS is 4 slots
+and the periodicity of measurement gap is 20ms, the PHY latency could be
+summarized in the following table.</p>
+<p>Latency components are recommended to be captured in table and
+ordered consequently in time starting from the earliest oneLatency
+analysis for the Rel.16 NR positioning (DL-TDOA) is provided in Table
+C.1.2.3.2-1.</p>
+<p>Table C.1.2.3.2-1: Rel.16 NR positioning latency for DL-TDOA [8]</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 34%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case 1, 15kHz, FR1, DL-TDOA</p>
+<p>Source UE/Destination NW</p>
+<p>Positioning technique DL-TDOA, type DL, mode UE-assisted,</p>
+<p>Initial and Final RRC States CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td>1</td>
+<td>Measurement gap request</td>
+</tr>
+<tr>
+<td>Measurement gap configuration</td>
+<td>10</td>
+<td>Measurement gap configuration delay by RRC</td>
+</tr>
+<tr>
+<td>PRS arrival delay</td>
+<td><p><span class="math inline">\(\leq X_{1}\)</span>,</p>
+<p><span class="math display">\[\ X_{1} = max\{
+T_{cPRS},T_{cmgap}\}\]</span></p>
+<p>(e.g. <span class="math inline">\(X_{1} = 4\)</span> when <span
+class="math inline">\(T_{cPRS} = 4\)</span> and <span
+class="math inline">\(T_{cmgap} = 20\)</span>)</p></td>
+<td>DL PRS arrived for measurement, which is related to the maximum
+value of the configured periodicity of PRS <span
+class="math inline">\(T_{cPRS}\)</span> and the configured periodicity
+of measurement gap <span class="math inline">\(T_{cmgap}\)</span></td>
+</tr>
+<tr>
+<td>Process time</td>
+<td><p><span class="math inline">\(\leq X_{2}\)</span>,</p>
+<p><span class="math display">\[\ X_{2} =
+max\{{min(T}_{PRS}),min(T_{mgap})\}\]</span></p>
+<p><span class="math inline">\((X_{2} = 20\)</span>, as <span
+class="math inline">\({min(T}_{PRS})\)</span>=4 and <span
+class="math inline">\(min(T_{mgap})\)</span>=20)</p></td>
+<td>UE begins to measure PRS until the measurement result is ready. This
+value depends on UE capability the number of PRS resources to be
+measured. The value is assumed to be determined by the supported minimum
+periodicity of PRS <span class="math inline">\(T_{PRS}\ \ \)</span>and
+measurement gap <span class="math inline">\(T_{mgap}\)</span>.</td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td>0.5</td>
+<td>SR request, PDCCH UL grant and PUSCH-based measurement result
+reporting are included, wherein URLLC is assumed</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><span class="math inline">\(\leq\)</span>51.5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>For UL-TDOA, the physical layer procedure is shown in Figure
+C.1.2.3.2-2.</p>
+<p><img src="media/image2.svg"
+style="width:3.02083in;height:3.09375in" /></p>
+<p>Figure C.1.2.3.2-2: PHY procedure for UL-TDOA</p>
+<p>The total delay could be calculated as</p>
+<p><span class="math display">\[T_{total} = T_{SRS,act} + T_{prep} +
+T_{process}\]</span></p>
+<p>where,</p>
+<p>- <span class="math inline">\(T_{SRS,act}\)</span> denotes the time
+to activate the SRS transmission.</p>
+<p>- <span class="math inline">\(T_{prep}\)</span> denotes the delay
+from effective time of SRS activation until UE begins to transmit SRS,
+which is related to the value of the configured periodicity of SRS.</p>
+<p>- <span class="math inline">\(T_{process}\)</span> denotes the time
+from gNB begins to measure SRS until the measurement result is ready,
+which is related to UE capability and the number of SRS resources needed
+to be measured.</p>
+<p>If SRS is activated by MAC-CE, 3ms delay could be assumed. Similar to
+Case 1, the value of <span class="math inline">\(T_{process}\)</span>
+may be inferred from the minimum periodicity of SRS. In Rel-16, the
+periodicity of SRS for 15 kHz SCS includes the following values:</p>
+<p>- {1, 2, 4, 5, 8, 10, 16, 20, 32, 40, 64, 80, 160, 320, 640, 1280,
+2560, 5120, 10240} slots. Assume the periodicity of SRS is 1 slot, the
+PHY latency could be get.</p>
+<p>Latency components are recommended to be captured in table and
+ordered consequently in time starting from the earliest oneLatency
+analysis for the Rel.16 NR positioning (UL-TDOA) is provided in Table
+C.1.2.3.2-2.</p>
+<p>Table C.1.2.3.2-2: Rel.16 NR positioning latency for UL-TDOA [8]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case 2, 15kHz, FR1, UL-TDOA</p>
+<p>Source UE/Destination NW</p>
+<p>Positioning technique UL-TDOA, type UL, mode UE-assisted,</p>
+<p>Initial and Final RRC States CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td>3</td>
+<td>UE SRS transmission is activated</td>
+</tr>
+<tr>
+<td>UL SRS arrival delay</td>
+<td><p><span class="math inline">\(\leq X_{1}\)</span>,</p>
+<p><span class="math display">\[\ X_{1} = T_{cSRS}\]</span></p>
+<p>(e.g. <span class="math inline">\(X_{1} = 1\)</span> when <span
+class="math inline">\(T_{cSRS} = 1\)</span>)</p></td>
+<td>UL SRS arrived for measurement, which is related to the value of the
+configured periodicity of SRS <span
+class="math inline">\(T_{cSRS}\)</span></td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td><p><span class="math inline">\(\leq X_{2}\)</span>,</p>
+<p><span class="math display">\[\ X_{2} = {min(T}_{SRS})\]</span></p>
+<p><span class="math inline">\((X_{2} = 1\)</span>, as <span
+class="math inline">\({min(T}_{SRS})\)</span>=1)</p></td>
+<td>gNB begins to measure SRS until the measurement result is ready.
+This value depends on gNB capability, and the number of SRS resources to
+be measured. The value is assumed to be determined by the minimum
+periodicity of SRS, <span class="math inline">\(T_{SRS}\)</span>.</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><span class="math inline">\(\leq\)</span>5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.1.2.4-results-from-source-13">C.1.2.4 Results from source
+[13]</h4>
+<h5 id="c.1.2.4.1-description-of-evaluation-scenarios">C.1.2.4.1
+Description of evaluation scenarios</h5>
+<p>We analyse the case of Network Initiated location request where the
+positioning method is DL-TDOA/DL-AoD in Case 1/2 and also for
+UL-TDOA/UL-AoA in Case 3. We only consider the RRC state as connected
+mode. Note that this analysis assumes that the higher layer components
+are taken into account in separate analysis and the definition of start
+and stop times for PHY layer latency are used. For Case 3 we assume that
+SRS-Pos already being configured (e.g., higher layer latency takes this
+into account, see RAN2 analysis).</p>
+<h5 id="c.1.2.4.2-latency-analysis-for-rel.16-solutions">C.1.2.4.2
+Latency analysis for Rel.16 solutions</h5>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 23%" />
+<col style="width: 19%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="4"><p>Case 1 (FR1)/ Case 2 (FR2)</p>
+<p>Source: NW/Destination: NW</p>
+<p>Positioning technique: DL-TDOA, type: DL, mode: UE-A</p>
+<p>Initial and Final RRC States: Initial/Final - CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Latency Component</td>
+<td>Value Range</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td colspan="2">Start trigger</td>
+<td> </td>
+<td>Transmission of the PDSCH from the gNB carrying the LPP Request
+Location Information message</td>
+</tr>
+<tr>
+<td rowspan="2">Step 1: Processing of “LPP Request Location Information
+message”</td>
+<td>1a. Processing of PDSCH</td>
+<td><p>FR1: [3-8 symbols]</p>
+<p>FR2: [20-24 symbols]</p></td>
+<td> UE processing – based on N1 values from 38.214</td>
+</tr>
+<tr>
+<td>1b. Processing of LPP message</td>
+<td>[10 ms]</td>
+<td>From 38.331</td>
+</tr>
+<tr>
+<td rowspan="7">Step 2 (optional): measurement gap request and
+configuration</td>
+<td>2a. SR (for MG request) preparation and transmission</td>
+<td><p>FR1: [2 symbols – 80 slots]</p>
+<p>FR2: [2 symbols – 640 slots]</p></td>
+<td><p>generate SR, as the message of measurement gap request may be new
+data coming</p>
+<p>Wait for SR transmission occasion and transmit SR to gNB</p></td>
+</tr>
+<tr>
+<td>2b. SR processing at gNB</td>
+<td>[1 symbol]</td>
+<td>SR decoding, should be much smaller than N2.</td>
+</tr>
+<tr>
+<td>2c. UL grant (for MG request) preparation and transmission</td>
+<td>[3 symbols – 1 slot ]</td>
+<td>UL grant generation and waiting for scheduling opportunity (based on
+CORESET configuration). Typical value.</td>
+</tr>
+<tr>
+<td>2d. UE processing of PDCCH and UL preparation</td>
+<td><p>FR1: [5-10 symbols]</p>
+<p>FR2: 36 symbols</p></td>
+<td>UL data includes requested measurement gap request. Based on N2
+values from 38.214.</td>
+</tr>
+<tr>
+<td>2e. Scheduling delay - K2</td>
+<td>[0-32 slots]</td>
+<td>Scheduling delay from UL grant to PUSCH</td>
+</tr>
+<tr>
+<td>2f. PUSCH reception and decoding</td>
+<td> [1-2 symbols]</td>
+<td>Including 1. PUSCH (containing MG request information) processing at
+gNB</td>
+</tr>
+<tr>
+<td>2g. RRC processing of MG request</td>
+<td>[10 ms]</td>
+<td>gNB RRC processing time</td>
+</tr>
+<tr>
+<td rowspan="3">Step 3 (optional): measurement gap configuration</td>
+<td>3a. gNB prepares to transmits RRC (for MG configuraiton)</td>
+<td>[3 symbols – 1 slots]</td>
+<td>PDCCH and PDSCH preparation</td>
+</tr>
+<tr>
+<td>3b. UE PHY processing for RRC (for MG configuraiton)</td>
+<td><p>FR1: [3-8 symbols]</p>
+<p>FR2: [20-24 symbols]</p></td>
+<td>PDSCH decoding; not specified, but should be smaller than N1</td>
+</tr>
+<tr>
+<td>3c. UE time to applie the MG configuration</td>
+<td>[10 ms]</td>
+<td>Based on 38.331</td>
+</tr>
+<tr>
+<td rowspan="2">Step 4: PRS processing</td>
+<td>4a. Transmission of DL PRS</td>
+<td> [4-10240 slots]</td>
+<td>Worst case time between periodic DL PRS based on values from
+38.211</td>
+</tr>
+<tr>
+<td>4b. Processing of DL PRS at UE</td>
+<td>[8-1280 ms]</td>
+<td>Assume average value of T=8 (lowest value) is reported by UE as
+capability and UE is able to process all DL PRS resources (i.e., N is
+sufficient).</td>
+</tr>
+<tr>
+<td>Step 5: measurement report processing</td>
+<td>5a. Transmit SR</td>
+<td><p>FR1: [2 symbols – 80 slots]</p>
+<p>FR2: [2 symbols – 640 slots]</p></td>
+<td>Wait for SR transmission occasion and transmit SR to gNB</td>
+</tr>
+<tr>
+<td></td>
+<td>5b. Processing of SR at gNB</td>
+<td>[1 symbol]</td>
+<td>SR decoding</td>
+</tr>
+<tr>
+<td></td>
+<td>5c. UL grant preparation and transmission of UL grant by gNB</td>
+<td>[3 symbols – 1 slot ]</td>
+<td>UL grant generation and waiting for scheduling opportunity (based on
+CORESET configuration). Typical value.</td>
+</tr>
+<tr>
+<td></td>
+<td>5d. UE processing of PDCCH and UL preparation</td>
+<td><p>FR1: [5-10 symbols]</p>
+<p>FR2: 36 symbols</p></td>
+<td>Based on N2 values from 38.214.</td>
+</tr>
+<tr>
+<td></td>
+<td>5e. Scheduling delay - K2</td>
+<td>[0-32 slots]</td>
+<td>Scheduling delay from UL grant to PUSCH</td>
+</tr>
+<tr>
+<td></td>
+<td>5f. gNB processing of RSTD Report</td>
+<td> [1-2 symbol]</td>
+<td> </td>
+</tr>
+<tr>
+<td colspan="2">End trigger</td>
+<td> </td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message</td>
+</tr>
+<tr>
+<td colspan="2">Total PHY latency</td>
+<td><p>FR1: [44.35 – 10500] ms</p>
+<p>FR2: [35.08 – 2118.93 ms]</p></td>
+<td>Assuming 15 kHz SCS for FR1 and 120 kHz SCS for FR2</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 23%" />
+<col style="width: 17%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="4"><p>Case 3</p>
+<p>Source: NW/Destination: NW</p>
+<p>Positioning technique: UL-TDOA, type: UL, mode: UE-A</p>
+<p>Initial and Final RRC States: Initial/Final - CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Latency Component</td>
+<td>Value Range</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td colspan="2">Start trigger</td>
+<td> </td>
+<td>Reception by the gNB of the NRPPa measurement request message
+(assumption is that UE has already been configured with periodic
+SRS-Pos)</td>
+</tr>
+<tr>
+<td rowspan="2">Step 1: SRS-pos configuration</td>
+<td>1a. gNB prepares and transmits RRC (for SRS-pos configuraiton)</td>
+<td>[3 symbols – 1 slot ]</td>
+<td>PDCCH and PDSCH preparation</td>
+</tr>
+<tr>
+<td>1b. UE PHY processing for RRC</td>
+<td>[3-24 symbols]</td>
+<td>PDSCH decoding</td>
+</tr>
+<tr>
+<td rowspan="3">Step 2: SRS-pos processing</td>
+<td>2a. Wait for transmission of SRS-Pos</td>
+<td> [1-81920 slots]</td>
+<td>Periodicity of SRS-Pos</td>
+</tr>
+<tr>
+<td>2b. Transmission of SRS-Pos</td>
+<td>[2 symbols- 8 symbols]</td>
+<td>Assuming effective comb-1. In FR2 case this will be much longer
+(e.g., multiple resources per set)</td>
+</tr>
+<tr>
+<td>2c. Processing of SRS-Pos at gNB/RP-only</td>
+<td>[1-5 slots]</td>
+<td></td>
+</tr>
+<tr>
+<td>Step 3: positioning report</td>
+<td>3a. Preparation of UL measurement report</td>
+<td>[3 symbols ]</td>
+<td>Typical value</td>
+</tr>
+<tr>
+<td colspan="2">End trigger</td>
+<td> </td>
+<td>The transmission by the gNB of the NRPPa measurement response
+message</td>
+</tr>
+<tr>
+<td colspan="2">Total PHY latency</td>
+<td>[2.78 – 81928.5] ms</td>
+<td>Assuming 15 kHz SCS</td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.1.2.5-results-from-source-11">C.1.2.5 Results from source
+[11]</h4>
+<h5 id="c.1.2.5.1-description-of-evaluation-scenarios">C.1.2.5.1
+Description of evaluation scenarios</h5>
+<p>The physical layer latency evaluations are captured for the following
+Rel-16 DL-based positioning scenarios:</p>
+<p>- Case ID: 1- DL-TDOA / DL-AoD, UE-Assisted (UE-A) Positioning with
+MG configuration.</p>
+<p>- Case ID: 2- DL-TDOA/ DL-AoD, UE-Assisted (UE-A) Positioning without
+MG configuration.</p>
+<p>- Case ID: 3- DL-TDOA/ DL-AoD, UE-Based (UE-B) Positioning with MG
+configuration.</p>
+<p>- Case ID: 4- DL-TDOA/ DL-AoD, UE-Based (UE-B) Positioning without MG
+configuration.</p>
+<h5 id="c.1.2.5.2-latency-analysis-for-rel.16-solutions">C.1.2.5.2
+Latency analysis for Rel.16 solutions</h5>
+<p>Table C.1.2.5.2-1 presents the UE-Assisted DL-TDOA/DL-AoD physical
+layer latency evaluations by taking into account the minimum and
+cautious latency estimates (within the value range) of the various delay
+components (starting with the earliest component) with a Measurement Gap
+(MG) configuration, while Table C.1.2.5.2-2 presents the same scenario
+without a Measurement Gap (MG) configuration.</p>
+<p>Table C.1.2.5.2-3 presents the UE-Based DL-TDOA/DL-AoD physical layer
+latency evaluations by taking into account the minimum and cautious
+latency estimates (within the value range) of the various delay
+components (starting with the earliest component) with a Measurement Gap
+(MG) configuration, while Table C.1.2.5.2-4 presents the same scenario
+without a Measurement Gap (MG) configuration.</p>
+<p>Table C.1.2.5.2-1: Rel.16 NR positioning latency [11]</p>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 22%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="5"><p>Case ID: 1, Scenario: UE-Assisted Positioning with MG
+configuration, Frequency Band: FR1/FR2, Technique: R.16 DL-TDOA or R.16
+DL-AoD</p>
+<p>Source: NW, Destination: NW</p>
+<p>Positioning technique(s): DL-TDOA or DL-AoD, Type: DL, Mode:
+UE-Assisted (UE-A)</p>
+<p>Initial RRC and Final RRC States: CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">No.</td>
+<td rowspan="2">Latency Component</td>
+<td colspan="2">Value Range (ms)</td>
+<td rowspan="2">Description of Latency Component</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>Cautious Estimate<sup>7</sup></td>
+</tr>
+<tr>
+<td colspan="2">PHY Start</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">1.1.</td>
+<td rowspan="2">Start trigger (Air Interface<sup>1</sup> Latency)</td>
+<td>1 – FR1: 30 kHz SCS</td>
+<td>2 - FR1: 30 kHz SCS</td>
+<td rowspan="2"><p>Transmission of the PDSCH from the gNB carrying the
+LPP Request Location Information message (Air Interface Latency)</p>
+<p>Minimum value based on capability 2 (URLLC) device, while cautious
+estimate based on capability 1 (eMBB) device.</p></td>
+</tr>
+<tr>
+<td>0.25 – FR2: 120 kHz SCS</td>
+<td>0.5 – FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td>1.2.</td>
+<td>UE Processing<sup>4</sup> of LPP Request Location Information
+message</td>
+<td>3</td>
+<td>10</td>
+<td>UE Processing of the PDSCH carrying the LPP Request Location
+Information message</td>
+</tr>
+<tr>
+<td colspan="2">PUSCH Preparation Time<sup>2</sup></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.</td>
+<td>UL Transmission of Measurement Gap Request (SR-based
+Scheduling)</td>
+<td>1</td>
+<td>3.8</td>
+<td>Cautious Estimate = max (FDD, TDD) = max(2.8, 3.8). Minimum value
+based on capability 2 (URLLC) device with readily available UL
+grant.</td>
+</tr>
+<tr>
+<td colspan="2">Measurement Gap Configuration</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">3.1</td>
+<td rowspan="2">Measurement Gap Request (Air Interface
+Latency<sup>1</sup>)</td>
+<td>1 - FR1: 30 kHz SCS</td>
+<td>2 - FR1: 30 kHz SCS</td>
+<td rowspan="2">Transmission of the PUSCH from the UE carrying the MG
+Request/Need message (Air Interface Latency). Minimum value based on
+capability 2 (URLLC) device, while cautious estimate based on capability
+1 (eMBB) device.</td>
+</tr>
+<tr>
+<td>0.25 – FR2:120 kHz SCS</td>
+<td>0.5 – FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td>3.2</td>
+<td>gNB Processing<sup>3</sup> of Measurement Gap Request</td>
+<td>3</td>
+<td>10</td>
+<td>gNB Processing of the PUSCH carrying the MG Request message</td>
+</tr>
+<tr>
+<td rowspan="2">3.3</td>
+<td rowspan="2">Measurement Gap Configuration (Air Interface<sup>1</sup>
+Latency)</td>
+<td>1 - FR1:30 kHz SCS</td>
+<td>2 - FR1: 30 kHz SCS</td>
+<td rowspan="2">Transmission of the PDSCH from the gNB carrying the
+Measurement Gap Configuration (Air Interface Latency)</td>
+</tr>
+<tr>
+<td>0.25 – FR2: 120 kHz SCS</td>
+<td>0.5 – FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td>3.4</td>
+<td>UE Processing<sup>4</sup> of Measurement Gap Configuration
+message</td>
+<td>3</td>
+<td>10</td>
+<td>UE Processing of the PDSCH carrying the Measurement Gap
+Configuration message</td>
+</tr>
+<tr>
+<td colspan="2">DL-PRS Configuration within T<sub>MGRP</sub></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>MG Gap Repetition Period (TMGRP), N<sub>Occ</sub><sup>5</sup>=
+1</td>
+<td>1×20</td>
+<td>1×160</td>
+<td>UE processing of PRS within a MG</td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>UE Processing of DL-PRS Units (N<sub>Proc</sub>,T) in addition to
+the T<sub>MGRP</sub></td>
+<td><p>(N<sub>Proc</sub>,T) = (6,8)</p>
+<p>0</p></td>
+<td><p>(N<sub>Proc</sub>,T)<sup>6</sup> = (20, 160)</p>
+<p>20</p></td>
+<td><p>Duration of DL PRS symbols N in units of ms a UE can process
+every T ms assuming maximum DL PRS bandwidth in MHz, which is supported
+and reported by UE.</p>
+<p>UE Processing time =max (0, T-(TMGRP-N))</p></td>
+</tr>
+<tr>
+<td colspan="2">PUSCH Preparation Time<sup>2</sup></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>UL Transmission of Measurement Report without UL grant</td>
+<td>1</td>
+<td>3.8</td>
+<td>Cautious Estimate = max (FDD, TDD) = max (2.8, 3.8). Minimum value
+based on capability 2 (URLLC) device with readily available UL
+grant.</td>
+</tr>
+<tr>
+<td colspan="2">PHY End</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">6.1</td>
+<td rowspan="2">End Trigger (Air Interface<sup>1</sup> Latency)</td>
+<td>1 - FR1: 30 kHz SCS</td>
+<td>2 - FR1: 30 kHz SCS</td>
+<td rowspan="2">Transmission of the PUSCH from the UE carrying the LPP
+Provide Location Information (Air Interface Latency). Minimum value
+based on capability 2 (URLLC) device, while cautious estimate based on
+capability 1 (eMBB) device.</td>
+</tr>
+<tr>
+<td>0.25 – FR2: 120 kHz SCS</td>
+<td>0.5 – FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td>6.2</td>
+<td>End Trigger (Processing)</td>
+<td>3</td>
+<td>10</td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message containing the measurement report.</td>
+</tr>
+<tr>
+<td rowspan="2"></td>
+<td rowspan="2">Total Values</td>
+<td>38 - FR1: 30 kHz SCS</td>
+<td>235.6- FR1: 30 kHz SCS</td>
+<td rowspan="2"></td>
+</tr>
+<tr>
+<td>35 – FR2: 120 kHz SCS</td>
+<td>229.6 – FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td colspan="5"><p>Notes:</p>
+<p>1: The Air Interface is a function dependent on the selected
+numerology, TDD/FDD configuration, and FR1/FR2 band.</p>
+<p>2: The PUSCH processing time is based on the SR-based scheduling of
+PUSCH in [4].</p>
+<p>3: gNB Processing: The minimum processing estimates in [11, Ref 4]
+served as a guideline. The cautious estimates of the gNB processing
+times of the RRC messages are based on the delay requirements in [5].
+The value is used for evaluation only; gNB processing delay may vary
+depending on implementation/deployment.</p>
+<p>4: UE Processing: The minimum estimate in [11, Ref 4] served as a
+guideline. The cautious estimates of the UE processing times of the RRC
+messages are based on the delay requirements in [11, Ref 5].</p>
+<p>5: The number of DL-PRS occasions, N<sub>Occ</sub> = 1, although this
+may not be a typical value for obtaining accurate positioning
+measurements. The positioning measurements would need to be averaged
+over a higher number of DL-PRS occasions for accurate measurements.</p>
+<p>6: The symbol processing time of N=20 ms was selected to align with
+the associated MGL=20, which has a corresponding T<sub>MGRP</sub> = 160
+ms.</p>
+<p>7: The cautious estimate is not intended to indicate the physical
+layer latency upper bound.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.5.2-2: Rel.16 NR positioning latency [11]</p>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 22%" />
+<col style="width: 19%" />
+<col style="width: 18%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="5"><p>Case ID: 2, Scenario: UE-Assisted Positioning without
+MG configuration, Frequency Band: FR1/FR2, Technique: R.16 DL-TDOA or
+R.16 DL-AoD</p>
+<p>Source: NW, Destination: NW</p>
+<p>Positioning technique(s): DL-TDOA, DL-AoD, Type: DL, Mode:
+UE-Assisted (UE-A)</p>
+<p>Initial RRC and Final RRC States: CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">No.</td>
+<td rowspan="2">Latency Component</td>
+<td colspan="2">Value Range (ms)</td>
+<td rowspan="2">Description of Latency Component</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>Cautious Estimate<sup>6</sup></td>
+</tr>
+<tr>
+<td colspan="2">PHY Start</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">1.1.</td>
+<td rowspan="2">Start trigger (Air Interface<sup>1</sup> Latency)</td>
+<td>1 - FR1: 30 kHz SCS</td>
+<td>2 - FR1: 30 kHz SCS</td>
+<td rowspan="2"><p>Transmission of the PDSCH from the gNB carrying the
+LPP Request Location Information message (Air Interface Latency)</p>
+<p>Minimum value based on capability 2 (URLLC) device, while cautious
+estimate based on capability 1 (eMBB) device.</p></td>
+</tr>
+<tr>
+<td>0.25 – FR2: 120 kHz SCS</td>
+<td>0.5 - FR1: 120 kHz SCS</td>
+</tr>
+<tr>
+<td>1.2.</td>
+<td>UE Processing<sup>4</sup> of LPP Request Location Information
+message</td>
+<td>3</td>
+<td>10</td>
+<td>UE Processing of the PDSCH carrying the LPP Request Location
+Information message</td>
+</tr>
+<tr>
+<td colspan="2">DL-PRS Configuration = T<sub>PRS</sub> ×
+N<sub>Occ</sub><sup>5</sup></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.1</td>
+<td><p>DL-PRS Resources</p>
+<p>(DL-PRS Periodicity (T<sub>PRS</sub>) &amp;
+(N<sub>Occ</sub><sup>5</sup>= 1))</p></td>
+<td>1×4</td>
+<td>1×5120</td>
+<td>T<sub>PRS</sub> of 5120 selected as cautious estimate. It is a
+function of the PRS periodicity and number of occasions
+(N<sub>Occ</sub>5=1) over which the measurements will be averaged.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>UE Processing<sup>4</sup> of DL-PRS Units (N<sub>Proc</sub>,T)</td>
+<td>4</td>
+<td>0</td>
+<td><p>Duration of DL PRS symbols N in units of ms a UE can process
+every T ms assuming maximum DL PRS bandwidth in MHz. Minimum estimate is
+based on minimum T of 8 ms while cautious estimate is based on maximum T
+of 1280 ms.</p>
+<p>Processing time =max (0, T-TPRS )</p></td>
+</tr>
+<tr>
+<td colspan="2">PUSCH Preparation Time<sup>2</sup></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.1</td>
+<td>UL Transmission of Measurement Report without UL grant</td>
+<td>1</td>
+<td>3.8</td>
+<td>Cautious Estimate = max (FDD, TDD)= max(2.8, 3.8). Minimum value
+based on capability 2 (URLLC) device with readily available UL
+grant.</td>
+</tr>
+<tr>
+<td colspan="2">PHY End</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">4.1</td>
+<td rowspan="2">End Trigger (Air Interface<sup>1</sup> Latency)</td>
+<td>1 - FR1: 30 kHz SCS</td>
+<td>2 - FR1: 30 kHz SCS</td>
+<td rowspan="2">Transmission of the PUSCH from the UE carrying the LPP
+Provide Location Information (Air Interface Latency). Minimum value
+based on capability 2 (URLLC) device, while cautious estimate based on
+capability 1 (eMBB) device.</td>
+</tr>
+<tr>
+<td>0.25 - FR2: 120 kHz SCS</td>
+<td>0.5 - FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>End Trigger (Processing)</td>
+<td>3</td>
+<td>10</td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message containing the measurement report.</td>
+</tr>
+<tr>
+<td rowspan="2"></td>
+<td rowspan="2">Total Values</td>
+<td>17 - FR1: 30 kHz SCS</td>
+<td>5147.8 - FR1: 30 kHz SCS</td>
+<td rowspan="2"></td>
+</tr>
+<tr>
+<td>15.5 - FR2: 120 kHz SCS</td>
+<td>5144.8 - FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td colspan="5"><p>Notes:</p>
+<p>1: The Air Interface is a function dependent on the selected
+numerology, TDD/FDD configuration, and FR1/FR2 band.</p>
+<p>2: The PUSCH processing time is based on SR-based scheduling of PUSCH
+in [11, Ref 4].</p>
+<p>3: gNB Processing: The minimum estimate in [11, Ref 4] served as a
+guideline. The value is used for evaluation only; gNB processing delay
+may vary depending on implementation/deployment.</p>
+<p>4: UE Processing: The minimum estimate in [11, Ref 4] served as a
+guideline. The cautious estimates UE processing times of the RRC
+messages are based on the delay requirements in [11, Ref 5].</p>
+<p>5: The number of DL-PRS occasions, NOcc = 1, although this may not be
+a typical value for obtaining accurate positioning measurements. The
+positioning measurements would need to be averaged over a higher number
+of DL-PRS occasions for accurate measurements.</p>
+<p>6: The cautious estimate is not intended to indicate the physical
+layer latency upper bound.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.5.2-3: Rel.16 NR positioning latency [11]</p>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 22%" />
+<col style="width: 17%" />
+<col style="width: 18%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="5"><p>Case ID: 3, Scenario: UE-based Positioning with MG
+configuration, Frequency Band: FR1/FR2, Technique: R.16 DL-TDOA or R.16
+DL-AoD</p>
+<p>Source: UE, Destination: UE</p>
+<p>Positioning technique(s): DL-TDOA, DL-AoD Type: DL, Mode: UE-Based
+(UE-B)</p>
+<p>Initial RRC and Final RRC States: CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">No.</td>
+<td rowspan="2">Latency Component</td>
+<td colspan="2">Value Range (ms)</td>
+<td rowspan="2">Description of Latency Component</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>Cautious Estimate<sup>9</sup></td>
+</tr>
+<tr>
+<td colspan="2">PHY Start (If applicable)<sup>7</sup></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">1.1.</td>
+<td rowspan="2">Start trigger (Air Interface<sup>1</sup> Latency)</td>
+<td>1 - FR1: 30 kHz SCS</td>
+<td>2 - FR1: 30 kHz SCS</td>
+<td rowspan="2"><p>Transmission of the PDSCH from the gNB carrying the
+LPP Request Location Information message (Air Interface Latency)</p>
+<p>Minimum value based on capability 2 (URLLC) device, while cautious
+estimate based on capability 1 (eMBB) device.</p></td>
+</tr>
+<tr>
+<td>0.25 – FR2: 120 kHz SCS</td>
+<td>0.5 - FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td>1.2.</td>
+<td>UE Processing<sup>4</sup> of LPP Request Location Information
+message</td>
+<td>3</td>
+<td>10</td>
+<td>UE Processing of the PDSCH carrying the LPP Request Location
+Information message</td>
+</tr>
+<tr>
+<td colspan="2">PHY Start (Alt. 1): PUSCH Preparation
+Time<sup>2</sup></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>UL Transmission Preparation of Measurement Gap Request (SR-based
+Scheduling)</td>
+<td>1</td>
+<td>3.8</td>
+<td>Cautious Estimate = max (FDD, TDD)= max(2.8, 3.8). Minimum value
+based on capability 2 (URLLC) device with readily available UL
+grant.</td>
+</tr>
+<tr>
+<td colspan="2">Measurement Gap Configuration</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">3.1</td>
+<td rowspan="2">Measurement Gap Request (Air Interface
+Latency<sup>1</sup>)</td>
+<td>1 - FR1: 30 kHz SCS</td>
+<td>2 - FR1: 30 kHz SCS</td>
+<td rowspan="2">Transmission of the PUSCH from the UE carrying the MG
+Request/Need message (Air Interface Latency). Minimum value based on
+capability 2 (URLLC) device, while cautious estimate based on capability
+1 (eMBB) device.</td>
+</tr>
+<tr>
+<td>0.25 - FR2: 120 kHz SCS</td>
+<td>0.5 - FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td>3.2</td>
+<td>gNB Processing<sup>3</sup> of Measurement Gap Request</td>
+<td>3</td>
+<td>10</td>
+<td>gNB Processing of the PUSCH carrying the MG Request message</td>
+</tr>
+<tr>
+<td rowspan="2">3.3</td>
+<td rowspan="2">Measurement Gap Configuration (Air Interface
+Latency)</td>
+<td>1 - FR1: 30 kHz SCS</td>
+<td>2 - FR1: 30 kHz SCS</td>
+<td rowspan="2">Transmission of the PDSCH from the gNB carrying the
+Measurement Gap Configuration (Air Interface Latency)</td>
+</tr>
+<tr>
+<td>0.25 - FR2: 120 kHz SCS</td>
+<td>0.5 - FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td>3.4</td>
+<td>UE Processing<sup>4</sup> of Measurement Gap Configuration
+message</td>
+<td>3</td>
+<td>10</td>
+<td>UE Processing of the PDSCH carrying the Measurement Gap
+Configuration message</td>
+</tr>
+<tr>
+<td colspan="2">With MG Gap of DL-PRS Configuration</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>MG Gap Repetition Period (T<sub>MGRP</sub>),
+N<sub>Occ</sub><sup>5</sup>= 1</td>
+<td>1×20</td>
+<td>1×160</td>
+<td>UE processing of PRS within a MG</td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>UE Processing of DL-PRS Units (N<sub>Proc</sub>,T) in addition to
+the T<sub>MGRP</sub></td>
+<td><p>(N<sub>Proc</sub>,T) = (6,8)</p>
+<p>0</p></td>
+<td><p>(N<sub>Proc</sub>,T)8 = (20, 160)</p>
+<p>20</p></td>
+<td><p>Duration of DL PRS symbols N in units of ms a UE can process
+every T ms assuming maximum DL PRS bandwidth in MHz, which is supported
+and reported by UE.</p>
+<p>UE Processing time =max (0, T-(T<sub>MGRP</sub>-N))</p></td>
+</tr>
+<tr>
+<td colspan="2">PUSCH Preparation Time (If applicable) <sup>2</sup></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>UL Transmission of Measurement Report without UL grant</td>
+<td>1</td>
+<td>3.8</td>
+<td>Cautious Estimate = max (FDD, TDD)= max(2.8, 3.8). Minimum value
+based on capability 2 (URLLC) device with readily available UL
+grant.</td>
+</tr>
+<tr>
+<td colspan="2">PHY End (If applicable) <sup>7</sup></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">6.1</td>
+<td rowspan="2">End Trigger (Air Interface<sup>1</sup> Latency)</td>
+<td>1 - FR1: 30 kHz SCS</td>
+<td>2 - FR1: 30 kHz SCS</td>
+<td rowspan="2">Transmission of the PUSCH from the UE carrying the LPP
+Provide Location Information (Air Interface Latency). Minimum value
+based on capability 2 (URLLC) device, while cautious estimate based on
+capability 1 (eMBB) device.</td>
+</tr>
+<tr>
+<td>0.25 - FR2: 120 kHz SCS</td>
+<td>0.5 - FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td>6.2</td>
+<td>End Trigger (Processing)</td>
+<td>3</td>
+<td>10</td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message containing the UE location estimate.</td>
+</tr>
+<tr>
+<td rowspan="2"></td>
+<td rowspan="2"><p>Total Values</p>
+<p>without Request and Provide Location Information Message Components =
+{2-5}</p></td>
+<td>29 - FR1: 30 kHz SCS</td>
+<td>207.8- FR1: 30 kHz SCS</td>
+<td rowspan="2"></td>
+</tr>
+<tr>
+<td>27.5 - FR2: 120 kHz SCS</td>
+<td>204.8 - FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td rowspan="2"></td>
+<td rowspan="2"><p>With MG Gap and with Request and Provide Location
+Information message (If applicable)</p>
+<p>Components = {1-6}</p></td>
+<td>38 - FR1: 30 kHz SCS</td>
+<td>265.6- FR1: 30 kHz SCS</td>
+<td rowspan="2"></td>
+</tr>
+<tr>
+<td>35 - FR2: 120 kHz SCS</td>
+<td>259.6 - FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td colspan="5"><p>Notes:</p>
+<p>1: The Air Interface is a function dependent on the selected
+numerology, TDD/FDD configuration, and FR1/FR2 band.</p>
+<p>2: The PUSCH processing time is based on SR-based scheduling of PUSCH
+in [11, Ref 4].</p>
+<p>3: gNB Processing: The minimum estimate in [11, Ref 4] served as a
+guideline. The value is used for evaluation only; gNB processing delay
+may vary depending on implementation/deployment.</p>
+<p>4: UE Processing: The minimum estimate in [11, Ref 4] served as a
+guideline. The cautious estimates UE processing times of the RRC
+messages are based on the delay requirements in [11, Ref 5].</p>
+<p>5: The number of DL-PRS occasions, N<sub>Occ</sub> = 1, although this
+may not be a typical value for obtaining accurate positioning
+measurements. The positioning measurements would need to be averaged
+over a higher number of DL-PRS occasions for accurate measurements.</p>
+<p>6: For the evaluation scenario, the starting trigger for UE-based
+positioning considers the transmission of the PUSCH carrying the MG
+Request from the UE.</p>
+<p>7: The LPP Request Location Information and Provide Location
+Information messages are considered in the evaluation as the UE may
+transmit the location estimate to the LMF, when applicable.</p>
+<p>8: The symbol processing time of N=20 ms was selected to align with
+the associated MGL=20, which has a corresponding T<sub>MGRP</sub> = 160
+ms.</p>
+<p>9: The cautious estimate is not intended to indicate the physical
+layer latency upper bound.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.5.2-4: Rel.16 NR positioning latency [11]</p>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 22%" />
+<col style="width: 17%" />
+<col style="width: 18%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="5"><p>Case ID: 4, Scenario: UE-based Positioning without MG
+configuration, Frequency Band: FR1/FR2, Technique: R.16 DL-TDOA or R.16
+DL-AoD</p>
+<p>Source: UE, Destination: UE</p>
+<p>Positioning technique(s): DL-TDOA, DL-AoD Type: DL, Mode: UE-Based
+(UE-B)</p>
+<p>Initial RRC and Final RRC States: CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">No.</td>
+<td rowspan="2">Latency Component</td>
+<td colspan="2">Value Range (ms)</td>
+<td rowspan="2">Description of Latency Component</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>Cautious Estimate<sup>7</sup></td>
+</tr>
+<tr>
+<td colspan="2">PHY Start (If applicable)<sup>7</sup></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">1.1.</td>
+<td rowspan="2">Start trigger (Air Interface<sup>1</sup> Latency)</td>
+<td>1 - FR1: 30 kHz SCS</td>
+<td>2 - FR1: 30 kHz SCS</td>
+<td rowspan="2"><p>Transmission of the PDSCH from the gNB carrying the
+LPP Request Location Information message (Air Interface Latency)</p>
+<p>Minimum value based on capability 2 (URLLC) device, while cautious
+estimate based on capability 1 (eMBB) device.</p></td>
+</tr>
+<tr>
+<td>0.25 - FR2: 120 kHz SCS</td>
+<td>0.5 - FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td>1.2.</td>
+<td>UE Processing<sup>4</sup> of LPP Request Location Information
+message</td>
+<td>3</td>
+<td>10</td>
+<td>UE Processing of the PDSCH carrying the LPP Request Location
+Information message</td>
+</tr>
+<tr>
+<td colspan="2">DL-PRS Configuration = TPRS ×
+N<sub>Occ</sub><sup>5</sup></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.1</td>
+<td><p>DL-PRS Resources</p>
+<p>(DL-PRS Periodicity (T<sub>PRS</sub>) &amp;
+(N<sub>Occ</sub><sup>5</sup>= 1))</p></td>
+<td>1×4</td>
+<td>1×5120</td>
+<td>TPRS of 5120 selected as cautious estimate. It is a function of the
+PRS periodicity and number of occasions (N<sub>Occ</sub><sup>5</sup>=1)
+over which the measurements will be averaged.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>UE Processing<sup>4</sup> of DL-PRS Units (N,T)</td>
+<td>4</td>
+<td>0</td>
+<td><p>Duration of DL PRS symbols N in units of ms a UE can process
+every T ms assuming maximum DL PRS bandwidth in MHz. Minimum estimate is
+based on minimum T of 8 ms while cautious estimate is based on maximum T
+of 1280 ms.</p>
+<p>Processing time =max(0, T-TPRS )</p></td>
+</tr>
+<tr>
+<td colspan="2">PUSCH Preparation Time (If applicable) <sup>2</sup></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.1</td>
+<td>UL Transmission of Measurement Report without UL grant</td>
+<td>1</td>
+<td>3.8</td>
+<td>Cautious Estimate = max (FDD, TDD)= max(2.8, 3.8). Minimum value
+based on capability 2 (URLLC) device with readily available UL
+grant.</td>
+</tr>
+<tr>
+<td colspan="2">PHY End (If applicable) <sup>6</sup></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">4.1</td>
+<td rowspan="2">End Trigger (Air Interface<sup>1</sup> Latency)</td>
+<td>1 - FR1: 30 kHz SCS</td>
+<td>2 - FR1: 30 kHz SCS</td>
+<td rowspan="2">Transmission of the PUSCH from the UE carrying the LPP
+Provide Location Information (Air Interface Latency). Minimum value
+based on capability 2 (URLLC) device, while cautious estimate based on
+capability 1 (eMBB) device.</td>
+</tr>
+<tr>
+<td>0.25 - FR2: 120 kHz SCS</td>
+<td>0.5 - FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>End Trigger (gNB Processing<sup>3</sup>)</td>
+<td>3</td>
+<td>10</td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message containing the UE location estimate.</td>
+</tr>
+<tr>
+<td></td>
+<td><p>Total Values</p>
+<p>Components = {2}</p></td>
+<td>8</td>
+<td>5120</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2"></td>
+<td rowspan="2"><p>Without MG Gap and with Request and Provide Location
+Information message (If applicable)</p>
+<p>Components = {1-4}</p></td>
+<td>17 - FR1: 30 kHz SCS</td>
+<td>5147.8 - FR1: 30 kHz SCS</td>
+<td rowspan="2"></td>
+</tr>
+<tr>
+<td>15.5 - FR2: 120 kHz SCS</td>
+<td>5144.8 - FR2: 120 kHz SCS</td>
+</tr>
+<tr>
+<td colspan="5"><p>Notes:</p>
+<p>1: The Air Interface is dependent on the selected numerology, TDD/FDD
+configuration, and FR1/FR2 band.</p>
+<p>2: The PUSCH processing time is based on SR-based scheduling of PUSCH
+in [11, Ref 4].</p>
+<p>3: gNB Processing: The minimum estimate in [11, Ref 4] served as a
+guideline. The value is used for evaluation only; gNB processing delay
+may vary depending on implementation/deployment.</p>
+<p>4: UE Processing: The minimum estimate in [11, Ref 4] served as a
+guideline. The cautious estimates UE processing times of the RRC
+messages are based on the delay requirements in [11, Ref 5].</p>
+<p>5: The number of DL-PRS occasions, N<sub>Occ</sub> = 1, although this
+may not be a typical value for obtaining accurate positioning
+measurements. The positioning measurements would need to be averaged
+over a higher number of DL-PRS occasions for accurate measurements.</p>
+<p>.</p>
+<p>6: The LPP Request Location Information and Provide Location
+Information messages are considered in the evaluation as the UE may
+transmit the location estimate to the LMF, when applicable.</p>
+<p>7: The cautious estimate is not intended to indicate the physical
+layer latency upper bound.</p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.1.2.6-results-from-source-5">C.1.2.6 Results from source [5]
+</h4>
+<h5 id="c.1.2.6.1-description-of-evaluation-scenarios">C.1.2.6.1
+Description of evaluation scenarios</h5>
+<h5 id="c.1.2.6.2-latency-analysis-for-rel.16-solutions">C.1.2.6.2
+Latency analysis for Rel.16 solutions</h5>
+<p>Latency components are recommended to be captured in table and
+ordered consequently in time starting from the earliest one. Latency
+analysis for the Rel.16 NR positioning is provided in Table C.1.2.6.2-1
+to Table C.1.2.6.2-7.</p>
+<p>Table C.1.2.6.2-1: Rel.16 NR positioning latency [5]</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 12%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>[Case 1], [IIoT/ Commercial], [Frequency Band],
+[DL-TDOA/AoD]</p>
+<p>Source [UE, Network]/Destination [UE,Network]</p>
+<p>Positioning technique [DL-TDOA/AoD], type [DL], mode [UE-A],</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td><p>Value Range</p>
+<p>(ms)</p></td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td>[0.5-1,7.5]</td>
+<td><p>Transmission of the PDSCH from the gNB carrying the LPP Request
+Location Information message. Which is DL data transmission time</p>
+<p>The value can be assumed as 0.5ms-1ms for URLLC case based on [LS:
+R1-1901470 and 6.4.1, TS 38.824].</p>
+<p>The value can be assumed as 7.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>1: Successful decoding of the PDSCH carrying the LPP Request
+Location Information message at the UE side.</td>
+<td>10</td>
+<td>Successful decoding of the PDSCH carrying the LPP Request Location
+Information message can be equivalent to RRC processing time, which
+value is 10ms [12, TS 38.331]</td>
+</tr>
+<tr>
+<td>2: Transmission of the PUSCH from the UE carrying the measurement
+gap request message.</td>
+<td>[0.5-1, 12.5]</td>
+<td><p>It is equivalent to UL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 12.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>3: Successful decoding of the PUSCH carrying the Measurement gap
+request message at the gNB side.</td>
+<td>10</td>
+<td>Equivalent to RRC processing time, which value is 10ms [12, TS
+38.331]</td>
+</tr>
+<tr>
+<td>4: Transmission of the PDSCH from the gNB carrying the Measurement
+gap configuration message.</td>
+<td>[0.5-1, 7.5]</td>
+<td><p>It is equivalent to DL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 7.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>5: Successful decoding of the PDSCH carrying the Measurement gap
+configuration at the UE side.</td>
+<td>10</td>
+<td>Equivalent to RRC processing time, which value is 10ms [12, TS
+38.331]</td>
+</tr>
+<tr>
+<td>6: DL measurement &amp;process delay.</td>
+<td><p>[22~11514]</p>
+<p>Or</p>
+<p>[646~328960]</p></td>
+<td><p>-<span class="math inline">\(\left( \mathbf{LCM}\left(
+\mathbf{T}_{\mathbf{PRS}}\mathbf{,\ \ }\mathbf{T}_{\mathbf{\ measGap}}
+\right) \right)\mathbf{\cup}\left( \mathbf{\ T}_{\mathbf{Process\ time}}
+\right)\)</span> for one occasion and without considering beam sweeping
+case.</p>
+<p>- <span class="math inline">\(\left( \mathbf{LCM}\left(
+\mathbf{T}_{\mathbf{PRS}}\mathbf{,\ \ }\mathbf{T}_{\mathbf{\ measGap}}
+\right)\mathbf{\times}\mathbf{N}_{\mathbf{RxBeam}}\mathbf{\times}\mathbf{N}_{\mathbf{PosOccasion}}
+\right)\mathbf{\cup}\left( \mathbf{\ T}_{\mathbf{Process\ time}}
+\right)\)</span> for multiple occasion and beam sweeping case</p>
+<p>It is noted the extra process time is 2ms.</p></td>
+</tr>
+<tr>
+<td>7: Transmission of the PUSCH from the UE carrying the LPP Provide
+Location Information message.</td>
+<td>[0.5-1, 12.5]</td>
+<td><p>It is equivalent to UL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 12.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td>10</td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>64~</td>
+<td>The minimum total value is 64ms if only consider the minimum value
+for every step.</td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.6.2-2: Rel.16 NR positioning latency [5]</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 12%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>[Case 1-1], [IIoT/ Commercial], [Frequency Band],
+[DL-TDOA/AoD]</p>
+<p>Source [UE, Network]/Destination [UE,Network]</p>
+<p>Positioning technique [DL-TDOA/AoD], type [DL], mode [UE-A],</p>
+<p>Initial and Final RRC States [Idle/inactive]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td><p>Value Range</p>
+<p>(ms)</p></td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Additional latency for idle/inactive state to connected state</td>
+<td><p>Inactive: [21.3-178.5]</p>
+<p>Idle:[40-200]</p></td>
+<td><p>The latency for inactive to connected is 11.3-18.5 based on Table
+5.7.2.1-1 of 37.910 which don’t consider the periodicity of PRACH, So
+the total latency is 21.3-178.5 as the periodicity of PRACH is 10 ms
+-160 ms;</p>
+<p>In addition, compared to the latency for inactive to connected, the
+latency for idle to connected may have additional high layer steps, such
+as steps of gNB to AMF interactive, AMF processing etc. Therefore, we
+assume that additional 20ms for higher layer latency is needed at least,
+so the latency for idle to connected is assumed as 40~200ms.</p></td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td>[0.5-1,7.5]</td>
+<td><p>Transmission of the PDSCH from the gNB carrying the LPP Request
+Location Information message. Which is DL data transmission time</p>
+<p>The value can be assumed as 0.5ms-1ms for URLLC case based on [LS:
+R1-1901470 and 6.4.1, TS 38.824].</p>
+<p>The value can be assumed as 7.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>1: Successful decoding of the PDSCH carrying the LPP Request
+Location Information message at the UE side.</td>
+<td>10</td>
+<td>Successful decoding of the PDSCH carrying the LPP Request Location
+Information message can be equivalent to RRC processing time, which
+value is 10ms [12, TS 38.331]</td>
+</tr>
+<tr>
+<td>2: Transmission of the PUSCH from the UE carrying the measurement
+gap request message.</td>
+<td>[0.5-1, 12.5]</td>
+<td><p>It is equivalent to UL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 12.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>3: Successful decoding of the PUSCH carrying the Measurement gap
+request message at the gNB side.</td>
+<td>10</td>
+<td>Equivalent to RRC processing time, which value is 10ms [12, TS
+38.331]</td>
+</tr>
+<tr>
+<td>4: Transmission of the PDSCH from the gNB carrying the Measurement
+gap configuration message.</td>
+<td>[0.5-1, 7.5]</td>
+<td><p>It is equivalent to DL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 7.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>5: Successful decoding of the PDSCH carrying the Measurement gap
+configuration at the UE side.</td>
+<td>10</td>
+<td>Equivalent to RRC processing time, which value is 10ms [12, TS
+38.331]</td>
+</tr>
+<tr>
+<td>6: DL measurement &amp;process delay.</td>
+<td><p>[22~11514]</p>
+<p>Or</p>
+<p>[646~328960]</p></td>
+<td><p>-<span class="math inline">\(\left( \mathbf{LCM}\left(
+\mathbf{T}_{\mathbf{PRS}}\mathbf{,\ \ }\mathbf{T}_{\mathbf{\ measGap}}
+\right) \right)\mathbf{\cup}\left( \mathbf{\ T}_{\mathbf{Process\ time}}
+\right)\)</span> for one occasion and without considering beam sweeping
+case.</p>
+<p>- <span class="math inline">\(\left( \mathbf{LCM}\left(
+\mathbf{T}_{\mathbf{PRS}}\mathbf{,\ \ }\mathbf{T}_{\mathbf{\ measGap}}
+\right)\mathbf{\times}\mathbf{N}_{\mathbf{RxBeam}}\mathbf{\times}\mathbf{N}_{\mathbf{PosOccasion}}
+\right)\mathbf{\cup}\left( \mathbf{\ T}_{\mathbf{Process\ time}}
+\right)\)</span> for multiple occasion and beam sweeping case</p>
+<p>It is noted the extra process time is 2ms.</p></td>
+</tr>
+<tr>
+<td>7: Transmission of the PUSCH from the UE carrying the LPP Provide
+Location Information message.</td>
+<td>[0.5-1, 12.5]</td>
+<td><p>It is equivalent to UL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 12.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td>10</td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>85.3/104~</td>
+<td>The minimum total value is 85.3 for inactive and 104ms for idle
+state if only consider the minimum value for every step.</td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.6.2-3: Rel.16 NR positioning latency [5]</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 12%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>[Case 2], [IIoT/ Commercial], [Frequency Band],
+[DL-TDOA/AoD]</p>
+<p>Source [Network]/Destination [Network]</p>
+<p>Positioning technique [DL-TDOA], type [DL], mode [UE-B],</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td><p>Value Range</p>
+<p>(ms)</p></td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td>[0.5-1,7.5]</td>
+<td><p>For Physical Layer Latency Start time of UE based method, Alt.2
+is selected.</p>
+<p>Transmission of the PDSCH from the gNB carrying LPP message
+containing the assistance data. Which is DL data transmission time</p>
+<p>The value can be assumed as 0.5ms-1ms for URLLC case based on [LS:
+R1-1901470 and 6.4.1, TS 38.824].</p>
+<p>The value can be assumed as 7.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>1: Successful decoding of the PDSCH carrying the LPP Request
+Location Information message at the UE side.</td>
+<td>10</td>
+<td>Successful decoding of the PDSCH carrying the LPP Request Location
+Information message can be equivalent to RRC processing time, which
+value is 10ms [12, TS 38.331]</td>
+</tr>
+<tr>
+<td>2: Transmission of the PUSCH from the UE carrying the Measurement
+gap request message.</td>
+<td>[0.5-1, 12.5]</td>
+<td><p>It is equivalent to UL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 12.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>3: Successful decoding of the PUSCH carrying the Measurement gap
+request message at the gNB side.</td>
+<td>10</td>
+<td>Equivalent to RRC processing time, which value is 10ms [12, TS
+38.331]</td>
+</tr>
+<tr>
+<td>4: Transmission of the PDSCH from the gNB carrying the Measurement
+gap configuration message.</td>
+<td>[0.5-1, 7.5]</td>
+<td><p>It is equivalent to DL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 7.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>5: Successful decoding of the PDSCH carrying the Measurement gap
+configuration at the UE side.</td>
+<td>10</td>
+<td>Equivalent to RRC processing time, which value is 10ms [12, TS
+38.331]</td>
+</tr>
+<tr>
+<td>6: DL measurement &amp;process delay.</td>
+<td><p>[22~11514]</p>
+<p>Or</p>
+<p>[646~328960]</p></td>
+<td><p>-<span class="math inline">\(\left( \mathbf{LCM}\left(
+\mathbf{T}_{\mathbf{PRS}}\mathbf{,\ \ }\mathbf{T}_{\mathbf{\ measGap}}
+\right) \right)\mathbf{\cup}\left( \mathbf{\ T}_{\mathbf{Process\ time}}
+\right)\)</span> for one occasion and without considering beam sweeping
+case.</p>
+<p>- <span class="math inline">\(\left( \mathbf{LCM}\left(
+\mathbf{T}_{\mathbf{PRS}}\mathbf{,\ \ }\mathbf{T}_{\mathbf{\ measGap}}
+\right)\mathbf{\times}\mathbf{N}_{\mathbf{RxBeam}}\mathbf{\times}\mathbf{N}_{\mathbf{PosOccasion}}
+\right)\mathbf{\cup}\left( \mathbf{\ T}_{\mathbf{Process\ time}}
+\right)\)</span> for multiple occasion and beam sweeping case</p>
+<p>It is noted the extra process time is 2ms.</p></td>
+</tr>
+<tr>
+<td>7: Calculation of Location Estimate at the UE</td>
+<td>2</td>
+<td>Calculation of Location Estimate at the UE</td>
+</tr>
+<tr>
+<td>8: Transmission of the PUSCH from the UE carrying the LPP Provide
+Location Information message.</td>
+<td>[0.5-1, 12.5]</td>
+<td><p>It is equivalent to UL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 12.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td>10</td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>66~</td>
+<td>The minimum total value is 66ms if only consider the minimum value
+for every step.</td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.6.2-4: Rel.16 NR positioning latency [5]</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 12%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>[Case 3], [IIoT/ Commercial], [Frequency Band],
+[DL-TDOA/AoD]</p>
+<p>Source [UE]/Destination [UE]</p>
+<p>Positioning technique [DL-TDOA], type [DL], mode [UE-B],</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td><p>Value Range</p>
+<p>(ms)</p></td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td>[0.5-1,7.5]</td>
+<td><p>Transmission of the PDSCH from the gNB carrying LPP message
+containing the assistance data. Which is DL data transmission time</p>
+<p>The value can be assumed as 0.5ms-1ms for URLLC case based on [LS:
+R1-1901470 and 6.4.1, TS 38.824].</p>
+<p>The value can be assumed as 7.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>1: Successful decoding of the PDSCH carrying the LPP Request
+Location Information message at the UE side.</td>
+<td>10</td>
+<td>Successful decoding of the PDSCH carrying the LPP Request Location
+Information message can be equivalent to RRC processing time, which
+value is 10ms [12, TS 38.331]</td>
+</tr>
+<tr>
+<td>2: Transmission of the PUSCH from the UE carrying the Measurement
+gap request message.</td>
+<td>[0.5-1, 12.5]</td>
+<td><p>It is equivalent to UL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 12.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>3: Successful decoding of the PUSCH carrying the Measurement gap
+request message at the gNB side.</td>
+<td>10</td>
+<td>Equivalent to RRC processing time, which value is 10ms [12, TS
+38.331]</td>
+</tr>
+<tr>
+<td>4: Transmission of the PDSCH from the gNB carrying the Measurement
+gap configuration message.</td>
+<td>[0.5-1, 7.5]</td>
+<td><p>It is equivalent to DL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 7.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>5: Successful decoding of the PDSCH carrying the Measurement gap
+configuration at the UE side.</td>
+<td>10</td>
+<td>Equivalent to RRC processing time, which value is 10ms [12, TS
+38.331]</td>
+</tr>
+<tr>
+<td>6: DL measurement &amp;process delay.</td>
+<td><p>[22~11514]</p>
+<p>Or</p>
+<p>[646~328960]</p></td>
+<td><p>-<span class="math inline">\(\left( \mathbf{LCM}\left(
+\mathbf{T}_{\mathbf{PRS}}\mathbf{,\ \ }\mathbf{T}_{\mathbf{\ measGap}}
+\right) \right)\mathbf{\cup}\left( \mathbf{\ T}_{\mathbf{Process\ time}}
+\right)\)</span> for one occasion and without considering beam sweeping
+case.</p>
+<p>- <span class="math inline">\(\left( \mathbf{LCM}\left(
+\mathbf{T}_{\mathbf{PRS}}\mathbf{,\ \ }\mathbf{T}_{\mathbf{\ measGap}}
+\right)\mathbf{\times}\mathbf{N}_{\mathbf{RxBeam}}\mathbf{\times}\mathbf{N}_{\mathbf{PosOccasion}}
+\right)\mathbf{\cup}\left( \mathbf{\ T}_{\mathbf{Process\ time}}
+\right)\)</span> for multiple occasion and beam sweeping case</p>
+<p>It is noted the extra process time is 2ms.</p></td>
+</tr>
+<tr>
+<td>7: Calculation of Location Estimate at the UE</td>
+<td>2</td>
+<td>Calculation of Location Estimate at the UE</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>55.5~</td>
+<td>The minimum total value is 55.5ms if only consider the minimum value
+for every step.</td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.6.2-5: Rel.16 NR positioning latency [5]</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 12%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>[Case 4], [IIoT/ Commercial], [Frequency Band],
+[UL-TDOA/UL-AoA]</p>
+<p>Source [UE,Network]/Destination [UE,Network]</p>
+<p>Positioning technique [UL-TDOA/UL-AoA], type [DL], mode [UE-A],</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td><p>Value Range</p>
+<p>(ms)</p></td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td>10</td>
+<td>Reception and Successful decode the NRPPa measurement request
+message from the LMF at gNB, the value is equivalent to RRC processing
+time, which value is 10ms [12, TS 38.331]</td>
+</tr>
+<tr>
+<td>1: UL measurement &amp;process delay.</td>
+<td><p>FR1:</p>
+<p>0.5-2560</p>
+<p>FR2:</p>
+<p>0.125~640</p></td>
+<td><p>For case 1: one occasion and without considering beam
+sweeping</p>
+<p>UL measurement equals to the periodicity of SRS</p>
+<p>SRS periodicity is {1, 2, 4, 5, 8, 10, 16, 20, 32, 40, 64, 80, 160,
+320, 640, 1280, 2560}slots</p>
+<p>15kHz 1ms-2560ms</p>
+<p>30kHz 0.5ms-1280ms</p>
+<p>60kHz 0.25ms-640ms</p>
+<p>120kHz 0.125ms-320ms</p>
+<p>For case 2: Multiple positioning occasion and beam sweeping</p>
+<p>UL measurement equals to the periodicity of SRS<span
+class="math inline">\(\mathbf{\times}N_{RxBeam} \times
+N_{PosOccasion}\)</span></p>
+<p>gNB processing delay is assumed as zero</p></td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td>0.5</td>
+<td>The transmission by the gNB of the NRPPa measurement response
+message. Which value less than the DL/UL data transmission time. It can
+be seen as the gNB processing time (<span
+class="math inline">\(T_{process\ time\_ pdsch}\)</span>) and smaller
+than 0.5ms.</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>30.5~</td>
+<td>The minimum total value is 30.5 ms if the periodicity of SRS is 20ms
+and the same as the DL minimum periodicity.</td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.6.2-6: Rel.16 NR positioning latency [5]</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 12%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>[Case 5], [IIoT/ Commercial], [Frequency Band],
+[UL-TDOA/UL-AoA]</p>
+<p>Source [UE,Network]/Destination [UE,Network]</p>
+<p>Positioning technique [UL-TDOA/UL-AoA], type [DL], mode [UE-A],</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td><p>Value Range</p>
+<p>(ms)</p></td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td>10</td>
+<td>Reception and Successful decode the NRPPa SRS activation and
+measurement request message from the LMF at gNB, the value is equivalent
+to RRC processing time, which value is 10ms [12, TS 38.331]</td>
+</tr>
+<tr>
+<td>1. Transmission of the PDCCH from the gNB carrying activate SRS
+message</td>
+<td>0.5</td>
+<td><p>Transmission of the PDCCH from the gNB carrying activate SRS
+message. Which value less than the DL/UL data transmission time. It
+needs to consider <span class="math inline">\(T_{process\ time\_
+pdcch}\)</span>, <span class="math inline">\(T_{align\ time}\)</span>
+and<span class="math inline">\(T_{PDCCH}\)</span> as below and smaller
+than 0.5ms.</p>
+<p>- the gNB processing time (<span class="math inline">\(T_{process\
+time\_ pdcch}\ \)</span>)and the alignment delay(<span
+class="math inline">\(T_{align\ time}\ \)</span>)</p>
+<p>- The alignment delay includes the gap between the two consecutive
+PDCCH monitoring occasions for FDD, the UL/DL configuration for TDD, and
+the scheduling constraint due to the slot boundaries.</p>
+<p>- PDCCH duration (<span class="math inline">\(T_{PDCCH}\
+\)</span>)</p></td>
+</tr>
+<tr>
+<td>2: UL measurement &amp;process delay.</td>
+<td>0-32</td>
+<td><p>The slot offset of aperiodic is 0-32 slots</p>
+<p>15kHz 0ms-32ms</p>
+<p>30kHz 0ms-16ms</p>
+<p>60kHz 0ms-8ms</p>
+<p>120kHz 0ms-4ms</p></td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td>0.5-1</td>
+<td>The transmission by the gNB of the NRPPa measurement response
+message</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>11~</td>
+<td>The minimum total value is 11ms if only considers the minimum value
+for every step.</td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.6.2-7: Rel.16 NR positioning latency [5]</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 12%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>[Case 6], [IIoT/ Commercial], [Frequency Band],
+[Multi-RTT]</p>
+<p>Source [UE,Network]/Destination [UE,Network]</p>
+<p>Positioning technique [Multi-RTT], type [DL], mode [UE-A],</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td><p>Value Range</p>
+<p>(ms)</p></td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td>[0.5-1,7.5]</td>
+<td><p>Transmission of the PDSCH from the gNB carrying the LPP Request
+Location Information message. Which is DL data transmission time</p>
+<p>The value can be assumed as 0.5ms-1ms for URLLC case based on [LS:
+R1-1901470 and 6.4.1, TS 38.824].</p>
+<p>The value can be assumed as 7.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>1: Successful decoding of the PDSCH carrying the LPP Request
+Location Information message at the UE side.</td>
+<td>10</td>
+<td>Successful decoding of the PDSCH carrying the LPP Request Location
+Information message can be equivalent to RRC processing time, which
+value is 10ms [12, TS 38.331]</td>
+</tr>
+<tr>
+<td>2: Transmission of the PUSCH from the UE carrying the Measurement
+gap request message.</td>
+<td>[0.5-1, 12.5]</td>
+<td><p>It is equivalent to UL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 12.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>3: Successful decoding of the PUSCH carrying the Measurement gap
+request message at the gNB side.</td>
+<td>10</td>
+<td>Equivalent to RRC processing time, which value is 10ms [12, TS
+38.331]</td>
+</tr>
+<tr>
+<td>4: Transmission of the PDSCH from the gNB carrying the Measurement
+gap configuration message.</td>
+<td>[0.5-1, 7.5]</td>
+<td><p>It is equivalent to DL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 7.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>5: Successful decoding of the PDSCH carrying the Measurement gap
+configuration at the UE side.</td>
+<td>10</td>
+<td>Equivalent to RRC processing time, which value is 10ms [12, TS
+38.331]</td>
+</tr>
+<tr>
+<td>6: DL measurement &amp;process delay.</td>
+<td><p>[22~11514]</p>
+<p>Or</p>
+<p>[646~328960]</p></td>
+<td><p>-<span class="math inline">\(\left( \mathbf{LCM}\left(
+\mathbf{T}_{\mathbf{PRS}}\mathbf{,\ \ }\mathbf{T}_{\mathbf{\ measGap}}
+\right) \right)\mathbf{\cup}\left( \mathbf{\ T}_{\mathbf{Process\ time}}
+\right)\)</span> for one occasion and without considering beam sweeping
+case.</p>
+<p>- <span class="math inline">\(\left( \mathbf{LCM}\left(
+\mathbf{T}_{\mathbf{PRS}}\mathbf{,\ \ }\mathbf{T}_{\mathbf{\ measGap}}
+\right)\mathbf{\times}\mathbf{N}_{\mathbf{RxBeam}}\mathbf{\times}\mathbf{N}_{\mathbf{PosOccasion}}
+\right)\mathbf{\cup}\left( \mathbf{\ T}_{\mathbf{Process\ time}}
+\right)\)</span> for multiple occasion and beam sweeping case</p>
+<p>It is noted the extra process time is 2ms.</p></td>
+</tr>
+<tr>
+<td>7: Transmission of the PUSCH from the UE carrying the LPP Provide
+Location Information message.</td>
+<td>[0.5-1, 12.5]</td>
+<td><p>It is equivalent to UL data transmission time</p>
+<p>The value also can be assumed as 0.5ms-1ms for URLLC case based on
+[LS: R1-1901470 and 6.4.1, TS 38.824]</p>
+<p>The value can be assumed as 12.5ms for non-URLLC based on [section
+5.2.1, TS 36.881].</p></td>
+</tr>
+<tr>
+<td>8. Successful decoding of the PUSCH carrying the LPP Provide
+Location Information message</td>
+<td>10</td>
+<td>Successful decoding of the PUSCH carrying the LPP Provide Location
+Information message</td>
+</tr>
+<tr>
+<td>9. The alignment delay is the gap between End trigger of DL
+positioning and Start trigger of UL positioning</td>
+<td>[TBD]</td>
+<td><span class="math inline">\(T_{Align\_ DL\_ UL}\)</span>: The
+alignment delay is the gap between End trigger of DL positioning and
+Start trigger of UL positioning. If <span
+class="math inline">\(T_{Align\_ DL\_ UL} &gt; 0\ ,\ \)</span> Start
+trigger timing of UL positioning is later than End trigger timing of DL
+positioning and the multi-RTT latency will bigger than the sum(TUE
+assisted DL only, TUE assisted UL only). If - TUE assisted DL only &lt;
+<span class="math inline">\(T_{Align\_ DL\_ UL} &lt; 0,\ \)</span> Start
+trigger timing of UL positioning is earlier than End trigger timing of
+DL positioning and the multi-RTT latency will less than the sum(TUE
+assisted DL only, TUE assisted UL only).</td>
+</tr>
+<tr>
+<td>10. Reception and Successful decode the NRPPa measurement request
+message from the LMF at gNB</td>
+<td>10</td>
+<td>Reception and Successful decode the NRPPa measurement request
+message from the LMF at gNB, the value is equivalent to RRC processing
+time, which value is 10ms [12, TS 38.331]</td>
+</tr>
+<tr>
+<td>11: UL measurement &amp;process delay.</td>
+<td>0.125-2560</td>
+<td><p>For case 1: one occasion and without considering beam
+sweeping</p>
+<p>UL measurement equals to the periodicity of SRS</p>
+<p>SRS periodicity is {1, 2, 4, 5, 8, 10, 16, 20, 32, 40, 64, 80, 160,
+320, 640, 1280, 2560} slots</p>
+<p>15kHz 1ms-2560ms</p>
+<p>30kHz 0.5ms-1280ms</p>
+<p>60kHz 0.25ms-640ms</p>
+<p>120kHz 0.125ms-320ms</p>
+<p>For case 2: Multiple positioning occasion and beam sweeping</p>
+<p>UL measurement equals to the periodicity of SRS<span
+class="math inline">\(\mathbf{\times}N_{RxBeam} \times
+N_{PosOccasion}\)</span></p>
+<p>gNB processing delay is assumed as zero</p></td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td>0.5</td>
+<td>The transmission by the gNB of the NRPPa measurement response
+message. Which value less than the DL/UL data transmission time. It can
+be seen as the gNB processing time (<span
+class="math inline">\(T_{process\ time\_ pdsch}\)</span>) and smaller
+than 0.5ms.</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>94.5+<span class="math inline">\(T_{Align\_ DL\_ UL}\)</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.1.2.7-results-from-source-12">C.1.2.7 Results from source
+[12]</h4>
+<h5 id="c.1.2.7.1-description-of-evaluation-scenarios">C.1.2.7.1
+Description of evaluation scenarios</h5>
+<p>The following positioning method are included for physical layer
+latency analysis</p>
+<p>- UE-assisted DL-based method: DL-TDOA</p>
+<p>- UE-assisted UL-based method: UL-TDOA</p>
+<p>- UE- based method: UE-based positioning calculation</p>
+<h5 id="c.1.2.7.2-latency-analysis-for-rel.16-solutions">C.1.2.7.2
+Latency analysis for Rel.16 solutions</h5>
+<p>Latency components are recommended to be captured in table and
+ordered consequently in time starting from the earliest oneLatency
+analysis for the Rel.16 NR positioning are provided in Tables
+C.1.2.7.2-1~3.</p>
+<p>Table C.1.2.7.2-1: Rel.16 NR positioning latency DL-TDOA</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 58%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case 1 and 4: DL-TDOA. 60KHz and 120 KHz</p>
+<p>Source UE/Destination NW</p>
+<p>Positioning technique:DL-TDOA,</p>
+<p>Initial and Final RRC States:CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td></td>
+<td>gNB sending PDSCH carrying LPP location request message</td>
+</tr>
+<tr>
+<td>Process LPP msg</td>
+<td>10ms</td>
+<td>UE process LPP location request information message</td>
+</tr>
+<tr>
+<td>measurement gap configuration</td>
+<td>10ms+10ms: RRC reconfiguration delay</td>
+<td>UE requests MG and gNB configures MG</td>
+</tr>
+<tr>
+<td>DL PRS reception and prcoess</td>
+<td><p>Minimum value is 20ms + 1ms</p>
+<p>DL PRS periodicity can be 4, 5, 8, 10, 16, 20, 32, 40, 64, 80,160,
+320,640, 1280, 2560, 5120 or10240 ms</p>
+<p>MG periodicity can be 20, 40, 80 or 160ms</p>
+<p>Processing time depends on the UE capability: Duration of DL PRS
+symbols N in units of ms a UE can process every T ms assuming maximum DL
+PRS bandwidth in MHz, which is supported and reported by UE.</p>
+<p>a) T: {8, 16, 20, 30, 40, 80, 160, 320, 640, 1280} ms</p>
+<p>b) N: {0.125, 0.25, 0.5, 1, 2, 4, 6, 8, 12, 16, 20, 25, 30, 32, 35,
+40, 45, 50} ms</p></td>
+<td>DL PRS reception and measurement</td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td><p>12.5ms for 15KHz</p>
+<p>6.25ms for 30KHz</p>
+<p>3.125ms for 60KHz</p>
+<p>1.56 ms for 120KHz</p>
+<p>UE sends PUCCH SR to request UL grant</p>
+<p>UE receives DCI scheduling PUSCH</p>
+<p>UE sends PUSCH carrying measurement report</p>
+<p>PUSCH decodes PUSCH</p></td>
+<td>UE sends PUSCH carrying location measurement report and gNB decode
+PUSCH</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><p>For FR1 (60kHz): 54.125ms</p>
+<p>For FR2 (120KHz): 52.56ms</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.7.2-2: Rel.16 NR positioning latency of UL-TDOA</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 29%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case 2 and 5: UL-TDOA. 60KHz and 120 KHz</p>
+<p>Source UE/Destination NW</p>
+<p>Positioning technique:DL-TDOA,</p>
+<p>Initial and Final RRC States:CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td></td>
+<td>gNB receives NPPa measurement request</td>
+</tr>
+<tr>
+<td>gNB process NPPa msg</td>
+<td>10ms</td>
+<td>gNB process the NPPa measurement request</td>
+</tr>
+<tr>
+<td>SRS configuration</td>
+<td>10ms+10ms: RRC reconfiguration delay</td>
+<td>gNB configures SRS</td>
+</tr>
+<tr>
+<td>SRS transmission</td>
+<td><p>Assume periodic SRS resource. The periodicity of SRS can be 1, 2,
+4, 5, 8, 10, 16, 20 .. slots.</p>
+<p>So the minimum latency is:</p>
+<p>1ms for 15KHz</p>
+<p>0.25ms for 60KHz.</p>
+<p>0.125ms for 120KHz</p></td>
+<td>UE transmits SRS for positioning</td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td>Assume that 3ms is needed by gNB to measure SRS and process the
+NPPPa measurement response</td>
+<td>gNB measures SRS for positioning and reports the NPPPa measurement
+response</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><p>For FR1 (60kHz): 23.25ms</p>
+<p>For FR2 (120KHz): 23.125ms</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.7.2-3: Rel.16 NR positioning latency of UE-based
+method</p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 32%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case 3 and 6 :UE-based method 60KHz and 120 KHz</p>
+<p>Source UE/Destination NW</p>
+<p>Positioning technique:DL-TDOA,</p>
+<p>Initial and Final RRC States:CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td>10ms RRC processing delay</td>
+<td>UE sends RRC Location measurement indication</td>
+</tr>
+<tr>
+<td>measurement gap configuration</td>
+<td>10ms: RRC reconfiguration delay</td>
+<td>gNB sends RRC measurement gap configuration</td>
+</tr>
+<tr>
+<td>DL PRS reception and measurement</td>
+<td><p>Minimum value is 20ms + 1ms</p>
+<p>DL PRS periodicity can be 4, 5, 8, 10, 16, 20, 32, 40, 64, 80,160,
+320,640, 1280, 2560, 5120 or 10240ms. However, the measurement gap
+periodicity can be 20, 40, 80 or 160ms</p>
+<p>Processing time depends on the UE capability. Assume extra 1ms is
+needed for the UE to finish measurement</p></td>
+<td>DL PRS reception and measurement</td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td>3 ms</td>
+<td>UE completes location calculation</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><p>For FR1 (60kHz): 54.125ms</p>
+<p>For FR2 (120KHz): 52.56ms</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.1.2.8-results-from-source-10">C.1.2.8 Results from source [10]
+</h4>
+<h5 id="c.1.2.8.1-description-of-evaluation-scenarios">C.1.2.8.1
+Description of evaluation scenarios</h5>
+<p>In order to provide NR positioning physical layer latency analysis,
+we use the following reference system configuration which is in favor of
+low latency positioning and were used in NR URLLC studies [3GPP 38.824,
+v16.0.0]</p>
+<p>- Spectrum – FDD / FR1</p>
+<p>- SCS – 30 kHz</p>
+<p>- PDCCH,</p>
+<p>- Monitoring occasions – 7 per slot [1,0,1,0,1,0,1,0,1,0,1,0,1,0]</p>
+<p>- Duration – 1 symbol</p>
+<p>- PDSCH</p>
+<p>- One symbol overlap with PDCCH</p>
+<p>- Duration – 2, 4, 7 symbols (Type B mapping)</p>
+<p>- Slot boundary is respected (i.e. transmission does not cross slot
+boundary)</p>
+<p>- PUSCH</p>
+<p>- Any symbol, subject to slot boundary constraint (i.e. transmission
+does not cross slot boundary)</p>
+<p>- Duration – 2, 4, 7 symbols (Type B mapping w/ front loaded
+DMRS)</p>
+<p>- PUCCH</p>
+<p>- 7 occasions per slot [1,0,1,0,1,0,1,0,1,0,1,0,1,0] for SR and HARQ
+feedback</p>
+<p>- Duration – 1 symbol</p>
+<p>- No HARQ – initial transmission is successful</p>
+<p>- SRS for positioning</p>
+<p>- Single resource, 1 symbol duration</p>
+<p>- Periodicity – each slot</p>
+<p>- DL PRS</p>
+<p>- 18 resources / 4 symbols per resource / 12 Comb-6 symbols per
+period</p>
+<p>- Periodicity – 20 ms</p>
+<p>- UE DL PRS processing capability – N = 0.5 ms (~12 symbols @30kHz),
+T = 8 ms</p>
+<p>- UE capability for Tproc,1 Tproc,2</p>
+<p>- Capability # 2 (for low latency)</p>
+<p>- Measurement gap</p>
+<p>- Type 1: BWP switching = 2 slots @ 30kHz</p>
+<p>- MGL = 5.5 ms, MGRP = 20ms</p>
+<p>- 2 BWP switching times per occasion (from and to active DL BWP) + DL
+PRS duration =&gt; 5 slots</p>
+<p>- Nsample = 4 (RAN4 core measurements requirements)</p>
+<p>- UE is expected to perform measurements on DL PRS resource 4 times
+(i.e. across 4 periods)</p>
+<h5 id="c.1.2.8.2-latency-analysis-for-rel.16-solutions">C.1.2.8.2
+Latency analysis for Rel.16 solutions</h5>
+<p>Latency analysis for the Rel.16 NR positioning is provided in Table
+C.1.2.8.2-1, C.1.2.8.2-2 and C.1.2.8.2-3.</p>
+<p>Table C.1.2.8.2-1: Rel.16 NR positioning latency for
+DL-TDOA/DL-AoD</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 13%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case 1, InF, FR1, R.16 DL-TDOA/DL-AoD</p>
+<p>Source NW / Destination NW – (RAN procedure is transparent to
+source/destination)</p>
+<p>Positioning technique: DL-TDOA/DL-AoD, type DL only, mode: UE-A,</p>
+<p>Initial and Final RRC States: CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Step 1. Location Request</td>
+<td><p>24.25 symbols</p>
+<p>0.8661 ms</p></td>
+<td>Value is provided for L1 components only</td>
+</tr>
+<tr>
+<td>1A: PDCCH+PDSCH preparation time</td>
+<td><p>4.75 symbols</p>
+<p>0.1696 ms</p></td>
+<td><p>Not specified. For analysis, the assumption from [38.824] is
+used: UE's N2/2 + X for scheduling the initial PDSCH. X = 2/4/8 symbols
+for SCS = 30/60/120kHz, respectively.</p>
+<p>N2 = 5.5 symbols@30kHz SCS for UE capability 2</p>
+<p>5.5/2+2 = 4.75</p></td>
+</tr>
+<tr>
+<td>1B: PDCCH+PDSCH alignment time</td>
+<td><p>7 symbols</p>
+<p>0.25 ms</p></td>
+<td><p>Depends on configuration of PDCCH monitoring occasions, PDSCH
+transmission duration, time to slot boundary, and TDD configuration</p>
+<p>Worst case: 7 symbols@30kHz for selected reference system
+configuration</p></td>
+</tr>
+<tr>
+<td>1C: PDCCH+PDSCH transmission time</td>
+<td><p>7 symbols</p>
+<p>0.25 ms</p></td>
+<td><p>Depends on PDCCH+PDSCH transmission duration</p>
+<p>7 symbols@30kHz for selected reference system configuration</p></td>
+</tr>
+<tr>
+<td>1D: PDCCH+PDSCH processing time</td>
+<td><p>5.5 symbols</p>
+<p>0.1964 ms</p></td>
+<td><p>Specified as UE PDSCH processing Tproc,1. Tproc,1 = N1 + d11+d2,
+d11 = 1 symbol, d2=0, N1 = 4.5 for 30 kHz SCS and UE capability 2</p>
+<p>5.5 symbols@30kHz for selected reference configuration</p></td>
+</tr>
+<tr>
+<td><p>1E:</p>
+<p>[L3 UE LPP processing]</p></td>
+<td>[~280symbols<br />
+~10 ms]</td>
+<td><p>Not specified.</p>
+<p>[The following number is assumed – 5ms DL RRC processing time and 5ms
+LPP processing time. TBD by RAN WG2]</p></td>
+</tr>
+<tr>
+<td>Step 2. Measurement Gap Request</td>
+<td><p>39.75 symbols</p>
+<p>1.4196 ms</p></td>
+<td>Value is provided for L1 components only</td>
+</tr>
+<tr>
+<td>2A: [L3 UE RRC processing delay]</td>
+<td><p>56-140 symbols</p>
+<p>2-5ms</p></td>
+<td><p>[Not defined:</p>
+<p>2-5ms UE RRC processing delay is assumed in this analysis</p>
+<p>TBD by RAN WG2]</p></td>
+</tr>
+<tr>
+<td>2B: SR preparation time</td>
+<td>0 symbols 0 ms</td>
+<td>0ms is assumed since SR can be prepared in advance based on UE
+implementation</td>
+</tr>
+<tr>
+<td>2C: SR alignment time</td>
+<td><p>2 symbols</p>
+<p>0.0714 ms</p></td>
+<td><p>Depends on configuration of SR monitoring occasions, TDD
+configuration</p>
+<p>Worst case: 2 symbols@30kHz for selected reference system
+configuration</p></td>
+</tr>
+<tr>
+<td>2D: SR transmission time</td>
+<td>1 symbol 0.0357 ms</td>
+<td>1 symbol for selected reference system configuration</td>
+</tr>
+<tr>
+<td>2E: SR processing time</td>
+<td><p>4.5 symbols</p>
+<p>0.1607 ms</p></td>
+<td>Not specified. For analysis, the assumption from [38.824] is used.
+For SR-based PUSCH, gNB's processing time for SR is UE's N1.</td>
+</tr>
+<tr>
+<td>2F: PDCCH preparation time</td>
+<td><p>2.25 symbols</p>
+<p>0.0804 ms</p></td>
+<td><p>Not specified. For analysis, the assumptions from the [38.824]
+are used to derive PDCCH preparation time equal to N1/2:</p>
+<p>gNB's PUSCH-to-PDCCH processing time (PDCCH alignment has to be
+included separately) is UE's N1 + X; gNB's decoding time for the last
+PUSCH is UE's N1/2 + X; X = 2/4/8 symbols for SCS = 30/60/120KHz,
+respectively.</p></td>
+</tr>
+<tr>
+<td>2G: PDCCH alignment time</td>
+<td><p>2 symbols</p>
+<p>0.0714 ms</p></td>
+<td>Depends on configuration of PDCCH monitoring occasions and TDD
+configuration</td>
+</tr>
+<tr>
+<td>2H: PDCCH transmission time</td>
+<td>1 symbol 0.0357 ms</td>
+<td>1 symbol for selected reference system configuration</td>
+</tr>
+<tr>
+<td>2I: PUSCH preparation time</td>
+<td><p>6.5 symbols</p>
+<p>0.2321 ms</p></td>
+<td><p>Specified as UE PUSCH preparation time Tproc,2 = N2+d21+d2 (if no
+BWP switch)</p>
+<p>N2 = 5.5@30kHz, d21 = 1, d2 = 0.</p></td>
+</tr>
+<tr>
+<td>2J: PUSCH alignment time</td>
+<td><p>7 symbols</p>
+<p>0.2500 ms</p></td>
+<td>Worst case:7 symbols for given reference configuration</td>
+</tr>
+<tr>
+<td>2K: PUSCH transmission time</td>
+<td><p>7 symbols</p>
+<p>0.2500 ms</p></td>
+<td>7 symbols for selected reference system configuration</td>
+</tr>
+<tr>
+<td>2L: PUSCH processing time</td>
+<td><p>6.5 symbols</p>
+<p>0.2321 ms</p></td>
+<td>Not specified. For analysis, the assumption from the [38.824] is
+used. gNB's decoding time for the last PUSCH is UE's N1/2 + X; X = 2/4/8
+symbols for SCS = 30/60/120KHz, respectively.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 13%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr>
+<th>2M: [L3 gNB RRC processing delay]</th>
+<th><p>[~84 symbols</p>
+<p>~3 ms]</p></th>
+<th><p>[Not specified.</p>
+<p>3ms are assumed in this analysis for gNB RRC processing delay</p>
+<p>TBD by RAN WG2]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Step 3. Measurement Gap Configuration</td>
+<td><p>24.25 symbols</p>
+<p>0.8661 ms</p></td>
+<td>Value is provided for L1 components only</td>
+</tr>
+<tr>
+<td>3A: PDCCH+PDSCH preparation time</td>
+<td><p>4.75 symbols</p>
+<p>0.1696 ms</p></td>
+<td>Same as for 1A</td>
+</tr>
+<tr>
+<td>3B: PDCCH+PDSCH alignment time</td>
+<td><p>7 symbols</p>
+<p>0.2500 ms</p></td>
+<td>Same as for 1B</td>
+</tr>
+<tr>
+<td>3C: PDCCH+PDSCH transmission time</td>
+<td><p>7 symbols</p>
+<p>0.2500 ms</p></td>
+<td>Same as for 1C</td>
+</tr>
+<tr>
+<td>3D: PDCCH+PDSCH processing time</td>
+<td><p>5.5 symbols</p>
+<p>0.1964 ms</p></td>
+<td>Same as for 1D</td>
+</tr>
+<tr>
+<td>3E: [L3 UE RRC processing delay]</td>
+<td><p>[~280symbols</p>
+<p>10 ms]</p></td>
+<td><p>[Specified - 10ms</p>
+<p>TBD by RAN WG2]</p></td>
+</tr>
+<tr>
+<td>Step 4. DL PRS Processing</td>
+<td>88,5 ms</td>
+<td>Value is provided for L1 components only</td>
+</tr>
+<tr>
+<td>4A: DL PRS alignment time</td>
+<td><p>560symbols</p>
+<p>20 ms</p></td>
+<td><p>Depends on DL PRS periodicity settings</p>
+<p>Worst case: 20ms for selected reference system configuration</p></td>
+</tr>
+<tr>
+<td>4B: DL PRS processing and report delay</td>
+<td><p>1918 symbols</p>
+<p>68.5 ms</p></td>
+<td><p>Depends on DL PRS configuration, MG configuration (length and
+period) and UE DL PRS processing capabilities(N,T). MG should
+accommodate DL BWP switching.</p>
+<p>The report delay is defined by 38.133 in Section 9.9.2.5.</p>
+<p>For considered, reference system configuration it is equal to
+3*20+8+0.5 = 68.5ms</p>
+<p>Note: may be revised by RAN WG4</p></td>
+</tr>
+<tr>
+<td>Step 5. DL PRS Measurement Report</td>
+<td><p>39.75 symbols</p>
+<p>1.4196 ms</p></td>
+<td>Value is provided for L1 components only</td>
+</tr>
+<tr>
+<td>5A: [L3: UE RRC + LPP processing delay]</td>
+<td><p>[56-140 symbols</p>
+<p>2-5ms]</p></td>
+<td><p>[Not defined</p>
+<p>2-5 ms UE RRC processing time and 5ms UE LPP processing time are
+assumed</p>
+<p>TBD by RAN WG2]</p></td>
+</tr>
+<tr>
+<td>5B: SR preparation time</td>
+<td>0 symbols 0 ms</td>
+<td>Same as for 2B</td>
+</tr>
+<tr>
+<td>5C: SR alignment time</td>
+<td><p>2 symbols</p>
+<p>0.0714 ms</p></td>
+<td>Same as for 2C</td>
+</tr>
+<tr>
+<td>5D: SR transmission time</td>
+<td>1 symbol 0.0357 ms</td>
+<td>Same as for 2D</td>
+</tr>
+<tr>
+<td>5E: SR processing time</td>
+<td><p>4.5 symbols</p>
+<p>0.1607 ms</p></td>
+<td>Same as for 2E</td>
+</tr>
+<tr>
+<td>5F: PDCCH preparation time</td>
+<td><p>2.25 symbols</p>
+<p>0.0804 ms</p></td>
+<td>Same as for 2F</td>
+</tr>
+<tr>
+<td>5G: PDCCH alignment time</td>
+<td><p>2 symbols</p>
+<p>0.0714 ms</p></td>
+<td>Same as for 2G</td>
+</tr>
+<tr>
+<td>5H: PDCCH transmission time</td>
+<td>1 symbol 0.0357 ms</td>
+<td>Same as for 2H</td>
+</tr>
+<tr>
+<td>5I: PUSCH preparation time</td>
+<td><p>6.5 symbols</p>
+<p>0.2321 ms</p></td>
+<td>Same as for 2I</td>
+</tr>
+<tr>
+<td>5J: PUSCH alignment time</td>
+<td><p>7 symbol</p>
+<p>0.2500 ms</p></td>
+<td>Same as for 2J</td>
+</tr>
+<tr>
+<td>5K: PUSCH transmission time</td>
+<td><p>7 symbols</p>
+<p>0.2500 ms</p></td>
+<td>Same as for 2K</td>
+</tr>
+<tr>
+<td>5L: PUSCH processing time</td>
+<td><p>6.5 symbols</p>
+<p>0.2321 ms</p></td>
+<td>Same as for 2L</td>
+</tr>
+<tr>
+<td>5M: [L3 gNB LPP processing time]</td>
+<td><p>[84 symbols</p>
+<p>3 ms]</p></td>
+<td><p>[Not defined.</p>
+<p>3 ms are assumed for gNB LPP processing time TBD by RAN WG2]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.8.2-2: Rel.16 NR positioning latency for
+UL-TDOA/UL-AoA</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 12%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case 2, InF, FR1, R.16 UL-TDOA/UL-AoA</p>
+<p>Source NW / Destination NW – (RAN procedure is transparent to
+source/destination)</p>
+<p>Positioning technique: UL-TDOA/UL-AoA, type UL only, mode: UE-A,</p>
+<p>Initial and Final RRC States: CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td></td>
+<td>Reception by the gNB of the NRPPa measurement request message</td>
+</tr>
+<tr>
+<td>Step 1. Configuration of SRS for positioning</td>
+<td><p>24.25 symbols</p>
+<p>0.8661 ms</p></td>
+<td>Value is provided for L1 components only</td>
+</tr>
+<tr>
+<td>1A: PDCCH+PDSCH preparation time</td>
+<td><p>4.75 symbols</p>
+<p>0.1696 ms</p></td>
+<td><p>Not specified. For analysis, the assumption from [7] is used:
+UE's N2/2 + X for scheduling the initial PDSCH. X = 2/4/8 symbols for
+SCS = 30/60/120kHz, respectively.</p>
+<p>N2 = 5.5 symbols@30kHz SCS for UE capability 2</p>
+<p>5.5/2+2 = 4.75</p></td>
+</tr>
+<tr>
+<td>1B: PDCCH+PDSCH alignment time</td>
+<td><p>7 symbols</p>
+<p>0.2500 ms</p></td>
+<td><p>Depends on configuration of PDCCH monitoring occasions, PDSCH
+transmission duration, time to slot boundary, and TDD configuration</p>
+<p>Worst case: 7 symbols@30kHz for selected reference system
+configuration</p></td>
+</tr>
+<tr>
+<td>1C: PDCCH+PDSCH transmission time</td>
+<td><p>7 symbols</p>
+<p>0.2500 ms</p></td>
+<td><p>Depends on PDCCH+PDSCH transmission duration</p>
+<p>7 symbols@30kHz for selected reference system configuration</p></td>
+</tr>
+<tr>
+<td>1D: PDCCH+PDSCH processing time</td>
+<td><p>5.5 symbols</p>
+<p>0.1964 ms</p></td>
+<td><p>Specified as UE PDSCH processing Tproc,g1. Tproc,1 = N1 + d11+d2,
+d11 = 1 symbol, d2=0, N1 = 4.5 for 30 kHz SCS and UE capability 2</p>
+<p>5.5 symbols@30kHz for selected reference configuration</p></td>
+</tr>
+<tr>
+<td><p>1E:</p>
+<p>[L3 UE RRC configuration delay]</p></td>
+<td><p>[280 symbols</p>
+<p>10ms]</p></td>
+<td><p>[Specified - 10ms</p>
+<p>TBD by RAN WG2]</p></td>
+</tr>
+<tr>
+<td>Step 2 (Alt.1): Activation of SRS for positioning (DCI)</td>
+<td><p>8.5 symbols</p>
+<p>0.3036 ms</p></td>
+<td>Value is provided for L1 components only</td>
+</tr>
+<tr>
+<td>2A: PDCCH preparation time</td>
+<td><p>2.25 symbols</p>
+<p>0.0804 ms</p></td>
+<td><p>Not specified. For analysis, the assumptions from the [7] are
+used to derive PDCCH preparation time equal to N1/2:</p>
+<p>gNB's PUSCH-to-PDCCH processing time (PDCCH alignment has to be
+included separately) is UE's N1 + X; gNB's decoding time for the last
+PUSCH is UE's N1/2 + X; X = 2/4/8 symbols for SCS = 30/60/120KHz,
+respectively.</p></td>
+</tr>
+<tr>
+<td>2B: PDCCH alignment time</td>
+<td><p>2 symbols</p>
+<p>0.0714 ms</p></td>
+<td>Depends on configuration of PDCCH monitoring occasions and TDD
+configuration</td>
+</tr>
+<tr>
+<td>2C: PDCCH transmission time</td>
+<td>1 symbol 0.0357 ms</td>
+<td>1 symbol for selected reference system configuration</td>
+</tr>
+<tr>
+<td>2D: PDCCH processing time</td>
+<td><p>3.25 symbols</p>
+<p>0.1161 ms</p></td>
+<td><p>Not specified:</p>
+<p>For analysis, it is assumed to be equal to ½ of UE PUSCH preparation
+time Tproc,2 = N2+d21+d2 (if no BWP switch) i.e. Tproc,2/2</p>
+<p>N2 = 5.5@30kHz, d21 = 1, d2 = 0.</p></td>
+</tr>
+<tr>
+<td>Step 2’(Alt.2): Activation of SRS for positioning (MAC CE)</td>
+<td><p>24.25 symbols</p>
+<p>0.8661 ms</p></td>
+<td>Value is provided for L1 components only</td>
+</tr>
+<tr>
+<td>2’A: PDCCH+PDSCH preparation time</td>
+<td><p>4.75 symbols</p>
+<p>0.1696 ms</p></td>
+<td>Same as for 1A</td>
+</tr>
+<tr>
+<td>2’B: PDCCH+PDSCH alignment time</td>
+<td><p>7 symbols</p>
+<p>0.2500 ms</p></td>
+<td>Same as for 1B</td>
+</tr>
+<tr>
+<td>2’C: PDCCH+PDSCH transmission time</td>
+<td><p>7 symbols</p>
+<p>0.2500 ms</p></td>
+<td>Same as for 1C</td>
+</tr>
+<tr>
+<td>2’D: PDCCH+PDSCH processing time</td>
+<td><p>5.5 symbols</p>
+<p>0.1964 ms</p></td>
+<td>Same as for 1D</td>
+</tr>
+<tr>
+<td>2’E: [L2/L3 component: UE MAC processing delay]</td>
+<td><p>[28-84 symbols</p>
+<p>1-3ms]</p></td>
+<td><p>[Not defined:<br />
+1-3ms are assumed</p>
+<p>TBD by RAN WG2]</p></td>
+</tr>
+<tr>
+<td>Step 3. SRS for positioning Tx &amp; Rx</td>
+<td><p>29 symbols</p>
+<p>1.0357 ms</p></td>
+<td>Value is provided for L1 components only</td>
+</tr>
+<tr>
+<td>3A: SRS for positioning preparation time</td>
+<td>0 ms</td>
+<td><p>Not defined.</p>
+<p>0ms is assumed for analysis</p></td>
+</tr>
+<tr>
+<td>3B: SRS for positioning alignment time</td>
+<td><p>14 symbols</p>
+<p>0.5ms</p></td>
+<td><p>Depends on SRS resource allocation.</p>
+<p>Worst case: 14 symbols for selected reference configuration</p></td>
+</tr>
+<tr>
+<td>3C: SRS for positioning transmission time</td>
+<td><p>1 symbol</p>
+<p>0.0357</p></td>
+<td>1 symbol for selected reference configuration</td>
+</tr>
+<tr>
+<td>3D: SRS for positioning processing time by gNB</td>
+<td>[14 symbols 0.5 ms]</td>
+<td><p>[Not defined:</p>
+<p>0.5 ms is assumed. Definition is in scope of RAN WG4]</p></td>
+</tr>
+<tr>
+<td>Step 4. gNB Measurement Report</td>
+<td>0</td>
+<td>Value is provided for L1 components only</td>
+</tr>
+<tr>
+<td>4A: [L3 gNB NRPPa preparation time]</td>
+<td>[84symbols 3 ms]</td>
+<td><p>[Not defined:</p>
+<p>3 ms is assumed. TBD by RAN WG2]</p></td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td></td>
+<td>The transmission by the gNB of the NRPPa measurement response
+message</td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.8.2-3: Rel.16 NR positioning latency for Multi-RTT</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 12%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Case 3, InF, FR1, R.16 Multi-RTT</p>
+<p>Source NW / Destination NW – (RAN procedure is transparent to
+source/destination)</p>
+<p>Positioning technique: Multi-RTT, type DL+UL, mode: UE-A,</p>
+<p>Initial and Final RRC States: CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Start trigger</td>
+<td></td>
+<td>Reception by the gNB of the NRPPa measurement request message</td>
+</tr>
+<tr>
+<td>Step 1. Configuration of SRS for positioning</td>
+<td><p>L1: 0.8661</p>
+<p><mark>[L3: 10.0]</mark></p></td>
+<td><p>L1: gNB signaling to UE to configure SRS for positioning – 0.5088
+ms</p>
+<p><mark>[L3: UE RRC configuration delay – 10ms - TBD by RAN
+WG2]</mark></p></td>
+</tr>
+<tr>
+<td>Step 2: Activation of SRS for positioning (MAC CE)</td>
+<td><p>L1: 0.8661</p>
+<p><mark>[L2: 1.0]</mark></p></td>
+<td><p>L1: gNB signaling to UE to activate SRS for positioning
+transmission – 0.5088 ms</p>
+<p><mark>[L2: UE MAC CE processing delay – 1 ms - TBD by RAN
+WG2]</mark></p></td>
+</tr>
+<tr>
+<td>Step 3. SRS for positioning TX &amp; RX</td>
+<td>L1: 1.0357</td>
+<td>L1: transmission of SRS for positioning by UE and its reception by
+gNB – 1.0357 ms</td>
+</tr>
+<tr>
+<td>Step 4. gNB NRPPa preparation time for report to LMF</td>
+<td><mark>[L3: 3.0]</mark></td>
+<td><mark>[L3: gNB NRPPa preparation time for report to LMF – 3 ms - TBD
+by RAN WG2]</mark></td>
+</tr>
+<tr>
+<td>Step 5. Location information request</td>
+<td><p>L1: 0.8661</p>
+<p><mark>[L3: 10.0]</mark></p></td>
+<td><p>L1: gNB transmits to UE location request - 0.5088 ms</p>
+<p><mark>[L3: 5 ms DL RRC processing time and 5ms LPP processing time -
+TBD by RAN WG2]</mark></p></td>
+</tr>
+<tr>
+<td>Step 6. MG Request</td>
+<td><p>L1: 1.4196</p>
+<p><mark>[L3: 5-8]</mark></p></td>
+<td><p>L1: UE requests gNB to provide MG – 1.0266 ms</p>
+<p><mark>[L3: UE RRC processing delay – 2-5 ms and gNB RRC processing
+delay – 3ms TBD by RAN WG2]</mark></p></td>
+</tr>
+<tr>
+<td>Step 7. MG Configuration</td>
+<td><p>L1: 0.8661</p>
+<p><mark>[L3: 10.0]</mark></p></td>
+<td><p>L1: gNB provides MG configuration to UE RRC signaling – 0.5088
+ms</p>
+<p><mark>[L3: UE RRC configuration delay – 10 ms - TBD by RAN
+WG2]</mark></p></td>
+</tr>
+<tr>
+<td>Step 8. DL PRS Processing</td>
+<td>L1: 88.5</td>
+<td>DL PRS alignment time and DL PRS processing and report delay</td>
+</tr>
+<tr>
+<td>Step 9. DL PRS Measurement Report</td>
+<td><p>L1: 1.4196</p>
+<p><mark>[L3: 3.0]</mark></p></td>
+<td><p>L1: UE reports measurement results to gNB</p>
+<p>[<mark>L3: gNB LPP processing time - 3ms; 2-5ms UL RRC processing
+time; 5ms UE LPP processing time are assumed. TBD by RAN
+WG2</mark>]</p></td>
+</tr>
+<tr>
+<td>End trigger</td>
+<td></td>
+<td>The transmission by the gNB of the NRPPa measurement response
+message</td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.1.2.9-results-from-source-16">C.1.2.9 Results from source
+[16]</h4>
+<h5 id="c.1.2.9.1-description-of-evaluation-scenarios">C.1.2.9.1
+Description of evaluation scenarios</h5>
+<p>The latency analysis of DL, UL, and DL+UL methods are presented here.
+In each method, we also perform the analysis of UE-Assisted and UE-Based
+(if applicable). All analysis are based on 30kHz SCS and minimum value
+for latency is presented.</p>
+<h5 id="c.1.2.9.2-latency-analysis-for-r.16-solution">C.1.2.9.2 Latency
+analysis for R.16 solution</h5>
+<p>Table C.1.2.9.2-1: Latency analysis for UE-assisted DL methods (Case
+1) [16]</p>
+<table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 11%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Source [NW]/Destination [NW]</p>
+<p>Positioning technique: DL methods</p>
+<p>Initial and Final RRC States [CONNECTED], mode: UE-A</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td><p>Value Range</p>
+<p>(ms)</p></td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Step 1: Transmission of the PDSCH from the gNB carrying the LPP
+Request Location Information message</td>
+<td>1</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td>Step 2: The UE decodes the LPP Request location</td>
+<td>10</td>
+<td>NAS message, based on RC message decoding time</td>
+</tr>
+<tr>
+<td>Step 3: The UE transmits measurement gap (MG) request in an RRC
+message.</td>
+<td>1</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td>Step 4: The gNB successfully decode the MG request message</td>
+<td>5</td>
+<td>RRC message</td>
+</tr>
+<tr>
+<td>Step 5: The gNB configures MG in an RRC message</td>
+<td>1</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td>Step 6: The UE receive the MG configuration message and apply the MG
+configuration.</td>
+<td>10</td>
+<td>RRC message decoding including MG configuration</td>
+</tr>
+<tr>
+<td>Step 7: The UE receives PRS in the MG</td>
+<td>2</td>
+<td>According to RRC, the UE can be configured with MGL of 1.5ms.
+Thefore, the best scenario is that the UE can be configured MG of 1.5ms,
+performing PRS monitoring and finish the MG within 2ms.</td>
+</tr>
+<tr>
+<td>Step 8: The UE reports the positioning measurement and the gNB
+successful decoding of the PUSCH carrying the LPP Provide Location
+Information message</td>
+<td>3</td>
+<td>The UE prepares PUSCH (1ms), uses type-1 configured grant to report
+the positioning measurement (1ms). Then gNB successfully decodes PUSCH
+(1ms). Note that the minimum periodicity of type-1 configured grant is 2
+symbols for all SCSs.</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>33ms</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.9.2-2: Latency analysis for UE-based DL methods (Case 2)
+[16]</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 32%" />
+<col style="width: 11%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="4"><p>Source [NW]/Destination [UE, NW]</p>
+<p>Positioning technique: DL methods</p>
+<p>Initial and Final RRC States [CONNECTED] ], mode: UE-B</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Latency Component</td>
+<td><p>Value Range</p>
+<p>(ms)</p></td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td colspan="2">Step 1: Transmission of the PDSCH from the gNB carrying
+the LPP Request Location Information message</td>
+<td>1</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td colspan="2">Step 2: The UE decodes the LPP Request location</td>
+<td>10</td>
+<td>NAS message</td>
+</tr>
+<tr>
+<td colspan="2">Step 3: The UE transmits MG request in an RRC
+message.</td>
+<td>1</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td colspan="2">Step 4: The gNB decodes the MG request message.</td>
+<td>5</td>
+<td>NAS message</td>
+</tr>
+<tr>
+<td colspan="2">Step 5: The gNB configures MG in an RRC message</td>
+<td>1</td>
+<td>RRC message</td>
+</tr>
+<tr>
+<td colspan="2">Step 6: The UE receive the MG configuration message and
+apply the MG configuration</td>
+<td>10</td>
+<td>RRC message decoding including MG configuration</td>
+</tr>
+<tr>
+<td colspan="2">Step 7: The UE receives PRS in the MG</td>
+<td>2</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td colspan="2">Step 8: UE calculates its location</td>
+<td>20-40</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td colspan="2">Step 9: UE reports its location</td>
+<td>2</td>
+<td>The UE prepares PUSCH (1ms), uses type-1 configured grant to report
+the positioning measurement (1ms).</td>
+</tr>
+<tr>
+<td rowspan="6">Total values</td>
+<td>From Step 1 to Step 8</td>
+<td>50-70ms</td>
+<td rowspan="2">Applicable for the scenario starting at the step “the UE
+receives PDSCH from the gNB carrying the LPP Request Location
+Information message” and also applicable for Alt 2</td>
+</tr>
+<tr>
+<td>From Step 1 to Step 9</td>
+<td>52-72ms</td>
+</tr>
+<tr>
+<td>From Step 3 to Step 8</td>
+<td>39-59ms</td>
+<td rowspan="2">Applicable for Alt 1</td>
+</tr>
+<tr>
+<td>From Step 3 to Step 9</td>
+<td>41-61ms</td>
+</tr>
+<tr>
+<td>From Step 7 to Step 8</td>
+<td>22-42ms</td>
+<td rowspan="2">Applicable for Alt 3.</td>
+</tr>
+<tr>
+<td>From Step 7 to Step 9</td>
+<td>24-44ms</td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.5.2-3: Latency analysis for UE-assisted UL methods (Case
+3) [16]</p>
+<table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 11%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Source [NW]/Destination [NW]</p>
+<p>Positioning technique: UL methods</p>
+<p>Initial and Final RRC States [CONNECTED]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td><p>Value Range</p>
+<p>(ms)</p></td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Reception by the gNB of the NRPPa measurement request message from
+LMF</td>
+<td>NA</td>
+<td>Delay at core.</td>
+</tr>
+<tr>
+<td>Step 1: gNB send SRS configuration via RRC</td>
+<td>1</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td>Step 2: UE decodes the RRC message including SRS configuration
+message</td>
+<td>10</td>
+<td>RRC message</td>
+</tr>
+<tr>
+<td>Step 3: UE transmit SRS</td>
+<td>1</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td>gNB perform measurement and transmit the NRPPa measurement response
+message</td>
+<td>NA</td>
+<td>Delay at core</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>12ms</td>
+<td>Note: In this analysis we only consider the periodic SRS
+configuration. For aperiodic and semi-persistent SRS configuration, the
+PHY latency will be increased.</td>
+</tr>
+</tbody>
+</table>
+<p>Table C.1.2.9.2-4: Latency analysis for UE-assisted DL+UL methods
+(Case 4) [16]</p>
+<table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 11%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Source [NW]/Destination [NW] ], mode: UE-A</p>
+<p>Positioning technique: DL+UL methods</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td><p>Value Range</p>
+<p>(ms)</p></td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Step 1: Transmission of the PDSCH from the gNB carrying the LPP
+Request Location Information message</td>
+<td>1</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td>Step 2: The UE decodes the LPP Request location</td>
+<td>10</td>
+<td>NAS message</td>
+</tr>
+<tr>
+<td>Step 3: The UE transmits measurement gap (MG) request in an RRC
+message.</td>
+<td>1</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td>Step 4: The gNB successfully decode the MG request message</td>
+<td>5</td>
+<td>RRC message</td>
+</tr>
+<tr>
+<td>Step 5: The gNB configures MG in an RRC message</td>
+<td>1</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td>Step 6: The UE receive the MG configuration message and apply the MG
+configuration</td>
+<td>10</td>
+<td>RRC message</td>
+</tr>
+<tr>
+<td>Step 7: The UE receives PRS in the MG</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>Reception by the gNB of the NRPPa measurement request message</td>
+<td>NA</td>
+<td>Core message.</td>
+</tr>
+<tr>
+<td>Step 8: The gNB send SRS configuration via RRC</td>
+<td>1</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td>Step 9: The UE decodes the RRC message including SRS
+configuration</td>
+<td>10</td>
+<td>RRC message</td>
+</tr>
+<tr>
+<td>Step 10: The UE transmit SRS</td>
+<td>1</td>
+<td>Estimate</td>
+</tr>
+<tr>
+<td>Step 11: The UE reports the positioning measurement and the gNB
+successful decoding of the PUSCH carrying the LPP Provide Location
+Information message</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>45ms</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.1.2.10-results-from-source-17">C.1.2.10 Results from source
+[17]</h4>
+<h5 id="c.1.2.10.1-description-of-evaluation-scenarios">C.1.2.10.1
+Description of evaluation scenarios</h5>
+<h5 id="c.1.2.10.2-latency-analysis-for-rel.16-solutions">C.1.2.10.2
+Latency analysis for Rel.16 solutions</h5>
+<p>Latency components are recommended to be captured in table and
+ordered consequently in time starting from the earliest oneLatency
+analysis for the Rel.16 NR positioning is provided in Table
+C.1.2.1.20-1.</p>
+<p>Table C.1.2.1.20-1: Rel.16 NR positioning latency</p>
+<table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 16%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3">UE-Assisted DL-only Positioning, RRC Connected
+State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Step 1: Serving gNB sends PDSCH that contains the Location
+Information Request and is successfully decoded in physical layer by the
+UE</td>
+<td>1 - 2</td>
+<td>“Best-case” corresponds to the case of cap-2 UE with 30 KHz SCS and
+FDD.</td>
+</tr>
+<tr>
+<td>Step 2: UE interprets and applies the LPP message (Location
+Request)</td>
+<td>10</td>
+<td>RRC Processing time are captured in 38.331 Section 12</td>
+</tr>
+<tr>
+<td>Step 3: Request of Location Information has be received at the UE.
+UE transmits in PUSCH an MG-request through an RRC message</td>
+<td>1 - 4</td>
+<td>Transmission of a small package that includes an RRC message with an
+MG-request could be as low as 1 msec in FDD with SCS 30 KHz and Cap-2.
+However, for Cap-1 UEs, in TDD, where there can be fewer occasions for
+PUSCH transmission, it may be required longer period of time for the
+package to be transmitted through the air interface</td>
+</tr>
+<tr>
+<td>Step 4: Serving gNB successfully decodes and interprets the
+PHY-layer message that contains the MG-request</td>
+<td>10</td>
+<td>There are no RRC processing times for gNBs in the specification. We
+assume the same processing time as for the UE which are captured in
+38.331 Section 12.</td>
+</tr>
+<tr>
+<td>Step 5: Serving gNB transmits the RRC configuration of the MG
+request</td>
+<td>1 - 2</td>
+<td>“Best-case” corresponds to the case of cap-2 UE with 30 KHz SCS and
+FDD.</td>
+</tr>
+<tr>
+<td>Step 6: UE receives the message, interprets and applies the MG
+configuration</td>
+<td>10</td>
+<td>RRC Processing time are captured in 38.331 Section 12.</td>
+</tr>
+<tr>
+<td>Step 7: UE receives at least one occasion of the PRS within the
+MG.</td>
+<td>20 - 640</td>
+<td><p>A UE may have applied the MG configuration at the end of a
+previous MG instance, so the UE would have to way for a whole PRS period
+(or MG period, which ever is larger). The minimum MGRP in NR rel-16 is
+20 msec. So, even if the UE can produce a report using one occasion, the
+best-case latency would be 20 msec (assuming all required PRS resources
+are unmuted within the single PRS occasion).</p>
+<p>Typically more than one occasions are needed for accurate measurement
+(see e.g. RAN4 discussions in NR Rel-16). As an example, we assume that
+at least 4 occasions are needed and a typical PRS periodicity and MGRP
+would be of the order of 160 msec.</p></td>
+</tr>
+<tr>
+<td>Step 8: UE finishes the processing T-N time after the end of the
+last PRS occasion where (N,T) is the reported capability of processing N
+msec of PRS every T</td>
+<td>2 - 140</td>
+<td>The highest UE capability in NR Rel-16 is to process 6 msec PRS
+every 8 msec, (N,T) = (6,8), so, after the end of a PRS occasion that is
+6 msec long, a UE requires at least 2 msec of processing before a new
+PRS occasion is received. A more conservative estimate would be a UE
+reporting (N,T)=(20,160) msec, in which case a UE may require 140 msec
+to complete the processing (UE receives 20 msec worth of PRS, and then
+kick-offs the processing after the end of the PRS, before a new PRS
+occasion is received).</td>
+</tr>
+<tr>
+<td>Step 9: UE reports the measurements and are decoded successfully by
+the gNB. NAS container is ready to be forwarded to the AMF</td>
+<td>2 - 5</td>
+<td>Large UL payload needed. Even with cap-2 UE in FDD, 1 msec would not
+be possible. Note: Does not involve any required time for the gNB
+processing to have the NAS container ready to be forwarded to the
+AMF.</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>57 - 823</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 16%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3">UE-based DL-only Positioning, RRC Inactive State,
+External Client</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Steps</td>
+<td>“Best-case” Estimate of Duration (msec) in NR Rel-16</td>
+<td>“Conservative” Estimate of the Duration (msec) in NR Rel-16</td>
+</tr>
+<tr>
+<td>Step 1: Request of Location Information has been received at the UE.
+UE transmits in PUSCH an MG-request through an RRC message</td>
+<td>1-4</td>
+<td>Transmission of a small package that includes an RRC message with an
+MG-request could be as low as 1 msec in FDD with SCS 30 KHz and Cap-2.
+However, for Cap-1 UEs, in TDD, where there can be fewer occasions for
+PUSCH transmission, it may be required longer period of time for the
+package to be transmitted through the air interface</td>
+</tr>
+<tr>
+<td>Step 2: Serving gNB successfully decodes and interprets the
+PHY-layer message that contains the MG-request</td>
+<td>10</td>
+<td>There are no RRC processing times for gNBs in the specification. We
+assume the same processing time as for the UE which are captured in
+38.331 Section 12.</td>
+</tr>
+<tr>
+<td>Step 3: Serving gNB transmits the RRC configuration of the MG
+request</td>
+<td>1-2</td>
+<td>“Best-case” corresponds to the case of cap-2 UE with 30 KHz SCS and
+FDD.</td>
+</tr>
+<tr>
+<td>Step 4: UE receives the message, interprets and applies the MG
+configuration</td>
+<td>10</td>
+<td>RRC Processing time are captured in 38.331 Section 12.</td>
+</tr>
+<tr>
+<td>Step 5: UE receives at least one occasion of the PRS within the
+MG.</td>
+<td>20-640</td>
+<td><p>A UE may have applied the MG configuration at the end of a
+previous MG instance, so the UE would have to way for a whole PRS period
+(or MG period, which ever is larger). The minimum MGRP in NR rel-16 is
+20 msec. So, even if the UE can produce a report using one occasion, the
+best-case latency would be 20 msec (assuming all required PRS resources
+are unmuted within the single PRS occasion).</p>
+<p>Typically more than one occasions are needed for accurate measurement
+(see e.g. RAN4 discussions in NR Rel-16). As an example, we assume that
+at least 4 occasions are needed and a typical PRS periodicity and MGRP
+would be of the order of 160 msec.</p></td>
+</tr>
+<tr>
+<td>Step 6: UE finishes the processing T-N time after the end of the
+last PRS occasion where (N,T) is the reported capability of processing N
+msec of PRS every T</td>
+<td>2-140</td>
+<td>The highest UE capability in NR Rel-16 is to process 6 msec PRS
+every 8 msec, (N,T) = (6,8), so, after the end of a PRS occasion that is
+6 msec long, a UE requires at least 2 msec of processing before a new
+PRS occasion is received. A more conservative estimate would be a UE
+reporting (N,T)=(20,160) msec, in which case a UE may require 140 msec
+to complete the processing (UE receives 20 msec worth of PRS, and then
+kick-offs the processing after the end of the PRS, before a new PRS
+occasion is received).</td>
+</tr>
+<tr>
+<td>Step 7: UE reports the measurements and are decoded successfully by
+the gNB. NAS container is ready to be forwarded to the AMF</td>
+<td>2-5</td>
+<td>Large UL payload needed. Even with cap-2 UE in FDD, 1 msec would not
+be possible. Note: Does not involve any required time for the gNB
+processing to have the NAS container ready to be forwarded to the
+AMF.</td>
+</tr>
+<tr>
+<td>Total PHY-layer Latency (msec)</td>
+<td>46-811</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 16%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3">UE-based DL-only Positioning, RRC Connected State, UE
+Internal-client</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Step 1: UE receives at least one occasion of the PRS</td>
+<td>20 - 640</td>
+<td><p>A UE may have applied the MG configuration at the end of a
+previous MG instance, so the UE would have to way for a whole PRS period
+(or MG period, which ever is larger). The minimum MGRP in NR rel-16 is
+20 msec. So, even if the UE can produce a report using one occasion, the
+best-case latency would be 20 msec (assuming all required PRS resources
+are unmuted within the single PRS occasion).</p>
+<p>Typically more than one occasions are needed for accurate measurement
+(see e.g. RAN4 discussions in NR Rel-16). As an example, we assume that
+at least 4 occasions are needed and a typical PRS periodicity and MGRP
+would be of the order of 160 msec.</p></td>
+</tr>
+<tr>
+<td>Step 2: UE finishes the processing T-N time after the end of the
+last PRS occasion where (N,T) is the reported capability of processing N
+msec of PRS every T</td>
+<td>2 - 140</td>
+<td>The highest UE capability in NR Rel-16 is to process 6 msec PRS
+every 8 msec, (N,T) = (6,8), so, after the end of a PRS occasion that is
+6 msec long, a UE requires at least 2 msec of processing before a new
+PRS occasion is received. A more conservative estimate would be a UE
+reporting (N,T)=(20,160) msec, in which case a UE may require 140 msec
+to complete the processing (UE receives 20 msec worth of PRS, and then
+kick-offs the processing after the end of the PRS, before a new PRS
+occasion is received).</td>
+</tr>
+<tr>
+<td>Step 3: UE transition to RRC Connected state</td>
+<td>11.3 - 18.5</td>
+<td>Transition from RRC Inactive to Connected state. 11.3 ms – 18.5 ms
+dependent on configuration/deployment (TR 37.910 [8]). Assume an
+"average" value.</td>
+</tr>
+<tr>
+<td>Step 4: UE reports the measurements and are decoded successfully by
+the gNB. NAS container is ready to be forwarded to the AMF</td>
+<td>2 - 5</td>
+<td>Large UL payload needed. Even with cap-2 UE in FDD, 1 msec would not
+be possible. Note: Does not involve any required time for the gNB
+processing to have the NAS container ready to be forwarded to the
+AMF.</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>35.3 - 803.5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 16%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3">UE-based DL-only Positioning, RRC Inactive State, UE
+internal-client</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Step 1: UE receives at least one occasion of the PRS</td>
+<td>6 - 640</td>
+<td><p>The highest UE capability in NR Rel-16 is to process 6 msec PRS
+every 8 msec, (N,T) = (N,8), with N&lt;8. We assume that a reasonable
+PRS instance in NR Rel-16 FR1 is 6 msec.</p>
+<p>Typically more than one occasions are needed for accurate measurement
+(see e.g. RAN4 discussions in NR Rel-16). As an example, we assume that
+at least 4 occasions are needed and a typical PRS periodicity and MGRP
+would be of the order of 160 msec.</p></td>
+</tr>
+<tr>
+<td>Step 2: UE finishes the processing T-N time after the end of the
+last PRS occasion where (N,T) is the reported capability of processing N
+msec of PRS every T</td>
+<td>2 - 140</td>
+<td>The highest UE capability in NR Rel-16 is to process 6 msec PRS
+every 8 msec, (N,T) = (6,8), so, after the end of a PRS occasion that is
+6 msec long, a UE requires at least 2 msec of processing before a new
+PRS occasion is received. A more conservative estimate would be a UE
+reporting (N,T)=(20,160) msec, in which case a UE may require 140 msec
+to complete the processing (UE receives 20 msec worth of PRS, and then
+kick-offs the processing after the end of the PRS, before a new PRS
+occasion is received).</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>8 - 780</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 16%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3">UE-Assisted MRTT Positioning, RRC Connected State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Components</td>
+<td>Value Range, ms</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Step 1: Serving gNB sends PDSCH that contains the Location
+Information Request and is successfully decoded in physical layer by the
+UE</td>
+<td>1 – 2</td>
+<td>“Best-case” corresponds to the case of cap-2 UE with 30 KHz SCS and
+FDD.</td>
+</tr>
+<tr>
+<td>Step 2: UE interprets and applies the LPP message (Location
+Request)</td>
+<td>10</td>
+<td>RRC Processing time are captured in 38.331 Section 12</td>
+</tr>
+<tr>
+<td>Step 3: Request of Location Information has be received at the UE.
+UE transmits in PUSCH an MG-request through an RRC message</td>
+<td>1 - 4</td>
+<td>Transmission of a small package that includes an RRC message with an
+MG-request could be as low as 1 msec in FDD with SCS 30 KHz and Cap-2.
+However, for Cap-1 UEs, in TDD, where there can be fewer occasions for
+PUSCH transmission, it may be required longer period of time for the
+package to be transmitted through the air interface</td>
+</tr>
+<tr>
+<td>Step 4: Serving gNB successfully decodes and interprets the
+PHY-layer message that contains the MG-request</td>
+<td>10</td>
+<td>There are no RRC processing times for gNBs in the specification. We
+assume the same processing time as for the UE which are captured in
+38.331 Section 12.</td>
+</tr>
+<tr>
+<td>Step 5: Serving gNB transmits the RRC configuration of the MG
+request</td>
+<td>1 – 2</td>
+<td>“Best-case” corresponds to the case of cap-2 UE with 30 KHz SCS and
+FDD.</td>
+</tr>
+<tr>
+<td>Step 6: UE receives the message, interprets and applies the MG
+configuration</td>
+<td>10</td>
+<td>RRC Processing time are captured in 38.331 Section 12.</td>
+</tr>
+<tr>
+<td>Step 7: UE receives at least one occasion of the PRS within the
+MG.</td>
+<td>20-640</td>
+<td><p>A UE may have applied the MG configuration at the end of a
+previous MG instance, so the UE would have to way for a whole PRS period
+(or MG period, which ever is larger). The minimum MGRP in NR rel-16 is
+20 msec. So, even if the UE can produce a report using one occasion, the
+best-case latency would be 20 msec (assuming all required PRS resources
+are unmuted within the single PRS occasion).</p>
+<p>Typically more than one occasions are needed for accurate measurement
+(see e.g. RAN4 discussions in NR Rel-16). As an example, we assume that
+at least 4 occasions are needed and a typical PRS periodicity and MGRP
+would be of the order of 160 msec.</p></td>
+</tr>
+<tr>
+<td>Step 8: UE finishes the processing T-N time after the end of the
+last PRS occasion where (N,T) is the reported capability of processing N
+msec of PRS every T</td>
+<td>2 - 140</td>
+<td>The highest UE capability in NR Rel-16 is to process 6 msec PRS
+every 8 msec, (N,T) = (6,8), so, after the end of a PRS occasion that is
+6 msec long, a UE requires at least 2 msec of processing before a new
+PRS occasion is received. A more conservative estimate would be a UE
+reporting (N,T)=(20,160) msec, in which case a UE may require 140 msec
+to complete the processing (UE receives 20 msec worth of PRS, and then
+kick-offs the processing after the end of the PRS, before a new PRS
+occasion is received).</td>
+</tr>
+<tr>
+<td>Step 9: UE reports the measurements and are decoded successfully by
+the gNB. NAS container is ready to be forwarded to the AMF</td>
+<td>2 - 5</td>
+<td>Large UL payload needed. Even with cap-2 UE in FDD, 1 msec would not
+be possible. Note: Does not involve any required time for the gNB
+processing to have the NAS container ready to be forwarded to the
+AMF.</td>
+</tr>
+<tr>
+<td>Step 10: All gNBs processes the transmitted SRS in parallel.</td>
+<td>2</td>
+<td>Assumption: SRS configuration is received before Step 1, and SRS can
+be triggered with DCI.</td>
+</tr>
+<tr>
+<td>Total values</td>
+<td>59 - 823</td>
+<td>Latency needed from the time applies the location request up to the
+decoding of the PUSCH carrying the Positionign report.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.1.2.11-results-from-source-15">C.1.2.11 Results from source
+[15]</h4>
+<h5 id="c.1.2.11.1-description-of-evaluation-scenarios">C.1.2.11.1
+Description of evaluation scenarios</h5>
+<p>We assumed the UEs in the RRC connected mode for the physical layer
+latency analysis, and we provide the latency analysis on the physical
+layer only as well as physical layer latency with the consideration of
+higher layer. The following cases are considered.</p>
+<p>- Case 1: DL-TDOA/DL-AoD positioning method for the NW initiated</p>
+<p>- Case 2: DL-TDOA/DL-AoD positioning method for the UE initiated</p>
+<p>- Case 3: UL-TDOA/UL-AoA positioning method for the NW initiated</p>
+<p>- Case 4: Multi-RTT positioning method for the NW initiated</p>
+<p>- Case 5: E-CID positioning method for the NW initiated</p>
+<p>To evaluate physical layer latency for the enhanced NR positioning
+solution(s), we use the following assumptions as below:</p>
+<p>- Numerology: 15 kHz (for PDCCH, PDSCH, PUCCH, PUSCH, SRS)</p>
+<p>- For PUSCH transmission:</p>
+<p>- Uplink switching gap is not configured.</p>
+<p>- No BWP switching</p>
+<p>- No overlapping symbols of the PUCCH and the scheduled PUSCH</p>
+<p>- The number of PUSCH symbols = from 4 to 14 for Type A</p>
+<p>- The number of PUSCH symbols = from 1 to 14 for Type B</p>
+<p>- According to the size of data (e.g. LPP message) to be transmitted,
+the number of symbols can be changed.</p>
+<p>- For PDSCH transmission:</p>
+<p>- No overlapping symbols of the scheduling PDCCH and the scheduled
+PDSCH</p>
+<p>- The number of PDSCH symbols = from 3 to 14 for Type A</p>
+<p>- The number of PDSCH symbols = from 2 to 14 for Type B</p>
+<p>- According to the size of data (e.g. LPP message) to be transmitted,
+the number of symbols can be changed.</p>
+<p>- For SRS transmission:</p>
+<p>- One shot transmission (2 OS ~ 12 OS)</p>
+<p>- According to resource type (periodic, Semi-persistent and
+aperiodic), the number of symbols can be changed.</p>
+<p>- For PUCCH transmission (Scheduling request):</p>
+<p>- One shot transmission</p>
+<p>- Periodicity and offset for PUCCH: 2 OS ~ 80 slots</p>
+<p>- The length of symbols for PUCCH: 1 OS~ 14 OS (format 0 and 2)</p>
+<p>- According to PUCCH configuration (e.g. periodicity and offset,
+symbol length of PUCCH), the latency can be changed.</p>
+<p>- For PDCCH transmission (UL grant):</p>
+<p>- Slot for PDCCH Monitoring configured as periodicity and offset is
+1slot (format 0_0, 0_1) even though 2560 slots can be configured.</p>
+<p>- The first symbol(s) for PDCCH monitoring in the slots is zero</p>
+<p>- The length of symbols for CORESET: 1 OS ~3 OS</p>
+<p>- According to PUCCH configuration (e.g. periodicity and offset,
+symbol length of PDCCH), the latency can be changed.</p>
+<h5 id="c.1.2.11.2-latency-analysis-for-rel.16-solutions">C.1.2.11.2
+Latency analysis for Rel.16 solutions</h5>
+<p>Latency components are recommended to be captured in table and
+ordered consequently in time starting from the earliest oneLatency
+analysis for the Rel.16 NR positioning is provided in Table
+C.1.2.11.2-1- Table C.1.2.11.2-5.</p>
+<p>Table C.1.2.11.2-1: Rel.16 NR positioning latency for DL method (Case
+1) [15]</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 22%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Source/Destination: NW/UE</p>
+<p>Positioning technique DL-TDOA and DL-AOD, mode: UE-A</p>
+<p>Initial and Final RRC States: CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td>Value Range</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>Request Location Information message (gNB 🡪 UE)</td>
+<td>0.14 ms ~ 1 ms</td>
+<td>38.214 section 5.1.2.</td>
+</tr>
+<tr>
+<td>Request Location Information message Reception (PHY Processing time
+for PDSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.57 ms ~ 0.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.21 ms</p></td>
+<td>38.214 section 5.3.</td>
+</tr>
+<tr>
+<td>*Transportation of Request Location Information message (RRC
+processing time, UE)</td>
+<td>5 ms ~ 5.5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC DL information transfer at UE : 5 ms</p>
+<p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p></td>
+</tr>
+<tr>
+<td>*Constructing measurement gap request message (RRC processing time,
+UE)</td>
+<td>2 ms ~ 5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC UL information transfer: 2 - 5ms</p></td>
+</tr>
+<tr>
+<td>measurement gap request (including PHY preparation time for PUSCH,
+UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.85 ms ~ 1.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.49 ms ~ 1.42 ms</p></td>
+<td>38.214 section 6.4.</td>
+</tr>
+<tr>
+<td>*Reception of measurement gap request (RRC processing time,
+gNB)</td>
+<td>3 ms ~ 3.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC Processing at gNB : 3ms</p></td>
+</tr>
+<tr>
+<td>*Constructing measurement gap configuration message(RRC processing
+time, gNB)</td>
+<td>3 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC Processing at gNB : 3ms</p></td>
+</tr>
+<tr>
+<td>Measurement gap configuration message (gNB 🡪 UE)</td>
+<td>0.14 ms ~ 1 ms</td>
+<td>38.214 section 5.1.2.</td>
+</tr>
+<tr>
+<td>Measurement gap configuration message reception (PHY Processing time
+for PDSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.57 ms ~ 0.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.21 ms</p></td>
+<td>38.214 section 5.3.</td>
+</tr>
+<tr>
+<td>*Reception of measurement gap configuration (RRC processing time,
+UE)</td>
+<td>5 ms ~ 5.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC DL information transfer at UE : 5 ms</p></td>
+</tr>
+<tr>
+<td>PRS measurement within measurement gap (UE)</td>
+<td>20ms ~ 160ms</td>
+<td><p>38.133 section 9.9.2.5.</p>
+<p>The requirement for measurement period is represented by LCM (PRS
+resource periodicity, repetition periodicity of the measurement
+gap)</p></td>
+</tr>
+<tr>
+<td>*Constructing scheduling request message (RRC processing time,
+UE)</td>
+<td>2 ms ~ 5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC UL information transfer: 2 - 5ms</p></td>
+</tr>
+<tr>
+<td>Transmission of scheduling request for measurement report
+(UE🡪gNB)</td>
+<td>0.21ms~81ms</td>
+<td><p>38.213 section 9.2.4</p>
+<p>38.331 section 6.3.2</p></td>
+</tr>
+<tr>
+<td>*Reception of scheduling request and constructing UL grant
+(gNB)</td>
+<td>6 ms ~ 6.5 ms</td>
+<td><p>RRC Processing at gNB : 3*2 ms</p>
+<p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p></td>
+</tr>
+<tr>
+<td>Transmission of UL grant(gNB 🡪 UE )</td>
+<td>0.07ms~0.21ms</td>
+<td>38.213 section 10.1</td>
+</tr>
+<tr>
+<td>UL grant reception (PHY Processing time for PDSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.57 ms ~ 0.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.21 ms</p></td>
+<td>38.214 section 5.3.</td>
+</tr>
+<tr>
+<td>*Reception of UL grant (RRC processing time, UE)</td>
+<td>5 ms ~ 5.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC DL information transfer at UE : 5 ms</p></td>
+</tr>
+<tr>
+<td>*Constructing Provide Location information message(RRC processing
+time, UE)</td>
+<td>5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>Processing delay for provide Location Information at UE : 5
+ms</p></td>
+</tr>
+<tr>
+<td>Transmission of measurement report (including PHY preparation time
+for PUSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.85 ms ~ 1.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.49 ms ~ 1.42 ms</p></td>
+<td><p>38.214 section 6.4.</p>
+<p>38.214 section 6.1.2.</p></td>
+</tr>
+<tr>
+<td>*Reception of measurement report and preparation time for gNB to
+make NRPPa message (gNB)</td>
+<td>3 ms ~ 3.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC Processing at gNB : 3 ms</p></td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><p>For UE capability-1:</p>
+<p>62.97 ms ~ 297.11ms</p>
+<p>For UE capability-2:</p>
+<p>61.17 ms ~ 293.68 ms</p></td>
+<td><p>When procedure marked with(*) is excluded, total values shall be
+amended as follows:</p>
+<p>For UE capability-1:</p>
+<p>23.97ms ~ 249.11ms</p>
+<p>For UE capability-2:</p>
+<p>22.17ms ~ 245.68ms</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note 1: Some components denoted by (*) can be excluded since they are
+related with higher layer procedure.</p>
+<p>Note 2: The maximum latency for PDSCH/PUSCH transmission is assumed
+as one slot excluding preparation time. Total values may change when the
+information size related with LPP message is changed.</p>
+<p>Table C.1.2.11.2-2: Rel.16 NR positioning latency for DL method (Case
+2) [15]</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 20%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Source/Destination: UE/NW</p>
+<p>Positioning technique DL-TDOA, mode: UE-A</p>
+<p>Initial and Final RRC States: CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td>Value Range</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>measurement gap request (including PHY preparation time for PUSCH,
+UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.85 ms ~ 1.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.49 ms ~ 1.42 ms</p></td>
+<td>38.214 section 6.4.</td>
+</tr>
+<tr>
+<td>*Reception of measurement gap request and preparation time for
+measurement gap(gNB)</td>
+<td>3 ms ~ 3.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC Processing at gNB : 3ms</p></td>
+</tr>
+<tr>
+<td>*Constructing measurement gap configuration message(RRC processing
+time, gNB)</td>
+<td>3 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC Processing at gNB : 3ms</p></td>
+</tr>
+<tr>
+<td>Measurement gap configuration message (gNB 🡪 UE)</td>
+<td>0.14 ms ~ 1 ms</td>
+<td>38.214 section 5.1.2.</td>
+</tr>
+<tr>
+<td>Measurement gap configuration message reception (PHY Processing time
+for PDSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.57 ms ~ 0.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.21 ms</p></td>
+<td>38.214 section 5.3.</td>
+</tr>
+<tr>
+<td>*Reception of measurement gap configuration (RRC processing time,
+UE)</td>
+<td>5 ms ~ 5.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC DL information transfer at UE : 5 ms</p></td>
+</tr>
+<tr>
+<td>PRS measurement within measurement gap (UE)</td>
+<td>20ms ~ 160ms</td>
+<td><p>38.133 section 9.9.2.5</p>
+<p>The requirement for measurement period is represented by LCM (PRS
+resource periodicity, repetition periodicity of the measurement
+gap)</p></td>
+</tr>
+<tr>
+<td>*Constructing scheduling request message (RRC processing time,
+UE)</td>
+<td>2 ms ~ 5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC UL information transfer: 2 - 5ms</p></td>
+</tr>
+<tr>
+<td>Transmission of scheduling request for measurement report
+(UE🡪gNB)</td>
+<td>0.21ms~81ms</td>
+<td><p>38.213 section 9.2.4</p>
+<p>38.331 section 6.3.2</p></td>
+</tr>
+<tr>
+<td><p>*Reception of scheduling request</p>
+<p>And preparation time for UL grant (gNB)</p></td>
+<td>6 ms ~ 6.5 ms</td>
+<td><p>RRC Processing at gNB : 3*2 ms</p>
+<p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p></td>
+</tr>
+<tr>
+<td>Transmission of UL grant(gNB 🡪 UE )</td>
+<td>0.07ms~0.21ms</td>
+<td>38.213 section 10.1</td>
+</tr>
+<tr>
+<td>UL grant reception (PHY Processing time for PDSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.57 ms ~ 0.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.21 ms</p></td>
+<td>38.214 section 5.3.</td>
+</tr>
+<tr>
+<td>*Reception of UL grant (RRC processing time, UE)</td>
+<td>5 ms ~ 5.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC DL information transfer at UE : 5 ms</p></td>
+</tr>
+<tr>
+<td>*Constructing Provide Location information message(RRC processing
+time, UE)</td>
+<td>5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>Processing delay for provide Location Information at UE : 5
+ms</p></td>
+</tr>
+<tr>
+<td>Transmission of measurement report (including PHY preparation time
+for PUSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.85 ms ~ 1.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.49 ms ~ 1.42 ms</p></td>
+<td><p>38.214 section 6.4.</p>
+<p>38.214 section 6.1.2.</p></td>
+</tr>
+<tr>
+<td>*Reception of measurement report and preparation time for gNB to
+make NRPPa message (gNB)</td>
+<td>3 ms ~ 3.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC Processing at gNB : 3 ms</p></td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><p>For UE capability-1:</p>
+<p>55.26ms ~ 284.83ms</p>
+<p>For UE capability-2:</p>
+<p>53.82ms ~ 282.97ms</p></td>
+<td><p>When procedure marked with(*) is excluded, total values shall be
+amended as follows:</p>
+<p>For UE capability-1:</p>
+<p>23.26ms ~ 247.33ms</p>
+<p>For UE capability-2:</p>
+<p>21.82ms ~ 245.47ms</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note 1: Some components denoted by (*) can be excluded since they are
+related with higher layer procedure.</p>
+<p>Note 2: The maximum latency for PDSCH/PUSCH transmission is assumed
+as one slot excluding preparation time. Total values may change when the
+information size related with LPP message is changed.</p>
+<p>Table C.1.2.11.2-3: Rel.16 NR positioning latency for UL method (Case
+3) [15]</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 26%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Source/Destination: NW/UE</p>
+<p>Positioning technique UL-TDOA and UL-AOA, mode: UE-A</p>
+<p>Initial and Final RRC States: CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td>Value Range</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td><p>SRS configuration</p>
+<p>(gNB 🡪 UE)</p></td>
+<td>0.14 ms ~ 1 ms</td>
+<td>38.214 section 5.1.2.</td>
+</tr>
+<tr>
+<td>Reception of SRS configuration (PHY Processing time for PDSCH,
+UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.57 ms ~ 0.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.21 ms</p></td>
+<td>38.214 section 5.3.</td>
+</tr>
+<tr>
+<td>*Transportation of SRS configuration message (RRC processing time,
+UE)</td>
+<td>10 ms ~ 10.5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC Reconfiguration processing at UE : 10 ms</p>
+<p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p></td>
+</tr>
+<tr>
+<td>*Reception of SRS activation message (RRC processing time, gNB 🡪
+UE)</td>
+<td>1 ms ~ 3.5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>Processing delay of MAC-CE SRS Activation at UE: 1 ms ~ 3 ms</p>
+<p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p></td>
+</tr>
+<tr>
+<td>SRS transmission (UE)</td>
+<td>0.07ms ~ 0.86ms</td>
+<td>38.214 section 6.2.1.</td>
+</tr>
+<tr>
+<td>*Reception of SRS and preparation time for gNB to make NRPPa message
+(gNB)</td>
+<td>3 ms ~ 3.5 ms</td>
+<td><p>NRPPa Processing delay at gNB</p>
+<p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p></td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><p>For UE capability-1:</p>
+<p>14.78 ms ~ 20.14 ms</p>
+<p>For UE capability-2:</p>
+<p>14.42 ms ~ 19.57 ms</p></td>
+<td><p>When procedure marked with(*) is excluded, total values shall be
+amended as follows:</p>
+<p>For UE capability-1:</p>
+<p>0.78 ms ~ 2.64ms</p>
+<p>For UE capability-2:</p>
+<p>0.42ms ~ 2.07ms</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note 1: Some components denoted by (*) can be excluded since they are
+related with higher layer procedure.</p>
+<p>Note 2: The maximum latency for PDSCH/PUSCH transmission is assumed
+as one slot excluding preparation time. Total values may change when the
+information size related with LPP message is changed.</p>
+<p>Table C.1.2.11.2-4: Rel.16 NR positioning latency for DL+UL method
+(Case 4) [15]</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 27%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Source/Destination: NW/UE</p>
+<p>Positioning technique: Multi-RTT, mode: UE-A</p>
+<p>Initial and Final RRC States: CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td>Value Range</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>*Constructing Provide assistance message (RRC processing time,
+gNB)</td>
+<td>3 ms</td>
+<td>38.331 section 12.</td>
+</tr>
+<tr>
+<td>Transmission of LPP provide assistance data (gNB 🡪 UE)</td>
+<td>0.14 ms ~ 1 ms</td>
+<td>38.214 section 5.1.2.</td>
+</tr>
+<tr>
+<td>Reception of LPP provide assistance data (PHY Processing time for
+PDSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.57 ms ~ 0.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.21 ms</p></td>
+<td>38.214 section 5.3.</td>
+</tr>
+<tr>
+<td>*Reception of LPP provide assistance data (RRC processing time,
+UE)</td>
+<td>5 ms ~ 5.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC DL information transfer at UE : 5 ms</p></td>
+</tr>
+<tr>
+<td>*Constructing request location information (RRC processing time,
+gNB)</td>
+<td>3 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC Processing at gNB : 3ms</p></td>
+</tr>
+<tr>
+<td><p>Transmission of Request Location Information message</p>
+<p>(gNB 🡪 UE)</p></td>
+<td>0.14 ms ~ 1 ms</td>
+<td>38.214 section 5.1.2.</td>
+</tr>
+<tr>
+<td>Request Location Information message Reception (PHY processing time
+for PDSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.57 ms ~ 0.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.21 ms</p></td>
+<td>38.214 section 5.3.</td>
+</tr>
+<tr>
+<td>* Transportation of Request Location Information message (RRC
+processing time, UE)</td>
+<td>5 ms ~ 5.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC DL information transfer at UE : 5 ms</p></td>
+</tr>
+<tr>
+<td>*Constructing measurement gap request message (RRC processing time,
+UE)</td>
+<td>2 ms ~ 5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC UL information transfer: 2 - 5ms</p></td>
+</tr>
+<tr>
+<td>measurement gap request (including PHY preparation time for PUSCH,
+UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.85 ms ~ 1.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.49 ms ~ 1.42 ms</p></td>
+<td>38.214 section 6.4.</td>
+</tr>
+<tr>
+<td>*Reception of measurement gap request (RRC processing time,
+gNB)</td>
+<td>3 ms ~ 3.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC Processing at gNB : 3ms</p></td>
+</tr>
+<tr>
+<td>*Constructing measurement gap configuration message(RRC processing
+time, gNB)</td>
+<td>3 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC Processing at gNB : 3ms</p></td>
+</tr>
+<tr>
+<td><p>Measurement gap configuration message</p>
+<p>(gNB 🡪 UE)</p></td>
+<td>0.14 ms ~ 1 ms</td>
+<td>38.214 section 5.1.2.</td>
+</tr>
+<tr>
+<td>Measurement gap configuration message reception (PHY Processing time
+for PDSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.57 ms ~ 0.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.21 ms</p></td>
+<td>38.214 section 5.3.</td>
+</tr>
+<tr>
+<td>*Reception of measurement gap configuration (RRC processing time,
+UE)</td>
+<td>5 ms ~ 5.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC DL information transfer at UE : 5 ms</p></td>
+</tr>
+<tr>
+<td>PRS measurement within measurement gap (UE)</td>
+<td>20ms ~ 160ms</td>
+<td><p>38.133 section 9.9.2.5</p>
+<p>The requirement for measurement period is represented by LCM (PRS
+resource periodicity, repetition periodicity of the measurement
+gap)</p></td>
+</tr>
+<tr>
+<td>SRS transmission (UE)</td>
+<td>0.07ms ~ 0.86ms</td>
+<td>38.214 section 6.2.1.</td>
+</tr>
+<tr>
+<td>*Reception of SRS and preparation time for gNB to make NRPPa message
+(gNB)</td>
+<td>3 ms ~ 3.5 ms</td>
+<td><p>NRPPa Processing delay at gNB</p>
+<p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p></td>
+</tr>
+<tr>
+<td>*Constructing scheduling request message (RRC processing time,
+UE)</td>
+<td>2 ms ~ 5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC UL information transfer: 2 ms - 5ms</p></td>
+</tr>
+<tr>
+<td>Transmission of scheduling request for measurement report
+(UE🡪gNB)</td>
+<td>0.21ms~81ms</td>
+<td><p>38.213 section 9.2.4</p>
+<p>38.331 section 6.3.2</p></td>
+</tr>
+<tr>
+<td>*Reception of scheduling request and constructing UL grant
+(gNB)</td>
+<td>6 ms ~ 6.5 ms</td>
+<td><p>RRC Processing at gNB : 3*2 ms</p>
+<p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p></td>
+</tr>
+<tr>
+<td>Transmission of UL grant(gNB 🡪 UE )</td>
+<td>0.07ms~0.21ms</td>
+<td>38.213 section 10.1</td>
+</tr>
+<tr>
+<td>UL grant reception (PHY Processing time for PDSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.57 ms ~ 0.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.21 ms</p></td>
+<td>38.214 section 5.3.</td>
+</tr>
+<tr>
+<td>*Reception of UL grant (RRC processing time, UE)</td>
+<td>5 ms ~ 5.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC DL information transfer at UE : 5 ms</p></td>
+</tr>
+<tr>
+<td>*Constructing Provide Location information message(RRC processing
+time, UE)</td>
+<td>5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>Processing delay for provide Location Information at UE : 5
+ms</p></td>
+</tr>
+<tr>
+<td>measurement report transmission(including PHY preparation time for
+PUSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.85 ms ~ 1.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.49 ms ~ 1.42 ms</p></td>
+<td>38.214 section 6.4.</td>
+</tr>
+<tr>
+<td>*Reception of measurement report and preparation time for gNB to
+make NRPPa message (gNB)</td>
+<td>3 ms ~ 3.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC Processing at gNB : 3 ms</p></td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><p>For UE capability-1:</p>
+<p>77.75 ms ~314.75 ms</p>
+<p>For UE capability-2:</p>
+<p>75.59 ms ~ 311.75 ms</p></td>
+<td><p>When procedure marked with(*) is excluded, total values shall be
+amended as follows:</p>
+<p>For UE capability-1:</p>
+<p>24.75 ms ~ 251.75 ms</p>
+<p>For UE capability-2:</p>
+<p>22.59 ms ~ 248.75 ms</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note 1: Some components denoted by (*) can be excluded since they are
+related with higher layer procedure.</p>
+<p>Note 2: The maximum latency for PDSCH/PUSCH transmission is assumed
+as one slot excluding preparation time. Total values may change when the
+information size related with LPP message is changed.</p>
+<p>Table C.1.2.11.2-5: Rel.16 NR positioning latency for E-CID (Case 5)
+[15]</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 26%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3"><p>Source/Destination: NW/UE</p>
+<p>Positioning technique: E-CID, mode: UE-A</p>
+<p>Initial and Final RRC States: CONNECTED</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency Component</td>
+<td>Value Range</td>
+<td>Description of Latency Component</td>
+</tr>
+<tr>
+<td>LPP Request Location Information message transmission(gNB 🡪 UE)</td>
+<td>0.14 ms ~ 1 ms</td>
+<td>38.214 section 5.1.2.</td>
+</tr>
+<tr>
+<td>Request Location Information message Reception (PHY Processing time
+for PDSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.57 ms ~ 0.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.21 ms</p></td>
+<td>38.214 section 5.3.</td>
+</tr>
+<tr>
+<td>*Transportation of Request Location Information message (RRC
+processing time, UE)</td>
+<td>5 ms ~ 5.5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC DL information transfer at UE : 5 ms</p>
+<p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p></td>
+</tr>
+<tr>
+<td>*Constructing Provide Location information message(RRC processing
+time, UE)</td>
+<td>5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>Processing delay for provide Location Information at UE : 5
+ms</p></td>
+</tr>
+<tr>
+<td>*Constructing scheduling request message (RRC processing time,
+UE)</td>
+<td>2 ms ~ 5 ms</td>
+<td><p>38.331 section 12.</p>
+<p>RRC UL information transfer: 2 - 5ms</p></td>
+</tr>
+<tr>
+<td>Transmission of scheduling request for measurement report
+(UE🡪gNB)</td>
+<td>0.21ms~81ms</td>
+<td><p>38.213 section 9.2.4</p>
+<p>38.331 section 6.3.2</p></td>
+</tr>
+<tr>
+<td><p>*Reception of scheduling request</p>
+<p>And preparation time for UL grant (gNB)</p></td>
+<td>6 ms ~ 6.5 ms</td>
+<td><p>RRC Processing at gNB : 3*2 ms</p>
+<p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p></td>
+</tr>
+<tr>
+<td>Transmission of UL grant(gNB 🡪 UE )</td>
+<td>0.07ms~0.21ms</td>
+<td>38.213 section 10.1</td>
+</tr>
+<tr>
+<td>UL grant reception (PHY Processing time for PDSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.57 ms ~ 0.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.21 ms</p></td>
+<td>38.214 section 5.3.</td>
+</tr>
+<tr>
+<td>*Reception of UL grant (RRC processing time, UE)</td>
+<td>5 ms ~ 5.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC DL information transfer at UE : 5 ms</p></td>
+</tr>
+<tr>
+<td>Transmission of measurement report (including PHY preparation time
+for PUSCH, UE)</td>
+<td><p>For UE capability-1:</p>
+<p>0.85 ms ~ 1.78 ms</p>
+<p>For UE capability-2:</p>
+<p>0.49 ms ~ 1.42 ms</p></td>
+<td><p>38.214 section 6.4.</p>
+<p>38.214 section 6.1.2.</p></td>
+</tr>
+<tr>
+<td>*Reception of measurement report and preparation time for gNB to
+make NRPPa message (gNB)</td>
+<td>3 ms ~ 3.5 ms</td>
+<td><p>Signalling Propagation Delays between Nodes and UE: 0 ms – 0.5
+ms</p>
+<p>RRC Processing at gNB : 3 ms</p></td>
+</tr>
+<tr>
+<td>Total values</td>
+<td><p>For UE capability-1:</p>
+<p>28.41ms ~ 116.55 ms</p>
+<p>For UE capability-2:</p>
+<p>27.33 ms ~ 115.05 ms</p></td>
+<td><p>When procedure marked with(*) is excluded, total values shall be
+amended as follows:</p>
+<p>For UE capability-1:</p>
+<p>2.41 ms ~ 85.55 ms</p>
+<p>For UE capability-2:</p>
+<p>1.33 ms ~ 84.05 ms</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note 1: Some components denoted by (*) can be excluded since they are
+related with higher layer procedure.</p>
+<p>Note 2: The maximum latency for PDSCH/PUSCH transmission is assumed
+as one slot excluding preparation time. Total values may change when the
+information size related with LPP message is changed.</p>
+</body>
+</html>

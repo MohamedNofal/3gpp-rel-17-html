@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38414-h00</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-and-abbreviations"
+id="toc-definitions-and-abbreviations">3 Definitions and
+abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.2
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#data-link-layer" id="toc-data-link-layer">4 Data Link
+Layer</a></li>
+<li><a href="#ng-interface-user-plane-protocol"
+id="toc-ng-interface-user-plane-protocol">5 NG Interface user plane
+protocol</a>
+<ul>
+<li><a href="#general" id="toc-general">5.1 General</a></li>
+<li><a href="#gtp-u" id="toc-gtp-u">5.2 GTP-U</a></li>
+<li><a href="#udpip" id="toc-udpip">5.3 UDP/IP</a></li>
+<li><a href="#diffserv-code-point-marking"
+id="toc-diffserv-code-point-marking">5.4 Diffserv code point
+marking</a></li>
+</ul></li>
+</ul>
+</nav>
+<p>3GPP TS 38.414 V17.0.0 (2022-04)</p>
+<p>Technical Specification</p>
+<p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NG-RAN;</p>
+<p>NG data transport</p>
+<p>(Release 17)</p>
+<p><img src="media/image1.jpeg" /> <img src="media/image2.png" /></p>
+<p>The present document has been developed within the 3rd Generation
+Partnership Project (3GPP <sup>TM</sup>) and may be further elaborated
+for the purposes of 3GPP..<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</p>
+<blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote>
+<p><em><strong>Copyright Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2022, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">5</a></p>
+<p>2 References <a href="#references">5</a></p>
+<p>3 Definitions and abbreviations <a
+href="#definitions-and-abbreviations">5</a></p>
+<p>3.1 Definitions <a href="#definitions">5</a></p>
+<p>3.2 Abbreviations <a href="#abbreviations">6</a></p>
+<p>4 Data Link Layer <a href="#data-link-layer">6</a></p>
+<p>5 NG Interface user plane protocol <a
+href="#ng-interface-user-plane-protocol">6</a></p>
+<p>5.1 General <a href="#general">6</a></p>
+<p>5.2 GTP-U <a href="#gtp-u">6</a></p>
+<p>5.3 UDP/IP <a href="#udpip">6</a></p>
+<p>5.4 Diffserv code point marking <a
+href="#diffserv-code-point-marking">7</a></p>
+<p>Annex A (informative): Change history <a
+href="#annex-a-informative-change-history">8</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Specification has been produced by the 3<sup>rd</sup>
+Generation Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document specifies the standards for user data transport
+protocols and related signalling protocols to establish user plane
+transport bearers over the NG interface.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TS 23.501: "System Architecture for the 5G System; Stage
+2".</p>
+<p>[3] 3GPP TS 29.281: "General Packet Radio System (GPRS) Tunnelling
+Protocol User Plane (GTPv1-U)".</p>
+<p>[4] IETF RFC 768 (1980-08): "User Datagram Protocol".</p>
+<p>[5] IETF RFC 8200 (2017-07): "Internet Protocol, Version 6 (IPv6)
+Specification".</p>
+<p>[6] IETF RFC 791 (1981-09): "Internet Protocol".</p>
+<p>[7] IETF RFC 2474 (1998-12): "Definition of the Differentiated
+Services Field (DS Field) in the Ipv4 and Ipv6 Headers".</p>
+<p>[8] 3GPP TS 38.300: "NR and NG-RAN Overall Description Stage 2"</p>
+<h1 id="definitions-and-abbreviations">3 Definitions and
+abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in 3GPP TR 21.905 [1] and the following apply. A term defined in
+the present document takes precedence over the definition of the same
+term, if any, in 3GPP TR 21.905 [1].</p>
+<p><strong>gNB</strong>: as defined in TS 38.300 [8].</p>
+<p><strong>ng-eNB</strong>: as defined in TS 38.300 [8].</p>
+<p><strong>NG-RAN node</strong>: as defined in TS 38.300 [8].</p>
+<p><strong>NG-U</strong>: as defined in TS 38.300 [8].</p>
+<p><strong>PDU Session:</strong> as defined in TS 23.501[2].</p>
+<h2 id="abbreviations">3.2 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>5GC 5G Core</p>
+<p>5QI 5G QoS Identifier</p>
+<p>AMF Access and Mobility Management Function</p>
+<p>GTP GPRS Tunnelling Protocol</p>
+<p>IP Internet Protocol</p>
+<p>NGAP NG Application Protocol</p>
+<p>TEID Tunnel Endpoint Identifier</p>
+<p>UDP User Datagram Protocol</p>
+<p>UPF User Plane Function</p>
+<h1 id="data-link-layer">4 Data Link Layer</h1>
+<p>Any data link protocol that fulfills the requirements toward the
+upper layer may be used.</p>
+<h1 id="ng-interface-user-plane-protocol">5 NG Interface user plane
+protocol</h1>
+<h2 id="general">5.1 General</h2>
+<p>Both gNB and ng-eNB can be connected to the 5GC over the NG
+interface.</p>
+<p>The transport layer for data streams over NG is an IP based
+Transport. The following figure shows the transport protocol stacks over
+NG.</p>
+<p><img src="media/image3.svg" /></p>
+<p>Figure 5.1: Transport network layer for data streams over NG</p>
+<p>The GTP-U (TS 29.281 [3]) protocol over UDP over IP shall be
+supported as the transport for data streams on the NG interface. The
+data link layer is as specified in clause 4.</p>
+<p>The transport bearer is identified by the GTP-U TEID (TS 29.281 [3])
+and the IP address (source TEID, destination TEID, source IP address,
+destination IP address).</p>
+<h2 id="gtp-u">5.2 GTP-U</h2>
+<p>The GTP-U (TS 29.281 [3]) protocol shall be used over the NG-U
+interface toward the 5GC.</p>
+<h2 id="udpip">5.3 UDP/IP</h2>
+<p>The path protocol used shall be UDP (IETF RFC 768 [4]).</p>
+<p>The UDP port number for GTP-U shall be as defined in TS 29.281
+[3].</p>
+<p>The NG-RAN node and the 5GC shall support fragmentation and assembly
+of GTP packets at the IP layer.</p>
+<p>The NG-RAN node and the 5GC shall support IPv6 (IETF RFC 8200 [5])
+and/or IPv4 (IETF RFC 791 [6]).</p>
+<p>There may be one or several IP addresses in the NG-RAN node and in
+the 5GC. The packet processing function in the 5GC shall send downstream
+packets of a given PDU Session to the NG-RAN node IP address (received
+in NGAP) associated to that particular PDU Session. The packet
+processing function in the NG-RAN node shall send upstream packets of a
+given PDU Session to the 5GC IP address (received in NGAP) associated to
+that particular PDU Session.</p>
+<p>The Transport Layer Address signalled in NGAP messages is a bit
+string of</p>
+<blockquote>
+<p>a) 32 bits in case of IPv4 address according to IETF RFC 791 [6];
+or</p>
+<p>b) 128 bits in case of IPv6 address according to IETF RFC 8200 [5];
+or</p>
+<p>c) 160 bits if both IPv4 and IPv6 addresses are signalled, in which
+case the IPv4 address is contained in the first 32 bits.</p>
+</blockquote>
+<h2 id="diffserv-code-point-marking">5.4 Diffserv code point
+marking</h2>
+<p>IP Differentiated Services code point marking (IETF RFC 2474 [7])
+shall be supported. The mapping between traffic categories and Diffserv
+code points shall be configurable by O&amp;M based on 5QI, the Priority
+Level (if explicitly signalled), and other NG-RAN traffic parameters
+(e.g. ARP). Traffic categories are implementation-specific and may be
+determined from the application parameters.</p>
+<p class="heading" id="annex-a-informative-change-history"><br />
+Annex A (informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 50%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">May 2017</td>
+<td style="text-align: center;">RAN3#96</td>
+<td style="text-align: center;">R3-171514</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Initial DraftTS endorsed</td>
+<td style="text-align: center;">0.0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">October 2017</td>
+<td style="text-align: center;">RAN3#97bis</td>
+<td style="text-align: center;">R3-174240</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>Update some texts due to new 5G
+terminologies</p>
+<p>Add up "Diffserv code point marking"</p></td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">January 2018</td>
+<td style="text-align: center;">RAN3-adhoc1801</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Incorporate agreed TPs from
+RAN3-adhoc1801</td>
+<td style="text-align: center;">0.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">May 2018</td>
+<td style="text-align: center;">RAN3#100</td>
+<td style="text-align: center;">R3-182642</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Covering agreements of RAN3#100</td>
+<td style="text-align: center;">0.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">06-2018</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">RP-180787</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Presentation to RAN for approval</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">06-2018</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Specification approved at TSG-RAN and
+placed under change control</td>
+<td style="text-align: center;">15.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">09-2018</td>
+<td style="text-align: center;">RP-81</td>
+<td style="text-align: center;">RP-181920</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Updated reference to IPv6</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191396</td>
+<td style="text-align: center;">0005</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Use of Priority Level and ARP for the
+DSCP Derivation at the gNB</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201093</td>
+<td style="text-align: center;">0006</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">Rapporteur Clean-ups of TS38.414</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">SA-88-e</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Update to Rel-16 version (MCC)</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">SA#95-e</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Promotion to Release 17 without
+technical change</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

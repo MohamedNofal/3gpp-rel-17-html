@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.2638888888888889in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 3840 608" width="1.6666666666666667in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.font0 { font-size: 413px; font-family: Symbol, serif; }
+.font1 { font-size: 167px; font-family: "Times New Roman", serif; }
+.font2 { font-size: 288px; font-family: "Times New Roman", serif; }
+.font3 { font-style: italic; font-size: 288px; font-family: "Times New Roman", serif; }
+.font4 { font-style: italic; font-size: 151px; font-family: Symbol, serif; }
+.font5 { font-size: 261px; font-family: Symbol, serif; }
+.font6 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="451" xml:space="preserve" y="424">{</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3630" xml:space="preserve" y="424">}</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1695 1767 1859 1951 2011 2071 2151 2292 2384 2855 2927 2976 3068" xml:lang="en" xml:space="preserve" y="240">subframe,slot</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1668 1740 1789 1881 2828 2900 2986 3127" xml:lang="en" xml:space="preserve" y="467">slotsymb</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="598 753 838 968 1068 1148 1228 1308 3513" xml:lang="en" xml:space="preserve" y="384">0,1,...,1</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="49 1443 2603" xml:lang="en" xml:space="preserve" y="384">lNN</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2445" xml:space="preserve" y="240">m</text>
+        <text class="font5" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="200 3316" xml:space="preserve" y="384">Î-</text>
+    </g>
+</svg>

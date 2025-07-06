@@ -1,0 +1,4533 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38868-h00</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#section" id="toc-section"><br />
+</a></li>
+<li><a href="#scope" id="toc-scope">1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-symbols-and-abbreviations"
+id="toc-definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#background" id="toc-background">4 Background</a>
+<ul>
+<li><a href="#justification" id="toc-justification">4.1
+Justification</a></li>
+<li><a href="#objective" id="toc-objective">4.2 Objective</a></li>
+</ul></li>
+<li><a href="#evaluation-of-link-level-simulation"
+id="toc-evaluation-of-link-level-simulation">5 Evaluation of link level
+simulation </a>
+<ul>
+<li><a href="#qualcomm-link-level-simulation-results"
+id="toc-qualcomm-link-level-simulation-results">5.1 Qualcomm link level
+simulation results</a></li>
+<li><a href="#huawei-link-level-simulation-results"
+id="toc-huawei-link-level-simulation-results">5.2 Huawei link level
+simulation results</a></li>
+<li><a href="#nokia-link-level-simulation-results"
+id="toc-nokia-link-level-simulation-results">5.3 Nokia link level
+simulation results</a>
+<ul>
+<li><a href="#spectral-shaping-transparent-to-gnb-receiver"
+id="toc-spectral-shaping-transparent-to-gnb-receiver">5.3.1 Spectral
+shaping transparent to gNB receiver</a></li>
+<li><a href="#spectral-shaping-known-to-gnb-receiver"
+id="toc-spectral-shaping-known-to-gnb-receiver">5.3.2 Spectral shaping
+known to gNB receiver</a></li>
+</ul></li>
+<li><a
+href="#iith-iitm-cewit-reliance-jio-tejas-networks-link-level-simulation-results"
+id="toc-iith-iitm-cewit-reliance-jio-tejas-networks-link-level-simulation-results">5.4
+IITH, IITM, CEWiT, Reliance Jio, Tejas Networks link level simulation
+results</a></li>
+<li><a href="#intel-link-level-simulation-results"
+id="toc-intel-link-level-simulation-results">5.5 Intel link level
+simulation results</a></li>
+<li><a href="#vivo-link-level-simulation-results"
+id="toc-vivo-link-level-simulation-results">5.6 Vivo link level
+simulation results</a></li>
+</ul></li>
+<li><a href="#evaluation-of-pulse-shaping-filters"
+id="toc-evaluation-of-pulse-shaping-filters">6 Evaluation of Pulse
+shaping filters</a>
+<ul>
+<li><a href="#pulse-shaping-filter-simulation-results"
+id="toc-pulse-shaping-filter-simulation-results">6.1 Pulse shaping
+filter simulation results</a>
+<ul>
+<li><a href="#huawei-simulation-results-for-pulse-shaping-filter"
+id="toc-huawei-simulation-results-for-pulse-shaping-filter">6.1.1 Huawei
+simulation results for pulse shaping filter</a></li>
+<li><a href="#nokia-simulation-results-for-pulse-shaping-filters"
+id="toc-nokia-simulation-results-for-pulse-shaping-filters">6.1.2 Nokia
+simulation results for pulse shaping filters</a></li>
+</ul></li>
+<li><a href="#net-gain-analysis-of-combined-tx-and-rx-impacts"
+id="toc-net-gain-analysis-of-combined-tx-and-rx-impacts">6.2 Net gain
+analysis of combined Tx and Rx impacts</a>
+<ul>
+<li><a
+href="#nokia-simulation-results-for-net-gain-analysis-of-combined-tx-and-rx-impacts-w.r.t-1d-dmrs-not-shaped"
+id="toc-nokia-simulation-results-for-net-gain-analysis-of-combined-tx-and-rx-impacts-w.r.t-1d-dmrs-not-shaped">6.2.1
+Nokia simulation results for net gain analysis of combined Tx and Rx
+impacts (w.r.t 1+D) DMRS not shaped</a>
+<ul>
+<li><a href="#net-gain-simulation-results-for-tdl-c300ns"
+id="toc-net-gain-simulation-results-for-tdl-c300ns">6.2.1.1 Net gain
+simulation results for TDL-C300ns</a></li>
+<li><a href="#net-gain-simulation-results-for-tdl-a-30ns"
+id="toc-net-gain-simulation-results-for-tdl-a-30ns">6.2.1.2 Net gain
+simulation results for TDL-A 30ns</a></li>
+<li><a href="#net-gain-simulation-results-for-tdl-d-30ns"
+id="toc-net-gain-simulation-results-for-tdl-d-30ns">6.2.1.3 Net gain
+simulation results for TDL-D 30ns</a></li>
+</ul></li>
+<li><a
+href="#nokia-simulation-results-for-net-gain-analysis-of-combined-tx-and-rx-impacts-w.r.t-0.2-1-0.2"
+id="toc-nokia-simulation-results-for-net-gain-analysis-of-combined-tx-and-rx-impacts-w.r.t-0.2-1-0.2">6.2.2
+Nokia simulation results for net gain analysis of combined Tx and Rx
+impacts (w.r.t [0.2 1 0.2])</a>
+<ul>
+<li><a href="#net-gain-simulation-results-for-tdl-c300ns-1"
+id="toc-net-gain-simulation-results-for-tdl-c300ns-1">6.2.2.1 Net gain
+simulation results for TDL-C300ns</a></li>
+<li><a href="#net-gain-simulation-results-for-tdl-a-30ns-1"
+id="toc-net-gain-simulation-results-for-tdl-a-30ns-1">6.2.2.2 Net gain
+simulation results for TDL-A 30ns</a></li>
+<li><a href="#net-gain-simulation-results-for-tdl-d-30ns-1"
+id="toc-net-gain-simulation-results-for-tdl-d-30ns-1">6.2.2.3 Net gain
+simulation results for TDL-D 30ns</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#intel-tx-rx-link-margin-analysis"
+id="toc-intel-tx-rx-link-margin-analysis">6.2.3 Intel Tx + Rx link
+margin analysis</a>
+<ul>
+<li><a href="#tx-rx-combined-link-margin"
+id="toc-tx-rx-combined-link-margin">6.2.3.1 Tx + Rx combined link margin
+</a></li>
+<li><a
+href="#tx-rx-combined-link-margin-relative-to-mpr0-and-maximum-snr"
+id="toc-tx-rx-combined-link-margin-relative-to-mpr0-and-maximum-snr">6.2.3.2
+Tx + Rx combined link margin (relative to MPR0 and maximum SNR)</a>
+<ul>
+<li><a href="#section-1" id="toc-section-1"></a></li>
+<li><a href="#qualcomm-net-link-margin-analysis"
+id="toc-qualcomm-net-link-margin-analysis">6.2.4 Qualcomm Net link
+margin analysis</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#sar-mitigation-solutions"
+id="toc-sar-mitigation-solutions">7 SAR mitigation solutions </a></li>
+<li><a href="#feasibility-analysis-of-power-enhancement"
+id="toc-feasibility-analysis-of-power-enhancement">8 Feasibility
+analysis of power enhancement </a>
+<ul>
+<li><a href="#qualcomm-results-for-power-enhancement"
+id="toc-qualcomm-results-for-power-enhancement">8.1 Qualcomm results for
+power enhancement</a></li>
+<li><a href="#nokia-results-for-power-enhancement"
+id="toc-nokia-results-for-power-enhancement">8.2 Nokia results for power
+enhancement</a>
+<ul>
+<li><a
+href="#power-enhancement-with-respect-to-1d-filter-with-dmrs-shaped"
+id="toc-power-enhancement-with-respect-to-1d-filter-with-dmrs-shaped">8.2.1
+Power enhancement with respect to [1+D] filter with DMRS shaped</a></li>
+<li><a
+href="#power-enhancement-with-respect-to-1d-filter-with-dmrs-not-shaped"
+id="toc-power-enhancement-with-respect-to-1d-filter-with-dmrs-not-shaped">8.2.2
+Power enhancement with respect to [1+D] filter with DMRS not
+shaped</a></li>
+<li><a href="#best-filters-per-channel-bandwidth"
+id="toc-best-filters-per-channel-bandwidth">8.2.3 Best filters per
+channel bandwidth</a></li>
+<li><a href="#minimum-mpr-w.r.t-29-dbm"
+id="toc-minimum-mpr-w.r.t-29-dbm">8.2.4 Minimum MPR w.r.t 29
+dBm</a></li>
+</ul></li>
+<li><a
+href="#iith-iitm-cewit-reliance-jio-tejas-networks-results-for-power-enhancement"
+id="toc-iith-iitm-cewit-reliance-jio-tejas-networks-results-for-power-enhancement">8.3
+IITH, IITM, CEWiT, Reliance Jio, Tejas Networks results for power
+enhancement</a></li>
+<li><a href="#intel-results-for-power-enhancement"
+id="toc-intel-results-for-power-enhancement">8.4 Intel results for power
+enhancement</a></li>
+<li><a href="#huawei-results-for-power-enhancement"
+id="toc-huawei-results-for-power-enhancement">8.5 Huawei results for
+power enhancement</a>
+<ul>
+<li><a href="#mpr-comparison-results"
+id="toc-mpr-comparison-results">8.5.1 MPR comparison results</a></li>
+<li><a href="#optimization-of-rb-regions-for-mpr-specifications"
+id="toc-optimization-of-rb-regions-for-mpr-specifications">8.5.2
+Optimization of RB regions for MPR specifications</a></li>
+</ul></li>
+<li><a href="#skyworks-results-for-power-enhancement"
+id="toc-skyworks-results-for-power-enhancement">8.6 Skyworks results for
+power enhancement</a>
+<ul>
+<li><a href="#power-enhancement-results1"
+id="toc-power-enhancement-results1">8.6.1 Power enhancement
+results1</a></li>
+<li><a href="#power-enhancement-results2"
+id="toc-power-enhancement-results2">8.6.2 Power enhancement
+results2</a></li>
+</ul></li>
+<li><a href="#apple-results-for-power-enhancement"
+id="toc-apple-results-for-power-enhancement">8.7 Apple results for power
+enhancement</a>
+<ul>
+<li><a href="#results-for-power-boost-2db"
+id="toc-results-for-power-boost-2db">8.7.1 Results for power boost
+&gt;2dB</a></li>
+</ul></li>
+<li><a href="#results-for-power-boost-between-1db-to-2db"
+id="toc-results-for-power-boost-between-1db-to-2db">8.7.2 Results for
+power boost between 1dB to 2dB</a></li>
+</ul></li>
+<li><a href="#agreements-conclusion-and-recommendations"
+id="toc-agreements-conclusion-and-recommendations">9 Agreements,
+conclusion and recommendations</a>
+<ul>
+<li><a href="#ran4-and-ran-agreements"
+id="toc-ran4-and-ran-agreements">9.1 RAN4 and RAN agreements</a></li>
+<li><a href="#conclusions" id="toc-conclusions">9.2 Conclusions</a></li>
+</ul></li>
+<li><a href="#annex-a-change-history"
+id="toc-annex-a-change-history"><u><br />
+</u>Annex A: Change history</a></li>
+</ul>
+</nav>
+<p>3GPP TR 38.868 V17.0.0 (2022-03)</p>
+<p>Technical Report</p>
+<p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>Optimizations of pi/2 BPSK uplink power in NR;</p>
+<p>User Equipment (UE) radio transmission and reception;</p>
+<p>(Release 17)</p>
+<p><img src="media/image1.jpeg" style="width:1.31875in;height:0.92014in"
+alt="5G-logo_175px" /> <img src="media/image2.png"
+style="width:1.77917in;height:1.03681in" alt="3GPP-logo_web" /></p>
+<p>The present document has been developed within the 3rd Generation
+Partnership Project (3GPP <sup>TM</sup>) and may be further elaborated
+for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Report is provided for future development work within 3GPP only.
+The Organizational Partners accept no liability for any use of this
+Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</p>
+<blockquote>
+<p>Keywords</p>
+<p>&lt;NR V2X (vehicle-to-everything), Sidelink, Public safety,
+Proximity based Services&gt;</p>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote>
+<p><em><strong>Copyright Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2022, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">5</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references">6</a></p>
+<p>3 Definitions, symbols and abbreviations <a
+href="#definitions-symbols-and-abbreviations">6</a></p>
+<p>3.1 Definitions <a href="#definitions">6</a></p>
+<p>3.2 Symbols <a href="#symbols">6</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">6</a></p>
+<p>4 Background <a href="#background">7</a></p>
+<p>4.1 Justification <a href="#justification">7</a></p>
+<p>4.2 Objective <a href="#objective">8</a></p>
+<p>5 Evaluation of link level simulation <a
+href="#evaluation-of-link-level-simulation">8</a></p>
+<p>5.1 Qualcomm link level simulation results <a
+href="#qualcomm-link-level-simulation-results">8</a></p>
+<p>5.2 Huawei link level simulation results <a
+href="#huawei-link-level-simulation-results">11</a></p>
+<p>5.3 Nokia link level simulation results <a
+href="#nokia-link-level-simulation-results">12</a></p>
+<p>5.3.1 Spectral shaping transparent to gNB receiver <a
+href="#spectral-shaping-transparent-to-gnb-receiver">12</a></p>
+<p>5.3.2 Spectral shaping known to gNB receiver <a
+href="#spectral-shaping-known-to-gnb-receiver">14</a></p>
+<p>5.4 IITH, IITM, CEWiT, Reliance Jio, Tejas Networks link level
+simulation results <a
+href="#iith-iitm-cewit-reliance-jio-tejas-networks-link-level-simulation-results">15</a></p>
+<p>5.5 Intel link level simulation results <a
+href="#intel-link-level-simulation-results">17</a></p>
+<p>5.6 Vivo link level simulation results <a
+href="#vivo-link-level-simulation-results">20</a></p>
+<p>6 Evaluation of Pulse shaping filters <a
+href="#evaluation-of-pulse-shaping-filters">22</a></p>
+<p>6.1 Pulse shaping filter simulation results <a
+href="#pulse-shaping-filter-simulation-results">23</a></p>
+<p>6.1.1 Huawei simulation results for pulse shaping filter <a
+href="#huawei-simulation-results-for-pulse-shaping-filter">23</a></p>
+<p>6.1.2 Nokia simulation results for pulse shaping filters <a
+href="#nokia-simulation-results-for-pulse-shaping-filters">24</a></p>
+<p>6.2 Net gain analysis of combined Tx and Rx impacts <a
+href="#net-gain-analysis-of-combined-tx-and-rx-impacts">25</a></p>
+<p>6.2.1 Nokia simulation results for net gain analysis of combined Tx
+and Rx impacts (w.r.t 1+D) DMRS not shaped <a
+href="#nokia-simulation-results-for-net-gain-analysis-of-combined-tx-and-rx-impacts-w.r.t-1d-dmrs-not-shaped">25</a></p>
+<p>6.2.1.1 Net gain simulation results for TDL-C300ns <a
+href="#net-gain-simulation-results-for-tdl-c300ns">26</a></p>
+<p>6.2.1.2 Net gain simulation results for TDL-A 30ns <a
+href="#net-gain-simulation-results-for-tdl-a-30ns">28</a></p>
+<p>6.2.1.3 Net gain simulation results for TDL-D 30ns <a
+href="#net-gain-simulation-results-for-tdl-d-30ns">30</a></p>
+<p>6.2.2 Nokia simulation results for net gain analysis of combined Tx
+and Rx impacts (w.r.t [0.2 1 0.2]) <a
+href="#nokia-simulation-results-for-net-gain-analysis-of-combined-tx-and-rx-impacts-w.r.t-0.2-1-0.2">32</a></p>
+<p>6.2.2.1 Net gain simulation results for TDL-C300ns <a
+href="#net-gain-simulation-results-for-tdl-c300ns-1">33</a></p>
+<p>6.2.2.2 Net gain simulation results for TDL-A 30ns <a
+href="#net-gain-simulation-results-for-tdl-a-30ns-1">35</a></p>
+<p>6.2.2.3 Net gain simulation results for TDL-D 30ns <a
+href="#net-gain-simulation-results-for-tdl-d-30ns-1">37</a></p>
+<p>6.2.3 Intel Tx + Rx link margin analysis <a
+href="#intel-tx-rx-link-margin-analysis">39</a></p>
+<p>6.2.3.1 Tx + Rx combined link margin <a
+href="#tx-rx-combined-link-margin">39</a></p>
+<p>6.2.3.2 Tx + Rx combined link margin (relative to MPR0 and maximum
+SNR) <a
+href="#tx-rx-combined-link-margin-relative-to-mpr0-and-maximum-snr">41</a></p>
+<p>6.2.4 Qualcomm Net link margin analysis <a
+href="#qualcomm-net-link-margin-analysis">44</a></p>
+<p>7 SAR mitigation solutions <a
+href="#sar-mitigation-solutions">46</a></p>
+<p>8 Feasibility analysis of power enhancement <a
+href="#feasibility-analysis-of-power-enhancement">46</a></p>
+<p>8.1 Qualcomm results for power enhancement <a
+href="#qualcomm-results-for-power-enhancement">46</a></p>
+<p>8.2 Nokia results for power enhancement <a
+href="#nokia-results-for-power-enhancement">47</a></p>
+<p>8.2.1 Power enhancement with respect to [1+D] filter with DMRS shaped
+<a
+href="#power-enhancement-with-respect-to-1d-filter-with-dmrs-shaped">48</a></p>
+<p>8.2.2 Power enhancement with respect to [1+D] filter with DMRS not
+shaped <a
+href="#power-enhancement-with-respect-to-1d-filter-with-dmrs-not-shaped">52</a></p>
+<p>8.2.3 Best filters per channel bandwidth <a
+href="#best-filters-per-channel-bandwidth">57</a></p>
+<p>8.2.4 Minimum MPR w.r.t 29 dBm <a
+href="#minimum-mpr-w.r.t-29-dbm">62</a></p>
+<p>8.3 IITH, IITM, CEWiT, Reliance Jio, Tejas Networks results for power
+enhancement <a
+href="#iith-iitm-cewit-reliance-jio-tejas-networks-results-for-power-enhancement">65</a></p>
+<p>8.4 Intel results for power enhancement <a
+href="#intel-results-for-power-enhancement">66</a></p>
+<p>8.5 Huawei results for power enhancement <a
+href="#huawei-results-for-power-enhancement">68</a></p>
+<p>8.5.1 MPR comparison results <a
+href="#mpr-comparison-results">68</a></p>
+<p>8.5.2 Optimization of RB regions for MPR specifications <a
+href="#optimization-of-rb-regions-for-mpr-specifications">70</a></p>
+<p>8.6 Skyworks results for power enhancement <a
+href="#skyworks-results-for-power-enhancement">72</a></p>
+<p>8.6.1 Power enhancement results1 <a
+href="#power-enhancement-results1">72</a></p>
+<p>8.6.2 Power enhancement results2 <a
+href="#power-enhancement-results2">77</a></p>
+<p>8.7 Apple results for power enhancement <a
+href="#apple-results-for-power-enhancement">81</a></p>
+<p>8.7.1 Results for power boost &gt;2dB <a
+href="#results-for-power-boost-2db">81</a></p>
+<p>8.7.2 Results for power boost between 1dB to 2dB <a
+href="#results-for-power-boost-between-1db-to-2db">86</a></p>
+<p>9 Agreements, conclusion and recommendations <a
+href="#agreements-conclusion-and-recommendations">90</a></p>
+<p>9.1 RAN4 and RAN agreements <a
+href="#ran4-and-ran-agreements">90</a></p>
+<p>9.2 Conclusions <a href="#conclusions">90</a></p>
+<p>Annex A: Change history <a href="#annex-a-change-history">92</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Report has been produced by the 3<sup>rd</sup>
+Generation Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="section"><br />
+</h1>
+<h1 id="scope">1 Scope</h1>
+<p>This document is a technical report for optimization of pi/2 BPSK NR
+uplink power in Rel-17. The purpose is to evaluate the feasibility of
+increasing the UE’s uplink power in TDD bands for pi/2 BPSK modulation
+assuming use of existing UE power classes as indicated per band or band
+combination. The objectives are applicable to FR1 TDD bands n34, n39,
+n40, n41, n77, n78 and n79. The justification and objectives of this
+work item are outlined in section 4.1 and section 4.2.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TR 30.007: "Guideline on WI/SI for new Operating Bands".</p>
+<p>[3] 3GPP TS 38.101-1: "NR; User Equipment (UE) radio transmission and
+reception; Part 1: Range 1 Standalone".</p>
+<p>[4] 3GPP TS 38.101-2: "NR; User Equipment (UE) radio transmission and
+reception; Part 2: Range 2 Standalone".</p>
+<p>[5] 3GPP TS 38.101-3: "NR; User Equipment (UE) radio transmission and
+reception; Part 3: Range 1 and Range 2 Interworking operation with other
+radios".</p>
+<h1 id="definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in 3GPP TR 21.905 [1] and the following apply. A term defined in
+the present document takes precedence over the definition of the same
+term, if any, in 3GPP TR 21.905 [1].</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>ACLR Adjacent Channel Leakage Ratio</p>
+<p>ACS Adjacent Channel Selectivity</p>
+<p>AGC Automatic Gain Control</p>
+<p>A-MPR Additional Maximum Power Reduction</p>
+<p>BLER BLock Error Rate</p>
+<p>BS Base Station</p>
+<p>CBW Channel Bandwidth</p>
+<p>CDF Cumulative Distribution Function</p>
+<p>CP-OFDM Cyclic Prefix-OFDM</p>
+<p>DMRS Demodulation Reference Signal</p>
+<p>DSRC Dedicated Short-Range Communications</p>
+<p>EIRP Equivalent Isotropically Radiated Power</p>
+<p>EVM Error Vector Magnitude</p>
+<p>FDD Frequency Division Duplex</p>
+<p>FDM Frequency Division Multiplexing</p>
+<p>FR1 Frequency Range 1</p>
+<p>FR2 Frequency Range 2</p>
+<p>ITS Intelligent Transportation System</p>
+<p>LDPC Low Density Parity Check</p>
+<p>LTE Long Term Evolution</p>
+<p>LOS Line-Of-Sight</p>
+<p>MPR Maximum Power Reduction</p>
+<p>NF Noise Figure</p>
+<p>NLOS Non-Line-Of-Sight</p>
+<p>NR New Radio</p>
+<p>OLPC Open Loop Power Control</p>
+<p>PC Power Control</p>
+<p>PRB Physical Resource Block</p>
+<p>PRR Package Reception Ratio</p>
+<p>ProSe Proximity-based Services</p>
+<p>PSCCH Physical Sidelink Control CHannel</p>
+<p>PSSCH Physical Sidelink Shared CHannel</p>
+<p>REFSENS Reference Sensitivity</p>
+<p>RF Radio Frequency</p>
+<p>SCS Sub-Carrier Spacing</p>
+<p>SINR Signal to Interference plus Noise Ratio</p>
+<p>SL Sidelink</p>
+<p>SNR Signal-to-Noise Ratio</p>
+<p>TDD Time Division Duplex</p>
+<p>TDM Time Division Multiplexing</p>
+<p>UE User Equipment</p>
+<p>UL Uplink</p>
+<p>V2V Vehicle to Vehicle</p>
+<p>V2X Vehicle to Everything</p>
+<h1 id="background">4 Background</h1>
+<h2 id="justification">4.1 Justification</h2>
+<p>Coverage enhancement is a study item led by RAN1 for Rel-17. It has
+been identified that uplink channels are the bottleneck in many of the
+evaluated scenarios in terms of the coverage achieved. Given a fixed
+number of antennas and fixed MCS choices, an improvement in the uplink
+link budget is only possible through an increase in the UE’s UL
+power.</p>
+<p>The current MPR tables may not fully exploit spectrum shaping of pi/2
+BPSK waveforms. Meaningful reduction in MPR for certain waveforms could
+be achieved if UEs exclusively rely on ‘strong’ shaping. Increase in
+maximum achievable power may also be feasible relative to the MPR0 power
+level. For PC2 devices MPR1 is the output power level at which the
+ACLR=31 dBc obtained with a QPSK full RB DFT-S_OFDM waveform. The output
+power MPR0 is defined as, MPR0=MPR1+1dB.</p>
+<p>Using precedent in Rel-15 and Rel-16 for high power transmissions,
+duty cycle restrictions will help maintain average power levels at 23
+dBm for compliance with SAR requirements.</p>
+<p>In this study item, we propose to exploit strong spectrum shaping to
+realize UL power gains for pi2BPSK waveforms.</p>
+<h2 id="objective">4.2 Objective</h2>
+<p>The objective of this study is to evaluate the feasibility of
+increasing the UE’s uplink power in TDD bands for pi/2 BPSK modulation
+assuming use of existing UE power classes as indicated per band or band
+combination. The objectives are applicable to FR1 TDD bands n34, n39,
+n40, n41, n77, n78 and n79.</p>
+<blockquote>
+<p>1. Identify achievable UE Tx power for pi/2 BPSK with the filter
+studied in this study item. [RAN4]</p>
+<p>2. Evaluate SAR-related duty-cycle restrictions and reporting
+mechanisms [RAN4]</p>
+<p>3. Identify filter characteristics necessary to enable the new power
+capability while ensuring good and robust BS receiver performance.
+[RAN4]</p>
+<p>a. The choice of filters is up to UE implementations and transparent
+to the network</p>
+<p>b. Evaluate possible pulse shaping filter requirement applicable to
+the identified new UE power capability if achievable [RAN4]</p>
+<p>c. Identify if necessary, changes that are needed to EVM equalizer
+flatness mask requirements to capture necessary filter. Changes to the
+existing 14 dB p-p baseline to be assessed in relation to any potential
+gains in UL link performance while still ensuring robust BS receiver
+performance for all UEs in a cell. [RAN4]</p>
+</blockquote>
+<p>Note: whether or not a new UE power class will be introduced for the
+identified achievable UE Tx power for pi/2 BPSK will be decided at the
+drafting stage of the following WI.</p>
+<h1 id="evaluation-of-link-level-simulation">5 Evaluation of link level
+simulation </h1>
+<h4 id="qualcomm-link-level-simulation-results">5.1 Qualcomm link level
+simulation results</h4>
+<p>The following table gives the link level parameters that were
+considered in the simulations:</p>
+<p>Table 5.1.1: Link level simulation parameters</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pulse shaping filter</td>
+<td>Filter configuration conforms to 38.101-1</td>
+</tr>
+<tr>
+<td>Channel model</td>
+<td>TDL-A30ns</td>
+</tr>
+<tr>
+<td>MCS Code rate</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Waveform</td>
+<td>DFTS OFDM with pi/2 BPSK filtered by same filter as for Rel-16
+DMRS</td>
+</tr>
+<tr>
+<td># of DMRS symbols/slot</td>
+<td>2</td>
+</tr>
+<tr>
+<td># of data symbols/slot</td>
+<td>12</td>
+</tr>
+<tr>
+<td># of RBs</td>
+<td>2, 4, 8, 16</td>
+</tr>
+<tr>
+<td>TX/RX configuration</td>
+<td>1TX/4RX</td>
+</tr>
+<tr>
+<td>BW</td>
+<td>100 MHz</td>
+</tr>
+<tr>
+<td>UE speed</td>
+<td>3 km/h</td>
+</tr>
+<tr>
+<td>SCS</td>
+<td>30 kHz</td>
+</tr>
+<tr>
+<td>HARQ configuration</td>
+<td>No retransmissions</td>
+</tr>
+</tbody>
+</table>
+<p>Below are the link simulation results for 2, 4, 8 and 16 RBs</p>
+<p><img src="media/image3.jpeg" style="width:4.16667in;height:3.16667in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 5.1.1: Waveform with number of RB=2</p>
+<p><img src="media/image4.jpeg" style="width:4.1875in;height:3.07292in"
+alt="Chart, line chart Description automatically generated" /></p>
+<p>Figure 5.1.2: Waveform with number of RB=4</p>
+<p><img src="media/image5.jpeg" style="width:4.20833in;height:3.11458in"
+alt="Chart, line chart Description automatically generated" /></p>
+<p>Figure 5.1.3: Waveform with number of RB=8</p>
+<p><img src="media/image6.jpeg" style="width:4.28125in;height:3.39583in"
+alt="Chart, line chart Description automatically generated" /></p>
+<p>Figure 5.1.4: Waveform with number of RB=16</p>
+<p>For a BLER=10<sup>-1</sup> the following is observed from the
+simulation results:</p>
+<p>Table 5.1.2: Filter degradation as a function of RB#</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 28%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Waveform RB #</strong></th>
+<th style="text-align: center;"><strong>SNR @</strong>
+BLER=10<sup>-1</sup> No filter</th>
+<th style="text-align: center;"><strong>SNR @</strong>
+BLER=10<sup>-1</sup> with filter</th>
+<th style="text-align: center;"><strong>Delta (dB)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-6.9</td>
+<td style="text-align: center;">-6.5</td>
+<td style="text-align: center;">0.4</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-8.7</td>
+<td style="text-align: center;">-8.5</td>
+<td style="text-align: center;">0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-9.9</td>
+<td style="text-align: center;">-9.7</td>
+<td style="text-align: center;">0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">-10.8</td>
+<td style="text-align: center;">-10.7</td>
+<td style="text-align: center;">0.2</td>
+</tr>
+</tbody>
+</table>
+<p>Based on this data the maximum degradation due to pulse shaping is
+seen to be 0.4 dB.</p>
+<h4 id="huawei-link-level-simulation-results">5.2 Huawei link level
+simulation results</h4>
+<p>The Table 2 below is the recommended parameter list for link level
+simulation.</p>
+<p>Table 5.2.1: Recommended Parameter list</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pulse shaping filter</td>
+<td>Filter configuration conforms to 38.101-1</td>
+</tr>
+<tr>
+<td>Channel model</td>
+<td>TDL-C300ns, TDL-A30, TDL-D30</td>
+</tr>
+<tr>
+<td>MCS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Code rate</td>
+<td>1/8, 1/4, 1/3, 1/2, 2/3</td>
+</tr>
+<tr>
+<td>Waveform</td>
+<td>DFTS OFDM with pi/2 BPSK filtered by same filter as for Rel-16
+DMRS</td>
+</tr>
+<tr>
+<td># of DMRS symbols/slot</td>
+<td>2</td>
+</tr>
+<tr>
+<td># of data symbols/slot</td>
+<td>12</td>
+</tr>
+<tr>
+<td># of RBs</td>
+<td>[2, 4, 8, 16, 64]</td>
+</tr>
+<tr>
+<td>TX/RX configuration</td>
+<td>1TX/4RX</td>
+</tr>
+<tr>
+<td>BW</td>
+<td>100 MHz</td>
+</tr>
+<tr>
+<td>UE speed</td>
+<td>3 km/h</td>
+</tr>
+<tr>
+<td>SCS</td>
+<td>30 kHz</td>
+</tr>
+<tr>
+<td>HARQ configuration</td>
+<td>No retransmissions</td>
+</tr>
+</tbody>
+</table>
+<p>With the simulation assumptions in Table 2, Figure below shows the
+BLER performance for NLoS channel with narrow (100MHz, 8 PRB) and large
+bandwidth allocation (100MHz, 64 PRB), respectively.</p>
+<p><img src="media/image7.png" style="width:2.8125in;height:2.33333in"
+alt="Chart Description automatically generated" /> <img
+src="media/image8.png" style="width:2.5625in;height:2.36458in"
+alt="Chart, line chart Description automatically generated" /></p>
+<p>(a) Small RB allocation (8PRB) (b) Large RB allocation (64PRB)</p>
+<p>Figure 5.2.1: BLER performance of different shaping filters</p>
+<h4 id="nokia-link-level-simulation-results">5.3 Nokia link level
+simulation results</h4>
+<h5 id="spectral-shaping-transparent-to-gnb-receiver">5.3.1 Spectral
+shaping transparent to gNB receiver</h5>
+<p>Simulation parameters are shown in Table 3 and the link simulation
+results for 2-64 PRB bandwidths in the below figures.</p>
+<p>Table 5.3.1.1: Simulation assumptions</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr>
+<th>Carrier frequency</th>
+<th>4GHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel BW</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>SCS</td>
+<td>30kHz</td>
+</tr>
+<tr>
+<td>Channel model</td>
+<td>TDL-C 300ns, TDL-A 30ns, TDL-D 30ns</td>
+</tr>
+<tr>
+<td>UE speed</td>
+<td>3km/h</td>
+</tr>
+<tr>
+<td>Channel estimation</td>
+<td>Frequency domain</td>
+</tr>
+<tr>
+<td>Number of Tx antennas</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Number of Rx antennas</td>
+<td>4</td>
+</tr>
+<tr>
+<td>DMRS config</td>
+<td>Low PAPR sequence type 2, 2 symbols</td>
+</tr>
+<tr>
+<td>Waveform</td>
+<td>DFT-S-OFDM</td>
+</tr>
+<tr>
+<td>HARQ config</td>
+<td>No retransmissions</td>
+</tr>
+<tr>
+<td>Num PRBs</td>
+<td>2,4,8,16,64</td>
+</tr>
+<tr>
+<td>MCS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Channel </td>
+<td>PUSCH, 14 OFDM symbols </td>
+</tr>
+<tr>
+<td>Frequency hopping </td>
+<td>No</td>
+</tr>
+<tr>
+<td>BLER</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Spectral shaping filter</td>
+<td><p>3-tap, FD implementation</p>
+<p>1+D (not used for DMRS symbols)</p>
+<p>Triangular filters</p></td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image9.png" style="width:3.40187in;height:2.32273in"
+alt="Chart, bar chart Description automatically generated" /><img
+src="media/image10.png" style="width:3.17841in;height:2.3125in"
+alt="Chart, bar chart Description automatically generated" /></p>
+<p><img src="media/image11.png" style="width:3.32744in;height:2.23194in"
+alt="Chart, bar chart Description automatically generated" /><img
+src="media/image12.png" style="width:3.32785in;height:2.21181in"
+alt="Chart, bar chart Description automatically generated" /></p>
+<p><img src="media/image13.png" style="width:3.40625in;height:2.25in"
+alt="Chart, bar chart Description automatically generated" /></p>
+<p>Figure 5.3.1.1: Required SNR for 10% BLER for different channel
+profiles</p>
+<p>Based on company results the maximum degradation due to pulse shaping
+is seen to be up to 0.87dB for all 3 channel models.</p>
+<h5 id="spectral-shaping-known-to-gnb-receiver">5.3.2 Spectral shaping
+known to gNB receiver</h5>
+<p>The [0.335, 1.0, 0.335] spectral shaping filter used in this paper is
+the most aggressive 3-tap filter that meets the current spectral
+flatness requirements as shown in our paper from RAN4#99e [R4-2109742].
+Less aggressive 3-tap filters are included too. 3-tap filter is
+implemented in frequency domain due to lower complexity. Simulation
+parameters are shown in Table 5.3.2.1 and the link simulation results
+for 2-64 PRB bandwidths in Figure 5.3.2.1. Simulation parameters are
+according to agreed way forward [R4-2108018].</p>
+<p>Table 5.3.2.1: Simulation assumptions</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr>
+<th>Carrier frequency</th>
+<th>4GHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel BW</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>SCS</td>
+<td>30kHz</td>
+</tr>
+<tr>
+<td>Channel model</td>
+<td>TDL-C 300ns, TDL-A 30ns, TDL-D 30ns</td>
+</tr>
+<tr>
+<td>UE speed</td>
+<td>3km/h</td>
+</tr>
+<tr>
+<td>Channel estimation</td>
+<td>Frequency domain</td>
+</tr>
+<tr>
+<td>Number of Tx antennas</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Number of Rx antennas</td>
+<td>4</td>
+</tr>
+<tr>
+<td>DMRS config</td>
+<td>Low PAPR sequence type 2, 2 symbols</td>
+</tr>
+<tr>
+<td>Waveform</td>
+<td>DFT-S-OFDM</td>
+</tr>
+<tr>
+<td>HARQ config</td>
+<td>No retransmissions</td>
+</tr>
+<tr>
+<td>Num PRBs</td>
+<td>2,4,8,16,64</td>
+</tr>
+<tr>
+<td>MCS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Channel </td>
+<td>PUSCH, 14 OFDM symbols </td>
+</tr>
+<tr>
+<td>Frequency hopping </td>
+<td>No</td>
+</tr>
+<tr>
+<td>BLER</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Spectral shaping filter</td>
+<td>3-tap, FD implementation</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image14.png" style="width:3.37141in;height:2.51181in"
+alt="Chart, bar chart Description automatically generated" /><img
+src="media/image15.png" style="width:3.1811in;height:2.51236in"
+alt="Chart, bar chart Description automatically generated" /></p>
+<p><img src="media/image16.png" style="width:3.36984in;height:2.47244in"
+alt="Chart, bar chart Description automatically generated" /><img
+src="media/image17.svg" style="width:3.38095in;height:2.45669in" /></p>
+<p><img src="media/image18.png" style="width:3.39464in;height:2.45669in"
+alt="Chart, bar chart Description automatically generated" /></p>
+<p>Figure 5.3.2.1: Required SNR for 10% BLER for different channel
+profiles</p>
+<p><strong>Observation 1:</strong> Link loss due to more aggressive
+spectral shaping filtering is higher with small bandwidths.</p>
+<p><strong>Observation 2:</strong> For given number of PRBs, the
+performance difference between the used filters is quite similar for all
+the channel models.</p>
+<h4
+id="iith-iitm-cewit-reliance-jio-tejas-networks-link-level-simulation-results">5.4
+IITH, IITM, CEWiT, Reliance Jio, Tejas Networks link level simulation
+results</h4>
+<p>Table 5.4.1: Simulation parameters</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pulse shaping filter</td>
+<td>1+D</td>
+</tr>
+<tr>
+<td>Channel model</td>
+<td>TDL-D 30, TDL-A30</td>
+</tr>
+<tr>
+<td>MCS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Waveform</td>
+<td>DFTS OFDM with pi/2 BPSK filtered by same filter as for Rel-16
+DMRS</td>
+</tr>
+<tr>
+<td># of DMRS symbols/slot</td>
+<td>2</td>
+</tr>
+<tr>
+<td># of data symbols/slot</td>
+<td>12</td>
+</tr>
+<tr>
+<td># of RBs</td>
+<td>1,4,16</td>
+</tr>
+<tr>
+<td>TX/RX configuration</td>
+<td>1TX/4RX</td>
+</tr>
+<tr>
+<td>BW</td>
+<td>100 MHz</td>
+</tr>
+<tr>
+<td>SCS</td>
+<td>30 kHz</td>
+</tr>
+<tr>
+<td>HARQ configuration</td>
+<td>No retransmissions</td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.4.2: SNR comparison with and without 1+D spectrum shaping at
+10^-1 BLER in TDLD-30</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 25%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Allocation Size</strong></th>
+<th style="text-align: left;"><strong>W/O Filter</strong></th>
+<th style="text-align: left;"><strong>With 1+D Filter</strong></th>
+<th style="text-align: left;"><strong>Delta (dB)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1 PRB</td>
+<td style="text-align: left;">-4.68</td>
+<td style="text-align: left;">-4.39</td>
+<td style="text-align: left;">0.29</td>
+</tr>
+<tr>
+<td style="text-align: left;">4 PRB</td>
+<td style="text-align: left;">-9.667</td>
+<td style="text-align: left;">-9.55</td>
+<td style="text-align: left;">0.117</td>
+</tr>
+<tr>
+<td style="text-align: left;">16 PRB</td>
+<td style="text-align: left;">-10.49</td>
+<td style="text-align: left;">-10.484</td>
+<td style="text-align: left;">0.006</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image19.png" style="width:3.26944in;height:2.45208in"
+alt="Chart, line chart Description automatically generated" /></p>
+<p>Figure 5.4.1: BLER for 1 PRB allocation with and without 1+D spectrum
+shaping in TDLD-30</p>
+<p><img src="media/image20.png" style="width:3.33681in;height:2.5in"
+alt="Chart, line chart Description automatically generated" /></p>
+<p>Figure 5.4.2: BLER for 4 PRB allocation with and without 1+D spectrum
+shaping in TDLD-30</p>
+<p><img src="media/image21.png" style="width:3.42292in;height:2.57708in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 5.4.3: BLER for 16 PRB allocation with and without 1+D
+spectrum shaping in TDLD-30</p>
+<p>Simulation results for TDLA-30ns is given in the following table</p>
+<p>Table 5.4.3: SNR comparison with and without 1+D spectrum shaping at
+10^-1 BLER in TDLA-30</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 25%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Allocation Size</strong></th>
+<th style="text-align: left;"><strong>W/O Filter</strong></th>
+<th style="text-align: left;"><strong>With 1+D Filter</strong></th>
+<th style="text-align: left;"><strong>Delta (dB)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1 PRB</td>
+<td style="text-align: left;">-3.7</td>
+<td style="text-align: left;">-3.5</td>
+<td style="text-align: left;">0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">4 PRB</td>
+<td style="text-align: left;">-8.05</td>
+<td style="text-align: left;">-7.95</td>
+<td style="text-align: left;">0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">16 PRB</td>
+<td style="text-align: left;">-8.24</td>
+<td style="text-align: left;">-8.24</td>
+<td style="text-align: left;">0</td>
+</tr>
+</tbody>
+</table>
+<p>Observation: The loss due to 1+D spectrum shaping does not exceed 0.3
+dB.</p>
+<h4 id="intel-link-level-simulation-results">5.5 Intel link level
+simulation results</h4>
+<p>Table 5.5.1 provides a summary of link-level simulation assumptions.
+The results of analysis of pulse-shaping filtering impact on PUSCH
+demodulation performance are summarized in Tables 5.5.2 to 5.5.5, which
+provide estimated PUSCH SNR loss @ 1% BLER due to filtering. Figure
+5.5.1 provides illustration of the obtained performance in TDLC300
+channel model.</p>
+<p>Table 5.5.1: Simulation assumptions</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Parameter</strong></th>
+<th style="text-align: center;"><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pulse shaping filters</td>
+<td><p>[0.2 1 0.2]</p>
+<p>[0.28 1 0.28]</p>
+<p>[0.335 1 0.335]</p></td>
+</tr>
+<tr>
+<td>Channel model</td>
+<td>AWGN, TDL-C300ns, TDL-A30, TDL-D30</td>
+</tr>
+<tr>
+<td>MCS</td>
+<td>0 (MCS Table 1)</td>
+</tr>
+<tr>
+<td>Waveform</td>
+<td>DFTS OFDM with pi/2 BPSK filtered by same filter as for Rel-16
+DMRS</td>
+</tr>
+<tr>
+<td>DMRS configuration</td>
+<td>Rel-16 low PAPR DMRS sequence</td>
+</tr>
+<tr>
+<td># of DMRS symbols/slot</td>
+<td>2</td>
+</tr>
+<tr>
+<td># of Data symbols/slot</td>
+<td>12</td>
+</tr>
+<tr>
+<td># of RBs</td>
+<td>2, 4, 8, 16, 64</td>
+</tr>
+<tr>
+<td>TX/RX configuration</td>
+<td>1TX/4RX (low correlation)</td>
+</tr>
+<tr>
+<td>CBW</td>
+<td>100 MHz</td>
+</tr>
+<tr>
+<td>SCS</td>
+<td>30 kHz</td>
+</tr>
+<tr>
+<td>HARQ configuration</td>
+<td>No retransmissions</td>
+</tr>
+<tr>
+<td>Test metric</td>
+<td>1% BLER</td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.5.2: SNR loss compared to scenario without pulse-shaping in
+AWGN, dB</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2"
+style="text-align: center;"><strong>Parameter</strong></th>
+<th colspan="3"
+style="text-align: center;"><strong>Filters</strong></th>
+</tr>
+<tr>
+<th><strong>[0.2 1 0.2]</strong></th>
+<th><strong>[0.28 1 0.28]</strong></th>
+<th><strong>[0.335 1 0.335]</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 PRB</td>
+<td>1.1</td>
+<td>1.7</td>
+<td>2.2</td>
+</tr>
+<tr>
+<td>4 PRB</td>
+<td>0.3</td>
+<td>0.9</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>8 PRB</td>
+<td>0.4</td>
+<td>1.1</td>
+<td>1.6</td>
+</tr>
+<tr>
+<td>16 PRB</td>
+<td>0.5</td>
+<td>1.1</td>
+<td>1.7</td>
+</tr>
+<tr>
+<td>64 PRB</td>
+<td>0.7</td>
+<td>1.3</td>
+<td>1.8</td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.5.3: SNR loss compared to scenario without pulse-shaping in
+TDLA30, dB</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2"
+style="text-align: center;"><strong>Parameter</strong></th>
+<th colspan="3"
+style="text-align: center;"><strong>Filters</strong></th>
+</tr>
+<tr>
+<th><strong>[0.2 1 0.2]</strong></th>
+<th><strong>[0.28 1 0.28]</strong></th>
+<th><strong>[0.335 1 0.335]</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 PRB</td>
+<td>1.2</td>
+<td>1.2</td>
+<td>2.2</td>
+</tr>
+<tr>
+<td>4 PRB</td>
+<td>0.3</td>
+<td>0.3</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>8 PRB</td>
+<td>0.1</td>
+<td>0.1</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>16 PRB</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>1.8</td>
+</tr>
+<tr>
+<td>64 PRB</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>1.8</td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.5.4: SNR loss compared to scenario without pulse-shaping in
+TDLC300, dB</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2"
+style="text-align: center;"><strong>Parameter</strong></th>
+<th colspan="3"
+style="text-align: center;"><strong>Filters</strong></th>
+</tr>
+<tr>
+<th><strong>[0.2 1 0.2]</strong></th>
+<th><strong>[0.28 1 0.28]</strong></th>
+<th><strong>[0.335 1 0.335]</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 PRB</td>
+<td>1.0</td>
+<td>1.6</td>
+<td>2.2</td>
+</tr>
+<tr>
+<td>4 PRB</td>
+<td>0.8</td>
+<td>1.5</td>
+<td>1.9</td>
+</tr>
+<tr>
+<td>8 PRB</td>
+<td>0.6</td>
+<td>1.5</td>
+<td>2.2</td>
+</tr>
+<tr>
+<td>16 PRB</td>
+<td>0.4</td>
+<td>1.1</td>
+<td>1.9</td>
+</tr>
+<tr>
+<td>64 PRB</td>
+<td>0.8</td>
+<td>1.3</td>
+<td>1.7</td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.5.5: SNR loss compared to scenario without pulse-shaping in
+TDLD30, dB</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2"
+style="text-align: center;"><strong>Parameter</strong></th>
+<th colspan="3"
+style="text-align: center;"><strong>Filters</strong></th>
+</tr>
+<tr>
+<th><strong>[0.2 1 0.2]</strong></th>
+<th><strong>[0.28 1 0.28]</strong></th>
+<th><strong>[0.335 1 0.335]</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 PRB</td>
+<td>1.1</td>
+<td>1.7</td>
+<td>2.2</td>
+</tr>
+<tr>
+<td>4 PRB</td>
+<td>0.1</td>
+<td>0.6</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>8 PRB</td>
+<td>0.1</td>
+<td>0.6</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>16 PRB</td>
+<td>0.4</td>
+<td>0.9</td>
+<td>1.4</td>
+</tr>
+<tr>
+<td>64 PRB</td>
+<td>0.8</td>
+<td>1.2</td>
+<td>1.6</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image22.svg"
+style="width:3.14986in;height:2.3622in" /></th>
+<th><img src="media/image23.svg"
+style="width:3.14986in;height:2.3622in" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="media/image24.svg"
+style="width:3.14986in;height:2.3622in" /></td>
+<td><img src="media/image25.svg"
+style="width:3.14986in;height:2.3622in" /></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;"><img src="media/image26.svg"
+style="width:3.14986in;height:2.3622in" /></td>
+</tr>
+<tr>
+<td colspan="2">Figure 5.5.1: BLER vs SNR for TDL-C channel model</td>
+</tr>
+</tbody>
+</table>
+<p>Based on the obtained results we make the following observations:</p>
+<blockquote>
+<p>1) Pulse shaping result in PUSCH demodulation performance loss with
+larger performance degradation observed for more aggressive filters. Up
+to 2.2 dB SNR loss is observed for [0.335 1 0.335] filter.</p>
+<p>2) The largest degradation is observed for small PRB allocations and
+the reduces in case of using larger PRB allocations</p>
+<p>3) There is a negligible performance loss dependency on channel model
+at least with practical receive processing</p>
+</blockquote>
+<h4 id="vivo-link-level-simulation-results">5.6 Vivo link level
+simulation results</h4>
+<p>we provide link level simulation results for pi/2 BPSK based on the
+below parameter list in table 5.6.1.</p>
+<p>Table 5.6.1: Recommended Parameter list</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Parameter</strong></th>
+<th style="text-align: left;"><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Pulse shaping filter</td>
+<td style="text-align: left;">Filter configuration conforms to
+38.101-1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Channel model</td>
+<td style="text-align: left;">TDL-C300ns, TDL-A30, TDL-D30</td>
+</tr>
+<tr>
+<td style="text-align: left;">MCS</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Waveform</td>
+<td style="text-align: left;">DFTS OFDM with pi/2 BPSK filtered by same
+filter as for Rel-16 DMRS</td>
+</tr>
+<tr>
+<td style="text-align: left;"># of DMRS symbols/slot</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"># of data symbols/slot</td>
+<td style="text-align: left;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;"># of RBs</td>
+<td style="text-align: left;">[2, 4, 8, 16, 64]</td>
+</tr>
+<tr>
+<td style="text-align: left;">TX/RX configuration</td>
+<td style="text-align: left;">1TX/4RX</td>
+</tr>
+<tr>
+<td style="text-align: left;">BW</td>
+<td style="text-align: left;">100 MHz</td>
+</tr>
+<tr>
+<td style="text-align: left;">UE speed</td>
+<td style="text-align: left;">3 km/h</td>
+</tr>
+<tr>
+<td style="text-align: left;">SCS</td>
+<td style="text-align: left;">30 kHz</td>
+</tr>
+<tr>
+<td style="text-align: left;">HARQ configuration</td>
+<td style="text-align: left;">No retransmissions</td>
+</tr>
+</tbody>
+</table>
+<p>The Bler curves for different configuration parameters of three-tap
+filter are shown is figure 5.6.2.</p>
+<p>The frequency domain characteristic curves are shown in figure 5.6.1.
+It can be observed that for the more aggressive spectral shape filter,
+the curve is narrower in the frequency domain. And it also shows that
+the correlation between time-domain data would be greater and the PAPR
+would be smaller. Therefore, it is helpful to boost the power of UE
+output.</p>
+<p>However, for the spectral shape filter, the receive demodulation
+performance would also be reduced compared with no filter since the FDSS
+would cause non-uniform distribution of SNR on each subcarrier and
+impact the channel equalization.</p>
+<p><img src="media/image27.svg"
+style="width:5.77361in;height:3in" /></p>
+<p>Figure 5.6.1: Frequency characteristics of different spectral shape
+filters</p>
+<p>Observation 1: For the more aggressive spectral shape filter, the
+PAPR would be smaller</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image28.svg"
+style="width:3.26944in;height:2.47847in" /></th>
+<th><img src="media/image29.svg"
+style="width:3.30417in;height:2.47847in" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 51%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image30.svg"
+style="width:3.54792in;height:2.66944in" /></th>
+<th><img src="media/image31.svg"
+style="width:3.37361in;height:2.66944in" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image32.svg"
+style="width:3.37361in;height:2.53056in" /></th>
+<th><img src="media/image33.svg"
+style="width:3.34792in;height:2.51319in" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Figure 5.6.2: Bler performance of different spectrum shape
+filters</p>
+<p>It can be observed that for all channel model (e.g., TDL-A, TDL-C,
+TDL-D) and RBs (2RB and 8RB), for the more aggressive spectral shape
+filter (e.g., [0.33 1 0.33]), the Bler performance would be worse. In
+addition, the maximum SNR difference between no-filter and FDSS filter
+when the Bler is 10% is about is 1dB.</p>
+<p>Observation 2: For all channel model (e.g., TDL-A, TDL-C, TDL-D) and
+RBs (2RB and 8RB), for the more aggressive spectral shape filter (e.g.,
+[0.33 1 0.33]), the Bler performance would be worse.</p>
+<p>Observation 3: The maximum SNR difference between no-filter and FDSS
+filter when the Bler is 10% is about 1dB.</p>
+<p>Based on the above analyse, we can see that it is very necessary to
+select the appropriate filter, PAPR performance and Bler performance
+must be taken into consideration at the same time.</p>
+<p>Observation 4: PAPR performance and Bler performance must be taken
+into consideration at the same time for FDSS filter selection.</p>
+<h1 id="evaluation-of-pulse-shaping-filters">6 Evaluation of Pulse
+shaping filters</h1>
+<h4 id="pulse-shaping-filter-simulation-results">6.1 Pulse shaping
+filter simulation results</h4>
+<h5 id="huawei-simulation-results-for-pulse-shaping-filter">6.1.1 Huawei
+simulation results for pulse shaping filter</h5>
+<p>Figure 6.1.1.1 illustrates the evaluated FDSS filter in term of the
+spectrum shape for the example of allocation of 20 PRBs.</p>
+<p><img src="media/image34.svg"
+style="width:3.49306in;height:2.61806in" /></p>
+<p>Figure 6.1.1.1: Spectrum shape of the FDSS filters</p>
+<p>To further elaborate our consideration and understanding of shaping
+filter, the comparison of different implementation is provided in
+figures below.</p>
+<p><img src="media/image35.png" style="width:2.95139in;height:2.54167in"
+alt="Chart, line chart Description automatically generated" /><img
+src="media/image36.png" style="width:2.91667in;height:2.58333in"
+alt="Chart, line chart Description automatically generated with medium confidence" /></p>
+<p>Figure 6.1.1.2: PAPR of different shaping filters (CBW 100MHz,
+64RB)</p>
+<p><img src="media/image37.png" style="width:2.875in;height:2.52083in"
+alt="Chart, line chart Description automatically generated" /><img
+src="media/image38.png" style="width:2.83333in;height:2.5625in"
+alt="Chart, line chart Description automatically generated" /></p>
+<p>Figure 6.1.1.3: PAPR of different shaping filters (CBW 10MHz,
+8RB)</p>
+<p>These results indicate that the PAPR for a given CCDF is lower for
+more aggressive pulse shaping filtering.</p>
+<h5 id="nokia-simulation-results-for-pulse-shaping-filters">6.1.2 Nokia
+simulation results for pulse shaping filters</h5>
+<p>The following figure shous the tested filters.</p>
+<p><img src="media/image39.svg"
+style="width:2.94699in;height:2.21024in" /></p>
+<p>Figure 6.1.2.1: Tested filters</p>
+<p>0.335 is the most aggressive 3-tap filter that meets the current
+spectral flatness requirements, less aggressive 3-tap filters are
+included too (0.2 and 0.28). Triang A is the most aggressive triangular
+window that meets the current spectral flatness requirements, and Triang
+B is a less aggressive triangular window, with similar frequency shape
+as the 0.2 3-tap filter.</p>
+<p>A subset of the results for the evaluation of the pulse shaping
+filters from the transmitter point of view from [3] is shown in the
+following figures, where the filter that provides the highest output
+power is selected for each allocation configuration.</p>
+<p><img src="media/image40.svg"
+style="width:3.30709in;height:2.48031in" /> <img src="media/image41.svg"
+style="width:3.30709in;height:2.48031in" /></p>
+<p>Figure 6.1.2.2: Shaping filter that provides the maximum output power
+for (left) 10 MHz channel BW, and (right) 50 MHz channel BW</p>
+<p>Conclusions of the simulations (all available results are not
+included here due to vast amount of them but they can be found in
+[3],):</p>
+<p>For all the tested channel bandwidth, and allocation configurations,
+there are filters that conform to 38.101-1 Rel-16 requirements that
+offer larger or same output power than the [1+D] filter when the DMRS
+are shaped.</p>
+<p>For all the tested channel bandwidth, and allocation configurations,
+there are filters that conform to 38.101-1 Rel-16 requirements that
+offer larger or same output power than the [1+D] filter when the DMRS
+are not shaped.</p>
+<h4 id="net-gain-analysis-of-combined-tx-and-rx-impacts">6.2 Net gain
+analysis of combined Tx and Rx impacts</h4>
+<h5
+id="nokia-simulation-results-for-net-gain-analysis-of-combined-tx-and-rx-impacts-w.r.t-1d-dmrs-not-shaped">6.2.1
+Nokia simulation results for net gain analysis of combined Tx and Rx
+impacts (w.r.t 1+D) DMRS not shaped</h5>
+<p>Note: The LS from RAN to RAN4 [RP-213655] states that both the data
+and DMRS should be filtered. The results in this section were generated
+prior to this decision and therefore do not conform to the instruction
+provided in this LS</p>
+<p>In order to characterize the filters, it is needed to consider both
+the transmitter performance (i.e., the achievable output power) from our
+paper [3], and the link level performance obtained in [4]. With that
+information, it is possible to compute the net gain with respect to a
+reference filter as:</p>
+<p><span class="math display">\[Net\ Gain\ \lbrack dB\rbrack = \left(
+Pout_{Filter\ i} - Pout_{Ref.\ filter} \right) + \left( SNR10\%_{Ref.\
+filter} - SNR10\%_{Filter\ i} \right)\ \]</span></p>
+<p>Where <span class="math inline">\(Pout_{Filter\ i}\)</span> is the
+output power of the filter being compared against the reference filter,
+<span class="math inline">\(Pout_{Ref.\ filter}\)</span> is the output
+power of the reference filter, <span
+class="math inline">\(SNR10\%_{Ref.\ filter}\)</span> is the required
+SNR to achieve 10% BLER of the reference filter, and <span
+class="math inline">\(SNR10\%_{Filter\ i}\)</span> is the required SNR
+to achieve 10% BLER of the filter being compared against the reference
+filter.</p>
+<p>The following slides show the net gain of the filters with respect to
+the [1+D] filter with DMRS not shaped, for pi/2 BPSK considering the
+transmitter [3] and link level [4] performance for the following
+allocations and channels:</p>
+<p>2, 4, 8, 16 and 64 PRB</p>
+<p>TDL-C 300 ns, TDL-A 30 ns and TDL-D 30 ns</p>
+<p>Filters tested:</p>
+<p>[-0.2 1 -0.2], [-0.28 1 -0.28], [-0.335 1 -0.335], Triang A [6 14]
+and Triang B [6 8]</p>
+<p>The tested filters assume that the filter is transparent to the gNB,
+and the DMRS are shaped. For the [1+D], matched filter is used in
+reception.</p>
+<h6 id="net-gain-simulation-results-for-tdl-c300ns">6.2.1.1 Net gain
+simulation results for TDL-C300ns</h6>
+<p>For 2 and 4 PRB, [1+D] without DMRS shaped performs better than all
+the filters in center allocations (0.1-0.2 dB better than the 0.2 filter
+and 0-0.1 dB better than Triang B).</p>
+<p>For 8 and 16 PRB, [1+D] without DMRS shaped is never the best for any
+allocation. Triang B is the best filter, providing gain for most of the
+possible allocations within the channel.</p>
+<p>For 64 PRB, in central allocations, the performance is the same as
+Triang B. In edge band allocations, the 0.335 filter provides up to 0.9
+dB gain.</p>
+<p>For small allocation sizes, it must be noted that less aggressive
+filters perform better than aggressive filters in central band
+allocations.</p>
+<p>There is not a single best solution for all the evaluated cases.
+Depending on the allocation configuration, different filters (i.e., more
+or less aggressive) perform differently.</p>
+<p>Results are given in the below figures</p>
+<p><img src="media/image42.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.1.1: 2 PRB</p>
+<p><img src="media/image43.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.1.2: 4 PRB</p>
+<p><img src="media/image44.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.1.3: 8 PRB</p>
+<p><img src="media/image45.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.1.4: 16 PRB</p>
+<p><img src="media/image46.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.1.5: 64 PRB</p>
+<p><em><strong>Observation</strong></em>: For allocation sizes ≤ 16 PRB,
+less aggressive filters perform better than aggressive filters in
+central band allocations.</p>
+<h6 id="net-gain-simulation-results-for-tdl-a-30ns">6.2.1.2 Net gain
+simulation results for TDL-A 30ns</h6>
+<p>For 2 and 4 PRB, [1+D] without DMRS shaped performs better than all
+the filters in all allocations (0.1-0.2 dB better than the Triang B
+filter).</p>
+<p>For 8 and 16 PRB, [1+D] without DMRS shaped is never the best for any
+allocation position.</p>
+<p>For 64 PRB, in central allocations, the performance is the same as
+Triang B. In edge band allocations, the 0.335 filter provides up to
+0.8-0.9 dB gain.</p>
+<p>For small allocation sizes, it must be noted that less aggressive
+filters perform better than aggressive filters in central band
+allocations.</p>
+<p>There is not a single best solution for all the evaluated cases.
+Depending on the allocation configuration, different filters (i.e., more
+or less aggressive) perform differently.</p>
+<p>Results are given in the below figures</p>
+<p><img src="media/image47.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.2.1: 2 PRB</p>
+<p><img src="media/image48.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.2.2: 4 PRB</p>
+<p><img src="media/image49.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.2.3: 8 PRB</p>
+<p><img src="media/image50.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.2.4: 16 PRB</p>
+<p><img src="media/image51.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.2.5: 64 PRB</p>
+<h6 id="net-gain-simulation-results-for-tdl-d-30ns">6.2.1.3 Net gain
+simulation results for TDL-D 30ns</h6>
+<p>For 2 and 4 PRB, [1+D] without DMRS shaped performs better than all
+the filters in all allocations (0.1-0.2 dB better than the Triang B
+filter)</p>
+<p>For 8 and 16 PRB, [1+D] without DMRS shaped is never the best for any
+allocation. In central band allocations, Triang B provides gain. 0.335
+filter provides up to 1 dB gain in edge band allocations.</p>
+<p>For 64 PRB, in central band allocations Triang B provides gain. In
+edge allocations, Triang A, 0.28 and 0.335 filters provide up to 0.8 dB
+gain.</p>
+<p>For small allocation sizes, it must be noted that less aggressive
+filters perform better than aggressive filters in central band
+allocations.</p>
+<p>There is not a single best solution for all the evaluated cases.
+Depending on the allocation configuration, different filters (i.e., more
+or less aggressive) perform differently.</p>
+<p>Results are given in the below figures</p>
+<p><img src="media/image52.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.3.1: 2 PRB</p>
+<p><img src="media/image53.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.3.2: 4 PRB</p>
+<p><img src="media/image54.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.3.3: 8 PRB</p>
+<p><img src="media/image55.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.3.4: 16 PRB</p>
+<p><img src="media/image56.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.1.3.5: 64 PRB</p>
+<h5
+id="nokia-simulation-results-for-net-gain-analysis-of-combined-tx-and-rx-impacts-w.r.t-0.2-1-0.2">6.2.2
+Nokia simulation results for net gain analysis of combined Tx and Rx
+impacts (w.r.t [0.2 1 0.2])</h5>
+<p>The most aggressive filters have up to 0.6-0.8 dB loss with respect
+to the less aggressive filters in the small allocations (2, 4, 8 PRB in
+the evaluation) and central band allocations. These results suggest that
+following the agreements on the WF after RAN4#101e [R4-2120057], and the
+SI objectives [RP-213535] (objective 3. c) there is a need for different
+spectral flatness requirements for the filters based on the allocation
+within the channel band. It would be beneficial to have tighter spectral
+flatness requirements for small allocations band to optimize the net
+gain.</p>
+<p><strong>Observation 1</strong>:  The most aggressive filters have up
+to 0.6-0.8 dB loss with respect to the less aggressive filters in the
+small allocations</p>
+<p><strong>Observation 2</strong>: For allocation sizes ≤ 16 PRB, less
+aggressive filters perform better than aggressive filters in terms of
+achievable output power and link performance.</p>
+<p><strong>Observation 3</strong>: There is not a single solution for
+all the evaluated cases. Depending on the allocation configuration,
+different filters (i.e., more or less aggressive) perform
+differently.</p>
+<p><strong>Observation 4:</strong> Based on the previous agreement in
+RAN4#101bis-e [R4-2202386], if spectrum flatness requirements are not
+tightened for small allocations, net gain cannot be guaranteed.</p>
+<h6 id="net-gain-simulation-results-for-tdl-c300ns-1">6.2.2.1 Net gain
+simulation results for TDL-C300ns</h6>
+<p>For 2 and 4 PRB, the two less aggressive filters tested (Triang B and
+0.2) show the best performance for all the allocations within the
+channel.</p>
+<p>For 8 and 16 PRB, Triang B is the best filter, providing gain for
+most of the possible allocations within the channel, except in the edge
+allocations, where more aggressive filters offer gains of up to 1
+dB.</p>
+<p>For 64 PRB, in central allocations, the performance is the best for
+Triang B. In edge band allocations, the 0.335 filter provides up to 1 dB
+gain.</p>
+<p>For small allocation sizes, it must be noted that less aggressive
+filters perform better than aggressive filters.</p>
+<p>Results are given in the below figures</p>
+<p><img src="media/image57.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.1.1: 2 PRB</p>
+<p><img src="media/image58.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.1.2: 4 PRB</p>
+<p><img src="media/image59.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.1.3: 8 PRB</p>
+<p><img src="media/image60.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.1.4: 16 PRB</p>
+<p><img src="media/image61.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.1.5: 64 PRB</p>
+<h6 id="net-gain-simulation-results-for-tdl-a-30ns-1">6.2.2.2 Net gain
+simulation results for TDL-A 30ns</h6>
+<p>For 2 and 4 PRB, the two less aggressive filters tested (Triang B and
+0.2) show the best performance for all the allocations within the
+channel.</p>
+<p>For 8 and 16 PRB, Triang B is the best filter, providing gain for
+most of the possible allocations within the channel, except in the edge
+(or outer) allocations, where more aggressive filters offer gains of up
+to 1.3 dB.</p>
+<p>For 64 PRB, in central allocations, Triang B offers the best
+performance, with the rest of the filters offering the same net gain. In
+edge band allocations, the 0.335 filter provides up to 0.8-1.1 dB
+gain.</p>
+<p>For small allocation sizes, it must be noted that less aggressive
+filters perform better than aggressive filters.</p>
+<p><img src="media/image62.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.2.1: 2 PRB</p>
+<p><img src="media/image63.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.2.2: 4 PRB</p>
+<p><img src="media/image64.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.2.3: 8 PRB</p>
+<p><img src="media/image65.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.2.4: 16 PRB</p>
+<p><img src="media/image66.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.2.5: 64 PRB</p>
+<h6 id="net-gain-simulation-results-for-tdl-d-30ns-1">6.2.2.3 Net gain
+simulation results for TDL-D 30ns</h6>
+<p>For 2 and 4 PRB, the two less aggressive filters tested (Triang B and
+0.2) show the best performance for all the allocations within the
+channel.</p>
+<p>For 8 and 16 PRB, Triang B is the best filter, providing gain for
+most of the possible allocations within the channel, except in the edge
+(or outer) allocations, where more aggressive filters offer gains of up
+to 1.4 dB.</p>
+<p>For 64 PRB, in central allocations, Triang B offers the best
+performance, with the rest of the filters offering the same net gain. In
+edge band allocations, the 0.335 filter provides up to 0.7-1 dB
+gain.</p>
+<p>For small allocation sizes, it must be noted that less aggressive
+filters perform better than aggressive filters.</p>
+<p><img src="media/image67.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.3.1: 2 PRB</p>
+<p><img src="media/image68.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.3.2: 4 PRB</p>
+<p><img src="media/image69.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.3.3: 8 PRB</p>
+<p><img src="media/image70.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.3.4: 16 PRB</p>
+<p><img src="media/image71.svg" style="width:3.6in;height:2.7in" /></p>
+<p>Figure 6.2.2.3.5: 64 PRB</p>
+<h3 id="intel-tx-rx-link-margin-analysis">6.2.3 Intel Tx + Rx link
+margin analysis</h3>
+<p>Table 6.2.3.1 provides a summary of link-level simulation
+assumptions. NR design assumes that pi/2 BPSK spectral shaping on UE
+side is performed on both data and DMRS symbols and, hence, the
+filtering is transparent to the gNB receiver. Three filters [0.2 1 0.2],
+[0.28 1 0.28], and [1+D] were used as example of least, moderate and
+most aggressive filtering respectively based on frequency roll-off. A
+single PC2 PA was used in the Tx chain and was calibrated to 1dB MPR for
+DFT-s-OFDM, QPSK, BW=20MHz, 100RB with 4 dB post PA loss in order to be
+comparable with other simulation results in this study item. TDLC300 and
+TDLA30 channel models were used for evaluations and SNR @ 10% BLER was
+used as a test metric.</p>
+<p>Table 6.2.3.1: Tx + Rx Simulation Assumptions</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Parameter</strong></th>
+<th style="text-align: center;"><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power Amplifier</td>
+<td>Single PC2 PA</td>
+</tr>
+<tr>
+<td>PA Calibration</td>
+<td>1dB MPR: DFT-s-OFDM QPSK 20MHz, 100RB with 4 dB post PA loss</td>
+</tr>
+<tr>
+<td>Pulse shaping filters</td>
+<td><p>[0.2 1 0.2]</p>
+<p>[0.28 1 0.28]</p>
+<p>[1+D]</p></td>
+</tr>
+<tr>
+<td>Channel model</td>
+<td>TDL-C300ns, TDL-A30ns,</td>
+</tr>
+<tr>
+<td>MCS</td>
+<td>0 (MCS Table 3)</td>
+</tr>
+<tr>
+<td>Waveform</td>
+<td>DFTS OFDM with pi/2 BPSK filtered by same filter as for Rel-16
+DMRS</td>
+</tr>
+<tr>
+<td>DMRS configuration</td>
+<td>Rel-16 low PAPR DMRS sequence</td>
+</tr>
+<tr>
+<td># of DMRS symbols/slot</td>
+<td>2</td>
+</tr>
+<tr>
+<td># of Data symbols/slot</td>
+<td>12</td>
+</tr>
+<tr>
+<td>TX/RX configuration</td>
+<td>1TX/4RX (low correlation)</td>
+</tr>
+<tr>
+<td>CBW</td>
+<td>20 MHz</td>
+</tr>
+<tr>
+<td>SCS</td>
+<td>30 kHz</td>
+</tr>
+<tr>
+<td>HARQ configuration</td>
+<td>No retransmissions</td>
+</tr>
+</tbody>
+</table>
+<p>In order to have good comparison between the different filters and
+channel models it is necessary to clearly define Net Tx + Rx Gain. One
+way to evaluate Tx+Rx link margin is to compare delta of performance
+with a filter against the same setup using no filter. This is done in
+the clause 6.2.3.1 and allows for comparison in filter performance.
+However, it is also useful to analyse absolute performance of the
+achievable link budget. This is done in clause 6.2.3.2.</p>
+<h4 id="tx-rx-combined-link-margin">6.2.3.1 Tx + Rx combined link margin
+</h4>
+<p>In this section we evaluate the Tx + Rx combined link margin delta of
+using a filter to no filter. The three pulse shaping filters used are
+again [0.20 1 0.2], [0.28 1 0.28] and [1+D]. Two different channel
+models, TDLC300 and TDLA30 are used to highlight the effect of the
+channel on pulse shaping filter behavior. In the three following
+figures, simulation results using the pulse shaping filter are compared
+with the same exact setup to no pulse shaping filter and the performance
+difference is measured in dB. The formula for link margin delta used
+was:</p>
+<p><span class="math display">\[Link\ Margin\ delta\ \lbrack dB\rbrack =
+\left( Tx\ Pout_{Filter\ i} - Tx\ Pout_{no\ filter} \right) + \left( Rx\
+SNR10\%_{no\ filter} - Rx\ SNR10\%_{Filter\ i} \right)\]</span></p>
+<p>Positive dB represent a combination of higher Tx power and better Rx
+SNR whereas negative dB represent lower Tx power and lower SNR. It is
+noted that in all cases, adding a pulse shaping filter is done with the
+performance tradeoff of slightly lower SNR due to the blind Rx
+equalization process.</p>
+<p><img src="media/image72.svg"
+style="width:6.68889in;height:2.77083in" /></p>
+<p>Figure 6.2.3.1.1: Tx + Rx Link Margin filter delta for [0.2 1 0.2].
+(a) TDL-C300ns case, (b) TDL-A30ns case</p>
+<p>Figure 6.2.3.1.1 shows the Tx + Rx link margin delta for [0.2 1 0.2].
+For this filter, it can be seen that link margin performance is improved
+by up to 2.5dB for all outer RB locations. For inner RB locations, pulse
+filtering provides little benefit to Tx performance, yet does reduce Rx
+performance as the equalizer must blindly accommodate the filtering.
+Thus, for the TDL-C300nS channel model, the RBs mostly represent
+negative link margin delta of (-0.1dB to -0.2dB) (blueish shades). For
+the TDL-A30nS case, there are fewer negative link margin locations as
+the Rx equalizer performance is less degraded by this channel model.</p>
+<p><img src="media/image73.svg"
+style="width:6.68889in;height:2.76736in" /></p>
+<p>Figure 6.2.3.1.2: Tx + Rx Link Margin filter delta for [0.28 1 0.28].
+(a) TDL-C300ns case, (b) TDL-A30ns case</p>
+<p>In Figure 6.2.3.1.2, the Tx + Rx link margin delta for [0.28 1 0.28]
+is seen. For this filter, outer RBs achieve slightly higher link margin
+delta. This is because the sharper filter improves ACLR for outer RBs
+compared to the [0.2 1 0.2] case. However, for inner RBs the filtering
+does not improve the Tx performance, while the Rx performance is more
+negatively impacted by the more aggressive filter. For the TDL-A30nS
+case, there are fewer negative link margin locations than for the
+TDL-C300nS case as the Rx equalizer performance is less degraded by the
+channel model.</p>
+<p><img src="media/image74.svg"
+style="width:6.68889in;height:2.79861in" /></p>
+<p>Figure 6.2.3.1.3: Tx + Rx Link Margin filter delta for [1+D]. (a)
+TDL-C300ns case, (b) TDL-A30ns case</p>
+<p>In Figure 6.2.3.1.3, the Tx + Rx link margin delta for [1+D] is seen.
+For this more aggressive filter, outer RBs achieve link margin delta
+nearly as high as the [0.28 1 0.28] case and better than the [0.2 1 0.2]
+case. This also is because the sharper filter improves ACLR for outer
+RBs compared to the [0.2 1 0.2] case. However, for inner RBs, where the
+filtering does not improve the Tx performance, this filter shows the
+lowest Rx performance and has the most negative link margin delta
+compared to no filter.</p>
+<h4
+id="tx-rx-combined-link-margin-relative-to-mpr0-and-maximum-snr">6.2.3.2
+Tx + Rx combined link margin (relative to MPR0 and maximum SNR)</h4>
+<p>In this analysis, we are interested in evaluating the regions of
+operation on the 2D MPR figures to understand which operating regions
+have the highest combined Tx + Rx link performance. Tx output may range
+between 23dBm to 28dBm, Rx SNR for Pi/2BPSK may range from -13 to -5dB
+and there is also the path loss. SNR varies with LCRB and tends to be
+best for large LCRBs and degrade for small LCRBs. For this analysis, we
+normalize to zero value for MPR0 (26dBm) Tx power and we normalize Rx
+SNR for the highest achievable value (LCRB=50) with no filter. By
+normalizing the Rx with the largest LCRB case with no filter which is
+the best case, we can see the small trade-offs between filter
+performance.</p>
+<p><span class="math display">\[Link\ Margin\ \ \lbrack dB\rbrack =
+\left( Tx\ Pout_{Filter\ i} - MPR0\ (26dBm) \right) + \left( Rx\
+SNR10\%_{max\ with\ no\ filter} - Rx\ SNR10\%_{Filter\ i}
+\right)\]</span></p>
+<p>In the following figures Tx + Rx combined link margin is represented;
+positive dB represent better performance in terms of higher Tx power
+and/or better SNR.</p>
+<p><img src="media/image75.svg"
+style="width:6.68681in;height:2.80903in" /></p>
+<p>Figure 6.2.3.2.1: Tx + Rx Link Margin above Tx PC2 (26dBm) and Rx SNR
+for LCRB=50 for [0.2 1 0.2]. (a) TDL-C300ns case, (b) TDL-A30ns case</p>
+<p><img src="media/image76.svg"
+style="width:6.68681in;height:2.86111in" /></p>
+<p>Figure 6.2.3.2.2: Tx + Rx Link Margin above Tx PC2 (26dBm) and Rx SNR
+for LCRB=50 for [0.28 1 0.28]. (a) TDL-C300ns case, (b) TDL-A30ns
+case</p>
+<p><img src="media/image77.svg"
+style="width:6.68681in;height:2.80903in" /></p>
+<p>Figure 6.2.3.2.3: Tx + Rx Link Margin above Tx PC2 (26dBm) and Rx SNR
+for LCRB=50 for [1+D]. (a) TDL-C300ns case, (b) TDL-A30ns case</p>
+<p>All six of the plots in Figure 6.2.3.2.1 - 6.2.3.2.3 have some common
+trends. In all cases the lower 12% of LCRB cases (LCRB<em>≤</em>6 for
+CBW=20MHz) have at least some negative link margins. For these small
+LCRBs, the degradation in equalization performance exceeds any gains in
+Tx output power had by using Pi/2BPSK.</p>
+<p>Observation 1: In all cases simulated, the lower 12% of LCRB cases
+(LCRB ≤ 5 for CBW=20MHz) have at least some negative link margins for
+the channel models evaluated.</p>
+<p>This is due to fact that small RBs are more easily impacted by sharp
+fades from the channel models. It can also be observed that this effect
+is more severe for the TLD-C300nS channel model than the TLD-A30nS
+model.</p>
+<p>The largest 12% of LCRBs cases (LCRB ≥ 45 for CBW=20MHz) have
+slightly lower link performance than the middle LCRBs, but only by 0.5dB
+to 1.0dB less link margin. This is due to ACLR/SEM limitation on the Tx
+side.</p>
+<p>Observation 2: The link margin is the highest for a small triangle of
+middle LRCBs above and below 12% of the top and bottom edges, and with
+the peak values in the centre at LCRB near 40% of LCRBmax.</p>
+<p>It is also noted that the left and right edge RBs within 8% of
+LCRBmax also have degraded link margin due to ACLR/SEM limitations on
+the Tx side.</p>
+<p>Table 6.2.3.2.1: Selected Link Margin values from the TDL-A30ns case
+for comparison</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th colspan="4" style="text-align: center;"><strong>Link Margin
+(dB)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Filter</strong></td>
+<td style="text-align: center;"><strong>40RB6</strong></td>
+<td style="text-align: center;"><strong>20RB16</strong></td>
+<td style="text-align: center;"><strong>10RB21</strong></td>
+<td style="text-align: center;"><strong>Max</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>[0.2 1 0.2]</strong></td>
+<td style="text-align: center;">2.2</td>
+<td style="text-align: center;">2.8</td>
+<td style="text-align: center;">2.2</td>
+<td style="text-align: center;">2.9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>[0.28 1 0.28]</strong></td>
+<td style="text-align: center;">2.6</td>
+<td style="text-align: center;">2.6</td>
+<td style="text-align: center;">2.0</td>
+<td style="text-align: center;">2.7</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>[1+D]</strong></td>
+<td style="text-align: center;">2.5</td>
+<td style="text-align: center;">2.5</td>
+<td style="text-align: center;">1.8</td>
+<td style="text-align: center;">2.6</td>
+</tr>
+</tbody>
+</table>
+<p>Next, we compare between the three filters. Table 6.2.3.2.1 shows
+some specific values selected from the Figures 6.2.3.2.1 – 6.2.3.2.3.
+The first observation is that there isn’t a significant difference in Tx
++ Rx link performance between the three filters. There is only 0.3dB
+difference between the least aggressive and the most aggressive
+filter.</p>
+<p>For max Link margin the [0.2 1 0.2] filter achieves the highest
+value. This is because the Rx equalization is simplest with the
+flattest, least aggressive filter.</p>
+<p>Table 6.2.3.2.2: Link Margin values for LCRB = 40 for the TDL-A30ns
+case for comparison</p>
+<p><img src="media/image78.svg"
+style="width:6.69375in;height:0.76389in" /></p>
+<p>In Table 6.2.3.2.2, values are shown for each filter for the LCRB =
+40 case. This represents the upper region of the 2D plot. In the table
+it is seen that the [0.28 1 0.28] filter has the highest value and the
+widest region of high values. This phenomenon can also be seen comparing
+Figure 6.2.3.2.2 to Figure 6.2.3.2.1, 6.2.3.2.3. The inner triangle
+region is largest for the [0.28 1 0.28] filter.</p>
+<p>Observation 3: The [0.2 1 0.2] filter achieves the highest value for
+link margin. However, the [0.28 1 0.28] filter has the largest inner
+triangle region of high values, making it the best compromise filter.
+The overall difference in performance of different filters is rather
+limited and as stated in the updated SI objectives the actual filter
+design can be transparent to the network.</p>
+<p>In summary, two methods of evaluating Tx + Rx link margin were
+presented. The first, Tx + Rx absolute link margin shows the RB regions
+with highest combined performance. All of the RBs within the region 12%
+from top or bottom and 8% from the edges. The middle aggressive [0.28 1
+0.28] filter gives the highest overall link margin for the widest range
+of RBs. The second Tx + Rx link margin delta compares the filter
+performance. In this case, we see that the middle aggressive [0.28 1
+0.28] filter also gives the highest performance for outer RB locations.
+However, for inner RB locations no filter or the least aggressive [0.2 1
+0.2] filter is best for avoiding Rx performance degradation due to
+filtering.</p>
+<h5 id="section-1"></h5>
+<h5 id="qualcomm-net-link-margin-analysis">6.2.4 Qualcomm Net link
+margin analysis</h5>
+<p>The below table shows the average output power above MPR0 observed
+for various filter shapes for edge, inner and outer PRB allocations
+using a DFT-S-OFDM pi/2 BPSK waveform with pi/2 BPSK DMRS. Results
+indicate that the output power above MPR0 increases with the
+aggressiveness of the shaping filter and this increase in output power
+is not limited to less aggressive filters. This table also gives the
+delta increase in output power between no filtering i.e. [0 1 0] and a
+filter with [X 1 X] coefficients where X=0.1, 0.2 and 0.3. Measurements
+indicated that the worst-case output power increase above MPR0 for
+filter coefficients [0.28 0.91 0.28] was 0.9 dB. This difference can be
+attributed to a more conservative PA model compared to the actual
+measured hardware.</p>
+<p>Table 6.2.4.1 – Output power increase above MPR0 and output power
+increase from [0 1 0] 🡪 [X 1 X]</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 16%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Filter coefficients [X 1
+X]</strong></th>
+<th colspan="3" style="text-align: center;"><strong>Average output power
+above MPR0</strong></th>
+<th style="text-align: center;"></th>
+<th colspan="3" style="text-align: center;"><strong>[0 1 0] 🡪 [X 1 X]
+Delta power</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>X</strong></td>
+<td style="text-align: center;"><strong>edge</strong></td>
+<td style="text-align: center;"><strong>outer</strong></td>
+<td style="text-align: center;"><strong>inner</strong></td>
+<td></td>
+<td style="text-align: center;"><strong>edge</strong></td>
+<td style="text-align: center;"><strong>outer</strong></td>
+<td style="text-align: center;"><strong>inner</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(dB)</td>
+<td style="text-align: center;">(dB)</td>
+<td style="text-align: center;">(dB)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(dB)</td>
+<td style="text-align: center;">(dB)</td>
+<td style="text-align: center;">(dB)</td>
+</tr>
+<tr>
+<td style="text-align: center;">0 – No filtering</td>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.2</td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">0.3</td>
+<td></td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">0.42</td>
+<td style="text-align: center;">0.4</td>
+<td></td>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">0.37</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">0.45</td>
+<td></td>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: center;">0.4</td>
+<td style="text-align: center;">0.3</td>
+</tr>
+</tbody>
+</table>
+<p>Observation1: The output power above MPR0 increases with the
+aggressiveness of the shaping filter</p>
+<p>The table below shows the SNR @0.1 BLER as a function of the #PRBs
+and the filter coefficient X for TDLA 30ns. Results indicate that for a
+given #PRB the SNR @0.1BLER changes at most by 0.2 dB as the
+aggressiveness of the shaping filter is increased. Results do not show
+any significant benefit with less aggressive shaping filter profiles for
+narrow RBs.</p>
+<p>Table 6.4.2.2 – SNR @0.1 BLER for various filter coefficients and SNR
+change when comparing [0 1 0] to [X 1 X]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th colspan="3" style="text-align: center;">SNR @0.1 BLER</th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th colspan="3" style="text-align: center;"><strong>[0 1 0] 🡪 [X 1 X]
+Delta SNR</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X=0</td>
+<td style="text-align: center;">X=0.1</td>
+<td style="text-align: center;">X=0.2</td>
+<td style="text-align: center;">X=0.3</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X=0 🡪0.1</td>
+<td style="text-align: center;">X=0 🡪0.2</td>
+<td style="text-align: center;">X=0 🡪0.3</td>
+</tr>
+<tr>
+<td style="text-align: center;">RB#</td>
+<td style="text-align: center;">(dB)</td>
+<td style="text-align: center;">(dB)</td>
+<td style="text-align: center;">(dB)</td>
+<td style="text-align: center;">(dB)</td>
+<td style="text-align: center;">RB#</td>
+<td style="text-align: center;">(dB)</td>
+<td style="text-align: center;">(dB)</td>
+<td style="text-align: center;">(dB)</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-6.8</td>
+<td style="text-align: center;">-6.75</td>
+<td style="text-align: center;">-6.7</td>
+<td style="text-align: center;">-6.6</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">-0.1</td>
+<td style="text-align: center;">-0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-8.75</td>
+<td style="text-align: center;">-8.7</td>
+<td style="text-align: center;">-8.6</td>
+<td style="text-align: center;">-8.8</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-0.1</td>
+<td style="text-align: center;">-0.2</td>
+<td style="text-align: center;">0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-9.85</td>
+<td style="text-align: center;">-9.85</td>
+<td style="text-align: center;">-9.8</td>
+<td style="text-align: center;">-9.75</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">-0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">-10.85</td>
+<td style="text-align: center;">-10.85</td>
+<td style="text-align: center;">-10.85</td>
+<td style="text-align: center;">-10.8</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">64</td>
+<td style="text-align: center;">-11.95</td>
+<td style="text-align: center;">-12</td>
+<td style="text-align: center;">-12</td>
+<td style="text-align: center;">-12</td>
+<td style="text-align: center;">64</td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.1</td>
+</tr>
+</tbody>
+</table>
+<p>Observation2: Simulation results indicate that for a given #PRB the
+SNR @ 0.1BLER changes very little with the aggressiveness of the shaping
+filter profile</p>
+<p>Observation3: Our results do not show any significant benefit with
+less aggressive shaping filter profiles for narrow RBs</p>
+<p>Net gain is defined as:</p>
+<p><span class="math display">\[Net\ Gain\ \lbrack dB\rbrack = \left(
+Pout_{Filter\ i} - Pout_{Ref.\ filter} \right) + \left( SNR10\%_{Ref.\
+filter} - SNR10\%_{Filter\ i} \right)\]</span></p>
+<p>Taking the reference filter as the no filtering case of [0 1 0] the
+net gain can be calculated for all other filter coefficients in
+comparison to this reference. The results of this comparison is given
+below:</p>
+<p>Table 6.4.2.3 – comparison of net gain using a reference filter of [0
+1 0]</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 25%" />
+<col style="width: 27%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="4" style="text-align: center;">Net gain comparing [0 1 0]
+to [0.1 1 0.1]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RB#</td>
+<td>edge</td>
+<td>outer</td>
+<td>inner</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.05</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.05</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.1</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.1</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: center;">Net gain comparing [0 1 0]
+to [0.2 1 0.2]</td>
+</tr>
+<tr>
+<td>RB#</td>
+<td>edge</td>
+<td>outer</td>
+<td>inner</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.22</td>
+<td style="text-align: right;">0.1</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.17</td>
+<td style="text-align: right;">0.05</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">0.27</td>
+<td style="text-align: right;">0.15</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">0.32</td>
+<td style="text-align: right;">0.2</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: center;">Net gain comparing [0 1 0]
+to [0.3 1 0.3]</td>
+</tr>
+<tr>
+<td>RB#</td>
+<td>edge</td>
+<td>outer</td>
+<td>inner</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-0.03</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">0.05</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0.22</td>
+<td style="text-align: right;">0.4</td>
+<td style="text-align: right;">0.3</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.15</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0.12</td>
+<td style="text-align: right;">0.3</td>
+<td style="text-align: right;">0.2</td>
+</tr>
+</tbody>
+</table>
+<p>Observation 4: Results indicate that the net gain increase is not
+larger for less aggressive filters.</p>
+<p>Observation 5: Based on results it is seen that the net gain increase
+is marginal for all filter shapes</p>
+<p>Observation 6: Results indicate that there is no significant net gain
+increase for narrow RBs for less aggressive filters.</p>
+<h1 id="sar-mitigation-solutions">7 SAR mitigation solutions </h1>
+<p>To guarantee SAR compliance and to reduce strain on the PA it was
+agreed that for a 1dB power boost above PC2 the UL duty cycle would be
+limited to a maximum value of 25%. It is anticipated that for higher
+power boosts the maximum duty cycle would have to be reduced
+further.</p>
+<h1 id="feasibility-analysis-of-power-enhancement">8 Feasibility
+analysis of power enhancement </h1>
+<h4 id="qualcomm-results-for-power-enhancement">8.1 Qualcomm results for
+power enhancement</h4>
+<p>Investigations were done at f=3450MHz using the parameters given in
+the following table.</p>
+<p>Table 8.1.1: Measurement parameters</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pulse shaping filter</td>
+<td>[0.28 0.91 0.28]</td>
+</tr>
+<tr>
+<td>Waveform</td>
+<td>DFTS OFDM with pi/2 BPSK with Rel-16 DMRS</td>
+</tr>
+<tr>
+<td>Start RB</td>
+<td>[10 30 50 70 90]</td>
+</tr>
+<tr>
+<td>LCRB</td>
+<td>[2 4 8 16 64]</td>
+</tr>
+<tr>
+<td><strong>BW</strong></td>
+<td>40 MHz</td>
+</tr>
+<tr>
+<td><strong>SCS</strong></td>
+<td>30 kHz</td>
+</tr>
+</tbody>
+</table>
+<p>Each Pi/2 BPSK waveform was filtered using a 3-tap filter given in
+table 1. This filter was selected to give waveforms with PAPRs around
+2dB which is was thought to be a good compromise between achieving
+higher output power and limiting excessive filtering of the signal. For
+each start RB/LCRB combination the PA output was analyzed for IBE, EVM,
+ACLR, SEM and output power. The table below gives the measured results
+based on one PA sample. The increase in output power for various pi/2
+BPSK waveforms above the PC2 MPR0 power level is given along with the
+SEM and IBE margins. The pi/2 BPSK output power is constrained by
+practical implementation considerations.</p>
+<p>Table 8.1.2: Measured PA results</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 42%" />
+<col style="width: 20%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Waveform</th>
+<th style="text-align: center;">Output Power above PC2 MPR0</th>
+<th style="text-align: center;">SEM margin</th>
+<th style="text-align: center;">IBE margin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"> </td>
+<td style="text-align: center;">(dBm)</td>
+<td style="text-align: center;">(dB)</td>
+<td style="text-align: center;">(dB)</td>
+</tr>
+<tr>
+<td style="text-align: center;">2RB10</td>
+<td style="text-align: center;">1.4</td>
+<td style="text-align: center;">10.7</td>
+<td style="text-align: center;">16.4</td>
+</tr>
+<tr>
+<td style="text-align: center;">2RB30</td>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">12.3</td>
+<td style="text-align: center;">15.5</td>
+</tr>
+<tr>
+<td style="text-align: center;">2RB50</td>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: center;">26.6</td>
+<td style="text-align: center;">22.7</td>
+</tr>
+<tr>
+<td style="text-align: center;">2RB70</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">22.3</td>
+<td style="text-align: center;">15.6</td>
+</tr>
+<tr>
+<td style="text-align: center;">2RB90</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">11.9</td>
+<td style="text-align: center;">16.3</td>
+</tr>
+<tr>
+<td style="text-align: center;">4RB10</td>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">12.3</td>
+<td style="text-align: center;">15.8</td>
+</tr>
+<tr>
+<td style="text-align: center;">4RB40</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">16.7</td>
+<td style="text-align: center;">15.9</td>
+</tr>
+<tr>
+<td style="text-align: center;">4RB50</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">28.4</td>
+<td style="text-align: center;">22.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">4RB70</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">17.4</td>
+<td style="text-align: center;">15.7</td>
+</tr>
+<tr>
+<td style="text-align: center;">4RB90</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">13.9</td>
+<td style="text-align: center;">15.6</td>
+</tr>
+<tr>
+<td style="text-align: center;">8RB10</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">14.0</td>
+<td style="text-align: center;">15.7</td>
+</tr>
+<tr>
+<td style="text-align: center;">8RB30</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">18.0</td>
+<td style="text-align: center;">15.4</td>
+</tr>
+<tr>
+<td style="text-align: center;">8RB50</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">28.3</td>
+<td style="text-align: center;">23.8</td>
+</tr>
+<tr>
+<td style="text-align: center;">8RB70</td>
+<td style="text-align: center;">0.9</td>
+<td style="text-align: center;">21.1</td>
+<td style="text-align: center;">14.8</td>
+</tr>
+<tr>
+<td style="text-align: center;">16Rb10</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">16.3</td>
+<td style="text-align: center;">16.6</td>
+</tr>
+<tr>
+<td style="text-align: center;">16RB30</td>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">26.9</td>
+<td style="text-align: center;">22.4</td>
+</tr>
+<tr>
+<td style="text-align: center;">16RB50</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">28.4</td>
+<td style="text-align: center;">22.9</td>
+</tr>
+<tr>
+<td style="text-align: center;">16RB70</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">19.2</td>
+<td style="text-align: center;">16.4</td>
+</tr>
+<tr>
+<td style="text-align: center;">64RB10</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">8.4</td>
+<td style="text-align: center;">20.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">64RB30</td>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: center;">10.9</td>
+<td style="text-align: center;">20.9</td>
+</tr>
+</tbody>
+</table>
+<p>The IBE, EVM, ACLR and SEM were all seen to pass with sufficient
+margin for these waveforms.</p>
+<p><strong>Observation 1: Measurements on a PC2 PA revealed that Pi/2
+BPSK waveforms can deliver approximately 1 dB of extra power compared to
+PC2 MPR0 power</strong></p>
+<h4 id="nokia-results-for-power-enhancement">8.2 Nokia results for power
+enhancement</h4>
+<p>The following figure shows the tested filters</p>
+<p><img src="media/image79.png" style="width:2.96746in;height:2.22642in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.1: Tested filters</p>
+<h6
+id="power-enhancement-with-respect-to-1d-filter-with-dmrs-shaped">8.2.1
+Power enhancement with respect to [1+D] filter with DMRS shaped</h6>
+<p>The following slides show the delta in output power for all the
+filters, CBW and allocations with respect to the [1+D] filter with the
+DMRS shaped.</p>
+<p>Green colors mean more output power for the compared filter with
+respect to the [1+D], red colors mean less output power for the compared
+filter with respect to the [1+D].</p>
+<p><img src="media/image80.png" style="width:5.73717in;height:2.6893in"
+alt="Chart Description automatically generated" /></p>
+<p><strong>Figure 8.2.1.1: 10 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><img src="media/image81.png" style="width:5.87325in;height:2.66528in"
+alt="Chart Description automatically generated" /></p>
+<p><strong>Figure 8.2.1.2: 15 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><img src="media/image82.png" style="width:6.23585in;height:2.9373in"
+alt="Chart Description automatically generated" />Figure 8.2.1.3: 20 MHz
+CBW. Delta w.r.t. [1+D]</p>
+<p><img src="media/image83.png" style="width:6.38015in;height:3.2477in"
+alt="Chart, bar chart, surface chart Description automatically generated" /></p>
+<p><strong>Figure 8.2.1.4: 30 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><img src="media/image84.png" style="width:6.07412in;height:2.84409in"
+alt="Chart, surface chart Description automatically generated" /></p>
+<p>Figure 8.2.1.5: 40 MHz CBW. Delta w.r.t. [1+D]</p>
+<p><img src="media/image85.png" style="width:5.91137in;height:2.91825in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.1.6: 50 MHz CBW. Delta w.r.t. [1+D]</p>
+<p><img src="media/image86.png" style="width:5.62033in;height:2.73956in"
+alt="Chart Description automatically generated" /></p>
+<p><strong>Figure 8.2.1.7: 60 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><img src="media/image87.png" style="width:6.39847in;height:3.12085in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.1.8: 80 MHz CBW. Delta w.r.t. [1+D]</p>
+<p><img src="media/image88.png" style="width:6.12768in;height:2.82718in"
+alt="Chart Description automatically generated" /></p>
+<p><strong>Figure 8.2.1.9: 90 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><img src="media/image89.png" style="width:5.87747in;height:2.79106in"
+alt="Chart Description automatically generated with medium confidence" /></p>
+<p><strong>Figure 8.2.1.10: 100 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><strong>Observation 1</strong>: For all the tested channel bandwidth,
+and allocation configurations, there are filters that conform to
+38.101-1 Rel-16 requirements that offer larger or same output power than
+the [1+D] filter with DMRS shaping.</p>
+<h6
+id="power-enhancement-with-respect-to-1d-filter-with-dmrs-not-shaped">8.2.2
+Power enhancement with respect to [1+D] filter with DMRS not shaped</h6>
+<p>Note: The LS from RAN to RAN4 [RP-213655] states that both the data
+and DMRS should be filtered. The results in this section were generated
+prior to this decision and therefore do not conform to the instruction
+provided in this LS</p>
+<p><img src="media/image90.png" style="width:5.96665in;height:2.92324in"
+alt="Chart Description automatically generated" /></p>
+<p><strong>Figure 8.2.2.1: 10 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><img src="media/image91.png" style="width:6.68889in;height:3.47847in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.2.2: 15 MHz CBW. Delta w.r.t. [1+D]</p>
+<p><img src="media/image92.png" style="width:6.68889in;height:3.19514in"
+alt="Chart Description automatically generated" /></p>
+<p><strong>Figure 8.2.2.3: 20 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><img src="media/image93.png" style="width:6.68889in;height:3.20833in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.2.4: 30 MHz CBW. Delta w.r.t. [1+D]</p>
+<p><img src="media/image94.png" style="width:6.68889in;height:3.33681in"
+alt="Chart Description automatically generated" /></p>
+<p><strong>Figure 8.2.2.5: 40 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><img src="media/image95.png" style="width:5.98425in;height:2.94988in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.2.6: 50 MHz CBW. Delta w.r.t. [1+D]</p>
+<p><img src="media/image96.png" style="width:5.99437in;height:3.36997in"
+alt="Chart Description automatically generated" /></p>
+<p><strong>Figure 8.2.2.7: 60 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><img src="media/image97.png" style="width:6.09073in;height:3.07382in"
+alt="Chart Description automatically generated" /></p>
+<p><strong>Figure 8.2.2.8: 80 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><img src="media/image98.png" style="width:6.14378in;height:3.17203in"
+alt="Chart Description automatically generated with medium confidence" /></p>
+<p><strong>Figure 8.2.2.9: 90 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><img src="media/image99.png" style="width:6.68889in;height:3.45069in"
+alt="Chart Description automatically generated with medium confidence" /></p>
+<p><strong>Figure 8.2.2.10: 100 MHz CBW. Delta w.r.t. [1+D]</strong></p>
+<p><strong>Observation 2</strong>: For all the tested channel bandwidth,
+and allocation configurations, there are filters that conform to
+38.101-1 Rel-16 requirements that offer larger or same output power than
+the [1+D] filter without DMRS shaping.</p>
+<p><strong>Observation 3</strong>: When comparing [1+D] results with and
+without DMRS shaping, it can be noted that in most of the cases DMRS
+without shaping offers smaller output power. </p>
+<h6 id="best-filters-per-channel-bandwidth">8.2.3 Best filters per
+channel bandwidth</h6>
+<p>Note: The LS from RAN to RAN4 [RP-213655] states that both the data
+and DMRS should be filtered. The results in this section were generated
+prior to this decision and therefore do not conform to the instruction
+provided in this LS</p>
+<p>10 MHz: For central and small-medium size transmission, 0.2 and
+Triang B (less aggressive filters) offer best performance. For edge
+transmission, 0.335 and 0.28 (more aggressive than Triang B and 0.2) are
+best. For the small allocations, less aggressive filters perform
+better.</p>
+<p><img src="media/image100.png"
+style="width:3.32305in;height:2.49057in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.3.1: 10 MHz CBW</p>
+<p>15 MHz: Central and small-medium allocations, 0.2 and Triang B are
+best. For edge and medium-large allocations, small difference between
+0.335, 0.28.</p>
+<p><img src="media/image101.png"
+style="width:3.70769in;height:2.77885in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.3.2: 15 MHz CBW</p>
+<p>20 MHz: Small and medium allocations, less aggressive filters perform
+better (0.2 and Triang B). For larger (and edge) allocations, more
+aggressive filters (0.28, 0.335 and Triang A). [1+D] is barely ever the
+best filter.</p>
+<p><img src="media/image102.png"
+style="width:3.62587in;height:2.72051in"
+alt="A screenshot of a computer Description automatically generated with medium confidence" /></p>
+<p>Figure 8.2.3.3: 20 MHz CBW</p>
+<p>30 MHz: Small and medium allocations, less aggressive filters perform
+better (0.2 and Triang B). For larger allocations, closer to the edge,
+0.335 is best, and 0.28 for allocations further from the edge.</p>
+<p><img src="media/image103.png"
+style="width:3.78977in;height:2.84348in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.3.4: 30 MHz CBW</p>
+<p>40 MHz: For small and central allocations, 0.2 and Triang B are the
+best. For 1 PRB allocation, closer to the edges, [1+D] is the best.
+Again, for larger allocations, and edge allocations, more aggressive
+filters perform better.</p>
+<p><img src="media/image104.png"
+style="width:3.98556in;height:2.99038in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.3.5: 40 MHz CBW</p>
+<p>50 MHz: For small and central allocations, 0.2 and Triang B are the
+best. Again, for larger allocations, and edge allocations, more
+aggressive filters perform better.</p>
+<p><img src="media/image41.svg"
+style="width:4.12821in;height:3.09615in" /></p>
+<p>Figure 8.2.3.6: 50 MHz CBW</p>
+<p>60 MHz: For small and central allocations, 0.2 and Triang B are the
+best. For 1 PRB allocation, closer to the edges, 0.335 is the best.
+Again, for larger allocations, and edge allocations, more aggressive
+filters perform better.</p>
+<p><img src="media/image105.png"
+style="width:3.75501in;height:2.81731in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.3.7: 60 MHz CBW</p>
+<p>80 MHz: For small and central allocations, 0.2 and Triang B are the
+best. Again, for larger allocations, and edge allocations, more
+aggressive filters perform better.</p>
+<p><img src="media/image106.png" style="width:3.4987in;height:2.625in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.3.8: 80 MHz CBW</p>
+<p>90 MHz: For small and central allocations, Triang B and 0.2 are the
+best. Again, for larger allocations, and edge allocations, more
+aggressive filters perform better.</p>
+<p><img src="media/image107.png"
+style="width:3.88304in;height:2.91346in"
+alt="A screenshot of a computer Description automatically generated with medium confidence" /></p>
+<p>Figure 8.2.3.9: 90 MHz CBW</p>
+<p>100 MHz: For small and central allocations, 0.2 and Triang B are the
+best. Again, for larger allocations, and edge allocations, more
+aggressive filters perform better. For closer to the edge allocations,
+0.335 is the best, then 0.28 and Triang A are better for large
+allocations not next to the edge of the channel.</p>
+<p><img src="media/image108.png"
+style="width:3.17819in;height:2.38462in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.3.10: 100 MHz CBW</p>
+<h6 id="minimum-mpr-w.r.t-29-dbm">8.2.4 Minimum MPR w.r.t 29 dBm</h6>
+<p>The following figures show the required MPR for the best and worse
+tested filter per channel BW and transmission configuration.</p>
+<p><img src="media/image109.png"
+style="width:6.68889in;height:4.62361in"
+alt="Chart, scatter chart Description automatically generated" /></p>
+<p><strong>Figure 8.2.4.1: 10, 15 and 20 MHz maximum and minimum MPR
+filters</strong></p>
+<p><img src="media/image110.png"
+style="width:6.68889in;height:4.64444in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.4.2: 30, 40 and 50 MHz maximum and minimum MPR filters</p>
+<p><img src="media/image111.png" style="width:6.28125in;height:6.6875in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.2.4.3: 60 and 80 MHz maximum and minimum MPR filters</p>
+<p><img src="media/image112.png"
+style="width:6.22917in;height:6.77083in"
+alt="Chart, scatter chart Description automatically generated" /></p>
+<p>Figure 8.2.4.4: 90 and 100 MHz maximum and minimum MPR filters</p>
+<p><strong>Observation 1</strong>: The required MPR depends on the
+filter, and there can be up to 1 dB difference in required MPR for
+different filters.</p>
+<p><strong>Observation 2:</strong> Current MPR regions could be used to
+define the MPR values.</p>
+<h4
+id="iith-iitm-cewit-reliance-jio-tejas-networks-results-for-power-enhancement">8.3
+IITH, IITM, CEWiT, Reliance Jio, Tejas Networks results for power
+enhancement</h4>
+<p>Following are the results from measurements using a commercial PC2
+PA</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Power class of the PA</th>
+<th style="text-align: center;">PC2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Band support</td>
+<td style="text-align: center;">N78</td>
+</tr>
+<tr>
+<td style="text-align: center;">Rated Gain</td>
+<td style="text-align: center;">30-32 dB</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image113.jpeg" style="width:5in;height:3.16319in"
+alt="Output_Power_AA" /></p>
+<p>Figure 8.3.1 : Output power of the PA versus Input power to the
+PA.</p>
+<p>In 8.3.1, the output power is plotted as a function of input power
+for CP-OFDM waveform with QPSK modulation, DFT-S-OFDM waveform with QPSK
+modulation, and DFT-s-OFDM waveform with Pi/2 BPSK with spectrum shaping
+using a 2-tap 1+D filter. We see that the gain is about 32 dB and the
+saturation level is about 32 dBm. The vertical dotted lines in the plot
+show the IP1dB compression points.</p>
+<p><img src="media/image114.jpeg" style="width:3in;height:1.875in"
+alt="Output_power_ACLR_Upper_AA" /><img src="media/image115.jpeg"
+style="width:3in;height:1.875in" alt="Output_power_ACLR_Lower_AA" /></p>
+<p>Figure 8.3.2: The left figure shows the ACLR for the upper end of the
+spectrum and the right figure shows the ACLR fort the lower end of the
+spectrum.</p>
+<p>Observations:</p>
+<p>- For the ACLR limit of 31 dB, we see that the maximum output power
+of QPSK CP-OFDM is about 25.5 dBm.</p>
+<p>- For the ACLR limit of 31 dB, we see that the maximum output power
+of QPSK DFT-s-OFDM is about 29.2 dBm.</p>
+<p>- For the ACLR limit of 31 dB, we see that the maximum output power
+of Pi/2 BPSK with 2-tap (1+D) spectrum shaping is about 31.8 dBm.</p>
+<p>- MPR0=30.2 dBm and maximum output power is 31.8 dBm for an ACLR=-31
+dB. Therefore, gain boost =1.6 dB. MPR0 is defined in section 4.1.</p>
+<h4 id="intel-results-for-power-enhancement">8.4 Intel results for power
+enhancement</h4>
+<p>The following figures shows the MPR power enhancement for different
+filtering profiles as a function of RB init. Negative values represent
+MPR power enhancement above 26dBm which is MPR0.</p>
+<p><img src="media/image116.svg"
+style="width:6.68889in;height:2.77014in" /></p>
+<p>Figure 8.4.1: MPR results above MPR0=26dBm for [0.2 1 0.2] filter and
+[0.28 1 0.28] filter</p>
+<p>The MPR power enhancement shown in Figure 8.4.1 shows that highest
+power enhancement is for the [0.28 1 0.28] filter. This is because the
+more aggressive [0.28 1 0.28] filter reduces ACLR impacts more than less
+aggressive filters.</p>
+<p><img src="media/image117.svg"
+style="width:6.68889in;height:2.88333in" /></p>
+<p>Figure 8.4.2: MPR results above MPR0=26dBm for no filter and [1+D]
+filter</p>
+<p>The MPR power enhancement shown in Figure 8.4.2 shows the MPR for the
+‘no filter’ case and [1+D]. For the ‘no filter’ case the output power is
+lowest in the outer RBs whereas for the inner most RBs, the output power
+is the same as for the other filter cases. For the [1+D] filter, the
+output power similar to the [0.28 1 0.28] filter but with slightly lower
+performance at the edge RBs</p>
+<p><img src="media/image118.svg"
+style="width:5.29565in;height:3.57545in" /></p>
+<p>Figure 8.4.3: Comparison between filters for MPR using BW = 20MHz,
+LCRB = 16</p>
+<p>In Figure 8.4.3, a horizontal cross section of the previous MPR
+figures is compared for the LCRB = 16 within the 2D figures. In
+addition, MPR curves for QPSK with no pulse shaping filter and [0.335 1
+0.335] filter are shown. In the inner region the advantage of Pi/2BPSK
+can be seen over QPSK. Near the outer edges, the impact of filtering can
+be seen. The Pi/2QPSK case with no filtering is only slightly better
+than QPSK. However all of the cases with filtering show MPR improvement
+over the no filtering case. The [0.335 1 0.335] case is more aggressive
+than the [0.28 1 0.28] case but shows little MPR improvement.</p>
+<p>Observation 1: For Inner RBs, the MPR is nearly identical for the
+four filters considered [0.2 1 0.2], [0.28 1 0.28], [1+D] and [0.335 1
+0.335].</p>
+<p>Observation 2: For Inner RBs, the MPR for filtered Pi/2BPSK
+represents 0.8dB additional power that the UE PA can deliver compared to
+QPSK.</p>
+<p>Observation 3: More aggressive roll-off filters improve UE PA output
+power for the RBs near the edge. [0.28 1 0.28] is the least aggressive
+filter that yields most of the benefits of filtering.</p>
+<h4 id="huawei-results-for-power-enhancement">8.5 Huawei results for
+power enhancement</h4>
+<h5 id="mpr-comparison-results">8.5.1 MPR comparison results</h5>
+<p>The common MPR simulation assumptions are used. More explicitly, they
+are:</p>
+<p>- Single power class 2 PA</p>
+<p>- PA Calibration: 1 dB MPR@20MHz DFT-s-OFDM QPSK 100RB0 with 4 dB
+insertion loss</p>
+<p>- Carrier Leakage: 28 dBc</p>
+<p>- Image: 28 dBc</p>
+<p>- CIM3: 60 dBc</p>
+<p>- Modulation: Pi/2 BPSK with R16 DMRS, 2 DMRS symbols/slot</p>
+<p>- BW: 20MHz, SCS: 30 kHz</p>
+<p>Both 3-tap FIR filters and RRC filters (implemented in frequency
+domain) are used in the simulations. For the purpose of comparison, the
+differences of the MPR values are shown in the figures below.
+<strong>Note that negative values indicate MPR improvement, while
+positive values imply MPR degradation</strong>.</p>
+<p>3-tap FIR filters</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><img src="media/image119.png"
+style="width:2.91319in;height:2.20208in"
+alt="Chart Description automatically generated" /></th>
+<th style="text-align: center;"><img src="media/image120.png"
+style="width:2.91319in;height:2.21181in"
+alt="Chart, scatter chart Description automatically generated" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Figure 8.5.1.1: MPR Comparison: [0.3, 1, 0.3] vs [0.2, 1, 0.2]</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><img src="media/image121.png"
+style="width:2.89444in;height:2.16319in"
+alt="Chart, scatter chart Description automatically generated" /></th>
+<th style="text-align: center;"><img src="media/image122.png"
+style="width:2.97083in;height:2.22083in"
+alt="Chart, bar chart Description automatically generated" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Figure 8.5.1.2: MPR Comparison: [0.4, 1, 0.4] vs [0.3, 1, 0.3]</p>
+<blockquote>
+<p>RRC filters with different roll-offs (a: roll-off factor, b:
+truncation factor)</p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><img src="media/image123.png"
+style="width:2.91319in;height:2.16319in"
+alt="Chart Description automatically generated" /></th>
+<th style="text-align: center;"><img src="media/image124.png"
+style="width:2.90417in;height:2.17292in"
+alt="Chart, scatter chart Description automatically generated" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Figure 8.5.1.3: MPR Comparison: T-RRC (a=2/3, b=5/6) vs T-RRC (a=1/3,
+b=2/3)</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><img src="media/image125.png"
+style="width:2.875in;height:2.16319in"
+alt="Chart Description automatically generated" /></th>
+<th style="text-align: center;"><img src="media/image126.png"
+style="width:2.875in;height:2.17292in"
+alt="Chart, scatter chart Description automatically generated" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Figure 8.5.1.4: MPR Comparison: T-RRC (a=1, b=1) vs T-RRC (a=2/3,
+b=5/6)</p>
+<blockquote>
+<p>FIR [0.4, 1, 0.4] and 1+D</p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><img src="media/image127.png"
+style="width:2.90417in;height:2.19236in"
+alt="Chart Description automatically generated" /></th>
+<th style="text-align: center;"><img src="media/image128.png"
+style="width:2.875in;height:2.15417in"
+alt="Chart, bar chart Description automatically generated" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Figure 8.5.1.5: MPR Comparison: [0.4, 1, 0.4] vs 1+D (Note: The
+frequency response of 1+D is equivalent to that of T-RRC (a=1, b=1))</p>
+<p>From the above figures, it can be observed that:</p>
+<p>Observation 2: For the majority of the inner region, the power
+capability is not affected much by the spectral shaping filters.</p>
+<p>Observation 3: Increasing the filter attenuation might boost the
+power for the outer region, but the power capability of the inner
+region, especially the small RB allocations near the channel edges could
+be reduced.</p>
+<p>Observation 4: The MPR performance difference caused by different
+spectral filters is small, no more than around 1 dB.</p>
+<h5 id="optimization-of-rb-regions-for-mpr-specifications">8.5.2
+Optimization of RB regions for MPR specifications</h5>
+<p>In [R4-2202029] and [R4-2117968], the “V-shaped” lines were reported
+on the MPR plots for large CBWs, where a sudden increase of MPR is
+required. Using our PA model, we also observe the same phenomenon for
+large CBWs. For example, Figure 8.5.2.1 shows the V-shaped lines on the
+MPR plot for 100MHz CBW.</p>
+<p><img src="media/image129.png" style="width:4.38542in;height:3.3125in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure 8.5.2.1: MPR for CBW 100MHz SCS 30kHz Pi/2 BPSK DFT-s-OFDM.
+The V-shaped lines are shown.</p>
+<p>Apart from simulations, the existence of such V-shaped lines were
+verified by measurements in [R4-2202029]. It’s reasonable to avoid power
+boosting at those RB allocations.</p>
+<p>So far numerous simulation/measurement results have been provided by
+various companies, which are largely captured in the latest
+TR[TR38.868]. Based on those results, the following can be observed.</p>
+<p>Observation 2: For the inner centred region, the Tx power can be
+boosted with no/moderate filtering, while moderate/aggressive filtering
+is needed for other regions.</p>
+<p>Observation 3: The loss of Rx performance (e.g. Rx SNR@10%BLER)
+increases with the aggressiveness of the filter. More than 1 dB loss was
+reported for the aggressive 3-tap filter [0.335, 1, 0.335].</p>
+<p>Observation 4: The net gain for the inner centred region should be
+the most and it diminishes in other regions.</p>
+<p>Observation 5: The study of power boosting has been focused on small
+number of RBs such as 2/4/8/16/64, which are the typical use cases for
+cell edge UEs.</p>
+<p>Based on the above observations, we believe that the power boost
+should be focused on the inner centred region. We tend to support
+simpler classification schemes, and the exact definitions of the new
+regions can be left for the WI stage to allow more time for refinement
+as well as verification. An example scheme is illustrated in Figure
+8.5.2.2 below.</p>
+<p><img src="media/image130.png"
+style="width:4.63542in;height:3.78125in"
+alt="Chart Description automatically generated" /></p>
+<p>Edge</p>
+<p>New Outer</p>
+<p>New Inner</p>
+<p>Figure 8.5.2.2: Illustration of New MPR regions for Pi/2 BPSK power
+boosting.</p>
+<h4 id="skyworks-results-for-power-enhancement">8.6 Skyworks results for
+power enhancement</h4>
+<h5 id="power-enhancement-results1">8.6.1 Power enhancement
+results1</h5>
+<p>Measured PA current consumption increase vs consumption at PC2 0dB
+MPR and gain compression for 1,2,3 dB boosting above the PC2 0dB MPR
+reference level is given in Table 8.6.1.</p>
+<p>Table 8.6.1.1: Measured PA current consumption</p>
+<table>
+<colgroup>
+<col style="width: 61%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>Boosting level(dB)</th>
+<th style="text-align: center;"><strong>1</strong></th>
+<th style="text-align: center;"><strong>2</strong></th>
+<th style="text-align: center;"><strong>3</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Current consumption increase (mA)</td>
+<td style="text-align: center;">12%</td>
+<td style="text-align: center;">27%</td>
+<td style="text-align: center;">61%</td>
+</tr>
+<tr>
+<td>Gain compression (dB)</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">-0.4</td>
+<td style="text-align: center;">-2.9</td>
+</tr>
+</tbody>
+</table>
+<p>PA consumption increases from 12% for 1dB boost to 61% for 3dB boost.
+Its gain drops by 2.9dB when operated at 3dB boost.</p>
+<p><u>From a PMU/PA thermal management perspective:</u></p>
+<p>It may be assumed that 12% current consumption increase could be
+supported without impacting current technology. However, at 2dB boost,
+27% increase represents a challenge, and at 3dB boost, it is considered
+impractical, if not impossible to support a 61% increase in current
+consumption and maintain economy of scale with UEs designed to support
+PC2. At 3dB boost, it is also considered impractical to drive the PA at
+such high levels of compression due to thermal runaway considerations
+that may impact the component lifetime and reliability. We were unable
+to monitor PA temperature for this measurement campaign, but as an
+indication of the severity of the thermal issues, we’ve had to attach
+heatsinks to the PA evaluation board to stabilize the PA behaviour on
+one of our test benches. Beyond the thermal issue, a 3dB power boosting
+at 3dB gain compression, creates potential reliability issues
+(breakdown) but also questions the design robustness against worst-case
+process, temperature and voltage (PVT conditions) and becomes very
+sensitive to load line design and antenna VSWR.</p>
+<p><u>From a transceiver perspective:</u></p>
+<p>The tested band n41 PA represents somehow a best-case scenario since
+the tested part exhibits a high small signal gain. From an RF
+transceiver perspective, band n77 or n79 represents a worst-case
+scenario since these PA typically deliver 6dB lower small signal gain
+than the part tested in this campaign. Based on gain compression data
+and if we put aside the PA heavy compression operation, we estimate
+that, in order to deliver 3dB boost with 4dB post PA losses, the RF
+transceiver would have to deliver approximately +9dBm rms output power
+level; and this does not consider worst case PVT corners. At such output
+levels, the RF transceiver performance and impact on overall system
+performance should be carefully evaluated. Note that the PA gain
+reported here is for APT PAs and the issue may be exacerbated when
+operated in Envelope-Tracking mode. It may also be further problematic
+for operation in band n79 where PA small-signal gain may be further
+reduced.</p>
+<p><u>From an RF-FE component technology perspective</u>:</p>
+<p>As previously mentioned in [4], metrics observed in Table 1 at 3dB
+boosting level present two types of challenges for RF-FE components:
+thermal runway situations and component reliability. Unstable thermal
+runaway situations may occur due to the PA higher current consumption
+which leads to higher operating temperatures, which, in turn, may shift
+the filters cut-off frequencies; which may increase the filter’s
+insertion loss; which may require driving the PA further into
+compression; which may further increase the current consumption and
+therefore further increase the device temperature etc. As for component
+reliability, we have serious concerns regarding how components directly
+interfacing with the antenna ports where the VSWR presented to these
+components may result in very high voltages that may lead to component
+destruction. In any case for the RF FE components between the PA and the
+antenna, the increased power will lead to larger designs and thus impair
+the possibility to build on the PC2 ecosystem.</p>
+<p>For all these reasons, we consider that 3dB power boosting may not be
+sustained and we consider a maximum of 2dB boost at best. For
+restrictions on uplink transmission slots, we propose to adopt a
+restriction of 25% at 2dB boost above PC2 0dB MPR since this is
+equivalent to the agreed power-class 3 restriction of 40% at 0.2dB MPR
+referenced to 26dBm 0dB MPR (Inner RB allocations Table 6.2.2-1).</p>
+<p>Key results are highlighted and mapped onto simulation results
+reproduced from [R4-2117473] in Figure 8.6.1.1 and in Figure 8.6.1.2
+below for 50MHz CBW, SCS30kHz. Figure 8.6.1.3 shows the results for
+50MHz CBW SCS15kHz. The simulated V-shaped lines for which simulation
+data indicates a drop in boosting levels are highlighted with overlaid
+orange lines. Power boosting is explored by varying RB<sub>start</sub>
+for allocations with L<sub>CRB</sub> equal to
+1,2,4,20,50,100,120,125,128 RBs for 50MHz SCS30, and with
+L<sub>CRB</sub> =1,2,4,20,180,200,216,250,270 for 50MHz SCS15. For each
+RB allocation, ACLR, SEM, EVM and IBE is verified for 0,1,2,3 dB
+boosting above the PC2 0dB MPR power level. Red boxes and red arrows
+indicate RB allocations where the SEM margin suddenly drops. In Figure
+8.6.1.1, the blue boxes are used to show the measured ACLR and SEM
+margins at L<sub>CRB</sub> =50RB on each side of the V-shaped line for 1
+and 2dB boost, while in Figure 2 and in Figure 3 they indicate RB
+allocations for which up to 2dB boosting may be achieved considering
+solely 3GPP gating factors, and no practical PA/PMU
+considerations/limitations.</p>
+<p><img src="media/image131.svg"
+style="width:6.53125in;height:4.0625in" /></p>
+<p>Figure 8.6.1.1: 50MHz SCS30kHz Edge and Outer RB allocation
+measurement results (right) vs simulation data reproduced from [2].</p>
+<p><img src="media/image132.png"
+style="width:6.68889in;height:4.26458in"
+alt="Diagram, schematic Description automatically generated" /></p>
+<p>Figure 8.6.1.2: 50MHz SCS30kHz Inner RB allocation measurement
+results (right) vs simulation data reproduced from [2].</p>
+<p><img src="media/image133.png"
+style="width:2.69792in;height:3.51042in"
+alt="Table Description automatically generated" /> <img
+src="media/image134.png" style="width:2.42708in;height:4.6875in"
+alt="A picture containing diagram Description automatically generated" /></p>
+<p>Figure 8.6.1.3: 50MHz SCS15kHz Edge, Outer (left) and Inner (right)
+RB allocation measurement results.</p>
+<p>The measurement results confirm the presence of sudden drops in power
+boosting capability as simulated in [R4-2117473, R4-2117968]. For
+example, Figure 8.6.1.1 shows that at 2dB boost, the worst-case SEM
+margin for L<sub>CRB</sub> =50 RB<sub>start</sub> 15,16,17,20 is
+approximately 3dB, but at RB<sub>start</sub> 18 and 19 SEM is failed by
+-4.8dB, meaning that for 50RB18 and 50RB19 a maximum of 1dB boost may be
+achieved only. Measurements also confirm that for small L<sub>CRB</sub>
+(&lt;5), the “new-inner” region, a region in which maximum power
+boosting may be supported, is bounded by RB allocations where a sudden
+drop in boosting capability occurs.</p>
+<p>In Figure 8.6.1.2, the zoom on simulation results from [R4-2117473]
+for small L<sub>CRB</sub> indicate that the boosting “drop” affects the
+1RB43 allocation, while maximum boosting may be supported for 1RB44.
+This is more visible on simulation results from [R4-2117968] where the
+sharp color contrast clearly highlights this transition. Simulation
+results indicate that at L<sub>CRB</sub> =1, maximum boosting may be
+supported over the range 44≤ RB<sub>start</sub> ≤88 (Figure 8.6.1.1,
+Figure 8.6.1.2). In our measurements, we did not select 1RB43 and 1RB44
+as candidate waveforms for SCS30kHz 50MHz CBW. We have however observed
+a similar drop at L<sub>CRB</sub> =1RB88 for 50MHz SCS15kHz – refer to
+Figure 8.6.1.3. This allocation may be considered equivalent to 1RB43 at
+SCS30kHz.</p>
+<p>Observation 1: V-shaped lines are confirmed by measurements. These
+lines bound the width of the “new-inner” allocation region where maximum
+power boosting may be achieved. They also restrict the maximum of
+boosting that may be achieved for “outer” RB allocations.</p>
+<p>The contours of a tentative “new-inner” region triangle are explored
+in Figure 8.6.1.4 and Figure 8.6.1.5 using 50MHz SCS30kHz measurement
+results. The tentative “new-inner” triangle summit is
+L<sub>CRB</sub>=80RB, i.e., 3/5 N<sub>RB</sub> for SCS30, and its base
+is 44RB wide, i.e., 1/3 N<sub>RB</sub>, where N<sub>RB</sub> is the
+maximum number of RBs for a given Channel bandwidth and sub-carrier
+spacing defined in Table 5.3.2-1 (TS38.101-1). The “new-inner” region is
+bounded in width by the V-shaped lines as discussed in the previous
+section. In both figures:</p>
+<p>The red boxes and red arrows indicate allocations where boosting
+ranges from 0 to 1 dB. For L<sub>CRB</sub> less than 4, they indicate
+allocations for which 1dB boosting is not feasible since SEM margins are
+close to zero. Example 1RB1,1RB2…1RB40. It is worth reminding that 1RB43
+may only support 0dB boosting (Figure 2).</p>
+<p>The blue boxes highlight RB allocations where up to 2dB may be
+supported. These allocations are located within the tentative inner
+triangle or at the border of this triangle.</p>
+<p>The orange boxes indicate allocations where 1dB maximum boosting may
+be supported with sufficient margin.</p>
+<p><img src="media/image135.png"
+style="width:6.68889in;height:4.18472in"
+alt="Diagram Description automatically generated" /></p>
+<p>Figure 8.6.1.4: 50MHz SCS30kHz Edge and Outer RB allocation
+measurement results (right) vs simulation data reproduced from [2].</p>
+<p><img src="media/image136.png"
+style="width:6.68889in;height:4.18472in"
+alt="Diagram Description automatically generated" /></p>
+<p>Figure 8.6.1.5: 50MHz SCS30kHz Edge and Outer RB allocation
+measurement results (right) vs simulation data reproduced from [2]</p>
+<p>From Figure 8.6.1.4, up to 2dB boosting may be achieved for fully
+centered allocations with L<sub>CRB</sub> ranging from 1 to 50
+(1RB66,2RB65,4RB64,20RB56,50RB41). In Figure 5, data collected at 50MHz
+CBW SCS30 indicate 1dB boost may be supported with for fully centered
+allocations of L<sub>CRB</sub> greater than 100RB (100RB16,120RB6,
+128RB2). Additional data points have been overlaid with dark blue filled
+boxes by extrapolating data from other CBW measurement data. For
+example, from data collected at:</p>
+<p>50MHz CBW SCS15kHz (Figure 3 – left), 2dB boosting may be supported
+with low margin on SEM for 90RB22;</p>
+<p>10MHz CBW SCS 30kHz (Annex Figure 8), 2dB boost may be supported for
+80RB25; and,</p>
+<p>40MHz CBW SCS30kHz (Annex Figure 7), 2dB boost may be supported for
+60RB36.</p>
+<h5 id="power-enhancement-results2">8.6.2 Power enhancement
+results2</h5>
+<p>The measurements are performed in band n79 with the following
+waveform parameters:</p>
+<p>Waveform parameters:</p>
+<p>DFT-s-OFDM Pi/2 BPSK with REL-16 DMRS;</p>
+<p>Local Oscillator (LO) leakage: -28dBc;</p>
+<p>IQ Image rejection: -28dB;</p>
+<p>C-IM3: -60dBc, C-IM5: -70dBc;</p>
+<p>Pulse shaping filter coefficients: [-0.28 1 -0.28];</p>
+<p>CBW (MHz)/SCS (kHz): 5/15, 20/15, 50/15; and</p>
+<p>RB allocations: a selection of Edge/Outer and Inner allocations. The
+list of tested waveforms is too large to be captured in tables or text.
+For example, for 50MHz CBW SCS15, we tested 275 different waveforms,
+slicing the RB allocation triangle at
+L<sub>CRB</sub>=1,2,4,12,60,90,135,162,180,200,216,225,250,256,270.</p>
+<p>The PA output power level is swept in 0.5dB steps. At each output
+power level, and each waveform, ACLR, NR general Spectrum Emission Mask
+(SEM), EVM and In-band Emission (IBE) mask are verified;</p>
+<p>Throughout this document, the Pi/2 BPSK boosting is referenced to the
+PC2 0dB MPR output power level. In this measurement campaign, we focus
+our investigations on 0,1,2dB boost levels to explore the contours of
+the inner region and the boosting drop “v-shaped lines”.</p>
+<p>In our previous contribution [R4-2202029], we proposed a maximum of
+2dB boosting and corresponding MPR table based on measurements captured
+with a band n41 PA. We also noted that at higher frequencies, such as
+band n79, the small-signal gain of the PA is generally lower than that
+of a band n41 PA. We estimated that the combined effect of lower
+small-signal gain and high gain compression at 2dB boost above the PC2
+0dB MPR level would require the RF transceiver to deliver approximately
++9dBm into the PA. The measurements performed in band n79 confirm these
+initial estimations: at 2dB boost, they indicate the RF transceiver need
+to output approximately +8dBm input power level to the PA. Practical
+considerations presented in [R4-2202029] are exacerbated when operating
+in high frequency bands: PA power consumption increase and impact on
+temperature rise and DC-DC converters, heavy PA gain compression, impact
+on RF transceiver performance, component reliability under high VSWR,
+PVT considerations, etc… We therefore consider that 2dB maximum boost
+may not be sustained. We propose a maximum boost of 1dB above the PC2
+0dB MPR level. For restrictions of the number of uplink slots, we
+propose aligning the restrictions for Pi/2 BPSK PC2 with the PC1.5
+agreement, i.e. of restrict the number of uplink slots to 25%.</p>
+<p>Observation 1: Practical considerations limit the maximum amount of
+power boosting to within 1dB above the PC2 0dB MPR power level for
+shaped Pi/2 BPSK waveforms. This corresponds to WF [R4-2202386] option
+1. Restrictions on the maximum number of uplink transmission slots is
+25%.</p>
+<p>We present data with the following colour code:</p>
+<p>In green: RB allocations for which 1dB boost is feasible (reported as
+“≥1”);</p>
+<p>in white: RB allocations for which boosting may be greater then 0.5dB
+and strictly less than 1dB (reported as “0.5≤ &lt;1”);</p>
+<p>in orange: RB allocations for which less than 0.5dB boosting is
+feasible (reported as “≤0.5”);</p>
+<p>in red: RB allocations for which boosting may not exceed 0dB and may,
+in certain cases, require 0.5 dB back-off (reported as “≤0.5”).</p>
+<p>The colour scheme is presented for 3 levels of margins vs the worst
+measured margin amongst EVM, ACLR, IBE and SEM: 6dB worst-case margin,
+3dB worst-case margin and 0dB margin. Due to 0.5dB power steps, this
+colour scheme cannot provide a high level of accuracy. It is intended to
+graphically highlight the contours of the RB allocation regions where a
+1dB boost is feasible.</p>
+<p>Results for RB allocations sliced at L<sub>CRB</sub>=1,2 and 4RB are
+highlighted and overlaid onto simulation results reproduced from
+[R4-2117473] in 8.6.2.1 for 50MHz CBW, SCS15kHz. For each
+L<sub>CRB</sub> slice, RB<sub>start</sub> is swept in 1RB steps. The
+tabulated data in Figure 2-right confirm the sudden transition observed
+in simulation results [R4-2117473, R4-2200443]: no boosting for 6dB
+margin, or less than 0.5dB boosting (for 0dB margin) is observed at:</p>
+<p>RB<sub>start</sub>=87,88 and 181,182,183 for L<sub>CRB</sub>=1;</p>
+<p>RB<sub>start</sub>=86,87,88 and 180,181,182 for
+L<sub>CRB</sub>=2;</p>
+<p>RB<sub>start</sub>=85,86,87 and 179,180,181 for
+L<sub>CRB</sub>=4.</p>
+<p>These results confirm that the new-inner RB allocation proposed in
+[2] of (1/3)N<sub>RB</sub> base-width is valid and can be exploited even
+at low L<sub>CRB</sub> value of 1RB.</p>
+<p><img src="media/image137.svg"
+style="width:7.03488in;height:3.85316in" /></p>
+<p>Figure 8.6.2.1: 50MHz SCS15kHz “New-Inner” triangle “base-width”
+results overlaid on 100MHz SCS30kHz simulation data [3]. RB allocation
+slicing at L<sub>CRB</sub>=1,2,4.</p>
+<p>Observation 2: For 1dB boost, the base-width of (1/3)N<sub>RB</sub>
+for the new-inner RB allocation region is feasible at L<sub>CRB</sub>=1.
+For this new-inner region, valid RB<sub>start</sub> positions range from
+89 to 180 for L<sub>CRB</sub>=1, from 89 to 179 for L<sub>CRB</sub>=2,
+and from 88 to 178 for L<sub>CRB</sub>=4.</p>
+<p>The goal of this section is to verify the “width” (expressed in
+RB<sub>start</sub>) and “depth” (expressed in boost “drop”) of the lines
+where power boost suddenly drops due to emissions failing the first
+segment of the SEM, lines also referred to “V-shaped” and highlighted in
+orange in all figures of this document. 8.6.2.2 summarizes the
+measurement data obtained by slicing the 50MHz SCS15kHz waveform-set at
+L<sub>CRB</sub>=60,90,135,180,250. For each slice, RB<sub>start</sub>
+candidates are calculated according to the equations provided in
+[R4-2200443] and by adding a few start positions on each side of the
+line crossings.</p>
+<p><img src="media/image138.svg"
+style="width:5.63512in;height:4.19767in" /></p>
+<p>Figure 8.6.2.2: “V-shaped” line measurements at 50MHz SCS15kHz for
+L<sub>CRB</sub>=60,90,135,180,250 overlaid on 100MHz SCS30kHz simulation
+results from [R4-2117473].</p>
+<p>The data confirms the sudden power boost “drop” observed in
+simulation results [R4-2117473, R4-2200443] and the validity of
+equations in [R4-2200443]. We observe no boosting for 6dB margin, or
+less than 0.5dB boosting (for 0dB margin) at:</p>
+<p>RB<sub>start</sub>=18,19,20 and 48,49,50 for L<sub>CRB</sub>=60;</p>
+<p>RB<sub>start</sub>=41,42,43 and 137,138,139 for
+L<sub>CRB</sub>=90;</p>
+<p>RB<sub>start</sub>=30,31 and 104,105 for L<sub>CRB</sub>=135;</p>
+<p>RB<sub>start</sub>=18,19,20 for L<sub>CRB</sub>=180;</p>
+<p>RB<sub>start</sub>=1,2,3 for L<sub>CRB</sub>=250.</p>
+<p>Observation 3: V-shaped lines RB<sub>start</sub> positions are
+accurately captured by equations presented in [R4-2200443]. For
+RB<sub>start</sub> positions crossing each of these lines, no boosting
+for 6dB margin, or less than 0.5dB boosting (for 0dB margin) is observed
+in measurements.</p>
+<p>The goal of this section is to verify if the previously proposed
+L<sub>CRB</sub> “height/summit” of (3/5)N<sub>RB</sub> for “new-inner”
+RB region may be increased [R4-2202029]. The inner region is explored by
+slicing the 50MHz SCS15kHz waveform set at
+L<sub>CRB</sub>=135,162,180,200,216,225,250,256 and 270. For each slice,
+a range of RB<sub>start</sub> position is evaluated, including a fully
+centred RB allocation. The measurement data is overlaid on simulation
+data [R4-2117473] and summarized in tables in 8.6.2.3-right. 1dB boost
+is observed feasible for:</p>
+<p>RB<sub>start</sub>=45 to 90 at L<sub>CRB</sub>=135, i.e. at
+(1/2)N<sub>RB</sub> “summit”;</p>
+<p>RB<sub>start</sub>=42 to 66 at L<sub>CRB</sub>=162, i.e. at
+(3/5)N<sub>RB</sub> “summit”;</p>
+<p>RB<sub>start</sub>=45 at L<sub>CRB</sub>=180, i.e. at
+(2/3)N<sub>RB</sub> “summit”;</p>
+<p>For L<sub>CRB</sub> 200, and 216, between 0.5dB and 1dB boost is
+feasible for fully centred waveforms. For higher L<sub>CRB</sub> values,
+a maximum of 0.5dB boosting may be achieved when fully centred.</p>
+<p><img src="media/image139.svg"
+style="width:6.53325in;height:4.13954in" /></p>
+<p>Figure 8.6.2.3: 50MHz SCS30kHz “New-Inner” triangle summit
+exploration results mapped onto 100MHz SCS30kHz simulation data from
+[R4-2117473]. RB allocation slicing at
+L<sub>CRB</sub>=135,162,180,200,216,225,250,256,270.</p>
+<p>8.6.2.4 below illustrates the MPR region proposal of “new-inner”,
+“new-outer” and edge allocation region contours using the 50MHz CBW
+SCS15kHz triangle as example plot.</p>
+<p><img src="media/image140.svg"
+style="width:4.09375in;height:3.89583in" /></p>
+<p>Figure 8.6.2.4: Simplified new-inner, new-outer and edge allocation
+region contours based on measurement dataset.</p>
+<p>Where:</p>
+<p><strong>Edge Allocations</strong>: We propose to extend the edge
+allocations to L<sub>CRB</sub>&lt;=4 RB based on agreements reached for
+PC1.5. The proposed boosting for these allocations remains limited by
+windowing considerations to -3.5dB, i.e. a 6.5 dB MPR;</p>
+<p><strong>New-inner allocations</strong> are defined as allocations
+where maximum boosting of 1dB above the PC2 0dB reference level may be
+supported and is illustrated by the dark blue triangle of Figure 6. The
+base of the triangle is (1/3) of N<sub>RB</sub> in width and its summit
+reaches (2/3) of N<sub>RB</sub> centred in the channel. The proposed MPR
+is 1dB with 25% restrictions on the number of UL transmission slots;</p>
+<p><strong>New-outer allocations</strong> are defined as allocations
+which are neither an Inner allocation nor an Edge allocation. The
+proposed MPR is 3dB.</p>
+<p><strong>0dB MPR reference level:</strong> for consistency with the
+agreed PC3 boosting specifications, we propose 29dBm as 0dB MPR
+reference level and capture boosting in the form of MPR relative to this
+level.</p>
+<p>The following parameters are defined to specify valid RB allocation
+ranges for Outer and Inner RB allocations:</p>
+<p>- NRB is the maximum number of RBs for a given Channel bandwidth and
+sub-carrier spacing defined in Table 5.3.2-1;</p>
+<p>- RB<sub>Start,Low</sub> = Max(1, Floor(N<sub>RB</sub>/3 -
+L<sub>CRB</sub>/4);) and,</p>
+<p>- RB<sub>Start,High</sub> = N<sub>RB</sub> – RB<sub>Start,Low</sub> –
+L<sub>CRB</sub>.</p>
+<p>where max() indicates the largest value of all arguments and floor(x)
+is the greatest integer less than or equal to x.</p>
+<p>The RB allocation is an inner RB allocation if the following
+conditions are met:</p>
+<p>RB<sub>Start,Low</sub> ≤ RB<sub>Start</sub> ≤ RB<sub>Start,High</sub>
+AND and L<sub>CRB</sub> ≤ Ceil(2/3 N<sub>RB</sub>).</p>
+<p>where Ceil(x) is the smallest integer greater than or equal to x.</p>
+<p>An Edge RB allocation is one for which the RB(s) is (are) allocated
+at the lowermost or uppermost edge of the channel with L<sub>CRB</sub> ≤
+4 RBs.</p>
+<p>The RB allocation is an Outer RB allocation for all other allocations
+which are not an Inner RB allocation or an Edge RB allocation.</p>
+<p>Observation 4: Practical considerations limit the maximum amount of
+power boosting to within 1dB above the PC2 0dB MPR power level for
+shaped Pi/2 BPSK waveforms. This corresponds to WF [1] option 1.
+Restrictions on the maximum number of uplink transmission slots is
+25%.</p>
+<p>Observation 5: 1dB boost may be supported with reasonable margins in
+the centred inner region triangle of width (1/3)N<sub>RB</sub> and
+summit (2/3)N<sub>RB.</sub> The inner triangle illustrated in blue in
+figure 8.6.2.3.</p>
+<h4 id="apple-results-for-power-enhancement">8.7 Apple results for power
+enhancement</h4>
+<h5 id="results-for-power-boost-2db">8.7.1 Results for power boost
+&gt;2dB</h5>
+<p>The typical 3GPP calibration and the agreed waveform configuration
+from [R4-210818] was used. The simulation setup is summarized below:</p>
+<p>- Single Tx with power class 2</p>
+<p>- Calibration: 1dB MPR: DFT-s-OFDM QPSK 20MHz, 100RB with 4 dB post
+PA loss</p>
+<p>- Carrier Leakage: 28dBc</p>
+<p>- Image: 28dBc</p>
+<p>- CIM3: 60dBc</p>
+<p>- CIM5: 70dBc</p>
+<p>- Modulation: pi/2 BPSK with Rel-16 DMRS</p>
+<p>- Number of DMRS symbols/slot set to 2</p>
+<p>Simulations have been conducted for several CBW from 10MHz to 100MHz.
+Selected simulation results can be found in the Table 8.7.1.1 with SCS
+of 30kHz and a shaping filter with the coefficients [0.28 1 0.28]. The
+results are displayed in a quantitative manner. Dark colours indicate
+large power boost capability while bright colours imply low to no power
+enhancement. The assigned dark and bright colour association was chosen
+as it simply allows to slightly better identify the new RB regions
+compared to the case where the association is inverted.</p>
+<p>With observing Table 8.7.1.1 the aim is to identify features which
+exist for all channel bandwidth. Most prominent is the dark patch
+located in the middle indicating high power boost. The patch overlaps
+with the conventional inner and outer MPR regions. The limiting factor
+is either EVM/IBE (most likely belonging to inner allocations), SEM/ACLR
+(most likely belonging to outer allocations) or the power limitation of
+the calibrated PC2 power amplifier. The second distinct feature consists
+of a region with low LCRB number located at the lower and upper third of
+RB_Start. The intermodulation products are falling into the mask region
+and SEM is strongly limiting the power enhancement. For this region the
+power boost is very low for small LCRB but tends to rise with increasing
+LCRB number. The third feature typically appears for</p>
+<p>Table 8.7.1.1: Quantitative plots for identifying RB regions</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><p>CBW = 10 MHz</p>
+<p><img src="media/image141.png"
+style="width:3.08681in;height:2.66944in"
+alt="Chart, histogram Description automatically generated" /></p></th>
+<th style="text-align: center;"><p>CBW = 20 MHz</p>
+<p><img src="media/image142.png"
+style="width:3.12153in;height:2.70417in"
+alt="Chart, bar chart, histogram Description automatically generated" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><p>CBW = 40 MHz</p>
+<p><img src="media/image143.png"
+style="width:3.14792in;height:2.64375in"
+alt="Chart Description automatically generated" /></p></td>
+<td style="text-align: center;"><p>CBW = 50 MHz</p>
+<p><img src="media/image144.png"
+style="width:3.10417in;height:2.66944in"
+alt="Chart Description automatically generated" /></p></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p>CBW = 80 MHz</p>
+<p><img src="media/image145.png"
+style="width:3.17361in;height:2.72153in"
+alt="Chart, surface chart Description automatically generated" /></p></td>
+<td style="text-align: center;"><p>CBW = 100MHz</p>
+<p><img src="media/image146.png"
+style="width:3.19097in;height:2.72153in"
+alt="Chart, surface chart Description automatically generated" /></p></td>
+</tr>
+</tbody>
+</table>
+<p>channel bandwidth of 50 MHz and above. The locations resemble
+V-shaped lines with the root starting at LCRB of one. The lines
+thickness is typically one or two adjacent RB_start positions with 30kHz
+SCS. The lines are created by intermodulation products falling into the
+very first SEM bin directly adjacent to the channel.</p>
+<p>In general, the available power boost of an individual RB allocation
+is dependent on the applied shaping filter. In most cases this means
+that with increasing the aggressiveness of the shaping filter the power
+boost for certain RB allocations increases. For example, several
+allocations with LCRB sizes above NRB/2 benefit from more aggressive
+shaping. This can be observed in table 8.7.1.2 where the power
+enhancement is displayed for different filter setups. However, there are
+certain RB allocations which do not benefit from applying more
+aggressive shaping filter. Those are mostly RB allocations with small
+number of LCRB located at the lower and upper third of RB_start. This is
+due to the intermodulation products falling into the mask region are not
+affected by the spectral shaping and the SEM remains a limiting
+factor.</p>
+<p>Table 8.7.1.2: Quantitative power enhancement comparison for several
+shaping filter</p>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><p>CBW</p>
+<p>(MHz)</p></th>
+<th style="text-align: center;">[0.17 1 0.17]</th>
+<th style="text-align: center;">[0.28 1 0.28]</th>
+<th style="text-align: center;">[0.4 1 0.4]</th>
+<th style="text-align: center;">[1+D]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">20</td>
+<td><img src="media/image147.png"
+style="width:1.61736in;height:1.41736in"
+alt="Chart, bar chart Description automatically generated" /></td>
+<td><img src="media/image148.png" style="width:1.61736in;height:1.4in"
+alt="Chart, bar chart, histogram Description automatically generated" /></td>
+<td><img src="media/image149.png"
+style="width:1.61736in;height:1.41736in"
+alt="Chart, histogram Description automatically generated" /></td>
+<td><img src="media/image150.png"
+style="width:1.61736in;height:1.40903in"
+alt="Chart, bar chart, histogram Description automatically generated" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">50</td>
+<td><img src="media/image151.png"
+style="width:1.61736in;height:1.38264in"
+alt="Chart Description automatically generated" /></td>
+<td><img src="media/image152.png"
+style="width:1.61736in;height:1.38264in"
+alt="Chart Description automatically generated" /></td>
+<td><img src="media/image153.png" style="width:1.6in;height:1.36528in"
+alt="Chart Description automatically generated" /></td>
+<td><img src="media/image154.png" style="width:1.6in;height:1.37361in"
+alt="A black and white photo of a piano Description automatically generated with low confidence" /></td>
+</tr>
+</tbody>
+</table>
+<p>Observing the behaviour regarding different CBW (Table 8.7.1.1) and
+the effect of the shaping filter setup (Table 8.7.1.2) we identified
+several distinctive regions. Those regions are mimicked by abstract
+shapes efficiently covering the diverse needs of power boosting. The
+selected shapes can be described by a certain set of conditions while
+keeping the complexity in a reasonable range. The proposed shapes for
+classifying the different regions are displayed in figure 8.7.1.1.</p>
+<p><img src="media/image155.png"
+style="width:4.05208in;height:3.33056in"
+alt="A picture containing chart Description automatically generated" /></p>
+<p>Fig. 8.7.1.1: Visualizing regions featuring different properties for
+power enhancement</p>
+<p>The RB allocations with highest power boost are located inside region
+A3. The RB regions A1, A2 and A4 include allocations which only feature
+small boost or even no boost at all. The V-shaped lines are summarised
+with A4. Further region is A5 which shall provide the possibility to
+define specific MPR for the top part. The remaining allocations which
+are not part of A1 to A5 are considered to belong to A6.</p>
+<p>The proposed shapes are chosen to allow efficient coverage while
+still having reasonable complexity for setting up the conditions. The
+goal is to have a description which fits for all channel bandwidths and
+subcarrier spacings so that one set of parameters is sufficient. Table
+8.7.1.3 contains the proposed conditions for each region. The conditions
+are parameterised to allow easy tuning to explore different setups. A
+set of parameters is provided in the table 8.7.1.4. The parameters have
+been tested for several channel bandwidths and subcarrier spacings. The
+targeted shaping filter coefficients are [0.28 1 0.28].</p>
+<p>Table 8.7.1.3: Conditions for RB regions</p>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 76%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">RB Region</th>
+<th>Conditions</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A1</td>
+<td><p>1) RB_start &lt;= c1</p>
+<p>2) RB_start &gt;= N_RB – c8</p>
+<p>with LCRB &lt;= c0</p></td>
+<td>A1 consists of two sections bordering the lower and upper edges of
+the channel.</td>
+</tr>
+<tr>
+<td style="text-align: center;">A2</td>
+<td><p>1) c0 + RB_start &lt; LCRB &lt;= c3</p>
+<p>2) c0 + (N_RB – LCRB – RB_start) &lt; LCRB &lt;= c3</p>
+<p>Alternative:</p>
+<p>1) RB_start &lt;= c2</p>
+<p>2) RB_start &gt;= N_RB – LCRB – c2</p>
+<p>with c0 &lt; LCRB &lt;= c3</p></td>
+<td><p>A2 consists of two sections bordering the lower and upper edges
+of the channel.</p>
+<p>Alternative has rectangular shape instead of triangular.</p></td>
+</tr>
+<tr>
+<td style="text-align: center;">A3</td>
+<td><p>if c14 &lt; LCRB &lt; c9:</p>
+<p>floor(N_RB*c11- LCRB*c4 – c6 + c7) &lt; RB_start &lt; floor(N_RB*c12
+– LCRB*c5 + c13 – c6)</p>
+<p>if LCRB &lt;= c14:</p>
+<p>c1 &lt; RB_start &lt; N_RB – c8</p></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: center;">A4</td>
+<td><p>1) floor(N_RB*c11 – LCRB*c5 – c6) &lt;= RB_start &lt;=
+floor(N_RB*c11 – LCRB*c5 – c6 + c7)</p>
+<p>2) floor(N_RB*c11 – LCRB*c4 – c6) &lt;= RB_start &lt;= floor(N_RB*c11
+– LCRB*c4 – c6 + c7)</p>
+<p>3) floor(N_RB*c12 – LCRB*c5 + c13 – c6) &lt;= RB_start &lt;=
+floor(N_RB*c12 – LCRB*c5 + c13 – c6 + c7)</p>
+<p>4) floor(N_RB*c12 – LCRB*c4 + c13 – c6) &lt;= RB_start &lt;=
+floor(N_RB*c12 – LCRB*c4 + c13 – c6 + c7)</p>
+<p>with c0 &lt; LCRB &lt; c10</p></td>
+<td>A4 consists of four sections to cover the V-shaped lines</td>
+</tr>
+<tr>
+<td style="text-align: center;">A5</td>
+<td>LCRB &gt;= c10</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: center;">A6</td>
+<td>All RB allocations which are not part of A1, A2, A3, A4 and A5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.7.1.4: Parameter set for RB region conditions</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th><p>c0 = 6</p>
+<p>c1 = ceil(N_RB/3)</p>
+<p>c2 = ceil(N_RB/20)</p>
+<p>c3 = ceil(N_RB/8)</p>
+<p>c4 = 0.25</p>
+<p>c5 = 0.75</p>
+<p>c6 = 3</p>
+<p>c7 = 3</p></th>
+<th><p>c8 = c1 + 4</p>
+<p>c9 = floor(N_RB/2)</p>
+<p>c10 = N_RB-3</p>
+<p>c11 = 0.25</p>
+<p>c12 = 0.75</p>
+<p>c13 = 4</p>
+<p>c14 = ceil(N_RB/10)</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3 id="results-for-power-boost-between-1db-to-2db">8.7.2 Results for
+power boost between 1dB to 2dB</h3>
+<p>We conducted simulations in band n77 and deployed PC2 power amplifier
+model. The typical 3GPP calibration and the agreed waveform
+configuration from [R4-2108018] was used. The simulation setup is
+summarized below:</p>
+<p>- Single Tx with power class 2</p>
+<p>- Calibration: 1dB MPR: DFT-s-OFDM QPSK 20MHz, 100RB with 4 dB post
+PA loss</p>
+<p>- Carrier Leakage: 28dBc</p>
+<p>- Image: 28dBc</p>
+<p>- CIM3: 60dBc</p>
+<p>- CIM5: 70dBc</p>
+<p>- Modulation: pi/2 BPSK with Rel-16 DMRS</p>
+<p>- Number of DMRS symbols/slot set to 2</p>
+<p>This contribution proposes one set of RB regions suited for a power
+boost of 1dB and another set of RB regions for the range 1.5 to 2dB.</p>
+<p>Quantitative plots for power backoff are provided in Tables 8.7.2.1
+to 8.7.2.3. Please note that the visualization of the plots is optimised
+for identifying allocation regions and not for providing data on MPR.
+Comparing the plots with those found in our previous contribution
+[R4-2200443] one can observe that less RB regions are required.
+Therefore, the updated proposal removes unnecessary regions and rescales
+the remaining regions accordingly. One benefit of the new proposal is
+that it offers lower complexity.</p>
+<p>Table 8.7.2.1: Quantitative plots for identifying RB regions for
+1.5dB to 2dB power boost</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 43%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">CBW/ SCS</th>
+<th style="text-align: center;">15kHz</th>
+<th style="text-align: center;">30kHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">10MHz</td>
+<td style="text-align: center;"><img src="media/image156.png"
+style="width:2.36614in;height:2.01756in"
+alt="Chart, histogram Description automatically generated" /></td>
+<td style="text-align: center;"><img src="media/image157.png"
+style="width:2.3622in;height:2.06008in"
+alt="Chart, histogram Description automatically generated" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">20MHz</td>
+<td style="text-align: center;"><img src="media/image158.png"
+style="width:2.3622in;height:2.01002in"
+alt="Chart, histogram Description automatically generated" /></td>
+<td style="text-align: center;"><img src="media/image159.png"
+style="width:2.3622in;height:2.03862in"
+alt="Chart, histogram Description automatically generated" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">50MHz</td>
+<td style="text-align: center;"><img src="media/image160.png"
+style="width:2.3622in;height:2.01359in"
+alt="Chart Description automatically generated" /></td>
+<td style="text-align: center;"><img src="media/image161.png"
+style="width:2.3622in;height:2.01955in"
+alt="Chart Description automatically generated" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">100MHz</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><img src="media/image162.png"
+style="width:2.3622in;height:2.01598in"
+alt="Chart Description automatically generated with low confidence" /></td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.7.2.2: Quantitative power enhancement comparison for several
+shaping filter for 1.5dB to 2dB power boost and SCS of 15kHz</p>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><p>CBW</p>
+<p>(MHz)</p></th>
+<th style="text-align: center;">[0.17 1 0.17]</th>
+<th style="text-align: center;">[0.28 1 0.28]</th>
+<th style="text-align: center;">[0.4 1 0.4]</th>
+<th style="text-align: center;">[1+D]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">20</td>
+<td><img src="media/image163.png"
+style="width:1.61417in;height:1.37665in"
+alt="Chart, surface chart Description automatically generated" /></td>
+<td><img src="media/image164.png"
+style="width:1.61417in;height:1.37592in"
+alt="Chart, histogram Description automatically generated" /></td>
+<td><img src="media/image165.png"
+style="width:1.61417in;height:1.37592in"
+alt="Chart, histogram Description automatically generated" /></td>
+<td><img src="media/image166.png"
+style="width:1.61417in;height:1.37675in"
+alt="Chart Description automatically generated" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">50</td>
+<td><img src="media/image167.png"
+style="width:1.61417in;height:1.37447in"
+alt="Chart, histogram Description automatically generated" /></td>
+<td><img src="media/image168.png"
+style="width:1.61417in;height:1.37302in"
+alt="Chart Description automatically generated" /></td>
+<td><img src="media/image169.png"
+style="width:1.61417in;height:1.36434in"
+alt="Chart Description automatically generated" /></td>
+<td><img src="media/image170.png"
+style="width:1.61417in;height:1.37386in"
+alt="Chart Description automatically generated" /></td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.7.2.3: Quantitative power enhancement comparison for several
+shaping filter for 1.5dB to 2dB power boost and SCS of 30kHz</p>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><p>CBW</p>
+<p>(MHz)</p></th>
+<th style="text-align: center;">[0.17 1 0.17]</th>
+<th style="text-align: center;">[0.28 1 0.28]</th>
+<th style="text-align: center;">[0.4 1 0.4]</th>
+<th style="text-align: center;">[1+D]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">20</td>
+<td><img src="media/image171.png"
+style="width:1.61417in;height:1.40416in"
+alt="Chart Description automatically generated" /></td>
+<td><img src="media/image172.png"
+style="width:1.61417in;height:1.40127in"
+alt="Chart, histogram Description automatically generated" /></td>
+<td><img src="media/image173.png"
+style="width:1.61417in;height:1.39765in"
+alt="Chart, histogram Description automatically generated" /></td>
+<td><img src="media/image174.png"
+style="width:1.61417in;height:1.41077in"
+alt="Chart, histogram Description automatically generated" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">50</td>
+<td><img src="media/image175.png"
+style="width:1.61417in;height:1.37665in"
+alt="Chart, histogram Description automatically generated" /></td>
+<td><img src="media/image176.png"
+style="width:1.61417in;height:1.34623in"
+alt="Chart Description automatically generated" /></td>
+<td><img src="media/image177.png"
+style="width:1.61417in;height:1.37375in"
+alt="Chart Description automatically generated" /></td>
+<td><img src="media/image178.png"
+style="width:1.61417in;height:1.37024in"
+alt="Chart Description automatically generated" /></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+
+</blockquote>
+<p>The updated shapes for classifying the different regions are
+displayed in figure 8.7.2.1.</p>
+<p><img src="media/image179.png"
+style="width:3.11082in;height:2.63973in"
+alt="Diagram Description automatically generated with medium confidence" /></p>
+<p>Fig. 8.7.2.1: Visualizing regions featuring different properties for
+power enhancement</p>
+<blockquote>
+<p>The RB allocations with highest power boost are located inside region
+A2. The RB region A1 includes allocations which feature no boost
+compared to 26dBm. The V-shaped lines are combined in A3. The remaining
+allocations which are not part of A1, A2 and A3 are considered to belong
+to A4. Those allocations can achieve a certain power boost which is in
+between A1 and A2.</p>
+</blockquote>
+<p>The proposed shapes are chosen to allow efficient coverage while
+still having reasonable complexity for setting up the conditions. The
+goal is to have a description which fits for all channel bandwidths and
+subcarrier spacings so that one set of parameters is sufficient. Table
+8.7.2.4 contains the proposed conditions for each region. RB_start shall
+be contained in the range [0, N_RB-1]. The conditions are parameterised
+to allow easy tuning to explore different setups. A set of parameters is
+provided in the table 8.7.2.5. The parameters have been tested for
+several channel bandwidths and subcarrier spacings. The shaping filter
+coefficients are optimized for [0.28 1 0.28] but are suited for other
+filter coefficients as well.</p>
+<p>Table 8.7.2.4: Conditions for RB regions</p>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 76%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">RB Region</th>
+<th>Conditions</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A1</td>
+<td><p>1) RB_start &lt;= c1</p>
+<p>2) RB_start &gt;= N_RB – c8</p>
+<p>with LCRB &lt;= c0</p></td>
+<td>A1 consists of two sections bordering the lower and upper edges of
+the channel.</td>
+</tr>
+<tr>
+<td style="text-align: center;">A2</td>
+<td><p>if c0 &lt; LCRB &lt; c9:</p>
+<p>floor(N_RB*c11- LCRB*c4 - c6 + c7) &lt; RB_start &lt; floor(N_RB*c12
+- LCRB*c5 + c13 - c6)</p>
+<p>if LCRB &lt;= c0:</p>
+<p>c1 &lt; RB_start &lt; N_RB - c8</p></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: center;">A3</td>
+<td><p>1) floor(N_RB*c11 - LCRB*c5 - c6) &lt;= RB_start &lt;=
+floor(N_RB*c11 - LCRB*c5 - c6 + c7)</p>
+<p>2) floor(N_RB*c11 - LCRB*c4 - c6) &lt;= RB_start &lt;= floor(N_RB*c11
+- LCRB*c4 - c6 + c7)</p>
+<p>3) floor(N_RB*c12 - LCRB*c5 + c13 - c6) &lt;= RB_start &lt;=
+floor(N_RB*c12 - LCRB*c5 + c13 - c6 + c7)</p>
+<p>4) floor(N_RB*c12 - LCRB*c4 + c13 - c6) &lt;= RB_start &lt;=
+floor(N_RB*c12 - LCRB*c4 + c13 - c6 + c7)</p>
+<p>with c0 &lt; LCRB</p></td>
+<td>A4 consists of four sections to cover the V-shaped lines</td>
+</tr>
+<tr>
+<td style="text-align: center;">A4</td>
+<td>All RB allocations which are not part of A1, A2 and A3</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.7.2.5: Parameter set for RB region conditions</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th><p>c0 = ceil(N_RB/10)</p>
+<p>c1 = ceil(N_RB/3)</p>
+<p>c4 = 0.25</p>
+<p>c5 = 0.75</p>
+<p>c6 = 4</p>
+<p>c7 = 4</p></th>
+<th><p>c8 = c1 + 1</p>
+<p>c9 = floor(N_RB/3*2)</p>
+<p>c11 = 0.25</p>
+<p>c12 = 0.75</p>
+<p>c13 = 5</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h1 id="agreements-conclusion-and-recommendations">9 Agreements,
+conclusion and recommendations</h1>
+<h4 id="ran4-and-ran-agreements">9.1 RAN4 and RAN agreements</h4>
+<p>The following has been agreed in this study item:</p>
+<blockquote>
+<p>1. PA architecture (R4-2107897, RAN4#99-e):</p>
+<p>- All companies to initially study 1 PA designs</p>
+<p>- Interested companies can subsequently study multi-PA designs</p>
+<p>2. Adjustment of ACLR requirements (R4-2115064, RAN4#100-e):</p>
+<p>- Companies agreed that if the output power is increased beyond PC1
+levels, the ACLR would have to be re-evaluated.</p>
+<p>3. UE type considered for power enhancement (R4-2115064,
+RAN4#100-e):</p>
+<p>- Companies agreed to initially address UE handhelds with PC2 as a
+baseline</p>
+<p>- Other power classes are not precluded (moderator comment)</p>
+<p>4. Use of net gain for evaluating candidate filters (R4-2120057,
+RAN4#101-e):</p>
+<p>- Net gain that combines both the transmitter and receiver
+performances should be the deciding criterion for filter evaluation</p>
+<p>5. Both data and DMRS are filtered. The choice of filters is up to UE
+implementation and transparent to the network (RP-213655, RAN#94e)</p>
+<p>6. There is no need to update ACLR requirements for PC2 (R4-2202386,
+RAN#101-bis-e)</p>
+<p>7. Maintain the spectral flatness specifications established in the
+Rel-16 specifications (R4-2202386, RAN#101-bis-e)</p>
+<p>8. There is no need to specify a minimum LCRB value for net gain
+(R4-2202386, RAN#101-bis-e).</p>
+<p>9. Whether to modify the MPRs for the existing regions or define new
+regions for power boost of PC2 1Tx PA can be deprioritized in the SI
+(R4-2206598, RAN4#102-e)</p>
+<p>10. Regarding maximum power boost for 1Tx PC2 PAs, MRP relative to
+29dBm should be less than or equal to 2dB for limited set of RB
+allocations. (R4-2206598, RAN4#102-e)</p>
+<p>11. Limit UL slots in radio frame to max 25% to guarantee SAR
+compliance and to reduce strain on amplifier (R4-2203682, R4-2204085)
+for 1 dB power boost (R4-2206598, RAN4#102-e)</p>
+<p>12. Further study of the power boosting requirements for PC2 with
+dual Tx can be deprioritized in SI (R4-2206598, RAN4#102-e)</p>
+</blockquote>
+<h4 id="conclusions">9.2 Conclusions</h4>
+<p>In this SI the power boost capability of 1Tx PC2 PAs were
+investigated. PC2 PAs for UE handhelds was the primary focus of this
+work. Investigations revealed that with existing hardware the output
+power obtained through boosting was less than PC1 values. Therefore, it
+was decided that the PC2 ACLR requirements need not be modified for this
+level of boosting in PC2 PAs. If in the future higher boosting is
+possible whereby PC1 levels are exceeded, then the issue of modifying
+the ACLR values can be revisited.</p>
+<p>The concept of ‘Net gain’ was used to evaluate candidate filter
+types. It was agreed that both data and DMRS would be filtered, and that
+the choice of filter is up to UE implementation and transparent to the
+network as it was in Rel-16. Also, companies agreed to maintain the
+spectral flatness specifications established in Rel-16.</p>
+<p>Discussions related to modifying the MPRs for boosted PAs either by
+updating existing MPR tables or defining new MPR regions was
+deprioritized in the SI.</p>
+<p>It was agreed that regarding maximum power boost for 1Tx PC2 PAs the
+MPR relative to 29 dBm should be less than or equal to 2 dB for limited
+set of RB allocations and that the UL duty cycle for 1 dB power boost
+should be limited to a maximum value of 25%.</p>
+<p>It was also decided that power boosting for dual Tx architectures
+should be deprioritized in the SI</p>
+<h1 id="annex-a-change-history"><u><br />
+</u>Annex A: Change history</h1>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 9%" />
+<col style="width: 12%" />
+<col style="width: 3%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 47%" />
+<col style="width: 10%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-05</td>
+<td style="text-align: center;">RAN4 #99e</td>
+<td style="text-align: center;">R4-2109373</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TR38.xxx v0.0.1: TR skeleton for
+optimizations of pi/2 BPSK uplink power in NR</td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">RAN4#100e</td>
+<td style="text-align: center;">R4-2109377</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">General information for TR skeleton for
+optimizations of pi.2 BPSK uplink power in NR</td>
+<td style="text-align: center;">0.0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">RAN4#101-bis-e</td>
+<td style="text-align: center;">R4-2200506</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Added contents of TP R4-2117644</td>
+<td style="text-align: center;">0.0.3</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">RAN4#102-e</td>
+<td style="text-align: center;">R4-2204012</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Added contents of TP R4-2202387</td>
+<td style="text-align: center;">0.0.4</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95e</td>
+<td style="text-align: center;">RP-220824</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Added contents of TP R4-2204014,
+R4-2204414, R4-2206564, R4-2206565. TR is provided to TSG RAN for
+approval</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95e</td>
+<td style="text-align: center;">RP-220861</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Editorial changes</td>
+<td style="text-align: center;">1.0.1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8" style="text-align: center;"><strong>Change
+history</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date</strong></td>
+<td><strong>Meeting</strong></td>
+<td><strong>TDoc</strong></td>
+<td><strong>CR</strong></td>
+<td><strong>Rev</strong></td>
+<td><strong>Cat</strong></td>
+<td><strong>Subject/Comment</strong></td>
+<td><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td>Approved by plenary – Rel-17 spec under change control</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.47204724409448817in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 5696 1088" width="2.472047244094488in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 16; stroke-linejoin: round; }
+.font0 { font-size: 313px; font-family: Symbol, serif; }
+.font1 { font-size: 346px; font-family: "Times New Roman", serif; }
+.font2 { font-style: italic; font-size: 346px; font-family: "Times New Roman", serif; }
+.font3 { font-style: italic; font-size: 202px; font-family: "Times New Roman", serif; }
+.font4 { font-weight: bold; font-size: 20px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="5221" x2="5453" y1="544" y2="544"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5497" xml:lang="en" xml:space="preserve" y="684">÷</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5497" xml:lang="en" xml:space="preserve" y="984">ø</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5497" xml:lang="en" xml:space="preserve" y="435">ö</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4469" xml:lang="en" xml:space="preserve" y="684">ç</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4469" xml:lang="en" xml:space="preserve" y="984">è</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4469" xml:lang="en" xml:space="preserve" y="435">æ</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4929" xml:lang="en" xml:space="preserve" y="640">-</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1178" xml:lang="en" xml:space="preserve" y="640">±</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="871" xml:lang="en" xml:space="preserve" y="640">=</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5243" xml:lang="en" xml:space="preserve" y="938">2</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5241" xml:lang="en" xml:space="preserve" y="400">1</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3709" xml:lang="en" xml:space="preserve" y="640">band</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3618" xml:lang="en" xml:space="preserve" y="640"> </text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2970" xml:lang="en" xml:space="preserve" y="640">pass</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2879" xml:lang="en" xml:space="preserve" y="640"> </text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1409" xml:lang="en" xml:space="preserve" y="640">minimum</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4657" xml:lang="en" xml:space="preserve" y="640">n</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="131" xml:lang="en" xml:space="preserve" y="640">f</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="252" xml:lang="en" xml:space="preserve" y="736">offset</text>
+    </g>
+</svg>

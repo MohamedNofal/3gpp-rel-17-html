@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38201-h00</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-symbols-and-abbreviations"
+id="toc-definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#general-description-of-layer-1"
+id="toc-general-description-of-layer-1">4 General description of layer
+1</a>
+<ul>
+<li><a href="#relation-to-other-layers"
+id="toc-relation-to-other-layers">4.1 Relation to other layers</a>
+<ul>
+<li><a href="#general-protocol-architecture"
+id="toc-general-protocol-architecture">4.1.1 General protocol
+architecture</a></li>
+<li><a href="#service-provided-to-higher-layers"
+id="toc-service-provided-to-higher-layers">4.1.2 Service provided to
+higher layers</a></li>
+</ul></li>
+<li><a href="#general-description-of-layer-1-1"
+id="toc-general-description-of-layer-1-1">4.2 General description of
+layer 1</a>
+<ul>
+<li><a href="#multiple-access" id="toc-multiple-access">4.2.1 Multiple
+access</a></li>
+<li><a href="#physical-channels-and-modulation"
+id="toc-physical-channels-and-modulation">4.2.2 Physical channels and
+modulation</a></li>
+<li><a href="#channel-coding" id="toc-channel-coding">4.2.3 Channel
+coding</a></li>
+<li><a href="#physical-layer-procedures"
+id="toc-physical-layer-procedures">4.2.4 Physical layer
+procedures</a></li>
+<li><a href="#physical-layer-measurements"
+id="toc-physical-layer-measurements">4.2.5 Physical layer
+measurements</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#document-structure-of-physical-layer-specification"
+id="toc-document-structure-of-physical-layer-specification">5 Document
+structure of physical layer specification</a>
+<ul>
+<li><a href="#overview" id="toc-overview">5.1 Overview</a></li>
+<li><a href="#ts-38.201-physical-layer-general-description"
+id="toc-ts-38.201-physical-layer-general-description">5.2 TS 38.201:
+Physical layer; General description</a></li>
+<li><a
+href="#ts-38.202-physical-layer-services-provided-by-the-physical-layer"
+id="toc-ts-38.202-physical-layer-services-provided-by-the-physical-layer">5.3
+TS 38.202: Physical layer services provided by the physical
+layer</a></li>
+<li><a href="#ts-38.211-physical-channels-and-modulation"
+id="toc-ts-38.211-physical-channels-and-modulation">5.4 TS 38.211:
+Physical channels and modulation</a></li>
+<li><a href="#ts-38.212-multiplexing-and-channel-coding"
+id="toc-ts-38.212-multiplexing-and-channel-coding">5.5 TS 38.212:
+Multiplexing and channel coding</a></li>
+<li><a href="#ts-38.213-physical-layer-procedures-for-control"
+id="toc-ts-38.213-physical-layer-procedures-for-control">5.6 TS 38.213:
+Physical layer procedures for control</a></li>
+<li><a href="#ts-38.214-physical-layer-procedures-for-data"
+id="toc-ts-38.214-physical-layer-procedures-for-data">5.7 TS 38.214:
+Physical layer procedures for data</a></li>
+<li><a href="#ts-38.215-physical-layer-measurements"
+id="toc-ts-38.215-physical-layer-measurements">5.8 TS 38.215: Physical
+layer measurements</a></li>
+<li><a
+href="#ts-37.213-physical-layer-procedures-for-shared-spectrum-channel-access"
+id="toc-ts-37.213-physical-layer-procedures-for-shared-spectrum-channel-access">5.9
+TS 37.213: Physical layer procedures for shared spectrum channel
+access</a></li>
+</ul></li>
+</ul>
+</nav>
+<p>3GPP TS 38.201 V17.0.0 (2021-12)</p>
+<p>Technical Specification</p>
+<p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NR;</p>
+<p>Physical layer; General description</p>
+<p>(Release 17)</p>
+<p><img src="media/image1.jpeg" /> <img src="media/image2.png" /></p>
+<p>The present document has been developed within the 3rd Generation
+Partnership Project (3GPP <sup>TM</sup>) and may be further elaborated
+for the purposes of 3GPP..<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</p>
+<blockquote>
+<p>Keywords</p>
+<p>3GPP, New Radio, Layer 1</p>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote>
+<p><em><strong>Copyright Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2021, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">5</a></p>
+<p>2 References <a href="#references">5</a></p>
+<p>3 Definitions, symbols and abbreviations <a
+href="#definitions-symbols-and-abbreviations">5</a></p>
+<p>3.1 Definitions <a href="#definitions">5</a></p>
+<p>3.2 Symbols <a href="#symbols">5</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">5</a></p>
+<p>4 General description of layer 1 <a
+href="#general-description-of-layer-1">6</a></p>
+<p>4.1 Relation to other layers <a
+href="#relation-to-other-layers">6</a></p>
+<p>4.1.1 General protocol architecture <a
+href="#general-protocol-architecture">6</a></p>
+<p>4.1.2 Service provided to higher layers <a
+href="#service-provided-to-higher-layers">7</a></p>
+<p>4.2 General description of layer 1 <a
+href="#general-description-of-layer-1-1">7</a></p>
+<p>4.2.1 Multiple access <a href="#multiple-access">7</a></p>
+<p>4.2.2 Physical channels and modulation <a
+href="#physical-channels-and-modulation">7</a></p>
+<p>4.2.3 Channel coding <a href="#channel-coding">8</a></p>
+<p>4.2.4 Physical layer procedures <a
+href="#physical-layer-procedures">8</a></p>
+<p>4.2.5 Physical layer measurements <a
+href="#physical-layer-measurements">8</a></p>
+<p>5 Document structure of physical layer specification <a
+href="#document-structure-of-physical-layer-specification">8</a></p>
+<p>5.1 Overview <a href="#overview">8</a></p>
+<p>5.2 TS 38.201: Physical layer; General description <a
+href="#ts-38.201-physical-layer-general-description">9</a></p>
+<p>5.3 TS 38.202: Physical layer services provided by the physical layer
+<a
+href="#ts-38.202-physical-layer-services-provided-by-the-physical-layer">9</a></p>
+<p>5.4 TS 38.211: Physical channels and modulation <a
+href="#ts-38.211-physical-channels-and-modulation">9</a></p>
+<p>5.5 TS 38.212: Multiplexing and channel coding <a
+href="#ts-38.212-multiplexing-and-channel-coding">10</a></p>
+<p>5.6 TS 38.213: Physical layer procedures for control <a
+href="#ts-38.213-physical-layer-procedures-for-control">10</a></p>
+<p>5.7 TS 38.214: Physical layer procedures for data <a
+href="#ts-38.214-physical-layer-procedures-for-data">10</a></p>
+<p>5.8 TS 38.215: Physical layer measurements <a
+href="#ts-38.215-physical-layer-measurements">10</a></p>
+<p>5.9 TS 37.213: Physical layer procedures for shared spectrum channel
+access <a
+href="#ts-37.213-physical-layer-procedures-for-shared-spectrum-channel-access">10</a></p>
+<p>Annex A (informative): Preferred mathematical notations <a
+href="#annex-a-informative-preferred-mathematical-notations">12</a></p>
+<p>Annex B (informative): Change history <a
+href="#annex-b-informative-change-history">13</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Specification has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document provides a general description of the physical
+layer of NR radio interface. The present document also describes the
+document structure of the 3GPP physical layer specifications, i.e. TS
+38.200 series.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications"</p>
+<p>[2] 3GPP TS 38.202: "NR; Services provided by the physical layer"</p>
+<p>[3] 3GPP TS 38.211: "NR; Physical channels and modulation"</p>
+<p>[4] 3GPP TS 38.212: "NR; Multiplexing and channel coding"</p>
+<p>[5] 3GPP TS 38.213: "NR; Physical layer procedures for control"</p>
+<p>[6] 3GPP TS 38.214: "NR; Physical layer procedures for data"</p>
+<p>[7] 3GPP TS 38.215: "NR; Physical layer measurements"</p>
+<h1 id="definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in TR 21.905 [1] and the following apply. A term defined in the
+present document takes precedence over the definition of the same term,
+if any, in TR 21.905 [1].</p>
+<p>Definition format</p>
+<p><strong>&lt;defined term&gt;</strong>: &lt;definition&gt;.</p>
+<p><strong>example:</strong> text used to clarify abstract rules by
+applying them literally.</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<p>Symbol format</p>
+<p>&lt;symbol&gt; &lt;Explanation&gt;</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+TR 21.905 [1] and the following apply. An abbreviation defined in the
+present document takes precedence over the definition of the same
+abbreviation, if any, in TR 21.905 [1].</p>
+<p>BPSK Binary Phase Shift Keying</p>
+<p>CP Cyclic Prefix</p>
+<p>DFT-s-OFDM Discrete Fourier Transform-spread-Orthogonal Frequency
+Division Multiplexing</p>
+<p>DU Distributed Unit</p>
+<p>E-UTRA Evolved Universal Terrestrial Radio Access</p>
+<p>FDD Frequency Division Duplex</p>
+<p>FEC Forward Error Correction</p>
+<p>HARQ Hybrid Automatic Repeat Request</p>
+<p>IAB Integrated access and backhaul</p>
+<p>LDPC Low Density Parity Check</p>
+<p>MAC Medium Access Control</p>
+<p>MIMO Multiple Input Multiple Output</p>
+<p>MT Mobile Termination</p>
+<p>OFDM Orthogonal Frequency Division Multiplexing</p>
+<p>PBCH Physical Broadcast Channel</p>
+<p>PDCCH Physical Downlink Control Channel</p>
+<p>PDSCH Physical Downlink Shared Channel</p>
+<p>PRACH Physical Random Access Channel</p>
+<p>PSBCH Physical Sidelink Broadcast Channel</p>
+<p>PSCCH Physical Sidelink Control Channel</p>
+<p>PSFCH Physical Sidelink Feedback Channel</p>
+<p>PSSCH Physical Sidelink Shared Channel</p>
+<p>PUCCH Physical Uplink Control Channel</p>
+<p>PUSCH Physical Uplink Shared Channel</p>
+<p>QAM Quadrature Amplitude Modulation</p>
+<p>QPSK Quadrature Phase Shift Keying</p>
+<p>RLC Radio Link Control</p>
+<p>RRC Radio Resource Control</p>
+<p>SAP Service Access Point</p>
+<p>SRS Sounding reference signal</p>
+<p>TDD Time Division Duplex</p>
+<p>UE User Equipment</p>
+<h1 id="general-description-of-layer-1">4 General description of layer
+1</h1>
+<h2 id="relation-to-other-layers">4.1 Relation to other layers</h2>
+<h3 id="general-protocol-architecture">4.1.1 General protocol
+architecture</h3>
+<p>The radio interface described in this specification covers the
+interface between the User Equipment (UE) and gNB, between gNBs, between
+IAB-node DU and IAB-node MT/UE, and between UEs. The radio interface is
+composed of the Layer 1, 2 and 3. The TS 38.200 series describes the
+Layer 1 (Physical Layer) specifications. Layers 2 and 3 are described in
+the 38.300 series.</p>
+<p><img src="media/image3.svg" /></p>
+<p>Figure 1: Radio interface protocol architecture around the physical
+layer</p>
+<p>Figure 1 shows the NR radio interface protocol architecture around
+the physical layer (Layer 1). The physical layer interfaces the Medium
+Access Control (MAC) sub-layer of Layer 2 and the Radio Resource Control
+(RRC) Layer of Layer 3. The circles between different layer/sub-layers
+indicate Service Access Points (SAPs). The physical layer offers a
+transport channel to MAC. The transport channel is characterized by how
+the information is transferred over the radio interface. MAC offers
+different logical channels to the Radio Link Control (RLC) sub-layer of
+Layer 2. A logical channel is characterized by the type of information
+transferred.</p>
+<h3 id="service-provided-to-higher-layers">4.1.2 Service provided to
+higher layers</h3>
+<p>The physical layer offers data transport services to higher layers.
+The access to these services is through the use of a transport channel
+via the MAC sub-layer. Details are specified in [2].</p>
+<h2 id="general-description-of-layer-1-1">4.2 General description of
+layer 1</h2>
+<h3 id="multiple-access">4.2.1 Multiple access</h3>
+<p>The multiple access scheme for the NR physical layer is based on
+Orthogonal Frequency Division Multiplexing (OFDM) with a cyclic prefix
+(CP). For uplink, Discrete Fourier Transform-spread-OFDM (DFT-s-OFDM)
+with a CP is also supported. To support transmission in paired and
+unpaired spectrum, both Frequency Division Duplex (FDD) and Time
+Division Duplex (TDD) are enabled.</p>
+<p>The Layer 1 is defined in a bandwidth agnostic way based on resource
+blocks, allowing the NR Layer 1 to adapt to various spectrum
+allocations. A resource block spans 12 sub-carriers with a given
+sub-carrier spacing.</p>
+<p>The radio frame has a duration of 10ms and consists of 10 sub-frames
+with a sub-frame duration of 1ms. A sub-frame is formed by one or
+multiple adjacent slots, each having 14 adjacent symbols. Further
+details on the frame structure are specified in [2].</p>
+<h3 id="physical-channels-and-modulation">4.2.2 Physical channels and
+modulation</h3>
+<p>The physical channels defined in the downlink are:</p>
+<p>- the Physical Downlink Shared Channel (PDSCH),</p>
+<p>- the Physical Downlink Control Channel (PDCCH),</p>
+<p>- the Physical Broadcast Channel (PBCH),</p>
+<p>The physical channels defined in the uplink are:</p>
+<p>- the Physical Random Access Channel (PRACH),</p>
+<p>- the Physical Uplink Shared Channel (PUSCH),</p>
+<p>- and the Physical Uplink Control Channel (PUCCH).</p>
+<p>The physical channels defined in the sidelink are:</p>
+<p>- the Physical Sidelink Broadcast Channel (PSBCH),</p>
+<p>- the Physical Sidelink Control Channel (PSCCH),</p>
+<p>- the Physical Sidelink Feedback Channel (PSFCH),</p>
+<p>- and the Physical Sidelink Shared Channel (PSSCH).</p>
+<p>In addition, signals are defined as reference signals, primary and
+secondary synchronization signals.</p>
+<p>The modulation schemes supported are</p>
+<p>- in the downlink, QPSK, 16QAM, 64QAM, 256QAM, and 1024QAM,</p>
+<p>- in the uplink, QPSK, 16QAM, 64QAM and 256QAM for OFDM with a CP and
+π/2-BPSK, QPSK, 16QAM, 64QAM and 256QAM for DFT-s-OFDM with a CP.</p>
+<h3 id="channel-coding">4.2.3 Channel coding</h3>
+<p>The channel coding scheme for transport blocks is quasi-cyclic LDPC
+codes with 2 base graphs and 8 sets of parity check matrices for each
+base graph, respectively. One base graph is used for code blocks larger
+than certain sizes or with initial transmission code rate higher than
+thresholds; otherwise, the other base graph is used. Before the LDPC
+coding, for large transport blocks, the transport block is segmented
+into multiple code blocks with equal size. The channel coding scheme for
+PBCH and control information is Polar coding based on nested sequences.
+Puncturing, shortening and repetition are used for rate matching.
+Further details of channel coding schemes are specified in [4].</p>
+<h3 id="physical-layer-procedures">4.2.4 Physical layer procedures</h3>
+<p>There are several Physical layer procedures involved. Such procedures
+covered by the physical layer are;</p>
+<p>- Cell search</p>
+<p>- Power control</p>
+<p>- Uplink synchronisation and Uplink timing control</p>
+<p>- Random access related procedures</p>
+<p>- HARQ related procedures</p>
+<p>- Beam management and CSI related procedures</p>
+<p>- Sidelink related procedures</p>
+<p>- Channel access procedures</p>
+<p>Through the control of physical layer resources in the frequency
+domain as well as in the time and power domains, implicit support of
+interference coordination is provided in NR.</p>
+<h3 id="physical-layer-measurements">4.2.5 Physical layer
+measurements</h3>
+<p>Radio characteristics are measured by the UE and the network and
+reported to higher layers. These include, e.g. measurements for intra-
+and inter-frequency handover, inter RAT handover, timing measurements,
+and measurements for RRM.</p>
+<p>Measurements for inter-RAT handover are defined in support of
+handover to E-UTRA.</p>
+<h1 id="document-structure-of-physical-layer-specification">5 Document
+structure of physical layer specification</h1>
+<h2 id="overview">5.1 Overview</h2>
+<p>The physical layer specification consists of a general document (TS
+38.201), and seven documents (TS 38.202, 38.211 through 38.215, and
+37.213). The relation between the physical layer specifications in the
+context of the higher layers is shown in Figure 2.</p>
+<p><img src="media/image4.svg" /></p>
+<p>Figure 2: Relation between Physical Layer specifications</p>
+<h2 id="ts-38.201-physical-layer-general-description">5.2 TS 38.201:
+Physical layer; General description</h2>
+<p>The scope is to describe:</p>
+<p>- The contents of the Layer 1 documents (TS 38.200 series);</p>
+<p>- Where to find information;</p>
+<h2
+id="ts-38.202-physical-layer-services-provided-by-the-physical-layer">5.3
+TS 38.202: Physical layer services provided by the physical layer</h2>
+<p>The scope is to describe services provided by the physical layer, and
+to specify:</p>
+<p>- Services and functions of the physical layer;</p>
+<p>- Model of physical layer of the UE;</p>
+<p>- Parallel transmission of simultaneous physical channels and
+SRS;</p>
+<p>- Measurements provided by the physical layer.</p>
+<h2 id="ts-38.211-physical-channels-and-modulation">5.4 TS 38.211:
+Physical channels and modulation</h2>
+<p>The scope is to establish the characteristics of the Layer-1 physical
+channels, generation of physical layer signals and modulation, and to
+specify:</p>
+<p>- Definition of the uplink, downlink and sidelink physical
+channels;</p>
+<p>- Frame structure and physical resources;</p>
+<p>- Modulation mapping (BPSK, QPSK, etc);</p>
+<p>- OFDM signal generation;</p>
+<p>- Scrambling, modulation and upconversion;</p>
+<p>- Layer mapping and precoding;</p>
+<p>- Physical shared channel in uplink, downlink and sidelink;</p>
+<p>- Reference signal in uplink, downlink and sidelink;</p>
+<p>- Physical random access channel;</p>
+<p>- Primary and secondary synchronization signals.</p>
+<h2 id="ts-38.212-multiplexing-and-channel-coding">5.5 TS 38.212:
+Multiplexing and channel coding</h2>
+<p>The scope is to describe the transport channel and control channel
+data processing, including multiplexing, channel coding and
+interleaving, and to specify:</p>
+<p>- Channel coding schemes;</p>
+<p>- Rate matching;</p>
+<p>- Uplink transport channels and control information;</p>
+<p>- Downlink transport channels and control information;</p>
+<p>- Sidelink transport channels and control information.</p>
+<h2 id="ts-38.213-physical-layer-procedures-for-control">5.6 TS 38.213:
+Physical layer procedures for control</h2>
+<p>The scope is to establish the characteristics of the physical layer
+procedures for control, and to specify:</p>
+<p>- Synchronization procedures;</p>
+<p>- Uplink power control;</p>
+<p>- Random access procedure;</p>
+<p>- UE procedure for reporting control information;</p>
+<p>- UE procedure for receiving control information.</p>
+<h2 id="ts-38.214-physical-layer-procedures-for-data">5.7 TS 38.214:
+Physical layer procedures for data</h2>
+<p>The scope is to establish the characteristics of the physical layer
+procedures for data, and to specify:</p>
+<p>- Power control;</p>
+<p>- Physical downlink shared channel related procedures;</p>
+<p>- Physical uplink shared channel related procedure;</p>
+<p>- Physical sidelink shared channel related procedure.</p>
+<h2 id="ts-38.215-physical-layer-measurements">5.8 TS 38.215: Physical
+layer measurements</h2>
+<p>The scope is to establish the characteristics of the physical layer
+measurements, and to specify:</p>
+<p>- Control of UE/NG-RAN measurements;</p>
+<p>- Measurement capabilities for NR.</p>
+<h2
+id="ts-37.213-physical-layer-procedures-for-shared-spectrum-channel-access">5.9
+TS 37.213: Physical layer procedures for shared spectrum channel
+access</h2>
+<p>The scope is to establish the characteristics of the physical layer
+procedures for shared spectrum channel, and to specify:</p>
+<p>- Downlink channel access procedures;</p>
+<p>- Uplink channel access procedures.</p>
+<p class="heading"
+id="annex-a-informative-preferred-mathematical-notations"><br />
+Annex A (informative):<br />
+Preferred mathematical notations</p>
+<p>The following table contains the preferred mathematical notations
+used in L1 documentation.</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr>
+<td>item</td>
+<td>notation</td>
+</tr>
+<tr>
+<td>multiply product</td>
+<td>cross sign, e.g. <em>a</em>×<em>b</em></td>
+</tr>
+<tr>
+<td>matrix product</td>
+<td>dot sign, e.g. <em>a</em>⋅<em>b</em></td>
+</tr>
+<tr>
+<td>scalar product (product of a matrix by a scalar)</td>
+<td>dot sign, scalar should precede matrix e.g. <img
+src="media/image5.svg" /></td>
+</tr>
+<tr>
+<td>matrix dimensioning</td>
+<td><p>number of rows × number of column, e.g.:</p>
+<p><em>R</em>×<em>C</em></p></td>
+</tr>
+<tr>
+<td>Kronecker product</td>
+<td><em>a</em>⊗<em>b</em></td>
+</tr>
+<tr>
+<td>bracketing of sets (all elements of same type, not ordered
+elements)</td>
+<td><p>curly brackets {}, e.g.</p>
+<p>{a<sub>1</sub>, a<sub>2</sub>, …,a<sub>p</sub>}, or<img
+src="media/image6.svg" /></p></td>
+</tr>
+<tr>
+<td>bracketing of lists (all elements not necessary of same type,
+ordered elements)</td>
+<td>round brackets (), e.g. (A, u, x)</td>
+</tr>
+<tr>
+<td>bracketing of sequences (all elements of same type, ordered
+elements)</td>
+<td>angle brackets, e.g. &lt;a<sub>1</sub>, a<sub>2</sub>,
+…,a<sub>p</sub>&gt; or <img src="media/image7.svg" /></td>
+</tr>
+<tr>
+<td>bracketing of function argument</td>
+<td>round brackets, e.g. f(<em>x</em>)</td>
+</tr>
+<tr>
+<td>bracketing of array index</td>
+<td>square brackets, e.g. a[<em>x</em>]</td>
+</tr>
+<tr>
+<td>bracketing of matrix or vector</td>
+<td>square brackets [], e.g. <img src="media/image8.svg" />, <img
+src="media/image9.svg" />, or <img src="media/image10.svg" /></td>
+</tr>
+<tr>
+<td>Separation of indexes</td>
+<td>use a comma : e.g. <em>N<sub>i</sub></em><sub>,<em>j</em></sub></td>
+</tr>
+<tr>
+<td>use of italic for symbols</td>
+<td>a symbol should be either in italic or in normal font, but mixing up
+should be avoided.</td>
+</tr>
+<tr>
+<td>bracketing of arithmetic expression to force precedence of
+operations</td>
+<td>round brackets : e.g. <img src="media/image11.svg" /></td>
+</tr>
+<tr>
+<td>necessity of bracketing arithmetic expressions</td>
+<td>When only + and × bracketing is not necessary. When the
+<strong>mod</strong> operator is used explicit bracketing of mod
+operands and possibly result should be done.</td>
+</tr>
+<tr>
+<td>number type</td>
+<td>in a context of non negative integer numbers, some notes should
+stress when a number is signed, or possibly fractional.</td>
+</tr>
+<tr>
+<td>binary <strong>xor</strong> and <strong>and</strong></td>
+<td>respectively use + or ⋅. If no "mod 2" is explicitly in the
+expression some text should stress that the operation is modulo 2.</td>
+</tr>
+<tr>
+<td>matrix or vector transpose</td>
+<td>v<sup>T</sup></td>
+</tr>
+<tr>
+<td>1×1 matrices</td>
+<td>implicitly cast to its unique element.</td>
+</tr>
+<tr>
+<td>vector dot product</td>
+<td>u<sup>T</sup>⋅v for column vectors, and u⋅v<sup>T</sup> for line
+vectors</td>
+</tr>
+<tr>
+<td>complex conjugate</td>
+<td>v<sup>*</sup></td>
+</tr>
+<tr>
+<td>matrix or vector Hermitian transpose</td>
+<td>v<sup>H</sup></td>
+</tr>
+<tr>
+<td>real part and imaginary part of complex numbers.</td>
+<td>Re(x) and Im(x)</td>
+</tr>
+<tr>
+<td><p>Modulo operation (including negative value)</p>
+<p><img src="media/image12.svg" /></p></td>
+<td><p>Let <img src="media/image13.svg" /> be the integer quotient of
+<img src="media/image14.svg" /> and <img src="media/image15.svg" />,</p>
+<p><img src="media/image16.svg" />is integer, <img
+src="media/image17.svg" />is remainder then</p>
+<p><img src="media/image18.svg" />, where<img src="media/image19.svg" />
+for all <img src="media/image14.svg" />and <img
+src="media/image20.svg" /></p>
+<p>(Note that <img src="media/image21.svg" /> is floor operation to
+round the elements of <img src="media/image22.svg" /> to the nearest
+integers towards minus infinity)</p></td>
+</tr>
+</tbody>
+</table>
+<p class="heading" id="annex-b-informative-change-history">Annex B
+(informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 48%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-05</td>
+<td style="text-align: center;">RAN1#89</td>
+<td style="text-align: center;">R1-1708435</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Draft skeleton</td>
+<td style="text-align: center;">0.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-07</td>
+<td style="text-align: center;">AH_1706</td>
+<td style="text-align: center;">R1-1712012</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Inclusion of agreements up to and
+including RAN1 NR Ad-Hoc #2</td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-08</td>
+<td style="text-align: center;">RAN1#90</td>
+<td style="text-align: center;">R1-1713894</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updates according to email discussion "
+[NRAH2-03-201] TS 38.201"</td>
+<td style="text-align: center;">0.0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-08</td>
+<td style="text-align: center;">RAN1#90</td>
+<td style="text-align: center;">R1-1715069</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Clean version</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-08</td>
+<td style="text-align: center;">RAN1#90</td>
+<td style="text-align: center;">R1-1715319</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Inclusion of agreements up to and
+including RAN1 #90</td>
+<td style="text-align: center;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-09</td>
+<td style="text-align: center;">RAN #77</td>
+<td style="text-align: center;">RP-171998</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">For information to RAN</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-11</td>
+<td style="text-align: center;">RAN1#90b</td>
+<td style="text-align: center;">R1-1719242</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Inclusion of agreements up to and
+including RAN1#90bis</td>
+<td style="text-align: center;">1.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-11</td>
+<td style="text-align: center;">RAN1#91</td>
+<td style="text-align: center;">R1-1721046</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Endorsed version by RAN1#90bis (email
+thread)</td>
+<td style="text-align: center;">1.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">RAN1#91</td>
+<td style="text-align: center;">R1-1721339</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Editorial update - Endorsed version by
+RAN1#91 (email thread)</td>
+<td style="text-align: center;">1.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">RAN#78</td>
+<td style="text-align: center;">RP-172530</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Endorsed version for approval by
+plenary.</td>
+<td style="text-align: center;">2.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">RAN#78</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Approved by plenary – Rel-15 spec under
+change control</td>
+<td style="text-align: center;">15.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192661</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of V2X, NR-based access to
+unlicensed spectrum, integrated access backhaul for NR and remote
+interference management</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN#94-e</td>
+<td style="text-align: center;">RP-212982</td>
+<td style="text-align: center;">0002</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of DL 1024QAM</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

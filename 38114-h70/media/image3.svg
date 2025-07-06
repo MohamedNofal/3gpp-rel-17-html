@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="1.71in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 3601 1026" width="6.001666666666667in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.font0 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+.font1 { font-size: 90px; font-family: "Times New Roman", serif; }
+.brush1 { fill: none; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 6; stroke-linejoin: round; }
+.pen2 { stroke: rgb(0,0,0); stroke-width: 6; stroke-linejoin: round; }
+.pen3 { stroke: none; }
+.font2 { font-size: 105px; font-family: "Times New Roman", serif; }
+.font3 { font-size: 180px; font-family: "Times New Roman", serif; }
+</style>
+    <g>
+        <g>
+            <clipPath id="clipPath0">
+                <rect height="1031" width="3600" x="-2" y="-2"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath0)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="-2" xml:lang="en" xml:space="preserve" y="-2"> </text>
+        </g>
+        <rect class="pen1 brush1" height="601" width="1001" x="997" y="312"/>
+        <rect class="pen1 brush1" height="801" width="1201" x="897" y="223"/>
+        <polyline class="pen2" fill="none" points="347,312 897,312"/>
+        <polyline class="pen2" fill="none" points="347,578 897,578"/>
+        <polyline class="pen2" fill="none" points="347,845 897,845"/>
+        <polyline class="pen2" fill="none" points="2097,845 2647,845"/>
+        <polyline class="pen2" fill="none" points="2097,578 2647,578"/>
+        <polyline class="pen2" fill="none" points="2097,362 2647,362"/>
+        <rect class="pen3 brush1" height="201" width="1039" x="976" y="0"/>
+        <g>
+            <clipPath id="clipPath1">
+                <rect height="139" width="918" x="1036" y="30"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath1)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1036 1107 1166 1218 1250 1309 1354 1413 1452 1504 1533 1597 1656 1694" xml:lang="en" xml:space="preserve" y="34">Enclosure Port</text>
+        </g>
+        <g>
+            <clipPath id="clipPath2">
+                <rect height="139" width="918" x="1036" y="30"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath2)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1727" xml:lang="en" xml:space="preserve" y="-42"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen3 brush1" height="201" width="721" x="1156" y="490"/>
+        <g>
+            <clipPath id="clipPath3">
+                <rect height="139" width="600" x="1216" y="520"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath3)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1216 1300 1359 1418 1470 1508 1560 1592 1651" xml:lang="en" xml:space="preserve" y="524">Apparatus</text>
+        </g>
+        <g>
+            <clipPath id="clipPath4">
+                <rect height="139" width="600" x="1216" y="520"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath4)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1697" xml:lang="en" xml:space="preserve" y="524"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen3 brush1" height="181" width="918" x="1" y="133"/>
+        <g>
+            <clipPath id="clipPath5">
+                <rect height="120" width="797" x="61" y="163"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath5)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="259 331 398 423 473 523 595 639 672 697 747 797 830" xml:lang="en" xml:space="preserve" y="166">AC power port</text>
+        </g>
+        <g>
+            <clipPath id="clipPath6">
+                <rect height="120" width="797" x="61" y="163"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath6)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="858" xml:lang="en" xml:space="preserve" y="166"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen3 brush1" height="181" width="918" x="1" y="401"/>
+        <g>
+            <clipPath id="clipPath7">
+                <rect height="119" width="797" x="61" y="431"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath7)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="259 331 398 423 473 523 595 639 672 697 747 797 830" xml:lang="en" xml:space="preserve" y="434">DC power port</text>
+        </g>
+        <g>
+            <clipPath id="clipPath8">
+                <rect height="119" width="797" x="61" y="431"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath8)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="858" xml:lang="en" xml:space="preserve" y="434"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen3 brush1" height="181" width="772" x="1" y="628"/>
+        <g>
+            <clipPath id="clipPath9">
+                <rect height="119" width="651" x="61" y="659"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath9)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="311 372 416 449 477 527 552 602 652 685" xml:lang="en" xml:space="preserve" y="662">Earth port</text>
+        </g>
+        <g>
+            <clipPath id="clipPath10">
+                <rect height="119" width="651" x="61" y="659"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath10)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="713" xml:lang="en" xml:space="preserve" y="662"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen3 brush1" height="181" width="1005" x="2147" y="133"/>
+        <g>
+            <clipPath id="clipPath11">
+                <rect height="120" width="883" x="2208" y="163"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath11)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2208 2280 2330 2358 2402 2452 2502 2546 2571 2621 2671 2704" xml:lang="en" xml:space="preserve" y="166">Antenna port</text>
+        </g>
+        <g>
+            <clipPath id="clipPath12">
+                <rect height="120" width="883" x="2208" y="163"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath12)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2732" xml:lang="en" xml:space="preserve" y="76"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen3 brush1" height="181" width="1080" x="2147" y="401"/>
+        <g>
+            <clipPath id="clipPath13">
+                <rect height="119" width="958" x="2208" y="431"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath13)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2208 2264 2292 2341 2391 2435 2463 2491 2535 2585 2635 2663 2696 2746 2774 2799 2849 2899 2932" xml:lang="en" xml:space="preserve" y="434">Signal/control port</text>
+        </g>
+        <g>
+            <clipPath id="clipPath14">
+                <rect height="119" width="958" x="2208" y="431"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath14)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2960" xml:lang="en" xml:space="preserve" y="344"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen3 brush1" height="182" width="1465" x="2137" y="652"/>
+        <g>
+            <clipPath id="clipPath15">
+                <rect height="120" width="1344" x="2197" y="682"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath15)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2197 2258 2302 2330 2374 2418 2468 2546 2624 2674 2724 2752 2796 2840 2868 2896 2946 2996 3021 3071 3121 3154" xml:lang="en" xml:space="preserve" y="685">Telecommunication port</text>
+        </g>
+        <g>
+            <clipPath id="clipPath16">
+                <rect height="120" width="1344" x="2197" y="682"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath16)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="3183" xml:lang="en" xml:space="preserve" y="685"> </text>
+        </g>
+    </g>
+    <g/>
+</svg>

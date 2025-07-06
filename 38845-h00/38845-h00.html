@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38845-h00</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword">Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-of-terms-symbols-and-abbreviations"
+id="toc-definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</a>
+<ul>
+<li><a href="#terms" id="toc-terms">3.1 Terms</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#positioning-use-cases-and-requirements"
+id="toc-positioning-use-cases-and-requirements">4 Positioning use cases
+and requirements</a>
+<ul>
+<li><a href="#introduction" id="toc-introduction">4.1
+Introduction</a></li>
+<li><a href="#v2x" id="toc-v2x">4.2 V2X</a></li>
+<li><a href="#public-safety" id="toc-public-safety">4.3 Public
+safety</a></li>
+</ul></li>
+<li><a href="#potential-deployment-and-operation-scenarios"
+id="toc-potential-deployment-and-operation-scenarios">5 Potential
+deployment and operation scenarios</a>
+<ul>
+<li><a href="#network-coverage" id="toc-network-coverage">5.1 Network
+coverage</a></li>
+<li><a href="#radio-link" id="toc-radio-link">5.2 Radio link</a></li>
+<li><a href="#position-calculation-entity"
+id="toc-position-calculation-entity">5.3 Position calculation
+entity</a></li>
+<li><a href="#ue-types" id="toc-ue-types">5.4 UE types</a></li>
+<li><a href="#spectrum" id="toc-spectrum">5.5 Spectrum</a></li>
+</ul></li>
+<li><a href="#conclusions" id="toc-conclusions">6 Conclusions</a></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TR 38.845 V17.0.0 (2021-09)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Report</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>Study on scenarios and requirements of in-coverage, partial coverage,
+and out-of-coverage NR positioning use cases</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.jpeg" style="width:1.325in;height:0.92014in"
+alt="5G-logo_175px" /></td>
+<td style="text-align: right;"><img src="media/image2.png"
+style="width:1.77917in;height:1.03681in" alt="3GPP-logo_web" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2021, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references">6</a></p>
+<p>3 Definitions of terms, symbols and abbreviations <a
+href="#definitions-of-terms-symbols-and-abbreviations">6</a></p>
+<p>3.1 Terms <a href="#terms">6</a></p>
+<p>3.2 Symbols <a href="#symbols">7</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">7</a></p>
+<p>4 Positioning use cases and requirements <a
+href="#positioning-use-cases-and-requirements">7</a></p>
+<p>4.1 Introduction <a href="#introduction">7</a></p>
+<p>4.2 V2X <a href="#v2x">7</a></p>
+<p>4.3 Public safety <a href="#public-safety">8</a></p>
+<p>5 Potential deployment and operation scenarios <a
+href="#potential-deployment-and-operation-scenarios">8</a></p>
+<p>5.1 Network coverage <a href="#network-coverage">8</a></p>
+<p>5.2 Radio link <a href="#radio-link">9</a></p>
+<p>5.3 Position calculation entity <a
+href="#position-calculation-entity">9</a></p>
+<p>5.4 UE types <a href="#ue-types">9</a></p>
+<p>5.5 Spectrum <a href="#spectrum">10</a></p>
+<p>6 Conclusions <a href="#conclusions">10</a></p>
+<p>Annex A: Sources of positioning requirements for V2X and public
+safety <a
+href="#annex-a-sources-of-positioning-requirements-for-v2x-and-public-safety">11</a></p>
+<p>Annex B: Change history <a href="#annex-b-change-history">16</a></p>
+<h1 id="foreword">Foreword</h1>
+<p>This Technical Report has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<p>In the present document, certain modal verbs have the following
+meanings:</p>
+<p><strong>shall</strong> indicates a mandatory requirement to do
+something</p>
+<p><strong>shall not</strong> indicates an interdiction (prohibition) to
+do something</p>
+<p>NOTE 1: The constructions "shall" and "shall not" are confined to the
+context of normative provisions, and do not appear in Technical
+Reports.</p>
+<p>NOTE 2: The constructions "must" and "must not" are not used as
+substitutes for "shall" and "shall not". Their use is avoided insofar as
+possible, and they are not used in a normative context except in a
+direct citation from an external, referenced, non-3GPP document, or so
+as to maintain continuity of style when extending or modifying the
+provisions of such a referenced document.</p>
+<p><strong>should</strong> indicates a recommendation to do
+something</p>
+<p><strong>should not</strong> indicates a recommendation not to do
+something</p>
+<p><strong>may</strong> indicates permission to do something</p>
+<p><strong>need not</strong> indicates permission not to do
+something</p>
+<p>NOTE 3: The construction "may not" is ambiguous and is not used in
+normative elements. The unambiguous constructions "might not" or "shall
+not" are used instead, depending upon the meaning intended.</p>
+<p><strong>can</strong> indicates that something is possible</p>
+<p><strong>cannot</strong> indicates that something is impossible</p>
+<p>NOTE 4: The constructions "can" and "cannot" shall not to be used as
+substitutes for "may" and "need not".</p>
+<p><strong>will</strong> indicates that something is certain or expected
+to happen as a result of action taken by an agency the behaviour of
+which is outside the scope of the present document</p>
+<p><strong>will not</strong> indicates that something is certain or
+expected not to happen as a result of action taken by an agency the
+behaviour of which is outside the scope of the present document</p>
+<p><strong>might</strong> indicates a likelihood that something will
+happen as a result of action taken by some agency the behaviour of which
+is outside the scope of the present document</p>
+<p><strong>might not</strong> indicates a likelihood that something will
+not happen as a result of action taken by some agency the behaviour of
+which is outside the scope of the present document</p>
+<p>In addition:</p>
+<p><strong>is</strong> (or any other verb in the indicative mood)
+indicates a statement of fact</p>
+<p><strong>is not</strong> (or any other negative verb in the indicative
+mood) indicates a statement of fact</p>
+<p>NOTE 5: The constructions "is" and "is not" do not indicate
+requirements.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document captures the findings of the study item, "Study
+on scenarios and requirements of in-coverage, partial coverage, and
+out-of-coverage positioning use cases" [2]. The purpose of this TR is to
+facilitate future 3GPP work by identifying the requirements and
+deployment/operation scenarios for V2X and public safety use cases. In
+particular, this study considers positioning for the UEs in in-coverage,
+partial coverage, and out-of-coverage as per the network coverage
+definition in the current specifications.</p>
+<p>This document is a 'living' document, i.e. it is permanently updated
+and presented to TSG-RAN meetings until it is approved.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP RP-201518: "Revised SID on Study on scenarios and
+requirements of in-coverage, partial coverage, and out-of-coverage
+positioning use cases".</p>
+<blockquote>
+<p>[3] 3GPP TS 22.261: "Service requirements for the 5G system".</p>
+<p>[4] 3GPP TS 22.186 v16.2.0: "Enhancement of 3GPP support for V2X
+scenarios".</p>
+<p>[5] 3GPP RP-210040: "Reply LS to RP-201390 on requirements of
+in-coverage, partial coverage, and out-of-coverage positioning use
+cases," (source: 5GAA).</p>
+<p>[6] 3GPP RP-210036: "Reply LS to 3GPP TSG RAN on requirements of
+in-coverage, partial coverage and out-of-coverage positioning use
+cases," (source: SAE Advanced Applications Technical Committee).</p>
+<p>[7] 3GPP TS 22.280: "Mission Critical Services Common Requirements
+(MCCoRe)".</p>
+<p>[8] 3GPP TR 22.872: "Study on positioning use case".</p>
+<p>[9] 3GPP TR 37.885: "Study on evaluation methodology of new
+Vehicle-to-Everything (V2X) use cases for LTE and NR".</p>
+<p>[10] 3GPP TR 38.802: "Study on new radio access technology Physical
+layer aspects".</p>
+</blockquote>
+<h1 id="definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</h1>
+<h2 id="terms">3.1 Terms</h2>
+<p>For the purposes of the present document, the terms given in 3GPP
+TR 21.905 [1] and the following apply. A term defined in the present
+document takes precedence over the definition of the same term, if any,
+in 3GPP TR 21.905 [1].</p>
+<p><strong>absolute position:</strong> absolute position is an estimate
+of the UE position in 2D/3D geographic coordinates (e.g., latitude,
+longitude, elevation) within a coordinate system</p>
+<p><strong>relative position:</strong> relative position is an estimate
+of the UE position relative to other network elements or relative to
+other UEs</p>
+<p><strong>positioning service availability:</strong> percentage value
+of the amount of time the positioning service is delivering the required
+position-related data within the performance requirements, divided by
+the amount of time the system is expected to deliver the positioning
+service according to the specification in the targeted service area.</p>
+<p><strong>positioning service latency:</strong> time elapsed between
+the event that triggers the determination of the position-related data
+and the availability of the position-related data at the system
+interface.</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<p>&lt;symbol&gt; &lt;Explanation&gt;</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>5GAA 5G Automotive Association</p>
+<p>SAE AA TC SAE Advanced Applications Technical Committee</p>
+<p>TTFF Time To First Fix</p>
+<p>HD High Definition</p>
+<p>RV Remote vehicle</p>
+<p>TOD Tele-Operated Driving</p>
+<p>MCX Mission Critical X, with X = PTT or X= Video or X= Data</p>
+<h1 id="positioning-use-cases-and-requirements">4 Positioning use cases
+and requirements</h1>
+<h2 id="introduction">4.1 Introduction</h2>
+<p>This clause summarizes the positioning use cases and requirements
+defined for V2X and public safety in 3GPP specifications and input from
+other organizations. Sources used in this summary are provided in Annex
+A for information.</p>
+<h2 id="v2x">4.2 V2X</h2>
+<p>In 3GPP specifications, V2X positioning requirements can be found in
+TS 22.261 [3] and TS 22.186 [4]. TS 22.261 [3] specifies the high
+accuracy positioning requirements for the 5G system and these
+requirements are summarized in its Clause 7.3.2.2 with a note that these
+requirements include V2X. Seven different positioning service levels are
+defined in Table 7.3.2.2-1 [3] in terms of the horizontal and vertical
+accuracy, positioning service availability, and positioning service
+latency. TS 22.186 [4] specifies the relative lateral positioning
+requirement for general V2X use cases and the relative longitudinal
+positioning requirement for the platooning use case in its Clause 5.1
+and 5.2.</p>
+<p>5GAA provides positioning requirements for 58 V2X services that were
+summarized into three groups [5]; the first group with tens of meters
+accuracy, the second with lane level accuracy, and the third with
+sub-meter level accuracy. The positioning requirements can be on the
+3D/2D coordinates (absolute position) or on the distance and/or angle
+(relative position) to a reference point, e.g. another UE.</p>
+<p>SAE AA TC informs that it is necessary to have a 3GPP positioning
+technology which supports advanced V2X applications working even in
+various out-of-coverage scenarios [6].</p>
+<p>It is observed that the positioning requirements in V2X depend on the
+service the UE operates. Also, the requirements are applicable to
+relative and absolute positioning depending on the use case or the
+positioning service level. In terms of the horizontal or
+lateral/longitudinal accuracy, the requirements for the absolute
+position or relative position can be categorised into three sets as
+follows by incorporating the requirements from the sources mentioned
+above:</p>
+<p>- Set 1: 10 – 50 m with 68 – 95 % confidence level. This includes
+Group 1 in [5] and Service level 1 in [3].</p>
+<p>- Set 2: 1 – 3 m with 95 – 99 % confidence level. This includes Group
+2 in [5], Service level 2, 3, 4 in [3].</p>
+<p>- Set 3: 0.1 – 0.5 m with 95 – 99 % confidence level. This includes
+Group 3 in [5], Service level 5, 6, 7 in [3], the requirements in
+[4].</p>
+<p>It is noted that all the three sets are applicable for absolute
+positioning and relative positioning.</p>
+<p>Requirements for other performance metrics are also defined in a
+range depending on the positioning service level in TS 22.261 [3]; 2 – 3
+m (absolute) or 0.2 m (relative) vertical accuracy, 95 – 99.9%
+positioning service availability, 10 ms – 1 s positioning service
+latency.</p>
+<p>Positioning service should be provided in indoor, outdoor, tunnel
+areas. The UE velocity up to 250 km/h needs to be supported for outdoor
+and tunnel areas. As long as the UE operates a V2X use case having the
+corresponding positioning requirements, the requirements should be
+fulfilled when the UE is inside the network coverage as well as when it
+is outside the network coverage. The requirements should be also
+fulfilled when the GNSS-based positioning is not available or not
+accurate enough.</p>
+<h2 id="public-safety">4.3 Public safety</h2>
+<p>Public safety positioning requirements are defined in TS 22.261 [3]
+and TS 22.280 [7]. TS 22.261 [3] provides numerical positioning
+requirements for the "1st responders" use case in Table B.1-1 in TS
+22.261 [3]; 1 m horizontal accuracy, 2 m (absolute) or 0.3 m (relative)
+vertical accuracy, 95 – 98 % positioning service availability. TS 22.280
+[7] specifies some qualitative positioning requirements in its Clause
+5.11, 6.12, and 7.8. These requirements are applicable to both relative
+and absolute positioning.</p>
+<p>Positioning service should be provided both in indoor and outdoor
+areas. As long as the UE operates a public safety use case having the
+corresponding positioning requirements, the requirements should be
+fulfilled when the UE is inside the network coverage as well as when it
+is outside the network coverage. The requirements should be also
+fulfilled when the GNSS-based positioning is not available or not
+accurate enough.</p>
+<h1 id="potential-deployment-and-operation-scenarios">5 Potential
+deployment and operation scenarios</h1>
+<h2 id="network-coverage">5.1 Network coverage</h2>
+<p>Three network coverage scenarios can be considered when at least two
+UEs are involved in positioning for V2X and public safety use cases.
+Taking the case of two UEs as an example, in-coverage scenario refers to
+the case where both UEs are inside the network. Partial coverage means
+that one UE remains inside the network coverage but the other UE is
+outside the network coverage. Out-of-coverage scenario refers to the
+case where both UEs are outside the network coverage. A UE may transit
+between in-coverage, partial coverage and out-of-coverage scenarios.</p>
+<p>There are V2X and public safety use cases that require positioning
+when there is no network and no GNSS coverage.</p>
+<p>Figures 5.1-1, 5.1-2, and 5.1-3 illustrate the in-coverage, partial
+coverage and out-of-coverage scenarios, respectively.</p>
+<p><img src="media/image3.png"
+style="width:2.62992in;height:1.4685in" /></p>
+<p>Figure 5.1-1: In-coverage scenario</p>
+<p><img src="media/image4.png"
+style="width:3.24409in;height:1.25984in" /></p>
+<p>Figure 5.1-2: Partial coverage scenario</p>
+<p><img src="media/image5.png"
+style="width:1.38583in;height:0.78346in" /></p>
+<p>Figure 5.1-3: Out-of-coverage scenario</p>
+<h2 id="radio-link">5.2 Radio link</h2>
+<p>Uu interface (uplink and downlink), PC5 interface (sidelink), and
+their combinations can be considered as the radio link for
+positioning.</p>
+<p>Uu interface is available for UEs under in-coverage scenario, and
+also for UEs under network coverage in partial coverage scenario, while
+PC5 interface is available for UEs under in-coverage, partial coverage,
+out-of-coverage scenarios.</p>
+<p>A positioning operation can be called a Uu-based solution if it uses
+only measurements on Uu interface (i.e., measurements on uplink and/or
+downlink). An operation can be called a PC5-based solution if it uses
+only measurements on PC5 interface (i.e., measurements on sidelink). An
+operation can be called a hybrid solution if it uses measurements on
+both Uu and PC5 interfaces. In addition to these RAT-dependent
+solutions, RAT-independent solutions (e.g., GNSS, sensors, etc.) can be
+used, where various technologies can complement each other, where it is
+available and applicable.</p>
+<p>The necessary information for positioning and the measurements for
+positioning can be sent via Uu and/or PC5 interface.</p>
+<h2 id="position-calculation-entity">5.3 Position calculation
+entity</h2>
+<p>Positioning solutions can be categorized by the entity performing the
+positioning estimation. Network-based positioning refers to the
+solutions where UE position is calculated by a network node. For this
+network-based positioning, the UE may report necessary information to
+the network for the calculation. UE-based positioning refers to the
+solution where UE position is calculated by a UE.</p>
+<p>The type of the position calculation entity does not limit which
+interface(s) can be used for the radio link(s) in clause 5.2.</p>
+<h2 id="ue-types">5.4 UE types</h2>
+<p>For V2X use cases, a UE involved in positioning can be installed in a
+vehicle, a road side unit, or a device of a vulnerable road user.</p>
+<p>A UE in a vehicle or a road side unit can be equipped with a
+distributed antenna system where multiple antenna panels of a UE are
+installed in different locations. A relevant antenna model for
+evaluation can be found in [9].</p>
+<p>For public safety use cases, a relevant antenna model for evaluation
+can be found in [10].</p>
+<p>Different UE types may have different power supply limitations, for
+example, a UE used by a vulnerable road user may have limited battery
+capacity compared to other types of UE, e.g., a UE installed in a
+vehicle or a road side unit.</p>
+<h2 id="spectrum">5.5 Spectrum</h2>
+<p>For V2X use case, the ITS-dedicated spectrum can be considered for
+PC5 interface, and the spectrum licensed to mobile network operators
+(including FR2) and the unlicensed spectrum can be considered for both
+Uu and PC5 interfaces. Note that there is no mechanism corresponding to
+regulatory requirements to use unlicensed spectrum in Rel-17 NR
+sidelink.</p>
+<p>For public safety use case, the spectrum licensed to mobile network
+operators (including FR2) can be considered for both Uu and PC5
+interfaces.</p>
+<h1 id="conclusions">6 Conclusions</h1>
+<p>This technical report summarizes the positioning use cases and
+requirements for V2X and public safety use cases. The V2X and PS
+requirements in this TR are applicable to absolute and relative
+positioning. The positioning requirements in V2X depend on the service
+the UE operates, and this TR categorized the requirements into three
+sets as summarized in Clause 4.</p>
+<p>The main aspects of potential deployment and operation scenarios are
+provided in Clause 5 including:</p>
+<p>- Network coverage:</p>
+<p>- In-coverage, partial coverage, out of network coverage
+scenarios</p>
+<p>- When the UE operates a use case having the corresponding
+positioning requirements, the requirements should be fulfilled when the
+UE is inside the network coverage as well as when it is outside the
+network coverage.</p>
+<p>- Radio link:</p>
+<p>- Measurements on Uu interface (downlink/uplink), PC5 interface
+(sidelink) and their combinations for UE positioning</p>
+<p>- Use of RAT-dependent and RAT-independent solutions</p>
+<p>- Position calculation entity:</p>
+<p>- Network-based and UE-based positioning solutions</p>
+<p>- UE types:</p>
+<p>- V2X: installed in a vehicle, a road-side unit or a device used by a
+vulnerable road user, where different UE types may have different UE
+antenna configurations and power supply limitations</p>
+<p>- Spectrum:</p>
+<p>- V2X: licensed, unlicensed spectrum for both Uu and PC5
+air-interfaces and ITS for PC5 air-interface. NOTE: There is no
+mechanism corresponding to regulatory requirements to use unlicensed
+spectrum in Rel-17 NR sidelink.</p>
+<p>- Public safety: licensed spectrum for both Uu and PC5
+air-interfaces.</p>
+<p class="heading"
+id="annex-a-sources-of-positioning-requirements-for-v2x-and-public-safety">Annex
+A:<br />
+Sources of positioning requirements for V2X and public safety</p>
+<p><strong><u>Sources in TS 22.261 [3]</u></strong></p>
+<p>copied from TS 22.261 [3] Clause 7.3.2.2:</p>
+<p><em>The 5G system shall be able to provide positioning services with
+the performance requirements reported in Table 7.3.2.2-1.</em></p>
+<p><em>NOTE: The requirements do not preclude any type of UE, including
+specific UE such as for example V2X, MTC.</em></p>
+<p><em>Table 7.3.2.2-1 Performance requirements for Horizontal and
+Vertical positioning service levels</em></p>
+<table>
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 11%" />
+<col style="width: 8%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3" style="text-align: center;"><em><strong>Positioning
+service level</strong></em></th>
+<th rowspan="3" style="text-align: center;"><em><strong>Absolute(A) or
+Relative(R) positioning</strong></em></th>
+<th colspan="2"
+style="text-align: center;"><p><em><strong>Accuracy</strong></em></p>
+<p><em><strong>(95 % confidence level)</strong></em></p></th>
+<th rowspan="3" style="text-align: center;"><em><strong>Positioning
+service availability</strong></em></th>
+<th rowspan="3" style="text-align: center;"><em><strong>Positioning
+service latency</strong></em></th>
+<th colspan="3" style="text-align: center;"><em><strong>Coverage,
+environment of use and UE velocity</strong></em></th>
+</tr>
+<tr>
+<th rowspan="2" style="text-align: center;"><em><strong>Horizontal
+Accuracy</strong></em></th>
+<th rowspan="2" style="text-align: center;"><p><em><strong>Vertical
+Accuracy</strong></em></p>
+<p><em><strong>(note 1)</strong></em></p></th>
+<th rowspan="2" style="text-align: center;"><em><strong>5G positioning
+service area</strong></em></th>
+<th colspan="2" style="text-align: center;"><p><em><strong>5G enhanced
+positioning service area</strong></em></p>
+<p><em><strong>(note 2)</strong></em></p></th>
+</tr>
+<tr>
+<th style="text-align: center;"><em><strong>Outdoor and
+tunnels</strong></em></th>
+<th style="text-align: center;"><em><strong>Indoor</strong></em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>1</em></td>
+<td><em>A</em></td>
+<td><em>10 m</em></td>
+<td><em>3 m</em></td>
+<td><em>95 %</em></td>
+<td><em>1 s</em></td>
+<td><p><em>Indoor - up to 30 km/h</em></p>
+<p><em>Outdoor</em></p>
+<p><em>(rural and urban) up to 250 km/h</em></p></td>
+<td><em>NA</em></td>
+<td><em>Indoor - up to 30 km/h</em></td>
+</tr>
+<tr>
+<td><em>2</em></td>
+<td><em>A</em></td>
+<td><em>3 m</em></td>
+<td><em>3 m</em></td>
+<td><em>99 %</em></td>
+<td><em>1 s</em></td>
+<td><p><em>Outdoor</em></p>
+<p><em>(rural and urban) up to 500 km/h for trains and up to 250 km/h
+for other vehicles</em></p></td>
+<td><p><em>Outdoor</em></p>
+<p><em>(dense urban) up to 60 km/h</em></p>
+<p><em>Along roads up to 250 km/h and along railways up to 500
+km/h</em></p></td>
+<td><em>Indoor - up to 30 km/h</em></td>
+</tr>
+<tr>
+<td><em>3</em></td>
+<td><em>A</em></td>
+<td><em>1 m</em></td>
+<td><em>2 m</em></td>
+<td><em>99 %</em></td>
+<td><em>1 s</em></td>
+<td><p><em>Outdoor</em></p>
+<p><em>(rural and urban) up to 500 km/h for trains and up to 250 km/h
+for other vehicles</em></p></td>
+<td><p><em>Outdoor</em></p>
+<p><em>(dense urban) up to 60 km/h</em></p>
+<p><em>Along roads up to 250 km/h and along railways up to 500
+km/h</em></p></td>
+<td><em>Indoor - up to 30 km/h</em></td>
+</tr>
+<tr>
+<td><em>4</em></td>
+<td><em>A</em></td>
+<td><em>1 m</em></td>
+<td><em>2 m</em></td>
+<td><em>99,9 %</em></td>
+<td><em>15 ms</em></td>
+<td><em>NA</em></td>
+<td><em>NA</em></td>
+<td><em>Indoor - up to 30 km/h</em></td>
+</tr>
+<tr>
+<td><em>5</em></td>
+<td><em>A</em></td>
+<td><em>0,3 m</em></td>
+<td><em>2 m</em></td>
+<td><em>99 %</em></td>
+<td><em>1 s</em></td>
+<td><p><em>Outdoor</em></p>
+<p><em>(rural) up to 250 km/h</em></p></td>
+<td><p><em>Outdoor</em></p>
+<p><em>(dense urban) up to 60 km/h</em></p>
+<p><em>Along roads and along railways up to 250 km/h</em></p></td>
+<td><em>Indoor - up to 30 km/h</em></td>
+</tr>
+<tr>
+<td><em>6</em></td>
+<td><em>A</em></td>
+<td><em>0,3 m</em></td>
+<td><em>2 m</em></td>
+<td><em>99,9 %</em></td>
+<td><em>10 ms</em></td>
+<td><em>NA</em></td>
+<td><p><em>Outdoor</em></p>
+<p><em>(dense urban) up to 60 km/h</em></p></td>
+<td><em>Indoor - up to 30 km/h</em></td>
+</tr>
+<tr>
+<td><em>7</em></td>
+<td><em>R</em></td>
+<td><em>0,2 m</em></td>
+<td><em>0,2 m</em></td>
+<td><em>99 %</em></td>
+<td><em>1 s</em></td>
+<td colspan="3"><p><em>Indoor and outdoor (rural, urban, dense urban) up
+to 30 km/h</em></p>
+<p><em>Relative positioning is between two UEs within 10 m of each other
+or between one UE and 5G positioning nodes within 10 m of each other
+(note 3)</em></p></td>
+</tr>
+<tr>
+<td colspan="9"><p><em>NOTE 1: The objective for the vertical
+positioning requirement is to determine the floor for indoor use cases
+and to distinguish between superposed tracks for road and rail use cases
+(e.g. bridges).</em></p>
+<p><em>NOTE 2: Indoor includes location inside buildings such as
+offices, hospital, industrial buildings.</em></p>
+<p><em>NOTE 3: 5G positioning nodes are infrastructure equipment
+deployed in the service area to enhance positioning capabilities (e.g.
+beacons deployed on the perimeter of a rendezvous area or on the side of
+a warehouse).</em></p></td>
+</tr>
+</tbody>
+</table>
+<p><em>The 5G system shall be able to provide the 5G positioning
+services with a TTFF less than 30 s and, for some 5G positioning
+services, shall support mechanisms to provide a TTFF less than 10 s.NOTE
+1: In some services, a TTFF of less than 10s may only be achievable at
+the expense of a relaxation of some other performances (e.g. horizontal
+accuracy may be 1 m or 3 m after 10 s TTFF, and reach a steady state
+accuracy of 0,3 m after 30 s).</em></p>
+<p><em>The 5G system shall support a mechanism to determine the UE's
+velocity with a positioning service availability of 99%, an accuracy
+better than 0,5 m/s for the speed and an accuracy better than 5 degree
+for the 3-Dimension direction of travel.</em></p>
+<p><em>The 5G system shall support a mechanism to determine the UE's
+heading with an accuracy better than 30 degrees (0,54 rad) and a
+positioning service availability of 99,9 % for static users and with an
+accuracy better than 10 degrees (0,17 rad) and a positioning service
+availability of 99 % for users up to 10 km/h.</em></p>
+<p><em>The 5G system shall support positioning technologies that allow
+the UE to operate at Service Level 1 for at least 12 years using less
+than 1800 mWh of battery capacity, assuming multiple position updates
+per hour.</em></p>
+<p><em>NOTE 2: This requirement aims energy-efficient positioning
+technologies draining a minimal energy on the UE battery. It derives
+from use cases, such as asset tracking, with a small form-factor battery
+representative of an IoT device. This requirement may translate into an
+energy consumption for the UE's positioning functions in the order of 20
+mJ per fix.</em></p>
+<p><em>NOTE 3: This requirement does not preclude the use of higher
+energy consumption to fulfil higher position update rates than the one
+above, or other KPIs than those of Service Level 1 (e.g. more accurate
+service levels).</em></p>
+<p>copied from TS 22.261 [3] Annex B (only a part of the table is
+copied):</p>
+<p><em>Table B.1-1 Typical needs to support example use cases from
+vertical industries.</em></p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 44%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><em><strong>Use cases</strong></em></th>
+<th
+style="text-align: center;"><em><strong>Description</strong></em></th>
+<th style="text-align: center;"><em><strong>Main KPIs range and
+drivers</strong></em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>1st responders</em></td>
+<td style="text-align: center;"><em>Tracking and guidance of 1st
+responders, with requirements for high-accuracy in the horizontal domain
+and vertical domain, as well as accurate awareness of height variation
+to detect falls, combined to a high level of availability and
+reliability</em></td>
+<td style="text-align: center;"><p><em>Service area is both indoor and
+outdoor</em></p>
+<p><em>Accuracy: &lt; 1m horizontal, &lt; 2m vertical (indoor for floor
+detection) and &lt; 0,3 m vertical (relative) to detect changes in
+height of the UE holder.</em></p>
+<p><em>Availability &gt; 95 % (98% outdoor)</em></p>
+<p><em>Other KPI drivers include: MCX, confidence, event-triggered
+report</em></p></td>
+</tr>
+<tr>
+<td style="text-align: center;"><em>Road</em></td>
+<td style="text-align: center;"><em>Use cases involving road vehicles
+such as traffic monitoring, road-user charging (e.g. Road-Tolling,
+insurance mechanisms, etc.) which require positioning or tracking of
+vehicles at lane level, but also some awareness of position in the
+vertical domain (e.g. bridges) Service area is outdoor, but may include
+tunnels.</em></td>
+<td style="text-align: center;"><p><em>Accuracy: 1-3m horizontal (with
+&lt;1m across-track for lane detection), &lt;2,5 m vertical,</em></p>
+<p><em>Velocity &lt; 2m/s, Availability: 95-99%</em></p>
+<p><em>Other KPI drivers include: tampering detection and prevention
+(typically for Road User Charging)</em></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Sources in TS 22.186 [4]</u></strong></p>
+<p>copied from TS 22.186 [4] Clause 5.1:</p>
+<p><em>[R.5.1-007] The 3GPP system shall support relative lateral
+position accuracy of 0.1 m between UEs supporting V2X
+application.</em></p>
+<p>copied from TS 22.186 [4] Clause 5.2:</p>
+<p><em>[R.5.2-003] The 3GPP system shall support relative longitudinal
+position accuracy of less than 0.5 m for UEs supporting V2X application
+for platooning in proximity.</em></p>
+<p><strong><u>Sources in the input from 5GAA [5]</u></strong></p>
+<p>The positioning requirements according to the 5GAA TRs on Use Cases
+Vol. I and II can be summarized into three main groups, all at the
+highest speed a participating vehicle might be driving at, depending on
+the type of road environment and/or safety rules (e.g. 250km/h on German
+Autobahn):</p>
+<p>1) Relatively lax, 10s of meters with 1 sigma (information
+provisioning)</p>
+<p>- Traffic Jam Warning - Urban Scenario on Road Warning</p>
+<p>- Traffic Jam Warning - Rural Scenario on Road Warning</p>
+<p>- Traffic Jam Warning - Highway Scenario on Road Warning</p>
+<p>- Rural Scenario on Route Information</p>
+<p>- Highway Scenario on Route Information</p>
+<p>- Software Update - Conventional-Routine/Urgent,
+Autonomous-Routine</p>
+<p>- Software Update - Autonomous-Urgent</p>
+<p>- Software Update - Without Infrastructure, Vehicle to Workshop</p>
+<p>- Remote Automated Driving Cancellation</p>
+<p>- HD Content Delivery - High-End Service for cars</p>
+<p>- HD Content Delivery - Low-End Service for cars</p>
+<p>- HD Content Delivery – Bus Passenger Service</p>
+<p>- Software Update of Reconfigurable Radio System</p>
+<p>- Patient Transport Monitoring</p>
+<p>- Automated Valet Parking (Wake Up)</p>
+<p>2) Lane level accuracy, 1.5 m with 3 sigma (e.g. day1 safety use
+cases)</p>
+<p>- Cross-Traffic Left-Turn Assist</p>
+<p>- Intersection Movement Assist</p>
+<p>- Emergency Break Warning</p>
+<p>- Lane Change Warning - lagging vehicle, leading vehicle, Highway</p>
+<p>- Lane Change Warning - lagging vehicle, leading vehicle, urban</p>
+<p>- Lane Change Warning - not permitted case, rural</p>
+<p>- Vehicle Health Monitoring</p>
+<p>- Speed Harmonization</p>
+<p>- See-Through for Pass Maneuver</p>
+<p>- Obstructed View Assist via CCTV</p>
+<p>- Obstructed View Assist via Remote Vehicles</p>
+<p>- Continuous Traffic Flow via Green Lights Coordination</p>
+<p>- Vehicle collects hazard and road event for AV</p>
+<p>- Vehicles Platooning in Steady State</p>
+<p>- Cooperative Lane Merge</p>
+<p>- Autonomous Vehicle Disengagement Report</p>
+<p>- Accident Report</p>
+<p>- Awareness Confirmation</p>
+<p>- Coordinated, Cooperative Driving Manoeuvre - Cooperative Lane
+Change</p>
+<p>- Coordinated, Cooperative Driving Manoeuvre - Road Blockage</p>
+<p>- Bus Lane Sharing Request</p>
+<p>- Bus Lane Sharing Revocation</p>
+<p>- Vehicle Decision Assist - RV Waiting for a Short Period of Time,
+Broken Down, Bus Having to Wait</p>
+<p>- Vehicle Decision Assist - Slow Vehicle en Route</p>
+<p>3) Below meter level accuracy, e.g. 0.1 m with 3 sigma (e.g.
+automated driving or teleoperated driving)</p>
+<p>- High Definition Sensor Sharing</p>
+<p>- Vulnerable Road User - Awareness near potentially dangerous
+situations Urban</p>
+<p>- Vulnerable Road User - Collision risk warning</p>
+<p>- Real-Time Situational Awareness &amp; High-Definition Maps</p>
+<p>- Group Start</p>
+<p>- Tele-Operated Driving (TOD)</p>
+<p>- TOD support</p>
+<p>- TOD for Automated Parking</p>
+<p>- Cooperative Manoeuvres of Autonomous Vehicles for Emergency
+Situations</p>
+<p>- High definition map collecting &amp; sharing</p>
+<p>- Automated Intersection crossing</p>
+<p>- Infrastructure Assisted Environment Perception - Data Distribution
+about Objects on the Road</p>
+<p>- Infrastructure Assisted Environment Perception - Individual Data
+Transmission in Form of Trajectories or Actuation Commands)</p>
+<p>- Infrastructure based Tele-Operated Driving</p>
+<p>- Automated Valet Parking – Joint Authentication and Proof of
+Localisation</p>
+<p>- Coordinated, Cooperative Driving Manoeuvre - Pedestrian
+Crossing</p>
+<p>- Cooperative Traffic gap</p>
+<p>- Cooperative Lateral Parking</p>
+<p>- Cooperative Curbside Management</p>
+<p><strong><u>Sources in 3GPP TS 22.280 [7]</u></strong></p>
+<p>copied from TS 22.280 [7] Clause 5.11:</p>
+<p><em>[R-5.11-001] The MCX Service shall support obtaining and
+conveying Location information describing the position of the MCX
+UE.</em></p>
+<p><em>[R-5.11-002] The MCX Service should support obtaining and
+conveying high accuracy Location information describing the position of
+the MCX UE.</em></p>
+<p><em>[R-5.11-002a] The MCX Service shall be able to provide a
+mechanism for obtaining high accuracy Location information by
+integrating position information from multiple external sources (e.g.
+magnetometers, orientation sensors, GNSS)</em></p>
+<p><em>[R-5.11-003] The MCX Service shall provide for the flexibility to
+convey future formats of Location information.</em></p>
+<p><em>[R-5.11-004] The MCX Service shall provide a means for MCX
+Service Administrators to manage the privacy of Location information for
+MCX Users within their authority.</em></p>
+<p><em>[R-5.11-005] An authorized MCX User shall be able to control the
+supplying of Location information by the MCX UE for MCX Service
+communications.</em></p>
+<p><em>[R-5.11-006] The conveyed Location information shall be the most
+recently obtained information about the position of the MCX UE at the
+time of the Location information conveyance.</em></p>
+<p><em>[R-5.11-007] The MCX Service shall be capable of configuring and
+re-configuring one or more Location information update triggers (i.e.,
+identified conditions that, when satisfied, cause the MCX UE to report
+its current Location information).</em></p>
+<p><em>[R-5.11-008] The MCX Service shall be able to modify Location
+information update triggers of an MCX User while the MCX User is on the
+network.</em></p>
+<p><em>[R-5.11-009] The MCX Service shall provide a means for an MCX UE
+to send a Location information update whenever a trigger condition is
+satisfied (e.g., initial registration, distance travelled, elapsed time,
+cell change, tracking area change, PLMN change, MCX Service
+communication initiation).</em></p>
+<p><em>[R-5.11-010] The MCX Service shall provide a means for an MCX UE
+to send a Location information update whenever the MCX User initiates an
+MCX Service Emergency Alert.</em></p>
+<p><em>[R-5.11-011] The MCX Service shall provide a means for an MCX UE
+to send a Location information update whenever the MCX User initiates an
+MCX Service Emergency Group Communication.</em></p>
+<p><em>[R-5.11-012] The MCX Service shall provide a means for an MCX UE
+to send a Location information update if the MCX User is in an MCX
+Service Emergency State and a configured amount of time has passed since
+the previous location information update.</em></p>
+<p><em>[R-5.11-013] The MCX Service shall provide a means for an MCX UE
+to send a Location information update whenever a trigger condition is
+satisfied while the MCX User is in MCX Service Emergency State (e.g.,
+initial registration, distance travelled, elapsed time, cell change,
+tracking area change, PLMN change, MCX Service communication
+initiation).</em></p>
+<p><em>NOTE 1: The Location information update triggers for an MCX User
+in an MCX Service Emergency State might be different than the Location
+information update triggers used when the MCX User is not in an MCX
+Service Emergency State.</em></p>
+<p><em>[R-5.11-014] The MCX Service shall provide a means for an MCX
+Service Administrator to define geographical areas to be used for
+Location information update triggers for MCX Users within their
+authority.</em></p>
+<p><em>[R-5.11-015] The MCX Service shall provide a means for an MCX UE
+in a predefined area to send a Location information update whenever a
+trigger condition configured in an MCX User's active MCX Service User
+Profile is satisfied (e.g., initial registration, distance travelled,
+elapsed time, cell change, tracking area change, PLMN change, MCX
+Service communication initiation).</em></p>
+<p><em>NOTE 2: The Location information update triggers for an MCX User
+in a predefined area might be different than the Location information
+update triggers used when the MCX User is not in a predefined
+area.</em></p>
+<p>copied from TS 22.280 [7] Clause 6.12:</p>
+<p><em>[R-6.12-001] The MCX Service shall provide Location information
+of the transmitting MCX UE to receiving MCX UEs subject to privacy
+restrictions.</em></p>
+<p><em>[R-6.12-002] The MCX Service shall support conveyance of Location
+information provided by 3GPP location services.</em></p>
+<p><em>[R-6.12-003] The MCX Service shall provide a means for an
+authorized MCX User to restrict the dissemination of his Location
+information.</em></p>
+<p><em>[R-6.12-004] The MCX Service shall provide end-to-end
+confidentiality of Location information.</em></p>
+<p><em>[R-6.12-005] The MCX Service shall provide authentication of
+messages carrying Location information.</em></p>
+<p><em>[R-6.12-006] The MCX Service shall provide a means for an
+authorized MCX User to activate a one-time Location information report
+of an MCX User and periodic Location information update reports of an
+MCX User or a specific Functional Alias.</em></p>
+<p><em>[R-6.12-007] The MCX Service shall provide a means for an
+authorized MCX User to deactivate periodic Location information update
+report of an MCX User.</em></p>
+<p>copied from TS 22.280 [7] Clause 7.8:</p>
+<p><em>[R-7.8-001] An MCX UE shall be capable of transmitting its
+Location, if known, to other MCX UEs when operating off the network,
+subject to privacy restrictions.</em></p>
+<p><em>[R-7.8-002] An MCX UE shall be capable of providing a mechanism
+for obtaining the distance between the MCX UE and other MCX UEs within
+communication range.</em></p>
+<p><em>[R-7.8-003] The Off-Network MCX Service shall provide a means for
+an authorized MCX User to activate a one-time Location information
+report of a particular target MCX User within communication
+range.</em></p>
+<p><strong><u>Sources in 3GPP TR 22.872 [8]</u></strong></p>
+<p>summarized requirements from TR 22.872 [8]:</p>
+<p><em>Table A.1 Summary of positioninig requirements related to public
+safety in [8]</em></p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 10%" />
+<col style="width: 20%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Use case set</strong></th>
+<th style="text-align: center;"><p><strong>Absolute</strong></p>
+<p><strong>Positioning</strong></p>
+<p><strong>Accuracy</strong></p></th>
+<th style="text-align: center;"><p><strong>Relative</strong></p>
+<p><strong>accuracy</strong></p></th>
+<th style="text-align: center;"><strong>Availability</strong></th>
+<th style="text-align: center;"><strong>Heading</strong></th>
+<th style="text-align: center;"><strong>Latency for position estimation
+of UE</strong></th>
+<th style="text-align: center;"><p><strong>UE speed</strong></p>
+<p><strong>accuracy</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2"><p>Set1</p>
+<p>(Accurate Positioning for 1<sup>st</sup> responder)</p></td>
+<td><p>Outdoor</p>
+<p>H:[1]m</p>
+<p>V:[0.3]m</p></td>
+<td><p>Outdoor</p>
+<p>H:[1]m</p>
+<p>V:[0.3]m</p></td>
+<td><p>Outdoor</p>
+<p>[98%]</p></td>
+<td>/</td>
+<td><p>Outdoor</p>
+<p>[5]s</p>
+<p>TTFF</p>
+<p>[10]s</p></td>
+<td>/</td>
+</tr>
+<tr>
+<td><p>Indoor</p>
+<p>H:[1]m</p>
+<p>V:[2]m</p></td>
+<td><p>Indoor</p>
+<p>H:[1]m</p>
+<p>V:[2]m</p></td>
+<td><p>Indoor</p>
+<p>[95%]</p></td>
+<td>/</td>
+<td><p>Indoor</p>
+<p>[1]s</p>
+<p>TTFF</p>
+<p>[10]s</p></td>
+<td>/</td>
+</tr>
+<tr>
+<td><p>Set2</p>
+<p>(Alerting nearby emergency responder)</p></td>
+<td><p>H:[50]m</p>
+<p>V:[3]m</p></td>
+<td><p>H:[50]m</p>
+<p>V:[3]m</p></td>
+<td>/</td>
+<td>/</td>
+<td>/</td>
+<td>/</td>
+</tr>
+</tbody>
+</table>
+<p class="heading" id="annex-b-change-history">Annex B:<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RP-91e</td>
+<td style="text-align: center;">RP-210282</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TR skeleton</td>
+<td style="text-align: center;">0.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RP-91e</td>
+<td style="text-align: center;">RP-210285</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Positioning requirements for V2X and
+public safety acc. to pCR RP-210839</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-06</td>
+<td style="text-align: center;">RP-92e</td>
+<td style="text-align: center;">RP-210981</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Editorial cleanup to align TR with the
+drafting rules</td>
+<td style="text-align: center;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-06</td>
+<td style="text-align: center;">RP-92e</td>
+<td style="text-align: center;">RP-211276</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updated positioning requirements and
+addition of potential deployment and operation scenarios acc. To pCR
+RP-211275</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-06</td>
+<td style="text-align: center;">RP-92e</td>
+<td style="text-align: center;">RP-211575</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Clean version with typo fixed in 5.1 and
+Annex A</td>
+<td style="text-align: center;">1.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RP-93e</td>
+<td style="text-align: center;">RP-212038</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updated potential deployment and
+operation scenarios and addition of conclusions acc. to pCR
+RP-212037</td>
+<td style="text-align: center;">2.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RP-93e</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Approved by RAN #93e and put under CR
+control</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

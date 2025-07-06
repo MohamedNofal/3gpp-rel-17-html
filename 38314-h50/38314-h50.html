@@ -1,0 +1,3762 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38314-h50</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword">Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-of-terms-symbols-and-abbreviations"
+id="toc-definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</a>
+<ul>
+<li><a href="#terms" id="toc-terms">3.1 Terms</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.2
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#layer-2-measurements" id="toc-layer-2-measurements">4
+Layer 2 measurements</a>
+<ul>
+<li><a href="#general" id="toc-general">4.1 General</a></li>
+<li><a href="#nr-measurements-performed-by-the-gnb"
+id="toc-nr-measurements-performed-by-the-gnb">4.2 NR measurements
+performed by the gNB</a>
+<ul>
+<li><a href="#measurements-valid-for-all-gnb-deployment-scenarios"
+id="toc-measurements-valid-for-all-gnb-deployment-scenarios">4.2.1
+Measurements valid for all gNB deployment scenarios</a>
+<ul>
+<li><a href="#received-random-access-preambles"
+id="toc-received-random-access-preambles">4.2.1.1 Received Random Access
+Preambles</a>
+<ul>
+<li><a href="#received-random-access-preambles-per-cell"
+id="toc-received-random-access-preambles-per-cell">4.2.1.1.1 Received
+Random Access Preambles per cell</a></li>
+<li><a href="#a-received-4-step-random-access-preambles-per-cell"
+id="toc-a-received-4-step-random-access-preambles-per-cell">4.2.1.1.1a
+Received 4-step Random Access Preambles per cell</a></li>
+<li><a href="#b-received-2-step-random-access-preambles-per-cell"
+id="toc-b-received-2-step-random-access-preambles-per-cell">4.2.1.1.1b
+Received 2-step Random Access Preambles per cell</a></li>
+<li><a href="#received-random-access-preambles-per-ssb"
+id="toc-received-random-access-preambles-per-ssb">4.2.1.1.2 Received
+Random Access Preambles per SSB</a></li>
+<li><a href="#a-received-4-step-random-access-preambles-per-ssb"
+id="toc-a-received-4-step-random-access-preambles-per-ssb">4.2.1.1.2a
+Received 4-step Random Access Preambles per SSB</a></li>
+<li><a href="#b-received-2-step-random-access-preambles-per-ssb"
+id="toc-b-received-2-step-random-access-preambles-per-ssb">4.2.1.1.2b
+Received 2-step Random Access Preambles per SSB</a></li>
+</ul></li>
+<li><a href="#packet-delay" id="toc-packet-delay">4.2.1.2 Packet
+delay</a>
+<ul>
+<li><a href="#general-1" id="toc-general-1">4.2.1.2.1 General</a></li>
+<li><a
+href="#average-over-the-air-interface-packet-delay-in-the-ul-per-drb-per-ue"
+id="toc-average-over-the-air-interface-packet-delay-in-the-ul-per-drb-per-ue">4.2.1.2.2
+Average over-the-air interface packet delay in the UL per DRB per
+UE</a></li>
+<li><a href="#average-rlc-packet-delay-in-the-ul-per-drb-per-ue"
+id="toc-average-rlc-packet-delay-in-the-ul-per-drb-per-ue">4.2.1.2.3
+Average RLC packet delay in the UL per DRB per UE</a></li>
+<li><a href="#average-pdcp-re-ordering-delay-in-the-ul-per-drb-per-ue"
+id="toc-average-pdcp-re-ordering-delay-in-the-ul-per-drb-per-ue">4.2.1.2.4
+Average PDCP re-ordering delay in the UL per DRB per UE</a></li>
+</ul></li>
+<li><a href="#number-of-active-ues-in-rrc_connected"
+id="toc-number-of-active-ues-in-rrc_connected">4.2.1.3 Number of active
+UEs in RRC_CONNECTED</a>
+<ul>
+<li><a href="#general-2" id="toc-general-2">4.2.1.3.1 General</a></li>
+<li><a href="#mean-number-of-active-ues-in-the-dl-per-drb-per-cell"
+id="toc-mean-number-of-active-ues-in-the-dl-per-drb-per-cell">4.2.1.3.2
+Mean number of Active UEs in the DL per DRB per cell</a></li>
+<li><a href="#max-number-of-active-ues-in-the-dl-per-drb-per-cell"
+id="toc-max-number-of-active-ues-in-the-dl-per-drb-per-cell">4.2.1.3.3
+Max number of Active UEs in the DL per DRB per cell</a></li>
+<li><a href="#mean-number-of-active-ues-in-the-ul-per-drb-per-cell"
+id="toc-mean-number-of-active-ues-in-the-ul-per-drb-per-cell">4.2.1.3.4
+Mean number of Active UEs in the UL per DRB per cell</a></li>
+<li><a href="#max-number-of-active-ues-in-the-ul-per-drb-per-cell"
+id="toc-max-number-of-active-ues-in-the-ul-per-drb-per-cell">4.2.1.3.5
+Max number of Active UEs in the UL per DRB per cell</a></li>
+<li><a href="#mean-number-of-active-ues-per-cell"
+id="toc-mean-number-of-active-ues-per-cell">4.2.1.3.6 Mean number of
+Active UEs per cell</a></li>
+<li><a href="#max-number-of-active-ues-per-cell"
+id="toc-max-number-of-active-ues-per-cell">4.2.1.3.7 Max number of
+Active UEs per cell</a></li>
+<li><a href="#mean-number-of-active-ues-per-drb-per-cell"
+id="toc-mean-number-of-active-ues-per-drb-per-cell">4.2.1.3.8 Mean
+number of Active UEs per DRB per cell</a></li>
+<li><a href="#max-number-of-active-ues-per-drb-per-cell"
+id="toc-max-number-of-active-ues-per-drb-per-cell">4.2.1.3.9 Max number
+of Active UEs per DRB per cell</a></li>
+</ul></li>
+<li><a href="#number-of-stored-inactive-ue-contexts"
+id="toc-number-of-stored-inactive-ue-contexts">4.2.1.4 Number of stored
+inactive UE contexts</a>
+<ul>
+<li><a href="#general-3" id="toc-general-3">4.2.1.4.1 General</a></li>
+<li><a href="#mean-number-of-stored-inactive-ue-contexts"
+id="toc-mean-number-of-stored-inactive-ue-contexts">4.2.1.4.2 Mean
+number of stored inactive UE contexts</a></li>
+<li><a href="#max-number-of-stored-inactive-ue-contexts"
+id="toc-max-number-of-stored-inactive-ue-contexts">4.2.1.4.3 Max number
+of stored inactive UE contexts</a></li>
+</ul></li>
+<li><a href="#packet-loss-rate" id="toc-packet-loss-rate">4.2.1.5 Packet
+Loss Rate</a>
+<ul>
+<li><a href="#packet-uu-loss-rate-in-the-dl-per-drb-per-ue"
+id="toc-packet-uu-loss-rate-in-the-dl-per-drb-per-ue">4.2.1.5.1 Packet
+Uu Loss Rate in the DL per DRB per UE</a></li>
+<li><a
+href="#packet-uu-loss-rate-with-delay-threshold-in-the-dl-per-drb-per-ue"
+id="toc-packet-uu-loss-rate-with-delay-threshold-in-the-dl-per-drb-per-ue">4.2.1.5.2
+Packet Uu Loss Rate with delay threshold in the DL per DRB per
+UE</a></li>
+</ul></li>
+<li><a href="#other-measurements-defined-in-ts-28.552-2"
+id="toc-other-measurements-defined-in-ts-28.552-2">4.2.1.6 Other
+measurements defined in TS 28.552 [2]</a>
+<ul>
+<li><a
+href="#pdsch-prb-usage-based-on-statistical-mimo-layer-in-the-dl-per-cell"
+id="toc-pdsch-prb-usage-based-on-statistical-mimo-layer-in-the-dl-per-cell">4.2.1.7.3
+PDSCH PRB Usage based on statistical MIMO layer in the DL per
+cell</a></li>
+<li><a
+href="#pusch-prb-usage-based-on-statistical-mimo-layer-in-the-ul-per-cell"
+id="toc-pusch-prb-usage-based-on-statistical-mimo-layer-in-the-ul-per-cell">4.2.1.7.4
+PUSCH PRB Usage based on statistical MIMO layer in the UL per
+cell</a></li>
+<li><a href="#enhanced-pdsch-prb-usage-for-mimo-in-the-dl-per-cell"
+id="toc-enhanced-pdsch-prb-usage-for-mimo-in-the-dl-per-cell">4.2.1.7.5
+Enhanced PDSCH PRB Usage for MIMO in the DL per cell</a></li>
+<li><a href="#enhanced-pusch-prb-usage-for-mimo-in-the-ul-per-cell"
+id="toc-enhanced-pusch-prb-usage-for-mimo-in-the-ul-per-cell">4.2.1.7.6
+Enhanced PUSCH PRB Usage for MIMO in the UL per cell</a></li>
+</ul></li>
+<li><a href="#number-of-pdcp-packets-in-split-drb-scenario"
+id="toc-number-of-pdcp-packets-in-split-drb-scenario">4.2.1.8 Number of
+PDCP Packets in Split-DRB Scenario</a>
+<ul>
+<li><a
+href="#number-of-pdcp-non-duplicated-packets-per-cell-group-per-split-drb-per-ue"
+id="toc-number-of-pdcp-non-duplicated-packets-per-cell-group-per-split-drb-per-ue">4.2.1.8.1
+Number of PDCP Non-duplicated Packets per cell group per Split-DRB per
+UE</a></li>
+<li><a href="#number-of-pdcp-duplicated-packets-per-split-drb-per-ue"
+id="toc-number-of-pdcp-duplicated-packets-per-split-drb-per-ue">4.2.1.8.2
+Number of PDCP duplicated Packets per Split-DRB per UE</a></li>
+</ul></li>
+<li><a href="#total-ran-delay-in-split-drb-scenario"
+id="toc-total-ran-delay-in-split-drb-scenario">4.2.1.9 Total RAN Delay
+in Split-DRB Scenario</a>
+<ul>
+<li><a
+href="#dl-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-enabled-for-entire-measurement-period"
+id="toc-dl-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-enabled-for-entire-measurement-period">4.2.1.9.1
+DL Delay Calculation per Split-DRB per UE when PDCP duplication is
+enabled for entire measurement period</a></li>
+<li><a
+href="#ul-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-enabled-for-entire-measurement-period"
+id="toc-ul-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-enabled-for-entire-measurement-period">4.2.1.9.2
+UL Delay Calculation per Split-DRB per UE when PDCP duplication is
+enabled for entire measurement period</a></li>
+<li><a
+href="#dl-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-not-enabled-for-entire-measurement-period"
+id="toc-dl-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-not-enabled-for-entire-measurement-period">4.2.1.9.3
+DL Delay Calculation per Split-DRB per UE when PDCP duplication is not
+enabled for entire measurement period</a></li>
+<li><a
+href="#ul-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-not-enabled-for-entire-measurement-period"
+id="toc-ul-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-not-enabled-for-entire-measurement-period">4.2.1.9.4
+UL Delay Calculation per Split-DRB per UE when PDCP duplication is not
+enabled for entire measurement period</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#nr-measurements-performed-by-the-ue"
+id="toc-nr-measurements-performed-by-the-ue">4.3 NR measurements
+performed by the UE</a>
+<ul>
+<li><a href="#packet-delay-1" id="toc-packet-delay-1">4.3.1 Packet
+delay</a>
+<ul>
+<li><a href="#ul-pdcp-packet-average-delay-per-drb-per-ue"
+id="toc-ul-pdcp-packet-average-delay-per-drb-per-ue">4.3.1.1 UL PDCP
+Packet Average Delay per DRB per UE</a></li>
+<li><a href="#ul-pdcp-excess-packet-delay-per-drb"
+id="toc-ul-pdcp-excess-packet-delay-per-drb">4.3.1.2 UL PDCP Excess
+Packet Delay per DRB</a>
+<ul>
+<li><a href="#measurement-report-mapping-for-pdcp-excess-packet-delay"
+id="toc-measurement-report-mapping-for-pdcp-excess-packet-delay">4.3.1.2.1
+Measurement report mapping for PDCP Excess Packet Delay</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TS 38.314 V17.5.0 (2024-03)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Specification|Report</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NR;</p>
+<p>Layer 2 Measurements;</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.svg" /></td>
+<td style="text-align: right;"><img src="media/image2.svg" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2024, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">5</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references">6</a></p>
+<p>3 Definitions of terms, symbols and abbreviations <a
+href="#definitions-of-terms-symbols-and-abbreviations">6</a></p>
+<p>3.1 Terms <a href="#terms">6</a></p>
+<p>3.2 Abbreviations <a href="#abbreviations">6</a></p>
+<p>4 Layer 2 measurements <a href="#layer-2-measurements">6</a></p>
+<p>4.1 General <a href="#general">6</a></p>
+<p>4.2 NR measurements performed by the gNB <a
+href="#nr-measurements-performed-by-the-gnb">7</a></p>
+<p>4.2.1 Measurements valid for all gNB deployment scenarios <a
+href="#measurements-valid-for-all-gnb-deployment-scenarios">7</a></p>
+<p>4.2.1.1 Received Random Access Preambles <a
+href="#received-random-access-preambles">7</a></p>
+<p>4.2.1.1.1 Received Random Access Preambles per cell <a
+href="#received-random-access-preambles-per-cell">7</a></p>
+<p>4.2.1.1.1a Received 4-step Random Access Preambles per cell <a
+href="#a-received-4-step-random-access-preambles-per-cell">7</a></p>
+<p>4.2.1.1.1b Received 2-step Random Access Preambles per cell <a
+href="#b-received-2-step-random-access-preambles-per-cell">7</a></p>
+<p>4.2.1.1.2 Received Random Access Preambles per SSB <a
+href="#received-random-access-preambles-per-ssb">8</a></p>
+<p>4.2.1.1.2a Received 4-step Random Access Preambles per SSB <a
+href="#a-received-4-step-random-access-preambles-per-ssb">8</a></p>
+<p>4.2.1.1.2b Received 2-step Random Access Preambles per SSB <a
+href="#b-received-2-step-random-access-preambles-per-ssb">8</a></p>
+<p>4.2.1.2 Packet delay <a href="#packet-delay">9</a></p>
+<p>4.2.1.2.1 General <a href="#general-1">9</a></p>
+<p>4.2.1.2.2 Average over-the-air interface packet delay in the UL per
+DRB per UE <a
+href="#average-over-the-air-interface-packet-delay-in-the-ul-per-drb-per-ue">10</a></p>
+<p>4.2.1.2.3 Average RLC packet delay in the UL per DRB per UE <a
+href="#average-rlc-packet-delay-in-the-ul-per-drb-per-ue">10</a></p>
+<p>4.2.1.2.4 Average PDCP re-ordering delay in the UL per DRB per UE <a
+href="#average-pdcp-re-ordering-delay-in-the-ul-per-drb-per-ue">11</a></p>
+<p>4.2.1.3 Number of active UEs in RRC_CONNECTED <a
+href="#number-of-active-ues-in-rrc_connected">11</a></p>
+<p>4.2.1.3.1 General <a href="#general-2">11</a></p>
+<p>4.2.1.3.2 Mean number of Active UEs in the DL per DRB per cell <a
+href="#mean-number-of-active-ues-in-the-dl-per-drb-per-cell">11</a></p>
+<p>4.2.1.3.3 Max number of Active UEs in the DL per DRB per cell <a
+href="#max-number-of-active-ues-in-the-dl-per-drb-per-cell">12</a></p>
+<p>4.2.1.3.4 Mean number of Active UEs in the UL per DRB per cell <a
+href="#mean-number-of-active-ues-in-the-ul-per-drb-per-cell">13</a></p>
+<p>4.2.1.3.5 Max number of Active UEs in the UL per DRB per cell <a
+href="#max-number-of-active-ues-in-the-ul-per-drb-per-cell">13</a></p>
+<p>4.2.1.3.6 Mean number of Active UEs per cell <a
+href="#mean-number-of-active-ues-per-cell">14</a></p>
+<p>4.2.1.3.7 Max number of Active UEs per cell <a
+href="#max-number-of-active-ues-per-cell">15</a></p>
+<p>4.2.1.3.8 Mean number of Active UEs per DRB per cell <a
+href="#mean-number-of-active-ues-per-drb-per-cell">15</a></p>
+<p>4.2.1.3.9 Max number of Active UEs per DRB per cell <a
+href="#max-number-of-active-ues-per-drb-per-cell">16</a></p>
+<p>4.2.1.4 Number of stored inactive UE contexts <a
+href="#number-of-stored-inactive-ue-contexts">17</a></p>
+<p>4.2.1.4.1 General <a href="#general-3">17</a></p>
+<p>4.2.1.4.2 Mean number of stored inactive UE contexts <a
+href="#mean-number-of-stored-inactive-ue-contexts">17</a></p>
+<p>4.2.1.4.3 Max number of stored inactive UE contexts <a
+href="#max-number-of-stored-inactive-ue-contexts">18</a></p>
+<p>4.2.1.5 Packet Loss Rate <a href="#packet-loss-rate">18</a></p>
+<p>4.2.1.5.1 Packet Uu Loss Rate in the DL per DRB per UE <a
+href="#packet-uu-loss-rate-in-the-dl-per-drb-per-ue">18</a></p>
+<p>4.2.1.5.2 Packet Uu Loss Rate with delay threshold in the DL per DRB
+per UE <a
+href="#packet-uu-loss-rate-with-delay-threshold-in-the-dl-per-drb-per-ue">19</a></p>
+<p>4.2.1.6 Other measurements defined in TS 28.552 [2] <a
+href="#other-measurements-defined-in-ts-28.552-2">20</a></p>
+<p>4.2.1.7.3 PDSCH PRB Usage based on statistical MIMO layer in the DL
+per cell <a
+href="#pdsch-prb-usage-based-on-statistical-mimo-layer-in-the-dl-per-cell">22</a></p>
+<p>4.2.1.7.4 PUSCH PRB Usage based on statistical MIMO layer in the UL
+per cell <a
+href="#pusch-prb-usage-based-on-statistical-mimo-layer-in-the-ul-per-cell">23</a></p>
+<p>4.2.1.7.5 Enhanced PDSCH PRB Usage for MIMO in the DL per cell <a
+href="#enhanced-pdsch-prb-usage-for-mimo-in-the-dl-per-cell">24</a></p>
+<p>4.2.1.7.6 Enhanced PUSCH PRB Usage for MIMO in the UL per cell <a
+href="#enhanced-pusch-prb-usage-for-mimo-in-the-ul-per-cell">25</a></p>
+<p>4.2.1.8 Number of PDCP Packets in Split-DRB Scenario <a
+href="#number-of-pdcp-packets-in-split-drb-scenario">26</a></p>
+<p>4.2.1.8.1 Number of PDCP Non-duplicated Packets per cell group per
+Split-DRB per UE <a
+href="#number-of-pdcp-non-duplicated-packets-per-cell-group-per-split-drb-per-ue">26</a></p>
+<p>4.2.1.8.2 Number of PDCP duplicated Packets per Split-DRB per UE <a
+href="#number-of-pdcp-duplicated-packets-per-split-drb-per-ue">26</a></p>
+<p>4.2.1.9 Total RAN Delay in Split-DRB Scenario <a
+href="#total-ran-delay-in-split-drb-scenario">27</a></p>
+<p>4.2.1.9.1 DL Delay Calculation per Split-DRB per UE when PDCP
+duplication is enabled for entire measurement period <a
+href="#dl-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-enabled-for-entire-measurement-period">27</a></p>
+<p>4.2.1.9.2 UL Delay Calculation per Split-DRB per UE when PDCP
+duplication is enabled for entire measurement period <a
+href="#ul-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-enabled-for-entire-measurement-period">27</a></p>
+<p>4.2.1.9.3 DL Delay Calculation per Split-DRB per UE when PDCP
+duplication is not enabled for entire measurement period <a
+href="#dl-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-not-enabled-for-entire-measurement-period">28</a></p>
+<p>4.2.1.9.4 UL Delay Calculation per Split-DRB per UE when PDCP
+duplication is not enabled for entire measurement period <a
+href="#ul-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-not-enabled-for-entire-measurement-period">29</a></p>
+<p>4.3 NR measurements performed by the UE <a
+href="#nr-measurements-performed-by-the-ue">30</a></p>
+<p>4.3.1 Packet delay <a href="#packet-delay-1">30</a></p>
+<p>4.3.1.1 UL PDCP Packet Average Delay per DRB per UE <a
+href="#ul-pdcp-packet-average-delay-per-drb-per-ue">30</a></p>
+<p>4.3.1.2 UL PDCP Excess Packet Delay per DRB <a
+href="#ul-pdcp-excess-packet-delay-per-drb">30</a></p>
+<p>4.3.1.2.1 Measurement report mapping for PDCP Excess Packet Delay <a
+href="#measurement-report-mapping-for-pdcp-excess-packet-delay">31</a></p>
+<p>Annex A (informative): Change history <a
+href="#annex-a-informative-change-history">33</a></p>
+<h1 id="foreword">Foreword</h1>
+<p>This Technical Specification has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document contains the description and definition of the
+measurements performed by network or the UE that are transferred over
+the standardised interfaces in order to support NR radio link
+operations, radio resource management (RRM), network operations and
+maintenance (OAM), minimization of drive tests (MDT) and self-organising
+networks (SON).</p>
+<p>Only the differences relative to TS 28.552 v16.2.0 [2] are specified
+in this specification.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TS 28.552: "5G performance measurements".</p>
+<p>[3] 3GPP TS 38.331: "Radio Resource Control (RRC) protocol
+specification".</p>
+<p>[4] 3GPP TS 23.501: "System Architecture for the 5G System; Stage
+2".</p>
+<h1 id="definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</h1>
+<h2 id="terms">3.1 Terms</h2>
+<p>For the purposes of the present document, the terms given in TR
+21.905 [1] and the following apply. A term defined in the present
+document takes precedence over the definition of the same term, if any,
+in TR 21.905 [1].</p>
+<h2 id="abbreviations">3.2 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+TR 21.905 [1] and the following apply. An abbreviation defined in the
+present document takes precedence over the definition of the same
+abbreviation, if any, in TR 21.905 [1].</p>
+<h1 id="layer-2-measurements">4 Layer 2 measurements</h1>
+<h2 id="general">4.1 General</h2>
+<p>All the per DRB per cell measurements and per DRB per UE measurements
+can be aggregated into per QoS level per cell and per PLMN ID per cell
+by network implementation. All the performance measurements for gNB
+defined in TS 28.552 [2] 5.1 can be calculated into per PLMN ID level by
+network implementation. Per QoS level refers to per mapped 5QI for NR SA
+or per QCI for EN-DC.</p>
+<h2 id="nr-measurements-performed-by-the-gnb">4.2 NR measurements
+performed by the gNB</h2>
+<h3 id="measurements-valid-for-all-gnb-deployment-scenarios">4.2.1
+Measurements valid for all gNB deployment scenarios</h3>
+<h4 id="received-random-access-preambles">4.2.1.1 Received Random Access
+Preambles</h4>
+<h5 id="received-random-access-preambles-per-cell">4.2.1.1.1 Received
+Random Access Preambles per cell</h5>
+<p>A use case for this measurement is RACH configuration optimization,
+where Received Random Access Preambles is signalled across an OAM
+interface.</p>
+<p>Protocol Layer: MAC</p>
+<p>Table 4.2.1.1.1-1: Definition for Received Random Access Preambles
+per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Received Random Access Preambles per cell. This measurement is
+applicable to PRACH. The reference point is the Service Access Point
+between MAC and L1. The measured quantity is the number of received
+Random Access preambles during a time period over all PRACHs configured
+in a cell. The measurement is done separately for:</p>
+<p>- Dedicated preambles</p>
+<p>- Randomly selected preambles in the low range</p>
+<p>- Randomly selected preambles in the high range.</p>
+<p>The unit of the measured value is [/s].</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h5 id="a-received-4-step-random-access-preambles-per-cell">4.2.1.1.1a
+Received 4-step Random Access Preambles per cell</h5>
+<p>A use case for this measurement is RACH configuration optimization,
+where Received Random Access Preambles is signalled across an OAM
+interface.</p>
+<p>Protocol Layer: MAC</p>
+<p>Table 4.2.1.1.1a-1: Definition for Received 4-step Random Access
+Preambles per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Received 4-step Random Access Preambles per cell. This
+measurement is applicable to PRACH. The reference point is the Service
+Access Point between MAC and L1. The measured quantity is the number of
+received Random Access preambles of 4-step RA attempts during a time
+period over all PRACHs configured in a cell. The measurement is done
+separately for:</p>
+<p>- Dedicated preambles</p>
+<p>- Randomly selected preambles in the low range</p>
+<p>- Randomly selected preambles in the high range.</p>
+<p>The unit of the measured value is [/s].</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h5 id="b-received-2-step-random-access-preambles-per-cell">4.2.1.1.1b
+Received 2-step Random Access Preambles per cell</h5>
+<p>A use case for this measurement is RACH configuration optimization,
+where Received Random Access Preambles is signalled across an OAM
+interface.</p>
+<p>Protocol Layer: MAC</p>
+<p>Table 4.2.1.1.1b-1: Definition for Received 2-step Random Access
+Preambles per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Received 2-step Random Access Preambles per cell. This
+measurement is applicable to PRACH. The reference point is the Service
+Access Point between MAC and L1. The measured quantity is the number of
+received Random Access preambles of 2-step RA attempts during a time
+period over all PRACHs configured in a cell. The measurement is done
+separately for:</p>
+<p>- Dedicated preambles</p>
+<p>- Randomly selected preambles in the low range</p>
+<p>- Randomly selected preambles in the high range.</p>
+<p>The unit of the measured value is [/s].</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h5 id="received-random-access-preambles-per-ssb">4.2.1.1.2 Received
+Random Access Preambles per SSB</h5>
+<p>A use case for this measurement is RACH configuration optimization,
+where Received Random Access Preambles is signalled across an OAM
+interface.</p>
+<p>Protocol Layer: MAC</p>
+<p>Table 4.2.1.1.2-1: Definition for Received Random Access Preambles
+per SSB</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Received Random Access Preambles per SSB. This measurement is
+applicable to PRACH. The reference point is the Service Access Point
+between MAC and L1. The measured quantity is the number of received
+Random Access preambles during a time period over all PRACHs configured
+in the SSB of the cell. The measurement is done separately for:</p>
+<p>- Dedicated preambles</p>
+<p>- Randomly selected preambles in the low range</p>
+<p>- Randomly selected preambles in the high range.</p>
+<p>The unit of the measured value is [/s].</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h5 id="a-received-4-step-random-access-preambles-per-ssb">4.2.1.1.2a
+Received 4-step Random Access Preambles per SSB</h5>
+<p>A use case for this measurement is RACH configuration optimization,
+where Received Random Access Preambles is signalled across an OAM
+interface.</p>
+<p>Protocol Layer: MAC</p>
+<p>Table 4.2.1.1.2a-1: Definition for Received 4-step Random Access
+Preambles per SSB</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Received 4-step Random Access Preambles per SSB. This measurement
+is applicable to PRACH. The reference point is the Service Access Point
+between MAC and L1. The measured quantity is the number of received
+Random Access preambles of 4-step RA attempts during a time period over
+all PRACHs configured in the SSB of the cell. The measurement is done
+separately for:</p>
+<p>- Dedicated preambles</p>
+<p>- Randomly selected preambles in the low range</p>
+<p>- Randomly selected preambles in the high range.</p>
+<p>The unit of the measured value is [/s].</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h5 id="b-received-2-step-random-access-preambles-per-ssb">4.2.1.1.2b
+Received 2-step Random Access Preambles per SSB</h5>
+<p>A use case for this measurement is RACH configuration optimization,
+where Received Random Access Preambles is signalled across an OAM
+interface.</p>
+<p>Protocol Layer: MAC</p>
+<p>Table 4.2.1.1.2b-1: Definition for Received 2-step Random Access
+Preambles per SSB</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Received 2-step Random Access Preambles per SSB. This measurement
+is applicable to PRACH. The reference point is the Service Access Point
+between MAC and L1. The measured quantity is the number of received
+Random Access preambles of 2-step RA attempts during a time period over
+all PRACHs configured in the SSB of the cell. The measurement is done
+separately for:</p>
+<p>- Dedicated preambles</p>
+<p>- Randomly selected preambles in the low range</p>
+<p>- Randomly selected preambles in the high range.</p>
+<p>The unit of the measured value is [/s].</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h4 id="packet-delay">4.2.1.2 Packet delay</h4>
+<h5 id="general-1">4.2.1.2.1 General</h5>
+<p>Packet delay includes RAN part of delay and CN part of delay.</p>
+<p>The RAN part of DL packet delay measurement comprises:</p>
+<p>- D1 (DL delay in over-the-air interface), referring to Average delay
+DL air-interface in TS 28.552 [2] 5.1.1.1.1.</p>
+<p>- D2 (DL delay on gNB-DU), referring to Average delay in RLC sublayer
+of gNB-DU in TS 28.552 [2] 5.1.3.3.3.</p>
+<p>- D3 (DL delay on F1-U), referring to Average delay on F1-U in TS
+28.552 [2] 5.1.3.3.2.</p>
+<p>- D4 (DL delay in CU-UP), referring to Average delay DL in CU-UP in
+TS 28.552 [2] 5.1.3.3.1.</p>
+<p>The DL packet delay measurements, i.e. D1 (the DL delay in
+over-the-air interface ), D2 (the DL delay in gNB-DU), D3 (the DL delay
+on F1-U) and D4 (the DL delay in CU-UP), should be measured per DRB per
+UE.</p>
+<p>NOTE: The delay measurements D1, D2 and D4 are also applicable for
+EUTRA in case of EN-DC related DL delay measurements on the MN side.</p>
+<p>The RAN part (including UE) of UL packet delay measurement
+comprises:</p>
+<p>- D1 (UL PDCP packet average delay, as defined in clause
+4.3.1.1).</p>
+<p>- D2.1 (average over-the-air interface packet delay, as defined in
+4.2.1.2.2).</p>
+<p>- D2.2 (average RLC packet delay, as defined in 4.2.1.2.3).</p>
+<p>- D2.3 (average delay UL on F1-U, it is measured using the same
+metric as the average delay DL on F1-U defined in TS 28.552 [2] clause
+5.1.3.3.2).</p>
+<p>- D2.4 (average PDCP re-ordering delay, as defined in 4.2.1.2.4).</p>
+<p>The UL packet delay measurements, i.e. D1(UL PDCP packet average
+delay), D2.1(average over-the-air interface packet delay), D2.2(average
+RLC packet delay), D2.3(average delay UL on F1-U) and D2.4(average PDCP
+re-ordering delay), should be measured per DRB per UE. The unit of D1,
+D2.1, D2.2, D2.3 and D2.4 is 0.1ms.</p>
+<p>NOTE: The delay measurements D1, D2.1, D2.2 and D2.4 are also
+applicable for EUTRA in case of EN-DC related UL delay measurements on
+the MN side.</p>
+<p>For non CU-UP and DU split case, RAN part of packet delay excludes
+the delay at FI-U interface, i.e. D2.3 and D3.</p>
+<p>For split-DRB scenario, total UL/DL delay on the MCG or on the SCG is
+calculated based on the above measurement definitions. For UL delay
+calculation, the D1 measurement is the same for total UL delay on the
+MCG and total UL delay on the SCG.</p>
+<p>If network disables the PDCP re-ordering function, the value of
+Average PDCP re-ordering delay i.e. D2.4 should be set to 0.</p>
+<p>For the QoS monitoring in TS 23.501 [4], RAN informs the RAN part of
+UL packet delay measurement, or the RAN part of DL packet delay
+measurement, or both to the CN.</p>
+<h5
+id="average-over-the-air-interface-packet-delay-in-the-ul-per-drb-per-ue">4.2.1.2.2
+Average over-the-air interface packet delay in the UL per DRB per
+UE</h5>
+<p>The objective of this measurement is to measure air interface UL
+packet delay for OAM performance observability or for QoS verification
+of MDT or for the QoS monitoring as defined in TS 23.501 [4].</p>
+<p>Protocol Layer: MAC</p>
+<p>Table 4.2.1.2.2-1: Definition for Average over-the-air packet delay
+in the UL per DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Average over-the-air packet delay in the UL per DRB per UE. This
+measurement is applicable for EN-DC and SA. This measurement refers to
+packet delay for DRBs. This measurement provides the average (arithmetic
+mean) time it takes to successfully receive a transport block from the
+time of UL transmission indicated in scheduling grant.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,drbid) = \left\lfloor
+\frac{\sum_{\forall i}^{}{tSucc(i,drbid) - tSched(i,drbid)}}{I(T)}
+\right\rfloor\)</span>, where</p>
+<p>explanations can be found in the table 4.2.1.2.2-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.2.2-2: Parameter description for Average over-the-air
+packet delay in the UL per DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,drbid)\]</span></th>
+<th>Over-the-air packet delay in the UL per DRB per UE, averaged during
+time period <span class="math inline">\(T\)</span>. Unit: 0.1 ms.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[tSched(i,drbid)\]</span></td>
+<td>The point in time when the UL MAC SDU i is scheduled in MAC layer as
+per the scheduling grant provided.</td>
+</tr>
+<tr>
+<td><span class="math display">\[tSucc(i,drbid)\]</span></td>
+<td>The point in time when the UL MAC SDU i is successfully sent to
+RLC.</td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>A UL MAC SDU that arrives at the MAC during time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[I(T)\]</span></td>
+<td>Total number of UL MAC SDUs <span
+class="math inline">\(i\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed</td>
+</tr>
+<tr>
+<td><span class="math display">\[drbid\]</span></td>
+<td>The identity of the measured DRB.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="average-rlc-packet-delay-in-the-ul-per-drb-per-ue">4.2.1.2.3
+Average RLC packet delay in the UL per DRB per UE</h5>
+<p>The objective of this measurement is to measure RLC delay in the UL
+for OAM performance observability or for QoS verification of MDT or for
+the QoS monitoring as defined in TS 23.501 [4].</p>
+<p>Protocol Layer: RLC</p>
+<p>Table 4.2.1.2.3-1: Definition for Average RLC packet delay in the UL
+per DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Average RLC delay in the UL per DRB per UE. This measurement is
+applicable for EN-DC and SA. This measurement refers to packet delay for
+DRBs. For CU-UP and DU split scenario or DC scenario, this measurement
+refers to the RLC delay on each DU or RAN node. This measurement
+provides the average (arithmetic mean) time it takes from the RLC PDU
+including the first part of an RLC SDU is received to the RLC SDU is
+sent to PDCP or CU-UP for split gNB.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,drbid) = \left\lfloor
+\frac{\sum_{\forall i}^{}{tSent(i,drbid) - tReceiv(i,drbid)}}{I(T)}
+\right\rfloor\)</span>, where</p>
+<p>explanations can be found in the table 4.2.1.2.3-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.2.3-2: Parameter description for Average RLC packet delay
+in the UL per DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,drbid)\]</span></th>
+<th>RLC delay in the UL per DRB per UE, averaged during time period
+<span class="math inline">\(T\)</span>. Unit: 0.1 ms.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[tReceiv(i,drbid)\]</span></td>
+<td>The point in time when the UL RLC PDU including the first part of
+the UL RLC SDU i is received.</td>
+</tr>
+<tr>
+<td><span class="math display">\[tSent(i,\ drbid)\]</span></td>
+<td>The point in time when the UL RLC SDU i is sent to PDCP or CU-UP for
+split gNB.</td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>A UL RLC SDU that is received by the RLC during time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[I(T)\]</span></td>
+<td>Total number of UL RLC SDUs <span
+class="math inline">\(i\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed</td>
+</tr>
+<tr>
+<td><span class="math display">\[drbid\]</span></td>
+<td>The identity of the measured DRB.</td>
+</tr>
+</tbody>
+</table>
+<h5
+id="average-pdcp-re-ordering-delay-in-the-ul-per-drb-per-ue">4.2.1.2.4
+Average PDCP re-ordering delay in the UL per DRB per UE</h5>
+<p>The objective of this measurement is to measure PDCP re-ordering
+delay in the UL for OAM performance observability or for QoS
+verification of MDT or for the QoS monitoring as defined in TS 23.501
+[4].</p>
+<p>Protocol Layer: PDCP</p>
+<p>Table 4.2.1.2.4-1: Definition for Average PDCP re-ordering delay in
+the UL per DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Average PDCP re-ordering delay in the UL per DRB per UE. This
+measurement is applicable for EN-DC and SA. This measurement refers to
+packet delay for DRBs. This measurement provides the average (arithmetic
+mean) time it takes from the point a PDCP PDU is received to the PDCP
+SDU is sent to upper SAP.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,drbid) = \left\lfloor
+\frac{\sum_{\forall i}^{}{tSent(i,drbid) - tReceiv(i,drbid)}}{I(T)}
+\right\rfloor\)</span>, where</p>
+<p>explanations can be found in the table 4.1.1.2.4-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.2.4-2: Parameter description for Average PDCP re-ordering
+delay in the UL per DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,drbid)\]</span></th>
+<th>PDCP re-ordering delay in the UL per DRB per UE, averaged during
+time period <span class="math inline">\(T\)</span>. Unit: 0.1 ms.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[tReceiv(i,\ drbid)\]</span></td>
+<td>The point in time when the UL PDCP PDU including the UL PDCP SDU i
+is received.</td>
+</tr>
+<tr>
+<td><span class="math display">\[tSent(i,drbid)\]</span></td>
+<td>The point in time when the UL PDCP SDU i is sent to upper SAP.</td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>A UL PDCP SDU that is received by the PDCP during time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[I(T)\]</span></td>
+<td>Total number of UL PDCP SDUs received during time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed</td>
+</tr>
+<tr>
+<td><span class="math display">\[drbid\]</span></td>
+<td>The identity of the measured DRB.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="number-of-active-ues-in-rrc_connected">4.2.1.3 Number of active
+UEs in RRC_CONNECTED</h4>
+<h5 id="general-2">4.2.1.3.1 General</h5>
+<p>The objective of the measurement is to measure the number of active
+UEs per QoS level for OAM performance observability or for SON functions
+e.g., mobility load balancing. It is intended to be part of a
+calculation to determine the bitrate UEs achieve when they are active,
+i.e. when applications are transmitting and receiving data. The
+measurements are applicable for both non-split gNB and split gNB
+deployment scenario.</p>
+<h5 id="mean-number-of-active-ues-in-the-dl-per-drb-per-cell">4.2.1.3.2
+Mean number of Active UEs in the DL per DRB per cell</h5>
+<p>Protocol Layer: MAC, RLC</p>
+<p>Table 4.2.1.3.2-1: Definition for Mean number of Active UEs in the DL
+per DRB per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Mean number of Active UEs in the DL per DRB per cell. The DRBs
+are mapped with the same 5QI for NR SA or mapped with the same QCI for
+EN-DC. This measurement refers to UEs for which there is data available
+for transmission for the DL for DRBs.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,drbid,p) = \frac{\left\lfloor
+\frac{\sum_{\forall i}^{}{N(i,drbid)}}{I(T,p)}*10
+\right\rfloor}{10}\)</span>, where</p>
+<p>explanations can be found in the table 4.2.1.3.2-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.3.2-2: Parameter description for Mean number of Active
+UEs in the DL per DRB per cell</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,drbid,p)\]</span></th>
+<th>Mean number of Active UEs in the DL per DRB per cell, averaged
+during time period <span class="math inline">\(T\)</span>. Unit:
+0.1.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[N(i,drbid)\]</span></td>
+<td><p>Number of UEs for which there is data available for transmission
+for the DL in MAC or RLC protocol layers for a Data Radio Bearer of
+traffic class at sampling occasion <span
+class="math inline">\(i\)</span>.</p>
+<p>Data available for transmission includes data for which HARQ
+transmission has not yet terminated.</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>Sampling occasion during time period <span
+class="math inline">\(T\)</span>. A sampling occasion shall occur once
+every <span class="math inline">\(p\)</span> seconds.</td>
+</tr>
+<tr>
+<td><span class="math display">\[p\]</span></td>
+<td>Sampling period length. Unit: second. The sampling period shall be
+at most 0.1 s.</td>
+</tr>
+<tr>
+<td><span class="math display">\[I(T,p)\]</span></td>
+<td>Total number of sampling occasions during time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed, Unit:
+second.</td>
+</tr>
+<tr>
+<td><span class="math display">\[drbid\]</span></td>
+<td>The DRBs mapped with the same 5QI for NR SA or mapped with the same
+QCI for EN-DC.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="max-number-of-active-ues-in-the-dl-per-drb-per-cell">4.2.1.3.3
+Max number of Active UEs in the DL per DRB per cell</h5>
+<p>Protocol Layer: MAC, RLC</p>
+<p>Table 4.2.1.3.3-1: Definition for Max number of Active UEs in the DL
+per DRB per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Maximum number of Active UEs in the DL per DRB per cell. The DRBs
+are mapped with the same 5QI for NR SA or mapped with the same QCI for
+EN-DC. This measurement refers to UEs for which there is data available
+for transmission for the DL for DRBs.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,drbid,p) = \max_{T}\left( N(i,drbid)
+\right)\)</span><img src="media/image3.png" />, where</p>
+<p>explanations can be found in the table 4.2.1.3.3-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.3.3-2: Parameter description for Max number of Active UEs
+in the DL per DRB per cell</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,drbid,p)\]</span></th>
+<th>Maximum number of Active UEs in the DL per DRB per cell, averaged
+during time period <span class="math inline">\(T\)</span>. Unit:
+Integer.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[N(i,drbid)\]</span></td>
+<td><p>Number of UEs for which there is data available for transmission
+for the DL in MAC or RLC protocol layers for a Data Radio Bearer of
+traffic class at sampling occasion <span
+class="math inline">\(i\)</span>.</p>
+<p>Data available for transmission includes data for which HARQ
+transmission has not yet terminated.</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>Sampling occasion during time period <span
+class="math inline">\(T\)</span>. A sampling occasion shall occur once
+every <span class="math inline">\(p\)</span> seconds.</td>
+</tr>
+<tr>
+<td><span class="math display">\[p\]</span></td>
+<td>Sampling period length. Unit: second. The sampling period shall be
+at most 0.1 s.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed, Unit:
+second.</td>
+</tr>
+<tr>
+<td><span class="math display">\[drbid\]</span></td>
+<td>The DRBs mapped with the same 5QI for NR SA or mapped with the same
+QCI for EN-DC.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="mean-number-of-active-ues-in-the-ul-per-drb-per-cell">4.2.1.3.4
+Mean number of Active UEs in the UL per DRB per cell</h5>
+<p>Protocol Layer: MAC</p>
+<p>Table 4.2.1.3.4-1: Definition for Mean number of Active UEs in the UL
+per DRB per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Mean number of Active UEs in the UL per DRB per cell. The DRBs
+are mapped with the same 5QI for NR SA or mapped with the same QCI for
+EN-DC. This measurement refers to UEs for which there is data available
+for transmission for the UL for DRBs.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,drbid,p) = \frac{\left\lfloor
+\frac{\sum_{\forall i}^{}{N(i,drbid)}}{I(T,p)}*10 \right\rfloor}{10},\
+\)</span><img src="media/image4.png" />where</p>
+<p>explanations can be found in the table 4.2.1.3.4-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>NOTE: For this measurement, the expected accuracy is dependent on
+application scenario, cell load, UE configuration and how DRBs are
+distributed over logical channel groups.</p>
+<p>Table 4.2.1.3.4-2: Parameter description for Mean number of Active
+UEs in the UL per DRB per cell</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,drbid,p)\]</span></th>
+<th>Mean number of Active UEs in the UL per DRB per cell, averaged
+during time period <span class="math inline">\(T\)</span>. Unit:
+0.1.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[N(i,drbid)\]</span></td>
+<td><p>Number of UEs for which there is data available for transmission
+for the UL in MAC or RLC protocol layers for a Data Radio Bearer of
+traffic class at sampling occasion <span
+class="math inline">\(i\)</span></p>
+<p>This is a gNB estimation that is expected to be based on Buffer
+Status Reporting, provided configured grants and progress of ongoing
+HARQ transmissions (by including data for which HARQ transmission has
+not yet terminated).</p>
+<p>In addition, the gNB can use the analysis of received data in the
+estimation. In such case, when DRB cannot be determined at the time of
+the sampling occasion, gNB can determine DRB after successful reception
+of data.</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>Sampling occasion during time period <span
+class="math inline">\(T\)</span>. A sampling occasion shall occur once
+every <span class="math inline">\(p\)</span> seconds.</td>
+</tr>
+<tr>
+<td><span class="math display">\[p\]</span></td>
+<td>Sampling period length. Unit: second. The sampling period shall be
+at most 0.1 s.</td>
+</tr>
+<tr>
+<td><span class="math display">\[I(T,p)\]</span></td>
+<td>Total number of sampling occasions during time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed, Unit:
+second.</td>
+</tr>
+<tr>
+<td><span class="math display">\[drbid\]</span></td>
+<td>The DRBs mapped with the same 5QI for NR SA or mapped with the same
+QCI for EN-DC.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="max-number-of-active-ues-in-the-ul-per-drb-per-cell">4.2.1.3.5
+Max number of Active UEs in the UL per DRB per cell</h5>
+<p>Protocol Layer: MAC</p>
+<p>Table 4.2.1.3.5-1: Definition for Max number of Active UEs in the UL
+per DRB per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Maximum number of Active UEs in the UL per DRB per cell. The DRBs
+are mapped with the same 5QI for NR SA or mapped with the same QCI for
+EN-DC. This measurement refers to UEs for which there is data available
+for transmission for the UL for DRBs.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,drbid,p) = \max_{T}\left( N(i,drbid)
+\right)\)</span>, where</p>
+<p>explanations can be found in the table 4.2.1.3.5-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>NOTE: For this measurement, the expected accuracy is dependent on
+application scenario, cell load, UE configuration and how DRBs are
+distributed over logical channel groups.</p>
+<p>Table 4.2.1.3.5-2: Parameter description for Max number of Active UEs
+in the UL per DRB per cell</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,drbid,p)\]</span></th>
+<th>Maximum number of Active UEs in the UL per DRB per cell, averaged
+during time period <span class="math inline">\(T\)</span>. Unit:
+Integer.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[N(i,drbid)\]</span></td>
+<td><p>Number of UEs for which there is data available for transmission
+for the UL in MAC or RLC protocol layers for a Data Radio Bearer of
+traffic class at sampling occasion <span
+class="math inline">\(i\)</span></p>
+<p>This is a gNB estimation that is expected to be based on Buffer
+Status Reporting, provided configured grants and progress of ongoing
+HARQ transmissions (by including data for which HARQ transmission has
+not yet terminated).</p>
+<p>In addition, the gNB can use the analysis of received data in the
+estimation. In such case, when DRB cannot be determined at the time of
+the sampling occasion, gNB can determine DRB after successful reception
+of data.</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>Sampling occasion during time period <span
+class="math inline">\(T\)</span>. A sampling occasion shall occur once
+every <span class="math inline">\(p\)</span> seconds.</td>
+</tr>
+<tr>
+<td><span class="math display">\[p\]</span></td>
+<td>Sampling period length. Unit: second. The sampling period shall be
+at most 0.1 s.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed, Unit:
+second.</td>
+</tr>
+<tr>
+<td><span class="math display">\[drbid\]</span></td>
+<td>The DRBs mapped with the same 5QI for NR SA or mapped with the same
+QCI for EN-DC.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="mean-number-of-active-ues-per-cell">4.2.1.3.6 Mean number of
+Active UEs per cell</h5>
+<p>Protocol Layer: MAC, RLC</p>
+<p>Table 4.2.1.3.6-1: Definition for Mean number of Active UEs per
+cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Mean number of Active UEs per cell. This measurement refers to
+UEs for which there is data available for transmission for the UL for
+DRBs, or there is data available for transmission for the DL for DRBs,
+or both.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,p) = \frac{\left\lfloor
+\frac{\sum_{\forall i}^{}{N(i)}}{I(T,p)}*10 \right\rfloor}{10},\
+\)</span><img src="media/image5.png" />where</p>
+<p>explanations can be found in the table 4.2.1.3.6-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>NOTE: For this measurement, the expected accuracy is dependent on
+application scenario, cell load, UE configuration and how DRBs are
+distributed over logical channel groups.</p>
+<p>Table 4.2.1.3.6-2: Parameter description for Mean number of Active
+UEs per cell</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,p)\]</span></th>
+<th>Mean number of Active UEs per cell, averaged during time period
+<span class="math inline">\(T\)</span>. Unit: 0.1.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[N(i)\]</span></td>
+<td><p>Number of UEs for which there is data available for transmission
+for the UL or for the DL or for both in MAC or RLC protocol layers at
+sampling occasion <span class="math inline">\(i\)</span></p>
+<p>For UL, this is a gNB estimation that is expected to be based on
+Buffer Status Reporting, provided configured grants and progress of
+ongoing HARQ transmissions (by including data for which HARQ
+transmission has not yet terminated). In addition, the gNB can use the
+analysis of received data in the estimation.</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>Sampling occasion during time period <span
+class="math inline">\(T\)</span>. A sampling occasion shall occur once
+every <span class="math inline">\(p\)</span> seconds.</td>
+</tr>
+<tr>
+<td><span class="math display">\[p\]</span></td>
+<td>Sampling period length. Unit: second. The sampling period shall be
+at most 0.1 s.</td>
+</tr>
+<tr>
+<td><span class="math display">\[I(T,p)\]</span></td>
+<td>Total number of sampling occasions during time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed, Unit:
+second.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="max-number-of-active-ues-per-cell">4.2.1.3.7 Max number of
+Active UEs per cell</h5>
+<p>Protocol Layer: MAC, RLC</p>
+<p>Table 4.2.1.3.7-1: Definition for Max number of Active UEs per
+cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Maximum number of Active UEs per cell. This measurement refers to
+UEs for which there is data available for transmission for the UL for
+DRBs, or there is data available for transmission for the DL for DRBs,
+or both.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,p) = \max_{T}\left( N(i)
+\right)\)</span><img src="media/image6.png" />, where</p>
+<p>explanations can be found in the table 4.2.1.3.7-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>NOTE: For this measurement, the expected accuracy is dependent on
+application scenario, cell load, UE configuration and how DRBs are
+distributed over logical channel groups.</p>
+<p>Table 4.2.1.3.7-2: Parameter description for Max number of Active UEs
+per cell</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,p)\]</span></th>
+<th>Maximum number of Active UEs per cell, averaged during time period
+<span class="math inline">\(T\)</span>. Unit: Integer.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[N(i)\]</span></td>
+<td><p>Number of UEs for which there is data available for transmission
+for the UL or for the DL or for both in MAC or RLC protocol layers at
+sampling occasion <span class="math inline">\(i\)</span></p>
+<p>For UL, this is a gNB estimation that is expected to be based on
+Buffer Status Reporting, provided configured grants and progress of
+ongoing HARQ transmissions (by including data for which HARQ
+transmission has not yet terminated). In addition, the gNB can use the
+analysis of received data in the estimation.</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>Sampling occasion during time period <span
+class="math inline">\(T\)</span>. A sampling occasion shall occur once
+every <span class="math inline">\(p\)</span> seconds.</td>
+</tr>
+<tr>
+<td><span class="math display">\[p\]</span></td>
+<td>Sampling period length. Unit: second. The sampling period shall be
+at most 0.1 s.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed, Unit:
+second.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="mean-number-of-active-ues-per-drb-per-cell">4.2.1.3.8 Mean
+number of Active UEs per DRB per cell</h5>
+<p>Protocol Layer: MAC, RLC</p>
+<p>Table 4.2.1.3.8-1: Definition for Mean number of Active UEs per DRB
+per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Mean number of Active UEs per DRB per cell. The DRBs are mapped
+with the same 5QI for NR SA or mapped with the same QCI for EN-DC. This
+measurement refers to UEs for which there is data available for
+transmission for the UL for DRBs, or there is data available for
+transmission for the DL for DRBs, or both.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,drbid,p) = \frac{\left\lfloor
+\frac{\sum_{\forall i}^{}{N(i,drbid)}}{I(T,p)}*10
+\right\rfloor}{10}\)</span>, <img src="media/image4.png" />where</p>
+<p>explanations can be found in the table 4.2.1.3.8-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>NOTE: For this measurement, the expected accuracy is dependent on
+application scenario, cell load, UE configuration and how DRBs are
+distributed over logical channel groups.</p>
+<p>Table 4.2.1.3.8-2: Parameter description for Mean number of Active
+UEs per DRB per cell</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,drbid,p)\]</span></th>
+<th>Mean number of Active UEs per DRB per cell, averaged during time
+period <span class="math inline">\(T\)</span>. Unit: 0.1.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[N(i,drbid)\]</span></td>
+<td><p>Number of UEs for which there is data available for transmission
+for the UL or for the DL or for both in MAC or RLC protocol layers for a
+Data Radio Bearer of traffic class at sampling occasion <span
+class="math inline">\(i\)</span></p>
+<p>For UL, this is a gNB estimation that is expected to be based on
+Buffer Status Reporting, provided configured grants and progress of
+ongoing HARQ transmissions (by including data for which HARQ
+transmission has not yet terminated). In addition, the gNB can use the
+analysis of received data in the estimation. In such case, when DRB
+cannot be determined at the time of the sampling occasion, gNB can
+determine DRB after successful reception of data.</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>Sampling occasion during time period <span
+class="math inline">\(T\)</span>. A sampling occasion shall occur once
+every <span class="math inline">\(p\)</span> seconds.</td>
+</tr>
+<tr>
+<td><span class="math display">\[p\]</span></td>
+<td>Sampling period length. Unit: second. The sampling period shall be
+at most 0.1 s.</td>
+</tr>
+<tr>
+<td><span class="math display">\[I(T,p)\]</span></td>
+<td>Total number of sampling occasions during time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed, Unit:
+second.</td>
+</tr>
+<tr>
+<td><span class="math display">\[drbid\]</span></td>
+<td>The DRBs mapped with the same 5QI for NR SA or mapped with the same
+QCI for EN-DC.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="max-number-of-active-ues-per-drb-per-cell">4.2.1.3.9 Max number
+of Active UEs per DRB per cell</h5>
+<p>Protocol Layer: MAC, RLC</p>
+<p>Table 4.2.1.3.9-1: Definition for Max number of Active UEs per DRB
+per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Maximum number of Active UEs per DRB per cell. The DRBs are
+mapped with the same 5QI for NR SA or mapped with the same QCI for
+EN-DC. This measurement refers to UEs for which there is data available
+for transmission for the UL for DRBs, or there is data available for
+transmission for the DL for DRBs, or both.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,drbid,p) = \max_{T}\left( N(i,drbid)
+\right)\)</span><img src="media/image3.png" />, where</p>
+<p>explanations can be found in the table 4.2.1.3.9-1 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<blockquote>
+<p>NOTE: For this measurement, the expected accuracy is dependent on
+application scenario, cell load, UE configuration and how DRBs are
+distributed over logical channel groups.</p>
+</blockquote>
+<p>Table 4.2.1.3.9-2: Parameter description for Max number of Active UEs
+per DRB per cell</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,drbid,p)\]</span></th>
+<th>Maximum number of Active UEs per DRB per cell, averaged during time
+period <span class="math inline">\(T\)</span>. Unit: Integer.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[N(i,drbid)\]</span></td>
+<td><p>Number of UEs for which there is data available for transmission
+for the UL or for the DL or for both in MAC or RLC protocol layers for a
+Data Radio Bearer of traffic class at sampling occasion <span
+class="math inline">\(i\)</span></p>
+<p>For UL, this is a gNB estimation that is expected to be based on
+Buffer Status Reporting, provided configured grants and progress of
+ongoing HARQ transmissions (by including data for which HARQ
+transmission has not yet terminated). In addition, the gNB can use the
+analysis of received data in the estimation. In such case, when DRB
+cannot be determined at the time of the sampling occasion, gNB can
+determine DRB after successful reception of data.</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>Sampling occasion during time period <span
+class="math inline">\(T\)</span>. A sampling occasion shall occur once
+every <span class="math inline">\(p\)</span> seconds.</td>
+</tr>
+<tr>
+<td><span class="math display">\[p\]</span></td>
+<td>Sampling period length. Unit: second. The sampling period shall be
+at most 0.1 s.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed, Unit:
+second.</td>
+</tr>
+<tr>
+<td><span class="math display">\[drbid\]</span></td>
+<td>The DRBs mapped with the same 5QI for NR SA or mapped with the same
+QCI for EN-DC.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="number-of-stored-inactive-ue-contexts">4.2.1.4 Number of stored
+inactive UE contexts</h4>
+<h5 id="general-3">4.2.1.4.1 General</h5>
+<p>The objective of the measurement is to measure number of stored
+inactive UE contexts for OAM performance observability. It is intended
+to be part of indication about the memory consumption in a RAN node.</p>
+<p>The measurement is obtained by sampling at a pre-defined interval,
+the number of inactive UE contexts for each gNB and then taking the
+arithmetic mean or maximum value over pre-defined time duration.</p>
+<h5 id="mean-number-of-stored-inactive-ue-contexts">4.2.1.4.2 Mean
+number of stored inactive UE contexts</h5>
+<p>Protocol Layer: RRC</p>
+<p>Table 4.2.1.4.2-1: Definition for Mean number of stored inactive UE
+contexts</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Mean number of stored inactive UE contexts.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,p) = \left\lfloor \frac{\sum_{\forall
+i}^{}{N(i)}}{I(T,p)} \right\rfloor\)</span><img
+src="media/image5.png" />, where</p>
+<p>explanations can be found in the table 4.2.1.4.2-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.4.2-2: Parameter description for Mean number of stored
+inactive UE contexts</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,p)\]</span></th>
+<th>Mean number of stored Inactive UE contexts, averaged during time
+period <span class="math inline">\(T\)</span>. Unit: Integer.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[N(i)\]</span></td>
+<td>Number of inactive UE contexts stored in the gNB at sampling
+occasion <span class="math inline">\(i\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>Sampling occasion during time period <span
+class="math inline">\(T\)</span>. A sampling occasion shall occur once
+every <span class="math inline">\(p\)</span> seconds.</td>
+</tr>
+<tr>
+<td><span class="math display">\[p\]</span></td>
+<td>Sampling period length. Unit: second. The sampling period shall be
+at most 0.1 s.</td>
+</tr>
+<tr>
+<td><span class="math display">\[I(T,p)\]</span></td>
+<td>Total number of sampling occasions during time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed, Unit:
+second.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="max-number-of-stored-inactive-ue-contexts">4.2.1.4.3 Max number
+of stored inactive UE contexts</h5>
+<p>Protocol Layer: RRC</p>
+<p>Table 4.2.1.4.3-1: Definition for Max number of stored inactive UE
+contexts</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Maximum number of stored inactive UE contexts.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,p) = \ \max_{T}\left( N(i)
+\right)\)</span><img src="media/image7.png" />, where</p>
+<p>explanations can be found in the table 4.2.1.4.3-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.4.3-2: Parameter description for Max number of stored
+inactive UE contexts</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,p)\]</span></th>
+<th>Maximum number of stored Inactive UE contexts sampled during time
+period <span class="math inline">\(T\)</span>. Unit: Integer.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[N(i)\]</span></td>
+<td>Number of inactive UE contexts stored in the gNB at sampling
+occasion <span class="math inline">\(i\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>Sampling occasion during time period <span
+class="math inline">\(T\)</span>. A sampling occasion shall occur once
+every <span class="math inline">\(p\)</span> seconds.</td>
+</tr>
+<tr>
+<td><span class="math display">\[p\]</span></td>
+<td>Sampling period length. Unit: second. The sampling period shall be
+at most 0.1 s.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed, Unit:
+second.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="packet-loss-rate">4.2.1.5 Packet Loss Rate</h4>
+<h5 id="packet-uu-loss-rate-in-the-dl-per-drb-per-ue">4.2.1.5.1 Packet
+Uu Loss Rate in the DL per DRB per UE</h5>
+<p>The objective of this measurement is to measure packets that are lost
+at Uu transmission, for OAM performance observability or for QoS
+verification of MDT.</p>
+<p>Protocol Layer: RLC</p>
+<p>Table 4.2.1.5.1-1: Definition for Packet Uu Loss Rate in the DL per
+DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Uu Packet Loss Rate in the DL per DRB per UE. One packet
+corresponds to one RLC SDU. The measurement is done separately per
+DRB.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,drbid) = \left\lfloor
+\frac{Dloss(T,drbid)*1000000}{N(T,drbid) + Dloss(T,drbid)}
+\right\rfloor\)</span>, where</p>
+<p>explanations can be found in the table 4.2.1.5.1-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>NOTE 1: Packet loss is expected to be upper bounded by the PER
+(packet error rate, as defined in TS 23.501 [4]) of the DRB which takes
+values between 10<sup>-6</sup> and 10<sup>-2</sup>. The statistical
+accuracy of an individual packet loss rate measurement result is
+dependent on how many packets have been received, and thus the time for
+the measurement.</p>
+<p>NOTE 2: The granularity for Packet loss rate measurement is per DRB
+per UE, as defined in TS 28.552 [2].</p>
+<p>Table 4.2.1.5.1-2: Parameter description for Packet Uu Loss Rate in
+the DL per DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,drbid)\]</span></th>
+<th>Packet Loss Rate in the DL per DRB per UE. Unit: number of lost
+packets per transmitted packets per DRB * 10<sup>6</sup>, Integer.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[Dloss(T,drbid)\]</span></td>
+<td>Number of DL packets, of a data radio bearer with DRB Identity =
+<span class="math inline">\(drbid\)</span>, for which at least a part
+has been transmitted over the air but not positively acknowledged, and
+it was decided during time period <span class="math inline">\(T\)</span>
+that no more transmission attempts will be done. If transmission of a
+packet might continue in another cell, it shall not be included in this
+count.</td>
+</tr>
+<tr>
+<td><span class="math display">\[N(T,drbid)\]</span></td>
+<td>Number of DL packets, of a data radio bearer with DRB Identity =
+<span class="math inline">\(drbid\)</span>, which has been transmitted
+over the air and positively acknowledged during time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed, Unit:
+minutes.</td>
+</tr>
+<tr>
+<td><span class="math display">\[drbid\]</span></td>
+<td>The identity of the measured DRB.</td>
+</tr>
+</tbody>
+</table>
+<h5
+id="packet-uu-loss-rate-with-delay-threshold-in-the-dl-per-drb-per-ue">4.2.1.5.2
+Packet Uu Loss Rate with delay threshold in the DL per DRB per UE</h5>
+<p>The objective of this measurement is to measure the DL packets loss
+including any packets not successfully transmitted or packets
+successfully received but delayed more than a delay threshold at Uu
+transmission, for OAM performance observability or for QoS verification
+of MDT.</p>
+<p>Protocol Layer: RLC</p>
+<p>Table 4.2.1.5.2-1: Definition for Packet Uu Loss Rate with delay
+threshold in the DL per DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Uu Packet Loss Rate with delay threshold in the DL per DRB per
+UE: One packet corresponds to one RLC SDU. The measurement is done
+separately per DRB.</p>
+<p>Detailed definition:</p>
+<p><span class="math display">\[M\_ dt(T,drbid) = \left\lfloor
+\frac{\lbrack Dloss(T,drbid) + Dexd(T,\ drbid)\rbrack*1000000}{N\_
+dt(T,drbid) + Dloss(T,drbid) + Dexd(T,\ drbid)}
+\right\rfloor\]</span></p>
+<p>Where explanations can be found in the table 4.2.1.5.2-2
+below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>NOTE 1: Packet loss rate with delay threshold can be used when the
+resource type of corresponding QoS Flow is Delay-critical GBR. It is
+expected to be upper bounded by the PER (packet error rate, as defined
+in TS 23.501[4]) of the DRB which takes values between 10<sup>-6</sup>
+and 10<sup>-2</sup>. The statistical accuracy of an individual packet
+loss rate measurement result is dependent on how many packets have been
+received, and thus the time for the measurement.</p>
+<p>NOTE 2: Delay threshold of this measurement can be determined by NW
+implementation (e.g. configured by OAM).</p>
+<p>NOTE 3: The granularity for Packet loss rate measurement with delay
+threshold is per DRB per UE.</p>
+<p>Table 4.2.1.5.2-2: Parameter description for Packet Uu Loss Rate with
+delay threshold in the DL per DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M\_ dt(T,drbid)\]</span></th>
+<th><p>Packet Loss Rate with delay threshold in the DL per DRB per UE.
+Unit: number of lost packets per transmitted packets per DRB *
+10<sup>6</sup>, Integer.</p>
+<p>Lost packets here means the packets that delayed more than delay
+threshold or not successfully transmitted.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[Dloss(T,drbid)\]</span></td>
+<td>Number of DL packets, of a data radio bearer with DRB Identity =
+<span class="math inline">\(drbid\)</span>, for which at least a part
+has been transmitted over the air but not positively acknowledged, and
+it was decided during time period <span class="math inline">\(T\)</span>
+that no more transmission attempts will be done. If transmission of a
+packet might continue in another cell, it shall not be included in this
+count.</td>
+</tr>
+<tr>
+<td><span class="math display">\[Dexd(T,drbid)\]</span></td>
+<td><p>Number of DL packets, of a data radio bearer with DRB Identity =
+<span class="math inline">\(drbid\)</span>, for which is transmitted
+over air interface and positively acknowledged but the DL delay of the
+RLC SDU is more than corresponding delay threshold during time period
+T.</p>
+<p>The DL delay of a RLC SDU is calculated as follows "point in time
+when the last part of an RLC SDU packet was sent to the UE which was
+consequently confirmed by reception of HARQ ACK from UE for UM mode or
+point in time when the last part of an RLC SDU packet was sent to the UE
+which was consequently confirmed by reception of RLC ACK for AM mode,
+minus time when corresponding RLC SDU part arriving at MAC layer".</p>
+<p>The delay threshold is as defined in Note 2.</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[N\_ dt(T,drbid)\]</span></td>
+<td><p>Number of DL packets, of a data radio bearer with DRB Identity =
+<span class="math inline">\(drbid\)</span>, which has been transmitted
+over the air and positively acknowledged and delayed no more than the
+corresponding delay threshold during time period <span
+class="math inline">\(T\)</span>.</p>
+<p>The delay threshold is as defined in Note 2.</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed, Unit:
+minutes.</td>
+</tr>
+<tr>
+<td><span class="math display">\[drbid\]</span></td>
+<td>The identity of the measured DRB.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="other-measurements-defined-in-ts-28.552-2">4.2.1.6 Other
+measurements defined in TS 28.552 [2]</h4>
+<p>The granularity for PDCP SDU Data Volume measurement defined in TS
+28.552 [2] is per DRB per UE.</p>
+<p>The granularity for Average UE throughput measurement defined in TS
+28.552 [2] is per UE and per DRB per UE.</p>
+<p>PRB usage measurements are defined in TS 28.552 [2], i.e. DL/UL Total
+PRB Usage, Distribution of DL/UL Total PRB Usage. M(T), M1(T), P(T) are
+measured per cell. P(T) is the total available PRBs for this cell. M1(T)
+is the PRBs used for traffic transmission in this cell. Counting unit
+for PRB usage measurement is 1 Resource Block x 1 symbol. (1 Resource
+Block = 12 sub-carrier).</p>
+<p>4.2.1.7 PRB Usage for MIMO</p>
+<p>4.2.1.7.1 PDSCH PRB Usage for MIMO in the DL per cell</p>
+<p>This measurement provides the total usage (in percentage) of PDSCH
+physical resource blocks (PRBs) for MIMO in the downlink per cell. The
+objective of the measurement is to measure usage of time and frequency
+resources. A use-case is OAM performance observability.</p>
+<p>Protocol Layer: MAC, PHY</p>
+<p>Table 4.2.1.7.1-1: Definition for PDSCH PRB Usage for MIMO in the DL
+per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>PDSCH PRB Usage for MIMO in the DL per cell is calculated in the
+time-frequency domain.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T) = \left\lfloor \frac{\sum_{\forall
+i}^{}{\sum_{\forall j}^{}{\{{M1}_{ij}(T)*L_{ij}(T)\}}}}{\sum_{\forall
+j}^{}{\{ P_{j}(T)\}}*Alpha}*100 \right\rfloor,\ \)</span>where</p>
+<p>explanations can be found in the table 4.2.1.7.1-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.7.1-2: Parameter description for PDSCH PRB Usage for MIMO
+in the DL per cell</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T)\]</span></th>
+<th>Total PDSCH PRB usage per cell which is percentage of PRBs used,
+averaged during time period <span class="math inline">\(T\)</span> with
+integer value range: 0-100</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[{M1}_{ij}(T)\]</span></td>
+<td><p>A count of PDSCH PRBs used for traffic transmission for UE <span
+class="math inline">\(i\)</span> on single MIMO layer per cell at
+sampling occasion <span class="math inline">\(j\)</span>.</p>
+<p>Counting unit for PRB is 1 Resource Block x 1 symbol. (1 Resource
+Block = 12 sub-carrier)</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[L_{ij}(T)\]</span></td>
+<td>The number of MIMO layers scheduled for UE <span
+class="math inline">\(i\)</span> at sampling occasion <span
+class="math inline">\(j\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>A UE <span class="math inline">\(i\)</span> that is scheduled during
+time period 𝑇.</td>
+</tr>
+<tr>
+<td><span class="math display">\[j\]</span></td>
+<td>Sampling occasion during time period T. A sampling occasion is 1
+symbol.</td>
+</tr>
+<tr>
+<td><span class="math display">\[P_{j}(T)\]</span></td>
+<td>Total number of PDSCH PRBs available for sampling occasion j on
+single MIMO layer per cell.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed.</td>
+</tr>
+<tr>
+<td><span class="math display">\[Alpha\]</span></td>
+<td>Constant value configured by OAM with float value range:
+1.00-100.00. With this parameter, <span
+class="math inline">\(M(T)\)</span> should not be larger than 100.</td>
+</tr>
+</tbody>
+</table>
+<p>4.2.1.7.2 PUSCH PRB Usage for MIMO in the UL per cell</p>
+<p>This measurement provides the total usage (in percentage) of PUSCH
+physical resource blocks (PRBs) for MIMO in the uplink per cell. The
+objective of the measurement is to measure usage of time and frequency
+resources. A use-case is OAM performance observability.</p>
+<blockquote>
+<p>Protocol Layer: MAC, PHY</p>
+</blockquote>
+<p>Table 4.2.1.7.2-1: Definition for PUSCH PRB Usage for MIMO in the UL
+per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>PUSCH PRB Usage for MIMO in the UL per cell is calculated in the
+time-frequency domain.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T) = \left\lfloor \frac{\sum_{\forall
+i}^{}{\sum_{\forall j}^{}{\{{M1}_{ij}(T)*L_{ij}(T)\}}}}{\sum_{\forall
+j}^{}{\{ P_{j}(T)\}}*Alpha}*100 \right\rfloor,\ \)</span>where</p>
+<p>explanations can be found in the table 4.2.1.7.2-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.7.2-2: Parameter description for PUSCH PRB Usage for MIMO
+in the UL per cell</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T)\]</span></th>
+<th>Total PUSCH PRB usage per cell which is percentage of PRBs used,
+averaged during time period <span class="math inline">\(T\)</span> with
+integer value range: 0-100</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[{M1}_{ij}(T)\]</span></td>
+<td><p>A count of PUSCH PRBs scheduled for traffic transmission for UE
+<span class="math inline">\(i\)</span> on single MIMO layer per cell at
+sampling occasion <span class="math inline">\(j\)</span>.</p>
+<p>Counting unit for PRB is 1 Resource Block x 1 symbol. (1 Resource
+Block = 12 sub-carrier)</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[L_{ij}(T)\]</span></td>
+<td>The number of MIMO layers scheduled for UE <span
+class="math inline">\(i\)</span> at sampling occasion <span
+class="math inline">\(j\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>A UE that is scheduled during time period 𝑇.</td>
+</tr>
+<tr>
+<td><span class="math display">\[j\]</span></td>
+<td>Sampling occasion during time period T. A sampling occasion is 1
+symbol.</td>
+</tr>
+<tr>
+<td><span class="math display">\[P_{j}(T)\]</span></td>
+<td>Total number of PUSCH PRBs available for sampling occasion j on
+single MIMO layer per cell.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed.</td>
+</tr>
+<tr>
+<td><span class="math display">\[Alpha\]</span></td>
+<td>Constant value configured by OAM with float value range:
+1.00-100.00. With this parameter, <span
+class="math inline">\(M(T)\)</span> should not be larger than 100.</td>
+</tr>
+</tbody>
+</table>
+<h5
+id="pdsch-prb-usage-based-on-statistical-mimo-layer-in-the-dl-per-cell">4.2.1.7.3
+PDSCH PRB Usage based on statistical MIMO layer in the DL per cell</h5>
+<p>This measurement provides the total usage (in percentage) of PDSCH
+physical resource blocks (PRBs) for statistical MIMO layer per cell. The
+objective of the measurement is to measure usage of time and frequency
+resources. A use-case is OAM performance observability.</p>
+<p>Protocol Layer: MAC, PHY</p>
+<p>Table 4.2.1.7.3-1: Definition for PDSCH PRB Usage based on
+statistical MIMO layer in the DL per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>PDSCH PRB Usage based on statistical MIMO layer in the DL per
+cell is calculated in the time-frequency domain.</p>
+<p>Detailed Definition:</p>
+<p><span class="math display">\[M(T1) = \left\lfloor \frac{\sum_{\forall
+i}^{}{\sum_{\forall j}^{}{\{{M1}_{ij}(T1)*L_{ij}(T1)\}}}}{\sum_{\forall
+j}^{}{\{ P_{j}(T1)\}}*\beta}*100 \right\rfloor\]</span></p>
+<p><span class="math display">\[\beta =
+\max_{T2}{LaveDL(T)}\]</span></p>
+<p>explanations can be found in the table 4.2.1.7.3-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.7.3-2: Parameter description for PDSCH PRB Usage based on
+statistical MIMO layer in the DL per cell</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T1)\]</span></th>
+<th>Total PDSCH PRB usage per cell which is percentage of PRBs used,
+averaged during time period <span class="math inline">\(T1\)</span> with
+integer value.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[{M1}_{ij}(T1)\]</span></td>
+<td><p>A count of PDSCH PRBs used for traffic transmission for UE <span
+class="math inline">\(i\)</span> on single MIMO layer per cell at
+sampling occasion <span class="math inline">\(j\)</span>.</p>
+<p>Counting unit for PRB is 1 Resource Block x 1 symbol. (1 Resource
+Block = 12 sub-carrier)</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[L_{ij}(T1)\]</span></td>
+<td>The number of MIMO layers scheduled for UE <span
+class="math inline">\(i\)</span> at sampling occasion <span
+class="math inline">\(j\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>A UE <span class="math inline">\(i\)</span> that is scheduled during
+time period 𝑇1.</td>
+</tr>
+<tr>
+<td><span class="math display">\[j\]</span></td>
+<td>Sampling occasion during time period T1. A sampling occasion is 1
+symbol.</td>
+</tr>
+<tr>
+<td><span class="math display">\[P_{j}(T1)\]</span></td>
+<td>Total number of PDSCH PRBs available for sampling occasion j on
+single MIMO layer per cell.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T1\]</span></td>
+<td>Time period during which the measurement is performed to calculate
+<span class="math inline">\(M(T1)\)</span>, e.g., 15min, 1 hour,
+etc.</td>
+</tr>
+<tr>
+<td><span class="math display">\[\beta\]</span></td>
+<td>A variable factor for MIMO layer assigned with the maximum <span
+class="math inline">\(LaveDL\)</span> during time period T2 with float
+value 1.00-100.00.</td>
+</tr>
+<tr>
+<td><span class="math display">\[LaveDL(T)\]</span></td>
+<td>Average value of scheduled MIMO layers per PRB on the DL during time
+perior T with float value 1.00-100.00, as defined in TS 28.552 [2].</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time period during which the measurement is performed to calculate
+<span class="math inline">\(LaveDL(T)\)</span>, as defined in TS 28.552
+[2].</td>
+</tr>
+<tr>
+<td><span class="math display">\[T2\]</span></td>
+<td>Time period during which the measurement is performed to calculate
+β, e.g., 1 week, etc.</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE: For this measurement, same β value is used for the entire
+duration of T1.</p>
+<h5
+id="pusch-prb-usage-based-on-statistical-mimo-layer-in-the-ul-per-cell">4.2.1.7.4
+PUSCH PRB Usage based on statistical MIMO layer in the UL per cell</h5>
+<p>This measurement provides the total usage (in percentage) of PUSCH
+physical resource blocks (PRBs) for statistical MIMO layer in the uplink
+per cell. The objective of the measurement is to measure usage of time
+and frequency resources. A use-case is OAM performance
+observability.</p>
+<p>Protocol Layer: MAC, PHY</p>
+<p>Table 4.2.1.7.4-1: Definition for PUSCH PRB Usage based on
+statistical MIMO layer in the UL per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>PUSCH PRB Usage based on statistical MIMO layer in the UL per
+cell is calculated in the time-frequency domain.</p>
+<p>Detailed Definition:</p>
+<p><span class="math display">\[M(T1) = \left\lfloor \frac{\sum_{\forall
+i}^{}{\sum_{\forall j}^{}{\{{M1}_{ij}(T1)*L_{ij}(T1)\}}}}{\sum_{\forall
+j}^{}{\{ P_{j}(T1)\}}*\beta}*100 \right\rfloor\]</span></p>
+<p><span class="math display">\[\beta =
+\max_{T2}{LaveUL(T)}\]</span></p>
+<p>explanations can be found in the table 4.2.1.7.4-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.7.4-2: Parameter description for PUSCH PRB Usage based on
+statistical MIMO layer in the UL per cell</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T1)\]</span></th>
+<th>Total PUSCH PRB usage per cell which is percentage of PRBs used,
+averaged during time period <span class="math inline">\(T1\)</span> with
+integer value.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[{M1}_{ij}(T1)\]</span></td>
+<td><p>A count of PUSCH PRBs used for traffic transmission for UE <span
+class="math inline">\(i\)</span> on single MIMO layer per cell at
+sampling occasion <span class="math inline">\(j\)</span>.</p>
+<p>Counting unit for PRB is 1 Resource Block x 1 symbol. (1 Resource
+Block = 12 sub-carrier)</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[L_{ij}(T1)\]</span></td>
+<td>The number of MIMO layers scheduled for UE <span
+class="math inline">\(i\)</span> at sampling occasion <span
+class="math inline">\(j\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>A UE <span class="math inline">\(i\)</span> that is scheduled during
+time period 𝑇1.</td>
+</tr>
+<tr>
+<td><span class="math display">\[j\]</span></td>
+<td>Sampling occasion during time period T1. A sampling occasion is 1
+symbol.</td>
+</tr>
+<tr>
+<td><span class="math display">\[P_{j}(T1)\]</span></td>
+<td>Total number of PUSCH PRBs available for sampling occasion j on
+single MIMO layer per cell.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T1\]</span></td>
+<td>Time period during which the measurement is performed to calculate
+M(T1), e.g., 15min, 1 hour, etc.</td>
+</tr>
+<tr>
+<td><span class="math display">\[\beta\]</span></td>
+<td>A variable factor for MIMO layer assigned with the maximum <span
+class="math inline">\(LaveUL\)</span> during time period T2 with float
+value 1.00-100.00.</td>
+</tr>
+<tr>
+<td><span class="math display">\[LaveUL(T)\]</span></td>
+<td>Average value of scheduled MIMO layers per PRB on the UL during time
+perior T with float value 1.00-100.00, as defined in TS 28.552 [2].</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time period during which the measurement is performed to calculate
+<span class="math inline">\(LaveUL(T)\)</span>, as defined in TS 28.552
+[2].</td>
+</tr>
+<tr>
+<td><span class="math display">\[T2\]</span></td>
+<td>Time period during which the measurement is performed to calculate
+β, e.g., 1 week, etc.</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE: For this measurement, same β value is used for the entire
+duration of T1.</p>
+<h5 id="enhanced-pdsch-prb-usage-for-mimo-in-the-dl-per-cell">4.2.1.7.5
+Enhanced PDSCH PRB Usage for MIMO in the DL per cell</h5>
+<p>This measurement provides the total usage (in percentage) of PDSCH
+physical resource blocks (PRBs) for MIMO in the downlink per cell. The
+objective of the measurement is to measure usage of time, frequency and
+spatial resources. A use-case is OAM performance observability.</p>
+<p>Protocol Layer: MAC, PHY</p>
+<p>Table 4.2.1.7.5-1: Definition for enhanced PDSCH PRB Usage for MIMO
+in the DL per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>PDSCH PRB Usage for MIMO in the DL per cell is calculated in the
+time-frequency and spatial domain.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T) = \left\{ \begin{array}{r}
+\left\lfloor \frac{\sum_{\forall i}^{}{\sum_{\forall j}^{}\left\{
+{M1}_{ij}(T)*L_{ij}(T) \right\}}}{\sum_{\forall j}^{}\left\{ P_{j}(T)
+\right\}*LM(T)}*100 \right\rfloor\ and\ LM(T) =
+\frac{\sum_{j}^{}{{Lmax}_{j}(T)}}{K(T)};if\ K(T) \neq 0\ \  \\
+0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Otherwise
+\end{array} \right.\ ,\ \)</span>where</p>
+<p><span class="math display">\[K(T) = \sum_{j,{Lmax}_{j(T)} \neq
+0}^{}1\]</span></p>
+<p>explanations can be found in the table 4.2.1.7.5-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.7.5-2: Parameter description for enhanced PDSCH PRB Usage
+for MIMO in the DL per cell</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T)\]</span></th>
+<th>Total PDSCH PRB usage per cell which is percentage of PRBs used,
+averaged during time period <span class="math inline">\(T\)</span> with
+integer value range: 0-100</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[{M1}_{ij}(T)\]</span></td>
+<td><p>A count of PDSCH PRBs used for traffic transmission for UE <span
+class="math inline">\(i\)</span> on single MIMO layer per cell at
+sampling occasion <span class="math inline">\(j\)</span>.</p>
+<p>Counting unit for PRB is 1 Resource Block x 1 symbol. (1 Resource
+Block = 12 sub-carrier)</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[L_{ij}(T)\]</span></td>
+<td>The number of MIMO layers scheduled for UE <span
+class="math inline">\(i\)</span> at sampling occasion <span
+class="math inline">\(j\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>A UE <span class="math inline">\(i\)</span> that is scheduled during
+time period 𝑇.</td>
+</tr>
+<tr>
+<td><span class="math display">\[j\]</span></td>
+<td>Sampling occasion during time period T. A sampling occasion is 1
+symbol.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time period during which the measurement is performed.</td>
+</tr>
+<tr>
+<td><span class="math display">\[P_{j}(T)\]</span></td>
+<td>Total number of PDSCH PRBs available for sampling occasion j on
+single MIMO layer per cell.</td>
+</tr>
+<tr>
+<td><span class="math display">\[LM(T)\]</span></td>
+<td>PDSCH Time-domain average of the Maximum Scheduled Layer Number of
+the cell for MIMO scenario during time period T, defined in TS 28.552
+[2].</td>
+</tr>
+<tr>
+<td><span class="math display">\[{Lmax}_{j}(T)\]</span></td>
+<td>The maximum number of scheduling layer of PDSCH at sampling occasion
+j;</td>
+</tr>
+<tr>
+<td><span class="math display">\[K(T)\]</span></td>
+<td>The number of sampling occasions at which <span
+class="math inline">\({Lmax}_{j}(T)\)</span>is not 0.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="enhanced-pusch-prb-usage-for-mimo-in-the-ul-per-cell">4.2.1.7.6
+Enhanced PUSCH PRB Usage for MIMO in the UL per cell</h5>
+<p>This measurement provides the total usage (in percentage) of PUSCH
+physical resource blocks (PRBs) for MIMO in the uplink per cell. The
+objective of the measurement is to measure usage of time, frequency and
+spatial resources. A use-case is OAM performance observability.</p>
+<blockquote>
+<p>Protocol Layer: MAC, PHY</p>
+</blockquote>
+<p>Table 4.2.1.7.6-1: Definition for enhanced PUSCH PRB Usage for MIMO
+in the UL per cell</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>PUSCH PRB Usage for MIMO in the UL per cell is calculated in the
+time-frequency and spatial domain.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T) = \left\{ \begin{array}{r}
+\left\lfloor \frac{\sum_{\forall i}^{}{\sum_{\forall j}^{}\left\{
+{M1}_{ij}(T)*L_{ij}(T) \right\}}}{\sum_{\forall j}^{}\left\{ P_{j}(T)
+\right\}*LM(T)}*100 \right\rfloor\ and\ LM(T) =
+\frac{\sum_{j}^{}{{Lmax}_{j}(T)}}{K(T)};if\ K(T) \neq 0\ \  \\
+0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Otherwise
+\end{array} \right.\ ,\ \)</span>where</p>
+<p><span class="math display">\[K(T) = \sum_{j,{Lmax}_{j(T)} \neq
+0}^{}1\]</span></p>
+<p>explanations can be found in the table 4.2.1.7.6-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.7.6-2: Parameter description for enhanced PUSCH PRB Usage
+for MIMO in the UL per cell</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T)\]</span></th>
+<th>Total PUSCH PRB usage per cell which is percentage of PRBs used,
+averaged during time period <span class="math inline">\(T\)</span> with
+integer value range: 0-100</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[{M1}_{ij}(T)\]</span></td>
+<td><p>A count of PUSCH PRBs scheduled for traffic transmission for UE
+<span class="math inline">\(i\)</span> on single MIMO layer per cell at
+sampling occasion <span class="math inline">\(j\)</span>.</p>
+<p>Counting unit for PRB is 1 Resource Block x 1 symbol. (1 Resource
+Block = 12 sub-carrier)</p></td>
+</tr>
+<tr>
+<td><span class="math display">\[L_{ij}(T)\]</span></td>
+<td>The number of MIMO layers scheduled for UE <span
+class="math inline">\(i\)</span> at sampling occasion <span
+class="math inline">\(j\)</span>.</td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>A UE that is scheduled during time period 𝑇.</td>
+</tr>
+<tr>
+<td><span class="math display">\[j\]</span></td>
+<td>Sampling occasion during time period T. A sampling occasion is 1
+symbol.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time period during which the measurement is performed.</td>
+</tr>
+<tr>
+<td><span class="math display">\[P_{j}(T)\]</span></td>
+<td>Total number of PUSCH PRBs available for sampling occasion j on
+single MIMO layer per cell.</td>
+</tr>
+<tr>
+<td><span class="math display">\[LM(T)\]</span></td>
+<td>PUSCH Time-domain average of the Maximum Scheduled Layer Number of
+the cell for MIMO scenario during time period T, defined in TS 28.552
+[2].</td>
+</tr>
+<tr>
+<td><span class="math display">\[{Lmax}_{j}(T)\]</span></td>
+<td>The maximum number of scheduling layer of PUSCH at sampling occasion
+<em>j</em>;</td>
+</tr>
+<tr>
+<td><span class="math display">\[K(T)\]</span></td>
+<td>The number of sampling occasions at which <span
+class="math inline">\({Lmax}_{j}(T)\)</span>is not 0.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="number-of-pdcp-packets-in-split-drb-scenario">4.2.1.8 Number of
+PDCP Packets in Split-DRB Scenario</h4>
+<h5
+id="number-of-pdcp-non-duplicated-packets-per-cell-group-per-split-drb-per-ue">4.2.1.8.1
+Number of PDCP Non-duplicated Packets per cell group per Split-DRB per
+UE</h5>
+<p>The objective of this measurement is to calculate number of PDCP
+non-duplicated packets sent per cell group per UE per split DRB, for QoS
+verification of MDT.</p>
+<p>Protocol layer: PDCP</p>
+<p>Table 4.2.1.8.1-1: Definition for total number of PDCP non-duplicated
+packets per CG per Split-DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Total number of PDCP non-duplicated packet sent over per cell
+groups per DRB per UE. This measurement is applicable for EN-DC and SA.
+This measurement provides the total number of PDCP non-duplicated
+packets sent over per cell groups.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(I(T,drbid) =\)</span>| <em>P(T,
+drbid)</em>|, where</p>
+<p>explanations can be found in the table 4.2.1.8.1-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.8.1-2: Parameter description for total number of PDCP
+non-duplicated packets per CG per Split-DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[I(T,drbid)\]</span></th>
+<th>Total number of PDCP non-duplicated packets sent per CG per DRB per
+UE during the time period <span class="math inline">\(T\)</span>.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>P(T, drbid)</em></td>
+<td>A set of PDCP non duplicated packets sent per CG per UE per split
+DRB during the time period <em>T</em>.</td>
+</tr>
+<tr>
+<td>|<em>P(T, drbid)</em>|</td>
+<td>Cardinality of the set P.</td>
+</tr>
+</tbody>
+</table>
+<h5
+id="number-of-pdcp-duplicated-packets-per-split-drb-per-ue">4.2.1.8.2
+Number of PDCP duplicated Packets per Split-DRB per UE</h5>
+<p>The objective of this measurement is to calculate number of PDCP
+duplicated packets per cell group per UE per split DRB, for QoS
+verification of MDT.</p>
+<p>Protocol layer: PDCP</p>
+<p>Table 4.2.1.8.2-1: Definition for total number of PDCP duplicated
+packets per Split-DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Total number of PDCP duplicated packet sent per Split-DRB per UE.
+This measurement is applicable for EN-DC and SA. This measurement
+provides the total number of PDCP duplicated packets sent over per
+DRB.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(I(T,drbid) =\)</span>|<em>P(T,
+drbid)</em>|, where</p>
+<p>explanations can be found in the table 4.2.1.8.1-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.8.2-2: Parameter description for total number of PDCP
+duplicated packets per Split-DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[I(T,drbid)\]</span></th>
+<th>Total number of PDCP duplicated packets sent per Split-DRB per UE
+during the time period <span class="math inline">\(T\)</span>.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>P(T, drbid)</em></td>
+<td>A set of PDCP duplicated packets sent per split DRB per UE during
+the time period <em>T</em>.</td>
+</tr>
+<tr>
+<td>|<em>P(T, drbid)</em>|</td>
+<td>Cardinality of the set P.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="total-ran-delay-in-split-drb-scenario">4.2.1.9 Total RAN Delay
+in Split-DRB Scenario</h4>
+<h5
+id="dl-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-enabled-for-entire-measurement-period">4.2.1.9.1
+DL Delay Calculation per Split-DRB per UE when PDCP duplication is
+enabled for entire measurement period</h5>
+<p>The objective of this measurement is to calculate total DL RAN delay
+per split-DRB per UE when PDCP duplication is enabled for the entire
+measurement period, for QoS verification of MDT or for the QoS
+monitoring as defined in TS 23.501 [4].</p>
+<p>Protocol layer: PDCP</p>
+<p>Table 4.2.1.9.1-1: Definition for total DL delay for DL PDCP
+duplicated packets per Split-DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Total DL delay for DL PDCP duplicated packets per Split-DRB per
+UE. This measurement is applicable for EN-DC and SA. This measurement
+provides the total DL delay for a Split-DRB when PDCP duplication is
+enabled for the entire measurement period.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M\_ DL(T,drbid) = \min{({M\_
+DL}_{MCG}(T,drbid)\ ,\ {M\_ DL}_{SCG}(T,drbid))}\)</span>, where
+explanations can be found in the table 4.2.1.9.1-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.9.1-2: Parameter description for total DL delay for DL
+PDCP duplicated packets per Split-DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="math display">\[M\_
+DL(T,drbid)\]</span></th>
+<th>Total DL Delay per Split-DRB per UE during the time period <span
+class="math inline">\(T\)</span>.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="math display">\[{M\_
+DL}_{MCG}(T,drbid)\]</span></td>
+<td>Total DL Delay on the MCG per split DRB per UE during the time
+period <span class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math display">\[{M\_
+DL}_{SCG}(T,drbid)\]</span></td>
+<td>Total DL Delay on the SCG per split DRB per UE during the time
+period <span class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math display">\[\min{({M\_
+DL}_{MCG}(T,drbid)\ ,\ {M\_ DL}_{SCG}(T,drbid))}\]</span></td>
+<td>Minimum of the total DL delays between MCG and SCG legs per
+Split-DRB per UE during the time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+</tbody>
+</table>
+<h5
+id="ul-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-enabled-for-entire-measurement-period">4.2.1.9.2
+UL Delay Calculation per Split-DRB per UE when PDCP duplication is
+enabled for entire measurement period</h5>
+<p>The objective of this measurement is to calculate total UL RAN delay
+per split-DRB per UE when PDCP duplication is enabled for the entire
+measurement period, for QoS verification of MDT or for the QoS
+monitoring as defined in TS 23.501 [4].</p>
+<p>Protocol layer: PDCP</p>
+<p>Table 4.2.1.9.2-1: Definition for total UL delay for UL PDCP
+duplicated packets per Split-DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Total UL delay for UL PDCP duplicated packets per Split-DRB per
+UE. This measurement is applicable for EN-DC and SA. This measurement
+provides the total UL delay for a Split-DRB when PDCP duplication is
+enabled for the entire measurement period.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M\_ UL(T,drbid) = \min{({M\_
+UL}_{MCG}(T,drbid)\ ,\ {M\_ UL}_{SCG}(T,drbid))}\)</span>, where
+explanations can be found in the table 4.2.1.9.2-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.9.2-2: Parameter description for total UL delay for UL
+PDCP duplicated packets per Split-DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="math display">\[M\_
+UL(T,drbid)\]</span></th>
+<th>Total UL Delay per Split-DRB per UE during the time period <span
+class="math inline">\(T\)</span>.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="math display">\[{M\_
+UL}_{MCG}(T,drbid)\]</span></td>
+<td>Total UL Delay on the MCG per split DRB per UE during the time
+period <span class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math display">\[{M\_
+UL}_{SCG}(T,drbid)\]</span></td>
+<td>Total UL Delay on the SCG per split DRB per UE during the time
+period <span class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math display">\[\min{({M\_
+UL}_{MCG}(T,drbid)\ ,\ {M\_ UL}_{SCG}(T,drbid))}\]</span></td>
+<td>Minimum of the total UL delays between MCG and SCG legs per
+Split-DRB per UE during the time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+</tbody>
+</table>
+<h5
+id="dl-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-not-enabled-for-entire-measurement-period">4.2.1.9.3
+DL Delay Calculation per Split-DRB per UE when PDCP duplication is not
+enabled for entire measurement period</h5>
+<p>The objective of this measurement is to calculate total DL RAN delay
+per split-DRB per UE when PDCP duplication is not enabled for the entire
+measurement period, for QoS verification of MDT or for the QoS
+monitoring as defined in TS 23.501 [4].</p>
+<p>Protocol layer: PDCP</p>
+<p>Table 4.2.1.9.3-1: Definition for total DL delay for DL PDCP
+non-duplicated packets per Split-DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Total DL delay for DL PDCP non-duplicated packets per Split-DRB
+per UE. This measurement is applicable for EN-DC and SA. This
+measurement provides the total DL delay for a Split-DRB when PDCP
+duplication is not enabled for the entire measurement period.</p>
+<p>Detailed Definition:</p>
+<p><span class="math display">\[M\_ DL(T,drbid) = \frac{{I\_
+DL}_{MCG}(T,drbid) \times {M\_ DL}_{MCG}(T,drbid) + {I\_
+DL}_{SCG}(T,drbid) \times {M\_ DL}_{SCG}(T,drbid)}{I\_
+DL(T,drbid)}\]</span></p>
+<p><span class="math inline">\(I\_ DL(T,drbid) = {I\_ DL}_{MCG}(T,drbid)
++ {I\_ DL}_{SCG}(T,drbid)\)</span>,</p>
+<p>where explanations can be found in the table 4.2.1.9.3-2
+below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.9.3-2: Parameter description for total DL delay for DL
+PDCP non-duplicated packets per Split-DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="math display">\[M\_
+DL(T,drbid)\]</span></th>
+<th>Total DL Delay per Split-DRB per UE during the time period <span
+class="math inline">\(T\)</span>.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="math display">\[{M\_
+DL}_{MCG}(T,drbid)\]</span></td>
+<td>Total DL Delay on the MCG per split DRB per UE during the time
+period <span class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math display">\[{M\_
+DL}_{SCG}(T,drbid)\]</span></td>
+<td>Total DL Delay on the SCG per split DRB per UE during the time
+period <span class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math display">\[I\_
+DL(T,drbid)\]</span></td>
+<td>Total number of DL PDCP non-duplicated packets sent per Split-DRB
+per UE during the time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math display">\[{I\_
+DL}_{MCG}(T,drbid)\]</span></td>
+<td>Total number of DL PDCP non-duplicated packets sent on the MCG leg
+per Split-DRB per UE during the time period <span
+class="math inline">\(T\)</span>, as defined in Table 4.2.1.8.1-1.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math display">\[{I\_
+DL}_{SCG}(T,drbid)\]</span></td>
+<td>Total number of DL PDCP non-duplicated packets sent on the SCG leg
+per Split-DRB per UE during the time period <span
+class="math inline">\(T\)</span>, as defined in Table 4.2.1.8.1-1.</td>
+</tr>
+</tbody>
+</table>
+<h5
+id="ul-delay-calculation-per-split-drb-per-ue-when-pdcp-duplication-is-not-enabled-for-entire-measurement-period">4.2.1.9.4
+UL Delay Calculation per Split-DRB per UE when PDCP duplication is not
+enabled for entire measurement period</h5>
+<p>The objective of this measurement is to calculate total UL RAN delay
+per split-DRB per UE when PDCP duplication is not enabled for the entire
+measurement period, for QoS verification of MDT or for the QoS
+monitoring as defined in TS 23.501 [4].</p>
+<p>Protocol layer: PDCP</p>
+<p>Table 4.2.1.9.4-1: Definition for total UL delay for UL PDCP
+non-duplicated packets per Split-DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>Total UL delay for UL PDCP non-duplicated packets per Split-DRB
+per UE. This measurement is applicable for EN-DC and SA. This
+measurement provides the total UL delay for a Split-DRB when PDCP
+duplication is not enabled for the entire measurement period.</p>
+<p>Detailed Definition:</p>
+<p><span class="math display">\[M\_ UL(T,drbid) = \frac{{I\_
+UL}_{MCG}(T,drbid) \times {M\_ UL}_{MCG}(T,drbid) + {I\_
+UL}_{SCG}(T,drbid) \times {M\_ UL}_{SCG}(T,drbid)}{I\_
+UL(T,drbid)}\]</span></p>
+<p><span class="math inline">\(I\_ UL(T,drbid) = {I\_ UL}_{MCG}(T,drbid)
++ {I\_ UL}_{SCG}(T,drbid)\)</span>,</p>
+<p>where explanations can be found in the table 4.2.1.9.4-2
+below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Table 4.2.1.9.4-2: Parameter description for total UL delay for UL
+PDCP non-duplicated packets per Split-DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="math display">\[M\_
+UL(T,drbid)\]</span></th>
+<th>Total UL Delay per Split-DRB per UE during the time period <span
+class="math inline">\(T\)</span>.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="math display">\[{M\_
+UL}_{MCG}(T,drbid)\]</span></td>
+<td>Total UL Delay on the MCG per split DRB per UE during the time
+period <span class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math display">\[{M\_
+UL}_{SCG}(T,drbid)\]</span></td>
+<td>Total UL Delay on the SCG per split DRB per UE during the time
+period <span class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math display">\[I\_
+UL(T,drbid)\]</span></td>
+<td>Total number of UL PDCP non-duplicated packets sent per Split-DRB
+per UE during the time period <span
+class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math display">\[{I\_
+UL}_{MCG}(T,drbid)\]</span></td>
+<td>Total number of UL PDCP non-duplicated packets sent on the MCG leg
+per Split-DRB per UE during the time period <span
+class="math inline">\(T\)</span>, as defined in Table 4.2.1.8.1-1.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math display">\[{I\_
+UL}_{SCG}(T,drbid)\]</span></td>
+<td>Total number of UL PDCP non-duplicated packets sent on the SCG leg
+per Split-DRB per UE during the time period <span
+class="math inline">\(T\)</span>, as defined in Table 4.2.1.8.1-1.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nr-measurements-performed-by-the-ue">4.3 NR measurements
+performed by the UE</h2>
+<h3 id="packet-delay-1">4.3.1 Packet delay</h3>
+<h4 id="ul-pdcp-packet-average-delay-per-drb-per-ue">4.3.1.1 UL PDCP
+Packet Average Delay per DRB per UE</h4>
+<p>The objective of this measurement performed by UE is to measure
+Packet Delay in Layer PDCP for QoS verification of MDT or for the QoS
+monitoring as defined in TS 23.501 [4].</p>
+<p>Protocol Layer: PDCP</p>
+<p>Table 4.3.1.1-1: Definition for UL PDCP Packet Average Delay per DRB
+per UE</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Definition</th>
+<th><p>PDCP Packet Delay in the UL per DRB. This measurement refers to
+PDCP queuing delay for DRBs in the UE, which captures the delay from
+packet arrival at PDCP upper SAP until the UL grant to transmit the
+packet is available, which has included the delay the UE gets resources
+granted (from sending SR/RACH to get the first grant). The measurement
+is done separately per DRB.</p>
+<p>Detailed Definition:</p>
+<p><span class="math inline">\(M(T,drbid) = \left\lfloor
+\frac{\sum_{\forall i}^{}{tDeliv(i,\ drbid) - tArrival(i,\
+drbid)}}{I(T)} \right\rfloor,\ \)</span>where</p>
+<p>explanations can be found in the table 4.3.1.1-2 below.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>NOTE: UE measures UL PDCP queueing delay at DRB level. It is up to
+gNB to convert DRB level delay to QoS level delay with the assumption
+that all QoS flows mapped to the same DRB get the same QoS treatment,
+and it is up to gNB to calculate QoS level delay if multiple DRBs mapped
+with the same QoS.</p>
+<p>Table 4.3.1.1-2: Parameter description for UL PDCP Packet Average
+Delay per DRB per UE</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,drbid)\]</span></th>
+<th><p>PDCP average delay in the UL per DRB, averaged during time period
+𝑇. Unit: 0.1 ms.</p>
+<p>PDCP average delay in the UL per DRB is 1s if the actual value is
+larger than 1s.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[tArrival(i)\]</span></td>
+<td>The point in time when the UL PDCP SDU i arrivals at PDCP upper
+SAP.</td>
+</tr>
+<tr>
+<td><span class="math display">\[tDeliv(i)\]</span></td>
+<td>The point in time when the UL MAC PDU k including the first part of
+UL PDCP SDU i is scheduled for transmission.</td>
+</tr>
+<tr>
+<td><span class="math display">\[i\]</span></td>
+<td>A UL PDCP SDU that is received by the PDCP during time period
+𝑇.</td>
+</tr>
+<tr>
+<td><span class="math display">\[I(T)\]</span></td>
+<td>Total number of UL PDCP SDUs received during time period 𝑇.</td>
+</tr>
+<tr>
+<td><span class="math display">\[T\]</span></td>
+<td>Time Period during which the measurement is performed</td>
+</tr>
+<tr>
+<td><span class="math display">\[drbid\]</span></td>
+<td>The identity of the measured DRB.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ul-pdcp-excess-packet-delay-per-drb">4.3.1.2 UL PDCP Excess
+Packet Delay per DRB</h4>
+<p>The objective of this measurement performed by UE is to measure
+Excess Packet Delay in Layer PDCP for QoS verification of MDT.</p>
+<p>Protocol Layer: PDCP</p>
+<p>Table 4.3.1.2-1: Definition for UL PDCP Excess Packet Delay per
+DRB</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Definition</td>
+<td><p>PDCP Excess Packet Delay in the UL per DRB. It represents the
+ratio of packets in UL per DRB exceeding the configured delay threshold
+among the UL PDCP SDUs received. The delay for each packet is calculated
+from packet arrival at PDCP upper SAP until the UL grant to transmit the
+packet is available, which has included the delay the UE gets resources
+granted (from sending SR/RACH to get the first grant). The measurement
+is done separately per DRB.</p>
+<p>Detailed Definition:</p>
+<p><span class="math display">\[M(T,drbid) =
+\frac{nExcess(T,drbid)}{nTotal(T,drbid)}\]</span></p>
+<p><span class="math inline">\(tULdelay(i,drbid) = tDeliv(i,drbid) -
+tArrival(i,drbid)\)</span>,where</p>
+<p>explanations can be found in the table 4.3.1.2-1 below.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.1.2-2</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math display">\[M(T,drbid)\]</span></th>
+<th>Ratio of packets in UL per DRB exceeding the configured delay
+threshold among the UL PDCP SDUs for which the UL MAC PDU including the
+first part of UL PDCP SDU is scheduled for transmission during the time
+period T.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[nExcess(T,drbid)\]</span></td>
+<td>Number of PDCP SDUs of a data radio bearer with DRB Identity = <span
+class="math inline">\(drbid\)</span>,for which ULdelay <span
+class="math inline">\(tULdelay(i,drbid)\)</span> exceeded the configured
+<em>delayThreshold</em> as defined in TS 38.331 [3] during the time
+period T.</td>
+</tr>
+<tr>
+<td><span class="math display">\[nTotal(T,drbid)\]</span></td>
+<td>Number of PDCP SDUs of a data radio bearer with DRB Identity = <span
+class="math inline">\(drbid\)</span>, for which the UL MAC PDU including
+the first part of UL PDCP SDU is scheduled for transmission during the
+time period T.</td>
+</tr>
+<tr>
+<td><span class="math display">\[tULdelay(i,drbid)\]</span></td>
+<td>Queuing delay observed at the UE PDCP layer from the UL PDCP SDU i
+belonging to a data radio bearer with DRB Identity = <span
+class="math inline">\(drbid\)</span> arrival at PDCP upper SAP until the
+UL MAC PDU k including the first part of UL PDCP SDU i is scheduled for
+transmission during the time period T.</td>
+</tr>
+<tr>
+<td><span class="math display">\[tDeliv(i,drbid)\]</span></td>
+<td>The point in time when the UL MAC PDU k including the first part of
+UL PDCP SDU i is scheduled for transmission.</td>
+</tr>
+<tr>
+<td><span class="math display">\[tArrival(i,drbid)\]</span></td>
+<td>The point in time when the UL PDCP SDU i arrivals at PDCP upper
+SAP.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math display">\[i\]</span></td>
+<td>Index of PDCP SDU that arrives at the PDCP upper SAP during time
+period <span class="math inline">\(T\)</span>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math display">\[T\]</span></td>
+<td>Time period during which the measurement is performed.</td>
+</tr>
+</tbody>
+</table>
+<h5
+id="measurement-report-mapping-for-pdcp-excess-packet-delay">4.3.1.2.1
+Measurement report mapping for PDCP Excess Packet Delay</h5>
+<p>UL PDCP excess packet delay shall be measured according to
+configuration as defined in TS 38.331 [3].</p>
+<p>The UE shall report UL PDCP excess packet delay as the ratio of SDUs
+exceeding the configured delay threshold and the total number of SDUs
+received by the UE during the measurement period.</p>
+<p>The reported PDCP excess packet delay ratio is mapped to 32 levels
+with the quantities in the range of 0 &lt; nExcess ≤ 100% with uniform
+quantization in the log domain.</p>
+<p>The mapping of measured quantity is defined in Table 4.3.1.2.1-1.</p>
+<p>Table 4.3.1.2.1-1: EXCESS DELAY measurement report mapping (5 –bit
+value)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 50%" />
+<col style="width: 15%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported value</td>
+<td>Measured quantity value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_00</td>
+<td>0 &lt; EXCESS DELAY RATIO ≤ 0,079</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_01</td>
+<td>0,079 &lt; EXCESS DELAY RATIO ≤ 0,100</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_02</td>
+<td>0,100 &lt; EXCESS DELAY RATIO ≤0,126</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_03</td>
+<td>0,126 &lt; EXCESS DELAY RATIO ≤ 0,158</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_04</td>
+<td>0,158 &lt; EXCESS DELAY RATIO ≤ 0,199</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_05</td>
+<td>0,199 &lt; EXCESS DELAY RATIO ≤ 0,251</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_06</td>
+<td>0,251 &lt; EXCESS DELAY RATIO ≤ 0,316</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_07</td>
+<td>0,316 &lt; EXCESS DELAY RATIO ≤ 0,398</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_08</td>
+<td>0,398 &lt; EXCESS DELAY RATIO ≤ 0,501</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_09</td>
+<td>0,501 &lt; EXCESS DELAY RATIO ≤ 0,631</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_10</td>
+<td>0,631 &lt; EXCESS DELAY RATIO ≤ 0,794</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_11</td>
+<td>0,794 &lt; EXCESS DELAY RATIO ≤ 1,000</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_12</td>
+<td>1,000 &lt; EXCESS DELAY RATIO ≤ 1,259</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_13</td>
+<td>1,259 &lt; EXCESS DELAY RATIO ≤ 1,585</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_14</td>
+<td>1,585 &lt; EXCESS DELAY RATIO ≤ 1,995</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_15</td>
+<td>1,995 &lt; EXCESS DELAY RATIO ≤ 2,511</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_16</td>
+<td>2,511 &lt; EXCESS DELAY RATIO ≤ 3,161</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_17</td>
+<td>3,161 &lt; EXCESS DELAY RATIO ≤ 3,980</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_18</td>
+<td>3,980 &lt; EXCESS DELAY RATIO ≤ 5,011</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_19</td>
+<td>5,011 &lt; EXCESS DELAY RATIO ≤ 6,309</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_20</td>
+<td>6,309 &lt; EXCESS DELAY RATIO ≤ 7,943</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_21</td>
+<td>7,943 &lt; EXCESS DELAY RATIO ≤ 10,00</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_22</td>
+<td>10,00 &lt; EXCESS DELAY RATIO ≤ 12,589</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_23</td>
+<td>12,589 &lt; EXCESS DELAY RATIO ≤ 15,849</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_24</td>
+<td>15,849 &lt; EXCESS DELAY RATIO ≤ 19,953</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_25</td>
+<td>19,953 &lt; EXCESS DELAY RATIO ≤ 25,119</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_26</td>
+<td>25,119 &lt; EXCESS DELAY RATIO ≤ 31,623</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_27</td>
+<td>31,623 &lt; EXCESS DELAY RATIO ≤ 39,811</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_28</td>
+<td>39,811 &lt; EXCESS DELAY RATIO ≤ 50,119</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_29</td>
+<td>50,119 &lt; EXCESS DELAY RATIO ≤ 63,096</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_30</td>
+<td>63,096 &lt; EXCESS DELAY RATIO ≤ 79,433</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EXCESS DELAY RATIO_31</td>
+<td>79,433 &lt; EXCESS DELAY RATIO ≤ 100</td>
+<td>%</td>
+</tr>
+</tbody>
+</table>
+<p class="heading" id="annex-a-informative-change-history"><br />
+Annex A (informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 50%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8">Change history</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date</strong></td>
+<td><strong>Meeting</strong></td>
+<td><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td><strong>Subject/Comment</strong></td>
+<td><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">2019-08</td>
+<td style="text-align: left;">RAN2#107</td>
+<td style="text-align: left;">R2-1909426</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td>Draft skeleton</td>
+<td style="text-align: left;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">2019-10</td>
+<td style="text-align: left;">RAN2#107bis</td>
+<td style="text-align: left;">R2-1912957</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td><p>Agreements from RAN2#107 on:</p>
+<p>- including the general reference to SA2 spec</p></td>
+<td style="text-align: left;">0.0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">2019-11</td>
+<td style="text-align: left;">RAN2#108</td>
+<td style="text-align: left;">R2-1915203</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td>Capture agreements from RAN2#107bis on received random access
+preambles, UL over-the-air transmission delay and number of UEs.</td>
+<td style="text-align: left;">0.0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020-02</td>
+<td style="text-align: left;">RAN2#109e</td>
+<td style="text-align: left;">R2-2000908</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td>Capture agreements from RAN2#108 on received random access preamble
+per SSB, delay measurements, packet loss rate.</td>
+<td style="text-align: left;">0.0.4</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020-03</td>
+<td style="text-align: left;">RAN2#109e</td>
+<td style="text-align: left;">R2-2002000</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td>Capture agreements from RAN2#109-e.</td>
+<td style="text-align: left;">0.0.5</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020-04</td>
+<td style="text-align: left;">RAN2#109bis-e</td>
+<td style="text-align: left;">R2-2003487</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td>Re-submission after RANP#87-e.</td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020-05</td>
+<td style="text-align: left;">RAN2#109bis-e</td>
+<td style="text-align: left;">R2-2003874</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td>Capture agreements from RAN2#109bis-e</td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020-05</td>
+<td style="text-align: left;">RAN2#110-e</td>
+<td style="text-align: left;">R2-2005434</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td>Update after email discussion [Post109bis-e][910][MDTSON] CR to
+38.314</td>
+<td style="text-align: left;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020-06</td>
+<td style="text-align: left;">RAN2#110-e</td>
+<td style="text-align: left;">R2-2006195</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td>Capture agreements from RAN2#110-e, including changes to 4.1.1.</td>
+<td style="text-align: left;">0.4.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020-06</td>
+<td style="text-align: left;">RAN2#110-e</td>
+<td style="text-align: left;">RP-200785</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td>Submitted to RAN#88-e for approval</td>
+<td style="text-align: left;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020-07</td>
+<td style="text-align: left;">RAN#88</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td>Approved and upgraded to Release 16</td>
+<td style="text-align: left;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020-09</td>
+<td style="text-align: left;">RP-89</td>
+<td style="text-align: left;">RP-201931</td>
+<td style="text-align: center;">0003</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">F</td>
+<td>Correction for L2M to capture agreements from [AT111-e][802] offline
+discussion</td>
+<td style="text-align: left;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020-12</td>
+<td style="text-align: left;">RP-90</td>
+<td style="text-align: left;">RP-202776</td>
+<td style="text-align: center;">0012</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">F</td>
+<td>Capture agreements and miscellaneous corrections for layer 2
+measurement</td>
+<td style="text-align: left;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2021-03</td>
+<td style="text-align: left;">RP-91</td>
+<td style="text-align: left;">RP-210693</td>
+<td style="text-align: center;">0013</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">F</td>
+<td>Miscellaneous corrections to TS 38.314</td>
+<td style="text-align: left;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2021-09</td>
+<td style="text-align: left;">RP-93</td>
+<td style="text-align: left;">RP-212443</td>
+<td style="text-align: center;">0017</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">F</td>
+<td>On corrections to packet loss rate measurements</td>
+<td style="text-align: left;">16.4.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2022-03</td>
+<td style="text-align: left;">RP-95</td>
+<td style="text-align: left;">RP-220492</td>
+<td style="text-align: center;">0020</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">B</td>
+<td>Running 38.314 CR for R17 layer 2 measurements</td>
+<td style="text-align: left;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2022-06</td>
+<td style="text-align: left;">RP-96</td>
+<td style="text-align: left;">RP-221733</td>
+<td style="text-align: center;">0023</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">F</td>
+<td>Corrections on TS 38.314</td>
+<td style="text-align: left;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2022-12</td>
+<td style="text-align: left;">RP-98</td>
+<td style="text-align: left;">RP-223410</td>
+<td style="text-align: center;">0025</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">F</td>
+<td>CR on capturing L2M agreements in TS 38.314</td>
+<td style="text-align: left;">17.2.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2023-06</td>
+<td style="text-align: left;">RP-100</td>
+<td style="text-align: left;">RP-231417</td>
+<td style="text-align: center;">0028</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">C</td>
+<td>Packet loss rate with delay threshold</td>
+<td style="text-align: left;">17.3.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2023-12</td>
+<td style="text-align: left;">RP-102</td>
+<td style="text-align: left;">RP-233887</td>
+<td style="text-align: center;">0031</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">F</td>
+<td>Correction on delay definitions for split DRB</td>
+<td style="text-align: left;">17.4.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">2024-03</td>
+<td style="text-align: left;">RP-103</td>
+<td style="text-align: left;">RP-240654</td>
+<td style="text-align: center;">0032</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">F</td>
+<td>Clarification on packet loss rate with delay threshold</td>
+<td style="text-align: left;">17.5.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

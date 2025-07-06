@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="1.0416666666666667in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 620 101" width="6.447916666666667in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.brush1 { fill: none; }
+.font0 { font-size: 17px; font-family: Arial; }
+.font1 { font-weight: bold; font-size: 1px; font-family: System, sans-serif; }
+.font2 { font-size: 17px; font-family: Arial; }
+.font3 { font-size: 14px; font-family: Arial; }
+.font4 { font-size: 14px; font-family: Arial; }
+.brush2 { fill: rgb(0,0,0); }
+.pen1 { stroke: none; }
+</style>
+    <g>
+        <polygon class="pen0 brush1" points="1,1 137,1 137,99 1,99 1,1"/>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="14 27 40 45 57 61 77 87 92 102 107 118" xml:lang="en" xml:space="preserve" y="56">UE Simulator</text>
+    </g>
+    <g>
+        <polygon class="pen0 brush1" points="280,1 417,1 417,99 280,99 280,1"/>
+    </g>
+    <g>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="303 314 324 329 333 341 350 359 364 372 378 389" xml:lang="en" xml:space="preserve" y="17">BS type 1-C/</text>
+    </g>
+    <g>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="305 316 327 331 336 344 352 361 366 375 380 391" xml:lang="en" xml:space="preserve" y="36">BS type 1-H </text>
+    </g>
+    <g>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="295 300 311 320 324 333 342 351 360 364 375 384 389 394 402" xml:lang="en" xml:space="preserve" y="75">(Antenna Ports </text>
+    </g>
+    <g>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="306 314 323 328 342 345 354 363 367 376 385" xml:lang="en" xml:space="preserve" y="94">Terminated)</text>
+    </g>
+    <g>
+        <polygon class="pen0 brush1" points="482,1 618,1 618,99 482,99 482,1"/>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="529 543 557 571" xml:lang="en" xml:space="preserve" y="45">NGC </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="511 523 527 543 553 557 568 573 583" xml:lang="en" xml:space="preserve" y="67">Simulator</text>
+    </g>
+    <g>
+        <path class="pen1 brush2" d="M 271,28  L 279,23 279,24 271,19 271,19 271,19 271,19 271,19 271,18 271,18 271,18 272,18 272,18 272,18 272,18 281,23 272,28 272,28 272,29 271,29 271,28 271,28 271,28 271,28 271,28 271,28 271,28 z M 137,22  L 280,23 280,23 280,24 280,24 137,23 137,23 137,22 z" fill-rule="nonzero"/>
+        <path class="pen1 brush2" d="M 473,28  L 481,24 481,25 473,20 473,20 473,20 473,20 473,20 473,19 473,19 473,19 473,19 473,19 473,19 473,19 482,24 473,29 473,29 473,29 473,29 473,29 473,29 473,29 472,29 473,29 473,29 473,28 z M 417,23  L 481,24 481,24 481,25 481,25 417,24 417,24 417,23 z" fill-rule="nonzero"/>
+        <path class="pen1 brush2" d="M 426,65  L 418,69 418,68 426,73 426,73 426,73 426,73 426,73 426,74 426,74 426,74 426,74 425,74 425,74 425,74 417,69 425,64 425,64 425,64 426,64 426,64 426,64 426,64 426,64 426,64 426,64 426,65 z M 485,69  L 418,69 418,69 418,68 418,68 485,68 485,68 485,69 z" fill-rule="nonzero"/>
+        <path class="pen1 brush2" d="M 146,65  L 138,69 138,68 146,73 146,73 147,73 147,73 147,73 147,74 147,74 146,74 146,74 146,74 146,74 146,74 137,69 146,64 146,64 146,64 146,64 146,64 147,64 147,64 147,64 147,64 147,64 146,65 z M 281,69  L 138,69 138,69 138,68 138,68 281,68 281,68 281,69 z" fill-rule="nonzero"/>
+    </g>
+    <g/>
+</svg>

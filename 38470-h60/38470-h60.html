@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38470-h60</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-and-abbreviations"
+id="toc-definitions-and-abbreviations">3 Definitions and
+abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.2
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#general-aspects" id="toc-general-aspects">4 General
+aspects</a>
+<ul>
+<li><a href="#f1-interface-general-principles"
+id="toc-f1-interface-general-principles">4.1 F1 interface general
+principles</a></li>
+<li><a href="#f1-interface-specification-objectives"
+id="toc-f1-interface-specification-objectives">4.2 F1 interface
+specification objectives</a></li>
+<li><a href="#f1-interface-capabilities"
+id="toc-f1-interface-capabilities">4.3 F1 interface capabilities
+</a></li>
+<li><a href="#void" id="toc-void">4.4 Void</a></li>
+</ul></li>
+<li><a href="#functions-of-the-f1-interface"
+id="toc-functions-of-the-f1-interface">5 Functions of the F1
+interface</a>
+<ul>
+<li><a href="#general" id="toc-general">5.1 General</a></li>
+<li><a href="#f1-c-functions" id="toc-f1-c-functions">5.2 F1-C
+functions</a>
+<ul>
+<li><a href="#f1-interface-management-function"
+id="toc-f1-interface-management-function">5.2.1 F1 interface management
+function</a></li>
+<li><a href="#system-information-management-function"
+id="toc-system-information-management-function">5.2.2 System Information
+management function</a></li>
+<li><a href="#f1-ue-context-management-function"
+id="toc-f1-ue-context-management-function">5.2.3 F1 UE context
+management function</a></li>
+<li><a href="#rrc-message-transfer-function"
+id="toc-rrc-message-transfer-function">5.2.4 RRC message transfer
+function</a></li>
+<li><a href="#paging-function" id="toc-paging-function">5.2.5 Paging
+function</a></li>
+<li><a href="#warning-messages-information-transfer-function"
+id="toc-warning-messages-information-transfer-function">5.2.6 Warning
+messages information transfer function</a></li>
+<li><a
+href="#remote-interference-management-rim-message-transfer-function"
+id="toc-remote-interference-management-rim-message-transfer-function">5.2.7
+Remote Interference Management (RIM) message transfer function</a></li>
+<li><a href="#trace-function" id="toc-trace-function">5.2.8 Trace
+function</a></li>
+<li><a href="#load-management-function"
+id="toc-load-management-function">5.2.9 Load management
+function</a></li>
+<li><a href="#self-optimisation-support-function"
+id="toc-self-optimisation-support-function">5.2.10 Self-optimisation
+support function</a></li>
+<li><a href="#positioning-function" id="toc-positioning-function">5.2.11
+Positioning function</a></li>
+<li><a href="#iab-support-function" id="toc-iab-support-function">5.2.12
+IAB support function</a></li>
+<li><a href="#nr-mbs-function" id="toc-nr-mbs-function">5.2.13 NR MBS
+function</a></li>
+<li><a href="#pdc-measurement-function"
+id="toc-pdc-measurement-function">5.2.14 PDC measurement
+function</a></li>
+<li><a href="#qmc-support-function" id="toc-qmc-support-function">5.2.15
+QMC support function</a></li>
+</ul></li>
+<li><a href="#f1-u-functions" id="toc-f1-u-functions">5.3 F1-U
+functions</a>
+<ul>
+<li><a href="#transfer-of-user-data"
+id="toc-transfer-of-user-data">5.3.1 Transfer of user data </a></li>
+<li><a href="#flow-control-function"
+id="toc-flow-control-function">5.3.2 Flow control function </a></li>
+</ul></li>
+<li><a href="#teids-allocation" id="toc-teids-allocation">5.4 TEIDs
+allocation</a></li>
+</ul></li>
+<li><a href="#procedures-of-the-f1-interface"
+id="toc-procedures-of-the-f1-interface">6 Procedures of the F1
+interface</a>
+<ul>
+<li><a href="#control-plane-procedures"
+id="toc-control-plane-procedures">6.1 Control plane procedures</a>
+<ul>
+<li><a href="#interface-management-procedures"
+id="toc-interface-management-procedures">6.1.1 Interface Management
+procedures</a></li>
+<li><a href="#context-management-procedures"
+id="toc-context-management-procedures">6.1.2 Context Management
+procedures</a></li>
+<li><a href="#rrc-message-transfer-procedures"
+id="toc-rrc-message-transfer-procedures">6.1.3 RRC Message Transfer
+procedures</a></li>
+<li><a href="#a-warning-message-transmission-procedures"
+id="toc-a-warning-message-transmission-procedures">6.1.3A Warning
+Message Transmission procedures</a></li>
+<li><a href="#system-information-procedures"
+id="toc-system-information-procedures">6.1.4 System Information
+procedures</a></li>
+<li><a href="#paging-procedures" id="toc-paging-procedures">6.1.5 Paging
+procedures </a></li>
+<li><a href="#void-1" id="toc-void-1">6.1.6 Void</a></li>
+<li><a href="#radio-information-transfer-procedures"
+id="toc-radio-information-transfer-procedures">6.1.7 Radio information
+transfer procedures</a></li>
+<li><a href="#ue-tracing-procedures"
+id="toc-ue-tracing-procedures">6.1.8 UE Tracing procedures</a></li>
+<li><a href="#load-management-procedures"
+id="toc-load-management-procedures">6.1.9 Load management
+procedures</a></li>
+<li><a href="#self-optimisation-support-procedure"
+id="toc-self-optimisation-support-procedure">6.1.10 Self-optimisation
+support procedure</a></li>
+<li><a href="#positioning-procedures"
+id="toc-positioning-procedures">6.1.11 Positioning procedures </a></li>
+<li><a href="#iab-procedures" id="toc-iab-procedures">6.1.12 IAB
+procedures</a></li>
+<li><a href="#nr-mbs-procedures" id="toc-nr-mbs-procedures">6.1.13 NR
+MBS procedures </a></li>
+<li><a href="#pdc-measurement-procedures"
+id="toc-pdc-measurement-procedures">6.1.14 PDC Measurement
+procedures</a></li>
+<li><a href="#qmc-procedures" id="toc-qmc-procedures">6.1.15 QMC
+procedures</a></li>
+</ul></li>
+<li><a href="#user-plane-procedures" id="toc-user-plane-procedures">6.2
+User plane procedures</a></li>
+</ul></li>
+<li><a href="#f1-interface-protocol-structure"
+id="toc-f1-interface-protocol-structure">7 F1 interface protocol
+structure</a>
+<ul>
+<li><a href="#f1-control-plane-protocol-f1-c"
+id="toc-f1-control-plane-protocol-f1-c">7.1 F1 Control Plane Protocol
+(F1-C)</a></li>
+<li><a href="#f1-user-plane-protocol-f1-u"
+id="toc-f1-user-plane-protocol-f1-u">7.2 F1 User Plane Protocol
+(F1-U)</a></li>
+</ul></li>
+<li><a href="#other-f1-interface-specifications"
+id="toc-other-f1-interface-specifications">8 Other F1 interface
+specifications</a>
+<ul>
+<li><a href="#ng-ran-f1-interface-layer-1-3gpp-ts-38.471"
+id="toc-ng-ran-f1-interface-layer-1-3gpp-ts-38.471">8.1 NG-RAN F1
+interface: layer 1 (3GPP TS 38.471)</a></li>
+<li><a href="#ng-ran-f1-interface-signalling-transport-3gpp-ts-38.472"
+id="toc-ng-ran-f1-interface-signalling-transport-3gpp-ts-38.472">8.2
+NG-RAN F1 interface: signalling transport (3GPP TS 38.472)</a></li>
+<li><a href="#ng-ran-f1-interface-f1ap-specification-3gpp-ts-38.473"
+id="toc-ng-ran-f1-interface-f1ap-specification-3gpp-ts-38.473">8.3
+NG-RAN F1 interface: F1AP specification (3GPP TS 38.473)</a></li>
+<li><a
+href="#ng-ran-f1-interface-data-transport-and-transport-signalling-3gpp-ts-38.474"
+id="toc-ng-ran-f1-interface-data-transport-and-transport-signalling-3gpp-ts-38.474">8.4
+NG-RAN F1 interface: data transport and transport signalling (3GPP TS
+38.474)</a></li>
+<li><a href="#ng-ran-f1-interface-user-plane-protocol-3gpp-ts-38.425"
+id="toc-ng-ran-f1-interface-user-plane-protocol-3gpp-ts-38.425">8.5
+NG-RAN F1 interface: user plane protocol (3GPP TS 38.425)</a></li>
+</ul></li>
+</ul>
+</nav>
+<p>3GPP TS 38.470 V17.6.0 (2023-09)</p>
+<p>Technical Specification</p>
+<p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NG-RAN;</p>
+<p>F1 general aspects and principles</p>
+<p>(Release 17)</p>
+<p><img src="media/image1.jpeg"
+style="width:1.32569in;height:1.32569in" /> <img src="media/image2.png"
+style="width:1.77778in;height:1.03681in" /></p>
+<p>The present document has been developed within the 3rd Generation
+Partnership Project (3GPP <sup>TM</sup>) and may be further elaborated
+for the purposes of 3GPP..<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</p>
+<blockquote>
+<p>Keywords</p>
+<p>NR-RAN</p>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote>
+<p><em><strong>Copyright Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2023, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">5</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references">6</a></p>
+<p>3 Definitions and abbreviations <a
+href="#definitions-and-abbreviations">6</a></p>
+<p>3.1 Definitions <a href="#definitions">6</a></p>
+<p>3.2 Abbreviations <a href="#abbreviations">7</a></p>
+<p>4 General aspects <a href="#general-aspects">8</a></p>
+<p>4.1 F1 interface general principles <a
+href="#f1-interface-general-principles">8</a></p>
+<p>4.2 F1 interface specification objectives <a
+href="#f1-interface-specification-objectives">8</a></p>
+<p>4.3 F1 interface capabilities <a
+href="#f1-interface-capabilities">8</a></p>
+<p>4.4 Void <a href="#void">9</a></p>
+<p>5 Functions of the F1 interface <a
+href="#functions-of-the-f1-interface">9</a></p>
+<p>5.1 General <a href="#general">9</a></p>
+<p>5.2 F1-C functions <a href="#f1-c-functions">9</a></p>
+<p>5.2.1 F1 interface management function <a
+href="#f1-interface-management-function">9</a></p>
+<p>5.2.2 System Information management function <a
+href="#system-information-management-function">9</a></p>
+<p>5.2.3 F1 UE context management function <a
+href="#f1-ue-context-management-function">10</a></p>
+<p>5.2.4 RRC message transfer function <a
+href="#rrc-message-transfer-function">11</a></p>
+<p>5.2.5 Paging function <a href="#paging-function">12</a></p>
+<p>5.2.6 Warning messages information transfer function <a
+href="#warning-messages-information-transfer-function">12</a></p>
+<p>5.2.7 Remote Interference Management (RIM) message transfer function
+<a
+href="#remote-interference-management-rim-message-transfer-function">12</a></p>
+<p>5.2.8 Trace function <a href="#trace-function">12</a></p>
+<p>5.2.9 Load management function <a
+href="#load-management-function">12</a></p>
+<p>5.2.10 Self-optimisation support function <a
+href="#self-optimisation-support-function">12</a></p>
+<p>5.2.11 Positioning function <a
+href="#positioning-function">12</a></p>
+<p>5.2.12 IAB support function <a
+href="#iab-support-function">13</a></p>
+<p>5.2.13 NR MBS function <a href="#nr-mbs-function">13</a></p>
+<p>5.2.14 PDC measurement function <a
+href="#pdc-measurement-function">13</a></p>
+<p>5.2.15 QMC support function <a
+href="#qmc-support-function">13</a></p>
+<p>5.3 F1-U functions <a href="#f1-u-functions">13</a></p>
+<p>5.3.1 Transfer of user data <a
+href="#transfer-of-user-data">13</a></p>
+<p>5.3.2 Flow control function <a
+href="#flow-control-function">13</a></p>
+<p>5.4 TEIDs allocation <a href="#teids-allocation">14</a></p>
+<p>6 Procedures of the F1 interface <a
+href="#procedures-of-the-f1-interface">14</a></p>
+<p>6.1 Control plane procedures <a
+href="#control-plane-procedures">14</a></p>
+<p>6.1.1 Interface Management procedures <a
+href="#interface-management-procedures">14</a></p>
+<p>6.1.2 Context Management procedures <a
+href="#context-management-procedures">14</a></p>
+<p>6.1.3 RRC Message Transfer procedures <a
+href="#rrc-message-transfer-procedures">14</a></p>
+<p>6.1.3A Warning Message Transmission procedures <a
+href="#a-warning-message-transmission-procedures">15</a></p>
+<p>6.1.4 System Information procedures <a
+href="#system-information-procedures">15</a></p>
+<p>6.1.5 Paging procedures <a href="#paging-procedures">15</a></p>
+<p>6.1.6 Void <a href="#void-1">15</a></p>
+<p>6.1.7 Radio information transfer procedures <a
+href="#radio-information-transfer-procedures">15</a></p>
+<p>6.1.8 UE Tracing procedures <a
+href="#ue-tracing-procedures">15</a></p>
+<p>6.1.9 Load management procedures <a
+href="#load-management-procedures">15</a></p>
+<p>6.1.10 Self-optimisation support procedure <a
+href="#self-optimisation-support-procedure">15</a></p>
+<p>6.1.11 Positioning procedures <a
+href="#positioning-procedures">16</a></p>
+<p>6.1.12 IAB procedures <a href="#iab-procedures">16</a></p>
+<p>6.1.13 NR MBS procedures <a href="#nr-mbs-procedures">16</a></p>
+<p>6.1.14 PDC Measurement procedures <a
+href="#pdc-measurement-procedures">17</a></p>
+<p>6.1.15 QMC procedures <a href="#qmc-procedures">17</a></p>
+<p>6.2 User plane procedures <a href="#user-plane-procedures">17</a></p>
+<p>7 F1 interface protocol structure <a
+href="#f1-interface-protocol-structure">17</a></p>
+<p>7.1 F1 Control Plane Protocol (F1-C) <a
+href="#f1-control-plane-protocol-f1-c">17</a></p>
+<p>7.2 F1 User Plane Protocol (F1-U) <a
+href="#f1-user-plane-protocol-f1-u">18</a></p>
+<p>8 Other F1 interface specifications <a
+href="#other-f1-interface-specifications">18</a></p>
+<p>8.1 NG-RAN F1 interface: layer 1 (3GPP TS 38.471) <a
+href="#ng-ran-f1-interface-layer-1-3gpp-ts-38.471">18</a></p>
+<p>8.2 NG-RAN F1 interface: signalling transport (3GPP TS 38.472) <a
+href="#ng-ran-f1-interface-signalling-transport-3gpp-ts-38.472">18</a></p>
+<p>8.3 NG-RAN F1 interface: F1AP specification (3GPP TS 38.473) <a
+href="#ng-ran-f1-interface-f1ap-specification-3gpp-ts-38.473">18</a></p>
+<p>8.4 NG-RAN F1 interface: data transport and transport signalling
+(3GPP TS 38.474) <a
+href="#ng-ran-f1-interface-data-transport-and-transport-signalling-3gpp-ts-38.474">18</a></p>
+<p>8.5 NG-RAN F1 interface: user plane protocol (3GPP TS 38.425) <a
+href="#ng-ran-f1-interface-user-plane-protocol-3gpp-ts-38.425">18</a></p>
+<p>Annex A (informative): Change history <a
+href="#annex-a-informative-change-history">20</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Specification has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document is an introduction to the 3GPP TS 38.47x series
+of technical specifications that define the F1 interface. The F1
+interface provides means for interconnecting a gNB-CU and a gNB-DU of a
+gNB within an NG-RAN, or for interconnecting a gNB-CU and a gNB-DU of an
+en-gNB within an E-UTRAN.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TS 38.401: "NG-RAN; Architecture Description".</p>
+<p>[3] 3GPP TS 38.471: "NG-RAN; F1 layer 1".</p>
+<p>[4] 3GPP TS 38.472: "NG-RAN; F1 signalling transport".</p>
+<p>[5] 3GPP TS 38.473: "NG-RAN; F1 Application Protocol (F1AP)".</p>
+<p>[6] 3GPP TS 38.474: "NG-RAN; F1 data transport".</p>
+<p>[7] 3GPP TS 38.425: "NG-RAN; Xn interface user plane protocol".</p>
+<p>[8] 3GPP TS 38.300: "NR; Overall description; Stage-2".</p>
+<p>[9] 3GPP TS 37.340: "NR; Multi-connectivity; Overall description;
+Stage-2".</p>
+<p>[10] 3GPP TS 38.321: "NR; Medium Access Control (MAC) protocol
+specification".</p>
+<p>[11] 3GPP TS 38.331: "NR; Radio Resource Control (RRC); Protocol
+specification".</p>
+<h1 id="definitions-and-abbreviations">3 Definitions and
+abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in 3GPP TR 21.905 [1] and the following apply. A term defined in
+the present document takes precedence over the definition of the same
+term, if any, in 3GPP TR 21.905 [1].</p>
+<p><strong>BH RLC channel:</strong> as defined in TS 38.300 [8].</p>
+<p><strong>en-gNB</strong>: as defined in TS 37.340 [9].</p>
+<p><strong>gNB-CU</strong>: as defined in TS 38.401 [2].</p>
+<p><strong>gNB-DU</strong>: as defined in TS 38.401 [2].</p>
+<p><strong>gNB</strong>: as defined in TS 38.300 [8].</p>
+<p><strong>IAB-MT</strong>: as defined in TS 38.300 [8].</p>
+<p><strong>IAB-DU</strong>: as defined in TS 38.300 [8].</p>
+<p><strong>IAB-node</strong>: as defined in TS 38.300 [8].</p>
+<p><strong>IAB-donor</strong>: as defined in TS 38.300 [8].</p>
+<p><strong>IAB-donor-CU</strong>: as defined in TS 38.401 [2].</p>
+<p><strong>IAB-donor-DU</strong>: as defined in TS 38.401 [2].</p>
+<p><strong>PC5 Relay RLC channel</strong>: as defined in TS 38.300
+[8].</p>
+<p><strong>U2N Relay UE:</strong> as defined in TS 38.300 [8].</p>
+<p><strong>U2N Remote UE:</strong> as defined in TS 38.300 [8].</p>
+<p><strong>Uu Relay RLC channel</strong>: as defined in TS 38.300
+[8].</p>
+<h2 id="abbreviations">3.2 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>BH Backhaul</p>
+<p>DRB Data Radio Bearers</p>
+<p>eDRX extended Discontinuous Reception</p>
+<p>F1-U F1 User plane interface</p>
+<p>F1-C F1 Control plane interface</p>
+<p>F1AP F1 Application Protocol</p>
+<p>GTP-U GPRS Tunnelling Protocol</p>
+<p>IAB Integrated Access and Backhaul</p>
+<p>IP Internet Protocol</p>
+<p>L2 Layer-2</p>
+<p>MBS Multicast/Broadcast Service</p>
+<p>NR-MIB NR-Master Information Block</p>
+<p>NSAG Network Slice AS Group</p>
+<p>O&amp;M Operation and Maintenance</p>
+<p>PA Paging Area</p>
+<p>PDC Propagation Delay Compensation</p>
+<p>PF Paging Frame</p>
+<p>PH Paging Hyperframes</p>
+<p>PO Paging Occasion</p>
+<p>PTP Point to Point</p>
+<p>PTM Point to Multipoint</p>
+<p>QMC QoE Measurement Collection</p>
+<p>QoE Quality of Experience</p>
+<p>QoS Quality of Service</p>
+<p>RedCap Reduced Capability</p>
+<p>RIM Remote Interference Management</p>
+<p>RLC Radio Link Control</p>
+<p>RRC Radio Resource Control</p>
+<p>SCTP Stream Control Transmission Protocol</p>
+<p>SRB Signalling Radio Bearers</p>
+<p>SIB1 System Information Block 1</p>
+<p>SIB10 System Information Block 10</p>
+<p>SIB12 System Information Block 12</p>
+<p>SIB13 System Information Block 13</p>
+<p>SIB14 System Information Block 14</p>
+<p>SIB15 System Information Block 15</p>
+<p>SIB17 System Information Block 17</p>
+<p>SIB18 System Information Block 18</p>
+<p>SL Sidelink</p>
+<p>TNL Transport Network Layer</p>
+<p>U2N UE-to-Network</p>
+<p>V2X Vehicle-to-Everything</p>
+<h1 id="general-aspects">4 General aspects</h1>
+<p>This clause captures the F1 interface principles and
+characteristics.</p>
+<h2 id="f1-interface-general-principles">4.1 F1 interface general
+principles</h2>
+<p>The general principles for the specification of the F1 interface are
+as follows:</p>
+<p>- the F1 interface is open;</p>
+<p>- the F1 interface supports the exchange of signalling information
+between the endpoints, in addition the interface supports data
+transmission to the respective endpoints;</p>
+<p>- from a logical standpoint, the F1 is a point-to-point interface
+between the endpoints.</p>
+<p>NOTE: A point-to-point logical interface should be feasible even in
+the absence of a physical direct connection between the endpoints.</p>
+<p>- the F1 interface supports control plane and user plane
+separation;</p>
+<p>- the F1 interface separates Radio Network Layer and Transport
+Network Layer;</p>
+<p>- the F1 interface enables exchange of UE associated information and
+non-UE associated information;</p>
+<p>- the F1 interface is designed in a future proof way to fulfil
+different new requirements, support new services and new functions;</p>
+<p>- one gNB-CU and a set of gNB-DUs are visible to other logical nodes
+as a gNB or an en-gNB where the gNB terminates the Xn and the NG
+interfaces, and the en-gNB terminates the X2 and the S1-U
+interfaces;</p>
+<p>- the gNB-CU may be separated in control plane (CP) and user plane
+(UP).</p>
+<h2 id="f1-interface-specification-objectives">4.2 F1 interface
+specification objectives</h2>
+<p>The F1 interface specifications facilitate the following:</p>
+<p>- inter-connection of a gNB-CU and a gNB-DU supplied by different
+manufacturers.</p>
+<h2 id="f1-interface-capabilities">4.3 F1 interface capabilities </h2>
+<p>The F1 interface supports:</p>
+<p>- procedures to establish, maintain and release radio bearers for the
+NG-RAN part of PDU sessions and MBS Sessions, and for E-UTRAN Radio
+Access Bearers;</p>
+<p>- procedures to establish, maintain and release BH RLC channels;</p>
+<p>- the separation of each UE on the protocol level for user specific
+signalling management;</p>
+<p>- the separation of each IAB-MT on the protocol level for IAB-MT
+specific signalling management;</p>
+<p>- the transfer of RRC signalling messages between the UE and the
+gNB-CU.</p>
+<p>- procedures to establish, maintain and release Uu Relay RLC channels
+and PC5 Relay RLC channels.</p>
+<h2 id="void">4.4 Void</h2>
+<h1 id="functions-of-the-f1-interface">5 Functions of the F1
+interface</h1>
+<h2 id="general">5.1 General</h2>
+<p>The following clauses describe the functions supported over F1-C and
+F1-U.</p>
+<h2 id="f1-c-functions">5.2 F1-C functions</h2>
+<h3 id="f1-interface-management-function">5.2.1 F1 interface management
+function</h3>
+<p>The error indication function is used by the gNB-DU or gNB-CU to
+indicate to the gNB-CU or gNB-DU that an error has occurred.</p>
+<p>The reset function is used to initialize the peer entity after node
+setup and after a failure event occurred. This procedure can be used by
+both the gNB-DU and the gNB-CU.</p>
+<p>The F1 setup function allows to exchange application level data
+needed for the gNB-DU and gNB-CU to interoperate correctly on the F1
+interface, and exchange the intended TDD DL-UL configuration originating
+from the gNB-DU or destined to the gNB-DU. The F1 setup is initiated by
+the gNB-DU.</p>
+<p>The gNB-CU Configuration Update and gNB-DU Configuration Update
+functions allow to update application level configuration data needed
+between gNB-CU and gNB-DU to interoperate correctly over the F1
+interface, and may activate or deactivate cells. For cross-link
+interference mitigation, the gNB-CU may coordinate the exchange of
+intended TDD DL-UL configuration by merging, forwarding and selective
+forwarding of intended TDD DL-UL configuration(s) between its gNB-DUs,
+or between its gNB-DUs and other gNBs, gNB-CUs. With the gNB-CU
+Configuration Update function, energy saving with cell
+activation/deactivation can be supported as defined in TS 38.300
+[8].</p>
+<p>The F1 setup and gNB-DU Configuration Update functions allow to
+inform the S-NSSAI(s), NSAG(s), CAG ID(s) and NID(s) supported by the
+gNB-DU.</p>
+<p>The F1 setup and gNB-DU Configuration Update functions allow to
+provide information on RedCap access configuration at the gNB-DU.</p>
+<p>The F1 setup and gNB-CU Configuration Update functions allow to
+inform the NID(s) available at the gNB-CU.</p>
+<p>The F1 resource coordination function is used to transfer information
+about frequency resource sharing between gNB-CU and gNB-DU. In case of
+split gNB architecture, the gNB-CU may consolidate the outgoing messages
+from multiple gNB-DUs and distribute the incoming messages to the
+involved gNB-DUs, to perform resource coordination.</p>
+<p>The gNB-DU status indication function allows the gNB-DU to indicate
+overload status to gNB-CU. In case of IAB, the IAB-donor-DU or IAB-DU
+can indicate the downlink congestion status to the IAB-donor-CU.</p>
+<p>The network access rate reduction function is used to indicate to the
+gNB-DU that the rate at which UEs are accessing the network need to be
+reduced.</p>
+<p>The F1 removal function is used to remove the interface instance and
+all related resources between the gNB-DU and the gNB-CU in a controlled
+manner.</p>
+<h3 id="system-information-management-function">5.2.2 System Information
+management function</h3>
+<p>Scheduling of system broadcast information is carried out in the
+gNB-DU. The gNB-DU is responsible for transmitting the system
+information according to the scheduling parameters available.</p>
+<p>The gNB-DU is responsible for the encoding of the NR-MIB message. In
+case broadcast of SIB1 and other SIBs is needed, the gNB-DU is
+responsible for the encoding of the SIB1 message, SIB10, SIB12, SIB13,
+SIB14, SIB15, SIB17, SIB18 and SIB20, and the gNB-CU is responsible for
+the encoding of other SIBs. The gNB-DU may re-encode SIB9. The gNB-DU is
+responsible for the generation of the SystemInformation message.</p>
+<p>NOTE: The SIB19 is generated by the gNB-DU.</p>
+<p>The gNB-CU is responsible for receiving the positioning assistance
+information from LMF, e.g the positioning related SIBs. The gNB-CU
+transparently sends the positioning assistance information to the
+gNB-DU. The gNB-DU is responsible for broadcasting the positioning
+assistance information in Positioning SI message(s).</p>
+<p>To support Msg3 based on-demand SI and RRC Dedicated SIB Request as
+described in TS 38.331 [11], the gNB-CU can confirm the received SI
+request from the UE by including the UE identity, and command the gNB-DU
+to broadcast the requested <em>SystemInformation</em> messages including
+the other SI.</p>
+<p>To support UE RRC Positioning SI acquisition mechanism, as described
+in TS 38.331 [11], the gNB-CU can confirm the received positioning SI
+request from the UE by including the UE identity, and command the gNB-DU
+to broadcast the requested positioning SI messages.</p>
+<h3 id="f1-ue-context-management-function">5.2.3 F1 UE context
+management function</h3>
+<p>The F1 UE context management function supports the establishment and
+modification of the necessary overall UE context.</p>
+<p>The establishment of the F1 UE context is initiated by the gNB-CU and
+accepted or rejected by the gNB-DU based on admission control criteria
+(e.g., resource not available).</p>
+<p>The modification of the F1 UE context can be initiated by either
+gNB-CU or gNB-DU. The receiving node can accept or reject the
+modification. The F1 UE context management function also supports the
+release of the context previously established in the gNB-DU. The release
+of the context is triggered by the gNB-CU either directly or following a
+request received from the gNB-DU. The gNB-CU request the gNB-DU to
+release the UE Context when the UE enters RRC_IDLE or RRC_INACTIVE. In
+case of configured grant small data transmission, this function allows
+the gNB-CU to request the gNB-DU to keep part of the UE context,
+including at least the lower layer configuration for SDT DRB(s)/SRB(s),
+C-RNTI, CS-RNTI, F1AP association, and F1 tunnel information, when the
+gNB-CU sends the UE into RRC_INACTIVE state. In case of positioning when
+the gNB-CU sends the UE into RRC_INACTIVE state, this function allows
+the gNB-CU to request the gNB-DU to keep part of the positioning
+context, including the SRS configuration for the UE.</p>
+<p>This function can be also used to manage DRBs, SRBs and SL DRBs,
+i.e., establishing, modifying and releasing DRB, SRB and SL DRB
+resources. The establishment and modification of DRB, or SL DRB
+resources are triggered by the gNB-CU and accepted/rejected by the
+gNB-DU based on resource reservation information and QoS information to
+be provided to the gNB-DU. For each DRB to be setup or modified, the
+S-NSSAI may be provided by gNB-CU to the gNB-DU in the UE Context Setup
+procedure and the UE Context Modification procedure. In case of NG-RAN
+sharing, the gNB-CU includes the serving PLMN ID (for SNPNs the serving
+SNPN ID) in the UE Context Setup procedure.</p>
+<p>This function is also used to manage a UE's configuration with
+multicast resources and to provide information about the multicast MRBs
+which are established for the multicast MBS Sessions the UE has
+joined.</p>
+<p>For Uu, the mapping between QoS flows and radio bearers is performed
+by gNB-CU and the granularity of bearer related management over F1 is
+radio bearer level. For NG-RAN, the gNB-CU decides an aggregated DRB QoS
+profile for each radio bearer based on received QoS flow profile, and
+provides both aggregated DRB QoS profile and QoS flow profile to the
+gNB-DU, and the gNB-DU either accepts the request or rejects it with
+appropriate cause value. With this function, gNB-DU could also notify
+gNB-CU whether the QoS for already established DRBs is not fulfilled any
+longer or it is fulfilled again. The function can be also used to inform
+the gNB-DU the alternative QoS Parameters Sets when available for a QoS
+flow. To support packet duplication for intra-gNB-DU CA as described in
+TS 38.300 [8], one data radio bearer should be configured with at least
+two GTP-U tunnels between gNB-CU and a gNB-DU.</p>
+<p>For SL, the mapping between QoS flows and radio bearers is performed
+by gNB-CU and the granularity of bearer related management over F1 is
+radio bearer level. For NG-RAN, the gNB-CU decides an aggregated SL DRB
+QoS profile for each radio bearer based on received QoS flow profile,
+and provides both aggregated SL DRB QoS profile and QoS flow profile to
+the gNB-DU, and the gNB-DU either accepts the request or rejects it with
+appropriate cause value.</p>
+<p>With this function, gNB-CU requests the gNB-DU to setup or change of
+the SpCell (as defined in TS 38.321 [10]) for the UE, and the gNB-DU
+either accepts or rejects the request with appropriate cause value. This
+function also enables the gNB-DU to inform the gNB-CU of which cell the
+UE has successfully accessed during conditional mobility.</p>
+<p>With this function, the gNB-CU requests the setup of the SCell(s) at
+the gNB-DU side, and the gNB-DU accepts all, some or none of the
+SCell(s) and replies to the gNB-CU. The gNB-CU requests the removal of
+the SCell(s) for the UE.</p>
+<p>With this function, the gNB-CU indicates the UL UE AMBR limit to the
+gNB-DU, and the gNB-DU enforces the indicated limit.</p>
+<p>With this function, the gNB-DU indicates that a bearer, or a UE is
+inactive or active. The gNB-CU consolidates all the serving gNB-DUs for
+the UE and takes further action.</p>
+<p>With this function, the gNB-CU indicates the gNB-DU that the UE
+context concerns mobility enhancement operation, and the gNB-DU takes
+corresponding actions.</p>
+<p>In addition, for IAB-nodes and IAB-donors:</p>
+<p>- The F1 UE context management function is used for managing BH RLC
+channels, i.e. establishing, modifying and releasing BH RLC channel
+resources. The establishment of BH RLC channels is triggered by the
+IAB-donor-CU. The establishment and modification is accepted/rejected by
+the IAB-node’s parent, based on e.g. resource reservation information
+and QoS information provided to the IAB-node’s parent.</p>
+<p>- The DRB QoS profile framework is reused for BH RLC channels
+carrying DRBs. Prioritization of traffic on the F1-C interface is based
+on traffic type (e.g. UE-associated F1AP signalling, non-UE-associated
+F1AP signalling) and is enforced in the IAB-donor-DU and in IAB-nodes,
+considering that the traffic on the F1-C interface has higher priority
+than other traffic; in-sequence delivery over the signaling connection
+is always ensured.</p>
+<p>- The IAB-donor-CU associates each BH RLC channel carrying control
+plane traffic with one of the signaled control plane traffic type
+values.</p>
+<p>For L2 U2N Relay:</p>
+<p>- The F1 UE context management function is used for managing Uu Relay
+RLC channels and PC5 Relay RLC channels for L2 U2N relay, i.e.
+establishing, modifying and releasing Uu Relay RLC channel and PC5 Relay
+RLC channel resources. The establishment of Uu Relay RLC channels and
+PC5 Relay RLC channels are triggered by the gNB-CU. The establishment
+and modification is accepted/rejected by the gNB-DU based on resource
+reservation information and QoS information provided to the gNB-DU. The
+modification of Uu/PC5 Relay RLC channels can be triggered by the gNB-CU
+or the gNB-DU.</p>
+<p>- The gNB-CU determines the QoS for the PC5 Relay RLC channel and the
+QoS for the Uu Relay RLC channel based on the received QoS profile for
+the L2 U2N Remote UE, and provides the QoS information to the
+gNB-DU.</p>
+<p>- The gNB-CU configures the gNB-DU about the SRB(s)/DRB(s) to Uu
+Relay RLC channel(s) mapping, which is used by the gNB-DU to perform
+data transfer of L2 U2N Remote UE. The mapping between DRB and Uu Relay
+RLC channel is configured at the granularity of GTP-U tunnel.</p>
+<p>- The gNB-CU is responsible for the local ID allocation and update
+for L2 U2N Remote UE.</p>
+<h3 id="rrc-message-transfer-function">5.2.4 RRC message transfer
+function</h3>
+<p>This function allows to transfer RRC messages between gNB-CU and
+gNB-DU. RRC messages are transferred over F1-C. The gNB-CU is
+responsible for the encoding of the dedicated RRC message with
+assistance information provided by gNB-DU. This function also allows
+gNB-DU to report to gNB-CU if the downlink RRC message has been
+successfully delivered to UE or not. The function also allows the gNB-DU
+to report to the gNB-CU if the accessing UE is a Reduced Capability UE
+as defined in TS 38.300 [8]. This function also allows the gNB-DU to
+duplicate the downlink RRC message according to the duplication
+information provided by gNB-CU.</p>
+<p>For IAB-nodes, this function allows to transfer RRC messages for
+setting up and configuring the IAB-MT side of the BH RLC channel. These
+RRC messages are carried on F1-C between the IAB-donor-CU and the parent
+IAB-DU, i.e. the gNB-DU side of the BH RLC channel.</p>
+<h3 id="paging-function">5.2.5 Paging function</h3>
+<p>The gNB-CU is responsible for filtering target cells for paging based
+on the UE Radio Capability for Paging.</p>
+<p>The gNB-DU is responsible for transmitting the paging information
+according to the scheduling parameters provided. The gNB-DU also takes
+the UE paging capability into account for paging when provided by the
+gNB-CU.</p>
+<p>The gNB-CU provides paging information to enable the gNB-DU to
+calculate the exact PH, if the eDRX is configured, PO and PF. The gNB-CU
+determines the PA. The gNB-DU consolidates all the paging records for a
+particular PH, PO, PF and PA, and encodes the final RRC message and
+broadcasts the paging message on the respective PH, PO, PF in the
+PA.</p>
+<p>The paging function also supports CN controlled subgrouping paging
+for UE Power Saving.</p>
+<h3 id="warning-messages-information-transfer-function">5.2.6 Warning
+messages information transfer function</h3>
+<p>This function allows to cooperate with the warning message
+transmission procedures over NG interface. The gNB-CU is responsible for
+encoding the warning related SI message and sending it together with
+other warning related information for the gNB-DU to broadcast over the
+radio interface.</p>
+<h3
+id="remote-interference-management-rim-message-transfer-function">5.2.7
+Remote Interference Management (RIM) message transfer function</h3>
+<p>This function enables the transfer of Remote Interference Management
+(RIM) backhaul messages between the gNB-CU and the gNB-DU. RIM messages
+are transferred over F1-C. The gNB-CU acts as a coordinator on behalf of
+its affiliated gNB-DUs, by merging the RIM information received from its
+gNB-DUs and forwarding the merged information to the target gNBs or
+gNB-CUs, transparently via the core network. Similarly, a gNB-CU
+distributes an incoming RIM backhaul message to all its concerned
+gNB-DUs.</p>
+<h3 id="trace-function">5.2.8 Trace function</h3>
+<p>The Trace function provides means to control trace sessions for a UE
+over F1 interface.</p>
+<h3 id="load-management-function">5.2.9 Load management function</h3>
+<p>The load management function allows a gNB-CU to request the reporting
+of load measurements to gNB-DU and is used by gNB-DU to report the
+result of measurements admitted by gNB-DU.</p>
+<h3 id="self-optimisation-support-function">5.2.10 Self-optimisation
+support function</h3>
+<p>This function allows the gNB-CU to provide information to the gNB-DU
+in order to support self-optimization functionality.</p>
+<h3 id="positioning-function">5.2.11 Positioning function</h3>
+<p>This function allows to transfer location management messages between
+gNB-CU and gNB-DU. With this function, gNB-CU request TRP information
+from gNB-DU, and gNB-DU response to gNB-CU with the TRP information.
+With this function, gNB-CU request positioning measurements from gNB-DU,
+and gNB-DU response to gNB-CU with the positioning measurements.</p>
+<p>The function allows the gNB-CU to</p>
+<p>- transfer the positioning assistance data to gNB-DU. The gNB-DU is
+responsible for broadcasting the positioning assistance data according
+to the scheduling parameters available.</p>
+<p>- request the gNB-DU to configure SRS transmissions for UE.</p>
+<p>- request the gNB-DU to configure PRS transmissions.</p>
+<p>- request the gNB-DU to configure measurement gap or PRS processing
+window.</p>
+<p>- request the gNB-DU to activate or deactivate preconfigured
+measurement gap or PRS processing window.</p>
+<p>- request the gNB-DU to broadcast positioning system information.</p>
+<h3 id="iab-support-function">5.2.12 IAB support function</h3>
+<p>The support for IAB comprises several functions.</p>
+<p>The BAP mapping configuration function allows the IAB-donor-CU to
+provide BAP mapping which includes the backhaul routing configuration
+and/or BH RLC channel mapping information for IAB-donor-DU or IAB-DU.
+This function also enables the IAB-donor-CU to provide the BAP header
+rewriting configuration, or other BAP related configurations to the
+IAB-DU. This function also enables the IAB-donor-CU to provide the BAP
+related configurations to the IAB-donor-DU.</p>
+<p>The gNB-DU resource configuration function is used by the
+IAB-donor-CU to provide cell resource configuration for an IAB-donor-DU
+or an IAB-DU, and/or NA resource configuration of a parent node IAB-DU
+or IAB-donor-DU serving the co-located IAB-MT for an IAB-DU, and/or
+information about the child node’s cell resource configuration and other
+periodic configurations to a parent IAB-node or an IAB-donor-DU. This
+function also allows the IAB-donor-CU to provide the semi-static cell
+resource configuration of a neighbour node or a peer parent-node of a
+child node, whereas this neighbor node or a peer parent can be an
+IAB-donor-DU or an IAB-DU.</p>
+<p>The IAB TNL address configuration function enables the IAB-donor-CU
+to request IP address(es) to be used for IAB-node(s) from an
+IAB-donor-DU, or to request from an IAB-donor-DU the removal of IP
+address(es) used for IAB-node(s). This function is also used by the
+IAB-donor-CU to provide an IAB-donor-DU with the IP address information
+of the traffic to be transferred to a peer IAB-donor-DU via an
+inter-donor-DU tunnel.</p>
+<p>The IAB UP configuration update function allows the update of BH
+information or the UP TNL information between the IAB-donor-CU and an
+IAB-DU.</p>
+<h3 id="nr-mbs-function">5.2.13 NR MBS function</h3>
+<p>The NR MBS function supports establishing, modifying and releasing
+the MRB resources and the user data transport.</p>
+<p>The multicast group paging function supports the sending of multicast
+group paging request to the gNB-DUs in order to group-page UEs that have
+joined the multicast MBS session.</p>
+<h3 id="pdc-measurement-function">5.2.14 PDC measurement function</h3>
+<p>The PDC measurement function allows the gNB-CU to request the gNB-DU
+to report measurements used for propagation delay compensation at the
+gNB-CU or UE.</p>
+<h3 id="qmc-support-function">5.2.15 QMC support function</h3>
+<p>This function enables the transfer of RAN visible QoE information
+from the gNB-CU to the gNB-DU.</p>
+<h2 id="f1-u-functions">5.3 F1-U functions</h2>
+<h3 id="transfer-of-user-data">5.3.1 Transfer of user data </h3>
+<p>This function allows to transfer of user data between gNB-CU and
+gNB-DU.</p>
+<h3 id="flow-control-function">5.3.2 Flow control function </h3>
+<p>This function allows to control the downlink user data flow to the
+gNB-DU. The detailed protocol is specified in TS 38.425 [7].</p>
+<h2 id="teids-allocation">5.4 TEIDs allocation</h2>
+<p>The gNB-DU is responsible for the allocation of the F1-U DL GTP TEID
+for each data radio bearer.</p>
+<h1 id="procedures-of-the-f1-interface">6 Procedures of the F1
+interface</h1>
+<h2 id="control-plane-procedures">6.1 Control plane procedures</h2>
+<h3 id="interface-management-procedures">6.1.1 Interface Management
+procedures</h3>
+<p>The F1 Interface management procedures are listed below:</p>
+<p>- Reset procedure</p>
+<p>- Error Indication procedure</p>
+<p>- F1 Setup procedure</p>
+<p>- gNB-DU Configuration Update procedure</p>
+<p>- gNB-CU Configuration Update procedure</p>
+<p>- gNB-DU Resource Coordination procedure</p>
+<p>- gNB-DU Status Indication procedure</p>
+<p>- F1 Removal procedure</p>
+<p>- Network Access Rate Reduction procedure</p>
+<h3 id="context-management-procedures">6.1.2 Context Management
+procedures</h3>
+<p>The F1 Context management procedures are listed below:</p>
+<p>- UE Context setup procedure</p>
+<p>- UE Context Release Request (gNB-DU initiated) procedure</p>
+<p>- UE Context Release (gNB-CU initiated) procedure</p>
+<p>- UE Context Modification (gNB-CU initiated) procedure</p>
+<p>- UE Context Modification Required (gNB-DU initiated) procedure</p>
+<p>- UE Inactivity Notification procedure</p>
+<p>- Notify procedure</p>
+<p>- Access Success procedure</p>
+<h3 id="rrc-message-transfer-procedures">6.1.3 RRC Message Transfer
+procedures</h3>
+<p>The F1 RRC message transfer procedures are listed below:</p>
+<p>- Initial UL RRC Message Transfer procedure</p>
+<p>- UL RRC Message Transfer procedure</p>
+<p>- DL RRC Message Transfer procedure</p>
+<p>- RRC Delivery Report procedure</p>
+<h3 id="a-warning-message-transmission-procedures">6.1.3A Warning
+Message Transmission procedures</h3>
+<p>The F1 Warning message transmission procedures are listed below:</p>
+<p>- Write-Replace Warning procedure</p>
+<p>- PWS Cancel procedure</p>
+<p>- PWS Restart Indication procedure</p>
+<p>- PWS Failure Indication procedure</p>
+<h3 id="system-information-procedures">6.1.4 System Information
+procedures</h3>
+<p>The F1 System information procedures are listed below:</p>
+<p>- System Information Delivery procedure</p>
+<h3 id="paging-procedures">6.1.5 Paging procedures </h3>
+<p>The F1 Paging procedures are listed below:</p>
+<p>- Paging procedure</p>
+<h3 id="void-1">6.1.6 Void</h3>
+<h3 id="radio-information-transfer-procedures">6.1.7 Radio information
+transfer procedures</h3>
+<p>The F1 Radio information transfer procedures are listed below:</p>
+<p>- DU-CU Radio Information Transfer procedure</p>
+<p>- CU-DU Radio Information Transfer procedure</p>
+<h3 id="ue-tracing-procedures">6.1.8 UE Tracing procedures</h3>
+<p>The following procedures are used to trace the UE:</p>
+<p>- Trace Start procedure</p>
+<p>- Deactivate Trace procedure</p>
+<p>- Cell Traffic Trace procedure</p>
+<h3 id="load-management-procedures">6.1.9 Load management
+procedures</h3>
+<p>The load management procedures are listed as below:</p>
+<p>- Resource Status Reporting Initiation procedure</p>
+<p>- Resource Status Reporting procedure</p>
+<h3 id="self-optimisation-support-procedure">6.1.10 Self-optimisation
+support procedure</h3>
+<p>The self-optimisation support procedure is used to transfer failure
+and mobility related information from the gNB-CU to the gNB-DU to enable
+self-optimisation</p>
+<p>- Access and Mobility Indication procedure</p>
+<h3 id="positioning-procedures">6.1.11 Positioning procedures </h3>
+<p>The F1 Positioning procedures are listed below:</p>
+<p>- Positioning Assistance Information Control procedure;</p>
+<p>- Positioning Assistance Information Feedback procedure;</p>
+<p>- Positioning Measurement procedure;</p>
+<p>- Positioning Measurement Report procedure;</p>
+<p>- Positioning Measurement Abort procedure;</p>
+<p>- Positioning Measurement Failure Indication procedure;</p>
+<p>- Positioning Measurement Update procedure;</p>
+<p>- TRP Information Exchange procedure;</p>
+<p>- Positioning Information Update;</p>
+<p>- Positioning Information Exchange procedure;</p>
+<p>- Positioning Activation procedure;</p>
+<p>- Positioning Deactivation procedure;</p>
+<p>- E-CID Measurement Initiation;</p>
+<p>- E-CID Measurement Failure Indication procedure;</p>
+<p>- E-CID Measurement Report procedure;</p>
+<p>- E-CID Measurement Termination procedure.</p>
+<p>- PRS Configuration Exchange procedure;</p>
+<p>- Measurement Preconfiguration;</p>
+<p>- Measurement Activation;</p>
+<p>- Positioning System Information Delivery procedure.</p>
+<h3 id="iab-procedures">6.1.12 IAB procedures</h3>
+<p>The IAB procedures are listed below:</p>
+<p>- BAP Mapping Configuration procedure</p>
+<p>- gNB-DU Resource Configuration procedure</p>
+<p>- IAB TNL Address Allocation procedure</p>
+<p>- IAB UP Configuration Update procedure</p>
+<h3 id="nr-mbs-procedures">6.1.13 NR MBS procedures </h3>
+<p>The F1 MBS procedures are listed below:</p>
+<p>- Broadcast Context Setup;</p>
+<p>Broadcast Context Release (gNB-CU initiated);</p>
+<p>- Broadcast Context Modification;</p>
+<p>- Broadcast Context Release Request (gNB-DU initiated);</p>
+<p>- Multicast Group Paging procedure;</p>
+<p>- Multicast Context Setup;</p>
+<p>- Multicast Context Release (gNB-CU initiated);</p>
+<p>- Multicast Context Modification;</p>
+<p>- Multicast Context Release Request (gNB-DU initiated);</p>
+<p>- Multicast Distribution Setup;</p>
+<p>- Multicast Distribution Release.</p>
+<h3 id="pdc-measurement-procedures">6.1.14 PDC Measurement
+procedures</h3>
+<p>The PDC measurement procedures are listed below:</p>
+<p>- PDC Measurement Initiation procedure</p>
+<p>- PDC Measurement Report procedure</p>
+<h3 id="qmc-procedures">6.1.15 QMC procedures</h3>
+<p>The QMC procedures are listed below:</p>
+<p>- QoE Information Transfer procedure.</p>
+<h2 id="user-plane-procedures">6.2 User plane procedures</h2>
+<h1 id="f1-interface-protocol-structure">7 F1 interface protocol
+structure</h1>
+<h2 id="f1-control-plane-protocol-f1-c">7.1 F1 Control Plane Protocol
+(F1-C)</h2>
+<p>Figure 7.1-1 shows the protocol structure for F1-C. The TNL is based
+on IP transport, comprising the SCTP on top of IP. The application layer
+signalling protocol is referred to as F1AP (F1 Application
+Protocol).</p>
+<p><img src="media/image3.svg" /></p>
+<p>Figure 7.1-1: Interface protocol structure for F1-C</p>
+<h2 id="f1-user-plane-protocol-f1-u">7.2 F1 User Plane Protocol
+(F1-U)</h2>
+<p>Figure 7.2-1 shows the protocol structure for F1-U. The TNL is based
+on IP transport, comprising the UDP and GTP-U on top of IP.</p>
+<p><img src="media/image4.svg" /></p>
+<p>Figure 7.2-1: Interface protocol structure for F1-U</p>
+<h1 id="other-f1-interface-specifications">8 Other F1 interface
+specifications</h1>
+<p>This clause contains the description of the other related 3GPP
+specifications.</p>
+<h2 id="ng-ran-f1-interface-layer-1-3gpp-ts-38.471">8.1 NG-RAN F1
+interface: layer 1 (3GPP TS 38.471)</h2>
+<p>3GPP TS 38.471 [3] specifies the physical layer technologies that may
+be used to support the F1 interface.</p>
+<h2 id="ng-ran-f1-interface-signalling-transport-3gpp-ts-38.472">8.2
+NG-RAN F1 interface: signalling transport (3GPP TS 38.472)</h2>
+<p>3GPP TS 38.472 [4] specifies the signalling bearers for the F1AP for
+the F1-C interface.</p>
+<h2 id="ng-ran-f1-interface-f1ap-specification-3gpp-ts-38.473">8.3
+NG-RAN F1 interface: F1AP specification (3GPP TS 38.473)</h2>
+<p>3GPP TS 38.473 [5] specifies the F1AP protocol for radio network
+control plane signalling over the F1 interface.</p>
+<h2
+id="ng-ran-f1-interface-data-transport-and-transport-signalling-3gpp-ts-38.474">8.4
+NG-RAN F1 interface: data transport and transport signalling (3GPP TS
+38.474)</h2>
+<p>3GPP TS 38.474 [6] specifies the transport bearers for the user plane
+of the F1-U interface.</p>
+<h2 id="ng-ran-f1-interface-user-plane-protocol-3gpp-ts-38.425">8.5
+NG-RAN F1 interface: user plane protocol (3GPP TS 38.425)</h2>
+<p>3GPP TS 38.425 [7] specifies the user plane protocol being used over
+the F1-U interface.</p>
+<p class="heading" id="annex-a-informative-change-history"><br />
+Annex A (informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 50%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8" style="text-align: center;"><strong>Change
+history</strong></th>
+</tr>
+<tr>
+<th><strong>Date</strong></th>
+<th><strong>Meeting</strong></th>
+<th><strong>TDoc</strong></th>
+<th><strong>CR</strong></th>
+<th><strong>Rev</strong></th>
+<th><strong>Cat</strong></th>
+<th><strong>Subject/Comment</strong></th>
+<th><strong>New version</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017-06</td>
+<td>R3 NR#2</td>
+<td>R3-172492</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>First version</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>2017-07</td>
+<td>R3 NR#2</td>
+<td>R3-172639</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Incorporated agreed TPs from R3 NR#2 Adhoc</td>
+<td>0.2.0</td>
+</tr>
+<tr>
+<td>2017-08</td>
+<td>R3#97</td>
+<td>R3-173450</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Incorporated agreed TPs from R3#97</td>
+<td>0.3.0</td>
+</tr>
+<tr>
+<td>2017-10</td>
+<td>R3#97b</td>
+<td>R3-174244</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Incorporated agreed TPs from R3#97b</td>
+<td>0.4.0</td>
+</tr>
+<tr>
+<td>2017-10</td>
+<td>R3#97b</td>
+<td>R3-174259</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Merged text from TS 38.401 v040</td>
+<td>0.4.1</td>
+</tr>
+<tr>
+<td>2017-12</td>
+<td>R3#98</td>
+<td>R3-175060</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Incorporated agreed TPs from R3#98</td>
+<td>0.5.0</td>
+</tr>
+<tr>
+<td>2017-12</td>
+<td>RAN#78</td>
+<td>RP-172286</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Submitted for approval to RAN</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>2018-01</td>
+<td>RP-78</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>TS approved by RAN plenary</td>
+<td>15.0.0</td>
+</tr>
+<tr>
+<td>2018-03</td>
+<td>RP-79</td>
+<td>RP-180468</td>
+<td>0002</td>
+<td>-</td>
+<td>F</td>
+<td>UE Context Management Procedure Related with EN-DC Operation - Stage
+2</td>
+<td>15.1.0</td>
+</tr>
+<tr>
+<td>2018-03</td>
+<td>RP-79</td>
+<td>RP-180468</td>
+<td>0006</td>
+<td>-</td>
+<td>B</td>
+<td>Correction of packet duplication</td>
+<td>15.1.0</td>
+</tr>
+<tr>
+<td>2018-03</td>
+<td>RP-79</td>
+<td>RP-180468</td>
+<td>0007</td>
+<td>1</td>
+<td>B</td>
+<td>SCell management</td>
+<td>15.1.0</td>
+</tr>
+<tr>
+<td>2018-06</td>
+<td>RP-80</td>
+<td>RP-181237</td>
+<td>0003</td>
+<td>6</td>
+<td>B</td>
+<td>Introduction of SA NR (38.470 Baseline CR covering RAN3
+agreements)</td>
+<td>15.2.0</td>
+</tr>
+<tr>
+<td>2018-06</td>
+<td>RP-80</td>
+<td>RP-181238</td>
+<td>0008</td>
+<td>3</td>
+<td>F</td>
+<td>Adding new F1 procedure for UE Inactivity Notification</td>
+<td>15.2.0</td>
+</tr>
+<tr>
+<td>2018-06</td>
+<td>RP-80</td>
+<td>RP-181237</td>
+<td>0010</td>
+<td>-</td>
+<td>B</td>
+<td>Introduction of LTE-NR coexistence function</td>
+<td>15.2.0</td>
+</tr>
+<tr>
+<td>2018-09</td>
+<td>RP-81</td>
+<td>RP-181922</td>
+<td>0011</td>
+<td>3</td>
+<td>F</td>
+<td>NR Corrections (38.470 Baseline CR covering RAN3-101
+agreements)</td>
+<td>15.3.0</td>
+</tr>
+<tr>
+<td>2018-12</td>
+<td>RP-82</td>
+<td>RP-182446</td>
+<td>0015</td>
+<td>1</td>
+<td>F</td>
+<td>F1 Load Management</td>
+<td>15.4.0</td>
+</tr>
+<tr>
+<td>2018-12</td>
+<td>RP-82</td>
+<td>RP-182446</td>
+<td>0016</td>
+<td>-</td>
+<td>F</td>
+<td>Alignment with stage3</td>
+<td>15.4.0</td>
+</tr>
+<tr>
+<td>2018-12</td>
+<td>RP-82</td>
+<td>RP-182446</td>
+<td>0018</td>
+<td>2</td>
+<td>F</td>
+<td>CR to 38.470 on the introduction of RRC Delivery Report
+procedure</td>
+<td>15.4.0</td>
+</tr>
+<tr>
+<td>2018-12</td>
+<td>RP-82</td>
+<td>RP-182448</td>
+<td>0019</td>
+<td>-</td>
+<td>F</td>
+<td>Rapporteur CR to 38.470</td>
+<td>15.4.0</td>
+</tr>
+<tr>
+<td>2019-03</td>
+<td>RP-83</td>
+<td>RP-190556</td>
+<td>0023</td>
+<td>1</td>
+<td></td>
+<td>Energy Saving Support over F1 Interface</td>
+<td>15.5.0</td>
+</tr>
+<tr>
+<td>2019-07</td>
+<td>RP-84</td>
+<td>RP-191396</td>
+<td>0034</td>
+<td>1</td>
+<td>F</td>
+<td>Rapporteur updates</td>
+<td>15.6.0</td>
+</tr>
+<tr>
+<td>2019-07</td>
+<td>RP-84</td>
+<td>RP-191396</td>
+<td>0036</td>
+<td>1</td>
+<td>F</td>
+<td>Encoding of SIB9 in the gNB-DU</td>
+<td>15.6.0</td>
+</tr>
+<tr>
+<td>2019-12</td>
+<td>RP-86</td>
+<td>RP-192915</td>
+<td>0058</td>
+<td>2</td>
+<td>F</td>
+<td>E-UTRA-NR Cell-level Resource Coordination</td>
+<td>15.7.0</td>
+</tr>
+<tr>
+<td>2019-12</td>
+<td>RP-86</td>
+<td>RP-192908</td>
+<td>0035</td>
+<td>2</td>
+<td>B</td>
+<td>Remote Interference Management Message Transfer Support</td>
+<td>16.0.0</td>
+</tr>
+<tr>
+<td>2019-12</td>
+<td>RP-86</td>
+<td>RP-192908</td>
+<td>0038</td>
+<td>1</td>
+<td>B</td>
+<td>Intended DL&amp;UL configuration for TS38.470</td>
+<td>16.0.0</td>
+</tr>
+<tr>
+<td>2019-12</td>
+<td>RP-86</td>
+<td>RP-192913</td>
+<td>0040</td>
+<td>2</td>
+<td>F</td>
+<td>Trace function Support over F1 Interface</td>
+<td>16.0.0</td>
+</tr>
+<tr>
+<td>2020-03</td>
+<td>RP-87-e</td>
+<td>RP-200425</td>
+<td>0062</td>
+<td>-</td>
+<td>D</td>
+<td>Rapporteur: Editorial updates</td>
+<td>16.1.0</td>
+</tr>
+<tr>
+<td>2020-07</td>
+<td>RP-88-e</td>
+<td>RP-201077</td>
+<td>0026</td>
+<td>15</td>
+<td>B</td>
+<td>BL CR to 38.470: Support for IAB</td>
+<td>16.2.0</td>
+</tr>
+<tr>
+<td>2020-07</td>
+<td>RP-88-e</td>
+<td>RP-201080</td>
+<td>0059</td>
+<td>6</td>
+<td>B</td>
+<td>CR to TS 38.470 on support of NPN</td>
+<td>16.2.0</td>
+</tr>
+<tr>
+<td>2020-07</td>
+<td>RP-88-e</td>
+<td>RP-201075</td>
+<td>0063</td>
+<td>4</td>
+<td>B</td>
+<td>TS38.470 Stage2 Introduction of Mobility Enhancement Features</td>
+<td>16.2.0</td>
+</tr>
+<tr>
+<td>2020-07</td>
+<td>RP-88-e</td>
+<td>RP-201082</td>
+<td>0064</td>
+<td>3</td>
+<td>B</td>
+<td>BLCR to 38.470: Addition of SON feature</td>
+<td>16.2.0</td>
+</tr>
+<tr>
+<td>2020-07</td>
+<td>RP-88-e</td>
+<td>RP-201074</td>
+<td>0065</td>
+<td>6</td>
+<td>B</td>
+<td>Support of NR V2X SIB in gNB-DU</td>
+<td>16.2.0</td>
+</tr>
+<tr>
+<td>2020-07</td>
+<td>RP-88-e</td>
+<td>RP-201079</td>
+<td>0067</td>
+<td>2</td>
+<td>B</td>
+<td>PDCP duplication with more than 2 entities for F1 stage 2</td>
+<td>16.2.0</td>
+</tr>
+<tr>
+<td>2020-07</td>
+<td>RP-88-e</td>
+<td>RP-201082</td>
+<td>0068</td>
+<td>1</td>
+<td>B</td>
+<td>BLCR to 38.470: Addition of MDT feature</td>
+<td>16.2.0</td>
+</tr>
+<tr>
+<td>2020-09</td>
+<td>RP-89-e</td>
+<td>RP-201945</td>
+<td>0061</td>
+<td>8</td>
+<td>B</td>
+<td>Positioning support over F1AP</td>
+<td>16.3.0</td>
+</tr>
+<tr>
+<td>2020-09</td>
+<td>RP-89-e</td>
+<td>RP-201956</td>
+<td>0069</td>
+<td>-</td>
+<td>F</td>
+<td>Rapporteur Corrections</td>
+<td>16.3.0</td>
+</tr>
+<tr>
+<td>2021-03</td>
+<td>RP-91-e</td>
+<td>RP-210231</td>
+<td>0070</td>
+<td>3</td>
+<td>F</td>
+<td>Correction on IAB procedures</td>
+<td>16.4.0</td>
+</tr>
+<tr>
+<td>2021-06</td>
+<td>RP-92-e</td>
+<td>RP-211330</td>
+<td>0075</td>
+<td></td>
+<td>F</td>
+<td>Stage-2 CR on system information message over F1 (Rel-16)</td>
+<td>16.5.0</td>
+</tr>
+<tr>
+<td>2022-03</td>
+<td>RP-95-e</td>
+<td>RP-220276</td>
+<td>0084</td>
+<td></td>
+<td>F</td>
+<td>(Stage-2) Clarification on IAB Address Remove</td>
+<td>16.6.0</td>
+</tr>
+<tr>
+<td>2022-03</td>
+<td>RP-95-e</td>
+<td>RP-220224</td>
+<td>0071</td>
+<td>8</td>
+<td>B</td>
+<td>Introduction of NR MBS</td>
+<td>17.0.0</td>
+</tr>
+<tr>
+<td>2022-03</td>
+<td>RP-95-e</td>
+<td>RP-220222</td>
+<td>0076</td>
+<td>5</td>
+<td>B</td>
+<td>CP-based Congestion Mitigation for IAB Network</td>
+<td>17.0.0</td>
+</tr>
+<tr>
+<td>2022-03</td>
+<td>RP-95-e</td>
+<td>RP-220230</td>
+<td>0078</td>
+<td>4</td>
+<td>B</td>
+<td>BL CR to 38.470 Support for Redcap UEs</td>
+<td>17.0.0</td>
+</tr>
+<tr>
+<td>2022-03</td>
+<td>RP-95-e</td>
+<td>RP-220228</td>
+<td>0079</td>
+<td>3</td>
+<td>B</td>
+<td>Introduction of release 17 positioning enhancements</td>
+<td>17.0.0</td>
+</tr>
+<tr>
+<td>2022-03</td>
+<td>RP-95-e</td>
+<td>RP-220235</td>
+<td>0080</td>
+<td>2</td>
+<td>B</td>
+<td>Support for UE Power Saving Enhancements</td>
+<td>17.0.0</td>
+</tr>
+<tr>
+<td>2022-03</td>
+<td>RP-95-e</td>
+<td>RP-220233</td>
+<td>0081</td>
+<td>2</td>
+<td>B</td>
+<td>CG-SDT BLCR to TS 38.470</td>
+<td>17.0.0</td>
+</tr>
+<tr>
+<td>2022-03</td>
+<td>RP-95-e</td>
+<td>RP-220236</td>
+<td>0083</td>
+<td>1</td>
+<td>D</td>
+<td>Editorial corrections</td>
+<td>17.0.0</td>
+</tr>
+<tr>
+<td>2022-03</td>
+<td>RP-95-e</td>
+<td>RP-220231</td>
+<td>0085</td>
+<td>1</td>
+<td>B</td>
+<td>(Stage-2 F1AP CR) support for NR Sidelink Relay</td>
+<td>17.0.0</td>
+</tr>
+<tr>
+<td>2022-03</td>
+<td>RP-95-e</td>
+<td>RP-220223</td>
+<td>0086</td>
+<td></td>
+<td>B</td>
+<td>Introduction of Propagation Delay Compensation Procedure</td>
+<td>17.0.0</td>
+</tr>
+<tr>
+<td>2022-03</td>
+<td>RP-95-e</td>
+<td>RP-220229</td>
+<td>0087</td>
+<td>-</td>
+<td>B</td>
+<td>Support of QoE functionality</td>
+<td>17.0.0</td>
+</tr>
+<tr>
+<td>2022-06</td>
+<td>RP-96</td>
+<td>RP-221134</td>
+<td>0088</td>
+<td>1</td>
+<td>F</td>
+<td>Corrections on NR MBS in 38470</td>
+<td>17.1.0</td>
+</tr>
+<tr>
+<td>2022-06</td>
+<td>RP-96</td>
+<td>RP-221142</td>
+<td>0090</td>
+<td>1</td>
+<td>F</td>
+<td>CR on SIB18 signalling</td>
+<td>17.1.0</td>
+</tr>
+<tr>
+<td>2022-06</td>
+<td>RP-96</td>
+<td>RP-221154</td>
+<td>0092</td>
+<td>-</td>
+<td>A</td>
+<td>Clarification on SRB duplication for TS38.470 (R17)</td>
+<td>17.1.0</td>
+</tr>
+<tr>
+<td>2022-06</td>
+<td>RP-96</td>
+<td>RP-221127</td>
+<td>0093</td>
+<td>2</td>
+<td>F</td>
+<td>Correction to 38.470 for capturing SIB19</td>
+<td>17.1.0</td>
+</tr>
+<tr>
+<td>2022-06</td>
+<td>RP-96</td>
+<td>RP-221133</td>
+<td>0094</td>
+<td>2</td>
+<td>F</td>
+<td>Clarification on paging capability for TS38.470</td>
+<td>17.1.0</td>
+</tr>
+<tr>
+<td>2022-06</td>
+<td>RP-96</td>
+<td>RP-221145</td>
+<td>0096</td>
+<td>-</td>
+<td>D</td>
+<td>Editorial corrections</td>
+<td>17.1.0</td>
+</tr>
+<tr>
+<td>2022-06</td>
+<td>RP-96</td>
+<td>RP-221145</td>
+<td>0097</td>
+<td>1</td>
+<td>F</td>
+<td>Supporting the disaster roaming information [MINT]</td>
+<td>17.1.0</td>
+</tr>
+<tr>
+<td>2022-06</td>
+<td>RP-96</td>
+<td>RP-221143</td>
+<td>0099</td>
+<td>-</td>
+<td>F</td>
+<td>QoE Rel-17 Corrections</td>
+<td>17.1.0</td>
+</tr>
+<tr>
+<td>2022-06</td>
+<td>RP-96</td>
+<td>RP-221128</td>
+<td>0100</td>
+<td>2</td>
+<td>F</td>
+<td>IAB Rel-17 Corrections</td>
+<td>17.1.0</td>
+</tr>
+<tr>
+<td>2022-06</td>
+<td>RP-96</td>
+<td>RP-221131</td>
+<td>0101</td>
+<td></td>
+<td>F</td>
+<td>CR for Preconfiguration Activation/Deactivation</td>
+<td>17.1.0</td>
+</tr>
+<tr>
+<td>2022-09</td>
+<td>RP-97-e</td>
+<td>RP-222187</td>
+<td>0102</td>
+<td>1</td>
+<td>F</td>
+<td>Clarification on F1 Paging function</td>
+<td>17.2.0</td>
+</tr>
+<tr>
+<td>2022-09</td>
+<td>RP-97-e</td>
+<td>RP-222190</td>
+<td>0104</td>
+<td>1</td>
+<td>F</td>
+<td>Correction on NR SL Relay for TS 38.470</td>
+<td>17.2.0</td>
+</tr>
+<tr>
+<td>2022-09</td>
+<td>RP-97-e</td>
+<td>RP-222184</td>
+<td>0105</td>
+<td>1</td>
+<td>F</td>
+<td>Supporting network slice AS group</td>
+<td>17.2.0</td>
+</tr>
+<tr>
+<td>2022-12</td>
+<td>RP-98-e</td>
+<td>RP-222887</td>
+<td>0107</td>
+<td>1</td>
+<td>A</td>
+<td>Correction to 38.470 on Positioning System Information</td>
+<td>17.3.0</td>
+</tr>
+<tr>
+<td>2022-12</td>
+<td>RP-98-e</td>
+<td>RP-222887</td>
+<td>0108</td>
+<td>1</td>
+<td>F</td>
+<td>Stage 2 text addition on UE context management function for
+positioning</td>
+<td>17.3.0</td>
+</tr>
+<tr>
+<td>2023-03</td>
+<td>RAN#99</td>
+<td>RP-230588</td>
+<td>0110</td>
+<td>-</td>
+<td>A</td>
+<td>Stage 2 text addition on SRS configuration for positioning</td>
+<td>17.4.0</td>
+</tr>
+<tr>
+<td>2023-06</td>
+<td>RAN#100</td>
+<td>RP-231075</td>
+<td>0113</td>
+<td>1</td>
+<td>A</td>
+<td>Correction of SIType List</td>
+<td>17.5.0</td>
+</tr>
+<tr>
+<td>2023-09</td>
+<td>RAN#101</td>
+<td>RP-231900</td>
+<td>0116</td>
+<td>-</td>
+<td>A</td>
+<td>Correction on Positioning SI handling over F1</td>
+<td>17.6.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

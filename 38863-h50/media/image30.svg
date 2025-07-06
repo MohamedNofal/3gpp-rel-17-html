@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.4722222222222222in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 4960 1088" width="2.1527777777777777in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 16; stroke-linejoin: round; }
+.font0 { font-size: 346px; font-family: "Times New Roman", serif; }
+.font1 { font-size: 313px; font-family: Symbol, serif; }
+.font2 { font-style: italic; font-size: 346px; font-family: "Times New Roman", serif; }
+.font3 { font-weight: bold; font-size: 20px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="1284" x2="1694" y1="544" y2="544"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4105" xml:lang="en" xml:space="preserve" y="640">dBsd</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2032" xml:lang="en" xml:space="preserve" y="640">1</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1297" xml:lang="en" xml:space="preserve" y="938">50</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="515" xml:lang="en" xml:space="preserve" y="640">log</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="54" xml:lang="en" xml:space="preserve" y="640">40</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2225" xml:lang="en" xml:space="preserve" y="684">÷</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2225" xml:lang="en" xml:space="preserve" y="984">ø</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2225" xml:lang="en" xml:space="preserve" y="435">ö</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1086" xml:lang="en" xml:space="preserve" y="684">ç</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1086" xml:lang="en" xml:space="preserve" y="984">è</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1086" xml:lang="en" xml:space="preserve" y="435">æ</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1779" xml:lang="en" xml:space="preserve" y="640">+</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1362" xml:lang="en" xml:space="preserve" y="400">F</text>
+    </g>
+</svg>

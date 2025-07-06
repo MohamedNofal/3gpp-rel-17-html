@@ -1,0 +1,390 @@
+<?xml version="1.0"  encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="493.0000" height="347.0000">
+<g transform="translate(-17.0000, -33.0000)">
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1168.0000,1167.0000 L 1168.0000,5314.0000 L 8112.0000,5314.0000 L 8112.0000,1167.0000 L 1168.0000,1167.0000 Z" stroke-width="1px" stroke="#FFFFFF"  fill="#FFFFFF" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="259.0000" y="47.0000" font-size="15.0000" ><![CDATA[Best filter]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="158.0000" y="66.0000" font-size="15.0000" ><![CDATA[50MHz 30kHz pi/2-BPSK DFT-S-OFDM ]]></text>
+<defs><clipPath id="clip-1804289383"><path d="M 74.0000,74.0000 L 342.0000,74.0000 L 342.0000,332.0000 L 74.0000,332.0000 L 74.0000,74.0000 Z Z" /></clipPath></defs>
+<image width="268.0000" height="258.0000" x="74.0000" y="74.0000"  clip-path="url(#clip-1804289383)" xlink:href="data:image/png;base64,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" />
+<path style="fill:#262626" d="M 74.0000,72.0000 L 76.0000,72.0000 L 76.0000,333.0000 L 74.0000,333.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<defs><image id="img-1" x="0" y="0" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAKUlEQVQYlWNkYGD4z4AHMP3/jyoP48NoRoImoOtE5xM2Ad1OdJModwMA/aYh60TzWZ0AAAAASUVORK5CYIIA"  preserveAspectRatio="none" /><pattern id="img-1-ref" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse" >
+<use id="img-1-ign" xlink:href="#img-1" /></pattern></defs>
+<path d="M 1186.0000,5314.0000 L 1186.0000,1167.0000 L 1202.0000,1167.0000 L 1202.0000,5314.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 74.0000,72.0000 L 76.0000,72.0000 L 76.0000,333.0000 L 74.0000,333.0000 Z" /><path style="fill:#262626" d="M 114.0000,72.0000 L 116.0000,72.0000 L 116.0000,333.0000 L 114.0000,333.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1831.0000,5314.0000 L 1831.0000,1167.0000 L 1847.0000,1167.0000 L 1847.0000,5314.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 114.0000,72.0000 L 116.0000,72.0000 L 116.0000,333.0000 L 114.0000,333.0000 Z" /><path style="fill:#262626" d="M 154.0000,72.0000 L 156.0000,72.0000 L 156.0000,333.0000 L 154.0000,333.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2476.0000,5314.0000 L 2476.0000,1167.0000 L 2492.0000,1167.0000 L 2492.0000,5314.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 154.0000,72.0000 L 156.0000,72.0000 L 156.0000,333.0000 L 154.0000,333.0000 Z" /><path style="fill:#262626" d="M 195.0000,72.0000 L 197.0000,72.0000 L 197.0000,333.0000 L 195.0000,333.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 3121.0000,5314.0000 L 3121.0000,1167.0000 L 3137.0000,1167.0000 L 3137.0000,5314.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 195.0000,72.0000 L 197.0000,72.0000 L 197.0000,333.0000 L 195.0000,333.0000 Z" /><path style="fill:#262626" d="M 235.0000,72.0000 L 237.0000,72.0000 L 237.0000,333.0000 L 235.0000,333.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 3766.0000,5314.0000 L 3766.0000,1167.0000 L 3782.0000,1167.0000 L 3782.0000,5314.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 235.0000,72.0000 L 237.0000,72.0000 L 237.0000,333.0000 L 235.0000,333.0000 Z" /><path style="fill:#262626" d="M 275.0000,72.0000 L 277.0000,72.0000 L 277.0000,333.0000 L 275.0000,333.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4411.0000,5314.0000 L 4411.0000,1167.0000 L 4427.0000,1167.0000 L 4427.0000,5314.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 275.0000,72.0000 L 277.0000,72.0000 L 277.0000,333.0000 L 275.0000,333.0000 Z" /><path style="fill:#262626" d="M 316.0000,72.0000 L 318.0000,72.0000 L 318.0000,333.0000 L 316.0000,333.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5056.0000,5314.0000 L 5056.0000,1167.0000 L 5072.0000,1167.0000 L 5072.0000,5314.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 316.0000,72.0000 L 318.0000,72.0000 L 318.0000,333.0000 L 316.0000,333.0000 Z" /><path style="fill:#262626" d="M 356.0000,72.0000 L 358.0000,72.0000 L 358.0000,333.0000 L 356.0000,333.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5700.0000,5314.0000 L 5700.0000,1167.0000 L 5716.0000,1167.0000 L 5716.0000,5314.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 356.0000,72.0000 L 358.0000,72.0000 L 358.0000,333.0000 L 356.0000,333.0000 Z" /><path style="fill:#262626" d="M 396.0000,72.0000 L 398.0000,72.0000 L 398.0000,333.0000 L 396.0000,333.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6345.0000,5314.0000 L 6345.0000,1167.0000 L 6361.0000,1167.0000 L 6361.0000,5314.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 396.0000,72.0000 L 398.0000,72.0000 L 398.0000,333.0000 L 396.0000,333.0000 Z" /><path style="fill:#262626" d="M 436.0000,72.0000 L 438.0000,72.0000 L 438.0000,333.0000 L 436.0000,333.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6990.0000,5314.0000 L 6990.0000,1167.0000 L 7006.0000,1167.0000 L 7006.0000,5314.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 436.0000,72.0000 L 438.0000,72.0000 L 438.0000,333.0000 L 436.0000,333.0000 Z" /><path style="fill:#262626" d="M 477.0000,72.0000 L 479.0000,72.0000 L 479.0000,333.0000 L 477.0000,333.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7635.0000,5314.0000 L 7635.0000,1167.0000 L 7651.0000,1167.0000 L 7651.0000,5314.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 477.0000,72.0000 L 479.0000,72.0000 L 479.0000,333.0000 L 477.0000,333.0000 Z" /><path style="fill:#262626" d="M 73.0000,291.0000 L 508.0000,291.0000 L 508.0000,293.0000 L 73.0000,293.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,4683.0000 L 1168.0000,4683.0000 L 1168.0000,4667.0000 L 8112.0000,4667.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 73.0000,291.0000 L 508.0000,291.0000 L 508.0000,293.0000 L 73.0000,293.0000 Z" /><path style="fill:#262626" d="M 73.0000,251.0000 L 508.0000,251.0000 L 508.0000,253.0000 L 73.0000,253.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,4038.0000 L 1168.0000,4038.0000 L 1168.0000,4022.0000 L 8112.0000,4022.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 73.0000,251.0000 L 508.0000,251.0000 L 508.0000,253.0000 L 73.0000,253.0000 Z" /><path style="fill:#262626" d="M 73.0000,211.0000 L 508.0000,211.0000 L 508.0000,213.0000 L 73.0000,213.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,3394.0000 L 1168.0000,3394.0000 L 1168.0000,3378.0000 L 8112.0000,3378.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 73.0000,211.0000 L 508.0000,211.0000 L 508.0000,213.0000 L 73.0000,213.0000 Z" /><path style="fill:#262626" d="M 73.0000,170.0000 L 508.0000,170.0000 L 508.0000,172.0000 L 73.0000,172.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,2749.0000 L 1168.0000,2749.0000 L 1168.0000,2733.0000 L 8112.0000,2733.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 73.0000,170.0000 L 508.0000,170.0000 L 508.0000,172.0000 L 73.0000,172.0000 Z" /><path style="fill:#262626" d="M 73.0000,130.0000 L 508.0000,130.0000 L 508.0000,132.0000 L 73.0000,132.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,2104.0000 L 1168.0000,2104.0000 L 1168.0000,2088.0000 L 8112.0000,2088.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 73.0000,130.0000 L 508.0000,130.0000 L 508.0000,132.0000 L 73.0000,132.0000 Z" /><path style="fill:#262626" d="M 73.0000,90.0000 L 508.0000,90.0000 L 508.0000,92.0000 L 73.0000,92.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,1459.0000 L 1168.0000,1459.0000 L 1168.0000,1443.0000 L 8112.0000,1443.0000 Z" stroke-width="1px" stroke="#262626" fill="#img-1-ref" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<path style="fill:#262626" d="M 73.0000,90.0000 L 508.0000,90.0000 L 508.0000,92.0000 L 73.0000,92.0000 Z" /></g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1168.0000,5314.0000 L 8112.0000,5314.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1168.0000,1167.0000 L 8112.0000,1167.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1194.0000,5314.0000 L 1194.0000,5244.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1839.0000,5314.0000 L 1839.0000,5244.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2484.0000,5314.0000 L 2484.0000,5244.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 3129.0000,5314.0000 L 3129.0000,5244.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 3774.0000,5314.0000 L 3774.0000,5244.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4419.0000,5314.0000 L 4419.0000,5244.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5064.0000,5314.0000 L 5064.0000,5244.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5708.0000,5314.0000 L 5708.0000,5244.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6353.0000,5314.0000 L 6353.0000,5244.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6998.0000,5314.0000 L 6998.0000,5244.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7643.0000,5314.0000 L 7643.0000,5244.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1194.0000,1167.0000 L 1194.0000,1237.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1839.0000,1167.0000 L 1839.0000,1237.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 2484.0000,1167.0000 L 2484.0000,1237.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 3129.0000,1167.0000 L 3129.0000,1237.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 3774.0000,1167.0000 L 3774.0000,1237.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4419.0000,1167.0000 L 4419.0000,1237.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5064.0000,1167.0000 L 5064.0000,1237.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5708.0000,1167.0000 L 5708.0000,1237.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6353.0000,1167.0000 L 6353.0000,1237.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6998.0000,1167.0000 L 6998.0000,1237.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 7643.0000,1167.0000 L 7643.0000,1237.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="71.0000" y="351.0000" font-size="13.0000" ><![CDATA[0]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="108.0000" y="351.0000" font-size="13.0000" ><![CDATA[20]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="148.0000" y="351.0000" font-size="13.0000" ><![CDATA[40]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="189.0000" y="351.0000" font-size="13.0000" ><![CDATA[60]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="229.0000" y="351.0000" font-size="13.0000" ><![CDATA[80]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="265.0000" y="351.0000" font-size="13.0000" ><![CDATA[100]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="305.0000" y="351.0000" font-size="13.0000" ><![CDATA[120]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="346.0000" y="351.0000" font-size="13.0000" ><![CDATA[140]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="386.0000" y="351.0000" font-size="13.0000" ><![CDATA[160]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="426.0000" y="351.0000" font-size="13.0000" ><![CDATA[180]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="467.0000" y="351.0000" font-size="13.0000" ><![CDATA[200]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="268.0000" y="371.0000" font-size="15.0000" ><![CDATA[RB]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="289.0000" y="378.0000" font-size="12.0000" ><![CDATA[start]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1168.0000,5314.0000 L 1168.0000,1167.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,5314.0000 L 8112.0000,1167.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1168.0000,4675.0000 L 1238.0000,4675.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1168.0000,4030.0000 L 1238.0000,4030.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1168.0000,3386.0000 L 1238.0000,3386.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1168.0000,2741.0000 L 1238.0000,2741.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1168.0000,2096.0000 L 1238.0000,2096.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1168.0000,1451.0000 L 1238.0000,1451.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,4675.0000 L 8043.0000,4675.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,4030.0000 L 8043.0000,4030.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,3386.0000 L 8043.0000,3386.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,2741.0000 L 8043.0000,2741.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,2096.0000 L 8043.0000,2096.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8112.0000,1451.0000 L 8043.0000,1451.0000 " stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="53.0000" y="297.0000" font-size="13.0000" ><![CDATA[20]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="53.0000" y="257.0000" font-size="13.0000" ><![CDATA[40]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="53.0000" y="217.0000" font-size="13.0000" ><![CDATA[60]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="53.0000" y="176.0000" font-size="13.0000" ><![CDATA[80]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="45.0000" y="136.0000" font-size="13.0000" ><![CDATA[100]]></text>
+<text font-family="Arial" fill="#262626" style ="white-space:pre;" font-weight="400" text-anchor="start" x="45.0000" y="96.0000" font-size="13.0000" ><![CDATA[120]]></text>
+<text font-family="Arial" fill="#262626" transform="rotate(-90, 31.0000, 232.5000) translate(0, 13.5000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="31.0000" y="219.0000" font-size="15.0000" ><![CDATA[L]]></text>
+<text font-family="Arial" fill="#262626" transform="rotate(-90, 38.0000, 220.8000) translate(0, 10.8000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="38.0000" y="210.0000" font-size="12.0000" ><![CDATA[C]]></text>
+<text font-family="Arial" fill="#262626" transform="rotate(-90, 38.0000, 211.8000) translate(0, 10.8000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="38.0000" y="201.0000" font-size="12.0000" ><![CDATA[R]]></text>
+<text font-family="Arial" fill="#262626" transform="rotate(-90, 38.0000, 203.8000) translate(0, 10.8000)" style ="white-space:pre;" font-weight="400" text-anchor="start" x="38.0000" y="193.0000" font-size="12.0000" ><![CDATA[B]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6384.0000,1344.0000 L 6384.0000,2976.0000 L 7936.0000,2976.0000 L 7936.0000,1344.0000 L 6384.0000,1344.0000 Z" stroke-width="1px" stroke="#FFFFFF"  fill="#FFFFFF" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="446.0000" y="99.0000" font-size="12.0000" ><![CDATA[Triang B]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6448.0000,1408.0000 L 6448.0000,1599.0000 L 7088.0000,1599.0000 L 7088.0000,1408.0000 L 6448.0000,1408.0000 Z" stroke-width="1px" stroke="#FF00FF"  fill="#FF00FF" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6448.0000,1599.0000 L 6448.0000,1408.0000 L 7088.0000,1408.0000 L 7088.0000,1599.0000 Z" stroke="#000000" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="miter"  stroke-miterlimit="10.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="446.0000" y="115.0000" font-size="12.0000" ><![CDATA[Triang A]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6448.0000,1671.0000 L 6448.0000,1862.0000 L 7088.0000,1862.0000 L 7088.0000,1671.0000 L 6448.0000,1671.0000 Z" stroke-width="1px" stroke="#808080"  fill="#808080" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6448.0000,1862.0000 L 6448.0000,1671.0000 L 7088.0000,1671.0000 L 7088.0000,1862.0000 Z" stroke="#000000" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="miter"  stroke-miterlimit="10.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="446.0000" y="132.0000" font-size="12.0000" ><![CDATA[[1+D]]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6448.0000,1934.0000 L 6448.0000,2125.0000 L 7088.0000,2125.0000 L 7088.0000,1934.0000 L 6448.0000,1934.0000 Z" stroke-width="1px" stroke="#FFFF00"  fill="#FFFF00" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6448.0000,2125.0000 L 6448.0000,1934.0000 L 7088.0000,1934.0000 L 7088.0000,2125.0000 Z" stroke="#000000" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="miter"  stroke-miterlimit="10.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="446.0000" y="148.0000" font-size="12.0000" ><![CDATA[0.335]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6448.0000,2196.0000 L 6448.0000,2387.0000 L 7088.0000,2387.0000 L 7088.0000,2196.0000 L 6448.0000,2196.0000 Z" stroke-width="1px" stroke="#E60000"  fill="#E60000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6448.0000,2387.0000 L 6448.0000,2196.0000 L 7088.0000,2196.0000 L 7088.0000,2387.0000 Z" stroke="#000000" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="miter"  stroke-miterlimit="10.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="446.0000" y="165.0000" font-size="12.0000" ><![CDATA[0.28]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6448.0000,2459.0000 L 6448.0000,2650.0000 L 7088.0000,2650.0000 L 7088.0000,2459.0000 L 6448.0000,2459.0000 Z" stroke-width="1px" stroke="#00FFFF"  fill="#00FFFF" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6448.0000,2650.0000 L 6448.0000,2459.0000 L 7088.0000,2459.0000 L 7088.0000,2650.0000 Z" stroke="#000000" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="miter"  stroke-miterlimit="10.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="446.0000" y="181.0000" font-size="12.0000" ><![CDATA[0.2]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6448.0000,2722.0000 L 6448.0000,2913.0000 L 7088.0000,2913.0000 L 7088.0000,2722.0000 L 6448.0000,2722.0000 Z" stroke-width="1px" stroke="#0000AB"  fill="#0000AB" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6448.0000,2913.0000 L 6448.0000,2722.0000 L 7088.0000,2722.0000 L 7088.0000,2913.0000 Z" stroke="#000000" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="miter"  stroke-miterlimit="10.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 6384.0000,2976.0000 L 6384.0000,1344.0000 L 7936.0000,1344.0000 L 7936.0000,2976.0000 Z" stroke="#262626" stroke-width="11.0000"  stroke-linecap="butt"  stroke-linejoin="miter"  stroke-miterlimit="10.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+</g>
+</svg>

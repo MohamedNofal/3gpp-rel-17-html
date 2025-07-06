@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.20824295010845986in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 2016 480" width="0.8746203904555314in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 16; stroke-linejoin: round; }
+.font0 { font-size: 288px; font-family: "Times New Roman", serif; }
+.font1 { font-style: italic; font-size: 167px; font-family: "Times New Roman", serif; }
+.font2 { font-style: italic; font-size: 288px; font-family: "Times New Roman", serif; }
+.font3 { font-size: 261px; font-family: Symbol, serif; }
+.font4 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="1675" x2="1569" y1="75" y2="405"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="289" xml:lang="en" xml:space="preserve" y="320">'</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="351 463 575 1207 1319 1431" xml:lang="en" xml:space="preserve" y="403">RBsRBs</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="69 1037 1713" xml:lang="en" xml:space="preserve" y="320">LLK</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="771" xml:space="preserve" y="320">=</text>
+    </g>
+</svg>

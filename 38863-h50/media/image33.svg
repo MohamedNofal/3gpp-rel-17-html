@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.4720173535791757in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 2368 1088" width="1.0273318872017354in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 16; stroke-linejoin: round; }
+.pen2 { stroke: rgb(0,0,0); stroke-width: 32; stroke-linejoin: round; }
+.font0 { font-style: italic; font-size: 346px; font-family: "Times New Roman", serif; }
+.font1 { font-size: 346px; font-family: "Times New Roman", serif; }
+.font2 { font-size: 313px; font-family: Symbol, serif; }
+.font3 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="782" x2="831" y1="374" y2="346"/>
+        <line class="pen2" fill="none" x1="831" x2="902" y1="354" y2="484"/>
+        <line class="pen1" fill="none" x1="910" x2="1004" y1="484" y2="96"/>
+        <line class="pen1" fill="none" x1="1004" x2="2272" y1="96" y2="96"/>
+        <line class="pen1" fill="none" x1="742" x2="2304" y1="608" y2="608"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1442" xml:lang="en" xml:space="preserve" y="1004">r</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1418" xml:lang="en" xml:space="preserve" y="462">EIRP</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="70" xml:lang="en" xml:space="preserve" y="704">E</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1016" xml:lang="en" xml:space="preserve" y="462">30</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="424" xml:lang="en" xml:space="preserve" y="704">=</text>
+    </g>
+</svg>

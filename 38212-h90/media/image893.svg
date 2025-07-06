@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.27765726681127983in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 1568 640" width="0.6802603036876356in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 19; stroke-linejoin: round; }
+.font0 { font-size: 410px; font-family: Symbol, serif; }
+.font1 { font-size: 200px; font-family: "Times New Roman", serif; }
+.font2 { font-style: italic; font-size: 346px; font-family: "Times New Roman", serif; }
+.font3 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="184" x2="376" y1="95" y2="95"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1086" xml:space="preserve" y="444">(</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1385" xml:space="preserve" y="444">)</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="457 613 762" xml:lang="en" xml:space="preserve" y="244">ACK</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="417 503 600 655 710 782 889" xml:lang="en" xml:space="preserve" y="515">sc, rvd</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="64 1233" xml:lang="en" xml:space="preserve" y="416">Ml</text>
+    </g>
+</svg>

@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38463-h00</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#to-10-void" id="toc-to-10-void">3 to 10 Void</a></li>
+<li><a href="#e1-application-protocol-e1ap"
+id="toc-e1-application-protocol-e1ap">11 E1 Application Protocol
+(E1AP)</a></li>
+</ul>
+</nav>
+<p>3GPP TS 38.463 V17.0.0 (2022-04)</p>
+<p>Technical Specification</p>
+<p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NG-RAN;</p>
+<p>E1 Application Protocol (E1AP)</p>
+<p>(Release 17)</p>
+<p><img src="media/image1.jpeg" /> <img src="media/image2.png" /></p>
+<p>The present document has been developed within the 3rd Generation
+Partnership Project (3GPP <sup>TM</sup>) and may be further elaborated
+for the purposes of 3GPP..<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</p>
+<blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote>
+<p><em><strong>Copyright Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2022, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">5</a></p>
+<p>2 References <a href="#references">5</a></p>
+<p>3 to 10 Void <a href="#to-10-void">5</a></p>
+<p>11 E1 Application Protocol (E1AP) <a
+href="#e1-application-protocol-e1ap">5</a></p>
+<p>Annex A (informative): Change History <a
+href="#annex-a-informative-change-history">12</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Specification has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>See TS 37.483 [40].</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] -[39] Void.</p>
+<p>[40] 3GPP TS 37.483: "E1 Application Protocol (E1AP)".</p>
+<h1 id="to-10-void">3 to 10 Void</h1>
+
+<h1 id="e1-application-protocol-e1ap">11 E1 Application Protocol
+(E1AP)</h1>
+<p>See TS 37.483 [40].</p>
+<p class="heading" id="annex-a-informative-change-history"><br />
+Annex A (informative):<br />
+Change History</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-02</td>
+<td style="text-align: center;">R3 #99</td>
+<td style="text-align: center;">R3-181309</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Endorsed skeleton</td>
+<td style="text-align: center;">0.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">R3 #99</td>
+<td style="text-align: center;">R3-181597</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">New version capturing agreements from
+RAN3#99</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-04</td>
+<td style="text-align: center;">R3 #99b</td>
+<td style="text-align: center;">R3-182531</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">New version capturing agreements from
+RAN3#99b</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-05</td>
+<td style="text-align: center;">R3 #100</td>
+<td style="text-align: center;">R3-183601</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">New version capturing agreements from
+RAN3#100</td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RAN#80</td>
+<td style="text-align: center;">RP-181154</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Submitted to RAN for approval.</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RAN#80</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Specification approved at TSG-RAN and
+placed under change control</td>
+<td style="text-align: center;">15.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RAN#81</td>
+<td style="text-align: center;">RP-181925</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;"><p>BL CR for TS 38.463 covering
+agreements from RAN3-AH-1807 and R3-101</p>
+<p>Note: CR not based on latest version of the spec. Changes to clause
+8.3.2.2 in the CR were implemented in clause 8.3.2.3 in the
+spec.</p></td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RAN#82</td>
+<td style="text-align: center;">RP-182451</td>
+<td style="text-align: center;">0002</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">NR Corrections (TS 38.463 Baseline CR
+covering RAN3-101Bis and RAN3-102 agreements)</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190560</td>
+<td style="text-align: center;">0004</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction to Data Forwarding
+Information IE</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190555</td>
+<td style="text-align: center;">0005</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections related to Integrity
+Protection handling at the gNB-CU-UP</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190554</td>
+<td style="text-align: center;">0007</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections on gNB-CU-UP/gNB-DU-CP
+Configuration Update</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190556</td>
+<td style="text-align: center;">0008</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of QoS Flow Mapping
+Indication</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190560</td>
+<td style="text-align: center;">0009</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Paging Failure</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190560</td>
+<td style="text-align: center;">0011</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Release due to pre-emption</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190560</td>
+<td style="text-align: center;">0013</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Transaction ID in Error Indication
+procedure</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190560</td>
+<td style="text-align: center;">0017</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to TS 38.463 on inactivity timer over
+E1</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190560</td>
+<td style="text-align: center;">0020</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Data volume reporting for MR-DC with
+5GC</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190560</td>
+<td style="text-align: center;">0029</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">TS 38.463 ASN.1 corrections</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190560</td>
+<td style="text-align: center;">0030</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur corrections for TS
+38.463</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190611</td>
+<td style="text-align: center;">0035</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">S-NSSAI update during EPS to 5GS
+handover</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP#84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0023</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Support of ongoing re-mapping on source
+side during SDAP mobility</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP#84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0028</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">TS 38.463 Tabular clean up for Bearer
+Context messages</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191396</td>
+<td style="text-align: center;">0044</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction to DRB 5QI on E1</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0049</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Multiple SCTP associations over E1</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0050</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur’s editorial corrections for
+TS 38.463</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0051</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">E1AP failure messages correction</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0052</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">New UL TNL Information
+clarification</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0053</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">UE Identification over E1</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191394</td>
+<td style="text-align: center;">0057</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to 38.463 on deconfiguring PDCP
+duplication</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0062</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Clarification on security indication in
+the modification procedure over E1 interface</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0064</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Clarification on counter check
+procedure</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191397</td>
+<td style="text-align: center;">0065</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of Network Instance</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0073</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Activity Notification Level in Bearer
+Context Modification Request E1AP</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191394</td>
+<td style="text-align: center;">0075</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">PDCP SN length and RLC mode related
+clean-up over To Be Modified structure in Bearer Context Modification
+procedure</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0084</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Bearer Context Release Request
+Cause</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0085</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Clarification on Bearer Context Setup
+and Bearer Context Modification failures</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191396</td>
+<td style="text-align: center;">0086</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">PDU session split for E1</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0091</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur’s editorial corrections for
+TS 38.463</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0092</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur’s ASN.1 corrections for TS
+38.463</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0095</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to 38.463 on adding Cause when remove
+DRB and PDU Session</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191399</td>
+<td style="text-align: center;">0097</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur’s ASN.1 corrections for TS
+38.463</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-09</td>
+<td style="text-align: center;">RP-85</td>
+<td style="text-align: center;">RP-192168</td>
+<td style="text-align: center;">0094</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to 38.463 on Security Indication</td>
+<td style="text-align: center;">15.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-09</td>
+<td style="text-align: center;">RP-85</td>
+<td style="text-align: center;">RP-192166</td>
+<td style="text-align: center;">0098</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of security indication</td>
+<td style="text-align: center;">15.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-09</td>
+<td style="text-align: center;">RP-85</td>
+<td style="text-align: center;">RP-192166</td>
+<td style="text-align: center;">0111</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Clarification for TNLA removal</td>
+<td style="text-align: center;">15.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-09</td>
+<td style="text-align: center;">RP-85</td>
+<td style="text-align: center;">RP-192168</td>
+<td style="text-align: center;">0122</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of semantic descriptions in
+TS 38.463 (rapporteur)</td>
+<td style="text-align: center;">15.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RP-86</td>
+<td style="text-align: center;">RP-192915</td>
+<td style="text-align: center;">0158</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of S-NSSAI coding</td>
+<td style="text-align: center;">15.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RP-86</td>
+<td style="text-align: center;">RP-192915</td>
+<td style="text-align: center;">0174</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">UL Data Split Threshold correction</td>
+<td style="text-align: center;">15.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RP-86</td>
+<td style="text-align: center;">RP-192915</td>
+<td style="text-align: center;">0476</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction to DRB to Setup</td>
+<td style="text-align: center;">15.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RP-86</td>
+<td style="text-align: center;">RP-192913</td>
+<td style="text-align: center;">0033</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Trace function support for E1AP</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RP-86</td>
+<td style="text-align: center;">RP-192913</td>
+<td style="text-align: center;">0089</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of Additional RRM Policy
+Index (ARPI)</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RP-86</td>
+<td style="text-align: center;">RP-192913</td>
+<td style="text-align: center;">0096</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Retainability measurements for DRBs and
+QoS flows</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RP-86</td>
+<td style="text-align: center;">RP-192913</td>
+<td style="text-align: center;">0163</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">Extending the MDBV Range</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RP-86</td>
+<td style="text-align: center;">RP-193212</td>
+<td style="text-align: center;">0473</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Support for setting up IPsec a priori in
+E1</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RP-87-e</td>
+<td style="text-align: center;">RP-200477</td>
+<td style="text-align: center;">0481</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">E2E delay measurement for Qos monitoring
+for URLLC</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RP-87-e</td>
+<td style="text-align: center;">RP-200425</td>
+<td style="text-align: center;">0487</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">E1AP correction of F1 Support for IPsec
+Setup</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RP-87-e</td>
+<td style="text-align: center;">RP-200425</td>
+<td style="text-align: center;">0488</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur’s corrections for TS
+38.463</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RP-87-e</td>
+<td style="text-align: center;">RP-200425</td>
+<td style="text-align: center;">0489</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">Rapporteur’s editorial corrections for
+TS 38.463</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Editorial correction to the ASN.1</td>
+<td style="text-align: center;">16.1.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201082</td>
+<td style="text-align: center;">0142</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Addition of SON features</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201079</td>
+<td style="text-align: center;">0154</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of NR_IIOT support to TS
+38.463</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201077</td>
+<td style="text-align: center;">0162</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">BL CR to 38.463: Support for IAB</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201080</td>
+<td style="text-align: center;">0468</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of Non-Public Networks for
+TS38.463</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201082</td>
+<td style="text-align: center;">0477</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Addition of MDT features</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201079</td>
+<td style="text-align: center;">0478</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Support of Ethernet Header
+Compression</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201075</td>
+<td style="text-align: center;">0490</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Baseline CR for introducing Rel-16 NR
+mobility enhancement</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201085</td>
+<td style="text-align: center;">0498</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">Rapporteur's editorial corrections for
+TS 38.463</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201091</td>
+<td style="text-align: center;">0500</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Correction of the Old QoS Flow List
+update during HO</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201092</td>
+<td style="text-align: center;">0502</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">PDCP Status Report indication in
+PDCP-Configuration</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201074</td>
+<td style="text-align: center;">0511</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introducing alternative QoS profiles to
+E1AP</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201090</td>
+<td style="text-align: center;">0512</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of S-NSSAI range</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RP-89-e</td>
+<td style="text-align: center;">RP-201953</td>
+<td style="text-align: center;">0514</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction for SN Terminated (option 3x)
+GBR bearer establishment</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RP-89-e</td>
+<td style="text-align: center;">RP-201949</td>
+<td style="text-align: center;">0521</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction for TS38.463 on Unsuccessful
+Operation and Abnormal Conditions of MLB</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RP-89-e</td>
+<td style="text-align: center;">RP-201949</td>
+<td style="text-align: center;">0522</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on Industrial IOT Rel-16
+DC+CA duplication for E1AP</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RP-89-e</td>
+<td style="text-align: center;">RP-201953</td>
+<td style="text-align: center;">0525</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Correction on reusing Source TEID at
+Handover</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RP-89-e</td>
+<td style="text-align: center;">RP-201950</td>
+<td style="text-align: center;">0526</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Need of D1 for Qos monitoring for
+URLLC</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RP-89-e</td>
+<td style="text-align: center;">RP-201949</td>
+<td style="text-align: center;">0532</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">TS38.463 Extend the CHO Usage and
+Support Intra-SN/inter-UP CPC case</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RP-89-e</td>
+<td style="text-align: center;">RP-201953</td>
+<td style="text-align: center;">0536</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur's corrections for TS
+38.463</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RP-89-e</td>
+<td style="text-align: center;">RP-201953</td>
+<td style="text-align: center;">0537</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">Rapporteur's editorial corrections for
+TS 38.463</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RP-89-e</td>
+<td style="text-align: center;">RP-201947</td>
+<td style="text-align: center;">0551</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on clarification of QoS Mapping
+Information over E1 for Rel-16 IAB</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RP-89-e</td>
+<td style="text-align: center;">RP-201955</td>
+<td style="text-align: center;">0554</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to 38.463 on node name
+type</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-12</td>
+<td style="text-align: center;">RP-90-e</td>
+<td style="text-align: center;">RP-202312</td>
+<td style="text-align: center;">0555</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Support of direct data forwarding for
+inter-system HO</td>
+<td style="text-align: center;">16.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-12</td>
+<td style="text-align: center;">RP-90-e</td>
+<td style="text-align: center;">RP-202310</td>
+<td style="text-align: center;">0556</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on DSCP Derivation in
+IAB-donor node</td>
+<td style="text-align: center;">16.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-12</td>
+<td style="text-align: center;">RP-90-e</td>
+<td style="text-align: center;">RP-202313</td>
+<td style="text-align: center;">0562</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Introduction of reporting frequency for
+Qos monitoring for URLLC</td>
+<td style="text-align: center;">16.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-12</td>
+<td style="text-align: center;">RP-90-e</td>
+<td style="text-align: center;">RP-202311</td>
+<td style="text-align: center;">0566</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on Industrial IOT Rel-16 PDCP
+duplication for E1AP</td>
+<td style="text-align: center;">16.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RP-91-e</td>
+<td style="text-align: center;">RP-210240</td>
+<td style="text-align: center;">0568</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Update on QoS monitoring control</td>
+<td style="text-align: center;">16.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RP-91-e</td>
+<td style="text-align: center;">RP-210231</td>
+<td style="text-align: center;">0583</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">CR to 38.463 Correction on IAB UP TNL
+Address Update</td>
+<td style="text-align: center;">16.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-06</td>
+<td style="text-align: center;">RP-92-e</td>
+<td style="text-align: center;">RP-211335</td>
+<td style="text-align: center;">0577</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Inter-system indicator for Bearer
+Context Setup</td>
+<td style="text-align: center;">16.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-06</td>
+<td style="text-align: center;">RP-92-e</td>
+<td style="text-align: center;">RP-211337</td>
+<td style="text-align: center;">0585</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Private Message Definition</td>
+<td style="text-align: center;">16.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-06</td>
+<td style="text-align: center;">RP-92-e</td>
+<td style="text-align: center;">RP-211338</td>
+<td style="text-align: center;">0602</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">Maximum number of NR-CGI over E1
+[EXT_NRCGI_E1]</td>
+<td style="text-align: center;">16.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RP-93-e</td>
+<td style="text-align: center;">RP-211877</td>
+<td style="text-align: center;">0589</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on E1AP handling for unmapped DL QoS
+flows</td>
+<td style="text-align: center;">16.7.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RP-93-e</td>
+<td style="text-align: center;">RP-211877</td>
+<td style="text-align: center;">0612</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Correction of PDU Session level Data
+Forwarding Information and QoS Flow list</td>
+<td style="text-align: center;">16.7.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RP-93-e</td>
+<td style="text-align: center;">RP-211879</td>
+<td style="text-align: center;">0614</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Restricting the number of DL EHC
+contexts</td>
+<td style="text-align: center;">16.7.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RP-93-e</td>
+<td style="text-align: center;">RP-211881</td>
+<td style="text-align: center;">0622</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction for UL Data Notification over
+E1</td>
+<td style="text-align: center;">16.7.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RP-93-e</td>
+<td style="text-align: center;">RP-211873</td>
+<td style="text-align: center;">0632</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Data forwarding address allocation for
+handover</td>
+<td style="text-align: center;">16.7.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RP-93-e</td>
+<td style="text-align: center;">RP-211873</td>
+<td style="text-align: center;">0636</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Support of direct data forwarding for
+inter-system HO from 4G to 5G</td>
+<td style="text-align: center;">16.7.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RP-93-e</td>
+<td style="text-align: center;">RP-211881</td>
+<td style="text-align: center;">0638</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Issue for Intra gNB-CU-UP DAPS HO</td>
+<td style="text-align: center;">16.7.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RP-94-e</td>
+<td style="text-align: center;">RP-212866</td>
+<td style="text-align: center;">0644</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">DAPS Inconsistencies</td>
+<td style="text-align: center;">16.8.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RP-94-e</td>
+<td style="text-align: center;">RP-212870</td>
+<td style="text-align: center;">0645</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Adding reference for coding of Common
+Network Instance</td>
+<td style="text-align: center;">16.8.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RP-94-e</td>
+<td style="text-align: center;">RP-212864</td>
+<td style="text-align: center;">0653</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Direct data forwarding indication for
+intra-5GS handover</td>
+<td style="text-align: center;">16.8.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RP-94-e</td>
+<td style="text-align: center;">RP-213019</td>
+<td style="text-align: center;">0656</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of Qos Mapping Information IE
+in E1AP message for IAB (CR to TS38.463, R16)</td>
+<td style="text-align: center;">16.8.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RP-94-e</td>
+<td style="text-align: center;">RP-212866</td>
+<td style="text-align: center;">0657</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">E1 impact to support to stop CHO early
+data forwarding</td>
+<td style="text-align: center;">16.8.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RP-94-e</td>
+<td style="text-align: center;">RP-212870</td>
+<td style="text-align: center;">0662</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction CR for 38.463 on lossless
+intra-system HO with QoS flow remapping in CP-UP separated scenario</td>
+<td style="text-align: center;">16.8.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220279</td>
+<td style="text-align: center;">0651</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Dynamic ACL over E1 CR 38.463</td>
+<td style="text-align: center;">16.9.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220278</td>
+<td style="text-align: center;">0672</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Downlink unmapped QoS flows for E1</td>
+<td style="text-align: center;">16.9.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220276</td>
+<td style="text-align: center;">0673</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on support of Pre-shared key
+derivation for IAB-donor-CU-UP</td>
+<td style="text-align: center;">16.9.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220279</td>
+<td style="text-align: center;">0675</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Security indication in the modification
+procedure over E1 interface</td>
+<td style="text-align: center;">16.9.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220277</td>
+<td style="text-align: center;">0676</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR for 38.463 on fixing DAPS HO handling
+inconsistency during Bearer Context Modification procedure</td>
+<td style="text-align: center;">16.9.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220282</td>
+<td style="text-align: center;">0682</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Offered GBR in NR-DC</td>
+<td style="text-align: center;">16.9.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220217</td>
+<td style="text-align: center;">0665</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">E1AP specification transfer to TS
+37.483</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

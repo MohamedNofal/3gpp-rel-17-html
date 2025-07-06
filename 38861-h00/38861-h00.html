@@ -1,0 +1,4204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38861-h00</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword">Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-of-terms-symbols-and-abbreviations"
+id="toc-definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</a>
+<ul>
+<li><a href="#terms" id="toc-terms">3.1 Terms</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#background" id="toc-background">4 Background</a>
+<ul>
+<li><a href="#justification" id="toc-justification">4.1
+Justification</a></li>
+<li><a href="#objective" id="toc-objective">4.2 Objective</a></li>
+</ul></li>
+<li><a href="#sar-scheme" id="toc-sar-scheme">5 SAR Scheme</a></li>
+<li><a href="#interference" id="toc-interference">6 Interference</a>
+<ul>
+<li><a href="#receiver-sensitivity-degradation-evaluation"
+id="toc-receiver-sensitivity-degradation-evaluation">6.1 Receiver
+sensitivity degradation evaluation</a>
+<ul>
+<li><a href="#sensitivity-degradation-results-for-normal-cbw-in-n1n3"
+id="toc-sensitivity-degradation-results-for-normal-cbw-in-n1n3">6.1.1
+Sensitivity degradation results for normal CBW in n1/n3</a>
+<ul>
+<li><a
+href="#dominant-factor-by-duplexer-txrx-isolation-in-each-fdd-band"
+id="toc-dominant-factor-by-duplexer-txrx-isolation-in-each-fdd-band">6.1.1.1
+Dominant factor by Duplexer Tx/Rx isolation in each FDD band</a></li>
+<li><a href="#dominant-factor-by-rficpa-noise-levles-in-rx-band"
+id="toc-dominant-factor-by-rficpa-noise-levles-in-rx-band">6.1.1.2
+Dominant factor by RFIC/PA noise levles in Rx band</a></li>
+<li><a
+href="#dominant-factor-by-duplexer-and-rficpa-noise-levles-in-rx-band"
+id="toc-dominant-factor-by-duplexer-and-rficpa-noise-levles-in-rx-band">6.1.1.3
+Dominant factor by Duplexer and RFIC/PA noise levles in Rx band</a></li>
+</ul></li>
+<li><a href="#wide-channel-bandwidth-sensitivity-analysis-in-n3"
+id="toc-wide-channel-bandwidth-sensitivity-analysis-in-n3">6.1.2 Wide
+channel bandwidth sensitivity analysis in n3</a>
+<ul>
+<li><a href="#lge-sensitivity-analysis-results-in-n3"
+id="toc-lge-sensitivity-analysis-results-in-n3">6.1.2.1 LGE sensitivity
+analysis results in n3</a></li>
+<li><a href="#skw-sensitivity-analysis-results-in-n3"
+id="toc-skw-sensitivity-analysis-results-in-n3">6.1.2.2 SKW sensitivity
+analysis results in n3</a></li>
+<li><a href="#zte-sensitivity-analysis-results-in-n3"
+id="toc-zte-sensitivity-analysis-results-in-n3">6.1.2.3 ZTE sensitivity
+analysis results in n3</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#ue-implementations" id="toc-ue-implementations">7 UE
+implementations</a>
+<ul>
+<li><a href="#current-rf-component-characteristics-in-fdd-band"
+id="toc-current-rf-component-characteristics-in-fdd-band">7.1 Current RF
+component characteristics in FDD band </a>
+<ul>
+<li><a href="#power-amplifier-characteristics"
+id="toc-power-amplifier-characteristics">7.1.1 Power Amplifier
+characteristics</a></li>
+<li><a href="#duplexer-characteristics"
+id="toc-duplexer-characteristics">7.1.2 Duplexer
+characteristics</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#system-performance-evaluation"
+id="toc-system-performance-evaluation">8 System Performance
+Evaluation</a>
+<ul>
+<li><a href="#dynamic-system-level-simulation"
+id="toc-dynamic-system-level-simulation">8.1 Dynamic system level
+simulation</a>
+<ul>
+<li><a href="#general" id="toc-general">8.1.1 General</a></li>
+<li><a href="#simulation-assumptions"
+id="toc-simulation-assumptions">8.1.2 Simulation assumptions</a></li>
+<li><a href="#simulation-results" id="toc-simulation-results">8.1.3
+Simulation results</a>
+<ul>
+<li><a href="#p0--76-alpha-0.6" id="toc-p0--76-alpha-0.6">8.1.3.1 P0 =
+-76, alpha = 0.6</a></li>
+<li><a href="#p0--76-alpha-0.8" id="toc-p0--76-alpha-0.8">8.1.3.2 P0 =
+-76, alpha = 0.8</a></li>
+<li><a href="#p0--60-alpha-0.6" id="toc-p0--60-alpha-0.6">8.1.3.3 P0 =
+-60, alpha = 0.6</a></li>
+<li><a href="#p0--60-alpha-0.8" id="toc-p0--60-alpha-0.8">8.1.3.4 P0 =
+-60, alpha = 0.8</a></li>
+<li><a href="#other" id="toc-other">8.1.3.5 Other</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#monte-carlo-simulation"
+id="toc-monte-carlo-simulation">8.2 Monte Carlo simulation</a></li>
+</ul></li>
+<li><a href="#si-conclusion" id="toc-si-conclusion">9 SI
+Conclusion</a></li>
+<li><a href="#annex-a-informative-change-history"
+id="toc-annex-a-informative-change-history"><br />
+Annex &lt;A&gt; (informative):<br />
+Change history</a></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TR 38.861 V17.0.0 (2021-09)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Report</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Networks;</p>
+<p>Study on high power UE (power class 2) for one NR FDD band</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.jpeg"
+style="width:1.32292in;height:0.91667in" alt="5G-logo_175px" /></td>
+<td style="text-align: right;"><img src="media/image2.png"
+style="width:1.77083in;height:1.04167in" alt="3GPP-logo_web" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2021, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references">6</a></p>
+<p>3 Definitions of terms, symbols and abbreviations <a
+href="#definitions-of-terms-symbols-and-abbreviations">6</a></p>
+<p>3.1 Terms <a href="#terms">6</a></p>
+<p>3.2 Symbols <a href="#symbols">6</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">6</a></p>
+<p>4 Background <a href="#background">7</a></p>
+<p>4.1 Justification <a href="#justification">7</a></p>
+<p>4.2 Objective <a href="#objective">7</a></p>
+<p>5 SAR Scheme <a href="#sar-scheme">7</a></p>
+<p>6 Interference <a href="#interference">7</a></p>
+<p>6.1 Receiver sensitivity degradation evaluation <a
+href="#receiver-sensitivity-degradation-evaluation">7</a></p>
+<p>6.1.1 Sensitivity degradation results for normal CBW in n1/n3 <a
+href="#sensitivity-degradation-results-for-normal-cbw-in-n1n3">8</a></p>
+<p>6.1.1.1 Dominant factor by Duplexer Tx/Rx isolation in each FDD band
+<a
+href="#dominant-factor-by-duplexer-txrx-isolation-in-each-fdd-band">8</a></p>
+<p>6.1.1.2 Dominant factor by RFIC/PA noise levles in Rx band <a
+href="#dominant-factor-by-rficpa-noise-levles-in-rx-band">9</a></p>
+<p>6.1.1.3 Dominant factor by Duplexer and RFIC/PA noise levles in Rx
+band <a
+href="#dominant-factor-by-duplexer-and-rficpa-noise-levles-in-rx-band">10</a></p>
+<p>6.1.2 Wide channel bandwidth sensitivity analysis in n3 <a
+href="#wide-channel-bandwidth-sensitivity-analysis-in-n3">10</a></p>
+<p>6.1.2.1 LGE sensitivity analysis results in n3 <a
+href="#lge-sensitivity-analysis-results-in-n3">11</a></p>
+<p>6.1.2.2 SKW sensitivity analysis results in n3 <a
+href="#skw-sensitivity-analysis-results-in-n3">12</a></p>
+<p>6.1.2.3 ZTE sensitivity analysis results in n3 <a
+href="#zte-sensitivity-analysis-results-in-n3">13</a></p>
+<p>7 UE implementations <a href="#ue-implementations">15</a></p>
+<p>7.1 Current RF component characteristics in FDD band <a
+href="#current-rf-component-characteristics-in-fdd-band">15</a></p>
+<p>7.1.1 Power Amplifier characteristics <a
+href="#power-amplifier-characteristics">15</a></p>
+<p>7.1.2 Duplexer characteristics <a
+href="#duplexer-characteristics">16</a></p>
+<p>8 System Performance Evaluation <a
+href="#system-performance-evaluation">17</a></p>
+<p>8.1 Dynamic system level simulation <a
+href="#dynamic-system-level-simulation">17</a></p>
+<p>8.1.1 General <a href="#general">17</a></p>
+<p>8.1.2 Simulation assumptions <a
+href="#simulation-assumptions">17</a></p>
+<p>8.1.3 Simulation results <a href="#simulation-results">18</a></p>
+<p>8.1.3.1 P0 = -76, alpha = 0.6 <a href="#p0--76-alpha-0.6">18</a></p>
+<p>8.1.3.2 P0 = -76, alpha = 0.8 <a href="#p0--76-alpha-0.8">19</a></p>
+<p>8.1.3.3 P0 = -60, alpha = 0.6 <a href="#p0--60-alpha-0.6">21</a></p>
+<p>8.1.3.4 P0 = -60, alpha = 0.8 <a href="#p0--60-alpha-0.8">23</a></p>
+<p>8.1.3.5 Other <a href="#other">24</a></p>
+<p>8.2 Monte Carlo simulation <a
+href="#monte-carlo-simulation">26</a></p>
+<p>9 SI Conclusion <a href="#si-conclusion">30</a></p>
+<p>Annex &lt;A&gt; (informative): Change history <a
+href="#annex-a-informative-change-history">32</a></p>
+<h1 id="foreword">Foreword</h1>
+<p>This Technical Report has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<p>In the present document, modal verbs have the following meanings:</p>
+<p><strong>shall</strong> indicates a mandatory requirement to do
+something</p>
+<p><strong>shall not</strong> indicates an interdiction (prohibition) to
+do something</p>
+<p>The constructions "shall" and "shall not" are confined to the context
+of normative provisions, and do not appear in Technical Reports.</p>
+<p>The constructions "must" and "must not" are not used as substitutes
+for "shall" and "shall not". Their use is avoided insofar as possible,
+and they are not used in a normative context except in a direct citation
+from an external, referenced, non-3GPP document, or so as to maintain
+continuity of style when extending or modifying the provisions of such a
+referenced document.</p>
+<p><strong>should</strong> indicates a recommendation to do
+something</p>
+<p><strong>should not</strong> indicates a recommendation not to do
+something</p>
+<p><strong>may</strong> indicates permission to do something</p>
+<p><strong>need not</strong> indicates permission not to do
+something</p>
+<p>The construction "may not" is ambiguous and is not used in normative
+elements. The unambiguous constructions "might not" or "shall not" are
+used instead, depending upon the meaning intended.</p>
+<p><strong>can</strong> indicates that something is possible</p>
+<p><strong>cannot</strong> indicates that something is impossible</p>
+<p>The constructions "can" and "cannot" are not substitutes for "may"
+and "need not".</p>
+<p><strong>will</strong> indicates that something is certain or expected
+to happen as a result of action taken by an agency the behaviour of
+which is outside the scope of the present document</p>
+<p><strong>will not</strong> indicates that something is certain or
+expected not to happen as a result of action taken by an agency the
+behaviour of which is outside the scope of the present document</p>
+<p><strong>might</strong> indicates a likelihood that something will
+happen as a result of action taken by some agency the behaviour of which
+is outside the scope of the present document</p>
+<p><strong>might not</strong> indicates a likelihood that something will
+not happen as a result of action taken by some agency the behaviour of
+which is outside the scope of the present document</p>
+<p>In addition:</p>
+<p><strong>is</strong> (or any other verb in the indicative mood)
+indicates a statement of fact</p>
+<p><strong>is not</strong> (or any other negative verb in the indicative
+mood) indicates a statement of fact</p>
+<p>The constructions "is" and "is not" do not indicate requirements.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document is a technical report for Study on high power UE
+(power class 2) for one NR FDD band. The study includes the SAR
+scheme(s), interference issues, UE implementation issues, and system
+performance evaluations.</p>
+<p>The example bands used for the study are NR band n1 and n3.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TS 38.101-1: "NR; User Equipment (UE) radio transmission and
+reception; Part 1: Range 1 Standalone".</p>
+<p>[3] 3GPP R4-2111528: "n3 50MHz REFSENS, A-MPR". 3GPP RAN WG4
+Meeting#99-e, Skyworks Solutions, Inc.</p>
+<p>[4] 3GPP R4-2114695: "n3 PC2 MSD". 3GPP RAN WG4 Meeting#100-e,
+Skyworks Solutions, Inc.</p>
+<p>[5] 3GPP R4-2112834: "Sensitivity analysis results and UE
+implementation for PC2 FDD band ". 3GPP RAN WG4 Meeting#100-e, LG
+Electronics.[6] 3GPP R4-2112911: "Discussion on interference for HPUE
+FDD band ". 3GPP RAN WG4 Meeting#100-e, ZTE Corporation.</p>
+<h1 id="definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</h1>
+<h2 id="terms">3.1 Terms</h2>
+<p>For the purposes of the present document, the terms given in 3GPP
+TR 21.905 [1] and the following apply. A term defined in the present
+document takes precedence over the definition of the same term, if any,
+in 3GPP TR 21.905 [1].</p>
+<p><strong>example:</strong> text used to clarify abstract rules by
+applying them literally.</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<p>&lt;symbol&gt; &lt;Explanation&gt;</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>&lt;ABBREVIATION&gt; &lt;Expansion&gt;</p>
+<h1 id="background">4 Background</h1>
+<h2 id="justification">4.1 Justification</h2>
+<p>Increasing the transmit power of UE has significant benefits on
+extending cell coverage area and improving the experience of cell edge
+users. In rel-16 one study item and two work items related to HPUE have
+been proposed and worked on to standardize the requirements for EN-DC
+scenarios.</p>
+<p>However, extension of cell coverage for lower-frequency NR SA FDD
+band is also important for some operators considering data throughput
+for cell edge users is not satisfactory even in FDD bands, and further
+increasing the UE transmit power would be beneficial for improving the
+performance of cell edge users. Increasing the transmission power will
+be beneficial for extending uplink coverage. SAR compliance schemes
+should be considered (e.g. Existing duty cycle based solution could be
+taken into consideration for this study, other solutions are not
+precluded.).</p>
+<p>This Study Item is proposed to solve SAR issues, and potentially
+enable Power Class 2 UE for one FDD band with 26 dBm maximum output
+power (UE types include smart phone, FWA, etc.). NR band n1 and n3 shall
+be used as example band for this study.</p>
+<h2 id="objective">4.2 Objective</h2>
+<p>The objectives of the SI are as follows:</p>
+<p>1 Study the applicable scheme(s) for new power class 2 UE for one NR
+FDD band to comply with the SAR limits with 26dBm UE Tx power, the
+example band for this study is NR band n1 and n3.</p>
+<p>a. Study candidate SAR solutions, e.g. P-MPR, duty cycle capability,
+etc.</p>
+<p>b. Study regulatory requirements related to 26dBm Tx power in FDD
+bands including SAR.</p>
+<blockquote>
+<p>Note: Prioritize studies for the existing SAR solutions.</p>
+</blockquote>
+<p>2 Study interference issues (e.g. self-desense, cross device
+coexistence…).</p>
+<p>a. Study RF requirements for PC2 UE in FDD band, including
+self-desense requirements, Tx requirements such as A-MPR, and so on.</p>
+<p>b. Study adjacent channel co-existence for FDD band.</p>
+<p>c. Investigate issues related to in-device interference, if
+identified.</p>
+<p>3 Study UE implementation related issues such as RF component
+feasibility to support 26dBm output power in band n1 and n3 at first.
+Other example FDD bands are not precluded, if needed.</p>
+<p>Evaluate system performance gains on spectrum efficiency, and other
+metrics if needed could also be taken into account, to support NR FDD
+HPUE.</p>
+<h1 id="sar-scheme">5 SAR Scheme</h1>
+<p>To accommodate the SAR limits of the NR PC2 FDD High Power UE, both
+UE-based and network-based solutions are considered in the study phase.
+For UE-based solution, the UE implementation based mechanism is used to
+ensure SAR compliance. In addition to UE-based solution, an optional
+method of reporting duty-cycle capability was also intensively
+discussed, but there is no conclusion reached.</p>
+<h1 id="interference">6 Interference</h1>
+<h2 id="receiver-sensitivity-degradation-evaluation">6.1 Receiver
+sensitivity degradation evaluation</h2>
+<p>Based on following agreement, RAN4 need to evaluate the receiver
+sensitivity degradation impact in NR band n1 and n3.</p>
+<p>- Agreement: RAN4 can study receiver sensitivity degradation due to
+high max. out power and Tx/Rx isolation levels according to RF component
+performance in both n1 and n3 FDD bands.</p>
+<p>- Companies are encouraged to bring analyses on receiver sensitivity
+degradation in next meeting.</p>
+<h3 id="sensitivity-degradation-results-for-normal-cbw-in-n1n3">6.1.1
+Sensitivity degradation results for normal CBW in n1/n3</h3>
+<p>To derive sensitivity degradation in n1/n3, RAN4 assumed the current
+RFIC characteristics and Duplexer &amp; PA characteristics in each NR
+band.</p>
+<p>In Table 6.1.1-1, the current RF component characterics are summaried
+according to each NR band.</p>
+<p>Table 6.1.1-1. RF parameters according to each NR band</p>
+<table>
+<colgroup>
+<col style="width: 56%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th>parameters</th>
+<th>NR n1 band</th>
+<th>NR n3 band</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total NF (dB)</td>
+<td>9.00</td>
+<td>9.00</td>
+</tr>
+<tr>
+<td>RFIC Noise for Rx band (dBm/Hz)</td>
+<td>-153</td>
+<td>-150</td>
+</tr>
+<tr>
+<td>PA Noise for Rx band (dBm/Hz)</td>
+<td>-125</td>
+<td>-122</td>
+</tr>
+<tr>
+<td>PA Gain for Rx band (dB)</td>
+<td>28</td>
+<td>28</td>
+</tr>
+<tr>
+<td>Duplexer Tx/Rx isolation (dB)</td>
+<td>53</td>
+<td>49</td>
+</tr>
+<tr>
+<td>RF Front-End Loss (dB)</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Diversity gain (dB)</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Antenna isolation (dB)</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>The receiver sensitivity will be impacted by duplexer isolation
+levels and increasing noise level by RFIC and PA for Rx band at antenna
+connector based on PC3 REFSENS requirements in each FDD bands.</p>
+<p>Hence, the receiver sensitivity degradation will be derived based on
+the increasing noise level in Rx band by duplexer isolation and RFIC/PA
+noise for PC2 transmission in FDD band.</p>
+<p>The following REFSENS is for PC3 UE in n3 FDD NR band as reference
+point.</p>
+<p>Table 6.1.1-2. REFSENS reference for PC3 UE in each NR band</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 12%" />
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="2">NR n1 band</th>
+<th colspan="2">NR n3 band</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Main path</td>
+<td>Diversity path</td>
+<td>Main path</td>
+<td>Diversity path</td>
+</tr>
+<tr>
+<td>C/N requirement (dB)</td>
+<td>-1.00</td>
+<td>-1.00</td>
+<td>-1.00</td>
+<td>-1.00</td>
+</tr>
+<tr>
+<td>Noise floor at Antenna connector(dBm/Hz)</td>
+<td>-165.0</td>
+<td>-165.0</td>
+<td>-165.0</td>
+<td>-165.0</td>
+</tr>
+<tr>
+<td>Total NF(RFFE lL + RF NF) (dB)</td>
+<td>9.00</td>
+<td>9.00</td>
+<td>9.00</td>
+<td>9.00</td>
+</tr>
+<tr>
+<td>RFIC RX Band Noise level at Antenna connector (dBm/Hz)</td>
+<td>-170.5</td>
+<td>-180.5</td>
+<td>-161.5</td>
+<td>-171.5</td>
+</tr>
+<tr>
+<td>PA RX Band Noise level at Antenna connector (dBm/Hz)</td>
+<td>-170.5</td>
+<td>-180.5</td>
+<td>-161.5</td>
+<td>-171.5</td>
+</tr>
+<tr>
+<td>Total RXBN at Antenna connector (dBm/Hz)</td>
+<td>-163.1</td>
+<td>-164.7</td>
+<td>-157.6</td>
+<td>-163.4</td>
+</tr>
+<tr>
+<td><strong>Sensitivity with RXBN (PC3 max Tx power)(dBm) *10MHz
+BW</strong></td>
+<td>-94.1</td>
+<td>-95.7</td>
+<td>-88.6</td>
+<td>-94.4</td>
+</tr>
+<tr>
+<td><strong>After MRC</strong></td>
+<td colspan="2">-98.0 (1.2dB margin)</td>
+<td colspan="2">-95.4 (1.6dB margin)</td>
+</tr>
+</tbody>
+</table>
+<h4
+id="dominant-factor-by-duplexer-txrx-isolation-in-each-fdd-band">6.1.1.1
+Dominant factor by Duplexer Tx/Rx isolation in each FDD band</h4>
+<p>Basically, the existing PA for FDD band need to improve the linearity
+of maximum output power at least 3dB higher than current PA
+characteristics based on section 7. Also duplexer aspect, filter vendor
+need to enhanced the Tx/Rx isolation level to guarantee the existing
+REFSENS or to relax desense impact. But it is also challenge to filter
+vendors for small Tx/Rx frequency gap such as Band 3 or NR band n3.</p>
+<p>So, just asumed 2dB Tx/Rx isolation levels by 3dB Transmission power
+increasing would be impacted the sensitivity degradation compare to PC3
+duplexer in n3.</p>
+<p>In Table 6.1.1.1-1, the expected sensitivity degradation levels by
+decreasing 2dB duplexer isolation level are shown.</p>
+<p><strong>Table 6.1.1.1-1. Sensitivity degradation by duplexer
+isolation 2dB relaxation</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 54%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="2">NR n1 band</th>
+<th colspan="2">NR n3 band</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Main path</td>
+<td>Diversity path</td>
+<td>Main path</td>
+<td>Diversity path</td>
+</tr>
+<tr>
+<td>C/N requirement (dB)</td>
+<td>-1.00</td>
+<td>-1.00</td>
+<td>-1.00</td>
+<td>-1.00</td>
+</tr>
+<tr>
+<td>Noise floor at Antenna connector(dBm/Hz)</td>
+<td>-165.0</td>
+<td>-165.0</td>
+<td>-165.0</td>
+<td>-165.0</td>
+</tr>
+<tr>
+<td>Total NF(RFFE lL + RF NF) (dB)</td>
+<td>9.00</td>
+<td>9.00</td>
+<td>9.00</td>
+<td>9.00</td>
+</tr>
+<tr>
+<td>RFIC RX Band Noise level at Antenna connector (dBm/Hz)</td>
+<td>-168.5</td>
+<td>-178.5</td>
+<td>-159.5</td>
+<td>-169.5</td>
+</tr>
+<tr>
+<td>PA RX Band Noise level at Antenna connector (dBm/Hz)</td>
+<td>-168.5</td>
+<td>-178.5</td>
+<td>-159.5</td>
+<td>-169.5</td>
+</tr>
+<tr>
+<td>Total RXBN at Antenna connector (dBm/Hz)</td>
+<td>-162.2</td>
+<td>-164.6</td>
+<td>-155.9</td>
+<td>-162.6</td>
+</tr>
+<tr>
+<td>Sensitivity with RXBN (PC3 max Tx power)(dBm) *10MHz BW</td>
+<td>-93.2</td>
+<td>-95.6</td>
+<td>-86.9</td>
+<td>-93.6</td>
+</tr>
+<tr>
+<td>After MRC</td>
+<td colspan="2">-97.6 dBm <mark>🡪 0.4dB MSD is needed</mark></td>
+<td colspan="2">-94.5 dBm <mark>🡪 0.9dB MSD is needed</mark></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Observation: In n3 FDD band, the 0.9 dB MSD is needed when
+Duplexer isolation charateristic is decreased 2dB compare to current
+filter characteristics.</strong></p>
+<p><strong>Observation: In n1 FDD band, the 0.4dB MSD is needed when
+Duplexer isolation charateristic is decreased 2dB compare to current
+filter characteristics.</strong></p>
+<h4 id="dominant-factor-by-rficpa-noise-levles-in-rx-band">6.1.1.2
+Dominant factor by RFIC/PA noise levles in Rx band</h4>
+<p>In this section, we consider the increased noise level in Rx band by
+RFIC/PA operation in FDD band. Eventhough filter vendor try to keep or
+enhance the the current Tx/Rx isolation level in duplexer for each FDD
+band, the raised leakage problem in Rx band also shall be
+considered.</p>
+<p><strong>Observation: Eventhough duplexer isolation level keep or
+enhance the Tx/Rx isolation level, the raised leakage problem in Rx band
+by RFIC/PA operation in FDD band will be impacted to the sensitivity
+degradation in FDD band.</strong></p>
+<p>When we consider 3dB Tx power boosting, the noise level could be
+increased by RFIC/PA operation in Rx band. So we assumed about 1.5dB
+noise level increasing in Rx band to derive the expected MSD level
+according to each FDD band.</p>
+<p>Table 6.1.1.2-1. Sensitivity degradation by increasing noise level
+(1.5dB) by RFIC/PA in Rx band</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 54%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="2">NR n1 band</th>
+<th colspan="2">NR n3 band</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Main path</td>
+<td>Diversity path</td>
+<td>Main path</td>
+<td>Diversity path</td>
+</tr>
+<tr>
+<td>C/N requirement (dB)</td>
+<td>-1.00</td>
+<td>-1.00</td>
+<td>-1.00</td>
+<td>-1.00</td>
+</tr>
+<tr>
+<td>Noise floor at Antenna connector(dBm/Hz)</td>
+<td>-165.0</td>
+<td>-165.0</td>
+<td>-165.0</td>
+<td>-165.0</td>
+</tr>
+<tr>
+<td>Total NF(RFFE lL + RF NF) (dB)</td>
+<td>9.00</td>
+<td>9.00</td>
+<td>9.00</td>
+<td>9.00</td>
+</tr>
+<tr>
+<td>RFIC RX Band Noise level at Antenna connector (dBm/Hz)</td>
+<td>-169.0</td>
+<td>-179.0</td>
+<td>-160.0</td>
+<td>-170.0</td>
+</tr>
+<tr>
+<td>PA RX Band Noise level at Antenna connector (dBm/Hz)</td>
+<td>-169.0</td>
+<td>-179.0</td>
+<td>-160.0</td>
+<td>-170.0</td>
+</tr>
+<tr>
+<td>Total RXBN at Antenna connector (dBm/Hz)</td>
+<td>-162.4</td>
+<td>-164.7</td>
+<td>-156.4</td>
+<td>-162.9</td>
+</tr>
+<tr>
+<td>Sensitivity with RXBN (PC3 max Tx power)(dBm) *10MHz BW</td>
+<td>-93.4</td>
+<td>-95.7</td>
+<td>-87.4</td>
+<td>-93.9</td>
+</tr>
+<tr>
+<td>After MRC</td>
+<td colspan="2">-97.7 dBm <mark>🡪 0.3dB MSD is needed</mark></td>
+<td colspan="2">-94.7 dBm <mark>🡪 0.7dB MSD is needed</mark></td>
+</tr>
+</tbody>
+</table>
+<p>The expected MSD degradations are almost same as Duplexer isolation
+degradation as shown in Table 6.1.1.1.</p>
+<p><strong>Observation: In n3 FDD band, the 0.7 dB MSD is needed when
+assume noise level might be increased about 1.5dB in Rx band by RFIC/PA
+operation.</strong></p>
+<p><strong>Observation: In n1 FDD band, the 0.3dB MSD is needed when
+assume noise level might be increased about 1.5dB in Rx band by RFIC/PA
+operation.</strong></p>
+<h4
+id="dominant-factor-by-duplexer-and-rficpa-noise-levles-in-rx-band">6.1.1.3
+Dominant factor by Duplexer and RFIC/PA noise levles in Rx band</h4>
+<p>In here we consider worst case for MSD analysis that means the
+duplexer isolation could not keep and enhanced such as in n3 FDD band
+due to small Tx/Rx frequency gap.</p>
+<p>Then, above Duplexer performance decreasing and the noise level in Rx
+band will be increased in RFIC by 3dB Tx power increasing for PC2 UE in
+FDD band. So, the above two factor will be impacted in the receiver
+sensitivity degradation in FDD band.</p>
+<p>In Table 6.1.1.3-1, we provided the expected sensitivity degradation
+by considering the duplexer characteristics and incresed noise level in
+Rx band by RFIC/PA operation.</p>
+<p>Table 6.1.1.3-1. Sensitivity degradation by duplexer isolation (2dB
+relaxation) &amp; incresed noise level (1.5dB) in Rx band by RFIC/PA
+operation</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 54%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="2">NR n1 band</th>
+<th colspan="2">NR n3 band</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Main path</td>
+<td>Diversity path</td>
+<td>Main path</td>
+<td>Diversity path</td>
+</tr>
+<tr>
+<td>C/N requirement (dB)</td>
+<td>-1.00</td>
+<td>-1.00</td>
+<td>-1.00</td>
+<td>-1.00</td>
+</tr>
+<tr>
+<td>Noise floor at Antenna connector(dBm/Hz)</td>
+<td>-165.0</td>
+<td>-165.0</td>
+<td>-165.0</td>
+<td>-165.0</td>
+</tr>
+<tr>
+<td>Total NF(RFFE lL + RF NF) (dB)</td>
+<td>9.00</td>
+<td>9.00</td>
+<td>9.00</td>
+<td>9.00</td>
+</tr>
+<tr>
+<td>RFIC RX Band Noise level at Antenna connector (dBm/Hz)</td>
+<td>-167.0</td>
+<td>-177.0</td>
+<td>-158.0</td>
+<td>-168.0</td>
+</tr>
+<tr>
+<td>PA RX Band Noise level at Antenna connector (dBm/Hz)</td>
+<td>-167.0</td>
+<td>-177.0</td>
+<td>-158.0</td>
+<td>-168.0</td>
+</tr>
+<tr>
+<td>Total RXBN at Antenna connector (dBm/Hz)</td>
+<td>-161.5</td>
+<td>-164.5</td>
+<td>-154.6</td>
+<td>-162.0</td>
+</tr>
+<tr>
+<td>Sensitivity with RXBN (PC3 max Tx power)(dBm) *10MHz BW</td>
+<td>-92.5</td>
+<td>-95.5</td>
+<td>-85.6</td>
+<td>-93.0</td>
+</tr>
+<tr>
+<td>After MRC</td>
+<td colspan="2">-97.2 dBm <mark>🡪 0.8dB MSD is needed</mark></td>
+<td colspan="2">-93.7 dBm <mark>🡪 1.7dB MSD is needed</mark></td>
+</tr>
+</tbody>
+</table>
+<p>Based on the expected RF component degradation, observations are
+provided as follow</p>
+<p><strong>Observation: In n3 FDD band, the 1.7 dB MSD is needed when
+both Duplexer isolation charateristic (2dB relaxation) and increased
+noise level (1.5dB) in Rx band by RFIC/PA operation for PC2 FDD
+UE.</strong></p>
+<p><strong>Observation: In n1 FDD band, the 0.8dB MSD is needed when
+both duplexer isolation charateristic (2dB relaxation) and increased
+noise level (1.5dB) in Rx band by RFFIC/PA operation for PC2 FDD
+UE.</strong></p>
+<h3 id="wide-channel-bandwidth-sensitivity-analysis-in-n3">6.1.2 Wide
+channel bandwidth sensitivity analysis in n3</h3>
+<p>For the wide channel bandwidth (CBW) in n3 NR band, RAN4 need study
+the sensitivity degradation to consider the counter IMD problem such as
+CIM5 impact in n3 received frequency band as shown in Figure
+6.1.2-1.</p>
+<p><img src="media/image3.png"
+style="width:3.67708in;height:1.65625in" /></p>
+<p>Figure 6.1.2-1 Impact on the CIMD5 problem in n3 NR band</p>
+<h4 id="lge-sensitivity-analysis-results-in-n3">6.1.2.1 LGE sensitivity
+analysis results in n3</h4>
+<p>To derive sensitivity degradation in n3 with wide CBW, we assumed the
+following as shown in Table 6.1.2.1-1.</p>
+<p>Table 6.1.2.1-1. RF parameters according to each NR band</p>
+<table>
+<colgroup>
+<col style="width: 72%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>parameters</th>
+<th>NR n3 band</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total NF (dB)</td>
+<td>9.00</td>
+</tr>
+<tr>
+<td>counter-intermodulation products CIM5 (dBc)</td>
+<td>-60</td>
+</tr>
+<tr>
+<td>RFIC Noise for Rx band (dBm/Hz)</td>
+<td>-150</td>
+</tr>
+<tr>
+<td>PA Noise for Rx band (dBm/Hz)</td>
+<td>-122</td>
+</tr>
+<tr>
+<td>PA Gain for Rx band (dB)</td>
+<td>28</td>
+</tr>
+<tr>
+<td>Duplexer Tx/Rx isolation (dB)</td>
+<td>47</td>
+</tr>
+<tr>
+<td>RF Front-End Loss (dB)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Diversity gain (dB)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Antenna isolation (dB)</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>The receiver sensitivity will be impacted by duplexer isolation
+levels and increasing noise level by RFIC and PA for Rx band at antenna
+connector based on PC3 REFSENS requirements in each CBW.</p>
+<p>Hence, the receiver sensitivity degradation will be derived based on
+the increasing noise level in Rx band by duplexer isolation and RFIC/PA
+noise due to CIM5 from PC2 transmission in FDD band.</p>
+<p>The following REFSENS analysis is for PC3 UE in n3 FDD NR band with
+40Mhz and 50MHz CBW as reference point.</p>
+<p>Table 6.1.2.1-2. REFSENS reference for PC3 FDD UE in each CBW(40MHz,
+50MHz)</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 12%" />
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="2">NR n3 band<br />
+40MHz CBW</th>
+<th colspan="2">NR n3 band<br />
+50MHz CBW</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Main path</td>
+<td>Diversity path</td>
+<td>Main path</td>
+<td>Diversity path</td>
+</tr>
+<tr>
+<td>C/N requirement (dB)</td>
+<td>-1.0</td>
+<td>-1.0</td>
+<td>-1.0</td>
+<td>-1.0</td>
+</tr>
+<tr>
+<td>Noise floor at Antenna connector(dBm/Hz)</td>
+<td>-165.0</td>
+<td>-165.0</td>
+<td>-165.0</td>
+<td>-165.0</td>
+</tr>
+<tr>
+<td>Total NF(RFFE lL + RF NF) (dB)</td>
+<td>9.0</td>
+<td>9.0</td>
+<td>9.0</td>
+<td>9.0</td>
+</tr>
+<tr>
+<td>CIM5 at Antenna connector (dBm/Hz)</td>
+<td>-152.5</td>
+<td>-162.5</td>
+<td>-150.5</td>
+<td>-160.5</td>
+</tr>
+<tr>
+<td>RFIC RX Band Noise level at Antenna connector (dBm/Hz)</td>
+<td>-161.5</td>
+<td>-171.5</td>
+<td>-161.5</td>
+<td>-171.5</td>
+</tr>
+<tr>
+<td>PA RX Band Noise level at Antenna connector (dBm/Hz)</td>
+<td>-161.5</td>
+<td>-171.5</td>
+<td>-161.5</td>
+<td>-171.5</td>
+</tr>
+<tr>
+<td>Total RXBN at Antenna connector (dBm/Hz)</td>
+<td>-151.3</td>
+<td>-159.9</td>
+<td>-149.7</td>
+<td>-158.7</td>
+</tr>
+<tr>
+<td>Sensitivity with RXBN (PC3 max Tx power)(dBm/CBW)</td>
+<td>-76.3</td>
+<td>-84.9</td>
+<td>-73.7</td>
+<td>-82.7</td>
+</tr>
+<tr>
+<td>After MRC</td>
+<td colspan="2">-85.5 (3.2dB margin)</td>
+<td colspan="2">-83.2 (3.5dB margin)</td>
+</tr>
+</tbody>
+</table>
+<p>In Table 6.1.2.1-3, we provided the expected sensitivity degradation
+to consider the counter IMD problem in wide CBW for PC2 UE for n3
+band.</p>
+<p>Table 6.1.2.1-3. Sensitivity degradation for PC2 FDD UE in each
+CBW(40MHz, 50MHz)</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 54%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="2">NR n3 band<br />
+40MHz CBW</th>
+<th colspan="2">NR n3 band<br />
+50MHz CBW</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Main path</td>
+<td>Diversity path</td>
+<td>Main path</td>
+<td>Diversity path</td>
+</tr>
+<tr>
+<td>C/N requirement (dB)</td>
+<td>-1.0</td>
+<td>-1.0</td>
+<td>-1.0</td>
+<td>-1.0</td>
+</tr>
+<tr>
+<td>Noise floor at Antenna connector(dBm/Hz)</td>
+<td>-165.0</td>
+<td>-165.0</td>
+<td>-165.0</td>
+<td>-165.0</td>
+</tr>
+<tr>
+<td>Total NF(RFFE lL + RF NF) (dB)</td>
+<td>9.0</td>
+<td>9.0</td>
+<td>9.0</td>
+<td>9.0</td>
+</tr>
+<tr>
+<td>CIM5 at Antenna connector (dBm/Hz)</td>
+<td>-149.5</td>
+<td>-159.5</td>
+<td>-147.5</td>
+<td>-157.5</td>
+</tr>
+<tr>
+<td>RFIC RX Band Noise level at Antenna connector (dBm/Hz)</td>
+<td>-160.0</td>
+<td>-170.0</td>
+<td>-160.0</td>
+<td>-170.0</td>
+</tr>
+<tr>
+<td>PA RX Band Noise level at Antenna connector (dBm/Hz)</td>
+<td>-160.0</td>
+<td>-170.0</td>
+<td>-160.0</td>
+<td>-170.0</td>
+</tr>
+<tr>
+<td>Total RXBN at Antenna connector (dBm/Hz)</td>
+<td>-148.7</td>
+<td>-157.9</td>
+<td>-147.0</td>
+<td>-156.4</td>
+</tr>
+<tr>
+<td>Sensitivity with RXBN (PC2 max Tx power)(dBm/CBW)</td>
+<td>-73.7</td>
+<td>-82.8</td>
+<td>-71.0</td>
+<td>-80.4</td>
+</tr>
+<tr>
+<td>After MRC</td>
+<td colspan="2">-83.3 dBm <mark>🡪 2.1dB MSD is needed</mark></td>
+<td colspan="2">-80.9 dBm <mark>🡪 2.4dB MSD is needed</mark></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Observation: In 40M CBW, the 2.1 dB MSD by CIMD5 is needed
+when PC2 transmission in n3 FDD band.</strong></p>
+<p><strong>Observation: In 50M CBW, the 2.4 dB MSD by CIMD5 is needed
+when PC2 transmission in n3 FDD band.</strong></p>
+<p>Hence, RAN4 recommand as follow</p>
+<p>To reduce the sensitivity degradation in n3/n1 band, filter vendor
+shall keep or enhance the duplexer Tx/Rx isolation level for FDD bands
+to support PC2 UE.</p>
+<p>Based on RF component improvement, RAN4 can further study for
+sensitivity degradation requirements when RF component vendor provide
+these commercial Duplexer, PAs and RFICs for PC2 UE in FDD band in WI
+phase.</p>
+<h4 id="skw-sensitivity-analysis-results-in-n3">6.1.2.2 SKW sensitivity
+analysis results in n3</h4>
+<p>To derive the sensitivity degradation in n3 band, we use the same UL
+RB allocations than those agreed for PC3 NR UE in n3 band.</p>
+<p>The PA noise levels in the receiver band and corresponding MSD levels
+can be found in Figure 6.1.2.2-1 as below.</p>
+<p><img src="media/image4.png"
+style="width:7.26042in;height:1.67708in" /></p>
+<p>Figure 6.1.2.2-1 Measured Tx noise and corresponding MSD levels for
+all CBW.</p>
+<p>The estimated MSD levels for in 35MHz, 40MHz, 45MHz and 50MHz CBW
+lead to REFSENS levels that are lower than those agreed for PC3
+operation. For these CBW, we tentatively propose to use the same
+approach as in [3], i.e. we propose PC2 REFSENS levels by evaluating the
+MSD level difference between PC3 and PC2 and apply this MSD difference
+to PC3 REFSENS levels. We observe the following MSD difference vs
+CBW:</p>
+<p>- 3.1dB for 50MHz CBW: PC2 MSD of 7.2dB vs PC3 MSD of 4.1dB [3],</p>
+<p>- 2.5dB for 45MHz CBW: PC2 MSD of 4.5dB vs PC3 MSD 2dB [3],</p>
+<p>- 0.6dB for 40MHz CBW: PC2 MSD of 2.0 dB vs PC3 MSD of 1.5dB [3],</p>
+<p>- 0.2dB for 35MHz CBW: PC2 MSD of 0.9 dB vs PC3 MSD of 0.7 dB
+[3].</p>
+<p>For CBW less than or equal to 30MHz, the PC2 MSD can be
+neglected.</p>
+<p>n3 PC2 REFSENS levels and UL configurations are proposed in Table
+6.1.2.2-1 and Table 6.1.2.2-2.</p>
+<p><strong>Table 6.1.2.2-1: n3 PC2 REFSENS</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th>UL configuration</th>
+<th><p>SCS</p>
+<p>(kHz)</p></th>
+<th style="text-align: center;"><p>5</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th style="text-align: center;"><p>10</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th style="text-align: center;"><p>15</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th style="text-align: center;"><p>20</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th style="text-align: center;"><p>25</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th style="text-align: center;"><p>30</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th style="text-align: center;"><p>35 MHz</p>
+<p>(dBm)</p></th>
+<th><p>40 MHz</p>
+<p>(dBm)</p></th>
+<th><p>45</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th><p>50</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th>Duplex mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">n3</td>
+<td>15</td>
+<td style="text-align: center;">-97.0</td>
+<td style="text-align: center;">-93.8</td>
+<td style="text-align: center;">-92.0</td>
+<td style="text-align: center;">-90.8</td>
+<td style="text-align: center;">-89.7</td>
+<td style="text-align: center;">-88.9</td>
+<td style="text-align: center;">-86.0</td>
+<td>-81.7</td>
+<td>-78.8</td>
+<td>-76.6</td>
+<td rowspan="3">FDD</td>
+</tr>
+<tr>
+<td>30</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-94.1</td>
+<td style="text-align: center;">-92.1</td>
+<td style="text-align: center;">-91.0</td>
+<td style="text-align: center;">-89.8</td>
+<td style="text-align: center;">-89.0</td>
+<td style="text-align: center;">-86.1</td>
+<td>-81.8</td>
+<td>-78.9</td>
+<td>-76.7</td>
+</tr>
+<tr>
+<td>60</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-94.5</td>
+<td style="text-align: center;">-92.4</td>
+<td style="text-align: center;">-91.2</td>
+<td style="text-align: center;">-90.0</td>
+<td style="text-align: center;">-89.1</td>
+<td style="text-align: center;">-86.2</td>
+<td>-82.0</td>
+<td>-79.0</td>
+<td>-76.8</td>
+</tr>
+<tr>
+<td colspan="13"><p>NOTE 1: Four Rx antenna ports shall be the baseline
+for this operating band except for two Rx vehicular UE.</p>
+<p>NOTE 2: The transmitter shall be set to PUMAX as defined in clause
+6.2.4</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 6.1.2.2-2: n3 PC2 REFSENS Uplink
+Configuration</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th>UL configuration</th>
+<th><p>SCS</p>
+<p>(kHz)</p></th>
+<th style="text-align: center;"><p>5</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th style="text-align: center;"><p>10</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th style="text-align: center;"><p>15</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th style="text-align: center;"><p>20</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th style="text-align: center;"><p>25</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th style="text-align: center;"><p>30</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th style="text-align: center;"><p>35 MHz</p>
+<p>(dBm)</p></th>
+<th><p>40 MHz</p>
+<p>(dBm)</p></th>
+<th><p>45</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th><p>50</p>
+<p>MHz</p>
+<p>(dBm)</p></th>
+<th>Duplex mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">n3</td>
+<td>15</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">50<sup>1</sup></td>
+<td style="text-align: center;">50<sup>1</sup></td>
+<td style="text-align: center;">50<sup>1</sup></td>
+<td style="text-align: center;">50<sup>1</sup></td>
+<td style="text-align: center;">50<sup>1</sup></td>
+<td style="text-align: center;">50<sup>1</sup></td>
+<td>50<sup>1</sup></td>
+<td>50<sup>1</sup></td>
+<td>50<sup>1</sup></td>
+<td rowspan="3">FDD</td>
+</tr>
+<tr>
+<td>30</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">24<sup>1</sup></td>
+<td style="text-align: center;">24<sup>1</sup></td>
+<td style="text-align: center;">24<sup>1</sup></td>
+<td style="text-align: center;">24<sup>1</sup></td>
+<td style="text-align: center;">24<sup>1</sup></td>
+<td style="text-align: center;">24<sup>1</sup></td>
+<td>24<sup>1</sup></td>
+<td>24<sup>1</sup></td>
+<td>24<sup>1</sup></td>
+</tr>
+<tr>
+<td>60</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">10<sup>1</sup></td>
+<td style="text-align: center;">10<sup>1</sup></td>
+<td style="text-align: center;">10<sup>1</sup></td>
+<td style="text-align: center;">10<sup>1</sup></td>
+<td style="text-align: center;">10<sup>1</sup></td>
+<td style="text-align: center;">10<sup>1</sup></td>
+<td>10<sup>1</sup></td>
+<td>10<sup>1</sup></td>
+<td>10<sup>1</sup></td>
+</tr>
+<tr>
+<td colspan="13">NOTE 1: UL resource blocks shall be located as close as
+possible to the downlink operating band but confined within the
+transmission bandwidth configuration for the channel bandwidth (Table
+5.3.2-1).</td>
+</tr>
+</tbody>
+</table>
+<h4 id="zte-sensitivity-analysis-results-in-n3">6.1.2.3 ZTE sensitivity
+analysis results in n3</h4>
+<p>For band n3, the situation is more complicated since CIM5 may need to
+be considered for some larger CBWs such as 35MHz, 40MHz 45MHz and 50MHz,
+shown in Table 6.1.2.3-1. We can see from Table 6.1.2.3-1, there are
+CIM5 problem for 40MHz, 45MHz and 50MHz with the same UL configurations
+of 50RB, which will further degrade the REFSEN requirements. Therefore,
+when the maximum output power increase 3dB, CIM5 value will become large
+which will cause REFSEN degradation more severe.</p>
+<p><strong>Table 6.1.2.3-1. CIM5 calculation for band n3</strong></p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>CBW_Tx</th>
+<th>20</th>
+<th>25</th>
+<th>30</th>
+<th>35</th>
+<th>40</th>
+<th>45</th>
+<th>50</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CBW_Rx</td>
+<td>20</td>
+<td>25</td>
+<td>30</td>
+<td>35</td>
+<td>40</td>
+<td>45</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Ful</td>
+<td>1775</td>
+<td>1772.5</td>
+<td>1770</td>
+<td>1767.5</td>
+<td>1765</td>
+<td>1762.5</td>
+<td>1760</td>
+</tr>
+<tr>
+<td>UL RB</td>
+<td>50</td>
+<td>50</td>
+<td>50</td>
+<td>50</td>
+<td>50</td>
+<td>50</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Fdl</td>
+<td>1870</td>
+<td>1867.5</td>
+<td>1865</td>
+<td>1862.5</td>
+<td>1860</td>
+<td>1857.5</td>
+<td>1855</td>
+</tr>
+<tr>
+<td>Rx_high</td>
+<td>1880</td>
+<td>1880</td>
+<td>1880</td>
+<td>1880</td>
+<td>1880</td>
+<td>1880</td>
+<td>1880</td>
+</tr>
+<tr>
+<td>Rx_low</td>
+<td>1860</td>
+<td>1855</td>
+<td>1850</td>
+<td>1845</td>
+<td>1840</td>
+<td>1835</td>
+<td>1830</td>
+</tr>
+<tr>
+<td>CIM5 low</td>
+<td>1777.7</td>
+<td>1787.4</td>
+<td>1797.0</td>
+<td>1807.1</td>
+<td>1817.2</td>
+<td>1826.4</td>
+<td>1836.5</td>
+</tr>
+<tr>
+<td>CIM5 center</td>
+<td>1800.2</td>
+<td>1809.9</td>
+<td>1819.5</td>
+<td>1829.6</td>
+<td>1839.75</td>
+<td>1848.9</td>
+<td>1859.0</td>
+</tr>
+<tr>
+<td>CIM5 high</td>
+<td>1822.7</td>
+<td>1832.4</td>
+<td>1842.0</td>
+<td>1852.1</td>
+<td>1862.2</td>
+<td>1871.4</td>
+<td>1881.5</td>
+</tr>
+</tbody>
+</table>
+<p>Similar with band n1, we cite some measurement results in [3] as
+follow:</p>
+<p>The measured TX noise levels in RX band are:</p>
+<p>- 35 MHz: -45 dBm,</p>
+<p>- 40 MHz: -40.4 dBm,</p>
+<p>- 45 MHz: -38 dBm,</p>
+<p>- 50 MHz: -32.3 dBm</p>
+<p>In addition, 50 dB Tx to RX and Tx to Antenna duplexer rejection in
+Rx band, as a worst case assumption. With the above measurement, the MSD
+levels for CBW&gt;35MHz channel bandwidths are larger than 0.5dB, which
+means the REFENS requirements cannot be scaled by the channel bandwidth
+since CIM5 interference needs to be considered.</p>
+<p>To roughly simulate the PC2 case, here we increase the additional Tx
+noise (i.e. delta P from 0~6dB) on top of the above measured Tx noise
+levels in Rx band , where 0dB means no additional measured Tx noise,
+i.e. same with PC3 case. The MSD levels are shown in Figure 6.1.2.3-1 as
+follow:</p>
+<p><img src="media/image5.png"
+style="width:5.03125in;height:1.90625in" /></p>
+<p><strong>Figure 6.1.2.3-1 Expected MSD levels in n3 according to delta
+P</strong></p>
+<p>In can be seen that the MSD levels are increased by the delta P due
+to the total Tx noise levels in RX band increased. The slope for larger
+CBW is steeper than the small CBW. Assuming additional 6dB total Tx
+noise on top of the existing measured ones, then to guarantee the same
+REFSEN requirements as PC3 for PC2, ~5dB additional duplexer rejections
+on top of the existing one would be needed.</p>
+<p><strong>Observation: For band n3, assuming additional 6dB total noise
+caused by increasing 3dB MOP, then ~5dB additional duplexer rejections
+on top of the existing one could be needed to guarantee the existing PC3
+REFSEN requirements for PC2.</strong></p>
+<p>The duplexers filter can achieve better isolation than what was used
+as an assumption (i.e. 50dB) for LTE FDD bands and copied to NR
+considering the today’s duplexer state-of-the-art. Therefore, to reduce
+the PC2 REFSEN requirements for band n1 or band n3, better duplexer
+Tx/Rx (more than 50dB such as 55dB) could be needed.</p>
+<p>From the above sensitivity degradation simulation results, RAN4
+summarize the required sentitivity degradation levels as shown in Table
+6.1-1 and Table 6.1-2. The reference points are PC3 REFSENS requirements
+in TS38.101-1 to decide the required sensitivity level for PC2 UE.</p>
+<p><strong>Table 6.1-1. Required sensitivity degradation levels in n1 NR
+Band for PC2 UE</strong></p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>n1 band</strong></th>
+<th style="text-align: center;"><strong>PC2 [5]</strong></th>
+<th style="text-align: center;"><strong>PC2 [4]</strong></th>
+<th style="text-align: center;"><strong>PC2 [6]</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Reference point</td>
+<td style="text-align: center;"><strong> </strong></td>
+<td style="text-align: center;"><strong> </strong></td>
+<td style="text-align: center;"><strong> </strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">10 MHz (-96.8dBm)</td>
+<td style="text-align: center;">0.8 dB</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 6.1-2. Required sensitivity degradation levels in n3 NR
+Band for PC2 UE</strong></p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>n3 band</strong></th>
+<th style="text-align: center;"><strong>PC2 [5]</strong></th>
+<th style="text-align: center;"><strong>PC2 [4]</strong></th>
+<th style="text-align: center;"><strong>PC2 [6]</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Reference point</td>
+<td style="text-align: center;"> </td>
+<td style="text-align: center;"> 0.0 dB</td>
+<td style="text-align: center;"> </td>
+</tr>
+<tr>
+<td style="text-align: center;">10 MHz (-93.8dBm)</td>
+<td style="text-align: center;">1.7 dB</td>
+<td style="text-align: center;"> 0.0 dB</td>
+<td style="text-align: center;"> </td>
+</tr>
+<tr>
+<td style="text-align: center;">20 MHz (-90.8dBm)</td>
+<td style="text-align: center;"> </td>
+<td style="text-align: center;"> 0.0 dB</td>
+<td style="text-align: center;"> </td>
+</tr>
+<tr>
+<td style="text-align: center;">30 MHz (-88.9dBm)</td>
+<td style="text-align: center;"> </td>
+<td style="text-align: center;"> 0.0 dB</td>
+<td style="text-align: center;"> </td>
+</tr>
+<tr>
+<td style="text-align: center;">35 MHz (-86.2dBm)</td>
+<td style="text-align: center;"> </td>
+<td style="text-align: center;">0.2 dB</td>
+<td style="text-align: center;">0.9 dB</td>
+</tr>
+<tr>
+<td style="text-align: center;">40 MHz (-82.3dBm)</td>
+<td style="text-align: center;">2.1 dB</td>
+<td style="text-align: center;">0.6 dB</td>
+<td style="text-align: center;">1.4 dB</td>
+</tr>
+<tr>
+<td style="text-align: center;">45 MHz (-81.3dBm)</td>
+<td style="text-align: center;"> </td>
+<td style="text-align: center;">2.5 dB</td>
+<td style="text-align: center;">1.8 dB</td>
+</tr>
+<tr>
+<td style="text-align: center;">50 MHz (-79.7dBm)</td>
+<td style="text-align: center;">2.4 dB</td>
+<td style="text-align: center;">3.1 dB</td>
+<td style="text-align: center;">2.7 dB</td>
+</tr>
+</tbody>
+</table>
+<p>The above two tables will be considered as starting point to
+determine the exact REFSENS levels for FDD PC2 UE in WI phase.</p>
+<h1 id="ue-implementations">7 UE implementations</h1>
+<p>In this section, we take a look at the RF component performance in
+FDD band such as n1/n3.</p>
+<h2 id="current-rf-component-characteristics-in-fdd-band">7.1 Current RF
+component characteristics in FDD band </h2>
+<p>Generally, RAN4 considered RF front-end loss as 4dB for smart phone
+form facter for PC3 and PC2 UE. Then, to support PC2 UE in FDD band,
+both PA and Duplexer shall support the allowed max. output with at least
+30 dBm power to support PC2 UE.</p>
+<h3 id="power-amplifier-characteristics">7.1.1 Power Amplifier
+characteristics</h3>
+<p>The following characteristics of PA are shown in Table 7.1.1.1 and
+Table 7.1.1.2</p>
+<p>- PA characteristic of Linearity Maximum Output power in n3</p>
+<p>Table 7.1.1.1. PA max. out put power in n3</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 20%" />
+<col style="width: 18%" />
+<col style="width: 8%" />
+<col style="width: 6%" />
+<col style="width: 8%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Symbol</th>
+<th>Conditions</th>
+<th>Min.</th>
+<th>Typ.</th>
+<th>Max.</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operating Frequency</td>
+<td>f<sub>0</sub></td>
+<td></td>
+<td>1710</td>
+<td></td>
+<td>1785</td>
+<td>MHz</td>
+</tr>
+<tr>
+<td>Maximum NR Output Power</td>
+<td>P<sub>OUT_MAX_NR_NTC</sub></td>
+<td>V<sub>CC</sub> = 3.8V, NTC</td>
+<td>28</td>
+<td></td>
+<td></td>
+<td>dBm</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>※Condition : SC-FDMA, MPR 0dB</p>
+</blockquote>
+<p>- PA characteristic of Linearity Maximum Output power in n1</p>
+<blockquote>
+<p><strong>Table 7.1.1.2. PA max. out put power in n1</strong></p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 20%" />
+<col style="width: 18%" />
+<col style="width: 8%" />
+<col style="width: 6%" />
+<col style="width: 8%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Symbol</th>
+<th>Conditions</th>
+<th>Min.</th>
+<th>Typ.</th>
+<th>Max.</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operating Frequency</td>
+<td>f<sub>0</sub></td>
+<td></td>
+<td>1920</td>
+<td></td>
+<td>1980</td>
+<td>MHz</td>
+</tr>
+<tr>
+<td>Maximum NR Output Power</td>
+<td>P<sub>OUT_MAX_NR_NTC</sub></td>
+<td>V<sub>CC</sub> = 3.8V, NTC</td>
+<td>27.5</td>
+<td></td>
+<td></td>
+<td>dBm</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>※Condition : SC-FDMA, MPR 0dB</p>
+</blockquote>
+<p>- MMPA characteristic of Linearity Maximum Output power in
+n1/n2/n3/n4/n25</p>
+<p>Table 7.1.1.3. MMPA max. out put power in n1/n2/n3/n4/n25</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 34%" />
+<col style="width: 8%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Conditions</th>
+<th>Min.</th>
+<th>Typ.</th>
+<th>Max.</th>
+<th>Units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="5">Frequency Range</td>
+<td>Band 1</td>
+<td>1920</td>
+<td></td>
+<td>1980</td>
+<td rowspan="5">MHz</td>
+</tr>
+<tr>
+<td>Band 2</td>
+<td>1850</td>
+<td></td>
+<td>1910</td>
+</tr>
+<tr>
+<td>Band 3</td>
+<td>1710</td>
+<td></td>
+<td>1785</td>
+</tr>
+<tr>
+<td>Band 4</td>
+<td>1710</td>
+<td></td>
+<td>1755</td>
+</tr>
+<tr>
+<td>Band 25</td>
+<td>1850</td>
+<td></td>
+<td>1915</td>
+</tr>
+<tr>
+<td rowspan="2">Maximum Linear Output Power</td>
+<td>HPM, V<sub>CC</sub> = 3.4V</td>
+<td>28.5<sup>(1)</sup></td>
+<td></td>
+<td></td>
+<td rowspan="2">dBm</td>
+</tr>
+<tr>
+<td>LPM, V<sub>CC</sub> = 0.7V</td>
+<td>3.5</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>※Condition : SC-FDMA, MPR 0dB</p>
+<p>Based on above PA performance information in FDD band, we can see
+that current PA need to improve the linearity of maximum output power at
+least 3dB higher than current PA characteristics.</p>
+<h3 id="duplexer-characteristics">7.1.2 Duplexer characteristics</h3>
+<p>The following characteristics of Duplexer are shown in Table 7.1.2.1
+and Table 7.1.2.2</p>
+<p>- Duplexer characteristic for the allowed max. input power in n3</p>
+<p>Table 7.1.2.1. Duplexer max. input power in n3</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Input power at P<sub>IN</sub> 1712.50-1782.50MHz</th>
+<th>29</th>
+<th>dBm</th>
+<th>source and load impedance 50Ω 5MHz LTE uplink @50℃, 5000h</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<blockquote>
+<p>※Condition : SC-FDMA, MPR 0dB</p>
+</blockquote>
+<p>- Duplexer characteristic for allowed max. input power in n1</p>
+<p>Table 7.1.2.2. Duplexer max. input power in n1</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Input Power</th>
+<th>+29dBm 5000h +55deg.C</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>※Condition : SC-FDMA, MPR 0dB</p>
+<p>Based on above Duplexer performance information in FDD band, we can
+see that current Duplexer also need to improve the maximum power rating
+at least 2~3dB higher than the current Duplexer characteristics.</p>
+<p>Therefore, RAN4 can study on high power UE (power class 2) for one NR
+FDD band when RF component vendor are ready to support the RF component
+performance to support PC2 UE in FDD band.</p>
+<p>From the above current RF component characteristics, we share our
+observation and proposal as follow</p>
+<p><strong>Observation : In FDD band, the PA/Duplexer charateristic is
+not support PC2 maximum output power since PA linearity and Duplexer
+allowed maximum power rating shall improve the performance at least 3dB
+higher than current component charateristics.</strong></p>
+<h1 id="system-performance-evaluation">8 System Performance
+Evaluation</h1>
+<h2 id="dynamic-system-level-simulation">8.1 Dynamic system level
+simulation</h2>
+<h3 id="general">8.1.1 General</h3>
+<p>The dynamic system level simulation is usually used to evaluate the
+system performance gain, which can simulate the behavior of system in
+more detail. The HPUE feature can improve UL coverage but at the same
+time increase the interference of the neighboring cells, and the final
+system performance gain is evaluated by the average cell uplink
+throughput and 5%-tile cell-edge uplink throughput.</p>
+<p>In addition, the SAR issue is also a practical factor that limits
+HPUE performance. Restricting duty-cycle is a commonly used method to
+avoid SAR issue, and it is widely used in TDD systems. However, there
+are some difficulties in compatibility between duty-cycle and FDD
+systems, but in order to include the potential impact of scheduling
+constraints on system performance due to the SAR issues, the 50%
+duty-cycle restriction should also be evaluated.</p>
+<h3 id="simulation-assumptions">8.1.2 Simulation assumptions</h3>
+<p>The simulation assumptions for dynamic system level simulation are
+included in Table 8.1.2-1</p>
+<p>Table 8.1.2-1. Simulation Assumptions</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr>
+<th>Configuration parameters</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scenario</td>
+<td>Urban macro</td>
+</tr>
+<tr>
+<td>ISD</td>
+<td>500 m</td>
+</tr>
+<tr>
+<td>Duplexing</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>1.8 GHz, 2.1GHz</td>
+</tr>
+<tr>
+<td>Modulation</td>
+<td>Up to 64QAM, 256QAM is optional</td>
+</tr>
+<tr>
+<td>Numerology</td>
+<td>15 kHz</td>
+</tr>
+<tr>
+<td>Simulation bandwidth</td>
+<td>40 MHz</td>
+</tr>
+<tr>
+<td>Transmission scheme</td>
+<td>SU-MIMO</td>
+</tr>
+<tr>
+<td>Codebook</td>
+<td>For 2Tx, codebook [1 1]T is used for transmit diversity</td>
+</tr>
+<tr>
+<td>SU dimension</td>
+<td>1 layer</td>
+</tr>
+<tr>
+<td>Antenna configuration at TRxP</td>
+<td><p>4Rx, (M,N,P,Mg, Ng) = (1,2,2,1,1; 1,2); 4Rx, (M, N, P, Mg, Ng) =
+(1, 4, 2, 1, 2)</p>
+<p>32Rx, (M,N,P,Mg, Ng) = (8,8,2,1,1; 2,8)</p></td>
+</tr>
+<tr>
+<td>Antenna configuration at UE</td>
+<td><p>1Tx, (M,N,P,Mg, Ng) = (1,1,1,1,1; 1,1),</p>
+<p>2Tx, (M,N,P,Mg, Ng) = (1,1,2,1,1; 1,1)</p></td>
+</tr>
+<tr>
+<td>UE maximal transmit power</td>
+<td><p>For 1Tx, 23 dBm for each TXRU</p>
+<p>For 1Tx, 26 dBm for each TXRU (High power UE)</p>
+<p>For 2Tx, 23 dBm for each TXRU (High power UE)</p></td>
+</tr>
+<tr>
+<td>Scheduling</td>
+<td>PF</td>
+</tr>
+<tr>
+<td>Receiver</td>
+<td>MMSE-IRC</td>
+</tr>
+<tr>
+<td>Channel estimation</td>
+<td>Ideal</td>
+</tr>
+<tr>
+<td>Power control parameter</td>
+<td>P0=[-60~-76], alpha = [0.6, 0.8]</td>
+</tr>
+<tr>
+<td>TRxP number per site</td>
+<td>3</td>
+</tr>
+<tr>
+<td>TRxP number</td>
+<td>21</td>
+</tr>
+<tr>
+<td>Channel model</td>
+<td>UMa following TR 38.901</td>
+</tr>
+<tr>
+<td>Electronic tilt</td>
+<td>102°</td>
+</tr>
+<tr>
+<td>Traffic model</td>
+<td>FTP3, packet size: 100k / 10k Byte, arrival rate: [1 packet / s, 1
+packet/200ms]</td>
+</tr>
+<tr>
+<td>Uplink duty cycle</td>
+<td>50%, 100%</td>
+</tr>
+<tr>
+<td colspan="2">Note: HPUE ratio 100% baseline, 50% and 25% are
+optional</td>
+</tr>
+</tbody>
+</table>
+<p>Further evaluation based on other traffic models for reference are
+not precluded.</p>
+<h3 id="simulation-results">8.1.3 Simulation results</h3>
+<h4 id="p0--76-alpha-0.6">8.1.3.1 P0 = -76, alpha = 0.6</h4>
+<p>Company 1 (R4-2109699)</p>
+<p>In the simulation, all UEs are assumed to have high power capability
+and the results are shown in Table 8.1.3.1-1</p>
+<p>Table 8.1.3.1-1: Simulation Results for Alpha =0.6</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Antenna</strong></th>
+<th style="text-align: center;"><p><strong>Max Tx</strong></p>
+<p><strong>Power</strong></p>
+<p><strong>/dBm</strong></p></th>
+<th style="text-align: center;"><p><strong>Packet</strong></p>
+<p><strong>size</strong></p></th>
+<th style="text-align: center;"><p><strong>Packet</strong></p>
+<p><strong>arrival</strong></p>
+<p><strong>rate</strong></p></th>
+<th style="text-align: center;"><strong>Duty cycle</strong></th>
+<th style="text-align: center;"><p><strong>Cell avg.</strong></p>
+<p><strong>UPT</strong></p>
+<p><strong>/Mbps</strong></p></th>
+<th style="text-align: center;"><p><strong>5% UPT</strong></p>
+<p><strong>/Mbps</strong></p></th>
+<th style="text-align: center;"><p><strong>Cell avg.</strong></p>
+<p><strong>UPT gain</strong></p></th>
+<th style="text-align: center;"><p><strong>5% UPT</strong></p>
+<p><strong>gain</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>BS: 4R</p>
+<p>UE: 1T</p></td>
+<td>23</td>
+<td>100k Byte</td>
+<td>5 file/s</td>
+<td>100%</td>
+<td>190.1</td>
+<td>3.04</td>
+<td><p>0%,</p>
+<p>baseline</p></td>
+<td><p>0%,</p>
+<p>baseline</p></td>
+</tr>
+<tr>
+<td><p>BS: 4R</p>
+<p>UE: 1T</p></td>
+<td>26</td>
+<td>100k Byte</td>
+<td>5 file/s</td>
+<td>100%</td>
+<td>192.1</td>
+<td>4.24</td>
+<td>1.0%</td>
+<td>39.4%</td>
+</tr>
+<tr>
+<td><p>BS: 4R</p>
+<p>UE: 1T</p></td>
+<td>26</td>
+<td>100k Byte</td>
+<td>5 file/s</td>
+<td>50%</td>
+<td>190.3</td>
+<td>3.12</td>
+<td>0.1%</td>
+<td>2.7%</td>
+</tr>
+</tbody>
+</table>
+<p>For alpha = 0.6, The proportion of UEs working at high power is
+relatively small, and the performance gain of PC2 UE is reflected in
+edge users which is also in line with the expected purpose. However, the
+50% duty-cycle will significantly reduce the performance gain because
+high-power users are mainly distributed at the edge of the cell at this
+time.</p>
+<p>Company 3 (R4-2111446)</p>
+<p>Table 8.1.3.1-2: Simulation results for P0 = -76, alpha = 0.6</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 15%" />
+<col style="width: 19%" />
+<col style="width: 17%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Antenna</strong></th>
+<th style="text-align: center;"><strong>Max Tx power/dBm</strong></th>
+<th style="text-align: center;"><strong>Packet size</strong></th>
+<th style="text-align: center;"><strong>Packet arrival
+rate</strong></th>
+<th style="text-align: center;"><strong>Cell avg. UPT gain</strong></th>
+<th style="text-align: center;"><strong>5% UPT gain</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>153.33%</td>
+<td>112.50 %</td>
+</tr>
+</tbody>
+</table>
+<h4 id="p0--76-alpha-0.8">8.1.3.2 P0 = -76, alpha = 0.8</h4>
+<p>Company 1 (R4-2109699)</p>
+<p>Table 8.1.3.2-1: Simulation Results for Alpha =0.8</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Antenna</strong></th>
+<th style="text-align: center;"><p><strong>Max Tx</strong></p>
+<p><strong>Power</strong></p>
+<p><strong>/dBm</strong></p></th>
+<th style="text-align: center;"><p><strong>Packet</strong></p>
+<p><strong>size</strong></p></th>
+<th style="text-align: center;"><p><strong>Packet</strong></p>
+<p><strong>arrival</strong></p>
+<p><strong>rate</strong></p></th>
+<th style="text-align: center;"><strong>Duty cycle</strong></th>
+<th style="text-align: center;"><p><strong>Cell avg.</strong></p>
+<p><strong>UPT</strong></p>
+<p><strong>/Mbps</strong></p></th>
+<th style="text-align: center;"><p><strong>5% UPT</strong></p>
+<p><strong>/Mbps</strong></p></th>
+<th style="text-align: center;"><p><strong>Cell avg.</strong></p>
+<p><strong>UPT gain</strong></p></th>
+<th style="text-align: center;"><p><strong>5% UPT</strong></p>
+<p><strong>gain</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>BS: 4R</p>
+<p>UE: 1T</p></td>
+<td>23</td>
+<td>100k Byte</td>
+<td>5 file/s</td>
+<td>100%</td>
+<td>146.2</td>
+<td>1.36</td>
+<td><p>0%,</p>
+<p>baseline</p></td>
+<td><p>0%,</p>
+<p>baseline</p></td>
+</tr>
+<tr>
+<td><p>BS: 4R</p>
+<p>UE: 1T</p></td>
+<td>26</td>
+<td>100k Byte</td>
+<td>5 file/s</td>
+<td>100%</td>
+<td>179.8</td>
+<td>1.73</td>
+<td>23.0%</td>
+<td>27.4%</td>
+</tr>
+<tr>
+<td><p>BS: 4R</p>
+<p>UE: 1T</p></td>
+<td>26</td>
+<td>100k Byte</td>
+<td>5 file/s</td>
+<td>50%</td>
+<td>176.9</td>
+<td>1.53</td>
+<td>21.0%</td>
+<td>12.2%</td>
+</tr>
+</tbody>
+</table>
+<p>When the alpha rises to 0.8, the proportion of high-power users will
+increase. PC2 UEs will significantly improve cell average and edge
+performance. Since high-power users are not only distributed at the 5%
+edge of the cell at this time, the performance gain reduction caused by
+the 50% duty-cycle is relatively small. It is worth noting that the
+alpha change has caused the power of most UEs to rise, which increases
+the overall interference level, and the absolute value of the cell
+throughput decreases relative to the case of alpha=0.6.</p>
+<p>Company 2 (R4-2104922)</p>
+<p>The detailed simulation results for band n3 are shown in Table
+8.1.3.2-2</p>
+<p>Table 8.1.3.2-2: Dynamic system level simulation results</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 22%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 9%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Antenna
+Configuration</strong></th>
+<th style="text-align: center;"><strong>Maximum Tx
+Power(dBm)</strong></th>
+<th style="text-align: center;"><p><strong>Duty cycle</strong></p>
+<p><strong>(%)</strong></p></th>
+<th style="text-align: center;"><p><strong>Packet size</strong></p>
+<p><strong>(k Byte)</strong></p></th>
+<th style="text-align: center;"><p><strong>Arrival rate</strong></p>
+<p><strong>(file/s)</strong></p></th>
+<th style="text-align: center;"><p><strong>5% UPT</strong></p>
+<p><strong>(Mbps)</strong></p></th>
+<th style="text-align: center;"><p><strong>Average UPT</strong></p>
+<p><strong>(Mbps)</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1Tx 4Rx</td>
+<td style="text-align: left;">23</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><p>7.95</p>
+<p>0%</p></td>
+<td style="text-align: left;"><p>45.45</p>
+<p>0%</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">1Tx 4Rx</td>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><p>10.13</p>
+<p>+27%</p></td>
+<td style="text-align: left;"><p>56.84</p>
+<p>+25%</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">1Tx 4Rx</td>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><p>8.57</p>
+<p>+8%</p></td>
+<td style="text-align: left;"><p>56.62</p>
+<p>+25%</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">2Tx 4Rx</td>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><p>10.70</p>
+<p>+35%</p></td>
+<td style="text-align: left;"><p>57.14</p>
+<p>+26%</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">2Tx 4Rx</td>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><p>9.03</p>
+<p>+14%</p></td>
+<td style="text-align: left;"><p>56.98</p>
+<p>+25%</p></td>
+</tr>
+</tbody>
+</table>
+<p>Company 3 (R4-2107300, R4-2111446)</p>
+<p>In the simulation assumptions, some parameters have more than one set
+of values. For the different values, more simulation cases are
+performed. Table 8.1.3.2-3 and 8.1.3.2-4 provides the simulation
+results.</p>
+<p>Table 8.1.3.2-3: Simulation results for P0 = -76, alpha = 0.8</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 15%" />
+<col style="width: 19%" />
+<col style="width: 17%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Antenna</strong></th>
+<th style="text-align: center;"><strong>Max Tx power/dBm</strong></th>
+<th style="text-align: center;"><strong>Packet size</strong></th>
+<th style="text-align: center;"><strong>Packet arrival
+rate</strong></th>
+<th style="text-align: center;"><strong>Cell avg. UPT gain</strong></th>
+<th style="text-align: center;"><strong>5% UPT gain</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>150.11%</td>
+<td>100.03%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 2T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>147.90%</td>
+<td>101.67%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>23</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>150.02%</td>
+<td>107.12%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 2T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>150.18%</td>
+<td>105.24%</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Antenna</strong></td>
+<td style="text-align: center;"><strong>Max Tx power/dBm</strong></td>
+<td style="text-align: center;"><strong>Packet size</strong></td>
+<td style="text-align: center;"><strong>Packet arrival
+rate</strong></td>
+<td style="text-align: center;"><strong>Cell avg. UPT gain</strong></td>
+<td style="text-align: center;"><strong>5% UPT gain</strong></td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>159.56%</td>
+<td>105.72%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 2T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>157.07%</td>
+<td>105.72%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>159.78%</td>
+<td>108.69%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 2T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>159.77%</td>
+<td>108.69%</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Antenna</strong></td>
+<td style="text-align: center;"><strong>Max Tx power/dBm</strong></td>
+<td style="text-align: center;"><strong>Packet size</strong></td>
+<td style="text-align: center;"><strong>Packet arrival
+rate</strong></td>
+<td style="text-align: center;"><strong>Cell avg. UPT gain</strong></td>
+<td style="text-align: center;"><strong>5% UPT gain</strong></td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>100k Byte</td>
+<td>1 file/1s</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/1s</td>
+<td>151.88%</td>
+<td>100.82%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 2T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/1s</td>
+<td>156.11%</td>
+<td>100.53%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>23</td>
+<td>100k Byte</td>
+<td>1 file/1s</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/1s</td>
+<td>152.96%</td>
+<td>102.23%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 2T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/1s</td>
+<td>155.44%</td>
+<td>100.15%</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Antenna</strong></td>
+<td style="text-align: center;"><strong>Max Tx power/dBm</strong></td>
+<td style="text-align: center;"><strong>Packet size</strong></td>
+<td style="text-align: center;"><strong>Packet arrival
+rate</strong></td>
+<td style="text-align: center;"><strong>Cell avg. UPT gain</strong></td>
+<td style="text-align: center;"><strong>5% UPT gain</strong></td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/1s</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/1s</td>
+<td>161.03%</td>
+<td>106.45%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 2T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/1s</td>
+<td>160.06%</td>
+<td>106.45%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/1s</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/1s</td>
+<td>161.34%</td>
+<td>108.69%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 2T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/1s</td>
+<td>160.23%</td>
+<td>108.69%</td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.1.3.2-4: Simulation results for P0 = -76, alpha = 0.8</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 15%" />
+<col style="width: 19%" />
+<col style="width: 17%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Antenna</strong></th>
+<th style="text-align: center;"><strong>Max Tx power/dBm</strong></th>
+<th style="text-align: center;"><strong>Packet size</strong></th>
+<th style="text-align: center;"><strong>Packet arrival
+rate</strong></th>
+<th style="text-align: center;"><strong>Cell avg. UPT gain</strong></th>
+<th style="text-align: center;"><strong>5% UPT gain</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>167.50%</td>
+<td>109.1%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="p0--60-alpha-0.6">8.1.3.3 P0 = -60, alpha = 0.6</h4>
+<p>Company 2 (R4-2109763)</p>
+<p>Table 8.1.3.3-1: Dynamic system level simulation results for 10kB
+packet size</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 22%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 9%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Antenna
+Configuration</strong></th>
+<th style="text-align: center;"><strong>Maximum Tx
+Power(dBm)</strong></th>
+<th style="text-align: center;"><p><strong>Duty cycle</strong></p>
+<p><strong>(%)</strong></p></th>
+<th style="text-align: center;"><p><strong>Packet size</strong></p>
+<p><strong>(k Byte)</strong></p></th>
+<th style="text-align: center;"><p><strong>Arrival rate</strong></p>
+<p><strong>(file/s)</strong></p></th>
+<th style="text-align: center;"><p><strong>5% UPT</strong></p>
+<p><strong>(Mbps)</strong></p></th>
+<th style="text-align: center;"><p><strong>Average UPT</strong></p>
+<p><strong>(Mbps)</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1Tx 4Rx</td>
+<td style="text-align: left;">23</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><p>20.65</p>
+<p>0%</p></td>
+<td style="text-align: left;"><p>63.81</p>
+<p>0%</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">1Tx 4Rx</td>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><p>31.66</p>
+<p>+53%</p></td>
+<td style="text-align: left;"><p>72.38</p>
+<p>+13%</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">1Tx 4Rx</td>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><p>32.69</p>
+<p>+58%</p></td>
+<td style="text-align: left;"><p>72.43</p>
+<p>+14%</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">2Tx 4Rx</td>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><p>31.87</p>
+<p>+54%</p></td>
+<td style="text-align: left;"><p>73.22</p>
+<p>+15%</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">2Tx 4Rx</td>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><p>32.31</p>
+<p>+56%</p></td>
+<td style="text-align: left;"><p>73.22</p>
+<p>+15%</p></td>
+</tr>
+</tbody>
+</table>
+<p>Company 3 (R4-2107300)</p>
+<p>Table 8.1.3.3-2: Simulation results for P0 = -60, alpha = 0.6</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 15%" />
+<col style="width: 19%" />
+<col style="width: 17%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Antenna</strong></th>
+<th style="text-align: center;"><strong>Max Tx power/dBm</strong></th>
+<th style="text-align: center;"><strong>Packet size</strong></th>
+<th style="text-align: center;"><strong>Packet arrival
+rate</strong></th>
+<th style="text-align: center;"><strong>Cell avg. UPT gain</strong></th>
+<th style="text-align: center;"><strong>5% UPT gain</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>148.14%</td>
+<td>100.03%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 2T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>143.43%</td>
+<td>108.01%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>23</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>151.49%</td>
+<td>100.97%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 2T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>151.38%</td>
+<td>104.57%</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Antenna</strong></td>
+<td style="text-align: center;"><strong>Max Tx power/dBm</strong></td>
+<td style="text-align: center;"><strong>Packet size</strong></td>
+<td style="text-align: center;"><strong>Packet arrival
+rate</strong></td>
+<td style="text-align: center;"><strong>Cell avg. UPT gain</strong></td>
+<td style="text-align: center;"><strong>5% UPT gain</strong></td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>160.12%</td>
+<td>105.72%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 2T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>157.12%</td>
+<td>105.72%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>163.25%</td>
+<td>108.69%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 2T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>163.12%</td>
+<td>108.69%</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Antenna</strong></td>
+<td style="text-align: center;"><strong>Max Tx power/dBm</strong></td>
+<td style="text-align: center;"><strong>Packet size</strong></td>
+<td style="text-align: center;"><strong>Packet arrival
+rate</strong></td>
+<td style="text-align: center;"><strong>Cell avg. UPT gain</strong></td>
+<td style="text-align: center;"><strong>5% UPT gain</strong></td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>100k Byte</td>
+<td>1 file/1 s</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/1 s</td>
+<td>153.16%</td>
+<td>100.78%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 2T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/1 s</td>
+<td>151.74%</td>
+<td>104.03%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>23</td>
+<td>100k Byte</td>
+<td>1 file/1 s</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/1 s</td>
+<td>155.10%</td>
+<td>102.41%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 2T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/1 s</td>
+<td>154.49%</td>
+<td>102.41%</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Antenna</strong></td>
+<td style="text-align: center;"><strong>Max Tx power/dBm</strong></td>
+<td style="text-align: center;"><strong>Packet size</strong></td>
+<td style="text-align: center;"><strong>Packet arrival
+rate</strong></td>
+<td style="text-align: center;"><strong>Cell avg. UPT gain</strong></td>
+<td style="text-align: center;"><strong>5% UPT gain</strong></td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/1 s</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/1 s</td>
+<td>162.77%</td>
+<td>106.45%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 2T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/1 s</td>
+<td>161.15%</td>
+<td>106.45%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/1 s</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/1 s</td>
+<td>164.53%</td>
+<td>108.69%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 2T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/1 s</td>
+<td>164.49%</td>
+<td>108.69%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="p0--60-alpha-0.8">8.1.3.4 P0 = -60, alpha = 0.8</h4>
+<p>Company 3 (R4-2107300)</p>
+<p>Table 8.1.3.4-1: Simulation results for P0 = -60, alpha = 0.8</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 15%" />
+<col style="width: 19%" />
+<col style="width: 17%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Antenna</strong></th>
+<th style="text-align: center;"><strong>Max Tx power/dBm</strong></th>
+<th style="text-align: center;"><strong>Packet size</strong></th>
+<th style="text-align: center;"><strong>Packet arrival
+rate</strong></th>
+<th style="text-align: center;"><strong>Cell avg. UPT gain</strong></th>
+<th style="text-align: center;"><strong>5% UPT gain</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>132.77%</td>
+<td>100.02%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 2T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>134.44%</td>
+<td>100.81%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>23</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>127.14%</td>
+<td>100.52%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 2T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/200ms</td>
+<td>126.51%</td>
+<td>102.70%</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Antenna</strong></td>
+<td style="text-align: center;"><strong>Max Tx power/dBm</strong></td>
+<td style="text-align: center;"><strong>Packet size</strong></td>
+<td style="text-align: center;"><strong>Packet arrival
+rate</strong></td>
+<td style="text-align: center;"><strong>Cell avg. UPT gain</strong></td>
+<td style="text-align: center;"><strong>5% UPT gain</strong></td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>133.91%</td>
+<td>105.12%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 2T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>132.87%</td>
+<td>105.12%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>137.62%</td>
+<td>107.41%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 2T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/200ms</td>
+<td>136.81%</td>
+<td>107.41%</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Antenna</strong></td>
+<td style="text-align: center;"><strong>Max Tx power/dBm</strong></td>
+<td style="text-align: center;"><strong>Packet size</strong></td>
+<td style="text-align: center;"><strong>Packet arrival
+rate</strong></td>
+<td style="text-align: center;"><strong>Cell avg. UPT gain</strong></td>
+<td style="text-align: center;"><strong>5% UPT gain</strong></td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>100k Byte</td>
+<td>1 file/1 s</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/1 s</td>
+<td>127.75%</td>
+<td>100.63%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 2T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/1 s</td>
+<td>128.25%</td>
+<td>101.69%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>23</td>
+<td>100k Byte</td>
+<td>1 file/1 s</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/1 s</td>
+<td>125.74%</td>
+<td>101.48%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 2T</td>
+<td>26</td>
+<td>100k Byte</td>
+<td>1 file/1 s</td>
+<td>124.84%</td>
+<td>105.37%</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Antenna</strong></td>
+<td style="text-align: center;"><strong>Max Tx power/dBm</strong></td>
+<td style="text-align: center;"><strong>Packet size</strong></td>
+<td style="text-align: center;"><strong>Packet arrival
+rate</strong></td>
+<td style="text-align: center;"><strong>Cell avg. UPT gain</strong></td>
+<td style="text-align: center;"><strong>5% UPT gain</strong></td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/1 s</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/1 s</td>
+<td>133.45%</td>
+<td>106.45%</td>
+</tr>
+<tr>
+<td>BS: 4R UE: 2T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/1 s</td>
+<td>133.46%</td>
+<td>106.45%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>23</td>
+<td>10k Byte</td>
+<td>1 file/1 s</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 1T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/1 s</td>
+<td>137.95%</td>
+<td>107.41%</td>
+</tr>
+<tr>
+<td>BS: 32R UE: 2T</td>
+<td>26</td>
+<td>10k Byte</td>
+<td>1 file/1 s</td>
+<td>137.70%</td>
+<td>107.41%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="other">8.1.3.5 Other</h4>
+<p>Company 1 (R4-2109699, R4-2113025)</p>
+<p>In addition, the statistics of resource utilization (RU) are shown in
+Table 8.1.3.5.1-1</p>
+<p>Table 8.1.3.5-1: The resource utilization in simulation</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Alpha = 0.6</strong></th>
+<th style="text-align: center;"><strong>Alpha = 0.8</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>14.4%</td>
+<td>2.3%</td>
+</tr>
+</tbody>
+</table>
+<p>Resource utilization is at a relatively low level which may cause
+some potential simulation vulnerabilities. Low resource utilization may
+mean that high-power users at the edge complete data transmission
+quickly, and there will be no scheduling conflicts between different
+UEs. This will cause the interference increase caused by high power to
+be hidden. To remedy this problem, some simulation results of higher
+resource utilization are provided as Table 8.1.3.5.1-2 and Table
+8.1.3.5.1-3.</p>
+<p>Table 8.1.3.5-2: High data density transmission simulation result</p>
+<p>（alpha =0.6, 100% duty-cycle)</p>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th colspan="3">PC3（baseline）</th>
+<th colspan="3">PC2</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>packet size</p>
+<p>(k Byte)</p></td>
+<td><p>arrival rate</p>
+<p>(file/s)</p></td>
+<td>(RU (%)</td>
+<td><p>Cell avg. UPT</p>
+<p>/Mbps</p></td>
+<td><p>5% UPT</p>
+<p>/Mbps</p></td>
+<td>RU (%)</td>
+<td><p>Cell avg. UPT</p>
+<p>/Mbps</p></td>
+<td><p>5% UPT</p>
+<p>/Mbps</p></td>
+<td>Cell avg. UPT gain</td>
+<td>5% UPT gain</td>
+</tr>
+<tr>
+<td style="text-align: left;">100K</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">32.81</td>
+<td style="text-align: left;">184.85</td>
+<td style="text-align: left;">2.76</td>
+<td style="text-align: left;">34.36</td>
+<td style="text-align: left;">186.17</td>
+<td style="text-align: left;">3.78</td>
+<td style="text-align: left;">0.72%</td>
+<td style="text-align: left;">37.1%</td>
+</tr>
+<tr>
+<td style="text-align: left;">100K</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">54.83</td>
+<td style="text-align: left;">166.9</td>
+<td style="text-align: left;">1.75</td>
+<td style="text-align: left;">57.18</td>
+<td style="text-align: left;">167.31</td>
+<td style="text-align: left;">2.39</td>
+<td style="text-align: left;">0.24%</td>
+<td style="text-align: left;">36.1%</td>
+</tr>
+<tr>
+<td style="text-align: left;">100K</td>
+<td style="text-align: left;">40</td>
+<td style="text-align: left;">80.3</td>
+<td style="text-align: left;">136.6</td>
+<td style="text-align: left;">0.15</td>
+<td style="text-align: left;">82.5</td>
+<td style="text-align: left;">135.9</td>
+<td style="text-align: left;">0.16</td>
+<td style="text-align: left;">-0.48%</td>
+<td style="text-align: left;">7.5%</td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.1.3.5-3: High data density transmission simulation result</p>
+<p>（alpha =0.8, 100% duty-cycle）</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th colspan="3">PC3（baseline）</th>
+<th colspan="3">PC2</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>packet size</p>
+<p>(k Byte)</p></td>
+<td><p>arrival rate</p>
+<p>(file/s)</p></td>
+<td>(RU (%)</td>
+<td><p>Cell avg. UPT</p>
+<p>/Mbps</p></td>
+<td><p>5% UPT</p>
+<p>/Mbps</p></td>
+<td>RU (%)</td>
+<td><p>Cell avg. UPT</p>
+<p>/Mbps</p></td>
+<td><p>5% UPT</p>
+<p>/Mbps</p></td>
+<td>Cell avg. UPT gain</td>
+<td>5% UPT gain</td>
+</tr>
+<tr>
+<td>500K</td>
+<td>10</td>
+<td>23.46</td>
+<td>268.42</td>
+<td>0.06</td>
+<td>24.32</td>
+<td>340.37</td>
+<td>0.066</td>
+<td>26.8%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>500K</td>
+<td>20</td>
+<td>35.80</td>
+<td>235.8</td>
+<td>0.052</td>
+<td>38.76</td>
+<td>296.97</td>
+<td>0.056</td>
+<td>25.9%</td>
+<td>7.7%</td>
+</tr>
+<tr>
+<td>500K</td>
+<td>40</td>
+<td>47.43</td>
+<td>215.1</td>
+<td>0.045</td>
+<td>53.7</td>
+<td>262.86</td>
+<td>0.0453</td>
+<td>22.2%</td>
+<td>0.5%</td>
+</tr>
+</tbody>
+</table>
+<p>The result shows that when the resource utilization increase, the
+system performance gain of cell average still considerable. However, the
+performance of cell edge will be tiny when the RU rise to about 50%.
+Note that under the same traffic model, the RU of PC2 UE will be
+slightly larger than that of PC3. This is caused by the decrease in SINR
+due to increased interference at high power.</p>
+<p>Company 3 (R4-2111446)</p>
+<p>Figure 8.1.3.5-1 shows the CDF curve of the UE. From Figure 1,
+although the interference increases with the increase of transmit power
+of PC2 UE, there is still 1dB gain compared with the PC3 UE. And Figure
+8.1.3.5-2 shows the actual number of scheduled RB for the PC2 UE and PC3
+UE sorted by UE throughput. For the cell edge UE (5% UPT UE), the number
+of the scheduled RB for PC2 UE is more than twice of the PC3 UE.
+Therefore, even though the PC2 UE has 50% restriction, due to the gain
+of the SINR and the more scheduled RB for PC2 UE, the average and cell
+edge cases could have an obvious performance gain.</p>
+<p><img src="media/image6.png"
+style="width:3.51389in;height:2.88889in" /></p>
+<p>Figure 8.1.3.5-1 SINR CDF of PC2 UE (50% duty cycle) and PC3 UE (100%
+duty cycle)</p>
+<p><img src="media/image7.png"
+style="width:3.6875in;height:2.83333in" /></p>
+<p>Figure 8.1.3.5-2 Number of scheduled RB per UE sorted by the UE
+throughput</p>
+<h2 id="monte-carlo-simulation">8.2 Monte Carlo simulation</h2>
+<p>8.2.1 Simulation methodology</p>
+<p>The Monte Carlo based static system level simulation is typical
+simulation method used in the coexistence study and can also be used for
+the simplified system performance evaluation. The sub-snapshot method is
+agreed as one of possible methods to simulate the HPUE feature.</p>
+<p>The difference for UL duty cycle is emulated by assuming there are N
+sub-snapshots within one snapshot. For example, we can set N=2 for the
+case of 50% duty cycle for FDD HPUE. Similarly, we can set N=4 for the
+case of 25% duty cycle. In each snapshot, UEs are randomly placed in a
+predefined deployment scenario. But within one snapshot, the UEs’
+locations for N sub-snapshots are fixed. Table 8.2.1-1 illustrates the
+sub-snapshot concept and the simulation method. When the simulation
+performance is assumed to be measured within one frame (e.g., 10ms) and
+only 50% time can be used for UL transmission within one frame assuming
+50% duty cycle. Then each sub-snapshot can be considered as 5ms in the
+Monte-Carlo simulation.</p>
+<p>Table 8.2.1-1. An example to compare FDD PC2 UE (50% DC) and FDD PC3
+UE (100% DC)</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 30%" />
+<col style="width: 26%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th>UE type</th>
+<th>The first sub-snapshot</th>
+<th>The second sub-snapshot</th>
+<th>UL duty cycle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FDD PC3 UEs</td>
+<td>Max. Tx power is 23dBm</td>
+<td>Max. Tx power is 23dBm</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>FDD PC2 UEs with transmission power &gt;23dBm</td>
+<td>Max. Tx power is 26dBm</td>
+<td>No transmission</td>
+<td>50%</td>
+</tr>
+<tr>
+<td colspan="4"><p>Note 1: For PC2 UEs with transmission power ≤ 23dBm,
+there is no need to reduce the UL duty cycle since there is no SAR
+issue.</p>
+<p>Note 2: For simplicity, 50% UL duty cycle will be applied once PC2
+UEs transmit power is larger than 23dBm.</p>
+<p>Note 3: PC2 UEs with 50% UL duty can randomly transmit power at the
+first or the second sub-snapshot.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Non-full buffer and full buffer scenarios are both considered in the
+simulation. For the non-full buffer scenario, the resource will not be
+used in the sub-snapshot which there is no transmission for the UE with
+&gt;23dBm Tx power. For the full buffer scenario, a new user will be
+scheduled in one of the two sub-snapshots when the UE with &gt;23dBm Tx
+power will not transmit in that correspondent sub-snapshot due to 50%
+duty cycle.</p>
+<p>There are also other evaluation methods can be implemented to
+stimulate the duty cycle in the Monte Carlo simulation, such as drawing
+a random number in each snapshot. If the random number is larger than
+the duty cycle, then the HPUE will be replaced with another UE; If the
+random number is less than the duty cycle, then the HPUE will transmit
+normally with Tx power up to 26 dBm.</p>
+<p>8.2.2 Simulation assumptions</p>
+<p>The simulation assumptions using Monte-Carlo simulation are as Table
+8.2.2-1.</p>
+<p>Table 8.2.2-1. System Assumptions</p>
+<table>
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 31%" />
+<col style="width: 3%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Base Station</th>
+<th colspan="2">UE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carrier frequency</td>
+<td colspan="3">2GHz</td>
+</tr>
+<tr>
+<td>Channel bandwidth</td>
+<td colspan="3">40MHz</td>
+</tr>
+<tr>
+<td>Active UE number in UL</td>
+<td colspan="3">3</td>
+</tr>
+<tr>
+<td>PC2 UE ratio</td>
+<td colspan="3">25%, 50%, 100%</td>
+</tr>
+<tr>
+<td>Inter-site distance</td>
+<td colspan="3">750m</td>
+</tr>
+<tr>
+<td>Cell layout</td>
+<td colspan="3">Wrap-around 19 tri-sector cells</td>
+</tr>
+<tr>
+<td>Lognormal fading</td>
+<td colspan="3">10 dB</td>
+</tr>
+<tr>
+<td>Shadowing correlation</td>
+<td colspan="3">Between cells: 0.5, between sites: 1.0</td>
+</tr>
+<tr>
+<td>MCL (including antenna gain)</td>
+<td colspan="3">70 dB (urban)</td>
+</tr>
+<tr>
+<td>Antenna gain and horizontal antenna pattern</td>
+<td colspan="2"><p><span class="math inline">\(A(\theta) = -
+\min\lbrack\ 12\ \left( \
+\frac{\theta}{\theta_{3dB}}\  \right)^{2},A_{m}\rbrack\)</span>,</p>
+<p>17 dBi, <span class="math inline">\(\theta_{3dB}\)</span> = 65
+degrees,</p>
+<p>Am = 20 dB</p></td>
+<td>Omni-directional antenna with -3.5 dBi.</td>
+</tr>
+<tr>
+<td>Noise figure</td>
+<td colspan="2">5 dB</td>
+<td>9 dB</td>
+</tr>
+<tr>
+<td>Transmit power</td>
+<td colspan="2">46 dBm</td>
+<td>23 dBm for UE, 26dBm for HPUE</td>
+</tr>
+<tr>
+<td>Antenna height</td>
+<td colspan="2">45 m</td>
+<td>1.5 m</td>
+</tr>
+</tbody>
+</table>
+<p>The power control (PC) set 4A and 4B are selected for performance
+evaluation which refers to TR36.886 chapter 5.10.1.2. The parameters are
+presented in Table 8.2.2-2.</p>
+<p>Table 8.2.2-2. PC set parameters for 23dBm UE and 26 dBm UE with 0.75
+km ISD</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 19%" />
+<col style="width: 24%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Power control set parameter</th>
+<th rowspan="2">Gamma</th>
+<th colspan="2">CLx-ile for BW 40MHz</th>
+</tr>
+<tr>
+<th>23dBm</th>
+<th>26dBm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set 4A</td>
+<td>1</td>
+<td>104</td>
+<td>107</td>
+</tr>
+<tr>
+<td>Set 4B</td>
+<td>1</td>
+<td>100</td>
+<td>103</td>
+</tr>
+<tr>
+<td colspan="4">Note: The original table in 36.886 is for 20MHz
+bandwidth, thus the value needed to be adjusted for 40MHz bandwidth
+correspondently.</td>
+</tr>
+</tbody>
+</table>
+<p>Figure 8.2.2-1 and 8.2.2-2 are the CDF curve of Tx power for power
+control set 4A and 4B, respectively, to show the difference between FDD
+PC2 and PC3.</p>
+<p><img src="media/image8.svg"
+style="width:4.15906in;height:3.11806in" /></p>
+<p>Figure 8.2.2-1. UL Tx power CDF for power control set 4A</p>
+<p><img src="media/image9.svg"
+style="width:4.23604in;height:3.17576in" /></p>
+<p>Figure 8.8.2-2. UL Tx power CDF for power control set 4B</p>
+<p>8.2.3 Simulation results</p>
+<p>8.2.3.1 Simulation results for power control set 4A</p>
+<p>The ratio of UL Tx power &gt; 23dBm is about 4.9% for power control
+set 4A.</p>
+<p>In a more realistic situation, for example, considering a relatively
+long-time duration, the time restriction for UE duty cycle can be
+relaxed assuming that UE can keep transmit with &gt;23dBm power in its
+scheduled duration. After the UE finishes its transmission, another UE
+will be scheduled. In this scenario, the UE can naturally realize the
+50% duty cycle by the scheduling time since the UE will not be always
+scheduled. The duty cycle then does not need to be considered in the
+result processing. Therefore, the system performances are shown in Table
+8.2.3.1-1 and Table 8.2.3.1-2.</p>
+<p>Table 8.2.3.1-1. PC2 system performance for non-full buffer case with
+PC set 4A</p>
+<p>when 50% duty cycle is considered in a longer duration</p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Power control set</th>
+<th>4A</th>
+<th>4A</th>
+<th>4A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PC2 UE ratio</td>
+<td>25%</td>
+<td>50%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>5% throughput gain</td>
+<td>1.22%</td>
+<td>2.44%</td>
+<td>4.27%</td>
+</tr>
+<tr>
+<td>Cell throughput gain</td>
+<td>0.40%</td>
+<td>1.04%</td>
+<td>2.39%</td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.2.3.1-2. PC2 system performance for full buffer with PC set
+4A</p>
+<p>when 50% duty cycle is considered in a longer duration</p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Power control set</th>
+<th>4A</th>
+<th>4A</th>
+<th>4A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PC2 UE ratio</td>
+<td>25%</td>
+<td>50%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>5% throughput gain</td>
+<td>0.61%</td>
+<td>1.83%</td>
+<td>3.05%</td>
+</tr>
+<tr>
+<td>Cell throughput gain</td>
+<td>0.48%</td>
+<td>1.12%</td>
+<td>2.55%</td>
+</tr>
+</tbody>
+</table>
+<p>As shown in Table 8.2.3.1-1 and Table 8.2.3.1-2:</p>
+<p>- When 50% duty cycle can be realized in a longer duration,
+performance gain can be observed for the 5% throughput. The gain’s value
+depends on the PC2 UE ratio and the traffic loading.</p>
+<p>- When 50% duty cycle can be realized in a longer duration,
+performance gain can be observed for the average cell throughput. The
+gain’s value depends on the PC2 UE ratio and the traffic loading.</p>
+<p>- When 50% duty cycle can be realized in a longer duration, higher
+PC2 UE ratio will bring higher 5%-throughput gain as well as the average
+cell throughput gain. The system performance gain is highly related with
+PC2 UE ratio.</p>
+<p>8.2.3.2 Simulation results for power control set 4B</p>
+<p>The Tx power ratio UL Tx power &gt; 23dBm is about 17.8% for power
+control set 4B.</p>
+<p>Similar consideration is applied, when 50% duty cycle can be realized
+in a longer duration, the 50% duty cycle need not be considered in the
+performance processing. Therefore, the system performance is shown in
+Table 8.2.3.2-1 and Table 8.2.3.2-2.</p>
+<p>Table 8.2.3.2-1. PC2 system performance for non-full buffer with PC
+set 4B</p>
+<p>when 50% duty cycle is considered in a longer duration</p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Power control set</th>
+<th>4B</th>
+<th>4B</th>
+<th>4B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PC2 UE ratio</td>
+<td>25%</td>
+<td>50%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>5% throughput gain</td>
+<td>5.13%</td>
+<td>10.26%</td>
+<td>17.31%</td>
+</tr>
+<tr>
+<td>Cell throughput gain</td>
+<td>0.81%</td>
+<td>1.98%</td>
+<td>5.50%</td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.2.3.2-2. PC2 system performance for full buffer with PC set
+4B</p>
+<p>when 50% duty cycle is considered in a longer duration</p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Power control set</th>
+<th>4B</th>
+<th>4B</th>
+<th>4B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PC2 UE ratio</td>
+<td>25%</td>
+<td>50%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>5% throughput gain</td>
+<td>3.85%</td>
+<td>8.33%</td>
+<td>15.38%</td>
+</tr>
+<tr>
+<td>Cell throughput gain</td>
+<td>1.03%</td>
+<td>2.20%</td>
+<td>4.84%</td>
+</tr>
+</tbody>
+</table>
+<p>From the simulation results shown in chapter 8.2.3.2, the similar
+performance variance trend can be observed for the power control set 4B,
+compared with power control set 4A.</p>
+<p>8.2.3.3 Simulation observations</p>
+<p>The system performance is sensitive to the power control set
+parameters. In realistic situation, where several UEs are multiplexed in
+the same cell, non-negligible gain in UL performance can be observed in
+both mean and 5%-tile throughput.</p>
+<h1 id="si-conclusion">9 SI Conclusion</h1>
+<p>In this study item, different aspects of enabling PC2 in NR FDD band
+n1 and n3 are thoroughly studied. The contents of the study include the
+applicable schemes to comply with SAR limits with 26dBm UE Tx power, the
+interference issues raised by FDD PC2, UE implementation and RF
+architectures, as well as system performance evaluation to support NR
+FDD HPUE.</p>
+<p>Several SAR compliance solutions are studied and discussed in RAN4,
+including UE-implementation based methods, reusing of existing
+duty-cycle reporting method, and half-duplex operation method. After
+careful studies and thorough discussions, the UE-implementation based
+methods are considered feasible to make sure SAR regulation is not
+violated. In addition, optional feature of applying duty cycle is also
+considered, as a standardized solution, to solve SAR compliance
+issue.</p>
+<p>Regarding the interference issues, it was identified by the group
+that both MSD and UL configuration are possible alternatives to handle
+REFSENS degradation in FDD PC2, and the MSD method will be adopted for
+the cases of n1 and n3 PC2. MSD values can first be calculated based on
+available RF components and existing assumptions. If there are new
+components available in the future with better performance, new
+assumptions can also be considered for MSD calculations.</p>
+<p>In order to support 26dBm UE Tx power, two RF architectures (i.e.
+2Tx×23dBm and 1Tx×26dBm) are considered and agreed during the study. It
+is found out that FDD HPUE with 2Tx architecture is feasible and can
+reuse existing RF components targeted for PC3, while 1Tx may need to use
+newly designed components. So further analyses of 1Tx architecture could
+be carried out when the new components become available.</p>
+<p>To fully evaluate the impacts of FDD HPUE to the system performance,
+Dynamic system level simulations and Monte Carlo simulations are carried
+out. In dynamic system level simulation, performance gain for both cell
+average and cell edge cases are verified under various power control
+parameters. On the other hand, performance gain can be observed for the
+5%-tile throughput and average cell throughput under Monte Carlo
+simulation. The potential DL degradation due to Tx/Rx de-sense does not
+lead to substantial performance degradation in typical interference
+limited scenarios.</p>
+<p>In conclusion, it is shown in this SI that high power UE (power class
+2) for NR FDD band brings positive system performance gain to the
+network, and it is feasible to reuse existing RF components to support
+26dBm UE Tx power, while new components with performance improvement are
+also expected to be available in the future. UE implementation based
+solution (P-MPR) is used for SAR compliance. There is no consensus on
+the optional report of duty cycle capability, but duty cycle used as an
+UE implementation method is not precluded. Specific MSD values and other
+specification impact(s) will be determined in the Work Item phase.</p>
+<h1 id="annex-a-informative-change-history"><br />
+Annex &lt;A&gt; (informative):<br />
+Change history</h1>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8" style="text-align: center;"><strong>Change
+history</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date</strong></td>
+<td><strong>Meeting</strong></td>
+<td><strong>TDoc</strong></td>
+<td><strong>CR</strong></td>
+<td><strong>Rev</strong></td>
+<td><strong>Cat</strong></td>
+<td><strong>Subject/Comment</strong></td>
+<td><strong>New version</strong></td>
+</tr>
+<tr>
+<td>2021-04</td>
+<td>RAN4-98-bis-e</td>
+<td>R4-2106912</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Initial TR skeleton</td>
+<td>0.0.1</td>
+</tr>
+<tr>
+<td>2021-05</td>
+<td>RAN4-99-e</td>
+<td>R4-2110798</td>
+<td></td>
+<td></td>
+<td></td>
+<td>TP to TR38.861: Simulation results for FDD HPUE</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>2021-05</td>
+<td>RAN4-99-e</td>
+<td>R4-2108866</td>
+<td></td>
+<td></td>
+<td></td>
+<td>TR 38.861 v0.1.0 FS_NR_PC2_UE_FDD</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>2021-06</td>
+<td>RAN-92-e</td>
+<td>RP-211346</td>
+<td></td>
+<td></td>
+<td></td>
+<td>TR 38.861 v1.0.0 FS_NR_PC2_UE_FDD</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>2021-08</td>
+<td>RAN4-100-e</td>
+<td>R4-2115062</td>
+<td></td>
+<td></td>
+<td></td>
+<td>TP for TR 38.861: Conclusion of SI for FDD HPUE</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>2021-08</td>
+<td>RAN4-100-e</td>
+<td>R4-2115063</td>
+<td></td>
+<td></td>
+<td></td>
+<td>TP on Sensitivity analysis results and UE implementation for PC2 FDD
+band</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>2021-08</td>
+<td>RAN4-100-e</td>
+<td>R4-2113001</td>
+<td></td>
+<td></td>
+<td></td>
+<td>TP to TR38.861 Dynamic system level simulation results for FDD
+HPUE</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>2021-08</td>
+<td>RAN4-100-e</td>
+<td>R4-2112470</td>
+<td></td>
+<td></td>
+<td></td>
+<td>TR 38.861 v1.1.0 FS_NR_PC2_UE_FDD</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>2021-09</td>
+<td>RAN-93-e</td>
+<td>RP-211855</td>
+<td></td>
+<td></td>
+<td></td>
+<td>TR 38.861 v2.0.0 FS_NR_PC2_UE_FDD</td>
+<td>2.0.0</td>
+</tr>
+<tr>
+<td>2021-09</td>
+<td>RAN-93-e</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>TR 38.861 v2.0.1 FS_NR_PC2_UE_FDD editoral corrections</td>
+<td>2.0.1</td>
+</tr>
+<tr>
+<td>2021-09</td>
+<td>RAN-93-e</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>TR 38.861</td>
+<td>17.0.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

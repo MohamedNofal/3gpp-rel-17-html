@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.3888888888888889in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 8160 896" width="3.5416666666666665in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 16; stroke-linejoin: round; }
+.font0 { font-style: italic; font-size: 288px; font-family: "Times New Roman", serif; }
+.font1 { font-size: 261px; font-family: Symbol, serif; }
+.font2 { font-size: 288px; font-family: "Times New Roman", serif; }
+.font3 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="3729" x2="8071" y1="464" y2="464"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6363" xml:lang="en" xml:space="preserve" y="796">tTime</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4718" xml:lang="en" xml:space="preserve" y="796">Measuremen</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="7294" xml:lang="en" xml:space="preserve" y="329">ACKs</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6868" xml:lang="en" xml:space="preserve" y="329">of</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6187" xml:lang="en" xml:space="preserve" y="329">Num</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5353" xml:lang="en" xml:space="preserve" y="329">TBS</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5126" xml:lang="en" xml:space="preserve" y="329">d</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3736" xml:lang="en" xml:space="preserve" y="329">Transmitte</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1881" xml:lang="en" xml:space="preserve" y="544">Throughput</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1115" xml:lang="en" xml:space="preserve" y="544">OTA</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="64" xml:lang="en" xml:space="preserve" y="544">MIMO</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5950" xml:lang="en" xml:space="preserve" y="329">´</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3468" xml:lang="en" xml:space="preserve" y="544">=</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1715" xml:lang="en" xml:space="preserve" y="544">)</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1010" xml:lang="en" xml:space="preserve" y="544">(</text>
+    </g>
+</svg>

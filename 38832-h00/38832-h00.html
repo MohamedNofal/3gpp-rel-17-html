@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38832-h00</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-of-terms-symbols-and-abbreviations"
+id="toc-definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</a>
+<ul>
+<li><a href="#terms" id="toc-terms">3.1 Terms</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.2
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#general" id="toc-general">4 General</a></li>
+<li><a
+href="#study-mechanisms-to-enable-ue-fast-access-to-the-cell-supporting-the-intended-slice"
+id="toc-study-mechanisms-to-enable-ue-fast-access-to-the-cell-supporting-the-intended-slice">5
+Study mechanisms to enable UE fast access to the cell supporting the
+intended slice</a>
+<ul>
+<li><a href="#slice-based-cell-reselection-under-network-control"
+id="toc-slice-based-cell-reselection-under-network-control">5.1 Slice
+based cell (re)selection under network control</a>
+<ul>
+<li><a href="#scenario-and-issue-description"
+id="toc-scenario-and-issue-description">5.1.1 Scenario and issue
+description</a></li>
+<li><a href="#solutions" id="toc-solutions">5.1.2 Solutions</a></li>
+</ul></li>
+<li><a href="#slice-based-rach-configuration"
+id="toc-slice-based-rach-configuration">5.2 Slice based RACH
+configuration</a>
+<ul>
+<li><a href="#scenario-and-issue-description-1"
+id="toc-scenario-and-issue-description-1">5.2.1 Scenario and issue
+description</a></li>
+<li><a href="#solutions-1" id="toc-solutions-1">5.2.2 Solutions</a></li>
+</ul></li>
+</ul></li>
+<li><a
+href="#study-necessity-and-mechanisms-to-support-service-continuity"
+id="toc-study-necessity-and-mechanisms-to-support-service-continuity">6
+Study necessity and mechanisms to support service continuity</a>
+<ul>
+<li><a href="#scenario-and-issue-description-2"
+id="toc-scenario-and-issue-description-2">6.1 Scenario and issue
+description</a></li>
+<li><a href="#solutions-2" id="toc-solutions-2">6.2 Solutions</a>
+<ul>
+<li><a href="#re-mapping-decision-in-ng-ran-node"
+id="toc-re-mapping-decision-in-ng-ran-node">6.2.1 Re-mapping decision in
+NG-RAN node</a>
+<ul>
+<li><a href="#slice-re-mapping-policy-generation"
+id="toc-slice-re-mapping-policy-generation">6.2.1.1 Slice Re-mapping
+policy generation</a>
+<ul>
+<li><a href="#slice-re-mapping-policy-configured-by-oam"
+id="toc-slice-re-mapping-policy-configured-by-oam">6.2.1.1.1 Slice
+Re-mapping policy configured by OAM</a></li>
+<li><a href="#slice-re-mapping-policy-configured-by-cn-during-ng-setup"
+id="toc-slice-re-mapping-policy-configured-by-cn-during-ng-setup">6.2.1.1.2
+Slice Re-mapping policy configured by CN (during NG setup)</a></li>
+<li><a
+href="#slice-re-mapping-policy-configured-by-cn-during-pdu-session-setup"
+id="toc-slice-re-mapping-policy-configured-by-cn-during-pdu-session-setup">6.2.1.1.3
+Slice Re-mapping policy configured by CN (during PDU session
+setup)</a></li>
+</ul></li>
+<li><a href="#slice-re-mapping-message-sequence-charts"
+id="toc-slice-re-mapping-message-sequence-charts">6.2.1.2 Slice
+Re-mapping Message Sequence Charts</a>
+<ul>
+<li><a href="#slice-re-mapping-for-mobility-case"
+id="toc-slice-re-mapping-for-mobility-case">6.2.1.2.1 Slice Re-mapping
+for mobility case</a>
+<ul>
+<li><a
+href="#slice-remapping-decision-in-target-gnb-at-xn-based-handover"
+id="toc-slice-remapping-decision-in-target-gnb-at-xn-based-handover">6.2.1.2.1.1
+Slice Remapping decision in target gNB at Xn based handover</a></li>
+<li><a
+href="#slice-remapping-decision-in-target-gnb-at-ng-based-handover"
+id="toc-slice-remapping-decision-in-target-gnb-at-ng-based-handover">6.2.1.2.1.2
+Slice Remapping decision in target gNB at NG based handover</a></li>
+<li><a
+href="#slice-remapping-decision-in-5gc-and-target-gnb-at-ng-based-handover"
+id="toc-slice-remapping-decision-in-5gc-and-target-gnb-at-ng-based-handover">6.2.1.2.1.3
+Slice Remapping decision in 5GC and target gNB at NG based
+handover</a></li>
+<li><a href="#gc-solution-based-on-ssc-mode-3"
+id="toc-gc-solution-based-on-ssc-mode-3">6.2.1.2.1.4 5GC Solution based
+on SSC-mode 3</a></li>
+</ul></li>
+<li><a href="#slice-remapping-for-non-mobility-case"
+id="toc-slice-remapping-for-non-mobility-case">6.2.1.2.2 Slice Remapping
+for non-mobility case</a>
+<ul>
+<li><a href="#slice-remapping-decision-in-sn-for-mr-dc-case"
+id="toc-slice-remapping-decision-in-sn-for-mr-dc-case">6.2.1.2.2.1 Slice
+Remapping decision in SN for MR-DC case</a></li>
+<li><a href="#slice-remapping-decision-in-mn-for-mr-dc-case"
+id="toc-slice-remapping-decision-in-mn-for-mr-dc-case">6.2.1.2.2.2 Slice
+Remapping decision in MN for MR-DC case</a></li>
+<li><a href="#slice-remapping-solution-for-scenario-6"
+id="toc-slice-remapping-solution-for-scenario-6">6.2.1.2.2.3 Slice
+Remapping Solution for Scenario 6</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#partially-slice-re-mapping-in-ng-ran"
+id="toc-partially-slice-re-mapping-in-ng-ran">6.2.2 Partially slice
+re-mapping in NG-RAN</a>
+<ul>
+<li><a href="#candidate-solutions-withwithout-cn-involvement"
+id="toc-candidate-solutions-withwithout-cn-involvement">6.2.2.1
+Candidate solutions with/without CN involvement</a></li>
+</ul></li>
+<li><a href="#resource-management-in-ng-ran-node"
+id="toc-resource-management-in-ng-ran-node">6.2.3 Resource management in
+NG-RAN node</a>
+<ul>
+<li><a href="#configuration-based-solution"
+id="toc-configuration-based-solution">6.2.3.1 Configuration Based
+Solution</a></li>
+<li><a href="#slice-resource-re-partitioning"
+id="toc-slice-resource-re-partitioning">6.2.3.2 Slice resource
+re-partitioning</a></li>
+<li><a href="#multi-carrier-radio-resource-sharing"
+id="toc-multi-carrier-radio-resource-sharing">6.2.3.3 Multi-carrier
+radio resource sharing</a></li>
+</ul></li>
+<li><a href="#slice-remapping-decision-in-5gc"
+id="toc-slice-remapping-decision-in-5gc">6.2.4 Slice Remapping decision
+in 5GC</a>
+<ul>
+<li><a href="#slice-remapping-decision-in-5gc-at-ng-based-handover"
+id="toc-slice-remapping-decision-in-5gc-at-ng-based-handover">6.2.4.1
+Slice Remapping decision in 5GC at NG based handover</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#solution-evaluation" id="toc-solution-evaluation">6.3
+Solution evaluation</a></li>
+</ul></li>
+<li><a href="#conclusion" id="toc-conclusion">7 Conclusion</a>
+<ul>
+<li><a
+href="#conclusions-on-slice-based-cell-reselection-cell-selection-and-rach-configuration"
+id="toc-conclusions-on-slice-based-cell-reselection-cell-selection-and-rach-configuration">7.1
+Conclusions on slice based cell reselection, cell selection and RACH
+configuration</a></li>
+<li><a href="#conclusion-on-service-continuity"
+id="toc-conclusion-on-service-continuity">7.2 Conclusion on service
+continuity</a></li>
+</ul></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th>3GPP TR 38.832 V17.0.0 (2021-06)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Technical Report</td>
+</tr>
+<tr>
+<td><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group RAN;</p>
+<p>NR;</p>
+<p>Study on enhancement of Radio Access Network (RAN) slicing</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image1.svg" /></th>
+<th style="text-align: right;"><img src="media/image2.svg" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2021, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">5</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references">6</a></p>
+<p>3 Definitions of terms, symbols and abbreviations <a
+href="#definitions-of-terms-symbols-and-abbreviations">6</a></p>
+<p>3.1 Terms <a href="#terms">6</a></p>
+<p>3.2 Abbreviations <a href="#abbreviations">6</a></p>
+<p>4 General <a href="#general">6</a></p>
+<p>5 Study mechanisms to enable UE fast access to the cell supporting
+the intended slice <a
+href="#study-mechanisms-to-enable-ue-fast-access-to-the-cell-supporting-the-intended-slice">7</a></p>
+<p>5.1 Slice based cell (re)selection under network control <a
+href="#slice-based-cell-reselection-under-network-control">7</a></p>
+<p>5.1.1 Scenario and issue description <a
+href="#scenario-and-issue-description">7</a></p>
+<p>5.1.2 Solutions <a href="#solutions">9</a></p>
+<p>5.2 Slice based RACH configuration <a
+href="#slice-based-rach-configuration">10</a></p>
+<p>5.2.1 Scenario and issue description <a
+href="#scenario-and-issue-description-1">10</a></p>
+<p>5.2.2 Solutions <a href="#solutions-1">10</a></p>
+<p>6 Study necessity and mechanisms to support service continuity <a
+href="#study-necessity-and-mechanisms-to-support-service-continuity">11</a></p>
+<p>6.1 Scenario and issue description <a
+href="#scenario-and-issue-description-2">11</a></p>
+<p>6.2 Solutions <a href="#solutions-2">13</a></p>
+<p>6.2.1 Re-mapping decision in NG-RAN node <a
+href="#re-mapping-decision-in-ng-ran-node">14</a></p>
+<p>6.2.1.1 Slice Re-mapping policy generation <a
+href="#slice-re-mapping-policy-generation">14</a></p>
+<p>6.2.1.1.1 Slice Re-mapping policy configured by OAM <a
+href="#slice-re-mapping-policy-configured-by-oam">14</a></p>
+<p>6.2.1.1.2 Slice Re-mapping policy configured by CN (during NG setup)
+<a
+href="#slice-re-mapping-policy-configured-by-cn-during-ng-setup">14</a></p>
+<p>6.2.1.1.3 Slice Re-mapping policy configured by CN (during PDU
+session setup) <a
+href="#slice-re-mapping-policy-configured-by-cn-during-pdu-session-setup">14</a></p>
+<p>6.2.1.2 Slice Re-mapping Message Sequence Charts <a
+href="#slice-re-mapping-message-sequence-charts">15</a></p>
+<p>6.2.1.2.1 Slice Re-mapping for mobility case <a
+href="#slice-re-mapping-for-mobility-case">15</a></p>
+<p>6.2.1.2.1.1 Slice Remapping decision in target gNB at Xn based
+handover <a
+href="#slice-remapping-decision-in-target-gnb-at-xn-based-handover">15</a></p>
+<p>6.2.1.2.1.2 Slice Remapping decision in target gNB at NG based
+handover <a
+href="#slice-remapping-decision-in-target-gnb-at-ng-based-handover">16</a></p>
+<p>6.2.1.2.1.3 Slice Remapping decision in 5GC and target gNB at NG
+based handover <a
+href="#slice-remapping-decision-in-5gc-and-target-gnb-at-ng-based-handover">16</a></p>
+<p>6.2.1.2.1.4 5GC Solution based on SSC-mode 3 <a
+href="#gc-solution-based-on-ssc-mode-3">17</a></p>
+<p>6.2.1.2.2 Slice Remapping for non-mobility case <a
+href="#slice-remapping-for-non-mobility-case">18</a></p>
+<p>6.2.1.2.2.1 Slice Remapping decision in SN for MR-DC case <a
+href="#slice-remapping-decision-in-sn-for-mr-dc-case">18</a></p>
+<p>6.2.1.2.2.2 Slice Remapping decision in MN for MR-DC case <a
+href="#slice-remapping-decision-in-mn-for-mr-dc-case">19</a></p>
+<p>6.2.1.2.2.3 Slice Remapping Solution for Scenario 6 <a
+href="#slice-remapping-solution-for-scenario-6">19</a></p>
+<p>6.2.2 Partially slice re-mapping in NG-RAN <a
+href="#partially-slice-re-mapping-in-ng-ran">20</a></p>
+<p>6.2.2.1 Candidate solutions with/without CN involvement <a
+href="#candidate-solutions-withwithout-cn-involvement">20</a></p>
+<p>6.2.3 Resource management in NG-RAN node <a
+href="#resource-management-in-ng-ran-node">20</a></p>
+<p>6.2.3.1 Configuration Based Solution <a
+href="#configuration-based-solution">20</a></p>
+<p>6.2.3.2 Slice resource re-partitioning <a
+href="#slice-resource-re-partitioning">21</a></p>
+<p>6.2.3.3 Multi-carrier radio resource sharing <a
+href="#multi-carrier-radio-resource-sharing">21</a></p>
+<p>6.2.4 Slice Remapping decision in 5GC <a
+href="#slice-remapping-decision-in-5gc">22</a></p>
+<p>6.2.4.1 Slice Remapping decision in 5GC at NG based handover <a
+href="#slice-remapping-decision-in-5gc-at-ng-based-handover">23</a></p>
+<p>6.3 Solution evaluation <a href="#solution-evaluation">23</a></p>
+<p>7 Conclusion <a href="#conclusion">29</a></p>
+<p>7.1 Conclusions on slice based cell reselection, cell selection and
+RACH configuration <a
+href="#conclusions-on-slice-based-cell-reselection-cell-selection-and-rach-configuration">29</a></p>
+<p>7.2 Conclusion on service continuity <a
+href="#conclusion-on-service-continuity">29</a></p>
+<p>Annex A (informative): Change history <a
+href="#annex-a-informative-change-history">31</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Report has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document provides descriptions of use cases and solutions
+with regard to enhancement of Radio Access Network (RAN) slicing for
+NR.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TS 28.541: "5G Network Resource Model (NRM)".</p>
+<p>[3] 3GPP TS 23.502: "Procedures for the 5G System; Stage 2".</p>
+<h1 id="definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</h1>
+<h2 id="terms">3.1 Terms</h2>
+<p>For the purposes of the present document, the terms given in TR
+21.905 [1] and the following apply. A term defined in the present
+document takes precedence over the definition of the same term, if any,
+in TR 21.905 [1].</p>
+<h2 id="abbreviations">3.2 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+TR 21.905 [1] and the following apply. An abbreviation defined in the
+present document takes precedence over the definition of the same
+abbreviation, if any, in TR 21.905 [1].</p>
+<h1 id="general">4 General</h1>
+<p>The present document is organized as follows:</p>
+<p>- Clause 5 is to address the objective of enabling UE fast access to
+the cell supporting the intended slice. Furthermore, clause 5.1 studies
+on slice based cell (re)selection under network control and clause 5.2
+studies on slice based RACH configuration</p>
+<p>- Clause 6 is to address the objective of supporting service
+continuity</p>
+<p>- Clause 7 provides the conclusions</p>
+<h1
+id="study-mechanisms-to-enable-ue-fast-access-to-the-cell-supporting-the-intended-slice">5
+Study mechanisms to enable UE fast access to the cell supporting the
+intended slice</h1>
+<h2 id="slice-based-cell-reselection-under-network-control">5.1 Slice
+based cell (re)selection under network control</h2>
+<h3 id="scenario-and-issue-description">5.1.1 Scenario and issue
+description</h3>
+<p><strong>General description for the scenario:</strong></p>
+<p>- Multiple and different slices can be supported on different
+frequencies</p>
+<p>- Multiple and different slices can be supported on the same
+frequency in different regions</p>
+<p>For each scenario we study both IDLE and INACTIVE and determine
+whether there is need for solutions. Connected mode will also be
+considered but with a lower priority.</p>
+<p><img src="media/image3.svg" /></p>
+<p><img src="media/image4.svg" /></p>
+<p> Figure 5.1.1-1: Examples for slice deployment scenarios</p>
+<p>In the examples shown in Figure 5.1.1-1, slice 1 refers to e.g.,
+eMBB, and slice 2 refers to e.g., URLLC. "Cell X" in the figures
+represent a set of cells.</p>
+<p>Geographical Location 1 is deployed in the factory or hospital. In
+this location, F1 supports slice 1 (e.g., eMBB), while F2 supports both
+slice 1 and slice 2 (e.g. eMBB and URLLC).</p>
+<p>Geographical Location 2 is the public area. F1 and F2 all supporting
+slice 1 (e.g., eMBB) for smart phone users, no slice 2 (e.g., URLLC) is
+supported in Geographical Location 2. And F2 is deployed as hotspot to
+provide wideband access.</p>
+<p>Geographical Location 3 illustrates that different slices are
+supported on different frequencies. F1 only supports slice 1 and F2 only
+supports slice 2.</p>
+<p>Geographical Location 4 illustrates a typical scenario that slices
+are available via multiple frequencies. And one or a set of frequencies
+are preferred for certain slice, e.g. F1 is preferred for slice 2 and F2
+is preferred for slice 1 in Geographical Location 4.</p>
+<p>eMBB and URLLC slices are used only as an example of various slices.
+The deployment of any slice on any frequency band is up to network
+implementation.</p>
+<p>RAN2 common understanding is that intended slice is based on the
+information AS receives from NAS for the particular use case. This may
+be different in different cases:</p>
+<p>- In case of cell selection and reselection, the intended slice means
+the allowed or requested S-NSSAI(s).</p>
+<p>- For the initial registration, and requesting new S-NSSAI(s):
+intended slices = Requested S-NSSAI(s)</p>
+<p>- For idle-mode mobility: intended slices = allowed S-NSSAI(s)</p>
+<p>- In case of MO traffic, the intended slice means the S-NSSAI
+associated with MO traffic based on indication from NAS to AS. For MO
+service, UE is aware of the intended slice.</p>
+<p>- In case of MT traffic, UE is unaware of the slice for the paged
+service in current NR specification.</p>
+<p>The following issues are studied:</p>
+<p><strong>Issue 1: The UE is unaware of the slices supported on
+different cells or frequencies, which prevents UE from (re)select to the
+cell or frequency supporting the intended slice.</strong></p>
+<p><strong>Issue 2: Dedicated priorities would not be available to the
+UE prior to first RRC connection establishment and only remain valid
+before T320 expires upon entering IDLE mode. In addition, dedicated
+priorities are discarded each time when UE entering CONNECTED mode and
+need to be configured again before UE leaving CONNECTED
+mode.</strong></p>
+<p><strong>Issue 3: Operator may require different frequency priority
+configurations for the specific slice in different areas, however the
+dedicated priority always overwrites the broadcast priorities if
+configured.</strong></p>
+<p><strong>Issue 4: If the serving cell is unable to support the
+requested slices, the serving cell may need to perform handover to a
+cell supporting the requested slices or release the RRC connection. That
+may increase control plane signalling overhead as well as long control
+plane latency for the UE to access the network.</strong></p>
+<h3 id="solutions">5.1.2 Solutions</h3>
+<p>The following solutions are studied:</p>
+<p><strong>Solution 1: Legacy dedicated priority via <em>RRCRelease</em>
+message.</strong></p>
+<p>Solution 1 (i.e., Legacy dedicated priority via <em>RRCRelease</em>
+message) cannot address issue 2 and issue 3.</p>
+<p><strong>Solution 2: Rel-15 mechanisms such as HO, CA, DC and
+redirection can be used to access the intended slice in different
+cell.</strong></p>
+<p>Solution 2 is legacy solution. With solution 2, the UE is still
+unaware of the slices supported in different cell or frequencies and the
+HO, CA, DC and redirection can be used to compensate for such loss with
+increased signalling overhead and latency. HO, CA, DC, redirection are
+applicable only for connected mode UE.</p>
+<p>There is no complexity to support solution 2.</p>
+<p><strong>Solution 3: Slice related information for cell selection,
+e.g., the supported slice info of serving cell and neighboring cells, is
+provided in the system information.</strong></p>
+<p>Solution 3 can address issue 1, issue 2 and issue 4. There is benefit
+to broadcast slice related cell selection info in SIB.</p>
+<p>The concerns on security and SIB payload size for broadcasting slice
+related cell selection info need to be resolved in WI phase (e.g., by
+providing only SST, on-demand SIB, SIB segmentation, slice grouping or
+slice associated UAC information).</p>
+<p>For cell selection scenario, RAN2 may discuss during WI whether to
+broadcast supported slice of serving cell in SI message and how to solve
+SIB1 concerns.</p>
+<p>The solution of adding the intended slice for MT access in slice
+specific cell selection is not pursued.</p>
+<p><strong>Solution 4: Slice related information for cell reselection is
+provided in the system information or <em>RRCRelease</em>
+message.</strong></p>
+<p>Solution 4 can address the issue 1, issue 2, issue 3 and issue 4.
+There is benefit to broadcast slice related cell reselection info in
+SIB. The slice info (with similar information as agreed slice info in SI
+message) can be added in RRC release message. Details can be discussed
+in WI phase.</p>
+<p>The concerns on security and SIB payload size for broadcasting slice
+related cell reselection info need to be resolved in WI phase (e.g.,
+providing only SST, on-demand SIB, SIB segmentation, slice grouping or
+slice associated UAC information).</p>
+<p>To assist cell reselection, RAN can broadcast the supported slice
+info of the current cell and neighbour cells, and cell reselection
+priority per slice. The slice info may be: providing only SST, on-demand
+SIB, SIB segmentation, slice grouping (if any), or slice associated UAC
+information where other solutions are not precluded. Details can be
+discussed in WI phase. And, how to ensure UE doesn't lose coverage due
+to slice prioritization can be considered in WI phase.</p>
+<p>The solution of adding the intended slice for MT access in slice
+specific cell reselection is not pursued.</p>
+<p>Slice group is supported for both solution 3 and solution 4. Whether
+to define a new grouping mechanism or reusing UAC access category is
+left to WI phase.</p>
+<h2 id="slice-based-rach-configuration">5.2 Slice based RACH
+configuration</h2>
+<h3 id="scenario-and-issue-description-1">5.2.1 Scenario and issue
+description</h3>
+<p>The intentions for slice based RACH configuration are as follows:</p>
+<p><strong>Intention 1: RACH resource isolation. From marketing point of
+view, some of the industrial customers have the requirement for access
+resource isolation, in order to provide guaranteed RA resources for
+their sensitive slices.</strong></p>
+<p><strong>Intention 2: Slice access prioritization. In R15 and R16, all
+slices are sharing the same RA resources and cannot be differentiated by
+network side. But some slices may need to be prioritized during the RA
+procedure.</strong></p>
+<h3 id="solutions-1">5.2.2 Solutions</h3>
+<p>The following solutions are studied:</p>
+<p><strong>Solution 1: Slice-specific separate RACH resources pool can
+be configured per slice or per slice group, in addition to the existing
+common RACH resources.</strong></p>
+<p>The association between slices and slice-specific RACH resources can
+be configured and provided to UE in SIB and dedicated signalling.
+Separated PRACH configuration (e.g., transmission occasions of
+time-frequency domain and preambles) can be configured for slice or
+slice group. Separated PRACH configuration for slices does not imply PHY
+layer impacts.</p>
+<p><strong>Solution 2: Slice-specific RACH parameters prioritization can
+be configured per slice or per slice group.</strong></p>
+<p>Existing RACH parameters prioritization (i.e.,
+<em>scalingFactorBI</em> and <em>powerRampingStepHighPriority</em>) can
+be supported as baseline for slices-specific RACH parameter
+prioritization.</p>
+<p>Slice group is supported for solution 1 and solution 2. Whether to
+define a new grouping mechanism or reusing UAC access category is left
+to WI phase.</p>
+<p>Slice based RACH configuration can be applied to idle and inactive
+UE. Solution 1 and Solution 2 can work independently in a complementary
+way. Neither solution 1 nor solution 2 may not be applicable to all
+possible slices.</p>
+<p>The following open issues may be considered in WI phase:</p>
+<p>a) For slice specific RACH, how to perform RACH type selection (e.g.,
+2-step and 4-step).</p>
+<p>b) The fallback mechanism, e.g., whether to support 2 step
+slice-based RACH fallback to 4-step slice-based or common RACH.</p>
+<p>c) The collision in case that slice-specific RA prioritization is
+configured together with legacy RA prioritization (e.g., MPS and MCS
+UEs).</p>
+<h1 id="study-necessity-and-mechanisms-to-support-service-continuity">6
+Study necessity and mechanisms to support service continuity</h1>
+<h2 id="scenario-and-issue-description-2">6.1 Scenario and issue
+description</h2>
+<p>The following two scenarios are considered to support service
+continuity.</p>
+<p><strong>Scenario 1: Slice resource shortage in case of Intra-RA
+mobility and Inter-RA mobility</strong></p>
+<p><img src="media/image5.svg" /></p>
+<p>Figure 6.1-1: Service interruption due to slice resource shortage</p>
+<p>As shown by Figure 6.1-1, the UE's ongoing slice(s) is/are supported
+by both the source and the target NG-RAN node. At the time of handover,
+the target node fails to accept the UE with at least one of the ongoing
+S-NSSAIs due to e.g. high slice-related load at the target node. Under
+such circumstance, the service(s) for failed ongoing slice(s) is/are
+interrupted for the UE.</p>
+<p>It should be noted that remapping of traffic into the resource pool
+used by other slices requires a pre-configured policy allowing such
+action. The remapping should avoid overloading the resource pool of the
+target slice. Any solution to this issue should comply with the RRM
+policy model defined in TS 28.541 [2] and be validated by SA5.</p>
+<p>How to support the slice recovery (i.e., re-mapping of remapped slice
+to on-going slice) when the NG-RAN node recovers enough resources to
+serve the on-going slice(s) will be discussed in normative phase.</p>
+<p><strong>Scenario2: Non-supported slice in case of Inter-RA
+mobility</strong></p>
+<p><img src="media/image6.svg" /></p>
+<p>Figure 6.1-2: Service interruption due to slice not supported</p>
+<p>As shown by Figure 6.1-2, the UE is moving towards an area that does
+not support at least one of UE's ongoing slices. The target node fails
+to accept the UE with at least one of the ongoing S-NSSAIs. Under such
+circumstance, the service(s) for failed ongoing slice(s) is/are
+interrupted for the UE.</p>
+<p>This scenario is only valid if there is a specific SLAs, where the
+original slice is required to be available in a specific geographical
+area (TA/RA) and where services used on the original slice are also
+required to have continuity if moving outside the geographical area. It
+is also assumed that new PDU sessions of the same slice are not
+initiated in the new geographical area i.e., the SLA applies to
+connected mode mobility only.</p>
+<p><strong>Scenario 3: Moving back for slice resource shortage in case
+of Intra-RA mobility and Inter-RA mobility</strong></p>
+<p><img src="media/image7.svg" /></p>
+<p>Figure 6.1-3: Moving back scenario due to slice resource shortage</p>
+<p>This is a continuation scenario of scenario 1. As shown by Figure
+6.1-3, the UE's ongoing slice(s) is/are supported by both the source and
+the target NG-RAN node. At the time of handover, the source node may
+serve at least one of the S-NSSAIs with degraded performance, or already
+rejects at least one of the S-NSSAIs, due to e.g., high slice-related
+load at the source node. Meanwhile the target node can fully support
+these S-NSSAIs.</p>
+<p><strong>Scenario 4: Moving back for non-supported slice in case of
+Inter-RA mobility</strong></p>
+<p><img src="media/image8.svg" /></p>
+<p>Figure 6.1-4: Moving back scenario due to slice not supported</p>
+<p>This is a continuation scenario of scenario 2. As shown by Figure
+6.1-4, at the time of handover, the source node may serve the UE with at
+least one of the S-NSSAIs not supported by the target node. The UE is
+moving towards an area that supports at least one of UE's these
+slices.</p>
+<p><strong>Scenario 5: Slice resource shortage for MR-DC</strong></p>
+<p><img src="media/image9.svg" /></p>
+<p>Figure 6.1-5: Service interruption due to slice resource shortage in
+SN</p>
+<p>As shown by Figure 6.1-5, the UE's ongoing slice(s) is/are supported
+by both the MN and the SN. However, in case of SN addition or
+modification procedure, the SN fails to accept the UE with at least one
+of the ongoing S-NSSAIs due to e.g., high slice-related load at the SN.
+Under such circumstance, the services associated with these ongoing
+slices may be interrupted at the SN side.</p>
+<p><strong>Scenario 6: Slice overload in RAN node in absence of
+mobility</strong></p>
+<p>It is possible that resource shortage happens for a slice 1 as in
+scenario 1. In this case, some ongoing PDU sessions associated to this
+slice 1 may be offered degraded service even in the absence of
+mobility.</p>
+<p>It is also possible that after taking an action to avoid resource
+shortage in slice 1, the resource shortage is resolved while the UE is
+still in the cell. In that case, any action taken can be reversed.</p>
+<h2 id="solutions-2">6.2 Solutions</h2>
+<p>NOTE: Feasibility of solutions in 6.2.1, 6.2.2.1 and 6.2.4.1 at
+system level requires further work involving both RAN3 and SA2.</p>
+<h3 id="re-mapping-decision-in-ng-ran-node">6.2.1 Re-mapping decision in
+NG-RAN node</h3>
+<p>In solutions where the target NG-RAN node decides the re-mapping at
+incoming handover, the target NG-RAN node should be aware of the
+re-mapping policy for the involved PDU session. The following options
+are available:</p>
+<h4 id="slice-re-mapping-policy-generation">6.2.1.1 Slice Re-mapping
+policy generation</h4>
+<h5 id="slice-re-mapping-policy-configured-by-oam">6.2.1.1.1 Slice
+Re-mapping policy configured by OAM</h5>
+<p><strong>Configuration in target NG-RAN node</strong></p>
+<p>This option assumes that the remapping policy is rather static
+because it should have been validated by the tenant or the operator.</p>
+<p>Therefore, the NG-RAN node is configured in advance with the
+re-mapping policy by the OAM.</p>
+<p>In this option, the granularity of the re-mapping policy is per slice
+i.e. for each supported S-NSSAI, the target NG-RAN node is configured
+with a list of possible re-mapped S-NSSAI(s) as follows:</p>
+<p>- S-NSSAI 1 &lt;&gt; re-mapped list (S-NSSAI 10, S-NSSAI 11);</p>
+<p>- S-NSSAI 2 &lt;&gt; re-mapped list (S-NSSAI 12, S-NSSAI 13).</p>
+<h5
+id="slice-re-mapping-policy-configured-by-cn-during-ng-setup">6.2.1.1.2
+Slice Re-mapping policy configured by CN (during NG setup)</h5>
+<p><strong>Signaling in NG Setup Response</strong></p>
+<p>The NG-RAN node has received in advance the re-mapping policy in the
+NG Setup Response message (or any update in the AMF configuration Update
+message) from the CN.</p>
+<p>In this option the granularity of the re-mapping policy is the slice
+i.e. for each S-NSSAI supported by the target NG-RAN node, the CN
+includes in the NG Setup Response (respectively AMF Configuration
+Update) message an associated list of possible re-mapped S-NSSAI(s).</p>
+<h5
+id="slice-re-mapping-policy-configured-by-cn-during-pdu-session-setup">6.2.1.1.3
+Slice Re-mapping policy configured by CN (during PDU session setup)</h5>
+<p><strong>Signaling in NG Handover Request</strong></p>
+<p>At the time of handover, the CN includes in the NG Handover Request
+message the current PDU Session, the associated S-NSSAI and also the
+list of S-NSSAI(s) to which this PDU session can be re-mapped.</p>
+<p>In this option the granularity of the re-mapping policy can be
+either:</p>
+<p>- Per PDU session (using same principles as slice association in PDU
+Session Setup);</p>
+<p>- Per UE: even though signaled for the involved PDU session, the
+choice of possible re-mapped slices for a given slice is a general
+policy for the UE.</p>
+<p>Example of per UE policy:</p>
+<p>UE 1, any PDU session of S-NSSAI 1 &lt;&gt; re-mapped list (S-NSSAI
+10, S-NSSAI 11)</p>
+<p>UE 2, any PDU session of S-NSSAI 1 &lt;&gt; re-mapped list (S-NSSAI
+12, S-NSSAI 13)</p>
+<p>Example of per PDU session policy:</p>
+<p>UE 1, PDU Session 1, S-NSSAI 1 &lt;&gt; re-mapped list (S-NSSAI 10,
+S-NSSAI 11)</p>
+<p>UE 1, PDU Session 2, S-NSSAI 1 &lt;&gt; re-mapped list (S-NSSAI 12,
+S-NSSAI 13)</p>
+<p>UE 2, PDU Session 3, S-NSSAI 1 &lt;&gt; re-mapped list (S-NSSAI 14,
+S-NSSAI 15)</p>
+<p><strong>Signaling from Source NG-RAN node</strong></p>
+<p>When the PDU session is created in the source NG-RAN node, the CN
+includes in the NGAP PDU Session Resource Setup Request message (or the
+Initial Context Setup Request message or the NG Handover Request
+message) the S-NSSAI associated with the PDU session and also the list
+of S-NSSAI(s) to which this PDU session can be re-mapped.</p>
+<p>At the time of subsequent Xn handover, the source NG-RAN node
+includes in the Xn Handover Request message the current PDU Session, the
+associated S-NSSAI and also the list of S-NSSAI(s) to which this PDU
+session can be mapped.</p>
+<p>In this option the granularity of the re-mapping policy can be
+either:</p>
+<p>- Per PDU session (using same principles as slice association in PDU
+Session Setup)</p>
+<p>- Per UE: even though signaled for the involved PDU session, the
+choice of possible re-mapped slices for a given slice is a general
+policy for the UE.</p>
+<p>The above slice-remapping principle applicable to the handover case
+can be applied to MR-DC case.</p>
+<h4 id="slice-re-mapping-message-sequence-charts">6.2.1.2 Slice
+Re-mapping Message Sequence Charts</h4>
+<h5 id="slice-re-mapping-for-mobility-case">6.2.1.2.1 Slice Re-mapping
+for mobility case</h5>
+<h6
+id="slice-remapping-decision-in-target-gnb-at-xn-based-handover">6.2.1.2.1.1
+Slice Remapping decision in target gNB at Xn based handover</h6>
+<p><img src="media/image10.svg" /></p>
+<p>Figure 6.2.1.2.1.1-1: Slice re-mapping/fallback determined by the
+T-gNB</p>
+<p>1. The S-gNB sends the <em>HANDOVER REQUEST</em> message to the
+T-gNB.</p>
+<p>2. If the UE's ongoing slice(s) is rejected in the target gNB, based
+on the slice re-mapping policy described in clause 6.2.1, the T-gNB
+makes the slice re-mapping/fallback decision. The T-gNB may send the
+slice re-mapping/fallback decision in the HANDOVER REQUEST ACKNOWLEDGE
+message to the S-gNB.</p>
+<p>3. The T-gNB shall send the slice re-mapping/fallback decision to the
+AMF through the <em>PATH SWITCH REQUEST</em> message.</p>
+<p>4. The AMF responds the <em>PATH SWITCH REQUEST ACKNOWLEDGE</em>
+message. The AMF may reject the PDU sessions in the <em>PDU Session
+Resource Released List</em> IE.</p>
+<h6
+id="slice-remapping-decision-in-target-gnb-at-ng-based-handover">6.2.1.2.1.2
+Slice Remapping decision in target gNB at NG based handover</h6>
+<p><img src="media/image11.svg" /></p>
+<p>Figure 6.2.1.2.1.2-1: Slice re-mapping/fallback determined by the
+T-gNB</p>
+<p>1. The S-gNB sends the <em>HANDOVER REQUIRED</em> message to the
+AMF.</p>
+<p>2. The AMF sends the <em>HANDOVER REQUEST</em> message to the
+T-gNB.</p>
+<p>3. If the UE's ongoing slice(s) is rejected in the target gNB, based
+on the slice re-mapping policy described in clause 6.2.1, the T-gNB
+shall include the re-mapped/fallback decision in the <em>HANDOVER
+REQUEST ACKNOWLEDGE</em> message to the AMF.</p>
+<p>4. The AMF may send the slice re-mapping/fallback decision to the
+S-gNB through the <em>HANDOVER COMMAND</em> message.</p>
+<h6
+id="slice-remapping-decision-in-5gc-and-target-gnb-at-ng-based-handover">6.2.1.2.1.3
+Slice Remapping decision in 5GC and target gNB at NG based handover</h6>
+<p><img src="media/image12.svg" /></p>
+<p>Figure 6.2.1.2.1.3-1: Slice re-mapping/fallback determined by the AMF
+and T-gNB</p>
+<p>1. The S-gNB sends the HANDOVER REQUIRED message to the AMF.</p>
+<p>2. If the UE's ongoing slice(s) is not supported by the T-gNB, the
+AMF may make the initial slice re-mapping/fallback decision and include
+the decision in the HANDOVER REQUEST message to the T-gNB.</p>
+<p>3. If the UE's ongoing or re-mapped/fallback slice(s) is rejected in
+the target gNB, based on the slice re-mapping policy described in clause
+6.2.1, the T-gNB shall include the further re-mapped/fallback decision
+in the HANDOVER REQUEST ACKNOWLEDGE message to the AMF.</p>
+<p>4. The AMF may send the slice re-mapping/fallback decision to the
+S-gNB through the HANDOVER COMMAND message.</p>
+<h6 id="gc-solution-based-on-ssc-mode-3">6.2.1.2.1.4 5GC Solution based
+on SSC-mode 3</h6>
+<p>The call flow below uses SSC mode 3 in 5GC as the service continuity
+solution:</p>
+<p><img src="media/image13.svg" /></p>
+<p>Figure 6.2.1.2.1.4-1 Re-mapping based on SSC mode 3</p>
+<p><strong>Step 0</strong>: NG-RAN nodes have been configured with slice
+re-mapping slice 10 to 11.</p>
+<p><strong>Step1</strong>: 5GC has sent the UE Allowed NSSAI to the
+serving NG-RAN node and to the UE per existing procedures.</p>
+<p><strong>Step 2</strong>: UE has ongoing PDU session 1 of slice
+10.</p>
+<p><strong>Step 3</strong>: Source NG-RAN triggers Handover to target
+NG-RAN. The target NG-RAN node 2 informs during the HO procedure the
+source NG-RAN node 1 that it accepts the PDU session 1 of slice 10
+temporarily due to slice re-mapping action.</p>
+<p><strong>Step 4</strong>: at handover completion, the target NG-RAN
+indicates to 5GC in Path Switch Request that PDU session 1 of slice 10
+needs to be terminated and a new PDU session is to be setup with slice
+11.</p>
+<p><strong>Step 5</strong>: The UE performs the post-handover
+registration (as Source and Target NG RAN nodes have different slice
+support, they do not belong to the same registration area for the UE).
+Because 5GC received (end slice 10) at step 4, the 5GC still includes
+the slice 10 in the Allowed NSSAI towards the UE at this step (the slice
+is indeed still temporarily available until it receives from 5GC
+notification of the final release of PDU session 1 of slice 10 at step
+9).</p>
+<p><strong>Step 6</strong>: In reaction to step 4, the 5GC triggers
+towards the UE the NAS PDU Session Modification Command to invoke SSC
+mode 3. The (end slice 10, new 11) may be included towards the UE to
+prompt the UE to setup the new PDU session 2 with slice 11 even if the
+URSP in the UE would indicate slice 10 as higher priority.</p>
+<p><strong>Step 7</strong>: the UE triggers the setup of PDU session 2
+with slice 11 according to SSC mode 3 procedure as per existing
+procedures described in TS 23.502 [3], clause 4.3.2.2.1.</p>
+<p><strong>Step 8</strong>: at the expiry of SSC mode 3 timer, the 5GC
+triggers the release of the PDU session 1 of slice 10 according to SSC
+mode 3 procedures (existing procedures described in TS 23.502 [3],
+clause 4.3.2.2.1). The 5GC sends a final the UCU (UE Configuration
+Update) message in order to update the Allowed NSSAI towards the NG-RAN
+and the UE. In this example, the new Allowed NSSAI is slice 11.</p>
+<h5 id="slice-remapping-for-non-mobility-case">6.2.1.2.2 Slice Remapping
+for non-mobility case</h5>
+<h6 id="slice-remapping-decision-in-sn-for-mr-dc-case">6.2.1.2.2.1 Slice
+Remapping decision in SN for MR-DC case</h6>
+<p><img src="media/image14.svg" /></p>
+<p>Figure 6.2.1.2.2.1-1: Slice re-mapping/fallback determined by the
+SN</p>
+<p>This flow chart applies to the scenario of resource shortage
+only.</p>
+<p>1. The MN sends the <em>SN Addition Request</em> message to the
+SN.</p>
+<p>2. If the UE's ongoing slice(s) is rejected by the SN, based on the
+slice re-mapping policy described in clause 6.2.1, the SN makes the
+slice re-mapping/fallback decision. The SN shall include the slice
+re-mapping/fallback decision in the <em>SN Addition Request
+Acknowledge</em> message to the MN.</p>
+<p>3. The MN may send the slice re-mapping/fallback decision to the AMF
+through the <em>PDU Session Modification Indication</em> message.</p>
+<p>4. The AMF responds the <em>PDU Session Modification
+Confirmation</em> message.</p>
+<h6 id="slice-remapping-decision-in-mn-for-mr-dc-case">6.2.1.2.2.2 Slice
+Remapping decision in MN for MR-DC case</h6>
+<p><img src="media/image15.svg" /></p>
+<p>Figure 6.2.1.2.2.2-1: Slice re-mapping/fallback determined by the
+MN</p>
+<p>This flow chart applies to the scenario of resource shortage
+only.</p>
+<p>1. The MN makes the slice re-mapping/fallback decision and include
+the decision in the <em>SN Addition Request</em> message to the SN.</p>
+<p>2. The SN confirms the slice re-mapping/fallback decision made by the
+MN in the <em>SN Addition Request</em> <em>Acknowledge</em> message.</p>
+<p>3. The MN may send the slice re-mapping/fallback decision to the AMF
+through the <em>PDU Session Modification Indication</em> message.</p>
+<p>4. The AMF responds the <em>PDU Session Modification
+Confirmation</em> message.</p>
+<h6 id="slice-remapping-solution-for-scenario-6">6.2.1.2.2.3 Slice
+Remapping Solution for Scenario 6</h6>
+<p>At the same time the NG-RAN node may notice that another slice 2
+which is not overloaded has resources available and is still compatible
+with the SLA of slice 1.</p>
+<p>In short, there is a potential that some unloaded but "good enough or
+better" alternative slices in the RAN could be used for the subscriber
+to continue to receive service.</p>
+<h3 id="partially-slice-re-mapping-in-ng-ran">6.2.2 Partially slice
+re-mapping in NG-RAN</h3>
+<h4 id="candidate-solutions-withwithout-cn-involvement">6.2.2.1
+Candidate solutions with/without CN involvement</h4>
+<p><img src="media/image16.svg" /></p>
+<p>Figure 6.2.2.1-1: Slice re-mapping solutions: (a) with CN impact; (b)
+without CN impact</p>
+<p>This solution is applicable to scenario 2, where there are two
+possible slice re-mapping solutions depending on whether the CN is
+involved.</p>
+<p>Figure 6.2.4-1 (a) shows the re-mapping solution where both the RAN
+and CN parts are involved. In this case, the CN procedure is
+involved.</p>
+<p>Figure 6.2.4-1 (b) shows the re-mapping solution where the CN pat of
+the slice is not changed while the RAN part of the slice is remapped.
+The UL/DL traffics are relayed between the S-gNB and the T-gNB via the
+Xn tunnel.</p>
+<h3 id="resource-management-in-ng-ran-node">6.2.3 Resource management in
+NG-RAN node</h3>
+<h4 id="configuration-based-solution">6.2.3.1 Configuration Based
+Solution</h4>
+<p>The solution builds on the resource modelling described in TS 28.541
+[2]. The following analysis is provided for the scenario 1 and scenario
+2 respectively</p>
+<p>- Scenario 1: Slice resource shortage in case of Intra-RA mobility
+and Inter-RA mobility</p>
+<p>As specified in TS 28.541 [2], the slice re-mapping between different
+S-NSSAIs can be achieved via the prioritized resource modeling. For
+example, suppose UE's ongoing slice is S-NSSAI 1 configured with
+<em>rRMPolicyMaxRatio</em> policy, which can use at least one of the
+shared resources, prioritized resources and dedicated resources. If the
+dedicated resources are not available, it can use other un-used
+prioritized and shared resources.</p>
+<p>But the following needs to be further studied, e.g., for the S-NSSAI
+1,</p>
+<p>- it can explicitly use resources belonging to which S-NSSAIs;</p>
+<p>- it can use the dedicated but not used resources of other
+S-NSSAIs;</p>
+<p>- it can preempt the used prioritized and/or shared resources from
+other S-NSSAIs.</p>
+<p>In this case, further involvement with SA5 is required.</p>
+<p>- Scenario 2: Non-supported slice in case of Inter-RA mobility</p>
+<p>In this case, if the T-gNB does not support certain S-NSSAIs, these
+S-NSSAIs will not be included in the <em>RRMPolicyMemberList</em>, thus
+no resource will be planned by the T-gNB, as specified in TS 28.541
+[2].</p>
+<p>For example, suppose UE's ongoing slice is S-NSSAI 1, it will not be
+included in the <em>RRMPolicyMemberList</em> of the T-gNB. Thus the
+re-mapping of S-NSSAI 1 to the supported S-NSSAI(s) of T-gNB is not
+supported.</p>
+<p>In this case, slice re-mapping is not supported yet by the
+prioritized resource modeling defined in SA5. And further involvement
+with SA5 is required.</p>
+<h4 id="slice-resource-re-partitioning">6.2.3.2 Slice resource
+re-partitioning</h4>
+<p>This solution is applicable to scenario 1. In this solution, the
+resource limits for a particular slice in the RAN are relaxed (possibly
+for a limited time period). This is applicable for resource types which
+have been hard-partitioned between slices, or where a limit per slice
+has been defined according to the SLA. For example, such an approach
+could be applied individually (or jointly) to the following:</p>
+<p>- spectrum resource (e.g. slots, beams, carriers etc);</p>
+<p>- transport resources (e.g. backhaul capacity);</p>
+<p>- hardware resources (e.g. specific processors, processing load,
+intra-RAN logical nodes such as a gNB-CU-UP).</p>
+<p>To solve this problem, the system can allow a slice to use another
+slice's resources on a temporary basis i.e. making the partition soft.
+The RAN may allow such temporary overflow while keeping some form of
+accounting of resources used which may be used to modify the existing
+SLA, or provide reporting.</p>
+<p>Re-partitioning policy may be configured in the RAN.</p>
+<p>The solution may have impacts in metric collection and OAM
+requirements, but does not impact the core network or the UE.</p>
+<h4 id="multi-carrier-radio-resource-sharing">6.2.3.3 Multi-carrier
+radio resource sharing</h4>
+<p>This solution is applicable to scenario 1. In this solution, it is
+assumed that radio resources are primarily assigned to a slice (or slice
+sets) on a frequency, or cell, basis. For example, a RAN node may host
+two layers as shown below:</p>
+<p><img src="media/image17.svg" /></p>
+<p>Figure 6.2.3.3-1: RAN node supporting two layers</p>
+<p>The solution addresses temporary resource shortage in one cell as per
+scenario 1, and where the RAN node hosts another cell with different
+frequency and overlapping coverage where the same slice is
+available.</p>
+<p>In above, this could be the case for slice 1 and cell 1/F2 (or also
+slice 1 and cell 2/F1).</p>
+<p>The solution consists of setting up DC or CA using user plane
+resources of F1 (or F2), for some or all UEs with slice1 PDU sessions.
+This action can be wholly decided by the RAN node, without referring to
+the CN or other nodes. This solution can be seen as fallback planning in
+the RAN.</p>
+<h3 id="slice-remapping-decision-in-5gc">6.2.4 Slice Remapping decision
+in 5GC</h3>
+<p>This solution is applicable for scenario 2, when a UE with bearers
+associated to a given slice, e.g. S-NSSAI1, wants to be handed over to a
+target cell and where S-NSSAI1 is not supported in the target cell. It
+is also applicable for scenario 4, when the UE later returns to the cell
+supporting the slice. At NG based HO, the AMF will detect that the
+target cell is not supporting S-NSSAI1 or that the Allowed NSSAI in the
+target cell for the UE does not include S-NSSAI1. The 5GC will then
+decide if the PDU sessions associated to S-NSSAI1 can be re-mapped to
+another slice. The new S-NSSAI is signalled with the HO Request, using
+legacy signalling, and there is no impact to the target gNB.</p>
+<p>When Xn HO can be used, but the target gNB does not support all
+slices of an UE, the source gNB will use NG based HO instead, so that
+5GC may re-map the slice.</p>
+<p>At the end of the HO the UE will be updated with the new Allowed
+NSSAI through legacy NAS procedures. The original slice will be included
+in the Rejected NSSAI, and the UE will not be allowed to access it as
+long as it stays in the current RA. Once the UE returns to the old RA,
+it may request to add the original slice to the Allowed NSSAI, and the
+PDU sessions may be re-assigned to the original S-NSSAI1.</p>
+<p>The granularity of slice remapping in this solution is per PDU
+session. The re-mapping decision can be based on slice awareness in
+availability in registration area, operator policy for slice re-mapping
+as well as the subscription of the UE.</p>
+<p><strong>System Impact</strong></p>
+<p>No impact on signalling protocols. gNB should be aware that
+re-mapping may be used, and select NG based HO when needed.</p>
+<h4 id="slice-remapping-decision-in-5gc-at-ng-based-handover">6.2.4.1
+Slice Remapping decision in 5GC at NG based handover</h4>
+<p><img src="media/image18.svg" /></p>
+<p>Figure 6.2.4.1-1: Slice re-mapping/fallback determined by the AMF</p>
+<p>1. The S-gNB sends the <em>HANDOVER REQUIRED</em> message to the
+AMF.</p>
+<p>2. If the UE's ongoing slice(s) is not supported by the T-gNB, the
+AMF may make the slice re-mapping/fallback decision and include the
+decision in the <em>HANDOVER REQUEST</em> message to the T-gNB.</p>
+<p>3. The T-gNB responds to the AMF through the HANDOVER REQUEST
+ACKNOWLEDGE message.</p>
+<p>4. The AMF may send the slice re-mapping/fallback decision to the
+S-gNB through the <em>HANDOVER COMMAND</em> message.</p>
+<h2 id="solution-evaluation">6.3 Solution evaluation</h2>
+<p>The evaluation criteria are as follows:</p>
+<p><strong>- RAN impact</strong></p>
+<p>The point here is to analyze RAN impact of the solution
+(standardization and node behaviour), for example what signalling
+procedures may be affected and at what extent.</p>
+<p><strong>- Core impact</strong></p>
+<p>The point here is to analyze Core impact of the solution
+(standardization and node behaviour), for example what signalling
+procedures may be affected and at what extent. Such analysis needs to be
+carried out together with SA2 and CT groups.</p>
+<p><strong>- OAM impact</strong></p>
+<p>The point here is to analyze operator and maintenance effort, for
+example how many network elements (e,g. gNB, NF) should be configured
+and managed by OAM. Such analysis may need to involve SA5.</p>
+<p><strong>- UE Impact</strong></p>
+<p>This is to analyse the impact at NAS and AS level on the UE. Such
+analysis needs to be carried out together with RAN2, SA2 and CT
+groups.</p>
+<p><strong>- Effectiveness of solution</strong></p>
+<p>The point here is to analyse the effectiveness after applying the
+solution, for example the UE's service experience after applying the
+solution.</p>
+<p><strong>- Applicable scenarios</strong></p>
+<p>The point here is to list the applicable scenarios which the
+corresponding solution targets.</p>
+<p>Table 6.3-1: Evaluation of the solutions</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 15%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2"
+style="text-align: right;"><p><strong>Criteria</strong></p>
+<p><strong>Solution</strong></p></th>
+<th>RAN impact</th>
+<th>Core impact</th>
+<th>OAM impact</th>
+<th>UE impact</th>
+<th>Effectiveness</th>
+<th>Applicable scenarios</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3"><strong>6.2.1: Re-mapping decision in NG-RAN
+node</strong></td>
+<td><strong>6.2.1.1.1: Policy configured by OAM</strong></td>
+<td><p>RAN is configured with re-mapping policy from the OAM.</p>
+<p>FFS if RAN needs to signal the slice remapping decision to
+CN.</p></td>
+<td><p>CN is configured with re-mapping policy from the OAM.</p>
+<p>FFS if the CN needs to be notified in case of any slice-remapping,
+e.g. for charging purpose.</p>
+<p>CN reconfigures UE with NAS signalling to associate an ongoing PDU
+Session to a new S-NSSAI.</p>
+<p>Study in SA2 is needed.</p>
+<p>How the slice remapping is done in 5GC is pending to SA2.</p></td>
+<td>OAM configures slice re-mapping policy to the NG-RAN, CN (if
+verification is needed).</td>
+<td><p>UE needs to be reconfigured at NAS level to associate an ongoing
+PDU Session to a new S-NSSAI.</p>
+<p>Study in SA2 is needed.</p></td>
+<td>Solution at the cost of CN, OAM, RAN and UE impact.</td>
+<td>1, 2, 3, 4, 5, 6</td>
+</tr>
+<tr>
+<td><strong>6.2.1.1.2/6.2.1.1.3: Policy configured by CN</strong></td>
+<td><p>RAN is signalled with the remapping policy from CN/the source RAN
+node.</p>
+<p>FFS if RAN needs to signal the slice remapping decision to
+CN.</p></td>
+<td><p>CN is configured with remapping policy from the OAM, and signals
+the re-mapping policy to the NG-RAN.</p>
+<p>FFS if the CN needs to be notified in case of any slice-remapping,
+e.g. for charging purpose.</p>
+<p>CN reconfigures UE with NAS signalling to associate an ongoing PDU
+Session to a new S-NSSAI.</p>
+<p>Study in SA2 is needed.</p>
+<p>How the slice remapping is done in 5GC is pending to SA2.</p></td>
+<td>OAM configures slice re-mapping policy to the CN.</td>
+<td><p>UE needs to be reconfigured at NAS level to associate an ongoing
+PDU Session to a new S-NSSAI.</p>
+<p>Study in SA2 is needed.</p></td>
+<td>Solution at the cost of CN, OAM, RAN and UE impact.</td>
+<td>1, 2, 3, 4, 5, 6</td>
+</tr>
+<tr>
+<td><strong>6.2.1.2.1.4: 5GC Solution based on SSC-mode 3</strong></td>
+<td><p>RAN is signalled with the remapping policy from CN/the source RAN
+node if this option is used.</p>
+<p>It requires support of updated "SSC-mode 3", e.g., the target node
+needs to temporarily accept the PDU session even if slice is not
+supported in the cell.</p></td>
+<td><p>CN is configured with remapping policy from the OAM, and signals
+the re-mapping policy to the NG-RAN if this option is used. It requires
+modification of the "SSC mode 3" procedure in CN.</p>
+<p>Feasibility would require SA2 study.</p></td>
+<td>OAM configures slice re-mapping policy to the RAN if this option is
+used.</td>
+<td><p>The update of "SSC-mode 3".</p>
+<p>Feasibility would require SA2 study.</p></td>
+<td><p>Solution with OAM, CN, RAN and UE impact. Required procedures in
+UE and CN are not supported.</p>
+<p>Feasibility would require SA2 study.</p></td>
+<td>2, 4</td>
+</tr>
+<tr>
+<td rowspan="2"><strong>6.2.2: Partially slice re-mapping in
+NG-RAN</strong></td>
+<td><strong>Solution with CN involvement</strong></td>
+<td>Same as 6.2.1.1.2/6.2.1.1.3: Policy configured by CN</td>
+<td>Same as 6.2.1.1.2/6.2.1.1.3: Policy configured by CN</td>
+<td>Same as 6.2.1.1.2/6.2.1.1.3: Policy configured by CN</td>
+<td>Same as 6.2.1.1.2/6.2.1.1.3: Policy configured by CN</td>
+<td>Same as 6.2.1.1.2/6.2.1.1.3: Policy configured by CN</td>
+<td>Same as 6.2.1.1.2/6.2.1.1.3: Policy configured by CN</td>
+</tr>
+<tr>
+<td><strong>Solution without CN involvement</strong></td>
+<td><p>RAN is configured with re-mapping policy from the OAM.</p>
+<p>New functionality to support semi-handover case.</p>
+<p>New behaviour in new gNB (allow usage by non-supported slice even
+though gNB does not support slice).</p>
+<p>Requires Xn support from inside old RA to any node inside new RA
+(unless continuity is broken later).</p></td>
+<td><p>New functionality to support the new handover case, where the UE
+is connected to target but source maintains UE signalling connection
+with CN.</p>
+<p>It is FFS how the CN handles RA update from UE.</p></td>
+<td>OAM configures slice re-mapping policy to the NG-RAN.</td>
+<td><p>New functionality to support the new handover case, where the UE
+is connected to target but source maintains UE signalling connection
+with CN.</p>
+<p>RA procedure and consistency between allowed S-NSSAI in new RA are
+FFS.</p>
+<p>Study in SA2 is needed.</p></td>
+<td><p>Solution at the cost of CN, OAM, RAN and UE impact.</p>
+<p>Feasibility would require SA2 study.</p></td>
+<td>2, 4</td>
+</tr>
+<tr>
+<td rowspan="3"><strong>6.2.3: Resource management in NG-RAN
+node</strong></td>
+<td><strong>6.2.3.1: Configuration based Solution</strong></td>
+<td><p>RAN is configured with re-mapping policy from the OAM.</p>
+<p>RAN may possibly signal the RAN-internal slice resource change to
+CN.</p></td>
+<td>FFS if the CN needs to be notified in case of any RAN-internal slice
+resource change e.g., for charging purpose.</td>
+<td><p>OAM configures slice resource policy to the NG-RAN.</p>
+<p>A study in SA5 may be needed if further capabilities are deemed
+required by RAN beyond those already supported.</p></td>
+<td>No impact</td>
+<td>Simple and effective solution at the main cost of the OAM
+impact.</td>
+<td>1, 3, 5, 6.</td>
+</tr>
+<tr>
+<td><strong>6.2.3.2: Slice resource re-partitioning</strong></td>
+<td><p>RAN is configured with re-mapping policy from the OAM.</p>
+<p>RAN may possibly signal the RAN-internal slice resource change to
+CN.</p></td>
+<td>FFS if the CN needs to be notified in case of any RAN-internal slice
+resource change e.g., for charging purpose.</td>
+<td><p>OAM configures slice resource re-mapping policy to the
+NG-RAN.</p>
+<p>A study in SA5 may be needed if further capabilities are deemed
+required by RAN beyond those already supported.</p></td>
+<td>No impact</td>
+<td>Simple and effective solution at the main cost of the OAM
+impact.</td>
+<td>1, 3, 5, 6</td>
+</tr>
+<tr>
+<td><strong>6.2.3.3: Multi-carrier radio resource sharing</strong></td>
+<td>No impact.</td>
+<td>No impact</td>
+<td><p>SA5 noted that the concept of RRMPolicyRatio is configurable per
+cell, but not per frequency.</p>
+<p>A study in SA5 may be needed if further capabilities are deemed
+required by RAN beyond those already supported.</p></td>
+<td>No impact</td>
+<td><p>Simple and effective solution.</p>
+<p>It requires the same slice coverage across different
+frequencies.</p></td>
+<td>1, 3, 5, 6</td>
+</tr>
+<tr>
+<td colspan="2"><strong>6.2.4: Slice Remapping decision in
+5GC</strong></td>
+<td>No impact</td>
+<td><p>CN is configured with remapping policy from the OAM.</p>
+<p>New intra-CN procedure is needed to change the slice for an ongoing
+PDU session.</p>
+<p>Feasibility would require SA2 study.</p></td>
+<td>OAM configures slice re-mapping policy to the CN.</td>
+<td><p>UE needs to be reconfigured at NAS level to associate an ongoing
+PDU Session to a new S-NSSAI.</p>
+<p>Feasibility would require SA2 study.</p></td>
+<td><p>Solution with OAM, CN and UE impact</p>
+<p>Feasibility would require SA2 study.</p>
+<p>Required procedures in UE and CN are not supported.</p></td>
+<td>2, 4</td>
+</tr>
+</tbody>
+</table>
+<h1 id="conclusion">7 Conclusion</h1>
+<h2
+id="conclusions-on-slice-based-cell-reselection-cell-selection-and-rach-configuration">7.1
+Conclusions on slice based cell reselection, cell selection and RACH
+configuration</h2>
+<p><strong>For slice based cell reselection, the following solutions are
+recommended for normative work:</strong></p>
+<p>- To assist cell reselection, RAN can broadcast the supported slice
+info of the current cell and neighbour cells, and cell reselection
+priority per slice in SI message. And RAN can also include the slice
+info (with similar information as agreed slice info in SI message) in
+<em>RRCRelease</em> message.</p>
+<p><strong>For slice based cell selection, the following solutions may
+be discussed during WI in RAN2:</strong></p>
+<p>- To assist cell selection, whether to broadcast supported slice of
+serving cell in SI message and how to solve SIB1 concerns.</p>
+<p><strong>For slice based RACH configuration, the following solutions
+are recommended for normative work:</strong></p>
+<p>- Separated PRACH configuration (e.g., transmission occasions of
+time-frequency domain and preambles) can be configured for slice or
+slice group;</p>
+<p>- RACH parameters prioritization (e.g., <em>scalingFactorBI</em> and
+<em>powerRampingStepHighPriority</em>) can be configured for slice or
+slice group.</p>
+<h2 id="conclusion-on-service-continuity">7.2 Conclusion on service
+continuity</h2>
+<p><strong>Conclusions on Scenarios:</strong></p>
+<p>Scenario 3-6 can be regarded as the extension of Scenario 1-2, where
+Scenario 1,3,5,6 are caused by slice resource shortage, while Scenario 2
+and 4 are caused by non-supported slice.</p>
+<p>For those scenarios caused by slice resource shortage, the situations
+of resource shortage or overload may exist in RAN, provided that
+pre-configured policies allow serving this slice even when slice
+resources are exhausted, under such conditions, Scenario 1,3,5,6 are
+valid scenarios.</p>
+<p>For those scenarios caused by non-supported slice, scenarios 2 and 4
+are valid if there is a specific pre-configured policy, where the
+original slice is required to be available in a specific geographical
+area and its slice services are required to have continuity even outside
+of such geographical area.</p>
+<p><strong>Conclusions on Solutions for Scenarios 1, 3, 5,
+6:</strong></p>
+<p>The solutions to support following RAN slicing scenarios are
+recommended by RAN3 to be specified in normative phase:</p>
+<p>- Resource shortage in case of Intra-RA mobility</p>
+<p>- Slice resource shortage for MR-DC</p>
+<p>- Slice overload in RAN node in absence of mobility</p>
+<p>The following solutions are recommended by RAN3 to be specified in
+normative phase for scenario 1,3,5,6 according to TS 28.541 [2]. Study
+in SA5 is needed if further capabilities are deemed required by RAN in
+normative phase beyond those already supported:</p>
+<p>- Configuration based Solution (section 6.2.3.1)</p>
+<p>- Slice resource re-partitioning (section 6.2.3.2)</p>
+<p>- Multi-carrier radio resource sharing (section 6.2.3.3)</p>
+<p><strong>Conclusions on Solutions for Scenarios 2, 4:</strong></p>
+<p>RAN3 is not able to make any recommendations on solutions with CN and
+UE impact and for solutions to support scenario 2 and 4 during the Study
+Item. All solutions addressing these scenarios have been found to have
+both UE and CN impacts that would require future study by SA2. For these
+reasons these solutions are not considered for Rel17 in RAN3. The
+application of solution 6.2.1 to scenario 2/4 may be considered in
+future release if end-to-end feasibility is also addressed.</p>
+<p class="heading" id="annex-a-informative-change-history"><br />
+Annex A (informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 3%" />
+<col style="width: 4%" />
+<col style="width: 3%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8">Change history</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date</strong></td>
+<td><strong>Meeting</strong></td>
+<td><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td><strong>Subject/Comment</strong></td>
+<td><strong>New version</strong></td>
+</tr>
+<tr>
+<td>2020-08</td>
+<td style="text-align: left;">RAN2#111-e</td>
+<td style="text-align: left;">R2-2007419</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td>Draft skeleton</td>
+<td>0.0.0</td>
+</tr>
+<tr>
+<td>2020-08</td>
+<td style="text-align: left;">RAN2#111-e</td>
+<td style="text-align: left;">R2-2008549</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td>Capture the agreements in RAN2#111-e</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>2020-09</td>
+<td style="text-align: left;">RAN3#109-e</td>
+<td style="text-align: left;">R3-205815</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td>Capture the agreed TPs in R3-205626, R3-205729, R3-205783</td>
+<td>0.2.0</td>
+</tr>
+<tr>
+<td>2020-11</td>
+<td style="text-align: left;">RAN3#110-e</td>
+<td style="text-align: left;">R3-207235</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td>Capture the agreed TPs in R3-206807, R3-207106, R3-207107,
+R3-207124, R3-207136, R3-207193, R3-207194, R3-207195, R3-207197</td>
+<td>0.3.0</td>
+</tr>
+<tr>
+<td>2021-01</td>
+<td style="text-align: left;">RAN2#113-e</td>
+<td style="text-align: left;">R2-2101801</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td>Capture the agreements in RAN2#112-e</td>
+<td>0.4.0</td>
+</tr>
+<tr>
+<td>2021-02</td>
+<td style="text-align: left;">RAN2#113-e</td>
+<td style="text-align: left;">R2-2102059</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td>Capture the agreements in RAN2#113-e and RAN3#111-e</td>
+<td>0.5.0</td>
+</tr>
+<tr>
+<td>2021-03</td>
+<td style="text-align: left;">RAN#91-e</td>
+<td style="text-align: left;">RP-210411</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td>Present TR 38.832 v1.0.0 to RAN plenary for information</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>2021-05</td>
+<td style="text-align: left;">RAN3#112-e</td>
+<td style="text-align: left;">R3-212943</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td>Capture the agreed TP in R3-212977</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>2021-06</td>
+<td style="text-align: left;">RAN#92-e</td>
+<td style="text-align: left;">RP-211053</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td>Submit TR 38.832 v2.0.0 to RAN plenary for approval. No change
+comparing with v1.1.0.</td>
+<td>2.0.0</td>
+</tr>
+<tr>
+<td>2021-06</td>
+<td style="text-align: left;">RP-92</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td>Upgraded to Rel-17</td>
+<td>17.0.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

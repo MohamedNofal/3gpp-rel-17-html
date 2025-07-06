@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.26377440347071585in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 2240 608" width="0.9718004338394793in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 16; stroke-linejoin: round; }
+.font0 { font-size: 346px; font-family: "Times New Roman", serif; }
+.font1 { font-size: 202px; font-family: "Times New Roman", serif; }
+.font2 { font-size: 313px; font-family: Symbol, serif; }
+.font3 { font-style: italic; font-size: 313px; font-family: Symbol, serif; }
+.font4 { font-style: italic; font-size: 346px; font-family: "Times New Roman", serif; }
+.font5 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="115" x2="373" y1="94" y2="94"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2010" xml:lang="en" xml:space="preserve" y="416">1</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="411" xml:lang="en" xml:space="preserve" y="244">symbol</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="373" xml:lang="en" xml:space="preserve" y="512">UCI</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1764" xml:lang="en" xml:space="preserve" y="416">-</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1188" xml:lang="en" xml:space="preserve" y="416">+</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1464" xml:lang="en" xml:space="preserve" y="416">g</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="76" xml:lang="en" xml:space="preserve" y="416">N</text>
+    </g>
+</svg>

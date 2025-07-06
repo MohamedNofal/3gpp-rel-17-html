@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.2638888888888889in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 4352 608" width="1.8888888888888888in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.font0 { font-style: italic; font-size: 202px; font-family: "Times New Roman", serif; }
+.font1 { font-style: italic; font-size: 346px; font-family: "Times New Roman", serif; }
+.font2 { font-size: 313px; font-family: Symbol, serif; }
+.font3 { font-size: 346px; font-family: "Times New Roman", serif; }
+.font4 { font-size: 202px; font-family: "Times New Roman", serif; }
+.font5 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4127" xml:lang="en" xml:space="preserve" y="512">m</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3500" xml:lang="en" xml:space="preserve" y="512">L</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3858" xml:lang="en" xml:space="preserve" y="416">Q</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3213" xml:lang="en" xml:space="preserve" y="416">N</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2590" xml:lang="en" xml:space="preserve" y="416">i</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1642" xml:lang="en" xml:space="preserve" y="416">m</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1006" xml:lang="en" xml:space="preserve" y="416">i</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="58" xml:lang="en" xml:space="preserve" y="416">m</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3720" xml:lang="en" xml:space="preserve" y="416">×</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2908" xml:lang="en" xml:space="preserve" y="416">+</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1342" xml:lang="en" xml:space="preserve" y="416">=</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2710" xml:lang="en" xml:space="preserve" y="416">)</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2464" xml:lang="en" xml:space="preserve" y="416">(</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1126" xml:lang="en" xml:space="preserve" y="416">)</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="880" xml:lang="en" xml:space="preserve" y="416">(</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1939" xml:lang="en" xml:space="preserve" y="244">ACK</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1913" xml:lang="en" xml:space="preserve" y="512">count</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="355" xml:lang="en" xml:space="preserve" y="244">ACK</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="329" xml:lang="en" xml:space="preserve" y="512">count</text>
+    </g>
+</svg>

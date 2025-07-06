@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.39215686274509803in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 612 40" width="6.0in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.font0 { font-weight: bold; font-size: 3px; font-family: System, sans-serif; }
+.font1 { font-size: 12px; font-family: "Times New Roman", serif; }
+.pen1 { stroke: none; }
+.brush1 { fill: none; }
+.font2 { font-size: 9px; font-family: "Times New Roman", serif; }
+.brush2 { fill: rgb(0,0,0); }
+</style>
+    <g>
+        <g>
+            <clipPath id="clipPath0">
+                <rect height="40" width="612" x="0" y="0"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath0)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="0" xml:lang="en" xml:space="preserve" y="13"> </text>
+        </g>
+        <polygon class="pen1 brush0" points="1,1 1,39 52,39 52,1 1,1"/>
+        <polygon class="pen0 brush1" points="1,1 1,39 52,39 52,1"/>
+    </g>
+    <g>
+        <g>
+            <clipPath id="clipPath1">
+                <rect height="15" width="47" x="8" y="15"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath1)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="8 16 24" xml:lang="en" xml:space="preserve" y="25">ACK</text>
+        </g>
+        <g>
+            <clipPath id="clipPath2">
+                <rect height="15" width="47" x="8" y="15"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath2)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="32" xml:lang="en" xml:space="preserve" y="25"> </text>
+        </g>
+    </g>
+    <g>
+        <polygon class="pen1 brush0" points="223,1 223,39 274,39 274,1 223,1"/>
+        <polygon class="pen0 brush1" points="223,1 223,39 274,39 274,1"/>
+    </g>
+    <g>
+        <g>
+            <clipPath id="clipPath3">
+                <rect height="15" width="48" x="229" y="15"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath3)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="229 237 245" xml:lang="en" xml:space="preserve" y="25">ACK</text>
+        </g>
+        <g>
+            <clipPath id="clipPath4">
+                <rect height="15" width="48" x="229" y="15"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath4)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="253" xml:lang="en" xml:space="preserve" y="25"> </text>
+        </g>
+    </g>
+    <g>
+        <path class="pen1 brush2" d="M 582,17  L 581,17 580,18 579,19 579,20 579,21 580,22 581,23 582,23 583,23 585,22 585,21 586,20 585,19 585,18 583,17 582,17 z"/>
+        <polyline class="pen0" fill="none" points="582,17 581,17 580,18 579,19 579,20 579,21 580,22 581,23 582,23 583,23 585,22 585,21 586,20 585,19 585,18 583,17 582,17"/>
+    </g>
+    <g>
+        <path class="pen1 brush2" d="M 595,17  L 594,17 593,18 592,19 592,20 592,21 593,22 594,23 595,23 596,23 597,22 598,21 598,20 598,19 597,18 596,17 595,17 z"/>
+        <polyline class="pen0" fill="none" points="595,17 594,17 593,18 592,19 592,20 592,21 593,22 594,23 595,23 596,23 597,22 598,21 598,20 598,19 597,18 596,17 595,17"/>
+    </g>
+    <g>
+        <path class="pen1 brush2" d="M 607,17  L 606,17 605,18 604,19 604,20 604,21 605,22 606,23 607,23 609,23 610,22 611,21 611,20 611,19 610,18 609,17 607,17 z"/>
+        <polyline class="pen0" fill="none" points="607,17 606,17 605,18 604,19 604,20 604,21 605,22 606,23 607,23 609,23 610,22 611,21 611,20 611,19 610,18 609,17 607,17"/>
+    </g>
+    <g>
+        <polygon class="pen1 brush0" points="420,1 420,39 471,39 471,1 420,1"/>
+        <polygon class="pen0 brush1" points="420,1 420,39 471,39 471,1"/>
+    </g>
+    <g>
+        <g>
+            <clipPath id="clipPath5">
+                <rect height="15" width="48" x="426" y="15"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath5)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="426 434 442" xml:lang="en" xml:space="preserve" y="25">ACK</text>
+        </g>
+        <g>
+            <clipPath id="clipPath6">
+                <rect height="15" width="48" x="426" y="15"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath6)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="450" xml:lang="en" xml:space="preserve" y="25"> </text>
+        </g>
+    </g>
+    <g/>
+</svg>

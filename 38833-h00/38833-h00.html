@@ -1,0 +1,3318 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38833-h00</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#section" id="toc-section"></a></li>
+<li><a href="#scope" id="toc-scope">1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-symbols-and-abbreviations"
+id="toc-definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</a>
+<ul>
+<li><a href="#terms" id="toc-terms">3.1 Terms</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#inter-user-interference-suppression-for-mu-mimo"
+id="toc-inter-user-interference-suppression-for-mu-mimo">4 Inter-user
+interference suppression for MU-MIMO</a>
+<ul>
+<li><a href="#scenario-and-interference-modelling"
+id="toc-scenario-and-interference-modelling">4.1 Scenario and
+interference modelling</a>
+<ul>
+<li><a href="#scenario" id="toc-scenario">4.1.1 Scenario</a></li>
+<li><a href="#interference-model" id="toc-interference-model">4.1.2
+Interference model</a></li>
+</ul></li>
+<li><a href="#receiver-structure" id="toc-receiver-structure">4.2
+Receiver structure</a>
+<ul>
+<li><a href="#general" id="toc-general">4.2.1 General</a></li>
+<li><a href="#mmse-irc-receiver" id="toc-mmse-irc-receiver">4.2.2 MMSE
+IRC receiver</a></li>
+</ul></li>
+<li><a href="#link-performance-characterization"
+id="toc-link-performance-characterization">4.3 Link performance
+characterization</a>
+<ul>
+<li><a href="#parameters-for-link-level-evaluation"
+id="toc-parameters-for-link-level-evaluation">4.3.1 Parameters for link
+level evaluation</a></li>
+<li><a href="#link-level-simulation-results"
+id="toc-link-level-simulation-results">4.3.2 Link level simulation
+results</a></li>
+<li><a href="#summary-of-link-level-evaluation"
+id="toc-summary-of-link-level-evaluation">4.3.3 Summary of link level
+evaluation</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#lte-crs-interference-handling-for-nr-ue"
+id="toc-lte-crs-interference-handling-for-nr-ue">5 LTE CRS interference
+handling for NR UE</a>
+<ul>
+<li><a href="#scenario-and-interference-modelling-1"
+id="toc-scenario-and-interference-modelling-1">5.1 Scenario and
+interference modelling</a>
+<ul>
+<li><a href="#scenario-1" id="toc-scenario-1">5.1.1 Scenario</a></li>
+<li><a href="#lte-interference-model"
+id="toc-lte-interference-model">5.1.2 LTE interference model</a></li>
+</ul></li>
+<li><a href="#receiver-structure-1" id="toc-receiver-structure-1">5.2
+Receiver structure</a>
+<ul>
+<li><a href="#general-1" id="toc-general-1">5.2.1 General</a></li>
+<li><a href="#reference-receiver-of-lte-crs-interference-mitigation"
+id="toc-reference-receiver-of-lte-crs-interference-mitigation">5.2.2
+Reference receiver of LTE-CRS interference mitigation</a></li>
+<li><a href="#lte-cell-configuration-detection"
+id="toc-lte-cell-configuration-detection">5.2.3 LTE cell configuration
+detection</a></li>
+</ul></li>
+<li><a href="#link-performance-characterization-1"
+id="toc-link-performance-characterization-1">5.3 Link performance
+characterization</a>
+<ul>
+<li><a href="#parameters-for-link-level-evaluation-1"
+id="toc-parameters-for-link-level-evaluation-1">5.3.1 Parameters for
+link level evaluation</a>
+<ul>
+<li><a href="#general-2" id="toc-general-2">5.3.1.1 General</a></li>
+<li><a href="#serving-cell-pdsch-parameters"
+id="toc-serving-cell-pdsch-parameters">5.3.1.2 Serving cell PDSCH
+parameters</a></li>
+<li><a href="#interference-cell-parameters"
+id="toc-interference-cell-parameters">5.3.1.3 Interference cell
+parameters</a></li>
+<li><a href="#summary-of-simulation-cases"
+id="toc-summary-of-simulation-cases">5.3.1.4 Summary of simulation
+cases</a></li>
+</ul></li>
+<li><a href="#link-level-simulation-results-1"
+id="toc-link-level-simulation-results-1">5.3.2 Link level simulation
+results</a>
+<ul>
+<li><a href="#general-3" id="toc-general-3">5.3.2.1 General</a></li>
+<li><a href="#nr-ue-pdsch-performance-for-scenario-1"
+id="toc-nr-ue-pdsch-performance-for-scenario-1">5.3.2.2 NR UE PDSCH
+performance for Scenario 1</a></li>
+<li><a href="#nr-ue-pdsch-performance-for-scenario-2"
+id="toc-nr-ue-pdsch-performance-for-scenario-2">5.3.2.3 NR UE PDSCH
+performance for Scenario 2</a></li>
+<li><a href="#lte-ue-performance" id="toc-lte-ue-performance">5.3.2.4
+LTE UE performance</a></li>
+</ul></li>
+<li><a href="#summary-of-link-level-evaluation-1"
+id="toc-summary-of-link-level-evaluation-1">5.3.3 Summary of link level
+evaluation</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#conclusions" id="toc-conclusions">6 Conclusions</a>
+<ul>
+<li><a
+href="#conclusion-on-inter-user-interference-suppression-for-mu-mimo-scenario"
+id="toc-conclusion-on-inter-user-interference-suppression-for-mu-mimo-scenario">6.1
+Conclusion on inter-user interference suppression for MU-MIMO
+scenario</a></li>
+<li><a
+href="#conclusion-on-crs-interference-handling-in-scenarios-with-overlapping-spectrum-for-lte-and-nr"
+id="toc-conclusion-on-crs-interference-handling-in-scenarios-with-overlapping-spectrum-for-lte-and-nr">6.2
+Conclusion on CRS interference handling in scenarios with overlapping
+spectrum for LTE and NR</a></li>
+</ul></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TR 38.833 V17.0.0 (2022-03)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Report</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>Further enhancement on NR demodulation performance</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.jpeg"
+style="width:1.32639in;height:0.91667in" /></td>
+<td style="text-align: right;"><img src="media/image2.png"
+style="width:1.77083in;height:1.04861in" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2022, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references">6</a></p>
+<p>3 Definitions, symbols and abbreviations <a
+href="#definitions-symbols-and-abbreviations">6</a></p>
+<p>3.1 Terms <a href="#terms">6</a></p>
+<p>3.2 Symbols <a href="#symbols">7</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">7</a></p>
+<p>4 Inter-user interference suppression for MU-MIMO <a
+href="#inter-user-interference-suppression-for-mu-mimo">7</a></p>
+<p>4.1 Scenario and interference modelling <a
+href="#scenario-and-interference-modelling">7</a></p>
+<p>4.1.1 Scenario <a href="#scenario">7</a></p>
+<p>4.1.2 Interference model <a href="#interference-model">11</a></p>
+<p>4.2 Receiver structure <a href="#receiver-structure">11</a></p>
+<p>4.2.1 General <a href="#general">11</a></p>
+<p>4.2.2 MMSE IRC receiver <a href="#mmse-irc-receiver">12</a></p>
+<p>4.3 Link performance characterization <a
+href="#link-performance-characterization">12</a></p>
+<p>4.3.1 Parameters for link level evaluation <a
+href="#parameters-for-link-level-evaluation">12</a></p>
+<p>4.3.2 Link level simulation results <a
+href="#link-level-simulation-results">15</a></p>
+<p>4.3.3 Summary of link level evaluation <a
+href="#summary-of-link-level-evaluation">18</a></p>
+<p>5 LTE CRS interference handling for NR UE <a
+href="#lte-crs-interference-handling-for-nr-ue">20</a></p>
+<p>5.1 Scenario and interference modelling <a
+href="#scenario-and-interference-modelling-1">20</a></p>
+<p>5.1.1 Scenario <a href="#scenario-1">20</a></p>
+<p>5.1.2 LTE interference model <a
+href="#lte-interference-model">20</a></p>
+<p>5.2 Receiver structure <a href="#receiver-structure-1">21</a></p>
+<p>5.2.1 General <a href="#general-1">21</a></p>
+<p>5.2.2 Reference receiver of LTE-CRS interference mitigation <a
+href="#reference-receiver-of-lte-crs-interference-mitigation">21</a></p>
+<p>5.2.3 LTE cell configuration detection <a
+href="#lte-cell-configuration-detection">21</a></p>
+<p>5.3 Link performance characterization <a
+href="#link-performance-characterization-1">22</a></p>
+<p>5.3.1 Parameters for link level evaluation <a
+href="#parameters-for-link-level-evaluation-1">22</a></p>
+<p>5.3.1.1 General <a href="#general-2">22</a></p>
+<p>5.3.1.2 Serving cell PDSCH parameters <a
+href="#serving-cell-pdsch-parameters">22</a></p>
+<p>5.3.1.3 Interference cell parameters <a
+href="#interference-cell-parameters">22</a></p>
+<p>5.3.1.4 Summary of simulation cases <a
+href="#summary-of-simulation-cases">23</a></p>
+<p>5.3.2 Link level simulation results <a
+href="#link-level-simulation-results-1">23</a></p>
+<p>5.3.2.1 General <a href="#general-3">23</a></p>
+<p>5.3.2.2 NR UE PDSCH performance for Scenario 1 <a
+href="#nr-ue-pdsch-performance-for-scenario-1">24</a></p>
+<p>5.3.2.3 NR UE PDSCH performance for Scenario 2 <a
+href="#nr-ue-pdsch-performance-for-scenario-2">24</a></p>
+<p>5.3.2.4 LTE UE performance <a href="#lte-ue-performance">25</a></p>
+<p>5.3.3 Summary of link level evaluation <a
+href="#summary-of-link-level-evaluation-1">26</a></p>
+<p>6 Conclusions <a href="#conclusions">26</a></p>
+<p>6.1 Conclusion on inter-user interference suppression for MU-MIMO
+scenario <a
+href="#conclusion-on-inter-user-interference-suppression-for-mu-mimo-scenario">26</a></p>
+<p>6.2 Conclusion on CRS interference handling in scenarios with
+overlapping spectrum for LTE and NR <a
+href="#conclusion-on-crs-interference-handling-in-scenarios-with-overlapping-spectrum-for-lte-and-nr">27</a></p>
+<p>Annex A: Change history <a href="#annex-a-change-history">29</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Report has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<blockquote>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+</blockquote>
+<p>In the present document, modal verbs have the following meanings:</p>
+<blockquote>
+<p><strong>shall</strong> indicates a mandatory requirement to do
+something</p>
+<p><strong>shall not</strong> indicates an interdiction (prohibition) to
+do something</p>
+</blockquote>
+<p>The constructions "shall" and "shall not" are confined to the context
+of normative provisions, and do not appear in Technical Reports.</p>
+<p>The constructions "must" and "must not" are not used as substitutes
+for "shall" and "shall not". Their use is avoided insofar as possible,
+and they are not used in a normative context except in a direct citation
+from an external, referenced, non-3GPP document, or so as to maintain
+continuity of style when extending or modifying the provisions of such a
+referenced document.</p>
+<blockquote>
+<p><strong>should</strong> indicates a recommendation to do
+something</p>
+<p><strong>should not</strong> indicates a recommendation not to do
+something</p>
+<p><strong>may</strong> indicates permission to do something</p>
+<p><strong>need not</strong> indicates permission not to do
+something</p>
+</blockquote>
+<p>The construction "may not" is ambiguous and is not used in normative
+elements. The unambiguous constructions "might not" or "shall not" are
+used instead, depending upon the meaning intended.</p>
+<blockquote>
+<p><strong>can</strong> indicates that something is possible</p>
+<p><strong>cannot</strong> indicates that something is impossible</p>
+</blockquote>
+<p>The constructions "can" and "cannot" are not substitutes for "may"
+and "need not".</p>
+<blockquote>
+<p><strong>will</strong> indicates that something is certain or expected
+to happen as a result of action taken by an agency the behaviour of
+which is outside the scope of the present document</p>
+<p><strong>will not</strong> indicates that something is certain or
+expected not to happen as a result of action taken by an agency the
+behaviour of which is outside the scope of the present document</p>
+<p><strong>might</strong> indicates a likelihood that something will
+happen as a result of action taken by some agency the behaviour of which
+is outside the scope of the present document</p>
+<p><strong>might not</strong> indicates a likelihood that something will
+not happen as a result of action taken by some agency the behaviour of
+which is outside the scope of the present document</p>
+</blockquote>
+<p>In addition:</p>
+<blockquote>
+<p><strong>is</strong> (or any other verb in the indicative mood)
+indicates a statement of fact</p>
+<p><strong>is not</strong> (or any other negative verb in the indicative
+mood) indicates a statement of fact</p>
+</blockquote>
+<p>The constructions "is" and "is not" do not indicate requirements.</p>
+<h1 id="section"></h1>
+<h1 id="scope">1 Scope</h1>
+<p>The present technical report documents the Phase I study outcome on
+inter-user interference suppression for NR MU-MIMO and techniques to
+cope with LTE CRS interference for NR UE, with the detailed objectives
+as follows:、</p>
+<p>• MMSE-IRC receiver for suppressing intra-cell inter-user
+interference</p>
+<blockquote>
+<p>- Phase I: Evaluate the performance under practical MU-MIMO
+interference profile for the candidate reference receiver.</p>
+<p>∘ Identify practical MU-MIMO interference modelling methodology</p>
+<p>∘ Reference receiver: MMSE-IRC receiver. Use the DMRS-based
+interference covariance estimation method as a starting point</p>
+<p>∘ Prioritize slot-based transmission scenario</p>
+</blockquote>
+<p>• Evaluate techniques to cope with CRS interference in scenarios with
+overlapping spectrum for LTE and NR</p>
+<blockquote>
+<p>- Candidate reference receiver to enable neighboring cell CRS-IM</p>
+<p>∘ The performance benefit of neighboring cell LTE CRS-IM over the
+existing rate matching solutions specified in Rel-15 and Rel-16 shall be
+evaluated.</p>
+<p>∘ Feasibility of the considered solution regarding NR PDSCH
+processing timeline need to be checked.</p>
+<p>∘ Priority will be given to solutions not having RAN1 specification
+impact.</p>
+<p>- Synchronous network scenario is prioritized. As second priority,
+RAN4 could evaluate the feasibility and usefulness of the asynchronous
+network scenario and specify if feasible and useful.</p>
+<p>- 15 kHz SCS for NR is prioritized. RAN4 should evaluate the
+feasibility and usefulness of 30 kHz SCS for scenarios with LTE and NR
+deployed in neighboring BSs/areas and specify if feasible and
+useful.</p>
+</blockquote>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TS 38.214: “NR: Physical layer procedures for data”.</p>
+<h1 id="definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</h1>
+<h2 id="terms">3.1 Terms</h2>
+<p>For the purposes of the present document, the terms given in 3GPP
+TR 21.905 [1] and the following apply. A term defined in the present
+document takes precedence over the definition of the same term, if any,
+in 3GPP TR 21.905 [1].</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>Void</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>AL Aggregation level</p>
+<p>AP Antenna port</p>
+<p>BWP Bandwidth part</p>
+<p>CBW Channel bandwidth</p>
+<p>CDM Code division multiple</p>
+<p>CORESET Control resource set</p>
+<p>CRS Cell-specific reference signal</p>
+<p>CRS-IC CRS interference cancellation</p>
+<p>CRS-IM CRS interference mitigation</p>
+<p>CRS-RM CRS rate matching</p>
+<p>CSI-RS Channel state information reference signal</p>
+<p>DMRS Demodulation reference signal</p>
+<p>DSS Dynamic spectrum sharing</p>
+<p>FD-CDM Frequency division - code division multiple</p>
+<p>ISD Inter-site distance</p>
+<p>MMSE-IRC Minimum mean square error - interference rejection
+combining</p>
+<p>MMSE-MRC Minimum mean square error - maximal ratio combining</p>
+<p>MU-MIMO Multi-user MIMO</p>
+<p>NZP Non-zero-power</p>
+<p>PSS Primary synchronization signal</p>
+<p>PT-RS Phase-tracking reference signal</p>
+<blockquote>
+<p>QCL Quasi co-location</p>
+</blockquote>
+<p>RB Resource block</p>
+<p>RSRP Reference signal received power</p>
+<p>SCS Subcarrier spacing</p>
+<p>SINR Signal-to-interference-and-noise ratio</p>
+<blockquote>
+<p>SSB Synchronization signal block</p>
+</blockquote>
+<p>SSS Secondary synchronization signal</p>
+<p>TBS Transport block size</p>
+<blockquote>
+<p>TCI Transmission configuration indicator</p>
+</blockquote>
+<p>TDL Tapped delay line</p>
+<p>TM Transmission mode</p>
+<h1 id="inter-user-interference-suppression-for-mu-mimo">4 Inter-user
+interference suppression for MU-MIMO</h1>
+<h2 id="scenario-and-interference-modelling">4.1 Scenario and
+interference modelling</h2>
+<h3 id="scenario">4.1.1 Scenario</h3>
+<p>MU-MIMO allows gNB to transmit data to multiple UEs in the same
+time-frequency resources through spatial multiplexing. The process of
+selecting paired UEs is called ‘pairing’. As illustrated in Figure
+4.1.1-1, UE1 and UE2 are paired and gNB transmits data to both UEs with
+suitable precoders through the same time-frequency resources. However,
+the gNB cannot guarantee the perfect pairing of multiple users in the
+real network. The paired UEs may not perfectly spatially orthogonal to
+each other and this will induce the intra-cell interference between
+paired UEs.</p>
+<p><img src="media/image3.png"
+style="width:3.48403in;height:1.94177in" /></p>
+<p>Figure 4.1.1-1. gNB transmit data to paired UE1 and UE2 with the same
+time-frequency resources</p>
+<p>To evaluate the performance of UE with intra-cell interference
+induced by spatial multiplexing, the following scenarios illustrated
+from Figure 4.1.1-2 to Figure 4.1.1-6 are considered for the case of
+number of paired UEs is 2.</p>
+<p>• Target UE with single DMRS antenna port:</p>
+<blockquote>
+<p>- Scenario 1-1: Number of CDM group without data is 1</p>
+<p>∘ AP1000 for target UE, AP1001 for interference UE</p>
+<p>- Scenario 1-2: Number of CDM group without data is 2</p>
+<p>∘ AP1000 for target UE, AP1001 for interference UE</p>
+<p>- Scenario 1-3: Number of CDM group without data is 2</p>
+<p>∘ AP1000 for target UE, AP1002 for interference UE</p>
+</blockquote>
+<p>• Target UE with two DMRS antenna ports:</p>
+<blockquote>
+<p>- Scenario 2-1: Number of CDM group without data is 2</p>
+<p>∘ AP1000 and 1001 for target UE, AP1002 and 1003 for interference
+UE</p>
+<p>- Scenario 2-2: Number of CDM group without data is 2</p>
+<p>∘ AP1000 and 1001 for target UE, AP1002 for interference UE</p>
+</blockquote>
+<p><img src="media/image4.png"
+style="width:4.01389in;height:2.56042in" /></p>
+<p>Figure 4.1.1-2: Scenario 1-1, number of CDM group without data is 1
+and AP1000 for target UE, AP1001 for interference UE</p>
+<p><img src="media/image5.png"
+style="width:4.01389in;height:2.56042in" /></p>
+<p>Figure 4.1.1-3: Scenario 1-2, number of CDM group without data is 2
+and AP1000 for target UE, AP1001 for interference UE</p>
+<p><img src="media/image6.png"
+style="width:4.00694in;height:2.87361in" /></p>
+<p>Figure 4.1.1-4: Scenario 1-3, number of CDM group without data is 2
+and AP1000 for target UE, AP1002 for interference UE</p>
+<p><img src="media/image7.png"
+style="width:4.01389in;height:4.50069in" /></p>
+<p>Figure 4.1.1-5: Scenario 2-1, number of CDM group without data is 2
+and AP1000 and 1001 for target UE, AP1002 and 1003 for interference
+UE</p>
+<p><img src="media/image8.png"
+style="width:4.00694in;height:4.50069in" /></p>
+<p>Figure 4.1.1-6: Scenario 2-2, number of CDM group without data is 2
+and AP1000 and 1001 for target UE, AP1002 for interference UE</p>
+<h3 id="interference-model">4.1.2 Interference model</h3>
+<p>The PDSCH and DMRS of the paired UEs are precoded prior to
+transmission. The precoder for each user is denoted by <span
+class="math inline">\(\mathbf{W}_{1}&#39;\)</span> and <span
+class="math inline">\(\mathbf{W}_{2}&#39;\)</span> respectively.</p>
+<p><span class="math inline">\(\mathbf{W}_{i}\ \)</span>is the precoder
+matrix of i<sup>th</sup> UE, of size N<sub>TX</sub> x N<sub>Li</sub>
+from Type I single panel codebook as described in [2]. Where,
+N<sub>TX</sub> is the number of TX antenna, N<sub>Li</sub> is the number
+of layers from i<sup>th</sup> UE. The combined precoder <span
+class="math inline">\(\mathbf{W\  = \ \lbrack W}_{1}\
+\mathbf{W}_{2}\rbrack\)</span>, of size N<sub>TX</sub> x N<sub>L</sub>
+where, N<sub>L</sub> is the total number layers across all users.</p>
+<p>The precoder of the target UE <span
+class="math inline">\(\mathbf{W}_{1}\)</span> is randomly selected. For
+the co-scheduled UE, the precoder <span
+class="math inline">\(\mathbf{W}_{2}\)</span> is selected in one of the
+two ways below.</p>
+<blockquote>
+<p>• Orthogonal precoder: <span
+class="math inline">\(\mathbf{W}_{2}\)</span> is randomly selected from
+the codebook with a constraint that the combined precoder
+<strong>W</strong> has orthogonal columns, i.e., the off-diagonal
+entries of <strong>W<sup>H</sup>W</strong> are zero.</p>
+<p>• Random precoder: <span
+class="math inline">\(\mathbf{W}_{2}\)</span> is randomly selected from
+the codebook ensuring any column of <span
+class="math inline">\(\mathbf{W}_{2}\)</span> is not identical to any
+column of <span class="math inline">\(\mathbf{W}_{1}\)</span></p>
+</blockquote>
+<p>To maintain the average per UE signal power as N<sub>Li</sub>
+/N<sub>L,</sub> an additional scaling is applied to the each precoder
+as:</p>
+<p><span class="math display">\[\mathbf{W}_{\mathbf{i}}^{\mathbf{&#39;}}
+= \ \sqrt{\frac{N_{Li}}{N_{L}}}*\mathbf{W}_{\mathbf{i}}\]</span></p>
+<h2 id="receiver-structure">4.2 Receiver structure</h2>
+<h3 id="general">4.2.1 General</h3>
+<p>In this clause, we provide the system equations for evaluating the
+performance of intra-cell inter-user interference mitigation.</p>
+<p>The N<sub>Rx</sub>-dimensional received signal vector
+<strong>r</strong> of the <span class="math inline">\(k\)</span>-th
+subcarrier and the <span class="math inline">\(l\)</span>-th OFDM symbol
+is assumed to be expressed as a sum of target’s UE own signal <span
+class="math inline">\(\mathbf{H}_{1}(k,l)\mathbf{d}_{1}(k,l)\)</span>,
+and co-scheduled UEs’ interference signals <span
+class="math inline">\(\mathbf{H}_{j}(k,l)\mathbf{d}_{j}(k,l)\)</span>
+(j&gt;1) and the white noise <span
+class="math inline">\(\mathbf{n}(k,l)\)</span>;</p>
+<p><span class="math display">\[\mathbf{r}(k,\ l) = \
+\mathbf{H}_{1}(k,l)\mathbf{d}_{1}(k,l) + \sum_{j =
+2}^{N_{UE}}{\mathbf{H}_{j}(k,l)\mathbf{d}_{j}(k,l)} +
+\mathbf{n}(k,l)\]</span></p>
+<p>Where,</p>
+<blockquote>
+<p><span class="math inline">\(\mathbf{d}_{j}(k,l)\)</span> and <span
+class="math inline">\(\mathbf{H}_{j}(k,l),\ j = \{ 2,\ldots
+N_{UE}\}\)</span> represent the N<sub>layer,j</sub> x1 transmitted
+signal vector and the (N<sub>Rx</sub> x N<sub>layer,j</sub>) channel
+matrix between the <em>j</em>-th co-scheduled UE’s interference and the
+UE containing the contribution from receiver branches, with <span
+class="math inline">\(\mathbf{H}_{j} = \begin{bmatrix}
+{(\mathbf{H}_{j,1})}^{H} \\
+{(\mathbf{H}_{j,2})}^{H}
+\end{bmatrix}\)</span> for two receiver antennas and <span
+class="math inline">\(\mathbf{H}_{j} = \begin{bmatrix}
+\begin{matrix}
+{(\mathbf{H}_{j,1})}^{H} \\
+{(\mathbf{H}_{j,2})}^{H}
+\end{matrix} \\
+\begin{matrix}
+{(\mathbf{H}_{j,3})}^{H} \\
+{(\mathbf{H}_{j,4})}^{H}
+\end{matrix}
+\end{bmatrix}\)</span> for four receiver antennas, where, <span
+class="math inline">\(\mathbf{H}_{j,i}\)</span> channel-matrix of size
+N<sub>layer,j</sub> x1 for the <em>i</em>-th receiver antenna,
+respectively.</p>
+<p><span class="math inline">\(N_{UE}\)</span> is the number of paired
+UEs plus one (the target UE), and <span class="math inline">\(N_{UE} =
+2\)</span> in this technical report.</p>
+</blockquote>
+<p>The recovered N<sub>layer,1</sub> x 1 signal vector at the UE, <span
+class="math inline">\({\widehat{\mathbf{d}}}_{1}(k,l)\)</span> is
+detected by using the (N<sub>layer,1</sub> x N<sub>Rx</sub>) receiver
+weight matrix <span
+class="math inline">\(\mathbf{W}_{RX,1}(k,l)\)</span> as follows.</p>
+<p><span class="math display">\[{\widehat{\mathbf{d}}}_{1}(k,l) =
+\mathbf{W}_{RX,1}(k,l)\mathbf{r}(k,\ l)\]</span></p>
+<h3 id="mmse-irc-receiver">4.2.2 MMSE IRC receiver</h3>
+<p>To suppress the co-scheduled UE’s interference, the candidate MMSE
+IRC receiver type is captured in this subclause. The MMSE IRC receiver
+weight matrix is expressed as follow:</p>
+<p><span class="math display">\[\mathbf{W}_{RX,1}(k,l) =
+{\widehat{\mathbf{H}}}_{1}^{H}(k,l)\mathbf{R}^{- 1}\]</span></p>
+<p><span class="math inline">\(\mathbf{R = \
+}P_{\mathbf{1}}{\widehat{\mathbf{H}}}_{1}(k,l){\widehat{\mathbf{H}}}_{1}^{H}(k,l)
++ \frac{1}{N_{re}}\sum_{k,l \in DMRS\ of\
+N_{UE}}^{}{\widetilde{\mathbf{r}}(k,l){\widetilde{\mathbf{r}}(k,l)}^{H}}\)</span>,</p>
+<p><span class="math inline">\(\widetilde{\mathbf{r}}(k,l) =
+\mathbf{r}(k,\ l) -
+{\widehat{\mathbf{H}}}_{1}(k,l)\mathbf{d}_{1}(k,l)\)</span> if
+co-scheduled UE is in the same CDM group with target UE, and</p>
+<p><span class="math inline">\(\widetilde{\mathbf{r}}(k,l) =
+\mathbf{r}(k,\ l)\)</span>, if co-scheduled UE is in the different CDM
+group with target UE.</p>
+<p>Where,</p>
+<p><span
+class="math inline">\({\widehat{\mathbf{H}}}_{j}^{H}(k,l)\)</span> and
+<span class="math inline">\(\mathbf{d}_{1}(k,l)\)</span> denote the
+estimated channel matrix and the transmit signal of target UE’s DMRS
+symbols, respectively, where the estimated channel matrix is also based
+on DMRS.</p>
+<p><span class="math inline">\(N_{re}\)</span> is the number of sampling
+REs of intra-user’s DMRS.</p>
+<p><em>P</em><sub>1</sub> is the transmission power of the serving cell
+and is equal to <span class="math inline">\(E\left\lbrack \left|
+\mathbf{d}_{1}(k,l) \right|^{2} \right\rbrack\)</span>.</p>
+<h2 id="link-performance-characterization">4.3 Link performance
+characterization</h2>
+<h3 id="parameters-for-link-level-evaluation">4.3.1 Parameters for link
+level evaluation</h3>
+<p>General simulation assumptions are listed in Table 4.3.1-1 and detail
+simulation assumptions are listed in Table 4.3.1-2.</p>
+<p>Table 4.3.1-1: General simulation assumptions</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 12%" />
+<col style="width: 19%" />
+<col style="width: 8%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3" style="text-align: center;">Parameter</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3" style="text-align: center;">PDSCH transmission
+scheme</td>
+<td></td>
+<td>Transmission scheme 1</td>
+</tr>
+<tr>
+<td style="text-align: center;">Carrier configuration</td>
+<td colspan="2" style="text-align: center;">Offset between Point A and
+the lowest usable subcarrier on this carrier (Note 2)</td>
+<td>RBs</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Subcarrier spacing</td>
+<td>kHz</td>
+<td>15</td>
+</tr>
+<tr>
+<td style="text-align: center;">DL BWP configuration #1</td>
+<td colspan="2" style="text-align: center;">Cyclic prefix</td>
+<td></td>
+<td>Normal</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">RB offset</td>
+<td>RBs</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Number of contiguous
+PRB</td>
+<td>PRBs</td>
+<td>Maximum transmission bandwidth configuration as specified in clause
+5.3.2 of TS 38.101-1 for tested channel bandwidth and subcarrier
+spacing</td>
+</tr>
+<tr>
+<td style="text-align: center;">Common serving cell parameters</td>
+<td colspan="2" style="text-align: center;">Physical Cell ID</td>
+<td></td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">SSB position in burst</td>
+<td></td>
+<td>First SSB in Slot #0</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">SSB periodicity</td>
+<td>ms</td>
+<td>20</td>
+</tr>
+<tr>
+<td style="text-align: center;">PDCCH configuration</td>
+<td colspan="2" style="text-align: center;">Slots for PDCCH
+monitoring</td>
+<td></td>
+<td>Each slot</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Symbols with PDCCH</td>
+<td>Symbols</td>
+<td>0, 1</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Number of PRBs in
+CORESET</td>
+<td></td>
+<td>Table 5.2-2 of TS 38.101-4 for tested channel bandwidth and
+subcarrier spacing</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Number of PDCCH candidates
+and aggregation levels</td>
+<td></td>
+<td>1/AL8</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">CCE-to-REG mapping type</td>
+<td></td>
+<td>Non-interleaved</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">DCI format</td>
+<td></td>
+<td>1_1</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">TCI state</td>
+<td></td>
+<td>TCI state #1</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">PDCCH &amp; PDCCH DMRS
+Precoding configuration</td>
+<td></td>
+<td>Single Panel Type I, Random per slot with equal probability of each
+applicable i<sub>1</sub>, i<sub>2</sub> combination, and with REG
+bundling granularity for number of Tx larger than 1</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">Cross carrier
+scheduling</td>
+<td></td>
+<td>Not configured</td>
+</tr>
+<tr>
+<td style="text-align: center;">CSI-RS for tracking</td>
+<td colspan="2" style="text-align: center;">First subcarrier index in
+the PRB used for CSI-RS</td>
+<td></td>
+<td>k<sub>0</sub>=0 for CSI-RS resource 1,2,3,4</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">First OFDM symbol in the PRB
+used for CSI-RS</td>
+<td></td>
+<td><p>l<sub>0</sub> = 6 for CSI-RS resource 1 and 3</p>
+<p>l<sub>0</sub> = 10 for CSI-RS resource 2 and 4</p></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Number of CSI-RS ports
+(X)</td>
+<td></td>
+<td>1 for CSI-RS resource 1,2,3,4</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">CDM Type</td>
+<td></td>
+<td>'No CDM’ for CSI-RS resource 1,2,3,4</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Density (ρ)</td>
+<td></td>
+<td>3 for CSI-RS resource 1,2,3,4</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">CSI-RS periodicity</td>
+<td>Slots</td>
+<td><p>15 kHz SCS: 20 for CSI-RS resource 1,2,3,4</p>
+<p>30 kHz SCS: 40 for CSI-RS resource 1,2,3,4</p></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">CSI-RS offset</td>
+<td>Slots</td>
+<td><p>15 kHz SCS:</p>
+<p>10 for CSI-RS resource 1 and 2</p>
+<p>11 for CSI-RS resource 3 and 4</p></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Frequency Occupation</td>
+<td></td>
+<td><p>Start PRB 0</p>
+<p>Number of PRB = BWP size</p></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">QCL info</td>
+<td></td>
+<td>TCI state #0</td>
+</tr>
+<tr>
+<td style="text-align: center;">NZP CSI-RS for CSI acquisition</td>
+<td colspan="2" style="text-align: center;">First subcarrier index in
+the PRB used for CSI-RS</td>
+<td></td>
+<td>k<sub>0</sub> = 0</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">First OFDM symbol in the PRB
+used for CSI-RS</td>
+<td></td>
+<td>l<sub>0</sub> = 12</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Number of CSI-RS ports
+(X)</td>
+<td></td>
+<td>Same as number of transmit antenna</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">CDM Type</td>
+<td></td>
+<td><p>'No CDM' for 1 transmit antenna</p>
+<p>'FD-CDM2' for 2 and 4 transmit antenna</p></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Density (ρ)</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">CSI-RS periodicity</td>
+<td>Slots</td>
+<td>15 kHz SCS: 20</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">CSI-RS offset</td>
+<td>Slots</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Frequency Occupation</td>
+<td></td>
+<td><p>Start PRB 0</p>
+<p>Number of PRB = BWP size</p></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">QCL info</td>
+<td></td>
+<td>TCI state #1</td>
+</tr>
+<tr>
+<td style="text-align: center;">ZP CSI-RS for CSI acquisition</td>
+<td colspan="2" style="text-align: center;">First subcarrier index in
+the PRB used for CSI-RS</td>
+<td></td>
+<td>k<sub>0</sub> = 4</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">First OFDM symbol in the PRB
+used for CSI-RS</td>
+<td></td>
+<td>l<sub>0</sub> = 12</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Number of CSI-RS ports
+(X)</td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">CDM Type</td>
+<td></td>
+<td>'FD-CDM2'</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Density (ρ)</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">CSI-RS periodicity</td>
+<td>Slots</td>
+<td>15 kHz SCS: 20</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">CSI-RS offset</td>
+<td>Slots</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Frequency Occupation</td>
+<td></td>
+<td><p>Start PRB 0</p>
+<p>Number of PRB = BWP size</p></td>
+</tr>
+<tr>
+<td style="text-align: center;">TCI state #0</td>
+<td style="text-align: center;">Type 1 QCL information</td>
+<td style="text-align: center;">SSB index</td>
+<td></td>
+<td>SSB #0</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">QCL Type</td>
+<td></td>
+<td>Type C</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Type 2 QCL information</td>
+<td style="text-align: center;">SSB index</td>
+<td></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">QCL Type</td>
+<td></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td style="text-align: center;">TCI state #1</td>
+<td style="text-align: center;">Type 1 QCL information</td>
+<td style="text-align: center;">CSI-RS resource</td>
+<td></td>
+<td>CSI-RS resource 1 from 'CSI-RS for tracking' configuration</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">QCL Type</td>
+<td></td>
+<td>Type A</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Type 2 QCL information</td>
+<td style="text-align: center;">CSI-RS resource</td>
+<td></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">QCL Type</td>
+<td></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">PT-RS configuration</td>
+<td></td>
+<td>PT-RS is not configured</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">Maximum number of code block
+groups for ACK/NACK feedback</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">Maximum number of HARQ
+transmission</td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">HARQ ACK/NACK bundling</td>
+<td></td>
+<td>Multiplexed</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">Redundancy version coding
+sequence</td>
+<td></td>
+<td>{0,2,3,1}</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">Symbols for all unused
+REs</td>
+<td></td>
+<td><p>OP.1 FDD as defined in Annex A.5.1.1 of TS 38.101-4</p>
+<p>OP.1 TDD as defined in Annex A.5.2.1 of TS 38.101-4</p></td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">Physical signals, channels
+mapping and precoding</td>
+<td></td>
+<td>As specified in Annex B.4.1 of TS 38.101-4</td>
+</tr>
+<tr>
+<td colspan="5" style="text-align: center;"><p>Note 1: UE assumes that
+the TCI state for the PDSCH is identical to the TCI state applied for
+the PDCCH transmission.</p>
+<p>Note 2: Point A coincides with minimum guard band as specified in
+Table 5.3.3-1 from TS 38.101-1 for tested channel bandwidth and
+subcarrier spacing.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.1-2: Detailed simulation assumptions</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 17%" />
+<col style="width: 9%" />
+<col style="width: 21%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" rowspan="2">Parameter</th>
+<th rowspan="2">Unit</th>
+<th colspan="2">Value</th>
+</tr>
+<tr>
+<th>Target UE</th>
+<th>Co-scheduled UE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Channel Bandwidth/SCS</td>
+<td>MHz/KHz</td>
+<td colspan="2">10/15</td>
+</tr>
+<tr>
+<td colspan="2">Duplex mode</td>
+<td></td>
+<td colspan="2">FDD</td>
+</tr>
+<tr>
+<td colspan="2">MCS</td>
+<td></td>
+<td><p>Rank 1: 4,13</p>
+<p>Rank 2: 13,19</p></td>
+<td>16 QAM random symbols</td>
+</tr>
+<tr>
+<td rowspan="4">Allocation for interference UE and target UE</td>
+<td rowspan="3">Rank allocation</td>
+<td></td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>DMRS port allocation</td>
+<td></td>
+<td><p>For rank 1+1: Port 1000</p>
+<p>For rank 2+1 and 2+2: Port 1000 and 1001</p></td>
+<td><p>For rank 1+1:</p>
+<p>Option 1: Port 1001</p>
+<p>Option 2: Port 1002</p>
+<p>For rank 2+1: Port 1002</p>
+<p>For rank 2+2: Port 1002 and 1003</p></td>
+</tr>
+<tr>
+<td colspan="2">MIMO configuration</td>
+<td></td>
+<td colspan="2">2T2R ULA Low and 2T4R ULA Low for case with rank1+1 and
+4T4R ULA Low (Note 1) for case with rank 2+1 and rank 2+2</td>
+</tr>
+<tr>
+<td colspan="2">Number of CDM groups without data</td>
+<td></td>
+<td colspan="2"><p>Option 1: 1</p>
+<p>Option 2: 2</p></td>
+</tr>
+<tr>
+<td colspan="2">HARQ process number</td>
+<td></td>
+<td colspan="2">4</td>
+</tr>
+<tr>
+<td>Precoding model</td>
+<td>Target UE</td>
+<td></td>
+<td>Random precoding with Single panel Type 1 per PRB bundling size per
+slot</td>
+<td><p>Option 1: Select the precoding matrix to ensure orthogonality
+with target UE</p>
+<p>Option 2: Select the precoding matrix randomly ensuring the selected
+precoding matrix shall not be identical to the precoding matrix of
+target UE</p></td>
+</tr>
+<tr>
+<td rowspan="5">PDSCH configuration</td>
+<td>Mapping type</td>
+<td></td>
+<td colspan="2">Type A</td>
+</tr>
+<tr>
+<td>Starting symbol (S)</td>
+<td></td>
+<td colspan="2">2</td>
+</tr>
+<tr>
+<td>Length (L)</td>
+<td></td>
+<td colspan="2">12</td>
+</tr>
+<tr>
+<td>PRB bundling size</td>
+<td></td>
+<td colspan="2">2</td>
+</tr>
+<tr>
+<td>PRB bundling type</td>
+<td></td>
+<td colspan="2">Static</td>
+</tr>
+<tr>
+<td rowspan="3">PDSCH DMRS configuration</td>
+<td>DMRS Type</td>
+<td></td>
+<td colspan="2">DMRS Type 1</td>
+</tr>
+<tr>
+<td>Number of additional DMRS</td>
+<td></td>
+<td colspan="2">1</td>
+</tr>
+<tr>
+<td>Maximum number of OFDM symbols for DL front loaded DMRS</td>
+<td></td>
+<td colspan="2">1</td>
+</tr>
+<tr>
+<td colspan="2">Propagation conditions</td>
+<td></td>
+<td colspan="2">TDLA30-10, TDLC300-100</td>
+</tr>
+<tr>
+<td colspan="2">Receiver type</td>
+<td></td>
+<td>MMSE-IRC and MMSE-MRC</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td colspan="2">Test metric</td>
+<td></td>
+<td>SNR @ %70 of maximum Throughput</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td colspan="5">Note 1: RAN4 recognize that under practical MU-MIMO
+scenario, BS with larger antenna scales like 8Tx, 16TX is more likely to
+be used. However, with the random precoder selection method for the
+target and the co-scheduled UEs, the performance for 8Tx and 16Tx is too
+poor to show performance gain for the inter-user interference
+suppressing receiver. Therefore, for this study, we use 2Tx and 4Tx to
+serve the same purpose. For UEs capable of inter-user interference
+suppression ability discussed in this TR, they can also be used in the
+deployments with larger number of Tx ports configuration.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="link-level-simulation-results">4.3.2 Link level simulation
+results</h3>
+<p>In this sub-clause, link level simulation results from different
+companies are collected for analysis of PDSCH performance in scenario
+with inter-user MU-MIMO interference. The link level analysis of PDSCH
+performance is performed under assumptions from sub-clause 4.3.1.</p>
+<p>The detailed simulation results from different companies are provided
+in the attached file ‘Attachment 1 - R4-2119048_Summary of simulation
+results for intra cell inter-user MMSE-IRC receiver’ and ‘Attachment 3 -
+R4-2200993_Summary of simulation results for intra cell inter user
+MMSE-IRC receiver requirements’.</p>
+<p>Table 4.3.2-1 provide the summary of simulation results from
+different companies for scenarios with 2 Tx antenna and TDL-A channel
+model.</p>
+<p>Table 4.3.2-2 provide the summary of simulation results from
+different companies for scenarios with 2 Tx antenna and TDL-C channel
+model.</p>
+<p>Table 4.3.2-3 provide the summary of simulation results from
+different companies for scenarios with 4 Tx antenna and TDL-A channel
+model.</p>
+<p>Table 4.3.2-4 provide the summary of simulation results from
+different companies for scenarios with 4 Tx antenna and TDL-C channel
+model.</p>
+<p><strong>Table 4.3.2-1: Summary of simulation results from different
+companies for 2 Tx case and TDL-A channel</strong></p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="4" rowspan="2">Parameters</th>
+<th colspan="4">SNR for 70% of max T-put, [dB]</th>
+<th rowspan="3">MMSE-IRC SNR gain, [dB]</th>
+</tr>
+<tr>
+<th colspan="2">MMSE-MRC</th>
+<th colspan="2">MMSE-IRC</th>
+</tr>
+<tr>
+<th>#CDM</th>
+<th>#Rx</th>
+<th>MCS</th>
+<th>PMI</th>
+<th>Span</th>
+<th>Avg</th>
+<th>Span</th>
+<th>Avg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="8">1</td>
+<td rowspan="4">2</td>
+<td rowspan="2">4</td>
+<td>Rand</td>
+<td>1.6</td>
+<td>2.3</td>
+<td>1.5</td>
+<td>1.9</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>1.9</td>
+<td>1.6</td>
+<td>1.6</td>
+<td>1.3</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td rowspan="2">13</td>
+<td>Rand</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.4</td>
+<td>12.7</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.3</td>
+<td>11.1</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td rowspan="4">4</td>
+<td rowspan="2">4</td>
+<td>Rand</td>
+<td>1.4</td>
+<td>-1.7</td>
+<td>1.0</td>
+<td>-1.4</td>
+<td>-0.3</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>1.8</td>
+<td>-2.5</td>
+<td>1.0</td>
+<td>-2.2</td>
+<td>-0.3</td>
+</tr>
+<tr>
+<td rowspan="2">13</td>
+<td>Rand</td>
+<td colspan="2">No results</td>
+<td>1.7</td>
+<td>7.3</td>
+<td></td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td colspan="2">No results</td>
+<td>1.4</td>
+<td>6.0</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="8">2</td>
+<td rowspan="4">2</td>
+<td rowspan="2">4</td>
+<td>Rand</td>
+<td>2.3</td>
+<td>2.0</td>
+<td>2.5</td>
+<td>1.7</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>2.5</td>
+<td>1.4</td>
+<td>2.6</td>
+<td>1.1</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td rowspan="2">13</td>
+<td>Rand</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.1</td>
+<td>12.5</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.3</td>
+<td>11.0</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td rowspan="4">4</td>
+<td rowspan="2">4</td>
+<td>Rand</td>
+<td>2.5</td>
+<td>-2.1</td>
+<td>2.6</td>
+<td>-2.1</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>1.9</td>
+<td>-4.0</td>
+<td>2.0</td>
+<td>-4.1</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td rowspan="2">13</td>
+<td>Rand</td>
+<td colspan="2">No results</td>
+<td colspan="2">No results</td>
+<td></td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td colspan="2">No results</td>
+<td colspan="2">No results</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4.3.2-2: Summary of simulation results from different
+companies for 2 Tx case and TDL-C channel</strong></p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="4" rowspan="2">Parameters</th>
+<th colspan="4">SNR for 70% of max T-put, [dB]</th>
+<th rowspan="3">MMSE-IRC SNR gain, [dB]</th>
+</tr>
+<tr>
+<th colspan="2">MMSE-MRC</th>
+<th colspan="2">MMSE-IRC</th>
+</tr>
+<tr>
+<th>#CDM</th>
+<th>#Rx</th>
+<th>MCS</th>
+<th>PMI</th>
+<th>Span</th>
+<th>Avg</th>
+<th>Span</th>
+<th>Avg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="8">1</td>
+<td rowspan="4">2</td>
+<td rowspan="2">4</td>
+<td>Rand</td>
+<td>0.9</td>
+<td>2.9</td>
+<td>0.9</td>
+<td>2.6</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>1.4</td>
+<td>2.1</td>
+<td>1.3</td>
+<td>1.8</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td rowspan="2">13</td>
+<td>Rand</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.0</td>
+<td>14.9</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>1.0</td>
+<td>13.0</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td rowspan="4">4</td>
+<td rowspan="2">4</td>
+<td>Rand</td>
+<td>1.3</td>
+<td>-1.0</td>
+<td>1.0</td>
+<td>-0.9</td>
+<td>-0.1</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>1.8</td>
+<td>-1.9</td>
+<td>0.7</td>
+<td>-1.6</td>
+<td>-0.3</td>
+</tr>
+<tr>
+<td rowspan="2">13</td>
+<td>Rand</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>1.4</td>
+<td>9.1</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>4.1</td>
+<td>11.1</td>
+<td>1.0</td>
+<td>6.9</td>
+<td>4.2</td>
+</tr>
+<tr>
+<td rowspan="8">2</td>
+<td rowspan="4">2</td>
+<td rowspan="2">4</td>
+<td>Rand</td>
+<td>1.8</td>
+<td>2.6</td>
+<td>2.2</td>
+<td>2.0</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>2.5</td>
+<td>1.7</td>
+<td>2.8</td>
+<td>1.3</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td rowspan="2">13</td>
+<td>Rand</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.0</td>
+<td>14.7</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.1</td>
+<td>13.1</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td rowspan="4">4</td>
+<td rowspan="2">4</td>
+<td>Rand</td>
+<td>2.1</td>
+<td>-1.5</td>
+<td>2.1</td>
+<td>-1.6</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td colspan="2">No results</td>
+<td colspan="2">No results</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">13</td>
+<td>Rand</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.0</td>
+<td>8.7</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>3.7</td>
+<td>11.2</td>
+<td>1.9</td>
+<td>6.8</td>
+<td>4.4</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4.3.2-3: Summary of simulation results from different
+companies for 4 Tx case and TDL-A channel</strong></p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="5" rowspan="2">Parameters</th>
+<th colspan="4">SNR for 70% of max T-put, [dB]</th>
+<th rowspan="3">MMSE-IRC SNR gain, [dB]</th>
+</tr>
+<tr>
+<th colspan="2">MMSE-MRC</th>
+<th colspan="2">MMSE-IRC</th>
+</tr>
+<tr>
+<th>#Rx</th>
+<th>SUE<br />
+Rank</th>
+<th>IUE<br />
+Rank</th>
+<th>SUE<br />
+MCS</th>
+<th>PMI</th>
+<th>Span</th>
+<th>Avg</th>
+<th>Span</th>
+<th>Avg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="8">4</td>
+<td rowspan="8">2</td>
+<td rowspan="4">1</td>
+<td rowspan="2">13</td>
+<td>Rand</td>
+<td colspan="2">No results</td>
+<td>3.1</td>
+<td>10.4</td>
+<td></td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td colspan="2">No results</td>
+<td colspan="2">No results</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">19</td>
+<td>Rand</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>1.8</td>
+<td>16.8</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>0.9</td>
+<td>13.4</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td rowspan="4">2</td>
+<td rowspan="2">13</td>
+<td>Rand</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>3.2</td>
+<td>16.6</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.9</td>
+<td>12.7</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td rowspan="2">19</td>
+<td>Rand</td>
+<td colspan="2">No results</td>
+<td colspan="2">No results</td>
+<td></td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.2</td>
+<td>19.3</td>
+<td>Inf</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4.3.2-4: Summary of simulation results from different
+companies for 4 Tx case and TDL-C channel</strong></p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="5" rowspan="2">Parameters</th>
+<th colspan="4">SNR for 70% of max T-put, [dB]</th>
+<th rowspan="3">MMSE-IRC SNR gain, [dB]</th>
+</tr>
+<tr>
+<th colspan="2">MMSE-MRC</th>
+<th colspan="2">MMSE-IRC</th>
+</tr>
+<tr>
+<th>#Rx</th>
+<th>SUE<br />
+Rank</th>
+<th>IUE<br />
+Rank</th>
+<th>SUE<br />
+MCS</th>
+<th>PMI</th>
+<th>Span</th>
+<th>Avg</th>
+<th>Span</th>
+<th>Avg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="8">4</td>
+<td rowspan="8">2</td>
+<td rowspan="4">1</td>
+<td rowspan="2">13</td>
+<td>Rand</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.0</td>
+<td>11.8</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td colspan="2">No results</td>
+<td colspan="2">No results</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">19</td>
+<td>Rand</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>0.7</td>
+<td>20.9</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.2</td>
+<td>17.2</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td rowspan="4">2</td>
+<td rowspan="2">13</td>
+<td>Rand</td>
+<td colspan="2">No results</td>
+<td colspan="2">No results</td>
+<td></td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>2.1</td>
+<td>15.2</td>
+<td>Inf</td>
+</tr>
+<tr>
+<td rowspan="2">19</td>
+<td>Rand</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Orthog</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>N/A</td>
+<td>Inf</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="summary-of-link-level-evaluation">4.3.3 Summary of link level
+evaluation</h3>
+<p>According to the PDSCH link-level simulation results in clause 4.3.2,
+RAN4 initial observations are as follows:</p>
+<p>For FDD 10MHz/15kHz scenario</p>
+<p>• For RANK 1+1, 2T2R ULA low MIMO configuration</p>
+<blockquote>
+<p>- For MCS 4, DMRS with same CDM group</p>
+<p>∘ The performance gain is observed, the average gain is less than
+1dB</p>
+<p>• Similar performance gain can be achieved with the assumption of
+Random PMI matrix selection and Orthogonal PMI matrix selection</p>
+<p>• Similar performance gain can be achieved under channel model
+TDLA30-10 and TDLC300-100</p>
+<p>- For MCS 4, DMRS with different CDM group</p>
+<p>∘ The performance gain is observed, the average gain is less than
+1dB</p>
+<p>• Similar performance gain can be achieved with the assumption of
+Random PMI matrix selection and Orthogonal PMI matrix selection</p>
+<p>• Similar performance gain can be achieved under channel model
+TDLA30-10 and TDLC300-100</p>
+<p>- For MCS 13, DMRS with same CDM group</p>
+<p>∘ The performance gain cannot be estimated since MMSE-MRC cannot
+reach 70% of maximum throughput</p>
+<p>- For MCS 13, DMRS with different CDM group</p>
+<p>∘ The performance gain cannot be estimated since MMSE-MRC cannot
+reach 70% of maximum throughput</p>
+<p>- The average performance gain with the assumption of DMRS with
+different CDM group is similar with the average performance gain with
+the assumption of DMRS with same CDM group.</p>
+</blockquote>
+<p>• For RANK 1+1, 2T4R ULA low MIMO configuration</p>
+<blockquote>
+<p>- For MCS 4, DMRS with same CDM group</p>
+<p>∘ The performance loss is observed under both channel models, the
+average loss is about 0.3dB.</p>
+<p>- For MCS 4, DMRS with different CDM group</p>
+<p>∘ The performance gain is observed, the average gain is less than
+1dB.</p>
+<p>• Similar performance gain can be achieved with the assumption of
+Random PMI matrix selection and Orthogonal PMI matrix selection</p>
+<p>• Similar performance gain can be achieved under channel model
+TDLA30-10 and TDLC300-100</p>
+<p>- For MCS 13, DMRS with same CDM group</p>
+<p>∘ Under channel model TDLC300-100, the performance gain is observed
+with the assumption of Orthogonal PMI matrix selection, the average gain
+is 4.2dB</p>
+<p>∘ Under channel model TDLC300-100, the performance gain cannot be
+estimated with the assumption of Random PMI matrix selection, since
+MMSE-MRC cannot reach 70% of maximum throughput</p>
+<p>- For MCS 13, DMRS with different CDM group</p>
+<p>∘ Under channel model TDLC300-100, the performance gain is observed
+with the assumption of Orthogonal PMI matrix selection, the average gain
+is 4.4dB</p>
+<p>∘ Under channel model TDLC300-100, the performance gain cannot be
+estimated with the assumption of Random PMI matrix selection, since
+MMSE-MRC cannot reach 70% of maximum throughput</p>
+<p>- The average performance gain with the assumption of DMRS with
+different CDM group is similar with the performance gain with the
+assumption of DMRS with same CDM group.</p>
+</blockquote>
+<p>• For RANK 2+1, 4T4R ULA low MIMO configuration</p>
+<blockquote>
+<p>- For MCS 13</p>
+<p>∘ Under channel model TDLC300-100, the performance gain cannot be
+estimated with the assumption of Random PMI matrix selection, since
+MMSE-MRC cannot reach 70% of maximum throughput</p>
+<p>- For MCS 19</p>
+<p>∘ The performance gain cannot be estimated since MMSE-MRC cannot
+reach 70% of maximum throughput</p>
+</blockquote>
+<p>• For RANK 2+2, 4T4R ULA low MIMO configuration</p>
+<blockquote>
+<p>- For MCS 13</p>
+<p>∘ Under channel model TDLA30-10, the performance gain cannot be
+estimated since MMSE-MRC cannot reach 70% of maximum throughput</p>
+<p>∘ Under channel model TDLC300-100, the performance gain cannot be
+estimated with the assumption of Orthogonal PMI matrix selection, since
+MMSE-MRC cannot reach 70% of maximum throughput</p>
+<p>- For MCS 19</p>
+<p>∘ Under channel model TDLA30-10, the performance gain cannot be
+estimated with the assumption of Orthogonal PMI matrix selection, since
+MMSE-MRC cannot reach 70% of maximum throughput</p>
+<p>∘ Under channel model TDLC300-100, MMSE-IRC cannot reach 70% of
+maximum throughput</p>
+</blockquote>
+<h1 id="lte-crs-interference-handling-for-nr-ue">5 LTE CRS interference
+handling for NR UE</h1>
+<h2 id="scenario-and-interference-modelling-1">5.1 Scenario and
+interference modelling</h2>
+<h3 id="scenario-1">5.1.1 Scenario</h3>
+<p>Dynamic spectrum sharing (DSS) provides a very useful migration path
+from LTE to NR. To help faster 5G rollout, the network operators can
+deploy 5G using their existing LTE frequency bands and base stations
+dynamically share the resources based on the traffic load. As the time
+and frequency resources are shared between NR UE and LTE UE, the core
+requirement for DSS is that existing essential channels of LTE, such as
+CRS (cell-specific reference signal), should be still transmitted for
+backward compatibility. In DSS scenario (namely scenario 1), serving
+cell CRS rate matching is assumed to be configured for NR PDSCH, but the
+always-on CRS signals from interference cells will interfere NR UE.</p>
+<p>Another scenario with overlapping spectrum for LTE and NR is that LTE
+and NR are deployed in neighboring BSs/areas (namely scenario 2), when
+the refarming progress is different in different areas. In scenario 2,
+the CRS is not transmitted on the NR serving cell, and the CRS from
+neighboring LTE cell will cause interference to NR UE in the overlapping
+spectrum.</p>
+<p>To evaluate performance of different CRS interference handling
+schemes, the two scenarios with overlapping spectrum for LTE and NR are
+considered below in Figure 1.</p>
+<p>• Scenario 1: Serving and interference cells are both operating in
+DSS (NR+LTE) mode</p>
+<p>• Scenario 2: Serving cell is operating in NR mode and interference
+cell is operating in LTE mode</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Scenario 1:</th>
+<th style="text-align: center;">Scenario 2:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="media/image9.png"
+style="width:3.25694in;height:2.36809in" /></td>
+<td><img src="media/image10.png"
+style="width:3.25902in;height:2.32639in" /></td>
+</tr>
+</tbody>
+</table>
+<p>Figure 5.1.1-1. Scenarios for CRS interference in overlapping
+spectrum for LTE and NR</p>
+<p>For the performance evaluation, 15 kHz SCS and synchronous network
+with 4 CRS ports are assumed in the first phase.</p>
+<h3 id="lte-interference-model">5.1.2 LTE interference model</h3>
+<p>This subclause provides interference modelling for each explicitly
+modelled LTE interfering cell in the simulation scenario. The
+interference modelling methodology and interference profiles from LTE
+CRS interference mitigation (CRS-IM) for homogenous deployments in [TR
+36.863] are reused. INR-<em>i</em> (signal level of the <em>i</em>-th
+dominant interference over Noc) is used as the interference power
+measure, and two dominant interferers are explicitly modelled in the
+simulation.</p>
+<p>In each subframe, each interfering cell shall transmit randomly
+modulated data over the entire PDSCH region and the full transmission
+bandwidth according to the probabilities of occurrence. Transmitted
+physical channels shall include PSS, SSS and PBCH. Probabilities of
+occurrence of LTE PDSCH in each subframe are as specified in clause 5.3.
+If the probabilities of occurrence in each subframe are not specified in
+clause 5.3, as default, they are equal to 1.</p>
+<p>For each subframe and each CQI subband as defined in subclause 7.2 of
+[TS 36.213], a transmission rank shall be randomly determined
+independently from other CQI subbands as well as other interfering
+cells. Probabilities of occurrence of each possible transmission rank
+are as specified in clause 5.3.</p>
+<p>For each subframe and CQI subband, a precoding matrix for the number
+of layers <img src="media/image11.svg" /> associated to the selected
+rank shall be selected randomly from Table 6.3.4.2.3-1 of [TS 36.211].
+Note that codebook index 0 shall be excluded from random precoder
+selection when the number of layers is <img
+src="media/image12.svg" />.</p>
+<p>Precoding for spatial multiplexing with CRS for the number of antenna
+ports in the simulation scenario shall be applied to 16QAM randomly
+modulated layer symbols, as specified in subclause 6.3.4.2.1 of [TS
+36.211] with the selected precoding matrices for each subframe and each
+CQI subband.</p>
+<p>For unallocated REs in the control region, precoding for transmit
+diversity for the number of antenna ports in the simulation scenario
+shall be applied to QPSK randomly modulated layer symbols, as specified
+in subclause 6.3.4.3 of [TS 36.211]. The EPRE ratio for these REs shall
+be as defined for PDCCH in Annex C.3.2 of [TS 36.101].</p>
+<p>The EPRE ratio of LTE CRS of <em>i</em>-th dominant interferer to NR
+SSS of serving cell shall be defined as INR-<em>i</em>/SNR, where Noc is
+same for serving cell and all interfering cells.</p>
+<h2 id="receiver-structure-1">5.2 Receiver structure</h2>
+<h3 id="general-1">5.2.1 General</h3>
+<p>The baseline reference receiver to evaluate the NR performance in
+scenarios with overlapping spectrum for LTE and NR is MMSE-IRC, which is
+used to define the minimum demodulation performance requirements in NR.
+For CRS interference handling, performance is evaluated with two
+categories of schemes:</p>
+<blockquote>
+<p>1. LTE CRS interference mitigation (CRS-IM)</p>
+<p>2. LTE CRS Rate matching (CRS-RM)</p>
+</blockquote>
+<h3 id="reference-receiver-of-lte-crs-interference-mitigation">5.2.2
+Reference receiver of LTE-CRS interference mitigation</h3>
+<p>For dealing with neighboring LTE CRS interference, two candidate
+receiver types for CRS-IM are captured in this subclause, and the
+neighboring cell CRS-IM is used together with LMMSE-IRC for demodulating
+NR PDSCH.</p>
+<blockquote>
+<p>• CRS interference cancellation (CRS-IC)</p>
+<p>- Receiver may reconstruct neighboring LTE CRS interference based on
+detected neighboring LTE cell(s)’ channel estimation and cancel the
+interference</p>
+<p>∘ May have iteration for multiple strongest neighboring LTE
+interference cells</p>
+<p>• Log-likelihood ratio (LLR) weighting</p>
+<p>- Receiver may estimate the power of neighboring LTE CRS interference
+and apply the weight to the estimated LLRs for REs which occupy with LTE
+CRS.</p>
+</blockquote>
+<p>In particular, the following CRS-IM receiver assumptions are used for
+the evaluation:</p>
+<blockquote>
+<p>• Synchronization network deployment is assumed in the first
+phase.</p>
+<p>• Single FFT processing for synchronized network.</p>
+<p>• UEs are not restricted to mitigate more than 1 LTE cell’s
+interference, and this is left up to UE implementation.</p>
+<p>• UE with LLR weighting shall meet NR PDSCH processing procedure time
+requirement defined in TS 38.214 clause 5.3.</p>
+</blockquote>
+<h3 id="lte-cell-configuration-detection">5.2.3 LTE cell configuration
+detection</h3>
+<p>The performance analysis in the technical report is provided under
+assumption of with and without the knowledge of the interferer cell(s)
+CRS configuration.</p>
+<p>When the information of the dominant interferer cell CRS is not
+signaled to the UE by RRC signaling, the UE is expected to blindly
+detect the LTE cells and decode MIB for LTE cell configuration of the
+interference cells for LTE CRS-IM. Some UEs may not be capable of
+blindly detecting such information.</p>
+<h2 id="link-performance-characterization-1">5.3 Link performance
+characterization</h2>
+<h3 id="parameters-for-link-level-evaluation-1">5.3.1 Parameters for
+link level evaluation</h3>
+<h4 id="general-2">5.3.1.1 General</h4>
+<p>The link-level simulation assumptions for serving cell PDSCH,
+interference cells and summary of simulation cases are provided in
+clause 5.3.1.2, 5.3.1.3 and 5.3.1.4 respectively. Note that these
+assumptions are used for the performance evaluation in the study phase,
+and the parameters for performance requirement definition will be
+discussed separately.</p>
+<h4 id="serving-cell-pdsch-parameters">5.3.1.2 Serving cell PDSCH
+parameters</h4>
+<p>Simulation assumptions for serving cell PDSCH are captured in Table
+5.3.1.2-1.</p>
+<p>Table 5.3.1.2-1: Simulation assumptions for NR serving cell PDSCH</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 30%" />
+<col style="width: 6%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">Parameter</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Channel Bandwidth</td>
+<td>MHz</td>
+<td>10MHz with full PRB allocation</td>
+</tr>
+<tr>
+<td colspan="2">SCS</td>
+<td>kHz</td>
+<td>15</td>
+</tr>
+<tr>
+<td colspan="2">Duplex mode</td>
+<td style="text-align: center;"></td>
+<td>FDD</td>
+</tr>
+<tr>
+<td colspan="2">MCS</td>
+<td style="text-align: center;"></td>
+<td>4, 13</td>
+</tr>
+<tr>
+<td colspan="2">Antenna configuration</td>
+<td style="text-align: center;"></td>
+<td>4x2, 4x4</td>
+</tr>
+<tr>
+<td colspan="2">HARQ process number</td>
+<td style="text-align: center;"></td>
+<td>4</td>
+</tr>
+<tr>
+<td colspan="2">Number of layers</td>
+<td style="text-align: center;"></td>
+<td>1</td>
+</tr>
+<tr>
+<td rowspan="7">PDSCH configuration</td>
+<td>Mapping type</td>
+<td style="text-align: center;"></td>
+<td>Type A</td>
+</tr>
+<tr>
+<td>Starting symbol (S)</td>
+<td style="text-align: center;"></td>
+<td>If Rel-15 or Rel-16 Rate Matching pattern is configured: S = 3, else
+S =2</td>
+</tr>
+<tr>
+<td>Length (L)</td>
+<td style="text-align: center;"></td>
+<td><p>For scenario 1: 9</p>
+<p>For scenario 2: L=9, [11] if RM is configured, 12 otherwise.</p></td>
+</tr>
+<tr>
+<td>PRB bundling size</td>
+<td style="text-align: center;"></td>
+<td>2</td>
+</tr>
+<tr>
+<td>PRB bundling type</td>
+<td style="text-align: center;"></td>
+<td>Static</td>
+</tr>
+<tr>
+<td>Precoding model</td>
+<td style="text-align: center;"></td>
+<td>Random precoding with Single panel Type 1 per PRB bundling size per
+slot</td>
+</tr>
+<tr>
+<td>Overhead for TBS determination</td>
+<td style="text-align: center;"></td>
+<td>If Rel-15 or Rel-16 CRS-RM is configured: 18, else 0</td>
+</tr>
+<tr>
+<td rowspan="4">PDSCH DMRS configuration</td>
+<td>DMRS Type</td>
+<td></td>
+<td>DMRS Type 1</td>
+</tr>
+<tr>
+<td>Number of additional DMRS (Note 2)</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Maximum number of OFDM symbols for DL front loaded DMRS</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Number of PDSCH DMRS CDM group(s) without data</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td rowspan="4">CRS for rate matching for Scenario 1 (Note 1)</td>
+<td>LTE carrier centre subcarrier location</td>
+<td style="text-align: center;"></td>
+<td>Same as NR carrier centre subcarrier location</td>
+</tr>
+<tr>
+<td>LTE carrier BW</td>
+<td>MHz</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Number of antenna ports</td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>v-shift</td>
+<td></td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="2">SSB position</td>
+<td></td>
+<td>First SSB in slot #0 in every 20 ms periodicity that is not
+scheduled for PDSCH transmission</td>
+</tr>
+<tr>
+<td colspan="2">Propagation conditions and MIMO correlation</td>
+<td></td>
+<td>TDLA30-10 ULA Low</td>
+</tr>
+<tr>
+<td colspan="4"><p>Note 1: No MBSFN is configured on LTE carrier</p>
+<p>Note 2: The additional DMRS is alternated for scenario 2
+rate-matching with L=11</p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="interference-cell-parameters">5.3.1.3 Interference cell
+parameters</h4>
+<p>Simulation assumptions for interference cell are captured in Table
+5.3.1.3-1.</p>
+<p>Table 5.3.1.3-1: Simulation assumptions for interference cells
+parameters</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 21%" />
+<col style="width: 8%" />
+<col style="width: 28%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">Parameter</th>
+<th>Value</th>
+<th>Interference Cell #1</th>
+<th>Interference Cell #2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Interference power level</td>
+<td>dB</td>
+<td>INR1=10.45dB</td>
+<td>INR2=4.6dB</td>
+</tr>
+<tr>
+<td rowspan="4">CRS pattern</td>
+<td>LTE carrier centre subcarrier location</td>
+<td></td>
+<td>Same as NR serving carrier centre subcarrier location</td>
+<td>Same as NR serving carrier centre subcarrier location</td>
+</tr>
+<tr>
+<td>LTE carrier BW</td>
+<td>MHz</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Number of antenna ports</td>
+<td></td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>v-shift</td>
+<td></td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td colspan="2">PDSCH loading level</td>
+<td></td>
+<td>20% probability of occurrence of LTE data transmission in time
+domain, and full bandwidth allocation in frequency domain.</td>
+<td>20% probability of occurrence of LTE data transmission in time
+domain, and full bandwidth allocation in frequency domain.</td>
+</tr>
+<tr>
+<td colspan="2">Modulation order for interference PDSCH when exists</td>
+<td></td>
+<td>16 QAM randomly modulated symbols</td>
+<td>16 QAM randomly modulated symbols</td>
+</tr>
+<tr>
+<td colspan="2">Time offset</td>
+<td>us</td>
+<td>3</td>
+<td>-1</td>
+</tr>
+<tr>
+<td colspan="2">Frequency offset</td>
+<td>Hz</td>
+<td>300</td>
+<td>-100</td>
+</tr>
+<tr>
+<td colspan="2">Transmission rank</td>
+<td></td>
+<td>80% and 20% probability for rank 1 and rank 2 respectively</td>
+<td>80% and 20% probability for rank 1 and rank 2 respectively</td>
+</tr>
+<tr>
+<td colspan="2">Propagation conditions and MIMO configuration (Note
+1)</td>
+<td></td>
+<td>TDLA30-10 ULA Low</td>
+<td>TDLA30-10 ULA Low</td>
+</tr>
+<tr>
+<td colspan="5">Note 1: The channel for interference cells and serving
+cell are independent.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="summary-of-simulation-cases">5.3.1.4 Summary of simulation
+cases</h4>
+<p>Simulation results with assumptions listed in Table 5.3.1.2-1 and
+Table 5.3.1.3-1 for following cases listed in Table 5.3.1.4-1 are
+captured in clause 5.3.2.</p>
+<p>Table 5.3.1.4-1: Summary of simulation cases</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="8">Scenario 1</th>
+<th>Reference scheme</th>
+<th>Rel-15 serving cell CRS-RM without interference cell CRS
+handling</th>
+</tr>
+<tr>
+<th>Scheme #1</th>
+<th>Rel-16 CRS-RM for 1 interference cell (The rate matched CRS is
+always the first dominant interference)</th>
+</tr>
+<tr>
+<th>Scheme #2 (Optional)</th>
+<th>Rel-16 CRS-RM for 1 interference cell (The rate matched CRS is NOT
+always the first dominant interference. i.e. 50% probability for rate
+matching (RM) for the first dominant interference and 50% probability
+for RM for the second dominant interference)</th>
+</tr>
+<tr>
+<th>Scheme #3</th>
+<th>Rel-15 RB symbol level CRS-RM for 2 interference cells</th>
+</tr>
+<tr>
+<th>Scheme #4</th>
+<th>CRS-IC with network assistance</th>
+</tr>
+<tr>
+<th>Scheme #5</th>
+<th>CRS-IC without network assistance</th>
+</tr>
+<tr>
+<th>Scheme #6</th>
+<th>LLR weighting with network assistance</th>
+</tr>
+<tr>
+<th>Scheme #7</th>
+<th>LLR weighting without network assistance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="8">Scenario 2</td>
+<td>Reference scheme</td>
+<td>Without interference cell CRS handling</td>
+</tr>
+<tr>
+<td>Scheme #1</td>
+<td>Rel-15 CRS-RM for 1 interference cell (The rate matched CRS is
+always the first dominant interference)</td>
+</tr>
+<tr>
+<td>Scheme #2 (Optional)</td>
+<td>Rel-15 CRS-RM for 1 interference cell (The rate matched CRS is NOT
+always the first dominant interference. i.e. 50% probability for RM for
+the first dominant cell and 50% probability for RM for the second
+dominant interference)</td>
+</tr>
+<tr>
+<td>Scheme #3</td>
+<td>Rel-16 CRS-RM for 2 interference cells</td>
+</tr>
+<tr>
+<td>Scheme #4</td>
+<td>CRS-IC with network assistance</td>
+</tr>
+<tr>
+<td>Scheme #5</td>
+<td>CRS-IC without network assistance</td>
+</tr>
+<tr>
+<td>Scheme #6</td>
+<td>LLR weighting with network assistance</td>
+</tr>
+<tr>
+<td>Scheme #7</td>
+<td>LLR weighting without network assistance</td>
+</tr>
+</tbody>
+</table>
+<h3 id="link-level-simulation-results-1">5.3.2 Link level simulation
+results</h3>
+<h4 id="general-3">5.3.2.1 General</h4>
+<p>In this clause link level simulation results from different companies
+are collected for analysis on UE CRS interference handling for NR UE in
+scenario with overlapping spectrum for LTE and NR. The link level
+analysis of NR UE PDSCH performance is performed under assumptions from
+clause 5.3.1 and presented in clause 5.3.2.1 and 5.3.2.2. Also, this
+clause contains the analysis from different companies with impact of
+considered CRS interference handling schemes on LTE UE performance which
+is presented in clause 5.3.2.3.</p>
+<p>The details of NR UE PDSCH performance analysis are presented in the
+attached file ‘Attachment 2 - R4-2112151_Simulation result collection
+for CRS interference handling’.</p>
+<h4 id="nr-ue-pdsch-performance-for-scenario-1">5.3.2.2 NR UE PDSCH
+performance for Scenario 1</h4>
+<p>This clause contains the summary of simulation results of link level
+analysis of NR UE performance for Scenario 1.</p>
+<p>Table 5.3.2.1-1 provides the summary of average simulation results
+from different companies with information about SNR points corresponding
+to 70% of maximum achievable throughput of Reference scheme. Table
+5.3.2.1-2 provides the information about SNR performance difference of
+different schemes in comparison to Reference scheme for average
+simulation results.</p>
+<p>Table 5.3.2.1-1: Average SNR simulation results for Scenario 1</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 16%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr>
+<th>MIMO</th>
+<th>MCS index</th>
+<th>Ref scheme</th>
+<th>Scheme #1</th>
+<th>Scheme #2</th>
+<th>Scheme #3</th>
+<th>Scheme #4</th>
+<th>Scheme #5</th>
+<th>Scheme #6</th>
+<th>Scheme #7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">4Tx 2Rx Low</td>
+<td>QPSK MCS4</td>
+<td>3.3</td>
+<td>1.6</td>
+<td>3.3</td>
+<td>1.7</td>
+<td>-0.1</td>
+<td>0.2</td>
+<td>0.6</td>
+<td>-0.4</td>
+</tr>
+<tr>
+<td>16QAM MCS13</td>
+<td>11.2</td>
+<td>9.9</td>
+<td>11.7</td>
+<td>11.2</td>
+<td>7.8</td>
+<td>7.7</td>
+<td>8.9</td>
+<td>8.3</td>
+</tr>
+<tr>
+<td rowspan="2">4Tx 4Rx Low</td>
+<td>QPSK MCS4</td>
+<td>-0.2</td>
+<td>-2.0</td>
+<td>-0.5</td>
+<td>-2.1</td>
+<td>-3.4</td>
+<td>-3.4</td>
+<td>-2.5</td>
+<td>-3.9</td>
+</tr>
+<tr>
+<td>16QAM MCS13</td>
+<td>7.4</td>
+<td>5.9</td>
+<td>7.6</td>
+<td>7.0</td>
+<td>3.8</td>
+<td>3.7</td>
+<td>5.4</td>
+<td>4.4</td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.3.2.1-2: SNR performance difference for Scenario 1</p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 17%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th>MIMO</th>
+<th>MCS index</th>
+<th>Scheme #1</th>
+<th>Scheme #2</th>
+<th>Scheme #3</th>
+<th>Scheme #4</th>
+<th>Scheme #5</th>
+<th>Scheme #6</th>
+<th>Scheme #7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">4Tx 2Rx Low</td>
+<td>QPSK MCS4</td>
+<td>1.7</td>
+<td>0.0</td>
+<td>1.6</td>
+<td>3.3</td>
+<td>3.1</td>
+<td>2.7</td>
+<td>3.7</td>
+</tr>
+<tr>
+<td>16QAM MCS13</td>
+<td>1.3</td>
+<td>-0.5</td>
+<td>0.0</td>
+<td>3.4</td>
+<td>3.4</td>
+<td>2.3</td>
+<td>2.9</td>
+</tr>
+<tr>
+<td rowspan="2">4Tx 4Rx Low</td>
+<td>QPSK MCS4</td>
+<td>1.8</td>
+<td>0.2</td>
+<td>1.9</td>
+<td>3.2</td>
+<td>3.2</td>
+<td>2.2</td>
+<td>3.7</td>
+</tr>
+<tr>
+<td>16QAM MCS13</td>
+<td>1.5</td>
+<td>-0.2</td>
+<td>0.5</td>
+<td>3.6</td>
+<td>3.7</td>
+<td>2.1</td>
+<td>3.0</td>
+</tr>
+</tbody>
+</table>
+<h4 id="nr-ue-pdsch-performance-for-scenario-2">5.3.2.3 NR UE PDSCH
+performance for Scenario 2</h4>
+<p>This clause contains the summary of simulation results of link level
+analysis of NR UE performance for Scenario 2.</p>
+<p>Table 5.3.2.2-1 provides the summary of simulation results from
+different companies and average results with information about SNR
+points corresponding to 70% of maximum achievable throughput of
+Reference scheme. Table 5.3.2.2-2 provides the information about SNR
+performance difference of different schemes in comparison to Baseline
+scheme for average simulation results.</p>
+<p>Table 5.3.2.2-1: Average SNR simulation results for Scenario 2</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 20%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>MIMO</th>
+<th>MCS index</th>
+<th>Ref scheme</th>
+<th>Scheme #4</th>
+<th>Scheme #5</th>
+<th>Scheme #6</th>
+<th>Scheme #7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">4Tx 2Rx Low</td>
+<td>QPSK MCS4</td>
+<td>2.0</td>
+<td>-0.6</td>
+<td>-0.5</td>
+<td>-0.1</td>
+<td>-0.9</td>
+</tr>
+<tr>
+<td>16QAM MCS13</td>
+<td>9.9</td>
+<td>7.4</td>
+<td>7.6</td>
+<td>8.1</td>
+<td>7.8</td>
+</tr>
+<tr>
+<td rowspan="2">4Tx 4Rx Low</td>
+<td>QPSK MCS4</td>
+<td>-1.7</td>
+<td>-4.0</td>
+<td>-4.1</td>
+<td>-3.3</td>
+<td>-3.6</td>
+</tr>
+<tr>
+<td>16QAM MCS13</td>
+<td>6.1</td>
+<td>3.6</td>
+<td>3.6</td>
+<td>4.7</td>
+<td>4.8</td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.3.2.2-2: SNR performance difference for Scenario 2</p>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 25%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>MIMO</th>
+<th>MCS index</th>
+<th>Scheme #4</th>
+<th>Scheme #5</th>
+<th>Scheme #6</th>
+<th>Scheme #7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">4Tx 2Rx Low</td>
+<td>QPSK MCS4</td>
+<td>2.6</td>
+<td>2.5</td>
+<td>2.2</td>
+<td>2.9</td>
+</tr>
+<tr>
+<td>16QAM MCS13</td>
+<td>2.5</td>
+<td>2.3</td>
+<td>1.8</td>
+<td>2.1</td>
+</tr>
+<tr>
+<td rowspan="2">4Tx 4Rx Low</td>
+<td>QPSK MCS4</td>
+<td>2.3</td>
+<td>2.4</td>
+<td>1.6</td>
+<td>1.9</td>
+</tr>
+<tr>
+<td>16QAM MCS13</td>
+<td>2.5</td>
+<td>2.6</td>
+<td>1.4</td>
+<td>1.3</td>
+</tr>
+</tbody>
+</table>
+<p>For Scenario 2, SNR results and SNR performance difference in
+comparison to Reference Scheme is not provided for Schemes #1,2 and 3,
+because per slot TBS values and, as a result, maximum achievable
+throughput values are different for these schemes.</p>
+<p>Table 5.3.2.2-3 provides the information about TBS values for
+different schemes and different MCSs.</p>
+<p>Table 5.3.2.2-3: TBS values for Scenario 2</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">MCS index</th>
+<th rowspan="2">Reference Scheme,<br />
+Scheme #4, 5, 6, 7</th>
+<th colspan="2">Scheme #1, 2, 3</th>
+</tr>
+<tr>
+<th>PDSCH 9 symb</th>
+<th>PDSCH 11 symb</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QPSK MCS4</td>
+<td>4096</td>
+<td>2472</td>
+<td>3240</td>
+</tr>
+<tr>
+<td>16QAM MCS13</td>
+<td>13064</td>
+<td>7680</td>
+<td>10248</td>
+</tr>
+</tbody>
+</table>
+<h4 id="lte-ue-performance">5.3.2.4 LTE UE performance</h4>
+<p>This clause provides the observations and analysis from different
+companies with performance impact of CRS-RM schemes on LTE UE
+performance:</p>
+<blockquote>
+<p>• Due to RM applied in interference cells, the CRS REs and data REs
+under LTE cells will observe different interference level with SINR
+offset.</p>
+<p>- From companies’ analysis:</p>
+<p>∘ Based on the INR levels used for RAN4 link-level simulation, for UE
+at 5% geometry, the delta of SINR observed at CRS RE and data RE is 5.86
+dB and 11.75 dB for one dominant interference cell CRS-RM and two
+interference cell CRS-RM respectively.</p>
+<p>- From one company result:</p>
+<p>∘ Based on the system level simulation for ISD of 1000m from one
+company in R4-2115629, the average delta of SINR observed at CRS RE and
+data RE is ~2.5 dB to ~4.5 dB for one dominant interference cell CRS-RM
+and two interference cell CRS-RM respectively.</p>
+<p>• The interference mismatch among CRS REs and data REs may bring
+impact on LTE cells considering the following aspects:</p>
+<p>- LTE CQI/RI/PMI is computed based on CRS for TM 1-8 and certain
+configuration of TM9 (when the parameter pmi-RI-Report is not configured
+by higher layers for TM9).</p>
+<p>- CRS is used for LTE PDSCH demodulation processing for TMs 1-6.</p>
+<p>- LTE RSSI is measured only from OFDM symbols containing CRS port 0
+of measurement subframes unless indicated otherwise by higher layers,
+and it can be measured from all OFDM symbols of the DL part of
+measurement/indicated subframes if indicated by higher layers. LTE RSRQ
+is calculated based on RSRP and RSSI.</p>
+</blockquote>
+<p>The following NW implementation solutions were provided by one
+company to address above LTE cell impact and the feasibility of such
+solutions from network implementation perspective needs further
+discussion:</p>
+<blockquote>
+<p>• Transmit signal energy in rate-matched REs on top of rate matching.
+This signal energy could be NZP CSI-RS, random data, copy of PDSCH data
+or some other signal.</p>
+</blockquote>
+<h3 id="summary-of-link-level-evaluation-1">5.3.3 Summary of link level
+evaluation</h3>
+<p>According to the PDSCH link-level simulation results for 15 kHz SCS
+and synchronous network in clause 5.3.2, RAN4 initial observations are
+as follows:</p>
+<blockquote>
+<p>• CRS-IC with the assumption of NW signaling can achieve better
+performance compared to RM scheme 1.</p>
+<p>• CRS-IC without NW assistant signaling achieve similar or lower
+performance compared to CRS-IC schemes with the assumption of NW
+signalling.</p>
+<p>• LLR weighting with the assumption of NW signaling can achieve
+better or similar performance compared to RM scheme 1.</p>
+<p>• LLR weighting without NW assistant signaling achieve similar or
+lower performance compared to LLR weighting with the assumption of NW
+signalling.</p>
+<p>• Note: RM scheme 1 is under the assumption that RM always applied
+for the strongest interference cell.</p>
+</blockquote>
+<p>In addition, due to RM applied in interference cells, the CRS REs and
+data REs under LTE cells will observe different interference level with
+SINR offset. The interference mismatch among CRS REs and data REs may
+bring impact on LTE cells considering the LTE CQI/RI/PMI reporting,
+PDSCH demodulation and RSSI/RSRQ measurement. NW implementation
+solutions were provided by one company to address LTE cell impact and
+the feasibility of such solutions from network implementation
+perspective needs further discussion.</p>
+<h1 id="conclusions">6 Conclusions</h1>
+<h2
+id="conclusion-on-inter-user-interference-suppression-for-mu-mimo-scenario">6.1
+Conclusion on inter-user interference suppression for MU-MIMO
+scenario</h2>
+<p>This technical report has documented the RAN4 evaluation on
+techniques to cope with downlink intra-cell inter-user interference. The
+major work includes the determination of network scenario, interference
+modelling, interference suppressing receiver structure, link-level
+simulation parameters and performance evaluations.</p>
+<p>MU-MIMO scenario with gNB transmits PDSCH to the paired UEs through
+the same time-frequency resources is evaluated.</p>
+<p>gNBs equipped with 2Tx and 4Tx antennas are considered in the RAN4
+performance evaluation. However, for the UEs capable of inter-user
+interference suppression ability discussed in this TR, they can also be
+used in the deployments with larger number of Tx ports configuration. 2
+paired UEs are considered, and both rank 1 and rank 2 for the target UE
+and co-scheduled UE are covered in the evaluation.</p>
+<p>Random precoder selection is applied for the target UE, and both
+orthogonal and random co-scheduled UE precoder selection methods are
+considered.</p>
+<p>Under the scenario that rank 1 transmission is scheduled to the
+target and the co-scheduled UEs, both same and different CDM group
+configuration for the target and the co-scheduled UEs’ DMRS are
+considered.</p>
+<p>Both TDLA30-10 and TDLC300-100 channel models with ULA Low antenna
+correlation is considered as the propagation condition.</p>
+<p>MMSE-IRC receiver without network assistance signalling is considered
+as the reference receiver structure. DMRS based interference covariance
+estimation is assumed.</p>
+<p>For UE PDSCH parameters, 10 MHz CBW with 15kHz for FDD is included in
+the evaluation.</p>
+<p>Under the scenario that rank 1 transmission is scheduled to the
+target UE, both MCS 4 and MCS 13 transmission is considered. Under the
+scenario that rank 2 transmission is scheduled to the target UE, both
+MCS 13 and MCS 19 transmission is considered.</p>
+<p>PDSCH link-level simulations are performed to evaluate the
+performance gain of MMSE-IRC processing over the baseline MMSE-MRC
+processing under intra-cell inter-user interference scenario. 48
+simulation cases with different antenna and rank configurations for
+target and interference UEs, different antenna correlation, different
+duplex modes and CBW configurations are included. The simulation results
+can be summarized as follows:</p>
+<blockquote>
+<p><em>•</em> It is observed that MMSE-IRC receiver achieves performance
+gain over the baseline MMSE-MRC receiver, in the simulation with rank
+1+1, 2T2R MIMO configuration.</p>
+<p><em>•</em> Except for the case with MCS 4 and DMRS with same CDM
+group, it is observed that MMSE-IRC receiver achieves performance gain
+over the baseline MMSE-MRC receiver, in the simulation with rank 1+1,
+2T4R MIMO configuration.</p>
+<p><em>•</em> It is observed that MMSE-IRC receiver achieves performance
+gain over the baseline MMSE-MRC receiver, in the simulation with rank
+2+1 and rank 2+2, under 4T4R MIMO configuration.</p>
+<p><em>•</em> For all test cases with rank 1+1, the average performance
+gain with the assumption of DMRS with different CDM group is similar
+with the average performance gain with the assumption of DMRS with same
+CDM group.</p>
+</blockquote>
+<p>Based on the above evaluations, it is recommended to define NR PDSCH
+demodulation requirements for inter-user interference suppression
+receiver for MU-MIMO scenario in Rel-17.</p>
+<h2
+id="conclusion-on-crs-interference-handling-in-scenarios-with-overlapping-spectrum-for-lte-and-nr">6.2
+Conclusion on CRS interference handling in scenarios with overlapping
+spectrum for LTE and NR</h2>
+<p>This technical report has documented the RAN4 evaluation on
+techniques to cope with CRS interference in scenarios with overlapping
+spectrum for LTE and NR. The major work includes the determination of
+typical network scenarios, interference models and interference
+profiles, definition of reference receiver structures, and link-level
+performance evaluations.</p>
+<p>Two typical network scenarios, including scenario 1 with LTE/NR DSS
+and scenario 2 with NR/LTE deployed in neighbouring BSs/areas, are
+covered. 15 kHz SCS and synchronous network are assumed in the phase I
+evaluation.</p>
+<p>The inter-cell interference modelling methodology and interference
+profiles from LTE CRS-IM receiver in homogenous deployments are reused.
+INR-<em>i</em> (signal level of the <em>i</em>-th dominant interference
+over N<sub>oc</sub>) is used as the interference power measure, and two
+dominant interferers are explicitly modelled in the simulation.</p>
+<p>The MMSE-IRC receiver is used to suppress the inter-cell interference
+for the reference scheme without interference cell CRS handling and the
+CRS-RM schemes. Three different CRS-RM schemes, including CRS-RM for 1
+interference cell always with the strongest interference, CRS-RM for 1
+interference cell not always with the strongest interference (optional),
+and CRS-RM for 2 strongest interference cells, are evaluated.</p>
+<p>For CRS-IM schemes, interference cell CRS-IM is used together with
+MMSE-IRC receiver, and CRS-IC and LLR weighting are considered as two
+different implementations of CRS-IM.</p>
+<p>PDSCH link-level simulations are performed to evaluate the
+performance gain of CRS-RM and CRS-IM schemes over the reference scheme
+without interference cell CRS handling. 8 simulation cases with
+different network scenarios, Rx antenna numbers and MCS levels are
+included, and 7 CRS interference handling schemes in addition to the
+reference scheme are evaluated for each simulation case. RAN4 initial
+observations from link-level evaluation results for 15 kHz SCS and
+synchronous network:</p>
+<blockquote>
+<p>• CRS-IC with the assumption of NW signaling can achieve better
+performance compared to RM scheme 1.</p>
+<p>• CRS-IC without NW assistant signaling achieve similar or lower
+performance compared to CRS-IC schemes with the assumption of NW
+signalling.</p>
+<p>• LLR weighting with the assumption of NW signaling can achieve
+better or similar performance compared to RM scheme 1.</p>
+<p>• LLR weighting without NW assistant signaling achieve similar or
+lower performance compared to LLR weighting with the assumption of NW
+signalling.</p>
+<p>• Note: RM scheme 1 is under the assumption that RM always applied
+for the strongest interference cell.</p>
+</blockquote>
+<p>In addition, due to RM applied in interference cells, the CRS REs and
+data REs under LTE cells will observe different interference level with
+SINR offset. The interference mismatch among CRS REs and data REs may
+bring impact on LTE cells considering the LTE CQI/RI/PMI reporting,
+PDSCH demodulation and RSSI/RSRQ measurement. NW implementation
+solutions were provided by one company to address LTE cell impact and
+the feasibility of such solutions from network implementation
+perspective needs further discussion.</p>
+<p>Based on these evaluations, it is recommended to define NR PDSCH
+demodulation requirements for neighbouring cell LTE CRS-IM in scenarios
+with overlapping spectrum for LTE and NR in Rel-17:</p>
+<blockquote>
+<p>• Use LLR weighting as baseline reference receiver, and further
+discuss the feasibility of CRS-IC receiver taking into account the UE
+complexity and PDSCH processing time.</p>
+<p>• Synchronous network scenario is prioritized. The asynchronous
+network scenario will be discussed after RAN #93e meeting.</p>
+<p>• 15 kHz SCS for NR is prioritized. The 30 kHz SCS scenario will be
+discussed after RAN #93e meeting.</p>
+<p>• RAN4 will further discuss the necessity of network assistance
+signaling and UE capability signaling during requirements definition
+phase.</p>
+</blockquote>
+<p class="heading" id="annex-a-change-history"><br />
+Annex A:<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 45%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>TSG #</strong></td>
+<td style="text-align: center;"><strong>TSG Doc.</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>Old</strong></td>
+<td style="text-align: center;"><strong>New</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-04</td>
+<td style="text-align: center;">RAN4 #98e-bis</td>
+<td style="text-align: center;">R4-2104952</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">TR skeleton</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RAN4 #100-e</td>
+<td style="text-align: center;">R4-2112224</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><p>Implemented the following TPs approved
+at RAN4 #100-e:</p>
+<p>R4-2115739, TP to TR 38.833 Scenario for LTE CRS interference
+handling for NR UE, MediaTek</p>
+<p>R4-2115742, TP to TR 38.833: Interference Modeling for LTE CRS-IM,
+Qualcomm</p>
+<p>R4-2115737, TP to TR 38.833: Receiver structure for CRS-IM
+performance, Ericsson</p>
+<p>R4-2115738, TP: Introduction of simulation assumptions for CRS-IM
+receiver, Huawei, HiSilicon</p>
+<p>R4-2115736, TP to TR 38.833: Link level simulation results for LTE
+CRS interference handling for NR UE, Intel Corporation</p>
+<p>R4-2115735, TP to TR 38.833: Summary of link level evaluation and
+conclusion for CRS-IM, China Telecom</p>
+<p>Editorial modifications</p></td>
+<td style="text-align: center;">0.0.1</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-11</td>
+<td style="text-align: center;">RAN4 #101-e</td>
+<td style="text-align: center;">R4-2117189</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><p>Implemented the following TPs approved
+at RAN4 #101-e:</p>
+<p>R4-2120710, TP to TR 38.833: Interference Modeling for intra-cell
+inter-user interference, Apple</p>
+<p>R4-2120711, TP to TR 38.833: Summary of link level evaluation for
+inter-user interference suppression for MU-MIMO, CMCC</p>
+<p>R4-2120712, TP to TR 38.833: Link level simulation results for
+inter-user interference suppression for MU-MIMO, Intel Corporation</p>
+<p>R4-2120713, draftTP to TR38.833: receiver structure for intra-cell
+inter-user IRC, Ericsson</p>
+<p>R4-2120714, TP to TR 38.833: Conclusion for phase I evaluation on
+inter-user interference suppression for MU-MIMO scenario, China
+Telecom</p>
+<p>R4-2120715, TP: Introduction of simulation assumptions for intra cell
+inter user MMSE-IRC receiver, Huawei, HiSilicon</p>
+<p>R4-2120716, TP to TR 38.833 Scenario for inter-user interference
+suppression for MU-MIMO, MediaTek inc.</p></td>
+<td style="text-align: center;">0.1.0</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN #94-e</td>
+<td style="text-align: center;">RP-212947</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Presented at RAN#94e for
+information.</td>
+<td style="text-align: center;">0.2.0</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN #94-e</td>
+<td style="text-align: center;">RP-213465</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Editorial corrections</td>
+<td style="text-align: center;">1.0.0</td>
+<td style="text-align: center;">1.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-01</td>
+<td style="text-align: center;">RAN4 #101-e-bis</td>
+<td style="text-align: center;">R4-2200017</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>Implemented the following TPs
+approved at RAN4 #101-e-bis:</p>
+<p>R4-2200018, TP to TR 38.833: Symbols and abbreviations, China
+Telecom</p>
+<p>R4-2203007, TP to TR 38.833: Link level simulation results for
+Inter-user interference suppression for MU-MIMO, Intel Corporation</p>
+<p>R4-2200807, TP to TR 38.833: Summary of link level evaluation for
+inter-user interference suppression for MU-MIMO, CMCC</p>
+<p>R4-2200904, TP to TR 38.833: Updated conclusion for phase I
+evaluation on inter-user interference suppression for MU-MIMO scenario,
+China Telecom</p>
+<p>R4-2200989, TP to TR 38.833: Introduction of simulation assumptions
+of intra cell inter user MMSE-IRC receiver, Huawei, HiSilicon</p>
+<p>R4-2200380, TP to TR 38.833: Scenario for inter-user interference
+suppression for MU-MIMO, MediaTek inc.</p>
+<p>Editorial modifications</p></td>
+<td style="text-align: center;">1.0.1</td>
+<td style="text-align: center;">1.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN4 #102-e</td>
+<td style="text-align: center;">R4-2207241</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><p>Implemented the following TPs approved
+at RAN4 #102-e:</p>
+<p>R4-2203768, TP to TR 38.833: MU-MIMO-Receiver structure, Apple</p>
+<p>R4-2207249, TP to TR 38.833: Link level simulation results for
+Inter-user interference suppression for MU-MIMO, Intel
+Corporation</p></td>
+<td style="text-align: center;">1.1.0</td>
+<td style="text-align: center;">1.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN #95-e</td>
+<td style="text-align: center;">RP-220179</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Presented at RAN#95e for approval.</td>
+<td style="text-align: center;">1.2.0</td>
+<td style="text-align: center;">2.0.0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8" style="text-align: center;"><strong>Change
+history</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date</strong></td>
+<td><strong>Meeting</strong></td>
+<td><strong>TDoc</strong></td>
+<td><strong>CR</strong></td>
+<td><strong>Rev</strong></td>
+<td><strong>Cat</strong></td>
+<td><strong>Subject/Comment</strong></td>
+<td><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td>Approved by plenary – Rel-17 spec under change control</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

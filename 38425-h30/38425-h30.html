@@ -1,0 +1,2534 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38425-h30</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword">Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-and-abbreviations"
+id="toc-definitions-and-abbreviations">3 Definitions and
+abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.2
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#general" id="toc-general">4 General</a>
+<ul>
+<li><a href="#general-aspects" id="toc-general-aspects">4.1 General
+aspects</a></li>
+</ul></li>
+<li><a href="#nr-user-plane-protocol" id="toc-nr-user-plane-protocol">5
+NR user plane protocol</a>
+<ul>
+<li><a href="#general-1" id="toc-general-1">5.1 General</a></li>
+<li><a href="#nr-user-plane-protocol-layer-services"
+id="toc-nr-user-plane-protocol-layer-services">5.2 NR user plane
+protocol layer services</a></li>
+<li><a href="#services-expected-from-the-transport-network-layer"
+id="toc-services-expected-from-the-transport-network-layer">5.3 Services
+expected from the Transport Network Layer</a></li>
+<li><a href="#elementary-procedures"
+id="toc-elementary-procedures"><br />
+5.4 Elementary procedures</a>
+<ul>
+<li><a href="#transfer-of-downlink-user-data"
+id="toc-transfer-of-downlink-user-data">5.4.1 Transfer of Downlink User
+Data</a>
+<ul>
+<li><a href="#successful-operation"
+id="toc-successful-operation">5.4.1.1 Successful operation</a></li>
+<li><a href="#unsuccessful-operation"
+id="toc-unsuccessful-operation">5.4.1.2 Unsuccessful operation</a></li>
+</ul></li>
+<li><a href="#downlink-data-delivery-status"
+id="toc-downlink-data-delivery-status">5.4.2 Downlink Data Delivery
+Status</a>
+<ul>
+<li><a href="#successful-operation-1"
+id="toc-successful-operation-1">5.4.2.1 Successful operation</a></li>
+<li><a href="#unsuccessful-operation-1"
+id="toc-unsuccessful-operation-1">5.4.2.2 Unsuccessful
+operation</a></li>
+</ul></li>
+<li><a href="#transfer-of-assistance-information"
+id="toc-transfer-of-assistance-information">5.4.3 Transfer of Assistance
+Information</a>
+<ul>
+<li><a href="#successful-operation-2"
+id="toc-successful-operation-2">5.4.3.1 Successful operation</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#elements-for-the-nr-user-plane-protocol"
+id="toc-elements-for-the-nr-user-plane-protocol">5.5 Elements for the NR
+user plane protocol</a>
+<ul>
+<li><a href="#general-2" id="toc-general-2">5.5.1 General</a></li>
+<li><a href="#frame-format-for-the-nr-user-plane-protocol"
+id="toc-frame-format-for-the-nr-user-plane-protocol">5.5.2 Frame format
+for the NR user plane protocol</a>
+<ul>
+<li><a href="#dl-user-data-pdu-type-0"
+id="toc-dl-user-data-pdu-type-0">5.5.2.1 DL USER DATA (PDU Type
+0)</a></li>
+<li><a href="#dl-data-delivery-status-pdu-type-1"
+id="toc-dl-data-delivery-status-pdu-type-1">5.5.2.2 DL DATA DELIVERY
+STATUS (PDU Type 1)</a></li>
+<li><a href="#assistance-information-data-pdu-type-2"
+id="toc-assistance-information-data-pdu-type-2">5.5.2.3 ASSISTANCE
+INFORMATION DATA (PDU Type 2)</a></li>
+</ul></li>
+<li><a href="#coding-of-information-elements-in-frames"
+id="toc-coding-of-information-elements-in-frames">5.5.3 Coding of
+information elements in frames</a>
+<ul>
+<li><a href="#pdu-type" id="toc-pdu-type">5.5.3.1 PDU Type</a></li>
+<li><a href="#spare" id="toc-spare">5.5.3.2 Spare</a></li>
+<li><a href="#report-polling" id="toc-report-polling">5.5.3.3 Report
+polling</a></li>
+<li><a href="#nr-u-sequence-number"
+id="toc-nr-u-sequence-number">5.5.3.4 NR-U Sequence Number</a></li>
+<li><a href="#desired-buffer-size-for-the-data-radio-bearer"
+id="toc-desired-buffer-size-for-the-data-radio-bearer">5.5.3.5 Desired
+buffer size for the data radio bearer</a></li>
+<li><a href="#desired-data-rate" id="toc-desired-data-rate">5.5.3.6
+Desired Data Rate</a></li>
+<li><a href="#dl-flush" id="toc-dl-flush">5.5.3.7 DL Flush</a></li>
+<li><a href="#dl-discard-nr-pdcp-pdu-sn"
+id="toc-dl-discard-nr-pdcp-pdu-sn">5.5.3.8 DL discard NR PDCP PDU
+SN</a></li>
+<li><a href="#dl-discard-blocks" id="toc-dl-discard-blocks">5.5.3.9 DL
+Discard Blocks</a></li>
+<li><a href="#dl-discard-nr-pdcp-pdu-sn-start"
+id="toc-dl-discard-nr-pdcp-pdu-sn-start">5.5.3.10 DL discard NR PDCP PDU
+SN start</a></li>
+<li><a href="#dl-discard-number-of-blocks"
+id="toc-dl-discard-number-of-blocks">5.5.3.11 DL discard Number of
+blocks</a></li>
+<li><a href="#discarded-block-size"
+id="toc-discarded-block-size">5.5.3.12 Discarded Block size</a></li>
+<li><a href="#lost-packet-report" id="toc-lost-packet-report">5.5.3.13
+Lost Packet Report</a></li>
+<li><a href="#final-frame-indication"
+id="toc-final-frame-indication">5.5.3.14 Final Frame Indication</a></li>
+<li><a href="#number-of-lost-nr-u-sequence-number-ranges-reported"
+id="toc-number-of-lost-nr-u-sequence-number-ranges-reported">5.5.3.15
+Number of lost NR-U Sequence Number ranges reported</a></li>
+<li><a href="#start-of-lost-nr-u-sequence-number-range"
+id="toc-start-of-lost-nr-u-sequence-number-range">5.5.3.16 Start of lost
+NR-U Sequence Number range</a></li>
+<li><a href="#end-of-lost-nr-u-sequence-number-range"
+id="toc-end-of-lost-nr-u-sequence-number-range">5.5.3.17 End of lost
+NR-U Sequence Number range</a></li>
+<li><a href="#highest-delivered-nr-pdcp-sn-ind"
+id="toc-highest-delivered-nr-pdcp-sn-ind">5.5.3.18 Highest Delivered NR
+PDCP SN Ind</a></li>
+<li><a href="#highest-successfully-delivered-nr-pdcp-sequence-number"
+id="toc-highest-successfully-delivered-nr-pdcp-sequence-number">5.5.3.19
+Highest successfully delivered NR PDCP Sequence Number</a></li>
+<li><a href="#highest-transmitted-nr-pdcp-sn-ind"
+id="toc-highest-transmitted-nr-pdcp-sn-ind">5.5.3.20 Highest Transmitted
+NR PDCP SN Ind</a></li>
+<li><a href="#highest-transmitted-nr-pdcp-sequence-number"
+id="toc-highest-transmitted-nr-pdcp-sequence-number">5.5.3.21 Highest
+transmitted NR PDCP Sequence Number</a></li>
+<li><a href="#cause-report" id="toc-cause-report">5.5.3.22 Cause
+Report</a></li>
+<li><a href="#cause-value" id="toc-cause-value">5.5.3.23 Cause
+Value</a></li>
+<li><a href="#padding" id="toc-padding">5.5.3.24 Padding</a></li>
+<li><a href="#void" id="toc-void">5.5.3.28 Void</a></li>
+<li><a href="#retransmission-flag" id="toc-retransmission-flag">5.5.3.29
+Retransmission flag</a></li>
+<li><a href="#delivered-retransmitted-nr-pdcp-sn-ind"
+id="toc-delivered-retransmitted-nr-pdcp-sn-ind">5.5.3.30 Delivered
+Retransmitted NR PDCP SN Ind </a></li>
+<li><a href="#retransmitted-nr-pdcp-sn-ind"
+id="toc-retransmitted-nr-pdcp-sn-ind">5.5.3.31 Retransmitted NR PDCP SN
+Ind </a></li>
+<li><a
+href="#successfully-delivered-retransmitted-nr-pdcp-sequence-number"
+id="toc-successfully-delivered-retransmitted-nr-pdcp-sequence-number">5.5.3.32
+Successfully delivered retransmitted NR PDCP Sequence Number</a></li>
+<li><a href="#retransmitted-nr-pdcp-sequence-number"
+id="toc-retransmitted-nr-pdcp-sequence-number">5.5.3.33 Retransmitted NR
+PDCP Sequence Number </a></li>
+<li><a href="#data-rate-indication"
+id="toc-data-rate-indication">5.5.3.34 Data Rate Indication</a></li>
+<li><a href="#pdcp-duplication-indication"
+id="toc-pdcp-duplication-indication">5.5.3.35 PDCP Duplication
+Indication </a></li>
+<li><a href="#pdcp-duplication-activation-suggestion"
+id="toc-pdcp-duplication-activation-suggestion">5.5.3.36 PDCP
+Duplication Activation Suggestion </a></li>
+<li><a href="#number-of-assistance-information-field"
+id="toc-number-of-assistance-information-field">5.5.3.37 Number of
+Assistance Information Field</a></li>
+<li><a href="#assistance-information-type"
+id="toc-assistance-information-type">5.5.3.38 Assistance Information
+Type</a></li>
+<li><a href="#radio-quality-assistance-information"
+id="toc-radio-quality-assistance-information">5.5.3.39 Radio Quality
+Assistance Information</a></li>
+<li><a href="#assistance-information-report-polling-flag"
+id="toc-assistance-information-report-polling-flag">5.5.3.40 Assistance
+Information Report Polling Flag</a></li>
+<li><a href="#report-delivered" id="toc-report-delivered">5.5.3.41
+Report Delivered</a></li>
+<li><a href="#dl-report-nr-pdcp-pdu-sn"
+id="toc-dl-report-nr-pdcp-pdu-sn">5.5.3.42 DL report NR PDCP PDU
+SN</a></li>
+<li><a href="#user-data-existence-flag"
+id="toc-user-data-existence-flag">5.5.3.43 User data existence
+flag</a></li>
+<li><a
+href="#number-of-octets-for-radio-quality-assistance-information-field"
+id="toc-number-of-octets-for-radio-quality-assistance-information-field">5.5.3.44
+Number of octets for Radio Quality Assistance Information Field</a></li>
+<li><a href="#assistance-information-indication"
+id="toc-assistance-information-indication">5.5.3.45 Assistance
+Information Indication</a></li>
+<li><a href="#ul-delay-indicator" id="toc-ul-delay-indicator">5.5.3.46
+UL Delay Indicator</a></li>
+<li><a href="#dl-delay-indicator" id="toc-dl-delay-indicator">5.5.3.47
+DL Delay Indicator</a></li>
+<li><a href="#ul-delay-du-result" id="toc-ul-delay-du-result">5.5.3.48
+UL Delay DU Result</a></li>
+<li><a href="#dl-delay-du-result" id="toc-dl-delay-du-result">5.5.3.49
+DL Delay DU Result</a></li>
+<li><a href="#delivered-nr-pdcp-sn-range-ind"
+id="toc-delivered-nr-pdcp-sn-range-ind">5.5.3.50 Delivered NR PDCP SN
+Range Ind</a></li>
+<li><a
+href="#number-of-successfully-delivered-out-of-sequence-pdcp-sequence-number-range"
+id="toc-number-of-successfully-delivered-out-of-sequence-pdcp-sequence-number-range">5.5.3.51
+Number of successfully delivered out of sequence PDCP Sequence Number
+range</a></li>
+<li><a
+href="#start-of-successfully-delivered-out-of-sequence-pdcp-sequence-number-range"
+id="toc-start-of-successfully-delivered-out-of-sequence-pdcp-sequence-number-range">5.5.3.52
+Start of successfully delivered out of sequence PDCP Sequence Number
+range</a></li>
+<li><a
+href="#end-of-successfully-delivered-out-of-sequence-pdcp-sequence-number-range"
+id="toc-end-of-successfully-delivered-out-of-sequence-pdcp-sequence-number-range">5.5.3.53
+End of successfully delivered out of sequence PDCP Sequence Number
+range</a></li>
+<li><a href="#request-outofseq-report"
+id="toc-request-outofseq-report">5.5.3.54 Request OutOfSeq
+Report</a></li>
+<li><a href="#nr-u-sn-ind." id="toc-nr-u-sn-ind.">5.5.3.55 NR-U SN
+Ind.</a></li>
+<li><a href="#feedback-delay-ind." id="toc-feedback-delay-ind.">5.5.3.56
+Feedback Delay Ind.</a></li>
+<li><a href="#nr-u-sequence-number-of-polling-frame"
+id="toc-nr-u-sequence-number-of-polling-frame">5.5.3.57 NR-U Sequence
+Number of Polling Frame</a></li>
+<li><a href="#feedback-delay-result"
+id="toc-feedback-delay-result">5.5.3.58 Feedback Delay Result</a></li>
+</ul></li>
+<li><a href="#timers" id="toc-timers">5.5.4 Timers</a></li>
+</ul></li>
+<li><a
+href="#handling-of-unknown-unforeseen-and-erroneous-protocol-data"
+id="toc-handling-of-unknown-unforeseen-and-erroneous-protocol-data">5.6
+Handling of unknown, unforeseen and erroneous protocol data</a></li>
+</ul></li>
+<li><a href="#a.1-example-of-using-future-extension-field"
+id="toc-a.1-example-of-using-future-extension-field">A.1 Example of
+using Future Extension field</a>
+<ul>
+<li><a href="#a.1.1-new-ie-flags" id="toc-a.1.1-new-ie-flags">A.1.1 New
+IE Flags</a></li>
+</ul></li>
+</ul>
+</nav>
+<p>3GPP TS 38.425 V17.3.0 (2023-03)</p>
+<p>Technical Specification</p>
+<p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NG-RAN;</p>
+<p>NR user plane protocol</p>
+<p>(Release 17)</p>
+<p><img src="media/image1.jpeg" /> <img src="media/image2.png" /></p>
+<p>The present document has been developed within the 3rd Generation
+Partnership Project (3GPP <sup>TM</sup>) and may be further elaborated
+for the purposes of 3GPP..<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</p>
+<blockquote>
+<p>Keywords</p>
+<p>NR-RAN</p>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote>
+<p><em><strong>Copyright Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2023, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references">6</a></p>
+<p>3 Definitions and abbreviations <a
+href="#definitions-and-abbreviations">6</a></p>
+<p>3.1 Definitions <a href="#definitions">6</a></p>
+<p>3.2 Abbreviations <a href="#abbreviations">7</a></p>
+<p>4 General <a href="#general">7</a></p>
+<p>4.1 General aspects <a href="#general-aspects">7</a></p>
+<p>5 NR user plane protocol <a href="#nr-user-plane-protocol">7</a></p>
+<p>5.1 General <a href="#general-1">7</a></p>
+<p>5.2 NR user plane protocol layer services <a
+href="#nr-user-plane-protocol-layer-services">7</a></p>
+<p>5.3 Services expected from the Transport Network Layer <a
+href="#services-expected-from-the-transport-network-layer">8</a></p>
+<p>5.4 Elementary procedures <a href="#elementary-procedures">9</a></p>
+<p>5.4.1 Transfer of Downlink User Data <a
+href="#transfer-of-downlink-user-data">9</a></p>
+<p>5.4.1.1 Successful operation <a
+href="#successful-operation">9</a></p>
+<p>5.4.1.2 Unsuccessful operation <a
+href="#unsuccessful-operation">10</a></p>
+<p>5.4.2 Downlink Data Delivery Status <a
+href="#downlink-data-delivery-status">10</a></p>
+<p>5.4.2.1 Successful operation <a
+href="#successful-operation-1">10</a></p>
+<p>5.4.2.2 Unsuccessful operation <a
+href="#unsuccessful-operation-1">12</a></p>
+<p>5.4.3 Transfer of Assistance Information <a
+href="#transfer-of-assistance-information">12</a></p>
+<p>5.4.3.1 Successful operation <a
+href="#successful-operation-2">12</a></p>
+<p>5.5 Elements for the NR user plane protocol <a
+href="#elements-for-the-nr-user-plane-protocol">13</a></p>
+<p>5.5.1 General <a href="#general-2">13</a></p>
+<p>5.5.2 Frame format for the NR user plane protocol <a
+href="#frame-format-for-the-nr-user-plane-protocol">14</a></p>
+<p>5.5.2.1 DL USER DATA (PDU Type 0) <a
+href="#dl-user-data-pdu-type-0">14</a></p>
+<p>5.5.2.2 DL DATA DELIVERY STATUS (PDU Type 1) <a
+href="#dl-data-delivery-status-pdu-type-1">14</a></p>
+<p>5.5.2.3 ASSISTANCE INFORMATION DATA (PDU Type 2) <a
+href="#assistance-information-data-pdu-type-2">17</a></p>
+<p>5.5.3 Coding of information elements in frames <a
+href="#coding-of-information-elements-in-frames">17</a></p>
+<p>5.5.3.1 PDU Type <a href="#pdu-type">17</a></p>
+<p>5.5.3.2 Spare <a href="#spare">18</a></p>
+<p>5.5.3.3 Report polling <a href="#report-polling">18</a></p>
+<p>5.5.3.4 NR-U Sequence Number <a
+href="#nr-u-sequence-number">18</a></p>
+<p>5.5.3.5 Desired buffer size for the data radio bearer <a
+href="#desired-buffer-size-for-the-data-radio-bearer">18</a></p>
+<p>5.5.3.6 Desired Data Rate <a href="#desired-data-rate">18</a></p>
+<p>5.5.3.7 DL Flush <a href="#dl-flush">18</a></p>
+<p>5.5.3.8 DL discard NR PDCP PDU SN <a
+href="#dl-discard-nr-pdcp-pdu-sn">19</a></p>
+<p>5.5.3.9 DL Discard Blocks <a href="#dl-discard-blocks">19</a></p>
+<p>5.5.3.10 DL discard NR PDCP PDU SN start <a
+href="#dl-discard-nr-pdcp-pdu-sn-start">19</a></p>
+<p>5.5.3.11 DL discard Number of blocks <a
+href="#dl-discard-number-of-blocks">19</a></p>
+<p>5.5.3.12 Discarded Block size <a
+href="#discarded-block-size">19</a></p>
+<p>5.5.3.13 Lost Packet Report <a href="#lost-packet-report">19</a></p>
+<p>5.5.3.14 Final Frame Indication <a
+href="#final-frame-indication">19</a></p>
+<p>5.5.3.15 Number of lost NR-U Sequence Number ranges reported <a
+href="#number-of-lost-nr-u-sequence-number-ranges-reported">20</a></p>
+<p>5.5.3.16 Start of lost NR-U Sequence Number range <a
+href="#start-of-lost-nr-u-sequence-number-range">20</a></p>
+<p>5.5.3.17 End of lost NR-U Sequence Number range <a
+href="#end-of-lost-nr-u-sequence-number-range">20</a></p>
+<p>5.5.3.18 Highest Delivered NR PDCP SN Ind <a
+href="#highest-delivered-nr-pdcp-sn-ind">20</a></p>
+<p>5.5.3.19 Highest successfully delivered NR PDCP Sequence Number <a
+href="#highest-successfully-delivered-nr-pdcp-sequence-number">20</a></p>
+<p>5.5.3.20 Highest Transmitted NR PDCP SN Ind <a
+href="#highest-transmitted-nr-pdcp-sn-ind">20</a></p>
+<p>5.5.3.21 Highest transmitted NR PDCP Sequence Number <a
+href="#highest-transmitted-nr-pdcp-sequence-number">20</a></p>
+<p>5.5.3.22 Cause Report <a href="#cause-report">21</a></p>
+<p>5.5.3.23 Cause Value <a href="#cause-value">21</a></p>
+<p>5.5.3.24 Padding <a href="#padding">21</a></p>
+<p>5.5.3.28 Void <a href="#void">21</a></p>
+<p>5.5.3.29 Retransmission flag <a
+href="#retransmission-flag">21</a></p>
+<p>5.5.3.30 Delivered Retransmitted NR PDCP SN Ind <a
+href="#delivered-retransmitted-nr-pdcp-sn-ind">21</a></p>
+<p>5.5.3.31 Retransmitted NR PDCP SN Ind <a
+href="#retransmitted-nr-pdcp-sn-ind">21</a></p>
+<p>5.5.3.32 Successfully delivered retransmitted NR PDCP Sequence Number
+<a
+href="#successfully-delivered-retransmitted-nr-pdcp-sequence-number">22</a></p>
+<p>5.5.3.33 Retransmitted NR PDCP Sequence Number <a
+href="#retransmitted-nr-pdcp-sequence-number">22</a></p>
+<p>5.5.3.34 Data Rate Indication <a
+href="#data-rate-indication">22</a></p>
+<p>5.5.3.35 PDCP Duplication Indication <a
+href="#pdcp-duplication-indication">22</a></p>
+<p>5.5.3.36 PDCP Duplication Activation Suggestion <a
+href="#pdcp-duplication-activation-suggestion">22</a></p>
+<p>5.5.3.37 Number of Assistance Information Field <a
+href="#number-of-assistance-information-field">22</a></p>
+<p>5.5.3.38 Assistance Information Type <a
+href="#assistance-information-type">22</a></p>
+<p>5.5.3.39 Radio Quality Assistance Information <a
+href="#radio-quality-assistance-information">23</a></p>
+<p>5.5.3.40 Assistance Information Report Polling Flag <a
+href="#assistance-information-report-polling-flag">23</a></p>
+<p>5.5.3.41 Report Delivered <a href="#report-delivered">23</a></p>
+<p>5.5.3.42 DL report NR PDCP PDU SN <a
+href="#dl-report-nr-pdcp-pdu-sn">23</a></p>
+<p>5.5.3.43 User data existence flag <a
+href="#user-data-existence-flag">23</a></p>
+<p>5.5.3.44 Number of octets for Radio Quality Assistance Information
+Field <a
+href="#number-of-octets-for-radio-quality-assistance-information-field">23</a></p>
+<p>5.5.3.45 Assistance Information Indication <a
+href="#assistance-information-indication">24</a></p>
+<p>5.5.3.46 UL Delay Indicator <a href="#ul-delay-indicator">24</a></p>
+<p>5.5.3.47 DL Delay Indicator <a href="#dl-delay-indicator">24</a></p>
+<p>5.5.3.48 UL Delay DU Result <a href="#ul-delay-du-result">24</a></p>
+<p>5.5.3.49 DL Delay DU Result <a href="#dl-delay-du-result">24</a></p>
+<p>5.5.3.50 Delivered NR PDCP SN Range Ind <a
+href="#delivered-nr-pdcp-sn-range-ind">24</a></p>
+<p>5.5.3.51 Number of successfully delivered out of sequence PDCP
+Sequence Number range <a
+href="#number-of-successfully-delivered-out-of-sequence-pdcp-sequence-number-range">25</a></p>
+<p>5.5.3.52 Start of successfully delivered out of sequence PDCP
+Sequence Number range <a
+href="#start-of-successfully-delivered-out-of-sequence-pdcp-sequence-number-range">25</a></p>
+<p>5.5.3.53 End of successfully delivered out of sequence PDCP Sequence
+Number range <a
+href="#end-of-successfully-delivered-out-of-sequence-pdcp-sequence-number-range">25</a></p>
+<p>5.5.3.54 Request OutOfSeq Report <a
+href="#request-outofseq-report">25</a></p>
+<p>5.5.3.55 NR-U SN Ind. <a href="#nr-u-sn-ind.">25</a></p>
+<p>5.5.3.56 Feedback Delay Ind. <a
+href="#feedback-delay-ind.">25</a></p>
+<p>5.5.3.57 NR-U Sequence Number of Polling Frame <a
+href="#nr-u-sequence-number-of-polling-frame">26</a></p>
+<p>5.5.3.58 Feedback Delay Result <a
+href="#feedback-delay-result">26</a></p>
+<p>5.5.4 Timers <a href="#timers">26</a></p>
+<p>5.6 Handling of unknown, unforeseen and erroneous protocol data <a
+href="#handling-of-unknown-unforeseen-and-erroneous-protocol-data">26</a></p>
+<p>Annex A (informative): Example of using future Extension <a
+href="#annex-a-informative-example-of-using-future-extension">27</a></p>
+<p>A.1 Example of using Future Extension field <a
+href="#a.1-example-of-using-future-extension-field">27</a></p>
+<p>A.1.1 New IE Flags <a href="#a.1.1-new-ie-flags">27</a></p>
+<p>Annex B (informative): Change history <a
+href="#annex-b-informative-change-history">28</a></p>
+<h1 id="foreword">Foreword</h1>
+<p>This Technical Specification has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document specifies the NR user plane protocol functions
+used within NG-RAN and, for EN-DC and LTE UP-CP split within E-UTRAN. NR
+user plane protocol functions may reside in nodes terminating either the
+X2-U (for EN-DC) or the Xn-U or the F1-U interface. User plane protocol
+functions support both E-UTRA PDCP and NR PDCP.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TS 29.281: "General Packet Radio System (GPRS) Tunnelling
+Protocol User Plane (GTPv1-U)".</p>
+<p>[3] 3GPP TS 37.340: "NR; Multi-connectivity; Overall description;
+Stage-2".</p>
+<p>[4] 3GPP TS 36.321: "Evolved Universal Terrestrial Radio Access
+(E-UTRA); Medium Access Control (MAC) protocol specification".</p>
+<p>[5] 3GPP TS 38.321: "NR; Medium Access Control (MAC) protocol
+specification".</p>
+<p>[6] 3GPP TS 36.322: "Evolved Universal Terrestrial Radio Access
+(E-UTRA); Radio Link Control (RLC) protocol specification".</p>
+<p>[7] 3GPP TS 38.322: "NR; Radio Link Control (RLC) protocol
+specification".</p>
+<p>[8] 3GPP TS 23.501: "System Architecture for the 5G System".</p>
+<p>[9] 3GPP TS 36.401: "Evolved Universal Terrestrial Radio Access
+Network (E-UTRAN); Architecture description".</p>
+<h1 id="definitions-and-abbreviations">3 Definitions and
+abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in 3GPP TR 21.905 [1] and the following apply. A term defined in
+the present document takes precedence over the definition of the same
+term, if any, in 3GPP TR 21.905 [1].</p>
+<p><strong>Corresponding node:</strong> a node interacting with a node
+hosting PDCP for flow control. In an IAB network, this is the IAB-DU
+serving the UE for the corresponding data radio bearer.</p>
+<p><strong>eNB-CP:</strong> as defined in TS 36.401 [9].</p>
+<p><strong>eNB-UP:</strong> as defined in TS 36.401 [9].</p>
+<p><strong>Master node:</strong> as defined in TS 37.340 [3].</p>
+<p><strong>Secondary node:</strong> as defined in TS 37.340 [3].</p>
+<h2 id="abbreviations">3.2 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>EN-DC E-UTRA-NR Dual Connectivity</p>
+<p>IAB Integrated Access and Backhaul</p>
+<p>MBS Multicast/Broadcast Service</p>
+<p>MR-DC Multi-RAT Dual Connectivity</p>
+<p>MRB MBS Radio Bearer</p>
+<p>PTM Point To Multipoint</p>
+<h1 id="general">4 General</h1>
+<h2 id="general-aspects">4.1 General aspects</h2>
+<p>The NR user plane protocol is located in the User Plane of the Radio
+Network layer over either the Xn or the X2 or the F1 interface or the W1
+interface or the UP interface between eNB-CP and eNB-UP.</p>
+<p>The NR user plane protocol is used to convey control information
+related to the user data flow management of data radio bearers.</p>
+<p>Each NR user plane protocol instance is associated to one data radio
+bearer only. There is one NR user plane instance per GTP tunnel. When a
+GTP tunnel is set up, a new NR user plane instance is set up.</p>
+<p>If configured, NR user plane protocol instances exist at the Master
+node and the Secondary node in the context of DC or at nodes hosting
+F1-U protocol terminations or at nodes hosting W1-U protocol
+terminations or at eNB-CP and eNB-UP. The NR user plane protocol
+supports direct communication between NR user plane protocol entities,
+regardless of whether they terminate the same or different user plane
+interfaces.</p>
+<p>NOTE: User data radio bearers may be setup for data forwarding
+purposes during Xn HO or during DC related mobility without requiring
+the execution of any additional data radio bearer related user plane
+protocol functions related to an NR user plane protocol instance.</p>
+<p>On each data radio bearer, the NR user plane protocol operates with
+RLC AM or RLC UM.</p>
+<p>In this version of the present document, NR user plane protocol data
+is conveyed by GTP-U protocol means, more specifically, by means of the
+"NR RAN Container" GTP-U extension header as defined in TS 29.281
+[2].</p>
+<h1 id="nr-user-plane-protocol">5 NR user plane protocol</h1>
+<h2 id="general-1">5.1 General</h2>
+<p>The NR user plane protocol layer is using services of the transport
+network layer in order to allow flow control of user data packets
+transferred from the node hosting PDCP to the corresponding node.</p>
+<h2 id="nr-user-plane-protocol-layer-services">5.2 NR user plane
+protocol layer services</h2>
+<p>NOTE 1: In this section, NR user plane protocol layer services are
+also applicable to E-UTRA PDCP. With this understanding, each instance
+of NR PDCP can be replaced by E-UTRA PDCP.</p>
+<p>The following functions are provided by the NR user plane
+protocol:</p>
+<p>- Provision of NR user plane specific sequence number information for
+user data transferred from the node hosting NR PDCP to the corresponding
+node for a specific data radio bearer.</p>
+<p>- Information of successful in sequence delivery of NR PDCP PDUs to
+the UE from the corresponding node for user data associated with a
+specific data radio bearer.</p>
+<p>- Information of NR PDCP PDUs that were not delivered to the UE or
+not transmitted to the lower layers.</p>
+<p>- Information of NR PDCP PDUs transmitted to the lower layers for
+user data associated with a specific data radio bearer.</p>
+<p>- Information of downlink NR PDCP PDUs to be discarded for user data
+associated with a specific data radio bearer;</p>
+<p>- Information of the currently desired buffer size at the
+corresponding node for transmitting to the UE user data associated with
+a specific data radio bearer.</p>
+<p>- Information of the currently desired data rate in bytes at the
+corresponding node for transmitting to the UE user data associated with
+a specific data radio bearer;</p>
+<p>- Information of successful in sequence delivery of NR PDCP PDUs to
+the UE from the corresponding node for retransmission user data
+associate with a specific data radio bearer;</p>
+<p>- Information of NR PDCP PDUs transmitted to the lower layers for
+retransmission user data associated with a specific data radio
+bearer.</p>
+<p>- Information of the specific events at the corresponding node.</p>
+<p>- Information on Radio Link Quality from the corresponding node for
+user data associated with a specific data radio bearer.</p>
+<p>- Information for QoS monitoring from the corresponding node for user
+data associated with a specific data radio bearer.</p>
+<h2 id="services-expected-from-the-transport-network-layer">5.3 Services
+expected from the Transport Network Layer</h2>
+<p>The NR user plane protocol layer expects the following services from
+the Transport Network Layer:</p>
+<p>- Transfer of user data.</p>
+<h2 id="elementary-procedures"><br />
+5.4 Elementary procedures</h2>
+<p>NOTE 1: In this section, NR user plane elementary procedures are also
+applicable to E-UTRA PDCP unless specified otherwise. With this
+understanding, each instance of NR PDCP can be replaced by E-UTRA PDCP
+unless specified otherwise.</p>
+<h3 id="transfer-of-downlink-user-data">5.4.1 Transfer of Downlink User
+Data</h3>
+<h4 id="successful-operation">5.4.1.1 Successful operation</h4>
+<p>The purpose of the Transfer of Downlink User Data procedure is to
+provide NR-U specific sequence number information at the transfer of
+user data carrying a DL NR PDCP PDU from the node hosting the NR PDCP
+entity to the corresponding node.</p>
+<p>An NR user plane protocol instance making use of the Transfer of
+Downlink User Data procedure is associated to a single radio bearer
+only.</p>
+<p>The node hosting the NR PDCP entity shall assign consecutive NR-U
+sequence numbers to each transferred NR-U packet. A retransmitted NR
+PDCP PDU shall be assigned a new NR-U sequence number.</p>
+<p>The node hosting the NR PDCP entity indicates to the corresponding
+node whether this NR-U packet is a retransmission of NR PDCP PDU.</p>
+<p>The node hosting the NR PDCP entity can indicate to the corresponding
+node to either discard all NR PDCP PDUs up to and including a defined DL
+discard NR PDCP PDU SN or discard one or a number of blocks of downlink
+NR PDCP PDUs.</p>
+<p>If the Assistance Information Report Polling Flag is equal to 1, the
+corresponding node shall, if supported, send the ASSISTANCE INFORMATION
+DATA to the node hosting the NR PDCP entity.</p>
+<p>The corresponding node shall detect whether an NR-U packet was lost
+and memorise the respective sequence number after it has declared the
+respective NR-U packet as being "lost".</p>
+<p>The corresponding node shall transfer the remaining NR PDCP PDUs
+towards the UE and memorise the highest NR PDCP PDU sequence number of
+the NR PDCP PDU that was successfully delivered (as defined in TS 36.322
+[6] and TS 38.322 [7]) in sequence towards the UE (in case RLC AM is
+used) and the highest NR PDCP PDU sequence number of the NR PDCP PDU
+that was transmitted to the lower layers.</p>
+<p>The corresponding node shall send the DL DATA DELIVERY STATUS if the
+Report Polling Flag is set to 1 or when the NR PDCP PDU with the
+indicated DL report NR PDCP PDU SN has been successfully delivered,
+unless a situation of overload at the corresponding node is encountered.
+The DL DATA DELIVERY STATUS sent as a response to a specific DL report
+NR PDCP PDU SN shall be sent only when all PDCP PDU SNs up to this DL
+report NR PDCP PDU have been successfully delivered in-sequence.</p>
+<p>If the Request OutOfSeq Report is set to 1, the corresponding node
+shall, if supported, include the NR PDCP PDU sequence number
+successfully delivered out of sequence in the DL DATA DELIVERY STATUS to
+the node hosting the NR PDCP entity.</p>
+<p>NOTE: The Transfer of Downlink User Data procedure and the associated
+feedback of lost NR-U packets assist the node hosting the NR PDCP entity
+in avoiding NR PDCP HFN de-synchronisation. If a deployment decides to
+not use the Transfer of Downlink User Data procedure, NR PDCP HFN
+synchronization should be ensured by other means.</p>
+<p>If the User data existence flag is set to 1, the corresponding node
+assumes that the node hosting the NR PDCP entity has some user data for
+the concerned data radio bearer. The corresponding node decides whether
+and when to use DRX for the UE (i.e. the corresponding node may indicate
+the UE to use DRX even if the flag is set to 1 and the received DL USER
+DATA frame contains no user data).</p>
+<p><img src="media/image3.svg" /></p>
+<p>Figure 5.4.1.1-1: Successful Transfer of Downlink User Data</p>
+<h4 id="unsuccessful-operation">5.4.1.2 Unsuccessful operation</h4>
+<p>Void.</p>
+<h3 id="downlink-data-delivery-status">5.4.2 Downlink Data Delivery
+Status</h3>
+<h4 id="successful-operation-1">5.4.2.1 Successful operation</h4>
+<p>The purpose of the Downlink Data Delivery Status procedure is to
+provide feedback from the corresponding node to the node hosting the NR
+PDCP entity to allow the node hosting the NR PDCP entity to control the
+downlink user data flow via the corresponding node for the respective
+data radio bearer. The corresponding node may also transfer uplink user
+data for the concerned data radio bearer to the node hosting the NR PDCP
+entity together with a DL DATA DELIVERY STATUS frame within the same
+GTP-U PDU.</p>
+<p>The Downlink Data Delivery Status procedure is also used to provide
+feedback from the corresponding node to the node hosting the NR PDCP
+entity to allow the node hosting the NR PDCP entity to control the
+successful delivery of DL control data to the corresponding node.</p>
+<p>When the corresponding node decides to trigger the feedback for
+Downlink Data Delivery procedure it shall report as specified in section
+5.2:</p>
+<p>a) in case of RLC AM, the highest NR PDCP PDU sequence number
+successfully delivered in sequence to the UE among those NR PDCP PDUs
+received from the node hosting the NR PDCP entity i.e. excludes those
+retransmission NR PDCP PDUs;</p>
+<p>NOTE 1: If the NR user plane protocol instance is associated a single
+RLC-AM entity for an MRB, specification text in bullet a) is
+applicable.</p>
+<p>For all other cases, if the NR user plane protocol instance is
+associated with an MRB configured with at least one RLC AM entity and
+RLC-UM, the highest successfully delivered NR PDCP sequence number
+indicates the combined feedback of the highest NR PDCP sequence number
+successfully delivered in sequence to all the involved UEs for which the
+RLC AM entites have been configured, no retransmissions are performed,
+and the highest NR PDCP sequence number transmitted to the lower layers
+for PTM.</p>
+<p>b) the desired buffer size in bytes for the concerned data radio
+bearer or for the MRB;</p>
+<p>c) optionally, the desired data rate in bytes associated with a
+specific data radio bearer configured for the UE or for the MRB;</p>
+<p>d) the NR-U packets that were declared as being "lost" by the
+corresponding node and have not yet been reported to the node hosting
+the NR PDCP entity within the DL DATA DELIVERY STATUS frame;</p>
+<p>e) if retransmission NR PDCP PDUs have been delivered, the NR PDCP
+PDU sequence number associated with the highest NR-U sequence number
+among the retransmission NR PDCP PDUs successfully delivered to the UE
+in sequence of NR-U sequence number;</p>
+<p>f) if retransmission NR PDCP PDUs have been transmitted to the lower
+layers, the NR PDCP PDU sequence number associated with the highest NR-U
+sequence number among the retransmission NR PDCP PDUs transmitted to the
+lower layers in sequence of NR-U sequence number;</p>
+<p>g) the highest NR PDCP PDU sequence number transmitted to the lower
+layers among those NR PDCP PDUs received from the node hosting the NR
+PDCP entity i.e. excludes those retransmission NR PDCP PDUs;</p>
+<p>NOTE 2: If the NR user plane protocol instance is associated with an
+MRB configured with RLC-UM entities only, the highest NR PDCP PDU
+sequence number transmitted successfully to all lower layer instances is
+reported.</p>
+<p>NOTE 3: If a deployment has decided not to use the Transfer of
+Downlink User Data procedure, d), e) and f) above are not
+applicable.</p>
+<p>h) in case of RLC AM, the NR PDCP PDU sequence number successfully
+delivered out of sequence to the UE among those NR PDCP PDUs received
+from the node hosting the NR PDCP entity i.e. excludes those
+retransmission NR PDCP PDUs.</p>
+<p>As soon as the corresponding node detects the successful RACH access
+by the UE for the corresponding data radio bearer(s), the corresponding
+node shall send initial DL DATA DELIVERY STATUS frame to the node(s)
+hosting the NR PDCP entity(ies). The node hosting NR PDCP entity may
+start sending DL data before receiving the initial DL DATA DELIVERY
+STATUS frame. In case the DL DATA DELIVERY STATUS frame is sent before
+any NR PDCP PDU is transferred to lower layers, the information on the
+highest NR PDCP PDU sequence number successfully delivered in sequence
+to the UE and the highest NR PDCP PDU sequence number transmitted to the
+lower layers may not be provided.</p>
+<p>The DL DATA DELIVERY STATUS frame shall also include a final frame
+indication when this frame is the last DL status report. When receiving
+such indication, the node hosting the NR PDCP entity considers that no
+more UL or DL data is expected to be transmitted between the
+corresponding node and the UE.</p>
+<p>The DL DATA DELIVERY STATUS frame may also include an indication of
+detected radio link outage or radio link resume for the concerned data
+radio bearer. When receiving an indication of radio link outage
+detection, the node hosting the NR PDCP entity considers that traffic
+delivery over the data radio bearer configured for the UE is unavailable
+at the corresponding node both in UL and DL. When receiving an
+indication of radio link resume detection, the node hosting the NR PDCP
+entity considers that traffic delivery over the data radio bearer
+configured for the UE is available at the corresponding node both in UL
+and in DL. When receiving an indication of UL or DL radio link outage
+detection, the node hosting the NR PDCP entity considers that traffic
+delivery over the data radio bearer configured for the UE is unavailable
+at the corresponding node for UL or DL, depending on the indicated
+outage. When receiving an indication of UL or DL radio link resume
+detection, the node hosting the NR PDCP entity considers that traffic
+delivery over the data radio bearer configured for the UE is available
+at the corresponding node in UL or in DL, depending on the indicated
+resume. These indications are not applicable to E-UTRA PDCP.</p>
+<p>For report polling triggered reporting, the DL DATA DELIVERY STATUS
+frame may include the feedback delay result and the NR-U sequence number
+of the frame where Report Polling Flag is included and that triggered
+the signalling of the DL DATA DELIVERY STATUS.</p>
+<p>The node hosting the NR PDCP entity, when receiving the DL DATA
+DELIVERY STATUS frame:</p>
+<p>- regards the desired buffer size under b) and the data rate under c)
+above as the amount of data to be sent from the hosting node:</p>
+<p>- If the value of the desired buffer size is 0, the hosting node
+shall stop sending any data per bearer.</p>
+<p>- If the value of the desired buffer size in b) above is greater than
+0, the hosting node may send up to this amount of data per bearer:</p>
+<p>- first including the data to be retransmitted;</p>
+<p>- then the new data, starting from the last "Highest successfully
+delivered NR PDCP Sequence Number" for RLC AM if received, or starting
+from the last "Highest transmitted NR PDCP Sequence Number" for RLC UM
+if received.</p>
+<p>- The value of the desired data rate in c) above is the amount of
+data desired to be received in a specific amount of time. The amount of
+time is 1 sec.</p>
+<p>- The information of the buffer size in b) above and of the data rate
+in c) above is valid until the next DL DATA DELIVERY STATUS frame is
+received.</p>
+<p>- is allowed to remove the buffered NR PDCP PDUs of a RLC AM bearer,
+according to the feedback of successfully delivered NR PDCP PDUs;</p>
+<p>- decides upon the actions necessary to take for NR PDCP PDUs
+reported other than transmitted and/or successfully delivered.</p>
+<p>In case of RLC AM, after the highest NR PDCP PDU sequence number
+successfully delivered in sequence is reported to the node hosting the
+NR PDCP entity, the corresponding node removes the respective NR PDCP
+PDUs. For RLC UM, the corresponding node may remove the respective NR
+PDCP PDUs after transmitting to lower layers.</p>
+<p><img src="media/image4.svg" /></p>
+<p>Figure 5.4.2.1-1: Successful Downlink Data Delivery Status</p>
+<h4 id="unsuccessful-operation-1">5.4.2.2 Unsuccessful operation</h4>
+<p>Void.</p>
+<h3 id="transfer-of-assistance-information">5.4.3 Transfer of Assistance
+Information</h3>
+<h4 id="successful-operation-2">5.4.3.1 Successful operation</h4>
+<p>NOTE 1: In this section, PDCP duplication and delay measurement
+related information are not applicable to E-UTRA PDCP.</p>
+<p>The purpose of the Transfer of Assistance Information procedure is to
+provide assistance information to the node hosting the NR PDCP entity.
+Such information may be taken into consideration by the node hosting the
+NR PDCP entity for UP management and optimisation procedures.</p>
+<p>An NR user plane protocol instance making use of the Transfer of
+Assistance Information procedure is associated to a single data radio
+bearer only.</p>
+<p>The Transfer of Assistance Information procedure may be invoked
+if</p>
+<p>- the corresponding node decides to send the Radio Quality Assistance
+Information and/or the PDCP duplication activation suggestion to the
+node hosting the NR PDCP entity for the concerned data radio bearer
+or,</p>
+<p>- the corresponding node decides to send the Radio Quality Assistance
+Information to the node hosting the NR PDCP entity for the concerned RLC
+entity.</p>
+<p>The Transfer of Assistance Information procedure may be invoked if
+the corresponding node is configured to perform the QoS monitoring and
+to send the QoS monitoring results to the node hosting the NR PDCP
+entity for the concerned data radio bearer.</p>
+<p>The ASSISTANCE INFORMATION DATA frame may include one or more Radio
+Quality Assistance Information. The information shall consist of the
+information indicated in the Assistance Information Type.</p>
+<p>The ASSISTANCE INFORMATION DATA shall be sent, if supported, when the
+corresponding node receives a DL USER DATA PDU including the Assistance
+Information Report Polling Flag set to 1.</p>
+<p>The ASSISTANCE INFORMATION DATA frame may include the PDCP
+Duplication Activation Suggestion, which informs the node hosting the NR
+PDCP entity of the suggestion from the corresponding node on whether to
+activate or not activate DL PDCP duplication. The node hosting the NR
+PDCP entity may take this information into account to take a decision on
+whether to activate or not activate PDCP duplication.</p>
+<p>The ASSISTANCE INFORMATION DATA frame may include the UL Delay or/and
+DL Delay measured by the corresponding node. The node hosting the NR
+PDCP entity may take this information into account to calculate the
+whole UL or/and DL delay of RAN.</p>
+<p><img src="media/image5.svg" /></p>
+<p>Figure 5.4.3.1-1: Successful Transfer of Assistance Information
+Data</p>
+<h2 id="elements-for-the-nr-user-plane-protocol">5.5 Elements for the NR
+user plane protocol</h2>
+<h3 id="general-2">5.5.1 General</h3>
+<p>In the present document the structure of frames is specified by using
+figures similar to figure 5.5.1-1.</p>
+<table style="width:88%;">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 0%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="9" style="text-align: center;">Bits</td>
+<td rowspan="2" style="text-align: center;"><blockquote>
+<p>Number of Octets</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">3</td>
+<td colspan="2" style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: center;">Field 1</td>
+<td colspan="5" style="text-align: center;">Field 2</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td colspan="6" style="text-align: center;">Field 3</td>
+<td colspan="3" style="text-align: center;">Field 4</td>
+<td rowspan="2" style="text-align: center;">2</td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: center;">Field 4 continue</td>
+<td colspan="5" style="text-align: center;">Spare</td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: center;">Spare</td>
+<td colspan="5" style="text-align: center;">Field 5</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">Field 6</td>
+<td rowspan="2" style="text-align: center;">2</td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: center;">Field 6 continue</td>
+<td colspan="5" style="text-align: center;">Padding Bits</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">Future Extension</td>
+<td style="text-align: center;">0-m</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">Padding</td>
+<td style="text-align: center;">0-3</td>
+</tr>
+</tbody>
+</table>
+<p>Figure 5.5.1-1: Example frame format</p>
+<p>Unless otherwise indicated, fields which consist of multiple bits
+within an octet have the most significant bit located at the highest bit
+position of the field (according to the bit numbers indicated above
+frame in figure 5.5.1-1). In addition, if a field spans several octets,
+most significant bits are located in lower numbered octets (right of
+frame in figure 5.5.1-1).</p>
+<p>The frame is transmitted starting from the lowest numbered octet.
+Within each octet, the bits are sent according decreasing bit position
+(bit position 7 first).</p>
+<p>Bits labelled "Spare" should be set to "0" by the sender and should
+not be checked by the receiver.</p>
+<p>The header part of the frame is always an integer number of octets.
+The payload part is octet aligned (by adding 'Padding Bits' when
+needed). The total size of the frame shall not exceed 1018 octets (see
+TS 29.281 [2]).</p>
+<p>The receiver should be able to remove an additional Future Extension
+field that may be present.<br />
+See description of Future Extension field in A.1.</p>
+<p>Padding octets may be added at the end of the frame, see Padding in
+5.5.3.24</p>
+<h3 id="frame-format-for-the-nr-user-plane-protocol">5.5.2 Frame format
+for the NR user plane protocol</h3>
+<h4 id="dl-user-data-pdu-type-0">5.5.2.1 DL USER DATA (PDU Type 0)</h4>
+<p>This frame format is defined e.g. to allow the corresponding node to
+detect lost NR-U packets and may be associated with the transfer of a
+Downlink PDCP PDU.</p>
+<p>The following shows the respective DL USER DATA frame.</p>
+<p>NOTE 1: All information elements defined in Figure 5.5.2.1-1 are also
+applicable to E-UTRA PDCP. With this understanding, each instance of NR
+PDCP can be replaced by E-UTRA PDCP.</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 0%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 18%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="9" style="text-align: center;">Bits</td>
+<td rowspan="2" style="text-align: center;">Number of Octets</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">6</td>
+<td colspan="2" style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td colspan="5" style="text-align: center;">PDU Type (=0)</td>
+<td style="text-align: center;">Spare</td>
+<td style="text-align: center;">DL Discard Blocks</td>
+<td style="text-align: center;">DL Flush</td>
+<td style="text-align: center;">Report polling</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">Spare</td>
+<td colspan="2" style="text-align: center;">Request OutofSeq Report</td>
+<td style="text-align: center;">Report Delivered</td>
+<td style="text-align: center;">User data existence flag</td>
+<td style="text-align: center;">Assistance Info. Report Polling
+Flag</td>
+<td style="text-align: center;">Retransmission flag</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">NR-U Sequence Number</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">DL discard NR PDCP PDU
+SN</td>
+<td style="text-align: center;">0 or 3</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">DL discard Number of
+blocks</td>
+<td style="text-align: center;">0 or 1</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">DL discard NR PDCP PDU SN
+start (first block)</td>
+<td style="text-align: center;">0 or 3</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">Discarded Block size (first
+block)</td>
+<td style="text-align: center;">0 or 1</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">…</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">DL discard NR PDCP PDU SN
+start (last block)</td>
+<td style="text-align: center;">0 or 3</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">Discarded Block size (last
+block)</td>
+<td style="text-align: center;">0 or 1</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">DL report NR PDCP PDU
+SN</td>
+<td style="text-align: center;">0 or 3</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">Padding</td>
+<td style="text-align: center;">0-3</td>
+</tr>
+</tbody>
+</table>
+<p>Figure 5.5.2.1-1: DL USER DATA (PDU Type 0) Format</p>
+<h4 id="dl-data-delivery-status-pdu-type-1">5.5.2.2 DL DATA DELIVERY
+STATUS (PDU Type 1)</h4>
+<p>This frame format is defined to transfer feedback to allow the
+receiving node (i.e. the node that hosts the PDCP entity) to control the
+downlink user data flow via the sending node (i.e. the corresponding
+node).</p>
+<p>The following shows the respective DL DATA DELIVERY STATUS frame. The
+Figure shows an example of how a frame is structured when all optional
+IEs (i.e. those whose presence is indicated by an associated flag) are
+present.</p>
+<p>Absence of such an IE changes the position of all subsequent IEs on
+octet level.</p>
+<p>NOTE 1: All information elements defined in Figure 5.5.2.2-1 are also
+applicable to E-UTRA PDCP unless specified otherwise in section 5.5.3.
+With this understanding, each instance of NR PDCP can be replaced by
+E-UTRA PDCP.</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 0%" />
+<col style="width: 9%" />
+<col style="width: 0%" />
+<col style="width: 9%" />
+<col style="width: 0%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 18%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="11" style="text-align: center;">Bits</td>
+<td rowspan="2" style="text-align: center;"><blockquote>
+<p>Number of Octets</p>
+</blockquote></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;">7</td>
+<td colspan="2" style="text-align: center;">6</td>
+<td colspan="2" style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td colspan="7" style="text-align: center;">PDU Type (=1)</td>
+<td style="text-align: center;">Highest Transmitted NR PDCP SN Ind</td>
+<td style="text-align: center;">Highest Delivered NR PDCP SN Ind</td>
+<td style="text-align: center;">Final Frame Ind.</td>
+<td style="text-align: center;">Lost Packet Report</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">Spare</td>
+<td colspan="2" style="text-align: center;">Feedback Delay Ind.</td>
+<td colspan="2" style="text-align: center;">NR-U SN Ind.</td>
+<td colspan="2" style="text-align: center;">Delivered NR PDCP SN Range
+Ind</td>
+<td style="text-align: center;">Data rate Ind.</td>
+<td style="text-align: center;">Retransmitted NR PDCP SN Ind</td>
+<td style="text-align: center;">Delivered Retransmitted NR PDCP SN
+Ind</td>
+<td style="text-align: center;">Cause Report</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Desired buffer size for the
+data radio bearer</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Desired Data Rate</td>
+<td style="text-align: center;">0 or 4</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Number of lost NR-U
+Sequence Number ranges reported</td>
+<td style="text-align: center;">0 or 1</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Start of lost NR-U Sequence
+Number range</td>
+<td rowspan="2" style="text-align: center;">0 or (6* Number of reported
+lost NR-U SN ranges)</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">End of lost NR-U Sequence
+Number range</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Highest successfully
+delivered NR PDCP Sequence Number</td>
+<td style="text-align: center;">0 or 3</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Highest transmitted NR PDCP
+Sequence Number</td>
+<td style="text-align: center;">0 or 3</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Cause Value</td>
+<td style="text-align: center;">0 or 1</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Successfully delivered
+retransmitted NR PDCP Sequence Number</td>
+<td style="text-align: center;">0 or 3</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Retransmitted NR PDCP
+Sequence Number</td>
+<td style="text-align: center;">0 or 3</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Number of successfully
+delivered out of sequence PDCP Sequence Number range</td>
+<td style="text-align: center;">0 or 1</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Start of successfully
+delivered out of sequence PDCP Sequence Number range</td>
+<td rowspan="2" style="text-align: center;">0 or (6* Number of
+successfully delivered out of sequence PDCP Sequence Number range)</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">End of successfully
+delivered out of sequence PDCP Sequence Number range</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">NR-U Sequence Number of
+Polling Frame</td>
+<td style="text-align: center;">0 or 3</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Feedback Delay Result</td>
+<td style="text-align: center;">0 or 4</td>
+</tr>
+<tr>
+<td colspan="11" style="text-align: center;">Padding</td>
+<td style="text-align: center;">0-3</td>
+</tr>
+</tbody>
+</table>
+<p>Figure 5.5.2.2-1: DL DATA DELIVERY STATUS (PDU Type 1) Format</p>
+<h4 id="assistance-information-data-pdu-type-2">5.5.2.3 ASSISTANCE
+INFORMATION DATA (PDU Type 2)</h4>
+<p>This frame format is defined to allow the node hosting the PDCP
+entity to receive assistance information.</p>
+<p>The following shows the respective ASSISTANCE INFORMATION DATA
+frame.</p>
+<p>NOTE 1: All information elements defined in Figure 5.5.2.3-1 are also
+applicable to E-UTRA PDCP unless specified otherwise in section
+5.5.3.</p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 0%" />
+<col style="width: 9%" />
+<col style="width: 0%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 18%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="10" style="text-align: center;">Bits</td>
+<td rowspan="2" style="text-align: center;">Number of Octets</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">5</td>
+<td colspan="2" style="text-align: center;">4</td>
+<td colspan="2" style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: center;">PDU Type (=2)</td>
+<td colspan="2" style="text-align: center;">PDCP Dupl. Ind.</td>
+<td colspan="2" style="text-align: center;">Assistance Info. Ind.</td>
+<td style="text-align: center;">UL Delay Ind.</td>
+<td style="text-align: center;">DL Delay Ind.</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td colspan="9" style="text-align: center;">Spare</td>
+<td style="text-align: center;">PDCP Duplication Activation
+Suggestion</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td colspan="10" style="text-align: center;">Number of Assistance
+Information Fields</td>
+<td style="text-align: center;">0 or 1</td>
+</tr>
+<tr>
+<td colspan="10" style="text-align: center;">Assistance Information
+Type</td>
+<td rowspan="3" style="text-align: center;">0 or (2*Number of Assistance
+Info Fields + sum of Number of octets for Radio Quality Assistance
+Information Fields)</td>
+</tr>
+<tr>
+<td colspan="10" style="text-align: center;">Number of octets for Radio
+Quality Assistance Information Fields</td>
+</tr>
+<tr>
+<td colspan="10" style="text-align: center;">Radio Quality Assistance
+Information</td>
+</tr>
+<tr>
+<td colspan="10" style="text-align: center;">UL Delay DU Result</td>
+<td style="text-align: center;">0 or 4</td>
+</tr>
+<tr>
+<td colspan="10" style="text-align: center;">DL Delay DU Result</td>
+<td style="text-align: center;">0 or 4</td>
+</tr>
+</tbody>
+</table>
+<p>Figure 5.5.2.3-1: ASSISTANCE INFORMATION DATA (PDU Type 2) Format</p>
+<h3 id="coding-of-information-elements-in-frames">5.5.3 Coding of
+information elements in frames</h3>
+<p>NOTE 1: In this section, information elements are also applicable to
+E-UTRA PDCP unless specified otherwise. With this understanding, each
+instance of NR PDCP can be replaced by E-UTRA PDCP unless specified
+otherwise.</p>
+<h4 id="pdu-type">5.5.3.1 PDU Type</h4>
+<p><strong>Description:</strong> The PDU Type indicates the structure of
+the NR user plane frame. The field takes the value of the PDU Type it
+identifies; e.g. "0" for PDU Type 0. The PDU type is in bit 4 to bit 7
+in the first octet of the frame.</p>
+<p><strong>Value range:</strong> {0=DL USER DATA, 1=DL DATA DELIVERY
+STATUS, 2= ASSISTANCE INFORMATION DATA, 3-15=reserved for future PDU
+type extensions}</p>
+<p><strong>Field length:</strong> 4 bits</p>
+<h4 id="spare">5.5.3.2 Spare</h4>
+<p><strong>Description:</strong> The spare field is set to "0" by the
+sender and should not be interpreted by the receiver. This field is
+reserved for later versions.</p>
+<p><strong>Value range:</strong> (0–2<sup>n</sup>-1).</p>
+<p><strong>Field Length:</strong> n bits.</p>
+<h4 id="report-polling">5.5.3.3 Report polling</h4>
+<p><strong>Description:</strong> This parameter indicates that the node
+hosting the NR PDCP entity requests providing the downlink delivery
+status report.</p>
+<p><strong>Value range:</strong> {0=Downlink Data Delivery Status report
+not requested, 1= Downlink Data Delivery Status report requested}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="nr-u-sequence-number">5.5.3.4 NR-U Sequence Number</h4>
+<p><strong>Description:</strong> This parameter indicates the NR-U
+sequence number as assigned by the node hosting the NR PDCP entity.</p>
+<p><strong>Value range:</strong> {0..2<sup>24</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4 id="desired-buffer-size-for-the-data-radio-bearer">5.5.3.5 Desired
+buffer size for the data radio bearer</h4>
+<p><strong>Description:</strong> This parameter indicates the desired
+buffer size in bytes for the concerned data radio bearer as specified in
+clause 5.4.2.1.</p>
+<p><strong>Value range:</strong> {0..2<sup>32</sup>-1}.</p>
+<p><strong>Field length:</strong> 4 octets.</p>
+<h4 id="desired-data-rate">5.5.3.6 Desired Data Rate</h4>
+<p><strong>Description:</strong> This parameter indicates the amount of
+data desired to be received in bytes in a specific amount of time (1 s)
+for a specific data radio bearer established for the UE as specified in
+clause 5.4.2.1.</p>
+<p><strong>Value range:</strong> {0..2<sup>32</sup>-1}.</p>
+<p><strong>Field length:</strong> 4 octets.</p>
+<h4 id="dl-flush">5.5.3.7 DL Flush</h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of DL discard NR PDCP PDU SN.</p>
+<p><strong>Value range:</strong> {0= DL discard NR PDCP PDU SN not
+present, 1= DL discard NR PDCP PDU SN present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="dl-discard-nr-pdcp-pdu-sn">5.5.3.8 DL discard NR PDCP PDU
+SN</h4>
+<p><strong>Description:</strong> This parameter indicates the downlink
+NR discard PDCP PDU sequence number up to and including which all the NR
+PDCP PDUs should be discarded.</p>
+<p><strong>Value range:</strong> {0..2<sup>18</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4 id="dl-discard-blocks">5.5.3.9 DL Discard Blocks</h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of DL discard Number of blocks, DL discard NR PDCP PDU SN start and
+Discarded Block size.</p>
+<p><strong>Value range:</strong> {0= DL discard Number of blocks, DL
+discard NR PDCP PDU SN start and Discarded Block size not present, 1= DL
+discard Number of blocks, DL discard NR PDCP PDU SN start and Discarded
+Block size present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="dl-discard-nr-pdcp-pdu-sn-start">5.5.3.10 DL discard NR PDCP PDU
+SN start</h4>
+<p><strong>Description:</strong> This parameter indicates the starting
+SN of a downlink NR PDCP PDU block to be discarded.</p>
+<p><strong>Value range:</strong> {0..2<sup>18</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4 id="dl-discard-number-of-blocks">5.5.3.11 DL discard Number of
+blocks</h4>
+<p><strong>Description:</strong> This parameter indicates the number of
+NR PDCP PDU blocks to be discarded.</p>
+<p><strong>Value range:</strong> {1..244}.</p>
+<p><strong>Field length:</strong> 1 octet.</p>
+<h4 id="discarded-block-size">5.5.3.12 Discarded Block size</h4>
+<p><strong>Description:</strong> This parameter indicates the number of
+NR PDCP PDUs counted from the starting SN to be discarded.</p>
+<p><strong>Value range:</strong> {1..255}.</p>
+<p><strong>Field length:</strong> 1 octet.</p>
+<h4 id="lost-packet-report">5.5.3.13 Lost Packet Report</h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of Number of lost NR-U Sequence Number ranges reported, Start of lost
+NR-U Sequence Number range and End of lost NR-U Sequence Number
+range.</p>
+<p><strong>Value range:</strong> {0= Number of lost NR-U Sequence Number
+ranges reported, Start of lost NR-U Sequence Number range and End of
+lost NR-U Sequence Number range not present, 1= Number of lost NR-U
+Sequence Number ranges reported, Start of lost NR-U Sequence Number
+range and End of lost NR-U Sequence Number range present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="final-frame-indication">5.5.3.14 Final Frame Indication</h4>
+<p><strong>Description:</strong> This parameter indicates whether the
+frame is the last DL status report as described in clause 5.4.2.1.</p>
+<p><strong>Value range:</strong> {0=Frame is not final, 1= Frame is
+final}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="number-of-lost-nr-u-sequence-number-ranges-reported">5.5.3.15
+Number of lost NR-U Sequence Number ranges reported</h4>
+<p><strong>Description:</strong> This parameter indicates the number of
+NR-U Sequence Number ranges reported to be lost.</p>
+<p><strong>Value range:</strong> {1..161}.</p>
+<p><strong>Field length:</strong> 1 octet.</p>
+<h4 id="start-of-lost-nr-u-sequence-number-range">5.5.3.16 Start of lost
+NR-U Sequence Number range</h4>
+<p><strong>Description:</strong> This parameter indicates the start of
+an NR-U sequence number range reported to be lost.</p>
+<p><strong>Value range:</strong> {0..2<sup>24</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4 id="end-of-lost-nr-u-sequence-number-range">5.5.3.17 End of lost
+NR-U Sequence Number range</h4>
+<p><strong>Description:</strong> This parameter indicates the end of an
+NR-U sequence number range reported to be lost.</p>
+<p><strong>Value range:</strong> {0..2<sup>24</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4 id="highest-delivered-nr-pdcp-sn-ind">5.5.3.18 Highest Delivered NR
+PDCP SN Ind</h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of Highest successfully delivered PDCP Sequence Number.</p>
+<p><strong>Value range:</strong> {0= Highest successfully delivered PDCP
+Sequence Number not present, 1= Highest successfully delivered PDCP
+Sequence Number present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="highest-successfully-delivered-nr-pdcp-sequence-number">5.5.3.19
+Highest successfully delivered NR PDCP Sequence Number</h4>
+<p><strong>Description:</strong> This parameter indicates feedback about
+the in-sequence delivery status of NR PDCP PDUs at the corresponding
+node.</p>
+<p><strong>Value range:</strong> {0..2<sup>18</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4 id="highest-transmitted-nr-pdcp-sn-ind">5.5.3.20 Highest Transmitted
+NR PDCP SN Ind</h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of the Highest transmitted NR PDCP Sequence Number.</p>
+<p><strong>Value range:</strong> {0= Highest transmitted NR PDCP
+Sequence Number not present, 1= Highest transmitted NR PDCP Sequence
+Number present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="highest-transmitted-nr-pdcp-sequence-number">5.5.3.21 Highest
+transmitted NR PDCP Sequence Number</h4>
+<p><strong>Description:</strong> This parameter indicates the feedback
+about the transmitted status of NR PDCP PDU sequence at the
+corresponding node to the lower layers.</p>
+<p><strong>Value range:</strong> {0..2<sup>18</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4 id="cause-report">5.5.3.22 Cause Report</h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of Cause Value. This information element is not applicable to E-UTRA
+PDCP.</p>
+<p><strong>Value range:</strong> {0=Cause Value not present, 1=Cause
+Value present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="cause-value">5.5.3.23 Cause Value</h4>
+<p><strong>Description:</strong> This parameter indicates specific
+events reported by the corresponding node. This information element is
+not applicable to E-UTRA PDCP.</p>
+<p><strong>Value range:</strong> {0=UNKNOWN, 1=RADIO LINK OUTAGE,
+2=RADIO LINK RESUME, 3=UL RADIO LINK OUTAGE, 4=DL RADIO LINK OUTAGE,
+5=UL RADIO LINK RESUME, 6=DL RADIO LINK RESUME, 7-228=reserved for
+future value extensions, 229-255=reserved for test purposes}</p>
+<p><strong>Field length:</strong> 1 octet.</p>
+<h4 id="padding">5.5.3.24 Padding</h4>
+<p><strong>Description:</strong> The padding is included at the end of
+the frame to ensure that the NR user plane protocol PDU length
+(including padding and the Future Extension) is (n*4– 2) octets, where n
+is a positive integer. If there is any Future Extension, the padding
+should be added after the Future Extensions.</p>
+<p><strong>Field Length:</strong> 0–3 octets.</p>
+<h4 id="void">5.5.3.28 Void</h4>
+<p>Void.</p>
+<h4 id="retransmission-flag">5.5.3.29 Retransmission flag</h4>
+<p><strong>Description:</strong> This parameter indicates whether the NR
+PDCP PDU is a retransmission NR-U packet sent by the node hosting the NR
+PDCP entity to the corresponding node.</p>
+<p><strong>Value range:</strong> {0= Not a retransmission NR-U packet,
+1= Retransmission NR-U packet}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="delivered-retransmitted-nr-pdcp-sn-ind">5.5.3.30 Delivered
+Retransmitted NR PDCP SN Ind </h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of successfully delivered retransmitted PDCP Sequence Number.</p>
+<p><strong>Value range:</strong> {0= Successfully delivered
+retransmitted PDCP Sequence Number not present, 1= Successfully
+delivered retransmitted PDCP Sequence Number present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="retransmitted-nr-pdcp-sn-ind">5.5.3.31 Retransmitted NR PDCP SN
+Ind </h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of retransmitted NR PDCP Sequence Number.</p>
+<p><strong>Value range:</strong> {0= Retransmitted NR PDCP Sequence
+Number not present, 1= Retransmitted NR PDCP Sequence Number
+present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4
+id="successfully-delivered-retransmitted-nr-pdcp-sequence-number">5.5.3.32
+Successfully delivered retransmitted NR PDCP Sequence Number</h4>
+<p><strong>Description:</strong> This parameter indicates the NR PDCP
+PDU sequence number associated with the highest NR-U sequence number
+among the retransmission NR PDCP PDUs successfully delivered to the UE
+in sequence of NR-U sequence number.</p>
+<p><strong>Value range:</strong> {0..2<sup>18</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4 id="retransmitted-nr-pdcp-sequence-number">5.5.3.33 Retransmitted NR
+PDCP Sequence Number </h4>
+<p><strong>Description:</strong> This parameter indicates the NR PDCP
+PDU sequence number associated with the highest NR-U sequence number
+among the retransmission NR PDCP PDUs transmitted to the lower layers in
+sequence of NR-U sequence number.</p>
+<p><strong>Value range:</strong> {0..2<sup>18</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4 id="data-rate-indication">5.5.3.34 Data Rate Indication</h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of the Desired Data Rate.</p>
+<p><strong>Value range:</strong> {0= Desired Data Rate Information is
+not present, 1= Desired Data Rate Information is present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="pdcp-duplication-indication">5.5.3.35 PDCP Duplication
+Indication </h4>
+<p><strong>Description:</strong> This field indicates the presence of
+the PDCP Duplication Activation Suggestion. This information element is
+not applicable to E-UTRA PDCP.</p>
+<p><strong>Value range:</strong> {0= PDCP Duplication Activation
+Suggestion not present, 1= PDCP Duplication Activation Suggestion
+present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="pdcp-duplication-activation-suggestion">5.5.3.36 PDCP
+Duplication Activation Suggestion </h4>
+<p><strong>Description:</strong> This parameter indicates the suggestion
+given by the corresponding node on whether PDCP duplication should be
+activated or not. This information element is not applicable to E-UTRA
+PDCP.</p>
+<p><strong>Value range:</strong> {0= Do not duplicate, 1=
+Duplicate}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="number-of-assistance-information-field">5.5.3.37 Number of
+Assistance Information Field</h4>
+<p><strong>Description:</strong> This field indicates the number of
+Assistance Information Type and Radio Quality Assistance Information
+pairs concatenated.</p>
+<p><strong>Value range:</strong> {1..2<sup>8</sup>-1}.</p>
+<p><strong>Field length:</strong> 1 octet.</p>
+<h4 id="assistance-information-type">5.5.3.38 Assistance Information
+Type</h4>
+<p><strong>Description:</strong> This field describes the type of radio
+quality assistance information provided, if supported, by the
+corresponding node to the node hosting the NR PDCP entity. The DL Radio
+Quality Index is a numerical index expressing the radio quality of the
+data radio bearer or the RLC entity in DL, where the value 0 represents
+the lowest quality. The UL Radio Quality Index is a numerical index
+expressing the radio quality of the data radio bearer or the RLC entity
+in UL, where the value 0 represents the lowest quality. The averaging
+window for the Average CQI, Average HARQ Failure and Average HARQ
+Retransmission is set by means of configuration. Power Headroom Report
+is PHR MAC control element reported by as defined in 3GPP TS 36.321[4]
+and 3GPP TS 38.321[5]</p>
+<p><strong>Value range:</strong> {0=UNKNOWN, 1=Average CQI, 2=Average
+HARQ Failure, 3=Average HARQ Retransmissions, 4= DL Radio Quality Index,
+5= UL Radio Quality Index, 6= Power Headroom Report, 7-228=reserved for
+future value extensions, 229-255=reserved for test purposes}.</p>
+<p><strong>Field length:</strong> 1 octet.</p>
+<h4 id="radio-quality-assistance-information">5.5.3.39 Radio Quality
+Assistance Information</h4>
+<p><strong>Description:</strong> This parameter indicates one of the
+assistance information indicated by the Assistance Information Type.</p>
+<p><strong>Value range:</strong> {0..2<sup>8</sup>-1}.</p>
+<p><strong>Field length:</strong> 1 octet.</p>
+<h4 id="assistance-information-report-polling-flag">5.5.3.40 Assistance
+Information Report Polling Flag</h4>
+<p><strong>Description:</strong> This parameter indicates that the node
+hosting the NR PDCP entity requests the corresponding node to send an
+ASSISTANCE INFORMATION DATA PDU.</p>
+<p><strong>Value range:</strong> {0= Assistance Information Data not
+requested, 1= Assistance Information Data requested}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="report-delivered">5.5.3.41 Report Delivered</h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of DL report NR PDCP PDU SN.</p>
+<p><strong>Value range:</strong> {0= DL report NR PDCP PDU SN not
+present, 1= DL report NR PDCP PDU SN present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="dl-report-nr-pdcp-pdu-sn">5.5.3.42 DL report NR PDCP PDU SN</h4>
+<p><strong>Description:</strong> This parameter indicates that the node
+hosting PDCP entity requests providing the down link delivery status
+report when the NR PDCP PDU with this sequence number has been
+successfully delivered.</p>
+<p><strong>Value range:</strong> {0..2<sup>24</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4 id="user-data-existence-flag">5.5.3.43 User data existence flag</h4>
+<p><strong>Description:</strong> This parameter indicates whether the
+node hosting the NR PDCP entity has some user data for the concerned
+data radio bearer.</p>
+<p><strong>Value range:</strong> {0= the node hosting the NR PDCP entity
+has no more user data for the concerned data radio bearer, 1= the node
+hosting the NR PDCP entity has some user data for the concerned data
+radio bearer}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4
+id="number-of-octets-for-radio-quality-assistance-information-field">5.5.3.44
+Number of octets for Radio Quality Assistance Information Field</h4>
+<p><strong>Description:</strong> This field indicates the number of
+octets for Radio Quality Assistance Information exists. For Average CQI,
+Average HARQ Failure, Average HARQ Retransmissions, DL Radio Quality
+Index, UL Radio Quality Index, this field shall indicate as “1.” For
+Power Headroom Report, this filed shall indicate octet length of Power
+Headroom Report as defined in 3GPP TS 36.321[4] and 3GPP TS
+38.321[5].</p>
+<p><strong>Value range:</strong> {0..2<sup>8</sup>-1}.</p>
+<p><strong>Field length:</strong> 1 octets.</p>
+<h4 id="assistance-information-indication">5.5.3.45 Assistance
+Information Indication</h4>
+<p><strong>Description:</strong> This field indicates the presence of
+the Number of Assistance Information Fields.</p>
+<p><strong>Value range:</strong> {0= Number of Assistance Information
+Fields not present, 1= Number of Assistance Information Fields
+present}.</p>
+<h4 id="ul-delay-indicator">5.5.3.46 UL Delay Indicator</h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of the UL Delay DU Result. This information element is not applicable to
+E-UTRA PDCP.</p>
+<p><strong>Value range:</strong> {0= UL Delay DU Result not present, 1=
+UL Delay DU Result present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="dl-delay-indicator">5.5.3.47 DL Delay Indicator</h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of the DL Delay DU Result. This information element is not applicable to
+E-UTRA PDCP.</p>
+<p><strong>Value range:</strong> {0= DL Delay DU Result not present, 1=
+DL Delay DU Result present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="ul-delay-du-result">5.5.3.48 UL Delay DU Result</h4>
+<p><strong>Description:</strong> This field indicates UL delay measured
+at the corresponding node in milliseconds for the concerned DRB over Uu
+interface. It is encoded as an Unsigned32 binary integer value. The node
+hosting PDCP entity shall, if supported, use this information to
+calculate the total UL delay for the concerned DRB and report to the UPF
+for the purpose of QoS monitoring as specified in [8]. This information
+element is not applicable to E-UTRA PDCP.</p>
+<p><strong>Value range:</strong> {0..2<sup>32</sup>-1}.</p>
+<p><strong>Field length:</strong> 4 octets.</p>
+<h4 id="dl-delay-du-result">5.5.3.49 DL Delay DU Result</h4>
+<p><strong>Description:</strong> This field indicates DL delay measured
+at the corresponding node in milliseconds for the concerned DRB over Uu
+interface. It is encoded as an Unsigned32 binary integer value. The node
+hosting PDCP entity shall, if supported, use this information to
+calculate the total DL delay for the concerned DRB and report to the UPF
+for the purpose of QoS monitoring as specified in [8]. This information
+element is not applicable to E-UTRA PDCP.</p>
+<p><strong>Value range:</strong> {0..2<sup>32</sup>-1}.</p>
+<p><strong>Field length:</strong> 4 octets.</p>
+<h4 id="delivered-nr-pdcp-sn-range-ind">5.5.3.50 Delivered NR PDCP SN
+Range Ind</h4>
+<p><strong>Description:</strong> This field indicates the presence of
+the Number of successfully delivered out of sequence PDCP Sequence
+Number range, Start of successfully delivered out of sequence PDCP
+Sequence Number range and End of successfully delivered out of sequence
+PDCP Sequence Number range.</p>
+<p><strong>Value range:</strong> {0= Number of successfully delivered
+out of sequence PDCP Sequence Number range, Start of successfully
+delivered out of sequence PDCP Sequence Number range and End of
+successfully delivered out of sequence PDCP Sequence Number range not
+present, 1= Number of successfully delivered out of sequence PDCP
+Sequence Number range, Start of successfully delivered out of sequence
+PDCP Sequence Number range and End of successfully delivered out of
+sequence PDCP Sequence Number range present}.</p>
+<h4
+id="number-of-successfully-delivered-out-of-sequence-pdcp-sequence-number-range">5.5.3.51
+Number of successfully delivered out of sequence PDCP Sequence Number
+range</h4>
+<p><strong>Description:</strong> This parameter indicates the number of
+PDCP Sequence Number ranges reported to be successfully delivered out of
+sequence.</p>
+<p><strong>Value range:</strong> {1..255}.</p>
+<p><strong>Field length:</strong> 1 octet.</p>
+<h4
+id="start-of-successfully-delivered-out-of-sequence-pdcp-sequence-number-range">5.5.3.52
+Start of successfully delivered out of sequence PDCP Sequence Number
+range</h4>
+<p><strong>Description:</strong> This parameter indicates the start of a
+PDCN sequence number range reported to be successfully delivered out of
+sequence.</p>
+<p><strong>Value range:</strong> {0..2<sup>18</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4
+id="end-of-successfully-delivered-out-of-sequence-pdcp-sequence-number-range">5.5.3.53
+End of successfully delivered out of sequence PDCP Sequence Number
+range</h4>
+<p><strong>Description:</strong> This parameter indicates the end of a
+PDCN sequence number range reported to be successfully delieved out of
+sequence.</p>
+<p><strong>Value range:</strong> {0..2<sup>18</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4 id="request-outofseq-report">5.5.3.54 Request OutOfSeq Report</h4>
+<p><strong>Description:</strong> This parameter indicates that the node
+hosting the NR PDCP entity requests the corresponding node to report the
+NR PDCP PDU sequence number successfully delivered out of sequence in
+downlink delivery status report.</p>
+<p><strong>Value range:</strong> {0= NR PDCP PDU sequence number
+successfully delivered out of sequence reporting in downlink delivery
+status report not requested, 1= NR PDCP PDU sequence number successfully
+delivered out of sequence reporting in downlink delivery status report
+requested}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="nr-u-sn-ind.">5.5.3.55 NR-U SN Ind.</h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of NR-U Sequence Number of the Polling Frame that triggered transmission
+of the DL DATA DELIVERY STATUS.</p>
+<p><strong>Value range:</strong> {0= NR-U Sequence Number of Polling
+Frame not present, 1= NR-U Sequence Number of Polling Frame
+present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="feedback-delay-ind.">5.5.3.56 Feedback Delay Ind.</h4>
+<p><strong>Description:</strong> This parameter indicates the presence
+of Feedback Delay Result.</p>
+<p><strong>Value range:</strong> {0= Feedback Delay Result not present,
+1= Feedback Delay Result present}.</p>
+<p><strong>Field length:</strong> 1 bit.</p>
+<h4 id="nr-u-sequence-number-of-polling-frame">5.5.3.57 NR-U Sequence
+Number of Polling Frame</h4>
+<p><strong>Description:</strong> This parameter indicates the NR-U
+sequence number of the Polling Frame that triggered transmission of the
+DL DATA DELIVERY STATUS.</p>
+<p><strong>Value range:</strong> {0..2<sup>24</sup>-1}.</p>
+<p><strong>Field length:</strong> 3 octets.</p>
+<h4 id="feedback-delay-result">5.5.3.58 Feedback Delay Result</h4>
+<p><strong>Description:</strong> This parameter indicates the feedback
+delay time measured at the corresponding node in milliseconds from the
+time of reception of the Polling Frame that triggered transmission of
+the DL DATA DELIVERY STATUS to the time of transmission of the DL DATA
+DELIVERY STATUS. It is encoded as an Unsigned32 binary integer
+value.</p>
+<p><strong>Value range:</strong> {0..2<sup>32</sup>-1}.</p>
+<p><strong>Field length:</strong> 4 octets.</p>
+<h3 id="timers">5.5.4 Timers</h3>
+<p>Not applicable.</p>
+<h2 id="handling-of-unknown-unforeseen-and-erroneous-protocol-data">5.6
+Handling of unknown, unforeseen and erroneous protocol data</h2>
+<p>Void.</p>
+<p class="heading"
+id="annex-a-informative-example-of-using-future-extension"><br />
+Annex A (informative):<br />
+Example of using future Extension</p>
+<h1 id="a.1-example-of-using-future-extension-field">A.1 Example of
+using Future Extension field</h1>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th>New IE flag 7(E)</th>
+<th><p>New IE flag</p>
+<p>6</p></th>
+<th><p>New IE flag</p>
+<p>5</p></th>
+<th><p>New IE flag</p>
+<p>4</p></th>
+<th><p>New IE flag</p>
+<p>3</p></th>
+<th><p>New IE flag</p>
+<p>2</p></th>
+<th><p>New IE flag</p>
+<p>1</p></th>
+<th><p>New IE flag</p>
+<p>0</p></th>
+<th><p>1 Octet</p>
+<p>New IE Flags</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="8">New IE 1</td>
+<td>3 Octets</td>
+</tr>
+<tr>
+<td colspan="8">New IE 2</td>
+<td>2 Octets</td>
+</tr>
+</tbody>
+</table>
+<p>Figure X.Y: Example of Future Extension field</p>
+<p>In the Example of the Future Extension field, New IE flag 0 indicates
+if the New IE 1 is present or not. New IE flag 1 indicaes if the new IE
+2 is present or not.</p>
+<h2 id="a.1.1-new-ie-flags">A.1.1 New IE Flags</h2>
+<p><strong>Description:</strong> The <em>New IE Flags</em> IE is only
+present if at least one new IE is present. The <em>New IE Flags</em> IE
+contains flags indicating which new IEs that are present following the
+<em>New IE Flags</em> IE. The last bit position of the <em>New IE
+Flags</em> IE is used as the Extension Flag to allow the extension of
+the <em>New IE Flags</em> IE in the future. Extension octets of the
+<em>New IE Flags</em> IE shall follow directly after the first octet of
+the <em>New IE Flags</em> IE. When an extension octet of the <em>New IE
+Flags</em> IE is present, then all previous extension octets of the
+<em>New IE Flags</em> IE and the <em>New IE Flags</em> IE shall also be
+present, even if they have all their flag bits indicating no presence of
+their respective new IEs.</p>
+<p class="heading" id="annex-b-informative-change-history"><br />
+Annex B (informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 50%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-04</td>
+<td style="text-align: center;">R3#95b</td>
+<td style="text-align: center;">R3-171173</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">TS skeleton</td>
+<td style="text-align: center;">0.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-04</td>
+<td style="text-align: center;">R3#95b</td>
+<td style="text-align: center;">R3-171318</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Merged TPs from R3#95b: R3-171346</td>
+<td style="text-align: center;">0.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-05</td>
+<td style="text-align: center;">R3#96</td>
+<td style="text-align: center;">R3-171743</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Editorial changes</td>
+<td style="text-align: center;">0.0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-06</td>
+<td style="text-align: center;">R3#ad-hoc2</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Submission</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-10</td>
+<td style="text-align: center;">R3#97bis</td>
+<td style="text-align: center;"><p>R3-173978</p>
+<p>R3-174222</p></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Incorporated agreed pCRs from
+R3#97bis</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-11</td>
+<td style="text-align: center;">R3#98</td>
+<td style="text-align: center;"><p>R3-174957</p>
+<p>R3-174792</p>
+<p>R3-175031</p>
+<p>R3-174982</p></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Incorporated agreed pCRs from R3#98</td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">RP-78</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TS submitted to RAN plenary for
+Approval</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">RP-78</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TS approved by RAN plenary</td>
+<td style="text-align: center;">15.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RP-79</td>
+<td style="text-align: center;">RP-180468</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur’s update to TS38.425</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RP-79</td>
+<td style="text-align: center;">RP-180468</td>
+<td style="text-align: center;">0002</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to NR UP protocol</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RP-79</td>
+<td style="text-align: center;">RP-180468</td>
+<td style="text-align: center;">0003</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Data Retransmission Indication</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RP-79</td>
+<td style="text-align: center;">RP-180468</td>
+<td style="text-align: center;">0006</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Avoiding exceeding the max size of the
+NR RAN Container</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RP-79</td>
+<td style="text-align: center;">RP-180468</td>
+<td style="text-align: center;">0010</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Clarification and correction on U-plane
+for EN-DC</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RP-79</td>
+<td style="text-align: center;">RP-180468</td>
+<td style="text-align: center;">0014</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of frame structure and Spare
+extension</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RP-79</td>
+<td style="text-align: center;">RP-180468</td>
+<td style="text-align: center;">0015</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Triggering of DDDS delivery</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RP-79</td>
+<td style="text-align: center;">RP-180468</td>
+<td style="text-align: center;">0016</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction to DL Discard</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RP-79</td>
+<td style="text-align: center;">RP-180468</td>
+<td style="text-align: center;">0017</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Clarifications on UP IE presence</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">RP-181238</td>
+<td style="text-align: center;">0022</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on Initial DDDS
+triggering</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">RP-181238</td>
+<td style="text-align: center;">0024</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Clarification of the use of the desired
+buffer size</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">RP-181238</td>
+<td style="text-align: center;">0028</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of Reporting PDCP SN</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">RP-181373</td>
+<td style="text-align: center;">0029</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction the max value of one
+octet</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">RP-181272</td>
+<td style="text-align: center;">0032</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Introduction of assistance information
+for DL PDCP duplication (38.425 Baseline CR covering RAN3
+agreements)</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">RP-181239</td>
+<td style="text-align: center;">0034</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Final Frame Indication</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">RP-181238</td>
+<td style="text-align: center;">0035</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on padding</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">RP-181238</td>
+<td style="text-align: center;">0037</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">UL and DL outage</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">RP-181239</td>
+<td style="text-align: center;">0039</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Various corrections for the NR UP</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">RP-181239</td>
+<td style="text-align: center;">0045</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur's update to TS38.425
+v15.1.0</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">RP-181239</td>
+<td style="text-align: center;">0047</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on length for
+retransmission</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RP-81</td>
+<td style="text-align: center;">RP-181922</td>
+<td style="text-align: center;">0049</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">NR Corrections (38.425 Baseline CR
+covering RAN3-101 agreements)</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RP-81</td>
+<td style="text-align: center;">RP-181920</td>
+<td style="text-align: center;">0050</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on data existence indication for
+split bearer</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RP-81</td>
+<td style="text-align: center;">RP-181920</td>
+<td style="text-align: center;">0051</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on Radio Quality Assistance
+Information for PHR</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RP-81</td>
+<td style="text-align: center;">RP-181920</td>
+<td style="text-align: center;">0054</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correct the range of the DL discard
+Number of blocks IE</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RP-81</td>
+<td style="text-align: center;">RP-181921</td>
+<td style="text-align: center;">0057</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on PDCP duplication
+indication</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RP-82</td>
+<td style="text-align: center;">RP-182446</td>
+<td style="text-align: center;">0061</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Clarification of the NR UP
+initialisation</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RP-82</td>
+<td style="text-align: center;">RP-182446</td>
+<td style="text-align: center;">0066</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Differentiate RLC AM and UM for user
+plane</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RP-82</td>
+<td style="text-align: center;">RP-182446</td>
+<td style="text-align: center;">0067</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections on DL USER DATA frame</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RP-82</td>
+<td style="text-align: center;">RP-182446</td>
+<td style="text-align: center;">0068</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Miscellaneous corrections for User
+Plane</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RP-82</td>
+<td style="text-align: center;">RP-182447</td>
+<td style="text-align: center;">0070</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">DDDS polling clarification</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RP-82</td>
+<td style="text-align: center;">RP-182447</td>
+<td style="text-align: center;">0073</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Retransmission Status in UP</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RP-83</td>
+<td style="text-align: center;">RP-190555</td>
+<td style="text-align: center;">0078</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Final Frame Indication in NR-UP</td>
+<td style="text-align: center;">15.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-07</td>
+<td style="text-align: center;">RP-84</td>
+<td style="text-align: center;">RP-191394</td>
+<td style="text-align: center;">0083</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Clarification on desired buffer
+size</td>
+<td style="text-align: center;">15.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RP-87-e</td>
+<td style="text-align: center;">RP-200425</td>
+<td style="text-align: center;">0105</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">E2E delay measurement for Qos monitoring
+for URLLC</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201079</td>
+<td style="text-align: center;">0102</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Resource efficient PDCP duplication:
+enhancement 3</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201077</td>
+<td style="text-align: center;">0103</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">BL CR to 38.425: Support for IAB</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201085</td>
+<td style="text-align: center;">0107</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur's correction for TS
+38.425</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RP-89-e</td>
+<td style="text-align: center;">RP-201955</td>
+<td style="text-align: center;">0110</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Correction of Downlink Data Delivery
+Status</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RP-91-e</td>
+<td style="text-align: center;">RP-210239</td>
+<td style="text-align: center;">0113</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Discard NR PDCP PDUs without PDCP PDU
+transfer</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220217</td>
+<td style="text-align: center;">0124</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR to 38.425: Baseline CR for
+introducing Rel-17 Enhanced eNB Architecture Evolution</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220224</td>
+<td style="text-align: center;">0136</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">BLCR to TS 38.425: Introduction of
+MBS</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-09</td>
+<td style="text-align: center;">RP-97-e</td>
+<td style="text-align: center;">RP-222201</td>
+<td style="text-align: center;">0143</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of F1-U Delay Measurement for
+QoS Monitoring</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-12</td>
+<td style="text-align: center;">RP-98-e</td>
+<td style="text-align: center;">RP-222892</td>
+<td style="text-align: center;">0140</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Clarification of the desired buffer size
+in case of retransmissions [DesBufRetrans]</td>
+<td style="text-align: center;">17.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-03</td>
+<td style="text-align: center;">RAN#99</td>
+<td style="text-align: center;">RP-230599</td>
+<td style="text-align: center;">0145</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on W1 interface in
+TS38.425</td>
+<td style="text-align: center;">17.3.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

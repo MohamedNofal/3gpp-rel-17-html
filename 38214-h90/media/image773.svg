@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.37483731019522776in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 2368 864" width="1.0273318872017354in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 9; stroke-linejoin: round; }
+.font0 { font-size: 171px; font-family: "Times New Roman", serif; }
+.font1 { font-size: 317px; font-family: "Times New Roman", serif; }
+.font2 { font-style: italic; font-size: 116px; font-family: "Times New Roman", serif; }
+.font3 { font-style: italic; font-size: 171px; font-family: "Times New Roman", serif; }
+.font4 { font-style: italic; font-size: 155px; font-family: Symbol, serif; }
+.font5 { font-style: italic; font-size: 287px; font-family: Symbol, serif; }
+.font6 { font-size: 155px; font-family: Symbol, serif; }
+.font7 { font-size: 287px; font-family: Symbol, serif; }
+.font8 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="1776" x2="2299" y1="325" y2="325"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1946 2041" xml:lang="en" xml:space="preserve" y="553">20</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1292 1468" xml:lang="en" xml:space="preserve" y="672">10</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1912 2004 2110 2188" xml:lang="en" xml:space="preserve" y="293">DMRS</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="321 457 614 729" xml:lang="en" xml:space="preserve" y="500">DMRS</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="281 396 532 627 754" xml:lang="en" xml:space="preserve" y="771">PUSCH</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1793" xml:space="preserve" y="235">b</text>
+        <text class="font5" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="64" xml:space="preserve" y="672">b</text>
+        <text class="font6" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1655" xml:space="preserve" y="380">-</text>
+        <text class="font7" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1047" xml:space="preserve" y="672">=</text>
+    </g>
+</svg>

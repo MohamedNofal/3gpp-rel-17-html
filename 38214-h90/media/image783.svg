@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.26377440347071585in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 1120 608" width="0.48590021691973967in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 16; stroke-linejoin: round; }
+.pen2 { stroke: rgb(0,0,0); stroke-width: 32; stroke-linejoin: round; }
+.font0 { font-size: 346px; font-family: "Times New Roman", serif; }
+.font1 { font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="438" x2="487" y1="356" y2="328"/>
+        <line class="pen2" fill="none" x1="487" x2="558" y1="336" y2="464"/>
+        <line class="pen1" fill="none" x1="566" x2="660" y1="464" y2="82"/>
+        <line class="pen1" fill="none" x1="660" x2="1052" y1="82" y2="82"/>
+        <line class="pen1" fill="none" x1="392" x2="243" y1="74" y2="538"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="684" xml:lang="en" xml:space="preserve" y="448">21</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="52" xml:lang="en" xml:space="preserve" y="448">7</text>
+    </g>
+</svg>

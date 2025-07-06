@@ -1,0 +1,2628 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38849-h10</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-of-terms-symbols-and-abbreviations"
+id="toc-definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</a>
+<ul>
+<li><a href="#terms" id="toc-terms">3.1 Terms</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#background" id="toc-background">4 Background</a></li>
+<li><a href="#nr-frequency-band-definition"
+id="toc-nr-frequency-band-definition">5 NR Frequency band definition</a>
+<ul>
+<li><a href="#band-definition" id="toc-band-definition">5.1 Band
+definition</a>
+<ul>
+<li><a href="#band-definition-for-lower-6ghz-nr-unlicensed-operation"
+id="toc-band-definition-for-lower-6ghz-nr-unlicensed-operation">5.1.1
+Band definition for lower 6GHz NR unlicensed operation</a></li>
+<li><a href="#band-definition-for-the-full-6ghz-nr-unlicensed-operation"
+id="toc-band-definition-for-the-full-6ghz-nr-unlicensed-operation">5.1.2
+Band definition for the full 6GHz NR unlicensed operation</a></li>
+</ul></li>
+<li><a href="#nr-arfcn-and-gscn" id="toc-nr-arfcn-and-gscn">5.2 NR-ARFCN
+and GSCN</a>
+<ul>
+<li><a
+href="#nr-arfcn-and-gscn-for-lower-6ghz-nr-unlicensed-operation-in-europe"
+id="toc-nr-arfcn-and-gscn-for-lower-6ghz-nr-unlicensed-operation-in-europe">5.2.2
+NR-ARFCN and GSCN for lower 6GHz NR unlicensed operation in
+Europe</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#rf-requirements" id="toc-rf-requirements">6 RF
+requirements</a>
+<ul>
+<li><a href="#ue-specific" id="toc-ue-specific">6.1 UE specific</a>
+<ul>
+<li><a href="#transmitter-characteristics"
+id="toc-transmitter-characteristics">6.1.1 Transmitter
+characteristics</a>
+<ul>
+<li><a
+href="#a-mpr-for-a-nss-for-lower-6ghz-nr-unlicensed-operation-in-europe."
+id="toc-a-mpr-for-a-nss-for-lower-6ghz-nr-unlicensed-operation-in-europe.">6.1.1.1
+A-MPR for a NS(s) for lower 6GHz NR unlicensed operation in Europe.
+</a></li>
+<li><a href="#a-mpr-for-a-nss-for-the-full-6ghz-nr-unlicensed-operation"
+id="toc-a-mpr-for-a-nss-for-the-full-6ghz-nr-unlicensed-operation">6.1.1.2
+A-MPR for a NS(s) for the full 6GHz NR unlicensed operation</a>
+<ul>
+<li><a href="#canada" id="toc-canada">6.1.1.2.1 Canada</a></li>
+<li><a href="#south-korea" id="toc-south-korea">6.1.1.2.2 South
+Korea</a></li>
+<li><a href="#peru-and-chile" id="toc-peru-and-chile">6.1.1.2.3 Peru and
+Chile</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#bs-specific" id="toc-bs-specific">6.2 BS specific</a></li>
+</ul></li>
+<li><a href="#rrm" id="toc-rrm">7 RRM</a>
+<ul>
+<li><a href="#frequency-bands-grouping"
+id="toc-frequency-bands-grouping">7.1 Frequency bands grouping</a></li>
+</ul></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TR 38.849 V17.1.0 (2022-06)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Report</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Networks;</p>
+<p>Introduction of 6GHz NR unlicensed operation</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.jpeg"
+style="width:1.32639in;height:0.91667in" /></td>
+<td style="text-align: right;"><img src="media/image2.png"
+style="width:1.77083in;height:1.03472in" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2022, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references">6</a></p>
+<p>3 Definitions of terms, symbols and abbreviations <a
+href="#definitions-of-terms-symbols-and-abbreviations">6</a></p>
+<p>3.1 Terms <a href="#terms">6</a></p>
+<p>3.2 Symbols <a href="#symbols">6</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">7</a></p>
+<p>4 Background <a href="#background">7</a></p>
+<p>5 NR Frequency band definition <a
+href="#nr-frequency-band-definition">7</a></p>
+<p>5.1 Band definition <a href="#band-definition">7</a></p>
+<p>5.1.1 Band definition for lower 6GHz NR unlicensed operation <a
+href="#band-definition-for-lower-6ghz-nr-unlicensed-operation">7</a></p>
+<p>5.1.2 Band definition for the full 6GHz NR unlicensed operation <a
+href="#band-definition-for-the-full-6ghz-nr-unlicensed-operation">8</a></p>
+<p>5.2 NR-ARFCN and GSCN <a href="#nr-arfcn-and-gscn">8</a></p>
+<p>5.2.2 NR-ARFCN and GSCN for lower 6GHz NR unlicensed operation in
+Europe <a
+href="#nr-arfcn-and-gscn-for-lower-6ghz-nr-unlicensed-operation-in-europe">8</a></p>
+<p>6 RF requirements <a href="#rf-requirements">9</a></p>
+<p>6.1 UE specific <a href="#ue-specific">9</a></p>
+<p>6.1.1 Transmitter characteristics <a
+href="#transmitter-characteristics">9</a></p>
+<p>6.1.1.1 A-MPR for a NS(s) for lower 6GHz NR unlicensed operation in
+Europe. <a
+href="#a-mpr-for-a-nss-for-lower-6ghz-nr-unlicensed-operation-in-europe.">9</a></p>
+<p>6.1.1.2 A-MPR for a NS(s) for the full 6GHz NR unlicensed operation
+<a
+href="#a-mpr-for-a-nss-for-the-full-6ghz-nr-unlicensed-operation">12</a></p>
+<p>6.1.1.2.1 Canada <a href="#canada">12</a></p>
+<p>6.1.1.2.2 South Korea <a href="#south-korea">13</a></p>
+<p>6.1.1.2.3 Peru and Chile <a href="#peru-and-chile">15</a></p>
+<p>6.2 BS specific <a href="#bs-specific">17</a></p>
+<p>7 RRM <a href="#rrm">17</a></p>
+<p>7.1 Frequency bands grouping <a
+href="#frequency-bands-grouping">17</a></p>
+<p>Annex [A]: Change history <a
+href="#annex-a-informative-change-history">18</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Report has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<p>In the present document, modal verbs have the following meanings:</p>
+<p><strong>shall</strong> indicates a mandatory requirement to do
+something</p>
+<p><strong>shall not</strong> indicates an interdiction (prohibition) to
+do something</p>
+<p>The constructions "shall" and "shall not" are confined to the context
+of normative provisions, and do not appear in Technical Reports.</p>
+<p>The constructions "must" and "must not" are not used as substitutes
+for "shall" and "shall not". Their use is avoided insofar as possible,
+and they are not used in a normative context except in a direct citation
+from an external, referenced, non-3GPP document, or so as to maintain
+continuity of style when extending or modifying the provisions of such a
+referenced document.</p>
+<p><strong>should</strong> indicates a recommendation to do
+something</p>
+<p><strong>should not</strong> indicates a recommendation not to do
+something</p>
+<p><strong>may</strong> indicates permission to do something</p>
+<p><strong>need not</strong> indicates permission not to do
+something</p>
+<p>The construction "may not" is ambiguous and is not used in normative
+elements. The unambiguous constructions "might not" or "shall not" are
+used instead, depending upon the meaning intended.</p>
+<p><strong>can</strong> indicates that something is possible</p>
+<p><strong>cannot</strong> indicates that something is impossible</p>
+<p>The constructions "can" and "cannot" are not substitutes for "may"
+and "need not".</p>
+<p><strong>will</strong> indicates that something is certain or expected
+to happen as a result of action taken by an agency the behaviour of
+which is outside the scope of the present document</p>
+<p><strong>will not</strong> indicates that something is certain or
+expected not to happen as a result of action taken by an agency the
+behaviour of which is outside the scope of the present document</p>
+<p><strong>might</strong> indicates a likelihood that something will
+happen as a result of action taken by some agency the behaviour of which
+is outside the scope of the present document</p>
+<p><strong>might not</strong> indicates a likelihood that something will
+not happen as a result of action taken by some agency the behaviour of
+which is outside the scope of the present document</p>
+<p>In addition:</p>
+<p><strong>is</strong> (or any other verb in the indicative mood)
+indicates a statement of fact</p>
+<p><strong>is not</strong> (or any other negative verb in the indicative
+mood) indicates a statement of fact</p>
+<p>The constructions "is" and "is not" do not indicate requirements.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document is a technical report for Work Item on New Radio
+(NR) Access Technology, covering introduction of lower 6GHz NR
+unlicensed operation for Europe (NR_6GHz_unlic_EU) and in the 5925-7125
+MHz range for other regions (NR_6GHz_unlic_full).</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TR 37.890: Feasibility Study on 6 GHz for LTE and NR in
+Licensed and Unlicensed Operations</p>
+<h1 id="definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</h1>
+<h2 id="terms">3.1 Terms</h2>
+<p>For the purposes of the present document, the terms given in 3GPP
+TR 21.905 [1] and the following apply. A term defined in the present
+document takes precedence over the definition of the same term, if any,
+in 3GPP TR 21.905 [1].</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>ACLR Adjacent Channel Leakage Ratio</p>
+<p>ACS Adjacent Channel Selectivity</p>
+<p>BS Base Station</p>
+<p>BW Bandwidth</p>
+<p>EIRP Effective Isotropic Radiated Power</p>
+<p>FR Frequency Range</p>
+<p>GSCN Global Synchronization Channel Number</p>
+<p>ICS In-Channel Selectivity</p>
+<p>ITU‑R Radiocommunication Sector of the International
+Telecommunication Union</p>
+<p>NR New Radio</p>
+<p>NR-ARFCN NR Absolute Radio Frequency Channel Number</p>
+<p>OTA Over The Air</p>
+<p>RF Radio Frequency</p>
+<p>RX Receiver</p>
+<p>SCS Sub-Carrier Spacing</p>
+<p>TDD Time division Duplex</p>
+<h1 id="background">4 Background</h1>
+<p>Administrations in Europe have had unlicensed operation in the range
+5925 to 6425 MHz for consultation. The result of this consultation is
+that at the November 2020 meeting the ECC with ECC Decision (20)01 “on
+the harmonised use of the frequency bands 5945 to 6425 MHz for the
+implementation of Wireless Access Systems including Radio Local Area
+Networks (WAS/RLANs)” approved unlicensed operation in the range 5945 to
+6425 MHz. This initiated this TR which has later been expanded to also
+include NR unlicensed operation in the 6 GHz band for other regions.</p>
+<p>NR-Unlicensed is standardized in Rel-16 with the definition of band
+n96 covering the spectrum range 5925-7125 MHz which is currently
+applicable in the USA only subject to FCC Report and Order FCC 20-51.
+For Rel-17 3GPP WG4 is tasked to also enable unlicensed operation in the
+range 5945 to 6425 MHz for European deployments and in the 5925-7125 MHz
+range for other regions.</p>
+<p>Regulatory information is maintained in [2].</p>
+<h1 id="nr-frequency-band-definition">5 NR Frequency band
+definition</h1>
+<h2 id="band-definition">5.1 Band definition</h2>
+<h3 id="band-definition-for-lower-6ghz-nr-unlicensed-operation">5.1.1
+Band definition for lower 6GHz NR unlicensed operation</h3>
+<p>A NR band for unlicensed operation in the range 5925-6425 MHz is
+defined as:</p>
+<p>Table 5.1.1-1: NR <em>operating bands</em> in FR1</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 33%" />
+<col style="width: 36%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR operating band</th>
+<th><p>Uplink (UL) operating band<br />
+BS receive / UE transmit</p>
+<p>FUL,low – FUL,high</p></th>
+<th><p>Downlink (DL) operating band<br />
+BS transmit / UE receive</p>
+<p>FDL,low – FDL,high</p></th>
+<th>Duplex mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n102</td>
+<td>5925 MHz – 6425 MHz</td>
+<td>5925 MHz – 6425 MHz</td>
+<td>TDD<sup>3</sup></td>
+</tr>
+<tr>
+<td colspan="4">NOTE 3: This band is restricted to operation with shared
+spectrum channel access as defined in TS 37.213.</td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.1.1-2: <em>Channel bandwidths</em> and SCS per <em>operating
+band</em> in FR1</p>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 4%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 4%" />
+<col style="width: 6%" />
+<col style="width: 4%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">NR Band</th>
+<th rowspan="2">SCS (kHz)</th>
+<th colspan="15"><em>Channel bandwidth</em> (MHz)</th>
+</tr>
+<tr>
+<th>5</th>
+<th>10</th>
+<th>15</th>
+<th>20</th>
+<th>25</th>
+<th>30</th>
+<th>35</th>
+<th>40</th>
+<th>45</th>
+<th>50</th>
+<th>60</th>
+<th>70</th>
+<th>80</th>
+<th>90</th>
+<th>100</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>15</td>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td></td>
+<td></td>
+<td></td>
+<td>40</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n102</td>
+<td>30</td>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td></td>
+<td></td>
+<td></td>
+<td>40</td>
+<td></td>
+<td></td>
+<td>60</td>
+<td></td>
+<td>80</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>60</td>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td></td>
+<td></td>
+<td></td>
+<td>40</td>
+<td></td>
+<td></td>
+<td>60</td>
+<td></td>
+<td>80</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="band-definition-for-the-full-6ghz-nr-unlicensed-operation">5.1.2
+Band definition for the full 6GHz NR unlicensed operation</h3>
+<p>A NR band covering the full 6 GHz unlicensed range is defined as:</p>
+<p>Table 5.1.2-1: NR <em>operating bands</em> in FR1</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 33%" />
+<col style="width: 36%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR operating band</th>
+<th><p>Uplink (UL) operating band<br />
+BS receive / UE transmit</p>
+<p>FUL,low – FUL,high</p></th>
+<th><p>Downlink (DL) operating band<br />
+BS transmit / UE receive</p>
+<p>FDL,low – FDL,high</p></th>
+<th>Duplex mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n96</td>
+<td>5925 MHz – 7125 MHz</td>
+<td>5925 MHz – 7125 MHz</td>
+<td>TDD<sup>3</sup></td>
+</tr>
+<tr>
+<td colspan="4">NOTE 3: This band is restricted to operation with shared
+spectrum channel access as defined in TS 37.213.</td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.1.2-2: <em>Channel bandwidths</em> and SCS per <em>operating
+band</em> in FR1</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 4%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 4%" />
+<col style="width: 6%" />
+<col style="width: 4%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">NR Band</th>
+<th rowspan="2">SCS (kHz)</th>
+<th colspan="15"><em>Channel bandwidth</em> (MHz)</th>
+</tr>
+<tr>
+<th>5</th>
+<th>10</th>
+<th>15</th>
+<th>20</th>
+<th>25</th>
+<th>30</th>
+<th>35</th>
+<th>40</th>
+<th>45</th>
+<th>50</th>
+<th>60</th>
+<th>70</th>
+<th>80</th>
+<th>90</th>
+<th>100</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>15</td>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td></td>
+<td></td>
+<td></td>
+<td>40</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n96</td>
+<td>30</td>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td></td>
+<td></td>
+<td></td>
+<td>40</td>
+<td></td>
+<td></td>
+<td>60</td>
+<td></td>
+<td>80</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>60</td>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td></td>
+<td></td>
+<td></td>
+<td>40</td>
+<td></td>
+<td></td>
+<td>60</td>
+<td></td>
+<td>80</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="nr-arfcn-and-gscn">5.2 NR-ARFCN and GSCN</h2>
+<h3
+id="nr-arfcn-and-gscn-for-lower-6ghz-nr-unlicensed-operation-in-europe">5.2.2
+NR-ARFCN and GSCN for lower 6GHz NR unlicensed operation in Europe</h3>
+<p>Operation in the 6GHz EU band is to be aligned with other
+technologies operation in the same shared spectrum restricted to the
+following NR-ARFCN and GSCN points.</p>
+<p>Applicable GSCN in Europe:</p>
+<blockquote>
+<p>- GSCN = {9548, 9562, 9576, 9590, 9603, 9617,9631, 9645, 9659, 9673,
+9687, 9701, 9714, 9728, 9742, 9756, 9770, 9784, 9798, 9812, 9826, 9840,
+9853, 9867}</p>
+</blockquote>
+<p>Applicable NR-ARFCN in Europe:</p>
+<blockquote>
+<p>- For 20 MHz channel bandwidth, NREF = {797000, 798332, 799668,
+801000, 802332, 803668, 805000, 806332, 807668, 809000, 810332, 811668,
+813000, 814332, 815668, 817000, 818332, 819668, 821000, 822332, 823668,
+825000, 826332, 827668}</p>
+<p>- For 40 MHz channel bandwidth, NREF = {797668, 800332, 803000,
+805668, 808332, 811000, 813668, 816332, 819000, 821668, 824332,
+827000}</p>
+<p>- For 60 MHz channel bandwidth, NREF = {798332, 799668, 803668,
+805000, 809000, 810332, 814332, 815668, 819668, 821000, 825000,
+826332}</p>
+<p>- For 80 MHz channel bandwidth, NREF = {799000, 804332, 809668,
+815000, 820332, 825668, 831000}</p>
+</blockquote>
+<h1 id="rf-requirements">6 RF requirements</h1>
+<h2 id="ue-specific">6.1 UE specific</h2>
+<h3 id="transmitter-characteristics">6.1.1 Transmitter
+characteristics</h3>
+<p>This section details specific transmitter characteristics for a UE
+operating in the 6 GHz NR band.</p>
+<p>Table 6.1.1-1: Summary of NS values.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 17%" />
+<col style="width: 32%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Country</th>
+<th colspan="3">Mode</th>
+</tr>
+<tr>
+<th>SP</th>
+<th>LPI</th>
+<th>VLP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">Region 1</td>
+</tr>
+<tr>
+<td>EU/CEPT</td>
+<td>N/A</td>
+<td>NS_58</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td colspan="4"><strong>Region 2</strong></td>
+</tr>
+<tr>
+<td>US</td>
+<td>NS_54</td>
+<td>NS_53</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Canada</td>
+<td>NS_54</td>
+<td>NS_59</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Brazil</td>
+<td>N/A</td>
+<td>NS_53</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Peru</td>
+<td>N/A</td>
+<td><u>NS_53</u></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Chile</td>
+<td>N/A</td>
+<td><u>NS_53</u></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Costa Rica</td>
+<td>N/A</td>
+<td>NS_01</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Colombia</td>
+<td>N/A</td>
+<td>NS_53</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td colspan="4"><strong>Region 3</strong></td>
+</tr>
+<tr>
+<td>South Korea</td>
+<td>N/A</td>
+<td>NS_60</td>
+<td>[NS_61]</td>
+</tr>
+</tbody>
+</table>
+<h4
+id="a-mpr-for-a-nss-for-lower-6ghz-nr-unlicensed-operation-in-europe.">6.1.1.1
+A-MPR for a NS(s) for lower 6GHz NR unlicensed operation in Europe.
+</h4>
+<p>Additional emission requirements can be signalled by the network.
+Each additional emission requirement is associated with a unique network
+signalling (NS) value indicated in RRC signalling by an NR frequency
+band number of the applicable operating band as detailed in TS
+38.101-1<em>.</em></p>
+<p>To meet the additional requirements applicable in EU as given in EN
+303 687, additional maximum power reduction (A-MPR) is allowed for the
+maximum output power as specified in Table 6.1.1.1-1 for low power
+indoor (LPI).</p>
+<p>Table 6.1.1.1-1: A-MPR for PC5 LPI</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 25%" />
+<col style="width: 22%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>Pre-coding</th>
+<th>Modulation</th>
+<th colspan="2">RB Allocation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>Full<sup>2</sup> (dB)</td>
+<td>Partial<sup>3</sup> (dB)</td>
+</tr>
+<tr>
+<td>DFT-s-ODFM</td>
+<td>Pi/2 BPSK<sup>4</sup></td>
+<td>≤ 1.5</td>
+<td>≤ 2.5</td>
+</tr>
+<tr>
+<td></td>
+<td>QPSK</td>
+<td>≤ 2.0</td>
+<td>≤ 3.5</td>
+</tr>
+<tr>
+<td></td>
+<td>16 QAM</td>
+<td>≤ 2.5</td>
+<td>≤ 4.0</td>
+</tr>
+<tr>
+<td></td>
+<td>64 QAM</td>
+<td>≤ 3.5</td>
+<td>≤ 4.5</td>
+</tr>
+<tr>
+<td></td>
+<td>256 QAM</td>
+<td>≤ 5.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td>CP-OFDM</td>
+<td>QPSK</td>
+<td>≤ 3.5</td>
+<td>≤ 4.5</td>
+</tr>
+<tr>
+<td></td>
+<td>16 QAM</td>
+<td>≤ 4.0</td>
+<td>≤ 4.5</td>
+</tr>
+<tr>
+<td></td>
+<td>64 QAM</td>
+<td>≤ 5.5</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td></td>
+<td>256 QAM</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+</tr>
+<tr>
+<td colspan="4"><p>NOTE 1: The A-MPR shall apply to all SCS in all
+active 20 MHz sub-bands contiguously allocated in the channel. The MPR
+applies to interlaced allocations with uplink resource allocation type 2
+as specified in TS 38.214 [10].</p>
+<p>NOTE 2: Full RB allocation A-MPR applies when all RB’s in a 20 MHz
+channel or all RB’s in all sub-bands for wideband operation are fully
+allocated and sub-bands are transmitted according to configuration A in
+Table 6.2F.2-2.</p>
+<p>NOTE 3: Partial RB allocation A-MPR applies when one or more RB’s in
+one or more sub-bands are not allocated or when the transmitted
+sub-bands for wideband operation are transmitted according to
+configuration B in Table 6.2F.2-2.</p>
+<p>NOTE 4: Applicable to Pi/2-BPSK modulation when IE powerBoostPi2BPSK
+is set to 0.</p>
+<p>NOTE 5: The A-MPR applies instead of MPR for 20 MHz channel centered
+at the nearest NR-ARFCN corresponding to 5955 MHz, 40 MHz channel at the
+nearest NR-ARFCN corresponding to 5965 MHz, 60 MHz channel at the
+nearest NR-ARFCN corresponding to 5975 MHz, and 80 MHz channel at the
+nearest NR-ARFCN corresponding to 5985 MHz. For all other channels,
+A-MPR is zero and MPR as specified in Table 6.2F.2-1 applies.</p></td>
+</tr>
+</tbody>
+</table>
+<p>For very low power (VLP) operation the out-of-band emissions and
+in-band power spectral density requirements are much more restrictive
+than for LPI. For PC5 VLP, a comprehensive set of A-MPR simulation
+results is provided below for 20, 40, 60, and 80 MHz channels. In Figure
+6.1.1.1-1 all channels in the band are represented while in Figure
+6.1.1.1-2 lower edge channels are not illustrated since those are most
+impacted by the additional spurious emission requirement of -45 dBm/MHz.
+The lower edge channels found to be impacted were the ones centered at
+5955 MHz for 20 MHz channels, 5965 MHz for 40 MHz channels, 5975 MHz and
+5995 MHz for 60 MHz channels, and 5985 MHz for 80 MHz channels.</p>
+<p>Table 6.1.1.1-2. Simulation scenarios for all CBW/SCS</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 24%" />
+<col style="width: 22%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Modulation</th>
+<th>DFT/CP</th>
+<th>Allocation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>QPSK</td>
+<td>CP</td>
+<td>Interlace_0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>QPSK</td>
+<td>DFT-S</td>
+<td>Interlace_0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>QPSK</td>
+<td>CP</td>
+<td>Full</td>
+</tr>
+<tr>
+<td>4</td>
+<td>QPSK</td>
+<td>DFT-S</td>
+<td>Full</td>
+</tr>
+<tr>
+<td>5</td>
+<td>16QAM</td>
+<td>CP</td>
+<td>Interlace_0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>16QAM</td>
+<td>DFT-S</td>
+<td>Interlace_0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>16QAM</td>
+<td>CP</td>
+<td>Full</td>
+</tr>
+<tr>
+<td>8</td>
+<td>16QAM</td>
+<td>DFT-S</td>
+<td>Full</td>
+</tr>
+<tr>
+<td>9</td>
+<td>64QAM</td>
+<td>CP</td>
+<td>Interlace_0</td>
+</tr>
+<tr>
+<td>10</td>
+<td>64QAM</td>
+<td>DFT-S</td>
+<td>Interlace_0</td>
+</tr>
+<tr>
+<td>11</td>
+<td>64QAM</td>
+<td>CP</td>
+<td>Full</td>
+</tr>
+<tr>
+<td>12</td>
+<td>64QAM</td>
+<td>DFT-S</td>
+<td>Full</td>
+</tr>
+<tr>
+<td>13</td>
+<td>256QAM</td>
+<td>CP</td>
+<td>Interlace_0</td>
+</tr>
+<tr>
+<td>14</td>
+<td>256QAM</td>
+<td>DFT-S</td>
+<td>Interlace_0</td>
+</tr>
+<tr>
+<td>15</td>
+<td>256QAM</td>
+<td>CP</td>
+<td>Full</td>
+</tr>
+<tr>
+<td>16</td>
+<td>256QAM</td>
+<td>DFT-S</td>
+<td>Full</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image3.png"
+style="width:6.69651in;height:3.2698in" /></p>
+<p>Figure 6.1.1.1-1. Power backoff for 20, 40, 60, and 80 MHz
+channels</p>
+<p><img src="media/image4.png"
+style="width:6.69503in;height:3.26907in" /></p>
+<p>Figure 6.1.1.1-2. Power backoff with lower edge channels excluded</p>
+<p>Based on these simulation results, the A-MPR table for VLP is
+provided below in Table 6.1.1.1-3.</p>
+<p>Table 6.1.1.1-3. PC5 A-MPR table for VLP</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 17%" />
+<col style="width: 15%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Pre-coding</th>
+<th>Modulation</th>
+<th colspan="2">RB Allocation (Note 2)</th>
+<th colspan="2">RB Allocation (Note 3)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>Full (dB)</td>
+<td>Partial (dB)</td>
+<td>Full (dB)</td>
+<td>Partial (dB)</td>
+</tr>
+<tr>
+<td>DFT-s-ODFM</td>
+<td>QPSK</td>
+<td>≤ 12</td>
+<td>≤ 14</td>
+<td>≤ 8</td>
+<td>≤ 10</td>
+</tr>
+<tr>
+<td></td>
+<td>16 QAM</td>
+<td>≤ 12</td>
+<td>≤ 15</td>
+<td>≤ 9</td>
+<td>≤ 10</td>
+</tr>
+<tr>
+<td></td>
+<td>64 QAM</td>
+<td>≤ 12</td>
+<td>≤ 15</td>
+<td>≤ 11</td>
+<td>≤ 11</td>
+</tr>
+<tr>
+<td></td>
+<td>256 QAM</td>
+<td>≤ 13</td>
+<td>≤ 15</td>
+<td>≤ 13</td>
+<td>≤ 14</td>
+</tr>
+<tr>
+<td>CP-OFDM</td>
+<td>QPSK</td>
+<td>≤ 13</td>
+<td>≤ 15</td>
+<td>≤ 10</td>
+<td>≤ 10</td>
+</tr>
+<tr>
+<td></td>
+<td>16 QAM</td>
+<td>≤ 13</td>
+<td>≤ 15</td>
+<td>≤ 11</td>
+<td>≤ 10</td>
+</tr>
+<tr>
+<td></td>
+<td>64 QAM</td>
+<td>≤ 13</td>
+<td>≤ 15</td>
+<td>≤ 13</td>
+<td>≤ 12</td>
+</tr>
+<tr>
+<td></td>
+<td>256 QAM</td>
+<td>≤ 15</td>
+<td>≤ 15</td>
+<td>≤ 15</td>
+<td>≤ 15</td>
+</tr>
+<tr>
+<td colspan="6"><p>NOTE 1: Full allocation A-MPR applies when all RB’s
+in a 20 MHz channel or all RB’s in all sub-bands for wideband operation
+are fully allocated and all sub-bands are transmitted. Partial
+allocation A-MPR applies when one or more RB’s in one or more sub-bands
+are not allocated or when not all transmitted sub-bands for wideband
+operation are transmitted.</p>
+<p>NOTE 2: Applicable for 20 MHz channels centered at the nearest
+NR-ARFCN corresponding to 5955 MHz, 40 MHz channels centered at the
+nearest NR-ARFCN corresponding to 5965 MHz, 60 MHz channels centered at
+the nearest NR-ARFCN corresponding to 5975 and 5995 MHz and 80 MHz
+channels centered at the nearest NR-ARFCN corresponding to 5985 MHz.</p>
+<p>NOTE 3: Applicable for all valid channels other than those enumerated
+under NOTE 2.</p></td>
+</tr>
+</tbody>
+</table>
+<h4
+id="a-mpr-for-a-nss-for-the-full-6ghz-nr-unlicensed-operation">6.1.1.2
+A-MPR for a NS(s) for the full 6GHz NR unlicensed operation</h4>
+<h5 id="canada">6.1.1.2.1 Canada</h5>
+<p>Table 6.1.1.2.1-1: Signal setup.</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 5%" />
+<col style="width: 25%" />
+<col style="width: 13%" />
+<col style="width: 30%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: center;">ID</th>
+<th style="text-align: center;">Waveform</th>
+<th style="text-align: center;">BW</th>
+<th style="text-align: center;">RB Setup</th>
+<th style="text-align: center;">SCS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="11" style="text-align: center;"><p>Full Allocation</p>
+<p>Single CC</p></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">100RB3</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">100RB0</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">50RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">216RB0</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">162RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">216RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">106RB0</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">51RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">216RB0</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">162RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">217RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td rowspan="8" style="text-align: center;"><p>Interlaced Allocation</p>
+<p>Single CC</p></td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">1RB0 every 10RBs (10x)</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">1RB0 every 10RBs (20x)</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">1RB0 every 10RBs (30x)</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">1RB0 every 5RBs (40x)</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">1 RB0 every 10RBs (10x)</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">1RB0 every 10RBs (22x)</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">1RB0 every 10RBs (33x)</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">1RB0 every 5RBs (44x)</td>
+<td style="text-align: center;">30</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image5.png" style="width:6.69514in;height:1.97361in"
+alt="Chart, scatter chart Description automatically generated" /></p>
+<p>Figure 6.1.1.2.1-1: A-MPR simulation results for PC5 LPI in
+Canada.</p>
+<p>Table 6.1.1.2.1-2: A-MPR for PC5 LPI in Canada</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 19%" />
+<col style="width: 31%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">Pre-coding</th>
+<th rowspan="3">Modulation</th>
+<th colspan="2">Channel bandwidth (Sub-band allocation) / RB
+Allocation</th>
+</tr>
+<tr>
+<th colspan="2">20 MHz</th>
+</tr>
+<tr>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DFT-s-ODFM</td>
+<td>PI/2 BPSK</td>
+<td>≤ 3.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td></td>
+<td>QPSK</td>
+<td>≤ 3.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td></td>
+<td>16 QAM</td>
+<td>≤ 3.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td></td>
+<td>64 QAM</td>
+<td>≤ 3.5</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td></td>
+<td>256 QAM</td>
+<td>≤ 5.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td>CP-OFDM</td>
+<td>QPSK</td>
+<td>≤ 3.5</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td></td>
+<td>16 QAM</td>
+<td>≤ 4.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td></td>
+<td>64 QAM</td>
+<td>≤ 5.5</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td></td>
+<td>256 QAM</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+</tr>
+</tbody>
+</table>
+<h5 id="south-korea">6.1.1.2.2 South Korea</h5>
+<p>Table 6.1.1.2.2-1: Signal setup.</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 5%" />
+<col style="width: 25%" />
+<col style="width: 13%" />
+<col style="width: 30%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: center;">ID</th>
+<th style="text-align: center;">Waveform</th>
+<th style="text-align: center;">BW</th>
+<th style="text-align: center;">RB Setup</th>
+<th style="text-align: center;">SCS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="11" style="text-align: center;"><p>Full Allocation</p>
+<p>Single CC</p></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">100RB3</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">100RB0</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">50RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">216RB0</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">162RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">216RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">106RB0</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">51RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">216RB0</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">162RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">217RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td rowspan="8" style="text-align: center;"><p>Interlaced Allocation</p>
+<p>Single CC</p></td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">1RB0 every 10RBs (10x)</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">1RB0 every 10RBs (20x)</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">1RB0 every 10RBs (30x)</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">1RB0 every 5RBs (40x)</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">1 RB0 every 10RBs (10x)</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">1RB0 every 10RBs (22x)</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">1RB0 every 10RBs (33x)</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">1RB0 every 5RBs (44x)</td>
+<td style="text-align: center;">30</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image6.png" style="width:6.69514in;height:1.95694in"
+alt="Chart, scatter chart Description automatically generated" /></p>
+<p>Figure 6.1.1.2.2-1: A-MPR simulation results for PC5 LPI in South
+Korea.</p>
+<p>Table 6.1.1.2.2-2: A-MPR for PC5 LPI in South Korea</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 15%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">Pre-coding</th>
+<th rowspan="3">Modulation</th>
+<th colspan="8">Channel bandwidth (Sub-band allocation) / RB
+Allocation</th>
+</tr>
+<tr>
+<th colspan="2">20 MHz</th>
+<th colspan="2">40 MHz</th>
+<th colspan="2">60 MHz</th>
+<th colspan="2">80 MHz</th>
+</tr>
+<tr>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">DFT-s-ODFM</td>
+<td>QPSK</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 4.0</td>
+<td>≤ 5.5</td>
+<td>≤ 3.5</td>
+<td>≤ 4.5</td>
+<td>≤ 3.0</td>
+<td>≤ 4.5</td>
+</tr>
+<tr>
+<td>16 QAM</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 4.0</td>
+<td>≤ 5.5</td>
+<td>≤ 4.0</td>
+<td>≤ 5.0</td>
+<td>≤ 3.5</td>
+<td>≤ 5.0</td>
+</tr>
+<tr>
+<td>64 QAM</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 4.0</td>
+<td>≤ 5.5</td>
+<td>≤ 4.0</td>
+<td>≤ 5.0</td>
+<td>≤ 3.5</td>
+<td>≤ 5.0</td>
+</tr>
+<tr>
+<td>256 QAM</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 5.0</td>
+<td>≤ 5.5</td>
+<td>≤ 5.0</td>
+<td>≤ 5.5</td>
+<td>≤ 5.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td rowspan="4">CP-OFDM</td>
+<td>QPSK</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 5.5</td>
+<td>≤ 5.5</td>
+<td>≤ 5.0</td>
+<td>≤ 5.5</td>
+<td>≤ 4.5</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td>16 QAM</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 5.5</td>
+<td>≤ 5.5</td>
+<td>≤ 5.0</td>
+<td>≤ 5.5</td>
+<td>≤ 4.5</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td>64 QAM</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 5.5</td>
+<td>≤ 5.5</td>
+<td>≤ 5.5</td>
+<td>≤ 5.5</td>
+<td>≤ 5.5</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td>256 QAM</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.1.1.2.2-3 contains A-MPR values for the 5945-6425MHz
+frequency range based on South Korea regulatory requirements.</p>
+<p><strong>Table 6.1.1.2.2-3: A-MPR for PC5 VLP in South Korea
+(5945-6425MHz).</strong></p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3"><strong>Pre-coding</strong></th>
+<th rowspan="3">Modulation</th>
+<th colspan="8">Channel bandwidth (Sub-band allocation) / RB
+Allocation</th>
+</tr>
+<tr>
+<th colspan="2">20 MHz</th>
+<th colspan="2">40 MHz</th>
+<th colspan="2">60 MHz</th>
+<th colspan="2">80 MHz</th>
+</tr>
+<tr>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">DFT-s-ODFM</td>
+<td>QPSK</td>
+<td>≤ 7.5</td>
+<td>≤ 10.0</td>
+<td>≤ 6.5</td>
+<td>≤ 6.5</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+</tr>
+<tr>
+<td>16 QAM</td>
+<td>≤ 7.5</td>
+<td>≤ 10.5</td>
+<td>≤ 6.5</td>
+<td>≤ 6.5</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+</tr>
+<tr>
+<td>64 QAM</td>
+<td>≤ 7.5</td>
+<td>≤ 10.5</td>
+<td>≤ 6.5</td>
+<td>≤ 6.5</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+</tr>
+<tr>
+<td>256 QAM</td>
+<td>≤ 7.5</td>
+<td>≤ 10.5</td>
+<td>≤ 6.5</td>
+<td>≤ 6.5</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+</tr>
+<tr>
+<td rowspan="4">CP-OFDM</td>
+<td>QPSK</td>
+<td>≤ 7.5</td>
+<td>≤ 10.0</td>
+<td>≤ 6.5</td>
+<td>≤ 6.5</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+</tr>
+<tr>
+<td>16 QAM</td>
+<td>≤ 7.5</td>
+<td>≤ 10.5</td>
+<td>≤ 6.5</td>
+<td>≤ 6.5</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+</tr>
+<tr>
+<td>64 QAM</td>
+<td>≤ 7.5</td>
+<td>≤ 10.5</td>
+<td>≤ 6.5</td>
+<td>≤ 6.5</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+<td>≤ 6.0</td>
+</tr>
+<tr>
+<td>256 QAM</td>
+<td>≤ 7.5</td>
+<td>≤ 10.5</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+</tr>
+<tr>
+<td colspan="10">NOTE 1: Full allocation A-MPR applies when all RB’s in
+a 20 MHz channel or all RB’s in all sub-bands for wideband<br />
+operation are fully allocated and all sub-bands are transmitted. Partial
+allocation A-MPR applies when one or more RB’s in one or more sub-bands
+are not allocated but when all sub-bands within the channel are
+transmitted. When not all sub-bands within the channel are transmitted,
+the A-MPR associated with the channel bandwidth according to the
+bandwidth of the contiguously transmitted sub-bands and according to the
+allocation type applies.</td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.1.1.2.2-4 contains A-MPR values for the 5925-5945MHz
+frequency range based on South Korea regulatory requirements.</p>
+<p>Table 6.1.1.2.2-4: A-MPR for PC5 VLP in South Korea
+(5925-5945MHz).</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">Pre-coding</th>
+<th rowspan="3">Modulation</th>
+<th colspan="8">Channel bandwidth (Sub-band allocation) / RB
+Allocation</th>
+</tr>
+<tr>
+<th colspan="2">20 MHz</th>
+<th colspan="2">40 MHz</th>
+<th colspan="2">60 MHz</th>
+<th colspan="2">80 MHz</th>
+</tr>
+<tr>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">DFT-s-ODFM</td>
+<td>QPSK</td>
+<td>≤ 8.5</td>
+<td>≤ 11.5</td>
+<td>≤ 7.0</td>
+<td>≤ 9.0</td>
+<td>≤ 6.5</td>
+<td>≤ 7.5</td>
+<td>≤ 6.5</td>
+<td>≤ 7.0</td>
+</tr>
+<tr>
+<td>16 QAM</td>
+<td>≤ 8.5</td>
+<td>≤ 11.5</td>
+<td>≤ 7.0</td>
+<td>≤ 9.0</td>
+<td>≤ 6.5</td>
+<td>≤ 7.5</td>
+<td>≤ 6.5</td>
+<td>≤ 7.0</td>
+</tr>
+<tr>
+<td>64 QAM</td>
+<td>≤ 8.5</td>
+<td>≤ 11.5</td>
+<td>≤ 7.0</td>
+<td>≤ 9.0</td>
+<td>≤ 6.5</td>
+<td>≤ 7.5</td>
+<td>≤ 6.5</td>
+<td>≤ 7.0</td>
+</tr>
+<tr>
+<td>256 QAM</td>
+<td>≤ 8.5</td>
+<td>≤ 11.5</td>
+<td>≤ 7.0</td>
+<td>≤ 9.0</td>
+<td>≤ 6.5</td>
+<td>≤ 7.5</td>
+<td>≤ 6.5</td>
+<td>≤ 7.0</td>
+</tr>
+<tr>
+<td rowspan="4">CP-OFDM</td>
+<td>QPSK</td>
+<td>≤ 11</td>
+<td>≤ 12.5</td>
+<td>≤ 9.0</td>
+<td>≤ 11.0</td>
+<td>≤ 7.5</td>
+<td>≤ 9.5</td>
+<td>≤ 7.0</td>
+<td>≤ 8.5</td>
+</tr>
+<tr>
+<td>16 QAM</td>
+<td>≤ 11</td>
+<td>≤ 12.5</td>
+<td>≤ 9.0</td>
+<td>≤ 11.0</td>
+<td>≤ 7.5</td>
+<td>≤ 9.5</td>
+<td>≤ 7.0</td>
+<td>≤ 8.5</td>
+</tr>
+<tr>
+<td>64 QAM</td>
+<td>≤ 11</td>
+<td>≤ 12.5</td>
+<td>≤ 9.0</td>
+<td>≤ 11.0</td>
+<td>≤ 7.5</td>
+<td>≤ 9.5</td>
+<td>≤ 7.0</td>
+<td>≤ 8.5</td>
+</tr>
+<tr>
+<td>256 QAM</td>
+<td>≤ 11</td>
+<td>≤ 12.5</td>
+<td>≤ 9.0</td>
+<td>≤ 11.0</td>
+<td>≤ 7.5</td>
+<td>≤ 9.5</td>
+<td>≤ 7.0</td>
+<td>≤ 8.5</td>
+</tr>
+<tr>
+<td colspan="10"><p>NOTE 1: Full allocation A-MPR applies when all RB’s
+in a 20 MHz channel or all RB’s in all sub-bands for wideband operation
+are fully allocated and all sub-bands are transmitted. Partial
+allocation A-MPR applies when one or more RB’s in one or more sub-bands
+are not allocated but when all sub-bands within the channel are
+transmitted. When not all sub-bands within the channel are transmitted,
+the A-MPR associated with the channel bandwidth according to the
+bandwidth of the contiguously transmitted sub-bands and according to the
+allocation type applies.</p>
+<p>NOTE 2: This table is applicable when the channel raster point is
+extended so that first 20MHz, i.e. 5925-5945MHz, can be used by
+NR-U.</p></td>
+</tr>
+</tbody>
+</table>
+<h5 id="peru-and-chile">6.1.1.2.3 Peru and Chile</h5>
+<p>Table 6.1.1.2.3-1: Signal setup.</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 5%" />
+<col style="width: 25%" />
+<col style="width: 13%" />
+<col style="width: 30%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: center;">ID</th>
+<th style="text-align: center;">Waveform</th>
+<th style="text-align: center;">BW</th>
+<th style="text-align: center;">RB Setup</th>
+<th style="text-align: center;">SCS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="11" style="text-align: center;"><p>Full Allocation</p>
+<p>Single CC</p></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">100RB3</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">100RB0</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">50RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">216RB0</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">162RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">216RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">106RB0</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">51RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">216RB0</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">162RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">217RB0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td rowspan="8" style="text-align: center;"><p>Interlaced Allocation</p>
+<p>Single CC</p></td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">1RB0 every 10RBs (10x)</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">1RB0 every 10RBs (20x)</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">1RB0 every 10RBs (30x)</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">DFT-s-OFDM</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">1RB0 every 5RBs (40x)</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">1 RB0 every 10RBs (10x)</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">1RB0 every 10RBs (22x)</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">1RB0 every 10RBs (33x)</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">CP-OFDM</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">1RB0 every 5RBs (44x)</td>
+<td style="text-align: center;">30</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image7.png" style="width:6.69514in;height:1.74861in"
+alt="Chart, scatter chart Description automatically generated" /></p>
+<p>Figure 6.1.1.2.3-1: A-MPR simulation results for PC5 LPI in Peru and
+Chile.</p>
+<p>Table 6.1.1.2.3-2: A-MPR for PC5 LPI in Peru and Chile</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 15%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">Pre-coding</th>
+<th rowspan="3">Modulation</th>
+<th colspan="8">Channel bandwidth (Sub-band allocation) / RB
+Allocation</th>
+</tr>
+<tr>
+<th colspan="2">20 MHz</th>
+<th colspan="2">40 MHz</th>
+<th colspan="2">60 MHz</th>
+<th colspan="2">80 MHz</th>
+</tr>
+<tr>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+<th>Full (dB)</th>
+<th>Partial (dB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">DFT-s-ODFM</td>
+<td>QPSK</td>
+<td>≤ 9.0</td>
+<td>≤ 12.0</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 4.5</td>
+<td>≤ 6.5</td>
+<td>≤ 3.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td>16 QAM</td>
+<td>≤ 9.0</td>
+<td>≤ 12.0</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 4.5</td>
+<td>≤ 6.5</td>
+<td>≤ 3.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td>64 QAM</td>
+<td>≤ 9.0</td>
+<td>≤ 12.0</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 4.5</td>
+<td>≤ 6.5</td>
+<td>≤ 3.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td>256 QAM</td>
+<td>≤ 9.0</td>
+<td>≤ 12.0</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 5.0</td>
+<td>≤ 6.5</td>
+<td>≤ 5.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td rowspan="4">CP-OFDM</td>
+<td>QPSK</td>
+<td>≤ 9.0</td>
+<td>≤ 12.0</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 4.5</td>
+<td>≤ 6.5</td>
+<td>≤ 4.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td>16 QAM</td>
+<td>≤ 9.0</td>
+<td>≤ 12.0</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 4.5</td>
+<td>≤ 6.5</td>
+<td>≤ 4.0</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td>64 QAM</td>
+<td>≤ 9.0</td>
+<td>≤ 12.0</td>
+<td>≤ 6.0</td>
+<td>≤ 8.5</td>
+<td>≤ 5.5</td>
+<td>≤ 6.5</td>
+<td>≤ 5.5</td>
+<td>≤ 5.5</td>
+</tr>
+<tr>
+<td>256 QAM</td>
+<td>≤ 9.0</td>
+<td>≤ 12.0</td>
+<td>≤ 7.0</td>
+<td>≤ 8.5</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+<td>≤ 7.0</td>
+</tr>
+</tbody>
+</table>
+<p>The A-MPR results for PC5 LPI in Peru and Chile are mostly identical
+to the A-MPR results defined by NS_53 (LPI in US). In some cases, A-MPR
+results are 0.5-1dB relaxed comparing to NS_53. Thus, accounting for the
+marginal difference between these A-MPR values and NS_53, the latter can
+be re-used to support Peru and Chile.</p>
+<p>6.1.2 Receiver characteristics</p>
+<h2 id="bs-specific">6.2 BS specific</h2>
+<p>6.2.1 Transmitter characteristics</p>
+<p>For operation in full unlicensed band 5925-7125MHz, existing BS
+transmitter requirements for n96 can be reused.</p>
+<p>6.2.2 Receiver characteristics</p>
+<p>For operation in full unlicensed band 5925-7125MHz, existing BS
+receiver requirements for n96 can be reused.</p>
+<h1 id="rrm">7 RRM</h1>
+<h2 id="frequency-bands-grouping">7.1 Frequency bands grouping</h2>
+<p class="heading" id="annex-a-informative-change-history"><br />
+Annex A (informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-01</td>
+<td style="text-align: center;">RAN4-98e</td>
+<td style="text-align: center;">R4-2101927</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TR Skeleton</td>
+<td style="text-align: center;">0.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-02</td>
+<td style="text-align: center;">RAN4-98e</td>
+<td style="text-align: center;">R4-2101928</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">draft TR after RAN4-98e</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-04</td>
+<td style="text-align: center;">RAN4-98bis-e</td>
+<td style="text-align: center;">R4-2107196</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">draft TR after RAN4-98bis-e<br />
+Inclusion of:<br />
+R4-2105384 - TP to TR 38.849 on NR-ARFCN and GSCN points</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-05</td>
+<td style="text-align: center;">RAN4-99e</td>
+<td style="text-align: center;">R4-2110691</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>draft TR after RAN4-99-e<br />
+Inclusion of:</p>
+<p>R4-2107789 - TP to TR 38.849 on MPR values for LPI deployments</p>
+<p>Removal of automatic bullets</p></td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-08</td>
+<td style="text-align: center;">RAN4-100e</td>
+<td style="text-align: center;">R4-2113692</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>draft TR after RAN4-100-e<br />
+Inclusion of:</p>
+<p>R4-2114883 - TP to TR 38.849 on A-MPR for VLP</p></td>
+<td style="text-align: center;">0.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-11</td>
+<td style="text-align: center;">RAN4-101e</td>
+<td style="text-align: center;">R4-218617</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Update of TR to also include WI
+NR_6GHz_unlic_full as per RAN agreement.</td>
+<td style="text-align: center;">0.4.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-11</td>
+<td style="text-align: center;">RAN4-101e</td>
+<td style="text-align: center;">R4-218616</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>draft TR after RAN4-101-e<br />
+Inclusion of:</p>
+<p>R4-2117953 - Text proposal for TR 38.849 with A-MPR values</p></td>
+<td style="text-align: center;">0.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-01</td>
+<td style="text-align: center;">RAN4-101bis-e</td>
+<td style="text-align: center;">R4-2201080</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>draft TR after RAN4-101bis-e<br />
+Inclusion of:</p>
+<p>R4-2201083 - TP to TR 38.849 updating clause 5.1 for the lower 6GHz
+band</p>
+<p>R4-2201515 - TP for BS RF requirements</p>
+<p>R4-2202264- TP to TR 38.849 updating clause 5.1 for the full 6GHz
+band</p>
+<p>R4-2202258 - TP for TR 38.849</p>
+<p>R4-2202263 - TP for TR 38.849</p></td>
+<td style="text-align: center;">0.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN4-102e</td>
+<td style="text-align: center;">R4-2205559</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>Draft TR after RAN4-102e</p>
+<p>Inclusion of:</p>
+<p>R4-2206369 - A-MPR analysis results for NR-U(VLP) considering
+regulatory parameters in Korea</p>
+<p>R4-2205179 - Text proposal for TR 38.849 (background results for the
+existing A-MPR values)</p>
+<p>R4-2203664 - TP for TR 38.849</p>
+<p>R4-2206367 - Text proposal for TR 38.849</p></td>
+<td style="text-align: center;">0.7.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">RAN95</td>
+<td style="text-align: center;">RP-220327</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TR for RAN approval</td>
+<td style="text-align: center;">2.0.0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8" style="text-align: center;"><strong>Change
+history</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date</strong></td>
+<td><strong>Meeting</strong></td>
+<td><strong>TDoc</strong></td>
+<td><strong>CR</strong></td>
+<td><strong>Rev</strong></td>
+<td><strong>Cat</strong></td>
+<td><strong>Subject/Comment</strong></td>
+<td><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td>Approved by plenary – Rel-17 spec under change control</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221673</td>
+<td>0001</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td>CR to TR 38.849 on adding NS value for South Korea VLP mode</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,609 @@
+<?xml version="1.0"  encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1194.0000" height="1383.0000">
+<g transform="translate(-1.0000, -0.0000)">
+<image width="107.0000" height="63.0000" x="1.0000" y="7.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA/CAYAAADnoDbtAAAA6UlEQVR4nO3cwQqCQBRA0bH//2fbuqokY7zTObsQJbj4hkfQNsbYBwmP2V+Az4kVIlaIWCFihYgVIlbI21j7vp/67P5r7z/ahqU4wxgMEStErBCxQsQKESvk9J7FtexZizIGQ8QKEetmXp1hzqwQb1aIWCH2rMnsWYsyBkPEChErRKwQsULECrFnTWbPWpQxGCJWiFg34/esRXizQsQKsWdNZs9alDEYIlaIWCFihYgVIlaIPWsye9aijMEQsUJOxzr7X0VXP/+f73dmhRiDIWKFfL1nuf7b60fOrBBjMESsELFCxAoRK+QJ7mmd1tCkRI0AAAAASUVORK5CYIIA" />
+<image width="107.0000" height="63.0000" x="1.0000" y="7.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA/CAYAAADnoDbtAAABJklEQVR4nO3ZsQqCUBhAYe3tmtrcmtt8kqagJWhq7AF6jgYhaO81bkuDGnlzqOu5nm+7mBAc/OXHMoQQCiEsUv8Bfc9YIMYCMRaIsUCMBWIskGisat90zuvTtXveds99/eux89zuXx1vg/e3lS7FHI5BEGOBGAvEWCDGAjEWSDTW5vD4x/+YrercxH/04p4F4hgEMRaIsSam3t0/XvOdBeKTBWIsEPesxNyzMuUYBDEWiLFAjAViLBBjgbhnJeaelSnHIIixQIw1MX7PyoRPFoixQNyzEnPPypRjEMRYIMYCMRaIsUCMBeKelZh7VqYcgyDGAhkdaznwvaUoxs1g73/n96xMOAZBjAUSjRV7R9UXr//yepvvLBDHIIixQIwFYiwQY4E8AXFShl8s7qitAAAAAElFTkSuQmCC" />
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 123.0000,916.0000 L 1574.0000,916.0000 L 1574.0000,168.0000 L 123.0000,168.0000 L 123.0000,916.0000 Z" stroke="#000000" stroke-width="8.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<image width="105.0000" height="80.0000" x="4.0000" y="0.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAABQCAYAAAAa91tfAAABM0lEQVR4nO3awYrCQBBAwXH//5/jXVjcJYn2G6puImLg2WmNeay1jsVoP98+AN4TKUCkAJECRAoQKUCkAJECRAoQKUCkAJECRAoQKUCkAJECRAoQKUCkgMsjHcfxr8fTTDy+x3Ijyni3ne4mfiKrTFLA13fSbo/vYJICPvYV/N0n7uzz09//DJMUYCcN3EGvTFKAy0IBIgWcjnT2HP7p1xd3lJ0U4HQXIFKASAEiBYgUIFLA9pF2+IfY76SA7SdpByIFbBdpwrW2q9lJAdtN0o5EChgf6e7/owrspIDxk/RXO0zMb0xSwPhJKtyDcDeTFDB+khApYXykq+/LK7KTAsZPEiIliBQgUoBIASIFiBQgUoBIASIFiBQgUoBIASIFiBQgUoBIASIFiBQgUoBIASIFPAFSxO2mT59t9AAAAABJRU5ErkJgggAA" />
+<image width="105.0000" height="80.0000" x="4.0000" y="0.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAABQCAYAAAAa91tfAAACJklEQVR4nO2aQUrDUBRFW3fnQBy1UNtKURfiCkSKUii1FBUHuhBxICoiKqKILqSO3w2kahL7bzxn9kjID5zevvzkNefz+bwBSbOy7BuAxSDJACQZgCQDkGQAkgxAkgFIMgBJBiDJACQZgCQDkGQAkgxAkgFIMgBJBiDJACQZULqkwew21JsHj6FeHb6UvWSptM4/l30LGZoMoqRPZX93ncl9VZf+d5AkA0pP0tY09pzB7CHUvdN4XHuW1t1RTKRevz+6C/XOJH+9lhzfGD/n3u/60VPu+e3xW6NqSJIBf/YIrr/4nx7XBP0UTZjSmeQnoj96LbR+EUiSAaUnaWN8HerW9CbU3bOPUOtT4GD2HmpNgPYAvd7mcexpun5P9mma0EyP2o/7vqKJ/g0kyQBeCxmAJAMKS2pK3dq7DPWid3Xbsg/pn8SnPL2eoj1M372tSY/M7JvkfN0X6fq94VXu+lVATzKAvzsDkGQAkgxAkgFIMgBJBtRe0u7usu+gOOyTDKh9kuoAkgyonaT2Yfz+pDMTi94Fpgg9yYDaJamOIMmA5CXpjEHmuH5PkpkInXFwhJ5kQPJJ+i6aoDpBkgxIPkltmVHQfZAmSGfHdZ/kCEkyIPkkAZIsSF5S+0JnwWOP0jk95S/m4qqGnmRA8kkCJFmAJAOQZACSDECSAUgyAEkGIMkAJBmAJAOQZACSDECSAUgyAEkGIMkAJBmAJAOQZACSDECSAV9arLiLPm1lHgAAAABJRU5ErkJgggAA" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 21.5204 28.3473)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[Remote ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 42.2142 52.3475)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[UE]]></text>
+<image width="107.0000" height="63.0000" x="273.0000" y="7.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA/CAYAAADnoDbtAAAA6UlEQVR4nO3cwQqCQBRA0bH//2fbuqokY7zTObsQJbj4hkfQNsbYBwmP2V+Az4kVIlaIWCFihYgVIlbI21j7vp/67P5r7z/ahqU4wxgMEStErBCxQsQKESvk9J7FtexZizIGQ8QKEetmXp1hzqwQb1aIWCH2rMnsWYsyBkPEChErRKwQsULECrFnTWbPWpQxGCJWiFg34/esRXizQsQKsWdNZs9alDEYIlaIWCFihYgVIlaIPWsye9aijMEQsUJOxzr7X0VXP/+f73dmhRiDIWKFfL1nuf7b60fOrBBjMESsELFCxAoRK+QJ7mmd1tCkRI0AAAAASUVORK5CYIIA" />
+<image width="107.0000" height="63.0000" x="273.0000" y="7.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA/CAYAAADnoDbtAAABK0lEQVR4nO3cMQrCQBBA0cTbWdmlEzyBJ7ESLAXB0gPYegWLgOBhYmORRJIxWGz++l8X1oDwycgQsGyapimEsEj9BfQ9Y4EYC8RYIMYCMRaIsUDCWNWh7lyvz/fu9a573dc/j67/7f7V8TF6f1vpUszhGAQxFoixQIwFYiwQY4GEsaI9Qr+pLnX8oTf3LBDHIIixQIw1M9vrc/DM3ywQnywQY4G4ZyXmnpUpxyCIsUCMBWIsEGOBGAvEPSsx96xMOQZBjAVirJnxfVYmfLJAjAXinpWYe1amHIMgxgIxFoixQIwFYiwQ96zE3LMy5RgEMRbI5FjL/fD7lqKYNoO9/5PvszLhGAQxFkj8f4PBDB6bsZ7H55vTbfS8zd8sEMcgiLFAjAViLBBjgbwAujeFzT6Op1AAAAAASUVORK5CYIIA" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4477.0000,916.0000 L 5928.0000,916.0000 L 5928.0000,168.0000 L 4477.0000,168.0000 L 4477.0000,916.0000 Z" stroke="#000000" stroke-width="8.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<image width="107.0000" height="56.0000" x="273.0000" y="12.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA4CAYAAAD6pQZVAAAA7UlEQVR4nO3ZQQ6CMBRAweL974x7Nohg5YWZHTFGyPNTK8sYYx0kvP59AnxOrBCxQsQKEStErBCxQsQKEStErBCxQsQKEStErBCxQsQ6aV3nPQ5choePGSYrRKyQy2Nt7+Ez7+lX2Dvfvev75fVas0J+dhusTVSByQo5PVlH7+F3O96a/XlHmKyQaT/dj36jZ79+1ow12mSFTN9n3e14yz6LS2T/bnriPs5khUzfZ519/9Vr0B77LL6SXbOeSKwQsULEChErRKwQsULEChErRKwQsULEChErRKwQsULEChErRKwQsULEChErRKyQN/DGwqWdQsvVAAAAAElFTkSuQmCC" />
+<image width="107.0000" height="56.0000" x="273.0000" y="12.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA4CAYAAAD6pQZVAAABtklEQVR4nO2ZwUoCURSGsydr2wMomBpCgbueYZ4gQghJLCSjjS/RLlpERkhF2KJFrzGtzx/cKWbG+PL/doczzh35+O/xOo08z/Mtg2D7rx/A/BzLAmFZICwLhGWBsCwQlgXCskBYFgjLAmFZICwLhGWBsCwQlgXCskqSZdna1mr45SMHJwuEZYGoXFbn+iPUzcmy6iVqZTD+TPZbp/H7dEZPybpKPLNA1LYN9kaPdd16Y3GyQJRO1k52E+r2JO7Zusd3h3eh3hvfh/pQZpz2u1dv0n9N9g/OX5K10p8uQr07jPfTGdyevIe6NZZ6Pk+u9xucLBBr++muCVCKZpwm7ref3798TvbLojtKHThZICpPVvPiQeq45+s5rDdahVpnhiby24w6i4nRmdWfLpN9pX+ySPY1oZrooplYBicLBPbvpt5sVXzRP8PJAlE6Wfo+p3l8G+qjYXpG6B4/kHOV1nq9nmuUol+hRbRk/d4szig9R+rz6POXwckCgZ1Zm4hlgbAsEJYFwrJAWBYIywJhWSAsC4RlgbAsEJYFwrJAWBYIywJhWSAsC4RlgbAsEJYFwrJAWBaIL0bLkvybjUV4AAAAAElFTkSuQmCC" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 290.0626 40.3477)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[Relay UE]]></text>
+<image width="107.0000" height="63.0000" x="545.0000" y="7.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA/CAYAAADnoDbtAAAA8ElEQVR4nO3cQWrDMBBAUaX3v7O7zaqtqYv0p+/tgnEIfDRiNnmtta5FwsfuH8DPiRUiVohYIWKFiBUiVsi3sa7ruvXZ+8++/+61LMUZxmCIWCFiHearO8ydFeJkhYgVcnvP4ln2rKGMwRCxQsQ6jD1rCCcrRKwQe9Zm9qyhjMEQsULEOow9awgnK0SsEHvWZvasoYzBELFCxDqMPWsIJytErBB71mb2rKGMwRCxQsQ6jD1rCCcrRKwQe9Zm9qyhjMEQsUJux7r7X0VPf/9/ft+dFWIMhogV8us9y/O/ff7OnRViDIaIFSJWiFghYoV8Al3SqcdJIXxDAAAAAElFTkSuQmCC" />
+<image width="107.0000" height="63.0000" x="545.0000" y="7.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA/CAYAAADnoDbtAAABL0lEQVR4nO3cMQrCMBiGYevtvEA3wc3NkzgJLk4FRw/g6hUcnFy8SV1txaSCkLy/77OFtCB+5A/f0qbv+34mhHnpH6DpDAvEsEAMC8SwQAwLxLBAsmG1+9tgvTxeh+vtcD023s+t/+398f+b0liKORyDIIYFYliVWXWPj3veWSCeLBDDAsmGNe5V+q31Yfqz3lkgjkEQwwIxrMrYs4LwZIEYFog9qzB7VlCOQRDDAjGsytizgvBkgRgWiD2rMHtWUI5BEMMCMazK2LOC8GSBGBaIPaswe1ZQjkEQwwIxrMrYs4LwZIEYFog9qzB7VlCOQRDDAvk6rMXuntxvT9O/ReT77+xZQTgGQQwLJP+9wcwM3pzTd5j76f1Vd0nuv/LOAnEMghgWiGGBGBaIYYE8AeiXk0Rmvh6PAAAAAElFTkSuQmCC" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8831.0000,916.0000 L 10282.0000,916.0000 L 10282.0000,168.0000 L 8831.0000,168.0000 L 8831.0000,916.0000 Z" stroke="#000000" stroke-width="8.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<image width="101.0000" height="56.0000" x="548.0000" y="12.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAAA4CAYAAADkbDbmAAAA9UlEQVR4nO3ZQQ6DMAwAQcP//5zeASlK48TbsnPjQIu0GIv2iIgWQjmrL0B3RgEyCpBRgIwCZBQgowAZBcgoQEYBMgqQUYCMAmQUIKMAlUdpbe7vnF8//8kR/smFUz4pujMK0PYo12dw73j0/NXfv4M7Bajs8UW4I6mcFKD0SRl9Zmcfr76e3udncFKAtu2U2TvuTTvISQH6u52SPZEV7zVOCtCynfKmHZDNSQGanpTqnZG9I7LP/4aTAuRP90BGAVr+nqJx7hQgH19ARgEyCpBRgIwCZBQgowAZBcgoQEYBMgqQUYCMAmQUIKMAGQXIKEBGAfoA4ELApqq8BnsAAAAASUVORK5CYIIA" />
+<image width="101.0000" height="56.0000" x="548.0000" y="12.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAAA4CAYAAADkbDbmAAABtUlEQVR4nO2ZT0rDQBSHrSfzEgm0TbDgojvPkAO4KkgxVqlUurCX8AIiKsF/KKLgNeL6vUhicdr5Lb5v9yPNTODLm9eZ9Oq6rndAit3YDwBNkCIIUgRBiiBIEQQpgiBFEKQIghRBkCIIUgRBiiBIEQQpgiBFkOhSepHvL4oi6vy/jslHLj2iVwo0QYogW5dycPZkclremDwuv1vvH5TPJmeXr2vNn8wqk0fzD5Pzo7u1xtsE9BRBoi1f+xcvsaaWh0oRJHilDKcPJueLN5unds3OTh5NTs5vW8cbzW1PyKd2fM/hxPYc35PGrqf55/O/9/jnCwGVIsjWesrAvZGe9Lhqvd6fhX8jVaFSBAleKc01367Rfp/gc3Z6b/Jw+dk6nu8pXRXX1SP8dZ/zhZ3f73NCQKUIsrGe0nc7d/g7VIog/66UveLaZP8vya/5jbOvVdV6Pbn6MtnvC7p6SLpa2Vy+m5xN2s/O/FmcP6vz+6AQUCmCcHQvCFIECS6l63sIdENPEYTlSxCkCIIUQZAiCFIEQYogSBEEKYIgRRCkCIIUQZAiCFIEQYogSBEEKYIgRRCkCPID2WiQU/amg2IAAAAASUVORK5CYIIA" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 565.5334 40.3477)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[gNB]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 598.7368 40.3477)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[-]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 604.8600 40.3477)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[DU]]></text>
+<defs><clipPath id="clip-1804289383"><path d="M 0.0000,0.0000 L 1196.0000,0.0000 L 1196.0000,1384.0000 L 0.0000,1384.0000 L 0.0000,0.0000 Z Z" /></clipPath></defs>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path  clip-path="url(#clip-1804289383)" d="M 865.0000,916.0000 L 865.0000,22097.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<defs><clipPath id="clip-846930886"><path d="M 0.0000,0.0000 L 1196.0000,0.0000 L 1196.0000,1384.0000 L 0.0000,1384.0000 L 0.0000,0.0000 Z Z" /></clipPath></defs>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path  clip-path="url(#clip-846930886)" d="M 5203.0000,916.0000 L 5203.0000,22097.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<defs><clipPath id="clip-1681692777"><path d="M 0.0000,0.0000 L 1196.0000,0.0000 L 1196.0000,1384.0000 L 0.0000,1384.0000 L 0.0000,0.0000 Z Z" /></clipPath></defs>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path  clip-path="url(#clip-1681692777)" d="M 9557.0000,916.0000 L 9557.0000,22097.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 865.0000,2685.0000 L 5032.0000,2685.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5203.0000,2685.0000 L 4977.0000,2798.0000 C 5013.0000,2727.0000 5013.0000,2643.0000 4977.0000,2572.0000 L 5203.0000,2685.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 108.2036 162.9458)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[2. RRCSetupRequest]]></text>
+<image width="33.0000" height="34.0000" x="310.0000" y="702.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAAaUlEQVRYhe2UwQqAMAxDM///n+spCGVTKs4ZybsVdnjNShqAwGK21QKAJQ4sQSxBLiUi4tG5R4NyWd3ZeIRGEjNuIKORBKluWHmvkYR7IuObqP7x/28iU03kDI0k3BNvYgliCWIJ8gmJHYn9ZtS7IqtcAAAAAElFTkSuQmCC" />
+<image width="33.0000" height="34.0000" x="310.0000" y="702.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAA0klEQVRYhe2WQQ6CQAxFB2/HATBBEU30IHMG4wIJGBPdeRjdABqjVxlWDWmDM4wLsUnf7qeF/P4MHQJjjFEjMxnbgFJiokNMAGICcJrQWiO9Lu9Iz/KHtU6f7yNgvazmZW3VPvBIIjk/kaYTL04va30IPJIAfCf06eeRxOpYIb0psKZrIN01SMfF22mCRxJAmlfupi/7eSQRHa5I0zNCoXV6t/TBI4lPJPvGWl9mt8Hv4pFEuMV3R0QmpJsxJv8T04v7K+GRxC8QE4CYAMQE8BcmWj16Xq3gATG0AAAAAElFTkSuQmCC" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5203.0000,2685.0000 M 5312.0000,11438.0000 C 5312.0000,11373.0000 5263.0000,11320.0000 5203.0000,11320.0000 C 5143.0000,11320.0000 5094.0000,11373.0000 5094.0000,11438.0000 C 5094.0000,11504.0000 5143.0000,11556.0000 5203.0000,11556.0000 C 5263.0000,11556.0000 5312.0000,11504.0000 5312.0000,11438.0000 " stroke="#000000" stroke-width="48.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000"  fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<image width="337.0000" height="64.0000" x="20.0000" y="73.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVEAAABACAYAAACji0TIAAABn0lEQVR4nO3aMW7DQAwEQNn//7NSCRDgkJRvC8H2TLMgtkl1oQk9tm3bNwCWPO/+AwA+mUcUIOARBQh4RAECHlGAgEcUIOARBQiMj+i+72az2WwuPDYf2wMsu/xz/u7/AGaz2XzX3LGJAgQu30SllPJXs2MTBQi8fROtXmi9Xq//1r5jEwUIuIlKKeWQHZsoQCD+TrR6sfV6vf7T+2o+s4kCBNxEpZRyyI5NFCDgO1G9Xq9f2EAPNlGAgJuolFIO2bGJAgR8J6rX6/VFX81nNlGAgJuolFIO2bGJAgR8J6rX6/ULG+jBJgoQcBOVUsohOzZRgIDvRPV6vb7oq/nMJgoQcBOVUsohOzZRgIDvRPV6vX5hAz3YRAECbqJSSjlkxyYKEPCdqF6v1xd9NZ/ZRAECbqJSSjlkxyYKEPCdqF6v1y9soAebKEDATVRKKYfs2EQBAr4T1ev1+qKv5jObKEDATVRKKYfs2EQBAvFN1Gw2m7997thEAQKXb6Jms9n86/N/bKIAgcs3UQBeeUQBAh5RgIBHFCDgEQUIeEQBAn99d4zwz4rEuQAAAABJRU5ErkJgggAA" />
+<image width="337.0000" height="64.0000" x="20.0000" y="73.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVEAAABACAYAAACji0TIAAACK0lEQVR4nO3aTW4TQRAG0AqHRMTGA5dCVuwxQiBxHhDY/EjZ5CLOwjFiGg3TpEQjD+9tPpW+TVatcmWujsfjMQB4lCf/+g8AuGQeUYAEjyhAgkcUIMEjCpDgEQVI8IgCJEw+osv3d8N5dzCbzeb/Yl6tb2PKlY/tAR6v+uf89Xb4Ql/vzGazeaZz/y1q2UQBEqZvog8v9HK7j4iIRf89IiJWNwcppZxldjefIiJisTnl79hEARLqb6K74Uv9fPtl0J/nMvV6vf7i+s3nqGUTBUiovomObaJSSjm7fNhEF5vp/9LbRAES/vgmejb2guv1ev3F98VNtHs77H9mEwVIcBOVUsoy3UQB2vCdqF6v149sojVsogAJbqJSSlmmmyhAG74T1ev1+rL3nShAG26iUkpZppsoQBu+E9Xr9fqRTbSGTRQgwU1USinLdBMFaMN3onq9Xl/2vhMFaMNNVEopy3QTBWjDd6J6vV4/sonWsIkCJLiJSillmW6iAG34TlSv1+vL3neiAG24iUopZZluogBt+E5Ur9frRzbRGjZRgAQ3USmlLNNNFKAN34nq9Xp90Xe7r8PZd6IAf8fkJtpt9hERsXp9uhH8uBX0eymlnGUu+9Mm2m3HN9AzmyhAQvVN9FnxIr/YHsxms3mWc9f7ThSgiclN9Omr/WBerT8O53e3ZrPZPI95PZxfvvkQU2yiAAnVN1EAfuURBUjwiAIkeEQBEjyiAAkeUYCEe0adoTVspDM7AAAAAElFTkSuQmCC" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 440.0000,1234.0000 L 440.0000,1982.0000 L 5566.0000,1982.0000 L 5566.0000,1234.0000 L 440.0000,1234.0000 Z" stroke-width="1px" stroke="#FFFFFF"  fill="#FFFFFF" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 440.0000,1982.0000 L 5566.0000,1982.0000 L 5566.0000,1234.0000 L 440.0000,1234.0000 L 440.0000,1982.0000 Z" stroke="#000000" stroke-width="8.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 63.2806 94.9616)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[1. Discovery]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 161.7181 94.9616)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[ ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 166.2395 94.9616)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[& PC5 Connection ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 130.6482 118.9618)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[Establishment]]></text>
+<image width="107.0000" height="63.0000" x="817.0000" y="7.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA/CAYAAADnoDbtAAAA8ElEQVR4nO3cQWrDMBBAUaX3v7O7zaqtqYv0p+/tgnEIfDRiNnmtta5FwsfuH8DPiRUiVohYIWKFiBUiVsi3sa7ruvXZ+8++/+61LMUZxmCIWCFiHearO8ydFeJkhYgVcnvP4ln2rKGMwRCxQsQ6jD1rCCcrRKwQe9Zm9qyhjMEQsULEOow9awgnK0SsEHvWZvasoYzBELFCxDqMPWsIJytErBB71mb2rKGMwRCxQsQ6jD1rCCcrRKwQe9Zm9qyhjMEQsUJux7r7X0VPf/9/ft+dFWIMhogV8us9y/O/ff7OnRViDIaIFSJWiFghYoV8Al3SqcdJIXxDAAAAAElFTkSuQmCC" />
+<image width="107.0000" height="63.0000" x="817.0000" y="7.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA/CAYAAADnoDbtAAABNUlEQVR4nO3csQrCMBhFYfUddRPc3Pok4iC4OAmOPoCrm5ODg5OLbxJXW2lSQUhOPN8W0oJ4yR/u0nEIIYyEMMn9AzScYYEYFohhgRgWiGGBGBZIMqzZ9t5azw+39nrVXnd191Prf3u/+//GjC3FHI5BEMMCMazCLPbP3j3vLBBPFohhgSTD6vYq/dZydx38rHcWiGMQxLBADKsw9qxKeLJADAvEnpWZPatSjkEQwwIxrMLYsyrhyQIxLBB7Vmb2rEo5BkEMC8SwCmPPqoQnC8SwQOxZmdmzKuUYBDEsEMMqjD2rEp4sEMMCsWdlZs+qlGMQxLBAvg6r2Tyi+7Pj8G8R+f6n6frSu+edBeIYBDEskPT3BhMzuDnF7zD34/uL/Tm6/847C8QxCGJYIIYFYlgghgXyAvs0lzRJLdEbAAAAAElFTkSuQmCC" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13185.0000,916.0000 L 14636.0000,916.0000 L 14636.0000,168.0000 L 13185.0000,168.0000 L 13185.0000,916.0000 Z" stroke="#000000" stroke-width="8.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<image width="99.0000" height="56.0000" x="821.0000" y="12.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAAA4CAYAAADpckahAAAA90lEQVR4nO3ZSw6DMAwAUcP975wuQWyolY8naN4OtahIgxNRjohoIYSz+gJ0MQaIMUCMAWIMEGOAGAPEGCDGADEGiDFAjAFiDBBjgBgDpDxGa32vU3Y//+4IXy5hlE+GLsYAWR7juca+HWfPn/37M7lngJQtU5V3IJWTATJ8MrJr8ujj3ut5Oz/7eYaTAbJsz6i+A3fYo5wMkM/tGaMncOVziJMBMm3P2GGNpnEyQLono3pPGP3fVPb7Pmd8lH+hgxgDZPpzhv7nngHiMgViDBBjgBgDxBggxgAxBogxQIwBYgwQY4AYA8QYIMYAMQaIMUCMAWIMkB9mj7qsXQOViwAAAABJRU5ErkJgggAA" />
+<image width="99.0000" height="56.0000" x="821.0000" y="12.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAAA4CAYAAADpckahAAABrklEQVR4nO2ZTUrDUBRGrSvrBhxaTE2koNBtZA2iBmOEQDtzE506EPwrVYriyG3EYX0XzSMk6fvQc2aXvJ/Ayb03eRlUVVXtgAS7oW8ANiBDCGQIgQwhkCEEMoRAhhDIEAIZQiBDCGQIgQwhkCEEMoRAhhDBZQwCz0/Tlvu3vYHva/FzSYfgmQEbkCHE1mXEp7duPF87cTJ7qJ0/zl/NeutfRv7M8fWLE0/K+0b79wk9Q4hgZSq+egy1tSxkhhCdZ8Zh9uTEyezNiaPCvR5frtzxmVuzT4plo/GWSflRu940v6ud7+tJtge1gcwQYms9w74FWSblstV1H0dnK/+gwJAZQnSeGb6abp/QfVPDDy6endjWeLtekrk9aXRen0FjT4/YM9dtD+yyR1jIDCF66xlRj0/QX4XMEKJ1ZgzThRNHxbsT2+8M+94+ujHfEebsyn4H2Bru6xEWe/Zkz8YstkfY8cNFo+1rITOE4AhdCGQI0bmMaf7Z9ZL/BnqGEJQpIZAhBDKEQIYQyBACGUIgQwhkCIEMIZAhBDKEQIYQyBACGUIgQwhkCIEMIZAhxBeqv4tPKRrKfQAAAABJRU5ErkJgggAA" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 838.4800 40.3477)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[gNB]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 871.6835 40.3477)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[-]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 877.8067 40.3477)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[CU]]></text>
+<defs><clipPath id="clip-1714636915"><path d="M 0.0000,0.0000 L 1196.0000,0.0000 L 1196.0000,1384.0000 L 0.0000,1384.0000 L 0.0000,0.0000 Z Z" /></clipPath></defs>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path  clip-path="url(#clip-1714636915)" d="M 13911.0000,916.0000 L 13911.0000,22097.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<defs><clipPath id="clip-1957747793"><path d="M 0.0000,0.0000 L 1196.0000,0.0000 L 1196.0000,1384.0000 L 0.0000,1384.0000 L 0.0000,0.0000 Z Z" /></clipPath></defs>
+<image width="107.0000" height="63.0000" x="1089.0000" y="7.0000"  clip-path="url(#clip-1957747793)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA/CAYAAADnoDbtAAAA9ElEQVR4nO3cQYoCMRRAwej979yzdaUTpofkxaqdNC3CIwmfgI8xxjVIeK7+AfyeWCFihYgVIlaIWCFihXyMdV3X1Gfv3/v+q8cwFGfYBkPEChFrM+/OMGdWiJUVIlbI9JzFvWbmLmdWiG0wRKwQsTbjzDqElRUiVog5azH3WYeyDYaIFSLWZsxZh7CyQsQKMWct5j7rULbBELFCxNqMM+sQVlaIWCHmrMXcZx3KNhgiVohYmzFnHcLKChErxJy1mPusQ9kGQ8QKmY41+19Fd3//N7/vzAqxDYaIFfLnOcvz/33+ypkVYhsMEStErBCxQsQK+QEb5bK+BZRLeAAAAABJRU5ErkJgggAA" />
+<image width="107.0000" height="63.0000" x="1089.0000" y="7.0000"  clip-path="url(#clip-1957747793)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA/CAYAAADnoDbtAAABOUlEQVR4nO3cMQoCMRBGYfWObifY2XkS2UKwsRIsPYCtnZWFhZWlB1lbN7KJgpC8+L4uDAviT2YYFnbcdV03EsIk9w/Q5wwLxLBADAvEsEAMC8SwQJJhNZtb7zzbX/vnVf8cCuup8789H/6/MWOXYg7bIIhhgRhWYabtebDmzALxZoEYFkgyrHCv0m8ttpfe2ZlVCdsgiGGBGFZhnFmV8GaBGBaIe1Zm4Z4V48wCsQ2CGBaIYRXGPasS3iwQwwJxz8rM91mVsg2CGBaIYRXGmVUJbxaIYYG4Z2Xm+6xK2QZBDAvEsArjnlUJbxaIYYG4Z2Xm+6xK2QZBDAvk67CW63u03hw+/xaRz7+bto/BmjMLxDYIYlgg6e8NJnrw8hifYdbj9fnuFK2/cmaB2AZBDAvEsEAMC8SwQJ4pqptAB13EhwAAAABJRU5ErkJgggAA" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 17539.0000,916.0000 L 18990.0000,916.0000 L 18990.0000,168.0000 L 17539.0000,168.0000 L 17539.0000,916.0000 Z" stroke="#000000" stroke-width="8.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<image width="74.0000" height="56.0000" x="1106.0000" y="12.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAA4CAYAAABaOm67AAAAzUlEQVR4nO3YQQ6CQBAAwcX//xnvXmxdYMVU3YyYmM4w6G5jjH3w1mP1F7gLoSKhIqEioSKhIqEioSKhIqEioSKhIqEioSKhouWh9n3uOGz289U2HNwlyyfqLoSKDg/1ujPe7ZCjrz9rZ9lR0Wm33lVPo6uYqOjyHbX69bdMVHTZz4NPn2ZHvz/LREV/v6OOYqIif2EioaLpUKt3jvOoH+PWi4SKhIqEioSKhIqEioSKhIqEioSKhIqEioSKhIqEioSKhIqEioSKhIqEip5zxILm8jsz9QAAAABJRU5ErkJgggAA" />
+<image width="74.0000" height="56.0000" x="1106.0000" y="12.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAA4CAYAAABaOm67AAABZklEQVR4nO3YQUrDQBhAYeMdW6haKSJ05xlyAhFRiqVKwZ09iCtBEakiiiB4jbievzB5tomh8L7dkBjD88+YtqiqqtpRrd2ub2BbGAoyFGQoyFCQoSBDQYaCDAUZCjIUZCjIUJChIENBnYcqNvz5siybuI1ahV/cMZ1P1LYwFNR4qJPz92Q9mn9lzz+evfzp/F48/+wxWe9PnvM3uCb3KKi1R284+Wjr0p1woqDGJyruGaN5uqcMb5+S9eD6NVkfXiyT9cqetHK9dHLjHtVf1Nww5ERB//Z6EP/yUZyUaDDL/zc7uFpmj2/KiYIan6jhJN2D4iTFPefoJn3vGsw+s8f3pm/p9cLx/mV+MtflREF+hIEMBW0cKr6n9E7vk/V4+pCs43vUePqTXffuvrO/P16/Le5RkI8eZCjIUJChIENBhoIMBRkKMhRkKMhQkKEgQ0GGggwFGQoyFGQoyFCQoSBDQYaCfgEvMGbr4j/pDAAAAABJRU5ErkJgggAA" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 1123.0865 40.3477)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[AMF]]></text>
+<defs><clipPath id="clip-424238335"><path d="M 0.0000,0.0000 L 1196.0000,0.0000 L 1196.0000,1384.0000 L 0.0000,1384.0000 L 0.0000,0.0000 Z Z" /></clipPath></defs>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path  clip-path="url(#clip-424238335)" d="M 18265.0000,916.0000 L 18265.0000,22097.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5219.0000,3047.0000 L 9386.0000,3047.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9557.0000,3047.0000 L 9331.0000,3160.0000 C 9367.0000,3089.0000 9367.0000,3005.0000 9331.0000,2934.0000 L 9557.0000,3047.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,3411.0000 L 13740.0000,3411.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13911.0000,3411.0000 L 13685.0000,3523.0000 C 13721.0000,3452.0000 13721.0000,3369.0000 13685.0000,3298.0000 L 13911.0000,3411.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 415.0815 160.8674)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[3.(relay UE) ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 359.9829 184.8676)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[SidelinkUEInformationNR]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 614.7615 183.5445)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[4.(relay UE) UL RRC MESSAGE ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 693.1995 207.5447)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[TRANSFER]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5219.0000,9579.0000 L 9386.0000,9579.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9557.0000,9579.0000 L 9331.0000,9692.0000 C 9367.0000,9621.0000 9367.0000,9537.0000 9331.0000,9466.0000 L 9557.0000,9579.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 376.6789 593.8120)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[11. RRCSetupRequest]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,10168.0000 L 13740.0000,10168.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13911.0000,10168.0000 L 13685.0000,10281.0000 C 13721.0000,10210.0000 13721.0000,10127.0000 13685.0000,10056.0000 L 13911.0000,10168.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 618.2535 611.5760)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[12. INITIAL UL RRC MESSAGE ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 693.1995 635.5762)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[TRANSFER]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9743.0000,11098.0000 L 13911.0000,11098.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,11098.0000 L 9798.0000,10986.0000 C 9763.0000,11057.0000 9763.0000,11140.0000 9798.0000,11211.0000 L 9573.0000,11098.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 602.5132 685.9380)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[13. DL RRC MESSAGE TRANSFER]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1035.0000,11438.0000 L 9557.0000,11438.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 865.0000,11438.0000 L 1090.0000,11326.0000 C 1055.0000,11397.0000 1055.0000,11480.0000 1090.0000,11551.0000 L 865.0000,11438.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 271.7038 704.3632)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[14. RRCSetup]]></text>
+<image width="33.0000" height="34.0000" x="310.0000" y="816.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAAZElEQVRYhe2VQQrAIAwE1/7/z+kpFEJFAqGaMnMTPIybJQ5Jps1cuwUkJB6QcJBwlhJmVnp+Y6jTsqp48YweSdCJSHbmmfs9kqATETqRnfH/OxGp/Et6JMGe+BIkHCQcJJwjJG4bQW/L7uiJCgAAAABJRU5ErkJgggAA" />
+<image width="33.0000" height="34.0000" x="310.0000" y="816.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAA0klEQVRYhe2WTQrCMBBGU+9YsVTaLASvkSO4EKwlave9hBcQhfoDLsSbxNUgM5TEbKwj83YfaeEx+ZI2cc45NTCjoQWUEok3IgGIBBCUGLctyqm9oDxd31DOV533/T4SVpdVuj2inG+u3hwDj0no5olyUeNO0I7Qdb04BSV4TAKI3fOY53lMgt4DtAPGGO+6bnDug8ckAOlEscSdKCv/uS+rO8oz+2+doEx2Z2/+5FQAPCYxrw8oZ/aBMv1WZBb/T5h9WILHJL6BSAAiAYgE8BMSL3aiZBzjq+ofAAAAAElFTkSuQmCC" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 865.0000,11438.0000 M 5312.0000,13253.0000 C 5312.0000,13187.0000 5263.0000,13135.0000 5203.0000,13135.0000 C 5143.0000,13135.0000 5094.0000,13187.0000 5094.0000,13253.0000 C 5094.0000,13318.0000 5143.0000,13370.0000 5203.0000,13370.0000 C 5263.0000,13370.0000 5312.0000,13318.0000 5312.0000,13253.0000 " stroke="#000000" stroke-width="48.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000"  fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 865.0000,13253.0000 L 9386.0000,13253.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9557.0000,13253.0000 L 9331.0000,13365.0000 C 9367.0000,13294.0000 9367.0000,13211.0000 9331.0000,13140.0000 L 9557.0000,13253.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 233.0995 817.7490)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[16. RRCSetupComplete]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,13629.0000 L 13740.0000,13629.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13911.0000,13629.0000 L 13685.0000,13742.0000 C 13721.0000,13671.0000 13721.0000,13587.0000 13685.0000,13516.0000 L 13911.0000,13629.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 605.0842 846.9458)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[17. UL RRC MESSAGE TRANSFER]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13927.0000,13992.0000 L 18094.0000,13992.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 18265.0000,13992.0000 L 18039.0000,14104.0000 C 18075.0000,14034.0000 18075.0000,13950.0000 18039.0000,13879.0000 L 18265.0000,13992.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 908.1526 869.6230)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[18. INITIAL UE MESSAGE]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 14097.0000,14899.0000 L 18265.0000,14899.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13927.0000,14899.0000 L 14152.0000,14786.0000 C 14117.0000,14857.0000 14117.0000,14941.0000 14152.0000,15012.0000 L 13927.0000,14899.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 892.0569 904.3949)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[19. INITIAL CONTEXT SETUP ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 966.7288 928.3951)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[REQUEST]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9743.0000,15262.0000 L 13911.0000,15262.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,15262.0000 L 9798.0000,15149.0000 C 9763.0000,15220.0000 9763.0000,15304.0000 9798.0000,15374.0000 L 9573.0000,15262.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 597.4403 946.1584)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[20. UE CONTEXT SETUP REQUEST]]></text>
+<image width="619.0000" height="53.0000" x="283.0000" y="745.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAA1CAYAAAAeV6xKAAAB7UlEQVR4nO3cy2rDMBRFUaX//8/OSCCE/KKp72lYa3IwG0GHRjV5tda2BgBApJ/qPwAAgH1e1gAAgnlZAwAI5mUNACCYlzUAgGBe1gAAgnlZAwAIdvqytm3bR57ndd5555133nnnnXf+3Ks1P4oLAJDq8r9B099InXfeeeedd9555//7+RU3awAAwS5/s2attdZaaz+73fw8crMGABDs9jdrZ2+Euq7ruq7r+r1+xM0aAEAw36xZa6211obsips1AIBgv/6dtb03Ql3XdV3Xdf1eX3GzBgAQzDdr1lprrbVF283PIzdrAADB/M6aruu6rut6cT/iZg0AIJhv1qy11lpri7abn0du1gAAgvmdNV3XdV3X9Yf73vOKmzUAgGC+WbPWWmutLdpufh65WQMACOZ31nRd13Vd14v7ETdrAADBfLNmrbXWWhuyK27WAACC+Z01Xdd1Xdf1kL7iZg0AIJhv1qy11lpri7abn0du1gAAgvmdNV3XdV3X9eJ+xM0aAEAw36xZa6211hZtNz+P3KwBAATzO2u6ruu6rusP973nFTdrAADBLn+zNj9Xv5Hquq7ruq5/W19xswYAEOzyN2sAADzPyxoAQLDb36zpuq7ruq7rf9tHvlkDAAjm36AAAMG8rAEABPOyBgAQ7A1HulQjsKV/GwAAAABJRU5ErkJgggAA" />
+<image width="619.0000" height="53.0000" x="283.0000" y="745.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAA1CAYAAAAeV6xKAAACrUlEQVR4nO3cTXLTShQG0Bv2SIpgS1O2wQqYpeJfsgA2wYwRA3ACBNiLGchNIZVlyZOmrZwz+Ur+Xlcx7Lq5r6/2+/0+AAAo0ov//Q8AAKCfyxoAQMFc1gAACuayBgBQMJc1AICCuawBABTMZQ0AoGCDl7Wbza71Xa2fWt+zu92o724677zzzjvvvPPOP9fz9eoxxrryKC4AQLlG/xm0Wjy0vuf330d9d9N555133nnnnXf+2Z5ftr9f3f+OISZrAAAFG5ys1evmBjjb/IiIiGr5rcn3UkoppZTyrDzco262TSbXt/07bCZrAAAFG72zVm+bydr8MGlLmXR/1+v1er1er9e3f08TtqRaf4khJmsAAAUbnKzN775GRP9kTUoppZRSjss0WUv/V2iarNlZAwC4UGfvrCV9N0a9Xq/X6/V6/fG+b7J2iskaAEDB7KxJKaWUUmbK7mQtsbMGAHChvLOm1+v1er1en6n3zhoAwMTYWZNSSimlzJR21gAAJsY7a3q9Xq/X6/WZejtrAAATY2dNSimllDJT2lkDAJgY76zp9Xq9Xq/XZ+rtrAEATIydNSmllFLKTNndWUuTNTtrAAAXyjtrer1er9fr9Zn6vsnaKSZrAAAFs7MmpZRSSpkpvbMGADAx3lnT6/V6vV6vz9R7Zw0AYGIGJ2v14SZYL3cR8c/fWntuklJKKaWU8nhWy+YeVW/bEzY7awAAF+qMnbX2DXC+ejqaer1er9fr9frjfffd2lnnfnWMyRoAQMGG31lb/2p915ufze+Lx1b+/e87v+v1er1er9frm+968xAREa8X7Ynay3efoo/JGgBAwUbvrAEAkJ/LGgBAwQYva9cfTvdvVp/1er1er9fr9Wf0bz+erFvsrAEAFMyfQQEACuayBgBQMJc1AICC/QEEL+DQs8qbfgAAAABJRU5ErkJgggAA" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4636.0000,11983.0000 L 4636.0000,12572.0000 L 14274.0000,12572.0000 L 14274.0000,11983.0000 L 4636.0000,11983.0000 Z" stroke-width="1px" stroke="#FFFFFF"  fill="#FFFFFF" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4636.0000,12572.0000 L 14274.0000,12572.0000 L 14274.0000,11983.0000 L 4636.0000,11983.0000 L 4636.0000,12572.0000 Z" stroke="#000000" stroke-width="8.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 405.5306 773.8121)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[15]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 425.8037 773.8121)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[.]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 430.8525 773.8121)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[ ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 435.3739 773.8121)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[Prepare PC5 and Uu RLC Channel for SRB1]]></text>
+<image width="33.0000" height="34.0000" x="309.0000" y="962.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAAZUlEQVRYhe2UywqAMAwEt/7/P8fTIgQfRMQambkVephslgxJocksswUkJDaQMEiYS4mIePS9x1DnY3Vn4iN6JEEnMtWdV/73SIJOZOhEdcf/70SmmsgZPZLgTrwJEgYJg4T5hMQKjshp0R/UrnIAAAAASUVORK5CYIIA" />
+<image width="33.0000" height="34.0000" x="309.0000" y="962.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAAyElEQVRYhe2VTQrCMBCFU++YghpB0IPkDIL4gy0u3HkSV+rCPzxMXA0yj5iYjXVgvt1j2vD1JW2rEEIwHdPrWsAYlXijEoRKEFkJ73meNHeWbftMzj0uEKES/bEaNtdkLkFGE27H9xyfeLQ4J+dudshKyGiCKN3zkutlNDHeXli2G57xOzCFeT3nOYaMJgg9E7Y9soxnBHGrG8uD9SMrIaOJT/Thb4nY5enrtWQ0Ue/5GcAG8C3AOd4fQ0YTv0AlCJUgVIL4C4kX3vFgWWLRyQMAAAAASUVORK5CYIIA" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4636.0000,12572.0000 M 5295.0000,15597.0000 C 5295.0000,15532.0000 5247.0000,15479.0000 5187.0000,15479.0000 C 5126.0000,15479.0000 5078.0000,15532.0000 5078.0000,15597.0000 C 5078.0000,15663.0000 5126.0000,15715.0000 5187.0000,15715.0000 C 5247.0000,15715.0000 5295.0000,15663.0000 5295.0000,15597.0000 " stroke="#000000" stroke-width="48.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000"  fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1019.0000,15597.0000 L 9541.0000,15597.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 849.0000,15597.0000 L 1074.0000,15485.0000 C 1038.0000,15556.0000 1038.0000,15639.0000 1074.0000,15710.0000 L 849.0000,15597.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 212.3671 964.3001)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[21. SecurityModeCommand]]></text>
+<image width="32.0000" height="33.0000" x="310.0000" y="1042.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAAYElEQVRYhe2UQQrAIAwEV///5/TkRRBtG3GFmVtAcLLKFkmhg9STlyOAAAJLAhGROvcU3VJEfzcd4Z9A9pv3+CfQeLvZ6nn/BOiBBn/g6zzDP4ERWUn4J0APIIAAArt5AOfObMxyG80NAAAAAElFTkSuQmCC" />
+<image width="32.0000" height="33.0000" x="310.0000" y="1042.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAA0klEQVRYhWP8////f4YBBEwDafmoA0YdMOoAohzgcACVHzXrJgo/cu4NFH7YrHso/IYG/OYzDpmCKGzqVRR+9NxrePnEgsEfAuhxHr/wFgo/evplVD6JITH4QwAG4mZdJayIDPWDPwRiZl9C4Sej5fsGtIweO/0iCh89DaGDwR8CMJA4/w5JBhObGwZ/CMQuvovCT1iAmrrR00QEiSE1+EMAF4iYdgWFj57vQ+edJ8qcwR8CYatRfYaeBtDjHD3fh61ejdf8wR8Cow4YdcCoA2gNAK23YaxCWMG+AAAAAElFTkSuQmCC" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 849.0000,15597.0000 M 5303.0000,16867.0000 C 5303.0000,16802.0000 5255.0000,16749.0000 5195.0000,16749.0000 C 5135.0000,16749.0000 5086.0000,16802.0000 5086.0000,16867.0000 C 5086.0000,16932.0000 5135.0000,16985.0000 5195.0000,16985.0000 C 5255.0000,16985.0000 5303.0000,16932.0000 5303.0000,16867.0000 " stroke="#000000" stroke-width="48.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000"  fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 857.0000,16867.0000 L 9378.0000,16867.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9549.0000,16867.0000 L 9323.0000,16980.0000 C 9359.0000,16909.0000 9359.0000,16826.0000 9323.0000,16755.0000 L 9549.0000,16867.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 215.8677 1043.6702)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[23. SecurityModeComplete]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,16337.0000 L 13740.0000,16337.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13911.0000,16337.0000 L 13685.0000,16449.0000 C 13721.0000,16378.0000 13721.0000,16295.0000 13685.0000,16224.0000 L 13911.0000,16337.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 640.3431 996.0956)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[22. UE CONTEXT SETUP ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 692.6183 1020.0958)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[RESPONSE]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,17425.0000 L 13740.0000,17425.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13911.0000,17425.0000 L 13685.0000,17538.0000 C 13721.0000,17467.0000 13721.0000,17383.0000 13685.0000,17313.0000 L 13911.0000,17425.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 605.0842 1084.2057)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[24. UL RRC MESSAGE TRANSFER]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9743.0000,18536.0000 L 13911.0000,18536.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,18536.0000 L 9798.0000,18424.0000 C 9763.0000,18495.0000 9763.0000,18578.0000 9798.0000,18649.0000 L 9573.0000,18536.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 602.5132 1150.8198)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[25. DL RRC MESSAGE TRANSFER]]></text>
+<image width="33.0000" height="34.0000" x="310.0000" y="1178.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAAZElEQVRYhe2VQQrAIAwE1/7/z+kpFEJFAqGaMnMTPIybJQ5Jps1cuwUkJB6QcJBwlhJmVnp+Y6jTsqp48YweSdCJSHbmmfs9kqATETqRnfH/OxGp/Et6JMGe+BIkHCQcJJwjJG4bQW/L7uiJCgAAAABJRU5ErkJgggAA" />
+<image width="33.0000" height="34.0000" x="310.0000" y="1178.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAA2ElEQVRYhe2WXQqCQBSFtT0WlqUGQduYRQSZGApBL26iDQhBfxQF0Uamp0ucScZ8yW7c7+1jFI5n7gy6WmvttEyn7QCOIyFeSAhCQhC1IXpFAe6vH+DDxQnX5zvr+1W4rC6rQXIG95dHqzeBRxNRfgf3siu4OSNjYz3Kt7UheDRBNN3zJs/zaOLtHjBmQCkF3k0P4FGOXgWPJgiZiWCGMxHG9nMfxhfwSfpvM2HiZXurf3IqCB5NTJMSvJ/i/0KQ4BePVjdwtakPwaOJbyAhCAlBSAjiJ0I8AZfwZK2zEHtjAAAAAElFTkSuQmCC" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,18536.0000 M 5312.0000,19044.0000 C 5312.0000,18979.0000 5263.0000,18926.0000 5203.0000,18926.0000 C 5143.0000,18926.0000 5094.0000,18979.0000 5094.0000,19044.0000 C 5094.0000,19109.0000 5143.0000,19162.0000 5203.0000,19162.0000 C 5263.0000,19162.0000 5312.0000,19109.0000 5312.0000,19044.0000 " stroke="#000000" stroke-width="48.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000"  fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1035.0000,19044.0000 L 9557.0000,19044.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 865.0000,19044.0000 L 1090.0000,18932.0000 C 1055.0000,19003.0000 1055.0000,19086.0000 1090.0000,19157.0000 L 865.0000,19044.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 229.8767 1179.7332)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[26. RRCReconfiguration]]></text>
+<image width="33.0000" height="33.0000" x="310.0000" y="1235.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAXklEQVRYhe2VQQrAIAwEV///5/S0CNIihaAEZ26Ch8myJE1S6DD9tICExAAJg4RZSkRE6vuNpkrLKmPiL2ok8Xfi+zqR+b9GEuyJGTpBJ1Zk3pIaSdCJnSBhkDBImAeXGW/J05ciVgAAAABJRU5ErkJgggAA" />
+<image width="33.0000" height="33.0000" x="310.0000" y="1235.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAzUlEQVRYhe2WTQrCMBBGE0/mJRS1sXoUT6HYVvAPN17CM6hRtLjxInE1yAw1QzaWgXm7RxL4+DINtSGEYFqm03YAYzTEFw0BaAiADdGdnZCPigfyyeaJPN/ekfePfAgr6rEa717Is9Ut6inIaCI7vJG7so7uH8yv+PziwoaQ0QSQeucp+2U04Zb4u6czYsn+XuWRT9fecMhoAtCZoHfsyjP2fU3WsdMZakJGE7/ICx/1YcW/lICMJrj/CToDdJ2eb0JGE/9AQwAaAtAQwAdL4GI15jKZbwAAAABJRU5ErkJgggAA" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 865.0000,19044.0000 M 5312.0000,19951.0000 C 5312.0000,19886.0000 5263.0000,19833.0000 5203.0000,19833.0000 C 5143.0000,19833.0000 5094.0000,19886.0000 5094.0000,19951.0000 C 5094.0000,20017.0000 5143.0000,20069.0000 5203.0000,20069.0000 C 5263.0000,20069.0000 5312.0000,20017.0000 5312.0000,19951.0000 " stroke="#000000" stroke-width="48.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000"  fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 865.0000,19951.0000 L 9386.0000,19951.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9557.0000,19951.0000 L 9331.0000,20064.0000 C 9367.0000,19993.0000 9367.0000,19910.0000 9331.0000,19839.0000 L 9557.0000,19951.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 191.2729 1236.4261)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[27. RRCReconfigurationComplete]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,20328.0000 L 13740.0000,20328.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13911.0000,20328.0000 L 13685.0000,20440.0000 C 13721.0000,20370.0000 13721.0000,20286.0000 13685.0000,20215.0000 L 13911.0000,20328.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 605.0842 1265.6229)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[28. UL RRC MESSAGE TRANSFER]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13927.0000,20691.0000 L 18094.0000,20691.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 18265.0000,20691.0000 L 18039.0000,20803.0000 C 18075.0000,20732.0000 18075.0000,20649.0000 18039.0000,20578.0000 L 18265.0000,20691.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 894.8915 1268.2217)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[29. INITIAL CONTEXT SETUP ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 964.7443 1292.2218)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[RESPONSE]]></text>
+<image width="619.0000" height="53.0000" x="283.0000" y="1312.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAA1CAYAAAAeV6xKAAAB7UlEQVR4nO3cy2rDMBRFUaX//8/OSCCE/KKp72lYa3IwG0GHRjV5tda2BgBApJ/qPwAAgH1e1gAAgnlZAwAI5mUNACCYlzUAgGBe1gAAgnlZAwAIdvqytm3bR57ndd5555133nnnnXf+3Ks1P4oLAJDq8r9B099InXfeeeedd9555//7+RU3awAAwS5/s2attdZaaz+73fw8crMGABDs9jdrZ2+Euq7ruq7r+r1+xM0aAEAw36xZa6211obsips1AIBgv/6dtb03Ql3XdV3Xdf1eX3GzBgAQzDdr1lprrbVF283PIzdrAADB/M6aruu6rut6cT/iZg0AIJhv1qy11lpri7abn0du1gAAgvmdNV3XdV3X9Yf73vOKmzUAgGC+WbPWWmutLdpufh65WQMACOZ31nRd13Vd14v7ETdrAADBfLNmrbXWWhuyK27WAACC+Z01Xdd1Xdf1kL7iZg0AIJhv1qy11lpri7abn0du1gAAgvmdNV3XdV3X9eJ+xM0aAEAw36xZa6211hZtNz+P3KwBAATzO2u6ruu6rusP973nFTdrAADBLn+zNj9Xv5Hquq7ruq5/W19xswYAEOzyN2sAADzPyxoAQLDb36zpuq7ruq7rf9tHvlkDAAjm36AAAMG8rAEABPOyBgAQ7A1HulQjsKV/GwAAAABJRU5ErkJgggAA" />
+<image width="619.0000" height="53.0000" x="283.0000" y="1312.0000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAA1CAYAAAAeV6xKAAACrUlEQVR4nO3cTXLTShQG0Bv2SIpgS1O2wQqYpeJfsgA2wYwRA3ACBNiLGchNIZVlyZOmrZwz+Ur+Xlcx7Lq5r6/2+/0+AAAo0ov//Q8AAKCfyxoAQMFc1gAACuayBgBQMJc1AICCuawBABTMZQ0AoGCDl7Wbza71Xa2fWt+zu92o724677zzzjvvvPPOP9fz9eoxxrryKC4AQLlG/xm0Wjy0vuf330d9d9N555133nnnnXf+2Z5ftr9f3f+OISZrAAAFG5ys1evmBjjb/IiIiGr5rcn3UkoppZTyrDzco262TSbXt/07bCZrAAAFG72zVm+bydr8MGlLmXR/1+v1er1er9e3f08TtqRaf4khJmsAAAUbnKzN775GRP9kTUoppZRSjss0WUv/V2iarNlZAwC4UGfvrCV9N0a9Xq/X6/V6/fG+b7J2iskaAEDB7KxJKaWUUmbK7mQtsbMGAHChvLOm1+v1er1en6n3zhoAwMTYWZNSSimlzJR21gAAJsY7a3q9Xq/X6/WZejtrAAATY2dNSimllDJT2lkDAJgY76zp9Xq9Xq/XZ+rtrAEATIydNSmllFLKTNndWUuTNTtrAAAXyjtrer1er9fr9Zn6vsnaKSZrAAAFs7MmpZRSSpkpvbMGADAx3lnT6/V6vV6vz9R7Zw0AYGIGJ2v14SZYL3cR8c/fWntuklJKKaWU8nhWy+YeVW/bEzY7awAAF+qMnbX2DXC+ejqaer1er9fr9frjfffd2lnnfnWMyRoAQMGG31lb/2p915ufze+Lx1b+/e87v+v1er1er9frm+968xAREa8X7Ynay3efoo/JGgBAwUbvrAEAkJ/LGgBAwQYva9cfTvdvVp/1er1er9fr9Wf0bz+erFvsrAEAFMyfQQEACuayBgBQMJc1AICC/QEEL+DQs8qbfgAAAABJRU5ErkJgggAA" />
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4636.0000,21054.0000 L 4636.0000,21643.0000 L 14274.0000,21643.0000 L 14274.0000,21054.0000 L 4636.0000,21054.0000 Z" stroke-width="1px" stroke="#FFFFFF"  fill="#FFFFFF" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 4636.0000,21643.0000 L 14274.0000,21643.0000 L 14274.0000,21054.0000 L 4636.0000,21054.0000 L 4636.0000,21643.0000 Z" stroke="#000000" stroke-width="8.0000"  stroke-linecap="square"  stroke-linejoin="miter"  stroke-miterlimit="2.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 381.8925 1340.7412)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[30]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 402.1655 1340.7412)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[.]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 407.2143 1340.7412)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[ ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 411.7357 1340.7412)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[Prepare PC5 and Uu RLC Channel for DRBs/SRBs]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9743.0000,4363.0000 L 13911.0000,4363.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,4363.0000 L 9798.0000,4250.0000 C 9763.0000,4321.0000 9763.0000,4405.0000 9798.0000,4476.0000 L 9573.0000,4363.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 628.8123 247.9275)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[5. (relay UE) UE CONTEXT ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 629.7983 271.9277)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[MODIFICATION REQUEST]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,5406.0000 L 13740.0000,5406.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13911.0000,5406.0000 L 13685.0000,5519.0000 C 13721.0000,5448.0000 13721.0000,5365.0000 13685.0000,5294.0000 L 13911.0000,5406.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 631.6469 308.2690)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[6. (relay UE) UE CONTEXT ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 627.8138 332.2691)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[MODIFICATION RESPONSE]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9727.0000,6495.0000 L 13895.0000,6495.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9557.0000,6495.0000 L 9782.0000,6382.0000 C 9747.0000,6453.0000 9747.0000,6537.0000 9782.0000,6607.0000 L 9557.0000,6495.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5373.0000,7220.0000 L 9541.0000,7220.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5203.0000,7220.0000 L 5428.0000,7108.0000 C 5393.0000,7179.0000 5393.0000,7262.0000 5428.0000,7333.0000 L 5203.0000,7220.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 612.7647 377.7176)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[7. (relay UE) DL RRC MESSAGE ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 693.1995 401.7178)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[TRANSFER]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9573.0000,8808.0000 L 13740.0000,8808.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 13911.0000,8808.0000 L 13685.0000,8920.0000 C 13721.0000,8850.0000 13721.0000,8766.0000 13685.0000,8695.0000 L 13911.0000,8808.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 607.4325 520.1584)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[10. (relay UE) UL RRC MESSAGE ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 693.1995 544.1586)">
+<text font-family="Calibri" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[TRANSFER]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 5203.0000,8490.0000 L 9370.0000,8490.0000 " stroke="#000000" stroke-width="32.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9541.0000,8490.0000 L 9315.0000,8603.0000 C 9351.0000,8532.0000 9351.0000,8449.0000 9315.0000,8378.0000 L 9541.0000,8490.0000 Z "  fill="#000000" stroke="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 327.5934 446.4104)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[8. (relay UE) RRCReconfiguration]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 410.6951 496.7729)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[9. (relay UE) ]]></text>
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 340.8402 520.7730)">
+<text font-family="Calibri" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="0.0000" font-size="20.0000" ><![CDATA[RRCReconfigurationComplete]]></text>
+</g>
+</g>
+</svg>

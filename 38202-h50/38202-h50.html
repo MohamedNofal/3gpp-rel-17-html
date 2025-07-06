@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38202-h50</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-symbols-and-abbreviations"
+id="toc-definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#services-and-functions-of-the-physical-layer"
+id="toc-services-and-functions-of-the-physical-layer">4 Services and
+functions of the physical layer</a>
+<ul>
+<li><a href="#general" id="toc-general">4.1 General</a></li>
+<li><a href="#overview-of-l1-functions"
+id="toc-overview-of-l1-functions">4.2 Overview of L1 functions</a></li>
+</ul></li>
+<li><a href="#model-of-physical-layer-of-the-ue"
+id="toc-model-of-physical-layer-of-the-ue">5 Model of physical layer of
+the UE</a>
+<ul>
+<li><a href="#uplink-model" id="toc-uplink-model">5.1 Uplink model</a>
+<ul>
+<li><a href="#uplink-shared-channel"
+id="toc-uplink-shared-channel">5.1.1 Uplink shared channel</a></li>
+<li><a href="#random-access-channel"
+id="toc-random-access-channel">5.1.2 Random access channel</a></li>
+</ul></li>
+<li><a href="#downlink-model" id="toc-downlink-model">5.2 Downlink
+model</a>
+<ul>
+<li><a href="#downlink-shared-channel"
+id="toc-downlink-shared-channel">5.2.1 Downlink shared channel</a></li>
+<li><a href="#broadcast-channel" id="toc-broadcast-channel">5.2.2
+Broadcast channel</a></li>
+<li><a href="#paging-channel" id="toc-paging-channel">5.2.3 Paging
+channel</a></li>
+</ul></li>
+<li><a href="#sidelink-model" id="toc-sidelink-model">5.3 Sidelink
+model</a>
+<ul>
+<li><a href="#sidelink-shared-channel"
+id="toc-sidelink-shared-channel">5.3.1 Sidelink shared channel</a></li>
+<li><a href="#broadcast-channel-1" id="toc-broadcast-channel-1">5.3.2
+Broadcast channel</a></li>
+</ul></li>
+</ul></li>
+<li><a
+href="#simultaneous-transmission-and-reception-of-physical-channels-and-physical-signals"
+id="toc-simultaneous-transmission-and-reception-of-physical-channels-and-physical-signals">6
+Simultaneous transmission and reception of physical channels and
+physical signals</a>
+<ul>
+<li><a href="#uplink" id="toc-uplink">6.1 Uplink</a></li>
+<li><a href="#downlink" id="toc-downlink">6.2 Downlink</a></li>
+<li><a href="#sidelink" id="toc-sidelink">6.3 Sidelink</a></li>
+</ul></li>
+<li><a href="#measurements-provided-by-the-physical-layer"
+id="toc-measurements-provided-by-the-physical-layer">7 Measurements
+provided by the physical layer</a>
+<ul>
+<li><a href="#ue-measurements" id="toc-ue-measurements">7.1 UE
+measurements</a></li>
+</ul></li>
+</ul>
+</nav>
+<p>3GPP TS 38.202 V17.5.0 (2023-12)</p>
+<p>Technical Specification</p>
+<p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NR;</p>
+<p>Services provided by the physical layer</p>
+<p>(Release 17)</p>
+<p><img src="media/image1.jpeg" style="width:1.32292in;height:0.91667in"
+alt="5G-logo_175px" /> <img src="media/image2.png"
+style="width:1.78125in;height:1.04167in" alt="3GPP-logo_web" /></p>
+<p>The present document has been developed within the 3rd Generation
+Partnership Project (3GPP <sup>TM</sup>) and may be further elaborated
+for the purposes of 3GPP..<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</p>
+<blockquote>
+<p>Keywords</p>
+<p>3GPP, New Radio, Layer 1</p>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote>
+<p><em><strong>Copyright Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2023, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">5</a></p>
+<p>2 References <a href="#references">5</a></p>
+<p>3 Definitions, symbols and abbreviations <a
+href="#definitions-symbols-and-abbreviations">5</a></p>
+<p>3.1 Definitions <a href="#definitions">5</a></p>
+<p>3.2 Symbols <a href="#symbols">5</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">5</a></p>
+<p>4 Services and functions of the physical layer <a
+href="#services-and-functions-of-the-physical-layer">6</a></p>
+<p>4.1 General <a href="#general">6</a></p>
+<p>4.2 Overview of L1 functions <a
+href="#overview-of-l1-functions">6</a></p>
+<p>5 Model of physical layer of the UE <a
+href="#model-of-physical-layer-of-the-ue">6</a></p>
+<p>5.1 Uplink model <a href="#uplink-model">7</a></p>
+<p>5.1.1 Uplink shared channel <a
+href="#uplink-shared-channel">7</a></p>
+<p>5.1.2 Random access channel <a
+href="#random-access-channel">7</a></p>
+<p>5.2 Downlink model <a href="#downlink-model">8</a></p>
+<p>5.2.1 Downlink shared channel <a
+href="#downlink-shared-channel">8</a></p>
+<p>5.2.2 Broadcast channel <a href="#broadcast-channel">8</a></p>
+<p>5.2.3 Paging channel <a href="#paging-channel">9</a></p>
+<p>5.3 Sidelink model <a href="#sidelink-model">10</a></p>
+<p>5.3.1 Sidelink shared channel <a
+href="#sidelink-shared-channel">10</a></p>
+<p>5.3.2 Broadcast channel <a href="#broadcast-channel-1">11</a></p>
+<p>6 Simultaneous transmission and reception of physical channels and
+physical signals <a
+href="#simultaneous-transmission-and-reception-of-physical-channels-and-physical-signals">12</a></p>
+<p>6.1 Uplink <a href="#uplink">12</a></p>
+<p>6.2 Downlink <a href="#downlink">13</a></p>
+<p>6.3 Sidelink <a href="#sidelink">15</a></p>
+<p>7 Measurements provided by the physical layer <a
+href="#measurements-provided-by-the-physical-layer">16</a></p>
+<p>7.1 UE measurements <a href="#ue-measurements">16</a></p>
+<p>Annex A (informative): Change history <a
+href="#annex-a-informative-change-history">17</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Specification has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document is a technical specification of the services
+provided by the physical layer of 5G-NR to upper layers.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications"</p>
+<p>[2] 3GPP TS 38.201: "NR; Physical Layer – General Description"</p>
+<p>[3] 3GPP TS 38.211: "NR; Physical channels and modulation"</p>
+<p>[4] 3GPP TS 38.212: "NR; Multiplexing and channel coding"</p>
+<p>[5] 3GPP TS 38.213: "NR; Physical layer procedures for control"</p>
+<p>[6] 3GPP TS 38.214: "NR; Physical layer procedures for data"</p>
+<p>[7] 3GPP TS 38.215: "NR; Physical layer measurements"</p>
+<p>[8] 3GPP TS 38.306: "NR; User Equipment (UE) radio access
+capabilities"</p>
+<h1 id="definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in TR 21.905 [1] and the following apply. A term defined in the
+present document takes precedence over the definition of the same term,
+if any, in TR 21.905 [1].</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+TR 21.905 [1] and the following apply. An abbreviation defined in the
+present document takes precedence over the definition of the same
+abbreviation, if any, in TR 21.905 [1].</p>
+<p>For the purposes of the present document, the following abbreviations
+apply:</p>
+<p>ARQ Automatic Repeat Request</p>
+<p>BCH Broadcast Channel</p>
+<p>CA Carrier Aggregation</p>
+<p>CRC Cyclic Redundancy Check</p>
+<p>DC Dual Connectivity</p>
+<p>DL Downlink</p>
+<p>FEC Forward Error Correction</p>
+<p>GF Grant-Free</p>
+<p>MAC Medium Access Control</p>
+<p>MIMO Multiple Input Multiple Output</p>
+<p>PBCH Physical Broadcast Channel</p>
+<p>PCH Paging Channel</p>
+<p>PDCCH Physical Downlink Control Channel</p>
+<p>PDSCH Physical Downlink Shared Channel</p>
+<p>PRACH Physical Random Access Channel</p>
+<p>PUCCH Physical Uplink Control Channel</p>
+<p>PUSCH Physical Uplink Shared Channel</p>
+<p>RACH Random Access Channel</p>
+<p>RF Radio Frequency</p>
+<p>RNTI Radio Network Temporary Identifier</p>
+<p>SCH Shared Channel</p>
+<p>SI System Information</p>
+<p>SPS Semi-Persistent Scheduling</p>
+<p>SRS Sounding Reference Signal</p>
+<p>TPC Transmit Power Control</p>
+<p>UL Uplink</p>
+<h1 id="services-and-functions-of-the-physical-layer">4 Services and
+functions of the physical layer</h1>
+<h2 id="general">4.1 General</h2>
+<p>The physical layer offers data transport services to higher
+layers.</p>
+<p>The access to these services is through the use of transport channels
+via the MAC sub-layer.</p>
+<p>A transport block is defined as the data delivered by MAC layer to
+the physical layer and vice versa.</p>
+<h2 id="overview-of-l1-functions">4.2 Overview of L1 functions</h2>
+<p>As mentioned in [2, TS 38.201], the physical layer is expected to
+perform the following functions to provide the data transport
+service:</p>
+<p>- Error detection on the transport channel and indication to higher
+layers;</p>
+<p>- FEC encoding/decoding of the transport channel;</p>
+<p>- Hybrid ARQ soft-combining;</p>
+<p>- Rate matching of the coded transport channel to physical
+channels;</p>
+<p>- Mapping of the coded transport channel onto physical channels;</p>
+<p>- Power weighting of physical channels;</p>
+<p>- Modulation and demodulation of physical channels;</p>
+<p>- Frequency and time synchronisation;</p>
+<p>- Radio characteristics measurements and indication to higher
+layers;</p>
+<p>- Multiple Input Multiple Output (MIMO) antenna processing;</p>
+<p>- RF processing.</p>
+<p>L1 functions are modelled for each transport channel in clause 5.</p>
+<h1 id="model-of-physical-layer-of-the-ue">5 Model of physical layer of
+the UE</h1>
+<p>The 5G-NR physical-layer model captures those characteristics of the
+5G-NR physical-layer that are relevant from the point-of-view of higher
+layers. More specifically, the physical-layer model captures:</p>
+<p>- The structure of higher-layer data being passed down to or up from
+the physical layer;</p>
+<p>- The means by which higher layers can configure the physical
+layer;</p>
+<p>- The different indications (error indications, channel-quality
+indications, etc.) that are provided by the physical layer to higher
+layers.</p>
+<h2 id="uplink-model">5.1 Uplink model</h2>
+<h3 id="uplink-shared-channel">5.1.1 Uplink shared channel</h3>
+<p>The physical-layer model for Uplink Shared Channel transmission is
+described based on the corresponding PUSCH physical-layer-processing
+chain, see Figure 5.1.1-1. Processing steps that are relevant for the
+physical-layer model, e.g. in the sense that they are configurable by
+higher layers, are highlighted in blue.</p>
+<p>- Higher-layer data passed to/from the physical layer</p>
+<p>- CRC and transport-block-error indication</p>
+<p>- FEC and rate matching</p>
+<p>- Data modulation</p>
+<p>- Mapping to physical resource</p>
+<p>- Multi-antenna processing</p>
+<p>- Support of L1 control and Hybrid-ARQ-related signalling</p>
+<p><img src="media/image3.svg" /></p>
+<p>Figure 5.1.1-1: Physical-layer model for UL-SCH transmission</p>
+<h3 id="random-access-channel">5.1.2 Random access channel</h3>
+<p>The physical-layer model for RACH transmission is characterized by a
+PRACH preamble format that consists of a cyclic prefix, a preamble, and
+a guard time during which nothing is transmitted.</p>
+<h2 id="downlink-model">5.2 Downlink model</h2>
+<h3 id="downlink-shared-channel">5.2.1 Downlink shared channel</h3>
+<p>The physical-layer model for Downlink Shared Channel transmission is
+described based on the corresponding PDSCH physical-layer-processing
+chain, see Figure 5.2.1-1. Processing steps that are relevant for the
+physical-layer model, e.g. in the sense that they are configurable by
+higher layers, are highlighted in blue.</p>
+<p>- Higher-layer data passed to/from the physical layer;</p>
+<p>- CRC and transport-block-error indication;</p>
+<p>- FEC and rate matching;</p>
+<p>- Data modulation;</p>
+<p>- Mapping to physical resource;</p>
+<p>- Multi-antenna processing;</p>
+<p>- Support of L1 control and Hybrid-ARQ-related signalling.</p>
+<p><img src="media/image4.svg" /></p>
+<p>Figure 5.2.1-1: Physical-layer model for DL-SCH transmission</p>
+<h3 id="broadcast-channel">5.2.2 Broadcast channel</h3>
+<p>The physical-layer model for BCH transmission is characterized by a
+fixed pre-defined transport format. There is one transport block for the
+BCH every 80ms. The BCH physical-layer model is described based on the
+corresponding PBCH physical-layer-processing chain, see Figure
+5.2.2-1:</p>
+<p>- Higher-layer data passed to/from the physical layer;</p>
+<p>- CRC and transport-block-error indication;</p>
+<p>- FEC and rate matching;</p>
+<p>- Data modulation;</p>
+<p>- Mapping to physical resource;</p>
+<p>- Multi-antenna processing.</p>
+<p><img src="media/image5.svg" /></p>
+<p>Figure 5.2.2-1: Physical-layer model for BCH transmission</p>
+<h3 id="paging-channel">5.2.3 Paging channel</h3>
+<p>The physical-layer model for PCH transmission is described based on
+the corresponding physical-layer-processing chain, see Figure 5.2.3-1.
+The PCH is carried on PDSCH. Processing steps that are relevant for the
+physical-layer model, e.g. in the sense that they are configurable by
+higher layers, are highlighted in blue.</p>
+<p>- Higher-layer data passed to/from the physical layer;</p>
+<p>- CRC and transport-block-error indication;</p>
+<p>- FEC and rate matching;</p>
+<p>- Data modulation;</p>
+<p>- Mapping to physical resource;</p>
+<p>- Multi-antenna processing.</p>
+<p><img src="media/image6.svg" /></p>
+<p>Figure 5.2.3-1: Physical-layer model for PCH transmission</p>
+<h2 id="sidelink-model">5.3 Sidelink model</h2>
+<h3 id="sidelink-shared-channel">5.3.1 Sidelink shared channel</h3>
+<p>The physical-layer model for Sidelink Shared Channel transmission is
+described based on the corresponding SL-SCH physical-layer-processing
+chain, see Figure 5.3.1-1. Processing steps that are relevant for the
+physical-layer model, e.g. in the sense that they are configurable by
+higher layers, are highlighted in blue.</p>
+<p>- Higher-layer data passed to/from the physical layer;</p>
+<p>- CRC and transport-block-error indication;</p>
+<p>- FEC and rate matching;</p>
+<p>- Data modulation;</p>
+<p>- Mapping to physical resource;</p>
+<p>- Multi-antenna processing;</p>
+<p>- Support of L1 control and Hybrid-ARQ-related signalling.</p>
+<p><img src="media/image7.svg" /></p>
+<p>Figure 5.3.1-1: Physical-layer model for SL-SCH transmission</p>
+<h3 id="broadcast-channel-1">5.3.2 Broadcast channel</h3>
+<p>The physical-layer model for Sidelink Broadcast Channel transmission
+is characterized by a fixed pre-defined transport format. There is one
+transport block for every slot in which the UE transmits SL-BCH, if the
+UE is configured to transmit on SL-BCH. The SL-BCH physical-layer model
+is described based on the corresponding SL-BCH physical-layer-processing
+chain, see Figure 5.3.2-1:</p>
+<p>- Higher-layer data passed to/from the physical layer;</p>
+<p>- CRC and transport-block-error indication;</p>
+<p>- FEC and rate matching;</p>
+<p>- Data modulation;</p>
+<p>- Mapping to physical resource;</p>
+<p>- Multi-antenna processing.</p>
+<p><img src="media/image8.svg" /></p>
+<p>Figure 5.3.2-1: Physical-layer model for SL-BCH transmission</p>
+<h1
+id="simultaneous-transmission-and-reception-of-physical-channels-and-physical-signals">6
+Simultaneous transmission and reception of physical channels and
+physical signals</h1>
+<p>This clause describes the requirements from the UE to send and
+receive multiple physical channels and physical signals simultaneously
+depending on the capabilities and service requirements. The following
+notation is used between both the uplink and downlink clauses below.</p>
+<p><em>- p</em> is the number of uplink carriers configured for the UE
+on which physical channels can be transmitted</p>
+<p><em>- p'</em> is the number of uplink carriers configured for the UE
+on which SRS can be transmitted</p>
+<p><em>- q</em> is the number of downlink carriers configured for the
+UE</p>
+<p><em>- j</em> is the number of cell groups configured for the UE.</p>
+<p><em>- k</em> is the number of PUCCH groups configured for the UE.</p>
+<h2 id="uplink">6.1 Uplink</h2>
+<p>The tables 6.1-1 and 6.1-2 describe the possible combinations of
+physical channels and SRS that can be sent in simultaneously in the
+uplink by one UE. Table 6.1-1 introduces notation for a "Transmission
+Type" which represents a physical channel or sounding reference signal,
+and any associated transport channel. Table 6.1-2 describes the
+combinations of these "Transmission Types" which are supported by the UE
+depending on capabilities [8, TS 38.306], and enumerates how many of
+each can be transmitted simultaneously.</p>
+<p>Table 6.1-1: Uplink "Transmission Types"</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 32%" />
+<col style="width: 26%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>"Transmission Type"</th>
+<th>Physical Channel or SRS</th>
+<th>Associated<br />
+Transport Channel</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>PRACH</td>
+<td>RACH</td>
+<td>Note 1, Note 3</td>
+</tr>
+<tr>
+<td>B</td>
+<td>PUCCH</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>C</td>
+<td>PUSCH</td>
+<td>UL-SCH</td>
+<td>Note 2, Note 3</td>
+</tr>
+<tr>
+<td>D</td>
+<td>SRS</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="4"><p>Note 1: RACH corresponds to contention based.</p>
+<p>Note 2: UCI on PUSCH without UL-SCH is possible.</p>
+<p>Note 3: For SCell, MsgA PRACH and MsgA PUSCH is not
+supported.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.1-2: Uplink "Transmission Type" combinations</p>
+<table>
+<colgroup>
+<col style="width: 65%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Supported Combinations</th>
+<th style="text-align: center;">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>j</em> x A</td>
+<td style="text-align: center;">Note 1</td>
+</tr>
+<tr>
+<td style="text-align: center;"><em>k</em> x B</td>
+<td style="text-align: center;">Note 2</td>
+</tr>
+<tr>
+<td style="text-align: center;"><em>p</em> x C</td>
+<td style="text-align: center;">Note 3, Note 4</td>
+</tr>
+<tr>
+<td style="text-align: center;"><em>p'</em> x D</td>
+<td style="text-align: center;">Note 3, Note 5</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\widetilde{j} \times\)</span> A + <span
+class="math inline">\(\widetilde{k} \times\)</span>B</td>
+<td style="text-align: center;">Note 6</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\widetilde{j} \times\)</span> A + <span
+class="math inline">\(\widetilde{p} \times\)</span>C</td>
+<td style="text-align: center;">Note 6</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\widetilde{j} \times\)</span> A + <span
+class="math inline">\(\widetilde{p}&#39; \times\)</span>D</td>
+<td style="text-align: center;">Note 6</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math inline">\(\widehat{k}
+\times\)</span> B + <span class="math inline">\(\widehat{p}
+\times\)</span>C</td>
+<td style="text-align: center;">Note 8</td>
+</tr>
+<tr>
+<td style="text-align: center;">B + <span
+class="math inline">\(\widehat{p}&#39; \times\)</span>C</td>
+<td style="text-align: center;">Note 9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\widetilde{k} \times\)</span> B + <span
+class="math inline">\(\widetilde{p}&#39; \times\)</span>D</td>
+<td style="text-align: center;">Note 7</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\widetilde{p} \times\)</span> C + <span
+class="math inline">\(\widetilde{p}&#39; \times\)</span>D</td>
+<td style="text-align: center;">Note 7</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;"><p>Note 1: The number of
+cell groups <em>j</em> in the supported combination is subject to UE
+capability.</p>
+<p>Note 2: The number of PUCCH groups <em>k</em> in the supported
+combination is subject to UE capability.</p>
+<p>Note 3: The number of carriers <em>p,</em> and <em>p'</em> in the
+supported combinations are subject to UE capability.</p>
+<p>Note 4: In the case there is one SUL carrier, then <em>p</em>-1 would
+be supported.</p>
+<p>Note 5: UE may be configured with <em>p'</em> but may also have
+capability to simultaneously sound less than this number.</p>
+<p>Note 6: Simultaneous PRACH with PUCCH (or PUSCH or SRS) is supported
+only in the case of inter-band CA, with <span
+class="math inline">\(\widetilde{j} \leq j\)</span>, <span
+class="math inline">\(\widetilde{k} \leq k\)</span>, <span
+class="math inline">\(\widetilde{p} \leq p\)</span>, and <span
+class="math inline">\(\widetilde{p}&#39; \leq p\)</span>' depending on
+the configuration, and subject to UE capability for parallel
+transmission.</p>
+<p>Note 7: Simultaneous SRS with PUCCH (or PUSCH) is supported only in
+the case of inter-band CA, with <span
+class="math inline">\(\widetilde{k} \leq k\)</span>, <span
+class="math inline">\(\widetilde{p} \leq p\)</span>, and <span
+class="math inline">\(\widetilde{p}&#39; \leq p\)</span>' depending on
+the configuration, and subject to UE capability for parallel
+transmission.</p>
+<p>Note 8: Simultaneous PUCCH and PUSCH(s) for the case that multiple
+PUCCH groups are configured and the respective PUCCH and PUSCH(s) are
+transmitted in the different PUCCH groups, with <span
+class="math inline">\(\widehat{k} &lt; k\)</span> and <span
+class="math inline">\(\widehat{p} \leq p\)</span>. <span
+class="math inline">\(k\)</span> and <span
+class="math inline">\(p\)</span> are subject to UE capability for
+supported number of PUCCH groups and UL carriers, respectively. <span
+class="math inline">\(\widehat{k}\)</span> and <span
+class="math inline">\(\widehat{p}\)</span> depend on configuration.</p>
+<p>Note 9: Simultaneous PUCCH and PUSCH(s) within the same PUCCH group
+in the case of inter-band CA, <span
+class="math inline">\({\widehat{p}}&#39;\ \)</span>depending on the
+configuration, and subject to UE capability for parallel transmission of
+PUCCH and PUSCH within the same PUCCH group.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="downlink">6.2 Downlink</h2>
+<p>The tables 6.2-1, 6.2-2 describe the possible combinations of
+physical channels that can be received simultaneously in the downlink by
+one UE. Table 6.2-1 introduces notation for a "Reception Type" which
+represents a physical channel and any associated transport channel.
+Table 6.2-2 describes the combinations of these "Reception Types" which
+are supported by the UE depending on capabilities [8, TS 38.306], and
+enumerates how many of each can be received simultaneously. The UE shall
+be able to receive all TBs according to the indication on PDCCH. Any
+subset of the combinations specified in table 6.2-2 is also
+supported.</p>
+<p>Table 6.2-1: Downlink "Reception Types"</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 21%" />
+<col style="width: 25%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>"Reception Type"</th>
+<th>Physical Channel(s)</th>
+<th>Monitored<br />
+RNTI</th>
+<th>Associated<br />
+Transport Channel</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>PBCH</td>
+<td>N/A</td>
+<td>BCH</td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td>PDCCH+PDSCH</td>
+<td>SI-RNTI</td>
+<td>DL-SCH</td>
+<td>Note 1</td>
+</tr>
+<tr>
+<td style="text-align: center;">C0</td>
+<td>PDCCH</td>
+<td>P-RNTI</td>
+<td>N/A</td>
+<td>Note 1, Note 2</td>
+</tr>
+<tr>
+<td>C1</td>
+<td>PDCCH+PDSCH</td>
+<td>P-RNTI</td>
+<td>PCH</td>
+<td>Note 1</td>
+</tr>
+<tr>
+<td>D0</td>
+<td>PDCCH+PDSCH</td>
+<td>RA-RNTI or Temporary C-RNTI or MsgB-RNTI</td>
+<td>DL-SCH</td>
+<td>Note 3</td>
+</tr>
+<tr>
+<td>D1</td>
+<td>PDCCH+PDSCH</td>
+<td>C-RNTI, CS-RNTI, MCS-C-RNTI</td>
+<td>DL-SCH</td>
+<td></td>
+</tr>
+<tr>
+<td>D2</td>
+<td>PDCCH</td>
+<td>C-RNTI, CS-RNTI, MCS-C-RNTI</td>
+<td>DL-SCH</td>
+<td></td>
+</tr>
+<tr>
+<td>D3</td>
+<td>PDCCH+PDSCH</td>
+<td>G-RNTI, G-CS-RNTI</td>
+<td>DL-SCH</td>
+<td>Note 6</td>
+</tr>
+<tr>
+<td>D4</td>
+<td>PDCCH</td>
+<td>G-CS-RNTI</td>
+<td>N/A</td>
+<td>Note 7</td>
+</tr>
+<tr>
+<td>D5</td>
+<td>PDCCH+PDSCH</td>
+<td>MCCH-RNTI</td>
+<td>DL-SCH</td>
+<td>Note 8</td>
+</tr>
+<tr>
+<td>D6</td>
+<td>PDCCH+PDSCH</td>
+<td>G-RNTI</td>
+<td>DL-SCH</td>
+<td>Note 9</td>
+</tr>
+<tr>
+<td style="text-align: center;">D7</td>
+<td>PDCCH+PDSCH</td>
+<td>C-RNTI</td>
+<td>DL-SCH</td>
+<td>Note 10</td>
+</tr>
+<tr>
+<td>E</td>
+<td>PDCCH</td>
+<td>C-RNTI</td>
+<td>N/A</td>
+<td>Note 4</td>
+</tr>
+<tr>
+<td>F0</td>
+<td>PDCCH</td>
+<td>Temporary C-RNTI</td>
+<td>UL-SCH</td>
+<td>Note 3</td>
+</tr>
+<tr>
+<td>F1</td>
+<td>PDCCH</td>
+<td>C-RNTI, CS-RNTI, MCS-C-RNTI</td>
+<td>UL-SCH</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: center;">F2</td>
+<td>PDCCH</td>
+<td>C-RNTI, CS-RNTI</td>
+<td>UL-SCH</td>
+<td>Note 10</td>
+</tr>
+<tr>
+<td>G</td>
+<td>PDCCH</td>
+<td>SFI-RNTI</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>H</td>
+<td>PDCCH</td>
+<td>INT-RNTI</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>J0</td>
+<td>PDCCH</td>
+<td>TPC-PUSCH-RNTI</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>J1</td>
+<td>PDCCH</td>
+<td>TPC-PUCCH-RNTI</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>J2</td>
+<td>PDCCH</td>
+<td>TPC-SRS-RNTI</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>K</td>
+<td>PDCCH</td>
+<td>SP-CSI-RNTI</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>L0</td>
+<td>PDCCH</td>
+<td>SL-RNTI</td>
+<td>SL-SCH</td>
+<td></td>
+</tr>
+<tr>
+<td>L1</td>
+<td>PDCCH</td>
+<td>SL-CS-RNTI</td>
+<td>SL-SCH</td>
+<td></td>
+</tr>
+<tr>
+<td>M</td>
+<td>PDCCH</td>
+<td>SL Semi-Persistent Scheduling V-RNTI</td>
+<td>SL-SCH</td>
+<td>Note 5</td>
+</tr>
+<tr>
+<td>N</td>
+<td>PDCCH</td>
+<td>PS-RNTI</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>O</td>
+<td>PDCCH</td>
+<td>AI-RNTI</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>P</td>
+<td>PDCCH</td>
+<td>CI-RNTI</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: center;"><u>Q</u></td>
+<td><u>PDCCH</u></td>
+<td><u>PEI-RNTI</u></td>
+<td><u>N/A</u></td>
+<td>Note 1</td>
+</tr>
+<tr>
+<td colspan="5"><p>Note 1: These are received from PCell only.</p>
+<p>Note 2: In some cases UE is only required to monitor the short
+message within the DCI for P-RNTI.</p>
+<p>Note 3: These are received from PCell or PSCell.</p>
+<p>Note 4: This corresponds to PDCCH-ordered PRACH.</p>
+<p>Note 5: This corresponds to PDCCH scheduling LTE PC5.</p>
+<p>Note 6: This is for multicast in RRC connected state.</p>
+<p>Note 7: This corresponds to DL Semi-Persistent Scheduling release for
+multicast in RRC connected state.</p>
+<p>Note 8: This is for broadcast MCCH.</p>
+<p>Note 9: This is for broadcast MTCH. UE is not required to decode more
+than one PDSCH for MTCH simultaneously.</p>
+<p>Note 10: This is for small data transmission in RRC inactive
+state.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.2-2: Downlink "Reception Type" combinations</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 4%" />
+<col style="width: 22%" />
+<col style="width: 2%" />
+<col style="width: 22%" />
+<col style="width: 1%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="5">Supported Combinations</th>
+<th colspan="2" rowspan="2">Comment</th>
+</tr>
+<tr>
+<th>PCell</th>
+<th colspan="2">PSCell</th>
+<th colspan="2">SCell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="7">1. RRC_IDLE</td>
+</tr>
+<tr>
+<td colspan="7">1.1 All UEs</td>
+</tr>
+<tr>
+<td style="text-align: center;">A + (B and/or (C1 or Q) and/or D0) +
+F0</td>
+<td colspan="2" style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Note 1</td>
+</tr>
+<tr>
+<td colspan="7">1.2 UEs supporting MBS broadcast reception</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;">A+D5</td>
+<td colspan="2" style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td colspan="7">2. RRC_INACTIVE</td>
+</tr>
+<tr>
+<td colspan="7">2.1 All UEs</td>
+</tr>
+<tr>
+<td style="text-align: center;">A + (B and/or (C0 or C1 or Q) and/or (D0
+or D7)) + (F0 or F2)</td>
+<td colspan="2" style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;">Note 1</td>
+</tr>
+<tr>
+<td colspan="7">2.2 UEs supporting MBS broadcast reception</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;">A+D5</td>
+<td colspan="2" style="text-align: center;"></td>
+<td colspan="2" style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td colspan="7">3. RRC_CONNECTED</td>
+</tr>
+<tr>
+<td>(A + ((C0 + (B and/or (D0 or (m1*D1+m2*D2+((m3*D3+m4*D4) or m5*(D5
+or D6))))) + E + F0 + n*F1 + G + H + J0 + J1 + J2 + K + O + L0 + L1 + M
++ N + P) or D5))</td>
+<td colspan="2" style="text-align: center;">(A + (D0 or (m1*D1+m2*D2)) +
+E + F0 + n*F1 + G + H + J0 + J1 + J2 + K + O + N + P)</td>
+<td colspan="2" style="text-align: center;"><p>m1*D1 + m2*D2 +
+((m3*D3+m4*D4) or m5*(D5 or D6)) + E + n*F1 + G + H</p>
+<p>+ J0 + J1 + J2 + K + O + L0 + L1 + M + P</p></td>
+<td colspan="2" style="text-align: center;">Note 2, Note 3, Note 4, Note
+5, Note 6, Note 7, Note 8, Note 9, Note 10, Note 11, Note 12, Note13,
+Note 14</td>
+</tr>
+<tr>
+<td colspan="7"><p>Note 1: UE is not required to decode more than two
+PDSCH simultaneously, and decoding prioritization when more than two are
+received is up to UE implementation.</p>
+<p>Note 2: For PCell, UE is not required to decode SI-RNTI PDSCH
+simultaneously with C-RNTI PDSCH, unless in FR1.</p>
+<p>Note 3: Supported combinations are subject to UE capabilities for
+dual connectivity, carrier aggregation, receiving of group TPC commands,
+pre-emption indication and dynamic SFI monitoring.</p>
+<p>Note 4: The values of m2 ≥ 0 and n≥ 0 in the supported combinations
+are subject to the UE capability.</p>
+<p>Note 5: Support of monitoring PDCCH with SL-RNTI, SL-CS-RNTI, SL
+Semi-Persistent Scheduling V-RNTI are subject to UE capability.</p>
+<p>Note 6: The values of m1 ≥ 1 in the supported combinations are
+subject to the UE capability.</p>
+<p>Note 7: In Active time, a UE is not expected to monitor the DCI
+format for the PDCCH scrambled by PS-RNTI.</p>
+<p>Note 8: The PDCCH scrambled by PS-RNTI can only be configured on the
+PCell and PSCell.</p>
+<p>Note 9: For a UE supporting MBS multicast reception, the values of 1
+≥ m3 ≥ 0 and m4 ≥ 0 are subject to UE capability and applicable to RRC
+connected UEs. If m3 = 1, then m1 ≤ 1.</p>
+<p>Note 10: For a UE supporting MBS multicast or broadcast reception,
+the UE is not expected to be configured simultaneously with more than
+one component carrier for multicast or broadcast reception.</p>
+<p>Note 11: For a UE supporting MBS broadcast reception, the values of
+1≥m5 ≥ 0 are subject to UE capability and applicable to RRC connected
+UEs. If m5=1, then m1≤1.</p>
+<p>Note 12: For a UE supporting MBS broadcast reception in RRC_CONNECTED
+state, it is required to support reception of FDMed MCCH PDSCH and PBCH
+in Pcell.</p>
+<p>Note 13: For a UE supporting MBS multicast or broadcast reception in
+RRC_CONNECTED state, it is not required to support reception of FDMed
+MCCH PDSCH/broadcast MTCH PDSCH/multicast MTCH PDSCH and SIB PDSCH in
+PCell.</p>
+<p>Note 14: For a UE supporting MBS multicast or broadcast reception in
+RRC_CONNECTED state, it is not required to support reception of FDMed
+broadcast MTCH PDSCH/multicast MTCH PDSCH and PBCH in PCell.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="sidelink">6.3 Sidelink</h2>
+<p>The tables 6.3-1 and 6.3-2 describe the possible combinations of
+physical channels that can be sent simultaneously in the sidelink by a
+UE. Table 6.3-1 introduces notation for a sidelink "Transmission Type"
+which represents a physical channel, and any associated transport
+channel. Table 6.3-2 describes the combinations of these "Transmission
+Types" which are supported by the UE depending on capabilities [8, TS
+38.306], and enumerates how many of each can be transmitted
+simultaneously.</p>
+<p>Table 6.3-1: Sidelink "Transmission Types"</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 32%" />
+<col style="width: 26%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>"Transmission Type"</th>
+<th>Physical Channel</th>
+<th>Associated<br />
+Transport Channel</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>PSBCH</td>
+<td>SL-BCH</td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td>PSSCH</td>
+<td>SL-SCH</td>
+<td></td>
+</tr>
+<tr>
+<td>C</td>
+<td>PSCCH</td>
+<td>SL-SCH</td>
+<td></td>
+</tr>
+<tr>
+<td>D</td>
+<td>PSFCH</td>
+<td>N/A</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.3-2: Sidelink "Transmission Type" combinations</p>
+<table>
+<colgroup>
+<col style="width: 76%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Supported Combinations</th>
+<th style="text-align: center;">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math inline">\(N
+\times\)</span> D</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">B+C</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;">Note: Depending on the UE
+capability, the UE may be able to perform simultaneous Uplink and
+Sidelink transmissions. If the simultaneous transmission of Sidelink and
+Uplink is beyond the UE capability, the one not prioritized can be
+dropped according to [TS 38.321].</td>
+</tr>
+</tbody>
+</table>
+<p>The tables 6.3-3 and 6.3-4 describe the possible combinations of
+physical channels that can be received simultaneously in the sidelink by
+a UE. Table 6.3-3 introduces notation for a sidelink "Reception Type"
+which represents a physical channel, and any associated transport
+channel. Table 6.3-4 describes the combinations of these "Reception
+Types" which are supported by the UE depending on capabilities [8, TS
+38.306], and enumerates how many of each can be received
+simultaneously.</p>
+<p>Table 6.3-3: Sidelink "Reception Types"</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 42%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th>"Reception Type"</th>
+<th>Physical Channel</th>
+<th>Associated<br />
+Transport Channel</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>PSBCH</td>
+<td>SL-BCH</td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td>PSSCH</td>
+<td>SL-SCH</td>
+<td></td>
+</tr>
+<tr>
+<td>C</td>
+<td>PSCCH</td>
+<td>SL-SCH</td>
+<td></td>
+</tr>
+<tr>
+<td>D</td>
+<td>PSFCH</td>
+<td>N/A</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.3-4: Sidelink "Reception Type" combinations</p>
+<table>
+<colgroup>
+<col style="width: 82%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Supported Combinations</th>
+<th style="text-align: center;">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Note 1</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">Note 1</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math inline">\(M
+\times\)</span> D</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">B+C</td>
+<td style="text-align: center;">Note 1</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;">Note 1: Corresponds to
+simultaneous reception within one sub-channel</td>
+</tr>
+</tbody>
+</table>
+<h1 id="measurements-provided-by-the-physical-layer">7 Measurements
+provided by the physical layer</h1>
+<h2 id="ue-measurements">7.1 UE measurements</h2>
+<p>The list and detailed definition of UE measurements is provided in
+[7, TS 38.215].</p>
+<p class="heading" id="annex-a-informative-change-history"><br />
+Annex A (informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 50%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-05</td>
+<td style="text-align: center;">RAN1#89</td>
+<td style="text-align: center;">R1-1712013</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Draft skeleton</td>
+<td style="text-align: center;">0.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-07</td>
+<td style="text-align: center;">AH_1706</td>
+<td style="text-align: center;">R1-1712013</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Update for agreements from meetings up
+to RAN1 NR AH2</td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-08</td>
+<td style="text-align: center;">RAN1#90</td>
+<td style="text-align: center;">R1-1713371</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Update for agreements from meetings up
+to RAN1 NR AH2</td>
+<td style="text-align: center;">0.0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-08</td>
+<td style="text-align: center;">RAN1#90</td>
+<td style="text-align: center;">R1-1714655</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Update with change marks removed for
+RAN1 #90 endorsement</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-09</td>
+<td style="text-align: center;">RAN1#90</td>
+<td style="text-align: center;">R1-1715320</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updated with minor editorial changes for
+review after RAN1 #90</td>
+<td style="text-align: center;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-09</td>
+<td style="text-align: center;">RAN#77</td>
+<td style="text-align: center;">RP-172006</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">For information to plenary</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-10</td>
+<td style="text-align: center;">RAN1#90b</td>
+<td style="text-align: center;">R1-1719229</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updated for agreements from meetings up
+to RAN1 #90b</td>
+<td style="text-align: center;">1.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-11</td>
+<td style="text-align: center;">RAN1#91</td>
+<td style="text-align: center;">R1-1721047</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updated after email discussion</td>
+<td style="text-align: center;">1.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">RAN1#91</td>
+<td style="text-align: center;">R1-1721340</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updated to reflect agreements from RAN1
+#91</td>
+<td style="text-align: center;">1.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">RAN#78</td>
+<td style="text-align: center;">RP-172630</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Endorsed version for approval by
+plenary</td>
+<td style="text-align: center;">2.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">RAN#78</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Approved by plenary – Rel-15 spec under
+change control</td>
+<td style="text-align: center;">15.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RAN#79</td>
+<td style="text-align: center;">RP-180200</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR capturing the Jan18 ad-hoc and
+RAN1#92 meeting agreements</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RAN#80</td>
+<td style="text-align: center;">RP-181172</td>
+<td style="text-align: center;">0002</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to 38.202 capturing the RAN1#92bis
+and RAN1#93 meeting agreements</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RAN#80</td>
+<td style="text-align: center;">RP-181257</td>
+<td style="text-align: center;">0003</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR to 38.202 capturing the RAN1#92bis
+and RAN1#93 meeting agreements related to URLLC</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RAN#81</td>
+<td style="text-align: center;">RP-181789</td>
+<td style="text-align: center;">0004</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR to 38.202 capturing RAN1#94 meeting
+agreements</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RAN#82</td>
+<td style="text-align: center;">RP-182523</td>
+<td style="text-align: center;">0005</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to 38.202 capturing RAN1#95 meeting
+agreements</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-06</td>
+<td style="text-align: center;">RAN#84</td>
+<td style="text-align: center;">RP-191277</td>
+<td style="text-align: center;">0006</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction to simultaneous reception of
+DL Channels</td>
+<td style="text-align: center;">15.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-06</td>
+<td style="text-align: center;">RAN#84</td>
+<td style="text-align: center;">RP-191277</td>
+<td style="text-align: center;">0007</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on inclusion of TC-RNTI for monitored
+RNTI for UL-SCH and inclusion of monitoring PDCCH ordering PRACH on
+SCell</td>
+<td style="text-align: center;">15.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192623</td>
+<td style="text-align: center;">0008</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on simultaneous transmission of UL
+channels</td>
+<td style="text-align: center;">15.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192635</td>
+<td style="text-align: center;">0009</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of two-step RACH</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192637</td>
+<td style="text-align: center;">0010</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of integrated access and
+backhaul for NR</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192638</td>
+<td style="text-align: center;">0011</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of V2X</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192639</td>
+<td style="text-align: center;">0012</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of Physical Layer
+Enhancements for URLLC</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192641</td>
+<td style="text-align: center;">0013</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of MIMO enhancements</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192642</td>
+<td style="text-align: center;">0014</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of UE Power Savings</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88-e</td>
+<td style="text-align: center;">RP-200692</td>
+<td style="text-align: center;">0015</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to MIMO enhancements</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RAN#89-e</td>
+<td style="text-align: center;">RP-201810</td>
+<td style="text-align: center;">0017</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">DL Channel Combination associated with
+DCI format 2_6 monitoring</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RAN#89-e</td>
+<td style="text-align: center;">RP-201807</td>
+<td style="text-align: center;">0018</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections on 5G V2X sidelink
+features</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN#94-e</td>
+<td style="text-align: center;">RP-212960</td>
+<td style="text-align: center;">0019</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Alignment CR for TS 38.202</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN#94-e</td>
+<td style="text-align: center;">RP-212968</td>
+<td style="text-align: center;">0020</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of IIoT/URLLC enhancements
+in NR</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN#94-e</td>
+<td style="text-align: center;">RP-212979</td>
+<td style="text-align: center;">0021</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of multicast and broadcast
+services</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220263</td>
+<td style="text-align: center;">0022</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to NR support of multicast
+and broadcast services</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220256</td>
+<td style="text-align: center;">0023</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections on NR UE Power Saving
+Enhancements</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221612</td>
+<td style="text-align: center;">0024</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to NR support of multicast
+and broadcast services</td>
+<td style="text-align: center;">17.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-12</td>
+<td style="text-align: center;">RAN#98-e</td>
+<td style="text-align: center;">RP-222864</td>
+<td style="text-align: center;">0025</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on the MBS reception type
+combinations to TS 38.202</td>
+<td style="text-align: center;">17.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-09</td>
+<td style="text-align: center;">RAN#101</td>
+<td style="text-align: center;">RP-232450</td>
+<td style="text-align: center;">0026</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on simultaneous reception of
+SDT and other channels in TS 38.202</td>
+<td style="text-align: center;">17.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-12</td>
+<td style="text-align: center;">RAN#102</td>
+<td style="text-align: center;">RP-233723</td>
+<td style="text-align: center;">0030</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Correction on NR Sidelink</td>
+<td style="text-align: center;">17.5.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

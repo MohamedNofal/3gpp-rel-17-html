@@ -1,0 +1,6486 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38921-h10</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-of-terms-symbols-and-abbreviations"
+id="toc-definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</a>
+<ul>
+<li><a href="#terms" id="toc-terms">3.1 Terms</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#co-existence-study" id="toc-co-existence-study">4
+Co-existence study</a>
+<ul>
+<li><a href="#co-existence-simulation-scenarios"
+id="toc-co-existence-simulation-scenarios">4.1 Co-existence simulation
+scenarios</a></li>
+<li><a href="#co-existence-simulation-assumption"
+id="toc-co-existence-simulation-assumption">4.2 Co-existence simulation
+assumption</a>
+<ul>
+<li><a href="#network-layout-model" id="toc-network-layout-model">4.2.1
+Network layout model</a>
+<ul>
+<li><a href="#urban-macro" id="toc-urban-macro">4.2.1.1 Urban
+macro</a></li>
+<li><a href="#dense-urban" id="toc-dense-urban">4.2.1.2 Dense
+urban</a></li>
+<li><a href="#indoor" id="toc-indoor">4.2.1.3 Indoor</a></li>
+</ul></li>
+<li><a href="#propagation-model" id="toc-propagation-model">4.2.2
+Propagation model</a>
+<ul>
+<li><a href="#path-loss" id="toc-path-loss">4.2.2.1 Path loss</a></li>
+<li><a href="#los-probability" id="toc-los-probability">4.2.2.2 LOS
+probability</a></li>
+<li><a href="#o-to-i-penetration-loss"
+id="toc-o-to-i-penetration-loss">4.2.2.3 O-to-I penetration loss</a>
+<ul>
+<li><a href="#o-to-i-building-penetration-loss"
+id="toc-o-to-i-building-penetration-loss">4.2.2.3.1 O-to-I building
+penetration loss</a></li>
+<li><a href="#o-to-i-car-penetration-loss"
+id="toc-o-to-i-car-penetration-loss">4.2.2.3.2 O-to-I car penetration
+loss</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#antenna-and-beam-forming-pattern-modelling"
+id="toc-antenna-and-beam-forming-pattern-modelling">4.2.3 Antenna and
+beam forming pattern modelling</a></li>
+<li><a href="#transmission-power-control-model"
+id="toc-transmission-power-control-model">4.2.4 Transmission power
+control model</a></li>
+<li><a href="#received-power-model" id="toc-received-power-model">4.2.5
+Received power model</a></li>
+<li><a href="#aclr-and-acs-modelling"
+id="toc-aclr-and-acs-modelling">4.2.6 ACLR and ACS modelling</a></li>
+<li><a href="#link-level-performance-for-5g-nr-coexistence"
+id="toc-link-level-performance-for-5g-nr-coexistence">4.2.7 Link level
+performance for 5G NR coexistence</a></li>
+<li><a href="#other-simulation-parameters"
+id="toc-other-simulation-parameters">4.2.8 Other simulation
+parameters</a></li>
+<li><a href="#co-existence-simulation-methodology"
+id="toc-co-existence-simulation-methodology">4.2.9 Co-existence
+simulation methodology</a></li>
+</ul></li>
+<li><a href="#co-existence-simulation-results"
+id="toc-co-existence-simulation-results">4.3 Co-existence simulation
+results</a>
+<ul>
+<li><a href="#urban-macro-scenario" id="toc-urban-macro-scenario">4.3.1
+Urban Macro scenario</a>
+<ul>
+<li><a href="#downlink" id="toc-downlink">4.3.1.1 Downlink</a></li>
+<li><a href="#uplink" id="toc-uplink">4.3.1.2 Uplink</a></li>
+</ul></li>
+<li><a href="#indoor-scenario" id="toc-indoor-scenario">4.3.2 Indoor
+scenario</a>
+<ul>
+<li><a href="#downlink-1" id="toc-downlink-1">4.3.2.1 Downlink</a></li>
+<li><a href="#uplink-1" id="toc-uplink-1">4.3.2.2 Uplink</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#general-parameters" id="toc-general-parameters">5 General
+parameters</a>
+<ul>
+<li><a href="#duplex-mode" id="toc-duplex-mode">5.1 Duplex mode</a></li>
+<li><a href="#channel-bandwidth" id="toc-channel-bandwidth">5.2 Channel
+Bandwidth</a></li>
+<li><a href="#signal-bandwidth" id="toc-signal-bandwidth">5.3 Signal
+Bandwidth</a></li>
+</ul></li>
+<li><a href="#bs-parameters" id="toc-bs-parameters">6 BS parameters</a>
+<ul>
+<li><a href="#transmitter-characteristics"
+id="toc-transmitter-characteristics">6.1 Transmitter characteristics</a>
+<ul>
+<li><a href="#power-dynamic-range" id="toc-power-dynamic-range">6.1.1
+Power dynamic range</a></li>
+<li><a href="#spectral-mask" id="toc-spectral-mask">6.1.2 Spectral
+mask</a></li>
+<li><a href="#aclr" id="toc-aclr">6.1.3 ACLR</a></li>
+<li><a href="#spurious-emissions" id="toc-spurious-emissions">6.1.4
+Spurious emissions</a></li>
+<li><a href="#maximum-output-power" id="toc-maximum-output-power">6.1.5
+Maximum output power</a></li>
+<li><a href="#average-output-power" id="toc-average-output-power">6.1.6
+Average output power</a></li>
+</ul></li>
+<li><a href="#receiver-characteristics"
+id="toc-receiver-characteristics">6.2 Receiver characteristics</a>
+<ul>
+<li><a href="#noise-figure" id="toc-noise-figure">6.2.1 Noise
+figure</a></li>
+<li><a href="#sensitivity" id="toc-sensitivity">6.2.2
+Sensitivity</a></li>
+<li><a href="#blocking-response" id="toc-blocking-response">6.2.3
+Blocking response</a></li>
+<li><a href="#acs" id="toc-acs">6.2.4 ACS</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#ue-parameters" id="toc-ue-parameters">7 UE parameters</a>
+<ul>
+<li><a href="#transmitter-characteristics-1"
+id="toc-transmitter-characteristics-1">7.1 Transmitter
+characteristics</a>
+<ul>
+<li><a href="#power-dynamic-range-1"
+id="toc-power-dynamic-range-1">7.1.1 Power dynamic range</a></li>
+<li><a href="#spectral-mask-1" id="toc-spectral-mask-1">7.1.2 Spectral
+mask</a></li>
+<li><a href="#aclr-1" id="toc-aclr-1">7.1.3 ACLR</a></li>
+<li><a href="#spurious-emissions-1" id="toc-spurious-emissions-1">7.1.4
+Spurious emissions</a></li>
+<li><a href="#maximum-output-power-1"
+id="toc-maximum-output-power-1">7.1.5 Maximum output power</a></li>
+<li><a href="#average-output-power-1"
+id="toc-average-output-power-1">7.1.6 Average output power</a></li>
+</ul></li>
+<li><a href="#receiver-characteristics-1"
+id="toc-receiver-characteristics-1">7.2 Receiver characteristics</a>
+<ul>
+<li><a href="#noise-figure-1" id="toc-noise-figure-1">7.2.1 Noise
+figure</a></li>
+<li><a href="#sensitivity-1" id="toc-sensitivity-1">7.2.2.
+Sensitivity</a></li>
+<li><a href="#blocking-response-1" id="toc-blocking-response-1">7.2.3
+Blocking response</a></li>
+<li><a href="#acs-1" id="toc-acs-1">7.2.4 ACS</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#antenna-characteristics"
+id="toc-antenna-characteristics">8 Antenna characteristics</a>
+<ul>
+<li><a href="#bs-antenna-characteristics"
+id="toc-bs-antenna-characteristics">8.1 BS antenna characteristics</a>
+<ul>
+<li><a href="#array-antenna-model" id="toc-array-antenna-model">8.1.1
+Array antenna model</a></li>
+<li><a href="#array-antenna-parameters"
+id="toc-array-antenna-parameters">8.1.2 Array antenna
+parameters</a></li>
+</ul></li>
+<li><a href="#ue-antenna-characteristics"
+id="toc-ue-antenna-characteristics">8.2 UE antenna
+characteristics</a></li>
+</ul></li>
+<li><a
+href="#other-information-relevant-for-the-sharing-and-compatibility-studies"
+id="toc-other-information-relevant-for-the-sharing-and-compatibility-studies">9
+Other information relevant for the sharing and compatibility studies</a>
+<ul>
+<li><a href="#spatial-emission" id="toc-spatial-emission">9.1 Spatial
+emission</a></li>
+<li><a href="#interference-management"
+id="toc-interference-management">9.2 Interference management</a>
+<ul>
+<li><a href="#general" id="toc-general">9.2.0 General</a></li>
+<li><a href="#beam-nulling" id="toc-beam-nulling">9.2.1 Beam
+nulling</a></li>
+<li><a href="#amplitude-weightingtapering"
+id="toc-amplitude-weightingtapering">9.2.2 Amplitude
+weighting/tapering</a></li>
+<li><a href="#asymmetric-side-lobe-shaping"
+id="toc-asymmetric-side-lobe-shaping">9.2.3 Asymmetric side lobe
+shaping</a></li>
+<li><a href="#beam-restrictions" id="toc-beam-restrictions">9.2.4 Beam
+restrictions</a></li>
+<li><a href="#irregular-array-geometries"
+id="toc-irregular-array-geometries">9.2.5 Irregular array
+geometries</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TR 38.921 V17.1.0 (2022-03)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Report</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NR;</p>
+<p>Study on International Mobile Telecommunications (IMT) parameters for
+6.425-7.025GHz, 7.025-7.125GHz and 10.0-10.5 GHz</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.jpeg"
+style="width:1.32083in;height:0.91528in" alt="5G-logo_175px" /></td>
+<td style="text-align: right;"><img src="media/image2.png"
+style="width:1.77361in;height:1.0375in" alt="3GPP-logo_web" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2022, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">5</a></p>
+<p>1 Scope <a href="#scope">7</a></p>
+<p>2 References <a href="#references">7</a></p>
+<p>3 Definitions of terms, symbols and abbreviations <a
+href="#definitions-of-terms-symbols-and-abbreviations">7</a></p>
+<p>3.1 Terms <a href="#terms">7</a></p>
+<p>3.2 Symbols <a href="#symbols">8</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">8</a></p>
+<p>4 Co-existence study <a href="#co-existence-study">9</a></p>
+<p>4.1 Co-existence simulation scenarios <a
+href="#co-existence-simulation-scenarios">9</a></p>
+<p>4.2 Co-existence simulation assumption <a
+href="#co-existence-simulation-assumption">9</a></p>
+<p>4.2.1 Network layout model <a href="#network-layout-model">9</a></p>
+<p>4.2.1.1 Urban macro <a href="#urban-macro">9</a></p>
+<p>4.2.1.2 Dense urban <a href="#dense-urban">11</a></p>
+<p>4.2.1.3 Indoor <a href="#indoor">11</a></p>
+<p>4.2.2 Propagation model <a href="#propagation-model">12</a></p>
+<p>4.2.2.1 Path loss <a href="#path-loss">12</a></p>
+<p>4.2.2.2 LOS probability <a href="#los-probability">14</a></p>
+<p>4.2.2.3 O-to-I penetration loss <a
+href="#o-to-i-penetration-loss">15</a></p>
+<p>4.2.2.3.1 O-to-I building penetration loss <a
+href="#o-to-i-building-penetration-loss">15</a></p>
+<p>4.2.2.3.2 O-to-I car penetration loss <a
+href="#o-to-i-car-penetration-loss">16</a></p>
+<p>4.2.3 Antenna and beam forming pattern modelling <a
+href="#antenna-and-beam-forming-pattern-modelling">16</a></p>
+<p>4.2.4 Transmission power control model <a
+href="#transmission-power-control-model">16</a></p>
+<p>4.2.5 Received power model <a href="#received-power-model">16</a></p>
+<p>4.2.6 ACLR and ACS modelling <a
+href="#aclr-and-acs-modelling">17</a></p>
+<p>4.2.7 Link level performance for 5G NR coexistence <a
+href="#link-level-performance-for-5g-nr-coexistence">17</a></p>
+<p>4.2.8 Other simulation parameters <a
+href="#other-simulation-parameters">18</a></p>
+<p>4.2.9 Co-existence simulation methodology <a
+href="#co-existence-simulation-methodology">18</a></p>
+<p>4.3 Co-existence simulation results <a
+href="#co-existence-simulation-results">19</a></p>
+<p>4.3.1 Urban Macro scenario <a href="#urban-macro-scenario">19</a></p>
+<p>4.3.1.1 Downlink <a href="#downlink">19</a></p>
+<p>4.3.1.2 Uplink <a href="#uplink">21</a></p>
+<p>4.3.2 Indoor scenario <a href="#indoor-scenario">23</a></p>
+<p>4.3.2.1 Downlink <a href="#downlink-1">23</a></p>
+<p>4.3.2.2 Uplink <a href="#uplink-1">26</a></p>
+<p>5 General parameters <a href="#general-parameters">30</a></p>
+<p>5.1 Duplex mode <a href="#duplex-mode">30</a></p>
+<p>5.2 Channel Bandwidth <a href="#channel-bandwidth">30</a></p>
+<p>5.3 Signal Bandwidth <a href="#signal-bandwidth">30</a></p>
+<p>6 BS parameters <a href="#bs-parameters">30</a></p>
+<p>6.1 Transmitter characteristics <a
+href="#transmitter-characteristics">30</a></p>
+<p>6.1.1 Power dynamic range <a href="#power-dynamic-range">30</a></p>
+<p>6.1.2 Spectral mask <a href="#spectral-mask">30</a></p>
+<p>6.1.3 ACLR <a href="#aclr">31</a></p>
+<p>6.1.4 Spurious emissions <a href="#spurious-emissions">31</a></p>
+<p>6.1.5 Maximum output power <a href="#maximum-output-power">32</a></p>
+<p>6.1.6 Average output power <a href="#average-output-power">33</a></p>
+<p>6.2 Receiver characteristics <a
+href="#receiver-characteristics">33</a></p>
+<p>6.2.1 Noise figure <a href="#noise-figure">33</a></p>
+<p>6.2.2 Sensitivity <a href="#sensitivity">33</a></p>
+<p>6.2.3 Blocking response <a href="#blocking-response">33</a></p>
+<p>6.2.4 ACS <a href="#acs">34</a></p>
+<p>7 UE parameters <a href="#ue-parameters">35</a></p>
+<p>7.1 Transmitter characteristics <a
+href="#transmitter-characteristics-1">35</a></p>
+<p>7.1.1 Power dynamic range <a href="#power-dynamic-range-1">35</a></p>
+<p>7.1.2 Spectral mask <a href="#spectral-mask-1">35</a></p>
+<p>7.1.3 ACLR <a href="#aclr-1">35</a></p>
+<p>7.1.4 Spurious emissions <a href="#spurious-emissions-1">35</a></p>
+<p>7.1.5 Maximum output power <a
+href="#maximum-output-power-1">36</a></p>
+<p>7.1.6 Average output power <a
+href="#average-output-power-1">36</a></p>
+<p>7.2 Receiver characteristics <a
+href="#receiver-characteristics-1">36</a></p>
+<p>7.2.1 Noise figure <a href="#noise-figure-1">36</a></p>
+<p>7.2.2. Sensitivity <a href="#sensitivity-1">36</a></p>
+<p>7.2.3 Blocking response <a href="#blocking-response-1">36</a></p>
+<p>7.2.4 ACS <a href="#acs-1">36</a></p>
+<p>8 Antenna characteristics <a
+href="#antenna-characteristics">37</a></p>
+<p>8.1 BS antenna characteristics <a
+href="#bs-antenna-characteristics">37</a></p>
+<p>8.1.1 Array antenna model <a href="#array-antenna-model">37</a></p>
+<p>8.1.2 Array antenna parameters <a
+href="#array-antenna-parameters">37</a></p>
+<p>8.2 UE antenna characteristics <a
+href="#ue-antenna-characteristics">38</a></p>
+<p>9 Other information relevant for the sharing and compatibility
+studies <a
+href="#other-information-relevant-for-the-sharing-and-compatibility-studies">39</a></p>
+<p>9.1 Spatial emission <a href="#spatial-emission">39</a></p>
+<p>9.2 Interference management <a
+href="#interference-management">39</a></p>
+<p>9.2.0 General <a href="#general">39</a></p>
+<p>9.2.1 Beam nulling <a href="#beam-nulling">41</a></p>
+<p>9.2.2 Amplitude weighting/tapering <a
+href="#amplitude-weightingtapering">41</a></p>
+<p>9.2.3 Asymmetric side lobe shaping <a
+href="#asymmetric-side-lobe-shaping">42</a></p>
+<p>9.2.4 Beam restrictions <a href="#beam-restrictions">42</a></p>
+<p>9.2.5 Irregular array geometries <a
+href="#irregular-array-geometries">43</a></p>
+<p>Annex A (informative): Change history <a
+href="#annex-a-informative-change-history">45</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Report has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<p>In the present document, modal verbs have the following meanings:</p>
+<p><strong>shall</strong> indicates a mandatory requirement to do
+something</p>
+<p><strong>shall not</strong> indicates an interdiction (prohibition) to
+do something</p>
+<p>The constructions "shall" and "shall not" are confined to the context
+of normative provisions, and do not appear in Technical Reports.</p>
+<p>The constructions "must" and "must not" are not used as substitutes
+for "shall" and "shall not". Their use is avoided insofar as possible,
+and they are not used in a normative context except in a direct citation
+from an external, referenced, non-3GPP document, or so as to maintain
+continuity of style when extending or modifying the provisions of such a
+referenced document.</p>
+<p><strong>should</strong> indicates a recommendation to do
+something</p>
+<p><strong>should not</strong> indicates a recommendation not to do
+something</p>
+<p><strong>may</strong> indicates permission to do something</p>
+<p><strong>need not</strong> indicates permission not to do
+something</p>
+<p>The construction "may not" is ambiguous and is not used in normative
+elements. The unambiguous constructions "might not" or "shall not" are
+used instead, depending upon the meaning intended.</p>
+<p><strong>can</strong> indicates that something is possible</p>
+<p><strong>cannot</strong> indicates that something is impossible</p>
+<p>The constructions "can" and "cannot" are not substitutes for "may"
+and "need not".</p>
+<p><strong>will</strong> indicates that something is certain or expected
+to happen as a result of action taken by an agency the behaviour of
+which is outside the scope of the present document</p>
+<p><strong>will not</strong> indicates that something is certain or
+expected not to happen as a result of action taken by an agency the
+behaviour of which is outside the scope of the present document</p>
+<p><strong>might</strong> indicates a likelihood that something will
+happen as a result of action taken by some agency the behaviour of which
+is outside the scope of the present document</p>
+<p><strong>might not</strong> indicates a likelihood that something will
+not happen as a result of action taken by some agency the behaviour of
+which is outside the scope of the present document</p>
+<p>In addition:</p>
+<p><strong>is</strong> (or any other verb in the indicative mood)
+indicates a statement of fact</p>
+<p><strong>is not</strong> (or any other negative verb in the indicative
+mood) indicates a statement of fact</p>
+<p>The constructions "is" and "is not" do not indicate requirements.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document is a technical report for the study item on IMT
+parameters for 6.425-7.025GHz, 7.025-7.125GHz and 10.0-10.5GHz [2],
+covering the study on transmitter and receiver characteristics for both
+NR BS and NR UE, and related parameters for answering requests from
+ITU-R WP5D.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] RP-200513: "Study on IMT parameters for 6.425-7.025GHz,
+7.025-7.125GHz and 10.0-10.5GHz"</p>
+<p>[3] 3GPP TS 38.104: "NR; Base Station (BS) radio transmission and
+reception"</p>
+<p>[4] 3GPP TS 38.101-1: "NR; User Equipment (UE) radio transmission and
+reception; Part 1: Range 1 Standalone"</p>
+<p>[5] ITU-R Recommendation SM.329: "Unwanted emissions in the spurious
+domain"</p>
+<p>[6] ERC Recommendation 74-01, "Unwanted emissions in the spurious
+domain"</p>
+<h1 id="definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</h1>
+<h2 id="terms">3.1 Terms</h2>
+<p>For the purposes of the present document, the terms given in 3GPP
+TR 21.905 [1] and the following apply. A term defined in the present
+document takes precedence over the definition of the same term, if any,
+in 3GPP TR 21.905 [1].</p>
+<p><strong>array element:</strong> subdivision of a passive <em>antenna
+array</em>, consisting of a single radiating element or a group of
+radiating elements, with a fixed radiation pattern</p>
+<p><strong>beamwidth:</strong> beam which has a half-power contour that
+is essentially elliptical, the half-power beamwidths in the two pattern
+cuts that respectively contain the major and minor axis of the
+ellipse</p>
+<p><strong>front-to-back ratio:</strong> ratio of maximum directivity of
+an antenna to its directivity in a specified rearward direction</p>
+<p><strong>gain:</strong> ratio of the radiation intensity, in a given
+direction, to the radiation intensity that would be obtained if the
+power accepted by the antenna were radiated isotropically</p>
+<p>NOTE: If the direction is not specified, the direction of maximum
+radiation intensity is implied.</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<p><em>A</em> Peak normalized array element pattern in dB</p>
+<p><em>A<sub>A</sub></em> Composite <em>antenna array</em> pattern in
+dBi</p>
+<p><em>A<sub>E</sub></em> <em>Array element</em> pattern in dBi</p>
+<p><em>A<sub>m </sub></em>Front to back ratio in dB</p>
+<p><em>d<sub>h </sub></em>Horizontal element separation in meters</p>
+<p><em>d<sub>v </sub></em>Vertical element separation in meters</p>
+<p><em>G<sub>E,max </sub></em>Array element peak gain in dBi</p>
+<p><em>SLA<sub>v </sub></em>Side lobe suppression in dB</p>
+<p><em>ϕ<sub>3dB</sub></em> Horizonal half power beamwidth</p>
+<p><em>θ<sub>3dB</sub></em> Vertical half power beamwidth</p>
+<p><em>θ<sub>etilt </sub></em>Electrical down-tilt angle in degrees
+(defined from antenna array normal and downwards)</p>
+<p><em>ϕ<sub>escan </sub></em>Electrical scan angle in degrees</p>
+<p><em>ϕ</em> Horizontal angle (defined between -180° and 180°).</p>
+<p><em>θ</em> Vertical angle of the signal direction (defined between
+-0° and 180°,90° represents the direction perpendicular to the antenna
+array</p>
+<p>N<sub>RB</sub> Transmission bandwidth configuration, expressed in
+resource blocks</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>AAS Active Antenna System</p>
+<p>ACLR Adjacent Channel Leakage Ratio</p>
+<p>ACS Adjacent Channel Selectivity</p>
+<p>AWGN Additive White Gaussian Noise</p>
+<p>BS Base Station</p>
+<p>BW Bandwidth</p>
+<p>FDD Frequency Division Duplex</p>
+<p>FR Frequency Range</p>
+<p>FRC Fixed Reference Channel</p>
+<p>ITU‑R Radiocommunication Sector of the International
+Telecommunication Union</p>
+<p>LA Local Area</p>
+<p>LOS Line-Of-Sight</p>
+<p>MR Medium Range</p>
+<p>NR New Radio</p>
+<p>OTA Over The Air</p>
+<p>O-to-I Outdoor-to-Indoor</p>
+<p>RB Resource Block</p>
+<p>RF Radio Frequency</p>
+<p>SCS Sub-Carrier Spacing</p>
+<p>TDD Time division Duplex</p>
+<p>WA Wide Area</p>
+<h1 id="co-existence-study">4 Co-existence study</h1>
+<h2 id="co-existence-simulation-scenarios">4.1 Co-existence simulation
+scenarios</h2>
+<p>Table 4.1-1 summarizes the proposed scenarios to be considered for
+6.425-7.125GHz and 10.0-10.5 GHz.</p>
+<p>Table 4.1-1: Summary of considered scenario</p>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 16%" />
+<col style="width: 17%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th>No.</th>
+<th>Usage scenario</th>
+<th>Aggressor</th>
+<th>Victim</th>
+<th>Direction</th>
+<th>Simulation frequency</th>
+<th>Deployment Scenario</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>eMBB</td>
+<td>NR, 100MHz</td>
+<td>NR, 100MHz</td>
+<td>DL to DL</td>
+<td>7 GHz</td>
+<td>Urban macro</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>eMBB</td>
+<td>NR, 100MHz</td>
+<td>NR, 100MHz</td>
+<td>DL to DL</td>
+<td>7 GHz</td>
+<td>Indoor hotspot</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>eMBB</td>
+<td>NR, 100MHz</td>
+<td>NR, 100MHz</td>
+<td>DL to DL</td>
+<td>7 GHz</td>
+<td>Dense urban</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>4</td>
+<td>eMBB</td>
+<td>NR, 100MHz</td>
+<td>NR, 100MHz</td>
+<td>UL to UL</td>
+<td>7 GHz</td>
+<td>Urban macro</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>eMBB</td>
+<td>NR, 100MHz</td>
+<td>NR, 100MHz</td>
+<td>UL to UL</td>
+<td>7 GHz</td>
+<td>Indoor hotspot</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>eMBB</td>
+<td>NR, 100MHz</td>
+<td>NR, 100MHz</td>
+<td>UL to UL</td>
+<td>7 GHz</td>
+<td>Dense urban</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>7</td>
+<td>eMBB</td>
+<td>NR, 100MHz</td>
+<td>NR, 100MHz</td>
+<td>DL to DL</td>
+<td>10 GHz</td>
+<td>Urban macro</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>eMBB</td>
+<td>NR, 100MHz</td>
+<td>NR, 100MHz</td>
+<td>DL to DL</td>
+<td>10 GHz</td>
+<td>Indoor hotspot</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>eMBB</td>
+<td>NR, 100MHz</td>
+<td>NR, 100MHz</td>
+<td>DL to DL</td>
+<td>10 GHz</td>
+<td>Dense urban</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>10</td>
+<td>eMBB</td>
+<td>NR, 100MHz</td>
+<td>NR, 100MHz</td>
+<td>UL to UL</td>
+<td>10 GHz</td>
+<td>Urban macro</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>eMBB</td>
+<td>NR, 100MHz</td>
+<td>NR, 100MHz</td>
+<td>UL to UL</td>
+<td>10 GHz</td>
+<td>Indoor hotspot</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>eMBB</td>
+<td>NR, 100MHz</td>
+<td>NR, 100MHz</td>
+<td>UL to UL</td>
+<td>10 GHz</td>
+<td>Dense urban</td>
+<td>Down-prioritized</td>
+</tr>
+</tbody>
+</table>
+<h2 id="co-existence-simulation-assumption">4.2 Co-existence simulation
+assumption</h2>
+<h3 id="network-layout-model">4.2.1 Network layout model</h3>
+<h4 id="urban-macro">4.2.1.1 Urban macro</h4>
+<p>Details on urban macro network layout model are listed in Tables
+4.2.1.1-1 and 4.2.1.1-2.</p>
+<p>Table 4.2.1.1-1: Single operator layout for urban macro</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 17%" />
+<col style="width: 53%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">Parameters</th>
+<th>Values</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Network layout</td>
+<td>hexagonal grid, 19 macro sites, 3 sectors per site with wrap
+around</td>
+<td> </td>
+</tr>
+<tr>
+<td colspan="2">Inter-site distance</td>
+<td><p>0.45 km (urban) (Note 1)</p>
+<p>0.9 km (suburban)</p></td>
+<td><p>Based on cell range:</p>
+<p>0.3 km (urban)</p>
+<p>0.6 km (suburban)</p></td>
+</tr>
+<tr>
+<td colspan="2">BS antenna height</td>
+<td><p>20 m (urban)</p>
+<p>25 m (suburban)</p></td>
+<td> </td>
+</tr>
+<tr>
+<td rowspan="5">UE location</td>
+<td>Outdoor/indoor</td>
+<td>Outdoor and indoor</td>
+<td> </td>
+</tr>
+<tr>
+<td>Indoor UE ratio</td>
+<td>20%</td>
+<td></td>
+</tr>
+<tr>
+<td>Low/high penetration loss ratio</td>
+<td>50% low loss, 50% high loss</td>
+<td> </td>
+</tr>
+<tr>
+<td>LOS/NLOS</td>
+<td>LOS and NLOS</td>
+<td></td>
+</tr>
+<tr>
+<td>UE antenna height</td>
+<td>Same as 3D-UMa in TR 36.873</td>
+<td> </td>
+</tr>
+<tr>
+<td colspan="2">UE distribution (horizontal)</td>
+<td>Uniform</td>
+<td> </td>
+</tr>
+<tr>
+<td colspan="2">Minimum BS - UE distance (2D)</td>
+<td>35 m</td>
+<td> </td>
+</tr>
+<tr>
+<td colspan="2">Channel model</td>
+<td>UMa</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">Shadowing correlation</td>
+<td><p>Between cells: 1.0</p>
+<p>Between sites: 0.5</p></td>
+<td> </td>
+</tr>
+<tr>
+<td colspan="4">Note: Results with 0.4 km ISD at 10 GHz can also be
+provided if simulation results show 5%-tile throughput cannot be
+achieved with 0.45 km ISD at 10 GHz.</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.2.1.1-2: Multi operators layout for urban macro</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 40%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Values</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Multi operators layout</td>
+<td>coordinated operation (0% Grid Shift) and un-coordinated operation
+(100% Grid Shift)</td>
+<td>RAN4 has long been using un-coordinated operation in below 6 GHz
+coexistence simulation</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image3.svg" style="width:4.20903in;height:3.74653in"
+alt="zero grade shift macro" /></p>
+<p>Figure 4.2.1.1-1: Coordinated operation: each network with
+co-location of sites</p>
+<p><img src="media/image4.jpeg" style="width:4.50764in;height:3.94792in"
+alt="cell_layout2" /></p>
+<p>Figure 4.2.1.1-2: Uncoordinated operation: second network’s sites are
+located at the first network’s cell edge</p>
+<h4 id="dense-urban">4.2.1.2 Dense urban</h4>
+<p>It is agreed to down-prioritized the dense urban scenario in this
+coexistence study, because it has the least demanding ACIR requirements
+among the three simulated scenarios in TR 38.803.</p>
+<h4 id="indoor">4.2.1.3 Indoor</h4>
+<p>Details on indoor network layout model are listed in Tables 4.2.1.3-1
+and 4.2.1.3-2.</p>
+<p>Table 4.2.1.3-1: Single operator layout for indoor</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 29%" />
+<col style="width: 34%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">Parameters</th>
+<th>Values</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Network layout</td>
+<td>50 m x 120 m, 12 BSs</td>
+<td> </td>
+</tr>
+<tr>
+<td colspan="2">Inter-site distance</td>
+<td>20m</td>
+<td> </td>
+</tr>
+<tr>
+<td colspan="2">BS antenna height</td>
+<td>3 m</td>
+<td>ceiling</td>
+</tr>
+<tr>
+<td rowspan="3">UE location</td>
+<td>Outdoor/indoor</td>
+<td>Indoor</td>
+<td> </td>
+</tr>
+<tr>
+<td>LOS/NLOS</td>
+<td>LOS and NLOS</td>
+<td></td>
+</tr>
+<tr>
+<td>UE antenna height</td>
+<td>1 m</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">UE distribution (horizontal)</td>
+<td>Uniform</td>
+<td> </td>
+</tr>
+<tr>
+<td colspan="2">Minimum BS - UE distance (2D)</td>
+<td>0 m</td>
+<td> </td>
+</tr>
+<tr>
+<td colspan="2">Channel model</td>
+<td>Indoor Office</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">Shadowing correlation</td>
+<td>NA</td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image5.jpeg"
+style="width:6.12708in;height:2.97014in" /></p>
+<p>Figure 4.2.1.3-1: Network layout for indoor</p>
+<p>Table 4.2.1.3-2: Multi operators layout for indoor</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 54%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Values</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Multi operator layout</td>
+<td>Coordinated operation (0% Grid Shift)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="propagation-model">4.2.2 Propagation model</h3>
+<h4 id="path-loss">4.2.2.1 Path loss</h4>
+<p>The pathloss models are summarized in Table 4.2.2.1-1 and the
+distance definitions are indicated in Figures 4.2.2.1-1 and 4.2.2.1-2.
+Note that the distribution of the shadow fading is log-normal, and its
+standard deviation for each scenario is given in Table 4.2.2.1-1.</p>
+<p><img src="media/image6.svg" /></p>
+<p>Figure 4.2.2.1-1: Definition of <em>d<sub>2D</sub></em> and
+<em>d<sub>3D</sub></em> for outdoor UTs</p>
+<p><img src="media/image7.svg" /></p>
+<p>Figure 4.2.2.1-2: Definition of <em>d<sub>2D-out</sub></em>,
+<em>d<sub>2D-in</sub></em> and <em>d<sub>3D-out</sub></em>,
+<em>d<sub>3D-in</sub></em> for indoor UTs</p>
+<p>Note that</p>
+<p><span class="math inline">\(d_{\text{3D} - \text{out}} + d_{\text{3D}
+- \text{in}} = \sqrt{\left( d_{\text{2D} - \text{out}} + d_{\text{2D} -
+\text{in}} \right)^{2} + \left( h_{\text{BS}} - h_{\text{UT}}
+\right)^{2}}\)</span> (4.2.2-1)</p>
+<p>Table 4.2.2.1-1: Pathloss models</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 54%" />
+<col style="width: 12%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>LOS/NLOS</th>
+<th>Pathloss [dB], <em>f<sub>c</sub></em> is in GHz and <em>d</em> is in
+meters, see note 4</th>
+<th><p>Shadow</p>
+<p>fading</p>
+<p>std [dB]</p></th>
+<th><p>Applicability range,</p>
+<p>antenna height</p>
+<p>default values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">UMa</td>
+<td>LOS</td>
+<td><p><span class="math inline">\(PL_{UMa - LOS} = \left\{
+\begin{matrix}
+PL_{1} &amp; 10m \leq d_{2D} \leq d_{BP}&#39; \\
+PL_{2} &amp; d_{BP}&#39; \leq d_{2D} \leq 5km
+\end{matrix} \right.\ \)</span>, see note 1</p>
+<p><span class="math display">\[PL_{1} = 28.0 +
+22\log_{10}(d_{\text{3D}}) + 20\log_{10}(f_{c})\]</span></p>
+<p><span class="math display">\[{PL_{2} = 28.0 +
+40\log_{10}(d_{\text{3D}}) + 20\log_{10}(f_{c})
+}{\text{                 } - 9\log_{10}((d_{\text{BP}}&#39;)^{2} +
+(h_{\text{BS}} - h_{\text{UT}})^{2})}\]</span></p></td>
+<td><span class="math display">\[\sigma_{SF} = 4\]</span></td>
+<td><p><span class="math display">\[1.5m \leq h_{UT} \leq
+22.5m\]</span></p>
+<p><span class="math display">\[h_{\text{BS}} =
+\text{25m}\]</span></p></td>
+</tr>
+<tr>
+<td rowspan="2">NLOS</td>
+<td><p><span class="math display">\[PL_{\text{UMa} - \text{NLOS}} =
+\max(PL_{\text{UMa} - \text{LOS}},PL_{\text{UMa} -
+\text{NLOS}}&#39;)\]</span></p>
+<p>for <img src="media/image8.png" /><span class="math inline">\(\ 10m
+\leq d_{2D} \leq 5km\)</span></p>
+<p><img src="media/image9.svg" /></p></td>
+<td><span class="math display">\[\sigma_{\text{SF}} = 6\]</span></td>
+<td><p><span class="math display">\[\ 1.5m \leq h_{UT} \leq
+22.5m\]</span></p>
+<p><span class="math display">\[h_{\text{BS}} = \text{25m}\]</span></p>
+<p>Explanations: see note 3</p></td>
+</tr>
+<tr>
+<td>Optional <span class="math inline">\(\text{PL} = 32.4 +
+20\log_{10}\left( f_{c} \right) + 30\log_{10}\left( d_{\text{3D}}
+\right)\)</span></td>
+<td><span class="math display">\[\sigma_{\text{SF}} = 7.8\]</span></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="3">InH - Office</td>
+<td>LOS</td>
+<td><span class="math display">\[PL_{\text{InH} - \text{LOS}} = 32.4 +
+17.3\log_{10}(d_{\text{3D}}) + 20\log_{10}(f_{c})\]</span></td>
+<td><span class="math display">\[\sigma_{\text{SF}} = 3\]</span></td>
+<td><span class="math display">\[1m \leq d_{3D} \leq 150m\]</span></td>
+</tr>
+<tr>
+<td rowspan="2">NLOS</td>
+<td><p><span class="math display">\[PL_{\text{InH} - \text{NLOS}} =
+\max(PL_{\text{InH} - \text{LOS}},PL_{\text{InH} -
+\text{NLOS}}&#39;)\]</span></p>
+<p><span class="math display">\[PL_{\text{InH} - \text{NLOS}}&#39; =
+38.3\log_{10}\left( d_{\text{3D}} \right) + 17.30 + 24.9\log_{10}\left(
+f_{c} \right)\]</span></p></td>
+<td><span class="math display">\[\sigma_{\text{SF}} = 8.03\]</span></td>
+<td><span class="math display">\[\ 1m \leq d_{3D} \leq
+150m\]</span></td>
+</tr>
+<tr>
+<td>Optional <span class="math inline">\(PL_{\text{InH-NLOS}}&#39; =
+32.4 + 20\log_{10}\left( f_{c} \right) + 31.9\log_{10}\left(
+d_{\text{3D}} \right)\)</span></td>
+<td><span class="math display">\[\sigma_{\text{SF}} = 8.29\]</span></td>
+<td><span class="math display">\[\ 1m \leq d_{3D} \leq
+150m\]</span></td>
+</tr>
+<tr>
+<td colspan="5"><p>Note 1: Breakpoint distance <em>d</em>'<sub>BP</sub>
+= 4 <em>h</em>'<sub>BS</sub> <em>h</em>'<sub>UT</sub>
+<em>f</em><sub>c</sub>/<em>c</em>, where <em>f</em><sub>c</sub> is the
+centre frequency in Hz, <em>c</em> = 3.0×10<sup>8</sup> m/s is the
+propagation velocity in free space, and <em>h</em>'<sub>BS</sub> and
+<em>h</em>'<sub>UT</sub> are the effective antenna heights at the BS and
+the UT, respectively. The effective antenna heights
+<em>h</em>'<sub>BS</sub> and <em>h</em>'<sub>UT</sub> are computed as
+follows: <em>h</em>'<sub>BS</sub> = <em>h</em><sub>BS</sub> –
+<em>h</em><sub>E</sub>, <em>h</em>'<sub>UT</sub> =
+<em>h</em><sub>UT</sub> – <em>h</em><sub>E</sub>, where
+<em>h</em><sub>BS</sub> and <em>h</em><sub>UT</sub> are the actual
+antenna heights, and h<sub>E</sub> is the effective environment height.
+For UMi <em>h</em><sub>E</sub> = 1.0m. For UMa <em>h</em><sub>E</sub>=1m
+with a probability equal to 1/(1+C(<em>d</em><sub>2D</sub>,
+<em>h</em><sub>UT</sub>)) and chosen from a discrete uniform
+distribution uniform(12,15,…,(<em>h</em><sub>UT</sub>-1.5)) otherwise.
+With C(<em>d</em><sub>2D</sub>, <em>h</em><sub>UT</sub>) given by</p>
+<p><img src="media/image10.png" /><span class="math inline">\(\ C\left(
+d_{2D},h_{UT} \right) = \left\{ \begin{matrix}
+0 &amp; ,h_{UT} &lt; 13m \\
+\left( \frac{h_{UT} - 13}{10} \right)^{1.5}g\left( d_{2D} \right) &amp;
+,13m \leq h_{UT} \leq 23m
+\end{matrix} \right.\ \)</span>,</p>
+<p>where</p>
+<p><span class="math inline">\(g\left( d_{2D} \right) = \left\{
+\begin{matrix}
+0 &amp; ,d_{2D} \leq 18m \\
+\frac{5}{4}\left( \frac{d_{2D}}{100} \right)^{3}\exp\left( \frac{-
+d_{2D}}{150} \right) &amp; ,18m &lt; d_{2D}
+\end{matrix} \right.\ \)</span><img src="media/image11.png" />.</p>
+<p>Note that <em>h</em><sub>E</sub> depends on <em>d</em><sub>2D</sub>
+and <em>h</em><sub>UT</sub> and thus needs to be independently
+determined for every link between BS sites and UTs. A BS site may be a
+single BS or multiple co-located BSs.</p>
+<p>Note 2: The applicable frequency range of the PL formula in this
+table is 0.5 &lt; <em>f<sub>c</sub></em> &lt; <em>f</em><sub>H</sub>
+GHz, where <em>f</em><sub>H</sub> = 30 GHz for RMa and
+<em>f</em><sub>H</sub> = 100 GHz for all the other scenarios. It is
+noted that RMa pathloss model for &gt;7 GHz is validated based on a
+single measurement campaign conducted at 24 GHz.</p>
+<p>Note 3: UMa NLOS pathloss is from TR36.873 with simplified format and
+PL<sub>UMa-LOS</sub> = Pathloss of UMa LOS outdoor scenario.</p>
+<p>Note 4: <em>f<sub>c</sub></em> denotes the center frequency
+normalized by 1GHz, all distance related values are normalized by 1m,
+unless it is stated otherwise.</p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="los-probability">4.2.2.2 LOS probability</h4>
+<p>The Line-Of-Sight (LOS) probabilities are given in Table
+4.2.2.2-1.</p>
+<p>Table 4.2.2.2-1 LOS probability</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 84%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>LOS probability (distance is in meters)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UMa</td>
+<td><p><span class="math inline">\(\Pr_{LOS} = \left\{ \begin{matrix}
+1 &amp; ,d_{2D - out} \leq 18m \\
+\left\lbrack \frac{18}{d_{2D - out}} + \exp\left( - \frac{d_{2D -
+out}}{63} \right)\left( 1 - \frac{18}{d_{2D - out}} \right)
+\right\rbrack\left( 1 + C&#39;\left( h_{UT} \right)\frac{5}{4}\left(
+\frac{d_{2D - out}}{100} \right)^{3}\exp\left( - \frac{d_{2D -
+out}}{150} \right) \right) &amp; ,18m &lt; d_{2D - out}
+\end{matrix} \right.\ \)</span>where</p>
+<p><span class="math display">\[C&#39;(h_{UT}) = \left\{ \begin{matrix}
+0 &amp; ,h_{UT} \leq 13m \\
+\left( \frac{h_{UT} - 13}{10} \right)^{1.5} &amp; ,13m &lt; h_{UT} \leq
+23m
+\end{matrix} \right.\ \]</span></p></td>
+</tr>
+<tr>
+<td>Indoor - Mixed office</td>
+<td><span class="math display">\[\Pr_{LOS} = \left\{ \begin{matrix}
+1 &amp; ,d_{2D - in} \leq 1.2m \\
+\exp\left( - \frac{d_{2D - in} - 1.2}{4.7} \right) &amp; ,1.2m &lt;
+d_{2D - in} &lt; 6.5m \\
+\exp\left( - \frac{d_{2D - in} - 6.5}{32.6} \right) \cdot 0.32 &amp;
+,6.5m \leq d_{2D - in}
+\end{matrix} \right.\ \]</span></td>
+</tr>
+<tr>
+<td>Indoor - Open office</td>
+<td><span class="math display">\[\Pr_{LOS} = \left\{ \begin{matrix}
+1 &amp; ,d_{2D - in} \leq 5m \\
+\exp\left( - \frac{d_{2D - in} - 5}{70.8} \right) &amp; ,5m &lt; d_{2D -
+in} \leq 49m \\
+\exp\left( - \frac{d_{2D - in} - 49}{211.7} \right) \cdot 0.54 &amp;
+,49m &lt; d_{2D - in}
+\end{matrix} \right.\ \]</span></td>
+</tr>
+<tr>
+<td colspan="2">Note: The LOS probability is derived with assuming
+antenna heights of 3m for indoor, 10m for UMi, and 25m for UMa</td>
+</tr>
+</tbody>
+</table>
+<h4 id="o-to-i-penetration-loss">4.2.2.3 O-to-I penetration loss</h4>
+<h5 id="o-to-i-building-penetration-loss">4.2.2.3.1 O-to-I building
+penetration loss</h5>
+<p>The pathloss incorporating O2I building penetration loss is modelled
+as in the following:</p>
+<p><span class="math inline">\(\text{PL} = \text{P}\text{L}_{b} +
+\text{P}\text{L}_{\text{tw}} + \text{P}\text{L}_{\text{in}} + N\left(
+0,\sigma_{P}^{2} \right)\)</span> (4.2.2-2)</p>
+<p>where <span class="math inline">\(\text{P}\text{L}_{b}\)</span> is
+the basic outdoor path loss given in clause 4.2.2.1, where <span
+class="math inline">\(d_{\text{3D}}\)</span> is replaced by <span
+class="math inline">\(d_{\text{3D} - \text{out}} + d_{\text{3D} -
+\text{in}}\)</span> . <span
+class="math inline">\(\text{P}\text{L}_{\text{tw}}\)</span> is the
+building penetration loss through the external wall, <span
+class="math inline">\(\text{P}\text{L}_{\text{in}}\)</span> is the
+inside loss dependent on the depth into the building, and
+σ<em><sub>P</sub></em> is the standard deviation for the penetration
+loss.</p>
+<p><span class="math inline">\(\text{P}\text{L}_{\text{tw}}\)</span> is
+characterized as:</p>
+<p><img src="media/image12.png" /><span class="math inline">\(\ PL_{tw}
+= PL_{npi} - 10\log_{10}{\sum_{i = 1}^{N}\left( p_{i} \times
+10^{\frac{L_{material\_ i}}{- 10}} \right)}\)</span> (4.2.2-3)</p>
+<p><span class="math inline">\(\text{P}\text{L}_{npi}\)</span> is an
+additional loss is added to the external wall loss to account for
+non-perpendicular incidence; <img src="media/image13.png" /><span
+class="math inline">\(\ L_{material\_ i} = a_{material\_ i} +
+b_{material\_ i} \cdot f\)</span>, is the penetration loss of material
+<em>i</em>, example values of which can be found in Table 4.2.2.3-1;
+<span class="math inline">\(p_{i}\)</span> is proportion of
+<em>i</em>-th materials, where <img src="media/image14.png" /><span
+class="math inline">\(\ \sum_{i = 1}^{N}p_{i} = 1\)</span>; and
+<em>N</em> is the number of materials.</p>
+<p>Table 4.2.2.3-1: Material penetration losses</p>
+<table>
+<colgroup>
+<col style="width: 53%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr>
+<th>Material</th>
+<th>Penetration loss [dB]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard multi-pane glass</td>
+<td><span class="math display">\[L_{\text{glass}} = 2 +
+0.2f\]</span></td>
+</tr>
+<tr>
+<td>IRR glass</td>
+<td><span class="math display">\[L_{\text{IIRglass}} = 23 +
+0.3f\]</span></td>
+</tr>
+<tr>
+<td>Concrete</td>
+<td><span class="math display">\[L_{\text{concrete}} = 5 +
+4f\]</span></td>
+</tr>
+<tr>
+<td>Wood</td>
+<td><span class="math display">\[L_{\text{wood}} = 4.85 +
+0.12f\]</span></td>
+</tr>
+<tr>
+<td colspan="2">Note: f is in GHz.</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.2.2.3-2 gives <span
+class="math inline">\(\text{P}\text{L}_{\text{tw}}\)</span>, <span
+class="math inline">\(\text{P}\text{L}_{\text{in}}\)</span> and
+σ<em><sub>P</sub></em> for two O2I penetration loss models. The O2I
+penetration is UT-specifically generated and is added to the SF
+realization in the log domain.</p>
+<p>Table 4.2.2.3-2: O2I building penetration loss model</p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 46%" />
+<col style="width: 14%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th> </th>
+<th><p>Path loss through external wall:</p>
+<p><span class="math inline">\(\text{P}\text{L}_{\text{tw}}\)</span> in
+[dB]</p></th>
+<th><p>Indoor loss:</p>
+<p><span class="math inline">\(\text{P}\text{L}_{\text{in}}\)</span> in
+[dB]</p></th>
+<th><p>Standard deviation:</p>
+<p>σ<em><sub>P</sub></em> in [dB]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low-loss model</td>
+<td><span class="math display">\[5 - 10\log_{10}\left( 0.3 \cdot
+10^{\frac{- L_{glass}}{10}} + 0.7 \cdot 10^{\frac{- L_{concrete}}{10}}
+\right)\]</span></td>
+<td>0.5 <span class="math inline">\(d_{\text{2D} -
+\text{in}}\)</span></td>
+<td>4.4</td>
+</tr>
+<tr>
+<td>High-loss model</td>
+<td><span class="math display">\[5 - 10\log_{10}\left( 0.7 \cdot
+10^{\frac{- L_{IIRglass}}{10}} + 0.3 \cdot 10^{\frac{-
+L_{concrete}}{10}} \right)\]</span></td>
+<td>0.5 <span class="math inline">\(d_{\text{2D} -
+\text{in}}\)</span></td>
+<td>6.5</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(d_{\text{2D} - \text{in}}\)</span> is
+minimum of two independently generated uniformly distributed variables
+between 0 and 25 m for UMa and UMi-Street Canyon, and between 0 and 10 m
+for RMa. <span class="math inline">\(d_{\text{2D} - \text{in}}\)</span>
+should be UT-specifically generated.</p>
+<p>Both low-loss and high-loss models are applicable to UMa and
+UMi-Street Canyon.</p>
+<p>Only the low-loss model is applicable to RMa.</p>
+<p>Only the high-loss model is applicable to InF.</p>
+<h5 id="o-to-i-car-penetration-loss">4.2.2.3.2 O-to-I car penetration
+loss</h5>
+<p>The pathloss incorporating O2I car penetration loss is modelled as in
+the following:</p>
+<p><img src="media/image15.png" /><span class="math inline">\(\ PL =
+PL_{b} + Ν\left( \mu,\sigma_{P}^{2} \right)\)</span> (4.2.2-4)</p>
+<p>where <span class="math inline">\(\text{P}\text{L}_{b}\)</span> is
+the basic outdoor path loss given in clause 4.2.2.1. <em>μ</em> = 9, and
+σ<em><sub>P</sub></em> = 5. The car penetration loss should be
+UT-specifically generated. Optionally, for metallized car windows,
+<em>μ</em> = 20 can be used. The O2I car penetration loss models are
+applicable for at least 0.6 - 60 GHz.</p>
+<h3 id="antenna-and-beam-forming-pattern-modelling">4.2.3 Antenna and
+beam forming pattern modelling</h3>
+<p>The BS antenna is modelled as described in clause 8.1.1 using
+parameters for different BS deployments listed in clause 8.1.2.</p>
+<p>The UE antenna is modelled as described in clause 8.2 using isotropic
+antenna pattern.</p>
+<h3 id="transmission-power-control-model">4.2.4 Transmission power
+control model</h3>
+<p>For downlink scenario, no power control scheme is applied.</p>
+<p>For uplink scenario, TPC model specified in clause 9.1 TR 36.942 is
+applied with following parameters.</p>
+<p>- CL<sub>x-ile</sub> = 88 + 10*log10(200/X) + 11 – Y, where X is UL
+transmission BW (MHz) and Y is the BS noise figure</p>
+<p>- γ = 1</p>
+<h3 id="received-power-model">4.2.5 Received power model</h3>
+<p>The received power in downlink and uplink scenarios is defined as
+below:</p>
+<p>RX_PWR = TX_PWR – Path loss + G_TX + G_RX</p>
+<p>where:</p>
+<p>- RX_PWR is the received power</p>
+<p>- TX_PWR is the transmitted power</p>
+<p>- G_TX is the transmitter antenna gain (directional array gain)</p>
+<p>- G_RX is the receiver antenna gain (directional array gain).</p>
+<h3 id="aclr-and-acs-modelling">4.2.6 ACLR and ACS modelling</h3>
+<p>For DL it seems reasonable from the perspective of simulating worst
+case scenarios that we assume BS ACLR is modelled as flat in space, and
+the UE ACS can be modelled flat in space.</p>
+<p>If this assumption is for DL, then the similar assumption could be
+made for the UL because:</p>
+<p>- UE has a much small number of antennas, thus the effect of
+directivity should be smaller for ACLR (or the adjacent channel
+interference). It can also be reasonably assumed that the UE ACLR will
+play a dominant role than the BS ACS in the adjacent channel
+interference.</p>
+<p>- Again, BS ACS flat in space might mean worse coexistence
+performance than actual performance because BS has better capability of
+steering its receive antennas to suppress interference.</p>
+<p>1 user scheduling is baseline assumption for coexistence evaluation
+and the two step ACLR model shown in Table 4.2.6-1 could be used for 3
+uplink user scheduling simulation, where a UE occupies a smaller
+bandwidth than the channel bandwidth for transmission, to avoid overly
+estimating interference, similar as done in E-UTRA coexistence study (as
+recorded in TR 36.942).</p>
+<p>Table 4.2.6-1: Uplink ACIR value</p>
+<table>
+<colgroup>
+<col style="width: 81%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr>
+<th>Frequency offset between aggressor (91RBs) and victim (91RBs)</th>
+<th>ACIR value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 - 90 RBs</td>
+<td>30 + X</td>
+</tr>
+<tr>
+<td>91 - 181RBs</td>
+<td>43 + X</td>
+</tr>
+<tr>
+<td>&gt; 181RBs</td>
+<td>43+ X</td>
+</tr>
+</tbody>
+</table>
+<p>Therefore, it is assumed that both ACLR (or the adjacent channel
+interference) and ACS are flat in both space and frequency. The ACIR
+model can be express as:</p>
+<p><img src="media/image16.svg" /></p>
+<p>(assuming ACLR, ACS and ACIR to be linear).</p>
+<h3 id="link-level-performance-for-5g-nr-coexistence">4.2.7 Link level
+performance for 5G NR coexistence</h3>
+<p>The throughput of a modem with link adaptation can be approximated by
+an attenuated and truncated form of the Shannon bound. (The Shannon
+bound represents the maximum theoretical throughput than can be achieved
+over an AWGN channel for a given SNIR). The following equations
+approximate the throughput over a channel with a given SNIR, when using
+link adaptation:</p>
+<p><img src="media/image17.png" /><span class="math inline">\(\
+Throughput\ (SNIR),\ bps/Hz\  = \left\{ \begin{array}{r}
+0\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+for\ SNIR &lt; \ SNIR_{MIN}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \\
+\propto \bullet S(SNIR)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ for\
+SNIR_{MIN} \leq SNIR &lt; SNIR_{MAX}\  \\
+\propto \bullet S\left( SNIR_{MAX} \right)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+for\ SNIR\  \geq \ SNIR_{MAX}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \
+\end{array} \right.\ \)</span></p>
+<p>Where:</p>
+<p>- S(SNIR) Shannon bound, S(SNIR) =log<sub>2</sub>(1+SNIR) bps/Hz</p>
+<p>- α Attenuation factor, representing implementation losses</p>
+<p>- SNIR<sub>MIN</sub> Minimum SNIR of the code set, dB</p>
+<p>- SNIR<sub>MAX</sub> Maximum SNIR of the code set, dB</p>
+<p>The parameters α, SNIR<sub>MIN</sub> and SNIR<sub>MAX</sub> can be
+chosen to represent different modem implementations and link conditions.
+The parameters proposed in Table 4.2.7-1 represent a baseline case,
+which assumes:</p>
+<p>- 1:1 antenna configuration</p>
+<p>- AWGN channel model</p>
+<p>- Link Adaptation (see Table 4.2.7-1 for details of the highest and
+lowest rate codes)</p>
+<p>- No HARQ</p>
+<p>Table 4.2.7-1: Parameters describing baseline Link Level performance
+for 5G NR</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>DL</th>
+<th>UL</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>α, attenuation</td>
+<td>0.6</td>
+<td>0.4</td>
+<td>Represents implementation losses</td>
+</tr>
+<tr>
+<td>SNIR<sub>MIN</sub>, dB</td>
+<td>-10</td>
+<td>-10</td>
+<td>Based on QPSK, 1/8 rate (DL) &amp; 1/5 rate (UL)</td>
+</tr>
+<tr>
+<td>SNIR<sub>MAX</sub>, dB</td>
+<td>30</td>
+<td>22</td>
+<td>Based on 256QAM 0.93(DL) &amp; 64QAM 0.93 (UL)</td>
+</tr>
+</tbody>
+</table>
+<p>Note that the parameters proposed in Table 4.2.7-1 are targeted for
+eMBB coexistence scenario.</p>
+<h3 id="other-simulation-parameters">4.2.8 Other simulation
+parameters</h3>
+<p>Table 4.2.8-1: Other simulation parameters</p>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Indoor</th>
+<th>Urban macro</th>
+<th>Dense urban</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carrier frequency</td>
+<td>7 GHz, 10 GHz</td>
+<td>7 GHz, 10 GHz</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>Channel bandwidth</td>
+<td>100 MHz</td>
+<td>100 MHz</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>Scheduled channel bandwidth per UE (DL)</td>
+<td>98.28 MHz</td>
+<td>98.28 MHz</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>Scheduled channel bandwidth per UE (UL)</td>
+<td><p>98.28 MHz (1 user, Note 4)</p>
+<p>32.76 MHz (3 user)</p></td>
+<td><p>98.28 MHz (1 user, Note 4)</p>
+<p>32.76 MHz (3 user)</p></td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>The number of active UE (DL) (Note 1)</td>
+<td>1</td>
+<td>1</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>The number of active UE (UL) (Note 1)</td>
+<td>1 or 3</td>
+<td>1 or 3</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>Traffic model</td>
+<td>Full buffer</td>
+<td>Full buffer</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>DL power control</td>
+<td>NO</td>
+<td>NO</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>UL power control</td>
+<td>YES</td>
+<td>YES</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>BS max TX power in dBm</td>
+<td>24</td>
+<td>43 (Note 3)</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>UE max TX power in dBm</td>
+<td>23 or 20 (Note 2)</td>
+<td>23 or 20 (Note 2)</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>UE min TX power in dBm</td>
+<td>-33</td>
+<td>-33</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>BS Noise figure in dB</td>
+<td><p>14 (@7 GHz)</p>
+<p>15 (@10 GHz)</p></td>
+<td><p>6 (@7 GHz)</p>
+<p>7 (@10 GHz)</p></td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>UE Noise figure in dB</td>
+<td>9 or 13 (Note 5)</td>
+<td>9 or 13 (Note 5)</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td>Handover margin</td>
+<td>3 dB</td>
+<td>3 dB</td>
+<td>Down-prioritized</td>
+</tr>
+<tr>
+<td colspan="4"><p>Note 1 Same as the number of BS beam(s);</p>
+<p>Note 2: 20 dBm as optional case where CL<sub>x-ile</sub> should be
+reduced by 3 dB;</p>
+<p>Note 3: BS max TX power is defined per polarization;</p>
+<p>Note 4: 1 user scheduling is a baseline assumption for coexistence
+evaluation;</p>
+<p>Note 5: NF of 9 dB is a baseline assumption and NF of 13 dB is as
+optional case.</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="co-existence-simulation-methodology">4.2.9 Co-existence
+simulation methodology</h3>
+<p>Adopt following simulation steps.</p>
+<p>1. Aggressor and victim network are generated.</p>
+<p>- UEs are distributed randomly across the network.</p>
+<p>2. UE associations: UEs are associated to base station based on
+coupling loss.</p>
+<p>- Associations are made assuming a single element at BS and UE with
+isotropic antenna.</p>
+<p>3. Once association is done, round robin scheduling is used. BF
+weights are adjusted to point to the LOS direction between BS-UE. This
+is done for both victim and aggressor networks.</p>
+<p>4. Throughput is computed in the victim systems without considering
+ACI as below:</p>
+<p>- <span class="math inline">\({Thput}_{NO\ ACI}\lbrack bpshz\rbrack =
+f\left( {SINR}_{ICI} \right) = f\left( \frac{S}{N + I_{ICI}}
+\right)\)</span>, where <span class="math inline">\(I_{ICI}\)</span> is
+the inter-cell interference.</p>
+<p>5. Throughput is computed considering ACI as below:</p>
+<p>- <span class="math inline">\({Thput}_{ACI}\lbrack bpshz\rbrack =
+f\left( {SINR}_{ICI + ACI} \right) = f\left( \frac{S}{N + I_{ICI} +
+I_{ACI}} \right)\)</span>, where <span
+class="math inline">\(I_{ACI}\)</span> is the adjacent channel
+interference.</p>
+<p>6. RF parameters are determined based on the degradation cause by ACI
+as below:</p>
+<p>- <span class="math inline">\(Loss_{ACI} = 1 -
+\frac{{Thput}_{ACI}}{{Thput}_{SINGLE}}\)</span>.</p>
+<h2 id="co-existence-simulation-results">4.3 Co-existence simulation
+results</h2>
+<h3 id="urban-macro-scenario">4.3.1 Urban Macro scenario</h3>
+<h4 id="downlink">4.3.1.1 Downlink</h4>
+<p>For Urban macro scenarios, simulation results for DL throughput loss
+with baseline assumption ACLR = 45 dBc at BS and ACS = 33 dBc at UE are
+summarized in Table 4.3.1.1-1/2/3/4.</p>
+<p>Table 4.3.1.1-1: DL throughput loss of victim UE for 6425 – 7125 MHz
+[Relative ACIR value]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 18%" />
+<col style="width: 32%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Company</th>
+<th rowspan="2">Simulation scenarios</th>
+<th rowspan="2">Throughput loss</th>
+<th colspan="6">Relative ACIR offset</th>
+</tr>
+<tr>
+<th>0</th>
+<th>-1</th>
+<th>-2</th>
+<th>-3</th>
+<th>-4</th>
+<th>-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">ZTE</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>1.65</td>
+<td>1.89</td>
+<td>2.10</td>
+<td>2.33</td>
+<td>2.63</td>
+<td>2.99</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>4.39</td>
+<td>5.18</td>
+<td>5.98</td>
+<td>7.07</td>
+<td>7.87</td>
+<td>9.06</td>
+</tr>
+<tr>
+<td rowspan="2">Nokia</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>1.11</td>
+<td>1.28</td>
+<td>1.48</td>
+<td>1.70</td>
+<td>1.94</td>
+<td>2.21</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>6.22</td>
+<td>6.23</td>
+<td>6.24</td>
+<td>7.51</td>
+<td>8.99</td>
+<td>9.23</td>
+</tr>
+<tr>
+<td rowspan="2">Huawei</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>1.04</td>
+<td>1.39</td>
+<td>1.47</td>
+<td>1.77</td>
+<td>2.30</td>
+<td>2.39</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>3.00</td>
+<td>4.63</td>
+<td>4.96</td>
+<td>6.37</td>
+<td>6.78</td>
+<td>7.16</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.1.1-1a: DL throughput loss of victim UE for 6425 – 7125 MHz
+[Absolute ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>ACIR (dB)</th>
+<th>23</th>
+<th>24</th>
+<th>25</th>
+<th>26</th>
+<th>27</th>
+<th>28</th>
+<th>29</th>
+<th>30</th>
+<th>31</th>
+<th>32</th>
+<th>33</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ericsson</td>
+<td>Throughput lost at Average</td>
+<td>2.7</td>
+<td>2.4</td>
+<td>2.1</td>
+<td>1.8</td>
+<td>1.6</td>
+<td>1.4</td>
+<td>1.2</td>
+<td>1.0</td>
+<td>0.9</td>
+<td>0.8</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>13.1</td>
+<td>10.6</td>
+<td>10.0</td>
+<td>8.3</td>
+<td>6.6</td>
+<td>6.1</td>
+<td>5.5</td>
+<td>4.7</td>
+<td>3.1</td>
+<td>2.2</td>
+<td>2.1</td>
+</tr>
+<tr>
+<td rowspan="2">CATT</td>
+<td>Throughput lost at Average</td>
+<td>2.945446</td>
+<td>2.615785</td>
+<td>2.318919</td>
+<td>2.050108</td>
+<td>1.808206</td>
+<td>1.592518</td>
+<td>1.399160</td>
+<td>1.226961</td>
+<td>1.073971</td>
+<td>0.936971</td>
+<td>0.814444</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>11.345302</td>
+<td>10.038643</td>
+<td>8.745891</td>
+<td>7.593149</td>
+<td>6.594121</td>
+<td>5.813514</td>
+<td>5.023313</td>
+<td>4.235969</td>
+<td>3.589495</td>
+<td>3.063706</td>
+<td>2.576903</td>
+</tr>
+<tr>
+<td rowspan="2">Qualcomm</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td>3.0285</td>
+<td>2.6700</td>
+<td>2.3630</td>
+<td>2.0876</td>
+<td>1.8414</td>
+<td>1.6318</td>
+<td>1.4200</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td>12.3347</td>
+<td>10.6516</td>
+<td>9.2041</td>
+<td>7.9086</td>
+<td>6.7639</td>
+<td>5.8122</td>
+<td>4.9061</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.1.1-2: DL throughput loss of victim UE for 10 - 10.5 GHz
+[Relative ACIR value]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 20%" />
+<col style="width: 31%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 7%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Company</th>
+<th rowspan="2">Simulation scenarios</th>
+<th rowspan="2">Throughput loss</th>
+<th colspan="6">Relative ACIR offset</th>
+</tr>
+<tr>
+<th>0</th>
+<th>-1</th>
+<th>-2</th>
+<th>-3</th>
+<th>-4</th>
+<th>-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">ZTE</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>1.52</td>
+<td>1.68</td>
+<td>1.93</td>
+<td>2.12</td>
+<td>2.31</td>
+<td>2.62</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>3.36</td>
+<td>3.79</td>
+<td>4.79</td>
+<td>5.78</td>
+<td>6.41</td>
+<td>7.63</td>
+</tr>
+<tr>
+<td rowspan="2">Nokia</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>1.03</td>
+<td>1.20</td>
+<td>1.38</td>
+<td>1.60</td>
+<td>1.83</td>
+<td>2.09</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>4.38</td>
+<td>4.38</td>
+<td>4.86%</td>
+<td>5.23</td>
+<td>6.01</td>
+<td>7.40</td>
+</tr>
+<tr>
+<td rowspan="2">Huawei</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>1.21</td>
+<td>1.22</td>
+<td>1.30%</td>
+<td>1.72</td>
+<td>1.99</td>
+<td>2.44</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>3.04</td>
+<td>3.33</td>
+<td>4.14%</td>
+<td>5.06</td>
+<td>6.41</td>
+<td>8.67</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.1.1-2a: DL throughput loss of victim UE for 10-10.5GHz
+[Absolute ACIR value]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>ACIR (dB)</th>
+<th>23</th>
+<th>24</th>
+<th>25</th>
+<th>26</th>
+<th>27</th>
+<th>28</th>
+<th>29</th>
+<th>30</th>
+<th>31</th>
+<th>32</th>
+<th>33</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ericsson</td>
+<td>Throughput lost at Average</td>
+<td>2.1</td>
+<td>1.9</td>
+<td>1.7</td>
+<td>1.4</td>
+<td>1.3</td>
+<td>1.1</td>
+<td>0.9</td>
+<td>0.8</td>
+<td>0.7</td>
+<td>0.6</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>11.8</td>
+<td>10.0</td>
+<td>9.6</td>
+<td>9.4</td>
+<td>7.8</td>
+<td>6.3</td>
+<td>4.8</td>
+<td>4.7</td>
+<td>4.2</td>
+<td>3.9</td>
+<td>3.5</td>
+</tr>
+<tr>
+<td rowspan="2">CATT</td>
+<td>Throughput lost at Average</td>
+<td>2.874567</td>
+<td>2.547846</td>
+<td>2.252212</td>
+<td>1.986030</td>
+<td>1.748135</td>
+<td>1.537007</td>
+<td>1.348903</td>
+<td>1.181463</td>
+<td>1.032390</td>
+<td>0.899829</td>
+<td>0.782843</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>9.975828</td>
+<td>8.600968</td>
+<td>7.468747</td>
+<td>6.454207</td>
+<td>5.566782</td>
+<td>4.750499</td>
+<td>4.068893</td>
+<td>3.494199</td>
+<td>2.988947</td>
+<td>2.552896</td>
+<td>2.076688</td>
+</tr>
+<tr>
+<td rowspan="2">Qualcomm</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td>2.788</td>
+<td>2.4497</td>
+<td>2.1611</td>
+<td>1.9031</td>
+<td>1.6734</td>
+<td>1.4787</td>
+<td>1.2825</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td>11.0936</td>
+<td>9.6118</td>
+<td>8.3690</td>
+<td>7.2691</td>
+<td>6.2895</td>
+<td>5.4504</td>
+<td>4.5726</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>In addition, coexistence simulation results for UE with NF 13 dB is
+summarized in Table 4.3.1.1.3 and 4.3.1.1.4.</p>
+<p>Table 4.3.1.1-3: 7 GHz ACIR with 13 dB NF [Qualcomm, R4-2016236]</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th>ACIR [dB]</th>
+<th>31</th>
+<th>30</th>
+<th>29</th>
+<th>28</th>
+<th>27</th>
+<th>26</th>
+<th>25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Average throughput loss (7 GHz)</td>
+<td>1.3706%</td>
+<td>1.5769%</td>
+<td>1.7811%</td>
+<td>2.0213%</td>
+<td>2.2902%</td>
+<td>2.5902%</td>
+<td>2.9408%</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss (7 GHz)</td>
+<td>4.5693%</td>
+<td>5.4639%</td>
+<td>6.3517%</td>
+<td>7.4031%</td>
+<td>8.5919%</td>
+<td>9.9359%</td>
+<td>11.5323%</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.1.1-4: 10 GHz ACIR with 13 dB NF [Qualcomm, R4-2016236]</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr>
+<th>ACIR [dB]</th>
+<th>31</th>
+<th>30</th>
+<th>29</th>
+<th>28</th>
+<th>27</th>
+<th>26</th>
+<th>25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Average throughput loss (10 GHz)</td>
+<td>1.2320%</td>
+<td>1.4223%</td>
+<td>1.6112%</td>
+<td>1.8344%</td>
+<td>2.0853%</td>
+<td>2.3663%</td>
+<td>2.6961%</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss (10 GHz)</td>
+<td>3.2501%</td>
+<td>3.9646%</td>
+<td>4.7371%</td>
+<td>5.6903%</td>
+<td>6.7960%</td>
+<td>8.0620%</td>
+<td>9.5717%</td>
+</tr>
+</tbody>
+</table>
+<p>Based on the above simulation results, the required DL ACIR for 6.425
+- 7.125 GHz and 10.0 - 10.5 GHz for urban macro scenarios are in
+summarized in Table 4.3.1.1-5.</p>
+<p>Table 4.3.1.1-5: DL simulation results for 6.425 - 7.125 GHz and 10.0
+- 10.5 GHz</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="2">ACIR (dB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Company</td>
+<td>6.425 - 7.125 GHz</td>
+<td>10.0 - 10.5 GHz</td>
+</tr>
+<tr>
+<td>Urban macro uncoord.</td>
+<td>Urban Macro uncoord.</td>
+</tr>
+<tr>
+<td>CATT</td>
+<td>29.5</td>
+<td>28</td>
+</tr>
+<tr>
+<td>Nokia</td>
+<td>32.7</td>
+<td>30.7</td>
+</tr>
+<tr>
+<td>Huawei</td>
+<td>30.7</td>
+<td>29.7</td>
+</tr>
+<tr>
+<td>Ericsson</td>
+<td>30</td>
+<td>29</td>
+</tr>
+<tr>
+<td>ZTE</td>
+<td>31.7</td>
+<td>29.7</td>
+</tr>
+<tr>
+<td>Qualcomm</td>
+<td>30.9</td>
+<td>30.5</td>
+</tr>
+<tr>
+<td>Average</td>
+<td>30.9</td>
+<td>29.6</td>
+</tr>
+<tr>
+<td>Average after removing highest and lowest values</td>
+<td>30.9</td>
+<td>29.5</td>
+</tr>
+</tbody>
+</table>
+<h4 id="uplink">4.3.1.2 Uplink</h4>
+<p>For Urban macro scenarios, simulation results for UL throughput loss
+with baseline assumption ACLR = 30 dBc at UE and ACS = 46 dBc at BS are
+summarized in Table 4.3.1.2-1/2/3/4.</p>
+<p>Table 4.3.1.2-1: UL throughput loss of victim BS for 6425-7125MHz
+[Relative ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 32%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Company</th>
+<th rowspan="2">Simulation scenarios</th>
+<th rowspan="2">Throughput loss</th>
+<th colspan="6">Relative ACIR offset</th>
+</tr>
+<tr>
+<th>0</th>
+<th>-1</th>
+<th>-2</th>
+<th>-3</th>
+<th>-4</th>
+<th>-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">ZTE</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.99</td>
+<td>1.09</td>
+<td>1.23</td>
+<td>1.40</td>
+<td>1.55</td>
+<td>1.76</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>2.72</td>
+<td>2.84</td>
+<td>5.28</td>
+<td>6.01</td>
+<td>6.71</td>
+<td>7.20</td>
+</tr>
+<tr>
+<td rowspan="2">Nokia</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>1.08</td>
+<td>1.24</td>
+<td>1.43</td>
+<td>1.65</td>
+<td>1.89</td>
+<td>2.15</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>1.01</td>
+<td>1.68</td>
+<td>3.14</td>
+<td>3.98</td>
+<td>5.76</td>
+<td>8.08</td>
+</tr>
+<tr>
+<td rowspan="2">Huawei</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.64</td>
+<td>0.69</td>
+<td>0.69</td>
+<td>0.92</td>
+<td>1.01</td>
+<td>1.07</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>3.8</td>
+<td>4.3</td>
+<td>5.0</td>
+<td>6.2</td>
+<td>7.6</td>
+<td>8.7</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.1.2-1a: UL throughput loss of victim BS for 6425 – 7125 MHz
+[Absolute ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 6%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>ACIR (dB)</th>
+<th>23</th>
+<th>24</th>
+<th>25</th>
+<th></th>
+<th>26</th>
+<th>27</th>
+<th>28</th>
+<th>29</th>
+<th>30</th>
+<th>31</th>
+<th>32</th>
+<th>33</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ericsson</td>
+<td>Throughput lost at Average</td>
+<td>1.5</td>
+<td>1.3</td>
+<td>1.1</td>
+<td></td>
+<td>1.0</td>
+<td>0.8</td>
+<td>0.7</td>
+<td>0.6</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.4</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>6.3</td>
+<td>6.2</td>
+<td>5.5</td>
+<td></td>
+<td>4.3</td>
+<td>2.3</td>
+<td>1.6</td>
+<td>1.5</td>
+<td>1.4</td>
+<td>0.8</td>
+<td>0.6</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td rowspan="2">CATT</td>
+<td>Throughput lost at Average</td>
+<td>1.489821</td>
+<td>1.301164</td>
+<td>1.134213</td>
+<td></td>
+<td>0.986689</td>
+<td>0.856389</td>
+<td>0.741773</td>
+<td>0.641199</td>
+<td>0.553419</td>
+<td>0.476770</td>
+<td>0.409968</td>
+<td>0.351849</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>7.283069</td>
+<td>6.142583</td>
+<td>5.227730</td>
+<td></td>
+<td>4.495608</td>
+<td>3.745409</td>
+<td>3.051767</td>
+<td>2.429319</td>
+<td>1.621495</td>
+<td>0.968716</td>
+<td>0.671695</td>
+<td>0.526234</td>
+</tr>
+<tr>
+<td rowspan="2">Qualcomm</td>
+<td>Throughput lost at Average</td>
+<td>1.5</td>
+<td>1.2</td>
+<td>1.0</td>
+<td></td>
+<td>0.9</td>
+<td>1.0</td>
+<td>0.9</td>
+<td>0.8</td>
+<td>0.6</td>
+<td>0.5</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>4.3</td>
+<td>3.4</td>
+<td>2.4</td>
+<td></td>
+<td>2.2</td>
+<td>2.4</td>
+<td>2.2</td>
+<td>1.8</td>
+<td>1.5</td>
+<td>1.3</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.1.2-2: UL throughput loss of victim BS for 10 - 10.5 GHz
+[Relative ACIR value]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 16%" />
+<col style="width: 33%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Company</th>
+<th rowspan="2">Simulation scenarios</th>
+<th rowspan="2">Throughput loss</th>
+<th colspan="6">Relative ACIR offset</th>
+</tr>
+<tr>
+<th>0</th>
+<th>-1</th>
+<th>-2</th>
+<th>-3</th>
+<th>-4</th>
+<th>-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">ZTE</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.79</td>
+<td>0.87</td>
+<td>1.11</td>
+<td>1.23</td>
+<td>1.41</td>
+<td>1.59</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td rowspan="2">Nokia</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.90</td>
+<td>1.04</td>
+<td>1.21</td>
+<td>1.39</td>
+<td>1.60</td>
+<td>1.84</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>1.98</td>
+<td>2.27</td>
+<td>2.28</td>
+<td>3.90</td>
+<td>4.00</td>
+<td>6.41</td>
+</tr>
+<tr>
+<td rowspan="2">Huawei</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.53</td>
+<td>0.59</td>
+<td>0.61</td>
+<td>0.76</td>
+<td>0.91</td>
+<td>1.05</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>1.7</td>
+<td>2.3</td>
+<td>3.3</td>
+<td>4.0</td>
+<td>5.3</td>
+<td>6.4</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.1.2-2a: UL throughput loss of victim BS for 10 - 10.5 GHz
+[Absolute ACIR value]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>ACIR (dB)</th>
+<th>23</th>
+<th>24</th>
+<th>25</th>
+<th>26</th>
+<th>27</th>
+<th>28</th>
+<th>29</th>
+<th>30</th>
+<th>31</th>
+<th>32</th>
+<th>33</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ericsson</td>
+<td>Throughput lost at Average</td>
+<td>1.3</td>
+<td>1.1</td>
+<td>1.0</td>
+<td>0.8</td>
+<td>0.7</td>
+<td>0.6</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.4</td>
+<td>0.3</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>3.0</td>
+<td>2.3</td>
+<td>1.3</td>
+<td>1.0</td>
+<td>0.8</td>
+<td>0.8</td>
+<td>0.8</td>
+<td>0.8</td>
+<td>0.8</td>
+<td>0.8</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td rowspan="2">CATT</td>
+<td>Throughput lost at Average</td>
+<td>1.535229</td>
+<td>1.345764</td>
+<td>1.177367</td>
+<td>1.027196</td>
+<td>0.894277</td>
+<td>0.777219</td>
+<td>0.673935</td>
+<td>0.582684</td>
+<td>0.502769</td>
+<td>0.432740</td>
+<td>0.371237</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>9.496269</td>
+<td>7.816610</td>
+<td>6.444894</td>
+<td>5.273296</td>
+<td>4.180206</td>
+<td>3.433665</td>
+<td>3.082907</td>
+<td>2.691289</td>
+<td>2.325946</td>
+<td>2.024768</td>
+<td>1.625941</td>
+</tr>
+<tr>
+<td rowspan="2">Qualcomm</td>
+<td>Throughput lost at Average</td>
+<td>1.5</td>
+<td>1.2</td>
+<td>1.0</td>
+<td>0.9</td>
+<td>0.8</td>
+<td>0.6</td>
+<td>0.5</td>
+<td>0.4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>2.9</td>
+<td>2.6</td>
+<td>2.2</td>
+<td>2.0</td>
+<td>1.6</td>
+<td>1.4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>In addition, coexistence simulation results for UE with Tx power 20
+dBm is summarized in Table 4.3.1.2.3 and 4.3.1.2.4.</p>
+<p>Table 4.3.1.2-3: ACIR results at 7 GHz with 20 dBm UE max Tx power
+[Qualcomm, R4-2016601]</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th>ACIR [dB]</th>
+<th>30</th>
+<th>29</th>
+<th>28</th>
+<th>27</th>
+<th>26</th>
+<th>25</th>
+<th>24</th>
+<th>23</th>
+<th>22</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Average throughput loss (7 GHz)</td>
+<td>0.4%</td>
+<td>0.5%</td>
+<td>0.6%</td>
+<td>0.8%</td>
+<td>0.9%</td>
+<td>1.0%</td>
+<td>1.2%</td>
+<td>1.5%</td>
+<td>1.8%</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss (7 GHz)</td>
+<td>0.8%</td>
+<td>1.2%</td>
+<td>1.6%</td>
+<td>1.8%</td>
+<td>2.2%</td>
+<td>2.5%</td>
+<td>3.4%</td>
+<td>4.2%</td>
+<td>5.0%</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.1.2-4: ACIR results at 10 GHz with 20 dBm UE max Tx power
+[Qualcomm, R4-2016601]</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr>
+<th>ACIR [dB]</th>
+<th>30</th>
+<th>29</th>
+<th>28</th>
+<th>27</th>
+<th>26</th>
+<th>25</th>
+<th>24</th>
+<th>23</th>
+<th>22</th>
+<th>21</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Average throughput loss (10 GHz)</td>
+<td>0.3%</td>
+<td>0.4%</td>
+<td>0.5%</td>
+<td>0.6%</td>
+<td>0.7%</td>
+<td>0.8%</td>
+<td>1.0%</td>
+<td>1.2%</td>
+<td>1.4%</td>
+<td>1.6%</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss (10 GHz)</td>
+<td>0.8%</td>
+<td>1.2%</td>
+<td>1.4%</td>
+<td>1.8%</td>
+<td>2.1%</td>
+<td>2.3%</td>
+<td>3.2%</td>
+<td>4.0%</td>
+<td>4.7%</td>
+<td>5.6%</td>
+</tr>
+</tbody>
+</table>
+<p>Based on the above simulation results, the required UL ACIR for
+6.425-7.125GHz and 10.0-10.5 GHz for urban macro scenarios are
+summarized in Table 4.3.1.2-5.</p>
+<p>Table 4.3.1.2-5: UL simulation results for 6.425 - 7.125 GHz and 10.0
+- 10.5 GHz</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 25%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="2">ACIR (dB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Company</td>
+<td>6.425 - 7.125 GHz</td>
+<td>10.0 - 10.5 GHz</td>
+</tr>
+<tr>
+<td>Urban macro uncoord.</td>
+<td>Urban Macro uncoord.</td>
+</tr>
+<tr>
+<td>CATT</td>
+<td>26</td>
+<td>26.2</td>
+</tr>
+<tr>
+<td>Nokia</td>
+<td>26.9</td>
+<td>25.9</td>
+</tr>
+<tr>
+<td>Huawei</td>
+<td>27.9</td>
+<td>25.9</td>
+</tr>
+<tr>
+<td>Ericsson</td>
+<td>27</td>
+<td>23</td>
+</tr>
+<tr>
+<td>ZTE</td>
+<td>27.9</td>
+<td>24.9</td>
+</tr>
+<tr>
+<td>Qualcomm</td>
+<td>22 (Note 1)</td>
+<td>22 / 21.5(Note 1, 2)</td>
+</tr>
+<tr>
+<td>Average value</td>
+<td>26.3</td>
+<td>24.6</td>
+</tr>
+<tr>
+<td>Average after removing highest and lowest values</td>
+<td>27</td>
+<td>24.9</td>
+</tr>
+<tr>
+<td colspan="3"><p>Note 1: 3 UL UEs are assumed, where the same antenna
+gain derived by the BS beam forming pattern modelling described in
+clause 8.1.1 is used for all UEs.</p>
+<p>Note 2: 22 with 23 dBm UE maximum Tx power and 21.5 with 20 dBm UE
+maximum Tx power.</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="indoor-scenario">4.3.2 Indoor scenario</h3>
+<h4 id="downlink-1">4.3.2.1 Downlink</h4>
+<p>For indoor scenarios, simulation results for DL throughput loss with
+baseline assumption ACLR = 45 dBc at BS and ACS = 33 dBc at UE are
+summarized in Table 4.3.2.1-1/1a/2/2a/3/3a/4/4a.</p>
+<p>Table 4.3.2.1-1: DL throughput loss of victim UE for 6425 – 7125 MHz
+with omni antenna [Relative ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 23%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Company</th>
+<th rowspan="2">Simulation scenarios</th>
+<th rowspan="2">Throughput loss</th>
+<th colspan="6">Relative ACIR offset</th>
+</tr>
+<tr>
+<th>0</th>
+<th>-1</th>
+<th>-2</th>
+<th>-3</th>
+<th>-4</th>
+<th>-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">ZTE</td>
+<td rowspan="2">Omni based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.1371</td>
+<td>0.1724</td>
+<td>0.2168</td>
+<td>0.2726</td>
+<td>0.3425</td>
+<td>0.4302</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.1429</td>
+<td>0.1798</td>
+<td>0.2263</td>
+<td>0.2847</td>
+<td>0.3123</td>
+<td>0.3427</td>
+</tr>
+<tr>
+<td rowspan="2">Nokia</td>
+<td rowspan="2">Omni based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.13</td>
+<td>0.17</td>
+<td>0.21</td>
+<td>0.26</td>
+<td>0.33</td>
+<td>0.41</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.07</td>
+<td>0.09</td>
+<td>0.11</td>
+<td>0.14</td>
+<td>0.20</td>
+<td>0.33</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.1-1a: DL throughput loss of victim UE for 6425 – 7125 MHz
+with omni antenna [Absolute ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 8%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>ACIR (dB)</th>
+<th>26</th>
+<th>25</th>
+<th>24</th>
+<th>23</th>
+<th>22</th>
+<th>21</th>
+<th>20</th>
+<th>19</th>
+<th>18</th>
+<th>17</th>
+<th>16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ericsson</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.8</td>
+<td>2.2</td>
+<td>2.8</td>
+<td>3.5</td>
+<td>4.3</td>
+<td>5.4</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.9</td>
+<td>1.1</td>
+<td>1.4</td>
+<td>1.8</td>
+<td>2.3</td>
+<td>2.8</td>
+</tr>
+<tr>
+<td rowspan="2">CATT</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.198061</td>
+<td>3.945391</td>
+<td>4.852136</td>
+<td>5.946106</td>
+<td>7.258307</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.970774</td>
+<td>2.470131</td>
+<td>3.106864</td>
+<td>3.901198</td>
+<td>4.918388</td>
+</tr>
+<tr>
+<td rowspan="2">Qualcomm</td>
+<td>Throughput lost at Average</td>
+<td>0.59</td>
+<td>0.76</td>
+<td>0.9</td>
+<td>1.1</td>
+<td>1.4</td>
+<td>1.8</td>
+<td>2.3</td>
+<td>2.9</td>
+<td>3.6</td>
+<td>4.4</td>
+<td>5.4</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>0.31</td>
+<td>0.39</td>
+<td>0.44</td>
+<td>0.53</td>
+<td>0.66</td>
+<td>0.8</td>
+<td>1.1</td>
+<td>1.4</td>
+<td>1.9</td>
+<td>2.5</td>
+<td>3.1</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.1-2: DL throughput loss of victim UE for 6425 – 7125 MHz
+with AAS antenna [Relative ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 24%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Company</th>
+<th rowspan="2">Simulation scenarios</th>
+<th rowspan="2">Throughput loss</th>
+<th colspan="6">Relative ACIR offset</th>
+</tr>
+<tr>
+<th>0</th>
+<th>-1</th>
+<th>-2</th>
+<th>-3</th>
+<th>-4</th>
+<th>-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">ZTE</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.3043</td>
+<td>0.3817</td>
+<td>0.4775</td>
+<td>0.5947</td>
+<td>0.7378</td>
+<td>0.9123</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.0054</td>
+<td>0.0067</td>
+<td>0.0085</td>
+<td>0.0107</td>
+<td>0.0135</td>
+<td>0.1421</td>
+</tr>
+<tr>
+<td rowspan="2">Huawei</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.15</td>
+<td></td>
+<td>0.30</td>
+<td></td>
+<td>0.36</td>
+<td></td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.02</td>
+<td></td>
+<td>0.06</td>
+<td></td>
+<td>0.07</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">Nokia</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.27</td>
+<td>0.33</td>
+<td>0.42</td>
+<td>0.52</td>
+<td>0.65</td>
+<td>0.81</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.05</td>
+<td>0.06</td>
+<td>0.08</td>
+<td>0.10</td>
+<td>0.12</td>
+<td>0.16</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.1-2a: DL throughput loss of victim UE for 6425 – 7125 MHz
+with AAS antenna [Absolute ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 7%" />
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>ACIR (dB)</th>
+<th>26</th>
+<th>25</th>
+<th>24</th>
+<th>23</th>
+<th>22</th>
+<th>21</th>
+<th>20</th>
+<th>19</th>
+<th>18</th>
+<th>17</th>
+<th>16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ericsson</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">CATT</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.311783</td>
+<td>5.036284</td>
+<td>5.868329</td>
+<td>6.803309</td>
+<td>7.846610</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.988785</td>
+<td>1.284747</td>
+<td>1.673493</td>
+<td>2.221040</td>
+<td>2.921901</td>
+</tr>
+<tr>
+<td rowspan="2">Qualcomm</td>
+<td>Throughput lost at Average</td>
+<td>1.27</td>
+<td>1.57</td>
+<td>1.88</td>
+<td>2.27</td>
+<td>2.72</td>
+<td>3.24</td>
+<td>3.87</td>
+<td>4.52</td>
+<td>5.29</td>
+<td>6.16</td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>0.17</td>
+<td>0.26</td>
+<td>0.34</td>
+<td>0.46</td>
+<td>0.60</td>
+<td>0.77</td>
+<td>1</td>
+<td>1.2</td>
+<td>1.6</td>
+<td>1.9</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.1-3: DL throughput loss of victim UE for 10 - 10.5 GHz
+with omni antenna [Relative ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 23%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Company</th>
+<th rowspan="2">Simulation scenarios</th>
+<th rowspan="2">Throughput loss</th>
+<th colspan="6">Relative ACIR offset</th>
+</tr>
+<tr>
+<th>0</th>
+<th>-1</th>
+<th>-2</th>
+<th>-3</th>
+<th>-4</th>
+<th>-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">ZTE</td>
+<td rowspan="2">Omni based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.1561</td>
+<td>0.1956</td>
+<td>0.2447</td>
+<td>0.3058</td>
+<td>0.3815</td>
+<td>0.4750</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.1096</td>
+<td>0.1380</td>
+<td>0.1736</td>
+<td>0.2369</td>
+<td>0.3323</td>
+<td>0.4823</td>
+</tr>
+<tr>
+<td rowspan="2">Nokia</td>
+<td rowspan="2">Omni based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.13</td>
+<td>0.17</td>
+<td>0.21</td>
+<td>0.26</td>
+<td>0.33</td>
+<td>0.41</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.09</td>
+<td>0.11</td>
+<td>0.13</td>
+<td>0.16</td>
+<td>0.19</td>
+<td>0.23</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.1-3a: DL throughput loss of victim UE for 10 - 10.5 GHz
+with omni antenna [Absolute ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>ACIR (dB)</th>
+<th>26</th>
+<th>25</th>
+<th>24</th>
+<th>23</th>
+<th>22</th>
+<th>21</th>
+<th>20</th>
+<th>19</th>
+<th>18</th>
+<th>17</th>
+<th>16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ericsson</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.8</td>
+<td>2.2</td>
+<td>2.8</td>
+<td>3.5</td>
+<td>4.3</td>
+<td>5.4</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.9</td>
+<td>1.1</td>
+<td>1.4</td>
+<td>1.8</td>
+<td>2.3</td>
+<td>2.8</td>
+</tr>
+<tr>
+<td rowspan="2">CATT</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.122018</td>
+<td>3.855086</td>
+<td>4.745063</td>
+<td>5.820303</td>
+<td>7.109105</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.938403</td>
+<td>2.462824</td>
+<td>3.109281</td>
+<td>3.943454</td>
+<td>4.927987</td>
+</tr>
+<tr>
+<td rowspan="2">Qualcomm</td>
+<td>Throughput lost at Average</td>
+<td>0.59</td>
+<td>0.76</td>
+<td>0.94</td>
+<td>1.18</td>
+<td>1.4</td>
+<td>1.85</td>
+<td>2.3</td>
+<td>2.9</td>
+<td>3.6</td>
+<td>4.46</td>
+<td>5.4</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>0.5</td>
+<td>0.66</td>
+<td>0.7</td>
+<td>0.83</td>
+<td>0.9</td>
+<td>1.18</td>
+<td>1.4</td>
+<td>1.9</td>
+<td>2.4</td>
+<td>3.0</td>
+<td>3.72</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.1-4a: DL throughput loss of victim UE for 10 - 10.5 GHz
+[Relative ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 14%" />
+<col style="width: 25%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Company</th>
+<th rowspan="2">Simulation scenarios</th>
+<th rowspan="2">Throughput loss</th>
+<th colspan="6">Relative ACIR offset</th>
+</tr>
+<tr>
+<th>0</th>
+<th>-1</th>
+<th>-2</th>
+<th>-3</th>
+<th>-4</th>
+<th>-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">ZTE</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.3188</td>
+<td>0.3979</td>
+<td>0.4950</td>
+<td>0.6133</td>
+<td>0.7587</td>
+<td>0.9337</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.0481</td>
+<td>0.0553</td>
+<td>0.0645</td>
+<td>0.0760</td>
+<td>0.0969</td>
+<td>0.1978</td>
+</tr>
+<tr>
+<td rowspan="2">Huawei</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.13</td>
+<td></td>
+<td>0.21</td>
+<td></td>
+<td>0.32</td>
+<td></td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.01</td>
+<td></td>
+<td>0.07</td>
+<td></td>
+<td>0.09</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">Nokia</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.27</td>
+<td>0.34</td>
+<td>0.43</td>
+<td>0.54</td>
+<td>0.67</td>
+<td>0.82</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>0.01</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.1-4b: DL throughput loss of victim UE for 6425 – 7125 MHz
+with AAS antenna [Absolute ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>ACIR (dB)</th>
+<th>26</th>
+<th>25</th>
+<th>24</th>
+<th>23</th>
+<th>22</th>
+<th>21</th>
+<th>20</th>
+<th>19</th>
+<th>18</th>
+<th>17</th>
+<th>16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ericsson</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">CATT</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.235205</td>
+<td>4.964440</td>
+<td>5.793027</td>
+<td>6.735404</td>
+<td>7.788678</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.414406</td>
+<td>1.703417</td>
+<td>2.085369</td>
+<td>2.595632</td>
+<td>3.227734</td>
+</tr>
+<tr>
+<td rowspan="2">Qualcomm</td>
+<td>Throughput lost at Average</td>
+<td>1.2</td>
+<td>1.5</td>
+<td>1.8</td>
+<td>2.2</td>
+<td>2.6</td>
+<td>3.1</td>
+<td>3.8</td>
+<td>4.4</td>
+<td>5.2</td>
+<td>6.0</td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>0.26</td>
+<td>0.3</td>
+<td>0.307</td>
+<td>0.31</td>
+<td>0.312</td>
+<td>0.314</td>
+<td>0.4</td>
+<td>0.64</td>
+<td>0.93</td>
+<td>1.28</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Based on the above simulation results, the required DL ACIR for 6.425
+- 7.125 GHz and 10.0 - 10.5 GHz for indoor hotpot scenarios are in
+summarized in Table 4.3.2.1-5.</p>
+<p>Table 4.3.2.1-5: DL simulation results for 6.425 - 7.125 GHz and 10.0
+- 10.5 GHz</p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="6">DL simulations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td colspan="4">ACIR (dB) for Indoor</td>
+<td rowspan="4">Can we keep agreed BS ACLR (38-37) and UE ACS (32-31)
+for indoor?</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">6.425 - 7.125 GHz</td>
+<td colspan="2">10.0 - 10.5 GHz</td>
+</tr>
+<tr>
+<td>ACIR for macro BS</td>
+<td colspan="2">31.0</td>
+<td colspan="2">30.0</td>
+</tr>
+<tr>
+<td></td>
+<td>Omni</td>
+<td>AAS</td>
+<td>Omni</td>
+<td>AAS</td>
+</tr>
+<tr>
+<td>CATT</td>
+<td>18</td>
+<td>20</td>
+<td>18</td>
+<td>19</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Huawei</td>
+<td></td>
+<td>&lt;25.9</td>
+<td></td>
+<td>&lt;25.9</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Nokia</td>
+<td>&lt;ACIR - 5</td>
+<td>&lt;ACIR – 5</td>
+<td>&lt;ACIR - 5</td>
+<td>&lt;ACIR - 5</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>ZTE</td>
+<td>&lt;ACIR – 5</td>
+<td>&lt;ACIR - 5</td>
+<td>&lt;ACIR – 5</td>
+<td>&lt;ACIR - 5</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Ericsson</td>
+<td>17</td>
+<td></td>
+<td>17</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Qualcomm</td>
+<td>16</td>
+<td>18</td>
+<td>16</td>
+<td>18</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h4 id="uplink-1">4.3.2.2 Uplink</h4>
+<p>For indoor scenarios, simulation results for UL throughput loss with
+baseline assumption ACLR = 30 dBc at UE and ACS = 46 dBc at BS are
+summarized in Table 4.3.2.2-1/1a/2/2a/3/3a/4/4a.</p>
+<p>Table 4.3.2.2-1: UL throughput loss of victim BS for 6425 – 7125 MHz
+with omni antenna [Relative ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 23%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Company</th>
+<th rowspan="2">Simulation scenarios</th>
+<th rowspan="2">Throughput loss</th>
+<th colspan="6">Relative ACIR offset</th>
+</tr>
+<tr>
+<th>0</th>
+<th>-1</th>
+<th>-2</th>
+<th>-3</th>
+<th>-4</th>
+<th>-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">ZTE</td>
+<td rowspan="2">Omni based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.1433</td>
+<td>0.1794</td>
+<td>0.2245</td>
+<td>0.2805</td>
+<td>0.3499</td>
+<td>0.4356</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.0078</td>
+<td>0.0098</td>
+<td>0.0123</td>
+<td>0.0155</td>
+<td>0.0212</td>
+<td>0.0246</td>
+</tr>
+<tr>
+<td rowspan="2">Nokia</td>
+<td rowspan="2">Omni based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.30</td>
+<td>0.37</td>
+<td>0.46</td>
+<td>0.58</td>
+<td>0.73</td>
+<td>0.91</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.05</td>
+<td>0.08</td>
+<td>0.10</td>
+<td>0.12</td>
+<td>0.19</td>
+<td>0.27</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.2-1a: UL throughput loss of victim BS for 6425 – 7125 MHz
+with omni antenna [Absolute ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>ACIR (dB)</th>
+<th>21</th>
+<th>20</th>
+<th>19</th>
+<th>18</th>
+<th>17</th>
+<th>16</th>
+<th>15</th>
+<th>14</th>
+<th>13</th>
+<th>12</th>
+<th>11</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ericsson</td>
+<td>Throughput lost at Average</td>
+<td>1.8</td>
+<td>2.2</td>
+<td>2.8</td>
+<td>3.5</td>
+<td>4.3</td>
+<td>5.3</td>
+<td>6.6</td>
+<td>8.1</td>
+<td>9.9</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>1.2</td>
+<td>1.5</td>
+<td>1.9</td>
+<td>2.4</td>
+<td>3.1</td>
+<td>3.9</td>
+<td>4.8</td>
+<td>5.8</td>
+<td>7.4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">CATT</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td>2.392580</td>
+<td>2.954531</td>
+<td>3.639646</td>
+<td>4.471517</td>
+<td>5.476805</td>
+<td>6.684997</td>
+<td>8.127856</td>
+<td>9.843106</td>
+<td>11.858804</td>
+<td>14.204583</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td>1.391922</td>
+<td>1.752115</td>
+<td>2.163126</td>
+<td>2.636267</td>
+<td>3.216128</td>
+<td>3.893275</td>
+<td>4.758722</td>
+<td>6.027059</td>
+<td>7.603577</td>
+<td>9.503131</td>
+</tr>
+<tr>
+<td rowspan="2">Qualcomm</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td>2.5</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>6.0</td>
+<td>7.0</td>
+<td>8.5</td>
+<td>11.0</td>
+<td>13.0</td>
+<td>15.0</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td>0.8</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>1.8</td>
+<td>2.0</td>
+<td>2.5</td>
+<td>3.0</td>
+<td>4.5</td>
+<td>5.5</td>
+<td>6.5</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.2-2: UL throughput loss of victim BS for 6425 – 7125 MHz
+with AAS antenna [Relative ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 23%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Company</th>
+<th rowspan="2">Simulation scenarios</th>
+<th rowspan="2">Throughput loss</th>
+<th colspan="6">Relative ACIR offset</th>
+</tr>
+<tr>
+<th>0</th>
+<th>-1</th>
+<th>-2</th>
+<th>-3</th>
+<th>-4</th>
+<th>-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">ZTE</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.1414</td>
+<td>0.1770</td>
+<td>0.2211</td>
+<td>0.2759</td>
+<td>0.3437</td>
+<td>0.4275</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.0033</td>
+<td>0.0042</td>
+<td>0.0053</td>
+<td>0.0378</td>
+<td>0.0880</td>
+<td>0.1511</td>
+</tr>
+<tr>
+<td rowspan="2">Nokia</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.16</td>
+<td>0.20</td>
+<td>0.24</td>
+<td>0.30</td>
+<td>0.38</td>
+<td>0.47</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.04</td>
+<td>0.05</td>
+<td>0.07</td>
+<td>0.08</td>
+<td>0.10</td>
+<td>0.13</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.2-2a: UL throughput loss of victim BS for 6425 – 7125 MHz
+with AAS antenna [Absolute ACIR value]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 13%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>ACIR (dB)</th>
+<th>21</th>
+<th>20</th>
+<th>19</th>
+<th>18</th>
+<th>17</th>
+<th>16</th>
+<th>15</th>
+<th>14</th>
+<th>13</th>
+<th>12</th>
+<th>11</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ericsson</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">CATT</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.165202</td>
+<td>3.814549</td>
+<td>4.575053</td>
+<td>5.458766</td>
+<td>6.477323</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.151940</td>
+<td>2.644977</td>
+<td>3.314275</td>
+<td>4.158239</td>
+<td>5.164969</td>
+</tr>
+<tr>
+<td rowspan="2">Qualcomm</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td>2.0</td>
+<td>2.5</td>
+<td>3</td>
+<td>3.5</td>
+<td>4.5</td>
+<td>5.0</td>
+<td>5.5</td>
+<td>7.5</td>
+<td>9.0</td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td>0.7</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>1.8</td>
+<td>2.0</td>
+<td>2.4</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>5.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.2-3: UL throughput loss of victim BS for 10 - 10.5 GHz
+with omni antenna [Relative ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 14%" />
+<col style="width: 23%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Company</th>
+<th rowspan="2">Simulation scenarios</th>
+<th rowspan="2">Throughput loss</th>
+<th colspan="6">Relative ACIR offset</th>
+</tr>
+<tr>
+<th>0</th>
+<th>-1</th>
+<th>-2</th>
+<th>-3</th>
+<th>-4</th>
+<th style="text-align: center;">-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">ZTE</td>
+<td rowspan="2">Omni based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.1510</td>
+<td>0.1892</td>
+<td>0.2367</td>
+<td>0.2957</td>
+<td>0.3689</td>
+<td style="text-align: center;">0.4593</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.0214</td>
+<td>0.0347</td>
+<td>0.0362</td>
+<td>0.0382</td>
+<td>0.0407</td>
+<td style="text-align: center;">0.1147</td>
+</tr>
+<tr>
+<td rowspan="2">Nokia</td>
+<td rowspan="2">Omni based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.30</td>
+<td>0.38</td>
+<td>0.47</td>
+<td>0.59</td>
+<td>0.74</td>
+<td style="text-align: center;">0.92</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.07</td>
+<td>0.09</td>
+<td>0.12</td>
+<td>0.19</td>
+<td>0.37</td>
+<td style="text-align: center;">0.59</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.2-3a: UL throughput loss of victim BS for 10 - 10.5 GHz
+with omni antenna [Absolute ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>ACIR (dB)</th>
+<th>21</th>
+<th>20</th>
+<th>19</th>
+<th>18</th>
+<th>17</th>
+<th>16</th>
+<th>15</th>
+<th>14</th>
+<th>13</th>
+<th>12</th>
+<th>11</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ericsson</td>
+<td>Throughput lost at Average</td>
+<td>1.8</td>
+<td>2.2</td>
+<td>2.8</td>
+<td>3.5</td>
+<td>4.3</td>
+<td>5.3</td>
+<td>6.6</td>
+<td>8.1</td>
+<td>9.9</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td>1.2</td>
+<td>1.5</td>
+<td>1.9</td>
+<td>2.4</td>
+<td>3.1</td>
+<td>3.9</td>
+<td>4.8</td>
+<td>5.8</td>
+<td>7.4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">CATT</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td>2.260160</td>
+<td>2.793478</td>
+<td>3.445105</td>
+<td>4.238153</td>
+<td>5.198868</td>
+<td>6.356444</td>
+<td>7.742539</td>
+<td>9.400835</td>
+<td>11.352258</td>
+<td>13.623966</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td>1.537452</td>
+<td>1.949692</td>
+<td>2.435648</td>
+<td>2.994580</td>
+<td>3.642921</td>
+<td>4.428238</td>
+<td>5.338709</td>
+<td>6.554238</td>
+<td>8.002240</td>
+<td>9.693387</td>
+</tr>
+<tr>
+<td rowspan="2">Qualcomm</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td>2.5</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>6.0</td>
+<td>7.0</td>
+<td>9</td>
+<td>11.0</td>
+<td>13.0</td>
+<td>15.0</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td>0.8</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>1.8</td>
+<td>2.2</td>
+<td>2.5</td>
+<td>3.5</td>
+<td>5</td>
+<td>5.5</td>
+<td>7.0</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.2-4: UL throughput loss of victim BS for 10 - 10.5 GHz
+with AAS antenna [Relative ACIR value]</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 23%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Company</th>
+<th rowspan="2">Simulation scenarios</th>
+<th rowspan="2">Throughput loss</th>
+<th colspan="6">Relative ACIR offset</th>
+</tr>
+<tr>
+<th>0</th>
+<th>-1</th>
+<th>-2</th>
+<th>-3</th>
+<th>-4</th>
+<th>-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">ZTE</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.1536</td>
+<td>0.1920</td>
+<td>0.2395</td>
+<td>0.2983</td>
+<td>0.3709</td>
+<td>0.4602</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.0900</td>
+<td>0.0904</td>
+<td>0.0910</td>
+<td>0.0918</td>
+<td>0.0927</td>
+<td>0.0938</td>
+</tr>
+<tr>
+<td rowspan="2">Nokia</td>
+<td rowspan="2">AAS based BS</td>
+<td>Average throughput loss in % (7 GHz)</td>
+<td>0.16</td>
+<td>0.20</td>
+<td>0.25</td>
+<td>0.31</td>
+<td>0.38</td>
+<td>0.48</td>
+</tr>
+<tr>
+<td>5%-tile throughput loss in % (7 GHz)</td>
+<td>0.00</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>0.02</td>
+<td>0.02</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4.3.2.2-4a: UL throughput loss of victim BS for 10 - 10.5 GHz
+with AAS antenna [Absolute ACIR value]</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 13%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>ACIR (dB)</th>
+<th>21</th>
+<th>20</th>
+<th>19</th>
+<th>18</th>
+<th>17</th>
+<th>16</th>
+<th>15</th>
+<th>14</th>
+<th>13</th>
+<th>12</th>
+<th>11</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ericsson</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">CATT</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.302668</td>
+<td>3.975666</td>
+<td>4.761144</td>
+<td>5.670780</td>
+<td>6.715829</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.197258</td>
+<td>2.860650</td>
+<td>3.679917</td>
+<td>4.658938</td>
+<td>5.877432</td>
+</tr>
+<tr>
+<td rowspan="2">Qualcomm</td>
+<td>Throughput lost at Average</td>
+<td></td>
+<td>2.0</td>
+<td>2.5</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>4.5</td>
+<td>5.0</td>
+<td>6.0</td>
+<td>7.5</td>
+<td>9.0</td>
+<td>10.5</td>
+</tr>
+<tr>
+<td>Throughput lost at 5%-tile</td>
+<td></td>
+<td>0.5</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>1.8</td>
+<td>2.0</td>
+<td>2.4</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>4.8</td>
+<td>5.5</td>
+</tr>
+</tbody>
+</table>
+<p>Based on the above simulation results, the required UL ACIR for
+6.425-7.125GHz and 10.0-10.5 GHz for indoor hotpot scenarios are in
+summarized in Table 4.3.2.1-5.</p>
+<p>Table 4.3.2.2-5: UL simulation results for 6.425 - 7.125 GHz and 10.0
+- 10.5 GHz</p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="6">UL simulations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td colspan="4">ACIR (dB) for Indoor</td>
+<td rowspan="4">Can we keep agreed UE ACLR (26-24) and BS ACS (42-40)
+for indoor?</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">6.425-7.125GHz</td>
+<td colspan="2">10.0-10.5GHz</td>
+</tr>
+<tr>
+<td>Macro urban</td>
+<td colspan="2">25.9</td>
+<td colspan="2">23.9</td>
+</tr>
+<tr>
+<td></td>
+<td>Omni</td>
+<td>AAS</td>
+<td>Omni</td>
+<td>AAS</td>
+</tr>
+<tr>
+<td>CATT</td>
+<td>17</td>
+<td>13</td>
+<td>17</td>
+<td>13</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Huawei</td>
+<td></td>
+<td>&lt;23.9</td>
+<td></td>
+<td>&lt;23.9</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Nokia</td>
+<td>&lt;ACIR - 5</td>
+<td>&lt;ACIR - 5</td>
+<td>&lt;ACIR – 5</td>
+<td>&lt;ACIR - 5</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>ZTE</td>
+<td>&lt;ACIR – 5</td>
+<td>&lt;ACIR – 5</td>
+<td>&lt;ACIR - 5</td>
+<td>&lt;ACIR - 5</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Ericsson</td>
+<td>17</td>
+<td></td>
+<td>17</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Qualcomm</td>
+<td>17</td>
+<td>15</td>
+<td>17</td>
+<td>15</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h1 id="general-parameters">5 General parameters</h1>
+<h2 id="duplex-mode">5.1 Duplex mode</h2>
+<p>For both frequency ranges, even if FDD is not precluded, it’s most
+likely that TDD should be used in these frequency ranges.</p>
+<h2 id="channel-bandwidth">5.2 Channel Bandwidth</h2>
+<p>A pragmatic, simple and non-ambiguous answers should be provided to
+ITU-R. While a number of channel bandwidth would be specified for these
+frequency ranges, 100 MHz has been considered as a representative
+channel bandwidth that will be used.</p>
+<h2 id="signal-bandwidth">5.3 Signal Bandwidth</h2>
+<p>The signal bandwidth for a 100 MHz channel bandwidth signal is
+calculated based on the NR spectrum utilization for 30 kHz SCS:</p>
+<p>Signal bandwidth = NRB x SCS x 12</p>
+<p>with N<sub>RB</sub>: Number of Resource block for 100 MHz channel
+bandwidth and 30kHz SCS, as specified in TS 38.104 [3].</p>
+<h1 id="bs-parameters">6 BS parameters</h1>
+<h2 id="transmitter-characteristics">6.1 Transmitter
+characteristics</h2>
+<h3 id="power-dynamic-range">6.1.1 Power dynamic range</h3>
+<p>There is no power control in downlink and fixed power per resource
+block is assumed in the co-existence simulation. Hence 0 dB power
+dynamic range was agreed for the LS reply.</p>
+<h3 id="spectral-mask">6.1.2 Spectral mask</h3>
+<p>Existing FR1 operating band unwanted emission mask is the same as for
+LTE (5 MHz ~ 20 MHz CBW). For both 6.425 - 7.125 GHz and 10.0 - 10.5 GHz
+band, it is foreseen the smaller channel bandwidth such as less than 50
+MHz CBW is less attractive. Hence the basic limits for OOB emission mask
+should be updated as below. It is agreed that it does not mean that 50
+MHz will be the minimum channel bandwidth when RAN4 specified the
+channel bandwidth and emission requirements.</p>
+<p>Table 6.1.2-1: Wide Area BS operating band unwanted emission limits
+for 6.425 - 7.125 GHz and 10.0 - 10.5 GHz for Category A</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 30%" />
+<col style="width: 35%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Frequency offset of measurement filter ‑3dB point, ∆f</th>
+<th>Frequency offset of measurement filter centre frequency,
+f_offset</th>
+<th>Basic limits</th>
+<th>Measurement bandwidth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 MHz ≤ ∆f &lt; 50 MHz</td>
+<td>0.05 MHz ≤ f_offset &lt; 50.05 MHz</td>
+<td><span class="math display">\[- 7dBm - \frac{7}{50}\left(
+\frac{f_{offset}}{MHz} - 0.05 \right)\]</span></td>
+<td>100 kHz</td>
+</tr>
+<tr>
+<td><p>50 MHz ≤ ∆f &lt;</p>
+<p>min(100 MHz, ∆f<sub>max</sub>)</p></td>
+<td><p>50.05 MHz ≤ f_offset &lt;</p>
+<p>min(100.05 MHz, f_offset<sub>max</sub>)</p></td>
+<td>-14 dBm</td>
+<td>100 kHz</td>
+</tr>
+<tr>
+<td>100 MHz ≤ ∆f ≤ ∆f<sub>max</sub></td>
+<td>100.5 MHz ≤ f_offset &lt; f_offset<sub>max</sub></td>
+<td>-13 dBm</td>
+<td>1MHz</td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.1.2-2: Wide Area BS operating band unwanted emission limits
+for 6.425 - 7.125 GHz and 10.0 - 10.5 GHz for Category B</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 30%" />
+<col style="width: 35%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Frequency offset of measurement filter ‑3dB point, ∆f</th>
+<th>Frequency offset of measurement filter centre frequency,
+f_offset</th>
+<th>Basic limits</th>
+<th>Measurement bandwidth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 MHz ≤ ∆f &lt; 50 MHz</td>
+<td>0.05 MHz ≤ f_offset &lt; 50.05 MHz</td>
+<td><span class="math display">\[- 7dBm - \frac{7}{50}\left(
+\frac{f_{offset}}{MHz} - 0.05 \right)\]</span></td>
+<td>100 kHz</td>
+</tr>
+<tr>
+<td><p>50 MHz ≤ ∆f &lt;</p>
+<p>min(100 MHz, ∆f<sub>max</sub>)</p></td>
+<td><p>50.05 MHz ≤ f_offset &lt;</p>
+<p>min(100.05 MHz, f_offset<sub>max</sub>)</p></td>
+<td>-14 dBm</td>
+<td>100 kHz</td>
+</tr>
+<tr>
+<td>100 MHz ≤ ∆f ≤ ∆f<sub>max</sub></td>
+<td>100.5 MHz ≤ f_offset &lt; f_offset<sub>max</sub></td>
+<td>-15 dBm</td>
+<td>1MHz</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aclr">6.1.3 ACLR</h3>
+<p>According to the simulation results in clause 4.3, it is agreed to
+specify 38 dB ACLR for 6.425 - 7.125 GHz and 37 dB ACLR for 10.0 - 10.5
+GHz.</p>
+<p>For 6425 – 7125 MHz and 10 - 10.5 GHz, the ACLR should be higher than
+the value specified in table 6.1.3‑1.</p>
+<p>Table 6.1.3-1: Base station ACLR limit</p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 20%" />
+<col style="width: 18%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>BS channel bandwidth of lowest/highest carrier transmitted
+BW<sub>Channel</sub> (MHz)</th>
+<th>BS adjacent channel centre frequency offset below the lowest or
+above the highest carrier centre frequency transmitted</th>
+<th>Assumed adjacent channel carrier (informative)</th>
+<th>Filter on the adjacent channel frequency and corresponding filter
+bandwidth</th>
+<th>ACLR limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">20, 25, 30, 40, 50, 60, 70, 80, 90,100</td>
+<td>BW<sub>Channel</sub></td>
+<td>NR of same BW (Note 2)</td>
+<td>Square (BW<sub>Config</sub>)</td>
+<td><p>38 dB for 6425-7125 MHz</p>
+<p>37 dB for 10-10.5 GHz</p></td>
+</tr>
+<tr>
+<td>2 x BW<sub>Channel</sub></td>
+<td>NR of same BW (Note 2)</td>
+<td>Square (BW<sub>Config</sub>)</td>
+<td><p>38 dB for 6425-7125 MHz</p>
+<p>37 dB for 10-10.5 GHz</p></td>
+</tr>
+<tr>
+<td colspan="5"><p>NOTE 1: BW<sub>Channel</sub> and BW<sub>Config</sub>
+are the BS channel bandwidth and transmission bandwidth configuration of
+the lowest/highest carrier transmitted on the assigned channel
+frequency.</p>
+<p>NOTE 2: With SCS that provides largest transmission bandwidth
+configuration (BW<sub>Config</sub>).</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="spurious-emissions">6.1.4 Spurious emissions</h3>
+<p>From the Rel-15 discussion, the offset Δf<sub>OBUE</sub> for the
+boundary between OBUE and spurious emissions is the most demanding
+parameters for OTA or Hybrid limits AAS BS. Based on the implementation
+evaluation and regulatory consideration, it is agreed to adopt
+Δf<sub>OBUE</sub> = 100 MHz for both 6.425 - 7.125 GHz and 10.0 - 10.5
+GHz.</p>
+<p>Regarding spurious emission requirements for 6.425 - 7.125 GHz, as
+this frequency range is still within FR1 band definition, it is agreed
+to reuse the existing spurious emission requirements defined in TS
+38.104 [3] and further update needed are to define upper frequency of Tx
+spurious emission to be 26 GHz instead of 5<sup>th</sup> harmonic of DL
+frequency according to ITU-R SM 329-10 [5] recommendation. The general
+spurious emissions for 6.425-7.125 GHz is defined in Table 6.1.4-1 and
+Table 6.1.4-3.</p>
+<p>Regarding spurious emission requirements for 10-10.5 GHz, according
+to ERC 74-01 report [6], the lower frequency limit could be defined as
+30 MHz. Without any specified spurious limit for AAS BS in between 6 and
+24 GHz in ERC 74-01 [6], in relation to the existing frequency ranges
+specified, with observations of the foreseen implementation of AAS BS
+and how they are to be deployed and used, the spurious limits specified
+for above 24 GHz with upper frequency limited to 26 GHz will be used for
+10.0-10.5 GHz as defined in Table 6.1.4-2 and Table 6.1.4-4.</p>
+<p>Table 6.1.4-1: BS spurious emission limits for 6.425 - 7.125 GHz for
+Category B</p>
+<table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 18%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr>
+<th>Spurious frequency range</th>
+<th>Basic limit</th>
+<th>Measurement bandwidth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9 kHz – 150 kHz</td>
+<td rowspan="3">-36 dBm</td>
+<td>1 kHz</td>
+</tr>
+<tr>
+<td>150 kHz – 30 MHz</td>
+<td>10 kHz</td>
+</tr>
+<tr>
+<td>30 MHz – 1 GHz</td>
+<td>100 kHz</td>
+</tr>
+<tr>
+<td>1 GHz – 26 GHz</td>
+<td>-30 dBm</td>
+<td>1 MHz</td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.1.4-2: BS spurious emission limits for 10 - 10.5 GHz for
+Category B</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 34%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th>Spurious frequency range</th>
+<th>Limit</th>
+<th>Measurement bandwidth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30 MHz – 1 GHz</td>
+<td>-36 dBm</td>
+<td>100 kHz</td>
+</tr>
+<tr>
+<td>1 GHz – 18 GHz</td>
+<td>-30 dBm</td>
+<td>1 MHz</td>
+</tr>
+<tr>
+<td>18 GHz – 26 GHz</td>
+<td>-20 dBm</td>
+<td>10 MHz</td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.1.4-3: BS spurious emission limits for 6.425 - 7.125 GHz for
+Category A</p>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th>Spurious frequency range</th>
+<th>Basic limit</th>
+<th>Measurement bandwidth</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9 kHz – 150 kHz</td>
+<td></td>
+<td>1 kHz</td>
+<td>Note 1</td>
+</tr>
+<tr>
+<td>150 kHz – 30 MHz</td>
+<td></td>
+<td>10 kHz</td>
+<td>Note 1</td>
+</tr>
+<tr>
+<td>30 MHz – 1 GHz</td>
+<td></td>
+<td>100 kHz</td>
+<td>Note 1</td>
+</tr>
+<tr>
+<td>1 GHz 12.75 GHz</td>
+<td>-13 dBm</td>
+<td>1 MHz</td>
+<td>Note 1, Note 2</td>
+</tr>
+<tr>
+<td>12.75 GHz – 5<sup>th</sup> harmonic of the upper frequency edge of
+the DL operating band in GHz</td>
+<td></td>
+<td>1 MHz</td>
+<td>Note 1, Note 2, Note 3</td>
+</tr>
+<tr>
+<td colspan="4"><p>NOTE 1: Measurement bandwidths as in ITU-R SM.329,
+s4.1.</p>
+<p>NOTE 2: Upper frequency as in ITU-R SM.329, s2.5 table 1.</p>
+<p>NOTE 3: This spurious frequency range applies only for operating
+bands for which the 5<sup>th</sup> harmonic of the upper frequency edge
+of the DL operating band is reaching beyond 12.75 GHz.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.1.4-4: BS spurious emission limits for 10 - 10.5 GHz for
+Category A</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 24%" />
+<col style="width: 16%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>Frequency range</th>
+<th>Limit</th>
+<th>Measurement Bandwidth</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30 MHz – 1 GHz</td>
+<td rowspan="2">-13 dBm</td>
+<td>100 kHz</td>
+<td>Note 1</td>
+</tr>
+<tr>
+<td>1 GHz – 2<sup>nd</sup> harmonic of the upper frequency edge of the
+DL operating band</td>
+<td>1 MHz</td>
+<td>Note 1, Note 2</td>
+</tr>
+<tr>
+<td colspan="4"><p>NOTE 1: Bandwidth as in ITU-R SM.329, s4.1</p>
+<p>NOTE 2: Upper frequency as in ITU-R SM.329, s2.5 table 1.</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="maximum-output-power">6.1.5 Maximum output power</h3>
+<p>The maximum output power will be provided in the antenna parameter
+table. It was agreed to be aligned with antenna characteristics.</p>
+<p>The Total Radiated Power for two polarizations was agreed as shown in
+table 6.1.5-1 below.</p>
+<p>Table 6.1.5-1: The Total Radiated Power</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 20%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Macro Sub-urban</th>
+<th>Macro Urban</th>
+<th>Micro Urban</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total Radiated Power for two polarizations (dBm)</td>
+<td>46</td>
+<td>46</td>
+<td>37</td>
+</tr>
+</tbody>
+</table>
+<h3 id="average-output-power">6.1.6 Average output power</h3>
+<p>It was agreed the average output power won’t be mentioned in the
+reply LS.</p>
+<h2 id="receiver-characteristics">6.2 Receiver characteristics</h2>
+<h3 id="noise-figure">6.2.1 Noise figure</h3>
+<p>From the TR 38.820 for 7 - 24 GHz, the typical Noise Figure for a
+Wide Area BS operating at 10 GHz is 7 dB (12 dB for Medium Range BS and
+15 dB for Local Area BS).</p>
+<p>Table 6.2.1-1: Typical noise figure for 7 – 24 GHz example
+frequencies</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 35%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr>
+<th>Example frequency (GHz)</th>
+<th>Typical NF values for NR BS (dB)</th>
+<th>Typical NF values for NR UE (dB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>7</td>
+<td>9</td>
+</tr>
+<tr>
+<td>15</td>
+<td>8</td>
+<td>10</td>
+</tr>
+<tr>
+<td>20</td>
+<td>9</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>For 6.425 - 7.125 GHz, the typical Noise Figure for a Wide Area BS
+operating at 7 GHz was agreed to be 6 dB (11 dB for Medium Range BS and
+14 dB for Local Area BS).</p>
+<h3 id="sensitivity">6.2.2 Sensitivity</h3>
+<p>As it is not clear if it will have a conducted sensitivity
+requirement for both frequency ranges, however the OTA sensitivity
+requirement will be needed either way and will be based on the NF and
+the antenna gain:</p>
+<p><span class="math inline">\(\ {EIS}_{REFSENS} = P_{kT} +
+10*\log_{10}(BW) + NF + IM + SNR - G\ \ \ \ (dBm)\)</span></p>
+<p>Where:</p>
+<p>- BW is the configured bandwidth of the FRC,</p>
+<p>- NF is the noise figure,</p>
+<p>- IM is implementation margin not related to antenna array,</p>
+<p>- SNR is the required SNR to reach 95% throughput, and</p>
+<p>- G is the antenna gain including RF losses and 3dB off peak
+margin.</p>
+<p>However, the sensitivity is not a critical parameter for sharing and
+compatibility studies. It was agreed to not mention any value for this
+parameter.</p>
+<h3 id="blocking-response">6.2.3 Blocking response</h3>
+<p>The in-band blocking requirement should apply from F<sub>UL,low</sub>
+- Δf<sub>OOB</sub> to F<sub>UL,high</sub> + Δf<sub>OOB</sub>, excluding
+the downlink frequency range of the FDD <em>operating band</em>. It is
+agreed to adopt Δf<sub>OOB</sub> = 100 MHz for both 6.425 - 7.125 GHz
+and 10.0 - 10.5 GHz. The in-band blocking levels are reused from
+existing FR1 requirements.</p>
+<p>Table 6.2.3-1: Base station general blocking requirement</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 17%" />
+<col style="width: 21%" />
+<col style="width: 18%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>BS channel bandwidth of the lowest/highest carrier received
+(MHz)</th>
+<th>Wanted signal mean power (dBm)</th>
+<th>Interfering signal mean power (dBm)</th>
+<th>Interfering signal centre frequency minimum offset from the
+lower/upper Base Station RF Bandwidth edge or sub-block edge inside a
+sub-block gap (MHz)</th>
+<th>Type of interfering signal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20, 25, 30, 40, 50, 60, 70, 80, 90, 100</td>
+<td>P<sub>REFSENS</sub> + 6 dB</td>
+<td><p>Wide Area BS: -43</p>
+<p>Medium Range BS: -38</p>
+<p>Local Area BS: -35</p></td>
+<td>±30</td>
+<td><p>20 MHz DFT-s-OFDM NR signal</p>
+<p>15 kHz SCS, 100 RBs</p></td>
+</tr>
+<tr>
+<td colspan="5">NOTE: P<sub>REFSENS</sub> depends on the RAT.</td>
+</tr>
+</tbody>
+</table>
+<p>The out-of-band blocking requirement apply from 1 MHz to
+F<sub>UL,low</sub> - Δf<sub>OOB</sub> and from F<sub>UL,high</sub> +
+Δf<sub>OOB</sub> up to 12750 MHz for FR1 bands. -15 dBm CW interfering
+signal is reused for out-of-band blocking for both 6.425-7.125GHz and
+10.0-10.5GHz.</p>
+<h3 id="acs">6.2.4 ACS</h3>
+<p>According to the simulation results in clause 4.3, it is agreed to
+specify 42 dB ACS for 6.425 - 7.125 GHz and 40 dB ACLR for 10.0 - 10.5
+GHz.</p>
+<h1 id="ue-parameters">7 UE parameters</h1>
+<h2 id="transmitter-characteristics-1">7.1 Transmitter
+characteristics</h2>
+<h3 id="power-dynamic-range-1">7.1.1 Power dynamic range</h3>
+<p>The minimum controlled output power of the UE is defined as the power
+in the channel bandwidth for all transmit bandwidth configurations
+(resource blocks), when the power is set to a minimum value. For
+existing FR1 bands, the minimum output power is -33 dBm for 100 MHz
+channel bandwidth. The minimum output power can be reused for both
+frequency ranges, 6.425 - 7.125 GHz and 10.0 - 10.5 GHz, i.e. power
+dynamic range is 56 dB for 100 MHz channel bandwidth.</p>
+<h3 id="spectral-mask-1">7.1.2 Spectral mask</h3>
+<p>The spectral mask for 6.425 - 7.125 GHz and 10.0 - 10.5 GHz is
+defined in below table which is relaxed general NR FR1 spectrum at the
+F<sub>OOB</sub> edge ± 0 – 5 MHz by 3 dB.</p>
+<p>Table 7.1.2-1: Spectrum emission mask for 6.425 - 7.125 GHz and 10.0
+- 10.5 GHz</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 7%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 7%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 7%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="11">Spectrum emission limit (dBm) / Channel bandwidth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Δf<sub>OOB</sub></p>
+<p>(MHz)</p></td>
+<td><p>20</p>
+<p>MHz</p></td>
+<td><p>25</p>
+<p>MHz</p></td>
+<td><p>30</p>
+<p>MHz</p></td>
+<td><p>40</p>
+<p>MHz</p></td>
+<td><p>50</p>
+<p>MHz</p></td>
+<td><p>60</p>
+<p>MHz</p></td>
+<td><p>70</p>
+<p>MHz</p></td>
+<td><p>80</p>
+<p>MHz</p></td>
+<td><p>90</p>
+<p>MHz</p></td>
+<td><p>100</p>
+<p>MHz</p></td>
+<td>Measurement bandwidth</td>
+</tr>
+<tr>
+<td>± 0-1</td>
+<td>-10</td>
+<td>-10</td>
+<td>-10</td>
+<td>-10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 % channel bandwidth</td>
+</tr>
+<tr>
+<td>± 0-1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>-21</td>
+<td>-21</td>
+<td>-21</td>
+<td>-21</td>
+<td>-21</td>
+<td>-21</td>
+<td>30 kHz</td>
+</tr>
+<tr>
+<td>± 1-5</td>
+<td>-7</td>
+<td>-7</td>
+<td>-7</td>
+<td>-7</td>
+<td>-7</td>
+<td>-7</td>
+<td>-7</td>
+<td>-7</td>
+<td>-7</td>
+<td>-7</td>
+<td>1 MHz</td>
+</tr>
+<tr>
+<td>± 5-6</td>
+<td>-13</td>
+<td>-13</td>
+<td>-13</td>
+<td>-13</td>
+<td>-13</td>
+<td>-13</td>
+<td>-13</td>
+<td>-13</td>
+<td>-13</td>
+<td>-13</td>
+<td></td>
+</tr>
+<tr>
+<td>± 6-10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 10-15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 15-20</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 20-25</td>
+<td>-25</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 25-30</td>
+<td></td>
+<td>-25</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 30-35</td>
+<td></td>
+<td></td>
+<td>-25</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 35-40</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 40-45</td>
+<td></td>
+<td></td>
+<td></td>
+<td>-25</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 45-50</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 50-55</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>-25</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 55-60</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 60-65</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>-25</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 65-70</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 70-75</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>-25</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 75-80</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 80-85</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>-25</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 85-90</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 90-95</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>-25</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 95-100</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>± 100-105</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>-25</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>For the last 5 MHz of UE SEM, it is agreed that we might revisit the
+value pending MRP definition in WI phase.</p>
+<h3 id="aclr-1">7.1.3 ACLR</h3>
+<p>According to the simulation results in clause 4.3, it is agreed to
+specify 26 dB ACLR for 6.425 - 7.125 GHz and 24 dB ACLR for 10.0 - 10.5
+GHz.</p>
+<h3 id="spurious-emissions-1">7.1.4 Spurious emissions</h3>
+<p>The general spurious emissions defined in TS 38.101-1 [4] clause
+6.5.3.1 can apply to both frequency ranges, 6.425 - 7.125 GHz and 10.0 -
+10.5 GHz.</p>
+<p>- 30 MHz ≤ f ≤ 1 GHz: - 36 dBm / 100 kHz</p>
+<p>- 1 GHz ≤ f ≤ 26 GHz: - 30 dBm / 1 MHz</p>
+<h3 id="maximum-output-power-1">7.1.5 Maximum output power</h3>
+<p>TR 38.820 indicates that 23 dBm is feasible at 10 - 10.5 GHz and this
+is an assumption for co-existence analysis. Hence the UE maximum output
+power for the considered frequency ranges could be 23 dBm. Other UE
+power classes are not precluded for both frequency ranges, 6.425 - 7.125
+GHz and 10.0 - 10.5 GHz.</p>
+<h3 id="average-output-power-1">7.1.6 Average output power</h3>
+<p>It was agreed the average output power won’t be mentioned in the
+reply LS to WP5D.</p>
+<h2 id="receiver-characteristics-1">7.2 Receiver characteristics</h2>
+<h3 id="noise-figure-1">7.2.1 Noise figure</h3>
+<p>The noise figure of 9 dB is the baseline assumption and 13 dB is the
+optional assumption for co-existence study for 6425 – 7125 MHz and 10 -
+10.5 GHz.</p>
+<p>A noise figure in the [9, 13] dB interval was finally agreed for
+reporting to ITU WP5D sharing studies. Note that the noise figure value
+in [9, 13] dB interval should be used only for WP5D response. The actual
+noise figure to be used to define RF requirements should be further
+studied in the WI phase.</p>
+<h3 id="sensitivity-1">7.2.2. Sensitivity</h3>
+<p>The sensitivity is not a critical parameter for sharing and
+compatibility studies. It was agreed to not mention any value for this
+parameter.</p>
+<h3 id="blocking-response-1">7.2.3 Blocking response</h3>
+<p>The blocking characteristic specified in clause 7.6 of TS 38.101-1
+[4] for frequency larger than 3300 MHz could be applied for 6425 – 7125
+MHz and 10 - 10.5 GHz.</p>
+<h3 id="acs-1">7.2.4 ACS</h3>
+<p>According to the simulation results in clause 4.3, adjacent channel
+selectivity (ACS) is agreed as 32 dBc for 6425 – 7125 MHz and 31 dBc for
+10 - 10.5 GHz.</p>
+<h1 id="antenna-characteristics">8 Antenna characteristics</h1>
+<h2 id="bs-antenna-characteristics">8.1 BS antenna characteristics</h2>
+<h3 id="array-antenna-model">8.1.1 Array antenna model</h3>
+<p>In Table 8.1.1-1, the parameters used by the parameterized array
+antenna model are described.</p>
+<p>Table 8.1.1-1: Parameters of the parameterized array antenna
+model</p>
+<table>
+<colgroup>
+<col style="width: 71%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Symbol</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Front to back ratio</td>
+<td><em>A<sub>m</sub></em></td>
+<td>dB</td>
+</tr>
+<tr>
+<td>Side lobe suppression</td>
+<td><em>SLA<sub>v</sub></em></td>
+<td>dB</td>
+</tr>
+<tr>
+<td>Horizontal HPBW</td>
+<td><em>ϕ<sub>3dB</sub></em></td>
+<td>Degrees</td>
+</tr>
+<tr>
+<td>Vertical HPBW</td>
+<td><em>θ<sub>3dB</sub></em></td>
+<td>Degrees</td>
+</tr>
+<tr>
+<td>Array element peak gain</td>
+<td><em>G<sub>E,max</sub></em></td>
+<td>dBi</td>
+</tr>
+<tr>
+<td>Number of radiating elements rows and columns</td>
+<td><em>(M, N)</em></td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>Horizontal element separation</td>
+<td><em>d<sub>h</sub></em></td>
+<td>m</td>
+</tr>
+<tr>
+<td>Vertical element separation</td>
+<td><em>d<sub>v</sub></em></td>
+<td>m</td>
+</tr>
+<tr>
+<td>Electrical down-tilt angle</td>
+<td><em>θ<sub>etilt</sub></em></td>
+<td>Degrees</td>
+</tr>
+<tr>
+<td>Electrical scan angle</td>
+<td><em>ϕ<sub>escan</sub></em></td>
+<td>Degrees</td>
+</tr>
+</tbody>
+</table>
+<p>The parameterized antenna model is built around array antenna model
+where the element factor, array factor and linear phase progressing is
+characterized as described by equations in Table 8.1.1-2.</p>
+<p>Table 8.1.1-2: Array antenna model details</p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 76%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr>
+<th>Description</th>
+<th>Equation</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Peak normalized element radiation pattern</td>
+<td><span class="math display">\[A(\theta,\varphi) = - \min\left\lbrack
+- \left( - \min\left\lbrack 12\left( \frac{\varphi}{\varphi_{3dB}}
+\right)^{2},A_{m} \right\rbrack - \min\left\lbrack 12\left( \frac{\theta
+- 90}{\theta_{3dB}} \right)^{2},{SLA}_{v} \right\rbrack\  \right),A_{m}
+\right\rbrack\]</span></td>
+<td>dB</td>
+</tr>
+<tr>
+<td>Peak gain normalized element radiation pattern</td>
+<td><span class="math display">\[A_{E}(\theta,\varphi) = G_{E,max} +
+A(\theta,\varphi)\]</span></td>
+<td>dBi</td>
+</tr>
+<tr>
+<td>Composite array radiation pattern</td>
+<td><p><span class="math display">\[A_{A}(\theta,\varphi) =
+A_{E}(\theta,\varphi) + 10\log_{10}\left( \left| \sum_{m =
+1}^{M}{\sum_{n = 1}^{N}{w_{m,n}v_{m,n}}} \right|^{2}
+\right)\]</span></p>
+<p>, where</p>
+<p><span class="math display">\[v_{m,n} = \exp\left( j2\pi\left( (m -
+1)\frac{d_{v}}{\lambda}\cos(\theta) + (n -
+1)\frac{d_{h}}{\lambda}\sin(\theta)\sin(\varphi) \right)
+\right)\]</span></p>
+<p><span class="math display">\[w_{m,n} = \frac{1}{\sqrt{MN}}\exp\left(
+j2\pi\left( (m - 1)\frac{d_{v}}{\lambda}\sin\left( \theta_{etilt}
+\right) - (n - 1)\frac{d_{h}}{\lambda}\cos\left( \theta_{etilt}
+\right)\sin\left( \varphi_{escan} \right) \right)
+\right)\]</span></p></td>
+<td>dBi</td>
+</tr>
+</tbody>
+</table>
+<h3 id="array-antenna-parameters">8.1.2 Array antenna parameters</h3>
+<p>In Table 8.1.2-1, base station array antenna parameters for different
+deployment scenarios is listed. Element parameters have been selected to
+produce correct element peak gain determined by calculating the
+directivity from a given geometry including beam widths. The element
+directivity can be calculated based on the pattern described by Table
+8.1.2-1 in dBi as:</p>
+<p><span class="math inline">\(G_{E,\max} = D_{E,\max} - L_{E}\)</span>
+(8.1.2-1)</p>
+<p>, where the peak directivity <em>D<sub>E,max</sub></em> is calculated
+from given values on <em>ϕ<sub>3dB,</sub> θ<sub>3dB,</sub> d<sub>h
+</sub></em>and <em>d<sub>v</sub></em> as:</p>
+<p><span class="math inline">\(D_{E,\max} = 10\log_{10}\left(
+\frac{4\pi\left\lbrack A_{lin}(\theta,\varphi)
+\right\rbrack_{\max}}{\int_{-
+\pi}^{\pi}{\int_{0}^{\pi}{A_{lin}(\theta,\varphi)\sin(\theta)d\theta
+d\varphi}}} \right)\)</span> (8.1.2-2)</p>
+<p>, where <em>A<sub>lin</sub>(θ,ϕ)</em> is defined in linear scale
+as:</p>
+<p><span class="math inline">\(A_{lin}(\theta,\varphi) =
+10^{\frac{A(\theta,\varphi)}{10}}\)</span> (8.1.2-3)</p>
+<p>Table 8.1.2-1: BS array antenna parameters</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 55%" />
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th><p>Macro</p>
+<p>Sub-urban</p></th>
+<th><p>Macro</p>
+<p>Urban</p></th>
+<th><p>Micro</p>
+<p>Urban</p></th>
+<th>Small cell indoor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>A<sub>m</sub></em> (dB)</td>
+<td>30</td>
+<td>30</td>
+<td>30</td>
+<td>30</td>
+</tr>
+<tr>
+<td><em>SLA<sub>v </sub></em>(dB)</td>
+<td>30</td>
+<td>30</td>
+<td>30</td>
+<td>30</td>
+</tr>
+<tr>
+<td><em>ϕ<sub>3dB </sub></em>(deg.)</td>
+<td>90</td>
+<td>90</td>
+<td>90</td>
+<td>90</td>
+</tr>
+<tr>
+<td><em>θ<sub>3dB</sub></em> (deg.)</td>
+<td>65</td>
+<td>90</td>
+<td>90</td>
+<td>90</td>
+</tr>
+<tr>
+<td><em>G<sub>E,max </sub></em>(dBi)</td>
+<td>6.4</td>
+<td>5.5</td>
+<td>5.5</td>
+<td>5.5</td>
+</tr>
+<tr>
+<td><em>L<sub>E </sub></em>(dB)</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td><em>(M, N)</em></td>
+<td>(16, 8)</td>
+<td>(16, 8)</td>
+<td>(8,8)</td>
+<td>(4, 4)</td>
+</tr>
+<tr>
+<td>Number of supported polarizations, <em>P</em></td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><em>d<sub>h </sub></em>(m)</td>
+<td>0.5λ</td>
+<td>0.5λ</td>
+<td>0.5λ</td>
+<td>0.5λ</td>
+</tr>
+<tr>
+<td><em>d<sub>v </sub></em>(m)</td>
+<td>0.7λ</td>
+<td>0.5λ</td>
+<td>0.5λ</td>
+<td>0.5λ</td>
+</tr>
+<tr>
+<td>Horizontal coverage range (deg.)</td>
+<td>+/- 60</td>
+<td>+/- 60</td>
+<td>+/- 60</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Vertical coverage range (deg.)</td>
+<td>90 to 100</td>
+<td>90 to 120</td>
+<td>90 to 120</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Conducted power (before ohmic loss) per antenna element,
+<em>P<sub>tx</sub></em> (dBm)</td>
+<td><p>22</p>
+<p>(Note 4)</p></td>
+<td><p>22</p>
+<p>(Note 4)</p></td>
+<td><p>16</p>
+<p>(Note 5)</p></td>
+<td><p>9</p>
+<p>(Note 6)</p></td>
+</tr>
+<tr>
+<td>Mechanical downtilt (deg.)</td>
+<td>6</td>
+<td>10</td>
+<td>N/A</td>
+<td><p>N/A</p>
+<p>(Note 7)</p></td>
+</tr>
+<tr>
+<td colspan="5"><p>Note 1: MxN means there are M vertical and N
+horizontal elements</p>
+<p>Note 2: L<sub>E</sub> is included in G<sub>E,max</sub></p>
+<p>Note 3: The vertical coverage range includes the mechanical
+downtilt.</p>
+<p>Note 4: The conducted power per element assumes 16x8x2 elements (i.e.
+power per H/V polarized element).</p>
+<p>Note 5: The conducted power per element assumes 8x8x2 elements (i.e.
+power per H/V polarized element).</p>
+<p>Note 6: The conducted power per element assumes 4x4x2 elements (i.e.
+power per H/V polarized element).</p>
+<p>Note 7: Boresight direction is perpendicular to the ceiling.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Based on the array parameters sets fundamental characteristics such
+as peak EIRP can be derived. For radiated power considerations peak
+Equivalent Isotropic Radiated Power (EIRP) is calculated in
+logarithmical scale calculated as:</p>
+<p><span class="math inline">\(EIRP = P_{tx} + G_{E,max} +
+20\log_{10}(MN) + 10\log_{10}(P)\)</span> (Eq. 8.1.2-4)</p>
+<p>, where <em>P</em>, <em>M</em>, <em>N</em>, <em>P<sub>tx</sub></em>,
+<em>G<sub>E,max</sub></em> is given by Table 8.1.2-1.</p>
+<h2 id="ue-antenna-characteristics">8.2 UE antenna characteristics</h2>
+<p>The outcome of the RAN4 study for collecting technical background
+information relevant for the frequency range 7 to 24 GHz indicated that
+the frequency range 7.25-[10-13] GHz would have “FR1 like” requirements,
+and as such we can assume that in the 10 - 10.5 GHz range this applies.
+The UE will most likely therefore have a conducted interface with an
+assumed isotropic radiation pattern antenna and no beamforming.</p>
+<h1
+id="other-information-relevant-for-the-sharing-and-compatibility-studies">9
+Other information relevant for the sharing and compatibility
+studies</h1>
+<h2 id="spatial-emission">9.1 Spatial emission</h2>
+<p>Traditionally, antenna data sheets provide information on not only
+the antenna peak gain in the intended direction but also the gain in
+unwanted directions. To describe characteristics in unintended
+directions the following metrics are used:</p>
+<p>1. The antenna front-to-back ratio, which is the power ratio of
+radiative power in the main beam directions to the power radiated in the
+backward direction.</p>
+<p>2. The antenna side lobe ratio, which is the power ratio between the
+main beam direction and the power of the strongest side lobe.</p>
+<p>However, for an AAS base station it is clear that these traditional
+metrics of antenna characteristics are not directly relevant, since an
+AAS base station has the ability to adaptively shape the spatial
+characteristics to maintain optimum network throughput. Therefore,
+additional declarations were defined in TS 38.141-2 [x], Annex G. The
+additional declarations include information on how much power is
+radiated outside the intended coverage region in relation to the power
+radiated with in the intended coverage region.</p>
+<h2 id="interference-management">9.2 Interference management</h2>
+<h3 id="general">9.2.0 General</h3>
+<p>Given an antenna array with <em>M</em> multiplied by <em>N</em>
+identical elements, the radiation pattern of the array antenna can be
+described according to the pattern multiplication theorem as:</p>
+<p><span class="math inline">\(R(\theta,\varphi) =
+R_{E}(\theta,\varphi)R_{A}(\theta,\varphi)\)</span> (Eq. 9.2.0-1)</p>
+<p>, where <em>R<sub>E</sub></em> is the radiation pattern for the array
+elements and <em>R<sub>A</sub></em> is the radiation pattern associated
+to the array factor. The element patten, <em>R<sub>E</sub>(θ,ϕ)</em> is
+based on a parameterized Gaussian shaped element, with floors to model
+for side-lobe levels and front-to-back ratio. The element peak gain is
+directivity normalized, hence the peak element gain
+<em>G<sub>E,max</sub></em>, element loss <em>L<sub>E</sub></em> and half
+power beam widths <em>θ<sub>3dB</sub></em> and <em>ϕ<sub>3dB
+</sub></em>should be selected carefully to maintain correct antenna
+gain, as described in subclause 8.1.2.</p>
+<p>It can be noticed that both the element factor and the array factor
+can be used to shape the composite radiation pattern. The element
+pattern can be used to suppress side-lobe characteristics. For a limited
+steering range, a sub-array element can be used to suppress side-lobes
+better than a single element configuration. Typically for an AAS base
+station implementation the element radiation pattern and the array
+factor are customized to optimize the coverage within a specific
+coverage range for a given deployment scenario.</p>
+<p>For a general array antenna, the array factor radiation pattern for
+transmitting array antenna with <em>MN</em> element per polarization can
+be expressed as:</p>
+<p><span class="math inline">\(R_{A}(\theta,\varphi) = \left| \sum_{n =
+1}^{MN}{w_{n}e^{j\mathbf{kr}}} \right|^{2}\)</span> (Eq. 9.2.0-2)</p>
+<p>, where</p>
+<p><em>-</em> <em>w<sub>n</sub></em> is the complex array
+excitation,</p>
+<p>- k is the wave vector of the transmitted wave, and</p>
+<p>- r is the element location matrix.</p>
+<p>From Eq. 9.2.0-1 it can be noticed that both the element factor and
+the array factor can be used to shape the composite radiation pattern,
+which will be further described later. The element pattern can be used
+to suppress side-lobe characteristics. Typically for an AAS base station
+implementation the element radiation pattern and the array factor are
+customized to optimize the coverage within a specific coverage range and
+coexistence with other services for a given deployment scenario.</p>
+<p>For an array antenna with element separation 0.5λ or less the first
+side-lobe is the strongest. For uniform amplitude excitation the first
+side lobe power level is approximately 13 dB below the main beam power
+level. For array antenna with element separation larger than 0.5λ
+folding effects will create grating lobes in the side lobe region. The
+angular location of the grating lobe is determined by the element
+separation and steering angle and the power level of the grating lobes
+is determined by the element factor. As an example, in Figure 9.2.0-1,
+the impact of element separation is visualised for an 8x8 element
+Uniform Rectangular Array (URA) where the vertical beam steering
+directions is set to 130 degrees.</p>
+<p><img src="media/image18.png" style="width:2.99854in;height:2.45502in"
+alt="Chart, line chart, histogram Description automatically generated" /></p>
+<p>Figure 9.2.0-1: Impact of element separation on vertical radiation
+pattern</p>
+<p>The array factor described by Eq. 9.2.0-2 will produce maximum
+directivity for the wanted carrier for which the system is calibrated
+minimizing the excitation error. For unwanted emission outside the
+carrier the directivity will roll-off gradually to a point where the
+array factor directivity is lost.</p>
+<p>The relation between array excitation correlation and directivity can
+be modelled as described in TR 37.840, subclause 5.4.4.1.4. The average
+radiation pattern for different correlation values is plotted in Figure
+9.2.0-2. The maximum directivity is achieved for correlation equal to 1
+and the minimum directivity equal to the element directivity is achieved
+for correlation equal to 0.</p>
+<p><img src="media/image19.png" style="width:2.93477in;height:2.37858in"
+alt="Chart, line chart, histogram Description automatically generated" /></p>
+<p>Figure 9.2.0-2: Relation between excitation correlation and
+directivity</p>
+<p>To be able to conduct accurate coexistence analysis the unwanted
+emission directivity roll-off characteristics is required. The
+decorrelation effect in an array antenna will together with traditional
+filters provide suppression of unwanted emission EIRP levels required to
+guarantee coexistence with other adjacent services.</p>
+<p>There is no single general solution available to mitigate all
+possible interference situations. Depending on situation one or more
+mitigation techniques described in following section can be used to
+guarantee coexistence between AAS base stations and other services
+operating in adjacent spectrum.</p>
+<h3 id="beam-nulling">9.2.1 Beam nulling</h3>
+<p>Beam nulling technology is used to suppress the unwanted spatial
+emission by inserting nulls in the radiation pattern for the direction
+of the interference. One typical applicable scenario is multiple beams
+transmission. As shown in Figure 2 as one example, Beam 1 is the serving
+beam of UE 1 but the side lobe of beam 1 would interfere the UE2. The
+SINR for UE2 will be affected. In order to support high order modulation
+scheme such as DL 256 QAM, using beam nulling technology, a null can be
+placed at the direction to UE2 for beam 1. The weight of each antenna
+array of beam 1 can be obtained by specific algorithms so that SINR of
+beam1 is maximized in the direction to UE1 and the transmission power in
+the main lobe is maintained, and the side lobe are suppressed in the
+direction to UE2. Beam nulling can also be used in the inter-cell or
+inter system scenarios as long as the location or direction of the
+protected station is known.</p>
+<p><img src="media/image20.svg"
+style="width:4.82083in;height:2.90556in" /></p>
+<p>Figure 9.2.1-1: Side lobe interference</p>
+<h3 id="amplitude-weightingtapering">9.2.2 Amplitude
+weighting/tapering</h3>
+<p>AAS offer a wide range of opportunities on optimizing the directivity
+patterns through amplitude and phase control. High directivity antenna
+array also has side lobes which are often undesirable since they may
+cause intra-cell or inter-cell interference. Side lobe levels can be
+reduced via tailoring the amplitude across the antenna array which is
+often referred as amplitude weighting technology. Whilst amplitude
+weighting/tapering reduces the side lobes it also makes the main lobe
+wider and hence reduces gain. It needs tradeoff between antenna gain and
+side lobe suppression. For example:</p>
+<p><img src="media/image21.svg"
+style="width:3.02986in;height:2.26875in" /><img src="media/image22.svg"
+style="width:2.99236in;height:2.23889in" /></p>
+<p>Figure 9.2.2-1: Examples for amplitude weighting/tapering: left:
+Kaiser (a=3), right: Chebwin (R=35dB)</p>
+<p>Applying tapering electrically for the complete array will results in
+a main beam peak EIRP drop due to the amplitude window itself. In
+addition, the directivity will also reduce as an effect of a wider beam,
+as seen in Figure 9.2.2-1.</p>
+<p>If tapering is applied at sub-array level the power can be
+redistributed between elements in the sub-array, hence no power loss due
+to tapering will be introduced.</p>
+<h3 id="asymmetric-side-lobe-shaping">9.2.3 Asymmetric side lobe
+shaping</h3>
+<p>In addition to beam tapering, it is possible to manipulate the
+amplitude and the phase of the window (for example using modified Taylor
+series) to modify the side lobe levels asymmetrically. This technique is
+widely used with passive BS arrays to make the ground side lobes larger
+to fill in the angles between the main beam and the antenna. The same
+technique can be used to minimise radiation in specified unwanted
+directions. For example:</p>
+<p><img src="media/image23.svg"
+style="width:3.02986in;height:2.26875in" /></p>
+<p>Figure 9.2.3-1: Example for modified Taylor window</p>
+<h3 id="beam-restrictions">9.2.4 Beam restrictions</h3>
+<p>Depending on base station implementation and intended deployment
+scenario different types of beamforming schemes can be considered. For
+AAS base stations operating within FR1 (410 to 7125 MHz) typically
+codebook or reciprocity-based beamforming will be used for transmitted
+down link beams, while for AAS base stations operating within FR2 (24250
+to 52600 MHz) typically grid of beams beamforming concepts will be used
+for transmitted downlink beams. By restricting the angular range for
+which the beams can be transmitted, interference power in unintended
+directions can be limited. For codebook-based beamforming codes in the
+codebook associated to large beam steering angles can be disabled and
+prohibited from being used for transmission. The same principle can be
+adopted for grid of beams systems. For reciprocity-based beam forming,
+modification to the applied excitations needs to be carried out to avoid
+steering directions associated to generation of unintended interference
+in the side lobe region.</p>
+<p>By limiting the vertical beam steering range within a certain
+interval, it is possible to control the level of the grating lobe to a
+level similar to other sidelobes. Not using specific beams with large
+down tilts angles does not affect the network performance since, other
+beams can be used by proving sufficient power using sidelobes close to
+the base station. The vertical range in which the side lobe level is
+guaranteed will depend on the array antenna geometry used by a specific
+base station. As an example (4x8 array, with 3x1 sub-array), in Figure
+9.2.4-1 the results of beam restrictions are visualised. In the left
+figure all beams are plotted, while in the right figure beams causing
+interference towards the sky have been disabled.</p>
+<p><img src="media/image24.png" style="width:6.26806in;height:2.72361in"
+alt="Histogram Description automatically generated" /></p>
+<p>Figure 9.2.4-1: Controlling interference using beam restrictions</p>
+<h3 id="irregular-array-geometries">9.2.5 Irregular array
+geometries</h3>
+<p>Instead of using uniform array geometries where all the elements are
+assumed to be equal and the elements are located in a rectangular
+lattice with given vertical and horizontal element spacing, irregular
+array geometries can be used to suppress unintended radiation in the
+side lobe region. One example is when the grating lobe response is
+suppressed by shifting the columns with a vertical column offset. The
+offset can be selected in a way so that the grating lobe reduces.
+Instead of concentrating the power in one specific direction the grating
+lobe power is spread out in the sidelobe region. The penalty is that the
+array antenna aperture size slightly growth compared to the non-shifted
+case, as showed in Figure 9.2.5-1. Other examples on irregular array
+structures are where different element factor is used for different
+locations in the array.</p>
+<p><img src="media/image25.png" style="width:3.08519in;height:2.48049in"
+alt="Chart, scatter chart Description automatically generated" /></p>
+<p>Figure 9.2.5-1: Offset applied to columns</p>
+<p>As an example (4x8 array, 3x1 sub-array), in Figure 9.2.5-2 the
+vertical radiation pattern for 0 degrees down tilt (reference direction)
+and 12 degrees down tilt (maximum down-tilt direction) is visualized for
+uniform structure and irregular structure. For the irregular structure
+elements columns have been shifted up and down by an offset vector equal
+to [0, -0.5, 0, -1, 0, 0.5, 0, 1] wavelengths.</p>
+<p><img src="media/image26.png" style="width:6.26806in;height:2.72361in"
+alt="Chart, histogram Description automatically generated" /></p>
+<p>Figure 9.2.5-2: Irregular array geometries</p>
+<p>It can be noticed that by applying the offset vector the grating lobe
+is spread out spatially suppressing the interference in a specific
+direction.</p>
+<p class="heading" id="annex-a-informative-change-history"><br />
+Annex A (informative):<br />
+Change history </p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RAN4#94bis-e</td>
+<td style="text-align: center;">R4-2004477</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TR skeleton</td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-08</td>
+<td style="text-align: center;">RAN4#96-e</td>
+<td style="text-align: center;">R4-2010370</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>1. Agreed Text Proposal in
+RAN4#95-e:</p>
+<p>R4-2008928, “TP to TR 38.9xx: System level simulation methodology and
+assumptions for study on IMT parameters for frequency ranges
+6.425-7.125GHz and 10.0-10.5GHz”</p>
+<p>2. A new clause is added on general parameters</p></td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-10</td>
+<td style="text-align: center;">RAN4#97-e</td>
+<td style="text-align: center;">R4-2015675</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><p>Agreed Text Proposal in RAN4#96-e:</p>
+<p>R4-2011829, “TP to TR 38.921: BS IMT technology related
+parameters”</p>
+<p>R4-2011830, “TP to TR 38.921: Addition of BS antenna model and
+parameters in subclause 4.2.3 and subclause 8.1”</p></td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-02</td>
+<td style="text-align: center;">RAN4#98-e</td>
+<td style="text-align: center;">R4-2101494</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><p>Agreed Text Proposal in RAN4#97-e:</p>
+<p>R4-2016903 Maintenance TP to TR38.921</p>
+<p>R4-2016906 TP to TR38.921 : BS spurious emission</p>
+<p>R4-2016901 TP to TR 38.921: Clarification of system level simulation
+assumptions for study on IMT parameters for frequency ranges
+6.425-7.125GHz and 10.0-10.5GHz</p>
+<p>R4-2017817 TP to TR38.921: uplink ACIR model</p>
+<p>R4-2014478 TP to TR 38.921: Clarification of BS array antenna element
+peak gain for study on IMT parameters for frequency ranges
+6.425-7.125GHz and 10.0-10.5GHz</p>
+<p>R4-2016902 TP to TR 38.921: Correction to antenna parameter table in
+clause 3 and sub-clause 8.1</p>
+<p>R4-2016907 TP on spatial emission and interference
+mitigation</p></td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-03</td>
+<td style="text-align: center;">RAN#91-e</td>
+<td style="text-align: center;">RP-210463</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>1. Agreed Text Proposal in
+RAN4#98-e:</p>
+<p>R4-2103408 TP to TR 38.921 UE transmitter requirements</p>
+<p>R4-2103398 TP to TR 38.921: BS remaining parameters</p>
+<p>R4-2103107 TP to TR 38.921 summary of simulation results</p>
+<p>R4-2101793 TP to TR 38.921: Clarification of BS maximum transmit
+power on system level simulation assumptions for study on IMT parameters
+for frequency ranges 6.425-7.125GHz and 10.0-10.5GHz</p>
+<p>R4-2103109 TP to TR 38.921: Addition of in-door antenna parameters
+and correction to model in subclause 8.1</p>
+<p>1. Editorial changes to align the TR with drafting rules.</p>
+<p>2. Submitted to RAN #91-e for 1-step Approval.</p></td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8" style="text-align: center;"><strong>Change
+history</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date</strong></td>
+<td><strong>Meeting</strong></td>
+<td><strong>TDoc</strong></td>
+<td><strong>CR</strong></td>
+<td><strong>Rev</strong></td>
+<td><strong>Cat</strong></td>
+<td><strong>Subject/Comment</strong></td>
+<td><strong>New version</strong></td>
+</tr>
+<tr>
+<td>2021-03</td>
+<td>RAN#91</td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td>Approved by plenary – Rel-17 spec under change control</td>
+<td>17.0.0</td>
+</tr>
+<tr>
+<td>2022-03</td>
+<td>RAN#95</td>
+<td>RP-220341</td>
+<td>0002</td>
+<td style="text-align: center;">1</td>
+<td>F</td>
+<td>CR to TR 38.921: Update of information about interference management
+in subclause 6.1.4, 6.1.5, 8.1.2 and 9.2</td>
+<td>17.1.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

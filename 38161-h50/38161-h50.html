@@ -1,0 +1,5439 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38161-h50</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword">Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-of-terms-symbols-and-abbreviations"
+id="toc-definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</a>
+<ul>
+<li><a href="#terms" id="toc-terms">3.1 Terms</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#general" id="toc-general">4 General</a>
+<ul>
+<li><a
+href="#relationship-between-minimum-requirements-and-test-requirements"
+id="toc-relationship-between-minimum-requirements-and-test-requirements">4.1
+Relationship between minimum requirements and test requirements</a></li>
+<li><a href="#applicability-of-minimum-requirements"
+id="toc-applicability-of-minimum-requirements">4.2 Applicability of
+minimum requirements</a>
+<ul>
+<li><a href="#general-1" id="toc-general-1">4.2.1 General</a></li>
+<li><a href="#ue-mechanical-modes" id="toc-ue-mechanical-modes">4.2.1 UE
+mechanical modes</a></li>
+</ul></li>
+<li><a href="#applicability-rules-for-testing-of-fr1-sa-and-nsa-ues"
+id="toc-applicability-rules-for-testing-of-fr1-sa-and-nsa-ues">4.3
+Applicability rules for testing of FR1 SA and NSA UEs</a></li>
+<li><a
+href="#applicability-rules-for-testing-of-power-class-capability-of-ues"
+id="toc-applicability-rules-for-testing-of-power-class-capability-of-ues">4.4
+Applicability rules for testing of power class capability of
+UEs</a></li>
+</ul></li>
+<li><a href="#frequency-bands" id="toc-frequency-bands">5 Frequency
+bands</a>
+<ul>
+<li><a href="#general-2" id="toc-general-2">5.1 General</a></li>
+<li><a href="#operating-bands" id="toc-operating-bands">5.2 Operating
+bands</a>
+<ul>
+<li><a href="#fr1-standalone-operating-bands"
+id="toc-fr1-standalone-operating-bands">5.2.1 FR1 Standalone Operating
+bands</a></li>
+<li><a href="#fr1-en-dc-band-combinations"
+id="toc-fr1-en-dc-band-combinations">5.2.2 FR1 EN-DC band
+combinations</a></li>
+</ul></li>
+<li><a href="#test-parameters-for-each-band"
+id="toc-test-parameters-for-each-band">5.3 Test parameters for each
+band</a></li>
+</ul></li>
+<li><a href="#fr1-trp-requirements" id="toc-fr1-trp-requirements">6 FR1
+TRP requirements</a>
+<ul>
+<li><a href="#general-3" id="toc-general-3">6.1 General</a></li>
+<li><a href="#minimum-requirement" id="toc-minimum-requirement">6.2
+Minimum requirement</a>
+<ul>
+<li><a href="#minimum-requirement-for-handheld-ue"
+id="toc-minimum-requirement-for-handheld-ue">6.2.1 Minimum requirement
+for handheld UE</a>
+<ul>
+<li><a href="#hand-phantom-browsing-mode"
+id="toc-hand-phantom-browsing-mode">6.2.1.1 Hand phantom browsing
+mode</a>
+<ul>
+<li><a href="#nr-fr1" id="toc-nr-fr1">6.2.1.1.1 NR FR1</a></li>
+<li><a href="#nr-fr1-in-en-dc-mode"
+id="toc-nr-fr1-in-en-dc-mode">6.2.1.1.2 NR FR1 in EN-DC mode</a></li>
+</ul></li>
+<li><a href="#beside-the-head-and-hand-phantom-talk-mode"
+id="toc-beside-the-head-and-hand-phantom-talk-mode">6.2.1.2 Beside the
+head and hand phantom talk mode</a>
+<ul>
+<li><a href="#nr-fr1-1" id="toc-nr-fr1-1">6.2.1.2.1 NR FR1</a></li>
+<li><a href="#nr-fr1-in-en-dc-mode-1"
+id="toc-nr-fr1-in-en-dc-mode-1">6.2.1.2.2 NR FR1 in EN-DC mode</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#fr1-trs-requirements" id="toc-fr1-trs-requirements">7 FR1
+TRS requirements</a>
+<ul>
+<li><a href="#general-4" id="toc-general-4">7.1 General</a></li>
+<li><a href="#minimum-requirement-1" id="toc-minimum-requirement-1">7.2
+Minimum requirement</a>
+<ul>
+<li><a href="#minimum-requirement-for-handheld-ue-1"
+id="toc-minimum-requirement-for-handheld-ue-1">7.2.1 Minimum requirement
+for handheld UE</a>
+<ul>
+<li><a href="#hand-phantom-browsing-mode-1"
+id="toc-hand-phantom-browsing-mode-1">7.2.1.1 Hand phantom browsing
+mode</a>
+<ul>
+<li><a href="#nr-fr1-2" id="toc-nr-fr1-2">7.2.1.1.1 NR FR1</a></li>
+<li><a href="#nr-fr1-in-en-dc-mode-2"
+id="toc-nr-fr1-in-en-dc-mode-2">7.2.1.1.2 NR FR1 in EN-DC mode</a></li>
+</ul></li>
+<li><a href="#beside-the-head-and-hand-phantom-position"
+id="toc-beside-the-head-and-hand-phantom-position">7.2.1.2 Beside the
+head and hand phantom position</a>
+<ul>
+<li><a href="#nr-fr1-3" id="toc-nr-fr1-3">7.2.1.2.1 NR FR1</a></li>
+<li><a href="#nr-fr1-in-en-dc-mode-3"
+id="toc-nr-fr1-in-en-dc-mode-3">7.2.1.2.2 NR FR1 in EN-DC mode</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#a.1-general" id="toc-a.1-general">A.1 General</a></li>
+<li><a href="#a.2-ue-configuration" id="toc-a.2-ue-configuration">A.2 UE
+configuration</a>
+<ul>
+<li><a href="#a.2.1-general" id="toc-a.2.1-general">A.2.1
+General</a></li>
+<li><a href="#a.2.2-ue-configuration-for-trp-test"
+id="toc-a.2.2-ue-configuration-for-trp-test">A.2.2 UE configuration for
+TRP test</a></li>
+<li><a href="#a.2.3-ue-configuration-for-trs-test"
+id="toc-a.2.3-ue-configuration-for-trs-test">A.2.3 UE configuration for
+TRS test</a></li>
+</ul></li>
+<li><a href="#a.3-test-system-of-anechoic-chamber-method"
+id="toc-a.3-test-system-of-anechoic-chamber-method">A.3 Test system of
+Anechoic Chamber method</a>
+<ul>
+<li><a href="#a.3.1-system-setup" id="toc-a.3.1-system-setup">A.3.1
+System setup</a></li>
+<li><a href="#a.3.2-calibration-procedure"
+id="toc-a.3.2-calibration-procedure">A.3.2 Calibration
+procedure</a></li>
+<li><a href="#a.3.3-test-procedure" id="toc-a.3.3-test-procedure">A.3.3
+Test procedure</a>
+<ul>
+<li><a href="#a.3.3.1-general" id="toc-a.3.3.1-general">A.3.3.1
+General</a></li>
+<li><a href="#a.3.3.2-trp-test-procedure"
+id="toc-a.3.3.2-trp-test-procedure">A.3.3.2 TRP Test procedure</a></li>
+<li><a href="#a.3.3.3-trs-test-procedure"
+id="toc-a.3.3.3-trs-test-procedure">A.3.3.3 TRS Test procedure</a></li>
+</ul></li>
+<li><a href="#a.3.4-minimum-range-length"
+id="toc-a.3.4-minimum-range-length">A.3.4 Minimum Range Length</a></li>
+<li><a href="#a.3.5-definition-of-trp-and-trs-for-ac"
+id="toc-a.3.5-definition-of-trp-and-trs-for-ac">A.3.5 Definition of TRP
+and TRS for AC</a>
+<ul>
+<li><a href="#a.3.5.1-total-radiated-power-trp"
+id="toc-a.3.5.1-total-radiated-power-trp">A.3.5.1 Total Radiated Power
+(TRP)</a></li>
+<li><a href="#a.3.5.2-total-radiated-sensitivity-trs"
+id="toc-a.3.5.2-total-radiated-sensitivity-trs">A.3.5.2 Total Radiated
+Sensitivity (TRS)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#a.4-preliminary-example-mu-budget"
+id="toc-a.4-preliminary-example-mu-budget">A.4 Preliminary example MU
+budget</a></li>
+<li><a href="#b.1-general" id="toc-b.1-general">B.1 General</a></li>
+<li><a href="#b.2-phantom-definition"
+id="toc-b.2-phantom-definition">B.2 Phantom Definition</a>
+<ul>
+<li><a href="#b.2.1-head-phantom" id="toc-b.2.1-head-phantom">B.2.1 Head
+Phantom</a></li>
+<li><a href="#b.2.2-pda-grip-hand-phantom"
+id="toc-b.2.2-pda-grip-hand-phantom">B.2.2 PDA Grip Hand
+Phantom</a></li>
+<li><a href="#b.2.3-wide-grip-hand-phantom"
+id="toc-b.2.3-wide-grip-hand-phantom">B.2.3 Wide Grip Hand
+Phantom</a></li>
+</ul></li>
+<li><a href="#b.3-ue-positioning-guidelines"
+id="toc-b.3-ue-positioning-guidelines">B.3 UE positioning guidelines</a>
+<ul>
+<li><a href="#b.3.1-hand-phantom-only-browsing-mode"
+id="toc-b.3.1-hand-phantom-only-browsing-mode">B.3.1 Hand phantom only
+(Browsing mode)</a>
+<ul>
+<li><a href="#b.3.1.1-wide-grip-hand"
+id="toc-b.3.1.1-wide-grip-hand">B.3.1.1 Wide Grip Hand</a></li>
+<li><a href="#b.3.1.2-pda-grip-hand"
+id="toc-b.3.1.2-pda-grip-hand">B.3.1.2 PDA Grip Hand</a></li>
+</ul></li>
+<li><a href="#b.3.2-head-and-hand-phantom-talk-mode"
+id="toc-b.3.2-head-and-hand-phantom-talk-mode">B.3.2 Head and Hand
+phantom (Talk Mode)</a>
+<ul>
+<li><a href="#b.3.2.1-general" id="toc-b.3.2.1-general">B.3.2.1
+General</a></li>
+<li><a href="#b.3.2.2-wide-grip-hand-and-head"
+id="toc-b.3.2.2-wide-grip-hand-and-head">B.3.2.2 Wide Grip Hand and
+Head</a></li>
+<li><a href="#b.3.2.1-pda-grip-hand-and-head"
+id="toc-b.3.2.1-pda-grip-hand-and-head">B.3.2.1 PDA Grip Hand and
+Head</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#c.1-general" id="toc-c.1-general">C.1 General</a></li>
+<li><a href="#c.2-environmental" id="toc-c.2-environmental">C.2
+Environmental</a>
+<ul>
+<li><a href="#c.2.1-temperature" id="toc-c.2.1-temperature">C.2.1
+Temperature</a></li>
+<li><a href="#c.2.2-voltage" id="toc-c.2.2-voltage">C.2.2
+Voltage</a></li>
+</ul></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TS 38.161 V17.5.0 (2024-09)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Specification</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NR;</p>
+<p>User Equipment (UE) TRP (Total Radiated Power) and TRS (Total
+Radiated Sensitivity) requirements;</p>
+<p>Range 1 Standalone and Range 1 Interworking operation with other
+radios</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.jpeg" style="width:1.325in;height:0.91528in"
+alt="5G-logo_175px" /></td>
+<td style="text-align: right;"><img src="media/image2.png"
+style="width:1.77292in;height:1.03889in" alt="3GPP-logo_web" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2024, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">7</a></p>
+<p>1 Scope <a href="#scope">9</a></p>
+<p>2 References <a href="#references">9</a></p>
+<p>3 Definitions of terms, symbols and abbreviations <a
+href="#definitions-of-terms-symbols-and-abbreviations">9</a></p>
+<p>3.1 Terms <a href="#terms">9</a></p>
+<p>3.2 Symbols <a href="#symbols">10</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">10</a></p>
+<p>4 General <a href="#general">10</a></p>
+<p>4.1 Relationship between minimum requirements and test requirements
+<a
+href="#relationship-between-minimum-requirements-and-test-requirements">10</a></p>
+<p>4.2 Applicability of minimum requirements <a
+href="#applicability-of-minimum-requirements">10</a></p>
+<p>4.2.1 General <a href="#general-1">10</a></p>
+<p>4.2.1 UE mechanical modes <a href="#ue-mechanical-modes">11</a></p>
+<p>4.3 Applicability rules for testing of FR1 SA and NSA UEs <a
+href="#applicability-rules-for-testing-of-fr1-sa-and-nsa-ues">11</a></p>
+<p>4.4 Applicability rules for testing of power class capability of UEs
+<a
+href="#applicability-rules-for-testing-of-power-class-capability-of-ues">11</a></p>
+<p>5 Frequency bands <a href="#frequency-bands">11</a></p>
+<p>5.1 General <a href="#general-2">11</a></p>
+<p>5.2 Operating bands <a href="#operating-bands">11</a></p>
+<p>5.2.1 FR1 Standalone Operating bands <a
+href="#fr1-standalone-operating-bands">11</a></p>
+<p>5.2.2 FR1 EN-DC band combinations <a
+href="#fr1-en-dc-band-combinations">12</a></p>
+<p>5.3 Test parameters for each band <a
+href="#test-parameters-for-each-band">15</a></p>
+<p>6 FR1 TRP requirements <a href="#fr1-trp-requirements">18</a></p>
+<p>6.1 General <a href="#general-3">18</a></p>
+<p>6.2 Minimum requirement <a href="#minimum-requirement">18</a></p>
+<p>6.2.1 Minimum requirement for handheld UE <a
+href="#minimum-requirement-for-handheld-ue">18</a></p>
+<p>6.2.1.1 Hand phantom browsing mode <a
+href="#hand-phantom-browsing-mode">19</a></p>
+<p>6.2.1.1.1 NR FR1 <a href="#nr-fr1">19</a></p>
+<p>6.2.1.1.2 NR FR1 in EN-DC mode <a
+href="#nr-fr1-in-en-dc-mode">19</a></p>
+<p>6.2.1.2 Beside the head and hand phantom talk mode <a
+href="#beside-the-head-and-hand-phantom-talk-mode">20</a></p>
+<p>6.2.1.2.1 NR FR1 <a href="#nr-fr1-1">20</a></p>
+<p>6.2.1.2.2 NR FR1 in EN-DC mode <a
+href="#nr-fr1-in-en-dc-mode-1">20</a></p>
+<p>7 FR1 TRS requirements <a href="#fr1-trs-requirements">21</a></p>
+<p>7.1 General <a href="#general-4">21</a></p>
+<p>7.2 Minimum requirement <a href="#minimum-requirement-1">21</a></p>
+<p>7.2.1 Minimum requirement for handheld UE <a
+href="#minimum-requirement-for-handheld-ue-1">21</a></p>
+<p>7.2.1.1 Hand phantom browsing mode <a
+href="#hand-phantom-browsing-mode-1">21</a></p>
+<p>7.2.1.1.1 NR FR1 <a href="#nr-fr1-2">21</a></p>
+<p>7.2.1.1.2 NR FR1 in EN-DC mode <a
+href="#nr-fr1-in-en-dc-mode-2">22</a></p>
+<p>7.2.1.2 Beside the head and hand phantom position <a
+href="#beside-the-head-and-hand-phantom-position">22</a></p>
+<p>7.2.1.2.1 NR FR1 <a href="#nr-fr1-3">22</a></p>
+<p>7.2.1.2.2 NR FR1 in EN-DC mode <a
+href="#nr-fr1-in-en-dc-mode-3">22</a></p>
+<p>Annex A (normative): Test methodology <a
+href="#annex-a-normative-test-methodology">24</a></p>
+<p>A.1 General <a href="#a.1-general">24</a></p>
+<p>A.2 UE configuration <a href="#a.2-ue-configuration">24</a></p>
+<p>A.2.1 General <a href="#a.2.1-general">24</a></p>
+<p>A.2.2 UE configuration for TRP test <a
+href="#a.2.2-ue-configuration-for-trp-test">24</a></p>
+<p>A.2.3 UE configuration for TRS test <a
+href="#a.2.3-ue-configuration-for-trs-test">24</a></p>
+<p>A.3 Test system of Anechoic Chamber method <a
+href="#a.3-test-system-of-anechoic-chamber-method">25</a></p>
+<p>A.3.1 System setup <a href="#a.3.1-system-setup">25</a></p>
+<p>A.3.2 Calibration procedure <a
+href="#a.3.2-calibration-procedure">25</a></p>
+<p>A.3.3 Test procedure <a href="#a.3.3-test-procedure">26</a></p>
+<p>A.3.3.1 General <a href="#a.3.3.1-general">26</a></p>
+<p>A.3.3.2 TRP Test procedure <a
+href="#a.3.3.2-trp-test-procedure">26</a></p>
+<p>A.3.3.3 TRS Test procedure <a
+href="#a.3.3.3-trs-test-procedure">27</a></p>
+<p>A.3.4 Minimum Range Length <a
+href="#a.3.4-minimum-range-length">27</a></p>
+<p>A.3.5 Definition of TRP and TRS for AC <a
+href="#a.3.5-definition-of-trp-and-trs-for-ac">29</a></p>
+<p>A.3.5.1 Total Radiated Power (TRP) <a
+href="#a.3.5.1-total-radiated-power-trp">29</a></p>
+<p>A.3.5.2 Total Radiated Sensitivity (TRS) <a
+href="#a.3.5.2-total-radiated-sensitivity-trs">29</a></p>
+<p>A.4 Preliminary example MU budget <a
+href="#a.4-preliminary-example-mu-budget">30</a></p>
+<p>Annex B (normative): Phantoms definition and Positioning <a
+href="#annex-b-normative-phantoms-definition-and-positioning">36</a></p>
+<p>B.1 General <a href="#b.1-general">36</a></p>
+<p>B.2 Phantom Definition <a href="#b.2-phantom-definition">36</a></p>
+<p>B.2.1 Head Phantom <a href="#b.2.1-head-phantom">36</a></p>
+<p>B.2.2 PDA Grip Hand Phantom <a
+href="#b.2.2-pda-grip-hand-phantom">36</a></p>
+<p>B.2.3 Wide Grip Hand Phantom <a
+href="#b.2.3-wide-grip-hand-phantom">36</a></p>
+<p>B.3 UE positioning guidelines <a
+href="#b.3-ue-positioning-guidelines">37</a></p>
+<p>B.3.1 Hand phantom only (Browsing mode) <a
+href="#b.3.1-hand-phantom-only-browsing-mode">37</a></p>
+<p>B.3.1.1 Wide Grip Hand <a href="#b.3.1.1-wide-grip-hand">37</a></p>
+<p>B.3.1.2 PDA Grip Hand <a href="#b.3.1.2-pda-grip-hand">38</a></p>
+<p>B.3.2 Head and Hand phantom (Talk Mode) <a
+href="#b.3.2-head-and-hand-phantom-talk-mode">39</a></p>
+<p>B.3.2.1 General <a href="#b.3.2.1-general">39</a></p>
+<p>B.3.2.2 Wide Grip Hand and Head <a
+href="#b.3.2.2-wide-grip-hand-and-head">40</a></p>
+<p>B.3.2.1 PDA Grip Hand and Head <a
+href="#b.3.2.1-pda-grip-hand-and-head">40</a></p>
+<p>Annex C (normative): Environmental requirements <a
+href="#annex-c-normative-environmental-requirements">41</a></p>
+<p>C.1 General <a href="#c.1-general">41</a></p>
+<p>C.2 Environmental <a href="#c.2-environmental">41</a></p>
+<p>C.2.1 Temperature <a href="#c.2.1-temperature">41</a></p>
+<p>C.2.2 Voltage <a href="#c.2.2-voltage">41</a></p>
+<p>Annex D (informative): Change history <a
+href="#annex-d-informative-change-history">42</a></p>
+<h1 id="foreword">Foreword</h1>
+<p>This Technical Specification has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<p>In the present document, modal verbs have the following meanings:</p>
+<p><strong>shall</strong> indicates a mandatory requirement to do
+something</p>
+<p><strong>shall not</strong> indicates an interdiction (prohibition) to
+do something</p>
+<p>The constructions "shall" and "shall not" are confined to the context
+of normative provisions, and do not appear in Technical Reports.</p>
+<p>The constructions "must" and "must not" are not used as substitutes
+for "shall" and "shall not". Their use is avoided insofar as possible,
+and they are not used in a normative context except in a direct citation
+from an external, referenced, non-3GPP document, or so as to maintain
+continuity of style when extending or modifying the provisions of such a
+referenced document.</p>
+<p><strong>should</strong> indicates a recommendation to do
+something</p>
+<p><strong>should not</strong> indicates a recommendation not to do
+something</p>
+<p><strong>may</strong> indicates permission to do something</p>
+<p><strong>need not</strong> indicates permission not to do
+something</p>
+<p>The construction "may not" is ambiguous and is not used in normative
+elements. The unambiguous constructions "might not" or "shall not" are
+used instead, depending upon the meaning intended.</p>
+<p><strong>can</strong> indicates that something is possible</p>
+<p><strong>cannot</strong> indicates that something is impossible</p>
+<p>The constructions "can" and "cannot" are not substitutes for "may"
+and "need not".</p>
+<p><strong>will</strong> indicates that something is certain or expected
+to happen as a result of action taken by an agency the behaviour of
+which is outside the scope of the present document</p>
+<p><strong>will not</strong> indicates that something is certain or
+expected not to happen as a result of action taken by an agency the
+behaviour of which is outside the scope of the present document</p>
+<p><strong>might</strong> indicates a likelihood that something will
+happen as a result of action taken by some agency the behaviour of which
+is outside the scope of the present document</p>
+<p><strong>might not</strong> indicates a likelihood that something will
+not happen as a result of action taken by some agency the behaviour of
+which is outside the scope of the present document</p>
+<p>In addition:</p>
+<p><strong>is</strong> (or any other verb in the indicative mood)
+indicates a statement of fact</p>
+<p><strong>is not</strong> (or any other negative verb in the indicative
+mood) indicates a statement of fact</p>
+<p>The constructions "is" and "is not" do not indicate requirements.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document establishes the TRP (Total Radiated Power) and
+TRS (Total Radiated Sensitivity) requirements for NR UEs operating on
+Range 1 Standalone and Range 1 Interworking operation with other
+radios.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TR 38.834: “Measurements of User Equipment (UE) Over-the-Air
+(OTA) performance for NR FR1; Total Radiated Power (TRP) and Total
+Radiated Sensitivity (TRS) test methodology”.</p>
+<p>[3] 3GPP TS 38.101-1: "NR; User Equipment (UE) radio transmission and
+reception; Part 1: Range 1 Standalone".</p>
+<p>[4] 3GPP TS 38.101-3: "NR; User Equipment (UE) radio transmission and
+reception; Part 3: Range 1 and Range 2 Interworking operation with other
+radios".</p>
+<p>[5] 3GPP TS 38.521-1: "NR; User Equipment (UE) conformance
+specification; Radio transmission and reception; Part 1: Range 1
+Standalone".</p>
+<p>[6] 3GPP TS 38.521-3: "NR; User Equipment (UE) conformance
+specification; Radio transmission and reception; Part 3: Range 1 and
+Range 2 Interworking operation with other radios".</p>
+<p>[7] 3GPP TS 38.508-1: "5GS; User Equipment (UE) conformance
+specification; Part 1: Common test environment ".</p>
+<p>[8] 3GPP TS 37.544: “Universal Terrestrial Radio Access (UTRA) and
+Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE)
+Over The Air (OTA) performance; Conformance testing “.</p>
+<p>[9] CTIA Certification™ OTA Test Plan: “CTIA Certification Test Plan
+for Wireless Device Over-the-Air Performance, Version 3.9.5 “, <a
+href="https://ctiacertification.org/test-plans/">https://ctiacertification.org/test-plans/</a></p>
+<h1 id="definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</h1>
+<h2 id="terms">3.1 Terms</h2>
+<p>For the purposes of the present document, the terms given in 3GPP
+TR 21.905 [1] and the following apply. A term defined in the present
+document takes precedence over the definition of the same term, if any,
+in 3GPP TR 21.905 [1].</p>
+<p><strong>Browsing mode usage:</strong> This mode corresponds to “data”
+mode, the device is tested via hand-only phantoms.</p>
+<p><strong>Primary mechanical mode:</strong> The mode that is most often
+used for a specific user scenario. Every terminal has at least one
+primary mechanical mode, if multiple modes are supported, different
+primary mechanical modes may be applicable for different user scenarios,
+e.g., different primary mechanical modes for Browsing mode usage and
+Talk mode usage for the same UE.</p>
+<p><strong>Talk mode usage:</strong> This mode corresponds to “talk”
+mode, the device is tested via head&amp;hand phantoms.</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<p><em>TRP<sub>average </sub></em>The average measured total radiated
+power of low, mid and high channel. When hand phantom is involved, the
+average is performed with low, mid and high channel from both hand left
+and hand right.</p>
+<p><em>TRS<sub>average </sub></em>The average measured total radiated
+sensitivity of low, mid and high channel. When hand phantom is involved,
+the average is performed with low, mid and high channel from both hand
+left and hand right.</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>AC Anechoic Chamber</p>
+<p>BHHL Beside Head and Hand Left Side (Head and Hand Phantom)</p>
+<p>BHHR Beside Head and Hand Right Side (Head and Hand Phantom)</p>
+<p>DUT Device Under Test</p>
+<p>EIRP Effective Isotropic Radiated Power</p>
+<p>EUT Equipment Under Test</p>
+<p>FR1 Frequency Range 1</p>
+<p>FS Free Space</p>
+<p>HL Hand Left (Hand Phantom Only)</p>
+<p>HR Hand Right (Hand Phantom Only)</p>
+<p>NSA Non-Standalone, a mode of operation where operation of an other
+radio is assisted with an other radio</p>
+<p>OTA Over The Air</p>
+<p>QZ Quiet Zone</p>
+<p>SA Standalone</p>
+<p>SS System Simulator</p>
+<p>TAA Time-Averaging Algorithm</p>
+<p>TAS Tx Antenna Switching</p>
+<p>TRP Total Radiated Power</p>
+<p>TRS Total Radiated Sensitivity</p>
+<p>UE User Equipment</p>
+<h1 id="general">4 General</h1>
+<h2
+id="relationship-between-minimum-requirements-and-test-requirements">4.1
+Relationship between minimum requirements and test requirements</h2>
+<p>The Minimum Requirements given in this specification make no
+allowance for measurement uncertainty. The test specification in RAN5
+will define final test tolerances for FR1 TRP TRS. The test tolerances
+are used to relax the minimum requirements in this specification to
+create test requirements.</p>
+<h2 id="applicability-of-minimum-requirements">4.2 Applicability of
+minimum requirements</h2>
+<h3 id="general-1">4.2.1 General</h3>
+<p>The minimum requirements apply only to the corresponding primary
+mechanical mode of UE in the environmental conditions specified in Annex
+C.4.2.2.</p>
+<h3 id="ue-mechanical-modes">4.2.1 UE mechanical modes</h3>
+<p>The mechanical modes of a device under test (DUT) are declared by the
+manufacturer. A DUT shall have at least one mechanical mode. If only one
+mode is supported, then this is defined as the primary. If multiple
+modes are supported, the manufacturer can declare different primary
+mechanical modes applicable for different user scenarios, e.g.,
+different primary mechanical mode for Browsing mode usage and Talk mode
+usage for the same UE.</p>
+<h2 id="applicability-rules-for-testing-of-fr1-sa-and-nsa-ues">4.3
+Applicability rules for testing of FR1 SA and NSA UEs</h2>
+<p>The applicability and test coverage rules for Non-Standalone (NSA)
+only capable devices shall include the following:</p>
+<p>- For each NR band supported by the device, test the UE in EN-DC mode
+using any one example configuration containing that NR band or
+configuration declaration decision tree as per recommended TRP/TRS test
+procedures in this specification.</p>
+<p>The applicability and test coverage rules for Standalone (SA) and NSA
+(EN-DC) capable devices shall include the following:</p>
+<p>- For each NR band in a device, test the UE in Standalone Mode as per
+the TRP/TRS test procedures in this specification.</p>
+<p>- This shall also fulfil coverage for all EN-DC FR1 minimum
+performance requirements for that NR band and need not be retested in
+EN-DC mode.</p>
+<h2
+id="applicability-rules-for-testing-of-power-class-capability-of-ues">4.4
+Applicability rules for testing of power class capability of UEs</h2>
+<p>The applicability and test coverage rules for PC2 and PC3 UEs shall
+include the following:</p>
+<p>- For UEs that support PC2 in a given band: verify the requirement
+only with PC2 configuration</p>
+<p>- For UEs that only support PC3 in a given band: verify the
+requirement with PC3 configuration</p>
+<p>NOTE 1: The test procedure and requirements in this version of the
+specification apply only for handheld UEs based on 1 Tx configuration
+and are not applicable to UEs under TxD and UL MIMO configurations.</p>
+<h1 id="frequency-bands">5 Frequency bands</h1>
+<h2 id="general-2">5.1 General</h2>
+<p>The requirements defined in this specification for NR apply to the
+frequency bands defined in Clause 5.2.</p>
+<h2 id="operating-bands">5.2 Operating bands</h2>
+<h3 id="fr1-standalone-operating-bands">5.2.1 FR1 Standalone Operating
+bands</h3>
+<p>The requirements defined in this specification for FR1 standalone
+apply to the operating bands defined in Table 5.2.1-1.</p>
+<p>Table 5.2.1-1 NR operating bands in FR1 standalone</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 35%" />
+<col style="width: 38%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR operating band</th>
+<th><p>Uplink (UL) <em>operating band</em><br />
+BS receive / UE transmit</p>
+<p>F<sub>UL_low</sub> – F<sub>UL_high</sub></p></th>
+<th><p>Downlink (DL) <em>operating band</em><br />
+BS transmit / UE receive</p>
+<p>F<sub>DL_low</sub> – F<sub>DL_high</sub></p></th>
+<th>Duplex Mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n1</td>
+<td>1920 MHz – 1980 MHz</td>
+<td>2110 MHz – 2170 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n2</td>
+<td>1850 MHz – 1910 MHz</td>
+<td>1930 MHz – 1990 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n3</td>
+<td>1710 MHz – 1785 MHz</td>
+<td>1805 MHz – 1880 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n5</td>
+<td>824 MHz – 849 MHz</td>
+<td>869 MHz – 894 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n7</td>
+<td>2500 MHz – 2570 MHz</td>
+<td>2620 MHz – 2690 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n8</td>
+<td>880 MHz – 915 MHz</td>
+<td>925 MHz – 960 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n12</td>
+<td>699 MHz – 716 MHz</td>
+<td>729 MHz – 746 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n14</td>
+<td>788 MHz – 798 MHz</td>
+<td>758 MHz – 768 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n20</td>
+<td>832 MHz – 862 MHz</td>
+<td>791 MHz – 821 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n25</td>
+<td>1850 MHz – 1915 MHz</td>
+<td>1930 MHz – 1995 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n26</td>
+<td>814 MHz – 849 MHz</td>
+<td>859 MHz – 894 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n28</td>
+<td>703 MHz – 748 MHz</td>
+<td>758 MHz – 803 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n30</td>
+<td>2305 MHz – 2315 MHz</td>
+<td>2350 MHz – 2360 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n34</td>
+<td>2010 MHz – 2025 MHz</td>
+<td>2010 MHz – 2025 MHz</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n38</td>
+<td>2570 MHz – 2620 MHz</td>
+<td>2570 MHz – 2620 MHz</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n39</td>
+<td>1880 MHz – 1920 MHz</td>
+<td>1880 MHz – 1920 MHz</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n40</td>
+<td>2300 MHz – 2400 MHz</td>
+<td>2300 MHz – 2400 MHz</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n41</td>
+<td>2496 MHz – 2690 MHz</td>
+<td>2496 MHz – 2690 MHz</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n48</td>
+<td>3550 MHz – 3700 MHz</td>
+<td>3550 MHz – 3700 MHz</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n50</td>
+<td>1432 MHz – 1517 MHz</td>
+<td>1432 MHz – 1517 MHz</td>
+<td>TDD<sup>1</sup></td>
+</tr>
+<tr>
+<td>n51</td>
+<td>1427 MHz – 1432 MHz</td>
+<td>1427 MHz – 1432 MHz</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n53</td>
+<td>2483.5 MHz – 2495 MHz</td>
+<td>2483.5 MHz – 2495 MHz</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n65</td>
+<td>1920 MHz – 2010 MHz</td>
+<td>2110 MHz – 2200 MHz</td>
+<td>FDD<sup>4</sup></td>
+</tr>
+<tr>
+<td>n66</td>
+<td>1710 MHz – 1780 MHz</td>
+<td>2110 MHz – 2200 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n70</td>
+<td>1695 MHz – 1710 MHz</td>
+<td>1995 MHz – 2020 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n71</td>
+<td>663 MHz – 698 MHz</td>
+<td>617 MHz – 652 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n74</td>
+<td>1427 MHz – 1470 MHz</td>
+<td>1475 MHz – 1518 MHz</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>n75</td>
+<td>N/A</td>
+<td>1432 MHz – 1517 MHz</td>
+<td>SDL</td>
+</tr>
+<tr>
+<td>n76</td>
+<td>N/A</td>
+<td>1427 MHz – 1432 MHz</td>
+<td>SDL</td>
+</tr>
+<tr>
+<td>n77<sup>12</sup></td>
+<td>3300 MHz – 4200 MHz</td>
+<td>3300 MHz – 4200 MHz</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n78</td>
+<td>3300 MHz – 3800 MHz</td>
+<td>3300 MHz – 3800 MHz</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n79</td>
+<td>4400 MHz – 5000 MHz</td>
+<td>4400 MHz – 5000 MHz</td>
+<td>TDD</td>
+</tr>
+<tr>
+<td>n80</td>
+<td>1710 MHz – 1785 MHz</td>
+<td>N/A</td>
+<td>SUL</td>
+</tr>
+<tr>
+<td>n81</td>
+<td>880 MHz – 915 MHz</td>
+<td>N/A</td>
+<td>SUL</td>
+</tr>
+<tr>
+<td>n82</td>
+<td>832 MHz – 862 MHz</td>
+<td>N/A</td>
+<td>SUL</td>
+</tr>
+<tr>
+<td>n83</td>
+<td>703 MHz – 748 MHz</td>
+<td>N/A</td>
+<td>SUL</td>
+</tr>
+<tr>
+<td>n84</td>
+<td>1920 MHz – 1980 MHz</td>
+<td>N/A</td>
+<td>SUL</td>
+</tr>
+<tr>
+<td>n86</td>
+<td>1710 MHz – 1780 MHz</td>
+<td>N/A</td>
+<td>SUL</td>
+</tr>
+<tr>
+<td>n95</td>
+<td>2010 MHz – 2025 MHz</td>
+<td>N/A</td>
+<td>SUL</td>
+</tr>
+</tbody>
+</table>
+<p>Other operating bands may be considered in future releases.</p>
+<h3 id="fr1-en-dc-band-combinations">5.2.2 FR1 EN-DC band
+combinations</h3>
+<p><em>&lt;Editor’s note: Example EN-DC combinations can be further
+added. &gt;</em></p>
+<p>Principle of EN-DC band combinations selection for FR1 TRP TRS OTA
+testing:</p>
+<p>1) Focus on the performance of the NR carrier and do not consider
+multiple permutations between different LTE bands and NR band under
+test, i.e., for each NR band, only select one EN-DC band
+combination.</p>
+<p>2) For UE supporting multiple EN-DC band combinations for the same NR
+band, consider only those EN-DC configurations which have no MSD impact
+on either LTE or NR, i.e., the selected EN-DC combination should be no
+MSD issue identified in TS 38.101-3 Section 7.3B.2.3 (Inter-band EN-DC
+within FR1).</p>
+<p>Table 5.2.2-1: Measurement parameters for example inter-band EN-DC
+band combinations (two bands)</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 26%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr>
+<th><p>EN-DC</p>
+<p>configuration</p></th>
+<th>E-UTRA configurations</th>
+<th>NR configurations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DC_3A_n28A</td>
+<td>Note1</td>
+<td>Note2</td>
+</tr>
+<tr>
+<td>DC_2A_n41A</td>
+<td>Note1</td>
+<td>Note2</td>
+</tr>
+<tr>
+<td>DC_1A_n78A</td>
+<td>Note1</td>
+<td>Note2</td>
+</tr>
+<tr>
+<td>DC_1A_n79A</td>
+<td>Note1</td>
+<td>Note2</td>
+</tr>
+<tr>
+<td colspan="3"><p>Note 1: As per TS 37.544 [8], Clause 5.3 and 5.4
+(Measurement frequencies for E-UTRA FDD and TDD).</p>
+<p>Note 2: As per Table 5.3-1 and Table 5.3-2 in this specification. The
+measurement parameters for NR Low Mid High ranges correspond to E-UTRA
+Low Mid High ranges respectively.</p></td>
+</tr>
+</tbody>
+</table>
+<p>With the above basic principle and EN-DC example band combination,
+the selection logic for testing is defined by the decision tree
+below.</p>
+<p><img src="media/image3.png"
+style="width:6.42361in;height:9.02036in" /></p>
+<p>Figure 5.2.2-1: Decision tree to select the EN-DC band combination
+for TRP/TRS testing</p>
+<h2 id="test-parameters-for-each-band">5.3 Test parameters for each
+band</h2>
+<p>The detailed testing parameters for each band is defined in Table
+5.3-1 and Table 5.3-2.</p>
+<p>Table 5.3-1: NR FR1 TRP measurement parameters</p>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 8%" />
+<col style="width: 6%" />
+<col style="width: 11%" />
+<col style="width: 7%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR Band</th>
+<th>CBW<br />
+[MHz]</th>
+<th>SCS (kHz)</th>
+<th>UL modulation</th>
+<th>Range</th>
+<th><p>UL Carrier centre</p>
+<p>[ARFCN]</p></th>
+<th>UL Carrier Center (MHz)</th>
+<th><p>DL Carrier centre</p>
+<p>[ARFCN]</p></th>
+<th>DL Carrier Center (MHz)</th>
+<th><p>UL RB Allocation</p>
+<p>(L<sub>CRB</sub> @ RB<sub>start</sub>)</p></th>
+<th>DL configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">n1</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>385500</td>
+<td>1927.5</td>
+<td>423500</td>
+<td>2117.5</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>390000</td>
+<td>1950</td>
+<td>428000</td>
+<td>2140</td>
+</tr>
+<tr>
+<td>High</td>
+<td>394500</td>
+<td>1972.5</td>
+<td>432500</td>
+<td>2162.5</td>
+</tr>
+<tr>
+<td rowspan="3">n2</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>371500</td>
+<td>1857.5</td>
+<td>387500</td>
+<td>1937.5</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>376000</td>
+<td>1880</td>
+<td>392000</td>
+<td>1960</td>
+</tr>
+<tr>
+<td>High</td>
+<td>380500</td>
+<td>1902.5</td>
+<td>396500</td>
+<td>1982.5</td>
+</tr>
+<tr>
+<td rowspan="3">n3</td>
+<td rowspan="3">20</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>344000</td>
+<td>1720</td>
+<td>363000</td>
+<td>1815</td>
+<td rowspan="3">50@25</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>349500</td>
+<td>1747.5</td>
+<td>368500</td>
+<td>1842.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>355000</td>
+<td>1775</td>
+<td>374000</td>
+<td>1870</td>
+</tr>
+<tr>
+<td rowspan="3">n5</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>166300</td>
+<td>831.5</td>
+<td>175300</td>
+<td>876.5</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>167300</td>
+<td>836.5</td>
+<td>176300</td>
+<td>881.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>168300</td>
+<td>841.5</td>
+<td>177300</td>
+<td>886.5</td>
+</tr>
+<tr>
+<td rowspan="3">n7</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>501500</td>
+<td>2507.5</td>
+<td>525500</td>
+<td>2627.5</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td style="text-align: center;">Mid</td>
+<td>507000</td>
+<td>2535</td>
+<td>531000</td>
+<td>2655</td>
+</tr>
+<tr>
+<td style="text-align: center;">High</td>
+<td>512500</td>
+<td>2562.5</td>
+<td>536500</td>
+<td>2682.5</td>
+</tr>
+<tr>
+<td rowspan="3">n8</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>177500</td>
+<td>887.5</td>
+<td>186500</td>
+<td>932.5</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>179500</td>
+<td>897.5</td>
+<td>188500</td>
+<td>942.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>181500</td>
+<td>907.5</td>
+<td>190500</td>
+<td>952.5</td>
+</tr>
+<tr>
+<td rowspan="3">n12</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>140800</td>
+<td>704</td>
+<td>146800</td>
+<td>734</td>
+<td rowspan="3">25@12</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>141500</td>
+<td>707.5</td>
+<td>147500</td>
+<td>737.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>142200</td>
+<td>711</td>
+<td>148200</td>
+<td>741</td>
+</tr>
+<tr>
+<td rowspan="3">n14</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td rowspan="3">158600</td>
+<td rowspan="3">793</td>
+<td rowspan="3">152600</td>
+<td rowspan="3">763</td>
+<td rowspan="3">25@12</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+</tr>
+<tr>
+<td>High</td>
+</tr>
+<tr>
+<td rowspan="3">n20</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>167900</td>
+<td>839.5</td>
+<td>159700</td>
+<td>798.5</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>169400</td>
+<td>847</td>
+<td>161200</td>
+<td>806</td>
+</tr>
+<tr>
+<td>High</td>
+<td>170900</td>
+<td>854.5</td>
+<td>162700</td>
+<td>813.5</td>
+</tr>
+<tr>
+<td rowspan="3">n25</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>371500</td>
+<td>1857.5</td>
+<td>387500</td>
+<td>1937.5</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td style="text-align: center;">Mid</td>
+<td>376500</td>
+<td>1882.5</td>
+<td>392500</td>
+<td>1962.5</td>
+</tr>
+<tr>
+<td style="text-align: center;">High</td>
+<td>381500</td>
+<td>1907.5</td>
+<td>397500</td>
+<td>1987.5</td>
+</tr>
+<tr>
+<td rowspan="3">n26</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>163800</td>
+<td>819</td>
+<td>172800</td>
+<td>864</td>
+<td rowspan="3">25@12</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>166300</td>
+<td>831.5</td>
+<td>175300</td>
+<td>876.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>168800</td>
+<td>844</td>
+<td>177800</td>
+<td>889</td>
+</tr>
+<tr>
+<td rowspan="3">n28</td>
+<td rowspan="3">20</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>142600</td>
+<td>713</td>
+<td>153600</td>
+<td>768</td>
+<td rowspan="3">50@25</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>145600</td>
+<td>728</td>
+<td>156600</td>
+<td>783</td>
+</tr>
+<tr>
+<td>High</td>
+<td>147600</td>
+<td>738</td>
+<td>158600</td>
+<td>793</td>
+</tr>
+<tr>
+<td rowspan="3">n30</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td rowspan="3">462000</td>
+<td rowspan="3">2310</td>
+<td rowspan="3">471000</td>
+<td rowspan="3">2355</td>
+<td rowspan="3">25@12</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+</tr>
+<tr>
+<td>High</td>
+</tr>
+<tr>
+<td rowspan="3">n34</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>403000</td>
+<td>2015</td>
+<td>403000</td>
+<td>2015</td>
+<td rowspan="3">25@12</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>403500</td>
+<td>2017.5</td>
+<td>403500</td>
+<td>2017.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>404000</td>
+<td>2020</td>
+<td>404000</td>
+<td>2020</td>
+</tr>
+<tr>
+<td rowspan="3">n38</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>515500</td>
+<td>2577.5</td>
+<td>515500</td>
+<td>2577.5</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>519000</td>
+<td>2595</td>
+<td>519000</td>
+<td>2595</td>
+</tr>
+<tr>
+<td>High</td>
+<td>522500</td>
+<td>2612.5</td>
+<td>522500</td>
+<td>2612.5</td>
+</tr>
+<tr>
+<td rowspan="3">n39</td>
+<td rowspan="3">20</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>378000</td>
+<td>1890</td>
+<td>378000</td>
+<td>1890</td>
+<td rowspan="3">50@25</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td style="text-align: center;">Mid</td>
+<td>380000</td>
+<td>1900</td>
+<td>380000</td>
+<td>1900</td>
+</tr>
+<tr>
+<td style="text-align: center;">High</td>
+<td>382000</td>
+<td>1910</td>
+<td>382000</td>
+<td>1910</td>
+</tr>
+<tr>
+<td rowspan="3">n40</td>
+<td rowspan="3">30</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>463000</td>
+<td>2315</td>
+<td>463000</td>
+<td>2315</td>
+<td rowspan="3">TBD</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>470000</td>
+<td>2350</td>
+<td>470000</td>
+<td>2350</td>
+</tr>
+<tr>
+<td>High</td>
+<td>477000</td>
+<td>2385</td>
+<td>477000</td>
+<td>2385</td>
+</tr>
+<tr>
+<td rowspan="3">n41</td>
+<td rowspan="3">100</td>
+<td rowspan="3">30</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>509202</td>
+<td>2546.01</td>
+<td>509202</td>
+<td>2546.01</td>
+<td rowspan="3">135@67</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>518598</td>
+<td>2592.99</td>
+<td>518598</td>
+<td>2592.99</td>
+</tr>
+<tr>
+<td>High</td>
+<td>528000</td>
+<td>2640</td>
+<td>528000</td>
+<td>2640</td>
+</tr>
+<tr>
+<td rowspan="3">n48</td>
+<td rowspan="3">20</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>637334</td>
+<td>3560.01</td>
+<td>637334</td>
+<td>3560.01</td>
+<td rowspan="3">50@25</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>641666</td>
+<td>3624.99</td>
+<td>641666</td>
+<td>3624.99</td>
+</tr>
+<tr>
+<td>High</td>
+<td>646000</td>
+<td>3690</td>
+<td>646000</td>
+<td>3690</td>
+</tr>
+<tr>
+<td rowspan="3">n50</td>
+<td rowspan="3">20</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>288400</td>
+<td>1442</td>
+<td>288400</td>
+<td>1442</td>
+<td rowspan="3">50@25</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>294900</td>
+<td>1474.5</td>
+<td>294900</td>
+<td>1474.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>301400</td>
+<td>1507</td>
+<td>301400</td>
+<td>1507</td>
+</tr>
+<tr>
+<td rowspan="3">n51</td>
+<td rowspan="3">5</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td rowspan="3">285900</td>
+<td rowspan="3">1429.5</td>
+<td rowspan="3">285900</td>
+<td rowspan="3">1429.5</td>
+<td rowspan="3">12@6</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+</tr>
+<tr>
+<td>High</td>
+</tr>
+<tr>
+<td rowspan="3">n53</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>497700</td>
+<td>2488.5</td>
+<td>497700</td>
+<td>2488.5</td>
+<td rowspan="3">25@12</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>497860</td>
+<td>2489.3</td>
+<td>497860</td>
+<td>2489.3</td>
+</tr>
+<tr>
+<td>High</td>
+<td>498000</td>
+<td>2490</td>
+<td>498000</td>
+<td>2490</td>
+</tr>
+<tr>
+<td rowspan="3">n65</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>423500</td>
+<td>2117.5</td>
+<td>423500</td>
+<td>2117.5</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>431000</td>
+<td>2155</td>
+<td>431000</td>
+<td>2155</td>
+</tr>
+<tr>
+<td>High</td>
+<td>438500</td>
+<td>2192.5</td>
+<td>438500</td>
+<td>2192.5</td>
+</tr>
+<tr>
+<td rowspan="3">n66</td>
+<td rowspan="3">20 (20+20)</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>344000</td>
+<td>1720</td>
+<td>424000</td>
+<td>2120</td>
+<td rowspan="3">50@25</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>349000</td>
+<td>1745</td>
+<td>429000</td>
+<td>2145</td>
+</tr>
+<tr>
+<td>High</td>
+<td>354000</td>
+<td>1770</td>
+<td>434000</td>
+<td>2170</td>
+</tr>
+<tr>
+<td rowspan="3">n70</td>
+<td rowspan="3">15 (15+15)</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td rowspan="3">340500</td>
+<td rowspan="3">1702.5</td>
+<td rowspan="3">400500</td>
+<td rowspan="3">2002.5</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+</tr>
+<tr>
+<td>High</td>
+</tr>
+<tr>
+<td rowspan="3">n71</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>133600</td>
+<td>668</td>
+<td>124400</td>
+<td>622</td>
+<td rowspan="3">25@12</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>136100</td>
+<td>680.5</td>
+<td>126900</td>
+<td>634.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>138600</td>
+<td>693</td>
+<td>129400</td>
+<td>647</td>
+</tr>
+<tr>
+<td rowspan="3">n74</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>286900</td>
+<td>1434.5</td>
+<td>296500</td>
+<td>1482.5</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>289700</td>
+<td>1448.5</td>
+<td>299300</td>
+<td>1496.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>292500</td>
+<td>1462.5</td>
+<td>302100</td>
+<td>1510.5</td>
+</tr>
+<tr>
+<td rowspan="3">n77</td>
+<td rowspan="3">100</td>
+<td rowspan="3">30</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>623334</td>
+<td>3350.01</td>
+<td>623334</td>
+<td>3350.01</td>
+<td rowspan="3">135@67</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>650000</td>
+<td>3750</td>
+<td>650000</td>
+<td>3750</td>
+</tr>
+<tr>
+<td>High</td>
+<td>676666</td>
+<td>4149.99</td>
+<td>676666</td>
+<td>4149.99</td>
+</tr>
+<tr>
+<td rowspan="3">n78</td>
+<td rowspan="3">100</td>
+<td rowspan="3">30</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>623334</td>
+<td>3350.01</td>
+<td>623334</td>
+<td>3350.01</td>
+<td rowspan="3">135@67</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>636666</td>
+<td>3549.99</td>
+<td>636666</td>
+<td>3549.99</td>
+</tr>
+<tr>
+<td>High</td>
+<td>650000</td>
+<td>3750</td>
+<td>650000</td>
+<td>3750</td>
+</tr>
+<tr>
+<td rowspan="3">n79</td>
+<td rowspan="3">100</td>
+<td rowspan="3">30</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>696668</td>
+<td>4450.02</td>
+<td>696668</td>
+<td>4450.02</td>
+<td rowspan="3">135@67</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>713334</td>
+<td>4700.01</td>
+<td>713334</td>
+<td>4700.01</td>
+</tr>
+<tr>
+<td>High</td>
+<td>730000</td>
+<td>4950</td>
+<td>730000</td>
+<td>4950</td>
+</tr>
+<tr>
+<td rowspan="3">n80</td>
+<td rowspan="3">20</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>344000</td>
+<td>1720</td>
+<td>N/A</td>
+<td>N/A</td>
+<td rowspan="3">50@25</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>349500</td>
+<td>1747.5</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>High</td>
+<td>355000</td>
+<td>1775</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td rowspan="3">n81</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>177500</td>
+<td>887.5</td>
+<td>N/A</td>
+<td>N/A</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>179500</td>
+<td>897.5</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>High</td>
+<td>181500</td>
+<td>907.5</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td rowspan="3">n82</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>167900</td>
+<td>839.5</td>
+<td>N/A</td>
+<td>N/A</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>169400</td>
+<td>847</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>High</td>
+<td>170900</td>
+<td>854.5</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td rowspan="3">n83</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>142100</td>
+<td>710.5</td>
+<td>N/A</td>
+<td>N/A</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>145100</td>
+<td>725.5</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>High</td>
+<td>148100</td>
+<td>740.5</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td rowspan="3">n84</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>385500</td>
+<td>1927.5</td>
+<td>N/A</td>
+<td>N/A</td>
+<td rowspan="3">36@18</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>390000</td>
+<td>1950</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>High</td>
+<td>394500</td>
+<td>1972.5</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td rowspan="3">n86</td>
+<td rowspan="3">20</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>344000</td>
+<td>1720</td>
+<td>N/A</td>
+<td>N/A</td>
+<td rowspan="3">50@25</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>349000</td>
+<td>1745</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>High</td>
+<td>354000</td>
+<td>1770</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td rowspan="3">N95</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>403000</td>
+<td>2015</td>
+<td>N/A</td>
+<td>N/A</td>
+<td rowspan="3">50@25</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>403500</td>
+<td>2017.5</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>High</td>
+<td>404000</td>
+<td>2020</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.3-2: NR FR1 TRS measurement parameters</p>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 5%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 6%" />
+<col style="width: 8%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 7%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR Band</th>
+<th>CBW<br />
+(MHz)</th>
+<th>SCS (kHz)</th>
+<th>DL modulation</th>
+<th>UL modulation</th>
+<th>Range</th>
+<th><p>UL Carrier centre</p>
+<p>[ARFCN]</p></th>
+<th>UL Carrier Center (MHz)</th>
+<th><p>DL Carrier centre</p>
+<p>[ARFCN]</p></th>
+<th>DL Carrier Center (MHz)</th>
+<th><p>UL RB Allocation</p>
+<p>(L<sub>CRB</sub> @ RB<sub>start</sub>)</p></th>
+<th>DL Configuration (FULL RB, L<sub>CRB</sub> @
+RB<sub>start</sub>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">n1</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>385500</td>
+<td>1927.5</td>
+<td>423500</td>
+<td>2117.5</td>
+<td rowspan="3">75@4</td>
+<td rowspan="3">79@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>390000</td>
+<td>1950</td>
+<td>428000</td>
+<td>2140</td>
+</tr>
+<tr>
+<td>High</td>
+<td>394500</td>
+<td>1972.5</td>
+<td>432500</td>
+<td>2162.5</td>
+</tr>
+<tr>
+<td rowspan="3">n2</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>371500</td>
+<td>1857.5</td>
+<td>387500</td>
+<td>1937.5</td>
+<td rowspan="3">50@29</td>
+<td rowspan="3">79@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>376000</td>
+<td>1880</td>
+<td>392000</td>
+<td>1960</td>
+</tr>
+<tr>
+<td>High</td>
+<td>380500</td>
+<td>1902.5</td>
+<td>396500</td>
+<td>1982.5</td>
+</tr>
+<tr>
+<td rowspan="3">n3</td>
+<td rowspan="3">20</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>344000</td>
+<td>1720</td>
+<td>363000</td>
+<td>1815</td>
+<td rowspan="3">50@56</td>
+<td rowspan="3">106@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>349500</td>
+<td>1747.5</td>
+<td>368500</td>
+<td>1842.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>355000</td>
+<td>1775</td>
+<td>374000</td>
+<td>1870</td>
+</tr>
+<tr>
+<td rowspan="3">n5</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>166300</td>
+<td>831.5</td>
+<td>175300</td>
+<td>876.5</td>
+<td rowspan="3">25@54</td>
+<td rowspan="3">79@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>167300</td>
+<td>836.5</td>
+<td>176300</td>
+<td>881.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>168300</td>
+<td>841.5</td>
+<td>177300</td>
+<td>886.5</td>
+</tr>
+<tr>
+<td rowspan="3">n7</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>501500</td>
+<td>2507.5</td>
+<td>525500</td>
+<td>2627.5</td>
+<td rowspan="3">75@4</td>
+<td rowspan="3">79@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>507000</td>
+<td>2535</td>
+<td>531000</td>
+<td>2655</td>
+</tr>
+<tr>
+<td>High</td>
+<td>512500</td>
+<td>2562.5</td>
+<td>536500</td>
+<td>2682.5</td>
+</tr>
+<tr>
+<td rowspan="3">n8</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>177500</td>
+<td>887.5</td>
+<td>186500</td>
+<td>932.5</td>
+<td rowspan="3">25@54</td>
+<td rowspan="3">79@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>179500</td>
+<td>897.5</td>
+<td>188500</td>
+<td>942.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>181500</td>
+<td>907.5</td>
+<td>190500</td>
+<td>952.5</td>
+</tr>
+<tr>
+<td rowspan="3">n12</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>140800</td>
+<td>704</td>
+<td>146800</td>
+<td>734</td>
+<td rowspan="3">20@32</td>
+<td rowspan="3">52@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>141500</td>
+<td>707.5</td>
+<td>147500</td>
+<td>737.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>142200</td>
+<td>711</td>
+<td>148200</td>
+<td>741</td>
+</tr>
+<tr>
+<td rowspan="3">n14</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td rowspan="3">158600</td>
+<td rowspan="3">793</td>
+<td rowspan="3">152600</td>
+<td rowspan="3">763</td>
+<td rowspan="3">20@32</td>
+<td rowspan="3">52@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+</tr>
+<tr>
+<td>High</td>
+</tr>
+<tr>
+<td rowspan="3">n20</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>167900</td>
+<td>839.5</td>
+<td>159700</td>
+<td>798.5</td>
+<td rowspan="3">20@11</td>
+<td rowspan="3">79@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>169400</td>
+<td>847</td>
+<td>161200</td>
+<td>806</td>
+</tr>
+<tr>
+<td>High</td>
+<td>170900</td>
+<td>854.5</td>
+<td>162700</td>
+<td>813.5</td>
+</tr>
+<tr>
+<td rowspan="3">n25</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>371500</td>
+<td>1857.5</td>
+<td>387500</td>
+<td>1937.5</td>
+<td rowspan="3">50@29</td>
+<td rowspan="3">79@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>376500</td>
+<td>1882.5</td>
+<td>392500</td>
+<td>1962.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>381500</td>
+<td>1907.5</td>
+<td>397500</td>
+<td>1987.5</td>
+</tr>
+<tr>
+<td rowspan="3">n26</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>163800</td>
+<td>819</td>
+<td>172800</td>
+<td>864</td>
+<td rowspan="3">25@27</td>
+<td rowspan="3">52@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>166300</td>
+<td>831.5</td>
+<td>175300</td>
+<td>876.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>168800</td>
+<td>844</td>
+<td>177800</td>
+<td>889</td>
+</tr>
+<tr>
+<td rowspan="3">n28</td>
+<td rowspan="3">20</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>142600</td>
+<td>713</td>
+<td>153600</td>
+<td>768</td>
+<td rowspan="3">25@81</td>
+<td rowspan="3">106@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>145600</td>
+<td>728</td>
+<td>156600</td>
+<td>783</td>
+</tr>
+<tr>
+<td>High</td>
+<td>147600</td>
+<td>738</td>
+<td>158600</td>
+<td>793</td>
+</tr>
+<tr>
+<td rowspan="3">n30</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td rowspan="3">462000</td>
+<td rowspan="3">2310</td>
+<td rowspan="3">471000</td>
+<td rowspan="3">2355</td>
+<td rowspan="3">20@32</td>
+<td rowspan="3">52@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+</tr>
+<tr>
+<td>High</td>
+</tr>
+<tr>
+<td rowspan="3">n34</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>403000</td>
+<td>2015</td>
+<td>403000</td>
+<td>2015</td>
+<td rowspan="3">50@0</td>
+<td rowspan="3">52@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>403500</td>
+<td>2017.5</td>
+<td>403500</td>
+<td>2017.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>404000</td>
+<td>2020</td>
+<td>404000</td>
+<td>2020</td>
+</tr>
+<tr>
+<td rowspan="3">n38</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>515500</td>
+<td>2577.5</td>
+<td>515500</td>
+<td>2577.5</td>
+<td rowspan="3">75@0</td>
+<td rowspan="3">79@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>519000</td>
+<td>2595</td>
+<td>519000</td>
+<td>2595</td>
+</tr>
+<tr>
+<td>High</td>
+<td>522500</td>
+<td>2612.5</td>
+<td>522500</td>
+<td>2612.5</td>
+</tr>
+<tr>
+<td rowspan="3">n39</td>
+<td rowspan="3">20</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>378000</td>
+<td>1890</td>
+<td>378000</td>
+<td>1890</td>
+<td rowspan="3">100@0</td>
+<td rowspan="3">106@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>380000</td>
+<td>1900</td>
+<td>380000</td>
+<td>1900</td>
+</tr>
+<tr>
+<td>High</td>
+<td>382000</td>
+<td>1910</td>
+<td>382000</td>
+<td>1910</td>
+</tr>
+<tr>
+<td rowspan="3">n40</td>
+<td rowspan="3">30</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>463000</td>
+<td>2315</td>
+<td>463000</td>
+<td>2315</td>
+<td rowspan="3">160@0</td>
+<td rowspan="3">160@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>470000</td>
+<td>2350</td>
+<td>470000</td>
+<td>2350</td>
+</tr>
+<tr>
+<td>High</td>
+<td>477000</td>
+<td>2385</td>
+<td>477000</td>
+<td>2385</td>
+</tr>
+<tr>
+<td rowspan="3">n41</td>
+<td rowspan="3">100</td>
+<td rowspan="3">30</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>509202</td>
+<td>2546.01</td>
+<td>509202</td>
+<td>2546.01</td>
+<td rowspan="3">270@0</td>
+<td rowspan="3">273@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>518598</td>
+<td>2592.99</td>
+<td>518598</td>
+<td>2592.99</td>
+</tr>
+<tr>
+<td>High</td>
+<td>528000</td>
+<td>2640</td>
+<td>528000</td>
+<td>2640</td>
+</tr>
+<tr>
+<td rowspan="3">n48</td>
+<td rowspan="3">20</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>637334</td>
+<td>3560.01</td>
+<td>637334</td>
+<td>3560.01</td>
+<td rowspan="3">100@0</td>
+<td rowspan="3">106@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>641666</td>
+<td>3624.99</td>
+<td>641666</td>
+<td>3624.99</td>
+</tr>
+<tr>
+<td>High</td>
+<td>646000</td>
+<td>3690</td>
+<td>646000</td>
+<td>3690</td>
+</tr>
+<tr>
+<td rowspan="3">n50</td>
+<td rowspan="3">20</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>288400</td>
+<td>1442</td>
+<td>288400</td>
+<td>1442</td>
+<td rowspan="3">100@0</td>
+<td rowspan="3">106@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>294900</td>
+<td>1474.5</td>
+<td>294900</td>
+<td>1474.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>301400</td>
+<td>1507</td>
+<td>301400</td>
+<td>1507</td>
+</tr>
+<tr>
+<td rowspan="3">n51</td>
+<td rowspan="3">5</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td rowspan="3">285900</td>
+<td rowspan="3">1429.5</td>
+<td rowspan="3">285900</td>
+<td rowspan="3">1429.5</td>
+<td rowspan="3">25@0</td>
+<td rowspan="3">25@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+</tr>
+<tr>
+<td>High</td>
+</tr>
+<tr>
+<td rowspan="3">n53</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>497700</td>
+<td>2488.5</td>
+<td>497700</td>
+<td>2488.5</td>
+<td rowspan="3">50@0</td>
+<td rowspan="3">52@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>497860</td>
+<td>2489.3</td>
+<td>497860</td>
+<td>2489.3</td>
+</tr>
+<tr>
+<td>High</td>
+<td>498000</td>
+<td>2490</td>
+<td>498000</td>
+<td>2490</td>
+</tr>
+<tr>
+<td rowspan="3">n65</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>423500</td>
+<td>2117.5</td>
+<td>423500</td>
+<td>2117.5</td>
+<td rowspan="3">75@4</td>
+<td rowspan="3">79@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>431000</td>
+<td>2155</td>
+<td>431000</td>
+<td>2155</td>
+</tr>
+<tr>
+<td>High</td>
+<td>438500</td>
+<td>2192.5</td>
+<td>438500</td>
+<td>2192.5</td>
+</tr>
+<tr>
+<td rowspan="3">n66</td>
+<td rowspan="3">20 (20+20)</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>344000</td>
+<td>1720</td>
+<td>424000</td>
+<td>2120</td>
+<td rowspan="3">100@6</td>
+<td rowspan="3">106@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>349000</td>
+<td>1745</td>
+<td>429000</td>
+<td>2145</td>
+</tr>
+<tr>
+<td>High</td>
+<td>354000</td>
+<td>1770</td>
+<td>434000</td>
+<td>2170</td>
+</tr>
+<tr>
+<td rowspan="3">n70</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td rowspan="3">340500</td>
+<td rowspan="3">1702.5</td>
+<td rowspan="3">400500</td>
+<td rowspan="3">2002.5</td>
+<td rowspan="3">75@4</td>
+<td rowspan="3">79@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+</tr>
+<tr>
+<td>High</td>
+</tr>
+<tr>
+<td rowspan="3">n71</td>
+<td rowspan="3">10</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>133600</td>
+<td>668</td>
+<td>124400</td>
+<td>622</td>
+<td rowspan="3">25@0</td>
+<td rowspan="3">52@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>136100</td>
+<td>680.5</td>
+<td>126900</td>
+<td>634.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>138600</td>
+<td>693</td>
+<td>129400</td>
+<td>647</td>
+</tr>
+<tr>
+<td rowspan="3">n74</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>286900</td>
+<td>1434.5</td>
+<td>296500</td>
+<td>1482.5</td>
+<td rowspan="3">25@54</td>
+<td rowspan="3">79@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>289700</td>
+<td>1448.5</td>
+<td>299300</td>
+<td>1496.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>292500</td>
+<td>1462.5</td>
+<td>302100</td>
+<td>1510.5</td>
+</tr>
+<tr>
+<td rowspan="3">n75 SDL</td>
+<td rowspan="3">15</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>287900</td>
+<td>1439.5</td>
+<td rowspan="3">NA</td>
+<td rowspan="3">79@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>294900</td>
+<td>1474.5</td>
+</tr>
+<tr>
+<td>High</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>301900</td>
+<td>1509.5</td>
+</tr>
+<tr>
+<td rowspan="3">n76 SDL</td>
+<td rowspan="3">5</td>
+<td rowspan="3">15</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td rowspan="3">N/A</td>
+<td rowspan="3">N/A</td>
+<td rowspan="3">285900</td>
+<td rowspan="3">1429.5</td>
+<td rowspan="3">NA</td>
+<td rowspan="3">25@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+</tr>
+<tr>
+<td>High</td>
+</tr>
+<tr>
+<td rowspan="3">n77</td>
+<td rowspan="3">100</td>
+<td rowspan="3">30</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>623334</td>
+<td>3350.01</td>
+<td>623334</td>
+<td>3350.01</td>
+<td rowspan="3">270@0</td>
+<td rowspan="3">273@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>650000</td>
+<td>3750</td>
+<td>650000</td>
+<td>3750</td>
+</tr>
+<tr>
+<td>High</td>
+<td>676666</td>
+<td>4149.99</td>
+<td>676666</td>
+<td>4149.99</td>
+</tr>
+<tr>
+<td rowspan="3">n78</td>
+<td rowspan="3">100</td>
+<td rowspan="3">30</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>623334</td>
+<td>3350.01</td>
+<td>623334</td>
+<td>3350.01</td>
+<td rowspan="3">270@0</td>
+<td rowspan="3">273@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>636666</td>
+<td>3549.99</td>
+<td>636666</td>
+<td>3549.99</td>
+</tr>
+<tr>
+<td>High</td>
+<td>650000</td>
+<td>3750</td>
+<td>650000</td>
+<td>3750</td>
+</tr>
+<tr>
+<td rowspan="3">n79</td>
+<td rowspan="3">100</td>
+<td rowspan="3">30</td>
+<td rowspan="3">CP-OFDM QPSK</td>
+<td rowspan="3"><p>DFT-s-OFDM</p>
+<p>QPSK</p></td>
+<td>Low</td>
+<td>696668</td>
+<td>4450.02</td>
+<td>696668</td>
+<td>4450.02</td>
+<td rowspan="3">270@0</td>
+<td rowspan="3">273@0</td>
+</tr>
+<tr>
+<td>Mid</td>
+<td>713334</td>
+<td>4700.01</td>
+<td>713334</td>
+<td>4700.01</td>
+</tr>
+<tr>
+<td>High</td>
+<td>730000</td>
+<td>4950</td>
+<td>730000</td>
+<td>4950</td>
+</tr>
+</tbody>
+</table>
+<h1 id="fr1-trp-requirements">6 FR1 TRP requirements</h1>
+<h2 id="general-3">6.1 General</h2>
+<p>The TRP requirements specified in Clause 6 apply to handheld UE with
+TAS off and power back-off functions disabled.</p>
+<p>The TRP requirements defined in Clause 6.2 should be verified based
+on the detailed test parameters in Table 5.3-1.</p>
+<h2 id="minimum-requirement">6.2 Minimum requirement</h2>
+<h3 id="minimum-requirement-for-handheld-ue">6.2.1 Minimum requirement
+for handheld UE</h3>
+<p>The average measured total radiated power (TRP) of low, mid and high
+channel for handheld UE shall be higher than the average TRP requirement
+specified in subclauses 6.2.1.1 and 6.2.1.2. The averaging shall be done
+in linear scale for the TRP results of both right and left side of the
+phantom head in case of beside the head and hand phantom positions. For
+the hand phantom browsing mode position the averaging shall be done in
+linear scale for the TRP results of both right and left hand phantom
+measurements.</p>
+<p><span class="math display">\[{TRP}_{average} = {10log}\left\lbrack
+\frac{10^{P_{left\_ low}/10} + 10^{P_{left\_ mid}/10} + 10^{P_{left\_
+high}/10} + 10^{P_{right\_ low}/10} + 10^{P_{right\_ mid}/10} +
+10^{P_{right\_ high}/10}}{6} \right\rbrack\]</span></p>
+<p>For UEs which do not support NR FR1 in stand-alone mode, EN-DC mode
+requirements apply. SA and EN-DC test case applicability is defined in
+Clause 4.3, and test case applicability based on power class capability
+is defined in Clause 4.4. The relevant test methodology is defined in
+Annexes A and B of this specification.</p>
+<h4 id="hand-phantom-browsing-mode">6.2.1.1 Hand phantom browsing
+mode</h4>
+<p>Hand phantom browsing mode positions are defined in Clause B.3.1.</p>
+<h5 id="nr-fr1">6.2.1.1.1 NR FR1</h5>
+<p>Handheld UE TRP minimum performance requirement for NR FR1 bands in
+the hand phantom browsing position and the primary mechanical mode are
+defined in Tables 6.2.1.1.1-1 and 6.2.1.1.1-2.</p>
+<p>Table 6.2.1.1.1-1: Handheld PC3 UE TRP minimum performance
+requirement for NR FR1 bands in the hand phantom browsing position and
+the primary mechanical mode</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">NR Band</th>
+<th rowspan="3">Bandwidth (MHz)</th>
+<th rowspan="3">Usage Scenario</th>
+<th colspan="2">Power Class 3</th>
+</tr>
+<tr>
+<th colspan="2">Average TRP (dBm)</th>
+</tr>
+<tr>
+<th>UE width ≤ 72mm</th>
+<th>UE width &gt; 72mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n28</td>
+<td>20</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n41</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n78</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n79</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.2.1.1-2: Handheld PC2 UE TRP minimum performance requirement
+for NR FR1 bands in the hand phantom browsing position and the primary
+mechanical mode</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">NR Band</th>
+<th rowspan="3">Bandwidth (MHz)</th>
+<th rowspan="3">Usage Scenario</th>
+<th colspan="2">Power Class 2</th>
+</tr>
+<tr>
+<th colspan="2">Average TRP (dBm)</th>
+</tr>
+<tr>
+<th>UE width ≤ 72mm</th>
+<th>UE width &gt; 72mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n28</td>
+<td>20</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n41</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td>12.5</td>
+</tr>
+<tr>
+<td>n78</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>n79</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h5 id="nr-fr1-in-en-dc-mode">6.2.1.1.2 NR FR1 in EN-DC mode</h5>
+<p>Handheld UE TRP minimum performance requirement for NR FR1 bands (in
+EN-DC mode) in the hand phantom browsing position and the primary
+mechanical mode are defined in Tables 6.2.1.1.2-1 and 6.2.1.1.2-2.</p>
+<p>Table 6.2.1.1.2-1: Handheld PC3 UE TRP minimum performance
+requirement for NR FR1 bands (in EN-DC mode) in the hand phantom
+browsing position and the primary mechanical mode</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">NR Band</th>
+<th rowspan="3">Bandwidth (MHz)</th>
+<th rowspan="3">Usage Scenario</th>
+<th colspan="2">Power Class 3</th>
+</tr>
+<tr>
+<th colspan="2">Average TRP (dBm)</th>
+</tr>
+<tr>
+<th>UE width ≤ 72mm</th>
+<th>UE width &gt; 72mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n28</td>
+<td>20</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n41</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n78</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n79</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.2.1.1.2-2: Handheld PC2 UE TRP minimum performance
+requirement for NR FR1 bands (in EN-DC mode) in the hand phantom
+browsing position and the primary mechanical mode</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">NR Band</th>
+<th rowspan="3">Bandwidth (MHz)</th>
+<th rowspan="3">Usage Scenario</th>
+<th colspan="2">Power Class 2</th>
+</tr>
+<tr>
+<th colspan="2">Average TRP (dBm)</th>
+</tr>
+<tr>
+<th>UE width ≤ 72mm</th>
+<th>UE width &gt; 72mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n28</td>
+<td>20</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n41</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n78</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n79</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="beside-the-head-and-hand-phantom-talk-mode">6.2.1.2 Beside the
+head and hand phantom talk mode</h4>
+<p>Beside the head and hand phantom mode positions are defined in Clause
+B.3.2 of this specification.</p>
+<h5 id="nr-fr1-1">6.2.1.2.1 NR FR1</h5>
+<p>Handheld UE TRP minimum performance requirement for NR FR1 bands in
+the beside head and hand phantom talk position and the primary
+mechanical mode are defined in Tables 6.2.1.2.1-1 and 6.2.1.2.1-2.</p>
+<p>Table 6.2.1.2.1-1: Handheld PC3 UE TRP minimum performance
+requirement for NR FR1 bands in the beside head and hand phantom talk
+position and the primary mechanical mode</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">NR Band</th>
+<th rowspan="3">Bandwidth (MHz)</th>
+<th rowspan="3">Usage Scenario</th>
+<th colspan="2">Power Class 3</th>
+</tr>
+<tr>
+<th colspan="2">Average TRP (dBm)</th>
+</tr>
+<tr>
+<th>UE width ≤ 72mm</th>
+<th>UE width &gt; 72mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n28</td>
+<td>20</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n41</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n78</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n79</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.2.1.2.1-2: Handheld PC2 UE TRP minimum performance
+requirement for NR FR1 bands in the beside head and hand phantom talk
+position and the primary mechanical mode</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">NR Band</th>
+<th rowspan="3">Bandwidth (MHz)</th>
+<th rowspan="3">Usage Scenario</th>
+<th colspan="2">Power Class 2</th>
+</tr>
+<tr>
+<th colspan="2">Average TRP (dBm)</th>
+</tr>
+<tr>
+<th>UE width ≤ 72mm</th>
+<th>UE width &gt; 72mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n28</td>
+<td>20</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n41</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n78</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n79</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h5 id="nr-fr1-in-en-dc-mode-1">6.2.1.2.2 NR FR1 in EN-DC mode</h5>
+<p>Handheld UE TRP minimum performance requirement for NR FR1 bands (in
+EN-DC mode) in the beside head and hand phantom talk position and the
+primary mechanical mode are defined in Tables 6.2.1.2.2-1 and
+6.2.1.2.2-2.</p>
+<p>Table 6.2.1.2.2-1: Handheld PC3 UE TRP minimum performance
+requirement for NR FR1 bands (in EN-DC mode) in the beside head and hand
+phantom talk position and the primary mechanical mode</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">NR Band</th>
+<th rowspan="3">Bandwidth (MHz)</th>
+<th rowspan="3">Usage Scenario</th>
+<th colspan="2">Power Class 3</th>
+</tr>
+<tr>
+<th colspan="2">Average TRP (dBm)</th>
+</tr>
+<tr>
+<th>UE width ≤ 72mm</th>
+<th>UE width &gt; 72mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n28</td>
+<td>20</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n41</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n78</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n79</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.2.1.2.2-2: Handheld PC2 UE TRP minimum performance
+requirement for NR FR1 bands (in EN-DC mode) in the beside head and hand
+phantom talk position and the primary mechanical mode</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">NR Band</th>
+<th rowspan="3">Bandwidth (MHz)</th>
+<th rowspan="3">Usage Scenario</th>
+<th colspan="2">Power Class 2</th>
+</tr>
+<tr>
+<th colspan="2">Average TRP (dBm)</th>
+</tr>
+<tr>
+<th>UE width ≤ 72mm</th>
+<th>UE width &gt; 72mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n28</td>
+<td>20</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n41</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n78</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n79</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="fr1-trs-requirements">7 FR1 TRS requirements</h1>
+<h2 id="general-4">7.1 General</h2>
+<p>The TRS requirements specified in Clause 7 apply to handheld UE
+configured with maximum number of Rx antennas supported for each band,
+which is specified in TS 38.101-1 Clause 7.3 [3].</p>
+<p>The TRS requirements defined in Clause 7.2 should be verified based
+on the detailed test parameters in Table 5.3-2.</p>
+<h2 id="minimum-requirement-1">7.2 Minimum requirement</h2>
+<h3 id="minimum-requirement-for-handheld-ue-1">7.2.1 Minimum requirement
+for handheld UE</h3>
+<p>The average measured total radiated sensitivity (TRS) of low, mid and
+high channel for handheld UE shall be lower than the average TRS
+requirement specified in subclauses 7.2.1.1 and 7.2.1.2. The averaging
+shall be done in linear scale for the TRS results of both right and left
+side of the phantom head in case of beside the head and hand phantom
+positions. For the hand phantom browsing mode position the averaging
+shall be done in linear scale for the TRP results of both right and left
+hand phantom measurements.</p>
+<p><span class="math display">\[{TRS}_{average} = {10log}\left\lbrack
+6/(\frac{1}{10^{\frac{P_{left\_ low}}{10}}} +
+\frac{1}{10^{\frac{P_{left\_ mid}}{10}}} + \frac{1}{10^{\frac{P_{left\_
+high}}{10}}} + \frac{1}{10^{\frac{P_{right\_ low}}{10}}} +
+\frac{1}{10^{\frac{P_{right\_ mid}}{10}}} +
+\frac{1}{10^{\frac{P_{right\_ high}}{10}}}) \right\rbrack\]</span></p>
+<p>For UEs which do not support NR FR1 in stand-alone mode, EN-DC mode
+requirements apply. SA and EN-DC test case applicability is defined in
+Clause 4.3, and test case applicability based on power class capability
+is defined in Clause 4.4. The relevant test methodology is defined in
+Annexes A and B of this specification.</p>
+<h4 id="hand-phantom-browsing-mode-1">7.2.1.1 Hand phantom browsing
+mode</h4>
+<p>Hand phantom browsing mode positions are defined in Clause B.3.1.</p>
+<h5 id="nr-fr1-2">7.2.1.1.1 NR FR1</h5>
+<p>Handheld UE TRS minimum performance requirement for NR FR1 bands in
+the hand phantom browsing position and the primary mechanical mode are
+defined in Tables 7.2.1.1.1-1 and 7.2.1.1.1-2.</p>
+<p>Table 7.2.1.1.1-1: Handheld PC3 and PC2 UE TRS minimum performance
+requirement for NR FR1 bands in the hand phantom browsing position and
+the primary mechanical mode</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">NR Band</th>
+<th rowspan="3">Bandwidth (MHz)</th>
+<th rowspan="3">Usage Scenario</th>
+<th colspan="2">Power Class 3 and Power Class 2</th>
+</tr>
+<tr>
+<th colspan="2">Average TRS (dBm)</th>
+</tr>
+<tr>
+<th>UE width ≤ 72mm</th>
+<th>UE width &gt; 72mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n28</td>
+<td>20</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n41</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td>-80</td>
+</tr>
+<tr>
+<td>n78</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td>-81.2</td>
+</tr>
+<tr>
+<td>n79</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h5 id="nr-fr1-in-en-dc-mode-2">7.2.1.1.2 NR FR1 in EN-DC mode</h5>
+<p>Handheld UE TRS minimum performance requirement for NR FR1 bands (in
+EN-DC mode) in the hand phantom browsing position and the primary
+mechanical mode are defined in Tables 6.2.1.1.2-1 and 6.2.1.1.2-2.</p>
+<p>Table 7.2.1.1.2-1: Handheld PC3 and PC2 UE TRS minimum performance
+requirement for NR FR1 bands (in EN-DC mode) in the hand phantom
+browsing position and the primary mechanical mode</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">NR Band</th>
+<th rowspan="3">Bandwidth (MHz)</th>
+<th rowspan="3">Usage Scenario</th>
+<th colspan="2">Power Class 3 and Power Class 2</th>
+</tr>
+<tr>
+<th colspan="2">Average TRS (dBm)</th>
+</tr>
+<tr>
+<th>UE width ≤ 72mm</th>
+<th>UE width &gt; 72mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n28</td>
+<td>20</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n41</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n78</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n79</td>
+<td>100</td>
+<td>HL and HR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="beside-the-head-and-hand-phantom-position">7.2.1.2 Beside the
+head and hand phantom position</h4>
+<p>Beside the head and hand phantom mode positions are defined in Clause
+B.3.2.</p>
+<h5 id="nr-fr1-3">7.2.1.2.1 NR FR1</h5>
+<p>Handheld UE TRP minimum performance requirement for NR FR1 bands in
+the beside head and hand phantom position and the primary mechanical
+mode are defined in Tables 7.2.1.2.1-1 and 7.2.1.2.1-2.</p>
+<p>Table 7.2.1.2.1-1: Handheld PC3 and PC2 UE TRS minimum performance
+requirement for NR FR1 bands in the beside head and hand phantom
+position and the primary mechanical mode</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">NR Band</th>
+<th rowspan="3">Bandwidth (MHz)</th>
+<th rowspan="3">Usage Scenario</th>
+<th colspan="2">Power Class 3 and Power Class 2</th>
+</tr>
+<tr>
+<th colspan="2">Average TRS (dBm)</th>
+</tr>
+<tr>
+<th>UE width ≤ 72mm</th>
+<th>UE width &gt; 72mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n28</td>
+<td>20</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n41</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n78</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n79</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h5 id="nr-fr1-in-en-dc-mode-3">7.2.1.2.2 NR FR1 in EN-DC mode</h5>
+<p>Handheld UE TRS minimum performance requirement for NR FR1 bands (in
+EN-DC mode) in the beside head and hand phantom position and the primary
+mechanical mode are defined in Tables 6.2.1.2.2-1 and 6.2.1.2.2-2.</p>
+<p>Table 7.2.1.2.2-1: Handheld PC3 and PC2 UE TRS minimum performance
+requirement for NR FR1 bands (in EN-DC mode) in the beside head and hand
+phantom position and the primary mechanical mode</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">NR Band</th>
+<th rowspan="3">Bandwidth (MHz)</th>
+<th rowspan="3">Usage Scenario</th>
+<th colspan="2">Power Class 3 and Power Class 2</th>
+</tr>
+<tr>
+<th colspan="2">Average TRS (dBm)</th>
+</tr>
+<tr>
+<th>UE width ≤ 72mm</th>
+<th>UE width &gt; 72mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n28</td>
+<td>20</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n41</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n78</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n79</td>
+<td>100</td>
+<td>BHHL and BHHR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="heading" id="annex-a-normative-test-methodology"><br />
+Annex A (normative):<br />
+Test methodology</p>
+<h1 id="a.1-general">A.1 General</h1>
+<p>TRP TRS minimum requirement specified in Clause 6 and Clause 7 should
+be measured with Anechoic Chamber method.</p>
+<h1 id="a.2-ue-configuration">A.2 UE configuration</h1>
+<h2 id="a.2.1-general">A.2.1 General</h2>
+<p>For FR1 TRP and TRS radiated conformance testing, P-MPRc shall be 0
+dB.</p>
+<p>FR1 TRP and TRS radiated conformance testing shall be performed with
+the UE consistently operating at maximum power level, e.g.,
+Time-Averaged Algorithm (TAA) and other power back-off functions should
+be disabled. The above functions OFF should be based on manufacturer
+declaration, if declared, then the manufacturer is required to provide a
+mechanism for the test lab to enable/disable the function.</p>
+<p>The NR SS should send continuous uplink power control “up” commands
+to the DUT to ensure the DUT’s transmitter is at maximum output power
+during the TRP and TRS test.</p>
+<h2 id="a.2.2-ue-configuration-for-trp-test">A.2.2 UE configuration for
+TRP test</h2>
+<p>For devices containing multiple Tx antennas, the Tx Antenna Switching
+(TAS) function should be OFF, and the TRP should be measured for each Tx
+antenna individually. The antenna with better TRP is identified as the
+primary antenna, and the corresponding TRP result will be used to
+determine the pass/fail compliance. Otherwise, the primary antenna
+should be selected based on manufacturer declaration. To ensure the TAS
+OFF testing, the manufacture should provide either software/guidance to
+lab to control which Tx antenna is used, or the pre-configured DUT
+locked at primary antenna.</p>
+<p>For Standalone, the NR System Simulator (SS) and DUT shall be
+configured per TS 38.521-1 [5], section 6.2.1 (UE maximum output power)
+using the default settings specified in TS 38.521-1 [5] and TS 38.508-1
+[7] as applicable. The measurement should be carried out based on the
+detailed test parameters for each band, as defined in Clause 5 Table
+5.3-1.</p>
+<p>For EN-DC, the SS and DUT shall be configured per TS 38.521-3 [6],
+Section 6.2B.1 (UE Maximum Output Power for EN-DC) using the default
+settings specified in TS 38.521-3 [6] and TS 38.508 [7] as applicable.
+The measurement should be carried out based on the detailed test
+parameters for each band, as defined in Clause 5 Table 5.3-1. The UL
+output power of LTE carrier should be set as a constant power of 10dBm,
+while measuring NR at maximum output power, i.e., with fixed
+p-MaxEUTRA-r15=10 dBm, and p-NR-FR1 not configured.</p>
+<h2 id="a.2.3-ue-configuration-for-trs-test">A.2.3 UE configuration for
+TRS test</h2>
+<p>For TRS measurement, no specific setting is needed for Rx antennas.
+By default, the maximum number of Rx antennas supported at each band
+should be enabled during the TRS test.</p>
+<p>For Standalone, the NR System Simulator (SS) and DUT shall be
+configured per section 7.3.2 (Reference sensitivity power level) of TS
+38.521-1 [5] using the defaults specified in TS 38.521-1 [5] and TS
+38.508-1 [7] as applicable. The measurement should be carried out based
+on the detailed test parameters for each band, as defined in Clause 5
+Table 5.3-2.</p>
+<p>For EN-DC, the EN-DC SS and DUT shall be configured per section
+7.3B.2 (Reference Sensitivity for EN-DC) of TS 38.521-3 [6], using the
+defaults specified in TS 38.521-3 [6] and TS 38.508 [7], as applicable.
+The measurement should be carried out based on the detailed test
+parameters for each band, as defined in Clause 5 Table 5.3-2. The UL
+power configuration for LTE and NR is 50%-50% power splitting, i.e.,</p>
+<p>- For PC3, p-MaxEUTRA-r15=20 dBm, and p-NR-FR1= 20dBm;</p>
+<p>- For PC2, p-MaxEUTRA-r15=23 dBm, and p-NR-FR1= 23dBm.</p>
+<h1 id="a.3-test-system-of-anechoic-chamber-method">A.3 Test system of
+Anechoic Chamber method</h1>
+<h2 id="a.3.1-system-setup">A.3.1 System setup</h2>
+<p>For FR1 TRP TRS testing, both Single-antenna and multiple-antennas
+anechoic chambers can be applied. In Figure A.3.1-1, an example TRP TRS
+test system with combined axes system is presented.</p>
+<p><img src="media/image4.png"
+style="width:4.20139in;height:2.10069in" /></p>
+<p>Figure A.3.1-1: Example of a FR1 TRP TRS OTA test system with
+combined axis</p>
+<p>In Figure A.3.1-2, an example TRP TRS test system with distributed
+axes system is presented.</p>
+<p><img src="media/image5.png"
+style="width:4.12731in;height:2.29861in" /></p>
+<p>Figure A.3.1-2: Example of a FR1 TRP TRS OTA test system with
+distributed axis</p>
+<h2 id="a.3.2-calibration-procedure">A.3.2 Calibration procedure</h2>
+<p>The relative power values of the measurement points will be
+transformed to absolute radiated power values (in dBm) by performing a
+range path loss calibration measurement. The system needs to be
+calibrated by using a reference calibration antenna with known gain
+values. In the range path loss calibration measurement, the reference
+antenna is measured in the same place as the DUT, i.e. the center of the
+QZ, and the attenuation of the complete transmission path (<span
+class="math inline">\(L_{total}\)</span>) from the DUT to the
+measurement receiver/BS simulator is calibrated out.</p>
+<p><img src="media/image6.png"
+style="width:3.96528in;height:1.93722in" /></p>
+<p>Figure A.3.2-1: Example FR1 TRP TRS calibration setup</p>
+<p>The calibration measurement is repeated for each measurement path
+(two orthogonal polarizations and each signal path). The range path loss
+calibration measurement is performed in a two-step process including
+total path loss measurement and cable calibration.</p>
+<p>Step 1: Cable calibration: the measurement of path loss
+<em>L<sub>DE</sub></em> <span
+class="math inline">\(L_{DE}\)</span><sub>,</sub> by connecting the
+cable from D to E to the two ports of VNA, and measure the cable path
+loss.</p>
+<p>Step 2: Total path loss measurement: the measurement of total path
+loss <em>L<sub>BC</sub></em>;</p>
+<p>1. Place the reference calibration antenna (e.g. reference dipole) in
+the center of the test zone aligned with θ polarization of the
+measurement antenna, connected to a VNA port E, with the other VNA port
+C connected to the input of the Switch box – in Figure A.2.2-1.</p>
+<p>2. Configure the proper output power of VNA.</p>
+<p>3. Measure the response <em>L<sub>CE</sub></em> <span
+class="math inline">\(L_{CE}\ \)</span>of each path from each θ
+polarization of the measurement antenna to the reference antenna in the
+center of QZ.</p>
+<p>4. Repeat the steps 1 to 3 with the reference antenna aligned with
+the ϕ polarization of the measurement antenna.</p>
+<p>Then, the <span class="math inline">\(L_{total} = \left( L_{CE} -
+L_{DE} + G_{cal} \right)\)</span>, Where <em>L<sub>DE</sub></em> <span
+class="math inline">\(L_{DE}\)</span> is cable loss from D to E. <span
+class="math inline">\(G_{cal}\)</span> is the gain or efficiency of the
+calibration antenna at the frequency of interest. In TRP and TRS
+measurements point C is connected to the calibrated input/output port of
+measurement receiver.</p>
+<p>This range path loss calibration procedure is common to both SA and
+EN-DC measurements.</p>
+<h2 id="a.3.3-test-procedure">A.3.3 Test procedure</h2>
+<h3 id="a.3.3.1-general">A.3.3.1 General</h3>
+<p>For TRP and TRS testing in SA or EN-DC mode, measurements should be
+only performed at NR carrier. The LTE link antenna in EN-DC mode is used
+to provide a stable LTE link to the DUT without precise path loss or
+polarization control.</p>
+<h3 id="a.3.3.2-trp-test-procedure">A.3.3.2 TRP Test procedure</h3>
+<p>The TRP of the DUT is measured by sampling the radiated transmit
+power of the DUT with three-dimensional scan at various locations
+surrounding the device. The measurement is performed with a constant
+sampling step, e.g., 15 degrees or 30 degrees, in both theta (θ) and phi
+(φ) axes for TRP measurement. For some test system can not measure 180º
+EIRP, then the extrapolation approach can be adopted when generating the
+3D antenna pattern. All of the measured power values will be integrated
+to TRP, as defined in Clause A.3.5.1.</p>
+<p>For TRP measurement, the evaluations shall be performed at maximum
+transmit power.</p>
+<p>The measurement procedure includes the following steps:</p>
+<p>1) Place the DUT inside the QZ following the positioning guideline
+defined in Clause 6.</p>
+<p>2) Connect the SS with the DUT through the link antenna following
+steps 1 and 2 in section 6.2.1.4.2 of TS 38.521-1 [5] and ensure the DUT
+transmits with its maximum power.</p>
+<p>3) Measure the power at each measurement point, and calculate <span
+class="math inline">\(EIRP(\theta,\phi)\)</span> by adding the composite
+loss of the entire transmission path.</p>
+<p>The TRP value is calculated using the TRP integration approaches
+outlined in Clause A.3.5.1.</p>
+<p>This TRP test procedure is common to both SA and EN-DC measurements.
+The detailed UE configurations for TRP test in SA and EN-DC mode are
+specified in Clause A.2.</p>
+<h3 id="a.3.3.3-trs-test-procedure">A.3.3.3 TRS Test procedure</h3>
+<p>The TRS of the DUT is measured by sampling effective isotropic
+sensitivity (EIS) of the DUT with three-dimensional scan at various
+locations surrounding the device. The measurement is performed with a
+constant sampling step, e.g., 30 degrees or 45 degree in both theta (θ)
+and phi (φ) axes for TRS measurement.</p>
+<p>EIS, or receiver sensitivity measurements, is defined as the minimum
+downlink signal power received at the UE antenna input required to
+provide a data throughput rate greater than or equal to 95% of the
+maximum throughput of the reference measurement channel (RMC) (the
+maximum throughput is per Appendix A of TS 38.521-1 [5]).</p>
+<p>For TRS measurement, the evaluations shall be performed at maximum
+transmit power.</p>
+<p>The measurement procedure includes the following steps:</p>
+<p>1) Place the DUT inside the QZ following the positioning guideline
+defined in Clause 6.</p>
+<p>2) Connect the SS with the DUT through the measurement antenna.</p>
+<p>3) Follow steps 1 through 4 in section 7.3.2.4.2 of TS 38.521-1 [5],
+with the following exception: determine each EIS, i.e., by adjusting the
+downlink signal level until the minimum power level at which the
+throughput exceeds or equal to 95% of the maximum throughput of the
+specified RMC, at each sampling point. The downlink power step size
+shall be no more than 0.5 dB when the RF power level is near the NR
+sensitivity level.</p>
+<p>The TRS value is calculated using the equation and integration
+approaches outlined in Clause A.3.5.2.</p>
+<p>This TRS test procedure is common to both SA and EN-DC measurements.
+The detailed UE configurations for TRS test in SA and EN-DC mode are
+specified in Clause A.2.</p>
+<h2 id="a.3.4-minimum-range-length">A.3.4 Minimum Range Length</h2>
+<p>This sub-section specifies the minimum range lengths for
+Anechoic-Chamber-based FR1 TRP-TRS OTA systems. The range length is
+defined as the distance from the centre of the quiet zone to the
+aperture of the measurement probes/antennas, as illustrated in Figure
+A.3.4-1.</p>
+<p><img src="media/image7.png"
+style="width:2.33611in;height:2.36806in" /></p>
+<p>Figure A.3.4-1: Illustration of range length definition</p>
+<p>The minimum range length shall be the maximum of the following three
+limits</p>
+<p>- The phase uncertainty limit:
+<em>R</em><sub>QZ</sub>+2<em>D</em><sub>rad</sub><sup>2</sup>/λ</p>
+<p>- The amplitude uncertainty limit: 3<em>D</em></p>
+<p>- The reactive Near-Field limit: <em>R</em><sub>QZ</sub>+2λ</p>
+<p>where <em>R</em><sub>QZ</sub> is defined as the radius of the quiet
+zone, i.e., <em>R</em><sub>QZ</sub>=<em>D</em>/2, and
+<em>D</em><sub>rad</sub> is the diameter of the effective radiating
+aperture. The minimum range length calculations for <em>D</em>=30cm
+quiet zone size TRP-TRS OTA test systems shall assume that
+<em>D</em><sub>rad</sub> is 30cm below 1GHz and decrease linearly from
+30cm to 5cm from 1GHz to 7.125GHz, respectively. The last column of
+Table A.3.4-1 shall be considered the minimum range length for NR FR1
+TRP-TRS OTA systems with 30cm quiet zone size.</p>
+<p>Table A.3.4-1: Minimum Range Length for NR FR1 TRP-TRS OTA systems
+with 30cm quiet zone size.</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 14%" />
+<col style="width: 15%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th><em>F</em> [GHz]</th>
+<th>D<sub>rad</sub> [m]</th>
+<th>R<sub>QZ</sub>+2<em>D<sub>rad</sub></em>²/λ</th>
+<th>3<em>D</em> = 6<em>R</em><sub>QZ</sub></th>
+<th>R<sub>QZ</sub>+2λ</th>
+<th>max(R<sub>QZ</sub>+2λ,3<em>D</em>,R<sub>QZ</sub>+2<em>D</em>²/λ)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.41</td>
+<td>0.30</td>
+<td>0.40</td>
+<td>0.9</td>
+<td>1.61</td>
+<td>1.61</td>
+</tr>
+<tr>
+<td>0.6</td>
+<td>0.30</td>
+<td>0.51</td>
+<td>0.9</td>
+<td>1.15</td>
+<td>1.15</td>
+</tr>
+<tr>
+<td>0.7</td>
+<td>0.30</td>
+<td>0.57</td>
+<td>0.9</td>
+<td>1.01</td>
+<td>1.01</td>
+</tr>
+<tr>
+<td>0.8</td>
+<td>0.30</td>
+<td>0.63</td>
+<td>0.9</td>
+<td>0.90</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.30</td>
+<td>0.75</td>
+<td>0.9</td>
+<td>0.75</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>0.29</td>
+<td>0.83</td>
+<td>0.9</td>
+<td>0.65</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>0.28</td>
+<td>0.90</td>
+<td>0.9</td>
+<td>0.58</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>1.6</td>
+<td>0.28</td>
+<td>0.96</td>
+<td>0.9</td>
+<td>0.52</td>
+<td>0.96</td>
+</tr>
+<tr>
+<td>1.8</td>
+<td>0.27</td>
+<td>1.01</td>
+<td>0.9</td>
+<td>0.48</td>
+<td>1.01</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.26</td>
+<td>1.05</td>
+<td>0.9</td>
+<td>0.45</td>
+<td>1.05</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>0.25</td>
+<td>1.07</td>
+<td>0.9</td>
+<td>0.42</td>
+<td>1.07</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>0.24</td>
+<td>1.09</td>
+<td>0.9</td>
+<td>0.40</td>
+<td>1.09</td>
+</tr>
+<tr>
+<td>2.6</td>
+<td>0.23</td>
+<td>1.11</td>
+<td>0.9</td>
+<td>0.38</td>
+<td>1.11</td>
+</tr>
+<tr>
+<td>2.8</td>
+<td>0.23</td>
+<td>1.11</td>
+<td>0.9</td>
+<td>0.36</td>
+<td>1.11</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.22</td>
+<td>1.10</td>
+<td>0.9</td>
+<td>0.35</td>
+<td>1.10</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0.18</td>
+<td>0.99</td>
+<td>0.9</td>
+<td>0.30</td>
+<td>0.99</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0.14</td>
+<td>0.77</td>
+<td>0.9</td>
+<td>0.27</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0.10</td>
+<td>0.52</td>
+<td>0.9</td>
+<td>0.25</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0.06</td>
+<td>0.29</td>
+<td>0.9</td>
+<td>0.24</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>7.125</td>
+<td>0.05</td>
+<td>0.27</td>
+<td>0.9</td>
+<td>0.23</td>
+<td>0.90</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a.3.5-definition-of-trp-and-trs-for-ac">A.3.5 Definition of TRP
+and TRS for AC</h2>
+<h3 id="a.3.5.1-total-radiated-power-trp">A.3.5.1 Total Radiated Power
+(TRP)</h3>
+<p>This definition is used to calculate the Total Radiated Power (TRP)
+value. For Anechoic Chamber method, TRP is defined as:</p>
+<p> <span class="math inline">\(TRP = \ \frac{1}{4\pi}\int_{\theta =
+0}^{\pi}{\int_{\phi = 0}^{2\pi}\left\lbrack {EIRP}_{\theta}(\theta,\phi)
++ {EIRP}_{\phi}(\theta,\phi)
+\right\rbrack\sin{(\theta){d\phi}{d\theta}}}\)</span></p>
+<p>Where the effective isotropic radiated power (EIRP) is defined as</p>
+<p><span class="math inline">\(EIRP(\theta,\phi) =
+P_{T}G_{T}(\theta,\phi)\)</span></p>
+<p>Where <span class="math inline">\(P_{T}G_{T}\)</span> is the product
+of the power delivered to the antenna and the antenna’s power gain, and
+EIRP<sub>θ</sub> and EIRP<sub>ϕ</sub> are the EIRP in the corresponding
+θ and ϕ polarizations.</p>
+<p>The summation form based on the sinθ⋅∆θ weights of TRP with Anechoic
+Chamber method is defined as:</p>
+<p><span class="math inline">\(TRP \approx \ \frac{\pi}{2NM}\sum_{n =
+0}^{N - 1}{\sum_{m = 0}^{M - 1}{\left\lbrack {EIRP}_{\theta}\left(
+\theta_{n},\phi_{m} \right) + {EIRP}_{\phi}\left( \theta_{n},\phi_{m}
+\right) \right\rbrack\sin\theta_{n}}}\)</span></p>
+<p>Where N and M are the number of sampling intervals for θ and ϕ.
+θ<sub>n</sub> and ϕ<sub>m</sub> are the measurement angles.</p>
+<p>The summation form based on the Clenshaw-Curtis quadrature integral
+approximation of TRP with Anechoic Chamber method is defined as:</p>
+<p><span class="math inline">\(TRP \approx \ \frac{1}{2M}\sum_{n =
+0}^{N}{\sum_{m = 0}^{M - 1}\left\lbrack {EIRP}_{\theta}\left(
+\theta_{n},\phi_{m} \right) + {EIRP}_{\phi}\left( \theta_{n},\phi_{m}
+\right) \right\rbrack}W\left( \theta_{n} \right)\)</span></p>
+<p>Where the value of <span class="math inline">\(W(\theta_{n})\)</span>
+can be calculated as follows:</p>
+<p><span class="math inline">\(W(\theta_{n}) =
+\frac{c_{n}}{N}\left\lbrack 1 - \sum_{j =
+1}^{int(\frac{N}{2})}{\frac{b_{j}}{4j^{2} - 1}cos(2j\theta_{n})}
+\right\rbrack\)</span></p>
+<p>with</p>
+<p><span class="math inline">\(b_{j} = \left\{ \ \ \ \ \begin{array}{r}
+1,\ \ 2j = N\ \ \ \ \ \ \  \\
+2,\ \ otherwise
+\end{array} \right.\ \)</span></p>
+<p>and</p>
+<p><span class="math inline">\(c_{n} = \left\{ \begin{array}{r}
+\ \ \ 1,\ \ n = 0\ or\ N \\
+\ \ \ 2,\ \ otherwise
+\end{array} \right.\ \)</span></p>
+<h3 id="a.3.5.2-total-radiated-sensitivity-trs">A.3.5.2 Total Radiated
+Sensitivity (TRS)</h3>
+<p>This definition is used to calculate the Total Radiated Sensitivity
+(TRS) value. For Anechoic Chamber method, the TRS with is defined
+as:</p>
+<p><span class="math inline">\(TRS = \frac{4\pi}{\int_{\theta =
+0}^{\pi}{\int_{\phi = 0}^{2\pi}{\left\lbrack
+\frac{1}{{EIS}_{\theta}(\theta,\phi)} +
+\frac{1}{{EIS}_{\phi}(\theta,\phi)} \right\rbrack\sin\theta d\phi
+d\theta}}}\)</span></p>
+<p>Where the effective isotropic sensitivity (EIS) is defined as the
+minimum power level at which the throughput exceeds or equal to 95% of
+the maximum throughput of the specified RMC, at each sampling point, and
+EIS<sub>θ</sub> and EIS<sub>ϕ</sub> are the EIS in the corresponding θ
+and ϕ polarizations.</p>
+<p>The summation form based on the sinθ⋅∆θ weights of TRS with Anechoic
+Chamber method defined as:</p>
+<p><span class="math inline">\(TRS \approx \frac{2NM}{\pi\sum_{n = 0}^{N
+- 1}{\sum_{m = 0}^{M - 1}{\left\lbrack \frac{1}{{EIS}_{\theta}\left(
+\theta_{n},\phi_{m} \right)} + \frac{1}{{EIS}_{\phi}\left(
+\theta_{n},\phi_{m} \right)} \right\rbrack\sin\theta_{n}}}}\)</span></p>
+<p>Where N and M are the number of sampling intervals for θ and ϕ.
+θ<sub>n</sub> and ϕ<sub>m</sub> are the measurement angles.</p>
+<p>The summation form based on the Clenshaw-Curtis quadrature integral
+approximation of TRS with Anechoic Chamber method is defined as:</p>
+<p><span class="math inline">\(TRS \approx \frac{2M}{\sum_{n =
+0}^{N}{\sum_{m = 0}^{M - 1}{\left\lbrack \frac{1}{{EIS}_{\theta}\left(
+\theta_{n},\phi_{m} \right)} + \frac{1}{{EIS}_{\phi}\left(
+\theta_{n},\phi_{m} \right)} \right\rbrack W\left( \theta_{n}
+\right)}}}\)</span></p>
+<p>Where the value of <span class="math inline">\(W(\theta_{n})\)</span>
+can be calculated as follows (same equation as TRP):</p>
+<p><span class="math inline">\(W(\theta_{n}) =
+\frac{c_{n}}{N}\left\lbrack 1 - \sum_{j =
+1}^{int(\frac{N}{2})}{\frac{b_{j}}{4j^{2} - 1}cos(2j\theta_{n})}
+\right\rbrack\)</span></p>
+<p>with</p>
+<p><span class="math inline">\(b_{j} = \left\{ \ \ \ \ \begin{array}{r}
+1,\ \ 2j = N\ \ \ \ \ \ \  \\
+2,\ \ otherwise
+\end{array} \right.\ \)</span></p>
+<p>and</p>
+<p><span class="math inline">\(c_{n} = \left\{ \begin{array}{r}
+\ \ \ 1,\ \ n = 0\ or\ N \\
+\ \ \ 2,\ \ otherwise
+\end{array} \right.\ \)</span></p>
+<h1 id="a.4-preliminary-example-mu-budget">A.4 Preliminary example MU
+budget</h1>
+<p>A.4.1 General</p>
+<p>A.4.2 Test system of Anechoic Chamber method</p>
+<p>The uncertainty contributions related to TRP are described in Annex B
+in [2]. A preliminary example uncertainty budget for TRP hand only test
+case using Anechoic Chamber test system is presented in Table
+A.4.2-1.</p>
+<p>Table A.4.2-1 Preliminary example of uncertainty budget for TRP hand
+only (browsing mode) measurement for anechoic chamber method for NR FR1
+bands</p>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 12%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">UID</th>
+<th rowspan="2">Uncertainty Source</th>
+<th rowspan="2">Comment</th>
+<th colspan="2">Uncertainty Value [dB]</th>
+<th rowspan="2">Prob Distr</th>
+<th rowspan="2">Div</th>
+<th rowspan="2">ci</th>
+<th colspan="2">Standard Uncertainty [dB]</th>
+</tr>
+<tr>
+<th>Below 3GHz</th>
+<th>Above 3GHz</th>
+<th>Below 3GHz</th>
+<th>Above 3GHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="10">Stage 2: DUT measurement</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Mismatch of receiver chain</td>
+<td>Г<sub>receiver</sub> &lt; 0.33 Г<sub>measurement antenna</sub> &lt;
+0.5<br />
+Cable attenuation &gt; 3dB</td>
+<td>0.26</td>
+<td>0.26</td>
+<td>U-shaped</td>
+<td>1.4</td>
+<td>1</td>
+<td>0.18</td>
+<td>0.18</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Insertion loss of receiver chain</td>
+<td>Systematic with Stage 1 (=&gt; cancels)</td>
+<td>0</td>
+<td>0</td>
+<td>Rectangular</td>
+<td>1.7</td>
+<td>1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Influence of the measurement antenna cable</td>
+<td>Systematic with Stage 1 (=&gt; cancels)</td>
+<td>0</td>
+<td>0</td>
+<td>Rectangular</td>
+<td>1.7</td>
+<td>1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Measurement Receiver: uncertainty of the absolute level</td>
+<td>Spectrum Analyzer</td>
+<td>0.42</td>
+<td>0.54</td>
+<td>Normal</td>
+<td>2</td>
+<td>1</td>
+<td>0.21</td>
+<td>0.27</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Measurement distance</td>
+<td>DUT is not offset for hand-only phantom testing</td>
+<td>0</td>
+<td>0</td>
+<td>Rectangular</td>
+<td>1.7</td>
+<td>1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Quality of quiet zone</td>
+<td>Surface standard deviation of power measurements in ripple test</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>Actual</td>
+<td>1</td>
+<td>1</td>
+<td>0.50</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>7</td>
+<td>DUT Tx-power drift</td>
+<td>Drift</td>
+<td>0.2</td>
+<td>0.2</td>
+<td>Rectangular</td>
+<td>1.7</td>
+<td>1</td>
+<td>0.12</td>
+<td>0.12</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Uncertainty related to the use of phantoms</td>
+<td>Material Dielectric Constant, Material Conductivity, Geometry/Shape
+(incl. spacer), Data Mode Fixture</td>
+<td>0.64</td>
+<td>0.64</td>
+<td>Rectangular</td>
+<td>1.7</td>
+<td>1</td>
+<td>0.37</td>
+<td>0.37</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Coarse sampling grid</td>
+<td>Sampling grids per Table B.2.12-1 in [2]</td>
+<td>0</td>
+<td>0</td>
+<td>Actual</td>
+<td>1</td>
+<td>1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Random Uncertainty</td>
+<td>Fixed MU to account for all the unknown, unquantifiable, etc.
+uncertainties</td>
+<td>0.25</td>
+<td>0.25</td>
+<td>Normal</td>
+<td>2</td>
+<td>1</td>
+<td>0.13</td>
+<td>0.13</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Frequency Response</td>
+<td>Average path loss corrected</td>
+<td>0</td>
+<td>0</td>
+<td>Rectangular</td>
+<td>1.7</td>
+<td>1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td colspan="10" style="text-align: center;"><strong>Stage 1:
+Calibration measurement, network analyzer method</strong></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Uncertainty of network analyzer</td>
+<td>From datasheet of VNA with assessed transmission coefficients</td>
+<td>0.2</td>
+<td>0.5</td>
+<td>Normal</td>
+<td>2</td>
+<td>1</td>
+<td>0.10</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Mismatch of receiver chain</td>
+<td>Taken into account in VNA uncertainty term</td>
+<td>0</td>
+<td>0</td>
+<td>U-shaped</td>
+<td>1.4</td>
+<td>1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Insertion loss of receiver chain</td>
+<td>Systematic with Stage 2 (=&gt; cancels)</td>
+<td>0</td>
+<td>0</td>
+<td>Rectangular</td>
+<td>1.7</td>
+<td>1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Mismatch in the connection of calibration antenna</td>
+<td>Taken in to account in VNA setup uncertainty</td>
+<td>0</td>
+<td>0</td>
+<td>U-shaped</td>
+<td>1.4</td>
+<td>1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Influence of the calibration antenna feed cable</td>
+<td>Gain calibration with a dipole</td>
+<td>0.3</td>
+<td>0.3</td>
+<td>Rectangular</td>
+<td>1.7</td>
+<td>1</td>
+<td>0.17</td>
+<td>0.17</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Influence of the measurement antenna cable</td>
+<td>Systematic with Stage 2 (=&gt; cancels)</td>
+<td>0</td>
+<td>0</td>
+<td>Rectangular</td>
+<td>1.7</td>
+<td>1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Uncertainty of the absolute gain/ radiation efficiency of the
+calibration antenna</td>
+<td>Calibration report with traceability to a National Metrology
+Institute</td>
+<td>0.58</td>
+<td>0.58</td>
+<td>Normal</td>
+<td>2</td>
+<td>1</td>
+<td>0.29</td>
+<td>0.29</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Measurement distance</td>
+<td>Dipole: aligned with phase center</td>
+<td>0</td>
+<td>0</td>
+<td>Rectangular</td>
+<td>1.7</td>
+<td>1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Quality of the Quiet Zone</td>
+<td>Peak-to-null ripple</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>Rectangular</td>
+<td>1.7</td>
+<td>1</td>
+<td>0.29</td>
+<td>0.29</td>
+</tr>
+<tr>
+<td colspan="8">Combined standard uncertainty [dB]</td>
+<td>0.84</td>
+<td>0.88</td>
+</tr>
+<tr>
+<td colspan="8">Expanded uncertainty [dB] (Confidence interval of
+95 %)</td>
+<td>1.64</td>
+<td>1.73</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Systematic Error related to TRP grids</td>
+<td>mean error</td>
+<td>0</td>
+<td>0</td>
+<td>Actual</td>
+<td>1</td>
+<td>1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td colspan="8">Total Expanded uncertainty [dB] (Confidence interval of
+95 %)</td>
+<td>1.64</td>
+<td>1.73</td>
+</tr>
+</tbody>
+</table>
+<p>The uncertainty contributions related to TRS are described in Annex B
+in [2]. A preliminary example uncertainty budget TRS hand only test case
+using Anechoic Chamber test system is presented in Table A.4.2-2.</p>
+<p>Table A.4.2-2: Preliminary example of uncertainty budget for TRS hand
+only (browsing mode) measurement for anechoic chamber method for NR FR1
+bands</p>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 16%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 0%" />
+<col style="width: 12%" />
+<col style="width: 0%" />
+<col style="width: 5%" />
+<col style="width: 0%" />
+<col style="width: 3%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">UID</th>
+<th rowspan="2">Uncertainty Source</th>
+<th rowspan="2">Comment</th>
+<th colspan="2">Uncertainty Value [dB]</th>
+<th colspan="2" rowspan="2">Prob Distr</th>
+<th colspan="2" rowspan="2">Div</th>
+<th colspan="2" rowspan="2">ci</th>
+<th colspan="2">Standard Uncertainty [dB]</th>
+</tr>
+<tr>
+<th>Below 3GHz</th>
+<th>Above 3GHz</th>
+<th>Below 3GHz</th>
+<th>Above 3GHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="13">Stage 2: DUT measurement</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Mismatch of receiver chain</td>
+<td>Г<sub>comm tester</sub> &lt; 0.29 Г<sub>measurement antenna</sub>
+&lt; 0.5<br />
+Cable attenuation &gt; 3dB</td>
+<td>0.22</td>
+<td>0.22</td>
+<td colspan="2">U-shaped</td>
+<td colspan="2">1.4</td>
+<td colspan="2">1</td>
+<td>0.16</td>
+<td>0.16</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Insertion loss of receiver chain</td>
+<td>Systematic with Stage 1 (=&gt; cancels)</td>
+<td>0</td>
+<td>0</td>
+<td colspan="2">Rectangular</td>
+<td colspan="2">1.7</td>
+<td colspan="2">1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Influence of the measurement antenna cable</td>
+<td>Systematic with Stage 1 (=&gt; cancels)</td>
+<td>0</td>
+<td>0</td>
+<td colspan="2">Rectangular</td>
+<td colspan="2">1.7</td>
+<td colspan="2">1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Communication Tester: uncertainty of the absolute output level</td>
+<td>Manufacturer’s data sheet</td>
+<td>1.3</td>
+<td>1.3</td>
+<td colspan="2">Normal</td>
+<td colspan="2">2</td>
+<td colspan="2">1</td>
+<td>0.65</td>
+<td>0.65</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Sensitivity measurement: output level step resolution</td>
+<td>Systematic error that can be corrected</td>
+<td>0</td>
+<td>0</td>
+<td colspan="2">Rectangular</td>
+<td colspan="2">1.73</td>
+<td colspan="2">1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Measurement distance</td>
+<td>DUT is not offset for hand-only phantom testing</td>
+<td>0</td>
+<td>0</td>
+<td colspan="2">Rectangular</td>
+<td colspan="2">1.7</td>
+<td colspan="2">1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Quality of quiet zone</td>
+<td>Surface standard deviation of power measurements in ripple test</td>
+<td>0.5</td>
+<td>0.5</td>
+<td colspan="2">Actual</td>
+<td colspan="2">1</td>
+<td colspan="2">1</td>
+<td>0.50</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>8</td>
+<td>DUT sensitivity drift</td>
+<td>Drift</td>
+<td>0.2</td>
+<td>0.2</td>
+<td colspan="2">Rectangular</td>
+<td colspan="2">1.7</td>
+<td colspan="2">1</td>
+<td>0.12</td>
+<td>0.12</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Uncertainty related to the use of phantoms</td>
+<td>Material Dielectric Constant, Material Conductivity, Geometry/Shape
+(incl. spacer), Data Mode Fixture</td>
+<td>0.64</td>
+<td>0.64</td>
+<td colspan="2">Rectangular</td>
+<td colspan="2">1.7</td>
+<td colspan="2">1</td>
+<td>0.37</td>
+<td>0.37</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Coarse sampling grid</td>
+<td>Sampling grids per Table B.2.12-1 in [2]</td>
+<td>0.10</td>
+<td>0.18</td>
+<td colspan="2">Actual</td>
+<td colspan="2">1</td>
+<td colspan="2">1</td>
+<td>0.10</td>
+<td>0.18</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Random Uncertainty</td>
+<td>Fixed MU to account for all the unknown, unquantifiable, etc.
+uncertainties including digital error rate</td>
+<td>0.4</td>
+<td>0.4</td>
+<td colspan="2">Normal</td>
+<td colspan="2">2</td>
+<td colspan="2">1</td>
+<td>0.20</td>
+<td>0.20</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Frequency Response</td>
+<td>Included in the output level step resolution</td>
+<td>0</td>
+<td>0</td>
+<td colspan="2">Rectangular</td>
+<td colspan="2">1.7</td>
+<td colspan="2">1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td colspan="13">Stage 1: Calibration measurement, network analyzer
+method</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Uncertainty of network analyzer</td>
+<td>From datasheet of VNA with assessed transmission coefficients</td>
+<td>0.2</td>
+<td>0.5</td>
+<td colspan="2">Normal</td>
+<td colspan="2">2</td>
+<td colspan="2">1</td>
+<td>0.10</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Mismatch of receiver chain</td>
+<td>Taken into account in VNA uncertainty term</td>
+<td>0</td>
+<td>0</td>
+<td colspan="2">U-shaped</td>
+<td colspan="2">1.4</td>
+<td colspan="2">1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Insertion loss of receiver chain</td>
+<td>Systematic with Stage 2 (=&gt; cancels)</td>
+<td>0</td>
+<td>0</td>
+<td colspan="2">Rectangular</td>
+<td colspan="2">1.7</td>
+<td colspan="2">1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Mismatch in the connection of calibration antenna</td>
+<td>Taken in to account in VNA setup uncertainty</td>
+<td>0</td>
+<td>0</td>
+<td colspan="2">U-shaped</td>
+<td colspan="2">1.4</td>
+<td colspan="2">1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Influence of the calibration antenna feed cable</td>
+<td>Gain calibration with a dipole</td>
+<td>0.3</td>
+<td>0.3</td>
+<td colspan="2">Rectangular</td>
+<td colspan="2">1.7</td>
+<td colspan="2">1</td>
+<td>0.17</td>
+<td>0.17</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Influence of the measurement antenna cable</td>
+<td>Systematic with Stage 2 (=&gt; cancels)</td>
+<td>0</td>
+<td>0</td>
+<td colspan="2">Rectangular</td>
+<td colspan="2">1.7</td>
+<td colspan="2">1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Uncertainty of the absolute gain/ radiation efficiency of the
+calibration antenna</td>
+<td>Calibration report with traceability to a National Metrology
+Institute</td>
+<td>0.58</td>
+<td>0.58</td>
+<td colspan="2">Normal</td>
+<td colspan="2">2</td>
+<td colspan="2">1</td>
+<td>0.29</td>
+<td>0.29</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Measurement distance</td>
+<td>Dipole: aligned with phase center</td>
+<td>0</td>
+<td>0</td>
+<td colspan="2">Rectangular</td>
+<td colspan="2">1.7</td>
+<td colspan="2">1</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Quality of the Quiet Zone</td>
+<td>Peak-to-null ripple</td>
+<td>0.5</td>
+<td>0.5</td>
+<td colspan="2">Rectangular</td>
+<td colspan="2">1.7</td>
+<td colspan="2">1</td>
+<td>0.29</td>
+<td>0.29</td>
+</tr>
+<tr>
+<td colspan="11">Combined standard uncertainty [dB]</td>
+<td>1.05</td>
+<td>1.09</td>
+</tr>
+<tr>
+<td colspan="11">Expanded uncertainty [dB] (Confidence interval of
+95 %)</td>
+<td>2.06</td>
+<td>2.13</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Systematic Error related to TRP grids</td>
+<td>mean error</td>
+<td>0</td>
+<td colspan="2">0</td>
+<td colspan="2">Actual</td>
+<td colspan="2">1</td>
+<td>1</td>
+<td>0.00</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td colspan="11">Total Expanded uncertainty [dB] (Confidence interval of
+95 %)</td>
+<td>2.06</td>
+<td>2.13</td>
+</tr>
+</tbody>
+</table>
+<p class="heading"
+id="annex-b-normative-phantoms-definition-and-positioning">Annex B
+(normative):<br />
+Phantoms definition and Positioning </p>
+<h1 id="b.1-general">B.1 General</h1>
+<p>This Clause defines the phantom definition and positioning guidance
+for TPR TRS requirement measurement.</p>
+<h1 id="b.2-phantom-definition">B.2 Phantom Definition</h1>
+<h2 id="b.2.1-head-phantom">B.2.1 Head Phantom</h2>
+<p>The basic head phantom is based on the “SAM” head phantom in IEEE Std
+1528-2003, which is also described in TS 37.544 Annex A.2 [8]. For TRP
+TRS test, the IEEE SAM head model has been extended to the neck region,
+which is specified in CTIA Certification OTA Test Plan [9].</p>
+<p>The Head phantom defined in CTIA Certification OTA Test Plan section
+C.2 [9], is used for FR1 TRP TRS requirement testing.</p>
+<p><img src="media/image8.png"
+style="width:4.31885in;height:1.94776in" /></p>
+<p>Figure B.2.1-1 Head Phantom (© 2001 – 2022 CTIA Certification.
+Reproduced with permission.), defined in the CTIA Certification OTA Test
+Plan</p>
+<h2 id="b.2.2-pda-grip-hand-phantom">B.2.2 PDA Grip Hand Phantom</h2>
+<p>The PDA Grip Hand described in TS 37.544 Annex A.2.2 [8], which is
+identical to that defined in CTIA Certification OTA Test Plan section
+C.4.8 [9], is adopted for TRP TRS testing for the UE with width ≥56mm
+and ≤72mm.</p>
+<h2 id="b.2.3-wide-grip-hand-phantom">B.2.3 Wide Grip Hand Phantom</h2>
+<p>The Wide Grip hand defined in CTIA Certification OTA Test Plan
+section C.4.9 [9], is used for FR1 TRP TRS testing for UE with width
+&gt;72mm and ≤92mm.</p>
+<p><img src="media/image9.png"
+style="width:3.35585in;height:2.44109in" /></p>
+<p>Figure B.2.3-1 Wide Grip hand (© 2001 – 2022 CTIA Certification.
+Reproduced with permission.), defined in the CTIA Certification OTA Test
+Plan</p>
+<h1 id="b.3-ue-positioning-guidelines">B.3 UE positioning
+guidelines</h1>
+<h2 id="b.3.1-hand-phantom-only-browsing-mode">B.3.1 Hand phantom only
+(Browsing mode)</h2>
+<p>The positioning specified in this clause is used for the test cases
+for Browsing Mode with Hand Phantom. The characteristics of the Hand
+Phantom are specified in Clause B.3.1. Browsing mode is used to simulate
+user cases where the DUT is held in hand, but not pressed against ear
+e.g. web browsing and navigation. The DUT should be set as primary
+mechanical mode for browsing mode scenario, which is declared by
+manufacturer if the UE support multiple mechanical modes. Then, the DUT
+shall be mounted in a suitable hand phantom and oriented such that the
+DUT’s main display is tilted 45 degrees from vertical:</p>
+<p>- Wide Grip Hand for UE with Width &gt;72mm and ≤92mm</p>
+<p>- PDA Grip Hand for UE with Width ≥56mm and ≤72mm</p>
+<p>Note: the width is the UE width under primary mechanical mode for
+Browsing mode scenario.</p>
+<h3 id="b.3.1.1-wide-grip-hand">B.3.1.1 Wide Grip Hand</h3>
+<p>This positioning guideline is suitable for DUTs with width &gt;72mm
+and ≤92mm.</p>
+<p>The positioning guideline defined in CTIA Certification OTA Test Plan
+section A.1.4.4 [9], is used for FR1 TRP TRS testing for UE with width
+&gt;72mm and ≤92mm.</p>
+<p><img src="media/image10.png"
+style="width:4.17311in;height:3.04796in" /></p>
+<p>Figure B.3.1.1-1: Positioning guidance for Wide Grip Hand (© 2001 –
+2022 CTIA Certification. Reproduced with permission.), defined in the
+CTIA Certification OTA Test Plan</p>
+<h3 id="b.3.1.2-pda-grip-hand">B.3.1.2 PDA Grip Hand</h3>
+<p>This positioning guideline is suitable for DUTs with width ≥56mm and
+≤72mm.</p>
+<p>To help achieve a consistent positioning, the DUT is aligned to a PDA
+palm spacer. No alignment tool is required. The PDA spacer features side
+and bottom walls to ensure consistent alignment of DUTs of various
+sizes.</p>
+<p>1. Place the DUT on the PDA spacer between the fingers and align the
+DUT to the side wall of the PDA.</p>
+<p>2. If the DUT is shorter than 135 mm, then align the top of the DUT
+with the top of the PDA spacer. Otherwise, align the bottom of the DUT
+with the bottom wall of the PDA spacer.</p>
+<p>3. While keeping the DUT in the hand phantom in the position defined
+in previous steps, place the DUT and the hand phantom against the head
+phantom in such way that the DUT is in 6°tilt angle as described in
+Clause B.3.2.1.</p>
+<p><img src="media/image11.jpeg"
+style="width:1.34416in;height:2.42935in" alt="pdaspacer3" /></p>
+<p>Figure 6.2.2-1: Right-handed PDA Grip hand phantom with a spacer</p>
+<p>NOTE: Use left-handed (mirror-imaged) spacers with left-handed
+phantoms.</p>
+<h2 id="b.3.2-head-and-hand-phantom-talk-mode">B.3.2 Head and Hand
+phantom (Talk Mode)</h2>
+<h3 id="b.3.2.1-general">B.3.2.1 General</h3>
+<p>The positioning specified in this clause is used for the test cases
+for Talk Mode using Head &amp; Hand Phantom. The characteristics of the
+Hand Phantom and Head Phantom are specified in Clause B.3.1.</p>
+<p>Talk mode is used to simulate user cases where the DUT is placed into
+a hand phantom, which is holding the DUT against the SAM head phantom,
+presenting a realistic voice call operation of the DUT. The DUT should
+be set as primary mechanical mode for talk mode scenario, which is
+declared by manufacturer if the UE support multiple mechanical modes.
+Same as Browsing mode, the DUT for talk mode shall also be mounted in a
+suitable hand phantom:</p>
+<p>- Wide Grip Hand for UE with Width &gt;72mm and ≤92mm</p>
+<p>- PDA Grip Hand for UE with Width ≥56mm and ≤72mm</p>
+<p>Note: the width is the UE width under primary mechanical mode for
+talk mode scenario.</p>
+<p>In this section, the procedure provides the guideline on how to place
+the DUT+hand against the head phantom. The detailed DUT positioning into
+hand phantom for talk mode is defined in Clause B.3.1.</p>
+<p>For talk mode, the DUT is attached to the head phantom in “cheek”
+position. The DUT performance is measured on both left and right side of
+the head. Three points as shown in Figure B.3.2.1-1 define the reference
+plane: centre of the right ear piece (RE), centre of the left ear piece
+(LE) and centre of mouth (M).</p>
+<p>Definition of the ‘Cheek’ position:</p>
+<p>1. Align the ear piece of the phone (see Figure B.3.2.1-1) at the
+line RE-LE. Then, position the DUT beside the phantom so that the
+vertical line (see Figure B.3.2.1-3) is parallel to the reference plane
+in Figure B.3.2.1-2 and is aligned with the line M-RE on the reference
+plane (see Figure B.3.2.1-3).</p>
+<p>2. Position the DUT so that the ear piece of the DUT touches the ear
+piece of the phantom head on the line RE-LE. Tilt the DUT chassis
+towards the cheek of the phantom having the vertical line aligned with
+the reference plane until any point on the front side of the DUT is in
+contact with the cheek or until the contact with the ear is lost.</p>
+<p>NOTE: A holder fixture made of e.g. plastic may be used to position
+the handset against the phantom.</p>
+<p><img src="media/image12.svg"
+style="width:2.08333in;height:1.52083in" /></p>
+<p>Figure B.3.2.1-1: Reference plane on head phantom, front view</p>
+<p><img src="media/image13.svg"
+style="width:1.40139in;height:1.45347in" /></p>
+<p>Figure B.3.2.1-2: Reference plane on head phantom, side view</p>
+<p><img src="media/image14.svg" /></p>
+<p>Figure B.3.2.1-3: Reference lines at a mobile handset.</p>
+<p>In addition, 6°tilt angle from the cheek is being used instead of
+having direct contact between the cheek and DUT. A mask may be used to
+help configuration of cheek + 6° tilt angle. The mask is a 32 mm wide
+conformal strip, created by sweeping the surface of the head phantom
+through a 6º rotation about the ear. Direct DUT contact against the mask
+thus establishes the required 6º spacing away from the cheek, regardless
+of DUT form factor. The material for the head phantom mask spacer shall
+have dielectric constant of less than 1.3 and a loss tangent of less
+than 0.003. Material additions can be used to help fixing of the mask
+spacer onto the head phantom.</p>
+<h3 id="b.3.2.2-wide-grip-hand-and-head">B.3.2.2 Wide Grip Hand and
+Head</h3>
+<p>This procedure is suitable for talk mode use with DUTs of width
+&gt;72mm and ≤92mm. The positioning of the DUT in the Wide Grip hand for
+talk mode is identical to that for browsing mode described in Clause
+B.3.1.1.</p>
+<h3 id="b.3.2.1-pda-grip-hand-and-head">B.3.2.1 PDA Grip Hand and
+Head</h3>
+<p>This procedure is suitable for talk mode use with DUTs of width ≥56mm
+and ≤72mm. The positioning of the DUT in the PDA Grip hand for talk mode
+is identical to that for browsing mode described in Clause B.3.1.2.</p>
+<p class="heading"
+id="annex-c-normative-environmental-requirements">Annex C
+(normative):<br />
+Environmental requirements</p>
+<h1 id="c.1-general">C.1 General</h1>
+<p>This normative annex specifies the environmental requirements of the
+UE. Within these limits the requirements of the present documents shall
+be fulfilled.</p>
+<h1 id="c.2-environmental">C.2 Environmental</h1>
+<p>The requirements in this clause apply to all types of UE(s).</p>
+<h2 id="c.2.1-temperature">C.2.1 Temperature</h2>
+<p>All the test cases defined in this technical specification should be
+measured in room temperature e.g. 25°C.</p>
+<h2 id="c.2.2-voltage">C.2.2 Voltage</h2>
+<p>All test cases shall be performed in the normal voltage condition
+with the DUT operated in stand-alone battery powered mode. No extreme
+voltage testing is required. It is recommended to start testing with a
+fully charged battery and conclude and/or pause testing before the
+battery has completely lost its charge.</p>
+<p class="heading" id="annex-d-informative-change-history">Annex D
+(informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 47%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-11</td>
+<td style="text-align: center;">RAN4#101-e</td>
+<td style="text-align: center;">R4-2120687</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Initial Skeleton</td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-01</td>
+<td style="text-align: center;">RAN4#101-bis-e</td>
+<td style="text-align: center;">R4-2200971</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">R4-2200974 TP to TS 38.161 on
+requirement applicability</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN4#102-e</td>
+<td style="text-align: center;">R4-2204952</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>R4-2205174 TP to 38.161 on general
+aspects</p>
+<p>R4-2207315 Text proposal on environmental requirements for 38.161</p>
+<p>R4-2207323 TP to 38.161 on TRP aspects</p>
+<p>R4-2207316 TP to TS 38.161 on frequency bands</p>
+<p>R4-2207322 TP to TS 38.161 on Annex A: Test methodology</p></td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-05</td>
+<td style="text-align: center;">RAN4#103-e</td>
+<td style="text-align: center;">R4-2208626</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>R4-2208481 TP to TS 38.161 on primary
+mechanical mode</p>
+<p>R4-2210939 TP to 38.161 on EN-DC and PC2 test case applicability
+rules</p>
+<p>R4-2210940 TP to 38.161 on TRP aspects</p>
+<p>R4-2210942 TP to TS 38.161 on test method</p>
+<p>R4-2210944 TP to TS 38.161 on Phantoms</p></td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-08</td>
+<td style="text-align: center;">RAN4#104-e</td>
+<td style="text-align: center;">R4-2212810</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>R4-2214795 TP to TS 38.161 on general
+aspects</p>
+<p>R4-2214796 TP to TS 38.161 on TRP TRS requirements</p></td>
+<td style="text-align: center;">0.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-09</td>
+<td style="text-align: center;">RAN#97-e</td>
+<td style="text-align: center;">RP-222321</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">For one-step approval in RAN
+Plenary</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-09</td>
+<td style="text-align: center;">RAN#97-e</td>
+<td style="text-align: center;">RP-222608</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Editorial update from Rapporteur</td>
+<td style="text-align: center;">1.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-09</td>
+<td style="text-align: center;">RAN#97-e</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Under change control</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-12</td>
+<td style="text-align: center;">RAN#98-e</td>
+<td style="text-align: center;">RP-223310</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to TS 38.161 on test parameters</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-03</td>
+<td style="text-align: center;">RAN#99</td>
+<td style="text-align: center;">RP-230514</td>
+<td style="text-align: center;">0002</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to TS 38.161 on clarification of test
+parameters</td>
+<td style="text-align: center;">17.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-06</td>
+<td style="text-align: center;">RAN#100</td>
+<td style="text-align: center;">RP-231343</td>
+<td style="text-align: center;">0003</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to TS 38.161 on EN-DC decision
+tree</td>
+<td style="text-align: center;">17.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-06</td>
+<td style="text-align: center;">RAN#100</td>
+<td style="text-align: center;">RP-231343</td>
+<td style="text-align: center;">0004</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to TS 38.161 on measurement grids and
+editorial correction</td>
+<td style="text-align: center;">17.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024-06</td>
+<td style="text-align: center;">RAN#104</td>
+<td style="text-align: center;">RP-241441</td>
+<td style="text-align: center;">0010</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;"><p>CR on preliminary MU alignment</p>
+<p>Note: CR could not be implemented as it was not based on the latest
+specification.</p></td>
+<td style="text-align: center;">17.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024-06</td>
+<td style="text-align: center;">RAN#104</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">MCC editorial update</td>
+<td style="text-align: center;">17.4.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024-09</td>
+<td style="text-align: center;">RAN#105</td>
+<td style="text-align: center;">RP-242198</td>
+<td style="text-align: center;">0011</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Clarification of voltage environmental
+requirement</td>
+<td style="text-align: center;">17.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024-09</td>
+<td style="text-align: center;">RAN#105</td>
+<td style="text-align: center;">RP-242164</td>
+<td style="text-align: center;">0015</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to Rel-17 TS 38.161 on preliminary MU
+alignment</td>
+<td style="text-align: center;">17.5.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,4561 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38133-h90_s12-13</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#v2x-requirements" id="toc-v2x-requirements">12 V2X
+Requirements</a>
+<ul>
+<li><a href="#introduction" id="toc-introduction">12.1
+Introduction</a></li>
+<li><a href="#ue-transmit-timing" id="toc-ue-transmit-timing">12.2 UE
+Transmit Timing</a>
+<ul>
+<li><a href="#introduction-1" id="toc-introduction-1">12.2.1
+Introduction</a></li>
+<li><a href="#gnss-as-synchronization-reference-source"
+id="toc-gnss-as-synchronization-reference-source">12.2.2 GNSS as
+synchronization reference source</a></li>
+<li><a href="#nr-cell-as-synchronization-reference-source"
+id="toc-nr-cell-as-synchronization-reference-source">12.2.3 NR Cell as
+synchronization reference source</a></li>
+<li><a href="#e-urtan-cell-as-synchronization-reference-source"
+id="toc-e-urtan-cell-as-synchronization-reference-source">12.2.4 E-URTAN
+Cell as synchronization reference source</a></li>
+<li><a href="#syncref-ue-as-synchronization-reference-source"
+id="toc-syncref-ue-as-synchronization-reference-source">12.2.5 SyncRef
+UE as synchronization reference source</a></li>
+</ul></li>
+<li><a href="#initiationcease-of-slss-transmissions"
+id="toc-initiationcease-of-slss-transmissions">12.3 Initiation/Cease of
+SLSS Transmissions</a>
+<ul>
+<li><a href="#introduction-2" id="toc-introduction-2">12.3.1
+Introduction</a>
+<ul>
+<li><a
+href="#initiationcease-of-slss-transmissions-with-nr-cell-as-synchronization-reference-source"
+id="toc-initiationcease-of-slss-transmissions-with-nr-cell-as-synchronization-reference-source">12.3.1.1
+Initiation/Cease of SLSS transmissions with NR cell as synchronization
+reference source</a></li>
+<li><a
+href="#initiationcease-of-slss-transmissions-with-eutran-cell-as-synchronization-reference-source"
+id="toc-initiationcease-of-slss-transmissions-with-eutran-cell-as-synchronization-reference-source">12.3.1.2
+Initiation/Cease of SLSS transmissions with EUTRAN cell as
+synchronization reference source</a></li>
+<li><a
+href="#initiationcease-of-slss-transmissions-with-gnss-as-synchronization-reference-source"
+id="toc-initiationcease-of-slss-transmissions-with-gnss-as-synchronization-reference-source">12.3.1.3
+Initiation/Cease of SLSS transmissions with GNSS as synchronization
+reference source</a></li>
+<li><a
+href="#initiationcease-of-slss-transmissions-with-syncref-ue-as-synchronization-reference-source"
+id="toc-initiationcease-of-slss-transmissions-with-syncref-ue-as-synchronization-reference-source">12.3.1.4
+Initiation/Cease of SLSS transmissions with SyncRef UE as
+synchronization reference source</a></li>
+</ul></li>
+</ul></li>
+<li><a
+href="#selection-reselection-of-v2x-synchronization-reference-source"
+id="toc-selection-reselection-of-v2x-synchronization-reference-source">12.4
+Selection / Reselection of V2X Synchronization Reference Source</a></li>
+<li><a href="#l1-sl-rsrp-measurements"
+id="toc-l1-sl-rsrp-measurements">12.5 L1 SL-RSRP measurements</a>
+<ul>
+<li><a href="#introduction-3" id="toc-introduction-3">12.5.1
+Introduction </a></li>
+<li><a href="#sl-rsrp-measurements" id="toc-sl-rsrp-measurements">12.5.2
+SL-RSRP measurements</a></li>
+</ul></li>
+<li><a href="#congestion-control-measurements"
+id="toc-congestion-control-measurements">12.6 Congestion Control
+measurements</a></li>
+<li><a href="#interruption" id="toc-interruption">12.7 Interruption</a>
+<ul>
+<li><a href="#interruptions-to-wan-due-to-v2x-sidelink-communication"
+id="toc-interruptions-to-wan-due-to-v2x-sidelink-communication">12.7.1
+Interruptions to WAN due to V2X Sidelink Communication </a></li>
+<li><a
+href="#v2x-sidelink-communication-dropping-due-to-synchronization-source-change"
+id="toc-v2x-sidelink-communication-dropping-due-to-synchronization-source-change">12.7.2
+V2X Sidelink Communication Dropping due to synchronization source
+change</a></li>
+<li><a
+href="#interruptions-to-wan-due-to-switching-between-e-utra-v2x-sidelink-and-nr-v2x-sidelink"
+id="toc-interruptions-to-wan-due-to-switching-between-e-utra-v2x-sidelink-and-nr-v2x-sidelink">12.7.3
+Interruptions to WAN due to switching between E-UTRA V2X Sidelink and NR
+V2X Sidelink </a></li>
+<li><a
+href="#interruptions-to-wan-at-transitions-between-active-and-non-active-during-sl-drx"
+id="toc-interruptions-to-wan-at-transitions-between-active-and-non-active-during-sl-drx">12.7.4
+Interruptions to WAN at transitions between active and non-active during
+SL-DRX </a></li>
+<li><a
+href="#interruptions-to-v2x-sidelink-at-transitions-between-active-and-non-active-during-drx"
+id="toc-interruptions-to-v2x-sidelink-at-transitions-between-active-and-non-active-during-drx">12.7.5
+Interruptions to V2X sidelink at transitions between active and
+non-active during DRX </a></li>
+<li><a
+href="#interruptions-to-v2x-sidelink-due-to-active-bwp-switching-requirement"
+id="toc-interruptions-to-v2x-sidelink-due-to-active-bwp-switching-requirement">12.7.6
+Interruptions to V2X sidelink due to Active BWP switching Requirement
+</a></li>
+<li><a
+href="#interruptions-to-wan-due-to-syncref-ue-detection-andor-sensing-during-sl-drx-off-duration"
+id="toc-interruptions-to-wan-due-to-syncref-ue-detection-andor-sensing-during-sl-drx-off-duration">12.7.7
+Interruptions to WAN due to SyncRef UE detection and/or Sensing during
+SL DRX off duration </a></li>
+<li><a href="#interruptions-at-nr-sidelink-discovery-configuration"
+id="toc-interruptions-at-nr-sidelink-discovery-configuration">12.7.8
+Interruptions at NR sidelink discovery configuration</a></li>
+</ul></li>
+<li><a href="#reliability-of-gnss-signal"
+id="toc-reliability-of-gnss-signal">12.8 Reliability of GNSS
+signal</a></li>
+<li><a href="#scheduling-availability"
+id="toc-scheduling-availability">12.9 Scheduling availability</a>
+<ul>
+<li><a
+href="#scheduling-availability-of-ue-switching-between-e-utra-sidelink-and-nr-sidelink"
+id="toc-scheduling-availability-of-ue-switching-between-e-utra-sidelink-and-nr-sidelink">12.9.1
+Scheduling availability of UE switching between E-UTRA sidelink and NR
+sidelink </a></li>
+<li><a
+href="#scheduling-availability-of-ue-switching-between-uu-uplink-and-v2x-sidelink"
+id="toc-scheduling-availability-of-ue-switching-between-uu-uplink-and-v2x-sidelink">12.9.2
+Scheduling availability of UE switching between Uu uplink and V2X
+sidelink</a></li>
+</ul></li>
+<li><a href="#selection-reselection-of-relay-ue"
+id="toc-selection-reselection-of-relay-ue">12.10 Selection / Reselection
+of relay UE</a>
+<ul>
+<li><a href="#introduction-4" id="toc-introduction-4">12.10.1
+Introduction</a></li>
+<li><a href="#selection-reselection-of-relay-ue-1"
+id="toc-selection-reselection-of-relay-ue-1">12.10.2 Selection /
+Reselection of relay UE</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#measurement-performance-requirements-for-nr-gnb"
+id="toc-measurement-performance-requirements-for-nr-gnb">13 Measurement
+Performance Requirements for NR gNB</a>
+<ul>
+<li><a href="#ul-rtoa" id="toc-ul-rtoa">13.1 UL-RTOA</a>
+<ul>
+<li><a href="#report-mapping" id="toc-report-mapping">13.1.1 Report
+mapping</a></li>
+<li><a href="#a-additional-path-report-mapping-for-ul-rtoa"
+id="toc-a-additional-path-report-mapping-for-ul-rtoa">13.1.1A Additional
+Path Report Mapping for UL-RTOA</a></li>
+</ul></li>
+<li><a href="#gnb-rx-tx-time-difference"
+id="toc-gnb-rx-tx-time-difference">13.2 gNB Rx-Tx time difference</a>
+<ul>
+<li><a href="#report-mapping-1" id="toc-report-mapping-1">13.2.1 Report
+mapping</a></li>
+<li><a href="#a-additional-path-report-mapping-for-gnb-rx-tx"
+id="toc-a-additional-path-report-mapping-for-gnb-rx-tx">13.2.1A
+Additional Path Report Mapping for gNB Rx-Tx</a></li>
+<li><a href="#measurement-accuracy-requirements"
+id="toc-measurement-accuracy-requirements">13.2.2 Measurement Accuracy
+Requirements</a>
+<ul>
+<li><a href="#introduction-5" id="toc-introduction-5">13.2.2.1
+Introduction</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#ul-srs-rsrp-measurement"
+id="toc-ul-srs-rsrp-measurement">13.3 UL SRS RSRP measurement</a>
+<ul>
+<li><a href="#report-mapping-2" id="toc-report-mapping-2">13.3.1 Report
+mapping</a></li>
+<li><a href="#measurement-accuracy-requirements-1"
+id="toc-measurement-accuracy-requirements-1">13.3.2 Measurement accuracy
+requirements</a>
+<ul>
+<li><a href="#introduction-6" id="toc-introduction-6">13.3.2.1
+Introduction</a></li>
+<li><a href="#requirements" id="toc-requirements">13.3.2.2
+Requirements</a></li>
+</ul></li>
+<li><a href="#aoazoa" id="toc-aoazoa">13.4 AoA/ZoA</a></li>
+<li><a href="#report-mapping-3" id="toc-report-mapping-3">13.4.1 Report
+mapping</a></li>
+</ul></li>
+<li><a href="#timing-advance-tadv" id="toc-timing-advance-tadv">13.5
+Timing advance (T<sub>ADV</sub>)</a>
+<ul>
+<li><a href="#report-mapping-4" id="toc-report-mapping-4">13.5.1 Report
+mapping</a></li>
+</ul></li>
+<li><a href="#ul-srs-rsrpp-measurement"
+id="toc-ul-srs-rsrpp-measurement">13.6 UL SRS RSRPP measurement</a>
+<ul>
+<li><a href="#report-mapping-5" id="toc-report-mapping-5">13.6.1 Report
+mapping</a></li>
+</ul></li>
+<li><a href="#gnb-rx-tx-time-difference-measurements-for-rtt-based-pdc"
+id="toc-gnb-rx-tx-time-difference-measurements-for-rtt-based-pdc">13.7
+gNB Rx-Tx time difference measurements for RTT-based PDC</a>
+<ul>
+<li><a href="#report-mapping-6" id="toc-report-mapping-6">13.7.1 Report
+mapping</a></li>
+<li><a href="#measurement-accuracy-requirements-2"
+id="toc-measurement-accuracy-requirements-2">13.7.2 Measurement Accuracy
+Requirements</a>
+<ul>
+<li><a href="#introduction-7" id="toc-introduction-7">13.7.2.1
+Introduction</a></li>
+<li><a href="#requirements-1" id="toc-requirements-1">13.7.2.2
+Requirements</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="v2x-requirements">12 V2X Requirements</h1>
+<h2 id="introduction">12.1 Introduction</h2>
+<p>This clause contains the requirements for the UE capable of V2X
+sidelink communication when the UE is out of coverage on the carrier
+used for V2X sidelink operation, as defined in TS 38.304 [1]. The
+requirements apply when the UE is:</p>
+<p>- in any cell selection state, or,</p>
+<p>- configured for V2X SL operation on a V2X carrier which is dedicated
+to only V2X SL operation and configured with only a PCell on WAN
+carrier.</p>
+<p>- configured for inter-band con-current V2X operation.</p>
+<p>- configured for intra-band con-current V2X operation with different
+carriers.</p>
+<p>Note: Any cell selection state refers to a UE that is out of network
+coverage and is not associated with a serving cell on any carrier as
+defined in TS 38.304 [1].</p>
+<p>Note: When a UE in RRC_CONNECTED state is performing transmissions
+and/or reception for V2X sidelink communication, the UE shall meet all
+the requirements specified in Clause 9 assuming that UE has a dedicated
+RX/TX chain for V2X sidelink communication. Otherwise, the UE may
+interrup the V2X sidelink communication in order to meet the measurement
+requirements specified in Clause 9.</p>
+<p>This clause also contains the requirements for the UE capable of V2X
+sidelink communication when the UE is in coverage on the carrier used
+for V2X sidelink operation, as defined in TS 38.304 [1]. The
+requirements apply when the UE is:</p>
+<p>- configured for intra-band con-current NR V2X cooperation with same
+carrier.</p>
+<p>For UE capable of Public Safety sidelink communication and/or other
+commercial sidelink commnunication, unless explicitly stated, V2X
+requirements apply.</p>
+<h2 id="ue-transmit-timing">12.2 UE Transmit Timing</h2>
+<h3 id="introduction-1">12.2.1 Introduction</h3>
+<p>This clause contains requirements of transmission timing for V2X
+sidelink communication when:</p>
+<p>- GNSS is used as the synchronization reference source;</p>
+<p>- NR Cell is used as the synchronization reference source;</p>
+<p>- E-UTRAN Cell is used as the synchronization reference source;</p>
+<p>- SyncRef UE is used as the synchronization reference source.</p>
+<h3 id="gnss-as-synchronization-reference-source">12.2.2 GNSS as
+synchronization reference source</h3>
+<p>The requirements in this subclause are applicable when the reference
+timing used by the UE for V2X sidelink communication is derived from
+GNSS.</p>
+<p>The sidelink transmissions takes place <img src="media/image1.svg" />
+before the subframe starting boundary as defined in TS 38.331 [2], where
+<img src="media/image2.svg" /> = 0 and<img
+src="media/image3.svg" />=0.</p>
+<p>The transmission timing error for sidelink transmissions shall be
+less than or equal to ±T<sub>e</sub> where the timing error limit value
+T<sub>e</sub> is defined in Table 12.2.2-1.</p>
+<p>Table 12.2.2-1: T<sub>e</sub> Timing Error Limit</p>
+<table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 58%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Frequency Range of sidelink</td>
+<td>T<sub>e_</sub></td>
+</tr>
+<tr>
+<td>FR1</td>
+<td>12*64*T<sub>c</sub></td>
+</tr>
+<tr>
+<td colspan="2">Note 1: T<sub>c</sub> is the basic timing unit defined
+in TS 38.211 [6].</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nr-cell-as-synchronization-reference-source">12.2.3 NR Cell as
+synchronization reference source</h3>
+<p>The requirements in this subclause are applicable when the reference
+timing used for sidelink transmissions is a NR serving cell on a non-V2X
+sidelink carrier or a V2X sidelink carrier.</p>
+<p>The sidelink transmissions takes place <img src="media/image1.svg" />
+before the reception of the first detected path (in time) of the
+corresponding downlink frame from the reference cell, where <img
+src="media/image3.svg" />= 0. If uplink transmission and sidelink
+transmission are in the same band, <img src="media/image2.svg" /> is
+defined in Table 7.1.2-2, otherwise <img src="media/image2.svg" /> is
+0.</p>
+<p>The transmission timing error for sidelink transmissions shall be
+less than or equal to ±T<sub>e</sub> where the timing error limit value
+T<sub>e</sub> is defined in Table 12.2.3-1.</p>
+<p>Table 12.2.3-1: T<sub>e</sub> Timing Error Limit</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 22%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Frequency Range of sidelink</td>
+<td>SCS of SSB signals ( kHz)</td>
+<td>SCS of sidelink signals (kHz)</td>
+<td>T<sub>e</sub></td>
+</tr>
+<tr>
+<td>FR1</td>
+<td>15</td>
+<td>15</td>
+<td>14*64*T<sub>c</sub></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>30</td>
+<td>12*64*T<sub>c</sub></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>60</td>
+<td>12*64*T<sub>c</sub></td>
+</tr>
+<tr>
+<td></td>
+<td>30</td>
+<td>15</td>
+<td>10*64*T<sub>c</sub></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>30</td>
+<td>10*64*T<sub>c</sub></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>60</td>
+<td>9*64*T<sub>c</sub></td>
+</tr>
+<tr>
+<td colspan="4">Note 1: T<sub>c</sub> is the basic timing unit defined
+in TS 38.211 [6].</td>
+</tr>
+</tbody>
+</table>
+<h3 id="e-urtan-cell-as-synchronization-reference-source">12.2.4 E-URTAN
+Cell as synchronization reference source</h3>
+<p>The requirements in this subclause are applicable when the reference
+timing used for sidelink transmissions is an E-UTRAN serving cell on a
+non-V2X sidelink carrier.</p>
+<p>The sidelink transmissions takes place <img src="media/image1.svg" />
+before the reception of the first detected path (in time) of the
+corresponding E-UTRAN downlink frame from the reference cell, where <img
+src="media/image2.svg" /> = 0 and<img src="media/image3.svg" />=0.</p>
+<p>The transmission timing error for sidelink transmissions shall be
+less than or equal to ±T<sub>e</sub> where the timing error limit value
+T<sub>e</sub> is defined in Table 12.2.4-1.</p>
+<p>Table 12.2.4-1: T<sub>e</sub> Timing Error Limit</p>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 34%" />
+<col style="width: 28%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Frequency Range of sidelink</td>
+<td>E-UTRAN downlink bandwidth (MHz)</td>
+<td>T<sub>e_</sub></td>
+</tr>
+<tr>
+<td>FR1</td>
+<td>≥3</td>
+<td>14*64*T<sub>c</sub></td>
+</tr>
+<tr>
+<td colspan="3">Note 1: T<sub>c</sub> is the basic timing unit defined
+in TS 38.211 [6].</td>
+</tr>
+</tbody>
+</table>
+<h3 id="syncref-ue-as-synchronization-reference-source">12.2.5 SyncRef
+UE as synchronization reference source</h3>
+<p>The requirements in this subclause are applicable when the reference
+timing used for deriving sidelink transmission is from SyncRef UE
+transmitting sidelink synchronization signals.</p>
+<p>The sidelink transmissions takes place <img src="media/image1.svg" />
+before the reception of the first detected path (in time) of the
+corresponding timing reference frame from the SyncRef UE, where <img
+src="media/image2.svg" /> = 0 and<img src="media/image3.svg" />=0.</p>
+<p>The transmission timing error for sidelink transmissions shall be
+less than or equal to ±T<sub>e</sub> where the timing error limit value
+T<sub>e</sub> is defined in Table 12.2.5-1.</p>
+<p>Table 12.2.5-1: T<sub>e</sub> Timing Error Limit</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Frequency Range of sidelink</td>
+<td>SCS of sidelink signals (kHz)</td>
+<td>T<sub>e</sub></td>
+</tr>
+<tr>
+<td>FR1</td>
+<td>15</td>
+<td>12*64*T<sub>c</sub></td>
+</tr>
+<tr>
+<td></td>
+<td>30</td>
+<td>8*64*T<sub>c</sub></td>
+</tr>
+<tr>
+<td></td>
+<td>60</td>
+<td>5*64*T<sub>c</sub></td>
+</tr>
+<tr>
+<td colspan="3">Note 1: T<sub>c</sub> is the basic timing unit defined
+in TS 38.211 [6].</td>
+</tr>
+</tbody>
+</table>
+<h2 id="initiationcease-of-slss-transmissions">12.3 Initiation/Cease of
+SLSS Transmissions</h2>
+<h3 id="introduction-2">12.3.1 Introduction</h3>
+<p>The requirements in this subclause are applicable to the UE capable
+of V2X sidelink communication when:</p>
+<p>- GNSS is used as the synchronization reference source;</p>
+<p>- NR Cell is used as the synchronization reference source;</p>
+<p>- EUTRAN Cell is used as the synchronization reference source;</p>
+<p>- SyncRef UE is used as the synchronization reference source.</p>
+<h4
+id="initiationcease-of-slss-transmissions-with-nr-cell-as-synchronization-reference-source">12.3.1.1
+Initiation/Cease of SLSS transmissions with NR cell as synchronization
+reference source</h4>
+<p>The requirements apply when the NR Cell is used as synchronization
+reference source and when the UE is</p>
+<p>- out of coverage on the V2X NR sidelink carrier and in-coverage with
+a serving cell on a NR non-V2X sidelink carrier, or</p>
+<p>- in coverage with a serving cell on a NR V2X sidelink carrier,</p>
+<p>and when the conditions for SLSS transmissions specified in TS
+38.331[2] are met; <em>networkControlledSyncTx</em> is not configured;
+and <em>syncTxThreshIC</em> is included in
+<em>SystemInformationBlockType12</em>. The UE shall be capable of
+measuring the RSRP of the cell used as synchronization reference source
+to evaluate to initiate/cease SLSS transmissions within
+T<sub>evaluate,SLSS</sub></p>
+<p>where,</p>
+<p>- T<sub>evaluate,SLSS</sub> is as specified in Table 12.3.1.1-1 when
+UE performs SSB based measurements without measurement gaps.</p>
+<p>- T<sub>evaluate,SLSS</sub> is as specified in Table 12.3.1.1-2 when
+UE performs SSB based measurements with measurement gaps.</p>
+<p>Table 12.3.1.1-1: T<sub>evaluate,SLSS</sub> for measurements without
+measurement gaps when NR cell is used as synchronization reference
+source (FR1)</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>DRX cycle in NR cell</th>
+<th>T<sub>evaluate,SLSS</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No DRX</td>
+<td>max(400ms, ceil( 2 x 5 x K<sub>p</sub>) x SMTC period)<sup>Note
+1</sup></td>
+</tr>
+<tr>
+<td>DRX cycle≤ 320ms</td>
+<td>max(400ms, ceil(1.5 x 2 x 5 x K<sub>p</sub>) x max(SMTC period, DRX
+cycle))</td>
+</tr>
+<tr>
+<td>DRX cycle&gt;320ms</td>
+<td>ceil( 7 x K<sub>p</sub> ) x DRX cycle</td>
+</tr>
+<tr>
+<td colspan="2">NOTE 1: If different SMTC periodicities are configured
+for different cells, the SMTC period in the requirement is the one used
+by the cell being identified</td>
+</tr>
+</tbody>
+</table>
+<p>Table 12.3.1.1-2: T<sub>evaluate,SLSS</sub> for measurements with
+measurement gaps when NR cell is used as synchronization reference
+source (FR1)</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>DRX cycle in NR cell</th>
+<th>T<sub>evaluate,SLSS</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No DRX</td>
+<td>max(400ms, 2 x 5 x max(MGRP, SMTC period)) x
+CSSF<sub>intra</sub></td>
+</tr>
+<tr>
+<td>DRX cycle≤ 320ms</td>
+<td>max(400ms, ceil(2 x 1.5x 5) x max(MGRP, SMTC period,DRX cycle)) x
+CSSF<sub>intra</sub></td>
+</tr>
+<tr>
+<td>DRX cycle&gt;320ms</td>
+<td>7 x max(MGRP, DRX cycle) x CSSF<sub>intra</sub></td>
+</tr>
+</tbody>
+</table>
+<p>If higher layer filtering is configured, an additional delay in
+evaluation to initiate/cease SLSS transmissions can be expected.</p>
+<p>For the NR cell as synchronization reference source:</p>
+<p>- SS-RSRP related side conditions given in clauses 10.1.2 for FR1,
+respectively, for a corresponding Band,</p>
+<p>- SS-RSRQ related side conditions given in clauses 10.1.7 for FR1,
+respectively, for a corresponding Band,</p>
+<p>- SS-SINR related side conditions given in clauses 10.1.12 for FR1,
+respectively, for a corresponding Band,</p>
+<p>- SSB_RP and SSB Ês/Iot according to Annex B.2.2 for a corresponding
+Band.</p>
+<h4
+id="initiationcease-of-slss-transmissions-with-eutran-cell-as-synchronization-reference-source">12.3.1.2
+Initiation/Cease of SLSS transmissions with EUTRAN cell as
+synchronization reference source</h4>
+<p>The requirements apply when the EUTRAN Cell is used as
+synchronization reference source and when the UE is</p>
+<p>- out of coverage on the V2X NR sidelink carrier and in-coverage with
+a serving cell on a LTE non-V2X sidelink carrier,</p>
+<p>and when the conditions for SLSS transmissions specified in TS
+36.331[16] are met; <em>networkControlledSyncTx</em> is not configured;
+and <em>syncTxThreshIC</em> is included in
+<em>SystemInformationBlockType28</em>. The UE shall be capable of
+measuring the RSRP of the cell used as synchronization reference source
+to evaluate to initiate/cease SLSS transmissions within
+T<sub>evaluate,SLSS</sub></p>
+<p>where,</p>
+<p>- T<sub>evaluate,SLSS</sub> = 0.4 seconds when UE is not configured
+with DRX.</p>
+<p>- T<sub>evaluate,SLSS</sub> = as specified in Table 12.3.1.2-1 when
+UE is configured with DRX.</p>
+<p>Table 12.3.1.2-1: T<sub>evaluate,SLSS</sub> when EUTRAN cell is used
+as synchronization reference source</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr>
+<td>DRX cycle length in EUTRAN cell[s]</td>
+<td><p>T<sub>evaluate,SLSS</sub></p>
+<p>[s] (number of DRX cycles)</p></td>
+</tr>
+<tr>
+<td>≤0.04</td>
+<td>0.4 (Note 1)</td>
+</tr>
+<tr>
+<td>0.04&lt;DRX-cycle≤2.56</td>
+<td>Note 2 (6)</td>
+</tr>
+<tr>
+<td colspan="2"><p>Note1: Number of DRX cycles depends upon the DRX
+cycle in use</p>
+<p>Note2: Time depends upon the DRX cycles in use</p></td>
+</tr>
+</tbody>
+</table>
+<p>If higher layer filtering is configured, an additional delay in
+evaluation to initiate/cease SLSS transmissions can be expected.</p>
+<p>For the cell as synchronization reference source:</p>
+<p>- RSRP related side conditions given in TS 36.133[15] Clauses 9.1.2.1
+and 9.1.2.2 and RSRQ related side conditions given in TS 36.133[15]
+Clause 9.1.5.1 for a corresponding Band are fulfilled,</p>
+<p>- SCH_RP and SCH Ês/Iot according to TS 36.133[15] Annex B.2.1 for a
+corresponding Band are fulfilled.</p>
+<h4
+id="initiationcease-of-slss-transmissions-with-gnss-as-synchronization-reference-source">12.3.1.3
+Initiation/Cease of SLSS transmissions with GNSS as synchronization
+reference source</h4>
+<p>The requirements apply when GNSS is used as synchronization reference
+source and when the UE is</p>
+<p>- out of coverage on the V2X sidelink carrier and in-coverage with a
+serving cell on a non-V2X sidelink carrier, or</p>
+<p>- in coverage with a serving cell on a NR V2X sidelink carrier,</p>
+<p>and when the conditions for SLSS transmissions specified in TS
+38.331[2] are met; <em>networkControlledSyncTx</em> is not configured;
+and <em>syncTxThreshIC</em> is included in
+<em>SystemInformationBlockType12</em> in a NR cell.</p>
+<p>When the conditions for SLSS transmissions specified in TS 36.331[16]
+are met; <em>networkControlledSyncTx</em> is not configured; and
+<em>syncTxThreshIC</em> is included in
+<em>SystemInformationBlockType28</em> in a EUTRAN cell.</p>
+<p>The requirements in Clause 12.3.1.1 shall apply if the serving cell
+is a NR cell.</p>
+<p>The requirements in Clause 12.3.1.2 shall apply if the serving cell
+is a EUTRAN cell.</p>
+<h4
+id="initiationcease-of-slss-transmissions-with-syncref-ue-as-synchronization-reference-source">12.3.1.4
+Initiation/Cease of SLSS transmissions with SyncRef UE as
+synchronization reference source</h4>
+<p>The requirements apply when SyncRef UE is used as synchronization
+reference source and when the UE is</p>
+<p>- in any cell selection state, or</p>
+<p>- out of coverage on the V2X sidelink carrier and is associated with
+a serving cell on a non-V2X sidelink carrier, or</p>
+<p>- in coverage with a serving cell on a NR V2X sidelink carrier,</p>
+<p>and when the conditions for SLSS transmissions specified in TS
+38.331[2] are met and when SyncRef UE is used as synchronization
+reference source and if <em>syncTxThreshOoC</em> is included in the
+preconfigured V2X parameters.</p>
+<p>The UE shall be capable of measuring the PSBCH-RSRP of the selected
+SyncRef UE used as synchronization reference source and evaluate it to
+initiate/cease SLSS transmissions within T<sub>evaluate,SLSS</sub>, as
+shown in Table 12.3.1.4-1.</p>
+<p>Table 12.3.1.4-1: T<sub>evaluate,SLSS</sub> when SyncRef UE is used
+as synchronization reference source</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 57%" />
+</colgroup>
+<tbody>
+<tr>
+<td>SL-DRX cycle<sup>Note 1</sup> [ms]</td>
+<td>T<sub>evaluate,SLSS</sub> [ms]</td>
+</tr>
+<tr>
+<td>No SL-DRX</td>
+<td>4 x S-SSB periods</td>
+</tr>
+<tr>
+<td>SL-DRX cycle ≤ 160ms</td>
+<td>4 x S-SSB periods</td>
+</tr>
+<tr>
+<td>SL-DRX cycle &gt; 160ms</td>
+<td>4 x SL-DRX cycle</td>
+</tr>
+<tr>
+<td colspan="2">Note 1: If multiple SL-DRX cycles are configured for SL
+UE, the SL-DRX cycle in the requirement is the shortest one. When the
+shortest SL-DRX cycle UE used changes, the requirements do not apply to
+the time of transition.</td>
+</tr>
+</tbody>
+</table>
+<p>If higher layer filtering for PSBCH-RSRP measurements is
+pre-configured, an additional delay in evaluation to initiate/cease SLSS
+transmissions can be expected.</p>
+<p>For the selected SyncRef UE as defined in TS 38.331 [2] used to
+derive transmission timing for V2X sidelink communication:</p>
+<p>- PSBCH-RSRP related side conditions given in Clause 12.4 for a
+corresponding Band are fulfilled,</p>
+<p>- V2X S-SSB_RP and S-SSB Ês/Iot according to Annex B. 4 for a
+corresponding Band are fulfilled.</p>
+<h2
+id="selection-reselection-of-v2x-synchronization-reference-source">12.4
+Selection / Reselection of V2X Synchronization Reference Source</h2>
+<p>The requirements defined in this clause do not apply to the UEs that
+do not support transmission and reception of SLSS.</p>
+<p>A SyncRef UE is considered to be detectable when</p>
+<p>- PSBCH-RSRP related side conditions given in Clause 10 are fulfilled
+for a corresponding Band,</p>
+<p>- S-SSB_RP and S-SSB Ês/Iot according to Annex B.4.3 for a
+corresponding Band are fulfilled.</p>
+<p>When GNSS synchronization reference source is configured as the
+highest priority and</p>
+<p>- UE is synchronized to GNSS directly,</p>
+<p>- UE shall not drop any V2X SLSS and data transmission for the
+purpose of selection/reselection to the SyncRef UE.</p>
+<p>- UE is synchronized to a SyncRef UE that is synchronized to GNSS
+directly or in-directly,</p>
+<p>- UE shall not drop any V2X data transmission for the purpose of
+selection/reselection to the SyncRef UE. The UE shall be able to
+identify newly detectable intra-frequency SyncRef UE within
+T<sub>detect,SyncRef UE_V2X</sub> seconds if the SyncRef UE meets the
+selection / reselection criterion defined in TS 38.331[2].
+T<sub>detect,SyncRef UE_V2X</sub> is defined as 1.6 seconds at S-SSB
+Ês/Iot ≥ 0 dB, provided that the UE is allowed to drop a maximum of 30%
+of its SLSS transmissions during T<sub>detect,SyncRef UE_V2X</sub> for
+the purpose of selection / reselection to the SyncRef UE.</p>
+<p>- in other case</p>
+<p>- When UE is in non-SL-DRX</p>
+<p>- The UE shall be able to identify newly detectable intra-frequency
+SyncRef UE within T<sub>detect,SyncRef UE_V2X</sub> seconds if the
+SyncRef UE meets the selection / reselection criterion defined in TS
+38.331[2]. T<sub>detect,SyncRef UE_V2X</sub> is defined as 8 seconds at
+S-SSB Ês/Iot ≥ 0 dB, provided that the UE is allowed to drop a maximum
+of 6 % of its V2X data and SLSS transmissions during
+T<sub>detect,SyncRef UE_V2X</sub> for the purpose of selection /
+reselection to the SyncRef UE.</p>
+<p>- UE is allowed to drop up to 2 slots of its V2X data reception per
+PSBCH monitoring occasion and overall drop rate shall not exceed 0.3% of
+its V2X data reception during T<sub>detect,SyncRef UE_V2X</sub> for the
+purpose of selection / reselection to the SyncRef UE.</p>
+<p>- When UE is in SL-DRX</p>
+<p>- UE shall be able to identify newly detectable intra-frequency
+SyncRef UE within T<sub>detect,SyncRef UE_V2X</sub> seconds if the
+SyncRef UE meets the selection / reselection criterion defined in TS
+38.331[2]. T<sub>detect,SyncRef UE_V2X</sub> is defined as 8 seconds at
+S-SSB Ês/Iot ≥ 0 dB, provided that the V2X UE is allowed to drop a
+maximum of 6 % of its V2X data and SLSS transmissions for the purpose of
+selection / reselection to the SyncRef UE.</p>
+<p>- UE is allowed to drop up to 2 slots of its V2X data reception per
+PSBCH monitoring occasion and UE is allowed to drop at most an
+aggregated window of 24ms of its V2X data reception during
+T<sub>detect,SyncRef UE_V2X</sub> for the purpose of selection /
+reselection to the SyncRef UE.</p>
+<p>- The UE is allowed to extend T<sub>detect,SyncRef UE_V2X</sub> to
+max(4 x 50 SL-DRX cycle length, 8s) when the following conditions are
+satisfied over an evaluation period T<sub>evaluate,SLSS</sub> in clause
+12.3.1.1 if an NR cell is used as synchronization reference source, or
+T<sub>evaluate,SLSS</sub> in clause 12.3.1.2 if an EUTRA cell is used as
+synchronization reference source, or T<sub>evaluate,SLSS</sub> in clause
+12.3.1.4 if an SLSS is used as synchronization reference source. If
+multiple SL-DRX cycles are configured, the SL-DRX cycle length is the
+longest one.</p>
+<p>- SS-RSRP is larger than <em>syncTxThreshOoC</em>.</p>
+<p>When serving cell/PCell synchronization reference source is
+configured as the highest priority,</p>
+<p>- When UE is in non-SL-DRX</p>
+<p>- UE shall be able to identify newly detectable intra-frequency
+SyncRef UE within T<sub>detect,SyncRef UE_V2X</sub> seconds if the
+SyncRef UE meets the selection / reselection criterion defined in TS
+38.331[2]. T<sub>detect,SyncRef UE_V2X</sub> is defined as 8 seconds at
+SCH Es/Iot ≥ 0 dB, provided that the V2X UE is allowed to drop a maximum
+of 6 % of its V2X data and SLSS transmissions for the purpose of
+selection / reselection to the SyncRef UE.</p>
+<p>- UE is allowed to drop up to 2 slots of its V2X data reception per
+PSBCH monitoring occasion and overall drop rate shall not exceed 0.3% of
+its V2X data reception during T<sub>detect,SyncRef UE_V2X</sub> for the
+purpose of selection / reselection to the SyncRef UE.</p>
+<p>- When UE is in SL-DRX</p>
+<p>- The UE shall be able to identify newly detectable intra-frequency
+SyncRef UE within T<sub>detect,SyncRef UE_V2X</sub> seconds if the
+SyncRef UE meets the selection / reselection criterion defined in TS
+38.331[2]. T<sub>detect,SyncRef UE_V2X</sub> is defined as 8 seconds at
+SCH Es/Iot ≥ 0 dB, provided that the UE is allowed to drop its V2X data
+and SLSS transmissions at most in an aggregated window of 480ms during
+T<sub>detect,SyncRef UE_V2X</sub> for the purpose of selection /
+reselection to the SyncRef UE.</p>
+<p>- UE is allowed to drop up to 2 slots of its V2X data reception per
+PSBCH monitoring occasion and UE is allowed to drop at most an
+aggregated window of 24ms of its V2X data reception during
+T<sub>detect,SyncRef UE_V2X</sub> for the purpose of selection /
+reselection to the SyncRef UE.</p>
+<p>- The UE is allowed to extend T<sub>detect,SyncRef UE_V2X</sub> to
+max(4 x 50 SL-DRX cycle length, 8s) when the following conditions are
+satisfied over an evaluation period T<sub>evaluate,SLSS</sub> in clause
+12.3.1.1 if an NR cell is used as synchronization reference source, or
+T<sub>evaluate,SLSS</sub> in clause 12.3.1.2 if an EUTRA cell is used as
+synchronization reference source, or T<sub>evaluate,SLSS</sub> in clause
+12.3.1.4 if an SLSS is used as synchronization reference source. If
+multiple SL-DRX cycles are configured, the SL-DRX cycle length is the
+longest one.</p>
+<p>- SS-RSRP is larger than <em>syncTxThreshOoC</em>.</p>
+<p>UE shall be capable of performing PSBCH-RSRP measurements for 3
+identified intra-frequency SyncRef UE with the measurement period of
+T<sub>measure,PSBCH-RSRP</sub> in Table 12.4-1. It is assumed that the
+SyncRef UE do not drop or delay any SLSS transmission within the
+measurement period. Otherwise, the measurement period may be
+extended.</p>
+<p>Table 12.4-1: PSBCH-RSRP measurement period for intra-frequency
+SyncRef UE</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 57%" />
+</colgroup>
+<tbody>
+<tr>
+<td>SL-DRX cycle<sup>Note 1</sup> [ms]</td>
+<td>T<sub>measure,PSBCH-RSRP</sub> [ms]</td>
+</tr>
+<tr>
+<td>No SL-DRX</td>
+<td>320</td>
+</tr>
+<tr>
+<td>SL-DRX cycle ≤ 160ms</td>
+<td>320</td>
+</tr>
+<tr>
+<td>SL-DRX cycle &gt; 160ms</td>
+<td>2 x SL-DRX cycle</td>
+</tr>
+<tr>
+<td colspan="2">Note 1: If multiple SL-DRX cycles are configured, the
+SL-DRX cycle is the shortest one.</td>
+</tr>
+</tbody>
+</table>
+<p>When UE is synchronized to GNSS directly, before selection /
+reselection of the new synchronization reference source UE shall
+evaluate the GNSS synchronization source reliability for at least 20
+seconds before changing the synchronization reference from GNSS to
+another synchronization reference source. UE shall be always
+synchronized to GNSS directly during the evaluation of GNSS
+synchronization source reliability.</p>
+<h2 id="l1-sl-rsrp-measurements">12.5 L1 SL-RSRP measurements</h2>
+<h3 id="introduction-3">12.5.1 Introduction </h3>
+<p>This clause contains the measurement requirements related to resource
+reselection and resource pre-emption of the UE capable of V2X sidelink
+communication.</p>
+<h3 id="sl-rsrp-measurements">12.5.2 SL-RSRP measurements</h3>
+<p>The UE physical layer shall be capable of performing the L1 SL-RSRP
+measurements on the carrier operating V2X sidelink communication for
+determining the subset of resources to be excluded in PSSCH resource
+selection in sidelink transmission mode 2. The L1 SL-RSRP measurement
+period corresponds to one slot and the measurement shall meet the L1
+SL-RSRP measurement accuracy requirement in Clause 10. After resource
+(re-)selection procedure, re-evaluation is performed on the reserved
+resources by L1 SL-RSRP measurements before transmission of SCI with
+reservation when the conditions specified in TS 38.214[26] are
+satisfied.</p>
+<p>When the pre-emption mechanism is enabled for the resource pool that
+UE is monitoring and selecting resource from, after UE selects from the
+resource not excluded based on L1 SL-RSRP measurement procedure, the UE
+shall be capable of triggering reselection of already signalled
+resource(s) as a resource reservation when the conditions specified in
+TS38.214[26] are satisfied.</p>
+<p>When partial sensing mechanism is enabled for the resource pool that
+UE is monitoring and selecting resource from, the UE shall be capable of
+performing the L1 SL-RSRP measurements on the sensing periods specified
+in TS38.214[26]. When SL-DRX is enabled, the UE shall be capable of
+performing the L1 SL-RSRP measurements and select resource during SL-DRX
+active time as specified in TS38.214[26].</p>
+<h2 id="congestion-control-measurements">12.6 Congestion Control
+measurements</h2>
+<p>The UE shall be capable of estimating the channel busy ratio for one
+or more transmission pools indicated by higher layers in TS 38.331[2],
+based on SL-RSSI measurements provided by the physical layer.</p>
+<p>When no sidelink transmissions occur, the UE physical layer shall
+perform a single-shot SL-RSSI measurement for each sub-channel included
+in all the slots configured as transmission pools.</p>
+<p>The SL-RSSI measurement performed according to this clause shall meet
+the SL-RSSI measurement accuracy requirements defined in Clause 10.</p>
+<p>The UE shall perform channel busy ratio (CBR) measurement based on
+SL-RSSI measurements as described in TS 38.215 [4].</p>
+<h2 id="interruption">12.7 Interruption</h2>
+<h3 id="interruptions-to-wan-due-to-v2x-sidelink-communication">12.7.1
+Interruptions to WAN due to V2X Sidelink Communication </h3>
+<p>This clause contains the requirements related to the interruptions on
+the PCell/serving cell due to V2X sidelink communication.</p>
+<p>A UE capable of V2X sidelink communication may indicate its interest
+(initiation or termination) in V2X sidelink communication to the
+connected gNodeB using IE <em>SidelinkUEInformationNR</em> in
+TS38.331[2].</p>
+<p>The UE is allowed an interruption of up to the duration shown in
+table 12.7.1-1 on the PCell/serving cell during the RRC reconfiguration
+procedure that includes the V2X sidelink communication configuration
+message <em>SL-ConfigDedicatedNR</em> in TS 38.331[2] (setup and
+release). This interruption is for both uplink and downlink of the
+PCell/serving cell.</p>
+<p>Table 12.7.1-1: Interruption length at V2X RRC reconfiguration</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 27%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image4.svg"
+style="width:0.16667in;height:0.16667in" /></th>
+<th>NR Slot length (ms)</th>
+<th><p>Interruption length</p>
+<p>(number of slots)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.5</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.25</td>
+<td>5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.125</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="v2x-sidelink-communication-dropping-due-to-synchronization-source-change">12.7.2
+V2X Sidelink Communication Dropping due to synchronization source
+change</h3>
+<p>This clause contains the requirements related to the interruptions on
+the V2X sidelink communication due to synchronization source change.</p>
+<p>For NR V2X UE not supporting gNB/eNB as synchronization reference
+source, UE is allowed to drop LTE and NR V2X SL transmission or
+reception for up to 1ms when synchronization source is changed, where
+the drop of  LTE V2X SL transmission or reception applies only to
+in-device coexistence scenario in TS38.213 [3]:</p>
+<p>- From GNSS</p>
+<p>- to syncRef UE that is synchronized to GNSS directly/in-directly</p>
+<p>- to syncRef UE that has the lowest priority</p>
+<p>- From syncRef UE that is synchronized to GNSS
+directly/in-directly</p>
+<p>- to GNSS</p>
+<p>- to syncRef UE that has the lowest priority</p>
+<p>- From syncRef UE that has the lowest priority</p>
+<p>- to GNSS</p>
+<p>- to syncRef UE that is synchronized to GNSS directly/in-directly</p>
+<p>- to syncRef UE that has the lowest priority</p>
+<p>For NR V2X UE supporting gNB/eNB as synchronization reference source,
+UE is allowed to drop LTE and NR V2X SL transmission or reception for up
+to 1ms when synchronization source is changed, where the drop of  LTE
+V2X SL transmission or reception applies only to in-device coexistence
+scenario in TS38.213 [3]:</p>
+<p>- From GNSS</p>
+<p>- to syncRef UE that is synchronized to GNSS directly/in-directly</p>
+<p>- to gNB/eNB</p>
+<p>- to syncRef UE that is synchronized to gNB/eNB directly</p>
+<p>- to syncRef UE that is synchronized to gNB/eNB in-directly</p>
+<p>- to syncRef UE that has the lowest priority</p>
+<p>- From syncRef UE that is synchronized to GNSS
+directly/in-directly</p>
+<p>- to GNSS</p>
+<p>- to gNB/eNB</p>
+<p>- to syncRef UE that is synchronized to gNB/eNB directly</p>
+<p>- to syncRef UE that is synchronized to gNB/eNB in-directly</p>
+<p>- to syncRef UE that has the lowest priority</p>
+<p>- From gNB or eNB</p>
+<p>- to GNSS</p>
+<p>- to syncRef UE that is synchronized to GNSS directly/in-directly</p>
+<p>- to eNB or gNB</p>
+<p>- to syncRef UE that is synchronized to gNB or eNB directly</p>
+<p>- to syncRef UE that is synchronized to gNB or eNB in-directly</p>
+<p>- to syncRef UE that has the lowest priority</p>
+<p>- From syncRef UE that is synchronized to gNB/eNB directly</p>
+<p>- to GNSS</p>
+<p>- to syncRef UE that is synchronized to GNSS directly/in-directly</p>
+<p>- to gNB/eNB</p>
+<p>- to syncRef UE that is synchronized to gNB/eNB directly</p>
+<p>- to syncRef UE that is synchronized to gNB/eNB in-directly</p>
+<p>- to syncRef UE that has the lowest priority</p>
+<p>- From syncRef UE that is synchronized to gNB/eNB in-directly</p>
+<p>- to GNSS</p>
+<p>- to syncRef UE that is synchronized to GNSS directly/in-directly</p>
+<p>- to gNB/eNB</p>
+<p>- to syncRef UE that is synchronized to gNB/eNB directly</p>
+<p>- to syncRef UE that is synchronized to gNB/eNB in-directly</p>
+<p>- to syncRef UE that has the lowest priority</p>
+<p>- From syncRef UE that has the lowest priority</p>
+<p>- to GNSS</p>
+<p>- to syncRef UE that is synchronized to GNSS directly</p>
+<p>- to syncRef UE that is synchronized to GNSS in-directly</p>
+<p>- to gNB/eNB</p>
+<p>- to syncRef UE that is synchronized to gNB/eNB directly</p>
+<p>- to syncRef UE that is synchronized to gNB/eNB in-directly</p>
+<p>- to syncRef UE that has the lowest priority</p>
+<p>UE is allowed to interruption any V2X sidelink signals including
+PSSCH, PSCCH, PSBCH, PSFCH and SLSS signals.</p>
+<h3
+id="interruptions-to-wan-due-to-switching-between-e-utra-v2x-sidelink-and-nr-v2x-sidelink">12.7.3
+Interruptions to WAN due to switching between E-UTRA V2X Sidelink and NR
+V2X Sidelink </h3>
+<p>This sub-clause contains the requirements related to the
+interruptions on the PCell/serving cell due to switching between E-UTRA
+V2X sidelink and NR V2X sidelink transmissions on a dedicated carrier.
+It is applicable for UE capable of both NR V2X sidelink and E-UTRA V2X
+sidelink transmissions in TDM-ed manner.</p>
+<p>When a UE capable of switching between E-UTRA V2X sidelink and NR V2X
+sidelink, the UE is allowed an interruption of up to the duration shown
+in table 12.7.3-1 on the PCell/serving cell during the E-UTRA V2X
+sidelink and NR V2X sidelink switch.</p>
+<p>This interruption is for both uplink and downlink of the
+PCell/serving cell.</p>
+<p>Table 12.7.3-1: Interruption length due to switching between E-UTRA
+V2X and NR V2X</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 32%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image4.svg"
+style="width:0.16667in;height:0.16667in" /></th>
+<th>Slot length (ms)</th>
+<th>Interruption length (number of slots)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.25</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.125</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="interruptions-to-wan-at-transitions-between-active-and-non-active-during-sl-drx">12.7.4
+Interruptions to WAN at transitions between active and non-active during
+SL-DRX </h3>
+<p>Interruption on PCell/serving cell if configured due to V2X
+transitions between active and non-active during SL-DRX are allowed with
+up to 1% probability of missed ACK/NACK when the configured SL-DRX cycle
+is less than 640 ms, and 0.625% probability of missed ACK/NACK is
+allowed when the configured SL-DRX cycle is 640 ms or longer. When
+multiple SL-DRX cycles are configured, the shortest SL-DRX cycle is
+applied. Each interruption shall not exceed X slot as defined in table
+12.7.4-1.</p>
+<p>Table 12.7.4-1: Interruption length X at transition between active
+and non-active during SL-DRX</p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image4.svg"
+style="width:0.16875in;height:0.16875in" /></th>
+<th>NR Slot</th>
+<th colspan="2">Interruption length X (slots)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>length (ms)</td>
+<td>Sync</td>
+<td>Async</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.5</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.25</td>
+<td colspan="2">3</td>
+</tr>
+</tbody>
+</table>
+<p>For SL-DRX active to inactive state transition, when the UE is in
+non-DRX or DRX on WAN and V2X is in sidelink resource allocation mode 2,
+the interruptions in this clause shall not apply when one of the
+following conditions is met:</p>
+<p>- While receiving paging,</p>
+<p>- While receiving system information.</p>
+<p>In addition, for SL-DRX active to inactive state transition, when the
+UE is in non-DRX or DRX on WAN and V2X is in sidelink resource
+allocation mode 2 and SL DRX cycle is less than 320 ms, the
+interruptions in this clause shall not apply when one of the following
+conditions is met:</p>
+<p>- T310 timer is running for RLF on PCell</p>
+<p>- performing candidate beam detection on PCell/serving cell as
+specfied in section 8.5.5. and 8.5.6</p>
+<h3
+id="interruptions-to-v2x-sidelink-at-transitions-between-active-and-non-active-during-drx">12.7.5
+Interruptions to V2X sidelink at transitions between active and
+non-active during DRX </h3>
+<p>Interruption on V2X sidelink if configured due to PCell transitions
+between active and non-active during DRX are allowed with up to 1%
+probability of missed ACK/NACK when the configured DRX cycle is less
+than 640 ms, and 0.625% probability of missed ACK/NACK is allowed when
+the configured DRX cycle is 640 ms or longer. It is only applied when
+HARQ process on V2X sidelink is supported. Each interruption shall not
+exceed X slot as defined in table 12.7.5-1.</p>
+<p>Table 12.7.5-1: Interruption length X at transition between active
+and non-active during DRX</p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image4.svg"
+style="width:0.16875in;height:0.16875in" /></th>
+<th>NR V2X Slot</th>
+<th colspan="2">Interruption length X (slots)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>length (ms)</td>
+<td>Sync</td>
+<td>Async</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.5</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.25</td>
+<td colspan="2">3</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="interruptions-to-v2x-sidelink-due-to-active-bwp-switching-requirement">12.7.6
+Interruptions to V2X sidelink due to Active BWP switching Requirement
+</h3>
+<p>This clause contains the requirements related to the interruptions on
+the V2X sidelink due to BWP switch in FDM based intra-band concurrent
+V2X operation.</p>
+<p>The requirements in clause 8.2.2.2.5 shall apply. The interrupted X
+slot is defined in Table 12.7.6-1.</p>
+<p>Table 12.7.6-1: Interruption length X</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 27%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image4.svg"
+style="width:0.16875in;height:0.16875in" /></th>
+<th>NR V2X Slot</th>
+<th>Interruption length X (slots)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>length (ms)</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0.5</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0.25</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<p>Note: No sidelink communication happens during BWP switching delay
+period for TDM based intra-band concurrent operation.</p>
+<h3
+id="interruptions-to-wan-due-to-syncref-ue-detection-andor-sensing-during-sl-drx-off-duration">12.7.7
+Interruptions to WAN due to SyncRef UE detection and/or Sensing during
+SL DRX off duration </h3>
+<p>This sub-clause contains the requirements related to the
+interruptions on the PCell/serving cell due to SyncRef UE detection
+and/or Sensing during SL DRX off duration.</p>
+<p>The requirements in clause 12.7.4 shall apply.</p>
+<h3 id="interruptions-at-nr-sidelink-discovery-configuration">12.7.8
+Interruptions at NR sidelink discovery configuration</h3>
+<p>This clause contains the requirements related to the interruptions on
+the PCell/serving cell due to NR sidelink discovery.</p>
+<p>A UE capable of NR sidelink discovery may indicate its interest
+(initiation or termination) in NR sidelink discovery to the connected
+gNodeB using IE <em>SidelinkUEInformationNR</em> in TS38.331[2].</p>
+<p>The UE is allowed an interruption of up to the duration shown in
+Table 12.7.8-1 on the PCell/serving cell during the RRC reconfiguration
+procedure that includes the NR sidelink discovery configuration message
+<em>sl-DiscConfig</em> in TS 38.331[2] (setup and release). This
+interruption is for both uplink and downlink of the PCell/serving
+cell.</p>
+<p>12.7.8-1: Interruption length at NR sidelink discovery
+configuration</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 27%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image4.svg"
+style="width:0.16667in;height:0.16667in" /></th>
+<th>NR Slot length (ms)</th>
+<th><p>Interruption length</p>
+<p>(number of slots)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.5</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.25</td>
+<td>5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.125</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reliability-of-gnss-signal">12.8 Reliability of GNSS signal</h2>
+<p>This clause contains requirements regarding reliability of GNSS
+signal for the UE capable of V2X sidelink communication under the
+following additional condition:</p>
+<p>- The UE is configured or pre-configured with parameters for enabling
+the UE to acquire the GNSS synchronization.</p>
+<p>If UE considers GNSS is a reliable synchronization reference, the UE
+shall meet timing accuracy requirement as specified in 12.2 and
+frequency accuracy requirement as specified in 6.4E of TS38.101-1[18].
+Otherwise, the UE shall be capable to select another synchronization
+reference source.</p>
+<h2 id="scheduling-availability">12.9 Scheduling availability</h2>
+<h3
+id="scheduling-availability-of-ue-switching-between-e-utra-sidelink-and-nr-sidelink">12.9.1
+Scheduling availability of UE switching between E-UTRA sidelink and NR
+sidelink </h3>
+<p>This clause contains the restrictions on the scheduling availability
+for V2X sidelink due to switching between E-UTRA V2X sidelink and NR V2X
+sidelink transmission on a dedicated carrier. For the NR V2X sidelink,
+the assumed number of configured symbols in a slot is 14.</p>
+<p>When switch from E-UTRA V2X sidelink to NR V2X sidelink occurs in NR
+slot ‘n’,</p>
+<ul>
+<li><p>UE is not expected to transmit or receive on NR V2X sidelink on
+the slot ‘n’.</p></li>
+</ul>
+<p>When switch from NR V2X sidelink to E-UTRA V2X sidelink occurs in NR
+slot ‘n-1’,</p>
+<ul>
+<li><p>UE is not expected to transmit or receive on NR V2X sidelink on
+the slot ‘n-1’.</p></li>
+</ul>
+<p>When switch from NR V2X sidelink to E-UTRA V2X sidelink occurs in
+E-UTRA subframe ‘n’,</p>
+<ul>
+<li><p>UE is not expected to transmit or receive on E-UTRA V2X sidelink
+on the subframe ‘n’.</p></li>
+</ul>
+<p>When switch from E-UTRA V2X sidelink to NR V2X sidelink occurs in
+E-UTRA subframe ‘n-1’,</p>
+<ul>
+<li><p>UE is not expected to transmit or receive E-UTRA on V2X sidelink
+on the subframe ‘n-1’.</p></li>
+</ul>
+<h3
+id="scheduling-availability-of-ue-switching-between-uu-uplink-and-v2x-sidelink">12.9.2
+Scheduling availability of UE switching between Uu uplink and V2X
+sidelink</h3>
+<p>This clause contains the restrictions on the scheduling availability
+for V2X sidelink due to switching between Uu uplink and V2X sidelink.
+For NR V2X sidelink, the assumed number of configured symbols in a slot
+is 14.</p>
+<p>When switch from Uu uplink slot to V2X sidelink slot occurs in
+sidelink slot ‘n’,</p>
+<blockquote>
+<p>- UE is not expected to transmit or receive on V2X sidelink on the
+sidelink slot ‘n’.</p>
+</blockquote>
+<p>When switch from V2X sidelink slot to Uu uplink slot occurs in
+sidelink slot ‘n-1’,</p>
+<blockquote>
+<p>- UE is not expected to transmit or receive on V2X sidelink on the
+sidelink slot ‘n-1’.</p>
+</blockquote>
+<p>When switch from V2X sidelink slot to Uu uplink slot occurs in Uu
+slot ‘n’,</p>
+<blockquote>
+<p>- UE is not expected to transmit uplink or receive downlink on the Uu
+slot ‘n’.</p>
+</blockquote>
+<p>When switch from Uu uplink slot to V2X sidelink slot occurs in Uu
+slot ‘n-1’,</p>
+<p>- UE is not expected to transmit uplink or receive downlink on the Uu
+slot ‘n-1’.</p>
+<p>- UE is not expected to transmit uplink or receive downlink on the Uu
+slot ‘n-1’.</p>
+<h2 id="selection-reselection-of-relay-ue">12.10 Selection / Reselection
+of relay UE</h2>
+<h3 id="introduction-4">12.10.1 Introduction</h3>
+<p>This section contains the requirements related to selection and
+reselection of relay UE.</p>
+<p>The requirements apply for the selection and reselection of candidate
+relay UEs that are transmitting relay discovery signals within the
+resource pool as configured for the remote UE.</p>
+<h3 id="selection-reselection-of-relay-ue-1">12.10.2 Selection /
+Reselection of relay UE</h3>
+<p>For a remote UE configured by upper layer for relay operation, the
+remote UE shall search for candidate relay UEs for selection and/or
+reselection every discovery period which is determined by resource
+reservation period or SPS transmission periodicity configured by
+network.</p>
+<p>If the remote UE has a selected sidelink relay UE, then the remote UE
+shall measure the SD-RSRP or SL-RSRP of the selected relay once in every
+four discovery periods and evaluate if it meets the relay selection
+criterion as defined in TS 38.331[2] (clause 5.8.15.3).</p>
+<p>The remote UE shall measure SD-RSRP or SL-RSRP of the candidate relay
+UEs every T<sub>measure, SL_Relay_Intra</sub> for relay UEs that are
+detected and measured according to the measurement rules.</p>
+<p>For intra-frequency relay UEs that are detected, but that has not
+been selected or reselected to, the remote UE shall be capable of
+evaluating that the intra-frequency relay UE has met selection or
+reselection criterion defined in TS 38.331[2] (clause 5.8.15.3) within
+T<sub>evaluate, SL_Relay_Intra</sub> as specified in table
+12.10.2-1.</p>
+<p>The minimum requirements are required to meet when the selected and
+candidate relay UEs are transmitting relay discovery message every
+discovery period.</p>
+<p>Table 12.10.2-1: T<sub>measure, SL_Relay_Intra</sub> and
+T<sub>evaluate, SL_Relay_Intra</sub></p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 36%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr>
+<th>Discovery Period [s]</th>
+<th>T<sub>measure,SL_Relay_Intra</sub> [s] (number of discovery
+periods)</th>
+<th>T<sub>evaluate, SL_Relay_Intra</sub> [s] (number of discovery
+periods)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.04≤Discovery period≤10.24</td>
+<td>Note 1 (4)</td>
+<td>Note 1 (16)</td>
+</tr>
+<tr>
+<td colspan="3"><p>Note 1: Time depends upon the discovery period which
+is resource reservation period (in mode 2) or SPS transmission
+periodicity (in mode 1).</p>
+<p>Note 2: SL-RSRP or SD-RSRP can be derived from PSCCH-DMRS and/or
+PSSCH-DMRS.</p></td>
+</tr>
+</tbody>
+</table>
+<h1 id="measurement-performance-requirements-for-nr-gnb">13 Measurement
+Performance Requirements for NR gNB</h1>
+<h2 id="ul-rtoa">13.1 UL-RTOA</h2>
+<h3 id="report-mapping">13.1.1 Report mapping</h3>
+<p>The reporting range of UL Relative Time of Arrival (UL-RTOA), as
+defined in Clause 5.2.2 of TS 38.215 [4], is defined from
+-985024T<sub>c</sub> to +985024×T<sub>c</sub>. The reporting resolution
+is uniform across the reporting range and is defined as T =
+T<sub>c</sub>*2<sup>k</sup> where k is selected by gNB from the set {0,
+1, 2, 3, 4, 5}.</p>
+<p>T<sub>c</sub> is defined in TS 38.211 [6].</p>
+<p>LMF provides a recommended resolution parameter,
+<em>timingReportingGranularityFactor</em> [35]. gNB selects parameter k
+based on <em>timingReportingGranularityFactor</em> [35] and informs the
+LMF.</p>
+<p>The mapping of measured quantity for each reporting resolution (k) is
+defined in Table 13.1.1-1 to Table 13.1.1-6.</p>
+<p>Table 13.1.1-1: UL-RTOA measurement report mapping for reporting
+resolution of T<sub>c</sub> (k=0)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>UL_RTOA_0000</td>
+<td>-985024 &gt; UL_RTOA</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_0001</td>
+<td>-985024 ≤ UL_RTOA &lt; -985023</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_0002</td>
+<td>-985023 ≤ UL_RTOA &lt; -985022</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>UL_RTOA_985023</td>
+<td>-2 ≤ UL_RTOA &lt; -1</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_985024</td>
+<td>-1 ≤ UL_RTOA ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_985025</td>
+<td>0 &lt; UL_RTOA ≤ 1</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_985026</td>
+<td>1 &lt; UL_RTOA ≤ 2</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_985027</td>
+<td>2 &lt; UL_RTOA ≤ 3</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>UL_RTOA_1970048</td>
+<td>985023 &lt; UL_RTOA ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_1970049</td>
+<td>985024 &lt; UL_RTOA</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.1.1-2: UL-RTOA measurement report mapping for reporting
+resolution of 2T<sub>c</sub> (k=1)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>UL_RTOA_0000</td>
+<td>-985024 &gt; UL_RTOA</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_0001</td>
+<td>-985024 ≤ UL_RTOA &lt; -985022</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_0002</td>
+<td>-985022 ≤ UL_RTOA &lt; -985020</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>UL_RTOA_492511</td>
+<td>-4 ≤ UL_RTOA &lt; -2</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_492512</td>
+<td>-2 ≤ UL_RTOA ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_492513</td>
+<td>0 &lt; UL_RTOA ≤ 2</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_492514</td>
+<td>2 &lt; UL_RTOA ≤ 4</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_492515</td>
+<td>4 &lt; UL_RTOA ≤ 6</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>UL_RTOA_985024</td>
+<td>985022 &lt; UL_RTOA ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_985025</td>
+<td>985024 &lt; UL_RTOA</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.1.1-3: UL-RTOA measurement report mapping for reporting
+resolution of 4T<sub>c</sub> (k=2)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>UL_RTOA_0000</td>
+<td>-985024 &gt; UL_RTOA</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_0001</td>
+<td>-985024 ≤ UL_RTOA &lt; -985020</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_0002</td>
+<td>-985020 ≤ UL_RTOA &lt; -985018</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>UL_RTOA_246255</td>
+<td>-8 ≤ UL_RTOA &lt; -4</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_246256</td>
+<td>-4 ≤ UL_RTOA ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_246257</td>
+<td>0 &lt; UL_RTOA ≤ 4</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_246258</td>
+<td>4 &lt; UL_RTOA ≤ 8</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_246259</td>
+<td>8 &lt; UL_RTOA ≤ 12</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>UL_RTOA_492512</td>
+<td>985020 &lt; UL_RTOA ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_492513</td>
+<td>985024 &lt; UL_RTOA</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.1.1-4: UL-RTOA measurement report mapping for reporting
+resolution of 8T<sub>c</sub> (k=3)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>UL_RTOA_0000</td>
+<td>-985024 &gt; UL_RTOA</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_0001</td>
+<td>-985024 ≤ UL_RTOA &lt; -985016</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_0002</td>
+<td>-985016 ≤ UL_RTOA &lt; -985008</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>UL_RTOA_123127</td>
+<td>-16 ≤ UL_RTOA &lt; -8</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_123128</td>
+<td>-8 ≤ UL_RTOA ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_123129</td>
+<td>0 &lt; UL_RTOA ≤ 8</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_123130</td>
+<td>8 &lt; UL_RTOA ≤ 16</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_123131</td>
+<td>16 &lt; UL_RTOA ≤ 24</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>UL_RTOA_246256</td>
+<td>985016 &lt; UL_RTOA ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_246257</td>
+<td>985024 &lt; UL_RTOA</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.1.1-5: UL-RTOA measurement report mapping for reporting
+resolution of 16T<sub>c</sub> (k=4)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>UL_RTOA_0000</td>
+<td>-985024 &gt; UL_RTOA</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_0001</td>
+<td>-985024 ≤ UL_RTOA &lt; -985008</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_0002</td>
+<td>-985008 ≤ UL_RTOA &lt; -984992</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>UL_RTOA_61563</td>
+<td>-32 ≤ UL_RTOA &lt; -16</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_61564</td>
+<td>-16 ≤ UL_RTOA ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_61565</td>
+<td>0 &lt; UL_RTOA ≤ 16</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_61566</td>
+<td>16 &lt; UL_RTOA ≤ 32</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_61567</td>
+<td>32 &lt; UL_RTOA ≤ 48</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>UL_RTOA_123128</td>
+<td>985008 &lt; UL_RTOA ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_123129</td>
+<td>985024 &lt; UL_RTOA</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.1.1-6: UL-RTOA measurement report mapping for reporting
+resolution of 32T<sub>c</sub> (k=5)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>UL_RTOA_0000</td>
+<td>-985024 &gt; UL_RTOA</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_0001</td>
+<td>-985024 ≤ UL_RTOA &lt; -984992</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_0002</td>
+<td>-984992 ≤ UL_RTOA &lt; -984960</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>UL_RTOA_30781</td>
+<td>-64 ≤ UL_RTOA &lt; -32</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_30782</td>
+<td>-32 ≤ UL_RTOA ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_30783</td>
+<td>0 &lt; UL_RTOA ≤ 32</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_30784</td>
+<td>32 &lt; UL_RTOA ≤ 64</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_30785</td>
+<td>64 &lt; UL_RTOA ≤ 96</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>UL_RTOA_61564</td>
+<td>984992 &lt; UL_RTOA ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>UL_RTOA_61565</td>
+<td>985024 &lt; UL_RTOA</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<h3 id="a-additional-path-report-mapping-for-ul-rtoa">13.1.1A Additional
+Path Report Mapping for UL-RTOA</h3>
+<p>The reporting range of additional path reporting for UL Relative Time
+of Arrival (UL-RTOA), as defined in Clause 5.2.2 of TS 38.215 [4], is
+defined from -8175×T<sub>c</sub> to +8175×T<sub>c</sub>. The reporting
+resolution is uniform across the reporting range and is defined as T =
+T<sub>c</sub>*2<sup>k</sup> where k is selected by gNB from the set {0,
+1, 2, 3, 4, 5}.</p>
+<p>T<sub>c</sub> is defined in TS 38.211 [6].</p>
+<p>LMF provides a recommended resolution parameter,
+<em>timingReportingGranularityFactor</em> [35]. gNB selects parameter k
+based on <em>timingReportingGranularityFactor</em> [35] and informs the
+LMF.</p>
+<p>The mapping of measured quantity for each reporting resolution (k) is
+defined in Table 13.1.1A-1 to Table 13.1.1A-6.</p>
+<p>Table 13.1.1A-1: UL-RTOA measurement report mapping for resolution of
+Tc (k=0)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 45%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr>
+<td rowspan="2"><p>Reported Quantity Value,</p>
+<p>path_i</p></td>
+<td rowspan="2"><p>Measured Quantity Value,</p>
+<p>∆path</p></td>
+<td rowspan="2">Unit</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>path_00000</td>
+<td>∆path &lt; -8175</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_00001</td>
+<td>-8175 ≤ ∆path &lt; -8174</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_00002</td>
+<td>-8174 ≤ ∆path &lt; -8173</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_08175</td>
+<td>-1 ≤ ∆path &lt; 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_08176</td>
+<td>0 ≤ ∆path &lt; 1</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_ 16349</td>
+<td>8173 ≤ ∆path &lt; 8174</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_ 16350</td>
+<td>8174 ≤ ∆path &lt; 8175</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_ 16351</td>
+<td>8175 ≤ ∆path</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.1.1A-2: UL-RTOA measurement report mapping for resolution of
+2Tc (k=1)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 45%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr>
+<td><p>Reported Quantity Value,</p>
+<p>path_i</p></td>
+<td><p>Measured Quantity Value,</p>
+<p>∆path</p></td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>path_0000</td>
+<td>∆path &lt; -8175</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0001</td>
+<td>-8175 ≤ ∆path &lt; -8173</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0002</td>
+<td>-8173 ≤ ∆path &lt; -8171</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_4088</td>
+<td>-1 ≤ ∆path &lt; 1</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_8174</td>
+<td>8171 ≤ ∆path &lt; 8173</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_8175</td>
+<td>8173 ≤ ∆path &lt; 8175</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_8176</td>
+<td>8175 ≤ ∆path</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.1.1A-3: UL-RTOA measurement report mapping for resolution of
+4Tc (k=2)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 45%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr>
+<td><p>Reported Quantity Value,</p>
+<p>path_i</p></td>
+<td><p>Measured Quantity Value,</p>
+<p>∆path</p></td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>path_0000</td>
+<td>∆path &lt; -8174</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0001</td>
+<td>-8174 ≤ ∆path &lt; -8170</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0002</td>
+<td>-8170 ≤ ∆path &lt; -8166</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_2044</td>
+<td>-2 ≤ ∆path &lt; 2</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_4086</td>
+<td>8166 ≤ ∆path &lt; 8170</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_4087</td>
+<td>8170 ≤ ∆path &lt; 8174</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_4088</td>
+<td>8174 ≤ ∆path</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.1.1A-4: UL-RTOA measurement report mapping for resolution of
+8Tc (k=3)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 45%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr>
+<td><p>Reported Quantity Value,</p>
+<p>path_i</p></td>
+<td><p>Measured Quantity Value,</p>
+<p>∆path</p></td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>path_0000</td>
+<td>∆path &lt; -8172</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0001</td>
+<td>-8172 ≤ ∆path &lt; -8164</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0002</td>
+<td>-8164 ≤ ∆path &lt; -8156</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_1022</td>
+<td>-4 ≤ ∆path &lt; 4</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_2042</td>
+<td>8156 ≤ ∆path &lt; 8164</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_2043</td>
+<td>8164 ≤ ∆path &lt; 8172</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_2044</td>
+<td>8172 ≤ ∆path</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.1.1A -5: UL-RTOA measurement report mapping for resolution
+of 16Tc (k=4)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 45%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr>
+<td><p>Reported Quantity Value,</p>
+<p>path_i</p></td>
+<td><p>Measured Quantity Value,</p>
+<p>∆path</p></td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>path_0000</td>
+<td>∆path &lt; -8168</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0001</td>
+<td>-8168 ≤ ∆path &lt; -8152</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0002</td>
+<td>-8152 ≤ ∆path &lt; -8136</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_511</td>
+<td>-8 ≤ ∆path &lt; 8</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_1020</td>
+<td>8136 ≤ ∆path &lt; 8152</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_1021</td>
+<td>8152 ≤ ∆path &lt; 8168</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_1022</td>
+<td>8168 ≤ ∆path</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.1.1A-6: UL-RTOA measurement report mapping for resolution of
+32Tc (k=5)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 45%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr>
+<td><p>Reported Quantity Value,</p>
+<p>path_i</p></td>
+<td><p>Measured Quantity Value,</p>
+<p>∆path</p></td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>path_000</td>
+<td>∆path &lt; -8160</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_001</td>
+<td>-8160 ≤ ∆path &lt; -8128</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_002</td>
+<td>-8128 ≤ ∆path &lt; -8096</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_256</td>
+<td>0 ≤ ∆path &lt; 32</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_509</td>
+<td>8096 ≤ ∆path &lt; 8128</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_510</td>
+<td>8128 ≤ ∆path &lt; 8160</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_511</td>
+<td>8160 ≤ ∆path</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<h2 id="gnb-rx-tx-time-difference">13.2 gNB Rx-Tx time difference</h2>
+<h3 id="report-mapping-1">13.2.1 Report mapping</h3>
+<p>The reporting range of gNB Rx-Tx time difference, as defined in
+Clause 5.2.3 of TS 38.215 [4], is defined from -985024T<sub>c</sub> to
++985024×T<sub>c</sub>. The reporting resolution is uniform across the
+reporting range and is defined as T = T<sub>c</sub>*2<sup>k</sup> where
+k is selected by gNB from the set {0, 1, 2, 3, 4, 5}.</p>
+<p>T<sub>c</sub> is defined in TS 38.211 [6].</p>
+<p>LMF provides a recommended resolution parameter,
+<em>timingReportingGranularityFactor</em> [35]. gNB selects parameter k
+based on <em>timingReportingGranularityFactor</em> [35] and informs the
+LMF.</p>
+<p>The mapping of measured quantity for each reporting resolution (k) is
+defined in Table 13.2.1-1 to Table 13.2.1-6.</p>
+<p>Table 13.2.1-1: gNB Rx-Tx time difference measurement report mapping
+for reporting resolution of T<sub>c</sub> (k=0)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>RX-TX_0000</td>
+<td>-985024 &gt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0001</td>
+<td>-985024 ≤ RX-TX &lt; -985023</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0002</td>
+<td>-985023 ≤ RX-TX &lt; -985022</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_985023</td>
+<td>-2 ≤ RX-TX &lt; -1</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_985024</td>
+<td>-1 ≤ RX-TX ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_985025</td>
+<td>0 &lt; RX-TX ≤ 1</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_985026</td>
+<td>1 &lt; RX-TX ≤ 2</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_985027</td>
+<td>2 &lt; RX-TX ≤ 3</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_1970048</td>
+<td>985023 &lt; RX-TX ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_1970049</td>
+<td>985024 &lt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.2.1-2: gNB Rx-Tx time difference measurement report mapping
+for reporting resolution of 2T<sub>c</sub> (k=1)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>RX-TX_0000</td>
+<td>-985024 &gt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0001</td>
+<td>-985024 ≤ RX-TX &lt; -985022</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0002</td>
+<td>-985022 ≤ RX-TX &lt; -985020</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_492511</td>
+<td>-4 ≤ RX-TX &lt; -2</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_492512</td>
+<td>-2 ≤ RX-TX ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_492513</td>
+<td>0 &lt; RX-TX ≤ 2</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_492514</td>
+<td>2 &lt; RX-TX ≤ 4</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_492515</td>
+<td>4 &lt; RX-TX ≤ 6</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_985024</td>
+<td>985022 &lt; RX-TX ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_985025</td>
+<td>985024 &lt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.2.1-3: gNB Rx-Tx time difference measurement report mapping
+for reporting resolution of 4T<sub>c</sub> (k=2)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>RX-TX_0000</td>
+<td>-985024 &gt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0001</td>
+<td>-985024 ≤ RX-TX &lt; -985020</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0002</td>
+<td>-985020 ≤ RX-TX &lt; -985018</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_246255</td>
+<td>-8 ≤ RX-TX &lt; -4</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_246256</td>
+<td>-4 ≤ RX-TX ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_246257</td>
+<td>0 &lt; RX-TX ≤ 4</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_246258</td>
+<td>4 &lt; RX-TX ≤ 8</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_246259</td>
+<td>8 &lt; RX-TX ≤ 12</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_492512</td>
+<td>985020 &lt; RX-TX ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_492513</td>
+<td>985024 &lt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.2.1-4: gNB Rx-Tx time difference measurement report mapping
+for reporting resolution of 8T<sub>c</sub> (k=3)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>RX-TX_0000</td>
+<td>-985024 &gt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0001</td>
+<td>-985024 ≤ RX-TX &lt; -985016</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0002</td>
+<td>-985016 ≤ RX-TX &lt; -985008</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_123127</td>
+<td>-16 ≤ RX-TX &lt; -8</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_123128</td>
+<td>-8 ≤ RX-TX ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_123129</td>
+<td>0 &lt; RX-TX ≤ 8</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_123130</td>
+<td>8 &lt; RX-TX ≤ 16</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_123131</td>
+<td>16 &lt; RX-TX ≤ 24</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_246256</td>
+<td>985016 &lt; RX-TX ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_246257</td>
+<td>985024 &lt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.2.1-5: gNB Rx-Tx time difference measurement report mapping
+for reporting resolution of 16T<sub>c</sub> (k=4)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>RX-TX_0000</td>
+<td>-985024 &gt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0001</td>
+<td>-985024 ≤ RX-TX &lt; -985008</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0002</td>
+<td>-985008 ≤ RX-TX &lt; -984992</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_61563</td>
+<td>-32 ≤ RX-TX &lt; -16</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_61564</td>
+<td>-16 ≤ RX-TX ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_61565</td>
+<td>0 &lt; RX-TX ≤ 16</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_61566</td>
+<td>16 &lt; RX-TX ≤ 32</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_61567</td>
+<td>32 &lt; RX-TX ≤ 48</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_123128</td>
+<td>985008 &lt; RX-TX ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_123129</td>
+<td>985024 &lt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.2.1-5: gNB Rx-Tx time difference measurement report mapping
+for reporting resolution of 32T<sub>c</sub> (k=5)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>RX-TX_0000</td>
+<td>-985024 &gt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0001</td>
+<td>-985024 ≤ RX-TX &lt; -984992</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0002</td>
+<td>-984992 ≤ RX-TX &lt; -984960</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_30781</td>
+<td>-64 ≤ RX-TX &lt; -32</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_30782</td>
+<td>-32 ≤ RX-TX ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_30783</td>
+<td>0 &lt; RX-TX ≤ 32</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_30784</td>
+<td>32 &lt; RX-TX ≤ 64</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_30785</td>
+<td>64 &lt; RX-TX ≤ 96</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_61564</td>
+<td>984992 &lt; RX-TX ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_61565</td>
+<td>985024 &lt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<h3 id="a-additional-path-report-mapping-for-gnb-rx-tx">13.2.1A
+Additional Path Report Mapping for gNB Rx-Tx</h3>
+<p>The reporting range of additional path for gNB Rx-Tx time difference,
+as defined in Clause 5.2.3 of TS 38.215 [4], is defined from
+-8175×T<sub>c</sub> to 8175×T<sub>c</sub>. The reporting resolution is
+uniform across the reporting range and is defined as T =
+T<sub>c</sub>*2<sup>k</sup> where k is selected by gNB from the set {0,
+1, 2, 3, 4, 5}.</p>
+<p>T<sub>c</sub> is defined in TS 38.211 [6].</p>
+<p>LMF provides a recommended resolution parameter,
+<em>timingReportingGranularityFactor</em> [35]. gNB selects parameter k
+based on <em>timingReportingGranularityFactor</em> [35] and informs the
+LMF.</p>
+<p>The mapping of measured quantity for each reporting resolution (k) is
+defined in Table 13.2.1A-1 to Table 13.2.1A-6.</p>
+<p>Table 13.2.1A-1: gNB Rx-Tx time difference measurement report mapping
+for reporting resolution of T<sub>c</sub> (k=0)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 45%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr>
+<td rowspan="2"><p>Reported Quantity Value,</p>
+<p>path_i</p></td>
+<td rowspan="2"><p>Measured Quantity Value,</p>
+<p>∆path</p></td>
+<td rowspan="2">Unit</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>path_00000</td>
+<td>∆path &lt; -8175</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_00001</td>
+<td>-8175 ≤ ∆path &lt; -8174</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_00002</td>
+<td>-8174 ≤ ∆path &lt; -8173</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_08175</td>
+<td>-1 ≤ ∆path &lt; 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_08176</td>
+<td>0 ≤ ∆path &lt; 1</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_ 16349</td>
+<td>8173 ≤ ∆path &lt; 8174</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_ 16350</td>
+<td>8174 ≤ ∆path &lt; 8175</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_ 16351</td>
+<td>8175 ≤ ∆path</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.2.1A-2: gNB Rx-Tx time difference measurement report mapping
+for reporting resolution of 2T<sub>c</sub> (k=1)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 45%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr>
+<td><p>Reported Quantity Value,</p>
+<p>path_i</p></td>
+<td><p>Measured Quantity Value,</p>
+<p>∆path</p></td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>path_0000</td>
+<td>∆path &lt; -8175</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0001</td>
+<td>-8175 ≤ ∆path &lt; -8173</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0002</td>
+<td>-8173 ≤ ∆path &lt; -8171</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_4088</td>
+<td>-1 ≤ ∆path &lt; 1</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_8174</td>
+<td>8171 ≤ ∆path &lt; 8173</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_8175</td>
+<td>8173 ≤ ∆path &lt; 8175</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_8176</td>
+<td>8175 ≤ ∆path</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.2.1A-3: gNB Rx-Tx time difference measurement report mapping
+for reporting resolution of 4T<sub>c</sub> (k=2)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 45%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr>
+<td><p>Reported Quantity Value,</p>
+<p>path_i</p></td>
+<td><p>Measured Quantity Value,</p>
+<p>∆path</p></td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>path_0000</td>
+<td>∆path &lt; -8174</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0001</td>
+<td>-8174 ≤ ∆path &lt; -8170</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0002</td>
+<td>-8170 ≤ ∆path &lt; -8166</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_2044</td>
+<td>-2 ≤ ∆path &lt; 2</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_4086</td>
+<td>8166 ≤ ∆path &lt; 8170</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_4087</td>
+<td>8170 ≤ ∆path &lt; 8174</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_4088</td>
+<td>8174 ≤ ∆path</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.2.1A-4: gNB Rx-Tx time difference measurement report mapping
+for reporting resolution of 8T<sub>c</sub> (k=3)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 45%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr>
+<td><p>Reported Quantity Value,</p>
+<p>path_i</p></td>
+<td><p>Measured Quantity Value,</p>
+<p>∆path</p></td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>path_0000</td>
+<td>∆path &lt; -8172</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0001</td>
+<td>-8172 ≤ ∆path &lt; -8164</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0002</td>
+<td>-8164 ≤ ∆path &lt; -8156</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_1022</td>
+<td>-4 ≤ ∆path &lt; 4</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_2042</td>
+<td>8156 ≤ ∆path &lt; 8164</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_2043</td>
+<td>8164 ≤ ∆path &lt; 8172</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_2044</td>
+<td>8172 ≤ ∆path</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.2.1A-5: gNB Rx-Tx time difference measurement report mapping
+for reporting resolution of 16T<sub>c</sub> (k=4)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 45%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr>
+<td><p>Reported Quantity Value,</p>
+<p>path_i</p></td>
+<td><p>Measured Quantity Value,</p>
+<p>∆path</p></td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>path_0000</td>
+<td>∆path &lt; -8168</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0001</td>
+<td>-8168 ≤ ∆path &lt; -8152</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_0002</td>
+<td>-8152 ≤ ∆path &lt; -8136</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_511</td>
+<td>-8 ≤ ∆path &lt; 8</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_1020</td>
+<td>8136 ≤ ∆path &lt; 8152</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_1021</td>
+<td>8152 ≤ ∆path &lt; 8168</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_1022</td>
+<td>8168 ≤ ∆path</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.2.1A-6: gNB Rx-Tx time difference measurement report mapping
+for reporting resolution of 32T<sub>c</sub> (k=5)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 45%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr>
+<td><p>Reported Quantity Value,</p>
+<p>path_i</p></td>
+<td><p>Measured Quantity Value,</p>
+<p>∆path</p></td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>path_000</td>
+<td>∆path &lt; -8160</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_001</td>
+<td>-8160 ≤ ∆path &lt; -8128</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_002</td>
+<td>-8128 ≤ ∆path &lt; -8096</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_256</td>
+<td>0 ≤ ∆path &lt; 32</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>path_509</td>
+<td>8096 ≤ ∆path &lt; 8128</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_510</td>
+<td>8128 ≤ ∆path &lt; 8160</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>path_511</td>
+<td>8160 ≤ ∆path</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<h3 id="measurement-accuracy-requirements">13.2.2 Measurement Accuracy
+Requirements</h3>
+<h4 id="introduction-5">13.2.2.1 Introduction</h4>
+<p>This clause defines accuracy requirements for gNB Rx-Tx time
+difference measurement in FR1 and FR2. The requirements are applicable
+for gNB supporting gNB Rx-Tx time difference measurement. The gNB, which
+declares the support for gNB Rx-Tx time difference measurement also
+declares that it meets gNB Rx-Tx time difference accuracy requirements
+at least for one side condition Ês/Iot ≥ +3 dB or Ês/Iot ≥ -13 dB.</p>
+<p>13.2.2.2 Requirements</p>
+<p>The accuracy requirements for gNB Rx-Tx time difference measurement
+shall be within ±(X+Y) T<sub>c</sub> under the following conditions:</p>
+<p>- AWGN propagation conditions.</p>
+<p>- The measured signals are in the directions covered by RoAoA of OTA
+reference sensitivity requirements for gNB type 1-O and 2-O BS</p>
+<p>where</p>
+<p>- X is defined in Table 13.2.2.2-1 for gNB types 1-C, 1-H and 1-O and
+in Table 13.2.2.2-2 for gNB type 2-O.</p>
+<p>- Y is declared by manufacturer and can be different for different
+gNB types 1-C, 1-H, 1-O and 2-O.</p>
+<p>Note: The measurement accuracy requirements in Table 13.2.2.2-1 and
+Table 13.2.2.2-2 are defined under an assumption that gNB is not
+mandated to perform receive beam sweeping.</p>
+<p>Table 13.2.2.2-1: gNB Rx-Tx time difference absolute accuracy in FR1
+for gNB type 1-C, 1-H and 1-O</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 21%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr>
+<th>Accuracy</th>
+<th>SRS Ês/Iot</th>
+<th>SCS</th>
+<th>SRS bandwidth range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unit: Tc</td>
+<td>Unit: dB</td>
+<td>Unit: kHz</td>
+<td>Unit: RB</td>
+</tr>
+<tr>
+<td>123</td>
+<td rowspan="3">≥ -13</td>
+<td rowspan="7">15</td>
+<td>44 ≤ BW ≤ 84</td>
+</tr>
+<tr>
+<td>48</td>
+<td>88 ≤ BW ≤ 168</td>
+</tr>
+<tr>
+<td>17</td>
+<td>176 ≤ BW</td>
+</tr>
+<tr>
+<td>122</td>
+<td rowspan="4">≥ +3</td>
+<td>24 ≤ BW ≤ 40</td>
+</tr>
+<tr>
+<td>62</td>
+<td>44 ≤ BW ≤ 84</td>
+</tr>
+<tr>
+<td>32</td>
+<td>88 ≤ BW ≤ 168</td>
+</tr>
+<tr>
+<td>16</td>
+<td>176 ≤ BW</td>
+</tr>
+<tr>
+<td>42</td>
+<td rowspan="3">≥ -13</td>
+<td rowspan="6">30</td>
+<td>48 ≤ BW ≤ 84</td>
+</tr>
+<tr>
+<td>24</td>
+<td>88 ≤ BW ≤ 168</td>
+</tr>
+<tr>
+<td>8</td>
+<td>176 ≤ BW</td>
+</tr>
+<tr>
+<td>32</td>
+<td rowspan="3">≥ +3</td>
+<td>48 ≤ BW ≤ 84</td>
+</tr>
+<tr>
+<td>17</td>
+<td>88 ≤ BW ≤ 168</td>
+</tr>
+<tr>
+<td>9</td>
+<td>176 ≤ BW</td>
+</tr>
+<tr>
+<td>21</td>
+<td rowspan="2">≥ -13</td>
+<td rowspan="4">60</td>
+<td>48 ≤ BW ≤ 84</td>
+</tr>
+<tr>
+<td>12</td>
+<td>88 ≤ BW</td>
+</tr>
+<tr>
+<td>16</td>
+<td rowspan="2">≥ +3</td>
+<td>48 ≤ BW ≤ 84</td>
+</tr>
+<tr>
+<td>9</td>
+<td>88 ≤ BW</td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.2.2.2-2: gNB Rx-Tx time difference absolute accuracy in FR2
+for gNB type 2-O</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 21%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr>
+<th>Accuracy</th>
+<th>SRS Ês/Iot</th>
+<th>SCS</th>
+<th>SRS bandwidth range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unit: Tc</td>
+<td>Unit: dB</td>
+<td>Unit: kHz</td>
+<td>Unit: RB</td>
+</tr>
+<tr>
+<td>9</td>
+<td rowspan="2">≥ -13</td>
+<td rowspan="4">60</td>
+<td>132 ≤ BW ≤ 168</td>
+</tr>
+<tr>
+<td>8</td>
+<td>176 ≤ BW</td>
+</tr>
+<tr>
+<td>9</td>
+<td rowspan="2">≥ +3</td>
+<td>132 ≤ BW ≤ 168</td>
+</tr>
+<tr>
+<td>8</td>
+<td>176 ≤ BW</td>
+</tr>
+<tr>
+<td>22</td>
+<td rowspan="3">≥ -13</td>
+<td rowspan="6">120</td>
+<td>32 ≤ BW ≤ 40</td>
+</tr>
+<tr>
+<td>15</td>
+<td>44 ≤ BW ≤ 84</td>
+</tr>
+<tr>
+<td>8</td>
+<td>88 ≤ BW</td>
+</tr>
+<tr>
+<td>16</td>
+<td rowspan="3">≥ +3</td>
+<td>32 ≤ BW ≤ 40</td>
+</tr>
+<tr>
+<td>9</td>
+<td>44 ≤ BW ≤ 84</td>
+</tr>
+<tr>
+<td>8</td>
+<td>88 ≤ BW</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ul-srs-rsrp-measurement">13.3 UL SRS RSRP measurement</h2>
+<h3 id="report-mapping-2">13.3.1 Report mapping</h3>
+<p>The reporting range of UL SRS RSRP, as defined in clause 5.2.5 of
+38.215 [4], is defined from -156dBm to -31dBm with resolution 1dB.</p>
+<p>The mapping of measured quantity is defined in Table 13.3.1-1. The
+range in the signalling may be larger than the guaranteed accuracy
+range.</p>
+<p>Table 13.3.1-1: UL SRS RSRP report mapping</p>
+<table>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 51%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Reported value</th>
+<th>Measured quantity value</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SRS_RSRP_0</td>
+<td>SRS-RSRP&lt;-156</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_1</td>
+<td>-156≤SRS-RSRP&lt;-155</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_2</td>
+<td>-155≤SRS-RSRP&lt;-154</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_3</td>
+<td>-154≤SRS-RSRP&lt;-153</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_4</td>
+<td>-153≤SRS-RSRP&lt;-152</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_5</td>
+<td>-152≤SRS-RSRP&lt;-151</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_6</td>
+<td>-151≤SRS-RSRP&lt;-150</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_7</td>
+<td>-150≤SRS-RSRP&lt;-149</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_8</td>
+<td>-149≤SRS-RSRP&lt;-148</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_9</td>
+<td>-148≤SRS-RSRP&lt;-147</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_10</td>
+<td>-147≤SRS-RSRP&lt;-146</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_11</td>
+<td>-146≤SRS-RSRP&lt;-145</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_12</td>
+<td>-145≤SRS-RSRP&lt;-144</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_13</td>
+<td>-144≤SRS-RSRP&lt;-143</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_14</td>
+<td>-143≤SRS-RSRP&lt;-142</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_15</td>
+<td>-142≤SRS-RSRP&lt;-141</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_16</td>
+<td>-141≤SRS-RSRP&lt;-140</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_17</td>
+<td>-140≤SRS-RSRP&lt;-139</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_18</td>
+<td>-139≤SRS-RSRP&lt;-138</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>SRS_RSRP_111</td>
+<td>-46≤SRS-RSRP&lt;-45</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_112</td>
+<td>-45≤SRS-RSRP&lt;-44</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_113</td>
+<td>-44≤SRS-RSRP&lt;-43</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_114</td>
+<td>-43≤SRS-RSRP&lt;-42</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_115</td>
+<td>-42≤SRS-RSRP&lt;-41</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_116</td>
+<td>-41≤SRS-RSRP&lt;-40</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_117</td>
+<td>-40≤SRS-RSRP&lt;-39</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_118</td>
+<td>-39≤SRS-RSRP&lt;-38</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_119</td>
+<td>-38≤SRS-RSRP&lt;-37</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_120</td>
+<td>-37≤SRS-RSRP&lt;-36</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_121</td>
+<td>-36≤SRS-RSRP&lt;-35</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_122</td>
+<td>-35≤SRS-RSRP&lt;-34</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_123</td>
+<td>-34≤SRS-RSRP&lt;-33</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_124</td>
+<td>-33≤SRS-RSRP&lt;-32</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_125</td>
+<td>-32≤SRS-RSRP&lt;-31</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRP_126</td>
+<td>-31≤SRS-RSRP</td>
+<td>dBm</td>
+</tr>
+</tbody>
+</table>
+<h3 id="measurement-accuracy-requirements-1">13.3.2 Measurement accuracy
+requirements</h3>
+<h4 id="introduction-6">13.3.2.1 Introduction</h4>
+<p>This clause defines accuracy requirements for SRS-RSRP measurement in
+FR1 and FR2. The requirements are applicable for gNB supporting SRS-RSRP
+measurement. The gNB, which declares the support for SRS-RSRP
+measurement also declares that it meets SRS-RSRP accuracy requirements
+at least for one side condition Ês/Iot ≥ +3 dB or Ês/Iot ≥ -13 dB.</p>
+<h4 id="requirements">13.3.2.2 Requirements</h4>
+<p>The accuracy requirements in Table 13.3.2.2-1, Table 13.3.2.2-2 and
+Table 13.3.2.2-3 are valid under the following conditions:</p>
+<p>- AWGN propagation conditions.</p>
+<p>- The measured signals are in the directions covered by RoAoA of OTA
+reference sensitivity requirements for gNB type 1-O and 2-O BS</p>
+<p>Note: The measurement accuracy requirements in Table 13.3.2.2-1,
+Table 13.3.2.2-2 and Table 13.3.2.2-3 are defined under an assumption
+that gNB is not mandated to perform receive beam sweeping.</p>
+<p>Table 13.3.2.2- gNB SRS-RSRP absolute accuracy requirements in FR1
+for gNB type 1-C</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 37%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">Accuracy</th>
+<th colspan="2">Conditions</th>
+</tr>
+<tr>
+<th rowspan="2">SRS Ês/Iot</th>
+<th rowspan="2">SRS bandwidth range</th>
+</tr>
+<tr>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dB</td>
+<td>dB</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>±4</td>
+<td rowspan="3">Ês/Iot ≥ +3</td>
+<td>24 ≤ BW &lt; 48</td>
+</tr>
+<tr>
+<td>±4</td>
+<td>48 ≤ BW &lt; 132</td>
+</tr>
+<tr>
+<td>±4</td>
+<td>132 ≤ BW</td>
+</tr>
+<tr>
+<td>±6.5</td>
+<td rowspan="2">Ês/Iot ≥ -13</td>
+<td>48 ≤ BW &lt; 132</td>
+</tr>
+<tr>
+<td>±5.5</td>
+<td>132 ≤ BW</td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.3.2.2-2 gNB SRS-RSRP absolute accuracy requirements in FR1
+for gNB type 1-H and 1-O</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 37%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">Accuracy</th>
+<th colspan="2">Conditions</th>
+</tr>
+<tr>
+<th rowspan="2">SRS Ês/Iot</th>
+<th rowspan="2">SRS bandwidth range</th>
+</tr>
+<tr>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dB</td>
+<td>dB</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>±5.5</td>
+<td rowspan="3">Ês/Iot ≥ +3</td>
+<td>24 ≤ BW &lt; 48</td>
+</tr>
+<tr>
+<td>±5.5</td>
+<td>48 ≤ BW &lt; 132</td>
+</tr>
+<tr>
+<td>±5.5</td>
+<td>132 ≤ BW</td>
+</tr>
+<tr>
+<td>±8</td>
+<td rowspan="2">Ês/Iot ≥ -13</td>
+<td>48 ≤ BW &lt; 132</td>
+</tr>
+<tr>
+<td>±7</td>
+<td>132 ≤ BW</td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.3.2.2-3 gNB SRS-RSRP absolute accuracy requirements in FR2
+for gNB type 2-O</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 37%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="3">Accuracy</th>
+<th colspan="2">Conditions</th>
+</tr>
+<tr>
+<th rowspan="2">SRS Ês/Iot</th>
+<th rowspan="2">SRS bandwidth range</th>
+</tr>
+<tr>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dB</td>
+<td>dB</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>±5.5</td>
+<td rowspan="3">Ês/Iot ≥ +3</td>
+<td>32 ≤ BW &lt; 64</td>
+</tr>
+<tr>
+<td>±5.5</td>
+<td>64 ≤ BW &lt; 132</td>
+</tr>
+<tr>
+<td>±5.5</td>
+<td>132 ≤ BW</td>
+</tr>
+<tr>
+<td>±8</td>
+<td rowspan="2">Ês/Iot ≥ -13</td>
+<td>64 ≤ BW &lt; 132</td>
+</tr>
+<tr>
+<td>±7</td>
+<td>132 ≤ BW</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aoazoa">13.4 AoA/ZoA</h3>
+<h3 id="report-mapping-3">13.4.1 Report mapping</h3>
+<p>The reporting range of UL Angle of Arrival (UL-AoA), as defined in
+Clause 5.2.4 of TS 38.215 [4], is defined from -180 degree to +180
+degree for azimuth angle of arrival (A-AoA). The reporting resolution is
+0.1 degree.</p>
+<p>The reporting range of UL Angle of Arrival, as defined in Clause
+5.2.4 of TS 38.215 [4], is defined from 0 degree to +180 degree for
+zenith angle of arrival (Z-AoA). The reporting resolution is 0.1
+degree.</p>
+<p>The mapping of A-AoA measured quantity is defined in Table 13.4.1-1.
+The mapping of Z-AoA measured quantity is defined in Table 13.4.1-2.</p>
+<p>Table 13.4.1-1: Azimuth Angle of Arrival (A-AoA) measurement report
+mapping</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 52%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>Reported value</th>
+<th>Measured quantity value (AoA)</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A-AoA_0</td>
+<td>-180 ≤ A-AoA &lt; -179.9</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>A-AoA_1</td>
+<td>-179.9 ≤ A-AoA &lt; -179.8</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>A-AoA_2</td>
+<td>-179.8 ≤ A-AoA &lt; -179.7</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>A-AoA_1798</td>
+<td>-0.2 ≤ A-AoA &lt; -0.1</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>A-AoA_1799</td>
+<td>-0.1 ≤ A-AoA &lt; 0</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>A-AoA_1800</td>
+<td>0 ≤ A-AoA &lt; 0.1</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>A-AoA_1801</td>
+<td>0.1 ≤ A-AoA &lt; 0.2</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>A-AoA_1802</td>
+<td>0.2 ≤ A-AoA &lt; 0.3</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>A-AoA_3598</td>
+<td>179.8 ≤ A-AoA &lt; 179.9</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>A-AoA_3599</td>
+<td>179.9 ≤ A-AoA &lt; 180</td>
+<td>degree</td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.4.1-2: Zenith Angle of Arrival (Z-AoA) measurement report
+mapping</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 54%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th>Reported value</th>
+<th>Measured quantity value (ZoA)</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Z-AoA_0</td>
+<td>0 ≤ Z-AoA &lt; 0.1</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>Z-AoA _1</td>
+<td>0.1 ≤ Z-AoA &lt; 0.2</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>Z-AoA _2</td>
+<td>0.2 ≤ Z-AoA &lt; 0.3</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Z-AoA _1798</td>
+<td>179.8 ≤ Z-AoA &lt; 179.9</td>
+<td>degree</td>
+</tr>
+<tr>
+<td>Z-AoA _1799</td>
+<td>179.9 ≤ Z-AoA ≤ 180</td>
+<td>degree</td>
+</tr>
+</tbody>
+</table>
+<h2 id="timing-advance-tadv">13.5 Timing advance (T<sub>ADV</sub>)</h2>
+<h3 id="report-mapping-4">13.5.1 Report mapping</h3>
+<p>The reporting range of T<sub>ADV</sub>, as defined in Clause 5.2.7 of
+TS 38.215 [4], is defined from 0 to 3150848 T<sub>c</sub> with 128
+T<sub>c</sub> resolution for timing advance less or equal to 262144
+T<sub>c</sub>, and 512 T<sub>c</sub> for timing advance greater than
+262144 T<sub>c</sub>.</p>
+<p>T<sub>c</sub> is defined in TS 38.211 [6].</p>
+<p>The mapping of measured quantity is defined in Table 13.5.1-1.</p>
+<p>Table 13.5.1-1: T<sub>ADV</sub> measurement report mapping</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Reported value</strong></td>
+<td style="text-align: center;"><strong>Measured quantity
+value</strong></td>
+<td style="text-align: center;"><strong>Unit</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">TIME_ADVANCE_00</td>
+<td style="text-align: center;">T<sub>ADV</sub> &lt; 128</td>
+<td style="text-align: center;">T<sub>c</sub></td>
+</tr>
+<tr>
+<td style="text-align: center;">TIME_ADVANCE_01</td>
+<td style="text-align: center;">128 ≤ T<sub>ADV</sub> &lt; 256</td>
+<td style="text-align: center;">T<sub>c</sub></td>
+</tr>
+<tr>
+<td style="text-align: center;">TIME_ADVANCE_02</td>
+<td style="text-align: center;">256 ≤ T<sub>ADV</sub> &lt; 384</td>
+<td style="text-align: center;">T<sub>c</sub></td>
+</tr>
+<tr>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+</tr>
+<tr>
+<td style="text-align: center;">TIME_ADVANCE_2046</td>
+<td style="text-align: center;">261888 ≤ T<sub>ADV</sub> &lt;
+262016</td>
+<td style="text-align: center;">T<sub>c</sub></td>
+</tr>
+<tr>
+<td style="text-align: center;">TIME_ADVANCE_2047</td>
+<td style="text-align: center;">262016 ≤ T<sub>ADV</sub> &lt;
+262144</td>
+<td style="text-align: center;">T<sub>c</sub></td>
+</tr>
+<tr>
+<td style="text-align: center;">TIME_ADVANCE_2048</td>
+<td style="text-align: center;">262144 ≤ T<sub>ADV</sub> &lt;
+262656</td>
+<td style="text-align: center;">T<sub>c</sub></td>
+</tr>
+<tr>
+<td style="text-align: center;">TIME_ADVANCE_2049</td>
+<td style="text-align: center;">262656 ≤ T<sub>ADV</sub> &lt;
+263168</td>
+<td style="text-align: center;">T<sub>c</sub></td>
+</tr>
+<tr>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+</tr>
+<tr>
+<td style="text-align: center;">TIME_ADVANCE_7688</td>
+<td style="text-align: center;">3149824 ≤ T<sub>ADV</sub> &lt;
+3150336</td>
+<td style="text-align: center;">T<sub>c</sub></td>
+</tr>
+<tr>
+<td style="text-align: center;">TIME_ADVANCE_7689</td>
+<td style="text-align: center;">3150336 ≤ T<sub>ADV</sub> &lt;
+3150848</td>
+<td style="text-align: center;">T<sub>c</sub></td>
+</tr>
+<tr>
+<td style="text-align: center;">TIME_ADVANCE_7690</td>
+<td style="text-align: center;">3150848 ≤ T<sub>ADV</sub></td>
+<td style="text-align: center;">T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<p>NOTE: For report mapping, T<sub>ADV</sub> is equal to (gNB Rx – Tx
+time difference) + N<sub>TA_offset</sub>, where N<sub>TA_offset</sub> is
+based on the information <em>n-TimingAdvanceOffset</em> as specified in
+TS 38.331 [2].</p>
+<h2 id="ul-srs-rsrpp-measurement">13.6 UL SRS RSRPP measurement</h2>
+<h3 id="report-mapping-5">13.6.1 Report mapping</h3>
+<p>The reporting range of UL SRS RSRPP, as defined in clause 5.2.5 of
+38.215 [4], is defined from -156dBm to -31dBm with resolution 1dB.</p>
+<p>The mapping of measured quantity is defined in Table 13.6.1-1. The
+range in the signalling may be larger than the guaranteed accuracy
+range.</p>
+<p>Table 13.6.1-1: UL SRS RSRPP report mapping</p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 46%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Reported value</th>
+<th>Measured quantity value</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SRS_RSRPP_0</td>
+<td>SRS-RSRPP&lt;-156</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_1</td>
+<td>-156≤SRS-RSRPP&lt;-155</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_2</td>
+<td>-155≤SRS-RSRPP&lt;-154</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_3</td>
+<td>-154≤SRS-RSRPP&lt;-153</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_4</td>
+<td>-153≤SRS-RSRPP&lt;-152</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_5</td>
+<td>-152≤SRS-RSRPP&lt;-151</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_6</td>
+<td>-151≤SRS-RSRPP&lt;-150</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_7</td>
+<td>-150≤SRS-RSRPP&lt;-149</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_8</td>
+<td>-149≤SRS-RSRPP&lt;-148</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_9</td>
+<td>-148≤SRS-RSRPP&lt;-147</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_10</td>
+<td>-147≤SRS-RSRPP&lt;-146</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_11</td>
+<td>-146≤SRS-RSRPP&lt;-145</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_12</td>
+<td>-145≤SRS-RSRPP&lt;-144</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_13</td>
+<td>-144≤SRS-RSRPP&lt;-143</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_14</td>
+<td>-143≤SRS-RSRPP&lt;-142</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_15</td>
+<td>-142≤SRS-RSRPP&lt;-141</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_16</td>
+<td>-141≤SRS-RSRPP&lt;-140</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_17</td>
+<td>-140≤SRS-RSRPP&lt;-139</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_18</td>
+<td>-139≤SRS-RSRPP&lt;-138</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_111</td>
+<td>-46≤SRS-RSRPP&lt;-45</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_112</td>
+<td>-45≤SRS-RSRPP&lt;-44</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_113</td>
+<td>-44≤SRS-RSRPP&lt;-43</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_114</td>
+<td>-43≤SRS-RSRPP&lt;-42</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_115</td>
+<td>-42≤SRS-RSRPP&lt;-41</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_116</td>
+<td>-41≤SRS-RSRPP&lt;-40</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_117</td>
+<td>-40≤SRS-RSRPP&lt;-39</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_118</td>
+<td>-39≤SRS-RSRPP&lt;-38</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_119</td>
+<td>-38≤SRS-RSRPP&lt;-37</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_120</td>
+<td>-37≤SRS-RSRPP&lt;-36</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_121</td>
+<td>-36≤SRS-RSRPP&lt;-35</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_122</td>
+<td>-35≤SRS-RSRPP&lt;-34</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_123</td>
+<td>-34≤SRS-RSRPP&lt;-33</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_124</td>
+<td>-33≤SRS-RSRPP&lt;-32</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_125</td>
+<td>-32≤SRS-RSRPP&lt;-31</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>SRS_RSRPP_126</td>
+<td>-31≤SRS-RSRPP</td>
+<td>dBm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gnb-rx-tx-time-difference-measurements-for-rtt-based-pdc">13.7
+gNB Rx-Tx time difference measurements for RTT-based PDC</h2>
+<h3 id="report-mapping-6">13.7.1 Report mapping</h3>
+<p>The reporting range of gNB Rx-Tx time difference, as defined in
+Clause 5.2.3 of TS 38.215 [4], is defined from -985024T<sub>c</sub> to
++985024×T<sub>c</sub>. The reporting resolution is uniform across the
+reporting range and is defined as T<sub>c</sub>*32.</p>
+<p>T<sub>c</sub> is defined in TS 38.211 [6].</p>
+<p>The mapping of measured quantity is defined in Table 13.7.1-1.</p>
+<p>Table 13.7.1-1: gNB Rx-Tx time difference measurement report
+mapping</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 41%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Reported Value</td>
+<td>Measured Quantity Value</td>
+<td>Unit</td>
+</tr>
+<tr>
+<td>RX-TX_0000</td>
+<td>-985024 &gt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0001</td>
+<td>-985024 ≤ RX-TX &lt; -984992</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_0002</td>
+<td>-984992 ≤ RX-TX &lt; -984960</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_30781</td>
+<td>-64 ≤ RX-TX &lt; -32</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_30782</td>
+<td>-32 ≤ RX-TX ≤ 0</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_30783</td>
+<td>0 &lt; RX-TX ≤ 32</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_30784</td>
+<td>32 &lt; RX-TX ≤ 64</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_30785</td>
+<td>64 &lt; RX-TX ≤ 96</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>RX-TX_61564</td>
+<td>984992 &lt; RX-TX ≤ 985024</td>
+<td>T<sub>c</sub></td>
+</tr>
+<tr>
+<td>RX-TX_61565</td>
+<td>985024 &lt; RX-TX</td>
+<td>T<sub>c</sub></td>
+</tr>
+</tbody>
+</table>
+<h3 id="measurement-accuracy-requirements-2">13.7.2 Measurement Accuracy
+Requirements</h3>
+<h4 id="introduction-7">13.7.2.1 Introduction</h4>
+<p>This clause defines accuracy requirements for gNB Rx-Tx time
+difference measurement in FR1 and FR2. The requirements are applicable
+for gNB supporting gNB Rx-Tx time difference measurement for RTT-based
+PDC.</p>
+<h4 id="requirements-1">13.7.2.2 Requirements</h4>
+<p>The accuracy requirements for gNB Rx-Tx time difference measurement
+for RTT-based PDC shall be within ±(X+Y) T<sub>c</sub> under the
+following conditions:</p>
+<p>- AWGN propagation conditions.</p>
+<p>- The measured signals are in the directions covered by RoAoA of OTA
+reference sensitivity requirements for gNB type 1-O and 2-O BS</p>
+<p>where</p>
+<p>- X is defined in Table 13.7.2.2-1 for gNB types 1-C, 1-H and 1-O and
+in Table 13.7.2.2-2 for gNB type 2-O.</p>
+<p>- Y is declared by manufacturer and can be different for different
+gNB types 1-C, 1-H, 1-O and 2-O.</p>
+<p>Note: The measurement accuracy requirements in Table 13.7.2.2-1 and
+Table 13.7.2.2-2 are defined under an assumption that gNB is not
+mandated to perform receive beam sweeping.</p>
+<p>Table 13.7.2.2-1: gNB Rx-Tx time difference absolute accuracy in FR1
+for gNB type 1-C, 1-H and 1-O</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 21%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr>
+<th>Accuracy</th>
+<th>SRS Ês/Iot</th>
+<th>SCS</th>
+<th>SRS bandwidth range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unit: Tc</td>
+<td>Unit: dB</td>
+<td>Unit: kHz</td>
+<td>Unit: RB</td>
+</tr>
+<tr>
+<td>122</td>
+<td rowspan="9">≥ +3</td>
+<td rowspan="4">15</td>
+<td>24 ≤ BW ≤ 40</td>
+</tr>
+<tr>
+<td>62</td>
+<td>44 ≤ BW ≤ 84</td>
+</tr>
+<tr>
+<td>32</td>
+<td>88 ≤ BW ≤ 168</td>
+</tr>
+<tr>
+<td>16</td>
+<td>176 ≤ BW</td>
+</tr>
+<tr>
+<td>32</td>
+<td rowspan="3">30</td>
+<td>48 ≤ BW ≤ 84</td>
+</tr>
+<tr>
+<td>17</td>
+<td>88 ≤ BW ≤ 168</td>
+</tr>
+<tr>
+<td>9</td>
+<td>176 ≤ BW</td>
+</tr>
+<tr>
+<td>16</td>
+<td rowspan="2">60</td>
+<td>48 ≤ BW ≤ 84</td>
+</tr>
+<tr>
+<td>9</td>
+<td>88 ≤ BW</td>
+</tr>
+</tbody>
+</table>
+<p>Table 13.7.2.2-2: gNB Rx-Tx time difference absolute accuracy in FR2
+for gNB type 2-O</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 21%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr>
+<th>Accuracy</th>
+<th>SRS Ês/Iot</th>
+<th>SCS</th>
+<th>SRS bandwidth range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unit: Tc</td>
+<td>Unit: dB</td>
+<td>Unit: kHz</td>
+<td>Unit: RB</td>
+</tr>
+<tr>
+<td>9</td>
+<td rowspan="5">≥ +3</td>
+<td rowspan="2">60</td>
+<td>132 ≤ BW ≤ 168</td>
+</tr>
+<tr>
+<td>8</td>
+<td>176 ≤ BW</td>
+</tr>
+<tr>
+<td>16</td>
+<td rowspan="3">120</td>
+<td>32 ≤ BW ≤ 40</td>
+</tr>
+<tr>
+<td>9</td>
+<td>44 ≤ BW ≤ 84</td>
+</tr>
+<tr>
+<td>8</td>
+<td>88 ≤ BW</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

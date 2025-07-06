@@ -1,0 +1,5397 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38171-h40</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-symbols-and-abbreviations"
+id="toc-definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+<li><a href="#test-tolerances" id="toc-test-tolerances">3.4 Test
+tolerances</a></li>
+</ul></li>
+<li><a href="#general" id="toc-general">4 General</a>
+<ul>
+<li><a href="#introduction" id="toc-introduction">4.1
+Introduction</a></li>
+<li><a href="#measurement-parameters"
+id="toc-measurement-parameters">4.2 Measurement parameters</a>
+<ul>
+<li><a href="#ue-based-a-gnss-measurement-parameters"
+id="toc-ue-based-a-gnss-measurement-parameters">4.2.1 UE based A-GNSS
+measurement parameters</a></li>
+<li><a href="#ue-assisted-a-gnss-measurement-parameters"
+id="toc-ue-assisted-a-gnss-measurement-parameters">4.2.2 UE assisted
+A-GNSS measurement parameters</a></li>
+</ul></li>
+<li><a href="#response-time" id="toc-response-time">4.3 Response
+time</a></li>
+<li><a href="#time-assistance" id="toc-time-assistance">4.4 Time
+assistance</a>
+<ul>
+<li><a href="#use-of-fine-time-assistance"
+id="toc-use-of-fine-time-assistance">4.4.1 Use of fine time
+assistance</a></li>
+</ul></li>
+<li><a href="#rrc-states" id="toc-rrc-states">4.5 RRC states</a></li>
+<li><a href="#error-definitions" id="toc-error-definitions">4.6 Error
+definitions</a></li>
+</ul></li>
+<li><a
+href="#a-gnss-minimum-performance-requirements-ue-supports-a-gps-l1-ca-only"
+id="toc-a-gnss-minimum-performance-requirements-ue-supports-a-gps-l1-ca-only">5
+A-GNSS minimum performance requirements (UE supports A-GPS L1 C/A
+only)</a>
+<ul>
+<li><a href="#introduction-1" id="toc-introduction-1">5.0
+Introduction</a></li>
+<li><a href="#sensitivity" id="toc-sensitivity">5.1 Sensitivity</a>
+<ul>
+<li><a href="#coarse-time-assistance"
+id="toc-coarse-time-assistance">5.1.1 Coarse time assistance</a>
+<ul>
+<li><a href="#minimum-requirements-coarse-time-assistance"
+id="toc-minimum-requirements-coarse-time-assistance">5.1.1.1 Minimum
+requirements (Coarse time assistance)</a></li>
+</ul></li>
+<li><a href="#fine-time-assistance" id="toc-fine-time-assistance">5.1.2
+Fine time assistance</a>
+<ul>
+<li><a href="#minimum-requirements-fine-time-assistance"
+id="toc-minimum-requirements-fine-time-assistance">5.1.2.1 Minimum
+requirements (Fine time assistance)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#nominal-accuracy" id="toc-nominal-accuracy">5.2 Nominal
+accuracy</a>
+<ul>
+<li><a href="#minimum-requirements-nominal-accuracy"
+id="toc-minimum-requirements-nominal-accuracy">5.2.1 Minimum
+requirements (nominal accuracy)</a></li>
+</ul></li>
+<li><a href="#dynamic-range" id="toc-dynamic-range">5.3 Dynamic
+range</a>
+<ul>
+<li><a href="#minimum-requirements-dynamic-range"
+id="toc-minimum-requirements-dynamic-range">5.3.1 Minimum requirements
+(dynamic range)</a></li>
+</ul></li>
+<li><a href="#multi-path-scenario" id="toc-multi-path-scenario">5.4
+Multi-path scenario</a>
+<ul>
+<li><a href="#minimum-requirements-multi-path-scenario"
+id="toc-minimum-requirements-multi-path-scenario">5.4.1 Minimum
+requirements (multi-path scenario)</a></li>
+</ul></li>
+<li><a href="#moving-scenario-and-periodic-update"
+id="toc-moving-scenario-and-periodic-update">5.5 Moving scenario and
+periodic update</a>
+<ul>
+<li><a href="#minimum-requirements-moving-scenario-and-periodic-update"
+id="toc-minimum-requirements-moving-scenario-and-periodic-update">5.5.1
+Minimum requirements (moving scenario and periodic update)</a></li>
+</ul></li>
+</ul></li>
+<li><a
+href="#a-gnss-minimum-performance-requirements-ue-supports-other-or-additional-gnsss"
+id="toc-a-gnss-minimum-performance-requirements-ue-supports-other-or-additional-gnsss">6
+A-GNSS minimum performance requirements (UE supports other or additional
+GNSSs)</a>
+<ul>
+<li><a href="#introduction-2" id="toc-introduction-2">6.0
+Introduction</a></li>
+<li><a href="#sensitivity-1" id="toc-sensitivity-1">6.1 Sensitivity</a>
+<ul>
+<li><a href="#coarse-time-assistance-1"
+id="toc-coarse-time-assistance-1">6.1.1 Coarse time assistance</a>
+<ul>
+<li><a href="#minimum-requirements-coarse-time-assistance-1"
+id="toc-minimum-requirements-coarse-time-assistance-1">6.1.1.1 Minimum
+requirements (Coarse time assistance)</a></li>
+</ul></li>
+<li><a href="#fine-time-assistance-1"
+id="toc-fine-time-assistance-1">6.1.2 Fine time assistance</a>
+<ul>
+<li><a href="#minimum-requirements-fine-time-assistance-1"
+id="toc-minimum-requirements-fine-time-assistance-1">6.1.2.1 Minimum
+requirements (Fine time assistance)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#nominal-accuracy-1" id="toc-nominal-accuracy-1">6.2
+Nominal accuracy</a>
+<ul>
+<li><a href="#minimum-requirements-nominal-accuracy-1"
+id="toc-minimum-requirements-nominal-accuracy-1">6.2.1 Minimum
+requirements (nominal accuracy)</a></li>
+</ul></li>
+<li><a href="#dynamic-range-1" id="toc-dynamic-range-1">6.3 Dynamic
+range</a>
+<ul>
+<li><a href="#minimum-requirements-dynamic-range-1"
+id="toc-minimum-requirements-dynamic-range-1">6.3.1 Minimum requirements
+(dynamic range)</a></li>
+</ul></li>
+<li><a href="#multi-path-scenario-1" id="toc-multi-path-scenario-1">6.4
+Multi-path scenario</a>
+<ul>
+<li><a href="#minimum-requirements-multi-path-scenario-1"
+id="toc-minimum-requirements-multi-path-scenario-1">6.4.1 Minimum
+requirements (multi-path scenario)</a></li>
+</ul></li>
+<li><a href="#moving-scenario-and-periodic-update-1"
+id="toc-moving-scenario-and-periodic-update-1">6.5 Moving scenario and
+periodic update</a>
+<ul>
+<li><a
+href="#minimum-requirements-moving-scenario-and-periodic-update-1"
+id="toc-minimum-requirements-moving-scenario-and-periodic-update-1">6.5.1
+Minimum requirements (moving scenario and periodic update)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#a.1-conformance-tests" id="toc-a.1-conformance-tests">A.1
+Conformance tests</a></li>
+<li><a href="#a.2-requirement-classification-for-statistical-testing"
+id="toc-a.2-requirement-classification-for-statistical-testing">A.2
+Requirement classification for statistical testing</a></li>
+<li><a href="#b.1-general" id="toc-b.1-general">B.1 General</a>
+<ul>
+<li><a href="#b.1.1-parameter-values"
+id="toc-b.1.1-parameter-values">B.1.1 Parameter values</a></li>
+<li><a href="#b.1.2-time-assistance"
+id="toc-b.1.2-time-assistance">B.1.2 Time assistance</a></li>
+<li><a href="#b.1.3-gnss-reference-time"
+id="toc-b.1.3-gnss-reference-time">B.1.3 GNSS reference time</a></li>
+<li><a href="#b.1.4-reference-and-ue-locations"
+id="toc-b.1.4-reference-and-ue-locations">B.1.4 Reference and UE
+locations</a></li>
+<li><a href="#b.1.5-satellite-constellation-and-assistance-data"
+id="toc-b.1.5-satellite-constellation-and-assistance-data">B.1.5
+Satellite constellation and assistance data</a>
+<ul>
+<li><a href="#b.1.5.1-ue-supports-a-gps-l1-ca-only"
+id="toc-b.1.5.1-ue-supports-a-gps-l1-ca-only">B.1.5.1 UE supports A-GPS
+L1 C/A only</a></li>
+<li><a href="#b.1.5.2-ue-supports-other-a-gnsss"
+id="toc-b.1.5.2-ue-supports-other-a-gnsss">B.1.5.2 UE supports other
+A-GNSSs</a></li>
+</ul></li>
+<li><a href="#b.1.6-atmospheric-delays"
+id="toc-b.1.6-atmospheric-delays">B.1.6 Atmospheric delays</a></li>
+<li><a href="#b.1.7-e-utra-or-nr-frequency-and-frequency-error"
+id="toc-b.1.7-e-utra-or-nr-frequency-and-frequency-error">B.1.7 E-UTRA
+or NR frequency and frequency error</a></li>
+<li><a href="#b.1.8-information-elements"
+id="toc-b.1.8-information-elements">B.1.8 Information elements</a></li>
+<li><a href="#b.1.9-gnss-signals" id="toc-b.1.9-gnss-signals">B.1.9 GNSS
+signals</a></li>
+<li><a href="#b.1.10-reset-ue-positioning-stored-information-message"
+id="toc-b.1.10-reset-ue-positioning-stored-information-message">B.1.10
+RESET UE POSITIONING STORED INFORMATION Message</a></li>
+<li><a href="#b.1.11-gnss-system-time-offsets"
+id="toc-b.1.11-gnss-system-time-offsets">B.1.11 GNSS system time
+offsets</a></li>
+<li><a href="#b.1.12-sensors" id="toc-b.1.12-sensors">B.1.12
+Sensors</a></li>
+<li><a
+href="#b.1.13-en-dc-band-combinations-for-testing-a-gnss-sensitivity"
+id="toc-b.1.13-en-dc-band-combinations-for-testing-a-gnss-sensitivity">B.1.13
+EN-DC band combinations for testing A-GNSS sensitivity</a>
+<ul>
+<li><a href="#b.1.13.1-en-dc-band-combination-groups"
+id="toc-b.1.13.1-en-dc-band-combination-groups">B.1.13.1 EN-DC band
+combination groups</a></li>
+<li><a
+href="#b.1.13.2-applicable-en-dc-band-combinations-for-verifying-a-gnss-sensitivity-requirements"
+id="toc-b.1.13.2-applicable-en-dc-band-combinations-for-verifying-a-gnss-sensitivity-requirements">B.1.13.2
+Applicable EN-DC band combinations for verifying A-GNSS sensitivity
+requirements</a></li>
+<li><a href="#b.1.13.3-test-frequencies-for-en-dc-band-combinations"
+id="toc-b.1.13.3-test-frequencies-for-en-dc-band-combinations">B.1.13.3
+Test frequencies for EN-DC band combinations</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#c.1-static-propagation-conditions"
+id="toc-c.1-static-propagation-conditions">C.1 Static propagation
+conditions</a></li>
+<li><a href="#c.2-multi-path-case" id="toc-c.2-multi-path-case">C.2
+Multi-path case</a></li>
+<li><a href="#d.1-general" id="toc-d.1-general">D.1 General</a></li>
+<li><a href="#d.2-ttff-measurement-sequence-chart"
+id="toc-d.2-ttff-measurement-sequence-chart">D.2 TTFF measurement
+sequence chart</a></li>
+<li><a
+href="#d.3-moving-scenario-and-periodic-update-measurement-sequence-chart"
+id="toc-d.3-moving-scenario-and-periodic-update-measurement-sequence-chart">D.3
+Moving scenario and periodic update measurement sequence chart</a></li>
+<li><a href="#e.1-introduction" id="toc-e.1-introduction">E.1
+Introduction</a></li>
+<li><a href="#e.2-gnss-assistance-data"
+id="toc-e.2-gnss-assistance-data">E.2 GNSS assistance data</a></li>
+<li><a href="#f.1-introduction" id="toc-f.1-introduction">F.1
+Introduction</a></li>
+<li><a href="#f.2-ue-measurement-reports"
+id="toc-f.2-ue-measurement-reports">F.2 UE measurement reports</a></li>
+<li><a href="#f.3-wls-position-solution"
+id="toc-f.3-wls-position-solution">F.3 WLS position solution</a></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2"> 3GPP TS 38.171 V17.4.0 (2023-09)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Specification</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NR;</p>
+<p>Requirements for support of Assisted Global Navigation Satellite
+System (A-GNSS)</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.jpeg"
+style="width:1.32292in;height:0.91667in" alt="5G-logo_175px" /></td>
+<td style="text-align: right;"><img src="media/image2.png"
+style="width:1.77083in;height:1.04167in" alt="3GPP-logo_web" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2023, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">7</a></p>
+<p>1 Scope <a href="#scope">9</a></p>
+<p>2 References <a href="#references">9</a></p>
+<p>3 Definitions, symbols and abbreviations <a
+href="#definitions-symbols-and-abbreviations">10</a></p>
+<p>3.1 Definitions <a href="#definitions">10</a></p>
+<p>3.2 Symbols <a href="#symbols">10</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">11</a></p>
+<p>3.4 Test tolerances <a href="#test-tolerances">12</a></p>
+<p>4 General <a href="#general">12</a></p>
+<p>4.1 Introduction <a href="#introduction">12</a></p>
+<p>4.2 Measurement parameters <a
+href="#measurement-parameters">12</a></p>
+<p>4.2.1 UE based A-GNSS measurement parameters <a
+href="#ue-based-a-gnss-measurement-parameters">12</a></p>
+<p>4.2.2 UE assisted A-GNSS measurement parameters <a
+href="#ue-assisted-a-gnss-measurement-parameters">12</a></p>
+<p>4.3 Response time <a href="#response-time">12</a></p>
+<p>4.4 Time assistance <a href="#time-assistance">12</a></p>
+<p>4.4.1 Use of fine time assistance <a
+href="#use-of-fine-time-assistance">13</a></p>
+<p>4.5 RRC states <a href="#rrc-states">13</a></p>
+<p>4.6 Error definitions <a href="#error-definitions">13</a></p>
+<p>5 A-GNSS minimum performance requirements (UE supports A-GPS L1 C/A
+only) <a
+href="#a-gnss-minimum-performance-requirements-ue-supports-a-gps-l1-ca-only">14</a></p>
+<p>5.0 Introduction <a href="#introduction-1">14</a></p>
+<p>5.1 Sensitivity <a href="#sensitivity">14</a></p>
+<p>5.1.1 Coarse time assistance <a
+href="#coarse-time-assistance">14</a></p>
+<p>5.1.1.1 Minimum requirements (Coarse time assistance) <a
+href="#minimum-requirements-coarse-time-assistance">15</a></p>
+<p>5.1.2 Fine time assistance <a href="#fine-time-assistance">15</a></p>
+<p>5.1.2.1 Minimum requirements (Fine time assistance) <a
+href="#minimum-requirements-fine-time-assistance">15</a></p>
+<p>5.2 Nominal accuracy <a href="#nominal-accuracy">15</a></p>
+<p>5.2.1 Minimum requirements (nominal accuracy) <a
+href="#minimum-requirements-nominal-accuracy">16</a></p>
+<p>5.3 Dynamic range <a href="#dynamic-range">16</a></p>
+<p>5.3.1 Minimum requirements (dynamic range) <a
+href="#minimum-requirements-dynamic-range">16</a></p>
+<p>5.4 Multi-path scenario <a href="#multi-path-scenario">17</a></p>
+<p>5.4.1 Minimum requirements (multi-path scenario) <a
+href="#minimum-requirements-multi-path-scenario">17</a></p>
+<p>5.5 Moving scenario and periodic update <a
+href="#moving-scenario-and-periodic-update">17</a></p>
+<p>5.5.1 Minimum requirements (moving scenario and periodic update) <a
+href="#minimum-requirements-moving-scenario-and-periodic-update">18</a></p>
+<p>6 A-GNSS minimum performance requirements (UE supports other or
+additional GNSSs) <a
+href="#a-gnss-minimum-performance-requirements-ue-supports-other-or-additional-gnsss">18</a></p>
+<p>6.0 Introduction <a href="#introduction-2">18</a></p>
+<p>6.1 Sensitivity <a href="#sensitivity-1">19</a></p>
+<p>6.1.1 Coarse time assistance <a
+href="#coarse-time-assistance-1">19</a></p>
+<p>6.1.1.1 Minimum requirements (Coarse time assistance) <a
+href="#minimum-requirements-coarse-time-assistance-1">19</a></p>
+<p>6.1.2 Fine time assistance <a
+href="#fine-time-assistance-1">20</a></p>
+<p>6.1.2.1 Minimum requirements (Fine time assistance) <a
+href="#minimum-requirements-fine-time-assistance-1">20</a></p>
+<p>6.2 Nominal accuracy <a href="#nominal-accuracy-1">20</a></p>
+<p>6.2.1 Minimum requirements (nominal accuracy) <a
+href="#minimum-requirements-nominal-accuracy-1">21</a></p>
+<p>6.3 Dynamic range <a href="#dynamic-range-1">21</a></p>
+<p>6.3.1 Minimum requirements (dynamic range) <a
+href="#minimum-requirements-dynamic-range-1">22</a></p>
+<p>6.4 Multi-path scenario <a href="#multi-path-scenario-1">22</a></p>
+<p>6.4.1 Minimum requirements (multi-path scenario) <a
+href="#minimum-requirements-multi-path-scenario-1">23</a></p>
+<p>6.5 Moving scenario and periodic update <a
+href="#moving-scenario-and-periodic-update-1">23</a></p>
+<p>6.5.1 Minimum requirements (moving scenario and periodic update) <a
+href="#minimum-requirements-moving-scenario-and-periodic-update-1">24</a></p>
+<p>Annex A (normative): Test cases <a
+href="#annex-a-normative-test-cases">26</a></p>
+<p>A.1 Conformance tests <a href="#a.1-conformance-tests">26</a></p>
+<p>A.2 Requirement classification for statistical testing <a
+href="#a.2-requirement-classification-for-statistical-testing">26</a></p>
+<p>Annex B (normative): Test conditions <a
+href="#annex-b-normative-test-conditions">27</a></p>
+<p>B.1 General <a href="#b.1-general">27</a></p>
+<p>B.1.1 Parameter values <a href="#b.1.1-parameter-values">27</a></p>
+<p>B.1.2 Time assistance <a href="#b.1.2-time-assistance">27</a></p>
+<p>B.1.3 GNSS reference time <a
+href="#b.1.3-gnss-reference-time">27</a></p>
+<p>B.1.4 Reference and UE locations <a
+href="#b.1.4-reference-and-ue-locations">28</a></p>
+<p>B.1.5 Satellite constellation and assistance data <a
+href="#b.1.5-satellite-constellation-and-assistance-data">28</a></p>
+<p>B.1.5.1 UE supports A-GPS L1 C/A only <a
+href="#b.1.5.1-ue-supports-a-gps-l1-ca-only">28</a></p>
+<p>B.1.5.2 UE supports other A-GNSSs <a
+href="#b.1.5.2-ue-supports-other-a-gnsss">28</a></p>
+<p>B.1.6 Atmospheric delays <a
+href="#b.1.6-atmospheric-delays">28</a></p>
+<p>B.1.7 E-UTRA or NR frequency and frequency error <a
+href="#b.1.7-e-utra-or-nr-frequency-and-frequency-error">28</a></p>
+<p>B.1.8 Information elements <a
+href="#b.1.8-information-elements">29</a></p>
+<p>B.1.9 GNSS signals <a href="#b.1.9-gnss-signals">29</a></p>
+<p>B.1.10 RESET UE POSITIONING STORED INFORMATION Message <a
+href="#b.1.10-reset-ue-positioning-stored-information-message">29</a></p>
+<p>B.1.11 GNSS system time offsets <a
+href="#b.1.11-gnss-system-time-offsets">29</a></p>
+<p>B.1.12 Sensors <a href="#b.1.12-sensors">29</a></p>
+<p>B.1.13 EN-DC band combinations for testing A-GNSS sensitivity <a
+href="#b.1.13-en-dc-band-combinations-for-testing-a-gnss-sensitivity">29</a></p>
+<p>B.1.13.1 EN-DC band combination groups <a
+href="#b.1.13.1-en-dc-band-combination-groups">29</a></p>
+<p>B.1.13.2 Applicable EN-DC band combinations for verifying A-GNSS
+sensitivity requirements <a
+href="#b.1.13.2-applicable-en-dc-band-combinations-for-verifying-a-gnss-sensitivity-requirements">33</a></p>
+<p>B.1.13.3 Test frequencies for EN-DC band combinations <a
+href="#b.1.13.3-test-frequencies-for-en-dc-band-combinations">34</a></p>
+<p>Annex C (normative): Propagation conditions <a
+href="#annex-c-normative-propagation-conditions">35</a></p>
+<p>C.1 Static propagation conditions <a
+href="#c.1-static-propagation-conditions">35</a></p>
+<p>C.2 Multi-path case <a href="#c.2-multi-path-case">35</a></p>
+<p>Annex D (normative): Measurement sequence chart <a
+href="#annex-d-normative-measurement-sequence-chart">37</a></p>
+<p>D.1 General <a href="#d.1-general">37</a></p>
+<p>D.2 TTFF measurement sequence chart <a
+href="#d.2-ttff-measurement-sequence-chart">37</a></p>
+<p>D.3 Moving scenario and periodic update measurement sequence chart <a
+href="#d.3-moving-scenario-and-periodic-update-measurement-sequence-chart">38</a></p>
+<p>Annex E (normative): Assistance data required for testing <a
+href="#annex-e-normative-assistance-data-required-for-testing">41</a></p>
+<p>E.1 Introduction <a href="#e.1-introduction">41</a></p>
+<p>E.2 GNSS assistance data <a
+href="#e.2-gnss-assistance-data">41</a></p>
+<p>Annex F (normative): Converting UE-assisted measurement reports into
+position estimates <a
+href="#annex-f-normative-converting-ue-assisted-measurement-reports-into-position-estimates">45</a></p>
+<p>F.1 Introduction <a href="#f.1-introduction">45</a></p>
+<p>F.2 UE measurement reports <a
+href="#f.2-ue-measurement-reports">45</a></p>
+<p>F.3 WLS position solution <a
+href="#f.3-wls-position-solution">45</a></p>
+<p>Annex G (informative): Change history <a
+href="#annex-g-informative-change-history">48</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Specification has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<p>In the present document, modal verbs have the following meanings:</p>
+<p><strong>shall</strong> indicates a mandatory requirement to do
+something</p>
+<p><strong>shall not</strong> indicates an interdiction (prohibition) to
+do something</p>
+<p>The constructions "shall" and "shall not" are confined to the context
+of normative provisions, and do not appear in Technical Reports.</p>
+<p>The constructions "must" and "must not" are not used as substitutes
+for "shall" and "shall not". Their use is avoided insofar as possible,
+and they are not used in a normative context except in a direct citation
+from an external, referenced, non-3GPP document, or so as to maintain
+continuity of style when extending or modifying the provisions of such a
+referenced document.</p>
+<p><strong>should</strong> indicates a recommendation to do
+something</p>
+<p><strong>should not</strong> indicates a recommendation not to do
+something</p>
+<p><strong>may</strong> indicates permission to do something</p>
+<p><strong>need not</strong> indicates permission not to do
+something</p>
+<p>The construction "may not" is ambiguous and is not used in normative
+elements. The unambiguous constructions "might not" or "shall not" are
+used instead, depending upon the meaning intended.</p>
+<p><strong>can</strong> indicates that something is possible</p>
+<p><strong>cannot</strong> indicates that something is impossible</p>
+<p>The constructions "can" and "cannot" are not substitutes for "may"
+and "need not".</p>
+<p><strong>will</strong> indicates that something is certain or expected
+to happen as a result of action taken by an agency the behaviour of
+which is outside the scope of the present document</p>
+<p><strong>will not</strong> indicates that something is certain or
+expected not to happen as a result of action taken by an agency the
+behaviour of which is outside the scope of the present document</p>
+<p><strong>might</strong> indicates a likelihood that something will
+happen as a result of action taken by some agency the behaviour of which
+is outside the scope of the present document</p>
+<p><strong>might not</strong> indicates a likelihood that something will
+not happen as a result of action taken by some agency the behaviour of
+which is outside the scope of the present document</p>
+<p>In addition:</p>
+<p><strong>is</strong> (or any other verb in the indicative mood)
+indicates a statement of fact</p>
+<p><strong>is not</strong> (or any other negative verb in the indicative
+mood) indicates a statement of fact</p>
+<p>The constructions "is" and "is not" do not indicate requirements.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document establishes the minimum requirements for both UE
+based and UE assisted FDD or TDD A-GNSS terminals which have NG-RAN
+access via gNB (in SA NR, NR-DC or NE-DC NR operation mode [2]) or via
+ng-eNB (in EN-DC operation mode [2]) and which are supporting A-GNSS in
+5GS via LPP [3] between UE and LMF as described in TS 38.305 [17].</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>• References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>• For a specific reference, subsequent revisions do not apply.</p>
+<p>• For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TS 37.340: "Evolved Universal Terrestrial Radio Access
+(E-UTRA) and NR; Multi-connectivity", Stage 2.</p>
+<p>[3] 3GPP TS 36.355: "Evolved Universal Terrestrial Radio Access
+(E-UTRA); LTE Positioning Protocol (LPP)".</p>
+<p>[4] 3GPP TS 38.215: "NR; Physical layer; Measurements".</p>
+<p>[5] ETSI TR 102 273-1-2: "Electromagnetic compatibility and Radio
+spectrum Matters (ERM); Improvement on Radiated Methods of Measurement
+(using test site) and evaluation of the corresponding measurement
+uncertainties; Part 1: Uncertainties in the measurement of mobile radio
+equipment characteristics; Sub-part 2: Examples and annexes".</p>
+<p>[6] IS-GPS-200, Revision D, Navstar GPS Space Segment/Navigation User
+Interfaces, March 7<sup>th</sup>, 2006.</p>
+<p>[7] P. Axelrad, R.G. Brown, "GPS Navigation Algorithms", in Chapter 9
+of "Global Positioning System: Theory and Applications", Volume 1, B.W.
+Parkinson, J.J. Spilker (Ed.), Am. Inst. of Aeronautics and Astronautics
+Inc., 1996.</p>
+<p>[8] S.K. Gupta, "Test and Evaluation Procedures for the GPS User
+Equipment", ION-GPS Red Book, Volume 1, p. 119.</p>
+<p>[9] 3GPP TS 38.509: "5GS; Special conformance testing functions for
+User Equipment (UE)".</p>
+<p>[10] IS-GPS-705, Navstar GPS Space Segment/User Segment L5
+Interfaces, September 22, 2005.</p>
+<p>[11] IS-GPS-800, Navstar GPS Space Segment/User Segment L1C
+Interfaces, September 4, 2008.</p>
+<p>[12] IS-QZSS, Quasi Zenith Satellite System Navigation Service
+Interface Specifications for QZSS, Ver.1.1, July 31, 2009.</p>
+<p>[13] Galileo OS Signal in Space ICD (OS SIS ICD), Issue 1.2, February
+2014, European Union.</p>
+<p>[14] Global Navigation Satellite System GLONASS Interface Control
+Document, Version 5.1, 2008.</p>
+<p>[15] Specification for the Wide Area Augmentation System (WAAS), US
+Department of Transportation, Federal Aviation Administration,
+DTFA01-96-C-00025, 2001.</p>
+<p>[16] BDS-SIS-ICD-B1I-3.0: "BeiDou Navigation Satellite System Signal
+In Space Interface Control Document Open Service Signal B1I (Version
+3.0)", China Satellite Navigation Office, February 2019.</p>
+<p>[17] 3GPP TS 38.300: "NR; Overall description; Stage-2".</p>
+<p>[18] 3GPP TS 38.305: "NG Radio Access Network (NG-RAN); Stage 2
+functional specification of User Equipment (UE) positioning in
+NG-RAN".</p>
+<p>[19] 3GPP TS 37.571-1: " User Equipment (UE) conformance
+specification for UE positioning; Part 1: Terminal conformance".</p>
+<p>[20] 3GPP TS 38.508-1: "5GS; User Equipment (UE) conformance
+specification; Part 1: Common test environment".</p>
+<p>[21] BDS-SIS-ICD-B1C-1.0: "BeiDou Navigation Satellite System Signal
+In Space Interface Control Document Open Service Signal B1C (Version
+1.0)", December, 2017.</p>
+<p>[22] BDS-SIS-ICD-B2a-1.0: "BeiDou Navigation Satellite System Signal
+In Space Interface Control Document Open Service Signal B2a (Version
+1.0)", December, 2017.</p>
+<p>[23] BDS-SIS-ICD-B3I-1.0: "BeiDou Navigation Satellite System Signal
+In Space Interface Control Document Open Service Signal B3I (Version
+1.0)", February, 2018.</p>
+<p>[24] IRNSS Signal-In-Space (SPS) Interface Control Document (ICD) for
+standard positioning service version 1.1, Aug 2017.</p>
+<h1 id="definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in TR 21.905 [1] and the following apply:</p>
+<p><strong>EN-DC</strong>: E-UTRA-NR Dual Connectivity as defined in TS
+37.340 [2].</p>
+<p><strong>en-gNB</strong>: as defined in TS 37.340 [2].</p>
+<p><strong>gNB</strong>: as defined in in TS 38.300 [17].</p>
+<p><strong>Horizontal Dilution Of Precision (HDOP):</strong> measure of
+position determination accuracy that is a function of the geometrical
+layout of the satellites used for the fix, relative to the receiver
+antenna</p>
+<p><strong>NE-DC</strong>: NR-E-UTRA Dual Connectivity as defined in TS
+37.340 [2].</p>
+<p><strong>ng-eNB</strong>: as defined in TS 38.300 [17].</p>
+<p><strong>NR-DC</strong>: NR-NR Dual Connectivity as defined in TS
+37.340 [2].</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<p>B1I BeiDou B1I navigation signal with carrier frequency of 1561.098
+MHz.</p>
+<p>B1C BeiDou B1C navigation signal with carrier frequency of 1575.420
+MHz.</p>
+<p>B2a BeiDou B2a navigation signal with carrier frequency of 1176.450
+MHz.</p>
+<p>B3I BeiDou B3I navigation signal with carrier frequency of 1268.520
+MHz.</p>
+<p>E1 Galileo E1 navigation signal with carrier frequency of 1575.420
+MHz.</p>
+<p>E5 Galileo E5 navigation signal with carrier frequency of 1191.795
+MHz.</p>
+<p>E6 Galileo E6 navigation signal with carrier frequency of 1278.750
+MHz.</p>
+<p>G1 GLONASS navigation signal in the L1 sub-bands with carrier
+frequencies 1602 MHz ± k × 562.5 kHz.</p>
+<p>G2 GLONASS navigation signal in the L2 sub-bands with carrier
+frequencies 1246 MHz ± k × 437.5 kHz.</p>
+<p>k GLONASS channel number, k = -7…13.</p>
+<p>L1 C/A GPS or QZSS L1 navigation signal carrying the
+Coarse/Acquisition code with carrier frequency of 1575.420 MHz.</p>
+<p>L1C GPS or QZSS L1 Civil navigation signal with carrier frequency of
+1575.420 MHz.</p>
+<p>L2C GPS or QZSS L2 Civil navigation signal with carrier frequency of
+1227.600 MHz.</p>
+<p>L5 GPS or QZSS or NavIC L5 navigation signal with carrier frequency
+of 1176.450 MHz.</p>
+<p><strong>G</strong> Geometry Matrix.</p>
+<p><img src="media/image3.svg" /> Measured pseudo-range of satellite
+<em>i</em> of GNSS<sub>m</sub>.</p>
+<p><strong>W</strong> Weighting Matrix.</p>
+<p><img src="media/image4.svg"
+style="width:0.48958in;height:0.26042in" /> Line of sight unit vector
+from the user to the satellite <em>i</em> of GNSS<sub>m</sub>.</p>
+<p><img src="media/image5.svg"
+style="width:0.13542in;height:0.13542in" /> State vector of user
+position and clock bias.</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the following abbreviations
+apply:</p>
+<p>5GS 5G System</p>
+<p>A-GNSS Assisted Global Navigation Satellite System</p>
+<p>A-GPS Assisted - Global Positioning System</p>
+<p>AWGN Additive White Gaussian Noise</p>
+<p>BDS BeiDou Navigation Satellite System</p>
+<p>C/A Coarse/Acquisition</p>
+<p>DC Dual Connectivity</p>
+<p>DUT Device Under Test</p>
+<p>ECEF Earth Centred, Earth Fixed</p>
+<p>E-UTRA Evolved UMTS Terrestrial Radio Access</p>
+<p>E-UTRAN Evolved UMTS Terrestrial Radio Access Network</p>
+<p>EN-DC E-UTRA-NR Dual Connectivity</p>
+<p>FDD Frequency Division Duplex</p>
+<p>GEO Geostationary Earth Orbit</p>
+<p>GLONASS GLObal'naya NAvigatsionnaya Sputnikovaya Sistema (Engl.:
+Global Navigation Satellite System)</p>
+<p>GNSS Global Navigation Satellite System</p>
+<p>GPS Global Positioning System</p>
+<p>HDOP Horizontal Dilution Of Precision</p>
+<p>ICD Interface Control Document</p>
+<p>IGSO Inclined Geosynchronous Satellite Orbit</p>
+<p>IRNSS Indian Regional Navigation Satellite System</p>
+<p>IS Interface Specification</p>
+<p>LMF Location Management Function</p>
+<p>LOS Line Of Sight</p>
+<p>LPP LTE Positioning Protocol</p>
+<p>MEO Medium Earth Orbit</p>
+<p>NavIC NAVigation with Indian Constellation</p>
+<p>NE-DC NR-E-UTRA Dual Connectivity</p>
+<p>NR NR Radio Access</p>
+<p>NR-DC NR-NR Dual Connectivity</p>
+<p>QZSS Quasi-Zenith Satellite System</p>
+<p>RRC Radio Resource Control</p>
+<p>SBAS Space Based Augmentation System</p>
+<p>SFN System Frame Number</p>
+<p>SS System Simulator</p>
+<p>SV Space Vehicle</p>
+<p>TDD Time Division Duplex</p>
+<p>TOW Time Of Week</p>
+<p>TTFF Time To First Fix</p>
+<p>UE User Equipment</p>
+<p>WLS Weighted Least Square</p>
+<p>WGS‑84 World Geodetic System 1984</p>
+<h2 id="test-tolerances">3.4 Test tolerances</h2>
+<p>The requirements given in the present document make no allowance for
+measurement uncertainty. The test specification TS 37.571-1 [19] defines
+test tolerances. These test tolerances are individually calculated for
+each test. The test tolerances are then added to the limits in the
+present document to create test limits. The measurement results are
+compared against the test limits as defined by the shared risk
+principle.</p>
+<p>Shared Risk is defined in ETR 273-1-2 [7], clause 6.5.</p>
+<h1 id="general">4 General</h1>
+<h2 id="introduction">4.1 Introduction</h2>
+<p>The present document defines the minimum requirements for both UE
+based and UE assisted FDD or TDD A-GNSS terminals which have NG-RAN
+access via gNB (in SA NR, NR-DC or NE-DC operation mode [2]) or via
+ng-eNB (in EN-DC operation mode [2]) and which are supporting A-GNSS in
+5GS via LPP [3] between UE and LMF as described in TS 38.305 [17].</p>
+<h2 id="measurement-parameters">4.2 Measurement parameters</h2>
+<h3 id="ue-based-a-gnss-measurement-parameters">4.2.1 UE based A-GNSS
+measurement parameters</h3>
+<p>In case of UE-based A-GNSS, the measurement parameters are contained
+in the <em>GNSS‑LocationInformation</em> IE which is included in the
+<em>A‑GNSS‑ProvideLocationInformation</em> IE provided in the LPP
+message of type PROVIDE LOCATION INFORMATION. The measurement parameter
+in case of UE-based A-GNSS is the horizontal position estimate reported
+by the UE and expressed in latitude/longitude.</p>
+<h3 id="ue-assisted-a-gnss-measurement-parameters">4.2.2 UE assisted
+A-GNSS measurement parameters</h3>
+<p>In case of UE-assisted A-GNSS, the measurement parameters are
+contained in the <em>GNSS‑SignalMeasurementInformation</em> IE which is
+included in the <em>A‑GNSS‑ProvideLocationInformation</em> IE provided
+in the LPP message of type PROVIDE LOCATION INFORMATION. The measurement
+parameters in case of UE-assisted A-GNSS are the UE GNSS code phase
+measurements, as specified in TS 38.215 [4]. The UE GNSS code phase
+measurements are converted into a horizontal position estimate using the
+procedure detailed in Annex F.</p>
+<h2 id="response-time">4.3 Response time</h2>
+<p>Max Response Time is defined as the time starting from the moment
+that the UE receives the LPP message of type REQUEST LOCATION
+INFORMATION, and ending when the UE starts sending the LPP message of
+type PROVIDE LOCATION INFORMATION. The response times specified for all
+test cases are TTFF unless otherwise stated, i.e. the UE shall not
+re‑use any information on GNSS time, location or other aiding data that
+was previously acquired or calculated and stored internally in the UE. A
+dedicated test message 'RESET UE POSITIONING STORED INFORMATION' is
+defined in TS 38.509 [9] clause 5.6 for the purpose of deleting this
+information and is detailed in clause B.1.10.</p>
+<h2 id="time-assistance">4.4 Time assistance</h2>
+<p>Time assistance is the provision of GNSS time to the UE from the
+network via LPP messages. Currently two different GNSS time assistance
+methods can be provided by the network.</p>
+<p>a) Coarse time assistance is always provided by the network and
+provides current GNSS time to the UE. The time provided is within ±2
+seconds of GNSS system time. It is signalled to the UE by means of the
+<em>gnss‑DayNumber</em> and <em>gnss‑TimeOfDay</em> fields in the
+<em>gnss-SystemTime</em> IE.</p>
+<p>b) Fine time assistance is optionally provided by the network and
+adds the provision to the UE of the relationship between the GNSS system
+time and the current E-UTRAN or NR time. The accuracy of this
+relationship is ±10 μs of the actual relationship. This addresses the
+case when the network can provide an improved GNSS time accuracy. It is
+signalled to the UE by means of the <em>gnss-SystemTime</em> IE and the
+<em>gnss‑ReferenceTimeForCells</em> IE.</p>
+<p>The specific GNSS system time is identified through the
+<em>gnss‑TimeID</em> field of the <em>GNSS‑SystemTime</em> IE. In case
+where several GNSSs are used in the tests, only one <em>gnss‑TimeID</em>
+is used to determine the Time of Day. For all the constellations, the
+<em>gnss‑TimeModels</em> IE shall be available at the SS, as specified
+in Annex E.</p>
+<h3 id="use-of-fine-time-assistance">4.4.1 Use of fine time
+assistance</h3>
+<p>The use of fine time assistance to improve the GNSS performance of
+the UE is optional for the UE, even when fine time assistance is
+signalled by the network. Thus, there are a set minimum performance
+requirements defined for all UEs and additional minimum performance
+requirements that are valid for fine time assistance capable UEs only.
+These requirements are specified in clause 5.1.2 for UEs that support
+A-GPS L1 C/A only and in clause 6.1.2 for UEs that support other
+GNSSs.</p>
+<h2 id="rrc-states">4.5 RRC states</h2>
+<p>The minimum A-GNSS performance requirements are specified in clauses
+5 and 6 for RRC_CONNECTED state. The test and verification procedures
+are separately defined in annex B.</p>
+<h2 id="error-definitions">4.6 Error definitions</h2>
+<p>The 2D position error is defined by the horizontal difference in
+meters between the ellipsoid point reported or calculated from the LPP
+message of type PROVIDE LOCATION INFORMATION and the actual position of
+the UE in the test case considered.</p>
+<p>4.7 UEs supporting multiple constellations</p>
+<p>Minimum performance requirements are defined for each global GNSS
+constellation (BDS, Galileo, GLONASS, GPS/Modernized GPS). UEs
+supporting multiple global constellations shall meet the minimum
+performance requirements for a combined scenario where each UE supported
+constellation is simulated.</p>
+<p>NOTE: For test cases where signals from “GPS” and “Modernized GPS”
+are included, “GPS” and “Modernized GPS” are considered as a single
+constellation, unless otherwise specified.</p>
+<p>4.8 UEs supporting multiple signals</p>
+<p>For UEs supporting multiple signals, different minimum performance
+requirements may be associated with different signals. The satellite
+simulator shall generate all signals supported by the UE. Signals not
+supported by the UE do not need to be simulated. The relative power
+levels of each signal type for each GNSS are defined in Table 4.8-1. The
+individual test scenarios in clause 6 define the reference signal power
+level for each satellite. The power level of each simulated satellite
+signal type shall be set to the reference signal power level defined in
+each test scenario in clause 6 plus the relative power level defined in
+Table 4.8-1.</p>
+<p>Table 4.8-1: Relative signal power levels for each signal type for
+each GNSS</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 0%" />
+<col style="width: 6%" />
+<col style="width: 5%" />
+<col style="width: 0%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 0%" />
+<col style="width: 5%" />
+<col style="width: 0%" />
+<col style="width: 6%" />
+<col style="width: 0%" />
+<col style="width: 5%" />
+<col style="width: 0%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="3">BDS</th>
+<th colspan="2">Galileo</th>
+<th colspan="3">GLONASS</th>
+<th colspan="3">GPS/Modernized GPS</th>
+<th colspan="4">QZSS</th>
+<th colspan="4">SBAS</th>
+<th colspan="2">NavIC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="7">Signal power levels relative to reference power
+levels</td>
+<td rowspan="2">B1I</td>
+<td>D1</td>
+<td>0 dB</td>
+<td rowspan="2">E1</td>
+<td colspan="2" rowspan="2">0 dB</td>
+<td rowspan="2">G1</td>
+<td colspan="2" rowspan="2">0 dB</td>
+<td rowspan="2">L1 C/A</td>
+<td colspan="2" rowspan="2">0 dB</td>
+<td colspan="2" rowspan="2">L1 C/A</td>
+<td colspan="2" rowspan="2">0 dB</td>
+<td colspan="2" rowspan="2">L1</td>
+<td rowspan="2">0 dB</td>
+<td>L5</td>
+<td>0 dB</td>
+</tr>
+<tr>
+<td>D2</td>
+<td>+5 dB</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td rowspan="2">B1C</td>
+<td>D<sub>MEO</sub></td>
+<td>+4 dB</td>
+<td>E6</td>
+<td colspan="2">+2 dB</td>
+<td>G2</td>
+<td colspan="2">-6 dB</td>
+<td>L1C</td>
+<td colspan="2">+1.5 dB</td>
+<td colspan="2">L1C</td>
+<td colspan="2">+1.5 dB</td>
+<td colspan="2"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D<sub>IGSO</sub></td>
+<td>+2dB</td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">B2a</td>
+<td>D<sub>MEO</sub></td>
+<td>+7 dB</td>
+<td>E5</td>
+<td colspan="2">+2 dB</td>
+<td></td>
+<td colspan="2"></td>
+<td>L2C</td>
+<td colspan="2">-1.5 dB</td>
+<td colspan="2">L2C</td>
+<td colspan="2">-1.5 dB</td>
+<td colspan="2"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D<sub>IGSO</sub></td>
+<td>+5dB</td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>B3I</td>
+<td>D1</td>
+<td>0 dB</td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td colspan="2"></td>
+<td>L5</td>
+<td colspan="2">+3.6 dB</td>
+<td colspan="2">L5</td>
+<td colspan="2">+3.6 dB</td>
+<td colspan="2"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>D2</td>
+<td>+5 dB</td>
+<td></td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>NOTE 1: For test cases which involve “Modernized GPS”, the satellite
+simulator shall also generate the GPS L1 C/A signal if the UE supports
+“GPS” in addition to “Modernized GPS”.</p>
+<p>NOTE 2: The signal power levels in the Test Parameter Tables
+represent the total signal power of the satellite per channel not e.g.
+pilot and data channels separately.</p>
+<p>NOTE 3: For test cases which involve "BDS", D1 represents MEO/IGSO
+satellites for B1I and B3I signal types and D2 represents GEO satellites
+for B1I and B3I signal type.</p>
+<p>NOTE 4: For test cases which involve "BDS", D<sub>MEO</sub>
+represents MEO satellites for B1C and B2a signal types and
+D<sub>IGSO</sub> represents IGSO satellites for B1C and B2a signal
+type.</p>
+<p>NOTE 5: For test cases involving NavIC all satellites are either GEO
+or IGSO as per ICD [24]</p>
+<h1
+id="a-gnss-minimum-performance-requirements-ue-supports-a-gps-l1-ca-only">5
+A-GNSS minimum performance requirements (UE supports A-GPS L1 C/A
+only)</h1>
+<h2 id="introduction-1">5.0 Introduction</h2>
+<p>The minimum performance requirements specified in clause 5 apply for
+UEs that support A-GPS L1 C/A only. The requirements for UEs that
+support other or additional A-GNSSs are specified in clause 6.</p>
+<p>The A-GNSS minimum performance requirements are defined by assuming
+that all relevant and valid assistance data is received by the UE in
+order to perform GPS L1 C/A measurements and/or position calculation.
+This clause does not include nor consider delays occurring in the
+various signalling interfaces of the network.</p>
+<p>In the following clauses the minimum performance requirements are
+based on availability of the assistance data information and messages
+defined in annexes D and E.</p>
+<h2 id="sensitivity">5.1 Sensitivity</h2>
+<p>A sensitivity requirement is essential for verifying the performance
+of A-GNSS receiver in weak satellite signal conditions. In order to test
+the most stringent signal levels for the satellites the sensitivity test
+case is performed in AWGN channel. This test case verifies the
+performance of the first position estimate, when the UE is provided with
+only coarse time assistance and when it is additionally supplied with
+fine time assistance.</p>
+<h3 id="coarse-time-assistance">5.1.1 Coarse time assistance</h3>
+<p>In this test case 8 satellites are generated for the terminal. AWGN
+channel model is used.</p>
+<p>Table 5.1.1-1: Test parameters</p>
+<table>
+<colgroup>
+<col style="width: 51%" />
+<col style="width: 14%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of generated satellites</td>
+<td>-</td>
+<td>8</td>
+</tr>
+<tr>
+<td>HDOP Range</td>
+<td>-</td>
+<td>1.1 to 1.6</td>
+</tr>
+<tr>
+<td>Propagation conditions</td>
+<td>-</td>
+<td>AWGN</td>
+</tr>
+<tr>
+<td>GNSS Coarse time assistance error range</td>
+<td>seconds</td>
+<td>±2</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Signal for one satellite</td>
+<td>dBm</td>
+<td>-142</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Signal for remaining satellites</td>
+<td>dBm</td>
+<td>-147</td>
+</tr>
+</tbody>
+</table>
+<h4 id="minimum-requirements-coarse-time-assistance">5.1.1.1 Minimum
+requirements (Coarse time assistance)</h4>
+<p>The position estimates shall meet the accuracy and response time
+specified in Table 5.1.1.1-1.</p>
+<p>Table 5.1.1.1-1: Minimum requirements (coarse time assistance)</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 31%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr>
+<th>Success rate</th>
+<th>2-D position error</th>
+<th>Max response time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>95 %</td>
+<td>100 m</td>
+<td>20 s</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fine-time-assistance">5.1.2 Fine time assistance</h3>
+<p>This requirement is only valid for fine time assistance capable UEs.
+In this requirement 8 satellites are generated for the terminal. AWGN
+channel model is used.</p>
+<p>Table 5.1.2-1: Test parameters for fine time assistance capable
+terminals</p>
+<table>
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 14%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of generated satellites</td>
+<td>-</td>
+<td>8</td>
+</tr>
+<tr>
+<td>HDOP Range</td>
+<td>-</td>
+<td>1.1 to 1.6</td>
+</tr>
+<tr>
+<td>Propagation conditions</td>
+<td>-</td>
+<td>AWGN</td>
+</tr>
+<tr>
+<td>GNSS Coarse time assistance error range</td>
+<td>seconds</td>
+<td>±2</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Fine time assistance error range</td>
+<td>μs</td>
+<td>±10</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Signal for all satellites</td>
+<td>dBm</td>
+<td>-147</td>
+</tr>
+</tbody>
+</table>
+<h4 id="minimum-requirements-fine-time-assistance">5.1.2.1 Minimum
+requirements (Fine time assistance)</h4>
+<p>The position estimates shall meet the accuracy and response time
+requirements in Table 5.1.2.1-1.</p>
+<p>Table 5.1.2.1-1: Minimum requirements for fine time assistance
+capable terminals</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 27%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th>Success rate</th>
+<th>2-D position error</th>
+<th>Max response time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>95 %</td>
+<td>100 m</td>
+<td>20 s</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nominal-accuracy">5.2 Nominal accuracy</h2>
+<p>Nominal accuracy requirement verifies the accuracy of A-GNSS position
+estimate in ideal conditions. The primarily aim of the test is to ensure
+good accuracy for a position estimate when satellite signal conditions
+allow it. This test case verifies the performance of the first position
+estimate.</p>
+<p>In this requirement 8 satellites are generated for the terminal. AWGN
+channel model is used.</p>
+<p>Table 5.2-1: Test parameters</p>
+<table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 15%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of generated satellites</td>
+<td>-</td>
+<td>8</td>
+</tr>
+<tr>
+<td>HDOP Range</td>
+<td>-</td>
+<td>1.1 to 1.6</td>
+</tr>
+<tr>
+<td>Propagation conditions</td>
+<td>-</td>
+<td>AWGN</td>
+</tr>
+<tr>
+<td>GNSS Coarse time assistance error range</td>
+<td>seconds</td>
+<td>±2</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Signal for all satellites</td>
+<td>dBm</td>
+<td>-130</td>
+</tr>
+</tbody>
+</table>
+<h3 id="minimum-requirements-nominal-accuracy">5.2.1 Minimum
+requirements (nominal accuracy)</h3>
+<p>The position estimates shall meet the accuracy and response time
+requirements in Table 5.2.1-1.</p>
+<p>Table 5.2.1-1: Minimum requirements</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 27%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th>Success rate</th>
+<th>2-D position error</th>
+<th>Max response time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>95 %</td>
+<td>30 m</td>
+<td>20 s</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dynamic-range">5.3 Dynamic range</h2>
+<p>The aim of a dynamic range requirement is to ensure that a GNSS
+receiver performs well when visible satellites have rather different
+signal levels. Strong satellites are likely to degrade the acquisition
+of weaker satellites due to their cross‑correlation products. Hence, it
+is important in this test case to keep use AWGN in order to avoid
+loosening the requirements due to additional margin because of fading
+channels. This test case verifies the performance of the first position
+estimate.</p>
+<p>In this requirement 6 satellites are generated for the terminal. AWGN
+channel model is used.</p>
+<p>Table 5.3-1: Test parameters</p>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 15%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of generated satellites</td>
+<td>-</td>
+<td>6</td>
+</tr>
+<tr>
+<td>HDOP Range</td>
+<td>-</td>
+<td>1.4 to 2.1</td>
+</tr>
+<tr>
+<td>GNSS Coarse time assistance error range</td>
+<td>seconds</td>
+<td>±2</td>
+</tr>
+<tr>
+<td>Propagation conditions</td>
+<td>-</td>
+<td>AWGN</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Signal for 1st satellite</td>
+<td>dBm</td>
+<td>-129</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Signal for 2nd satellite</td>
+<td>dBm</td>
+<td>-135</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Signal for 3rd satellite</td>
+<td>dBm</td>
+<td>-141</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Signal for 4th satellite</td>
+<td>dBm</td>
+<td>-147</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Signal for 5th satellite</td>
+<td>dBm</td>
+<td>-147</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Signal for 6th satellite</td>
+<td>dBm</td>
+<td>-147</td>
+</tr>
+</tbody>
+</table>
+<h3 id="minimum-requirements-dynamic-range">5.3.1 Minimum requirements
+(dynamic range)</h3>
+<p>The position estimates shall meet the accuracy and response time
+requirements in Table 5.3.1-1.</p>
+<p>Table 5.3.1-1: Minimum requirements</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 27%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th>Success rate</th>
+<th>2-D position error</th>
+<th>Max response time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>95 %</td>
+<td>100 m</td>
+<td>20 s</td>
+</tr>
+</tbody>
+</table>
+<h2 id="multi-path-scenario">5.4 Multi-path scenario</h2>
+<p>The purpose of the test case is to verify the receiver's tolerance to
+multipath while keeping the test setup simple. This test case verifies
+the performance of the first position estimate.</p>
+<p>In this requirement 5 satellites are generated for the terminal. Two
+of the satellites have one tap channel representing LOS signal. The
+three other satellites have two-tap channel, where the first tap
+represents LOS signal and the second reflected and attenuated signal as
+specified in Annex C.2.</p>
+<p>Table 5.4-1: Test parameters</p>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 16%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Number of generated satellites (Satellites 1, 2 unaffected by
+multi-path)</p>
+<p>(Satellites 3, 4, 5 affected by multi-path)</p></td>
+<td>-</td>
+<td>5</td>
+</tr>
+<tr>
+<td>GNSS Coarse time assistance error range</td>
+<td>seconds</td>
+<td>±2</td>
+</tr>
+<tr>
+<td>HDOP Range</td>
+<td>-</td>
+<td>1.8 to 2.5</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Signal for satellite 1, 2</td>
+<td>dBm</td>
+<td>-130</td>
+</tr>
+<tr>
+<td>GPS L1 C/A Signal for satellite 3, 4, 5</td>
+<td>dBm</td>
+<td>LOS signal of -130 dBm, multi-path signal of -136 dBm</td>
+</tr>
+</tbody>
+</table>
+<h3 id="minimum-requirements-multi-path-scenario">5.4.1 Minimum
+requirements (multi-path scenario)</h3>
+<p>The position estimates shall meet the accuracy and response time
+requirements in Table 5.4.1-1.</p>
+<p>Table 5.4.1-1: Minimum requirements</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 27%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th>Success rate</th>
+<th>2-D position error</th>
+<th>Max response time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>95 %</td>
+<td>100 m</td>
+<td>20 s</td>
+</tr>
+</tbody>
+</table>
+<h2 id="moving-scenario-and-periodic-update">5.5 Moving scenario and
+periodic update</h2>
+<p>The purpose of the test case is to verify the receiver's capability
+to produce GNSS measurements or location fixes on a regular basis, and
+to follow when it is located in a vehicle that slows down, turns or
+accelerates. A good tracking performance is essential for certain
+location services. A moving scenario with periodic update is well suited
+for verifying the tracking capabilities of an A-GNSS receiver in
+changing UE speed and direction. In the requirement the UE moves on a
+rectangular trajectory, which imitates urban streets. AWGN channel model
+is used. This test is not performed as a TTFF test.</p>
+<p>In this requirement 5 satellites are generated for the terminal. The
+UE is requested to use periodical reporting with a reporting interval of
+2 seconds.</p>
+<p>The UE moves on a rectangular trajectory of 940 m by 1 440 m with
+rounded corner defined in Figure 5.5-1. The initial reference is first
+defined followed by acceleration to final speed of 100 km/h in 250 m.
+The UE then maintains the speed for 400 m. This is followed by
+deceleration to final speed of 25 km/h in 250 m. The UE then turn 90
+degrees with turning radius of 20 m at 25 km/h. This is followed by
+acceleration to final speed of 100 km/h in 250 m. The sequence is
+repeated to complete the rectangle.</p>
+<p>Table 5.5-1: Trajectory Parameters</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 29%" />
+<col style="width: 44%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Parameter</td>
+<td>Distance (m)</td>
+<td>Speed (km/h)</td>
+</tr>
+<tr>
+<td>l11, l15, l21, l25</td>
+<td>20</td>
+<td>25</td>
+</tr>
+<tr>
+<td>l12, l14, l22, l24</td>
+<td>250</td>
+<td>25 to 100 and 100 to 25</td>
+</tr>
+<tr>
+<td>l13</td>
+<td>400</td>
+<td>100</td>
+</tr>
+<tr>
+<td>l23</td>
+<td>900</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image6.svg"
+style="width:4.26042in;height:2.55208in" /></p>
+<p>Figure 5.5-1: Rectangular trajectory of the moving scenario and
+periodic update test case</p>
+<p>Table 5.5-2: Test Parameters</p>
+<table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 17%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of generated satellites</td>
+<td>-</td>
+<td>5</td>
+</tr>
+<tr>
+<td>HDOP Range</td>
+<td>-</td>
+<td>1.8 to 2.5</td>
+</tr>
+<tr>
+<td>Propagation condition</td>
+<td>-</td>
+<td>AWGN</td>
+</tr>
+<tr>
+<td>GPS L1 C/A signal for all satellites</td>
+<td>dBm</td>
+<td>-130</td>
+</tr>
+</tbody>
+</table>
+<h3 id="minimum-requirements-moving-scenario-and-periodic-update">5.5.1
+Minimum requirements (moving scenario and periodic update)</h3>
+<p>The position estimates shall meet the accuracy requirement of Table
+5.13 with the periodical reporting interval defined in Table 5.13 after
+the first reported position estimates.</p>
+<p>NOTE: In the actual testing the UE may report error messages until it
+is able to acquire GNSS measured results or a position estimate. The
+test equipment shall only consider the first measurement report
+different from an error message as the first position estimate in the
+requirement in Table 5.5.1-1.</p>
+<p>Table 5.5.1-1: Minimum requirements</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 27%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th>Success Rate</th>
+<th>2-D position error</th>
+<th>Periodical reporting interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>95 %</td>
+<td>100 m</td>
+<td>2 s</td>
+</tr>
+</tbody>
+</table>
+<h1
+id="a-gnss-minimum-performance-requirements-ue-supports-other-or-additional-gnsss">6
+A-GNSS minimum performance requirements (UE supports other or additional
+GNSSs)</h1>
+<h2 id="introduction-2">6.0 Introduction</h2>
+<p>The minimum performance requirements specified in clause 6 apply for
+UEs that support other A-GNSSs than GPS L1 C/A, or multiple A-GNSSs
+which may or may not include GPS L1 C/A. The requirements for UEs that
+support A-GPS L1 C/A only are specified in clause 5.</p>
+<p>The A-GNSS minimum performance requirements are defined by assuming
+that all relevant and valid assistance data is received by the UE in
+order to perform GNSS measurements and/or position calculation. This
+clause does not include nor consider delays occurring in the various
+signalling interfaces of the network.</p>
+<p>In the following clauses the minimum performance requirements are
+based on availability of the assistance data information and messages
+defined in annexes D and E.</p>
+<h2 id="sensitivity-1">6.1 Sensitivity</h2>
+<p>A sensitivity requirement is essential for verifying the performance
+of A-GNSS receiver in weak satellite signal conditions. In order to test
+the most stringent signal levels for the satellites the sensitivity test
+case is performed in AWGN channel. This test case verifies the
+performance of the first position estimate, when the UE is provided with
+only coarse time assistance and when it is additionally supplied with
+fine time assistance.</p>
+<h3 id="coarse-time-assistance-1">6.1.1 Coarse time assistance</h3>
+<p>In this test case 6 satellites are generated for the terminal for
+single constellation and dual constellation, and 7 satellites are
+generated for triple constellation. AWGN channel model is used.</p>
+<p>Table 6.1.1-1: Test parameters</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 47%" />
+<col style="width: 11%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Parameters</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="5"></td>
+<td>Number of generated satellites per system</td>
+<td>-</td>
+<td>See Table 6.1.1-2</td>
+</tr>
+<tr>
+<td>Total number of generated satellites</td>
+<td>-</td>
+<td>6 or 7<sup>(2)</sup></td>
+</tr>
+<tr>
+<td>HDOP range</td>
+<td></td>
+<td>1.4 to 2.1</td>
+</tr>
+<tr>
+<td>Propagation conditions</td>
+<td>-</td>
+<td>AWGN</td>
+</tr>
+<tr>
+<td>GNSS coarse time assistance error range</td>
+<td>seconds</td>
+<td>±2</td>
+</tr>
+<tr>
+<td rowspan="2">BDS</td>
+<td>Reference high signal power level</td>
+<td>dBm</td>
+<td>-136</td>
+</tr>
+<tr>
+<td>Reference low signal power level</td>
+<td>dBm</td>
+<td>-145</td>
+</tr>
+<tr>
+<td rowspan="2">Galileo</td>
+<td>Reference high signal power level</td>
+<td>dBm</td>
+<td>-142</td>
+</tr>
+<tr>
+<td>Reference low signal power level</td>
+<td>dBm</td>
+<td>-147</td>
+</tr>
+<tr>
+<td rowspan="2">GLONASS</td>
+<td>Reference high signal power level</td>
+<td>dBm</td>
+<td>-142</td>
+</tr>
+<tr>
+<td>Reference low signal power level</td>
+<td>dBm</td>
+<td>-147</td>
+</tr>
+<tr>
+<td rowspan="2">GPS<sup>(1)</sup></td>
+<td>Reference high signal power level</td>
+<td>dBm</td>
+<td>-142</td>
+</tr>
+<tr>
+<td>Reference low signal power level</td>
+<td>dBm</td>
+<td>-147</td>
+</tr>
+<tr>
+<td colspan="4"><p>NOTE 1: "GPS" here means GPS L1 C/A, Modernized GPS,
+or both, dependent on UE capabilities.</p>
+<p>NOTE 2: 7 satellites apply only for case of triple
+constellation.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.1.1-2: Power level and satellite allocation</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 24%" />
+<col style="width: 17%" />
+<col style="width: 16%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" rowspan="2"></th>
+<th colspan="3">Satellite allocation for each constellation</th>
+</tr>
+<tr>
+<th>GNSS-1<sup>(1)</sup></th>
+<th>GNSS-2</th>
+<th>GNSS-3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Single constellation</td>
+<td>High signal level</td>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Low signal level</td>
+<td>5</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="2">Dual constellation</td>
+<td>High signal level</td>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Low signal level</td>
+<td>2</td>
+<td>3</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="2">Triple constellation</td>
+<td>High signal level</td>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Low signal level</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td colspan="5">Note 1: GNSS-1, i.e. the system having the satellite
+with high signal level, shall be selected by the device
+manufacturer.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="minimum-requirements-coarse-time-assistance-1">6.1.1.1 Minimum
+requirements (Coarse time assistance)</h4>
+<p>The position estimates shall meet the accuracy and response time
+specified in Table 6.1.1.1-1.</p>
+<p>Table 6.1.1.1-1: Minimum requirements (coarse time assistance)</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 26%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Success rate</th>
+<th>2-D position error</th>
+<th>Max response time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All</td>
+<td>95 %</td>
+<td>100 m</td>
+<td>20 s</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fine-time-assistance-1">6.1.2 Fine time assistance</h3>
+<p>This requirement is only valid for fine time assistance capable UEs.
+In this requirement 6 satellites are generated for the terminal for
+single constellation and dual constellation, and 7 satellites are
+generated for triple constellation. AWGN channel model is used.</p>
+<p>Table 6.1.2-1: Test parameters</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 47%" />
+<col style="width: 11%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Parameters</th>
+<th style="text-align: center;">Unit</th>
+<th style="text-align: center;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="6"></td>
+<td>Number of generated satellites per system</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">See Table 6.1.2-2</td>
+</tr>
+<tr>
+<td>Total number of generated satellites</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6 or 7<sup>(2)</sup></td>
+</tr>
+<tr>
+<td>HDOP range</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1.4 to 2.1</td>
+</tr>
+<tr>
+<td>Propagation conditions</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">AWGN</td>
+</tr>
+<tr>
+<td>GNSS coarse time assistance error range</td>
+<td style="text-align: center;">seconds</td>
+<td style="text-align: center;">±2</td>
+</tr>
+<tr>
+<td>GNSS fine time assistance error range</td>
+<td style="text-align: center;">μs</td>
+<td style="text-align: center;">±10</td>
+</tr>
+<tr>
+<td>BDS</td>
+<td>Reference signal power level</td>
+<td style="text-align: center;">dBm</td>
+<td style="text-align: center;">-147</td>
+</tr>
+<tr>
+<td>Galileo</td>
+<td>Reference signal power level</td>
+<td style="text-align: center;">dBm</td>
+<td style="text-align: center;">-147</td>
+</tr>
+<tr>
+<td>GLONASS</td>
+<td>Reference signal power level</td>
+<td style="text-align: center;">dBm</td>
+<td style="text-align: center;">-147</td>
+</tr>
+<tr>
+<td>GPS<sup>(1)</sup></td>
+<td>Reference signal power level</td>
+<td style="text-align: center;">dBm</td>
+<td style="text-align: center;">-147</td>
+</tr>
+<tr>
+<td colspan="4"><p>NOTE 1: "GPS" here means GPS L1 C/A, Modernized GPS,
+or both, dependent on UE capabilities.</p>
+<p>NOTE 2: 7 satellites apply only for case of triple
+constellation.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.1.2-2: Satellite allocation</p>
+<table>
+<colgroup>
+<col style="width: 51%" />
+<col style="width: 17%" />
+<col style="width: 16%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2"></th>
+<th colspan="3">Satellite allocation for each constellation</th>
+</tr>
+<tr>
+<th>GNSS-1</th>
+<th>GNSS-2</th>
+<th>GNSS-3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single constellation</td>
+<td>6</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Dual constellation</td>
+<td>3</td>
+<td>3</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Triple constellation</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h4 id="minimum-requirements-fine-time-assistance-1">6.1.2.1 Minimum
+requirements (Fine time assistance)</h4>
+<p>The position estimates shall meet the accuracy and response time
+requirements in Table 6.1.2.1-1.</p>
+<p>Table 6.1.2.1-1: Minimum requirements for fine time assistance
+capable terminals</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 26%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Success rate</th>
+<th>2-D position error</th>
+<th>Max response time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All</td>
+<td>95 %</td>
+<td>100 m</td>
+<td>20 s</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nominal-accuracy-1">6.2 Nominal accuracy</h2>
+<p>Nominal accuracy requirement verifies the accuracy of A-GNSS position
+estimate in ideal conditions. The primarily aim of the test is to ensure
+good accuracy for a position estimate when satellite signal conditions
+allow it. This test case verifies the performance of the first position
+estimate.</p>
+<p>In this requirement 6 satellites are generated for the terminal for
+single constellation and dual constellation, and 7 satellites are
+generated for triple constellation. If SBAS is to be tested one
+additional satellite shall be generated. AWGN channel model is used. The
+number of simulated satellites for each constellation is as defined in
+Table 6.2-2.</p>
+<p>Table 6.2-1: Test parameters</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 47%" />
+<col style="width: 14%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Parameters</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="5"></td>
+<td>Number of generated satellites per system</td>
+<td>-</td>
+<td>See Table 6.2-2</td>
+</tr>
+<tr>
+<td>Total number of generated satellites</td>
+<td>-</td>
+<td>6 or 7<sup>(2)</sup> or 8<sup>(3)</sup></td>
+</tr>
+<tr>
+<td>HDOP Range</td>
+<td>-</td>
+<td>1.4 to 2.1</td>
+</tr>
+<tr>
+<td>Propagation conditions</td>
+<td>-</td>
+<td>AWGN</td>
+</tr>
+<tr>
+<td>GNSS coarse time assistance error range</td>
+<td>seconds</td>
+<td>±2</td>
+</tr>
+<tr>
+<td>BDS</td>
+<td>Reference signal power level for all satellites</td>
+<td>dBm</td>
+<td>-133</td>
+</tr>
+<tr>
+<td>Galileo</td>
+<td>Reference signal power level for all satellites</td>
+<td>dBm</td>
+<td>-127</td>
+</tr>
+<tr>
+<td>GLONASS</td>
+<td>Reference signal power level for all satellites</td>
+<td>dBm</td>
+<td>-131</td>
+</tr>
+<tr>
+<td>GPS<sup>(1)</sup></td>
+<td>Reference signal power level for all satellites</td>
+<td>dBm</td>
+<td>-128.5</td>
+</tr>
+<tr>
+<td>QZSS</td>
+<td>Reference signal power level for all satellites</td>
+<td>dBm</td>
+<td>-128.5</td>
+</tr>
+<tr>
+<td>SBAS</td>
+<td>Reference signal power level for all satellites</td>
+<td>dBm</td>
+<td>-131</td>
+</tr>
+<tr>
+<td>NavIC</td>
+<td>Reference signal power level for all satellites</td>
+<td>dBm</td>
+<td>-129</td>
+</tr>
+<tr>
+<td colspan="4"><p>NOTE 1: "GPS" here means GPS L1 C/A, Modernized GPS,
+or both, dependent on UE capabilities.</p>
+<p>NOTE 2: 7 satellites apply for case of single or dual constellation
+and SBAS or NavIC is supported or case of triple constellation and SBAS
+or NavIC is not supported.</p>
+<p>NOTE 3: 8 satellites apply only for case of triple constellation and
+SBAS is supported.</p></td>
+</tr>
+</tbody>
+</table>
+<p>If QZSS is supported, one of the GPS satellites will be replaced by a
+QZSS satellite with respective signal support. If SBAS is supported, the
+SBAS satellite with the highest elevation will be added to the scenario.
+If NavIC is supported, the NavIC satellite with the highest elevation
+will be added to the scenario.</p>
+<p>Table 6.2-2: Satellite allocation</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 14%" />
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2"></th>
+<th colspan="5">Satellite allocation for each constellation</th>
+</tr>
+<tr>
+<th>GNSS 1<sup>(1)</sup></th>
+<th>GNSS 2<sup>(1)</sup></th>
+<th>GNSS 3<sup>(1)</sup></th>
+<th>SBAS</th>
+<th>NavIC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single constellation</td>
+<td>6</td>
+<td>--</td>
+<td>--</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Dual constellation</td>
+<td>3</td>
+<td>3</td>
+<td>--</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Triple constellation</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td colspan="6">NOTE 1: GNSS refers to global systems i.e. BDS, Galileo,
+GLONASS, GPS.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="minimum-requirements-nominal-accuracy-1">6.2.1 Minimum
+requirements (nominal accuracy)</h3>
+<p>The position estimates shall meet the accuracy and response time
+requirements in Table 6.2.1-1.</p>
+<p>Table 6.2.1-1: Minimum requirements</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 26%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Success rate</th>
+<th>2-D position error</th>
+<th>Max response time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All</td>
+<td>95 %</td>
+<td>15 m</td>
+<td>20 s</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dynamic-range-1">6.3 Dynamic range</h2>
+<p>The aim of a dynamic range requirement is to ensure that a GNSS
+receiver performs well when visible satellites have rather different
+signal levels. Strong satellites are likely to degrade the acquisition
+of weaker satellites due to their cross‑correlation products. Hence, it
+is important in this test case to keep use AWGN in order to avoid
+loosening the requirements due to additional margin because of fading
+channels. This test case verifies the performance of the first position
+estimate.</p>
+<p>In this requirement 6 satellites are generated for the terminal for
+single constellation and dual constellation, and 7 satellites are
+generated for triple constellation. Two different reference power
+levels, denoted as "high" and "low" are used for each GNSS. The
+allocation of "high" and "low" power level satellites depends on the
+number of supported GNSSs and it is defined in Table 6.3-2. AWGN channel
+model is used.</p>
+<p>Table 6.3-1: Test parameters</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 51%" />
+<col style="width: 12%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Parameters</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="5"></td>
+<td>Number of generated satellites per system</td>
+<td>-</td>
+<td>See Table 6.3-2</td>
+</tr>
+<tr>
+<td>Total number of generated satellites</td>
+<td>-</td>
+<td>6 or 7<sup>(2)</sup></td>
+</tr>
+<tr>
+<td>HDOP Range</td>
+<td>-</td>
+<td>1.4 to 2.1</td>
+</tr>
+<tr>
+<td>Propagation conditions</td>
+<td>-</td>
+<td>AWGN</td>
+</tr>
+<tr>
+<td>GNSS coarse time assistance error range</td>
+<td>seconds</td>
+<td>±2</td>
+</tr>
+<tr>
+<td rowspan="2">BDS</td>
+<td>Reference high signal power level</td>
+<td>dBm</td>
+<td>-133.5</td>
+</tr>
+<tr>
+<td>Reference low signal power level</td>
+<td>dBm</td>
+<td>-145</td>
+</tr>
+<tr>
+<td rowspan="2">Galileo</td>
+<td>Reference high signal power level</td>
+<td>dBm</td>
+<td>-127.5</td>
+</tr>
+<tr>
+<td>Reference low signal power level</td>
+<td>dBm</td>
+<td>-147</td>
+</tr>
+<tr>
+<td rowspan="2">GLONASS</td>
+<td>Reference high signal power level</td>
+<td>dBm</td>
+<td>-131.5</td>
+</tr>
+<tr>
+<td>Reference low signal power level</td>
+<td>dBm</td>
+<td>-147</td>
+</tr>
+<tr>
+<td rowspan="2">GPS<sup>(1)</sup></td>
+<td>Reference high signal power level</td>
+<td>dBm</td>
+<td>-129</td>
+</tr>
+<tr>
+<td>Reference low signal power level</td>
+<td>dBm</td>
+<td>-147</td>
+</tr>
+<tr>
+<td colspan="4"><p>NOTE 1: "GPS" here means GPS L1 C/A, Modernized GPS,
+or both, dependent on UE capabilities.</p>
+<p>NOTE 2: 7 satellites apply only for case of triple
+constellation.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.3-2: Power level and satellite allocation</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 21%" />
+<col style="width: 18%" />
+<col style="width: 16%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" rowspan="2"></th>
+<th colspan="3">Satellite allocation for each constellation</th>
+</tr>
+<tr>
+<th>GNSS 1<sup>(1)</sup></th>
+<th>GNSS 2<sup>(1)</sup></th>
+<th>GNSS 3<sup>(1)</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Single constellation</td>
+<td>High signal level</td>
+<td>2</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Low signal level</td>
+<td>4</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td rowspan="2">Dual constellation</td>
+<td>High signal level</td>
+<td>1</td>
+<td>1</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Low signal level</td>
+<td>2</td>
+<td>2</td>
+<td>--</td>
+</tr>
+<tr>
+<td rowspan="2">Triple constellation</td>
+<td>High signal level</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Low signal level</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td colspan="5">NOTE 1: GNSS refers to global systems i.e. BDS, Galileo,
+GLONASS, GPS.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="minimum-requirements-dynamic-range-1">6.3.1 Minimum requirements
+(dynamic range)</h3>
+<p>The position estimates shall meet the accuracy and response time
+requirements in Table 6.3.1-1.</p>
+<p>Table 6.3.1-1: Minimum requirements</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 26%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Success rate</th>
+<th>2-D position error</th>
+<th>Max response time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All</td>
+<td>95 %</td>
+<td>100 m</td>
+<td>20 s</td>
+</tr>
+</tbody>
+</table>
+<h2 id="multi-path-scenario-1">6.4 Multi-path scenario</h2>
+<p>The purpose of the test case is to verify the receiver's tolerance to
+multipath while keeping the test setup simple. This test case verifies
+the performance of the first position estimate.</p>
+<p>In this requirement 6 satellites are generated for the terminal for
+single constellation and dual constellation, and 7 satellites are
+generated for triple constellation. Some of the satellites have a one
+tap channel representing the LOS signal. The other satellites have a
+two-tap channel, where the first tap represents the LOS signal and the
+second represents a reflected and attenuated signal as specified in
+Annex C.2. The number of satellites generated for each GNSS as well as
+the channel model used depends on the number of systems supported by the
+UE and is defined in Table 6.4-2. The channel model as specified in
+Annex C.2 further depends on the generated signal.</p>
+<p>Table 6.4-1: Test parameter</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 47%" />
+<col style="width: 11%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Parameters</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="5"></td>
+<td>Number of generated satellites per system</td>
+<td>-</td>
+<td>See Table 6.14</td>
+</tr>
+<tr>
+<td>Total number of generated satellites</td>
+<td>-</td>
+<td>6 or 7<sup>(2)</sup></td>
+</tr>
+<tr>
+<td>HDOP range</td>
+<td></td>
+<td>1.4 to 2.1</td>
+</tr>
+<tr>
+<td>Propagation conditions</td>
+<td>-</td>
+<td>AWGN</td>
+</tr>
+<tr>
+<td>GNSS coarse time assistance error range</td>
+<td>seconds</td>
+<td>±2</td>
+</tr>
+<tr>
+<td>BDS</td>
+<td>Reference signal power level</td>
+<td>dBm</td>
+<td>-133</td>
+</tr>
+<tr>
+<td>Galileo</td>
+<td>Reference signal power level</td>
+<td>dBm</td>
+<td>-127</td>
+</tr>
+<tr>
+<td>GLONASS</td>
+<td>Reference signal power level</td>
+<td>dBm</td>
+<td>-131</td>
+</tr>
+<tr>
+<td>GPS<sup>(1)</sup></td>
+<td>Reference signal power level</td>
+<td>dBm</td>
+<td>-128.5</td>
+</tr>
+<tr>
+<td colspan="4"><p>NOTE 1: "GPS" here means GPS L1 C/A, Modernized GPS,
+or both, dependent on UE capabilities.</p>
+<p>NOTE 2: 7 satellites apply only for case of triple
+constellation.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.4-2: Channel model allocation</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 24%" />
+<col style="width: 17%" />
+<col style="width: 16%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" rowspan="2"></th>
+<th colspan="3">Channel model allocation for each constellation</th>
+</tr>
+<tr>
+<th>GNSS-1</th>
+<th>GNSS-2</th>
+<th>GNSS-3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Single constellation</td>
+<td>One-tap channel</td>
+<td>2</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Two-tap channel</td>
+<td>4</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td rowspan="2">Dual constellation</td>
+<td>One-tap channel</td>
+<td>1</td>
+<td>1</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Two-tap channel</td>
+<td>2</td>
+<td>2</td>
+<td>--</td>
+</tr>
+<tr>
+<td rowspan="2">Triple constellation</td>
+<td>One-tap channel</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Two-tap channel</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="minimum-requirements-multi-path-scenario-1">6.4.1 Minimum
+requirements (multi-path scenario)</h3>
+<p>The position estimates shall meet the accuracy and response time
+requirements in Table 6.4.1-1.</p>
+<p>Table 6.4.1-1: Minimum requirements</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 26%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Success rate</th>
+<th>2-D position error</th>
+<th>Max response time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All</td>
+<td>95 %</td>
+<td>100 m</td>
+<td>20 s</td>
+</tr>
+</tbody>
+</table>
+<h2 id="moving-scenario-and-periodic-update-1">6.5 Moving scenario and
+periodic update</h2>
+<p>The purpose of the test case is to verify the receiver's capability
+to produce GNSS measurements or location fixes on a regular basis, and
+to follow when it is located in a vehicle that slows down, turns or
+accelerates. A good tracking performance is essential for certain
+location services. A moving scenario with periodic update is well suited
+for verifying the tracking capabilities of an A-GNSS receiver in
+changing UE speed and direction. In the requirement the UE moves on a
+rectangular trajectory, which imitates urban streets. AWGN channel model
+is used. This test is not performed as a TTFF test.</p>
+<p>In this requirement 6 satellites are generated for the terminal for
+single constellation and dual constellation, and 7 satellites are
+generated for triple constellation. The UE is requested to use
+periodical reporting with a reporting interval of 2 seconds.</p>
+<p>The UE moves on a rectangular trajectory of 940 m by 1 440 m with
+rounded corner defined in Figure 6.1. The initial reference is first
+defined followed by acceleration to final speed of 100 km/h in 250 m.
+The UE then maintains the speed for 400 m. This is followed by
+deceleration to final speed of 25 km/h in 250 m. The UE then turn 90
+degrees with turning radius of 20 m at 25 km/h. This is followed by
+acceleration to final speed of 100 km/h in 250 m. The sequence is
+repeated to complete the rectangle.</p>
+<p>Table 6.5-1: Trajectory Parameters</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 29%" />
+<col style="width: 44%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Parameter</td>
+<td>Distance (m)</td>
+<td>Speed (km/h)</td>
+</tr>
+<tr>
+<td>l11, l15, l21, l25</td>
+<td>20</td>
+<td>25</td>
+</tr>
+<tr>
+<td>l12, l14, l22, l24</td>
+<td>250</td>
+<td>25 to 100 and 100 to 25</td>
+</tr>
+<tr>
+<td>l13</td>
+<td>400</td>
+<td>100</td>
+</tr>
+<tr>
+<td>l23</td>
+<td>900</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image6.svg"
+style="width:4.26042in;height:2.55208in" /></p>
+<p>Figure 6.5-1: Rectangular trajectory of the moving scenario and
+periodic update test case</p>
+<p>Table 6.5-2: Test Parameters</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 52%" />
+<col style="width: 12%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Parameters</th>
+<th>Unit</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="5"></td>
+<td>Number of generated satellites per system</td>
+<td>-</td>
+<td>See Table 6.18</td>
+</tr>
+<tr>
+<td>Total number of generated satellites</td>
+<td>-</td>
+<td>6 or 7<sup>(2)</sup></td>
+</tr>
+<tr>
+<td>HDOP Range per system</td>
+<td>-</td>
+<td>1.4 to 2.1</td>
+</tr>
+<tr>
+<td>Propagation conditions</td>
+<td>-</td>
+<td>AWGN</td>
+</tr>
+<tr>
+<td>GNSS coarse time assistance error range</td>
+<td>seconds</td>
+<td>±2</td>
+</tr>
+<tr>
+<td>BDS</td>
+<td>Reference signal power level for all satellites</td>
+<td>dBm</td>
+<td>-133</td>
+</tr>
+<tr>
+<td>Galileo</td>
+<td>Reference signal power level for all satellites</td>
+<td>dBm</td>
+<td>-127</td>
+</tr>
+<tr>
+<td>GLONASS</td>
+<td>Reference signal power level for all satellites</td>
+<td>dBm</td>
+<td>-131</td>
+</tr>
+<tr>
+<td>GPS<sup>(1)</sup></td>
+<td>Reference signal power level for all satellites</td>
+<td>dBm</td>
+<td>-128.5</td>
+</tr>
+<tr>
+<td colspan="4"><p>NOTE 1: "GPS" here means GPS L1 C/A, Modernized GPS,
+or both, dependent on UE capabilities.</p>
+<p>NOTE 2: 7 satellites apply only for case of triple
+constellation.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 6.5-3: Satellite allocation</p>
+<table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2"></th>
+<th colspan="3">Satellite allocation for each constellation</th>
+</tr>
+<tr>
+<th>GNSS 1<sup>(1)</sup></th>
+<th>GNSS 2<sup>(1)</sup></th>
+<th>GNSS 3<sup>(1)</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single constellation</td>
+<td>6</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Dual constellation</td>
+<td>3</td>
+<td>3</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Triple constellation</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td colspan="4">NOTE 1: GNSS refers to global systems i.e. BDS, Galileo,
+GLONASS, GPS.</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="minimum-requirements-moving-scenario-and-periodic-update-1">6.5.1
+Minimum requirements (moving scenario and periodic update)</h3>
+<p>The position estimates shall meet the accuracy requirement of Table
+6.5.1-1 with the periodical reporting interval defined in Table 6.5.1-1
+after the first reported position estimates.</p>
+<p>NOTE: In the actual testing the UE may report error messages until it
+is able to acquire GNSS measured results or a position estimate. The
+test equipment shall only consider the first measurement report
+different from an error message as the first position estimate in the
+requirement in Table 6.5.1-1.</p>
+<p>Table 6.5.1-1: Minimum requirements</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 26%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Success rate</th>
+<th>2-D position error</th>
+<th>Periodical reporting interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All</td>
+<td>95 %</td>
+<td>50 m</td>
+<td>2 s</td>
+</tr>
+</tbody>
+</table>
+<p class="heading" id="annex-a-normative-test-cases"><br />
+Annex A (normative):<br />
+Test cases</p>
+<h1 id="a.1-conformance-tests">A.1 Conformance tests</h1>
+<p>The conformance tests for E-UTRA A-GNSS specified in TS 37.571-1
+[19]. Statistical interpretation of the requirements is described in
+clause A.2.</p>
+<h1 id="a.2-requirement-classification-for-statistical-testing">A.2
+Requirement classification for statistical testing</h1>
+<p>Requirements in the present document are either expressed as absolute
+requirements with a single value stating the requirement, or expressed
+as a success rate. There are no provisions for the statistical
+variations that will occur when the parameter is tested.</p>
+<p>Annex B lists the test parameters needed for the tests. The test will
+result in an outcome of a test variable value for the DUT inside or
+outside the test limit. Overall, the probability of a "good" DUT being
+inside the test limit(s) and the probability of a "bad" DUT being
+outside the test limit(s) should be as high as possible. For this
+reason, when selecting the test variable and the test limit(s), the
+statistical nature of the test is accounted for.</p>
+<p>When testing a parameter with a statistical nature, a confidence
+level has to be set. The confidence level establishes the probability
+that a DUT passing the test actually meets the requirement and
+determines how many times a test has to be repeated. The confidence
+levels are defined for the final tests in TS 37.571-1 [19].</p>
+<p class="heading" id="annex-b-normative-test-conditions"><br />
+Annex B (normative):<br />
+Test conditions</p>
+<h1 id="b.1-general">B.1 General</h1>
+<p>This annex specifies the additional parameters that are needed for
+the test cases specified in clauses 5 and 6 and applies to all tests
+unless otherwise stated.</p>
+<h2 id="b.1.1-parameter-values">B.1.1 Parameter values</h2>
+<p>Additionally, amongst all the listed parameters (see annex E), the
+following values for some important parameters are to be used in the LPP
+Request Location Information message.</p>
+<p>Table B.1: Parameter values</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 19%" />
+<col style="width: 20%" />
+<col style="width: 26%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Information element</td>
+<td>Value - TTFF tests (except nominal accuracy test)</td>
+<td>Value - TTFF tests (nominal accuracy test)</td>
+<td>Value - Periodic tests</td>
+</tr>
+<tr>
+<td>periodicalReporting</td>
+<td>Not present</td>
+<td>Not present</td>
+<td>Present</td>
+</tr>
+<tr>
+<td>&gt; reportingAmount</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>'ra-Infinity' (Infinite)<sup>(1)</sup></td>
+</tr>
+<tr>
+<td>&gt; reportingInterval</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>‘ri2’ (2 seconds)</td>
+</tr>
+<tr>
+<td>qos</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; horizontalAccuracy</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt; accuracy (test cases in clause 5)</td>
+<td>19 (51.2 m)</td>
+<td>10 (15.9 m)</td>
+<td>19 (51.2 m)</td>
+</tr>
+<tr>
+<td>&gt;&gt; accuracy (test cases in clause 6)</td>
+<td>19 (51.2 m)</td>
+<td>6 (7.7 m)</td>
+<td>13 (24.5 m)</td>
+</tr>
+<tr>
+<td>&gt; responseTime</td>
+<td>20 (seconds)</td>
+<td>20 (seconds)</td>
+<td>Not present</td>
+</tr>
+<tr>
+<td colspan="4">NOTE 1: Infinite means during the complete test
+time.</td>
+</tr>
+</tbody>
+</table>
+<p>In the Sensitivity test case with Fine Time Assistance, the following
+parameter values are used in the LPP Provide Assistance Data
+message.</p>
+<p>Table B.2: Parameters for Fine Time Assistance test</p>
+<table>
+<colgroup>
+<col style="width: 61%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr>
+<th>Information element</th>
+<th>Value</th>
+</tr>
+<tr>
+<th>GNSS-ReferenceTimeForOneCell</th>
+<th></th>
+</tr>
+<tr>
+<th>&gt; networkTime</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&gt;&gt; frameDrift</td>
+<td>0</td>
+</tr>
+<tr>
+<td>&gt; referenceTimeUnc</td>
+<td>24 (11.11 μs)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="b.1.2-time-assistance">B.1.2 Time assistance</h2>
+<p>For every Test Instance in each TTFF test case, the IE
+<em>gnss-TimeOfDay</em> shall have a random offset, relative to GNSS
+system time, within the error range of Coarse Time Assistance defined in
+the test case. This offset value shall have a uniform random
+distribution.</p>
+<p>In addition, for every Fine Time Assistance Test Instance the IE
+<em>networkTime</em> shall have a random offset, relative to the true
+value of the relationship between the two time references, within the
+error range of Fine Time Assistance defined in the test case. This
+offset value shall have a uniform random distribution.</p>
+<p>For the Moving Scenario and Periodic Update Test Case the IE
+<em>gnss-TimeOfDay</em> shall be set to the nominal value.</p>
+<h2 id="b.1.3-gnss-reference-time">B.1.3 GNSS reference time</h2>
+<p>For every Test Instance in each TTFF test case, the GNSS reference
+time shall be advanced so that, at the time the fix is made, it is at
+least 2 minutes later than the previous fix.</p>
+<h2 id="b.1.4-reference-and-ue-locations">B.1.4 Reference and UE
+locations</h2>
+<p>There is no limitation on the selection of the reference location,
+consistent with achieving the required HDOP for the Test Case. For each
+test instance the reference location shall change sufficiently such that
+the UE shall have to use the new assistance data. The uncertainty of the
+semi-major axis is 3 km. The uncertainty of the semi-minor axis is 3 km.
+The orientation of major axis is 0 degrees. The uncertainty of the
+altitude information is 500 m. The confidence factor is 68 %.</p>
+<p>For every Test Instance in each TTFF test case, the UE location shall
+be randomly selected to be within 3 km of the Reference Location. The
+Altitude of the UE shall be randomly selected between 0 m to 500 m above
+WGS‑84 reference ellipsoid. These values shall have uniform random
+distributions.</p>
+<p>For test cases which include satellites from regional systems, such
+as QZSS, NavIC and SBAS, the reference location shall be selected within
+the defined coverage area of the systems.</p>
+<h2 id="b.1.5-satellite-constellation-and-assistance-data">B.1.5
+Satellite constellation and assistance data</h2>
+<h3 id="b.1.5.1-ue-supports-a-gps-l1-ca-only">B.1.5.1 UE supports A-GPS
+L1 C/A only</h3>
+<p>In the case of test cases in clause 5 (UE supports A-GPS L1 C/A
+only), the GPS satellite constellation shall consist of 24 satellites.
+Almanac assistance data shall be available for all these 24 satellites.
+At least 9 of the satellites shall be visible to the UE (that is above 5
+degrees elevation with respect to the UE). Other assistance data shall
+be available for 9 of these visible satellites. In each test, signals
+are generated for only a sub-set of these satellites for which other
+assistance data is available. The number of satellites in this sub-set
+is specified in the test. The satellites in this sub-set shall all be
+above 15 degrees elevation with respect to the UE. The HDOP for the test
+shall be calculated using this sub-set of satellites. The selection
+of satellites for this sub-set shall be selected consistent with
+achieving the required HDOP for the test.</p>
+<h3 id="b.1.5.2-ue-supports-other-a-gnsss">B.1.5.2 UE supports other
+A-GNSSs</h3>
+<p>n the case of test cases in clause 6 (UE supports other GNSSs), the
+satellite constellation shall consist of 35 satellites for BDS (5 GEO,
+27 MEO, 3 IGSO); 27 satellites for Galileo; 24 satellites for GLONASS;
+27 satellites for GPS/Modernized GPS; 3 satellites for QZSS; 2
+satellites for SBAS and 7 satellites for NavIC (3GEO, 4 IGSO). Almanac
+assistance data shall be available for all these satellites. At least 7
+of the satellites per BDS, Galileo, GLONASS, GPS/Modernized GPS
+constellation shall be visible to the UE (that is, above 15 degrees
+elevation with respect to the UE). At least 1 of the satellites for QZSS
+shall be within 15 degrees of zenith; at least 1 of the satellites of
+NavIC shall be visible to the UE above 15 degrees elevation angle over
+NavIC service area. (Service area as defined in ICD [24]) and at least 1
+of the satellites for SBAS shall be visible to the UE. For BDS with
+reference location in Asia, at least 1 of the visible satellites shall
+be a GEO (above 15 degrees elevation with respect to the UE). All other
+satellite specific assistance data shall be available for all visible
+satellites. In each test, signals are generated for only 6 satellites
+for single constellation and dual constellation and 7 satellites for
+triple constellation (or one additional satellite if SBAS is included).
+The HDOP for the test shall be calculated using these satellites. The
+simulated satellites for BDS, Galileo, GLONASS GPS/Modernized GPS shall
+be selected from the visible satellites for each constellation
+consistent with achieving the required HDOP for the test. For BDS with
+reference location in Asia, 1 of the simulated satellites shall be a
+GEO. For NavIC with reference location in the NavIC service area as
+defined in [24], the simulated satellite shall be an IGSO.</p>
+<h2 id="b.1.6-atmospheric-delays">B.1.6 Atmospheric delays</h2>
+<p>Typical Ionospheric and Tropospheric delays shall be simulated, and
+the corresponding values inserted into the <em>GNSS-Ionospheric
+Model</em> IE.</p>
+<h2 id="b.1.7-e-utra-or-nr-frequency-and-frequency-error">B.1.7 E-UTRA
+or NR frequency and frequency error</h2>
+<p>In all test cases with E-UTRA frequency, the E-UTRA frequency used
+shall be the mid-range for the E-UTRA In all test cases other than
+Sensitivity in clause 5.1 with E-UTRA frequency, the E-UTRA frequency
+used shall be the mid-range for the E-UTRA operating band. The E-UTRA
+frequency with respect to the GNSS carrier frequency shall be offset by
++0.025 PPM.</p>
+<p>In all test cases other than Sensitivity in clause 5.1 with NR, the
+NR frequency used shall be as specified in TS 38.508-1 [20], clause
+4.3.1. The NR frequency with respect to the GNSS carrier frequency shall
+be offset by + 0.025 PPM.</p>
+<p>For verifying the sensitivity requirements in clause 5.1 with NR
+single carrier, the sensitivity tests shall be performed at least in
+each frequency band listed in Table B.1.7-1. The frequency bands listed
+in Table B.1.7-1 have been identified to be at high risk of generating
+interference in the GNSS bands due to mechanisms consisting of
+harmonics, cross band isolation, and receiver harmonic mixing. Other
+frequency bands may also impact GNSS sensitivity performance and thus be
+tested. For the frequency bands listed in Table B.1.7-1, the NR
+frequency and channel configuration shall be selected to ensure second
+order harmonics and other distortion will fall into the GNSS receiver
+bands as defined in clause B.1.13.2 for the particular GNSS. If the DUT
+does not support any of the frequency bands listed in Table B.1.7-1 the
+sensitivity tests in clause 5.1 can be performed in any frequency band
+supported by the DUT.</p>
+<p>Table B.1.7-1: Minimum set of NR operating bands for verifying GNSS
+sensitivity</p>
+<table>
+<colgroup>
+<col style="width: 51%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR operating bands</th>
+<th>n14</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="b.1.8-information-elements">B.1.8 Information elements</h2>
+<p>The information elements that are available to the UE in all the test
+cases are listed in annex E.</p>
+<h2 id="b.1.9-gnss-signals">B.1.9 GNSS signals</h2>
+<p>The GNSS signal is defined at the A-GNSS antenna connector of the UE.
+For UE with integral antenna only, a reference antenna with a gain of 0
+dBi is assumed.</p>
+<h2 id="b.1.10-reset-ue-positioning-stored-information-message">B.1.10
+RESET UE POSITIONING STORED INFORMATION Message</h2>
+<p>In order to ensure each Test Instance in each TTFF test is performed
+under TTFF conditions, a dedicated test message (<em>RESET UE
+POSITIONING STORED INFORMATION</em>) defined in TS 38.509 [9] clause 5.6
+shall be used.</p>
+<p>When the UE receives the '<em>RESET UE POSITIONING STORED
+INFORMATION</em>' message, with the IE <em>UE POSITIONING
+TECHNOLOGY</em> set to AGNSS it shall:</p>
+<p>- discard any internally stored GNSS reference time, reference
+location, and any other aiding data obtained or derived during the
+previous test instance (e.g. expected ranges and Doppler);</p>
+<p>- accept or request a new set of reference time or reference location
+or other required information, as in a TTFF condition;</p>
+<p>- calculate the position or perform GNSS measurements using the 'new'
+reference time or reference location or other information.</p>
+<h2 id="b.1.11-gnss-system-time-offsets">B.1.11 GNSS system time
+offsets</h2>
+<p>If more than one GNSS is used in a test, the accuracy of the
+GNSS-GNSS Time Offsets used at the SS shall be better than 3 ns.</p>
+<h2 id="b.1.12-sensors">B.1.12 Sensors</h2>
+<p>The minimum performances shall be met without the use of any data
+coming from sensors that can aid the positioning.</p>
+<h2
+id="b.1.13-en-dc-band-combinations-for-testing-a-gnss-sensitivity">B.1.13
+EN-DC band combinations for testing A-GNSS sensitivity</h2>
+<h3 id="b.1.13.1-en-dc-band-combination-groups">B.1.13.1 EN-DC band
+combination groups</h3>
+<p>For the A-GNSS sensitivity requirements in EN-DC operation mode with
+uplink assigned to E-UTRA and NR frequency bands, the requirements in
+clause 6.1 can be verified by one EN-DC band combination in each of the
+applicable Frequency Group Combination specified in Table B.1.13.1-1.
+The A-GNSS sensitivity requirements for the remaining applicable EN-DC
+band combinations in each Frequency Group Combination are considered to
+have been verified by using the one EN-DC band combination in each
+Frequency Group Combination. The Frequency Groups are defined in Table
+B.1.13.1-2.</p>
+<p>The applicable EN-DC band combinations for verifying A-GNSS
+sensitivity requirements in EN-DC operation mode are specified in clause
+B.1.13.2.</p>
+<p>Table B.1.13.1-1: EN-DC band combination groups for verifying A-GNSS
+sensitivity requirements in EN-DC operation mode</p>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th>Frequency Group Combination</th>
+<th>EN-DC Band Combinations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group VHF-VHF</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group VHF-LB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group VHF-MLB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group VHF-MB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group VHF-HB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group VHF-UHB1</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group VHF-UHB2</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group LB-VHF</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group LB-LB</td>
+<td><p>DC_5A_n12A</p>
+<p>DC_5A_n71A</p>
+<p>DC_8A_n20A</p>
+<p>DC_8A_n28A</p>
+<p>DC_12A_n5A</p>
+<p>DC_20A_n8A</p>
+<p>DC_20A_n28A</p>
+<p>DC_28A_n5A</p>
+<p>DC_28A_n8A</p>
+<p>DC_71A_n5A</p>
+<p>DC_20A_n83A</p></td>
+</tr>
+<tr>
+<td>Group LB-MLB</td>
+<td><p>DC_20A_n50A</p>
+<p>DC_20A_n51A</p>
+<p>DC_28A_n51A</p>
+<p>DC_28A_n50A</p></td>
+</tr>
+<tr>
+<td>Group LB-MB</td>
+<td><p>DC_5A_n2A</p>
+<p>DC_5A_n66A</p>
+<p>DC_8A_n1A</p>
+<p>DC_8A_n3A</p>
+<p>DC_8A_n34A</p>
+<p>DC_8A_n39A</p>
+<p>DC_12A_n2A</p>
+<p>DC_12A_n25A</p>
+<p>DC_12A_n66A</p>
+<p>DC_18A_n3A</p>
+<p>DC_20A_n1A</p>
+<p>DC_20A_n3A</p>
+<p>DC_26A_n25A</p>
+<p>DC_28A_n3A</p>
+<p>DC_71A_n66A</p>
+<p>DC_8A_n80A</p>
+<p>DC_20A_n80A</p></td>
+</tr>
+<tr>
+<td>Group LB-HB</td>
+<td><p>DC_5A_n7A</p>
+<p>DC_5A_n38A</p>
+<p>DC_5A_n40A</p>
+<p>DC_8A_n40A</p>
+<p>DC_8A_n41A</p>
+<p>DC_12A_n7A</p>
+<p>DC_12A_n38A</p>
+<p>DC_12A_n41A</p>
+<p>DC_20A_n7A</p>
+<p>DC_20A_n38A</p>
+<p>DC_20A_n41A</p>
+<p>DC_26A_n41A</p>
+<p>DC_28A_n7A</p>
+<p>DC_28A_n40A</p>
+<p>DC_28A_n41A</p>
+<p>DC_71A_n38A</p></td>
+</tr>
+<tr>
+<td>Group LB-UHB1</td>
+<td><p>DC_5A_n48A</p>
+<p>DC_5A_n78A</p>
+<p>DC_8A_n77A</p>
+<p>DC_8A_n78A</p>
+<p>DC_12A_n78A</p>
+<p>DC_18A_n77A</p>
+<p>DC_18A_n78A</p>
+<p>DC_19A_n77A</p>
+<p>DC_19A_n78A</p>
+<p>DC_20A_n77A</p>
+<p>DC_20A_n78A</p>
+<p>DC_26A_n77A</p>
+<p>DC_26A_n78A</p>
+<p>DC_28A_n77A</p>
+<p>DC_28A_n78A</p>
+<p>DC_71A_n48A</p>
+<p>DC_71A_n78A</p></td>
+</tr>
+<tr>
+<td>Group LB-UHB2</td>
+<td><p>DC_5A_n79A</p>
+<p>DC_8A_n79A</p>
+<p>DC_18A_n79A</p>
+<p>DC_19A_n79A</p>
+<p>DC_26A_n79A</p>
+<p>DC_28A_n79A</p></td>
+</tr>
+<tr>
+<td>Group MLB-VHF</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group MLB-LB</td>
+<td>DC_11A_n28A</td>
+</tr>
+<tr>
+<td>Group MLB-MLB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group MLB-MB</td>
+<td>DC_11A_n3A</td>
+</tr>
+<tr>
+<td>Group MLB-HB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group MLB-UHB1</td>
+<td><p>DC_11A_n77A</p>
+<p>DC_11A_n78A</p>
+<p>DC_21A_n77A</p>
+<p>DC_21A_n78A</p></td>
+</tr>
+<tr>
+<td>Group MLB-UHB2</td>
+<td><p>DC_11A_n79A</p>
+<p>DC_21A_n79A</p></td>
+</tr>
+<tr>
+<td>Group MB-VHF</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group MB-LB</td>
+<td><p>DC_1A_n5A</p>
+<p>DC_1A_n8A</p>
+<p>DC_1A_n20A</p>
+<p>DC_1A_n28A</p>
+<p>DC_1A_n71A</p>
+<p>DC_2A_n5A</p>
+<p>DC_2A_n12A</p>
+<p>DC_2A_n71A</p>
+<p>DC_3A_n5A</p>
+<p>DC_3A_n8A</p>
+<p>DC_3A_n20A</p>
+<p>DC_3A_n28A</p>
+<p>DC_3A_n71A</p>
+<p>DC_66A_n5A</p>
+<p>DC_66A_n12A</p>
+<p>DC_66A_n71A</p>
+<p>DC_3A_n82A</p></td>
+</tr>
+<tr>
+<td>Group MB-MLB</td>
+<td><p>DC_1A_n50A</p>
+<p>DC_1A_n51A</p>
+<p>DC_3A_n50A</p>
+<p>DC_3A_n51A</p></td>
+</tr>
+<tr>
+<td>Group MB-MB</td>
+<td><p>DC_1A_n3A</p>
+<p>DC_2A_n66A</p>
+<p>DC_3A_n1A</p>
+<p>DC_3A_n34A</p>
+<p>DC_66A_n2A</p>
+<p>DC_66A_n25A</p>
+<p>DC_1A_n80A</p>
+<p>DC_2A_n2A2</p>
+<p>DC_66A_n66A2</p>
+<p>DC_3A_n3A2</p>
+<p>DC_3A_n84A</p></td>
+</tr>
+<tr>
+<td>Group MB-HB</td>
+<td><p>DC_1A_n7A</p>
+<p>DC_1A_n38A</p>
+<p>DC_1A_n40A</p>
+<p>DC_1A_n41A</p>
+<p>DC_2A_n7A</p>
+<p>DC_2A_n38A</p>
+<p>DC_2A_n41A</p>
+<p>DC_3A_n7A</p>
+<p>DC_3A_n38A</p>
+<p>DC_3A_n40A</p>
+<p>DC_3A_n41A</p>
+<p>DC_4A_n38A</p>
+<p>DC_4A_n41A</p>
+<p>DC_25A_n41A</p>
+<p>DC_39A_n40A</p>
+<p>DC_39A_n41A</p>
+<p>DC_66A_n7A</p>
+<p>DC_66A_n38A</p>
+<p>DC_66A_n41A</p></td>
+</tr>
+<tr>
+<td>Group MB-UHB1</td>
+<td><p>DC_1A_n77A</p>
+<p>DC_1A_n78A</p>
+<p>DC_2A_n48A</p>
+<p>DC_2A_n78A</p>
+<p>DC_3A_n77A</p>
+<p>DC_3A_n78A</p>
+<p>DC_4A_n78A</p>
+<p>DC_39A_n78A</p>
+<p>DC_66A_n48A</p>
+<p>DC_66A_n78A</p></td>
+</tr>
+<tr>
+<td>Group MB-UHB2</td>
+<td><p>DC_1A_n79A</p>
+<p>DC_3A_n79A</p>
+<p>DC_39A_n79A</p></td>
+</tr>
+<tr>
+<td>Group HB-VHF</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group HB-LB</td>
+<td><p>DC_7A_n5A</p>
+<p>DC_7A_n8A</p>
+<p>DC_7A_n20A</p>
+<p>DC_7A_n28A</p>
+<p>DC_7A_n71A</p>
+<p>DC_30A_n5A</p>
+<p>DC_41A_n28A</p></td>
+</tr>
+<tr>
+<td>Group HB-MLB</td>
+<td>DC_7A_n51A</td>
+</tr>
+<tr>
+<td>Group HB-MB</td>
+<td><p>DC_7A_n1A</p>
+<p>DC_7A_n3A</p>
+<p>DC_7A_n66A</p>
+<p>DC_30A_n2A</p>
+<p>DC_30A_n66A</p>
+<p>DC_40A_n1A</p>
+<p>DC_41A_n3A</p>
+<p>DC_7A_n80A</p>
+<p>DC_38A_n3A</p></td>
+</tr>
+<tr>
+<td>Group HB-HB</td>
+<td><p>DC_7A_n40A</p>
+<p>DC_40A_n41A</p>
+<p>DC_7A_n7A2</p>
+<p>DC_41A_n41A</p></td>
+</tr>
+<tr>
+<td>Group HB-UHB1 A<sup>(NOTE 1)</sup>:</td>
+<td><p>DC_40A_n77A</p>
+<p>DC_40A_n78A</p></td>
+</tr>
+<tr>
+<td>B<sup>(NOTE 2)</sup>:</td>
+<td><p>DC_7A_n78A</p>
+<p>DC_38A_n78A</p>
+<p>DC_41A_n78A</p></td>
+</tr>
+<tr>
+<td>C<sup>(NOTE 3)</sup>:</td>
+<td><p>DC_7A_n77A</p>
+<p>DC_41A_n77A</p></td>
+</tr>
+<tr>
+<td>Group HB-UHB2</td>
+<td><p>DC_40A_n79A</p>
+<p>DC_41A_n79A</p></td>
+</tr>
+<tr>
+<td>Group UHB1-VHF</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB1-LB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB1-MLB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB1-MB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB1-HB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB1-UHB1</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB1-UHB2</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB2-VHF</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB2-LB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB2-MLB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB2-MB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB2-HB</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB2-UHB1</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group UHB2-UHB2</td>
+<td>NA</td>
+</tr>
+<tr>
+<td colspan="2"><p>NOTE 1: This sub-group generates second order
+intermodulation products.</p>
+<p>NOTE 2: This sub-group generates third order intermodulation
+products.</p>
+<p>NOTE 3: This sub-group generates second and third order
+intermodulation products.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table B.1.13.1-2: Definition of Frequency Groups</p>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th>Frequency Group</th>
+<th>Frequency Range (MHz)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VHF</td>
+<td>400.0 – 458.0</td>
+</tr>
+<tr>
+<td>LB</td>
+<td>662.0 – 916.0</td>
+</tr>
+<tr>
+<td>MLB</td>
+<td>1426.0 – 1518.0</td>
+</tr>
+<tr>
+<td>MB</td>
+<td>1626.0 – 2025.0</td>
+</tr>
+<tr>
+<td>HB</td>
+<td>2300.0 – 2690.0</td>
+</tr>
+<tr>
+<td>UHB1</td>
+<td>3300.0 – 4201.0</td>
+</tr>
+<tr>
+<td>UHB2</td>
+<td>4400.0 – 5000.0</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="b.1.13.2-applicable-en-dc-band-combinations-for-verifying-a-gnss-sensitivity-requirements">B.1.13.2
+Applicable EN-DC band combinations for verifying A-GNSS sensitivity
+requirements</h3>
+<p>The A-GNSS sensitivity requirements in clause 6.1 when in EN-DC
+operation mode shall be verified for EN-DC band combinations that can
+generate second or third order intermodulation products falling into the
+following GNSS receiver bands for the particular GNSS (where supported
+by the UE):</p>
+<p>- GPS L1 C/A: 1574.3970 – 1576.4430 MHz</p>
+<p>- Galileo E1 / GPS L1C: 1573.3740 – 1577.4660 MHz</p>
+<p>- GLONASS G1: 1597.5515 – 1605.8860 MHz</p>
+<p>- BDS B1I: 1559.0520 – 1563.1440 MHz</p>
+<p>For each frequency group combination in Table B.1.13.2-1 only one
+EN-DC band combination needs to be tested for the supported GNSS.</p>
+<p>Table B.1.13.2-1: EN-DC band combinations for verifying A-GNSS
+sensitivity requirements</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 27%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Frequency Group Combination</th>
+<th colspan="3">EN-DC band combinations</th>
+</tr>
+<tr>
+<th>GPS L1 / Galileo E1</th>
+<th>GLONASS G1</th>
+<th>BDS B1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group LB-LB</td>
+<td><p>DC_20A_n28A</p>
+<p>DC_28A_n5A</p>
+<p>DC_20A_n83A</p></td>
+<td><p>DC_8A_n28A</p>
+<p>DC_20A_n28A</p>
+<p>DC_28A_n8A</p>
+<p>DC_20A_n83A</p></td>
+<td><p>DC_5A_n12A</p>
+<p>DC_12A_n5A</p>
+<p>DC_20A_n28A</p>
+<p>DC_28A_n5A</p>
+<p>DC_20A_n83A</p></td>
+</tr>
+<tr>
+<td>Group LB-MLB</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group LB-MB</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group LB-HB</td>
+<td><p>DC_5A_n40A</p>
+<p>DC_28A_n40A</p></td>
+<td><p>DC_8A_n41A</p>
+<p>DC_28A_n40A</p></td>
+<td><p>DC_5A_n40A</p>
+<p>DC_28A_n40A</p></td>
+</tr>
+<tr>
+<td>Group LB-UHB1</td>
+<td><p>DC_8A_n77A</p>
+<p>DC_8A_n78A</p>
+<p>DC_20A_n77A</p>
+<p>DC_20A_n78A</p></td>
+<td><p>DC_5A_n78A</p>
+<p>DC_8A_n77A</p>
+<p>DC_8A_n78A</p>
+<p>DC_20A_n77A</p>
+<p>DC_20A_n78A</p>
+<p>DC_26A_n77A</p>
+<p>DC_26A_n78A</p></td>
+<td><p>DC_8A_n77A</p>
+<p>DC_8A_n78A</p></td>
+</tr>
+<tr>
+<td>Group LB-UHB2</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group MLB-LB</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group MLB-MLB</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group MLB-MB</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group MLB-HB</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group MLB-UHB1</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group MLB-UHB2</td>
+<td><p>DC_11A_n79A</p>
+<p>DC_21A_n79A</p></td>
+<td><p>DC_11A_n79A</p>
+<p>DC_21A_n79A</p></td>
+<td><p>DC_11A_n79A</p>
+<p>DC_21A_n79A</p></td>
+</tr>
+<tr>
+<td>Group MB-LB</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group MB-MLB</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group MB-MB</td>
+<td><p>DC_1A_n3A</p>
+<p>DC_2A_n66A</p>
+<p>DC_3A_n1A</p>
+<p>DC_66A_n2A</p>
+<p>DC_66A_n25A</p>
+<p>DC_1A_n80A</p>
+<p>DC_3A_n84A</p></td>
+<td><p>DC_1A_n3A</p>
+<p>DC_2A_n66A</p>
+<p>DC_3A_n1A</p>
+<p>DC_66A_n2A</p>
+<p>DC_66A_n25A</p>
+<p>DC_1A_n80A</p>
+<p>DC_3A_n84A</p></td>
+<td><p>DC_1A_n3A</p>
+<p>DC_2A_n66A</p>
+<p>DC_3A_n1A</p>
+<p>DC_66A_n2A</p>
+<p>DC_66A_n25A</p>
+<p>DC_1A_n80A</p>
+<p>DC_3A_n84A</p></td>
+</tr>
+<tr>
+<td>Group MB-HB</td>
+<td>DC_1A_n40A</td>
+<td>DC_1A_n7A</td>
+<td>DC_1A_n7A</td>
+</tr>
+<tr>
+<td>Group MB-UHB1</td>
+<td><p>DC_1A_n77A</p>
+<p>DC_1A_n78A</p>
+<p>DC_2A_n78A</p>
+<p>DC_3A_n77A</p>
+<p>DC_3A_n78A</p>
+<p>DC_4A_n78A</p>
+<p>DC_39A_n78A</p>
+<p>DC_66A_n78A</p></td>
+<td><p>DC_1A_n77A</p>
+<p>DC_1A_n78A</p>
+<p>DC_2A_n78A</p>
+<p>DC_3A_n77A</p>
+<p>DC_3A_n79A</p>
+<p>DC_4A_n78A</p>
+<p>DC_39A_n78A</p>
+<p>DC_66A_n78A</p></td>
+<td><p>DC_1A_n77A</p>
+<p>DC_1A_n78A</p>
+<p>DC_2A_n78A</p>
+<p>DC_3A_n77A</p>
+<p>DC_3A_n79A</p>
+<p>DC_4A_n78A</p>
+<p>DC_39A_n78A</p>
+<p>DC_66A_n78A</p></td>
+</tr>
+<tr>
+<td>Group MB-UHB2</td>
+<td>DC_3A_n79A</td>
+<td>NA</td>
+<td>DC_3A_n79A</td>
+</tr>
+<tr>
+<td>Group HB-LB</td>
+<td>NA</td>
+<td>DC_7A_n8A</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group HB-MLB</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group HB-MB</td>
+<td>DC_40A_n1A</td>
+<td>DC_40A_n1A</td>
+<td>DC_40A_n1A</td>
+</tr>
+<tr>
+<td>Group HB-HB</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Group HB-UHB1 A:</td>
+<td>DC_40A_n77A</td>
+<td>DC_40A_n77A</td>
+<td>DC_40A_n77A</td>
+</tr>
+<tr>
+<td>B:</td>
+<td><p>DC_7A_n78A</p>
+<p>DC_38A_n78A</p>
+<p>DC_41A_n78A</p></td>
+<td><p>DC_7A_n78A</p>
+<p>DC_38A_n78A</p>
+<p>DC_41A_n78A</p></td>
+<td><p>DC_7A_n78A</p>
+<p>DC_38A_n78A</p>
+<p>DC_41A_n78A</p></td>
+</tr>
+<tr>
+<td>C:</td>
+<td><p>DC_7A_n77A</p>
+<p>DC_41A_n77A</p></td>
+<td><p>DC_7A_n77A</p>
+<p>DC_41A_n77A</p></td>
+<td><p>DC_7A_n77A</p>
+<p>DC_41A_n77A</p></td>
+</tr>
+<tr>
+<td>Group HB-UHB2</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b.1.13.3-test-frequencies-for-en-dc-band-combinations">B.1.13.3
+Test frequencies for EN-DC band combinations</h3>
+<p>For verifying the sensitivity requirements in clause 6.1 in EN-DC
+operation mode, the E-UTRA and NR frequency and channel configuration
+shall be selected to ensure the intermodulation products fall into the
+GNSS receiver bands as defined in clause B.1.13.2 for the particular
+GNSS.</p>
+<p class="heading"
+id="annex-c-normative-propagation-conditions"><strong><br />
+</strong>Annex C (normative):<br />
+Propagation conditions</p>
+<h1 id="c.1-static-propagation-conditions">C.1 Static propagation
+conditions</h1>
+<p>The propagation for the static performance measurement is an Additive
+White Gaussian Noise (AWGN) environment. No fading and multi-paths exist
+for this propagation model.</p>
+<h1 id="c.2-multi-path-case">C.2 Multi-path case</h1>
+<p>Doppler frequency difference between direct and reflected signal
+paths is applied to the carrier and code frequencies. The Carrier and
+Code Doppler frequencies of LOS and multi-path for GNSS signal are
+defined in table C.1.</p>
+<p>Table C.1: Multipath case</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 27%" />
+<col style="width: 25%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Initial relative delay<br />
+[m]</td>
+<td>Carrier Doppler frequency of tap [Hz]</td>
+<td>Code Doppler frequency of tap [Hz]</td>
+<td>Relative mean power [dB]</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Fd</td>
+<td>Fd / N</td>
+<td>0</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Fd - 0.1</td>
+<td>(Fd-0.1) /N</td>
+<td>Y</td>
+</tr>
+<tr>
+<td colspan="4">NOTE: Discrete Doppler frequency is used for each
+tap.</td>
+</tr>
+</tbody>
+</table>
+<p>Where the X and Y depends on the GNSS signal type and is shown in
+Table C.2, and N is the ratio between the transmitted carrier frequency
+of the signals and the transmitted chip rate as shown in Table C.3
+(where k in Table C.3 is the GLONASS frequency channel number).</p>
+<p>Table C.2: Parameter values</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 28%" />
+<col style="width: 20%" />
+<col style="width: 19%" />
+</colgroup>
+<tbody>
+<tr>
+<td>System</td>
+<td>Signals</td>
+<td>X [m]</td>
+<td>Y [dB]</td>
+</tr>
+<tr>
+<td rowspan="2">BDS</td>
+<td>B1I</td>
+<td>75</td>
+<td>-4.5</td>
+</tr>
+<tr>
+<td>B1C</td>
+<td>125</td>
+<td>-4.5</td>
+</tr>
+<tr>
+<td></td>
+<td>B2a</td>
+<td>15</td>
+<td>-6</td>
+</tr>
+<tr>
+<td></td>
+<td>B3I</td>
+<td>15</td>
+<td>-6</td>
+</tr>
+<tr>
+<td rowspan="3">Galileo</td>
+<td>E1</td>
+<td>125</td>
+<td>-4.5</td>
+</tr>
+<tr>
+<td>E5a</td>
+<td>15</td>
+<td>-6</td>
+</tr>
+<tr>
+<td>E5b</td>
+<td>15</td>
+<td>-6</td>
+</tr>
+<tr>
+<td rowspan="2">GLONASS</td>
+<td>G1</td>
+<td>275</td>
+<td>-12.5</td>
+</tr>
+<tr>
+<td>G2</td>
+<td>275</td>
+<td>-12.5</td>
+</tr>
+<tr>
+<td rowspan="4">GPS/Modernized GPS</td>
+<td>L1 C/A</td>
+<td>150</td>
+<td>-6</td>
+</tr>
+<tr>
+<td>L1C</td>
+<td>125</td>
+<td>-4.5</td>
+</tr>
+<tr>
+<td>L2C</td>
+<td>150</td>
+<td>-6</td>
+</tr>
+<tr>
+<td>L5</td>
+<td>15</td>
+<td>-6</td>
+</tr>
+</tbody>
+</table>
+<p>Table C.3: Ratio between carrier frequency and chip rate</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 29%" />
+<col style="width: 36%" />
+</colgroup>
+<tbody>
+<tr>
+<td>System</td>
+<td>Signals</td>
+<td>N</td>
+</tr>
+<tr>
+<td rowspan="2">BDS</td>
+<td>B1I</td>
+<td>763</td>
+</tr>
+<tr>
+<td>B1C</td>
+<td>1540</td>
+</tr>
+<tr>
+<td></td>
+<td>B2a</td>
+<td>115</td>
+</tr>
+<tr>
+<td></td>
+<td>B3I</td>
+<td>124</td>
+</tr>
+<tr>
+<td rowspan="3">Galileo</td>
+<td>E1</td>
+<td>1540</td>
+</tr>
+<tr>
+<td>E5a</td>
+<td>115</td>
+</tr>
+<tr>
+<td>E5b</td>
+<td>118</td>
+</tr>
+<tr>
+<td rowspan="2">GLONASS</td>
+<td>G1</td>
+<td>3135.03 + k ⋅ 1.10</td>
+</tr>
+<tr>
+<td>G2</td>
+<td>2438.36 + k ⋅ 0.86</td>
+</tr>
+<tr>
+<td rowspan="4">GPS/Modernized GPS</td>
+<td>L1 C/A</td>
+<td>1540</td>
+</tr>
+<tr>
+<td>L1C</td>
+<td>1540</td>
+</tr>
+<tr>
+<td>L2C</td>
+<td>1200</td>
+</tr>
+<tr>
+<td>L5</td>
+<td>115</td>
+</tr>
+</tbody>
+</table>
+<p>The initial carrier phase difference between taps shall be randomly
+selected between 0 and 2π. The initial value shall have uniform random
+distribution.</p>
+<p class="heading"
+id="annex-d-normative-measurement-sequence-chart"><br />
+Annex D (normative):<br />
+Measurement sequence chart</p>
+<h1 id="d.1-general">D.1 General</h1>
+<p>The measurement Sequence Charts that are required in all the test
+cases, are defined in this clause.</p>
+<h1 id="d.2-ttff-measurement-sequence-chart">D.2 TTFF measurement
+sequence chart</h1>
+<p>The measurement sequence chart for the TTFF test cases, for both
+UE-assisted and UE-based GNSS, is defined in this clause.</p>
+<p><img src="media/image7.svg"
+style="width:5.98958in;height:3.86458in" /></p>
+<blockquote>
+<p>(a) The SS sends a RESET UE POSITIONING STORED INFORMATION message
+with the IE <em>UE POSITIONING TECHNOLOGY</em> set to AGNSS.</p>
+<p>(b) The SS sends an LPP message of type REQUEST CAPABILITIES
+including the <em>A‑GNSS‑RequestCapabilities</em> IE set to TRUE.</p>
+<p>(c) The UE sends an LPP message of type PROVIDE CAPABILITIES
+including the <em>A‑GNSS‑ProvideCapabilities</em> IE with the
+<em>AssistanceDataSupportList</em> included, indicating the assistance
+data supported by the UE.</p>
+<p>(d) – (e) The SS provides the assistance data that are supported by
+the UE and available as defined in Annex E and Table E.1 in one or more
+LPP messages of type PROVIDE ASSISTANCE DATA.</p>
+<p>(f) The SS sends an LPP message of type REQUEST LOCATION INFORMATION
+including the information elements defined in Table D.1.</p>
+<p>(g) The UE sends an LPP message of type PROVIDE LOCATION INFORMATION
+including either the <em>GNSS‑SignalMeasurementInformation</em> or
+<em>GNSS‑LocationInformation</em> IE, dependent on the test case
+(UE-assisted or UE-based, respectively).</p>
+</blockquote>
+<p>Steps (a) to (g) are repeated for each test instance.</p>
+<p>Table D.1: LPP Request Location Information content for TTFF test
+cases.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 30%" />
+<col style="width: 19%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Information Element</td>
+<td>Value/remark</td>
+<td>Comment</td>
+</tr>
+<tr>
+<td>RequestLocationInformation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; commonIEsRequestLocationInformation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt; locationInformationType</td>
+<td><p>‘locationEstimateRequired’ or</p>
+<p>‘locationMeasurementsRequired’</p></td>
+<td>Depending on test case and UE capabilities, i.e., UE-based or
+UE-assisted</td>
+</tr>
+<tr>
+<td>&gt;&gt; additionalInformation</td>
+<td>‘onlyReturnInformationRequested’</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt; qos</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; horizontalAccuracy</td>
+<td>As defined in Annex B.1.1</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; verticalCoordinateRequest</td>
+<td>FALSE</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; responseTime</td>
+<td>‘20’</td>
+<td>20 seconds</td>
+</tr>
+<tr>
+<td>&gt; a-gnss-RequestLocationInformation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt; gnss-PositioningInstructions</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; gnssMethods</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;&gt; gnss-ids</td>
+<td>According to UE capabilities</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; fineTimeAssistanceMeasReq</td>
+<td>FALSE</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; adrMeasReq</td>
+<td>FALSE</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; multiFreqMeasReq</td>
+<td>TRUE or FALSE</td>
+<td>Depending on UE capabilities</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; assistanceAvailability</td>
+<td>FALSE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1
+id="d.3-moving-scenario-and-periodic-update-measurement-sequence-chart">D.3
+Moving scenario and periodic update measurement sequence chart</h1>
+<p>The measurement sequence chart for the moving scenario and periodic
+update test case, for both UE-assisted and UE-based GNSS, is defined in
+this clause.</p>
+<p><img src="media/image8.svg"
+style="width:5.14583in;height:4.48958in" /></p>
+<blockquote>
+<p>(a) The SS sends a RESET UE POSITIONING STORED INFORMATION message
+with the IE <em>UE POSITIONING TECHNOLOGY</em> set to AGNSS.</p>
+<p>(b) The SS sends an LPP message of type REQUEST CAPABILITIES
+including the <em>A‑GNSS‑RequestCapabilities</em> IE set to TRUE.</p>
+<p>(c) The UE sends an LPP message of type PROVIDE CAPABILITIES
+including the <em>A‑GNSS‑ProvideCapabilities</em> IE with the
+<em>AssistanceDataSupportList</em> included, indicating the assistance
+data supported by the UE.</p>
+<p>(d) – (e) The SS provides the assistance data that are supported by
+the UE and available as defined in Annex E and table E.1 in one or more
+LPP messages of type PROVIDE ASSISTANCE DATA.</p>
+<p>(f) The SS sends an LPP message of type REQUEST LOCATION INFORMATION
+including the information elements defined in Table D.2.</p>
+<p>(g) – (i) The UE provides LPP messages of type PROVIDE LOCATION
+INFORMATION including either the
+<em>GNSS‑SignalMeasurementInformation</em> or
+<em>GNSS‑LocationInformation</em> IE, dependent on the test case
+(UE-assisted or UE-based, respectively) until the moving trajectory is
+completed.</p>
+</blockquote>
+<p>NOTE: The UE may report error messages at step (g) until it is able
+to acquire GNSS signals.</p>
+<p>Table D.2: LPP Request Location Information content for moving
+scenario and periodic update test case.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 30%" />
+<col style="width: 19%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Information Element</td>
+<td>Value/remark</td>
+<td>Comment</td>
+</tr>
+<tr>
+<td>RequestLocationInformation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; commonIEsRequestLocationInformation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt; locationInformationType</td>
+<td><p>‘locationEstimateRequired’ or</p>
+<p>‘locationMeasurementsRequired’</p></td>
+<td>Depending on test case and UE capabilities, i.e., UE-based or
+UE-assisted</td>
+</tr>
+<tr>
+<td>&gt;&gt; periodicalReporting</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; reportingAmount</td>
+<td>‘ra-Infinity’</td>
+<td>As defined in Annex B.1.1</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; reportingInterval</td>
+<td>‘ri2’</td>
+<td>As defined in Annex B.1.1</td>
+</tr>
+<tr>
+<td>&gt;&gt; additionalInformation</td>
+<td>‘onlyReturnInformationRequested’</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt; qos</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; horizontalAccuracy</td>
+<td>As defined in Annex B.1.1</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; verticalCoordinateRequest</td>
+<td>FALSE</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; a-gnss-RequestLocationInformation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt; gnss-PositioningInstructions</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; gnssMethods</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;&gt; gnss-ids</td>
+<td>According to UE capabilities</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; fineTimeAssistanceMeasReq</td>
+<td>FALSE</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; adrMeasReq</td>
+<td>FALSE</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; multiFreqMeasReq</td>
+<td>FALSE</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; assistanceAvailability</td>
+<td>FALSE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="heading"
+id="annex-e-normative-assistance-data-required-for-testing"><br />
+Annex E (normative):<br />
+Assistance data required for testing</p>
+<h1 id="e.1-introduction">E.1 Introduction</h1>
+<p>This annex defines the assistance data IEs available at the SS in all
+test cases. The assistance data shall be given for satellites as defined
+in B.1.5.</p>
+<p>The information elements are given with reference to TS 36.355 [3],
+where the details are defined.</p>
+<p>Table E.1 defines the assistance data elements which shall be
+provided to the UE in the tests (steps (d) and (e) in the message
+sequence according to annexes D.2 and D.3). The assistance data provided
+depends on the mode being used in the test case, the assistance data
+supported by the UE (indicated in step (c) in the message sequence
+according to annexes D.2 and D.3) and the GNSSs supported by the UE.
+Assistance data IEs not supported by the UE shall not be sent.
+Assistance data IEs supported by the UE but not listed in Table E.1
+shall not be sent.</p>
+<p>Table E.1: Assistance data to be provided to the UE</p>
+<table>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 13%" />
+<col style="width: 28%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Assistance data IE supported by UE</th>
+<th colspan="3">Mode used in test case</th>
+</tr>
+<tr>
+<th>UE-based</th>
+<th><p>UE-assisted,</p>
+<p>GNSS-AcquisitionAssistance supported by UE</p></th>
+<th><p>UE-assisted,</p>
+<p>GNSS-AcquisitionAssistance not supported by UE</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GNSS-Reference Time</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>GNSS-ReferenceLocation</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>GNSS-IonosphericModel</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>GNSS-TimeModelList</td>
+<td>Yes<sup>(1)</sup></td>
+<td>No</td>
+<td>Yes<sup>(1)</sup></td>
+</tr>
+<tr>
+<td>GNSS-NavigationModel</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>GNSS-AcquisitionAssistance</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>GNSS-Almanac</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>GNSS-UTC-Model</td>
+<td>Yes(3)</td>
+<td>Yes(3)</td>
+<td>Yes(3)</td>
+</tr>
+<tr>
+<td>GNSS-AuxiliaryInformation</td>
+<td>Yes<sup>(2)</sup></td>
+<td>Yes<sup>(2)</sup></td>
+<td>Yes<sup>(2)</sup></td>
+</tr>
+<tr>
+<td colspan="4"><p>NOTE 1: In case more than a single GNSS is supported
+by the UE.</p>
+<p>NOTE 2: In case the UE supports GLONASS, and/or more than one GPS
+signal, and/or BDS B1C/B2a.</p>
+<p>NOTE 3: In case more than a single GNSS is supported by the UE and
+the UE supports GLONASS.</p></td>
+</tr>
+</tbody>
+</table>
+<h1 id="e.2-gnss-assistance-data">E.2 GNSS assistance data</h1>
+<p>a) <strong>GNSS-ReferenceTime IE.</strong> This information element
+is defined in clause 6.5.2.2 of TS 36.355 [3].</p>
+<p>Table E.2: GNSS-ReferenceTime IE</p>
+<table>
+<colgroup>
+<col style="width: 59%" />
+<col style="width: 21%" />
+<col style="width: 18%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Information Element</td>
+<td>All tests except Sensitivity Fine Time Assistance</td>
+<td>Sensitivity Fine Time Assistance test</td>
+</tr>
+<tr>
+<td>GNSS-ReferenceTime</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; gnss-SystemTime</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt; gnss-TimeID</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt; gnss-DayNumber</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt; gnss-TimeOfDay</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt; gnss-TimeOfDayFrac-msec</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt; notificationOfLeapSecond</td>
+<td><p>Yes if</p>
+<p>gnss-TimeID = ‘glonass’</p></td>
+<td><p>Yes if</p>
+<p>gnss-TimeID = ‘glonass’</p></td>
+</tr>
+<tr>
+<td>&gt;&gt; gps-TOW-Assist</td>
+<td><p>Yes if</p>
+<p>gnss-TimeID = ‘gps’</p></td>
+<td><p>Yes if</p>
+<p>gnss-TimeID = ‘gps’</p></td>
+</tr>
+<tr>
+<td>&gt; referenceTimeUnc</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>&gt; gnss-ReferenceTimeForOneCell</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt; networkTime</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; secondsFromFrameStructureStart</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; fractionalSecondsFromFrameStructureStart</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; frameDrift</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; cellID</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; CHOICE eUTRA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;&gt; physCellId</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;&gt; cellGlobalIdEUTRA</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;&gt; earfcn/earfcn-v9a0</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt; CHOICE nr-r15</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;&gt; nrPhysCellId-r15</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;&gt; nrCellGlobalID-r15</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;&gt; nrARFCN-r15</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>&gt;&gt; referenceTimeUnc</td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>b) <strong>GNSS-ReferenceLocation IE.</strong> This information
+element is defined in clause 6.5.2.2 of TS 36.355 [3].</p>
+<p>Table E.3: GNSS-ReferenceLocation IE</p>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Name of the IE</th>
+<th>Fields of the IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GNSS-ReferenceLocation</td>
+<td>threeDlocation</td>
+</tr>
+</tbody>
+</table>
+<p>c) <strong>GNSS-IonosphericModel IE.</strong> This information
+element is defined in clause 6.5.2.2 of TS 36.355 [3].</p>
+<p>Table E.4: GNSS-IonosphericModel IE</p>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Name of the IE</th>
+<th>Fields of the IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">GNSS-IonosphericModel</td>
+<td>KlobucharModelParameter</td>
+</tr>
+<tr>
+<td>NeQuickModelParameter<sup>(1)</sup></td>
+</tr>
+<tr>
+<td>KlobucharModel2Parameter<sup>(2)</sup></td>
+</tr>
+<tr>
+<td colspan="2"><p>NOTE 1: Only required if GNSSs supported include
+Galileo.</p>
+<p>NOTE 2: Only required if GNSSs supported include BDS
+B1C/B2a.</p></td>
+</tr>
+</tbody>
+</table>
+<p>d) <strong>GNSS-TimeModelList IE.</strong> This information element
+is only required for multi system tests, and is defined in clause
+6.5.2.2 of TS 36.355 [3].</p>
+<p>Table E.5: GNSS-TimeModelList IE</p>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Name of the IE</th>
+<th>Fields of the IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GNSS-TimeModelList</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><p>gnssTOID</p>
+<p>For each GNSS included in the test.</p></td>
+</tr>
+<tr>
+<td></td>
+<td>deltaT</td>
+</tr>
+</tbody>
+</table>
+<p>e) <strong>GNSS-NavigationModel IE.</strong> This information element
+is defined in clause 6.5.2.2 of TS 36.355 [3].</p>
+<p>Table E.6: GNSS-NavigationModel IE</p>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Name of the IE</th>
+<th>Fields of the IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GNSS-NavigationModel</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table E.7: GNSS Clock and Orbit Model choices</p>
+<table>
+<colgroup>
+<col style="width: 64%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr>
+<th>GNSS</th>
+<th>Clock and Orbit Model choice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BDS B1I/B3I</td>
+<td>Model-6</td>
+</tr>
+<tr>
+<td>BDS B1C/B2a</td>
+<td>Model-7</td>
+</tr>
+<tr>
+<td>Galileo</td>
+<td>Model-1</td>
+</tr>
+<tr>
+<td>GLONASS</td>
+<td>Model-4</td>
+</tr>
+<tr>
+<td>GPS L1 C/A</td>
+<td>Model-2</td>
+</tr>
+<tr>
+<td>Modernized GPS</td>
+<td>Model-3</td>
+</tr>
+<tr>
+<td>QZSS QZS-L1 C/A</td>
+<td>Model-2</td>
+</tr>
+<tr>
+<td>QZSS QZS-L1C/L2C/L5</td>
+<td>Model-3</td>
+</tr>
+<tr>
+<td>SBAS</td>
+<td>Model-5</td>
+</tr>
+<tr>
+<td>NavIC</td>
+<td>Model-8</td>
+</tr>
+</tbody>
+</table>
+<p>f) <strong>GNSS-AcquisitionAssistance IE.</strong> This information
+element is defined in clause 6.5.2.2 of TS 36.355 [3].</p>
+<p>Table E.8: GNSS-AcquisitionAssistance IE</p>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Name of the IE</th>
+<th>Fields of the IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GNSS-AcquisitionAssistance</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>g) <strong>GNSS-Almanac IE.</strong> This information element is
+defined in clause 6.5.2.2 of TS 36.355 [3].</p>
+<p>Table E.9: GNSS-Almanac IE</p>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Name of the IE</th>
+<th>Fields of the IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GNSS-Almanac</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table E.10: GNSS Almanac choices</p>
+<table>
+<colgroup>
+<col style="width: 64%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr>
+<th>GNSS</th>
+<th>Almanac Model choice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BDS B1I/B3I</td>
+<td>Model-7</td>
+</tr>
+<tr>
+<td>BDS B1C/B2a</td>
+<td>Model-3, 4</td>
+</tr>
+<tr>
+<td>Galileo</td>
+<td>Model-1</td>
+</tr>
+<tr>
+<td>GLONASS</td>
+<td>Model-5</td>
+</tr>
+<tr>
+<td>GPS L1 C/A</td>
+<td>Model-2</td>
+</tr>
+<tr>
+<td>Modernized GPS</td>
+<td>Model-3, 4</td>
+</tr>
+<tr>
+<td>QZSS QZS-L1 C/A</td>
+<td>Model-2</td>
+</tr>
+<tr>
+<td>QZSS QZS-L1C/L2C/L5</td>
+<td>Model-3, 4</td>
+</tr>
+<tr>
+<td>SBAS</td>
+<td>Model-6</td>
+</tr>
+<tr>
+<td>NavIC</td>
+<td>Model-8</td>
+</tr>
+</tbody>
+</table>
+<p>h) <strong>GNSS-UTC-Model IE.</strong> This information element is
+defined in clause 6.5.2.2 of TS 36.355 [3].</p>
+<p>Table E.11: GNSS-UTC-Model IE</p>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Name of the IE</th>
+<th>Fields of the IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GNSS-UTC-Model</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table E.12: GNSS UTC Model choices</p>
+<table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 58%" />
+</colgroup>
+<thead>
+<tr>
+<th>GNSS</th>
+<th>UTC Model choice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BDS B1I/B3I</td>
+<td>Model-5</td>
+</tr>
+<tr>
+<td>BDS B1C/B2a</td>
+<td>Model-2</td>
+</tr>
+<tr>
+<td>Galileo</td>
+<td>Model-1</td>
+</tr>
+<tr>
+<td>GLONASS</td>
+<td>Model-3</td>
+</tr>
+<tr>
+<td>GPS L1 C/A</td>
+<td>Model-1</td>
+</tr>
+<tr>
+<td>Modernized GPS</td>
+<td>Model-2</td>
+</tr>
+<tr>
+<td>QZSS QZS-L1 C/A</td>
+<td>Model-1</td>
+</tr>
+<tr>
+<td>QZSS QZS-L1C/L2C/L5</td>
+<td>Model-2</td>
+</tr>
+<tr>
+<td>SBAS</td>
+<td>Model-4</td>
+</tr>
+<tr>
+<td>NavIC</td>
+<td>Model-2</td>
+</tr>
+</tbody>
+</table>
+<p>i) <strong>GNSS-AuxiliaryInformation IE.</strong> This information
+element is defined in clause 6.5.2.2 of TS 36.355 [3].</p>
+<p>Table E.13: GNSS-AuxiliaryInformation IE</p>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Name of the IE</th>
+<th>Fields of the IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GNSS-AuxiliaryInformation</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="heading"
+id="annex-f-normative-converting-ue-assisted-measurement-reports-into-position-estimates"><br />
+Annex F (normative):<br />
+Converting UE-assisted measurement reports into position estimates</p>
+<h1 id="f.1-introduction">F.1 Introduction</h1>
+<p>To convert the UE measurement reports in case of UE-assisted mode of
+A-GNSS into position errors, a transformation between the "measurement
+domain" (code-phases, etc.) into the "state" domain (position estimate)
+is necessary. Such a transformation procedure is outlined in the
+following clauses. The details can be found in [6-8] and [10-16].</p>
+<h1 id="f.2-ue-measurement-reports">F.2 UE measurement reports</h1>
+<p>In case of UE-assisted A-GNSS, the measurement parameters are
+contained in the LPP <em>GNSS-SignalMeasurementInformation</em> IE
+(clause 6.5.2.6 in TS 36.355 [3]). The measurement parameters required
+for calculating the UE position are:</p>
+<p>1) Reference Time: The UE has two choices for the Reference Time:</p>
+<p>a) "networkTime";</p>
+<p>b) "gnss-TOD-msec".</p>
+<p>2) Measurement Parameters for each GNSS and GNSS signal: 1 to 64:</p>
+<p>a) " svID ";</p>
+<p>b) "codePhase";</p>
+<p>c) "integerCodePhase";</p>
+<p>d) "codePhaseRMSError".</p>
+<p>Additional information required at the SS:</p>
+<p>1) "GNSS-ReferenceLocation" (clause 6.5.2.2 in TS 36.355 [3]):<br />
+Used for initial approximate receiver coordinates.</p>
+<p>2) "GNSS-NavigationModel" (clause 6.5.2.2 in TS 36.355 [3]):<br />
+Contains the GNSS ephemeris and clock correction parameters as specified
+in the relevant ICD of each supported GNSS; used for calculating the
+satellite positions and clock corrections.</p>
+<p>3) "GNSS-IonosphericModel" (clause 6.5.2.2 in TS 36.355 [3]):<br />
+Contains the ionospheric parameters which allow the single frequency
+user to utilize the ionospheric model as specified in the relevant ICD
+of each supported GNSS for computation of the ionospheric delay.</p>
+<h1 id="f.3-wls-position-solution">F.3 WLS position solution</h1>
+<p>The WLS position solution problem is concerned with the task of
+solving for four unknowns; <em>xu, yu, zu</em> the receiver coordinates
+in a suitable frame of reference (usually ECEF) and <em>bu</em> the
+receiver clock bias. It typically requires the following steps:</p>
+<p><strong>Step 1: Formation of pseudo-ranges</strong></p>
+<p>The observation of code phase reported by the UE for each satellite
+SVi is related to the pseudo-range/c modulo the
+"gnss‑CodePhaseAmbiguity". For the formation of pseudo-ranges, the
+integer number of milliseconds to be added to each code-phase
+measurement has to be determined first. Since 1 ms corresponds to a
+travelled distance of 300 km, the number of integer ms can be found with
+the help of reference location and satellite ephemeris. The distance
+between the reference location and each satellite SVi is calculated and
+the integer number of milli-seconds to be added to the UE code phase
+measurements is obtained.</p>
+<p><strong>Step 2: Correction of pseudo-ranges for the GNSS-GNSS time
+offsets</strong></p>
+<p>In the case that the UE reports measurements for more than a single
+GNSS, the pseudo-ranges are corrected for the time offsets between the
+GNSSs relative to the selected reference time using the GNSS-GNSS time
+offsets available at the SS:</p>
+<p><img src="media/image9.svg" />,</p>
+<p>where <img src="media/image3.svg" />is the measured pseudo-range of
+satellite <em>i</em> of GNSS<sub>m</sub>. The system time <img
+src="media/image10.svg" />of GNSS<sub>k</sub> is the reference time
+frame, and<img src="media/image11.svg" />is the available GNSS-GNSS time
+offset, and <em>c</em> is the speed of light.</p>
+<p><strong>Step 3: Formation of weighting matrix</strong></p>
+<p>The UE reported "codePhaseRMSError" values are used to calculate the
+weighting matrix for the WLS algorithm [7]. According to TS 36.355 [3],
+the encoding for this field is a 6 bit value that consists of a 3 bit
+mantissa, Xi and a 3 bit exponent, Yi for each SVi:</p>
+<p><img src="media/image12.svg"
+style="width:2.16667in;height:0.4375in" /></p>
+<p>The weighting Matrix <strong>W</strong> is defined as a diagonal
+matrix containing the estimated variances calculated from the
+"codePhaseRMSError" values:</p>
+<p><img src="media/image13.svg" /></p>
+<p><strong>Step 4: WLS position solution</strong></p>
+<p>The WLS position solution is described in reference [7] and usually
+requires the following steps:</p>
+<p>1) Computation of satellite locations at time of transmission using
+the ephemeris parameters and user algorithms defined in the relevant ICD
+of the particular GNSS. The satellite locations are transformed into
+WGS-84 reference frame, if needed.</p>
+<p>2) Computation of clock correction parameters using the parameters
+and algorithms as defined in the relevant ICD of the particular
+GNSS.</p>
+<p>3) Computation of atmospheric delay corrections using the parameters
+and algorithms defined in the relevant ICD of the particular GNSS for
+the ionospheric delay, and using the Gupta model in reference [8] p. 121
+equation (2) for the tropospheric delay. For GNSSs which do not natively
+provide ionospheric correction models (e.g., GLONASS), the ionospheric
+delay is determined using the available ionospheric model adapted to the
+particular GNSS frequency.</p>
+<p>4) The WLS position solution starts with an initial estimate of the
+user state (position and clock offset). The Reference Location is used
+as initial position estimate. The following steps are required:</p>
+<p>a) Calculate geometric range (corrected for Earth rotation) between
+initial location estimate and each satellite included in the UE
+measurement report.</p>
+<p>b) Predict pseudo-ranges for each measurement including clock and
+atmospheric biases as calculated in 1) to 3) above and defined in the
+relevant ICD of the particular GNSS and [7].</p>
+<p>c) Calculate difference between predicted and measured pseudo-ranges
+<img src="media/image14.svg"
+style="width:0.20833in;height:0.1875in" /></p>
+<p>d) Calculate the "Geometry Matrix" <strong>G</strong> as defined in
+[7]:</p>
+<p><img src="media/image15.svg" /> with <img src="media/image16.svg" />
+where <strong>r</strong>s<sub>GNSS<em>m,i</em></sub> is the satellite
+position vector for SVi of GNSS<em><sub>m</sub></em> (calculated in 1)
+above), and <img src="media/image17.svg" />is the estimate of the user
+location.</p>
+<p>e) Calculate the WLS solution according to [7]:</p>
+<p><img src="media/image18.svg"
+style="width:1.5in;height:0.29167in" /></p>
+<p>f) Adding the <img src="media/image19.svg"
+style="width:0.20833in;height:0.16667in" />to the initial state estimate
+gives an improved estimate of the state vector:</p>
+<p><img src="media/image20.svg"
+style="width:0.69792in;height:0.1875in" />.</p>
+<p>5) This new state vector <img src="media/image21.svg"
+style="width:0.13542in;height:0.16667in" />can be used as new initial
+estimate and the procedure is repeated until the change in <img
+src="media/image21.svg" style="width:0.13542in;height:0.16667in" />is
+sufficiently small.</p>
+<p><strong>Step 5: Transformation from Cartesian coordinate system to
+Geodetic coordinate system</strong></p>
+<p>The state vector <img src="media/image22.svg"
+style="width:0.13542in;height:0.16667in" /> calculated in Step 4
+contains the UE position in ECEF Cartesian coordinates together with the
+UE receiver clock bias relative to the selected GNSS system time. Only
+the user position is of further interest. It is usually desirable to
+convert from ECEF coordinates <em>xu, yu, zu</em> to geodetic latitude ϕ
+, longitude λ and altitude <em>h</em> on the WGS-84 reference
+ellipsoid.</p>
+<p><strong>Step 6: Calculation of "2-D Position Errors"</strong></p>
+<p>The latitude ϕ / longitude λ obtained after Step 5 is used to
+calculate the 2-D position error.</p>
+<p class="heading" id="annex-g-informative-change-history"><br />
+Annex G (informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 50%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-11</td>
+<td style="text-align: center;">RAN4#89</td>
+<td style="text-align: center;">R4-1814423</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TS baseline created from TS 36.171.</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-11</td>
+<td style="text-align: center;">RAN4#89</td>
+<td style="text-align: center;">R4-1814424</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updates from e-mail discussion</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RAN#82</td>
+<td style="text-align: center;">RP-182325</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">V1.0.0 is submitted to RAN for 1-step
+approval</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RAN#82</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Approved by plenary – Rel-15 spec under
+change control</td>
+<td style="text-align: center;">15.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-03</td>
+<td style="text-align: center;">RAN#83</td>
+<td style="text-align: center;">RP-190402</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on A-GNSS in 38.171</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-193002</td>
+<td style="text-align: center;">0008</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to TS 38.171: Corrections to A-GNSS
+requirements with NR</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RAN#87</td>
+<td style="text-align: center;">RP-200409</td>
+<td style="text-align: center;">0009</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Update of the Note 1 in the Power level
+and satellite allocation table for the Sensitivity Coarse time
+assistance requirements</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RAN#87</td>
+<td style="text-align: center;">RP-200409</td>
+<td style="text-align: center;">0010</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Editorial change to TS 37.571-1
+title</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88</td>
+<td style="text-align: center;">RP-201055</td>
+<td style="text-align: center;">0011</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR for TS38.171, Introduction of BDS B1C
+in A-GNSS</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-06</td>
+<td style="text-align: center;">RAN#92</td>
+<td style="text-align: center;">RP-211077</td>
+<td style="text-align: center;">0012</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Addition of missing data for BDS
+B1C</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RAN#93</td>
+<td style="text-align: center;">RP-211925</td>
+<td style="text-align: center;">0015</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Big CR to TS 38.171 on requirements
+maintenance (Rel-16)</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN#94</td>
+<td style="text-align: center;">RP-212853</td>
+<td style="text-align: center;">0016</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Frequency bands for testing of A-GNSS
+sensitivity requirements</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8" style="text-align: center;"><strong>Change
+history</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date</strong></td>
+<td><strong>Meeting</strong></td>
+<td><strong>TDoc</strong></td>
+<td><strong>CR</strong></td>
+<td><strong>Rev</strong></td>
+<td><strong>Cat</strong></td>
+<td><strong>Subject/Comment</strong></td>
+<td><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td>Update to Rel-17 version (MCC)</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221653</td>
+<td>0018</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">A</td>
+<td>CR on TS 38.171 requirements for support of A-GNSS</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-09</td>
+<td style="text-align: center;">RAN#97</td>
+<td style="text-align: center;">RP-222055</td>
+<td>0019</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">B</td>
+<td>Big CR for 38.171 (Rel-17)</td>
+<td style="text-align: center;">17.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-06</td>
+<td style="text-align: center;">RAN#100</td>
+<td style="text-align: center;">RP-231345</td>
+<td>0024</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td>CR on TS 38.171 requirements for relative signal power levels of
+BDS</td>
+<td style="text-align: center;">17.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-09</td>
+<td style="text-align: center;">RAN#101</td>
+<td style="text-align: center;">RP-232495</td>
+<td>0025</td>
+<td>1</td>
+<td>F</td>
+<td>Requirements for NavIC L5 A-GNSS support</td>
+<td style="text-align: center;">17.4.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

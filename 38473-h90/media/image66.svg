@@ -1,0 +1,104 @@
+<?xml version="1.0"  encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="917.0000" height="847.0000">
+<g transform="translate(12.0000, -22.0000)">
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="-1796.0000" font-size="53.0000" ><![CDATA[ ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="0.0000" y="-1735.0000" font-size="53.0000" ><![CDATA[ ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="-69.0000" y="50.0000" font-size="53.0000" ><![CDATA[ ]]></text>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 9590.0000,557.0000 L 9590.0000,2599.0000 L 14276.0000,2599.0000 L 14276.0000,557.0000 Z" stroke="#000000" stroke-width="16.0000"  stroke-linecap="round"  stroke-linejoin="miter"  stroke-miterlimit="8.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<defs><clipPath id="clip-1804289383"><path d="M 643.0000,55.0000 L 892.0000,55.0000 L 892.0000,132.0000 L 643.0000,132.0000 L 643.0000,55.0000 Z Z" /></clipPath></defs>
+<text  clip-path="url(#clip-1804289383)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="686.0000" y="96.0000" font-size="44.0000" ><![CDATA[gNB]]></text>
+<text  clip-path="url(#clip-1804289383)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="771.0000" y="96.0000" font-size="44.0000" ><![CDATA[-]]></text>
+<text  clip-path="url(#clip-1804289383)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="786.0000" y="96.0000" font-size="44.0000" ><![CDATA[CU]]></text>
+<text  clip-path="url(#clip-1804289383)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="848.0000" y="96.0000" font-size="44.0000" ><![CDATA[ ]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 12327.0000,2599.0000 L 12327.0000,13398.0000 " stroke="#000000" stroke-width="16.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 10954.0000,13398.0000 L 10954.0000,13704.0000 L 13692.0000,13704.0000 L 13692.0000,13398.0000 L 10954.0000,13398.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 10954.0000,13398.0000 L 10954.0000,13704.0000 L 13692.0000,13704.0000 L 13692.0000,13398.0000 Z" stroke="#000000" stroke-width="16.0000"  stroke-linecap="round"  stroke-linejoin="miter"  stroke-miterlimit="8.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 54.0000,557.0000 L 54.0000,2599.0000 L 4114.0000,2599.0000 L 4114.0000,557.0000 Z" stroke="#000000" stroke-width="16.0000"  stroke-linecap="round"  stroke-linejoin="miter"  stroke-miterlimit="8.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<defs><clipPath id="clip-846930886"><path d="M 25.0000,55.0000 L 236.0000,55.0000 L 236.0000,188.0000 L 25.0000,188.0000 L 25.0000,55.0000 Z Z" /></clipPath></defs>
+<text  clip-path="url(#clip-846930886)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="49.0000" y="96.0000" font-size="44.0000" ><![CDATA[gNB]]></text>
+<text  clip-path="url(#clip-846930886)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="134.0000" y="96.0000" font-size="44.0000" ><![CDATA[-]]></text>
+<text  clip-path="url(#clip-846930886)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="149.0000" y="96.0000" font-size="44.0000" ><![CDATA[DU]]></text>
+<text  clip-path="url(#clip-846930886)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="211.0000" y="96.0000" font-size="44.0000" ><![CDATA[ ]]></text>
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1377.0000,2599.0000 L 1381.0000,13553.0000 " stroke="#000000" stroke-width="16.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8.0000,13398.0000 L 8.0000,13704.0000 L 2746.0000,13704.0000 L 2746.0000,13398.0000 L 8.0000,13398.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 8.0000,13398.0000 L 8.0000,13704.0000 L 2746.0000,13704.0000 L 2746.0000,13398.0000 Z" stroke="#000000" stroke-width="16.0000"  stroke-linecap="round"  stroke-linejoin="miter"  stroke-miterlimit="8.0000" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 12381.0000,5444.0000 L 1462.0000,5444.0000 " stroke="#000000" stroke-width="16.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1702.0000,5232.0000 L 1265.0000,5433.0000 L 1702.0000,5638.0000 L 1702.0000,5232.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1702.0000,5232.0000 L 1265.0000,5433.0000 L 1702.0000,5638.0000 L 1702.0000,5232.0000 Z" stroke="#000000" stroke-width="16.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 1381.0000,8766.0000 L 12064.0000,8770.0000 " stroke="#000000" stroke-width="16.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 11766.0000,8515.0000 L 12203.0000,8720.0000 L 11766.0000,8924.0000 L 11766.0000,8515.0000 Z" stroke-width="1px" stroke="#000000"  fill="#000000" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+</g>
+<g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+<path d="M 11766.0000,8515.0000 L 12203.0000,8720.0000 L 11766.0000,8924.0000 L 11766.0000,8515.0000 Z" stroke="#000000" stroke-width="16.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+</g>
+<g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+<defs><clipPath id="clip-1681692777"><path d="M 74.0000,267.0000 L 757.0000,267.0000 L 757.0000,384.0000 L 74.0000,384.0000 L 74.0000,267.0000 Z Z" /></clipPath></defs>
+<text  clip-path="url(#clip-1681692777)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="103.0000" y="308.0000" font-size="44.0000" ><![CDATA[TRP INFOR]]></text>
+<text  clip-path="url(#clip-1681692777)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="338.0000" y="308.0000" font-size="44.0000" ><![CDATA[M]]></text>
+<text  clip-path="url(#clip-1681692777)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="375.0000" y="308.0000" font-size="44.0000" ><![CDATA[A]]></text>
+<text  clip-path="url(#clip-1681692777)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="403.0000" y="308.0000" font-size="44.0000" ><![CDATA[TION]]></text>
+<text  clip-path="url(#clip-1681692777)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="508.0000" y="308.0000" font-size="44.0000" ><![CDATA[ ]]></text>
+<text  clip-path="url(#clip-1681692777)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="519.0000" y="308.0000" font-size="44.0000" ><![CDATA[REQUEST]]></text>
+<text  clip-path="url(#clip-1681692777)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="729.0000" y="308.0000" font-size="44.0000" ><![CDATA[ ]]></text>
+<defs><clipPath id="clip-1714636915"><path d="M 100.0000,482.0000 L 783.0000,482.0000 L 783.0000,599.0000 L 100.0000,599.0000 L 100.0000,482.0000 Z Z" /></clipPath></defs>
+<text  clip-path="url(#clip-1714636915)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="113.0000" y="523.0000" font-size="44.0000" ><![CDATA[TRP INFOR]]></text>
+<text  clip-path="url(#clip-1714636915)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="348.0000" y="523.0000" font-size="44.0000" ><![CDATA[M]]></text>
+<text  clip-path="url(#clip-1714636915)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="385.0000" y="523.0000" font-size="44.0000" ><![CDATA[A]]></text>
+<text  clip-path="url(#clip-1714636915)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="413.0000" y="523.0000" font-size="44.0000" ><![CDATA[TION ]]></text>
+<text  clip-path="url(#clip-1714636915)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="529.0000" y="523.0000" font-size="44.0000" ><![CDATA[RE]]></text>
+<text  clip-path="url(#clip-1714636915)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="590.0000" y="523.0000" font-size="44.0000" ><![CDATA[SPONSE]]></text>
+<text  clip-path="url(#clip-1714636915)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="770.0000" y="523.0000" font-size="44.0000" ><![CDATA[ ]]></text>
+</g>
+</g>
+</svg>

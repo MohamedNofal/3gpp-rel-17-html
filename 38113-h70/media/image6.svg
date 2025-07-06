@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="1.0416666666666667in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 620 101" width="6.447916666666667in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.brush1 { fill: none; }
+.font0 { font-size: 17px; font-family: Arial; }
+.font1 { font-weight: bold; font-size: 1px; font-family: System, sans-serif; }
+.font2 { font-size: 17px; font-family: Arial; }
+.font3 { font-size: 14px; font-family: Arial; }
+.font4 { font-size: 14px; font-family: Arial; }
+.brush2 { fill: rgb(0,0,0); }
+.pen1 { stroke: none; }
+</style>
+    <g>
+        <polygon class="pen0 brush1" points="1,1 137,1 137,99 1,99 1,1"/>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="14 27 40 45 57 61 77 87 92 102 107 118" xml:lang="en" xml:space="preserve" y="56">UE Simulator</text>
+    </g>
+    <g>
+        <polygon class="pen0 brush1" points="282,1 418,1 418,99 282,99 282,1"/>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="297 309 321 327 332 341 352 362 367 378 384 398" xml:lang="en" xml:space="preserve" y="45">BS type 1-O/</text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="299 312 324 329 334 344 354 365 370 380 386" xml:lang="en" xml:space="preserve" y="67">BS type 2-O</text>
+    </g>
+    <g>
+        <polygon class="pen0 brush1" points="482,1 618,1 618,99 482,99 482,1"/>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="529 543 557 571" xml:lang="en" xml:space="preserve" y="45">NGC </text>
+    </g>
+    <g>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="511 523 527 543 553 557 568 573 583" xml:lang="en" xml:space="preserve" y="67">Simulator</text>
+    </g>
+    <g>
+        <polygon class="pen0 brush1" points="142,50 168,24 168,37 251,37 251,24 277,50 251,75 251,63 168,63 168,75 142,50"/>
+    </g>
+    <g>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="177 190 198 208 212 221 225 234" xml:lang="en" xml:space="preserve" y="55">OTA Link</text>
+    </g>
+    <g>
+        <path class="pen1 brush2" d="M 473,29  L 481,25 481,26 473,21 473,21 473,21 473,21 473,20 473,20 473,20 473,20 473,20 473,20 473,20 473,20 482,25 473,30 473,30 473,30 473,30 473,30 473,30 473,30 473,30 473,30 473,29 473,29 z M 417,24  L 481,25 481,25 481,26 481,26 417,25 417,25 417,24 z" fill-rule="nonzero"/>
+        <path class="pen1 brush2" d="M 426,64  L 418,68 418,67 426,72 426,72 426,72 426,72 426,73 426,73 426,73 426,73 426,73 426,73 426,73 426,73 417,68 426,63 426,63 426,63 426,63 426,63 426,63 426,63 426,63 426,63 426,64 426,64 z M 485,68  L 418,68 418,68 418,67 418,67 485,67 485,67 485,68 z" fill-rule="nonzero"/>
+    </g>
+    <g/>
+</svg>

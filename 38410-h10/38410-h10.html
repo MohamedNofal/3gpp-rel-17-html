@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38410-h10</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope">1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-and-abbreviations"
+id="toc-definitions-and-abbreviations">3 Definitions and
+abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.2
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#general-aspects" id="toc-general-aspects">4 General
+aspects</a>
+<ul>
+<li><a href="#ng-architecture" id="toc-ng-architecture">4.1 NG
+Architecture</a></li>
+<li><a href="#ng-interface-general-principles"
+id="toc-ng-interface-general-principles">4.2 NG interface general
+principles</a></li>
+<li><a href="#ng-interface-specification-objectives"
+id="toc-ng-interface-specification-objectives">4.3 NG interface
+specification objectives</a></li>
+<li><a href="#ng-interface-capabilities"
+id="toc-ng-interface-capabilities">4.4 NG interface
+capabilities</a></li>
+</ul></li>
+<li><a href="#functions-of-the-ng-interface"
+id="toc-functions-of-the-ng-interface">5 Functions of the NG
+interface</a>
+<ul>
+<li><a href="#general" id="toc-general">5.1 General</a></li>
+<li><a href="#paging-function" id="toc-paging-function">5.2 Paging
+function </a></li>
+<li><a href="#ue-context-management-function"
+id="toc-ue-context-management-function">5.3 UE Context Management
+function </a></li>
+<li><a href="#mobility-management-function"
+id="toc-mobility-management-function">5.4 Mobility Management function
+</a></li>
+<li><a href="#pdu-session-management-function"
+id="toc-pdu-session-management-function">5.5 PDU Session Management
+function </a></li>
+<li><a href="#nas-transport-function"
+id="toc-nas-transport-function">5.6 NAS Transport function </a></li>
+<li><a href="#nas-node-selection-function"
+id="toc-nas-node-selection-function">5.7 NAS Node Selection
+function</a></li>
+<li><a href="#ng-interface-management-function"
+id="toc-ng-interface-management-function">5.8 NG Interface Management
+function </a></li>
+<li><a href="#warning-message-transmission-function"
+id="toc-warning-message-transmission-function">5.9 Warning Message
+Transmission function </a></li>
+<li><a href="#configuration-transfer-function"
+id="toc-configuration-transfer-function">5.10 Configuration Transfer
+function </a></li>
+<li><a href="#trace-function" id="toc-trace-function">5.11 Trace
+function</a></li>
+<li><a href="#amf-management-function"
+id="toc-amf-management-function">5.12 AMF Management function</a></li>
+<li><a href="#multiple-tnl-associations-support-function"
+id="toc-multiple-tnl-associations-support-function">5.13 Multiple TNL
+Associations Support Function</a></li>
+<li><a href="#amf-load-balancing-function"
+id="toc-amf-load-balancing-function">5.14 AMF Load Balancing function
+</a></li>
+<li><a href="#location-reporting-function"
+id="toc-location-reporting-function">5.15 Location Reporting
+function</a></li>
+<li><a href="#amf-re-allocation-function"
+id="toc-amf-re-allocation-function">5.16 AMF Re-allocation
+function</a></li>
+<li><a href="#ue-radio-capability-management-function"
+id="toc-ue-radio-capability-management-function">5.17 UE Radio
+Capability Management function </a></li>
+<li><a href="#nrppa-signaling-transport-function"
+id="toc-nrppa-signaling-transport-function">5.18 NRPPa Signaling
+Transport function</a></li>
+<li><a href="#overload-control-function"
+id="toc-overload-control-function">5.19 Overload Control
+function</a></li>
+<li><a href="#report-of-secondary-rat-data-volumes-function"
+id="toc-report-of-secondary-rat-data-volumes-function">5.20 Report of
+Secondary RAT data volumes Function</a></li>
+<li><a href="#rim-information-transfer-function"
+id="toc-rim-information-transfer-function">5.21 RIM Information Transfer
+function </a></li>
+<li><a href="#retrieve-ue-information-function"
+id="toc-retrieve-ue-information-function">5.22 Retrieve UE Information
+function</a></li>
+<li><a href="#ran-cp-relocation-indication-function"
+id="toc-ran-cp-relocation-indication-function">5.23 RAN CP Relocation
+Indication function</a></li>
+<li><a href="#suspend-resume-function"
+id="toc-suspend-resume-function">5.24 Suspend-Resume function</a></li>
+<li><a href="#connection-establishment-indication-function"
+id="toc-connection-establishment-indication-function">5.25 Connection
+Establishment Indication Function</a></li>
+<li><a href="#amf-cp-relocation-indication-function"
+id="toc-amf-cp-relocation-indication-function">5.26 AMF CP Relocation
+Indication Function</a></li>
+<li><a href="#nr-mbs-session-management-function"
+id="toc-nr-mbs-session-management-function">5.27 NR MBS Session
+Management function</a></li>
+<li><a href="#multicast-group-paging-function"
+id="toc-multicast-group-paging-function">5.28 Multicast Group Paging
+Function</a></li>
+<li><a href="#qmc-support-function" id="toc-qmc-support-function">5.29
+QMC support function</a></li>
+</ul></li>
+<li><a href="#signalling-procedures-of-the-ng-interface"
+id="toc-signalling-procedures-of-the-ng-interface">6 Signalling
+procedures of the NG interface</a>
+<ul>
+<li><a href="#pdu-session-management-procedures"
+id="toc-pdu-session-management-procedures">6.1 PDU Session Management
+Procedures</a></li>
+<li><a href="#ue-context-management-procedures"
+id="toc-ue-context-management-procedures">6.2 UE Context Management
+Procedures</a></li>
+<li><a href="#nas-transport-procedures"
+id="toc-nas-transport-procedures">6.3 NAS transport procedures</a></li>
+<li><a href="#ue-mobility-management-procedures"
+id="toc-ue-mobility-management-procedures">6.4 UE Mobility Management
+Procedures</a></li>
+<li><a href="#paging-procedure" id="toc-paging-procedure">6.5 Paging
+procedure</a></li>
+<li><a href="#amf-management-procedures"
+id="toc-amf-management-procedures">6.6 AMF Management
+procedures</a></li>
+<li><a href="#ng-interface-management-procedures"
+id="toc-ng-interface-management-procedures">6.7 NG Interface Management
+procedures</a></li>
+<li><a href="#warning-message-transmission-procedures"
+id="toc-warning-message-transmission-procedures">6.8 Warning message
+transmission procedures</a></li>
+<li><a href="#location-reporting-procedures"
+id="toc-location-reporting-procedures">6.9 Location Reporting
+procedures</a></li>
+<li><a href="#ue-radio-capability-management-procedures"
+id="toc-ue-radio-capability-management-procedures">6.10 UE Radio
+Capability Management procedures</a></li>
+<li><a href="#ue-tracing-procedures" id="toc-ue-tracing-procedures">6.11
+UE Tracing procedures</a></li>
+<li><a href="#nr-positioning-protocol-a-nrppa-procedures"
+id="toc-nr-positioning-protocol-a-nrppa-procedures">6.12 NR Positioning
+Protocol A (NRPPa) procedures</a></li>
+<li><a href="#overload-control-procedures"
+id="toc-overload-control-procedures">6.13 Overload Control
+procedures</a></li>
+<li><a href="#configuration-transfer-procedures"
+id="toc-configuration-transfer-procedures">6.14 Configuration Transfer
+procedures</a></li>
+<li><a href="#secondary-rat-data-usage-report-procedure"
+id="toc-secondary-rat-data-usage-report-procedure">6.15 Secondary RAT
+Data Usage Report procedure</a></li>
+<li><a href="#rim-information-transfer-procedures"
+id="toc-rim-information-transfer-procedures">6.16 RIM Information
+Transfer procedures</a></li>
+<li><a href="#retrieve-ue-information-procedures"
+id="toc-retrieve-ue-information-procedures">6.17 Retrieve UE Information
+procedures</a></li>
+<li><a href="#ran-cp-relocation-indication-procedures"
+id="toc-ran-cp-relocation-indication-procedures">6.18 RAN CP Relocation
+Indication procedures</a></li>
+<li><a href="#ue-context-suspend-procedure"
+id="toc-ue-context-suspend-procedure">6.19 UE Context Suspend
+procedure</a></li>
+<li><a href="#connection-establishment-indication-procedure"
+id="toc-connection-establishment-indication-procedure">6.20 Connection
+Establishment Indication procedure</a></li>
+<li><a href="#amf-cp-relocation-indication-procedure"
+id="toc-amf-cp-relocation-indication-procedure">6.21 AMF CP Relocation
+Indication procedure</a></li>
+<li><a href="#ue-context-resume-procedure"
+id="toc-ue-context-resume-procedure">6.22 UE Context Resume
+procedure</a></li>
+<li><a href="#nr-mbs-session-management-procedures"
+id="toc-nr-mbs-session-management-procedures">6.23 NR MBS Session
+Management Procedures</a></li>
+<li><a href="#multicast-group-paging-procedures"
+id="toc-multicast-group-paging-procedures">6.24 Multicast Group Paging
+Procedures</a></li>
+<li><a href="#the-procedures-for-supporting-qmc"
+id="toc-the-procedures-for-supporting-qmc">6.25 The procedures for
+supporting QMC</a></li>
+</ul></li>
+<li><a href="#ng-interface-protocol-structure"
+id="toc-ng-interface-protocol-structure">7 NG interface protocol
+structure</a>
+<ul>
+<li><a href="#ng-control-plane" id="toc-ng-control-plane">7.1 NG Control
+Plane</a></li>
+<li><a href="#ng-user-plane" id="toc-ng-user-plane">7.2 NG User
+Plane</a></li>
+</ul></li>
+<li><a href="#other-ng-interface-specifications"
+id="toc-other-ng-interface-specifications">8 Other NG interface
+specifications</a>
+<ul>
+<li><a href="#ng-ran-ng-interface-ng-layer-1-ts-38.411"
+id="toc-ng-ran-ng-interface-ng-layer-1-ts-38.411">8.1 NG-RAN NG
+interface: NG layer 1 (TS 38.411)</a></li>
+<li><a href="#ng-ran-ng-interface-ng-signalling-transport-ts-38.412"
+id="toc-ng-ran-ng-interface-ng-signalling-transport-ts-38.412">8.2
+NG-RAN NG interface: NG signalling transport (TS 38.412)</a></li>
+<li><a
+href="#ng-ran-ng-interface-ng-application-protocol-ngap-ts-38.413"
+id="toc-ng-ran-ng-interface-ng-application-protocol-ngap-ts-38.413">8.3
+NG-RAN NG interface: NG application protocol (NGAP) (TS 38.413)</a></li>
+<li><a href="#ng-ran-ng-interface-ng-data-transport-ts-38.414"
+id="toc-ng-ran-ng-interface-ng-data-transport-ts-38.414">8.4 NG-RAN NG
+interface: NG data transport (TS 38.414)</a></li>
+<li><a
+href="#ng-ran-ng-interface-ng-pdu-session-user-plane-protocol-ts-38.415"
+id="toc-ng-ran-ng-interface-ng-pdu-session-user-plane-protocol-ts-38.415">8.5
+NG-RAN NG interface: NG PDU Session user plane protocol (TS 38.415)
+</a></li>
+</ul></li>
+</ul>
+</nav>
+<p>3GPP TS 38.410 V17.1.0 (2022-06)</p>
+<p>Technical Specification</p>
+<p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NG-RAN;<br />
+NG general aspects and principles</p>
+<p>(Release 17)</p>
+<p><img src="media/image1.jpeg"
+style="width:1.31875in;height:0.91875in" /> <img src="media/image2.png"
+style="width:1.77778in;height:1.03681in" /></p>
+<p>The present document has been developed within the 3rd Generation
+Partnership Project (3GPP <sup>TM</sup>) and may be further elaborated
+for the purposes of 3GPP..<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</p>
+<blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote>
+<p><em><strong>Copyright Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2022, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">5</a></p>
+<p>1 Scope <a href="#scope">5</a></p>
+<p>2 References <a href="#references">5</a></p>
+<p>3 Definitions and abbreviations <a
+href="#definitions-and-abbreviations">6</a></p>
+<p>3.1 Definitions <a href="#definitions">6</a></p>
+<p>3.2 Abbreviations <a href="#abbreviations">6</a></p>
+<p>4 General aspects <a href="#general-aspects">6</a></p>
+<p>4.1 NG Architecture <a href="#ng-architecture">6</a></p>
+<p>4.2 NG interface general principles <a
+href="#ng-interface-general-principles">7</a></p>
+<p>4.3 NG interface specification objectives <a
+href="#ng-interface-specification-objectives">7</a></p>
+<p>4.4 NG interface capabilities <a
+href="#ng-interface-capabilities">7</a></p>
+<p>5 Functions of the NG interface <a
+href="#functions-of-the-ng-interface">7</a></p>
+<p>5.1 General <a href="#general">7</a></p>
+<p>5.2 Paging function <a href="#paging-function">8</a></p>
+<p>5.3 UE Context Management function <a
+href="#ue-context-management-function">8</a></p>
+<p>5.4 Mobility Management function <a
+href="#mobility-management-function">8</a></p>
+<p>5.5 PDU Session Management function <a
+href="#pdu-session-management-function">8</a></p>
+<p>5.6 NAS Transport function <a
+href="#nas-transport-function">8</a></p>
+<p>5.7 NAS Node Selection function <a
+href="#nas-node-selection-function">8</a></p>
+<p>5.8 NG Interface Management function <a
+href="#ng-interface-management-function">8</a></p>
+<p>5.9 Warning Message Transmission function <a
+href="#warning-message-transmission-function">9</a></p>
+<p>5.10 Configuration Transfer function <a
+href="#configuration-transfer-function">9</a></p>
+<p>5.11 Trace function <a href="#trace-function">9</a></p>
+<p>5.12 AMF Management function <a
+href="#amf-management-function">9</a></p>
+<p>5.13 Multiple TNL Associations Support Function <a
+href="#multiple-tnl-associations-support-function">9</a></p>
+<p>5.14 AMF Load Balancing function <a
+href="#amf-load-balancing-function">9</a></p>
+<p>5.15 Location Reporting function <a
+href="#location-reporting-function">9</a></p>
+<p>5.16 AMF Re-allocation function <a
+href="#amf-re-allocation-function">9</a></p>
+<p>5.17 UE Radio Capability Management function <a
+href="#ue-radio-capability-management-function">9</a></p>
+<p>5.18 NRPPa Signaling Transport function <a
+href="#nrppa-signaling-transport-function">9</a></p>
+<p>5.19 Overload Control function <a
+href="#overload-control-function">10</a></p>
+<p>5.20 Report of Secondary RAT data volumes Function <a
+href="#report-of-secondary-rat-data-volumes-function">10</a></p>
+<p>5.21 RIM Information Transfer function <a
+href="#rim-information-transfer-function">10</a></p>
+<p>5.22 Retrieve UE Information function <a
+href="#retrieve-ue-information-function">10</a></p>
+<p>5.23 RAN CP Relocation Indication function <a
+href="#ran-cp-relocation-indication-function">10</a></p>
+<p>5.24 Suspend-Resume function <a
+href="#suspend-resume-function">10</a></p>
+<p>5.25 Connection Establishment Indication Function <a
+href="#connection-establishment-indication-function">10</a></p>
+<p>5.26 AMF CP Relocation Indication Function <a
+href="#amf-cp-relocation-indication-function">10</a></p>
+<p>5.27 NR MBS Session Management function <a
+href="#nr-mbs-session-management-function">10</a></p>
+<p>5.28 Multicast Group Paging Function <a
+href="#multicast-group-paging-function">11</a></p>
+<p>5.29 QMC support function <a href="#qmc-support-function">11</a></p>
+<p>6 Signalling procedures of the NG interface <a
+href="#signalling-procedures-of-the-ng-interface">11</a></p>
+<p>6.1 PDU Session Management Procedures <a
+href="#pdu-session-management-procedures">11</a></p>
+<p>6.2 UE Context Management Procedures <a
+href="#ue-context-management-procedures">11</a></p>
+<p>6.3 NAS transport procedures <a
+href="#nas-transport-procedures">11</a></p>
+<p>6.4 UE Mobility Management Procedures <a
+href="#ue-mobility-management-procedures">12</a></p>
+<p>6.5 Paging procedure <a href="#paging-procedure">12</a></p>
+<p>6.6 AMF Management procedures <a
+href="#amf-management-procedures">12</a></p>
+<p>6.7 NG Interface Management procedures <a
+href="#ng-interface-management-procedures">12</a></p>
+<p>6.8 Warning message transmission procedures <a
+href="#warning-message-transmission-procedures">12</a></p>
+<p>6.9 Location Reporting procedures <a
+href="#location-reporting-procedures">13</a></p>
+<p>6.10 UE Radio Capability Management procedures <a
+href="#ue-radio-capability-management-procedures">13</a></p>
+<p>6.11 UE Tracing procedures <a
+href="#ue-tracing-procedures">13</a></p>
+<p>6.12 NR Positioning Protocol A (NRPPa) procedures <a
+href="#nr-positioning-protocol-a-nrppa-procedures">13</a></p>
+<p>6.13 Overload Control procedures <a
+href="#overload-control-procedures">13</a></p>
+<p>6.14 Configuration Transfer procedures <a
+href="#configuration-transfer-procedures">13</a></p>
+<p>6.15 Secondary RAT Data Usage Report procedure <a
+href="#secondary-rat-data-usage-report-procedure">14</a></p>
+<p>6.16 RIM Information Transfer procedures <a
+href="#rim-information-transfer-procedures">14</a></p>
+<p>6.17 Retrieve UE Information procedures <a
+href="#retrieve-ue-information-procedures">14</a></p>
+<p>6.18 RAN CP Relocation Indication procedures <a
+href="#ran-cp-relocation-indication-procedures">14</a></p>
+<p>6.19 UE Context Suspend procedure <a
+href="#ue-context-suspend-procedure">14</a></p>
+<p>6.20 Connection Establishment Indication procedure <a
+href="#connection-establishment-indication-procedure">14</a></p>
+<p>6.21 AMF CP Relocation Indication procedure <a
+href="#amf-cp-relocation-indication-procedure">14</a></p>
+<p>6.22 UE Context Resume procedure <a
+href="#ue-context-resume-procedure">15</a></p>
+<p>6.23 NR MBS Session Management Procedures <a
+href="#nr-mbs-session-management-procedures">15</a></p>
+<p>6.24 Multicast Group Paging Procedures <a
+href="#multicast-group-paging-procedures">15</a></p>
+<p>6.25 The procedures for supporting QMC <a
+href="#the-procedures-for-supporting-qmc">15</a></p>
+<p>7 NG interface protocol structure <a
+href="#ng-interface-protocol-structure">15</a></p>
+<p>7.1 NG Control Plane <a href="#ng-control-plane">15</a></p>
+<p>7.2 NG User Plane <a href="#ng-user-plane">16</a></p>
+<p>8 Other NG interface specifications <a
+href="#other-ng-interface-specifications">16</a></p>
+<p>8.1 NG-RAN NG interface: NG layer 1 (TS 38.411) <a
+href="#ng-ran-ng-interface-ng-layer-1-ts-38.411">16</a></p>
+<p>8.2 NG-RAN NG interface: NG signalling transport (TS 38.412) <a
+href="#ng-ran-ng-interface-ng-signalling-transport-ts-38.412">16</a></p>
+<p>8.3 NG-RAN NG interface: NG application protocol (NGAP) (TS 38.413)
+<a
+href="#ng-ran-ng-interface-ng-application-protocol-ngap-ts-38.413">17</a></p>
+<p>8.4 NG-RAN NG interface: NG data transport (TS 38.414) <a
+href="#ng-ran-ng-interface-ng-data-transport-ts-38.414">17</a></p>
+<p>8.5 NG-RAN NG interface: NG PDU Session user plane protocol (TS
+38.415) <a
+href="#ng-ran-ng-interface-ng-pdu-session-user-plane-protocol-ts-38.415">17</a></p>
+<p>Annex A (informative): Change history <a
+href="#annex-a-informative-change-history">18</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Specification has been produced by the 3<sup>rd</sup>
+Generation Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope">1 Scope</h1>
+<p>The present document is an introduction to the 3GPP TS 38.41x series
+of technical specifications that define the NG interface for the
+interconnection of an NG-RAN node to the 5GC (5G Core Network).</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TS 38.411: "NG-RAN; NG layer 1".</p>
+<p>[3] 3GPP TS 38.412: "NG-RAN; NG signalling transport".</p>
+<p>[4] 3GPP TS 38.413: "NG-RAN; NG Application Protocol (NGAP) ".</p>
+<p>[5] 3GPP TS 38.414: "NG-RAN; NG data transport".</p>
+<p>[6] 3GPP TS 23.502: "Procedures for the 5G system".</p>
+<p>[7] 3GPP TS 38.300: "NR; Overall Description; Stage 2".</p>
+<p>[8] 3GPP TS 23.501: "System Architecture for the 5G system".</p>
+<p>[9] 3GPP TS 38.415: "PDU Session User Plane Protocol".</p>
+<p>[10] 3GPP TS 38.455: "NR Positioning Protocol A (NRPPa)".</p>
+<p>[11] 3GPP TS 36.300: "E-UTRAN); Overall description; Stage 2".</p>
+<p>[12] 3GPP TS 23.247: “Architectural enhancements for 5G
+multicast-broadcast services; Stage 2”.</p>
+<h1 id="definitions-and-abbreviations">3 Definitions and
+abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in TR 21.905 [1] and the following apply.<br />
+A term defined in the present document takes precedence over the
+definition of the same term, if any, in TR 21.905 [1].</p>
+<p><strong>gNB</strong>: as defined in TS 38.300 [7].</p>
+<p><strong>NB-IoT:</strong> as defined in TS36.300 [11].</p>
+<p><strong>ng-eNB</strong>: as defined in TS 38.300 [7].</p>
+<p><strong>NG-RAN node</strong>: as defined in TS 38.300 [7].</p>
+<p><strong>UPF</strong>: as defined in TS 23.501 [8].</p>
+<h2 id="abbreviations">3.2 Abbreviations</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in TR 21.905 [1] and the following apply.<br />
+A term defined in the present document takes precedence over the
+definition of the same term, if any, in TR 21.905 [1].</p>
+<p>5GC 5G Core Network</p>
+<p>AMF Access and Mobility Management Function</p>
+<p>CIoT Cellular IoT</p>
+<p>MBS Multicast/Broadcast Service</p>
+<p>NB-IoT Narrow Band Internet of Things</p>
+<p>NG-U NG User plane interface</p>
+<p>PTP Point to Point</p>
+<p>PTM Point to Multipoint</p>
+<p>QMC QoE Measurement Collection</p>
+<p>QoE Quality of Experience</p>
+<p>RIM Remote Interference Management</p>
+<p>SMF Session Management Function</p>
+<p>UP User Plane</p>
+<p>UPF User Plane Function</p>
+<h1 id="general-aspects">4 General aspects</h1>
+<h2 id="ng-architecture">4.1 NG Architecture</h2>
+<p>The NG-RAN is layered into a Radio Network Layer (RNL) and a
+Transport Network Layer (TNL). The NG-RAN architecture, i.e. the NG-RAN
+logical nodes and interfaces between them, are defined as part of the
+RNL.</p>
+<p>The NG-RAN architecture consists of a set of gNBs and ng-eNBs which
+are connected to the 5GC through the NG interface and is specified in TS
+38.300 [7].</p>
+<p>The NG-RAN may have several NG access points towards the 5GC. As a
+minimum, each NG access point<br />
+(in NG-RAN or 5GC) shall independently fulfil the requirements of the
+relevant NG specifications (3GPP 38.41x series - see clause 7).</p>
+<p>NG is a logical interface.</p>
+<p>There may be multiple NG-C logical interfaces towards the 5GC from
+any one NG-RAN node. The selection of the NG-C interface is then
+determined by the NAS Node Selection function as described in clause
+5.</p>
+<p>There may be multiple NG-U logical interfaces towards the 5GC from
+any one NG-RAN node. The selection of the NG-U interface is done within
+the 5GC and signalled to the NG-RAN node by the AMF.</p>
+<h2 id="ng-interface-general-principles">4.2 NG interface general
+principles</h2>
+<p>The general principles for the specification of the NG interface are
+as follows:</p>
+<p>- the NG interface is open;</p>
+<p>- the NG interface supports the exchange of signalling information
+between the NG-RAN and 5GC;</p>
+<p>- from a logical standpoint, the NG is a point-to-point interface
+between an NG-RAN node and a 5GC node. A point-to-point logical
+interface is feasible even in the absence of a physical direct
+connection between the NG-RAN and 5GC;</p>
+<p>- the NG interface supports control plane and user plane
+separation;</p>
+<p>- the NG interface separates Radio Network Layer and Transport
+Network Layer;</p>
+<p>- the NG interface is future proof to fulfil different new
+requirements and support of new services and new functions;</p>
+<p>- the NG interface is decoupled with the possible NG-RAN deployment
+variants;</p>
+<p>- the NG Application Protocol supports modular procedures design and
+uses a syntax allowing optimized encoding /decoding efficiency.</p>
+<h2 id="ng-interface-specification-objectives">4.3 NG interface
+specification objectives</h2>
+<p>The NG interface specification facilitates the following:</p>
+<p>- inter-connection of NG-RAN nodes with AMFs supplied by different
+manufacturers;</p>
+<p>- separation of NG interface Radio Network functionality and
+Transport Network functionality to facilitate introduction of future
+technology.</p>
+<h2 id="ng-interface-capabilities">4.4 NG interface capabilities</h2>
+<p>The NG interface supports:</p>
+<p>- procedures to establish, maintain and release NG-RAN part of PDU
+sessions;</p>
+<p>- procedures to perform intra-RAT handover and inter-RAT
+handover;</p>
+<p>- the separation of each UE on the protocol level for user specific
+signalling management;</p>
+<p>- the transfer of NAS signalling messages between UE and AMF;</p>
+<p>- mechanisms for resource reservation for packet data streams;</p>
+<p>- procedures to establish, maintain and release NG-RAN part of MBS
+sessions.</p>
+<h1 id="functions-of-the-ng-interface">5 Functions of the NG
+interface</h1>
+<h2 id="general">5.1 General</h2>
+<p>The following clauses describe the functions supported over the NG
+interface.</p>
+<h2 id="paging-function">5.2 Paging function </h2>
+<p>The paging function supports the sending of paging requests to the
+NG-RAN nodes involved in the paging area e.g. the NG-RAN nodes of the
+TA(s) the UE is registered.</p>
+<p>The function also supports CN controlled subgrouping paging for UE
+Power Saving.</p>
+<h2 id="ue-context-management-function">5.3 UE Context Management
+function </h2>
+<p>The UE Context management function allows the AMF to establish,
+modify or release a UE Context in the AMF and the NG-RAN node e.g. to
+support user individual signalling on NG.</p>
+<p>The function also enables the AMF to manage RRC state notifications
+of a CM-CONNECTED UE.</p>
+<h2 id="mobility-management-function">5.4 Mobility Management function
+</h2>
+<p>The mobility function for UEs in CM-CONNECTED includes the
+intra-system handover function to support mobility within NG-RAN and
+inter-system handover function to support mobility from/to EPS system.
+It comprises the preparation, execution and completion of handover via
+the NG interface.</p>
+<h2 id="pdu-session-management-function">5.5 PDU Session Management
+function </h2>
+<p>The PDU Session function is responsible for establishing, modifying
+and releasing the involved PDU sessions NG-RAN resources for user data
+transport once a UE context is available in the NG-RAN node.</p>
+<p>NGAP supports transparent relaying of PDU Session related information
+by the AMF as described in TS 23.502 [6].</p>
+<h2 id="nas-transport-function">5.6 NAS Transport function </h2>
+<p>The NAS Signalling Transport function provides means to transport or
+reroute a NAS message (e.g. for NAS mobility management), or report the
+non-delivery of a NAS message for a specific UE over the NG
+interface.</p>
+<h2 id="nas-node-selection-function">5.7 NAS Node Selection
+function</h2>
+<p>The interconnection of NG-RAN nodes to multiple AMFs is supported in
+the 5GS architecture.</p>
+<p>Therefore, a NAS node selection function is located in the NG-RAN
+node to determine the AMF association of the UE, based on the UE's
+temporary identifier, which was assigned to the UE by the AMF. When the
+UE's temporary identifier has not been yet assigned or is no longer
+valid the NG-RAN node may instead take into account other information
+(e.g. slicing information, onboarding indication) to determine the AMF.
+When the NG-RAN node is configured to ensure that the selected AMF
+serves the country where the UE is located, as described in TS 23.501
+[8], the NG-RAN node takes into account UE location information, if
+available, when determining the AMF.</p>
+<p>This functionality is located in the NG-RAN node and enables proper
+routing via the NG interface. On NG, no specific procedure corresponds
+to the NAS Node Selection Function.</p>
+<h2 id="ng-interface-management-function">5.8 NG Interface Management
+function </h2>
+<p>The NG-interface management functions provide</p>
+<p>- means to ensure a defined start of NG-interface operation
+(reset);</p>
+<p>- means to handle different versions of application part
+implementations and protocol errors (error indication).</p>
+<h2 id="warning-message-transmission-function">5.9 Warning Message
+Transmission function </h2>
+<p>The warning message transmission function provides means to transfer
+warning messages via NG interface or cancel ongoing broadcast of warning
+messages. It also provides the capability for the NG-RAN to inform the
+AMF that ongoing PWS operation has failed for one or more areas, or that
+one or more areas may be reloaded by the CBC.</p>
+<h2 id="configuration-transfer-function">5.10 Configuration Transfer
+function </h2>
+<p>The Configuration Transfer function is a generic mechanism that
+allows the request and transfer of RAN configuration information (e.g.
+SON information) between two RAN nodes via the core network.</p>
+<h2 id="trace-function">5.11 Trace function</h2>
+<p>The Trace function provides means to control trace sessions in the
+NG-RAN node.</p>
+<h2 id="amf-management-function">5.12 AMF Management function</h2>
+<p>The AMF management function supports AMF planned removal and AMF
+auto-recovery as specified in TS 23.501 [8].</p>
+<h2 id="multiple-tnl-associations-support-function">5.13 Multiple TNL
+Associations Support Function</h2>
+<p>When there are multiple TNL associations between a NG-RAN node and an
+AMF, the NG-RAN node selects the TNL association for NGAP signalling
+based on the usage and the weight factor of each TNL association
+received from the AMF, and uses the TNL association as specified in TS
+23.501 [8] and TS 23.502 [6]. If an AMF releases a TNL association or a
+TNL association has failed, the NG-RAN node selects a new one as
+specified in TS 23.501 [8] and TS 23.502 [6].</p>
+<h2 id="amf-load-balancing-function">5.14 AMF Load Balancing function
+</h2>
+<p>The NG interface supports the indication by the AMF of its relative
+capacity to the NG-RAN node in order to achieve load-balanced AMFs
+within the pool area.</p>
+<h2 id="location-reporting-function">5.15 Location Reporting
+function</h2>
+<p>This function enables the AMF to request the NG-RAN node to report
+the UE's current location, or the UE's last known location with
+timestamp, or the UE's presence in a configured area of interest.</p>
+<h2 id="amf-re-allocation-function">5.16 AMF Re-allocation function</h2>
+<p>This function allows to redirect an initial connection request issued
+by an NG-RAN node from an initial AMF towards a target AMF selected by
+5GC. In this case the NG-RAN node initiates an Initial UE Message
+procedure over one NG interface instance and receives the first downlink
+message to close the UE-associated logical connection over a different
+NG interface instance.</p>
+<h2 id="ue-radio-capability-management-function">5.17 UE Radio
+Capability Management function </h2>
+<p>The UE Radio Capability Management function is related to the UE
+radio capability handling.</p>
+<h2 id="nrppa-signaling-transport-function">5.18 NRPPa Signaling
+Transport function</h2>
+<p>The NRPPa (NR Positioning Protocol A) Signalling Transport function
+provides means to transport an NRPPa (3GPP TS 38.455 [10]) message
+transparently over the NG interface.</p>
+<h2 id="overload-control-function">5.19 Overload Control function</h2>
+<p>The overload function provides means to enable AMF controls the load
+that the NG-RAN node(s) are generating.</p>
+<h2 id="report-of-secondary-rat-data-volumes-function">5.20 Report of
+Secondary RAT data volumes Function</h2>
+<p>The Report of Secondary RAT data volumes Function enables the NG-RAN
+node to report Secondary RAT usage data information in case of MR-DC,
+either with a dedicated procedure or by including Secondary RAT usage
+data information in other messages.</p>
+<h2 id="rim-information-transfer-function">5.21 RIM Information Transfer
+function </h2>
+<p>The RIM Information Transfer function is a generic mechanism that
+allows the transfer of Remote Interference Management (RIM) information
+between two RAN nodes via the core network.</p>
+<h2 id="retrieve-ue-information-function">5.22 Retrieve UE Information
+function</h2>
+<p>The Retrieve UE Information function enables the NG-RAN node to
+request UE information (e.g. QoS differentiation information) from the
+AMF before the setup of the NG connection for NB-IoT UE(s) using Control
+Plane CIoT 5GS Optimization.</p>
+<h2 id="ran-cp-relocation-indication-function">5.23 RAN CP Relocation
+Indication function</h2>
+<p>The RAN CP Relocation Indication function enables the initiation of
+the UE-associated logical NG-connection for a NB-IoT UE using Control
+Plane CIoT 5GS Optimisation following a re-establishment request. It
+allows to have the re-estabblishment request authenticated by the
+AMF.</p>
+<h2 id="suspend-resume-function">5.24 Suspend-Resume function</h2>
+<p>This function enables to suspend the UE-associated logical
+NG-connection and release the NG-U tunnel while storing the UE context
+in the NG-RAN for a faster subsequent resume as specified for User Plane
+CIoT 5GS optimizations in TS 23.501 [8]. In this version of the
+specification, this function only applies for long eDRX cycles.</p>
+<h2 id="connection-establishment-indication-function">5.25 Connection
+Establishment Indication Function</h2>
+<p>The connection establishment indication function enables the AMF to
+complete the establishment of the UE-associated logical
+NG-connection.</p>
+<h2 id="amf-cp-relocation-indication-function">5.26 AMF CP Relocation
+Indication Function</h2>
+<p>The AMF CP relocation indication function enables the AMF to inform
+the previously serving NG-RAN node that the UE's connection is to be
+relocated to a new NG-RAN node.</p>
+<h2 id="nr-mbs-session-management-function">5.27 NR MBS Session
+Management function</h2>
+<p>The MBS Session Management function is responsible for establishing,
+modifying and releasing the involved NR MBS sessions NG-RAN resources
+for user data transport once an MBS context is available in the NG-RAN
+node.</p>
+<p>NGAP supports transparent relaying of MBS Session related information
+by the AMF as described in TS 23.247 [12].</p>
+<h2 id="multicast-group-paging-function">5.28 Multicast Group Paging
+Function</h2>
+<p>The Multicast group paging function supports the sending of multicast
+group paging requests to the NG-RAN nodes in order to group-page UEs
+that have joined the Multicast MBS Session</p>
+<h2 id="qmc-support-function">5.29 QMC support function</h2>
+<p>The QMC function provides means to manage the QMC sessions and
+support the mobility of QMC sessions over the NG interface.</p>
+<h1 id="signalling-procedures-of-the-ng-interface">6 Signalling
+procedures of the NG interface</h1>
+<h2 id="pdu-session-management-procedures">6.1 PDU Session Management
+Procedures</h2>
+<p>The following PDU Session management procedures are used to
+establish, release or modify PDU sessions.</p>
+<p>- PDU Session Resource Setup;</p>
+<p>- PDU Session Resource Release;</p>
+<p>- PDU Session Resource Modify;</p>
+<p>- PDU Session Resource Notify;</p>
+<p>- PDU Session Resource Modify Indication.</p>
+<h2 id="ue-context-management-procedures">6.2 UE Context Management
+Procedures</h2>
+<p>The following UE Context management procedures are used to establish,
+release or modify the UE context. They may also be used to report RRC
+state transition from NG-RAN to 5GC.</p>
+<p>- Initial Context Setup;</p>
+<p>- UE Context Release Request;</p>
+<p>- UE Context Release;</p>
+<p>- UE Context Modification;</p>
+<p>- RRC Inactive Transition Report.</p>
+<h2 id="nas-transport-procedures">6.3 NAS transport procedures</h2>
+<p>The NAS transport procedures enable transparent transfer of NAS
+signalling data between the AMF and the UE. The procedures providing
+this functionality are:</p>
+<p>- Initial UE Message (NG-RAN node initiated);</p>
+<p>- Uplink NAS transport (NG-RAN node initiated);</p>
+<p>- Downlink NAS transport (AMF initiated);</p>
+<p>- NAS non delivery indication (NG-RAN node initiated);</p>
+<p>- Reroute NAS Request (AMF initiated).</p>
+<h2 id="ue-mobility-management-procedures">6.4 UE Mobility Management
+Procedures</h2>
+<p>The following UE Mobility management procedures are used to prepare,
+execute or cancel handovers:</p>
+<p>- Handover Preparation;</p>
+<p>- Handover Resource Allocation;</p>
+<p>- Handover Notification;</p>
+<p>- Path Switch Request;</p>
+<p>- Uplink RAN Status Transfer;</p>
+<p>- Downlink RAN Status Transfer;</p>
+<p>- Handover Cancellation ;</p>
+<p>- Handover Success;</p>
+<p>- Uplink RAN Early Status Transfer;</p>
+<p>- Downlink RAN Early Status Transfer.</p>
+<h2 id="paging-procedure">6.5 Paging procedure</h2>
+<p>The following paging procedure is used to send paging requests to the
+NG-RAN nodes involved in the paging area:</p>
+<p>- Paging.</p>
+<h2 id="amf-management-procedures">6.6 AMF Management procedures</h2>
+<p>The following AMF management procedures are used by the AMF to inform
+the NG-RAN nodes about an AMF's status, and to release the UE TNLA
+binding for specific UE(s):</p>
+<p>- AMF Status Indication;</p>
+<p>- UE TNLA binding release.</p>
+<h2 id="ng-interface-management-procedures">6.7 NG Interface Management
+procedures</h2>
+<p>The following procedures are used to manage the NG interface:</p>
+<p>- NG Setup;</p>
+<p>- RAN Configuration Update;</p>
+<p>- AMF Configuration Update;</p>
+<p>- NG Reset;</p>
+<p>- Error Indication.</p>
+<h2 id="warning-message-transmission-procedures">6.8 Warning message
+transmission procedures</h2>
+<p>The following procedures are used to manage the broadcasting of
+warning messages:</p>
+<p>- Write-Replace Warning;</p>
+<p>- PWS Cancel;</p>
+<p>- PWS Restart Indication;</p>
+<p>- PWS Failure Indication.</p>
+<h2 id="location-reporting-procedures">6.9 Location Reporting
+procedures</h2>
+<p>The following procedures are used to report the location of the
+UE:</p>
+<p>- Location Reporting Control;</p>
+<p>- Location Report;</p>
+<p>- Location Reporting Failure Indication.</p>
+<h2 id="ue-radio-capability-management-procedures">6.10 UE Radio
+Capability Management procedures</h2>
+<p>The following procedures are related to the UE radio capability
+handling:</p>
+<p>- UE Radio Capability Check;</p>
+<p>- UE Radio Capability Info Indication;</p>
+<p>- UE Radio Capability ID Mapping.</p>
+<h2 id="ue-tracing-procedures">6.11 UE Tracing procedures</h2>
+<p>The following procedures are used to trace the UE:</p>
+<p>- Trace Start;</p>
+<p>- Trace Failure Indication;</p>
+<p>- Deactivate Trace;</p>
+<p>- Cell Traffic Trace.</p>
+<h2 id="nr-positioning-protocol-a-nrppa-procedures">6.12 NR Positioning
+Protocol A (NRPPa) procedures</h2>
+<p>The following procedures are used for NRPPa signalling:</p>
+<p>- Downlink UE Associated NRPPa Transport;</p>
+<p>- Uplink UE Associated NRPPa Transport;</p>
+<p>- Downlink non-UE Associated NRPPa Transport;</p>
+<p>- Uplink non-UE Associated NRPPa Transport.</p>
+<h2 id="overload-control-procedures">6.13 Overload Control
+procedures</h2>
+<p>The following procedures are used by the AMF to start or stop
+overload control:</p>
+<p>- Overload Start procedure;</p>
+<p>- Overload Stop procedure.</p>
+<h2 id="configuration-transfer-procedures">6.14 Configuration Transfer
+procedures</h2>
+<p>The following procedures are used by the AMF to transfer the RAN
+configuration information:</p>
+<p>- Downlink RAN Configuration Transfer procedure;</p>
+<p>- Uplink RAN Configuration Transfer procedure.</p>
+<h2 id="secondary-rat-data-usage-report-procedure">6.15 Secondary RAT
+Data Usage Report procedure</h2>
+<p>The following procedure is used to provide information on the used
+resources of the secondary RAT:</p>
+<blockquote>
+<p>- Secondary RAT Data Usage Report procedure.</p>
+</blockquote>
+<h2 id="rim-information-transfer-procedures">6.16 RIM Information
+Transfer procedures</h2>
+<p>The following procedures are used by the AMF to transfer the Remote
+Interference Management (RIM) information:</p>
+<p>- Downlink RIM Information Transfer procedure;</p>
+<p>- Uplink RIM Information Transfer procedure.</p>
+<h2 id="retrieve-ue-information-procedures">6.17 Retrieve UE Information
+procedures</h2>
+<p>The following procedures are used by the NG-RAN node to retrieve UE
+information from the AMF:</p>
+<p>- Retrieve UE Information Request procedure;</p>
+<p>- UE Information Transfer procedure.</p>
+<h2 id="ran-cp-relocation-indication-procedures">6.18 RAN CP Relocation
+Indication procedures</h2>
+<p>The following procedure is used by the NG-RAN node to initiate the
+UE-associated logical NG-connection for the RAN CP Relocation
+function:</p>
+<p>- RAN CP Relocation Indication procedure.</p>
+<h2 id="ue-context-suspend-procedure">6.19 UE Context Suspend
+procedure</h2>
+<p>The following procedure is to suspend the UE-associated logical
+NG-connection and release the NG-U tunnel with the 5GC while keeping the
+UE context in NG-RAN. In this version of the specification, this
+procedure applies only if the NG-RAN node is an ng-eNB.</p>
+<p>- UE Context Suspend procedure.</p>
+<h2 id="connection-establishment-indication-procedure">6.20 Connection
+Establishment Indication procedure</h2>
+<p>The following procedure is used to enable the AMF to provide
+information to the NG-RAN node to complete the establishment of the
+UE-associated logical NG-connection, for UEs using CIoT 5GS
+Optimization:</p>
+<p>- Connection Establishment Indication.</p>
+<p>The UE Radio Capability may be provided from the AMF to the NG-RAN
+node in this procedure. If the UE Radio Capability is not included, this
+may trigger the NG-RAN node to request the UE Radio Capability from the
+UE and to provide it to the AMF in the UE RADIO CAPABILITY INFO
+INDICATION message.</p>
+<h2 id="amf-cp-relocation-indication-procedure">6.21 AMF CP Relocation
+Indication procedure</h2>
+<p>The following procedure is used to inform the previously serving
+NG-RAN node that the UE's connection is to be relocated to a new NG-RAN
+node, for UEs using Control Plane CIoT 5GS optimizations:</p>
+<p>- AMF CP Relocation Indication.</p>
+<h2 id="ue-context-resume-procedure">6.22 UE Context Resume
+procedure</h2>
+<p>The following procedure is used to resume the UE context, resume the
+suspended logical NG-connection and re-establish the related NG-U tunnel
+in the 5GC for the involved UE. In this version of the specification,
+this procedure applies only if the NG-RAN node is an ng-eNB.</p>
+<p>- UE Context Resume procedure.</p>
+<h2 id="nr-mbs-session-management-procedures">6.23 NR MBS Session
+Management Procedures</h2>
+<p>The following list of MBS Session management procedures are used to
+establish, release, or modify NG-RAN resources for a NR MBS session:</p>
+<p>- Broadcast Session Resource Setup;</p>
+<p>- Broadcast Session Modification;</p>
+<p>- Broadcast Session Resource Release;</p>
+<p>- Broadcast Session Resource Release Required;</p>
+<p>- Multicast Session Activation;</p>
+<p>- Multicast Session Deactivation;</p>
+<p>- Multicast Session Update;</p>
+<p>- Distribution Setup;</p>
+<p>- Distribution Release;</p>
+<h2 id="multicast-group-paging-procedures">6.24 Multicast Group Paging
+Procedures</h2>
+<p>The following Multicast Group Paging procedure is used to send
+multicast group paging requests to the NG-RAN nodes:</p>
+<p>- Multicast Group Paging.</p>
+<h2 id="the-procedures-for-supporting-qmc">6.25 The procedures for
+supporting QMC</h2>
+<p>The following procedures are used to control the QMC sessions in the
+UE and to transfer QMC session information to the target NG-RAN node
+during a UE’s intra-system intra-RAT mobility:</p>
+<p>- Initial Context Setup;</p>
+<p>- UE Context Modification;</p>
+<p>- Handover Preparation;</p>
+<p>- Handover Resource Allocation.</p>
+<h1 id="ng-interface-protocol-structure">7 NG interface protocol
+structure</h1>
+<h2 id="ng-control-plane">7.1 NG Control Plane</h2>
+<p>The control plane protocol stack of the NG interface is shown on
+Figure 7.1-1. The transport network layer is built on IP transport. For
+the reliable transport of signalling messages, SCTP is added on top of
+IP. The application layer signalling protocol is referred to as NGAP (NG
+Application Protocol).</p>
+<p><img src="media/image3.svg" /></p>
+<p>Figure 7.1-1: NG Interface Control Plane</p>
+<h2 id="ng-user-plane">7.2 NG User Plane</h2>
+<p>The NG user plane (NG-U) interface is defined between a NG-RAN node
+and a UPF. The NG-U interface provides non guaranteed delivery of PDU
+Session/MBS session user plane PDUs between the NG-RAN node and the
+UPF.</p>
+<p>The protocol stack for NG-U is shown in Figure 7.2-1.</p>
+<p><img src="media/image4.svg" /></p>
+<p>Figure 7.2-1: NG-U protocol structure for PDU/MBS Session</p>
+<h1 id="other-ng-interface-specifications">8 Other NG interface
+specifications</h1>
+<h2 id="ng-ran-ng-interface-ng-layer-1-ts-38.411">8.1 NG-RAN NG
+interface: NG layer 1 (TS 38.411)</h2>
+<p>TS 38.411 [2] specifies the physical layer technologies that may be
+used to support the NG interface.</p>
+<h2 id="ng-ran-ng-interface-ng-signalling-transport-ts-38.412">8.2
+NG-RAN NG interface: NG signalling transport (TS 38.412)</h2>
+<p>TS 38.412 [3] specifies how the NGAP signalling messages are
+transported over NG.</p>
+<h2 id="ng-ran-ng-interface-ng-application-protocol-ngap-ts-38.413">8.3
+NG-RAN NG interface: NG application protocol (NGAP) (TS 38.413)</h2>
+<p>TS 38.413 [4] specifies the radio network layer signalling procedures
+of the control plane between the NG-RAN node and the AMF.</p>
+<h2 id="ng-ran-ng-interface-ng-data-transport-ts-38.414">8.4 NG-RAN NG
+interface: NG data transport (TS 38.414)</h2>
+<p>TS 38.414 [5] specifies the standards for user data transport
+protocols over the NG interface.</p>
+<h2
+id="ng-ran-ng-interface-ng-pdu-session-user-plane-protocol-ts-38.415">8.5
+NG-RAN NG interface: NG PDU Session user plane protocol (TS 38.415)
+</h2>
+<p>TS 38.415 [9] specifies the PDU Session user plane protocol
+procedures over the NG interface.</p>
+<p class="heading" id="annex-a-informative-change-history"><br />
+Annex A (informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 50%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-04</td>
+<td style="text-align: center;">R3#95b</td>
+<td style="text-align: center;">R3-171127</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TS skeleton</td>
+<td style="text-align: center;">0.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-04</td>
+<td style="text-align: center;">R3#95b</td>
+<td style="text-align: center;">R3-171397</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Update including TP from R3-171375 with
+text reduction from rapporteur</td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-05</td>
+<td style="text-align: center;">R3#96</td>
+<td style="text-align: center;">R3-171218</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Update of title page and change
+history</td>
+<td style="text-align: center;">0.0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-05</td>
+<td style="text-align: center;">R3#96</td>
+<td style="text-align: center;">R3-171965</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Addition of section 4 and 6. Deletion of
+the content of section 5 with detailed PDU session management procedure.
+Update of change history</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-05</td>
+<td style="text-align: center;">R3#96</td>
+<td style="text-align: center;">R3-172019</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Integration of R3-171981 with NAS
+Transport procedures. Update of change history.</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-07</td>
+<td style="text-align: center;">R3 NR AH# 2</td>
+<td style="text-align: center;">R3-172632</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Integration of R3-172597 and R3-172598
+respectively adding of a list of functions in section 5 and adding
+references to other NG specifications in sections 2 and 8.</td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-09</td>
+<td style="text-align: center;">R3#97</td>
+<td style="text-align: center;">R3-173448</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Integration of R3-173319 and R3-173325
+respectively adding a list of procedures and the AMF transparency for
+PDU session related information. Integration of R3-173318 for
+terminology alignment with NG-RAN node.</td>
+<td style="text-align: center;">0.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-10</td>
+<td style="text-align: center;">R3#97bis</td>
+<td style="text-align: center;">R3-174238</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Integration of R3-174104 modifying the
+NG architecture section. Integration of 3784 adding a list of
+procedures. Integration of 4151 adding AMF management function and
+procedures.</td>
+<td style="text-align: center;">0.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">R3#98</td>
+<td style="text-align: center;">R3-175055</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Integration of R3-174527.</td>
+<td style="text-align: center;">0.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-01</td>
+<td style="text-align: center;">R3 NR AH#1801</td>
+<td style="text-align: center;">R3-180648</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>Integration of R3-180540 removing
+NG-RAN from the abbreviations.</p>
+<p>Integration of R3-180095 correcting the description style of some
+procedures.</p></td>
+<td style="text-align: center;">0.7.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">R3#99</td>
+<td style="text-align: center;">R3-181585</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>Integration of R3-181486 for stage 2
+of PWS support.</p>
+<p>Integration of R3-181412 on NGAP support of multiple SCTP
+associations.</p></td>
+<td style="text-align: center;">0.8.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-04</td>
+<td style="text-align: center;">R3#99bis</td>
+<td style="text-align: center;">R3-182523</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Integration of R3-181981 introducing TS
+38.415. Integration of R3-182273 introducing explicit per UE TNLA
+binding release.</td>
+<td style="text-align: center;">0.9.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-05</td>
+<td style="text-align: center;">R3#100</td>
+<td style="text-align: center;">R3-183590</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Integration of R3-183343 with location
+reporting function and procedures. Integration of R3-183479 with AMF
+re-allocation function. Correction of some editorials according to
+drafting rules.</td>
+<td style="text-align: center;">0.10.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RAN#80</td>
+<td style="text-align: center;">RP-180739</td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">For approval</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RAN#80</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Specification approved at TSG-RAN and
+placed under change control</td>
+<td style="text-align: center;">15.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RAN#81</td>
+<td style="text-align: center;">RP-181922</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">NR Corrections (38.410 Baseline CR
+covering RAN3#101 agreements)</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RAN#82</td>
+<td style="text-align: center;">RP-182446</td>
+<td style="text-align: center;">0004</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur’s CR for TS38.410</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RAN#82</td>
+<td style="text-align: center;">RP-182447</td>
+<td style="text-align: center;">0005</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of Data Volume Reporting
+for MR-DC</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RP-86</td>
+<td style="text-align: center;">RP-192908</td>
+<td style="text-align: center;">0017</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Remote Interference Management Message
+Transfer Support</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RP-87-e</td>
+<td style="text-align: center;">RP-200429</td>
+<td style="text-align: center;">0023</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur Correction of TS 38.410</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201088</td>
+<td style="text-align: center;">0018</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of NBIOT dedicated CP
+functions when connected to 5GC</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201086</td>
+<td style="text-align: center;">0019</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of Suspend-Resume for
+5GC</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201086</td>
+<td style="text-align: center;">0020</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of CP CIoT 5GS Optimisation
+for NB-IoT and MTC connected to 5GC (Stage 2)</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201075</td>
+<td style="text-align: center;">0024</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Baseline CR for introducing Rel-16 NR
+mobility enhancement</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88-e</td>
+<td style="text-align: center;">RP-201078</td>
+<td style="text-align: center;">0025</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introducing Radio Capability
+Optimisation (RACS)</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RP-89-e</td>
+<td style="text-align: center;">RP-201951</td>
+<td style="text-align: center;">0026</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur Correction of TS 38.410</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-09</td>
+<td style="text-align: center;">RP-93-e</td>
+<td style="text-align: center;">RP-211882</td>
+<td style="text-align: center;">0033</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on NAS non delivery</td>
+<td style="text-align: center;">16.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220225</td>
+<td style="text-align: center;">0029</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">Clarification of NAS Node Selection
+Function for NTN nodes providing access over multiple countries</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220224</td>
+<td style="text-align: center;">0030</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">MBS BL CR for TS 38.410</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220220</td>
+<td style="text-align: center;">0032</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of support for eNPN</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220229</td>
+<td style="text-align: center;">0034</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">BLCR to 38.410: Support of QoE
+Measurement Collection for NR</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220235</td>
+<td style="text-align: center;">0037</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Support for UE Power Saving
+Enhancements</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95-e</td>
+<td style="text-align: center;">RP-220236</td>
+<td style="text-align: center;">0038</td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">Rapporteur Corrections of TS 38.410</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RP-96</td>
+<td style="text-align: center;">RP-221134</td>
+<td style="text-align: center;">0040</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on NR MBS for 38410</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RP-96</td>
+<td style="text-align: center;">RP-221143</td>
+<td style="text-align: center;">0042</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">QoE Rel-17 Corrections</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

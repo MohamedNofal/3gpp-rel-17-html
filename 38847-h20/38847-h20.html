@@ -1,0 +1,3202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38847-h20</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword">Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-of-terms-symbols-and-abbreviations"
+id="toc-definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</a>
+<ul>
+<li><a href="#terms" id="toc-terms">3.1 Terms</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#background" id="toc-background">4 Background</a>
+<ul>
+<li><a href="#itu-r" id="toc-itu-r">4.1 ITU-R</a></li>
+<li><a href="#fcc" id="toc-fcc">4.2 FCC</a></li>
+</ul></li>
+<li><a href="#nr-frequency-band-definition"
+id="toc-nr-frequency-band-definition">5 NR Frequency band
+definition</a></li>
+<li><a href="#channel-numbering-and-channel-bandwidth"
+id="toc-channel-numbering-and-channel-bandwidth">6 Channel numbering and
+channel bandwidth</a></li>
+<li><a href="#configurations-for-intra-band-contiguous-ca"
+id="toc-configurations-for-intra-band-contiguous-ca">7 Configurations
+for intra-band contiguous CA </a></li>
+<li><a href="#rf-requirements" id="toc-rf-requirements">8 RF
+requirements</a>
+<ul>
+<li><a href="#ue-specific" id="toc-ue-specific">8.1 UE specific</a>
+<ul>
+<li><a href="#transmitter-characteristics"
+id="toc-transmitter-characteristics">8.1.1 Transmitter
+characteristics</a></li>
+<li><a href="#receiver-characteristics"
+id="toc-receiver-characteristics">8.1.2 Receiver
+characteristics</a></li>
+</ul></li>
+<li><a href="#bs-specific" id="toc-bs-specific">8.2 BS specific</a>
+<ul>
+<li><a href="#band-agnostic-requirements"
+id="toc-band-agnostic-requirements">8.2.1 Band agnostic
+requirements</a></li>
+<li><a href="#transmitter-characteristics-1"
+id="toc-transmitter-characteristics-1">8.2.2 Transmitter
+characteristics</a>
+<ul>
+<li><a href="#adjacent-channel-leakage-ratio-aclr"
+id="toc-adjacent-channel-leakage-ratio-aclr">8.2.2.1 Adjacent Channel
+Leakage Ratio (ACLR)</a></li>
+<li><a href="#ota-operating-band-unwanted-emissions"
+id="toc-ota-operating-band-unwanted-emissions">8.2.2.2 OTA operating
+band unwanted emissions</a></li>
+<li><a href="#step-frequencies-for-tx-spurious-emission"
+id="toc-step-frequencies-for-tx-spurious-emission">8.2.2.3 Step
+frequencies for Tx spurious emission</a></li>
+</ul></li>
+<li><a href="#receiver-characteristics-1"
+id="toc-receiver-characteristics-1">8.2.3 Receiver characteristics</a>
+<ul>
+<li><a href="#step-frequencies-for-rx-spurious-emission"
+id="toc-step-frequencies-for-rx-spurious-emission">8.2.3.1 Step
+frequencies for Rx spurious emission</a></li>
+</ul></li>
+<li><a href="#bs-conformance-aspects"
+id="toc-bs-conformance-aspects">8.2.4 BS conformance aspects</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#rrm" id="toc-rrm">9 RRM</a>
+<ul>
+<li><a href="#frequency-bands-grouping"
+id="toc-frequency-bands-grouping">9.1 Frequency bands grouping</a></li>
+<li><a
+href="#conditions-for-rrm-requirements-applicability-for-operating-bands"
+id="toc-conditions-for-rrm-requirements-applicability-for-operating-bands">9.2
+Conditions for RRM requirements applicability for operating bands</a>
+<ul>
+<li><a href="#minimum-ssb_rp-values-for-rx-beam-peak-angle-of-arrival"
+id="toc-minimum-ssb_rp-values-for-rx-beam-peak-angle-of-arrival">9.2.1
+Minimum SSB_RP values for Rx Beam Peak angle of arrival</a></li>
+<li><a
+href="#minimum-ssb_rp-values-for-angle-of-arrival-within-spherical-coverage"
+id="toc-minimum-ssb_rp-values-for-angle-of-arrival-within-spherical-coverage">9.2.2
+Minimum SSB_RP values for angle of arrival within Spherical
+coverage</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#performance-requirements"
+id="toc-performance-requirements">10 Performance requirements</a>
+<ul>
+<li><a href="#base-station-requirements"
+id="toc-base-station-requirements">10.1 Base station
+requirements</a></li>
+<li><a href="#ue-requirements" id="toc-ue-requirements">10.2 UE
+requirements</a></li>
+</ul></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TR 38.847 V17.2.0 (2023-03)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Report</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NR;</p>
+<p>New frequency range for NR (47.2 – 48.2 GHz);</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.jpeg"
+style="width:1.32292in;height:0.91667in" /></td>
+<td style="text-align: right;"><img src="media/image2.png"
+style="width:1.77083in;height:1.04167in" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2023, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">5</a></p>
+<p>2 References <a href="#references">5</a></p>
+<p>3 Definitions of terms, symbols and abbreviations <a
+href="#definitions-of-terms-symbols-and-abbreviations">5</a></p>
+<p>3.1 Terms <a href="#terms">5</a></p>
+<p>3.2 Symbols <a href="#symbols">5</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">6</a></p>
+<p>4 Background <a href="#background">6</a></p>
+<p>4.1 ITU-R <a href="#itu-r">6</a></p>
+<p>4.2 FCC <a href="#fcc">7</a></p>
+<p>5 NR Frequency band definition <a
+href="#nr-frequency-band-definition">8</a></p>
+<p>6 Channel numbering and channel bandwidth <a
+href="#channel-numbering-and-channel-bandwidth">8</a></p>
+<p>7 Configurations for intra-band contiguous CA <a
+href="#configurations-for-intra-band-contiguous-ca">9</a></p>
+<p>8 RF requirements <a href="#rf-requirements">9</a></p>
+<p>8.1 UE specific <a href="#ue-specific">9</a></p>
+<p>8.1.1 Transmitter characteristics <a
+href="#transmitter-characteristics">9</a></p>
+<p>8.1.2 Receiver characteristics <a
+href="#receiver-characteristics">12</a></p>
+<p>8.2 BS specific <a href="#bs-specific">15</a></p>
+<p>8.2.1 Band agnostic requirements <a
+href="#band-agnostic-requirements">15</a></p>
+<p>8.2.2 Transmitter characteristics <a
+href="#transmitter-characteristics-1">15</a></p>
+<p>8.2.2.1 Adjacent Channel Leakage Ratio (ACLR) <a
+href="#adjacent-channel-leakage-ratio-aclr">15</a></p>
+<p>8.2.2.2 OTA operating band unwanted emissions <a
+href="#ota-operating-band-unwanted-emissions">16</a></p>
+<p>8.2.2.3 Step frequencies for Tx spurious emission <a
+href="#step-frequencies-for-tx-spurious-emission">16</a></p>
+<p>8.2.3 Receiver characteristics <a
+href="#receiver-characteristics-1">16</a></p>
+<p>8.2.3.1 Step frequencies for Rx spurious emission <a
+href="#step-frequencies-for-rx-spurious-emission">16</a></p>
+<p>8.2.4 BS conformance aspects <a
+href="#bs-conformance-aspects">16</a></p>
+<p>9 RRM <a href="#rrm">18</a></p>
+<p>9.1 Frequency bands grouping <a
+href="#frequency-bands-grouping">18</a></p>
+<p>9.2 Conditions for RRM requirements applicability for operating bands
+<a
+href="#conditions-for-rrm-requirements-applicability-for-operating-bands">18</a></p>
+<p>9.2.1 Minimum SSB_RP values for Rx Beam Peak angle of arrival <a
+href="#minimum-ssb_rp-values-for-rx-beam-peak-angle-of-arrival">18</a></p>
+<p>9.2.2 Minimum SSB_RP values for angle of arrival within Spherical
+coverage <a
+href="#minimum-ssb_rp-values-for-angle-of-arrival-within-spherical-coverage">18</a></p>
+<p>10 Performance requirements <a
+href="#performance-requirements">18</a></p>
+<p>10.1 Base station requirements <a
+href="#base-station-requirements">18</a></p>
+<p>10.2 UE requirements <a href="#ue-requirements">21</a></p>
+<p>Annex A (informative): Change history <a
+href="#annex-a-informative-change-history">24</a></p>
+<h1 id="foreword">Foreword</h1>
+<p>This Technical Report has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document is a technical report for Work Item on New Radio
+(NR) Access Technology, covering the new frequency range between 47.2-
+48.2 GHz for NR.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TS 38.141-2: "NR; Base Station (BS) conformance testing;
+Part 2: Radiated conformance testing".</p>
+<p>[3] 3GPP TS 38.133: "NR; Radio Resource Control (RRC); Protocol
+specification".</p>
+<p>[4] 3GPP TS 38.101-2: "NR; User Equipment (UE) radio transmission and
+reception; Part 2: Range 2 Standalone"</p>
+<p>[5] 3GPP TS 38.104: "NR; Base Station (BS) radio transmission and
+reception".</p>
+<p>[6] World Radiocommunication Conference 2019 (WRC-19) Final Acts,
+ITU-R</p>
+<p>[7] Title 47 of the Code of Federal Regulations (CFR) Part 30,
+FCC</p>
+<p>[8] Radio Regulations, Articles, Edition of 2020, ITU</p>
+<h1 id="definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</h1>
+<h2 id="terms">3.1 Terms</h2>
+<p>For the purposes of the present document, the terms given in 3GPP
+TR 21.905 [1] and the following apply. A term defined in the present
+document takes precedence over the definition of the same term, if any,
+in 3GPP TR 21.905 [1].</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<p>ΔF<sub>Global</sub> Global frequency raster granularity</p>
+<p>ΔF<sub>Raster</sub> Channel raster granularity</p>
+<p>F<sub>REF-Offs</sub> Offset used for calculating F<sub>REF</sub></p>
+<p>F<sub>step,X</sub> Frequency steps for the OTA transmitter spurious
+emissions</p>
+<p>N<sub>REF</sub> NR Absolute Radio Frequency Channel Number
+(NR-ARFCN)</p>
+<p>N<sub>REF-Offs</sub> Offset used for calculating N<sub>REF</sub></p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>ACLR Adjacent Channel Leakage Ratio</p>
+<p>ACS Adjacent Channel Selectivity</p>
+<p>BS Base Station</p>
+<p>BW Bandwidth</p>
+<p>EIRP Effective Isotropic Radiated Power</p>
+<p>FR Frequency Range</p>
+<p>GSCN Global Synchronization Channel Number</p>
+<p>ICS In-Channel Selectivity</p>
+<p>ITU‑R Radiocommunication Sector of the International
+Telecommunication Union</p>
+<p>NR New Radio</p>
+<p>NR-ARFCN NR Absolute Radio Frequency Channel Number</p>
+<p>OTA Over The Air</p>
+<p>RF Radio Frequency</p>
+<p>RX Receiver</p>
+<p>SCS Sub-Carrier Spacing</p>
+<p>TDD Time division Duplex</p>
+<h1 id="background">4 Background</h1>
+<h2 id="itu-r">4.1 ITU-R</h2>
+<p>As part of facilitating the development of 5G mobile networks, WRC-19
+identified the 47 GHz frequency band (47.2-48.2 GHz) for International
+Mobile Telecommunications (IMT) under Footnote 5.553B of the ITU Radio
+Regulations for use in 71 nations across Africa, Europe, the Middle East
+and Asia Pacific (ITU Regions 1 and 3 respectively), in addition to the
+entire Americas Region (ITU Region 2, which consists of 35 nations) [6].
+4.1-1 is the extract of the Radio Regulations ([8]) table of allocations
+providing the services allocated in the 47.2-48.2 GHz frequency
+range</p>
+<p>Table 4.1-1: Allocation information in the 47.2-48.2 GHz frequency
+range</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="3">Allocation to services</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Region 1</td>
+<td>Region 2</td>
+<td>Region 3</td>
+</tr>
+<tr>
+<td colspan="3"><p><strong>47.2-47.5</strong> FIXED</p>
+<p>FIXED-SATELLITE (Earth-to-space) 5.550C 5.552</p>
+<p>MOBILE 5.553B</p>
+<p>5.552A</p></td>
+</tr>
+<tr>
+<td><p>47.5-47.9</p>
+<p>FIXED</p>
+<p>FIXED-SATELLITE<br />
+(Earth-to-space) 5.550C 5.552</p>
+<p>(space-to-Earth) 5.516B 5.554A</p>
+<p>MOBILE 5.553B</p></td>
+<td colspan="2"><p>47.5-47.9</p>
+<p>FIXED</p>
+<p>FIXED-SATELLITE (Earth-to-space) 5.550C 5.552</p>
+<p>MOBILE 5.553B</p></td>
+</tr>
+<tr>
+<td colspan="3"><p><strong>47.9-48.2</strong> FIXED</p>
+<p>FIXED-SATELLITE (Earth-to-space) 5.550C 5.552</p>
+<p>MOBILE 5.553B</p>
+<p>5.552A</p></td>
+</tr>
+</tbody>
+</table>
+<p>With the footnote 5.553B: In Region 2 and Algeria, Angola, Saudi
+Arabia, Australia, Bahrain, Benin, Botswana, Burkina Faso, Burundi,
+Cameroon, Central African Rep., Comoros, Congo (Rep. of the), Korea
+(Rep. of), Côte d’Ivoire, Djibouti, Egypt, United Arab Emirates,
+Eswatini, Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau,
+Equatorial Guinea, India, Iran (Islamic Republic of), Iraq, Japan,
+Jordan, Kenya, Kuwait, Lesotho, Liberia, Libya, Lithuania, Madagascar,
+Malaysia, Malawi, Mali, Morocco, Mauritius, Mauritania, Mozambique,
+Namibia, Niger, Nigeria, Oman, Uganda, Qatar, the Syrian Arab Republic,
+the Dem. Rep. of the Congo, Rwanda, Sao Tome and Principe, Senegal,
+Seychelles, Sierra Leone, Singapore, Slovenia, Somalia, Sudan, South
+Sudan, South Africa, Sweden, Tanzania, Chad, Togo, Tunisia, Zambia and
+Zimbabwe, the frequency band 47.2-48.2 GHz is identified for use by
+administrations wishing to implement International Mobile
+Telecommunications (IMT). This identification does not preclude the use
+of this frequency band by any application of the services to which it is
+allocated, and does not establish any priority in the Radio Regulations.
+Resolution 243 (WRC-19) applies. (WRC-19).</p>
+<p>According to Resolution 243 (WRC-19) [6], IMT in 47.2-48.2 GHz may
+coexist with satellite services and IMT base stations may require some
+measure to protect the services by bilateral agreement and possibly with
+site engineering solutions. Such protection measure is not a scope of
+3GPP work, therefore, no specific coexistence requirement is specified
+in 3GPP for the mobile and base stations to protect other services for
+example by having additional spurious emission requirements.</p>
+<p>However, it cannot be excluded any requirement is introduced by
+individual administration in nation level in the future to protect the
+service in the same or adjacent bands. Current 3GPP framework is
+flexible enough to introduce additional requirement later by Network
+signalling mechanism. Therefore, this band can be reused even if
+additional coexistence requirement is introduced in future by some
+administrations.</p>
+<h2 id="fcc">4.2 FCC</h2>
+<p>The US FCC auctioned the 47 GHz band beginning in December 2019 as
+part of Auction 103. The 47 GHz band (47.2-48.2 GHz) was auctioned in 10
+blocks of 100 megahertz in each PEA (Partial Economic Area) license. The
+auction was concluded on 3/5/2020.</p>
+<p>The radio regulatory requirements in FCC rules are specified in CFR
+Title 47 Part 30 [7]. The channelization is 100 MHz starting from 47.2
+GHz ending at 48.2 GHz. The emission requirements for both BS and UE are
+aligned with other FR2 bands in FCC, i.e., bands n260, and n261 in
+3GPP.</p>
+<p>The power limits and unwanted emissions for the transportable station
+(intended for CPE devices) are consistent with the existing UE power
+class 1 for FR2 bands. The ones for the mobile stations are consistent
+with the existing FR2 UE power class 2, 3, and 4.</p>
+<p>Table 4.2-1 captures channel arrangement, power limits and unwanted
+emissions specified by FCC.</p>
+<p>Table 4.2-1: FCC requirements</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr>
+<th>Channel arrangement</th>
+<th>47.2-47.3 GHz; 47.3-47.4 GHz; 47.4-47.5 GHz; 47.5-47.6 GHz;
+47.6-47.7 GHz; 47.7-47.8 GHz; 47.8-47.9 GHz; 47.9-48.0 GHz; 48.0-48.1
+GHz; and 48.1-48.2 GHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power limit (EIRP)</td>
+<td><p>Base station: +75 dBm/100MHz</p>
+<p>Mobile station: +43 dBm</p>
+<p>Transportable station: +55 dBm</p></td>
+</tr>
+<tr>
+<td>Unwanted emissions</td>
+<td><p>-5 dBm/MHz (within 10% of channel bandwidth separation)</p>
+<p>-13 dBm/MHz (outside more than 10% of channel bandwidth
+apart)</p></td>
+</tr>
+</tbody>
+</table>
+<h1 id="nr-frequency-band-definition">5 NR Frequency band
+definition</h1>
+<p>The new band 47.2-48.2 GHz is within the range of FR2 (24250 – 52600
+MHz) and is proposed as a TDD band (Table 5-1). The first unused FR2
+band number, n262, is proposed for this new band.</p>
+<p>Table 5-1: New NR band in FR2</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Band number</th>
+<th>UL</th>
+<th>DL</th>
+<th>Duplex mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n262</td>
+<td>47.2 – 48.2 GHz</td>
+<td>47.2 – 48.2 GHz</td>
+<td>TDD</td>
+</tr>
+</tbody>
+</table>
+<h1 id="channel-numbering-and-channel-bandwidth">6 Channel numbering and
+channel bandwidth</h1>
+<p>Though the channelization in FCC rules is 100 MHz, it is not
+precluded to use 50 MHz channel bandwidth. Allocation block size is
+still unknown in other administrations. For maximum flexibility, the
+channel bandwidths for NR band n262 is proposed to be aligned with the
+existing FR2 bands as shown in Table 6-1.</p>
+<p>Table 6-1: NR channel bandwidth in the frequency range between
+47.2-48.2 GHz</p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">NR band</th>
+<th colspan="4">Channel bandwidth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Band number</td>
+<td>data SCS(kHz)</td>
+<td>50 MHz</td>
+<td>100 MHz</td>
+<td>200 MHz</td>
+<td>400 MHz</td>
+</tr>
+<tr>
+<td rowspan="2">n262</td>
+<td>60</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td>120</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>NR-ARFCN parameters for the global frequency raster are presented in
+TS 38.104, table 6-2:</p>
+<p>Table 6-2: NR-ARFCN parameters for the global frequency raster</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 17%" />
+<col style="width: 18%" />
+<col style="width: 13%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>Frequency range (MHz)</th>
+<th>ΔF<sub>Global</sub> (kHz)</th>
+<th>F<sub>REF-Offs</sub> (MHz)</th>
+<th>N<sub>REF-Offs</sub></th>
+<th>Range of N<sub>REF</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 – 3000</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0 – 599999</td>
+</tr>
+<tr>
+<td>3000 – 24250</td>
+<td>15</td>
+<td>3000</td>
+<td>600000</td>
+<td>600000 – 2016666</td>
+</tr>
+<tr>
+<td>24250 – 100000</td>
+<td>60</td>
+<td>24250.08</td>
+<td>2016667</td>
+<td>2016667 – 3279165</td>
+</tr>
+</tbody>
+</table>
+<p>Using information above and the equation F<sub>REF</sub> =
+F<sub>REF-Offs</sub> + ΔF<sub>Global</sub> (N<sub>REF</sub> –
+N<sub>REF-Offs</sub>), the channel raster for n262 is also proposed to
+cover all the frequency with the 60/120 kHz channel raster aligned with
+the other F2 band as presented in Table 6-3.</p>
+<p>Table 6-3: Applicable NR-ARFCN in the frequency range between
+47.2-48.2 GHz</p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR Operating Band</th>
+<th><p>ΔF<sub>Raster</sub></p>
+<p>(kHz)</p></th>
+<th><p>Uplink and Downlink</p>
+<p>Range of N<sub>REF</sub></p>
+<p>(First – &lt;Step size&gt; – Last)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">n262</td>
+<td>60</td>
+<td>2399166 – &lt;1&gt; – 2415832</td>
+</tr>
+<tr>
+<td>120</td>
+<td>2399167 – &lt;2&gt; – 2415831</td>
+</tr>
+</tbody>
+</table>
+<p>The synchronization raster in the frequency range between 47.2-48.2
+GHz is given in Table 6-4. The distance between applicable GSCN entries
+is given by the &lt;Step size&gt; indicated in Table 6-4 with the step
+size interval of 17.28 MHz.</p>
+<p>Table 6-4: Applicable SS raster entries in the frequency range
+between 39.5-43.5 GHz</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR Operating Band</th>
+<th>SS Block SCS</th>
+<th>SS Block pattern<sup>1</sup></th>
+<th><p>Range of GSCN</p>
+<p>(First – &lt;Step size&gt; – Last)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">n262</td>
+<td>120 kHz</td>
+<td>Case D</td>
+<td>23586 – &lt;1&gt; – 23641</td>
+</tr>
+<tr>
+<td>240 kHz</td>
+<td>Case E</td>
+<td>23588 – &lt;2&gt; – 23640</td>
+</tr>
+<tr>
+<td colspan="4">NOTE: SS Block pattern is defined in subclause 4.1 in TS
+38.213.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="configurations-for-intra-band-contiguous-ca">7 Configurations
+for intra-band contiguous CA </h1>
+<p>Table 7-1: NR CA configurations, bandwidth combination sets, and
+fallback group defined for intra-band contiguous CA</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 4%" />
+<col style="width: 6%" />
+</colgroup>
+<tbody>
+<tr>
+<td>NR CA configuration</td>
+<td>Uplink CA configurations</td>
+<td>BWChannel (MHz)</td>
+<td>BWChannel (MHz)</td>
+<td>BWChannel (MHz)</td>
+<td>BWChannel (MHz)</td>
+<td>BWChannel (MHz)</td>
+<td>BWChannel (MHz)</td>
+<td>BWChannel (MHz)</td>
+<td>BWChannel (MHz)</td>
+<td><p>Maximum aggregated</p>
+<p>BW (MHz)</p></td>
+<td>BCS</td>
+<td>Fallback group</td>
+</tr>
+<tr>
+<td>CA_n262G</td>
+<td>CA_n262G</td>
+<td>50, 100</td>
+<td>100</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td>CA_n262H</td>
+<td><p>CA_n262G</p>
+<p>CA_n262H</p></td>
+<td>50, 100</td>
+<td>100</td>
+<td>100</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n262I</td>
+<td><p>CA_n262G</p>
+<p>CA_n262H</p>
+<p>CA_n262I</p></td>
+<td>50, 100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>400</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n262J</td>
+<td><p>CA_n262G</p>
+<p>CA_n262H</p>
+<p>CA_n262I</p>
+<p>CA_n262J</p></td>
+<td>50, 100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td></td>
+<td></td>
+<td></td>
+<td>500</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n262K</td>
+<td><p>CA_n262G</p>
+<p>CA_n262H</p>
+<p>CA_n262I</p>
+<p>CA_n262J</p>
+<p>CA_n262K</p></td>
+<td>50, 100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td></td>
+<td></td>
+<td>600</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n262L</td>
+<td><p>CA_n262G</p>
+<p>CA_n262H</p>
+<p>CA_n262I</p>
+<p>CA_n262J</p>
+<p>CA_n262K</p>
+<p>CA_n262L</p></td>
+<td>50, 100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td></td>
+<td>700</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n262M</td>
+<td><p>CA_n262G</p>
+<p>CA_n262H</p>
+<p>CA_n262I</p>
+<p>CA_n262J</p>
+<p>CA_n262K</p>
+<p>CA_n262L</p>
+<p>CA_n262M</p></td>
+<td>50, 100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>800</td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rf-requirements">8 RF requirements</h1>
+<h2 id="ue-specific">8.1 UE specific</h2>
+<h3 id="transmitter-characteristics">8.1.1 Transmitter
+characteristics</h3>
+<p>The following requirements define the maximum output power radiated
+by the UE for any transmission bandwidth within the channel bandwidth
+for non-CA configuration, unless otherwise stated. The period of
+measurement shall be at least one sub frame (1ms). The minimum output
+power values for EIRP are found in Table 8.1.1-1. The requirement is
+verified with the test metric of total component of EIRP (Link=TX beam
+peak direction, Meas=Link angle). The requirement for the UE which
+supports a single FR2 band is specified in Table 8.1.1-1. The
+requirement for the UE which supports multiple FR2 bands is specified in
+both Table 8.1.1-1 and Table 8.1.1-4.</p>
+<p>Table 8.1.1-1: UE minimum peak EIRP for power class 1, 2, 3 and 4</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 22%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Operating band</th>
+<th colspan="4">Min peak EIRP (dBm)</th>
+</tr>
+<tr>
+<th>PC1</th>
+<th>PC2</th>
+<th>PC3</th>
+<th>PC4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n262</td>
+<td>34.2</td>
+<td>22.9</td>
+<td>16.0</td>
+<td>28.3</td>
+</tr>
+<tr>
+<td colspan="5">NOTE 1: Minimum peak EIRP is defined as the lower limit
+without tolerance.</td>
+</tr>
+</tbody>
+</table>
+<p>The maximum output power values for TRP and EIRP are found on the
+Table 8.1.1-2. The max allowed EIRP is derived from regulatory
+requirements [8]. The requirements are verified with the test metrics of
+TRP (Link=TX beam peak direction, Meas=TRP grid) in beam locked mode and
+the total component of EIRP (Link=TX beam peak direction, Meas=Link
+angle.</p>
+<p>Table 8.1.1-2: UE maximum output power limits for power class 1, 2, 3
+and 4</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Operating band</th>
+<th>Power Class</th>
+<th>Max TRP (dBm)</th>
+<th>Max EIRP (dBm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">n262</td>
+<td>PC1</td>
+<td>35</td>
+<td>55</td>
+</tr>
+<tr>
+<td>PC2</td>
+<td>23</td>
+<td>43</td>
+</tr>
+<tr>
+<td>PC3</td>
+<td>23</td>
+<td>43</td>
+</tr>
+<tr>
+<td>PC4</td>
+<td>23</td>
+<td>43</td>
+</tr>
+</tbody>
+</table>
+<p>The minimum EIRP at the 50<sup>th</sup> percentile of the
+distribution of radiated power measured over the full sphere around the
+UE is defined as the spherical coverage requirement and is found in
+Table 8.1.1-3 below. The requirement is verified with the test metric of
+the total component of EIRP (Link=Beam peak search grids, Meas=Link
+angle). The requirement for the UE which supports a single FR2 band is
+specified in Table 8.1.1-3. The requirement for the UE which supports
+multiple FR2 bands is specified in both Table 8.1.1-3 and Table
+8.1.1-4.</p>
+<p>Table 8.1.1-3: UE spherical coverage for power class 1, 2, 3 and
+4</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 21%" />
+<col style="width: 20%" />
+<col style="width: 17%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Operating band</th>
+<th colspan="4">Min EIRP</th>
+</tr>
+<tr>
+<th><p>PC1</p>
+<p>at 85 %-tile CDF (dBm)</p></th>
+<th><p>PC2</p>
+<p>at 60 %-tile CDF (dBm)</p></th>
+<th><p>PC3</p>
+<p>at 50 %-tile CDF (dBm)</p></th>
+<th><p>PC4</p>
+<p>at 20 %-tile CDF (dBm)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n262</td>
+<td>26.0</td>
+<td>11.0</td>
+<td>2.9</td>
+<td>16.2</td>
+</tr>
+<tr>
+<td colspan="5">NOTE 1: Minimum EIRP at 50 %-tile CDF is defined as the
+lower limit without tolerance.</td>
+</tr>
+</tbody>
+</table>
+<p>For the UEs that support multiple FR2 bands, minimum requirement for
+peak EIRP and EIRP spherical coverage in Tables 8.1.1-1 and 8.1.1-3
+shall be decreased per band, respectively, by the peak EIRP relaxation
+parameter ∆MB<sub>P,n</sub> and EIRP spherical coverage relaxation
+parameter ∆MB<sub>S,n</sub>, as defined in Table 8.1.1-4.</p>
+<p>Table 8.1.1-4: UE multi-band relaxation factors for power class 3</p>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 31%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Band</strong></th>
+<th style="text-align: center;"><strong>∆MB<sub>P,n</sub>
+(dB)</strong></th>
+<th style="text-align: center;"><strong>∆MB<sub>S,n</sub>
+(dB)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n257</td>
+<td>0.7<sup>3</sup></td>
+<td>0.7<sup>3</sup></td>
+</tr>
+<tr>
+<td>n258</td>
+<td>0.6</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>n259</td>
+<td>0.5</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>n260</td>
+<td>0.5<sup>1</sup></td>
+<td>0.4<sup>1</sup></td>
+</tr>
+<tr>
+<td>n261</td>
+<td>0.5<sup>2,4</sup></td>
+<td>0.7<sup>4</sup></td>
+</tr>
+<tr>
+<td>n262</td>
+<td>0.7</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td colspan="3"><p>Note 1: n260 peak and spherical relaxations are 0 dB
+for UE that exclusively supports n261+n260</p>
+<p>Note 2: n261 peak relaxation is 0 dB for UE that exclusively supports
+n261+n260</p>
+<p>Note 3: n257 peak and spherical relaxations are 0 dB for UE that
+exclusively supports n261+n257</p>
+<p>Note 4: n261 peak and spherical relaxations are 0 dB for UE that
+exclusively supports n261+n257</p></td>
+</tr>
+</tbody>
+</table>
+<p>The minimum output power shall not exceed the values specified in
+Table 8.8.1-5 for each operating band supported. The minimum power is
+verified in beam locked mode with the test metric of EIRP (Link=TX beam
+peak direction, Meas=Link angle).</p>
+<p>Table 8.1.1-5: Minimum output power for power class 1, 2, 3 and 4</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 17%" />
+<col style="width: 20%" />
+<col style="width: 24%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>Operating band</th>
+<th>Power Class</th>
+<th><p>Channel bandwidth</p>
+<p>(MHz)</p></th>
+<th><p>Minimum output power</p>
+<p>(dBm)</p></th>
+<th><p>Measurement bandwidth</p>
+<p>(MHz)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n262</td>
+<td>PC1</td>
+<td>50</td>
+<td>4</td>
+<td>47.58</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>4</td>
+<td>95.16</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>200</td>
+<td>4</td>
+<td>190.20</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>400</td>
+<td>4</td>
+<td>380.28</td>
+</tr>
+<tr>
+<td></td>
+<td>PC2, PC3 and PC4</td>
+<td>50</td>
+<td>-13</td>
+<td>47.58</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>100</td>
+<td>-13</td>
+<td>95.16</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>200</td>
+<td>-13</td>
+<td>190.20</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>400</td>
+<td>-13</td>
+<td>380.28</td>
+</tr>
+</tbody>
+</table>
+<p>The transmit OFF power is defined as the TRP in the channel bandwidth
+when the transmitter is OFF. The transmitter is considered OFF when the
+UE is not allowed to transmit on any of its ports.</p>
+<p>The transmit OFF power shall not exceed the values specified in Table
+8.8.1-6 for each operating band supported. The requirement is verified
+with the test metric of TRP (Link=TX beam peak direction, Meas=TRP
+grid).</p>
+<p>Table 8.8.1-6: Transmit OFF power</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th>Operating band</th>
+<th colspan="4">Channel bandwidth / Transmit OFF power (dBm) /
+measurement bandwidth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>50 MHz</td>
+<td>100 MHz</td>
+<td>200 MHz</td>
+<td>400 MHz</td>
+</tr>
+<tr>
+<td>n262</td>
+<td>-35</td>
+<td>-35</td>
+<td>-35</td>
+<td>-35</td>
+</tr>
+<tr>
+<td></td>
+<td>47.58 MHz</td>
+<td>95.16 MHz</td>
+<td>190.20 MHz</td>
+<td>380.28 MHz</td>
+</tr>
+</tbody>
+</table>
+<p>Adjacent Channel Leakage power Ratio (ACLR) is the ratio of the
+filtered mean power centred on the assigned channel frequency to the
+filtered mean power centred on an adjacent channel frequency. ACLR
+requirement is specified for a scenario in which adjacent carrier is
+another NR channel.</p>
+<p>NR Adjacent Channel Leakage power Ratio (NR<sub>ACLR</sub>) is the
+ratio of the filtered mean power centred on the assigned channel
+frequency to the filtered mean power centred on an adjacent channel
+frequency at nominal channel spacing. The assigned NR channel power and
+adjacent NR channel power are measured with rectangular filters with
+measurement bandwidths specified in Table 8.8.1-7.</p>
+<p>If the measured adjacent channel power is greater than –35 dBm then
+the NR<sub>ACLR</sub> shall be higher than the value specified in Table
+8.8.1-7. The requirement is verified in beam locked mode with the test
+metric of TRP (Link=TX beam peak direction, Meas=TRP grid).</p>
+<p>Table 8.8.1-7: General requirements for NR<sub>ACLR</sub></p>
+<table>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 16%" />
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2"></th>
+<th colspan="4">Channel bandwidth / NR<sub>ACLR</sub> / Measurement
+bandwidth</th>
+</tr>
+<tr>
+<th><p>50</p>
+<p>MHz</p></th>
+<th><p>100</p>
+<p>MHz</p></th>
+<th><p>200</p>
+<p>MHz</p></th>
+<th><p>400</p>
+<p>MHz</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NR<sub>ACLR</sub> for band n262</td>
+<td>16 dB</td>
+<td>16 dB</td>
+<td>16 dB</td>
+<td>16 dB</td>
+</tr>
+<tr>
+<td>NR channel measurement bandwidth (MHz)</td>
+<td>47.58</td>
+<td>95.16</td>
+<td>190.20</td>
+<td>380.28</td>
+</tr>
+<tr>
+<td>Adjacent channel centre frequency offset (MHz)</td>
+<td><p>+50</p>
+<p>/</p>
+<p>-50</p></td>
+<td><p>+100</p>
+<p>/</p>
+<p>-100</p></td>
+<td><p>+200</p>
+<p>/</p>
+<p>-200</p></td>
+<td><p>+400</p>
+<p>/</p>
+<p>-400</p></td>
+</tr>
+</tbody>
+</table>
+<p>This table 8.8.1-8 specifies the requirements for coexistence with
+protected bands.</p>
+<p>Table 8.8.1-8: Requirements</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 31%" />
+<col style="width: 7%" />
+<col style="width: 3%" />
+<col style="width: 8%" />
+<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 10%" />
+</colgroup>
+<tbody>
+<tr>
+<td>NR Band</td>
+<td colspan="7">Spurious emission</td>
+</tr>
+<tr>
+<td></td>
+<td>Protected band/frequency range</td>
+<td colspan="3">Frequency range (MHz)</td>
+<td>Maximum Level (dBm)</td>
+<td>MBW (MHz)</td>
+<td>NOTE</td>
+</tr>
+<tr>
+<td>n260</td>
+<td>NR Band 257</td>
+<td>F<sub>DL_low</sub></td>
+<td>-</td>
+<td>F<sub>DL_high</sub></td>
+<td>-5</td>
+<td>100</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>NR Band 261</td>
+<td>F<sub>DL_low</sub></td>
+<td>-</td>
+<td>F<sub>DL_high</sub></td>
+<td>-5</td>
+<td>100</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>NR Band 262</td>
+<td>F<sub>DL_low</sub></td>
+<td>-</td>
+<td>F<sub>DL_high</sub></td>
+<td>-5</td>
+<td>100</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Frequency range</td>
+<td>57000</td>
+<td>-</td>
+<td>66000</td>
+<td>2</td>
+<td>100</td>
+<td></td>
+</tr>
+<tr>
+<td>n261</td>
+<td>NR Band 260</td>
+<td>F<sub>DL_low</sub></td>
+<td>-</td>
+<td>F<sub>DL_high</sub></td>
+<td>-2</td>
+<td>100</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>NR Band 262</td>
+<td>F<sub>DL_low</sub></td>
+<td>-</td>
+<td>F<sub>DL_high</sub></td>
+<td>-5</td>
+<td>100</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Frequency range</td>
+<td>57000</td>
+<td>-</td>
+<td>66000</td>
+<td>2</td>
+<td>100</td>
+<td></td>
+</tr>
+<tr>
+<td>n262</td>
+<td>NR Band 260</td>
+<td>F<sub>DL_low</sub></td>
+<td>-</td>
+<td>F<sub>DL_high</sub></td>
+<td>-2</td>
+<td>100</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>NR Band 261</td>
+<td>F<sub>DL_low</sub></td>
+<td>-</td>
+<td>F<sub>DL_high</sub></td>
+<td>-5</td>
+<td>100</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Frequency range</td>
+<td>57000</td>
+<td>-</td>
+<td>66000</td>
+<td>2</td>
+<td>100</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="receiver-characteristics">8.1.2 Receiver characteristics</h3>
+<p>The throughput shall be ≥ 95 % of the maximum throughput of the
+reference measurement channels as specified in Annexes A.2.3.2 and
+A.3.3.2 (with one sided dynamic OCNG Pattern OP.1 TDD for the DL-signal
+as described in Annex A.5.2.1) with peak reference sensitivity specified
+in Table 8.1.2-1. The requirement is verified with the test metric of
+EIS (Link=RX beam peak direction, Meas=Link Angle).</p>
+<p>For the UEs that support multiple FR2 bands, the minimum requirement
+for Reference sensitivity in Table 8.1.2-1 shall be increased per band,
+respectively, by the reference sensitivity relaxation parameter
+∆MB<sub>P,n</sub> as specified in clause 8.1.1. The requirement for the
+UE which supports a single FR2 band is specified in Table 8.1.2-1. The
+requirement for the UE which supports multiple FR2 bands is specified in
+both Table 8.1.2-1 and Table 8.1.1-4.</p>
+<p>Table 8.1.2-1: Reference sensitivity for power class 1, 2, 3 and
+4</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 16%" />
+<col style="width: 18%" />
+<col style="width: 14%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Operating band</th>
+<th rowspan="2">Power Class</th>
+<th colspan="4">REFSENS (dBm) / Channel bandwidth</th>
+</tr>
+<tr>
+<th>50 MHz</th>
+<th>100 MHz</th>
+<th>200 MHz</th>
+<th>400 MHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n262</td>
+<td>PC1</td>
+<td>-92.5</td>
+<td>-89.5</td>
+<td>-86.5</td>
+<td>-83.5</td>
+</tr>
+<tr>
+<td></td>
+<td>PC2</td>
+<td>-86.8</td>
+<td>-83.8</td>
+<td>-80.8</td>
+<td>-77.5</td>
+</tr>
+<tr>
+<td></td>
+<td>PC3</td>
+<td>-82.8</td>
+<td>-79.8</td>
+<td>-76.8</td>
+<td>-73.8</td>
+</tr>
+<tr>
+<td></td>
+<td>PC4</td>
+<td>-91.0</td>
+<td>-88.0</td>
+<td>-85.0</td>
+<td>-82.0</td>
+</tr>
+<tr>
+<td colspan="6">NOTE 1: The transmitter shall be set to P<sub>UMAX</sub>
+as defined in clause 6.2.4.</td>
+</tr>
+</tbody>
+</table>
+<p>The REFSENS requirement shall be met for an uplink transmission using
+QPSK DFT-s-OFDM waveforms and for uplink transmission bandwidth less
+than or equal to that specified in Table 8.1.2-1.</p>
+<p>Unless given by Table 7.3.2.1-3 in TS 38.101-2, the minimum
+requirements for reference sensitivity shall be verified with the
+network signalling value NS_200 (Table 6.2.3.1-1 in TS 38.101-2)
+configured. The maximum EIS at the 50<sup>th</sup> percentile of the
+CCDF of EIS measured over the full sphere around the UE is defined as
+the spherical coverage requirement and is found in Table 8.1.2-2 below.
+The requirement is verified with the test metric of EIS (Link=Spherical
+coverage grid, Meas=Link angle).</p>
+<p>For the UEs that support multiple FR2 bands, the minimum requirement
+for EIS spherical coverage in Table 8.1.2-2 shall be increased per band,
+respectively, by the EIS spherical coverage relaxation parameter
+∆MB<sub>S,n</sub> as specified in clause 8.1.1. The requirement for the
+UE which supports a single FR2 band is specified in Table 8.1.2-2. The
+requirement for the UE which supports multiple FR2 bands is specified in
+both Table 8.1.2-2 and Table8.1.1-4.</p>
+<p>Table 8.1.2-2: EIS spherical coverage for power class 1, 2, 3 and
+4</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 20%" />
+<col style="width: 14%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Operating band</th>
+<th rowspan="2">Power Class</th>
+<th colspan="4">EIS at 50<sup>th</sup> %-tile CCDF (dBm) / Channel
+bandwidth</th>
+</tr>
+<tr>
+<th>50 MHz</th>
+<th>100 MHz</th>
+<th>200 MHz</th>
+<th>400 MHz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n262</td>
+<td>PC1</td>
+<td>-84.3</td>
+<td>-81.3</td>
+<td>-78.3</td>
+<td>-75.3</td>
+</tr>
+<tr>
+<td></td>
+<td>PC2</td>
+<td>-74.9</td>
+<td>-71.9</td>
+<td>-68.9</td>
+<td>-65.9</td>
+</tr>
+<tr>
+<td></td>
+<td>PC3</td>
+<td>-69.7</td>
+<td>-66.7</td>
+<td>-63.7</td>
+<td>-60.7</td>
+</tr>
+<tr>
+<td></td>
+<td>PC4</td>
+<td>-78.9</td>
+<td>-75.9</td>
+<td>-72.9</td>
+<td>-69.9</td>
+</tr>
+<tr>
+<td colspan="6"><p>NOTE 1: The transmitter shall be set to
+P<sub>UMAX</sub> as defined in clause 6.2.4</p>
+<p>NOTE 2: The EIS spherical coverage requirements are verified only
+under normal thermal conditions as defined in Annex E.2.1.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The requirement shall be met for an uplink transmission using QPSK
+DFT-s-OFDM waveforms and for uplink transmission bandwidth less than or
+equal to that specified in Table 8.1.2-2.</p>
+<p>Unless given by Table 7.3.2.1-3 in TS 38.101-2, the minimum
+requirements for reference sensitivity shall be verified with the
+network signalling value NS_200 (Table 6.2.3.1-1 in TS 38.101-2)
+configured.</p>
+<p>Adjacent Channel Selectivity (ACS) is a measure of a receiver's
+ability to receive a NR signal at its assigned channel frequency in the
+presence of an adjacent channel signal at a given frequency offset from
+the centre frequency of the assigned channel. ACS is the ratio of the
+receive filter attenuation on the assigned channel frequency to the
+receive filter attenuation on the adjacent channel(s).</p>
+<p>The requirement applies at the RIB when the AoA of the incident wave
+of the wanted signal and the interfering signal are both from the
+direction where peak gain is achieved.</p>
+<p>The wanted and interfering signals apply to all supported
+polarizations, under the assumption of polarization match.</p>
+<p>The UE shall fulfil the minimum requirement specified in Table
+8.1.2-3 for all values of an adjacent channel interferer up to –25 dBm.
+However, it is not possible to directly measure the ACS, instead the
+lower and upper range of test parameters are chosen in Table 8.1.2-4 and
+Table 8.1.2-5 where the throughput shall be ≥ 95 % of the maximum
+throughput of the reference measurement channels as specified in Annexes
+A.2.3.2 and A.3.3.2, with one sided dynamic OCNG Pattern OP.1 TDD for
+the DL-signal as described in Annex A.5.2.1. The requirement is verified
+with the test metric of EIS (Link=RX beam peak direction, Meas=Link
+angle).</p>
+<p>Table 8.1.2-3: Adjacent channel selectivity</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Operating band</th>
+<th>Units</th>
+<th colspan="4">Adjacent channel selectivity / Channel bandwidth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>50<br />
+MHz</td>
+<td>100<br />
+MHz</td>
+<td>200<br />
+MHz</td>
+<td>400<br />
+MHz</td>
+</tr>
+<tr>
+<td>n262</td>
+<td>dB</td>
+<td>22</td>
+<td>22</td>
+<td>22</td>
+<td>22</td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.1.2-4: Adjacent channel selectivity test parameters, Case
+1</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 7%" />
+<col style="width: 17%" />
+<col style="width: 15%" />
+<col style="width: 20%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>Rx Parameter</th>
+<th>Units</th>
+<th colspan="4">Channel bandwidth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>50 MHz</td>
+<td>100 MHz</td>
+<td>200 MHz</td>
+<td>400 MHz</td>
+</tr>
+<tr>
+<td>Power in Transmission Bandwidth Configuration</td>
+<td>dBm</td>
+<td colspan="4">REFSENS + 14 dB</td>
+</tr>
+<tr>
+<td>P<sub>Interferer</sub> for band n262</td>
+<td>dBm</td>
+<td>REFSENS<br />
++ 34.5 dB</td>
+<td>REFSENS +34.5 dB</td>
+<td>REFSENS<br />
++34.5 dB</td>
+<td>REFSENS<br />
++34.5 dB</td>
+</tr>
+<tr>
+<td>BW<sub>Interferer</sub></td>
+<td>MHz</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+</tr>
+<tr>
+<td>F<sub>Interferer</sub> (offset)</td>
+<td>MHz</td>
+<td><p>50</p>
+<p>/</p>
+<p>-50</p>
+<p>NOTE 3</p></td>
+<td><p>100</p>
+<p>/</p>
+<p>-100</p>
+<p>NOTE 3</p></td>
+<td><p>200</p>
+<p>/</p>
+<p>-200</p>
+<p>NOTE 3</p></td>
+<td><p>400</p>
+<p>/</p>
+<p>-400</p>
+<p>NOTE 3</p></td>
+</tr>
+<tr>
+<td colspan="6"><p>NOTE 1: The interferer consists of the Reference
+measurement channel specified in Annex A.3.2 with one sided dynamic OCNG
+Pattern as described in Annex A.3.2 and set-up according to Annex C.</p>
+<p>NOTE 2: The REFSENS power level is specified in Clause 7.3.2, which
+are applicable to different UE power classes.</p>
+<p>NOTE 3: The absolute value of the interferer offset
+F<sub>Interferer</sub> (offset) shall be further adjusted to
+(CEIL(|F<sub>Interferer</sub>|/SCS) + 0.5)*SCS MHz with SCS the
+sub-carrier spacing of the wanted signal in MHz. Wanted and interferer
+signal have same SCS.</p>
+<p>NOTE 4: The transmitter shall be set to 4 dB below the
+P<sub>UMAX,f,c</sub> as defined in clause 6.2.4, with uplink
+configuration specified in Table 7.3.2.1-2.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 8.1.2-5: Adjacent channel selectivity test parameters, Case
+2</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 7%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 19%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Rx Parameter</th>
+<th>Units</th>
+<th colspan="4">Channel bandwidth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>50 MHz</td>
+<td>100 MHz</td>
+<td>200 MHz</td>
+<td>400 MHz</td>
+</tr>
+<tr>
+<td>Power in Transmission Bandwidth Configuration for band n262</td>
+<td>dBm</td>
+<td>-45.5</td>
+<td>-45.5</td>
+<td>-45.5</td>
+<td>-45.5</td>
+</tr>
+<tr>
+<td>P<sub>Interferer</sub></td>
+<td>dBm</td>
+<td colspan="4">-25</td>
+</tr>
+<tr>
+<td>BW<sub>Interferer</sub></td>
+<td>MHz</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+</tr>
+<tr>
+<td>F<sub>Interferer</sub> (offset)</td>
+<td>MHz</td>
+<td><p>50</p>
+<p>/</p>
+<p>-50</p>
+<p>NOTE 2</p></td>
+<td><p>100</p>
+<p>/</p>
+<p>-100</p>
+<p>NOTE 2</p></td>
+<td><p>200</p>
+<p>/</p>
+<p>-200</p>
+<p>NOTE 2</p></td>
+<td><p>400</p>
+<p>/</p>
+<p>-400</p>
+<p>NOTE 2</p></td>
+</tr>
+<tr>
+<td colspan="6"><p>NOTE 1: The interferer consists of the Reference
+measurement channel specified in Annex 3.2 with one sided dynamic OCNG
+Pattern TDD as described in Annex A and set-up according to Annex C.</p>
+<p>NOTE 2: The absolute value of the interferer offset
+F<sub>Interferer</sub> (offset) shall be further adjusted to
+(CEIL(|F<sub>Interferer</sub>|/SCS) + 0.5)*SCS MHz with SCS the
+sub-carrier spacing of the wanted signal in MHz. Wanted and interferer
+signal have same SCS.</p>
+<p>NOTE 3: The transmitter shall be set to 4 dB below the
+P<sub>UMAX,f,c</sub> as defined in clause 6.2.4, with uplink
+configuration specified in Table 7.3.2.1-2.</p></td>
+</tr>
+</tbody>
+</table>
+<p>In-band blocking is a measure of a receiver's ability to receive a NR
+signal at its assigned channel frequency in the presence of an
+interferer at a given frequency offset from the centre frequency of the
+assigned channel.</p>
+<p>The throughput shall be ≥ 95 % of the maximum throughput of the
+reference measurement channels as specified in Annexes A.2.3.2 and
+A.3.3.2 (with one sided dynamic OCNG Pattern OP.1 TDD for the DL-signal
+as described in Annex A.5.2.1). The requirement is verified with the
+test metric of EIS (Link=RX beam peak direction, Meas=Link angle).</p>
+<p>Table 8.1.2-6: In band blocking requirements</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 7%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr>
+<th>Rx parameter</th>
+<th>Units</th>
+<th colspan="4">Channel bandwidth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>50 MHz</td>
+<td>100 MHz</td>
+<td>200 MHz</td>
+<td>400 MHz</td>
+</tr>
+<tr>
+<td>Power in Transmission Bandwidth Configuration</td>
+<td>dBm</td>
+<td colspan="4">REFSENS + 14 dB</td>
+</tr>
+<tr>
+<td>BW<sub>Interferer</sub></td>
+<td>MHz</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+</tr>
+<tr>
+<td><p>P<sub>Interferer</sub></p>
+<p>for band n262</p></td>
+<td>dBm</td>
+<td>REFSENS + 34.5 dB</td>
+<td>REFSENS + 34.5 dB</td>
+<td>REFSENS + 34.5 dB</td>
+<td>REFSENS + 34.5 dB</td>
+</tr>
+<tr>
+<td>F<sub>Ioffset</sub></td>
+<td>MHz</td>
+<td><p>≤ -100 &amp; ≥ 100</p>
+<p>NOTE 5</p></td>
+<td><p>≤ -200 &amp; ≥ 200</p>
+<p>NOTE 5</p></td>
+<td><p>≤ -400 &amp; ≥ 400</p>
+<p>NOTE 5</p></td>
+<td><p>≤ -800 &amp; ≥ 800</p>
+<p>NOTE 5</p></td>
+</tr>
+<tr>
+<td>F<sub>Interferer</sub></td>
+<td>MHz</td>
+<td><p>F<sub>DL_low</sub> + 25</p>
+<p>to<br />
+F<sub>DL_high</sub> - 25</p></td>
+<td><p>F<sub>DL_low</sub> + 50</p>
+<p>to<br />
+F<sub>DL_high</sub> - 50</p></td>
+<td><p>F<sub>DL_low</sub> + 100</p>
+<p>to<br />
+F<sub>DL_high</sub> - 100</p></td>
+<td><p>F<sub>DL_low</sub> + 200</p>
+<p>to<br />
+F<sub>DL_high</sub> - 200</p></td>
+</tr>
+<tr>
+<td colspan="6"><p>NOTE 1: The interferer consists of the Reference
+measurement channel specified in Annex A.3.3.2 with one sided dynamic
+OCNG Pattern OP.1. TDD as described in Annex A.5.2.1 and set-up
+according to Annex C.</p>
+<p>NOTE2: The REFSENS power level is specified in Clause 7.3.2, which
+are applicable according to different UE power classes.</p>
+<p>NOTE 3: The wanted signal consists of the reference measurement
+channel specified in Annex A.3.3.2 with one sided dynamic OCNG pattern
+OP.1 TDD as described in Annex A.5.2.1 and set-up according to Annex
+C.</p>
+<p>NOTE 4: F<sub>Ioffset</sub> is the frequency separation between the
+center of the channel bandwidth and the center frequency of the
+Interferer signal.</p>
+<p>NOTE 5: The absolute value of the interferer offset
+F<sub>Ioffset</sub> shall be further adjusted
+(CEIL(|F<sub>Interferer</sub>|/SCS) + 0.5)*SCS MHz with SCS the
+sub-carrier spacing of the wanted signal in MHz. Wanted and interferer
+signal have same SCS.</p>
+<p>NOTE 6: F<sub>Interferer</sub> range values for unwanted modulated
+interfering signals are interferer center frequencies.</p>
+<p>NOTE 7: The transmitter shall be set to 4 dB below the
+P<sub>UMAX,f,c</sub> as defined in clause 6.2.4, with uplink
+configuration specified in Table 7.3.2.1-2.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="bs-specific">8.2 BS specific</h2>
+<h3 id="band-agnostic-requirements">8.2.1 Band agnostic
+requirements</h3>
+<p>The BS RF requirements summarized in Table 8.2.1-2 is band agnostic
+RF requirements for FR2 which are applicable for band n262 as well.</p>
+<p>Table 8.2.1-2: Summary on band agnostic of BS RF requirements for
+FR2</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>BS TX side capture in TS 38.104</th>
+<th>BS RX side capture in TS 38.104</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9.2 Radiated transmit power</td>
+<td>10.3 OTA reference sensitivity level</td>
+</tr>
+<tr>
+<td>9.3 OTA Base station output power</td>
+<td>10.5 OTA In-band selectivity and blocking</td>
+</tr>
+<tr>
+<td>9.4 OTA Output power dynamics</td>
+<td></td>
+</tr>
+<tr>
+<td>9.5 OTA Transmit ON/OFF power</td>
+<td>10.9 OTA In-channel selectivity</td>
+</tr>
+<tr>
+<td>9.6 OTA Transmitted signal quality</td>
+<td></td>
+</tr>
+<tr>
+<td>9.7.2 OTA Occupied bandwidth</td>
+<td></td>
+</tr>
+<tr>
+<td>9.7.5 OTA Transmitter spurious emissions (cat A)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="transmitter-characteristics-1">8.2.2 Transmitter
+characteristics</h3>
+<h4 id="adjacent-channel-leakage-ratio-aclr">8.2.2.1 Adjacent Channel
+Leakage Ratio (ACLR)</h4>
+<p>The BS OTA ACLR limit for spectrum range 37 – 52.6 GHz has been
+defined in TS 38.104. This is also applicable for Band n262.</p>
+<h4 id="ota-operating-band-unwanted-emissions">8.2.2.2 OTA operating
+band unwanted emissions</h4>
+<p>The BS OTA operating band unwanted emission for spectrum range 37 –
+52.6 GHz has been specified in TS 38.104, section 9.7. Those limits are
+applicable for Band n262.</p>
+<h4 id="step-frequencies-for-tx-spurious-emission">8.2.2.3 Step
+frequencies for Tx spurious emission</h4>
+<p>The 47.2-48.2 GHz frequency range has not yet been regulated in
+Region where Category B limits are applicable. The Category B Tx
+spurious limits doesn’t have to updated (at least for the time
+being).</p>
+<h3 id="receiver-characteristics-1">8.2.3 Receiver characteristics</h3>
+<h4 id="step-frequencies-for-rx-spurious-emission">8.2.3.1 Step
+frequencies for Rx spurious emission</h4>
+<p>The band n262 shall be added to Table 8.2.3.1-1 in TS 38.104 as
+proposed below.</p>
+<p>Table 8.2.3.1-1: Step frequencies for defining the radiated Rx
+spurious emission limits for <em>BS type 2-O</em></p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 12%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th>Operating band</th>
+<th>F<sub>step,1</sub><br />
+(GHz)</th>
+<th>F<sub>step,2</sub><br />
+(GHz)</th>
+<th>F<sub>step,3</sub><br />
+(GHz)</th>
+<th>F<sub>step,4</sub><br />
+(GHz)</th>
+<th>F<sub>step,5</sub><br />
+(GHz)</th>
+<th>F<sub>step,6</sub><br />
+(GHz)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n257</td>
+<td>18</td>
+<td>23.5</td>
+<td>25</td>
+<td>31</td>
+<td>32.5</td>
+<td>41.5</td>
+</tr>
+<tr>
+<td>n258</td>
+<td>18</td>
+<td>21</td>
+<td>22.75</td>
+<td>29</td>
+<td>30.75</td>
+<td>40.5</td>
+</tr>
+<tr>
+<td>n259</td>
+<td>23,5</td>
+<td>35,5</td>
+<td>38</td>
+<td>45</td>
+<td>47,5</td>
+<td>59,5</td>
+</tr>
+<tr>
+<td>n260</td>
+<td>25</td>
+<td>34</td>
+<td>35.5</td>
+<td>41.5</td>
+<td>43</td>
+<td>52</td>
+</tr>
+<tr>
+<td>n261</td>
+<td>18</td>
+<td>25.5</td>
+<td>26.0</td>
+<td>29.85</td>
+<td>30.35</td>
+<td>38.35</td>
+</tr>
+<tr>
+<td>n262</td>
+<td>37.2</td>
+<td>45.2</td>
+<td>45.7</td>
+<td>49.7</td>
+<td>50.2</td>
+<td>58.2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bs-conformance-aspects">8.2.4 BS conformance aspects</h3>
+<p>On top of generic FR2 BS test requirements, the following 38.141-2
+transmitter test requirements changes are expected due to introduction
+of n262:</p>
+<p>1. Define maximum OTA test system uncertainty for FR2 OTA transmitter
+tests to be applicable up to 48.2GHz</p>
+<table>
+<colgroup>
+<col style="width: 60%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr>
+<th>Subclause</th>
+<th>Maximum OTA Test System uncertainty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.2 Radiated transmit power</td>
+<td><p>Normal condition:</p>
+<p>±1.7 dB (24.25 – 29.5 GHz)</p>
+<p>±2.0 dB (37 – 43.5 GHz)</p>
+<p>±2.2 dB (43.5GHz &lt; f ≤ 48.2 GHz)</p></td>
+</tr>
+<tr>
+<td></td>
+<td><p>Extreme condition:</p>
+<p>±3.1 dB (24.25 – 29.5 GHz)</p>
+<p>±3.3 dB (37 – 43.5 GHz)</p>
+<p>±3.5 dB (43.5 GHz &lt; f ≤48.2 GHz)</p></td>
+</tr>
+<tr>
+<td>6.3 OTA base station output power</td>
+<td><p>±2.1 dB (24.25 – 29.5 GHz)</p>
+<p>±2.4 dB (37 – 43.5 GHz)</p>
+<p>±2.6 dB (43.5 GHz &lt; f ≤48.2 GHz)</p></td>
+</tr>
+<tr>
+<td>6.4.2 OTA RE power control dynamic range</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>6.4.3 OTA total power dynamic range</td>
+<td>±0.4 dB</td>
+</tr>
+<tr>
+<td>6.5.1 OTA transmitter OFF power</td>
+<td><p>±2.9 dB (24.25 – 29.5 GHz)</p>
+<p>±3.3 dB (37 – 43.5 GHz)</p>
+<p>±3.6 dB (43.5 GHz &lt; f ≤48.2 GHz)</p></td>
+</tr>
+<tr>
+<td>6.5.2 OTA transmitter transient period</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>6.6.2 OTA frequency error</td>
+<td>±12 Hz</td>
+</tr>
+<tr>
+<td>6.6.3 OTA modulation quality</td>
+<td>1%</td>
+</tr>
+<tr>
+<td>6.6.4 OTA time alignment error</td>
+<td>±25 ns</td>
+</tr>
+<tr>
+<td>6.7.2 OTA occupied bandwidth</td>
+<td>600 kHz</td>
+</tr>
+<tr>
+<td>6.7.3 OTA ACLR</td>
+<td><p>Relative ACLR:</p>
+<p>±2.3 dB (24.25 – 29.5 GHz)</p>
+<p>±2.6 dB (37 – 43.5 GHz)</p>
+<p>±2.8 dB (43.5 GHz &lt; f ≤48.2 GHz)</p>
+<p>Absolute ACLR:</p>
+<p>±2.7 dB (24.25 – 29.5 GHz)</p>
+<p>±2.7 dB (37 – 43.5 GHz)</p>
+<p>±2.9 dB (43.5 GHz &lt; f ≤48.2 GHz)</p></td>
+</tr>
+<tr>
+<td>6.7.4 OTA operating band unwanted emissions</td>
+<td><p>±2.7 dB (24.25 – 29.5 GHz)</p>
+<p>±2.7 dB (37 – 43.5 GHz)</p>
+<p>±2.9 dB (43.5 GHz &lt; f ≤48.2 GHz)</p></td>
+</tr>
+<tr>
+<td>6.7.5.2 OTA transmitter spurious emissions, mandatory
+requirements</td>
+<td><p>±2.3 dB, 30 MHz ≤ f ≤ 6 GHz</p>
+<p>±2.7 dB, 6 GHz &lt; f ≤ 40 GHz</p>
+<p>±5.0 dB, 40 GHz &lt; f ≤ 60 GHz</p></td>
+</tr>
+<tr>
+<td>6.7.5.4 OTA transmitter spurious emissions, additional
+requirements</td>
+<td><p>±2.3 dB, 30 MHz ≤ f ≤ 6 GHz</p>
+<p>±2.7 dB, 6 GHz &lt; f ≤ 40 GHz</p>
+<p>±5.0 dB, 40 GHz &lt; f ≤ 60 GHz</p></td>
+</tr>
+<tr>
+<td colspan="2">NOTE: Test system uncertainty values are applicable for
+normal condition unless otherwise stated.</td>
+</tr>
+</tbody>
+</table>
+<p>On top of generic FR2 BS test requirements, the following 38.141-2
+receiver test requirements changes are expected due to introduction of
+n262:</p>
+<p>1. Introduction of step frequencies for defining the radiated Rx
+spurious emission limits for n262</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 12%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th>Operating band</th>
+<th>F<sub>step,1</sub><br />
+(GHz)</th>
+<th>F<sub>step,2</sub><br />
+(GHz)</th>
+<th>F<sub>step,3</sub><br />
+(GHz)</th>
+<th>F<sub>step,4</sub><br />
+(GHz)</th>
+<th>F<sub>step,5</sub><br />
+(GHz)</th>
+<th>F<sub>step,6</sub><br />
+(GHz)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n257</td>
+<td>18</td>
+<td>23.5</td>
+<td>25</td>
+<td>31</td>
+<td>32.5</td>
+<td>41.5</td>
+</tr>
+<tr>
+<td>n258</td>
+<td>18</td>
+<td>21</td>
+<td>22.75</td>
+<td>29</td>
+<td>30.75</td>
+<td>40.5</td>
+</tr>
+<tr>
+<td>n259</td>
+<td>23.5</td>
+<td>35.5</td>
+<td>38</td>
+<td>45</td>
+<td>47.5</td>
+<td>59.5</td>
+</tr>
+<tr>
+<td>n260</td>
+<td>25</td>
+<td>34</td>
+<td>35.5</td>
+<td>41.5</td>
+<td>43</td>
+<td>52</td>
+</tr>
+<tr>
+<td>n261</td>
+<td>18</td>
+<td>25.5</td>
+<td>26.0</td>
+<td>29.85</td>
+<td>30.35</td>
+<td>38.35</td>
+</tr>
+<tr>
+<td>n262</td>
+<td>37.2</td>
+<td>45.2</td>
+<td>45.7</td>
+<td>49.7</td>
+<td>50.2</td>
+<td>58.2</td>
+</tr>
+</tbody>
+</table>
+<p>Define maximum OTA test system uncertainty for FR2 OTA receiver tests
+to be applicable up to 48.2GHz</p>
+<table>
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 51%" />
+</colgroup>
+<thead>
+<tr>
+<th>Subclause</th>
+<th>Maximum OTA Test System uncertainty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7.3 OTA reference sensitivity level</td>
+<td><p>±2.4 dB, 24.25 GHz &lt; f ≤ 29.5 GHz</p>
+<p>±2.4 dB, 37 GHz &lt; f ≤ 43.5 GHz</p>
+<p>+3.5 dB, 43.5 GHz &lt; f ≤ 48.2 GHz</p></td>
+</tr>
+<tr>
+<td>7.5.1 OTA adjacent channel selectivity</td>
+<td><p>±3.4 dB, 24.25 GHz &lt; f ≤ 29.5 GHz</p>
+<p>±3.4 dB, 37 GHz &lt; f ≤ 43.5 GHz</p>
+<p>+5.1 dB, 43.5 GHz &lt; f ≤ 48.2 GHz</p></td>
+</tr>
+<tr>
+<td>7.5.2 In-band blocking (General)</td>
+<td><p>±3.4 dB, 24.25 GHz &lt; f ≤ 29.5 GHz</p>
+<p>±3.4 dB, 37 GHz &lt; f ≤ 43.5 GHz</p>
+<p>+5.1 dB, 43.5 GHz &lt; f ≤ 48.2 GHz</p></td>
+</tr>
+<tr>
+<td>7.6 OTA out-of-band blocking</td>
+<td><p>±3.6 dB, 24.25 GHz &lt; f ≤ 29.5 GHz</p>
+<p>±3.6 dB, 37 GHz &lt; f ≤ 43.5 GHz</p>
+<p>+4.5 dB, 43.5 GHz &lt; f ≤ 48.2 GHz</p></td>
+</tr>
+<tr>
+<td>7.7 OTA receiver spurious emissions</td>
+<td><p>±2.5 dB, 30 MHz ≤ f ≤ 6 GHz</p>
+<p>±2.7 dB, 6 GHz &lt; f ≤ 40 GHz</p>
+<p>±5.0 dB, 40 GHz &lt; f ≤ 60 GHz</p></td>
+</tr>
+<tr>
+<td>7.8 OTA receiver intermodulation</td>
+<td><p>±3.9 dB, 24.25 GHz &lt; f ≤ 29.5 GHz</p>
+<p>±3.9 dB, 37 GHz &lt; f ≤ 43.5 GHz</p>
+<p>+5.4 dB, 43.5 GHz &lt; f ≤ 48.2 GHz</p></td>
+</tr>
+<tr>
+<td>7.9 OTA in-channel selectivity</td>
+<td><p>±3.4 dB, 24.25 GHz &lt; f ≤ 29.5 GHz</p>
+<p>±3.4 dB, 37 GHz &lt; f ≤ 43.5 GHz</p>
+<p>+5.1 dB, 43.5 GHz &lt; f ≤ 48.2 GHz</p></td>
+</tr>
+<tr>
+<td colspan="2"><p>NOTE1: Test system uncertainty values are applicable
+for normal condition unless otherwise stated.</p>
+<p>NOTE 2: The maximum OTA Test System uncertainty in the frequency
+range 43.5 GHz &lt; f ≤ 48.2 GHz is a composite of signal generator and
+external RF front-end with mixer. Future evaluation and improvement of
+uncertainty values will be performed once the signal generator internal
+RF supports higher frequency so external mixer is not used.</p></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rrm">9 RRM</h1>
+<h2 id="frequency-bands-grouping">9.1 Frequency bands grouping</h2>
+<h2
+id="conditions-for-rrm-requirements-applicability-for-operating-bands">9.2
+Conditions for RRM requirements applicability for operating bands</h2>
+<h3 id="minimum-ssb_rp-values-for-rx-beam-peak-angle-of-arrival">9.2.1
+Minimum SSB_RP values for Rx Beam Peak angle of arrival</h3>
+<h3
+id="minimum-ssb_rp-values-for-angle-of-arrival-within-spherical-coverage">9.2.2
+Minimum SSB_RP values for angle of arrival within Spherical
+coverage</h3>
+<h1 id="performance-requirements">10 Performance requirements</h1>
+<h2 id="base-station-requirements">10.1 Base station requirements</h2>
+<p>The BS demodulation requirements in 38.104 are defined for the whole
+of FR2 (i.e. up to 52.6GHz) and thus can be re-used for n262. The SNR is
+not expected to differ for any of the requirements.</p>
+<p>Conformance testing for the base station requirements is limited by
+the OTA link budget in the test chamber and available output power of
+test equipment. For the existing FR2 bands, the maximum testable SNR is
+limited to 20dB due to link budget considerations.</p>
+<p>For n262, the pathloss will differ to some degree, and also the
+availability of power amplifiers for the test equipment may differ. The
+link budget has been checked to determine whether also for n262 the 20dB
+assumption is valid.</p>
+<p>The test set-up in figure 10.1-1 is assumed. After the output of the
+test equipment, a pre-amplifier and PA are included to increase the
+power available in the test chamber.</p>
+<p><img src="media/image3.png" style="width:6.53125in;height:1.5625in"
+alt="A picture containing screenshot Description automatically generated" /></p>
+<p>Figure 10.1-1 BS test setup</p>
+<p>Table 10.1-1 captures assumptions on the losses and amplifier gains
+for the test setup.</p>
+<p>Table 10.1-1 Assumptions for test set-up losses/gains</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr>
+<th>Frequency (GHz)</th>
+<th>47</th>
+<th>38</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(\mathbf{L}_{\mathbf{coupler}}\)</span>
+(dB)</td>
+<td>3</td>
+<td>3</td>
+<td>Coupler loss</td>
+</tr>
+<tr>
+<td><span
+class="math display">\[\mathbf{G}_{\mathbf{PA}}\mathbf{(}\mathbf{dB}\mathbf{)}\]</span></td>
+<td>37</td>
+<td>37</td>
+<td>Gain of power amplifier</td>
+</tr>
+<tr>
+<td><span
+class="math display">\[\mathbf{L}_{\mathbf{2}\mathbf{dB}\mathbf{\_}\mathbf{atten}}\mathbf{\
+(}\mathbf{dB}\mathbf{)}\]</span></td>
+<td>2</td>
+<td>2</td>
+<td>2dB attenuator loss</td>
+</tr>
+<tr>
+<td><span
+class="math display">\[\mathbf{G}_{\mathbf{Pre}}\mathbf{(}\mathbf{dB}\mathbf{)}\]</span></td>
+<td>25</td>
+<td>25</td>
+<td>Gain of pre-amplifier</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\mathbf{L}_{\mathbf{cable}\mathbf{\_
+1}\mathbf{m}}\)</span> (dB)</td>
+<td>2.5</td>
+<td>2.5</td>
+<td>1m cable loss</td>
+</tr>
+<tr>
+<td><span
+class="math display">\[\mathbf{L}_{\mathbf{var}\mathbf{\_}\mathbf{atten}}\mathbf{\
+(}\mathbf{dB}\mathbf{)}\]</span></td>
+<td>2</td>
+<td>2</td>
+<td>Variable attenuator loss</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\mathbf{L}_{\mathbf{combiner}}\)</span>
+(dB)</td>
+<td>4</td>
+<td>4</td>
+<td>Combiner loss</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\mathbf{L}_{\mathbf{cable}\mathbf{\_
+5}\mathbf{m}}\)</span> (dB)</td>
+<td>11</td>
+<td>10</td>
+<td>5m cable loss</td>
+</tr>
+<tr>
+<td><span class="math display">\[\mathbf{L}_{\mathbf{total}}\mathbf{\
+(}\mathbf{dB}\mathbf{)}\]</span></td>
+<td>-42.5</td>
+<td>-41.5</td>
+<td><p><span class="math display">\[L_{total} = L_{cable_{1m}} +
+L_{cable_{5m}} + L_{combiner}\]</span></p>
+<p><span class="math display">\[+ L_{var\_ atten} + L_{2dB\_ atten} -
+G_{PA} - G_{Pre}\]</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>At the RIB (i.e. BS antenna array), if a reference sensitivity of
+-100dBm in 50MHz is assumed then according to 38.141-2, the AWGN level
+at the RIB should be -79dBm for a 200MHz channel. For the wanted signal,
+a margin of 10dB for the fading channel is assumed and an SNR of 20dB.
+Thus, the wanted signal power should be -79dBm AWGN + 20dB SNR + 10dB
+margin for fading channel = -49dBm.</p>
+<p>It is worth to note that the in-band blocking level for a BS with a
+sensitivity of -100dBm in 50MHz is -70dBm. Thus, the in-channel power
+here is considerably larger than the in-band blocking level. This
+reflects the reduced risk of blocking in FR2 due to beamforming. The
+-49dBm used in this estimate is an absolute worst case with high SNR,
+high channel margin in order to gain an understanding whether the link
+budget in the chamber can work in the worst case scenario.</p>
+<p>To estimate the output power requirement for the PA, the pathloss
+within the test chamber should be considered. Two types of test chamber
+have been studied; Indoor Anechoic Chamber (IAC) and Compact Antenna
+Test Range (CATR).</p>
+<p>For the IAC, the test antenna must be placed in the far-field of the
+BS array. The far field distance is related to the dimensions of the BS.
+Two BS dimensions have been considered; 5 times and 10 times the
+wavelength. Combining the chamber pathloss with the test setup
+L<sub>total</sub> and the power level at the RIB enables the needed
+output power levels at the PA output and signal generator to be
+calculated.</p>
+<p>Table 10.1-2: Power requirements for BS demodulation testing in an
+IAC</p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr>
+<th>Carrier Frequency (GHz)</th>
+<th colspan="2">47</th>
+<th colspan="2">38</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dimension (m)</td>
+<td>0.15</td>
+<td>0.25</td>
+<td>0.15</td>
+<td>0.25</td>
+<td>5 times of wave length and 10 times of wave length</td>
+</tr>
+<tr>
+<td><span class="math display">\[\mathbf{d}_{\mathbf{test}}\mathbf{\
+(m)}\]</span></td>
+<td>7</td>
+<td>19.6</td>
+<td>5.7</td>
+<td>15.8</td>
+<td>Far field distance</td>
+</tr>
+<tr>
+<td><span class="math display">\[\mathbf{L}_{\mathbf{FS}}\mathbf{\
+(dB)}\]</span></td>
+<td>82.9</td>
+<td>91.8</td>
+<td>79.2</td>
+<td>88.1</td>
+<td>Free space loss</td>
+</tr>
+<tr>
+<td><p><span class="math display">\[\mathbf{P}_{\mathbf{PA\_
+out}}\mathbf{\ }\left( \mathbf{dBm} \right)\]</span></p>
+<p><span class="math display">\[\mathbf{= \ }\mathbf{P}_{\mathbf{RIB\_
+demod\ }}\mathbf{+ \
+}\mathbf{L}_{\mathbf{FS}}\mathbf{-}\mathbf{G}_{\mathbf{test\_
+ant}}\mathbf{\  + \ }\mathbf{L}_{\mathbf{coupler}}\mathbf{\
+}\]</span></p></td>
+<td>13.9</td>
+<td>22.8</td>
+<td>10.2</td>
+<td>19.1</td>
+<td><p><span class="math display">\[P_{RIB\_ demod\ } = -
+49dBm\]</span></p>
+<p><span class="math display">\[P_{PA\_ out\_ max} = 22dBm\]</span></p>
+<p><span class="math display">\[L_{coupler} = 3dB\]</span></p></td>
+</tr>
+<tr>
+<td><p><span class="math display">\[\mathbf{P}_{\mathbf{SG\_
+est}}\mathbf{\ (dBm)}\]</span></p>
+<p><span class="math display">\[\mathbf{=}\mathbf{P}_{\mathbf{PA\_
+out}}\mathbf{+}\mathbf{L}_{\mathbf{total}}\]</span></p></td>
+<td>-28.6</td>
+<td>-19.7</td>
+<td>-31.3</td>
+<td>-22.4</td>
+<td><p>Estimated wanted signal level at SG</p>
+<p><span class="math display">\[L_{total} = \left\{ \begin{matrix}
+- 41.5dB &amp; 38GHz \\
+&amp; \\
+- 42.5dB &amp; 47GHz
+\end{matrix} \right.\ \]</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>For the CATR, the coupling loss between the test antenna and BS can
+be calculated as:</p>
+<p><span class="math display">\[L_{coupling\_ catr} = 10\log\left(
+\frac{4\pi*{Aera}_{catr}}{\lambda^{2}} \right) = 10\log\left(
+\frac{80\pi}{\lambda^{2}} \right)\]</span></p>
+<p>Assuming the CATR area to be 20m<sup>2</sup>, the CATR power
+requirements are as in table 10.1-3.</p>
+<p>Table 10.1-3: Power requirements for BS demodulation testing in an
+CATR</p>
+<table>
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th>Carrier frequency (GHz)</th>
+<th>47</th>
+<th>38</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span
+class="math inline">\(\mathbf{L}_{\mathbf{coupling}\mathbf{\_}\mathbf{catr}}\)</span>
+(dB)</td>
+<td>67.9</td>
+<td>66.1</td>
+<td>coupling loss</td>
+</tr>
+<tr>
+<td><p><span
+class="math display">\[\mathbf{P}_{\mathbf{PA}\mathbf{\_}\mathbf{out}}\mathbf{\
+}\left( \mathbf{dBm} \right)\]</span></p>
+<p><span class="math display">\[\mathbf{= \
+}\mathbf{P}_{\mathbf{RIB}\mathbf{\_}\mathbf{demod}\mathbf{\ }}\mathbf{+
+\ }\mathbf{L}_{\mathbf{coupling}\mathbf{\_}\mathbf{catr}}\mathbf{\  + \
+}\mathbf{L}_{\mathbf{coupler}}\mathbf{\ }\]</span></p></td>
+<td>21.9</td>
+<td>20.1</td>
+<td><p><span class="math display">\[P_{RIB\_ demod\ } = -
+49dBm\]</span></p>
+<p><span class="math display">\[P_{PA\_ out\_ max} = 22dBm\]</span></p>
+<p><span class="math display">\[L_{coupler} = 3dB\]</span></p></td>
+</tr>
+<tr>
+<td><p><span
+class="math display">\[\mathbf{P}_{\mathbf{SG}\mathbf{\_}\mathbf{est}}\mathbf{\
+(}\mathbf{dBm}\mathbf{)}\]</span></p>
+<p><span
+class="math display">\[\mathbf{=}\mathbf{P}_{\mathbf{PA}\mathbf{\_}\mathbf{out}}\mathbf{+}\mathbf{L}_{\mathbf{total}}\]</span></p></td>
+<td>-20.6</td>
+<td>-21.4</td>
+<td><span class="math display">\[L_{total} = \left\{ \begin{matrix}
+- 41.5dB &amp; 38GHz \\
+&amp; \\
+- 42.5dB &amp; 47GHz
+\end{matrix} \right.\ \]</span></td>
+</tr>
+</tbody>
+</table>
+<p>A signal generator can be estimated to provide an output power of up
+to -10dBm with the required linearity. For both the CATR and IAC, the
+output power from the signal generator will not be a limiting
+factor.</p>
+<p>Expectations on PA output power in some other frequency ranges are
+indicated in table 10.1-4.</p>
+<p>Table 10.1-4: PA output power expectations</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 13%" />
+<col style="width: 18%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Frequency (GHz)</th>
+<th>2~20</th>
+<th>18~26.5</th>
+<th>27~31</th>
+<th>30~40</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(\mathbf{G}_{\mathbf{PA}}\)</span>
+(dB)</td>
+<td>43</td>
+<td>40</td>
+<td>43</td>
+<td>37</td>
+</tr>
+<tr>
+<td>OIP3 (dBm)</td>
+<td>42</td>
+<td>40</td>
+<td>42</td>
+<td>37</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\mathbf{NF}_{\mathbf{PA}}\)</span>
+(dB)</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\mathbf{P}_{\mathbf{PA\_ out\_
+max}}\)</span>(dBm)</td>
+<td>27</td>
+<td>25</td>
+<td>27</td>
+<td>22</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\mathbf{P}_{\mathbf{PA\_ in\_
+max}}\)</span> (dBm)</td>
+<td>-16</td>
+<td>-15</td>
+<td>-16</td>
+<td>-15</td>
+</tr>
+</tbody>
+</table>
+<p>If PAs are available for 47GHz with the same output power as those
+for 30-40GHz are available, then the link budget is only just
+achievable. However, the estimate of the needed input power to the RIB
+has been based on a sensitivity level of -100 dBm/50MHz, large fading
+channel variation, 200MHz bandwidth and a 20dB SNR (the largest SNR for
+200MHz is actually around 15dB). which are all rather pessimistic and so
+in most situations a margin is likely to be available.</p>
+<p>Based on the link budget assessment, all of the conformance tests for
+BS demodulation requirements are retained for n262.</p>
+<h2 id="ue-requirements">10.2 UE requirements</h2>
+<p>The UE performance requirements in 38.101-4 have prior to the
+introduction of n262 been specified for frequencies of up to 40GHz. To
+check whether the requirements can also be applicable to band n262, it
+was agreed to perform simulations for three of the most stringent test
+cases: TS38.101-1 Table 7.2.2.2.1-4 Test 2-6, Table 7.2.2.2.1-3 Test
+1-4, Table 7.2.2.2.1-5 Test 3-1. It is assumed that if no significant
+difference is observable with this test cases between 40GHz and 47GHz
+then no difference will occur for all other requirements. Phase noise
+model from TR 38.803 Example 2 was considered as a baseline assumption
+for evaluation. Same time other phase noise models were not
+precluded.</p>
+<p>Figures 10.2-1 to 10.2-6 and Tables 10.2-1 and 10.2-2 summarize all
+simulation results submitted by different companies.</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image4.svg"
+style="width:3.15073in;height:2.3622in" /></th>
+<th><img src="media/image5.svg"
+style="width:3.15073in;height:2.3622in" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Figure 10.2-1 Intel, R4-2109218</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image6.svg"
+style="width:3.14623in;height:2.3622in" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Figure 10.2-2 Intel, R4-2109218</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image7.png"
+style="width:3.33333in;height:2.5in" /></th>
+<th><img src="media/image8.png"
+style="width:3.32708in;height:2.49375in" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Figure 10.2-3 Ericsson, R4-2113459. Phase noise model: Example 2 in
+TR38.803.</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image9.png"
+style="width:3.32014in;height:2.48681in" /></th>
+<th><img src="media/image10.png"
+style="width:3.32014in;height:2.48681in" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Figure 10.2-4 Ericsson, R4-2113459. Phase noise model: Example 2 in
+in R4-2010176 Proposal 1</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image11.png"
+style="width:3.15149in;height:2.3622in" /></th>
+<th><img src="media/image12.png"
+style="width:3.15149in;height:2.3622in" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Figure 10.2-5 Huawei, HiSilicon, R4-2113796</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th><img src="media/image13.png"
+style="width:3.15149in;height:2.3622in" /></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Figure 10.2-6 Huawei, HiSilicon, R4-2113796</p>
+<p>Table 10.2-1: Qualcomm, R4-2112250.</p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 13%" />
+<col style="width: 25%" />
+<col style="width: 19%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th>Test Number</th>
+<th>Table</th>
+<th>Test</th>
+<th>Carrier Frequency</th>
+<th>Alignment SNR<br />
+(@70% Peak Throughput)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test 3-1</td>
+<td>7.2.2.2.1-3</td>
+<td><em>16QAM Rank 1 with Enhanced Receiver Type 1</em></td>
+<td>39GHz</td>
+<td>16.05 dB</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><em>16QAM Rank 1 with Enhanced Receiver Type 1</em></td>
+<td>48GHz</td>
+<td>16.35dB</td>
+</tr>
+</tbody>
+</table>
+<p>Table 10.2-2: Qualcomm, R4-2112250.</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 12%" />
+<col style="width: 24%" />
+<col style="width: 18%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr>
+<th>Test Number</th>
+<th>Table</th>
+<th>Test</th>
+<th>Carrier Frequency</th>
+<th>Alignment SNR<br />
+(@70% Peak Throughput)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test 2-6</td>
+<td>7.2.2.2.1-4</td>
+<td><em>64QAM (MCS 17), Rank 2</em></td>
+<td>39GHz</td>
+<td>15.55 dB</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><em>64QAM (MCS 17), Rank 2</em></td>
+<td>48GHz</td>
+<td>15.85 dB</td>
+</tr>
+</tbody>
+</table>
+<p>Some companies observed small performance difference at 70% of the
+maximum throughput for test cases Table 7.2.2.2.1-4 Test 2-6 and Table
+7.2.2.2.1-5 Test 3-1. Other companies observed about one dB degradation
+for these tests. To provide sufficient margin and same time not to relax
+requirements too much it was concluded to add additional margin as 0.5
+dB for band n262 for these test cases.</p>
+<p>For test case Table 7.2.2.2.1-3 Test 1-4 it was also concluded on
+necessity of the additional margin to extend this requirement to band
+n262. The 1.5 dB margin was agreed.</p>
+<p>Although RAN5 specifies UE conformance testing, absolute Noc levels
+are specified in 38.101-4. For n262, the Noc levels are calculated based
+on the reference sensitivity as described in section 4.5.3.3 of TS
+38.101-2.</p>
+<p class="heading" id="section"><br />
+</p>
+<p class="heading" id="annex-a-informative-change-history">Annex A
+(informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 50%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">08/2020</td>
+<td style="text-align: center;">RAN4-96e</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TR Skeleton</td>
+<td style="text-align: center;">0.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">02/2021</td>
+<td style="text-align: center;">RAN4-98e</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>Agreed Text Proposal from
+RAN4#97-e:</p>
+<p>R4-2016883 BS RF Requirements and System parameters - TP to TR
+38.847</p>
+<p>R4-2016884 TP to TR 38.847: BS RF requirements</p></td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">04/2021</td>
+<td style="text-align: center;">RAN4-98bis-e</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>Agreed Text Proposal from
+RAN4#98-e:</p>
+<p>R4-2103204 TP to TR 38.847: UE Tx requirement for n262</p>
+<p>R4-2103206 TP to TR 38.847: UE Rx requirement for n262</p>
+<p>R4-2103874 TP to TR 38.847: BS conformance aspects</p></td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">05/2021</td>
+<td style="text-align: center;">RAN4#99-e</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>Fixed some references and tables
+numbering issues.</p>
+<p>Agreed Text Proposal from RAN4#98-bis-e:</p>
+<p>R4-2104682 pCR to TR 38.847: BS demodulation requirements</p>
+<p>R4-2106860 pCR to 38.847: UE performance requirements</p>
+<p>R4-2107038 TP to TR 38.847: BS conformance aspects</p></td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">08/2021</td>
+<td style="text-align: center;">RAN4#100-e</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>Agreed Text Proposal from
+RAN4#100-e:</p>
+<p>R4-2113735 TP to TR 38.847</p>
+<p>R4-2115634 TP to TR 38.847: BS conformance aspects</p></td>
+<td style="text-align: center;">0.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">09/2021</td>
+<td style="text-align: center;">RAN#93-e</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>Version and date updates</p>
+<p>Submitted to RAN #93-e for Approval.</p></td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">09/2021</td>
+<td style="text-align: center;">RAN#93-e</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Editorial corrections</td>
+<td style="text-align: center;">1.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">09-2021</td>
+<td style="text-align: center;">RAN#93-e</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TR 38.847</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN#94</td>
+<td style="text-align: center;">RP-212836</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to TR 38.847 UE performance
+requirements</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-03</td>
+<td style="text-align: center;">RAN#99</td>
+<td style="text-align: center;">RP-230513</td>
+<td style="text-align: center;">0002</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to 38.847: BS Conformance, removal of
+[] for 47GHz Rx test</td>
+<td style="text-align: center;">17.2.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

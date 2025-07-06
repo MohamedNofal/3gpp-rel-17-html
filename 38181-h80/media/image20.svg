@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.375in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 3600 225" width="6.0in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.font0 { font-weight: bold; font-size: 16px; font-family: System; }
+.font1 { font-size: 74px; font-family: "Times New Roman", serif; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.brush1 { fill: none; }
+.pen2 { stroke: none; }
+.font2 { font-size: 60px; font-family: "Times New Roman", serif; }
+.brush2 { fill: rgb(0,0,0); }
+</style>
+    <g>
+        <rect class="pen1 brush0" height="224" width="303" x="0" y="0"/>
+        <rect class="pen2 brush1" height="94" width="281" x="38" y="80"/>
+        <g>
+            <clipPath id="clipPath0">
+                <rect height="225" width="3600" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath0)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="38 75 97 126 156 208 242 260" xml:lang="en" xml:space="preserve" y="82">Preamble</text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen1 brush0" height="224" width="303" x="1910" y="0"/>
+        <rect class="pen2 brush1" height="94" width="281" x="1948" y="80"/>
+        <g>
+            <clipPath id="clipPath1">
+                <rect height="225" width="3600" x="0" y="0"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath1)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1948 1985 2007 2036 2066 2118 2152 2170" xml:lang="en" xml:space="preserve" y="82">Preamble</text>
+        </g>
+    </g>
+    <g>
+        <ellipse class="pen1 brush2" cx="3429" cy="112" rx="20" ry="20"/>
+        <ellipse class="pen1 brush2" cx="3505" cy="112" rx="20" ry="20"/>
+        <ellipse class="pen1 brush2" cx="3578" cy="112" rx="20" ry="20"/>
+    </g>
+</svg>

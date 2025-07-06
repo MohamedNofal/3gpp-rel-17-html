@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="3.712871287128713in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 9119 4125" width="8.207920792079207in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.brush1 { fill: rgb(205,205,205); }
+.pen1 { stroke: none; }
+.pen2 { stroke: rgb(205,205,205); stroke-width: 3; stroke-linejoin: round; }
+.brush2 { fill: none; }
+.pen3 { stroke: rgb(0,0,0); stroke-width: 3; stroke-linejoin: round; }
+.font0 { font-weight: bold; font-size: 119px; font-family: Arial; }
+.font1 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+.pen4 { stroke: rgb(0,0,0); stroke-width: 10; stroke-linejoin: round; }
+.font2 { font-size: 95px; font-family: Arial; }
+.brush3 { fill: rgb(192,192,192); }
+.font3 { font-weight: bold; font-size: 95px; font-family: Arial; }
+.font4 { font-weight: bold; font-size: 95px; font-family: Arial; }
+.font5 { font-size: 143px; font-family: Arial; }
+</style>
+    <g>
+        <polygon class="pen1 brush1" points="176,160 176,4129 4120,4129 4120,160 176,160"/>
+        <polygon class="pen2 brush2" points="176,4129 4120,4129 4120,160 176,160 176,4129"/>
+        <polygon class="pen1 brush0" points="62,47 62,4015 4007,4015 4007,47 62,47"/>
+        <polygon class="pen3 brush2" points="62,4015 4007,4015 4007,47 62,47 62,4015"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="115 204 278 352 396 470 589 626 715 752 871 952 989 1063 1107 1188" xml:lang="en" xml:space="preserve" y="220">System Simulator</text>
+        <polygon class="pen1 brush0" points="617,396 617,897 1940,897 1940,396 617,396"/>
+        <polygon class="pen4 brush2" points="617,897 1940,897 1940,396 617,396 617,897"/>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="967 1044 1103 1162 1221 1257 1287 1352 1411 1464 1494 1553 1589" xml:lang="en" xml:space="preserve" y="551">Upper Tester </text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1142 1219 1243 1273 1332 1356 1415" xml:lang="en" xml:space="preserve" y="679">within </text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1006 1071 1136 1213 1290 1320 1409 1474" xml:lang="en" xml:space="preserve" y="807">TTCN MTC</text>
+        <path class="pen1 brush0" d="M 712,1307  L 712,1295 715,1284 718,1273 723,1262 729,1252 737,1241 746,1231 756,1221 767,1211 780,1202 794,1192 808,1183 824,1175 841,1166 878,1151 918,1136 962,1124 1008,1113 1058,1103 1110,1096 1164,1091 1221,1087 1279,1086 1336,1087 1393,1091 1447,1096 1499,1103 1549,1113 1595,1124 1639,1136 1679,1151 1716,1166 1733,1175 1749,1183 1763,1192 1777,1202 1790,1211 1801,1221 1811,1231 1820,1241 1828,1252 1834,1262 1839,1273 1842,1284 1845,1295 1845,1307 1845,1307 1845,1318 1842,1329 1839,1340 1834,1351 1828,1362 1820,1372 1811,1382 1801,1392 1790,1402 1777,1412 1763,1421 1749,1430 1733,1439 1716,1447 1679,1463 1639,1477 1595,1490 1549,1501 1499,1510 1447,1517 1393,1523 1336,1526 1279,1527 1221,1526 1164,1523 1110,1517 1058,1510 1008,1501 962,1490 918,1477 878,1463 841,1447 824,1439 808,1430 794,1421 780,1412 767,1402 756,1392 746,1382 737,1372 729,1362 723,1351 718,1340 715,1329 712,1318 712,1307 z"/>
+        <polyline class="pen3" fill="none" points="712,1307 712,1295 715,1284 718,1273 723,1262 729,1252 737,1241 746,1231 756,1221 767,1211 780,1202 794,1192 808,1183 824,1175 841,1166 878,1151 918,1136 962,1124 1008,1113 1058,1103 1110,1096 1164,1091 1221,1087 1279,1086 1336,1087 1393,1091 1447,1096 1499,1103 1549,1113 1595,1124 1639,1136 1679,1151 1716,1166 1733,1175 1749,1183 1763,1192 1777,1202 1790,1211 1801,1221 1811,1231 1820,1241 1828,1252 1834,1262 1839,1273 1842,1284 1845,1295 1845,1307 1845,1307 1845,1318 1842,1329 1839,1340 1834,1351 1828,1362 1820,1372 1811,1382 1801,1392 1790,1402 1777,1412 1763,1421 1749,1430 1733,1439 1716,1447 1679,1463 1639,1477 1595,1490 1549,1501 1499,1510 1447,1517 1393,1523 1336,1526 1279,1527 1221,1526 1164,1523 1110,1517 1058,1510 1008,1501 962,1490 918,1477 878,1463 841,1447 824,1439 808,1430 794,1421 780,1412 767,1402 756,1392 746,1382 737,1372 729,1362 723,1351 718,1340 715,1329 712,1318 712,1307"/>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1012 1042 1113 1202 1291 1321 1351 1422 1481 1517" xml:lang="en" xml:space="preserve" y="1275"> EMMI Port</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="852" xml:lang="en" xml:space="preserve" y="1403">(</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="887 946 1005 1064 1088 1141 1200 1224 1254 1284 1343 1373 1432 1468 1498 1557 1610" xml:lang="en" xml:space="preserve" y="1403">Logical Interface</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1670" xml:lang="en" xml:space="preserve" y="1403">)</text>
+        <polygon class="pen1 brush0" points="617,1908 617,2409 1940,2409 1940,1908 617,1908"/>
+        <polygon class="pen3 brush2" points="617,2409 1940,2409 1940,1908 617,1908 617,2409"/>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="849 920 1009 1098 1128 1158 1235 1294 1383 1442 1501 1560 1619 1678" xml:lang="en" xml:space="preserve" y="2063">EMMI Component</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1142 1219 1243 1273 1332 1356 1415" xml:lang="en" xml:space="preserve" y="2191">within </text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="789 860 931 961 1032 1091 1150 1209 1239 1298 1328 1352 1411 1470 1500 1559 1618 1671 1730" xml:lang="en" xml:space="preserve" y="2319">SS Adaptation Layer</text>
+        <polygon class="pen1 brush3" points="2268,2762 2268,3612 3590,3612 3590,2762 2268,2762"/>
+        <polygon class="pen3 brush2" points="2268,3612 3590,3612 3590,2762 2268,2762 2268,3612"/>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2502 2532 2609 2668 2710 2775 2858 2917 2959 3018 3048 3125 3167 3197 3256 3315" xml:lang="en" xml:space="preserve" y="3219"> Hardware Driver</text>
+        <path class="pen1 brush0" d="M 4082,3754  L 4074,3753 4066,3751 4059,3747 4051,3742 4044,3736 4037,3728 4030,3720 4023,3709 4016,3698 4010,3685 4004,3672 3997,3657 3992,3641 3986,3624 3975,3588 3965,3548 3957,3504 3949,3457 3943,3408 3938,3356 3934,3301 3932,3245 3931,3187 3932,3129 3934,3073 3938,3018 3943,2966 3949,2917 3957,2870 3965,2826 3975,2786 3986,2750 3992,2733 3997,2717 4004,2702 4010,2689 4016,2676 4023,2665 4030,2655 4037,2646 4044,2638 4051,2632 4059,2627 4066,2623 4074,2621 4082,2620 4082,2620 4090,2621 4097,2623 4105,2627 4112,2632 4120,2638 4127,2646 4134,2655 4141,2665 4147,2676 4154,2689 4160,2702 4166,2717 4172,2733 4178,2750 4189,2786 4199,2826 4207,2870 4215,2917 4221,2966 4226,3018 4230,3073 4232,3129 4233,3187 4232,3245 4230,3301 4226,3356 4221,3408 4215,3457 4207,3504 4199,3548 4189,3588 4178,3624 4172,3641 4166,3657 4160,3672 4154,3685 4147,3698 4141,3709 4134,3720 4127,3728 4120,3736 4112,3742 4105,3747 4097,3751 4090,3753 4082,3754 z"/>
+        <polyline class="pen3" fill="none" points="4082,3754 4074,3753 4066,3751 4059,3747 4051,3742 4044,3736 4037,3728 4030,3720 4023,3709 4016,3698 4010,3685 4004,3672 3997,3657 3992,3641 3986,3624 3975,3588 3965,3548 3957,3504 3949,3457 3943,3408 3938,3356 3934,3301 3932,3245 3931,3187 3932,3129 3934,3073 3938,3018 3943,2966 3949,2917 3957,2870 3965,2826 3975,2786 3986,2750 3992,2733 3997,2717 4004,2702 4010,2689 4016,2676 4023,2665 4030,2655 4037,2646 4044,2638 4051,2632 4059,2627 4066,2623 4074,2621 4082,2620 4082,2620 4090,2621 4097,2623 4105,2627 4112,2632 4120,2638 4127,2646 4134,2655 4141,2665 4147,2676 4154,2689 4160,2702 4166,2717 4172,2733 4178,2750 4189,2786 4199,2826 4207,2870 4215,2917 4221,2966 4226,3018 4230,3073 4232,3129 4233,3187 4232,3245 4230,3301 4226,3356 4221,3408 4215,3457 4207,3504 4199,3548 4189,3588 4178,3624 4172,3641 4166,3657 4160,3672 4154,3685 4147,3698 4141,3709 4134,3720 4127,3728 4120,3736 4112,3742 4105,3747 4097,3751 4090,3753 4082,3754"/>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 3557)" x="4050" xml:lang="en" xml:space="preserve" y="3557">P</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 3486)" x="4050" xml:lang="en" xml:space="preserve" y="3486">h</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 3421)" x="4050" xml:lang="en" xml:space="preserve" y="3421">y</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 3362)" x="4050" xml:lang="en" xml:space="preserve" y="3362">s</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 3302)" x="4050" xml:lang="en" xml:space="preserve" y="3302">i</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 3273)" x="4050" xml:lang="en" xml:space="preserve" y="3273">c</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 3213)" x="4050" xml:lang="en" xml:space="preserve" y="3213">a</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 3154)" x="4050" xml:lang="en" xml:space="preserve" y="3154">l</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 3124)" x="4050" xml:lang="en" xml:space="preserve" y="3124"> </text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 3095)" x="4050" xml:lang="en" xml:space="preserve" y="3095">E</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 3024)" x="4050" xml:lang="en" xml:space="preserve" y="3024">M</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 2935)" x="4050" xml:lang="en" xml:space="preserve" y="2935">M</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 2846)" x="4050" xml:lang="en" xml:space="preserve" y="2846">I</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4050, 2816)" x="4050" xml:lang="en" xml:space="preserve" y="2816"> </text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4178, 3409)" x="4178" xml:lang="en" xml:space="preserve" y="3409">I</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4178, 3379)" x="4178" xml:lang="en" xml:space="preserve" y="3379">n</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4178, 3314)" x="4178" xml:lang="en" xml:space="preserve" y="3314">t</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4178, 3279)" x="4178" xml:lang="en" xml:space="preserve" y="3279">e</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4178, 3219)" x="4178" xml:lang="en" xml:space="preserve" y="3219">r</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4178, 3178)" x="4178" xml:lang="en" xml:space="preserve" y="3178">f</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4178, 3142)" x="4178" xml:lang="en" xml:space="preserve" y="3142">a</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4178, 3083)" x="4178" xml:lang="en" xml:space="preserve" y="3083">c</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" transform="rotate(-90.0, 4178, 3024)" x="4178" xml:lang="en" xml:space="preserve" y="3024">e</text>
+        <polygon class="pen1 brush0" points="5206,2856 5206,3518 6057,3518 6057,2856 5206,2856"/>
+        <polygon class="pen3 brush2" points="5206,3518 6057,3518 6057,2856 5206,2856 5206,3518"/>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5317 5406 5465 5524 5583 5613 5672 5725 5755 5814 5850 5909 5945" xml:lang="en" xml:space="preserve" y="3091">Manufacturer </text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5454 5507 5566 5625 5678 5702 5732 5756 5809" xml:lang="en" xml:space="preserve" y="3219">specific </text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5451 5510 5569 5628 5687 5717 5776" xml:lang="en" xml:space="preserve" y="3347">adapter</text>
+        <polyline class="pen3" fill="none" points="1279,897 1279,1086"/>
+        <polyline class="pen3" fill="none" points="1279,1527 1279,1908"/>
+        <polyline class="pen3" fill="none" points="1279,2409 1279,3187 2268,3187"/>
+        <polyline class="pen3" fill="none" points="3590,3187 3931,3187"/>
+        <polyline class="pen3" fill="none" points="4233,3187 5206,3187"/>
+        <polyline class="pen3" fill="none" points="6057,3187 6199,3187 6199,3329 6709,3329"/>
+        <text class="font5" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4366" xml:lang="en" xml:space="preserve" y="3131">e</text>
+        <text class="font5" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4455" xml:lang="en" xml:space="preserve" y="3131">.</text>
+        <text class="font5" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4500" xml:lang="en" xml:space="preserve" y="3131">g</text>
+        <text class="font5" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4589 4633" xml:lang="en" xml:space="preserve" y="3131">. </text>
+        <text class="font5" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4678 4794 4901" xml:lang="en" xml:space="preserve" y="3131">USB</text>
+        <polygon class="pen1 brush0" points="7082,2250 7082,2755 7174,2755 7174,2250 7082,2250"/>
+        <polygon class="pen3 brush2" points="7082,2755 7174,2755 7174,2250 7082,2250 7082,2755"/>
+        <polygon class="pen1 brush0" points="6576,2691 6576,3812 7238,3812 7238,2691 6576,2691"/>
+        <polygon class="pen3 brush2" points="6576,3812 7238,3812 7238,2691 6576,2691 6576,3812"/>
+        <polygon class="pen1 brush3" points="6576,2755 6576,3260 7238,3260 7238,2755 6576,2755"/>
+        <polygon class="pen3 brush2" points="6576,3260 7238,3260 7238,2755 6576,2755 6576,3260"/>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="6833 6910" xml:lang="en" xml:space="preserve" y="3040">UE</text>
+    </g>
+    <g/>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.2777777777777778in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 3840 640" width="1.6666666666666667in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 19; stroke-linejoin: round; }
+.font0 { font-size: 200px; font-family: "Times New Roman", serif; }
+.font1 { font-size: 346px; font-family: "Times New Roman", serif; }
+.font2 { font-style: italic; font-size: 200px; font-family: "Times New Roman", serif; }
+.font3 { font-size: 313px; font-family: Symbol, serif; }
+.font4 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="106" x2="298" y1="101" y2="101"/>
+        <line class="pen1" fill="none" x1="1644" x2="1836" y1="101" y2="101"/>
+        <line class="pen1" fill="none" x1="3044" x2="3236" y1="101" y2="101"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="370 529 660 729 853 1002 1908 2067 2198 2267 2391 2540 3308 3467 3616" xml:lang="en" xml:space="preserve" y="244">UL-SCHUL-SCHUCI</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="3383" xml:lang="en" xml:space="preserve" y="515">,</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2816" xml:lang="en" xml:space="preserve" y="416">\</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="360 1898 3298 3442 3504 3663" xml:lang="en" xml:space="preserve" y="515">llltmp</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="52 1296 1590 2990" xml:space="preserve" y="416">F=FF</text>
+    </g>
+</svg>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.4027777777777778in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 6144 928" width="2.6666666666666665in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.brush1 { fill: rgb(0,0,0); }
+.pen2 { stroke: none; }
+.pen3 { stroke: rgb(0,0,0); stroke-width: 16; stroke-linejoin: round; }
+.font0 { font-size: 342px; font-family: Symbol, serif; }
+.font1 { font-size: 288px; font-family: "Times New Roman", serif; }
+.font2 { font-style: italic; font-size: 288px; font-family: "Times New Roman", serif; }
+.font3 { font-size: 261px; font-family: Symbol, serif; }
+.brush2 { fill: rgb(0,0,0); }
+.font4 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="958" x2="991" y1="744" y2="726"/>
+        <line class="pen1" fill="none" x1="991" x2="1069" y1="726" y2="852"/>
+        <line class="pen1" fill="none" x1="1069" x2="1153" y1="852" y2="520"/>
+        <line class="pen1" fill="none" x1="1153" x2="1338" y1="520" y2="520"/>
+        <polygon class="pen2 brush1" points="956,740 1000,716 1069,820 1148,512 1338,512 1338,528 1159,528 1077,852 1061,852 983,736 961,749"/>
+        <line class="pen3" fill="none" x1="931" x2="1363" y1="464" y2="464"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1408" xml:space="preserve" y="567">(</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2960" xml:space="preserve" y="567">)</text>
+        <line class="pen1" fill="none" x1="3591" x2="3624" y1="744" y2="726"/>
+        <line class="pen1" fill="none" x1="3624" x2="3702" y1="726" y2="852"/>
+        <line class="pen1" fill="none" x1="3702" x2="3786" y1="852" y2="520"/>
+        <line class="pen1" fill="none" x1="3786" x2="3971" y1="520" y2="520"/>
+        <polygon class="pen2 brush1" points="3589,740 3633,716 3702,820 3781,512 3971,512 3971,528 3792,528 3710,852 3694,852 3616,736 3594,749"/>
+        <line class="pen3" fill="none" x1="3564" x2="3996" y1="464" y2="464"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="4041" xml:space="preserve" y="567">(</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="5982" xml:space="preserve" y="567">)</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1067 3700" xml:lang="en" xml:space="preserve" y="340">11</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="204 484 1505 1924 2388 2503 2833 4138 4557 5021 5136 5720 5855" xml:lang="en" xml:space="preserve" y="544">()12(2)12(21)</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1168 3801" xml:lang="en" xml:space="preserve" y="827">22</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="59 319 2238 2668 3414 4871 5301" xml:lang="en" xml:space="preserve" y="544">rncnjcn</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="670 1692 2121 3117 4325 4754 5518" xml:space="preserve" y="544">=-×+-×+</text>
+    </g>
+</svg>

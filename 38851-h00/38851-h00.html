@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38851-h00</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword">Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-of-terms-symbols-and-abbreviations"
+id="toc-definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</a>
+<ul>
+<li><a href="#terms" id="toc-terms">3.1 Terms</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#inter-band-dl-ca" id="toc-inter-band-dl-ca">4 Inter-band
+DL CA</a>
+<ul>
+<li><a href="#applicability-of-cbmibm-for-different-ca-configurations"
+id="toc-applicability-of-cbmibm-for-different-ca-configurations">4.1
+Applicability of CBM/IBM for different CA configurations</a></li>
+<li><a
+href="#feasibility-study-for-ca-configurations-within-same-frequency-group"
+id="toc-feasibility-study-for-ca-configurations-within-same-frequency-group">4.2
+Feasibility study for CA configurations within same frequency group</a>
+<ul>
+<li><a href="#ca-configurations-within-same-frequency-group-using-ibm"
+id="toc-ca-configurations-within-same-frequency-group-using-ibm">4.2.1
+CA configurations within same frequency group using IBM</a></li>
+</ul></li>
+<li><a
+href="#feasibility-study-for-ca-configurations-between-different-frequency-groups-based-on-cbm"
+id="toc-feasibility-study-for-ca-configurations-between-different-frequency-groups-based-on-cbm">4.3
+Feasibility study for CA configurations between different frequency
+groups based on CBM</a></li>
+<li><a
+href="#ue-requirements-for-ca-configurations-ca_n258a-n260a-and-ca_n257a-n259a-based-on-ibm"
+id="toc-ue-requirements-for-ca-configurations-ca_n258a-n260a-and-ca_n257a-n259a-based-on-ibm">4.4
+UE requirements for CA configurations CA_n258A-n260A and CA_n257A-n259A
+based on IBM</a>
+<ul>
+<li><a href="#operating-bands-for-ca"
+id="toc-operating-bands-for-ca">4.4.1 Operating bands for CA</a></li>
+<li><a href="#configurations-for-inter-band-ca"
+id="toc-configurations-for-inter-band-ca">4.4.2 Configurations for
+inter-band CA</a></li>
+<li><a href="#reference-sensitivity-for-inter-band-ca"
+id="toc-reference-sensitivity-for-inter-band-ca">4.4.3 Reference
+sensitivity for inter-band CA</a></li>
+<li><a href="#eis-spherical-coverage-for-inter-band-ca"
+id="toc-eis-spherical-coverage-for-inter-band-ca">4.4.4 EIS spherical
+coverage for inter-band CA</a></li>
+<li><a href="#other-receiver-characteristics"
+id="toc-other-receiver-characteristics">4.4.5 Other receiver
+characteristics</a></li>
+<li><a href="#release-independence" id="toc-release-independence">4.4.6
+Release independence</a></li>
+</ul></li>
+<li><a
+href="#ue-requirements-for-ca-configurations-within-the-same-frequency-group-based-on-cbm"
+id="toc-ue-requirements-for-ca-configurations-within-the-same-frequency-group-based-on-cbm">4.5
+UE requirements for CA configurations within the same frequency group
+based on CBM</a></li>
+</ul></li>
+<li><a href="#inter-band-ul-ca" id="toc-inter-band-ul-ca">5 Inter-band
+UL CA</a>
+<ul>
+<li><a
+href="#feasibility-study-for-ca-configurations-within-same-frequency-group-based-on-ibm-and-cbm"
+id="toc-feasibility-study-for-ca-configurations-within-same-frequency-group-based-on-ibm-and-cbm">5.1
+Feasibility study for CA configurations within same frequency group
+based on IBM and CBM</a></li>
+<li><a
+href="#feasibility-study-for-ca-configurations-between-different-frequency-groups-based-on-cbm-1"
+id="toc-feasibility-study-for-ca-configurations-between-different-frequency-groups-based-on-cbm-1">5.2
+Feasibility study for CA configurations between different frequency
+groups based on CBM</a></li>
+<li><a
+href="#ue-requirements-for-ca-configuration-ca_n257a-n259a-based-on-ibm"
+id="toc-ue-requirements-for-ca-configuration-ca_n257a-n259a-based-on-ibm">5.3
+UE requirements for CA configuration CA_n257A-n259A based on
+IBM</a></li>
+</ul></li>
+<li><a href="#ul-gaps-for-self-calibration-and-monitoring"
+id="toc-ul-gaps-for-self-calibration-and-monitoring">6 UL gaps for
+self-calibration and monitoring</a>
+<ul>
+<li><a href="#phase-1" id="toc-phase-1">6.1 Phase 1</a>
+<ul>
+<li><a href="#study-of-the-performance-gain-over-the-current-baseline"
+id="toc-study-of-the-performance-gain-over-the-current-baseline">6.1.1
+Study of the performance gain over the current baseline</a></li>
+<li><a
+href="#study-of-rf-performance-evaluationtestability-related-to-ue-self-calibration-and-monitoring"
+id="toc-study-of-rf-performance-evaluationtestability-related-to-ue-self-calibration-and-monitoring">6.1.2
+Study of RF performance evaluation/testability related to UE
+self-calibration and monitoring</a></li>
+<li><a href="#study-network-impact-of-ue-emissions-during-ul-gap"
+id="toc-study-network-impact-of-ue-emissions-during-ul-gap">6.1.3 Study
+network impact of UE emissions during UL gap</a></li>
+</ul></li>
+<li><a href="#phase-2" id="toc-phase-2"><br />
+6.2 Phase 2</a>
+<ul>
+<li><a href="#specification-related-aspects"
+id="toc-specification-related-aspects">6.2.1 Specification related
+aspects</a>
+<ul>
+<li><a href="#ul-gap-configurations"
+id="toc-ul-gap-configurations">6.2.1.1 UL gap configuration(s)</a></li>
+<li><a href="#ue-capability" id="toc-ue-capability">6.2.1.2 UE
+capability</a></li>
+<li><a href="#ue-interruptions" id="toc-ue-interruptions">6.2.1.3 UE
+interruptions</a></li>
+</ul></li>
+<li><a
+href="#ue-fall-back-behaviour-i.e.-if-gaps-are-not-available-for-ue-requesting-gaps"
+id="toc-ue-fall-back-behaviour-i.e.-if-gaps-are-not-available-for-ue-requesting-gaps">6.2.2
+UE fall back behaviour i.e. if gaps are not available for UE requesting
+gaps</a></li>
+<li><a href="#release-independence-aspects"
+id="toc-release-independence-aspects">6.2.3 Release independence
+aspects</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">3GPP TR 38.851 V17.0.0 (2022-06)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">Technical Report</td>
+</tr>
+<tr>
+<td colspan="2"><p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NR;</p>
+<p>&lt;User Equipment (UE) Further enhancements of NR RF requirements
+for frequency range 2 (FR2)</p>
+<p>(Release 17)</p></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"></td>
+</tr>
+<tr>
+<td><img src="media/image1.jpeg"
+style="width:1.32639in;height:0.91667in" /></td>
+<td style="text-align: right;"><img src="media/image2.png"
+style="width:1.77083in;height:1.03472in" /></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">The present document has been developed within the 3rd
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: center;"><p><em><strong>Copyright
+Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2022, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p></td>
+</tr>
+</tbody>
+</table>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references">6</a></p>
+<p>3 Definitions of terms, symbols and abbreviations <a
+href="#definitions-of-terms-symbols-and-abbreviations">6</a></p>
+<p>3.1 Terms <a href="#terms">6</a></p>
+<p>3.2 Symbols <a href="#symbols">6</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">7</a></p>
+<p>4 Inter-band DL CA <a href="#inter-band-dl-ca">7</a></p>
+<p>4.1 Applicability of CBM/IBM for different CA configurations <a
+href="#applicability-of-cbmibm-for-different-ca-configurations">7</a></p>
+<p>4.2 Feasibility study for CA configurations within same frequency
+group <a
+href="#feasibility-study-for-ca-configurations-within-same-frequency-group">7</a></p>
+<p>4.2.1 CA configurations within same frequency group using IBM <a
+href="#ca-configurations-within-same-frequency-group-using-ibm">7</a></p>
+<p>4.3 Feasibility study for CA configurations between different
+frequency groups based on CBM <a
+href="#feasibility-study-for-ca-configurations-between-different-frequency-groups-based-on-cbm">8</a></p>
+<p>4.4 UE requirements for CA configurations CA_n258A-n260A and
+CA_n257A-n259A based on IBM <a
+href="#ue-requirements-for-ca-configurations-ca_n258a-n260a-and-ca_n257a-n259a-based-on-ibm">9</a></p>
+<p>4.4.1 Operating bands for CA <a
+href="#operating-bands-for-ca">9</a></p>
+<p>4.4.2 Configurations for inter-band CA <a
+href="#_Toc52196357">10</a></p>
+<p>4.4.3 Reference sensitivity for inter-band CA <a
+href="#_Toc104799501">12</a></p>
+<p>4.4.4 EIS spherical coverage for inter-band CA <a
+href="#_Toc52196584">12</a></p>
+<p>4.4.5 Other receiver characteristics <a
+href="#_Toc104799503">13</a></p>
+<p>4.4.6 Release independence <a href="#release-independence">13</a></p>
+<p>4.5 UE requirements for CA configurations within the same frequency
+group based on CBM <a
+href="#ue-requirements-for-ca-configurations-within-the-same-frequency-group-based-on-cbm">14</a></p>
+<p>5 Inter-band UL CA <a href="#inter-band-ul-ca">14</a></p>
+<p>5.1 Feasibility study for CA configurations within same frequency
+group based on IBM and CBM <a
+href="#feasibility-study-for-ca-configurations-within-same-frequency-group-based-on-ibm-and-cbm">14</a></p>
+<p>5.2 Feasibility study for CA configurations between different
+frequency groups based on CBM <a
+href="#feasibility-study-for-ca-configurations-between-different-frequency-groups-based-on-cbm-1">14</a></p>
+<p>5.3 UE requirements for CA configuration CA_n257A-n259A based on IBM
+<a
+href="#ue-requirements-for-ca-configuration-ca_n257a-n259a-based-on-ibm">14</a></p>
+<p>6 UL gaps for self-calibration and monitoring <a
+href="#ul-gaps-for-self-calibration-and-monitoring">14</a></p>
+<p>6.1 Phase 1 <a href="#phase-1">14</a></p>
+<p>6.1.1 Study of the performance gain over the current baseline <a
+href="#study-of-the-performance-gain-over-the-current-baseline">14</a></p>
+<p>6.1.2 Study of RF performance evaluation/testability related to UE
+self-calibration and monitoring <a
+href="#study-of-rf-performance-evaluationtestability-related-to-ue-self-calibration-and-monitoring">14</a></p>
+<p>6.1.3 Study network impact of UE emissions during UL gap <a
+href="#study-network-impact-of-ue-emissions-during-ul-gap">14</a></p>
+<p>6.2 Phase 2 <a href="#phase-2">15</a></p>
+<p>6.2.1 Specification related aspects <a
+href="#specification-related-aspects">15</a></p>
+<p>6.2.1.1 UL gap configuration(s) <a
+href="#ul-gap-configurations">15</a></p>
+<p>6.2.1.2 UE capability <a href="#ue-capability">15</a></p>
+<p>6.2.1.3 UE interruptions <a href="#ue-interruptions">15</a></p>
+<p>6.2.2 UE fall back behaviour i.e. if gaps are not available for UE
+requesting gaps <a
+href="#ue-fall-back-behaviour-i.e.-if-gaps-are-not-available-for-ue-requesting-gaps">15</a></p>
+<p>6.2.3 Release independence aspects <a
+href="#release-independence-aspects">15</a></p>
+<p>Annex &lt;A&gt; (informative): &lt;Informative annex for a Technical
+Specification&gt; <a
+href="#annex-a-informative-informative-annex-for-a-technical-specification">16</a></p>
+<p>Annex &lt;B&gt; (informative): Change history <a
+href="#annex-b-informative-change-history">16</a></p>
+<h1 id="foreword">Foreword</h1>
+<p>This Technical Report has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<p>In the present document, modal verbs have the following meanings:</p>
+<p><strong>shall</strong> indicates a mandatory requirement to do
+something</p>
+<p><strong>shall not</strong> indicates an interdiction (prohibition) to
+do something</p>
+<p>The constructions "shall" and "shall not" are confined to the context
+of normative provisions, and do not appear in Technical Reports.</p>
+<p>The constructions "must" and "must not" are not used as substitutes
+for "shall" and "shall not". Their use is avoided insofar as possible,
+and they are not used in a normative context except in a direct citation
+from an external, referenced, non-3GPP document, or so as to maintain
+continuity of style when extending or modifying the provisions of such a
+referenced document.</p>
+<p><strong>should</strong> indicates a recommendation to do
+something</p>
+<p><strong>should not</strong> indicates a recommendation not to do
+something</p>
+<p><strong>may</strong> indicates permission to do something</p>
+<p><strong>need not</strong> indicates permission not to do
+something</p>
+<p>The construction "may not" is ambiguous and is not used in normative
+elements. The unambiguous constructions "might not" or "shall not" are
+used instead, depending upon the meaning intended.</p>
+<p><strong>can</strong> indicates that something is possible</p>
+<p><strong>cannot</strong> indicates that something is impossible</p>
+<p>The constructions "can" and "cannot" are not substitutes for "may"
+and "need not".</p>
+<p><strong>will</strong> indicates that something is certain or expected
+to happen as a result of action taken by an agency the behaviour of
+which is outside the scope of the present document</p>
+<p><strong>will not</strong> indicates that something is certain or
+expected not to happen as a result of action taken by an agency the
+behaviour of which is outside the scope of the present document</p>
+<p><strong>might</strong> indicates a likelihood that something will
+happen as a result of action taken by some agency the behaviour of which
+is outside the scope of the present document</p>
+<p><strong>might not</strong> indicates a likelihood that something will
+not happen as a result of action taken by some agency the behaviour of
+which is outside the scope of the present document</p>
+<p>In addition:</p>
+<p><strong>is</strong> (or any other verb in the indicative mood)
+indicates a statement of fact</p>
+<p><strong>is not</strong> (or any other negative verb in the indicative
+mood) indicates a statement of fact</p>
+<p>The constructions "is" and "is not" do not indicate requirements.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document is a technical report for Rel-17 WI Further
+enhancements of NR RF requirements for frequency range 2 (FR2).</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>…</p>
+<p>[x] &lt;doctype&gt; &lt;#&gt;[ ([up to and
+including]{yyyy[-mm]|V&lt;a[.b[.c]]&gt;}[onwards])]:
+"&lt;Title&gt;".</p>
+<h1 id="definitions-of-terms-symbols-and-abbreviations">3 Definitions of
+terms, symbols and abbreviations</h1>
+<p>This clause and its three subclauses are mandatory. The contents
+shall be shown as "void" if the TS/TR does not define any terms,
+symbols, or abbreviations.</p>
+<h2 id="terms">3.1 Terms</h2>
+<p>For the purposes of the present document, the terms given in 3GPP
+TR 21.905 [1] and the following apply. A term defined in the present
+document takes precedence over the definition of the same term, if any,
+in 3GPP TR 21.905 [1].</p>
+<p>Definition format (Normal)</p>
+<p><strong>&lt;defined term&gt;:</strong> &lt;definition&gt;.</p>
+<p><strong>example:</strong> text used to clarify abstract rules by
+applying them literally.</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<p>Symbol format (EW)</p>
+<p>&lt;symbol&gt; &lt;Explanation&gt;</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>Abbreviation format (EW)</p>
+<p>&lt;ABBREVIATION&gt; &lt;Expansion&gt;</p>
+<h1 id="inter-band-dl-ca">4 Inter-band DL CA</h1>
+<h2 id="applicability-of-cbmibm-for-different-ca-configurations">4.1
+Applicability of CBM/IBM for different CA configurations</h2>
+<p>Following agreements have been reached concerning applicability of
+CBM/IBM for different CA configurations.</p>
+<p>IBM UE capability is applicable for all CA configurations
+R4-2016915</p>
+<p>On “frequency group” R4-2016915</p>
+<p>“frequency group” term shall not be defined in specification</p>
+<p>If either CBM or IBM is concluded as infeasible for certain band
+combinations, it is reasonable to clearly state in the spec that only
+the requirements of feasible BM apply to these band combinations. If
+both CBM and IBM are concluded as feasible for certain band
+combinations, IBM/CBM is up to UE’s capability. R4-2016915</p>
+<p>Typical inter-band CA deployment between bands in the same frequency
+group cannot be limited to co-located deployments R4-2007813</p>
+<p>It is agreed that RAN4 will not label CBM or IBM as a default BM
+method for any band combination. Used beam management is based on UE
+capability. This issue is not discussed anymore in RAN4 R4-2103111</p>
+<p>There are no deployment restrictions (Non-co-located/co-located) for
+network to configure inter-band DL CA for CBM UEs. R4-2103399</p>
+<p>- UE RF requirements for CBM shall be derived based on co-located
+deployment scenario only. R4-2103399</p>
+<h2
+id="feasibility-study-for-ca-configurations-within-same-frequency-group">4.2
+Feasibility study for CA configurations within same frequency group</h2>
+<h3 id="ca-configurations-within-same-frequency-group-using-ibm">4.2.1
+CA configurations within same frequency group using IBM</h3>
+<p>Following agreements have been made for CA configurations within same
+frequency group using IBM.</p>
+<p>From R4-2016915</p>
+<blockquote>
+<p>- IBM UE capability is applicable for all CA configurations</p>
+</blockquote>
+<p>From R4-2017813</p>
+<blockquote>
+<p>- Typical inter-band CA deployment between bands in the same
+frequency group cannot be limited to co-located deployments</p>
+<p>-IBM UEs are implementable</p>
+<p>-Feasibility to support is left to UE vendor (implementation)
+choice</p>
+</blockquote>
+<p>From R4-2103111</p>
+<blockquote>
+<p>-IBM inter-band CA requirements it is agreed that the FR2 inter-band
+DL CA, maximum input level, ACS, and in-band blocking requirement are
+band combination agnostic and shall be reused for any new FR2 inter-band
+combinations.</p>
+</blockquote>
+<p>From R4-2105391</p>
+<blockquote>
+<p>- IBM inter-CA requirement framework (Peak EIS, EIS spherical
+coverage) established for n260+n261 shall be applied to any requested CA
+band pair from the same frequency group (parameter values including PSD
+differences and relaxations to be discussed separately) with IBM.</p>
+</blockquote>
+<h2
+id="feasibility-study-for-ca-configurations-between-different-frequency-groups-based-on-cbm">4.3
+Feasibility study for CA configurations between different frequency
+groups based on CBM</h2>
+<p>Following agreements have been made for CBM UE for CA configurations
+between the frequency groups.</p>
+<p>From R4-2103399</p>
+<blockquote>
+<p>- CBM: (Common Beam Management) A UE that supports inter-band CA with
+CBM selects its DL Rx beam(s) for all CCs in all configured bands based
+on DL measurements made in the only CC configured with the reference
+signal for beam management. In FR2 CA cases, requirements apply when the
+BM RS is provided in a CC with a configured UL BWP</p>
+</blockquote>
+<ul>
+<li><p>Network deployment restriction for CBM</p></li>
+</ul>
+<blockquote>
+<p>- There are no deployment restrictions (Non-co-located/co-located)
+for network to configure inter-band DL CA for CBM UEs.</p>
+<p>- UE RF requirements for CBM shall be derived based on co-located
+deployment scenario only.</p>
+</blockquote>
+<p>From Chairman report RAN4#99 GTW session</p>
+<blockquote>
+<p>- RAN4 agrees to define CBM requirements in such manner that both
+single chain and multi chain architectures are possible.</p>
+</blockquote>
+<p>From R4-2114960</p>
+<blockquote>
+<p>-CBM between different frequency groups is feasible and study phase
+can be completed at least for architecture with multiple RF chains.</p>
+<p>-Add a new enumerated value to beam management type in [Rel-17] so
+that a UE can support both IBM and CBM, i.e., ENUMERATED {ibm, cbm,
+both}.</p>
+<p>-FFS on the applicability of requirements for UE supporting both
+capabilities.</p>
+<p>-FFS whether to introduce it from early release.</p>
+<p>-The capability to indicate whether the UE support CBM under
+multi-chain architecture is not introduced.</p>
+<p>-Beam management reference signal (BMRS): The DL signal designated by
+the network for the UE to make measurements on, for the purpose of
+selecting its DL Rx beam(s).</p>
+<p>-For core requirements applicability in relation to BMRS
+location:</p>
+<p>-CBM inter-band CA requirements apply per-band with the BMRS
+configured in any one of the participating bands.</p>
+<p>-Introduce side condition for core requirement that BMRS can only be
+placed on PCC for the DL CA case with a single uplink.</p>
+<p>-FFS whether to set side condition only for the worst case</p>
+<p>-For test cases, further discussion on setup for testing to reduce
+the test burden and send LS to RAN5.</p>
+<p>-RAN4 agree to introduce REFSENS and EIS spherical coverage
+requirements based on IBM inter-band CA framework.</p>
+<p>-FFS on the values for the requirements</p>
+<p>-FFS whether there is PSD difference and what is the difference</p>
+<p>-FFS the impact of frequency separation</p>
+<p>-TP for ACS definition</p>
+<p>For inter-band carrier aggregation with one component carrier per
+operating band and the uplink assigned to one NR band, the UE shall meet
+the requirements specified in clause 7.5 for each component carrier
+while all downlink carriers are active.</p>
+<p>For UEs that support inter-band CA with IBM or CBM, the requirement
+is defined with the uplink active on the band other than the band whose
+downlink is being tested. For Ues that support inter-band CA with CBM,
+the requirement applies for out-of-gap interferers as well as in-gap
+interferers when the minimum gap condition of sub-clause 7.5A.2 is
+met.</p>
+<p>-TP for IBB definition</p>
+<p>For inter-band carrier aggregation with one component carrier per
+operating band and the uplink assigned to one NR band, the UE shall meet
+the requirements specified in clause 7.6.2 for each component carrier
+while all downlink carriers are active.</p>
+<p>For UEs that support inter-band CA with IBM, the requirement is
+defined with the uplink active on the band other than the band whose
+downlink is being tested.</p>
+<p>For UEs that support inter-band CA with CBM, the requirement is
+defined with the uplink active on the band other than the band whose
+downlink is being tested, and the requirement applies for out-of-gap
+blockers as well as in-gap blockers when the minimum gap condition of
+sub-clause 7.6A.2.2 is met.</p>
+</blockquote>
+<p>From R4-2119959</p>
+<blockquote>
+<p>-UE with both CBM and IBM capabilities needs to meet each of
+requirements separately.</p>
+<p>-RAN4 shall send out LS to ask RAN2 to define the capability for
+“both” and inquire whether “both” can be release independent from
+Rel-16.</p>
+<p>-If UE supports ‘both’, UE can be configured either for IBM or CBM by
+the network.</p>
+<p>-The different BMRS types, i.e., configuration of CSI-RS or SSB, have
+no impact on DL requirements.</p>
+<p>-Same combinations between frequency groups as for IBM in current
+specification:</p>
+<p>-n257+n259</p>
+<p>-n258+n260</p>
+<p>-n260+n261</p>
+<p>-FFS to include n258+n261 and come back next meeting.</p>
+<p>-RAN4 to specify delta_RIBs for each agreed band combination.</p>
+</blockquote>
+<h2
+id="ue-requirements-for-ca-configurations-ca_n258a-n260a-and-ca_n257a-n259a-based-on-ibm">4.4
+UE requirements for CA configurations CA_n258A-n260A and CA_n257A-n259A
+based on IBM</h2>
+<h3 id="operating-bands-for-ca">4.4.1 Operating bands for CA</h3>
+<p>NR inter-band carrier aggregation is designed to operate in the
+operating bands defined in Table 4.4.1-1, where all operating bands are
+within FR2.</p>
+<p>Table 4.4.1-1: Inter-band CA operating bands in FR2</p>
+<table>
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 51%" />
+</colgroup>
+<thead>
+<tr>
+<th>NR CA Band</th>
+<th><p>NR Band</p>
+<p>(Table 5.2-1)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CA_n257-n259</td>
+<td>n257, n259</td>
+</tr>
+<tr>
+<td>CA_n258-n260</td>
+<td>n258, n260</td>
+</tr>
+</tbody>
+</table>
+<p><span id="_Toc52196357" class="anchor"></span></p>
+<h3 id="configurations-for-inter-band-ca">4.4.2 Configurations for
+inter-band CA</h3>
+<p>Table 4.4.2-1: NR CA configurations for inter-band CA</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 16%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr>
+<td>NR CA configuration</td>
+<td>Uplink CA configuration</td>
+<td>NR Band</td>
+<td colspan="4">Channel bandwidth (MHz) (NOTE 1)</td>
+<td>Bandwidth combination set</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257A-n259A</td>
+<td>-</td>
+<td>n257</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257A-n259G</td>
+<td>-</td>
+<td>n257</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259G</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257A-n259H</td>
+<td>-</td>
+<td>n257</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259H</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257A-n259I</td>
+<td>-</td>
+<td>n257</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259H</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257A-n259J</td>
+<td>-</td>
+<td>n257</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259J</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257A-n259K</td>
+<td>-</td>
+<td>n257</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259K</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257A-n259L</td>
+<td>-</td>
+<td>n257</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259L</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257A-n259M</td>
+<td>-</td>
+<td>n257</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259M</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257G-n259A</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257G</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257G-n259G</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257G</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259G</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257G-n259H</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257G</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259H</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257G-n259I</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257G</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259I</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257G-n259J</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257G</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259J</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257G-n259K</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257G</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259K</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257G-n259L</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257G</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259L</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257G-n259M</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257G</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259M</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257H-n259A</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257H</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257H-n259G</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257H</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259G</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257H-n259H</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257H</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259H</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257H-n259I</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257H</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259I</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257H-n259J</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257H</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259J</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257H-n259K</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257H</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259K</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257H-n259L</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257H</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259L</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257H-n259M</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257H</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259M</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257I-n259A</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257I</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257I-n259G</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257I</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259G</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257I-n259H</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257I</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259H</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257I-n259I</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257I</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259I</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257I-n259J</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257I</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259J</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257I-n259K</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257I</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259K</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257I-n259L</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257I</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259L</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n257I-n259M</td>
+<td>-</td>
+<td>n257</td>
+<td colspan="4">CA_n257I</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n259</td>
+<td colspan="4">CA_n259M</td>
+<td></td>
+</tr>
+<tr>
+<td>CA_n258A-n260A</td>
+<td>-</td>
+<td>n258</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n260</td>
+<td>50</td>
+<td>100</td>
+<td>200</td>
+<td>400</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="8" style="text-align: left;">NOTE 1: The SCS of each
+channel bandwidth for NR band refers to Table 5.3.5-1.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="_Toc104799501" class="anchor"></span></p>
+<h3 id="reference-sensitivity-for-inter-band-ca">4.4.3 Reference
+sensitivity for inter-band CA</h3>
+<p>The inter-band requirement applies for all active component carriers.
+The throughput for each component carrier shall be ≥ 95 % of the maximum
+throughput of the reference measurement channels as specified in Annexes
+A.2.3.2 of TS 38.101-2 and A.3.3.2 of TS 38.101-2 (with one sided
+dynamic OCNG Pattern OP.1 TDD for the DL-signal as described in Annex
+A.5.2.1) with peak reference sensitivity for each carrier specified in
+section 7.3.2 of TS 38.101-2, and relaxation ΔR<sub>IB,P,n</sub> applied
+to peak reference sensitivity requirement. ΔR<sub>IB,P,n</sub> is
+specified in Table 4.4.3-1. The requirement on each component carrier
+shall be met when the power in the component carrier in the other band
+is set to its EIS spherical coverage requirement for inter-band CA
+specified in sub-clause 4.4.4.</p>
+<p>For the combination of intra-band and inter-band carrier aggregation,
+the intra-band CA relaxation, ΔR<sub>IB</sub>, is also applied according
+to the clause 7.3A.2.1 and 7.3A.2.2 of TS 38.101-2.</p>
+<p>Table 4.4.3-1: ΔR<sub>IB</sub> reference sensitivity relaxation for
+inter-band CA for power class 3</p>
+<table>
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 33%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>NR CA bands</strong></th>
+<th style="text-align: center;"><strong>NR band</strong></th>
+<th style="text-align: center;"><strong>ΔR<sub>IB,P,n</sub>
+(dB)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">CA_n257-n259</td>
+<td style="text-align: center;">n257</td>
+<td style="text-align: center;">4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">n259</td>
+<td style="text-align: center;">4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">CA_n258-n260</td>
+<td style="text-align: center;">n258</td>
+<td style="text-align: center;">3.5</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">n260</td>
+<td style="text-align: center;">3.5</td>
+</tr>
+</tbody>
+</table>
+<p><span id="_Toc52196584" class="anchor"></span></p>
+<h3 id="eis-spherical-coverage-for-inter-band-ca">4.4.4 EIS spherical
+coverage for inter-band CA</h3>
+<p>The inter-band CA requirement applies per operating band, for all
+active component carriers with UL assigned to one band and one DL
+component carrier per band. The requirement on each component carrier
+shall be met when the power in the component carrier in the other band
+is set to its EIS spherical coverage requirement for inter-band CA
+specified in this sub-clause.</p>
+<p>The inter-band CA spherical coverage requirement for each power class
+will be satisfied if the intersection set of spherical coverage areas
+exceeds the common coverage requirement. Intersection set of spherical
+coverage areas is defined as a fraction of area of full sphere measured
+around the UE where both bands meet their defined individual EIS
+spherical coverage requirements for inter-band CA operation. The common
+coverage requirement is determined as &lt;100-percentile rank&gt; %,
+where ‘percentile rank’ is the percentile value in the specification of
+spherical coverage for that power class from clause 7.3.4 of TS
+38.101-2. The requirement is verified with the test metric of EIS
+(Link=Beam peak search grids, Meas=Link angle).</p>
+<p>The reference measurement channels and throughput criterion shall be
+as specified in clause 7.3A.2.3 of TS 38.101-2. The requirement shall be
+met for an uplink transmission using QPSK DFT-s-OFDM waveforms and for
+uplink transmission bandwidth less than or equal to that specified in
+clause 7.3.2 of TS 38.101-2.</p>
+<p>Unless otherwise specified, the minimum requirements for reference
+sensitivity shall be verified with the network signalling value NS_200
+(Table 6.2.3.1-1 of TS 38.101-2) configured.</p>
+<p>The required spherical coverage EIS for each band in inter-band CA
+operation is given in clause 7.3.4 of TS 38.101-2 and modified by
+ΔR<sub>IB,S,n</sub>. The value of ∆R<sub>IB,S,n</sub> is defined in
+Table 4.4.4-1.</p>
+<p>Table 4.4.4-1: ΔR<sub>IB,S,n</sub> EIS spherical coverage requirement
+relaxation for inter-band CA for power class 3</p>
+<table>
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 33%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>NR CA bands</strong></th>
+<th style="text-align: center;"><strong>NR band</strong></th>
+<th style="text-align: center;"><strong>ΔR<sub>IB,S,n</sub>
+(dB)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">CA_n257-n259</td>
+<td style="text-align: center;">n257</td>
+<td style="text-align: center;">[4.0]</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">n259</td>
+<td style="text-align: center;">[4.0]</td>
+</tr>
+<tr>
+<td style="text-align: center;">CA_n258-n260</td>
+<td style="text-align: center;">n258</td>
+<td style="text-align: center;">3.5</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">n260</td>
+<td style="text-align: center;">3.5</td>
+</tr>
+</tbody>
+</table>
+<p><span id="_Toc104799503" class="anchor"></span></p>
+<h3 id="other-receiver-characteristics">4.4.5 Other receiver
+characteristics</h3>
+<p>For the FR2 inter-band DL CA configurations in Table 4.4.2-1, maximum
+input level, ACS, and in-band blocking requirement are band combination
+agnostic and the existing requirements in clause 7.4A.3, 7.5A.3, and
+7.6A.2.3 of TS 38.101-2 shall be reused.</p>
+<h3 id="release-independence">4.4.6 Release independence</h3>
+<p>Table 4.4.6-1 described the release independence of FR2 inter-band DL
+CA to be specified in clause 6.2 of TS 38.307.</p>
+<p>Table 4.4.6-1: NR interband CA within FR2</p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 8%" />
+<col style="width: 14%" />
+<col style="width: 10%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DL/UL</th>
+<th>Maximum number of bands</th>
+<th>CA BW Classes</th>
+<th>Duplex-mode</th>
+<th><p>Release</p>
+<p>independent from</p></th>
+<th><p>requirements to be fulfilled</p>
+<p>(see 38.307 of the REL in which the CA configuration was
+introduced)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inter-band CA configurations within NR FR2</td>
+<td>DL</td>
+<td>2</td>
+<td>B, C, D, E, F, G, H, I, J, K, L, M, O, P, Q</td>
+<td>TDD</td>
+<td>Rel-16</td>
+<td>Table B.4.2-1</td>
+</tr>
+<tr>
+<td></td>
+<td>UL</td>
+<td>1</td>
+<td>B, C, D, E, F, G, H, I, J, K, L, M, O, P, Q</td>
+<td>TDD</td>
+<td>Rel-16</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2
+id="ue-requirements-for-ca-configurations-within-the-same-frequency-group-based-on-cbm">4.5
+UE requirements for CA configurations within the same frequency group
+based on CBM</h2>
+<h1 id="inter-band-ul-ca">5 Inter-band UL CA</h1>
+<h2
+id="feasibility-study-for-ca-configurations-within-same-frequency-group-based-on-ibm-and-cbm">5.1
+Feasibility study for CA configurations within same frequency group
+based on IBM and CBM</h2>
+<h2
+id="feasibility-study-for-ca-configurations-between-different-frequency-groups-based-on-cbm-1">5.2
+Feasibility study for CA configurations between different frequency
+groups based on CBM</h2>
+<h2
+id="ue-requirements-for-ca-configuration-ca_n257a-n259a-based-on-ibm">5.3
+UE requirements for CA configuration CA_n257A-n259A based on IBM</h2>
+<h1 id="ul-gaps-for-self-calibration-and-monitoring">6 UL gaps for
+self-calibration and monitoring</h1>
+<h2 id="phase-1">6.1 Phase 1</h2>
+<h3 id="study-of-the-performance-gain-over-the-current-baseline">6.1.1
+Study of the performance gain over the current baseline</h3>
+<h3
+id="study-of-rf-performance-evaluationtestability-related-to-ue-self-calibration-and-monitoring">6.1.2
+Study of RF performance evaluation/testability related to UE
+self-calibration and monitoring</h3>
+<h3 id="study-network-impact-of-ue-emissions-during-ul-gap">6.1.3 Study
+network impact of UE emissions during UL gap</h3>
+<h2 id="phase-2"><br />
+6.2 Phase 2</h2>
+<h3 id="specification-related-aspects">6.2.1 Specification related
+aspects</h3>
+<h4 id="ul-gap-configurations">6.2.1.1 UL gap configuration(s)</h4>
+<h4 id="ue-capability">6.2.1.2 UE capability</h4>
+<h4 id="ue-interruptions">6.2.1.3 UE interruptions</h4>
+<h3
+id="ue-fall-back-behaviour-i.e.-if-gaps-are-not-available-for-ue-requesting-gaps">6.2.2
+UE fall back behaviour i.e. if gaps are not available for UE requesting
+gaps</h3>
+<h3 id="release-independence-aspects">6.2.3 Release independence
+aspects</h3>
+<p class="heading"
+id="annex-a-informative-informative-annex-for-a-technical-specification"><br />
+Annex &lt;A&gt; (informative):<br />
+&lt;Informative annex for a Technical Specification&gt;</p>
+<p class="heading" id="annex-b-informative-change-history">Annex
+&lt;B&gt; (informative):<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-04</td>
+<td style="text-align: center;">RAN4#98bis-e</td>
+<td style="text-align: center;">R4-2105495</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">FR2 inter-band CA for different
+frequency band groups with IBM (TP to TS 38.851)</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-05</td>
+<td style="text-align: center;">RAN4#99e</td>
+<td style="text-align: center;">R4-2108914</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP to TR 38.851 Applicability of CBM IBM
+for different CA configurations</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-11</td>
+<td style="text-align: center;">RAN4#101</td>
+<td style="text-align: center;">R4-2120056</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP to TR 38.851: Agreements made for CA
+configurations within same frequency group using IBM</td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-01</td>
+<td style="text-align: center;">RAN4#101-bis</td>
+<td style="text-align: center;">R4-2200700</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP to TR 38.851: Agreements made for CA
+configurations between frequency groups using CBM</td>
+<td style="text-align: center;">0.4.0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 51%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="8" style="text-align: center;"><strong>Change
+history</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date</strong></td>
+<td><strong>Meeting</strong></td>
+<td><strong>TDoc</strong></td>
+<td><strong>CR</strong></td>
+<td><strong>Rev</strong></td>
+<td><strong>Cat</strong></td>
+<td><strong>Subject/Comment</strong></td>
+<td><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td>Approved by plenary – Rel-17 spec under change control</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

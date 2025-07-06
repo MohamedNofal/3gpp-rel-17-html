@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38420-h20</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-and-abbreviations"
+id="toc-definitions-and-abbreviations">3 Definitions and
+abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.2
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#general-aspects" id="toc-general-aspects">4 General
+aspects</a>
+<ul>
+<li><a href="#introduction" id="toc-introduction">4.1
+Introduction</a></li>
+<li><a href="#xn-interface-general-principles"
+id="toc-xn-interface-general-principles">4.2 Xn interface general
+principles</a></li>
+<li><a href="#xn-interface-specification-objectives"
+id="toc-xn-interface-specification-objectives">4.3 Xn interface
+specification objectives</a></li>
+<li><a href="#xn-interface-capabilities"
+id="toc-xn-interface-capabilities">4.4 Xn interface
+capabilities</a></li>
+</ul></li>
+<li><a href="#functions-of-the-xn-interface"
+id="toc-functions-of-the-xn-interface">5 Functions of the Xn
+interface</a>
+<ul>
+<li><a href="#general" id="toc-general">5.1 General</a></li>
+<li><a href="#functions-of-xn-c" id="toc-functions-of-xn-c">5.2
+Functions of Xn-C</a>
+<ul>
+<li><a href="#xn-c-interface-management-and-error-handling-functions"
+id="toc-xn-c-interface-management-and-error-handling-functions">5.2.1
+Xn-C interface management and error handling functions</a>
+<ul>
+<li><a href="#general-1" id="toc-general-1">5.2.1.1 General</a></li>
+<li><a href="#xn-setup-function" id="toc-xn-setup-function">5.2.1.2 Xn
+Setup function</a></li>
+<li><a href="#error-indication-function"
+id="toc-error-indication-function">5.2.1.3 Error Indication
+function</a></li>
+<li><a href="#xn-reset-function" id="toc-xn-reset-function">5.2.1.4 Xn
+reset function</a></li>
+<li><a href="#xn-configuration-data-update-function"
+id="toc-xn-configuration-data-update-function">5.2.1.5 Xn configuration
+data update function</a></li>
+<li><a href="#xn-removal-function" id="toc-xn-removal-function">5.2.1.6
+Xn removal function</a></li>
+</ul></li>
+<li><a href="#ue-mobility-management-functions"
+id="toc-ue-mobility-management-functions">5.2.2 UE mobility management
+functions</a>
+<ul>
+<li><a href="#handover-preparation-function"
+id="toc-handover-preparation-function">5.2.2.1 Handover preparation
+function</a></li>
+<li><a href="#handover-cancellation-function"
+id="toc-handover-cancellation-function">5.2.2.2 Handover cancellation
+function</a></li>
+<li><a href="#retrieve-ue-context-function"
+id="toc-retrieve-ue-context-function">5.2.2.3 Retrieve UE Context
+function</a></li>
+<li><a href="#ran-paging-function" id="toc-ran-paging-function">5.2.2.4
+RAN Paging function</a></li>
+<li><a href="#data-forwarding-control-function"
+id="toc-data-forwarding-control-function">5.2.2.5 Data Forwarding
+control function</a></li>
+<li><a href="#handover-success-indication-function"
+id="toc-handover-success-indication-function">5.2.2.6 Handover Success
+Indication Function</a></li>
+<li><a href="#conditional-handover-cancellation-function"
+id="toc-conditional-handover-cancellation-function">5.2.2.7 Conditional
+Handover cancellation function</a></li>
+</ul></li>
+<li><a href="#dual-connectivity-function"
+id="toc-dual-connectivity-function">5.2.3 Dual connectivity
+function</a></li>
+<li><a href="#energy-saving-function"
+id="toc-energy-saving-function">5.2.4 Energy saving function</a></li>
+<li><a href="#resource-coordination-function"
+id="toc-resource-coordination-function">5.2.5 Resource coordination
+function</a></li>
+<li><a href="#secondary-rat-data-volume-report-function"
+id="toc-secondary-rat-data-volume-report-function">5.2.6 Secondary RAT
+Data Volume Report function</a></li>
+<li><a href="#trace-function" id="toc-trace-function">5.2.7 Trace
+function</a></li>
+<li><a href="#load-management-function"
+id="toc-load-management-function">5.2.8 Load management
+function</a></li>
+<li><a href="#data-exchange-for-self-optimisation-function"
+id="toc-data-exchange-for-self-optimisation-function">5.2.9 Data
+exchange for self-optimisation function</a></li>
+<li><a href="#iab-support-function" id="toc-iab-support-function">5.2.10
+IAB support function</a>
+<ul>
+<li><a href="#f1-c-traffic-transfer-function"
+id="toc-f1-c-traffic-transfer-function">5.2.10.1 F1-C Traffic Transfer
+function</a></li>
+<li><a href="#iab-transport-migration-function"
+id="toc-iab-transport-migration-function">5.2.10.2 IAB Transport
+Migration function</a></li>
+<li><a href="#iab-resource-coordination-function"
+id="toc-iab-resource-coordination-function">5.2.10.3 IAB Resource
+Coordination function</a></li>
+</ul></li>
+<li><a href="#small-data-transmission-function"
+id="toc-small-data-transmission-function">5.2.11 Small data transmission
+function</a>
+<ul>
+<li><a href="#general-2" id="toc-general-2">5.2.11.1 General</a></li>
+<li><a href="#partial-ue-context-transfer-function"
+id="toc-partial-ue-context-transfer-function">5.2.11.2 Partial UE
+Context Transfer function</a></li>
+</ul></li>
+<li><a href="#qmc-support-function" id="toc-qmc-support-function">5.2.12
+QMC support function</a></li>
+<li><a href="#mbs-management-support-function"
+id="toc-mbs-management-support-function">5.2.13 MBS management support
+function</a></li>
+</ul></li>
+<li><a href="#functions-of-xn-u" id="toc-functions-of-xn-u">5.3
+Functions of Xn-U</a>
+<ul>
+<li><a href="#data-transfer-function"
+id="toc-data-transfer-function">5.3.1 Data transfer function</a></li>
+<li><a href="#flow-control-function"
+id="toc-flow-control-function">5.3.2 Flow control function</a></li>
+<li><a href="#assistance-information-function"
+id="toc-assistance-information-function">5.3.3 Assistance information
+function</a></li>
+<li><a href="#fast-retransmission-function"
+id="toc-fast-retransmission-function">5.3.4 Fast retransmission
+function</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#xn-interface-procedures"
+id="toc-xn-interface-procedures">6 Xn interface procedures</a>
+<ul>
+<li><a href="#general-3" id="toc-general-3">6.1 General</a></li>
+<li><a href="#control-plane-protocol-procedures"
+id="toc-control-plane-protocol-procedures">6.2 Control plane protocol
+procedures</a>
+<ul>
+<li><a href="#mobility-management-procedures"
+id="toc-mobility-management-procedures">6.2.1 Mobility management
+procedures</a></li>
+<li><a href="#dual-connectivity-procedures"
+id="toc-dual-connectivity-procedures">6.2.2 Dual Connectivity
+procedures</a></li>
+<li><a href="#global-procedures" id="toc-global-procedures">6.2.3 Global
+procedures</a></li>
+<li><a href="#interface-management-procedures"
+id="toc-interface-management-procedures">6.2.4 Interface Management
+procedures</a></li>
+<li><a href="#energy-saving-procedures"
+id="toc-energy-saving-procedures">6.2.5 Energy saving
+procedures</a></li>
+<li><a href="#resource-coordination-procedures"
+id="toc-resource-coordination-procedures">6.2.6 Resource coordination
+procedures</a></li>
+<li><a href="#ue-tracing-procedures"
+id="toc-ue-tracing-procedures">6.2.7 UE Tracing procedures</a></li>
+<li><a href="#load-management-procedures"
+id="toc-load-management-procedures">6.2.8 Load management
+procedures</a></li>
+<li><a href="#data-exchange-for-self-optimisation-procedures"
+id="toc-data-exchange-for-self-optimisation-procedures">6.2.9 Data
+exchange for self-optimisation procedures</a></li>
+<li><a href="#iab-procedures" id="toc-iab-procedures">6.2.10 IAB
+procedures</a></li>
+<li><a href="#mbs-management-procedures"
+id="toc-mbs-management-procedures">6.2.11 MBS Management
+procedures</a></li>
+<li><a href="#small-data-transmission-procedures"
+id="toc-small-data-transmission-procedures">6.2.12 Small data
+transmission procedures</a></li>
+<li><a href="#qmc-support-procedures"
+id="toc-qmc-support-procedures">6.2.13 QMC support procedures</a></li>
+</ul></li>
+<li><a href="#user-plane-protocol-procedures"
+id="toc-user-plane-protocol-procedures">6.3 User plane protocol
+procedures</a></li>
+</ul></li>
+<li><a href="#xn-interface-protocol-structure"
+id="toc-xn-interface-protocol-structure">7 Xn interface protocol
+structure</a>
+<ul>
+<li><a href="#xn-control-plane" id="toc-xn-control-plane">7.1 Xn Control
+Plane</a></li>
+<li><a href="#xn-user-plane" id="toc-xn-user-plane">7.2 Xn User
+Plane</a></li>
+</ul></li>
+<li><a href="#other-xn-interface-specifications"
+id="toc-other-xn-interface-specifications">8 Other Xn interface
+specifications</a>
+<ul>
+<li><a href="#ng-ran-xn-interface-xn-layer-1-ts-38.421"
+id="toc-ng-ran-xn-interface-xn-layer-1-ts-38.421">8.1 NG-RAN Xn
+interface: Xn layer 1 (TS 38.421)</a></li>
+<li><a href="#ng-ran-xn-interface-xn-signalling-transport-ts-38.422"
+id="toc-ng-ran-xn-interface-xn-signalling-transport-ts-38.422">8.2
+NG-RAN Xn interface: Xn signalling transport (TS 38.422)</a></li>
+<li><a
+href="#ng-ran-xn-interface-xn-application-protocol-xnap-ts-38.423"
+id="toc-ng-ran-xn-interface-xn-application-protocol-xnap-ts-38.423">8.3
+NG-RAN Xn interface: Xn application protocol (XnAP) (TS 38.423)</a></li>
+<li><a href="#ng-ran-xn-interface-xn-data-transport-ts-38.424"
+id="toc-ng-ran-xn-interface-xn-data-transport-ts-38.424">8.4 NG-RAN Xn
+interface: Xn data transport (TS 38.424)</a></li>
+<li><a href="#ng-ran-xn-interface-nr-user-plane-protocol-ts-38.425"
+id="toc-ng-ran-xn-interface-nr-user-plane-protocol-ts-38.425">8.5 NG-RAN
+Xn interface: NR user plane protocol (TS 38.425)</a></li>
+<li><a
+href="#ng-ran-xn-interface-pdu-session-user-plane-protocol-ts-38.415"
+id="toc-ng-ran-xn-interface-pdu-session-user-plane-protocol-ts-38.415">8.6
+NG-RAN Xn interface: PDU Session User Plane Protocol (TS
+38.415)</a></li>
+<li><a href="#summary-of-ng-ran-xn-interface-technical-specifications"
+id="toc-summary-of-ng-ran-xn-interface-technical-specifications">8.7
+Summary of NG-RAN Xn interface Technical Specifications</a></li>
+</ul></li>
+</ul>
+</nav>
+<p>3GPP TS 38.420 V17.2.0 (2022-09)</p>
+<p>Technical Specification</p>
+<p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NG-RAN;</p>
+<p>Xn general aspects and principles</p>
+<p>(Release 17)</p>
+<p><img src="media/image1.jpeg"
+style="width:1.32569in;height:1.32569in" /> <img src="media/image2.png"
+style="width:1.77778in;height:1.03681in" /></p>
+<p>The present document has been developed within the 3rd Generation
+Partnership Project (3GPP <sup>TM</sup>) and may be further elaborated
+for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Specification is provided for future development work within 3GPP
+only. The Organizational Partners accept no liability for any use of
+this Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</p>
+<blockquote>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote>
+<p><em><strong>Copyright Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2022, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">5</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references">6</a></p>
+<p>3 Definitions and abbreviations <a
+href="#definitions-and-abbreviations">6</a></p>
+<p>3.1 Definitions <a href="#definitions">6</a></p>
+<p>3.2 Abbreviations <a href="#abbreviations">7</a></p>
+<p>4 General aspects <a href="#general-aspects">7</a></p>
+<p>4.1 Introduction <a href="#introduction">7</a></p>
+<p>4.2 Xn interface general principles <a
+href="#xn-interface-general-principles">7</a></p>
+<p>4.3 Xn interface specification objectives <a
+href="#xn-interface-specification-objectives">7</a></p>
+<p>4.4 Xn interface capabilities <a
+href="#xn-interface-capabilities">7</a></p>
+<p>5 Functions of the Xn interface <a
+href="#functions-of-the-xn-interface">8</a></p>
+<p>5.1 General <a href="#general">8</a></p>
+<p>5.2 Functions of Xn-C <a href="#functions-of-xn-c">8</a></p>
+<p>5.2.1 Xn-C interface management and error handling functions <a
+href="#xn-c-interface-management-and-error-handling-functions">8</a></p>
+<p>5.2.1.1 General <a href="#general-1">8</a></p>
+<p>5.2.1.2 Xn Setup function <a href="#xn-setup-function">8</a></p>
+<p>5.2.1.3 Error Indication function <a
+href="#error-indication-function">8</a></p>
+<p>5.2.1.4 Xn reset function <a href="#xn-reset-function">8</a></p>
+<p>5.2.1.5 Xn configuration data update function <a
+href="#xn-configuration-data-update-function">8</a></p>
+<p>5.2.1.6 Xn removal function <a href="#xn-removal-function">8</a></p>
+<p>5.2.2 UE mobility management functions <a
+href="#ue-mobility-management-functions">8</a></p>
+<p>5.2.2.1 Handover preparation function <a
+href="#handover-preparation-function">8</a></p>
+<p>5.2.2.2 Handover cancellation function <a
+href="#handover-cancellation-function">8</a></p>
+<p>5.2.2.3 Retrieve UE Context function <a
+href="#retrieve-ue-context-function">9</a></p>
+<p>5.2.2.4 RAN Paging function <a href="#ran-paging-function">9</a></p>
+<p>5.2.2.5 Data Forwarding control function <a
+href="#data-forwarding-control-function">9</a></p>
+<p>5.2.2.6 Handover Success Indication Function <a
+href="#handover-success-indication-function">9</a></p>
+<p>5.2.2.7 Conditional Handover cancellation function <a
+href="#conditional-handover-cancellation-function">9</a></p>
+<p>5.2.3 Dual connectivity function <a
+href="#dual-connectivity-function">9</a></p>
+<p>5.2.4 Energy saving function <a
+href="#energy-saving-function">9</a></p>
+<p>5.2.5 Resource coordination function <a
+href="#resource-coordination-function">9</a></p>
+<p>5.2.6 Secondary RAT Data Volume Report function <a
+href="#secondary-rat-data-volume-report-function">9</a></p>
+<p>5.2.7 Trace function <a href="#trace-function">9</a></p>
+<p>5.2.8 Load management function <a
+href="#load-management-function">9</a></p>
+<p>5.2.9 Data exchange for self-optimisation function <a
+href="#data-exchange-for-self-optimisation-function">9</a></p>
+<p>5.2.10 IAB support function <a
+href="#iab-support-function">10</a></p>
+<p>5.2.10.1 F1-C Traffic Transfer function <a
+href="#f1-c-traffic-transfer-function">10</a></p>
+<p>5.2.10.2 IAB Transport Migration function <a
+href="#iab-transport-migration-function">10</a></p>
+<p>5.2.10.3 IAB Resource Coordination function <a
+href="#iab-resource-coordination-function">10</a></p>
+<p>5.2.11 Small data transmission function <a
+href="#small-data-transmission-function">10</a></p>
+<p>5.2.11.1 General <a href="#general-2">10</a></p>
+<p>5.2.11.2 Partial UE Context Transfer function <a
+href="#partial-ue-context-transfer-function">10</a></p>
+<p>5.2.12 QMC support function <a
+href="#qmc-support-function">10</a></p>
+<p>5.2.13 MBS management support function <a
+href="#mbs-management-support-function">10</a></p>
+<p>5.3 Functions of Xn-U <a href="#functions-of-xn-u">10</a></p>
+<p>5.3.1 Data transfer function <a
+href="#data-transfer-function">10</a></p>
+<p>5.3.2 Flow control function <a
+href="#flow-control-function">10</a></p>
+<p>5.3.3 Assistance information function <a
+href="#assistance-information-function">11</a></p>
+<p>5.3.4 Fast retransmission function <a
+href="#fast-retransmission-function">11</a></p>
+<p>6 Xn interface procedures <a
+href="#xn-interface-procedures">11</a></p>
+<p>6.1 General <a href="#general-3">11</a></p>
+<p>6.2 Control plane protocol procedures <a
+href="#control-plane-protocol-procedures">11</a></p>
+<p>6.2.1 Mobility management procedures <a
+href="#mobility-management-procedures">11</a></p>
+<p>6.2.2 Dual Connectivity procedures <a
+href="#dual-connectivity-procedures">11</a></p>
+<p>6.2.3 Global procedures <a href="#global-procedures">12</a></p>
+<p>6.2.4 Interface Management procedures <a
+href="#interface-management-procedures">12</a></p>
+<p>6.2.5 Energy saving procedures <a
+href="#energy-saving-procedures">12</a></p>
+<p>6.2.6 Resource coordination procedures <a
+href="#resource-coordination-procedures">12</a></p>
+<p>6.2.7 UE Tracing procedures <a
+href="#ue-tracing-procedures">12</a></p>
+<p>6.2.8 Load management procedures <a
+href="#load-management-procedures">12</a></p>
+<p>6.2.9 Data exchange for self-optimisation procedures <a
+href="#data-exchange-for-self-optimisation-procedures">13</a></p>
+<p>6.2.10 IAB procedures <a href="#iab-procedures">13</a></p>
+<p>6.2.11 MBS Management procedures <a
+href="#mbs-management-procedures">13</a></p>
+<p>6.2.12 Small data transmission procedures <a
+href="#small-data-transmission-procedures">13</a></p>
+<p>6.2.13 QMC support procedures <a
+href="#qmc-support-procedures">13</a></p>
+<p>6.3 User plane protocol procedures <a
+href="#user-plane-protocol-procedures">13</a></p>
+<p>7 Xn interface protocol structure <a
+href="#xn-interface-protocol-structure">14</a></p>
+<p>7.1 Xn Control Plane <a href="#xn-control-plane">14</a></p>
+<p>7.2 Xn User Plane <a href="#xn-user-plane">14</a></p>
+<p>8 Other Xn interface specifications <a
+href="#other-xn-interface-specifications">16</a></p>
+<p>8.1 NG-RAN Xn interface: Xn layer 1 (TS 38.421) <a
+href="#ng-ran-xn-interface-xn-layer-1-ts-38.421">16</a></p>
+<p>8.2 NG-RAN Xn interface: Xn signalling transport (TS 38.422) <a
+href="#ng-ran-xn-interface-xn-signalling-transport-ts-38.422">16</a></p>
+<p>8.3 NG-RAN Xn interface: Xn application protocol (XnAP) (TS 38.423)
+<a
+href="#ng-ran-xn-interface-xn-application-protocol-xnap-ts-38.423">16</a></p>
+<p>8.4 NG-RAN Xn interface: Xn data transport (TS 38.424) <a
+href="#ng-ran-xn-interface-xn-data-transport-ts-38.424">16</a></p>
+<p>8.5 NG-RAN Xn interface: NR user plane protocol (TS 38.425) <a
+href="#ng-ran-xn-interface-nr-user-plane-protocol-ts-38.425">16</a></p>
+<p>8.6 NG-RAN Xn interface: PDU Session User Plane Protocol (TS 38.415)
+<a
+href="#ng-ran-xn-interface-pdu-session-user-plane-protocol-ts-38.415">16</a></p>
+<p>8.7 Summary of NG-RAN Xn interface Technical Specifications <a
+href="#summary-of-ng-ran-xn-interface-technical-specifications">16</a></p>
+<p>Annex A (informative): Change history <a
+href="#annex-a-informative-change-history">18</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Specification has been produced by the 3rd Generation
+Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document is an introduction to the TSG RAN TS 38.42x
+series of Technical Specifications that define the Xn interface. It is
+an interface for the interconnection of two NG-RAN nodes within the
+NG-RAN architecture (TS 38.401 [2]).</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>- References are either specific (identified by date of publication,
+edition number, version number, etc.) or non‑specific.</p>
+<p>- For a specific reference, subsequent revisions do not apply.</p>
+<p>- For a non-specific reference, the latest version applies. In the
+case of a reference to a 3GPP document (including a GSM document), a
+non-specific reference implicitly refers to the latest version of that
+document <em>in the same Release as the present document</em>.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[2] 3GPP TS 38.401: "NG-RAN; Architecture description".</p>
+<blockquote>
+<p>[3] 3GPP TS 38.421: "NG-RAN; Xn layer 1".</p>
+<p>[4] 3GPP TS 38.422: "NG-RAN; Xn signalling transport".</p>
+<p>[5] 3GPP TS 38.423: "NG-RAN; Xn Application Protocol (XnAP)".</p>
+<p>[6] 3GPP TS 38.424: "NG-RAN; Xn data transport".</p>
+</blockquote>
+<p>[7] 3GPP TS 38.425: "NG-RAN; NR user plane protocol".</p>
+<p>[8] 3GPP TS 38.300: "NR; Overall Description; Stage 2".</p>
+<p>[9] 3GPP TS 37.340: "NR; Multi-connectivity; Overall description;
+Stage-2".</p>
+<p>[10] 3GPP TS 38.415: "PDU Session User Plane protocol".</p>
+<p>[11] 3GPP TS 29.281: "General Packet Radio System (GPRS) Tunnelling
+Protocol User Plane (GTPv1-U)".</p>
+<h1 id="definitions-and-abbreviations">3 Definitions and
+abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in 3GPP TR 21.905 [1] and the following apply. A term defined in
+the present document takes precedence over the definition of the same
+term, if any, in 3GPP TR 21.905 [1].</p>
+<p><strong>Boundary IAB-node:</strong> as defined in TS 38.401 [2].</p>
+<p><strong>corresponding node:</strong> as defined in TS 38.425 [7].</p>
+<p><strong>F1-terminating IAB-donor-CU</strong>: as defined in TS 38.401
+[2].</p>
+<p><strong>IAB-DU:</strong> as defined in TS 38.300 [8].</p>
+<p><strong>IAB-MT:</strong> as defined in TS 38.300 [8].</p>
+<p><strong>Non-F1-terminating IAB-donor-CU</strong>: as defined in TS
+38.401 [2].</p>
+<p><strong>NG-RAN node:</strong> as defined in TS 38.300 [8].</p>
+<p><strong>secondary node:</strong> as defined in TS 37.340 [9].</p>
+<h2 id="abbreviations">3.2 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [1] and the following apply. An abbreviation defined in
+the present document takes precedence over the definition of the same
+abbreviation, if any, in 3GPP TR 21.905 [1].</p>
+<p>IAB Integrated Access and Backhaul</p>
+<p>MBS Multicast Broadcast Service</p>
+<p>QMC QoE Measurement Collection</p>
+<p>QoE Quality of Experience</p>
+<p>SCTP Stream Control Transmission Protocol</p>
+<p>Xn-C Xn Control plane</p>
+<p>Xn-U Xn User plane</p>
+<h1 id="general-aspects">4 General aspects</h1>
+<h2 id="introduction">4.1 Introduction</h2>
+<p>The interface allowing to interconnect NG-RAN nodes with each other
+is referred to as the Xn interface.</p>
+<h2 id="xn-interface-general-principles">4.2 Xn interface general
+principles</h2>
+<p>The general principles for the specification of the Xn interface are
+as follows:</p>
+<p>- the Xn interface is open;</p>
+<p>- the Xn interface supports the exchange of signalling information
+between two NG-RAN nodes, and the forwarding of PDUs to the respective
+tunnel endpoints;</p>
+<p>- from a logical standpoint, the Xn is a point-to-point interface
+between two NG-RAN nodes. A point-to-point logical interface should be
+feasible even in the absence of a physical direct connection between the
+two NG-RAN nodes.</p>
+<h2 id="xn-interface-specification-objectives">4.3 Xn interface
+specification objectives</h2>
+<p>The Xn interface specifications facilitate the following:</p>
+<p>- inter-connection of NG-RAN nodes supplied by different
+manufacturers;</p>
+<p>- support of continuation between NG-RAN nodes of the NG-RAN services
+offered via the NG interface;</p>
+<p>- separation of Xn interface Radio Network functionality and
+Transport Network functionality to facilitate introduction of future
+technology.</p>
+<h2 id="xn-interface-capabilities">4.4 Xn interface capabilities</h2>
+<p>The Xn interface supports:</p>
+<p>- procedures to support intra-NG-RAN mobility;</p>
+<p>- procedures to support dual connectivity between NG-RAN nodes.</p>
+<h1 id="functions-of-the-xn-interface">5 Functions of the Xn
+interface</h1>
+<h2 id="general">5.1 General</h2>
+<p>The following clauses describe the functions supported in Xn
+interface.</p>
+<h2 id="functions-of-xn-c">5.2 Functions of Xn-C</h2>
+<h3 id="xn-c-interface-management-and-error-handling-functions">5.2.1
+Xn-C interface management and error handling functions</h3>
+<h4 id="general-1">5.2.1.1 General</h4>
+<p>These functions allow for managing of signalling associations between
+NG-RAN nodes, surveying the Xn interface and recovering from errors.</p>
+<h4 id="xn-setup-function">5.2.1.2 Xn Setup function</h4>
+<p>This function allows for the initial setup of an Xn interface between
+two NG-RAN nodes, including exchange of application level data.</p>
+<h4 id="error-indication-function">5.2.1.3 Error Indication
+function</h4>
+<p>This function allows the reporting of general error situations on
+application level.</p>
+<h4 id="xn-reset-function">5.2.1.4 Xn reset function</h4>
+<p>This function allows an NG-RAN node to inform a second NG-RAN node
+that it has recovered from an abnormal failure and that either all or
+some of the contexts (except the application level data) related to the
+first node and stored in the second shall be deleted, and the associated
+resources released.</p>
+<h4 id="xn-configuration-data-update-function">5.2.1.5 Xn configuration
+data update function</h4>
+<p>This function allows two NG-RAN nodes to update application level
+data at any time.</p>
+<h4 id="xn-removal-function">5.2.1.6 Xn removal function</h4>
+<p>This function allows two NG-RAN nodes to remove the respective Xn
+interface.</p>
+<h3 id="ue-mobility-management-functions">5.2.2 UE mobility management
+functions</h3>
+<h4 id="handover-preparation-function">5.2.2.1 Handover preparation
+function</h4>
+<p>This function allows the exchange of information between source and
+target NG-RAN nodes in order to initiate the handover of a certain UE to
+the target.</p>
+<h4 id="handover-cancellation-function">5.2.2.2 Handover cancellation
+function</h4>
+<p>This function allows informing an already prepared target NG-RAN node
+that a prepared handover will not take place. It allows releasing the
+resources allocated during a preparation.</p>
+<h4 id="retrieve-ue-context-function">5.2.2.3 Retrieve UE Context
+function</h4>
+<p>The Retrieve UE context function is used for a NG-RAN node to
+retrieve UE context from another one.</p>
+<h4 id="ran-paging-function">5.2.2.4 RAN Paging function</h4>
+<p>The RAN paging function allows a NG-RAN node to initiate the paging
+for a UE in the inactive state.</p>
+<h4 id="data-forwarding-control-function">5.2.2.5 Data Forwarding
+control function</h4>
+<p>The data forwarding control function allows establishing and
+releasing transport bearers between source and target NG-RAN nodes for
+data forwarding.</p>
+<h4 id="handover-success-indication-function">5.2.2.6 Handover Success
+Indication Function</h4>
+<p>This function allows informing a source NG-RAN node that the UE has
+successfully accessed a target NG-RAN node.</p>
+<h4 id="conditional-handover-cancellation-function">5.2.2.7 Conditional
+Handover cancellation function</h4>
+<p>This function allows informing a source NG-RAN node that resources
+reserved for candidate target cell(s) during a conditional handover
+preparation are about to be released by the target NG-RAN node.</p>
+<h3 id="dual-connectivity-function">5.2.3 Dual connectivity
+function</h3>
+<p>The dual connectivity function enables usage of additional resources
+in a secondary node in the NG-RAN.</p>
+<h3 id="energy-saving-function">5.2.4 Energy saving function</h3>
+<p>This function enables decreasing energy consumption by indication of
+cell activation/deactivation over the Xn interface.</p>
+<h3 id="resource-coordination-function">5.2.5 Resource coordination
+function</h3>
+<p>This function enables coordination of cell resource usage between two
+NG-RAN nodes.</p>
+<h3 id="secondary-rat-data-volume-report-function">5.2.6 Secondary RAT
+Data Volume Report function</h3>
+<p>This function enables the NG-RAN node to report Secondary RAT usage
+data information in case of MR-DC with 5GC, either with a dedicated
+procedure or by including Secondary RAT usage data information in other
+messages.</p>
+<h3 id="trace-function">5.2.7 Trace function</h3>
+<p>The Trace function provides means to control trace sessions for a UE
+over Xn interface.</p>
+<h3 id="load-management-function">5.2.8 Load management function</h3>
+<p>This function allows exchanging resource status and traffic load
+information between NG-RAN nodes, such that the NG-RAN node can control
+the traffic load appropriately.</p>
+<h3 id="data-exchange-for-self-optimisation-function">5.2.9 Data
+exchange for self-optimisation function</h3>
+<p>This function allows two NG-RAN nodes to exchange information in
+order to support self-optimization functionality.</p>
+<h3 id="iab-support-function">5.2.10 IAB support function</h3>
+<h4 id="f1-c-traffic-transfer-function">5.2.10.1 F1-C Traffic Transfer
+function</h4>
+<p>This function is used to deliver F1-C traffic between the M-NG-RAN
+node and the S-NG-RAN node serving a dual-connected IAB-node, where the
+F1-C traffic is either received from the IAB-node or sent to the
+IAB-node.</p>
+<h4 id="iab-transport-migration-function">5.2.10.2 IAB Transport
+Migration function</h4>
+<p>This function allows the exchange of information between the
+F1-terminating IAB-donor-CU and the non-F1-terminating IAB-donor-CU of a
+boundary IAB-node, for the purpose of managing the migration of the
+boundary and descendant IAB-node traffic between the topologies managed
+by the two IAB-donor-CUs.</p>
+<h4 id="iab-resource-coordination-function">5.2.10.3 IAB Resource
+Coordination function</h4>
+<p>This function is used to exchange information between the
+F1-terminating IAB-donor-CU and the non-F1-terminating IAB-donor-CU of a
+boundary IAB-node in order to support resource multiplexing between the
+IAB-MT and the IAB-DU of the boundary IAB-node.</p>
+<h3 id="small-data-transmission-function">5.2.11 Small data transmission
+function</h3>
+<h4 id="general-2">5.2.11.1 General</h4>
+<p>This function supports small data transmission sessions in
+RRC_INACTIVE both with and without anchor relocation, in case the UE is
+served by a new NG-RAN node.</p>
+<h4 id="partial-ue-context-transfer-function">5.2.11.2 Partial UE
+Context Transfer function</h4>
+<p>The Partial UE Context Transfer function is used for the last serving
+NG-RAN node to provide part of the UE Context to the receiving gNB.</p>
+<h3 id="qmc-support-function">5.2.12 QMC support function</h3>
+<p>The QMC function provides means to support the mobility of QMC
+sessions over the Xn interface.</p>
+<h3 id="mbs-management-support-function">5.2.13 MBS management support
+function</h3>
+<p>This function is used to support the management of MBS Sessions,
+including the addition of MBS related information in interface
+management and mobility procedures, and the support of RAN Multicast
+paging.</p>
+<h2 id="functions-of-xn-u">5.3 Functions of Xn-U</h2>
+<h3 id="data-transfer-function">5.3.1 Data transfer function</h3>
+<p>The data transfer function allows the transfer of data between NG-RAN
+nodes to support dual connectivity or mobility operation.</p>
+<h3 id="flow-control-function">5.3.2 Flow control function</h3>
+<p>The flow control function enables a NG-RAN node receiving user plane
+data from a second NG-RAN node to provide feedback information
+associated with the data flow.</p>
+<h3 id="assistance-information-function">5.3.3 Assistance information
+function</h3>
+<p>The assistance information function enables a NG-RAN node receiving
+user plane data from a second NG-RAN node to provide assistance
+information to the second node (e.g. related to radio conditions).</p>
+<h3 id="fast-retransmission-function">5.3.4 Fast retransmission
+function</h3>
+<p>The fast retransmission function provides coordination between
+PDCP-hosting node and corresponding node in case of outage in one of the
+nodes, to enables the node in good RF conditions to handle data
+previously forwarded to the node in outage.</p>
+<h1 id="xn-interface-procedures">6 Xn interface procedures</h1>
+<h2 id="general-3">6.1 General</h2>
+<p>The Xn interface supports procedures over the control plane (Xn-C)
+and user plane (Xn-U).</p>
+<h2 id="control-plane-protocol-procedures">6.2 Control plane protocol
+procedures</h2>
+<h3 id="mobility-management-procedures">6.2.1 Mobility management
+procedures</h3>
+<p>The mobility management procedures are used to manage the UE mobility
+in Connected or RRC_Inactive modes:</p>
+<p>- Handover Preparation</p>
+<p>- Handover Cancel</p>
+<p>- SN Status Transfer</p>
+<p>- Retrieve UE Context</p>
+<p>- RAN Paging</p>
+<p>- Xn-U Address Indication</p>
+<p>- UE Context Release</p>
+<p>- Handover Success Indication</p>
+<p>- Conditional Handover Cancel</p>
+<p>- Retrieve UE Context Confirm</p>
+<h3 id="dual-connectivity-procedures">6.2.2 Dual Connectivity
+procedures</h3>
+<p>The dual connectivity procedures are used to add, modify and releases
+resources for the operation of Dual Connectivity:</p>
+<p>- S-NG-RAN-node Addition Preparation</p>
+<p>- S-NG-RAN-node Reconfiguration Completion</p>
+<p>- M-NG-RAN-node initiated S-NG-RAN-node Modification Preparation</p>
+<p>- S-NG-RAN-node initiated S-NG-RAN-node Modification</p>
+<p>- M-NG-RAN-node initiated S-NG-RAN-node Release</p>
+<p>- S-NG-RAN-node initiated S-NG-RAN-node Release</p>
+<p>- S-NG-RAN-node Counter Check</p>
+<p>- RRC Transfer</p>
+<p>- Notification Control Indication</p>
+<p>- Activity Notification</p>
+<p>- Secondary RAT Data Usage Report</p>
+<p>- Conditional PSCell Change Cancel</p>
+<h3 id="global-procedures">6.2.3 Global procedures</h3>
+<p>The global procedures are used to exchange configuration level data
+between two NG-RAN nodes, or to remove Xn connectivity between two
+NG-RAN nodes in a controlled manner:</p>
+<p>- Xn Setup</p>
+<p>- NG-RAN-node Configuration Update</p>
+<p>- Xn Removal</p>
+<h3 id="interface-management-procedures">6.2.4 Interface Management
+procedures</h3>
+<p>The interface management procedures are used to align resources
+between two NG-RAN nodes in the event of failures, and to report
+detected protocol errors:</p>
+<p>- Reset</p>
+<p>- Error Indication</p>
+<h3 id="energy-saving-procedures">6.2.5 Energy saving procedures</h3>
+<p>- Cell Activation procedure: enables an NG-RAN node to request the
+activation of a previously deactivated cell hosted in another NG-RAN
+node.</p>
+<h3 id="resource-coordination-procedures">6.2.6 Resource coordination
+procedures</h3>
+<p>- E-UTRA - NR Cell Resource Coordination procedure: enables an ng-eNB
+and a gNB to interact for resource coordination purposes.</p>
+<h3 id="ue-tracing-procedures">6.2.7 UE Tracing procedures</h3>
+<p>The following procedures are used to trace the UE:</p>
+<p>- Trace Start procedure</p>
+<p>- Deactivate Trace procedure</p>
+<p>- Cell Traffic Trace</p>
+<h3 id="load-management-procedures">6.2.8 Load management
+procedures</h3>
+<p>The load management procedures are used by NG-RAN nodes to indicate
+resource status, overload and traffic load to each other.</p>
+<p>- Resource Status Reporting Initiation</p>
+<p>- Resource Status Reporting</p>
+<h3 id="data-exchange-for-self-optimisation-procedures">6.2.9 Data
+exchange for self-optimisation procedures</h3>
+<p>The data exchange for self-optimisation procedures are used to
+transfer failure and mobility related information among NG-RAN nodes to
+enable self-optimisation</p>
+<p>- Failure Indication</p>
+<p>- Handover report</p>
+<p>- Mobility Settings Change</p>
+<p>- Access and Mobility Indication</p>
+<p>- SCG Failure Information Report</p>
+<p>- SCG Failure Transfer</p>
+<h3 id="iab-procedures">6.2.10 IAB procedures</h3>
+<p>The IAB procedures are used to enable the transfer of F1/non-F1
+traffic for IAB, to exchange information between the F1-terminating
+IAB-donor-CU and the non-F1-terminating IAB-donor-CU of a boundary
+IAB-node, to enable the delivery of F1-C traffic between the M-NG-RAN
+node and the S-NG-RAN node serving a dual-connected non-boundary
+IAB-node, and to exchange resource multiplexing related information
+between the F1-terminating IAB-donor-CU and the non-F1-terminating
+IAB-donor-CU of a boundary IAB-node:</p>
+<p>- F1-C Traffic Transfer</p>
+<p>- IAB Transport Migration Management</p>
+<p>- IAB Transport Migration Modification</p>
+<p>- IAB Resource Coordination</p>
+<h3 id="mbs-management-procedures">6.2.11 MBS Management procedures</h3>
+<p>The MBS management procedures are used to manage the MBS Session:</p>
+<p>- RAN Multicast Group Paging procedure</p>
+<h3 id="small-data-transmission-procedures">6.2.12 Small data
+transmission procedures</h3>
+<p>- Partial UE Context Transfer: enables exchange of information
+between NG-RAN nodes for SDT transmission without anchor relocation</p>
+<p>Small data transmission is also supported by the following
+procedures:</p>
+<p>- RRC Transfer</p>
+<p>- Retrieve UE Context Confirm</p>
+<h3 id="qmc-support-procedures">6.2.13 QMC support procedures</h3>
+<p>The following procedures are used to transfer QMC configuration and
+session information to the target NG-RAN node during a UE’s intra-system
+intra-RAT mobility:</p>
+<p>- Handover Preparation</p>
+<p>- Retrieve UE Context</p>
+<h2 id="user-plane-protocol-procedures">6.3 User plane protocol
+procedures</h2>
+<p>The user plane protocol procedures are used to exchange user plane
+information between Xn-U protocol peers:</p>
+<p>- Transfer of Downlink User Data procedure: enables the node hosting
+the NR PDCP entity to provide user plane information to the
+corresponding node.</p>
+<p>- Downlink Data Delivery Status procedure: enables the corresponding
+node to provide feedback to the node hosting the NR PDCP entity.</p>
+<p>- Transfer of Assistance Information: enables the corresponding node
+to provide assistance information to the node hosting the NR PDCP
+entity.</p>
+<p>- Transfer of PDU Session Information procedure: enables an NG-RAN
+node to provide user plane information associated with the forwarding of
+data towards a peer NG-RAN node, when using PDU session tunnels.</p>
+<h1 id="xn-interface-protocol-structure">7 Xn interface protocol
+structure</h1>
+<h2 id="xn-control-plane">7.1 Xn Control Plane</h2>
+<p>The control plane protocol stack of the Xn interface is shown on
+Figure 7.1-1. The transport network layer is built on IP transport. For
+the reliable transport of signalling messages, SCTP is added on top of
+IP. The application layer signalling protocol is referred to as XnAP (Xn
+Application Protocol).</p>
+<p><img src="media/image3.svg" /></p>
+<p>Figure 7.1-1: Xn Interface Control Plane</p>
+<h2 id="xn-user-plane">7.2 Xn User Plane</h2>
+<p>The Xn user plane (Xn-U) interface is defined between two NG-RAN
+nodes. The Xn-U interface provides non-guaranteed delivery of user plane
+PDUs between two NG-RAN nodes.</p>
+<p>The protocol stack for Xn-U is shown in Figure 7.2-1.</p>
+<p><img src="media/image4.svg" /></p>
+<p>Figure 7.2-1: Xn-U protocol structure</p>
+<p>The user plane packets conveyed by GTP-U may be PDCP PDUs (e.g. in
+case of dual connectivity), PDCP SDUs (e.g. in case of DRB level data
+forwarding), or SDAP SDUs (e.g. in PDU Session level data
+forwarding).</p>
+<p>User plane protocol messages (as defined in TS 38.425 [7] and
+TS 38.415 [10]) are carried by container fields in the GTP-U extension
+header as specified in TS 29.281 [11]. A single GTP-U packet may carry a
+user plane packet and/or a user plane protocol message. The mapping
+between container fields and Xn user plane protocol procedures and
+functions is described in Table 7.2-1.</p>
+<p>Table 7.2-1: Mapping between container fields and Xn user plane
+procedures / functions</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 38%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr>
+<th>Xn-U Function</th>
+<th>Container Type</th>
+<th>Xn UP Protocol Procedure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">Data transfer</td>
+<td>NR RAN Container, as per TS 29.281 [11] (Note 1)</td>
+<td><p>Transfer of Downlink User Data,</p>
+<p>TS 38.425 [7]</p></td>
+</tr>
+<tr>
+<td>PDU Session Container, as per TS 29.281 [11] (Note 2)</td>
+<td><p>Transfer of DL PDU Session Information, TS 38.415 [10]</p>
+<p>Transfer of UL PDU Session Information, TS 38.415 [10]</p></td>
+</tr>
+<tr>
+<td>No container (Note 3)</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Flow control</td>
+<td>NR RAN Container as per TS 29.281 [11] (Note 4)</td>
+<td><p>Downlink Data Delivery Status, TS 38.425 [7]</p>
+<p>Transfer of Downlink User Data, TS 38.425 [7]</p></td>
+</tr>
+<tr>
+<td>Fast retransmission</td>
+<td>NR RAN Container as per TS 29.281 [11] (Note 4)</td>
+<td><p>Downlink Data Delivery Status, TS 38.425 [7]</p>
+<p>Transfer of Downlink User Data, TS 38.425 [7]</p></td>
+</tr>
+<tr>
+<td>Assistance information</td>
+<td>NR RAN Container as per TS 29.281 [11] (Note 4)</td>
+<td>Transfer of Assistance Information, TS 38.425 [7]</td>
+</tr>
+<tr>
+<td colspan="3"><p>Note 1: optionally used in Dual Connectivity DL data
+transfer.</p>
+<p>Note 2: in case of PDU Session level forwarding only.</p>
+<p>Note 3: all other cases of data transfer when no other Xn-U
+functionality is required</p>
+<p>Note 4: optionally used in Dual Connectivity</p></td>
+</tr>
+</tbody>
+</table>
+<h1 id="other-xn-interface-specifications">8 Other Xn interface
+specifications</h1>
+<h2 id="ng-ran-xn-interface-xn-layer-1-ts-38.421">8.1 NG-RAN Xn
+interface: Xn layer 1 (TS 38.421)</h2>
+<p>TS 38.421 [3] specifies the physical layer technologies that may be
+used to support the Xn interface.</p>
+<h2 id="ng-ran-xn-interface-xn-signalling-transport-ts-38.422">8.2
+NG-RAN Xn interface: Xn signalling transport (TS 38.422)</h2>
+<p>TS 38.422 [4] specifies how the XnAP signalling messages are
+transported over Xn.</p>
+<h2 id="ng-ran-xn-interface-xn-application-protocol-xnap-ts-38.423">8.3
+NG-RAN Xn interface: Xn application protocol (XnAP) (TS 38.423)</h2>
+<p>TS 38.423 [5] specifies the radio network layer signalling procedures
+of the control plane between NG-RAN nodes.</p>
+<h2 id="ng-ran-xn-interface-xn-data-transport-ts-38.424">8.4 NG-RAN Xn
+interface: Xn data transport (TS 38.424)</h2>
+<p>TS 38.424 [6] specifies the standards for user data transport
+protocols over the NG-RAN Xn interface.</p>
+<h2 id="ng-ran-xn-interface-nr-user-plane-protocol-ts-38.425">8.5 NG-RAN
+Xn interface: NR user plane protocol (TS 38.425)</h2>
+<p>TS 38.425 [7] specifies the user plane protocol procedures for dual
+connectivity over the NG-RAN Xn interface.</p>
+<h2
+id="ng-ran-xn-interface-pdu-session-user-plane-protocol-ts-38.415">8.6
+NG-RAN Xn interface: PDU Session User Plane Protocol (TS 38.415)</h2>
+<p>TS 38.415 [10] specifies the user plane protocol procedures for data
+forwarding using PDU Session tunnels over the NG-RAN Xn interface.</p>
+<h2 id="summary-of-ng-ran-xn-interface-technical-specifications">8.7
+Summary of NG-RAN Xn interface Technical Specifications</h2>
+<p>The relationship between the technical specifications that define the
+NG-RAN Xn interface is shown in Figure 8.7-1.</p>
+<p><img src="media/image5.svg" /></p>
+<p>Figure 8.7-1: Xn Interface Technical Specifications</p>
+<p class="heading" id="annex-a-informative-change-history"><br />
+Annex A (informative):<br />
+Change history</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 50%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-04</td>
+<td style="text-align: center;">R3#95b</td>
+<td style="text-align: center;">R3-171313</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TS skeleton</td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-05</td>
+<td style="text-align: center;">R3#96</td>
+<td style="text-align: center;">R3-171807</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Change of structure of clause 5</td>
+<td style="text-align: center;">0.0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-05</td>
+<td style="text-align: center;">R3#96</td>
+<td style="text-align: center;">R3-171967</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>Further skeleton change following
+agreements at R3#96</p>
+<p>Initial text for clauses 4, 7 and 8 (R3-171966)</p>
+<p>Functions from R3-171927</p>
+<p>Add change history</p></td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-07</td>
+<td style="text-align: center;">R3 NR AH</td>
+<td style="text-align: center;">R3-172636</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP from R3-172596</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-09</td>
+<td style="text-align: center;">R3#97</td>
+<td style="text-align: center;">R3-173453</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TPs from R3-173320 and R3-173321</td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-10</td>
+<td style="text-align: center;">R3#97bis</td>
+<td style="text-align: center;">R3-174241</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP from R3-173636</td>
+<td style="text-align: center;">0.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">R3#98</td>
+<td style="text-align: center;">R3-175057</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TPs from R3-174451 and R3-174764</td>
+<td style="text-align: center;">0.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-02</td>
+<td style="text-align: center;">R3 NR AH 1801</td>
+<td style="text-align: center;">R3-180653</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP from R3-180543</td>
+<td style="text-align: center;">0.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">R3#99</td>
+<td style="text-align: center;">R3-181590</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP from R3-181388</td>
+<td style="text-align: center;">0.7.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-04</td>
+<td style="text-align: center;">R3#99bis</td>
+<td style="text-align: center;">R3-182526</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TP from R3-181866</td>
+<td style="text-align: center;">0.8.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">R3#100</td>
+<td style="text-align: center;">R3-183595</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TPs from R3-183098, R3-182719 and
+R3-183375</td>
+<td style="text-align: center;">0.9.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP#80</td>
+<td style="text-align: center;">RP-180687</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Presentation to RAN for one step
+approval</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RAN#80</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Specification approved at TSG-RAN and
+placed under change control</td>
+<td style="text-align: center;">15.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RAN#81</td>
+<td style="text-align: center;">RP-181922</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">NR Corrections (38.420 Baseline CR
+covering RAN3-101 agreements)</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RAN#82</td>
+<td style="text-align: center;">RP-182446</td>
+<td style="text-align: center;">0004</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rapporteur’s CR for TS 38.420</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RAN#82</td>
+<td style="text-align: center;">RP-182447</td>
+<td style="text-align: center;">0006</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of Data Volume Reporting
+for MR-DC</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RAN#82</td>
+<td style="text-align: center;">RP-182447</td>
+<td style="text-align: center;">0007</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Rename the Data Forwarding Address
+Indication procedure</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RAN#88-e</td>
+<td style="text-align: center;">RP-201075</td>
+<td style="text-align: center;">0008</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Baseline CR for introducing Rel-16 NR
+mobility enhancement</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RAN#88-e</td>
+<td style="text-align: center;">RP-201082</td>
+<td style="text-align: center;">0018</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">BLCR to 38.420: Addition of MDT
+feature</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RAN#88-e</td>
+<td style="text-align: center;">RP-201082</td>
+<td style="text-align: center;">0019</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">BLCR to 38.420: Addition of SON
+feature</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220222</td>
+<td style="text-align: center;">0020</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CR on CP-UP separation for Rel-17
+IAB</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220224</td>
+<td style="text-align: center;">0022</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">BL CR to TS38.420</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220218</td>
+<td style="text-align: center;">0023</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">CPAC BL CR to TS 38.420</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220233</td>
+<td style="text-align: center;">0024</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">RA-SDT BLCR to TS 38.420</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220236</td>
+<td style="text-align: center;">0025</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Addition of the Retrieve UE Context
+Confirm procedure [InterMNResume]</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220229</td>
+<td style="text-align: center;">0026</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">BLCR to 38.420: Support of QoE
+Measurement Collection for NR</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221141</td>
+<td style="text-align: center;">0027</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Alignment with rel-17 changes in
+XnAP</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221134</td>
+<td style="text-align: center;">0028</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Alignment with rel-17 changes in
+XnAP</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221136</td>
+<td style="text-align: center;">0029</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Alignment with rel-17 changes in
+XnAP</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221128</td>
+<td style="text-align: center;">0030</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">IAB Rel-17 Corrections</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-06</td>
+<td style="text-align: center;">RAN#96</td>
+<td style="text-align: center;">RP-221143</td>
+<td style="text-align: center;">0031</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">QoE Rel-17 Corrections</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-09</td>
+<td style="text-align: center;">RAN#97-e</td>
+<td style="text-align: center;">RP-222183</td>
+<td style="text-align: center;">0032</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction to 38.420 for IAB</td>
+<td style="text-align: center;">17.2.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

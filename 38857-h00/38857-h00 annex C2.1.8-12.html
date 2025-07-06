@@ -1,0 +1,7732 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38857-h00 annex C2.1.8-12</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#c.2.1.8-results-from-source-18"
+id="toc-c.2.1.8-results-from-source-18">C.2.1.8 Results from source [18]
+</a>
+<ul>
+<li><a href="#c.2.1.8.1-description-of-evaluation-scenarios"
+id="toc-c.2.1.8.1-description-of-evaluation-scenarios">C.2.1.8.1
+Description of evaluation scenarios</a></li>
+<li><a href="#c.1.1.8.2-positioning-accuracy-evaluation-results"
+id="toc-c.1.1.8.2-positioning-accuracy-evaluation-results">C.1.1.8.2
+Positioning accuracy evaluation results</a></li>
+</ul></li>
+<li><a href="#c.2.1.9-results-from-source-14"
+id="toc-c.2.1.9-results-from-source-14">C.2.1.9 Results from source
+[14]</a>
+<ul>
+<li><a href="#c.2.1.9.1-description-of-evaluation-scenarios"
+id="toc-c.2.1.9.1-description-of-evaluation-scenarios">C.2.1.9.1
+Description of evaluation scenarios</a></li>
+<li><a
+href="#c.2.1.9.2-positioning-accuracy-evaluation-results-for-nr-positioning-enhancements"
+id="toc-c.2.1.9.2-positioning-accuracy-evaluation-results-for-nr-positioning-enhancements">C.2.1.9.2
+Positioning accuracy evaluation results for NR positioning
+enhancements</a></li>
+</ul></li>
+<li><a href="#c.2.1.10-results-from-source-21"
+id="toc-c.2.1.10-results-from-source-21">C.2.1.10 Results from source
+[21]</a>
+<ul>
+<li><a href="#c.2.1.10.1-description-of-evaluation-scenarios"
+id="toc-c.2.1.10.1-description-of-evaluation-scenarios">C.2.1.10.1
+Description of evaluation scenarios</a></li>
+<li><a
+href="#c.2.1.10.2-positioning-accuracy-evaluation-results-for-nr-positioning-enhancements"
+id="toc-c.2.1.10.2-positioning-accuracy-evaluation-results-for-nr-positioning-enhancements">C.2.1.10.2
+Positioning accuracy evaluation results for NR positioning
+enhancements</a></li>
+</ul></li>
+<li><a href="#c.2.1.11-results-from-17"
+id="toc-c.2.1.11-results-from-17">C.2.1.11 Results from [17]</a>
+<ul>
+<li><a href="#c.2.1.11.1-description-of-evaluation-scenarios"
+id="toc-c.2.1.11.1-description-of-evaluation-scenarios">C.2.1.11.1
+Description of evaluation scenarios</a></li>
+<li><a
+href="#c.2.1.11.2-positioning-accuracy-evaluation-results-for-nr-positioning-enhancements"
+id="toc-c.2.1.11.2-positioning-accuracy-evaluation-results-for-nr-positioning-enhancements">C.2.1.11.2
+Positioning accuracy evaluation results for NR positioning
+enhancements</a></li>
+</ul></li>
+<li><a href="#c.2.1.12-results-from-9"
+id="toc-c.2.1.12-results-from-9">C.2.1.12 Results from [9]</a>
+<ul>
+<li><a href="#c.2.1.12.1-description-of-evaluation-scenarios"
+id="toc-c.2.1.12.1-description-of-evaluation-scenarios">C.2.1.12.1
+Description of evaluation scenarios</a></li>
+<li><a
+href="#c.2.1.12.2-positioning-accuracy-evaluation-results-for-nr-positioning-enhancements"
+id="toc-c.2.1.12.2-positioning-accuracy-evaluation-results-for-nr-positioning-enhancements">C.2.1.12.2
+Positioning accuracy evaluation results for NR positioning
+enhancements</a></li>
+</ul></li>
+</ul>
+</nav>
+<h4 id="c.2.1.8-results-from-source-18">C.2.1.8 Results from source [18]
+</h4>
+<h5 id="c.2.1.8.1-description-of-evaluation-scenarios">C.2.1.8.1
+Description of evaluation scenarios</h5>
+<p>The evaluation on the Rel-17 UL-TDOA performance in InF-DH scenario
+focuses on the following test cases:</p>
+<p>- Impact of gNB antenna configuration (case 4, case 5 and case 6)</p>
+<p>- Impact UE Tx Power and UE antenna configuration (case 8, case 9 ,
+case 10 and case 11)</p>
+<p>- Uplink beam management (case 7, case 13 and case 14)</p>
+<p>- Ideal LOS detection is used for the position calculation for all
+test cases.</p>
+<p>Evaluation assumptions for system level analysis of NR positioning
+accuracy enhancements are provided in Table C.2.1.8.1-1.</p>
+<p>Table C.2.1.8.1-1: NR positioning enhancements - evaluation scenarios
+and parameters</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th><p>Case 4- config 220</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></th>
+<th><p>Case 5- config 320</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></th>
+<th><p>Case 6- config 420</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></th>
+<th><p>Case 7- config 421</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td><p>InF-DH</p>
+<p>(r =0.4,hc=2m, dClutter=2m)</p></td>
+<td><p>InF-DH</p>
+<p>(r =0.4,hc=2m, dClutter=2m)</p></td>
+<td><p>InF-DH</p>
+<p>(r =0.4,hc=2m, dClutter=2m)</p></td>
+<td><p>InF-DH</p>
+<p>(r =0.4,hc=2m, dClutter=2m)</p></td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>4GHz</td>
+<td>4GHz</td>
+<td>4GHz</td>
+<td>4GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td>30kHz</td>
+<td>30kHz</td>
+<td>30kHz</td>
+<td>30kHz</td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td><p>KTC = 4</p>
+<p>nbSymb = 1</p></td>
+<td><p>KTC = 4</p>
+<p>nbSymb = 1</p></td>
+<td><p>KTC = 4</p>
+<p>nbSymb = 1</p></td>
+<td><p>KTC = 4</p>
+<p>nbSymb = 1</p></td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td><p>SRS,</p>
+<p>1 Port</p></td>
+<td><p>SRS,</p>
+<p>1 Port</p></td>
+<td><p>SRS,</p>
+<p>1 Port</p></td>
+<td><p>SRS,</p>
+<p>1 Port</p></td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>6dB</td>
+<td>6dB</td>
+<td>6dB</td>
+<td>6dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>+23dBm</td>
+<td>+23dBm</td>
+<td>+23dBm</td>
+<td>+23dBm</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>Interference between UEs sharing the same REs (“cyclic shift
+multiplex”)</td>
+<td>Interference between UEs sharing the same REs (“cyclic shift
+multiplex”)</td>
+<td>Interference between UEs sharing the same REs (“cyclic shift
+multiplex”)</td>
+<td>Interference between UEs sharing the same REs (“cyclic shift
+multiplex”)</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>IFP: First arrival path detection and evaluation of the first rising
+edge of the correlation function</td>
+<td>IFP: First arrival path detection and evaluation of the first rising
+edge of the correlation function</td>
+<td>IFP: First arrival path detection and evaluation of the first rising
+edge of the correlation function</td>
+<td>IFP: First arrival path detection and evaluation of the first rising
+edge of the correlation function</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>Levenberg Marquardt</td>
+<td>Levenberg Marquardt</td>
+<td>Levenberg Marquardt</td>
+<td>Levenberg Marquardt</td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>Not applied</td>
+<td>Not applied</td>
+<td>Not applied</td>
+<td>Not applied</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>Power of the first arriving taps</td>
+<td>Power of the first arriving taps</td>
+<td>Power of the first arriving taps</td>
+<td>RSRP used for Rx beam selection</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td><p>Per site (Rx): Omni antenna</p>
+<p>1 TXRU per panel per polarization dimension</p>
+<p>UE (Tx): Omni antenna</p></td>
+<td><p>Per site (Rx): 3 sectors (3 panels, one element per panel)</p>
+<p>1 TXRU per panel per polarization dimension</p>
+<p>UE (Tx): Omni antenna</p></td>
+<td><p>Per site (Rx): 3 panels, 5 dual polarized beams per panel</p>
+<p>1 TXRU per panel per polarization dimension</p>
+<p>UE (Tx): Omni antenna</p></td>
+<td><p>Per site (Rx): 3 panels, 5 dual polarized beams per panel</p>
+<p>1 TXRU per panel per polarization dimension</p>
+<p>UE (Tx): Omni antenna</p></td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td>Ideal LOS detection</td>
+<td><p>Ideal LOS detection</p>
+<p>CIR analysis is used for the beam selection/spatial relationship
+establishment</p></td>
+<td><p>Ideal LOS detection</p>
+<p>CIR analysis is used for the beam selection/spatial relationship
+establishment</p></td>
+<td>Ideal LOS detection</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td>If the number of LOS links is sufficient, only LOS links are used
+for the position calculation (ideal LOS detection). If the number of LOS
+links is not sufficient all ToA-Values together with a signal power
+based signal quality are used by the positioning algorithm</td>
+<td>Same note on the used LOS links as for case1 (config220)</td>
+<td>Same note on the used LOS links as for case1 (config220)</td>
+<td>Same note on the used LOS links as for case1 (config220)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th><p>Case 8- config 422</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></th>
+<th><p>Case 9- config 423</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></th>
+<th><p>Case 10- config 443</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></th>
+<th><p>Case 11- config 444</p>
+<p>(InF-DH, FR1,UL-TDOA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td><p>InF-DH</p>
+<p>(r =0.4,hc=2m, dClutter=2m)</p></td>
+<td><p>InF-DH</p>
+<p>(r =0.4,hc=2m, dClutter=2m)</p></td>
+<td><p>InF-DH</p>
+<p>(r =0.4,hc=2m, dClutter=2m)</p></td>
+<td><p>InF-DH</p>
+<p>(r =0.4,hc=2m, dClutter=2m)</p></td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>4GHz</td>
+<td>4GHz</td>
+<td>4GHz</td>
+<td>4GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td>30kHz</td>
+<td>30kHz</td>
+<td>30kHz</td>
+<td>30kHz</td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td><p>KTC = 4</p>
+<p>nbSymb = 1</p></td>
+<td><p>KTC = 4</p>
+<p>nbSymb = 1</p></td>
+<td><p>KTC = 4</p>
+<p>nbSymb = 1</p></td>
+<td><p>KTC = 4</p>
+<p>nbSymb = 1</p></td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td><p>SRS,</p>
+<p>1 Port</p></td>
+<td><p>SRS,</p>
+<p>1 Port</p></td>
+<td><p>SRS,</p>
+<p>1 Port (4 resources)</p></td>
+<td><p>SRS,</p>
+<p>1 Port (4 resources)</p></td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>6dB</td>
+<td>6dB</td>
+<td>6dB</td>
+<td>6dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>0dBm</td>
+<td>-20dBm</td>
+<td>-20dBm</td>
+<td>-20dBm</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>Interference between UEs sharing the same REs (“cyclic shift
+multiplex”)</td>
+<td>Interference between UEs sharing the same REs (“cyclic shift
+multiplex”)</td>
+<td>Interference between UEs sharing the same REs (“cyclic shift
+multiplex”)</td>
+<td>Interference between UEs sharing the same REs (“cyclic shift
+multiplex”)</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>IFP: First arrival path detection and evaluation of the first rising
+edge of the correlation function</td>
+<td>IFP: First arrival path detection and evaluation of the first rising
+edge of the correlation function</td>
+<td>IFP: First arrival path detection and evaluation of the first rising
+edge of the correlation function</td>
+<td>IFP: First arrival path detection and evaluation of the first rising
+edge of the correlation function</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>Levenberg Marquardt</td>
+<td>Levenberg Marquardt</td>
+<td>Levenberg Marquardt</td>
+<td>Levenberg Marquardt</td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>Not applied</td>
+<td>Not applied</td>
+<td>Not applied</td>
+<td>Not applied</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>Power of the first arriving taps</td>
+<td>Power of the first arriving taps</td>
+<td>Power of the first arriving taps</td>
+<td>Power of the first arriving taps</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td><p>Per site (Rx): 3 panels, 5 dual polarized beams per panel</p>
+<p>1 TXRU per panel per polarization dimension</p>
+<p>UE (Tx): Omni antenna</p></td>
+<td><p>Per site (Rx): 3 panels, 5 dual polarized beams per panel</p>
+<p>1 TXRU per panel per polarization dimension</p>
+<p>UE (Tx): Omni antenna</p></td>
+<td><p>Per site (Rx): 3 panels, 5 dual polarized beams per panel</p>
+<p>1 TXRU per panel per polarization dimension</p>
+<p>UE (Tx): 4 non-ideal antennas at different positions</p></td>
+<td><p>Per site (Rx): 3 panels, 5 dual polarized beams per panel</p>
+<p>1 TXRU per panel per polarization dimension</p>
+<p>UE (Tx): 4 ideal antennas at different positions</p></td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td><p>Ideal LOS detection</p>
+<p>CIR analysis is used for the beam selection/spatial relationship
+establishment</p></td>
+<td><p>Ideal LOS detection</p>
+<p>CIR analysis is used for the beam selection/spatial relationship
+establishment</p></td>
+<td><p>Ideal LOS detection</p>
+<p>CIR analysis is used for the beam selection/spatial relationship
+establishment</p>
+<p>Gain of TX diversity with non-ideal UE antenna</p></td>
+<td><p>Ideal LOS detection</p>
+<p>CIR analysis is used for the beam selection/spatial relationship
+establishment</p>
+<p>Gain of TX diversity using 4 ideal UE antennas</p></td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td>Same note on the used LOS links as for case1 (config220)</td>
+<td>Same note on the used LOS links as for case1 (config220)</td>
+<td>Same note on the used LOS links as for case1 (config220)</td>
+<td>Same note on the used LOS links as for case1 (config220)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th><p>Case 12- config 447</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></th>
+<th><p>Case 13- config 552</p>
+<p>(InF-DH, FR2,UL-TDOA)</p></th>
+<th><p>Case 14- config 554</p>
+<p>(InF-DH, FR2,UL-TDOA</p></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td><p>InF-DH</p>
+<p>(r =0.4,hc=2m, dClutter=2m)</p></td>
+<td><p>InF-DH</p>
+<p>(r =0.4,hc=2m, dClutter=2m)</p></td>
+<td><p>InF-DH</p>
+<p>(r =0.4,hc=2m, dClutter=2m)</p></td>
+<td></td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>4GHz</td>
+<td>28GHz</td>
+<td>28GHz</td>
+<td></td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td>30kHz</td>
+<td>30kHz</td>
+<td>120kHz</td>
+<td></td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>400Mhz</td>
+<td></td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td><p>KTC = 4</p>
+<p>nbSymb = 1</p></td>
+<td><p>KTC = 4</p>
+<p>nbSymb = 1</p></td>
+<td><p>KTC = 4</p>
+<p>nbSymb = 4</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td><p>SRS,</p>
+<p>1 Port</p></td>
+<td><p>SRS,</p>
+<p>1 Port</p></td>
+<td><p>SRS,</p>
+<p>1 Port<br />
+(sequential transmissions)</p></td>
+<td></td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td></td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>4</td>
+<td>4</td>
+<td>12*4<br />
+(12 different UE TX beams, 4 symbols per SRS resource)</td>
+<td></td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>6dB</td>
+<td>6dB</td>
+<td>6dB</td>
+<td></td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>23dBm</td>
+<td>23dBm</td>
+<td>0dBm</td>
+<td></td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>Interference between UEs sharing the same REs (“cyclic shift
+multiplex”)</td>
+<td>Interference between UEs sharing the same REs (“cyclic shift
+multiplex”)</td>
+<td>Interference between UEs sharing the same REs (“cyclic shift
+multiplex”)</td>
+<td></td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>IFP: First arrival path detection and evaluation of the first rising
+edge of the correlation function</td>
+<td>IFP: First arrival path detection and evaluation of the first rising
+edge of the correlation function</td>
+<td>IFP: First arrival path detection and evaluation of the first rising
+edge of the correlation function</td>
+<td></td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>Levenberg Marquardt</td>
+<td>Levenberg Marquardt</td>
+<td>Levenberg Marquardt</td>
+<td></td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td></td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>Not applied</td>
+<td>Not applied</td>
+<td>Not applied</td>
+<td></td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>Power of the first arriving taps</td>
+<td>Power of the first arriving taps</td>
+<td>Power of the first arriving taps</td>
+<td></td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td><p>Per site (Rx): 3 panels, 5 dual polarized beams per panel</p>
+<p>Virtualization model: 1 TXRU per panel per polarization dimension</p>
+<p>UE (Tx): 4 antenna panels (same characteristic as FR2 antenna), one
+element per panel</p></td>
+<td><p>Per site (Rx): 3 panels, 5 dual polarized beams per panel</p>
+<p>Virtualization model: 1 TXRU per panel per polarization dimension</p>
+<p>UE (Tx): 4 antenna panels</p></td>
+<td><p>Per site (Rx): 3 panels, 5 dual polarized beams per panel</p>
+<p>Virtualization model: 1 TXRU per panel per polarization dimension</p>
+<p>UE (Tx): 4 antenna panels</p></td>
+<td></td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td><p>Ideal LOS detection</p>
+<p>CIR analysis is used for the beam selection/spatial relationship
+establishment</p></td>
+<td><p>Ideal LOS detection</p>
+<p>CIR analysis is used for the beam selection/spatial relationship
+establishment</p></td>
+<td><p>Ideal LOS detection</p>
+<p>CIR analysis is used for the beam selection/spatial relationship
+establishment</p></td>
+<td></td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td>Same note on the used LOS links as for case1 (config220)</td>
+<td>Same note on the used LOS links as for case1 (config220)</td>
+<td>Same note on the used LOS links as for case1 (config220)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h5 id="c.1.1.8.2-positioning-accuracy-evaluation-results">C.1.1.8.2
+Positioning accuracy evaluation results</h5>
+<p>Evaluation results of horizontal location error for NR positioning
+enhancements are provided in Table C.2.1.8.2-1:</p>
+<p>Table C.2.1.8.2-1: NR positioning enhancements - horizontal location
+error results from [18]</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Case 4- config 220</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.15</td>
+<td>0.23</td>
+<td>0.36</td>
+<td>0.70</td>
+</tr>
+<tr>
+<td><p>Case 5- config 320</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.11</td>
+<td>0.18</td>
+<td>0.27</td>
+<td>0.45</td>
+</tr>
+<tr>
+<td><p>Case 6- config 420</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.09</td>
+<td>0.15</td>
+<td>0.23</td>
+<td>0.43</td>
+</tr>
+<tr>
+<td><p>Case 7- config 421</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.16</td>
+<td>0.54</td>
+<td>2.68</td>
+<td>&gt;3.00</td>
+</tr>
+<tr>
+<td><p>Case 8- config 422</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.09</td>
+<td>0.15</td>
+<td>0.23</td>
+<td>0.44</td>
+</tr>
+<tr>
+<td><p>Case 9- config 423</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.10</td>
+<td>0.16</td>
+<td>0.27</td>
+<td>0.59</td>
+</tr>
+<tr>
+<td><p>Case 10- config 443</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.07</td>
+<td>0.13</td>
+<td>0.22</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td><p>Case 11- config 444</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.07</td>
+<td>0.12</td>
+<td>0.21</td>
+<td>0.49</td>
+</tr>
+<tr>
+<td><p>Case 12- config 447</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.08</td>
+<td>0.14</td>
+<td>0.28</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td><p>Case 13- config 552</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.12</td>
+<td>0.21</td>
+<td>0.43</td>
+<td>1.70</td>
+</tr>
+<tr>
+<td><p>Case 14- config 554</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.02</td>
+<td>0.03</td>
+<td>0.05</td>
+<td>0.09</td>
+</tr>
+</tbody>
+</table>
+<p>Evaluation results of vertical location error for NR positioning
+enhancements are provided in Table C.2.1.8.2-2:</p>
+<p>Table C.2.1.8.2-2: NR positioning enhancements - altitude location
+error results from [18]</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Case 4- config 220</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.33</td>
+<td>0.55</td>
+<td>0.95</td>
+<td>1.84</td>
+</tr>
+<tr>
+<td><p>Case 5- config 320</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.24</td>
+<td>0.41</td>
+<td>0.68</td>
+<td>1.19</td>
+</tr>
+<tr>
+<td><p>Case 6- config 420</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.18</td>
+<td>0.33</td>
+<td>0.57</td>
+<td>1.12</td>
+</tr>
+<tr>
+<td><p>Case 7- config 421</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.39</td>
+<td>1.29</td>
+<td>6.33</td>
+<td>10.0</td>
+</tr>
+<tr>
+<td><p>Case 8- config 422</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.21</td>
+<td>0.35</td>
+<td>0.61</td>
+<td>1.15</td>
+</tr>
+<tr>
+<td><p>Case 9- config 423</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.21</td>
+<td>0.36</td>
+<td>0.65</td>
+<td>1.56</td>
+</tr>
+<tr>
+<td><p>Case 10- config 443</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.15</td>
+<td>0.27</td>
+<td>0.48</td>
+<td>1.12</td>
+</tr>
+<tr>
+<td><p>Case 11- config 444</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.15</td>
+<td>0.26</td>
+<td>0.49</td>
+<td>1.43</td>
+</tr>
+<tr>
+<td><p>Case 12- config 447</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.17</td>
+<td>0.35</td>
+<td>0.75</td>
+<td>2.23</td>
+</tr>
+<tr>
+<td><p>Case 13- config 552</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.26</td>
+<td>0.54</td>
+<td>1.14</td>
+<td>4.28</td>
+</tr>
+<tr>
+<td><p>Case 14- config 554</p>
+<p>(InF-DH, FR1,UL-TDOA)</p></td>
+<td>Convex UEs</td>
+<td>0.04</td>
+<td>0.07</td>
+<td>0.12</td>
+<td>0.24</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">FR1 Results</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p><img src="media/image1.svg"
+style="width:3.46875in;height:2.64583in" /></p>
+<p>Figure 3: CDF 2D (horizontal) error for UTDOA, comparison of
+different gNB antenna configurations</p></td>
+<td><p><img src="media/image2.svg"
+style="width:3.4375in;height:2.6875in" /></p>
+<p>Figure 4: CDF horizontal error , Tx Antenna diverstity</p></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">FR1 Results</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p><img src="media/image3.svg"
+style="width:3.26042in;height:2.58333in" /></p>
+<p>Figure 5: CDF horizontal error for UTDOA, comparison of different UE
+TX Power levels</p></td>
+<td><p><img src="media/image4.svg"
+style="width:3.35417in;height:2.61458in" /></p>
+<p>Figure 6: CDF horizontal error for UTDOA, Beam pair
+selection</p></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th>FR2 Results</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p><img src="media/image5.svg"
+style="width:4.0625in;height:3.21875in" /></p>
+<p>Figure 12: CDF horizontal error UTDOA</p></td>
+</tr>
+<tr>
+<td><p><img src="media/image6.svg"
+style="width:5.1875in;height:3.55208in" /></p>
+<p>Figure 14: CDF 2D error for UTDOA, FR2 (400MHz BW)</p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.2.1.9-results-from-source-14">C.2.1.9 Results from source
+[14]</h4>
+<h5 id="c.2.1.9.1-description-of-evaluation-scenarios">C.2.1.9.1
+Description of evaluation scenarios</h5>
+<p>In this section results are provided for the following scenarios.</p>
+<p>- Baseline Scenarios for horizontal positioning evaluation: InF-SH,
+InF-DH, InH-OO, FR2/FR1, Convex UEs/ All UEs, Fixed UE height = 1.5
+m,</p>
+<p>- Baseline Scenarios for vertical positioning evaluation: InF-SH,
+InF-DH, FR2/FR1, Various UE height: UEH ∈ [0.5, 2] m/ UEH ∈ [0, 8] m,
+Fixed gNB height (8 m)/ Various gNB height ({4,8}),</p>
+<p>- InF-SH FR2 using proposed various gNB height for vertical
+positioning,</p>
+<p>- InF-SH FR2 using different size of bandwidth: BW = 400MHz/ 100MHz/
+50MHz/ 20MHz.</p>
+<p>Evaluation assumptions for system level analysis are provided in
+Table C.2.1.9.1-1 and Table C.2.1.9.1-2.</p>
+<p>Table C.2.1.9.1-1: NR positioning enhancements - evaluation scenarios
+and parameters</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th><p>[Case7, InF- SH, FR2],</p>
+<p>[Case9, InF-DH, FR2],</p>
+<p>[Case11, InH-OO, FR2]</p></th>
+<th><p>[Case8, InF- SH, FR1],</p>
+<p>[Case10, InF-DH, FR1],</p>
+<p>[Case12, InH-OO, FR1]</p></th>
+<th><p>Case13, InF- SH, FR2],</p>
+<p>[Case15, InF-DH, FR2],</p></th>
+<th><p>[Case14, InF- SH, FR1],</p>
+<p>[Case16, InF-DH, FR1],</p></th>
+<th><p>Case17, InF- SH, FR2],</p>
+<p>[Case19, InF-DH, FR2],</p></th>
+<th><p>[Case18, InF- SH, FR1],</p>
+<p>[Case20, InF-DH, FR1],</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td>Baseline</td>
+<td>Baseline</td>
+<td>Baseline</td>
+<td>Baseline</td>
+<td>Baseline</td>
+<td>Baseline</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>28 GHz</td>
+<td>1.5 GHz</td>
+<td>28 GHz</td>
+<td>1.5 GHz</td>
+<td>28 GHz</td>
+<td>1.5 GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td>120 kHz</td>
+<td>30 kHz</td>
+<td>120 kHz</td>
+<td>30 kHz</td>
+<td>120 kHz</td>
+<td>30 kHz</td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>400 MHz</td>
+<td>100 MHz</td>
+<td>400 MHz</td>
+<td>100 MHz</td>
+<td>400 MHz</td>
+<td>100 MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>Comb-6, 6 symbols</td>
+<td>Comb-6, 6 symbols</td>
+<td>Comb-6, 6 symbols</td>
+<td>Comb-6, 6 symbols</td>
+<td>Comb-6, 6 symbols</td>
+<td>Comb-6, 6 symbols</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td colspan="6">Pseudo-random sequence, 1 antenna port</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td colspan="6">18 sites in InF, 12 sites in InH</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>6 dB</td>
+<td>6 dB</td>
+<td>6 dB</td>
+<td>6 dB</td>
+<td>6 dB</td>
+<td>6 dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td colspan="6">not applied</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td colspan="6">ideal muting</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td colspan="6">Adaptive threshold-based first peak detection for TOA
+measurement</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td colspan="6"><p>Filtering the TOA measurements by FPAR using a
+predefined threshold,</p>
+<p>AoD measurement from the estimated angular spectrum,</p>
+<p>NLOS Detection algorithms,</p>
+<p>TDOA-AOD based maximum likelihood positioning algorithm.</p></td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td colspan="6">Perfect synchronization</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td colspan="6">0</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td colspan="6">Beam sweeping at Tx, MUSIC based signal combining at
+Rx</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td colspan="6">Kronecker Product Codebook (Kronecker product of two
+oversampled DFT codewords)</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td colspan="6">NLOS Detection algorithms (NLOS state estimator)</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td colspan="2"><p>Horizontal positioning only,</p>
+<p>Fixed gNB height,</p>
+<p>Fixed UE height</p></td>
+<td colspan="2"><p>Horizontal and vertical positioning,</p>
+<p>Fixed gNB height or various gNB height,</p>
+<p>UE height ∈ [0.5, 2] m</p></td>
+<td colspan="2"><p>Horizontal and vertical positioning,</p>
+<p>Fixed gNB height or various gNB height,</p>
+<p>UE height ∈ [0, 8] m</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.2.1.9.1-2: NR positioning enhancements - evaluation scenarios
+and parameters</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>[Case21, InF- SH, FR2]</th>
+<th>[Case21, InF- SH, FR2]</th>
+<th>[Case22, InF- SH, FR2]</th>
+<th>[Case23, InF- SH, FR2]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td>Baseline</td>
+<td>Baseline</td>
+<td>Baseline</td>
+<td>Baseline</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>28 GHz</td>
+<td>28 GHz</td>
+<td>28 GHz</td>
+<td>28 GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td>120 kHz</td>
+<td>120 kHz</td>
+<td>120 kHz</td>
+<td>120 kHz</td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>100 MHz</td>
+<td>100 MHz</td>
+<td>50 MHz</td>
+<td>20 MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>Comb-4, 4 symbols</td>
+<td>Comb-4, 4 symbols</td>
+<td>Comb-4, 4 symbols</td>
+<td>Comb-4, 4 symbols</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td colspan="4">Pseudo-random sequence, 1 antenna port</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td colspan="4">18 sites in InF, 12 sites in InH</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>6 dB</td>
+<td>6 dB</td>
+<td>6 dB</td>
+<td>6 dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td colspan="4">not applied</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td colspan="4">ideal muting</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td colspan="4">Adaptive threshold-based first peak detection for TOA
+measurement</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td colspan="4"><p>Filtering the TOA measurements by FPAR using a
+predefined threshold,</p>
+<p>AoD measurement from the estimated angular spectrum,</p>
+<p>NLOS Detection algorithms,</p>
+<p>TDOA-AOD based maximum likelihood positioning algorithm.</p></td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td colspan="4">Perfect synchronization</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td colspan="4">0</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td colspan="4">Beam sweeping at Tx, MUSIC based signal combining at
+Rx</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td colspan="4">Kronecker Product Codebook (Kronecker product of two
+oversampled DFT codewords)</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td colspan="4">NLOS Detection algorithms (NLOS state estimator)</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td colspan="4"><p>Horizontal positioning only,</p>
+<p>Fixed gNB height,</p>
+<p>Fixed UE height</p></td>
+</tr>
+</tbody>
+</table>
+<h5
+id="c.2.1.9.2-positioning-accuracy-evaluation-results-for-nr-positioning-enhancements">C.2.1.9.2
+Positioning accuracy evaluation results for NR positioning
+enhancements</h5>
+<p>Evaluation results of horizontal location error for NR positioning
+enhancements are provided in Table C.2.1.9.2-1:</p>
+<p>Table C.2.1.9.2-1: NR positioning enhancements - horizontal location
+error results</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">[Case 7], [InF-SH], [FR2], [400 MHz], [Comb-6], [6dB
+PB]</td>
+<td>Convex UEs</td>
+<td>0.025</td>
+<td>0.0344</td>
+<td>0.046</td>
+<td>0.074</td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.033</td>
+<td>0.048</td>
+<td>0.075</td>
+<td>0.23</td>
+</tr>
+<tr>
+<td rowspan="2">[Case 8], [InF-SH], [FR1], [100 MHz], [Comb-6], [6dB
+PB]</td>
+<td>Convex UEs</td>
+<td>0.10</td>
+<td>0.14</td>
+<td>0.20</td>
+<td>0.38</td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.13</td>
+<td>0.19</td>
+<td>0.30</td>
+<td>0.67</td>
+</tr>
+<tr>
+<td rowspan="2">[Case 9], [InF-DH], [FR2], [400 MHz], [Comb-6], [6dB
+PB]</td>
+<td>Convex UEs</td>
+<td>0.044</td>
+<td>0.075</td>
+<td>0.53</td>
+<td>1.96</td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.063</td>
+<td>0.31</td>
+<td>1.31</td>
+<td>2.12</td>
+</tr>
+<tr>
+<td rowspan="2">[Case 10], [InF-DH], [FR1], [100 MHz], [Comb-6], [6dB
+PB]</td>
+<td>Convex UEs</td>
+<td>0.20</td>
+<td>0.46</td>
+<td>1.49</td>
+<td>2.13</td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.29</td>
+<td>0.75</td>
+<td>1.60</td>
+<td>3.62</td>
+</tr>
+<tr>
+<td rowspan="2">[Case 11], [InH-OO], [FR2], [400 MHz], [Comb-6], [6dB
+PB]</td>
+<td>Convex UEs</td>
+<td>0.041</td>
+<td>0.062</td>
+<td>0.11</td>
+<td>0.31</td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.054</td>
+<td>0.095</td>
+<td>0.18</td>
+<td>0.39</td>
+</tr>
+<tr>
+<td rowspan="2">[Case 12], [InH-OO], [FR1], [100 MHz], [Comb-6], [6dB
+PB]</td>
+<td>Convex UEs</td>
+<td>0.20</td>
+<td>0.29</td>
+<td>0.42</td>
+<td>0.69</td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.20</td>
+<td>0.33</td>
+<td>0.53</td>
+<td>0.98</td>
+</tr>
+</tbody>
+</table>
+<p>Evaluation results of vertical location error for NR positioning
+enhancements are provided in Table C.2.1.9.2-2:</p>
+<p>Table C.2.1.9.2-2: NR positioning enhancements - Vertical location
+error results</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 22%" />
+<col style="width: 13%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>Case</th>
+<th>gNB Deployment</th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2"><p>[Case 13], [InF-SH], [FR2], [400 MHz], [Comb-6], [6dB
+PB],</p>
+<p>[ UEH ∈ [0.5, 2] m]</p></td>
+<td>gNBH ∈ {4,8} m</td>
+<td>0.17</td>
+<td>0.29</td>
+<td>0.48</td>
+<td>0.77</td>
+</tr>
+<tr>
+<td>gNBH = 8 m</td>
+<td>0.17</td>
+<td>0.31</td>
+<td>0.48</td>
+<td>0.83</td>
+</tr>
+<tr>
+<td rowspan="2"><p>[Case 14], [InF-SH], [FR1], [100 MHz], [Comb-6], [6dB
+PB],</p>
+<p>[UEH ∈ [0.5, 2] m]</p></td>
+<td>gNBH ∈ {4,8} m,</td>
+<td>0.78</td>
+<td>1.06</td>
+<td>1.29</td>
+<td>1.51</td>
+</tr>
+<tr>
+<td>gNBH = 8 m,</td>
+<td>0.86</td>
+<td>1.12</td>
+<td>1.38</td>
+<td>1.59</td>
+</tr>
+<tr>
+<td rowspan="2"><p>[Case 15], [InF-DH], [FR2], [400 MHz], [Comb-6], [6dB
+PB],</p>
+<p>[UEH ∈ [0.5, 2] m]</p></td>
+<td>gNBH ∈ {4,8} m,</td>
+<td>0.69</td>
+<td>0.91</td>
+<td>1.10</td>
+<td>1.34</td>
+</tr>
+<tr>
+<td>gNBH = 8 m,</td>
+<td>0.44</td>
+<td>0.69</td>
+<td>1.01</td>
+<td>1.42</td>
+</tr>
+<tr>
+<td rowspan="2"><p>[Case 16], [InF-DH], [FR1], [100 MHz], [Comb-6], [6dB
+PB],</p>
+<p>[UEH ∈ [0.5, 2] m]</p></td>
+<td>gNBH ∈ {4,8} m,</td>
+<td>0.77</td>
+<td>1.01</td>
+<td>1.23</td>
+<td>1.47</td>
+</tr>
+<tr>
+<td>gNBH = 8 m,</td>
+<td>0.84</td>
+<td>1.08</td>
+<td>1.34</td>
+<td>1.58</td>
+</tr>
+<tr>
+<td rowspan="5"><p>[Case 17], [InF-SH], [FR2], [400 MHz], [Comb-6], [6dB
+PB],</p>
+<p>[UEH ∈ [0, 8] m]</p></td>
+<td>gNBH ∈ {4,8} m</td>
+<td>0.84</td>
+<td>1.01</td>
+<td>1.18</td>
+<td>1.34</td>
+</tr>
+<tr>
+<td>gNBH = 8 m</td>
+<td>0.75</td>
+<td>1.12</td>
+<td>1.51</td>
+<td>1.88</td>
+</tr>
+<tr>
+<td>gNBH ∈ {2, 4, 6, 8} m</td>
+<td>0.45</td>
+<td>0.58</td>
+<td>0.72</td>
+<td>0.93</td>
+</tr>
+<tr>
+<td>gNBH = {1, 2, 3, 4, 5, 6, 7, 8} m,</td>
+<td>0.35</td>
+<td>0.48</td>
+<td>0.65</td>
+<td>0.86</td>
+</tr>
+<tr>
+<td>gNBH = {1: 0.5: 8} m</td>
+<td>0.26</td>
+<td>0.39</td>
+<td>0.57</td>
+<td>0.79</td>
+</tr>
+<tr>
+<td rowspan="2"><p>[Case 18], [InF-SH], [FR1], [100 MHz], [Comb-6], [6dB
+PB],</p>
+<p>[UEH ∈ [0, 8] m]</p></td>
+<td>gNBH ∈ {4,8}m</td>
+<td>0.96</td>
+<td>1.25</td>
+<td>1.50</td>
+<td>1.73</td>
+</tr>
+<tr>
+<td>gNBH = 8 m</td>
+<td>0.98</td>
+<td>1.38</td>
+<td>1.78</td>
+<td>2.16</td>
+</tr>
+<tr>
+<td rowspan="2"><p>[Case 19], [InF-DH], [FR2], [400 MHz], [Comb-6], [6dB
+PB],</p>
+<p>[UEH ∈ [0, 8] m]</p></td>
+<td>gNBH ∈ {4,8} m</td>
+<td>0.85</td>
+<td>1.22</td>
+<td>1.62</td>
+<td>2.11</td>
+</tr>
+<tr>
+<td>gNBH = 8 m</td>
+<td>1.56</td>
+<td>2.02</td>
+<td>2.53</td>
+<td>3.04</td>
+</tr>
+<tr>
+<td rowspan="2"><p>[Case 20], [InF-DH], [FR1], [100 MHz], [Comb-6], [6dB
+PB],</p>
+<p>[UEH ∈ [0, 8] m]</p></td>
+<td>gNBH ∈ {4,8}m</td>
+<td>0.85</td>
+<td>1.25</td>
+<td>1.77</td>
+<td>2.57</td>
+</tr>
+<tr>
+<td>gNBH = 8 m</td>
+<td>1.31</td>
+<td>1.74</td>
+<td>2.18</td>
+<td>2.69</td>
+</tr>
+</tbody>
+</table>
+<p>Evaluation results of horizontal location error for NR positioning
+enhancements with various bandwidths are provided in Table
+C.2.1.9.2-3:</p>
+<p>Table C.2.1.9.2-3: NR positioning enhancements - horizontal location
+error results in InF-SH FR2 scenario using different bandwidth</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 11%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Case</th>
+<th>Bandwidth</th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[Case 21], [InF-SH], [FR2], [400 MHz], [Comb-4], [6dB PB]</td>
+<td>400 MHz</td>
+<td>0.025</td>
+<td>0.034</td>
+<td>0.046</td>
+<td>0.086</td>
+</tr>
+<tr>
+<td>[Case 22], [InF-SH], [FR2], [100 MHz], [Comb-4], [6dB PB]</td>
+<td>100 MHz</td>
+<td>0.14</td>
+<td>0.19</td>
+<td>0.25</td>
+<td>0.36</td>
+</tr>
+<tr>
+<td>[Case 23], [InF-SH], [FR2], [50 MHz], [Comb-4], [6dB PB]</td>
+<td>50 MHz</td>
+<td>0.20</td>
+<td>0.27</td>
+<td>0.38</td>
+<td>0.77</td>
+</tr>
+<tr>
+<td>[Case 24], [InF-SH], [FR2], [20 MHz], [Comb-4], [6dB PB]</td>
+<td>20 MHz</td>
+<td>0.39</td>
+<td>0.60</td>
+<td>0.90</td>
+<td>1.45</td>
+</tr>
+</tbody>
+</table>
+<p>Simulation results given by the CDF of the positioning error can be
+found from figure C.2.1.9.2-1 to C.2.1.9.2-6.</p>
+<p><img src="media/image7.svg"
+style="width:3.09792in;height:2.32222in" /><img src="media/image8.svg"
+style="width:3.09792in;height:2.32222in" /></p>
+<p>Figure C.2.1.9.2-1: Rel-17 horizontal positioning evaluation in
+InF-SH and InF-DH scenario, referring to Case 7 to Case 10.</p>
+<p><img src="media/image9.svg"
+style="width:3.09792in;height:2.32222in" /></p>
+<p>Figure C.2.1.9.2-2: Rel-17 horizontal positioning evaluation in
+InH-OO scenario, referring to Case 11 to Case 12.</p>
+<p><img src="media/image10.svg"
+style="width:3.09792in;height:2.32222in" /><img src="media/image11.svg"
+style="width:3.09792in;height:2.32222in" /></p>
+<p>Figure C.2.1.9.2-3: Rel-17 vertical positioning evaluation in InF-SH
+and InF-DH scenarios, UE height within a range [0.5, 2] m, referring to
+Case 13 to Case 16.</p>
+<p><img src="media/image12.svg"
+style="width:3.09792in;height:2.32222in" /><img src="media/image13.svg"
+style="width:3.09792in;height:2.32222in" /></p>
+<p>Figure C.2.1.9.2-4: Rel-17 vertical positioning evaluation in InF-SH
+and InF-DH scenarios, UE height within a range [0, 8] m, referring to
+Case 17 to Case 20.</p>
+<p><img src="media/image14.svg"
+style="width:3.09792in;height:2.32222in" /></p>
+<p>Figure C.2.1.9.2-5: Rel-17 vertical positioning evaluation in InF-SH
+FR2 scenario, UE height within a range [0, 8] m, referring to Case
+17.</p>
+<p><img src="media/image15.svg"
+style="width:3.09792in;height:2.32222in" /></p>
+<p>Figure C.2.1.9.2-6: Rel-17 horizontal positioning evaluation in
+InF-SH FR2 scenario, referring to Case 21 to Case 24.</p>
+<h4 id="c.2.1.10-results-from-source-21">C.2.1.10 Results from source
+[21]</h4>
+<h5 id="c.2.1.10.1-description-of-evaluation-scenarios">C.2.1.10.1
+Description of evaluation scenarios</h5>
+<p>The following enhancements were evaluated for rel17:</p>
+<p>- Line of Sight (LOS) detection</p>
+<p>- Rx-Tx timing error mitigation for multi-panel UEs</p>
+<p>- 1-symbol PRS</p>
+<p>- Threshold based Channel peaks detection</p>
+<p>- Cyclic shift enhancements for SRS</p>
+<p>- PRS aggregation</p>
+<p>Evaluation assumptions for system level analysis of NR positioning
+accuracy enhancements are provided in Table C.2.1.10.1-1a-k.</p>
+<p>Table C.2.1.10.1-1a: NR positioning enhancements - evaluation
+scenarios and parameters for line of sight detection</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>[21], source E1, Inf DH, FR1, DL TDOA</th>
+<th>[[21], source E2, Inf DH, FR1, DL TDOA</th>
+<th>[[21], source E3, Inf DH, FR1, DL TDOA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td>Inf DH, 120x60m</td>
+<td>Inf DH, 120x60m</td>
+<td>Inf DH, 120x60m</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>PRS staggered comb 12</td>
+<td>PRS staggered comb 12</td>
+<td>PRS staggered comb 12</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>12</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>Not applied</td>
+<td>Not applied</td>
+<td>Not applied</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>Genie peak detection</td>
+<td>Strongest peak LOS detection</td>
+<td>No LOS detection</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>Idea</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td>LOS detection</td>
+<td>LOS detection</td>
+<td>LOS detection</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.2.1.10.1-1c: NR positioning enhancements - evaluation
+scenarios and parameters for timing error evaluations baseline Inf
+SH</p>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>[21], source 10, InF SH FR2, UL TDOA</th>
+<th>[21], source 11 InF SH FR2, UL TDOA</th>
+<th>[21], source 12 InF SH FR2, UL TDOA</th>
+<th>[21], source 13 InF SH FR2, UL TDOA</th>
+<th>[21], source 14 InF SH FR2, UL TDOA</th>
+<th>[21], source 15 InF SH FR2, DL TDOA</th>
+<th>[21], source 16 InF SH FR2, DL TDOA</th>
+<th>[21], source 17 InF SH FR2, DL TDOA</th>
+<th>[21], source 18 InF SH FR2, DL TDOA</th>
+<th>[21], source 19 InF SH FR2, DL TDOA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td>120KHz</td>
+<td>120KHz</td>
+<td>120KHz</td>
+<td>120KHz</td>
+<td>120KHz</td>
+<td>120KHz</td>
+<td>120KHz</td>
+<td>120KHz</td>
+<td>120KHz</td>
+<td>120KHz</td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>2 symbols comb 2 SRS</td>
+<td>2 symbols comb 2 SRS</td>
+<td>2 symbols comb 2 SRS</td>
+<td>2 symbols comb 2 SRS</td>
+<td>2 symbols comb 2 SRS</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>SRS pos</td>
+<td>SRS pos</td>
+<td>SRS pos</td>
+<td>SRS pos</td>
+<td>SRS pos</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>Idea</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>Idea</td>
+<td>ideal</td>
+<td>ideal</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>0ns</td>
+<td>1ns</td>
+<td>2ns</td>
+<td>4ns</td>
+<td>8ns</td>
+<td>0ns</td>
+<td>1ns</td>
+<td>2ns</td>
+<td>4ns</td>
+<td>8ns</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.2.1.10.1-1d: NR positioning enhancements - evaluation
+scenarios and parameters for timing error evaluations Inf SH with
+enhancements</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>[21], source 20, InF SH FR2, UL TDOA</th>
+<th>[21], source 21 InF SH FR2, UL TDOA</th>
+<th>[21], source 22 InF SH FR2, DL TDOA</th>
+<th>[21], source 23 InF SH FR2, DL TDOA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>2 symbols comb 2 SRS</td>
+<td>2 symbols comb 2 SRS</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>SRS pos</td>
+<td>SRS pos</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>0ns</td>
+<td>8ns</td>
+<td>0ns</td>
+<td>8ns</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td>Multi panel Tx</td>
+<td>Multi panel Tx</td>
+<td>Multi panel Tx</td>
+<td>Multi panel Tx</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.2.1.10.1-1e: NR positioning enhancements - evaluation
+scenarios and parameters for timing error evaluations baseline Inf
+DH</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>[21], source 24, InF DH FR2, UL TDOA</th>
+<th>[21], source 25 InF DH FR2, UL TDOA</th>
+<th>[21], source 26 InF DH</th>
+<th>[21], source 27 InF DH FR2, UL TDOA</th>
+<th>[21], source 28 InF DH FR2, UL TDOA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+<td>28Ghz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>2 symbols comb 2 SRS</td>
+<td>2 symbols comb 2 SRS</td>
+<td>2 symbols comb 2 SRS</td>
+<td>2 symbols comb 2 SRS</td>
+<td>2 symbols comb 2 SRS</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>SRS pos</td>
+<td>SRS pos</td>
+<td>SRS pos</td>
+<td>SRS pos</td>
+<td>SRS pos</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>Idea</td>
+<td>ideal</td>
+<td>ideal</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>0ns</td>
+<td>1ns</td>
+<td>2ns</td>
+<td>4ns</td>
+<td>8ns</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.2.1.10.1-1f: NR positioning enhancements - evaluation
+scenarios and parameters for 1-symbol PRS</p>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>[21], source E29, Inf SH, FR1, DL TDOA</th>
+<th>[21], source E30, Inf SH, FR1, DL TDOA</th>
+<th>[21], source E31, Inf SH, FR1, DL TDOA</th>
+<th>[21], source E32, IOO, FR1, DL TDOA</th>
+<th>[21], source E33, IOO, FR1, DL TDOA</th>
+<th>[21], source E34, IOO, FR1, DL TDOA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td>Inf SH, 300x150m</td>
+<td>Inf SH, 300x150m</td>
+<td>Inf SH, 300x150m</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>PRS staggered comb 12 reuse 1</td>
+<td>PRS staggered comb 12</td>
+<td>PRS staggered comb 12</td>
+<td>PRS staggered comb 12 reuse 1</td>
+<td>PRS staggered comb 12</td>
+<td>PRS staggered comb 12</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>12</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>1</td>
+<td>12</td>
+<td>12</td>
+<td>1</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>interference</td>
+<td>interference</td>
+<td>No interference</td>
+<td>interference</td>
+<td>interference</td>
+<td>No interference</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.2.1.10.1-1g: NR positioning enhancements - evaluation
+scenarios and parameters for 1-symbol PRS</p>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>[21], source E35, Inf SH, FR1, DL TDOA&lt;</th>
+<th>[21], source E36, Inf SH, FR1, DL TDOA</th>
+<th>[21], source E37, Inf SH, FR1, DL TDOA</th>
+<th>[21], source E38, Inf SH, FR1, DL TDOA&lt;</th>
+<th>[21], source E39, IOO, FR1, DL TDOA</th>
+<th>[21], source E40, IOO, FR1, DL TDOA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td>Inf SH, 300x150m</td>
+<td>Inf SH, 300x150m</td>
+<td>Inf SH, 300x150m</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>PRS staggered comb 6 reuse 3</td>
+<td>PRS staggered comb 6</td>
+<td>PRS staggered comb 6</td>
+<td>PRS staggered comb 6 reuse 2</td>
+<td>PRS staggered comb 6</td>
+<td>PRS staggered comb 6</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>12</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>1</td>
+<td>6</td>
+<td>6</td>
+<td>1</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>7.7dB</td>
+<td>7.7dB</td>
+<td>7.7dB</td>
+<td>7.7dB</td>
+<td>7.7dB</td>
+<td>7.7dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>interference</td>
+<td>interference</td>
+<td>No interference</td>
+<td>interference</td>
+<td>interference</td>
+<td>No interference</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.2.1.10.1-1h: NR positioning enhancements - evaluation
+scenarios and parameters for 1-symbol PRS</p>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>[21], source E41, Inf SH, FR1, DL TDOA&lt;</th>
+<th>[21], source E42, Inf SH, FR1, DL TDOA</th>
+<th>[21], source E43, Inf SH, FR1, DL TDOA</th>
+<th>[21], source E44, Inf SH, FR1, DL TDOA&lt;</th>
+<th>[21], source E45, IOO, FR1, DL TDOA</th>
+<th>[21], source E46, IOO, FR1, DL TDOA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td>Inf SH, 300x150m</td>
+<td>Inf SH, 300x150m</td>
+<td>Inf SH, 300x150m</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>PRS staggered comb 2 reuse 9</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2 reuse 6</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>12</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>interference</td>
+<td>interference</td>
+<td>No interference</td>
+<td>interference</td>
+<td>interference</td>
+<td>No interference</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+<td>1 symbol PRS</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.2.1.10.1-1i: NR positioning enhancements - evaluation
+scenarios and parameters for 1-symbol PRS with thresholding</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>[21], source E47, Inf DH, FR1, DL TDOA</th>
+<th>[21], source E48, Inf DH, FR1, DL TDOA</th>
+<th>[21], source E49, Inf DH, FR1, DL TDOA</th>
+<th>[21], source E50, Inf DH, FR1, DL TDOA</th>
+<th>[21], source E51, Inf DH, FR1, DL TDOA</th>
+<th>[21], source E52, Inf DH, FR1, DL TDOA</th>
+<th>[21], source E53, Inf DH, FR1, DL TDOA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td>Inf DH,</td>
+<td>Inf DH,</td>
+<td>Inf DH,</td>
+<td>Inf DH,</td>
+<td>Inf DH,</td>
+<td>Inf DH,</td>
+<td>Inf DH,</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>PRS staggered comb 12</td>
+<td>PRS staggered comb 12</td>
+<td>PRS staggered comb 12</td>
+<td>PRS staggered comb 12</td>
+<td>PRS staggered comb 12</td>
+<td>PRS staggered comb 12</td>
+<td>PRS staggered comb 12</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+<td>10.8dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td>1 symbol PRS with peak threasholding</td>
+<td>1 symbol PRS with peak threasholding</td>
+<td>1 symbol PRS with peak threasholding</td>
+<td>1 symbol PRS with peak threasholding</td>
+<td>1 symbol PRS with peak threasholding</td>
+<td>1 symbol PRS with peak threasholding</td>
+<td>1 symbol PRS with peak threasholding</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td>No thresholding</td>
+<td>Relative threshold 30dB</td>
+<td>Relative threshold 20dB</td>
+<td>Relative threshold 10dB</td>
+<td>Relative threshold 7dB</td>
+<td>Relative threshold 5dB</td>
+<td>Relative threshold 4dB</td>
+</tr>
+</tbody>
+</table>
+<p>Table C.2.1.10.1-1j: NR positioning enhancements - evaluation
+scenarios and parameters for SRS cyclic shifts</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>[21], source E54, Inf SH, FR1, DL TDOA&lt;</th>
+<th>[21], source E55, IOO, FR1, DL TDOA</th>
+<th>[21], source E56, IOO, FR1, DL TDOA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td>baseline</td>
+<td>baseline</td>
+<td>baseline</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>2GHz</td>
+<td>2GHz</td>
+<td>2GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>UL SRS comb 2</td>
+<td>UL SRS comb 2</td>
+<td>UL SRS comb 2</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>UL SRS</td>
+<td>UL SRS</td>
+<td>UL SRS</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>12</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>interference</td>
+<td>interference</td>
+<td>No interference</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+<td>UL TDOA</td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td>none</td>
+<td>Cyclic shifts enh., PAPR conservation</td>
+<td>Cyclic shifts enh. Cross corr improvement</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table C.2.1.10.1-1k: NR positioning enhancements - evaluation
+scenarios and parameters for PRS aggregation</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>[21], source E57, Inf DH, FR1, DL TDOA</th>
+<th>[21], source E58, Inf DH, FR1, DL TDOA</th>
+<th>[21], source E59, Inf DH, FR1, DL TDOA</th>
+<th>[21], source E60, Inf SH, FR1, DL TDOA</th>
+<th>[21], source E61, Inf SH, FR1, DL TDOA</th>
+<th>[21], source E62, Inf SH, FR1, DL TDOA</th>
+<th>[21], source E63, Inf SH, FR1, DL TDOA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td>Inf DH,</td>
+<td>Inf DH,</td>
+<td>Inf DH,</td>
+<td>Inf SH,</td>
+<td>Inf SH,</td>
+<td>Inf SH,</td>
+<td>Inf SH,</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+<td>PRS staggered comb 2</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+<td>DL PRS</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+<td>3dB</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+<td>ideal</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+<td>DL TDOA</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+<td>DL-TDOA</td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+<td>Ideal</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Evaluated Enhancement<br />
+for Rel.17</td>
+<td>PRS aggregation, 1CC</td>
+<td>PRS Agg, 2CC, no interf</td>
+<td>PRS agg, 2CC, interf</td>
+<td>PRS aggregation, 1CC</td>
+<td>PRS Agg, 2CC, no interf</td>
+<td>PRS agg, 2CC, interf</td>
+<td>PRS agg, 2CC, interf</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td></td>
+<td></td>
+<td>Max phase error =pi</td>
+<td></td>
+<td></td>
+<td>Max phase error =pi</td>
+<td>Max phase error =0.2pi</td>
+</tr>
+</tbody>
+</table>
+<h5
+id="c.2.1.10.2-positioning-accuracy-evaluation-results-for-nr-positioning-enhancements">C.2.1.10.2
+Positioning accuracy evaluation results for NR positioning
+enhancements</h5>
+<p>Evaluation results of horizontal location error for NR positioning
+enhancements are provided in Table C.2.1.10.2-1:</p>
+<p>Table C.2.1.10.2-1a: NR positioning enhancements - horizontal
+location error results from [21] for line of sight detection</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">[21], source E1, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.07m</td>
+<td>0.11m</td>
+<td>0.16m</td>
+<td>0.26m</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E2, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.09m</td>
+<td>0.18m</td>
+<td>1.9m</td>
+<td>8.4m</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E3, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>3.3m</td>
+<td>5.4m</td>
+<td>8.2m</td>
+<td>18m</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image16.png" style="width:3.3125in;height:2.68125in"
+alt="Chart Description automatically generated" /><img
+src="media/image17.png" style="width:3.25in;height:2.63056in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure C.2.1.10.2-1a: Comparison of DL TDOA performance for the
+InF-DH scenario with genie LOS detection [[21], source E1, Inf DH, FR1,
+DL TDOA], with LOS detection based on whether the first peak is also the
+strongest peak [[21], source E2, Inf DH, FR1, DL TDOA], and without LOS
+detection[[21], source E2, Inf DH, FR1, DL TDOA]. The figure to the
+right is zoomed in at small positioning errors.</p>
+<p>Table C.2.1.10.2-1c: NR positioning enhancements - horizontal
+location error results from [21] for timing error compensation</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">[21], source E10, InF SH FR2, UL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.007454</td>
+<td>0.011409</td>
+<td>0.017341</td>
+<td>0.031218</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E11 InF SH FR2, UL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.153485</td>
+<td>0.245942</td>
+<td>0.348854</td>
+<td>0.500084</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E12 InF SH FR2, UL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.300045</td>
+<td>0.48218</td>
+<td>0.7123</td>
+<td>0.989034</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E13 InF SH FR2, UL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.557293</td>
+<td>0.950828</td>
+<td>1.400275</td>
+<td>1.924776</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E14 InF SH FR2, UL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>1.162661</td>
+<td>1.947078</td>
+<td>2.761667</td>
+<td>3.848105</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E15 InF SH FR2, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.007943</td>
+<td>0.012145</td>
+<td>0.019341</td>
+<td>0.033648</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E16 InF SH FR2, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.140761</td>
+<td>0.239327</td>
+<td>0.346505</td>
+<td>0.501348</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E17 InF SH FR2, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.262914</td>
+<td>0.461862</td>
+<td>0.67501</td>
+<td>0.989885</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E18 InF SH FR2, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.547018</td>
+<td>0.951728</td>
+<td>1.378088</td>
+<td>1.98219</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E19 InF SH FR2, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>1.054968</td>
+<td>1.852011</td>
+<td>2.700799</td>
+<td>3.824875</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E20, InF SH FR2, UL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.008428</td>
+<td>0.012536</td>
+<td>0.019082</td>
+<td>0.034039</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E21 InF SH FR2, UL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.00793</td>
+<td>0.01199</td>
+<td>0.016988</td>
+<td>0.02989</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E22 InF SH FR2, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.008819</td>
+<td>0.013365</td>
+<td>0.019739</td>
+<td>0.037037</td>
+</tr>
+<tr>
+<td rowspan="3">[21], source E23 InF SH FR2, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.008404</td>
+<td>0.012772</td>
+<td>0.018612</td>
+<td>0.03662</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image18.png" style="width:4.50208in;height:3.68403in"
+alt="A close up of a map Description automatically generated" /></p>
+<p>Figure C.2.1.10.2-1b: UL TDOA positioning accuracy for dual UE
+antenna panels with a random TX timing error with a normal distribution
+with std  = 0 ([21], source E10, InF SH FR2, UL TDOA), 1 ([21], source
+E11, InF SH FR2, UL TDOA), 2 ([21], source E12, InF SH FR2, UL TDOA), 4
+([21], source E13, InF SH FR2, UL TDOA) and 8ns ([21], source E14, InF
+SH FR2, UL TDOA) truncated at 2 in the InF-SH scenario. A 2-symbol
+comb-2 UL SRS was used at 28GHz carrier, 120kHz subcarrier spacing and
+400MHz bandwidth.</p>
+<p><img src="media/image19.png" style="width:4.47361in;height:3.64444in"
+alt="A close up of a map Description automatically generated" /></p>
+<p>Figure C.2.1.10.2-1c: DL TDOA positioning accuracy for dual UE
+antenna panels with a random RX timing error with a normal distribution
+with std s = 0 ([21], source E15 InF SH FR2, DL TDOA), 1([21], source
+E16 InF SH FR2, DL TDOA), 2 ([21], source E17 InF SH FR2, DL TDOA), 4
+([21], source E18 InF SH FR2, DL TDOA) and 8ns ([21], source E19 InF SH
+FR2, DL TDOA) truncated at 2s in the InF-SH scenario. A 2-symbol comb-2
+DL PRS was used at 28GHz carrier, 120kHz subcarrier spacing and 400MHz
+bandwidth.</p>
+<p><img src="media/image20.png" style="width:4.91111in;height:4.00069in"
+alt="A close up of a map Description automatically generated" /></p>
+<p>Figure C.2.1.10.2-1d: UL TDOA positioning accuracy for dual UE
+antenna panels with a random TX timing error with a normal distribution
+with std  = 0ns and 8ns truncated at 2 in the InF-SH scenario. A
+2-symbol comb-2 UL SRS was used at 28GHz carrier, 120kHz subcarrier
+spacing and 400MHz bandwidth. Results are given both with ([21], source
+E22, InF SH FR2, UL TDOA for 0ns, [21], source E23, InF SH FR2, UL TDOA)
+and without with ([21], source E20, InF SH FR2, UL TDOA for 0ns, [21],
+source E22, InF SH FR2, UL TDOA) multi panel transmission (with multi
+panel transmission is denoted as ‘multi-tx’ in the figure).</p>
+<p><img src="media/image21.png" style="width:4.52847in;height:3.70486in"
+alt="A screenshot of a cell phone Description automatically generated" /></p>
+<p>Figure 9: DL TDOA positioning accuracy for dual UE antenna with a
+random TX timing error with a normal distribution with std  = 0, 1, 2,
+4 and 8ns truncated at 2 in the InF-dH scenario. A 2-symbol comb-2 DL
+PRS was used at 28GHz carrier, 120kHz subcarrierspacing and 400MHz
+bandwidth.</p>
+<p>Table C.2.1.10.2-1d: NR positioning enhancements - horizontal
+location error results from [21] for 1 symbol PRS</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">[21], source E29, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.134169</td>
+<td>0.209873</td>
+<td>0.332673</td>
+<td>0.615954</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E30, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.143561</td>
+<td>0.215242</td>
+<td>0.326055</td>
+<td>0.54665</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E31, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.157217</td>
+<td>0.232257</td>
+<td>0.358399</td>
+<td>0.681864</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E32, IOO, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.365266</td>
+<td>0.585002</td>
+<td>0.883262</td>
+<td>1.384617</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E33, IOO, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.369137</td>
+<td>0.591664</td>
+<td>0.901767</td>
+<td>1.404678</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E34, IOO, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.380713</td>
+<td>0.617761</td>
+<td>0.924331</td>
+<td>1.447296</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E35, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.133153</td>
+<td>0.207466</td>
+<td>0.338269</td>
+<td>0.629094</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E36, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.152067</td>
+<td>0.227031</td>
+<td>0.365366</td>
+<td>0.719702</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E37, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.146765</td>
+<td>0.227981</td>
+<td>0.345524</td>
+<td>0.642431</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E38, IOO, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.369406</td>
+<td>0.595909</td>
+<td>0.890289</td>
+<td>1.429679</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E39, IOO, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.370563</td>
+<td>0.579921</td>
+<td>0.89593</td>
+<td>1.512598</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E40, IOO, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.36838</td>
+<td>0.60413</td>
+<td>0.89382</td>
+<td>1.420364</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E41, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.132011</td>
+<td>0.209833</td>
+<td>0.33191</td>
+<td>0.614715</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E42, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.209148</td>
+<td>0.319092</td>
+<td>0.527592</td>
+<td>0.912933</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E43, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.134027</td>
+<td>0.206734</td>
+<td>0.336959</td>
+<td>0.616703</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E44, IOO, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.367821</td>
+<td>0.598939</td>
+<td>0.898759</td>
+<td>1.445729</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E45, IOO, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.38739</td>
+<td>0.619138</td>
+<td>1.032782</td>
+<td>1.732023</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E46, IOO, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.374937</td>
+<td>0.594308</td>
+<td>0.914879</td>
+<td>1.425011</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E47, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>3.175204</td>
+<td>5.128706</td>
+<td>7.670416</td>
+<td>15.736090</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E48, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>3.163860</td>
+<td>5.148267</td>
+<td>7.667818</td>
+<td>15.788375</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E49, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>3.170297</td>
+<td>5.214206</td>
+<td>7.922149</td>
+<td>16.022874</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E50, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>3.558847</td>
+<td>5.525303</td>
+<td>8.616365</td>
+<td>16.984019</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E51, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>3.813672</td>
+<td>6.093375</td>
+<td>9.361212</td>
+<td>17.412632</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E52, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>4.178469</td>
+<td>6.653492</td>
+<td>10.148000</td>
+<td>19.787138</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E53, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>4.531061</td>
+<td>7.078220</td>
+<td>10.973041</td>
+<td>22.610367</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image22.png" style="width:3.14931in;height:2.36181in"
+alt="Table Description automatically generated" /> <img
+src="media/image23.png" style="width:3.14931in;height:2.36181in"
+alt="A picture containing table Description automatically generated" /></p>
+<p><img src="media/image24.png" style="width:3.14931in;height:2.36181in"
+alt="Table Description automatically generated" /> <img
+src="media/image25.png" style="width:3.14931in;height:2.36181in"
+alt="A picture containing chart Description automatically generated" /></p>
+<p><img src="media/image26.png" style="width:3.14931in;height:2.36181in"
+alt="Table Description automatically generated" /> <img
+src="media/image27.png" style="width:3.14931in;height:2.36181in"
+alt="A picture containing diagram Description automatically generated" /></p>
+<p>Figure C.2.1.10.2-1e: Evaluation results for 1-symbol DL PRS compared
+to Rel. 16 DL PRS ([21], source E29-46)</p>
+<p><img src="media/image28.png" style="width:6.69375in;height:5.03333in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure C.2.1.10.2-1f: ([21], source E47-53)</p>
+<p>Table C.2.1.10.2-1e: NR positioning enhancements - horizontal
+location error results from [21] for SRS CS enhancements</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">[21], source E54, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.3</td>
+<td>.076</td>
+<td>1.02</td>
+<td>2.52</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E55, IOO, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.3</td>
+<td>0.76</td>
+<td>1.24</td>
+<td>3.04</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E56, IOO, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.8</td>
+<td>1.96</td>
+<td>8.57</td>
+<td>16.02</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image29.png" style="width:4.52431in;height:3.39028in"
+alt="A close up of a map Description automatically generated" /></p>
+<p>Figure C.2.1.10.2-1g: ([21], source E54 -56) Performance of release
+16 SRS for positioning baseline (yellow curve) and proposed enhancements
+to the cyclic shift implementation (blue curve) and to the ZC sequence
+length (red line)</p>
+<p>Table C.2.1.10.2-1f: NR positioning enhancements - horizontal
+location error results from [21] for PRS aggregation</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">[21], source E57, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>3.091467</td>
+<td>5.167042</td>
+<td>7.670441</td>
+<td>15.00989</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E58, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>2.829843</td>
+<td>4.715137</td>
+<td>7.400995</td>
+<td>13.91966</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E59, Inf DH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>3.349368</td>
+<td>5.183635</td>
+<td>7.605808</td>
+<td>15.01508</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E60, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.057696</td>
+<td>0.089176</td>
+<td>0.136153</td>
+<td>0.259396</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E61, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.019322</td>
+<td>0.027955</td>
+<td>0.042136</td>
+<td>0.079559</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E62, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.097234</td>
+<td>0.12627</td>
+<td>0.174131</td>
+<td>0.275798</td>
+</tr>
+<tr>
+<td rowspan="2">[21], source E63, Inf SH, FR1, DL TDOA</td>
+<td>Convex UEs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Optional) All UEs</td>
+<td>0.516435</td>
+<td>0.701014</td>
+<td>0.973997</td>
+<td>1.447441</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image30.png" style="width:5.07639in;height:4.07153in"
+alt="Chart Description automatically generated" /></p>
+<p>Figure C.2.1.10.2-1h: ([21], source E57-59) (Comparison of DL TDOA
+positioning accuracy for two perfectly coherent 100MGHz carriers with a
+single 100MHz carrier. In addition the accuracy is given for the case
+when the UE tries to combine two 100MGHz carriers coherently but the two
+carriers are in fact incoherent</p>
+<p><img src="media/image31.png" style="width:4.93125in;height:3.92431in"
+alt="A picture containing table Description automatically generated" /></p>
+<p>Figure C.2.1.10.2-1i: ([21], source E60-63) Comparison of DL TDOA
+positioning accuracy for a single 100MHz carrier with two 100MGHz
+carriers with a phase difference which is a homogenously random number
+in the interval (-max_phase_difference, + max_phase_difference) for
+different values of max_phase_difference. Thus max_phase_difference=pi
+corresponds to fully incoherent carriers while max_phase_difference=0
+corresponds to fully coherent carriers.</p>
+<h4 id="c.2.1.11-results-from-17">C.2.1.11 Results from [17]</h4>
+<h5 id="c.2.1.11.1-description-of-evaluation-scenarios">C.2.1.11.1
+Description of evaluation scenarios</h5>
+<p>Evaluation assumptions for system level analysis of NR positioning
+accuracy enhancements are provided in Table C.2.1.1.11-1.</p>
+<p>Table C.2.1.1.11-1: NR positioning enhancements - evaluation
+scenarios and parameters</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 0%" />
+<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">Parameter</th>
+<th>Case 22, InH, FR1, 100+100 MHz, No Frequency gap, Phase Offset, Link
+Quality, DL-TDOA</th>
+<th>Case 23, InH, FR1, 100+100+100+100 MHz, No Frequency gap, Phase
+Offset, Link Quality, DL-TDOA</th>
+<th>Case 24, InH, FR1, 100+100 MHz, Variable channel gap, RANSAC</th>
+<th>Case 25, UMI, FR1, 100+100 MHz, No Frequency gap, Phase Offset,
+RANSAC</th>
+<th>Case 26, UMI, FR1, 100+100 MHz, No Frequency gap, Time Offset,
+RANSAC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td colspan="6">Baseline Channel Model based on common assumptions
+defined related to the channel models of 3GPP TRs 38.901 / 38.802 /
+37.857.</td>
+</tr>
+<tr>
+<td colspan="2">Carrier frequency</td>
+<td>4 GHz</td>
+<td>4 GHz</td>
+<td>4 GHz</td>
+<td>4 GHz</td>
+<td>4 GHz</td>
+</tr>
+<tr>
+<td colspan="2">Subcarrier spacing</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+</tr>
+<tr>
+<td colspan="2">Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td colspan="2">Reference Signal Physical Structure and Resource
+Allocation (RE pattern) (reference to figure in contribution)</td>
+<td>Comb6</td>
+<td>Comb6</td>
+<td>Comb6</td>
+<td>Comb6</td>
+<td>Comb6</td>
+</tr>
+<tr>
+<td colspan="2"><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+</tr>
+<tr>
+<td colspan="2">Number of sites</td>
+<td>19(3-sector)</td>
+<td>19(3-sector)</td>
+<td>19(3-sector)</td>
+<td>19(3-sector)</td>
+<td>19(3-sector)</td>
+</tr>
+<tr>
+<td colspan="2">Number of symbols used per occasion</td>
+<td>48</td>
+<td>48</td>
+<td>48</td>
+<td>48</td>
+<td>48</td>
+</tr>
+<tr>
+<td colspan="2">number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td colspan="2">Power-boosting level</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="2">Uplink power control (applied/not applied)</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td colspan="2">interference modelling (ideal muting, or other)</td>
+<td>Ideal Muting</td>
+<td>Ideal Muting</td>
+<td>Ideal Muting</td>
+<td>Ideal Muting</td>
+<td>Ideal Muting</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td colspan="6">TOA estimation with TOA pruning, before the positioning
+engine using the ratio of the estimated TOA peak over the median of the
+Channel Energy Response (CER).</td>
+</tr>
+<tr>
+<td colspan="2">Description of positioning technique / applied
+positioning algorithm (e.g. Least square, Taylor series, etc)</td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.</p></td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.</p></td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.</p></td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates..</p></td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates</p></td>
+</tr>
+<tr>
+<td colspan="2">Network synchronization assumptions</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+</tr>
+<tr>
+<td colspan="2">UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>No calibration error</td>
+<td>No calibration error</td>
+<td>No calibration error</td>
+<td>NO calibration error</td>
+<td>NO calibration error</td>
+</tr>
+<tr>
+<td colspan="2">Beam-related assumption (beam sweeping / alignment
+assumptions at the tx and rx sides)</td>
+<td>In the earliest beam pair, scheme, the Tx and Rx beam pair are
+identified based on the criteria of receiving the earliest path given
+that the received power is larger than a threshold using the genie CDL
+channel profiles per TRP.</td>
+<td>In the earliest beam pair, scheme, the Tx and Rx beam pair are
+identified based on the criteria of receiving the earliest path given
+that the received power is larger than a threshold using the genie CDL
+channel profiles per TRP.</td>
+<td>In the earliest beam pair is identified based on the criteria of
+receiving the earliest path given that the received power is larger than
+a threshold using the genie CDL channel profiles.</td>
+<td>In the earliest beam pair, scheme, the Tx and Rx beam pair are
+identified based on the criteria of receiving the earliest path given
+that the received power is larger than a threshold using the genie CDL
+channel profiles per TRP.</td>
+<td>In the earliest beam pair, scheme, the Tx and Rx beam pair are
+identified based on the criteria of receiving the earliest path given
+that the received power is larger than a threshold using the genie CDL
+channel profiles per TRP.</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td colspan="6">Single port wideband Hadamar precoder</td>
+</tr>
+<tr>
+<td colspan="2">Additional notes, if any</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 0%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 20%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">Parameter</th>
+<th>Case 27, InF FR1 DH ISD20, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 1.8MHz Gap</th>
+<th>Case 27, InF FR1 DH ISD20, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 100 MHz Gap</th>
+<th>Case 27, InF FR1 SH ISD50, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 1.8MHz Gap</th>
+<th>Case 27, InF FR1 SH ISD50, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 100MHz Gap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td colspan="5">Baseline Channel Model based on common assumptions
+defined related to the channel models of 3GPP TRs 38.901 / 38.802 /
+37.857.</td>
+</tr>
+<tr>
+<td colspan="2">Carrier frequency</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+<td>3.5GHz</td>
+</tr>
+<tr>
+<td colspan="2">Subcarrier spacing</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+</tr>
+<tr>
+<td colspan="2">Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td colspan="2">Reference Signal Physical Structure and Resource
+Allocation (RE pattern) (reference to figure in contribution)</td>
+<td>Comb6</td>
+<td>Comb6</td>
+<td>Comb6</td>
+<td>Comb6</td>
+</tr>
+<tr>
+<td colspan="2"><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+</tr>
+<tr>
+<td colspan="2">Number of sites</td>
+<td>18(1-sector)</td>
+<td>18(1-sector)</td>
+<td>18(1-sector)</td>
+<td>18(1-sector)</td>
+</tr>
+<tr>
+<td colspan="2">Number of symbols used per occasion</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+</tr>
+<tr>
+<td colspan="2">number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td colspan="2">Power-boosting level</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="2">Uplink power control (applied/not applied)</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td colspan="2">interference modelling (ideal muting, or other)</td>
+<td>Ideal Muting</td>
+<td>Ideal muting</td>
+<td>Ideal Muting</td>
+<td>Ideal muting</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td colspan="5">TOA estimation with TOA pruning, before the positioning
+engine using the ratio of the estimated TOA peak over the median of the
+Channel Energy Response (CER).</td>
+</tr>
+<tr>
+<td colspan="2">Description of positioning technique / applied
+positioning algorithm (e.g. Least square, Taylor series, etc)</td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.</p></td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.</p></td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.</p></td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates..</p></td>
+</tr>
+<tr>
+<td colspan="2">Network synchronization assumptions</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+</tr>
+<tr>
+<td colspan="2">UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>No calibration error</td>
+<td>No calibration error</td>
+<td>No calibration error</td>
+<td>NO calibration error</td>
+</tr>
+<tr>
+<td colspan="2">Beam-related assumption (beam sweeping / alignment
+assumptions at the tx and rx sides)</td>
+<td>In the earliest beam pair, scheme, the Tx and Rx beam pair are
+identified based on the criteria of receiving the earliest path given
+that the received power is larger than a threshold using the genie CDL
+channel profiles per TRP.</td>
+<td>In the earliest beam pair, scheme, the Tx and Rx beam pair are
+identified based on the criteria of receiving the earliest path given
+that the received power is larger than a threshold using the genie CDL
+channel profiles per TRP.</td>
+<td>In the earliest beam pair is identified based on the criteria of
+receiving the earliest path given that the received power is larger than
+a threshold using the genie CDL channel profiles.</td>
+<td>In the earliest beam pair, scheme, the Tx and Rx beam pair are
+identified based on the criteria of receiving the earliest path given
+that the received power is larger than a threshold using the genie CDL
+channel profiles per TRP.</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td colspan="5"><p>Kronecker product between vertical and horizontal
+weight vectors taken from DFT, with oversampling factor r. The DFT beam
+candidate in beam selection method is generated according to the uniform
+vertical and horizontal angular distribution shown as follows:</p>
+<p><img src="media/image32.svg" />, for i=1,…,rN</p>
+<p>where r denotes the oversampling factor, N denotes the number of
+vertical/horizontal antennas. For FR2, Tx oversampling factor r equals
+to 1 and Rx oversampling factor equals to 1.</p></td>
+</tr>
+<tr>
+<td colspan="2">Additional notes, if any</td>
+<td>This case is simulated with phase shifts between the two aggregated
+CCs assumed to be 0, 45, 90 degrees</td>
+<td>This case is simulated with phase shifts between the two aggregated
+CCs assumed to be 0, 45, 90 degrees</td>
+<td>This case is simulated with phase shifts between the two aggregated
+CCs assumed to be 0, 45, 90 degrees</td>
+<td>This case is simulated with phase shifts between the two aggregated
+CCs assumed to be 0, 45, 90 degrees</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 14%" />
+<col style="width: 15%" />
+<col style="width: 13%" />
+<col style="width: 14%" />
+<col style="width: 0%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Case 28, InF-SH, FR2, DL-TDOA</th>
+<th>Case 29, InF-DH, FR2, DL-TDOA</th>
+<th>Case 30, UMi, FR2, DL-TDOA</th>
+<th>Case 31, InH, FR2, DL-TDOA</th>
+<th colspan="2">Case 32, UMi, FR2, DL-TDOA</th>
+<th>ase 33, InH, FR2, DL-TDOA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td colspan="7">Baseline Channel Model based on common assumptions
+defined related to the channel models of 3GPP TRs 38.901 / 38.802 /
+37.857.</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>28GHz</td>
+<td>28GHz</td>
+<td>30GHz</td>
+<td>30GHz</td>
+<td colspan="2">30GHz</td>
+<td>30GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td>120KHz</td>
+<td>120KHz</td>
+<td>120KHz</td>
+<td>120KHz</td>
+<td colspan="2">120KHz</td>
+<td>120KHz</td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td colspan="2">400MHz</td>
+<td>400MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>Comb2</td>
+<td>Comb2</td>
+<td>Comb2</td>
+<td>Comb2</td>
+<td colspan="2">Comb2</td>
+<td>Comb2</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+<td colspan="2">DL-PRS</td>
+<td>DL-PRS</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18(3-sector)</td>
+<td>18(3-sector)</td>
+<td>19(3-sector)</td>
+<td>12(3-sector)</td>
+<td colspan="2">19(3-sector)</td>
+<td>12(3-sector)</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>54(2 FDMed PRS symbols with two TRPs )</td>
+<td>54(2 FDMed PRS symbols with two TRPs )</td>
+<td>58(2 FDMed PRS symbols with two TRPs )</td>
+<td>36(2 FDMed PRS symbols with two TRPs)</td>
+<td colspan="2">58(2 FDMed PRS symbols with two TRPs )</td>
+<td>36(2 FDMed PRS symbols with two TRPs)</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td colspan="2">1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td colspan="2">0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td colspan="2">NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>Ideal Muting</td>
+<td>Ideal Muting</td>
+<td>Ideal Muting</td>
+<td>Ideal Muting</td>
+<td colspan="2">Ideal Muting</td>
+<td>Ideal Muting</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td colspan="7">TOA estimation with TOA pruning, before the positioning
+engine using the ratio of the estimated TOA peak over the median of the
+Channel Energy Response (CER).</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td colspan="5"><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p></td>
+<td colspan="2"><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.</p></td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td colspan="2">Perfect Sync</td>
+<td>Perfect Sync</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td colspan="7">NA</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td colspan="7"><p>For a 3-sector scenario, the directions of beams are
+within [-60, 60] degrees in azimuth and [60,180] degrees in zenith.</p>
+<p>In the earliest beam pair, scheme, the Tx and Rx beam pair are
+identified based on the criteria of receiving the earliest path given
+that the received power is larger than a threshold using the genie CDL
+channel profiles per TRP.</p></td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td colspan="7"><p>Kronecker product between vertical and horizontal
+weight vectors taken from DFT, with oversampling factor r. The DFT beam
+candidate in beam selection method is generated according to the uniform
+vertical and horizontal angular distribution shown as follows:</p>
+<p><img src="media/image32.svg" />, for i=1,…,rN</p>
+<p>where r denotes the oversampling factor, N denotes the number of
+vertical/horizontal antennas. For FR2, Tx oversampling factor r equals
+to 1 and Rx oversampling factor equals to 1.</p></td>
+</tr>
+<tr>
+<td>PRS Frequency Domain stitching</td>
+<td>2X200MHz Continuous PFLs</td>
+<td>2X200MHz Continuous PFLs</td>
+<td>2X200MHz Continuous PFLs</td>
+<td>2X200MHz Continuous PFLs</td>
+<td colspan="2">2X200MHz Continuous PFLs</td>
+<td>2X200MHz Continuous PFLs</td>
+</tr>
+<tr>
+<td>Phase Shift</td>
+<td colspan="4">Randomly select a phase shift value within <span
+class="math inline">\(\lbrack - \theta,\theta\rbrack\)</span> and apply
+the phase shift on the second PFL per PRS, <span
+class="math inline">\(\theta = \ \lbrack 0,10,\ 20,\
+40,60,80\rbrack\)</span></td>
+<td colspan="2">NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Phase Ramp(Time offset)</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td colspan="3">Randomly select a time offset value within <span
+class="math inline">\(\lbrack - t,t\rbrack\)</span> and convert the time
+offset as a phase ramp offset on second PFL per PRS, <span
+class="math inline">\(t = \ \lbrack 0,0.1,\ 0.5,\ 1,\ 5,\ 10,20\rbrack
+ns\)</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Kinematic constraint aware positioning – FR2 simulation assumptions
+and setup</th>
+<th><p>Case 34, InF-SH, FR2,</p>
+<p>DL-TDOA</p></th>
+<th><p>Case 35, InF-DH, FR2,</p>
+<p>DL-TDOA</p></th>
+<th><p>Case 36, InH, FR2,</p>
+<p>DL-TDOA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td colspan="3">Baseline Channel Model based on common assumptions
+defined related to the channel models of 3GPP TRs 38.901 / 38.802 /
+37.857.</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td>28GHz</td>
+<td>28GHz</td>
+<td>30GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td>120KHz</td>
+<td>120KHz</td>
+<td>120KHz</td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td>400MHz</td>
+<td>400MHz</td>
+<td>400MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td>Comb2</td>
+<td>Comb2</td>
+<td>Comb2</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td>18(3-sector)</td>
+<td>18(3-sector)</td>
+<td>12(3-sector)</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>54 (2 FDMed PRS symbols with two TRPs )</td>
+<td>54 (2 FDMed PRS symbols with two TRPs )</td>
+<td>36 (2 FDMed PRS symbols with two TRPs )</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>Ideal Muting</td>
+<td>Ideal Muting</td>
+<td>Ideal Muting</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td colspan="3">TOA estimation with TOA pruning, before the positioning
+engine using the ratio of the estimated TOA peak over the median of the
+Channel Energy Response (CER).</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td colspan="3"><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.</p></td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td colspan="3">NA</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td colspan="3"><p>For a 3-sector scenario, the directions of beams are
+within [-60, 60] degrees in azimuth and [60,180] degrees in zenith.</p>
+<p>In the earliest beam pair, scheme, the Tx and Rx beam pair are
+identified based on the criteria of receiving the earliest path given
+that the received power is larger than a threshold using the genie CDL
+channel profiles per TRP.</p></td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td colspan="3"><p>Kronecker product between vertical and horizontal
+weight vectors taken from DFT, with oversampling factor r. The DFT beam
+candidate in beam selection method is generated according to the uniform
+vertical and horizontal angular distribution shown as follows:</p>
+<p><img src="media/image32.svg" />, for i=1,…,rN</p>
+<p>where r denotes the oversampling factor, N denotes the number of
+vertical/horizontal antennas. For FR2, Tx oversampling factor r equals
+to 1 and Rx oversampling factor equals to 1.</p></td>
+</tr>
+<tr>
+<td>Kinematic Constraint awareness</td>
+<td colspan="3"><p>In scenario 1, the node computing the position knows
+the value of one of the coordinates, and only computes the other one.
+This is denoted in the figure legends as ‘D unknown in estimation and
+RMS calculation’ (where D=X or Y, depending on which coordinate is
+unknown).</p>
+<p>In scenario 2, the node computing the position has no side
+information and computes both X and Y. However, the LCS client, i.e.,
+the consumer of the computed (X,Y) position, knows the value of one of
+the coordinates, and thus ignores that one and uses only the other
+one.</p></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 0%" />
+<col style="width: 25%" />
+<col style="width: 23%" />
+<col style="width: 30%" />
+<col style="width: 2%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">Parameter</th>
+<th>Case 37, UMI with <span
+class="math inline">\(\mathbf{\Delta}\mathbf{\tau}\)</span>, FR1,
+RTT+AoA</th>
+<th>Case 38, UMI with <span
+class="math inline">\(\mathbf{\Delta}\mathbf{\tau}\)</span>, FR1,
+DL-TDOA</th>
+<th>Case 39, UMI with <span
+class="math inline">\(\mathbf{\Delta}\mathbf{\tau}\)</span>, FR1,
+RTT</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td colspan="5">Baseline Channel Model based on common assumptions
+defined related to the channel models of 3GPP TRs 38.901 / 38.802 /
+37.857.</td>
+</tr>
+<tr>
+<td colspan="2">Carrier frequency</td>
+<td>4 GHz</td>
+<td>4 GHz</td>
+<td>4 GHz</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">Subcarrier spacing</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td>30KHz</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td>100MHz</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">Reference Signal Physical Structure and Resource
+Allocation (RE pattern) (reference to figure in contribution)</td>
+<td>Comb6</td>
+<td>Comb6</td>
+<td>Comb6</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2"><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+<td>DL-PRS</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">Number of sites</td>
+<td>19(3-sector)</td>
+<td>19(3-sector)</td>
+<td>19(3-sector)</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">Number of symbols used per occasion</td>
+<td>48</td>
+<td>48</td>
+<td>48</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">Power-boosting level</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">Uplink power control (applied/not applied)</td>
+<td>NO</td>
+<td>NA</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">interference modelling (ideal muting, or other)</td>
+<td>Ideal Muting</td>
+<td>Ideal muting</td>
+<td>Ideal Muting</td>
+<td></td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td colspan="5">TOA estimation with TOA pruning, before the positioning
+engine using the ratio of the estimated TOA peak over the median of the
+Channel Energy Response (CER).</td>
+</tr>
+<tr>
+<td colspan="2">Description of positioning technique / applied
+positioning algorithm (e.g. Least square, Taylor series, etc)</td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.</p></td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.</p></td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.</p></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">Network synchronization assumptions</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>No calibration error</td>
+<td>No calibration error</td>
+<td>No calibration error</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">Beam-related assumption (beam sweeping / alignment
+assumptions at the tx and rx sides)</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td></td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td colspan="5">Single port wideband Hadamar precoder</td>
+</tr>
+<tr>
+<td colspan="2">Additional notes, if any</td>
+<td colspan="4"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 0%" />
+<col style="width: 82%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">Parameter</th>
+<th>Case 40, InF-DH, FR1, DL-TDOA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td colspan="2">Baseline Channel Model based on common assumptions
+defined related to the channel models of 3GPP TRs 38.901 / 38.802 /
+37.857.</td>
+</tr>
+<tr>
+<td colspan="2">Carrier frequency</td>
+<td>3.5GHz</td>
+</tr>
+<tr>
+<td colspan="2">Subcarrier spacing</td>
+<td>30KHz</td>
+</tr>
+<tr>
+<td colspan="2">Reference Signal Transmission Bandwidth</td>
+<td>100MHz</td>
+</tr>
+<tr>
+<td colspan="2">Reference Signal Physical Structure and Resource
+Allocation (RE pattern) (reference to figure in contribution)</td>
+<td>Comb6</td>
+</tr>
+<tr>
+<td colspan="2"><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td>DL-PRS</td>
+</tr>
+<tr>
+<td colspan="2">Number of sites</td>
+<td>18(1-sector)</td>
+</tr>
+<tr>
+<td colspan="2">Number of symbols used per occasion</td>
+<td>18</td>
+</tr>
+<tr>
+<td colspan="2">number of occasions used per positioning estimate</td>
+<td>1</td>
+</tr>
+<tr>
+<td colspan="2">Power-boosting level</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="2">Uplink power control (applied/not applied)</td>
+<td>NA</td>
+</tr>
+<tr>
+<td colspan="2">interference modelling (ideal muting, or other)</td>
+<td>Ideal Muting</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td colspan="2"><p>Case 40-A: TOA estimation with TOA pruning, before
+the positioning engine using the ratio of the estimated TOA peak over
+the median of the Channel Energy Response (CER).</p>
+<p>Case 40-B: Matrix pencil algorithm for TOA Estimation</p></td>
+</tr>
+<tr>
+<td colspan="2">Description of positioning technique / applied
+positioning algorithm (e.g. Least square, Taylor series, etc)</td>
+<td><p>TDOA: Chan's Algorithm according to:</p>
+<p>Y. T. Chan, K. C. Ho, " A Simple and Efficient Estimator for
+Hyperbolic Location", IEEE Transactions on Signal Processing, vol. 42,
+pp. 1905-1915, Aug. 1994.</p>
+<p>Outlier Rejection: RANSAC according to:</p>
+<p>https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.</p></td>
+</tr>
+<tr>
+<td colspan="2">Network synchronization assumptions</td>
+<td>Perfect Sync</td>
+</tr>
+<tr>
+<td colspan="2">UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>No calibration error</td>
+</tr>
+<tr>
+<td colspan="2">Beam-related assumption (beam sweeping / alignment
+assumptions at the tx and rx sides)</td>
+<td>In the earliest beam pair, scheme, the Tx and Rx beam pair are
+identified based on the criteria of receiving the earliest path given
+that the received power is larger than a threshold using the genie CDL
+channel profiles per TRP.</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td colspan="2"><p>Kronecker product between vertical and horizontal
+weight vectors taken from DFT, with oversampling factor r. The DFT beam
+candidate in beam selection method is generated according to the uniform
+vertical and horizontal angular distribution shown as follows:</p>
+<p><img src="media/image32.svg" />, for i=1,…,rN</p>
+<p>where r denotes the oversampling factor, N denotes the number of
+vertical/horizontal antennas. For FR2, Tx oversampling factor r equals
+to 1 and Rx oversampling factor equals to 1.</p></td>
+</tr>
+<tr>
+<td colspan="2">Additional notes, if any</td>
+<td>All gNB’s are at height 8m and All UEs are at height 1.5m</td>
+</tr>
+</tbody>
+</table>
+<h5
+id="c.2.1.11.2-positioning-accuracy-evaluation-results-for-nr-positioning-enhancements">C.2.1.11.2
+Positioning accuracy evaluation results for NR positioning
+enhancements</h5>
+<p>Evaluation results of horizontal location error for NR positioning
+enhancements are provided in Table C.2.1.11.2-1:</p>
+<p>Table C.2.1.11.2-1: NR positioning enhancements - horizontal location
+error results</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 22, InH, FR1, Phase offset = 0 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.3</td>
+<td>0.8</td>
+<td>1</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>Case 22, InH, FR1, Phase offset = 2 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.3</td>
+<td>0.8</td>
+<td>1</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>Case 22, InH, FR1, Phase offset = 4 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.3</td>
+<td>0.8</td>
+<td>1</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>Case 22, InH, FR1, Phase offset = 8 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.4</td>
+<td>1.1</td>
+<td>1.4</td>
+<td>2.5</td>
+</tr>
+<tr>
+<td>Case 22, InH, FR1, Phase offset = 10 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.5</td>
+<td>1.2</td>
+<td>1.4</td>
+<td>2.5</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 23, InH, FR1, Phase offset = 0 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.12</td>
+<td>0.3</td>
+<td>0.5</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>Case 23, InH, FR1, Phase offset = 4 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.15</td>
+<td>0.35</td>
+<td>0.9</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Case 23, InH, FR1, Phase offset = 8 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.2</td>
+<td>0.4</td>
+<td>1.1</td>
+<td>2.4</td>
+</tr>
+<tr>
+<td>Case 23, InH, FR1, Phase offset = 10 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.4</td>
+<td>1</td>
+<td>1.2</td>
+<td>2.5</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 24, InH, FR1, Channel Spacing = 0 MHz, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.35</td>
+<td>0.8</td>
+<td>1.5</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Case 24, InH, FR1, Channel Spacing = 7.2 MHz, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.4</td>
+<td>0.9</td>
+<td>1.7</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Case 24, InH, FR1, Channel Spacing = 14.4 MHz, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.5</td>
+<td>1.8</td>
+<td>2.3</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Case 24, InH, FR1, Channel Spacing = 36 MHz, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.8</td>
+<td>1.9</td>
+<td>2.8</td>
+<td>5.5</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 25, UMI, FR1,Phase offset = 0 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.37 m</td>
+<td>0.5 m</td>
+<td>0.6 m</td>
+<td>1 m</td>
+</tr>
+<tr>
+<td>Case 25, UMI, FR1,Phase offset = 4 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.37 m</td>
+<td>0.5 m</td>
+<td>0.7 m</td>
+<td>1.2 m</td>
+</tr>
+<tr>
+<td>Case 25, UMI, FR1,Phase offset = 8 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.4 m</td>
+<td>0.55 m</td>
+<td>0.7 m</td>
+<td>1.5 m</td>
+</tr>
+<tr>
+<td>Case 25, UMI, FR1,Phase offset = 12 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.5 m</td>
+<td>0.7 m</td>
+<td>1.2 m</td>
+<td>2.2 m</td>
+</tr>
+<tr>
+<td>Case 25, UMI, FR1,Phase offset = 18 degrees, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.6 m</td>
+<td>1 m</td>
+<td>1.8 m</td>
+<td>4 m</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 26, UMI, FR1,Time offset = 0 ns, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.37 m</td>
+<td>0.5 m</td>
+<td>0.6 m</td>
+<td>1 m</td>
+</tr>
+<tr>
+<td>Case 26, UMI, FR1,Time offset = 0.5 ns, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.38 m</td>
+<td>0.52 m</td>
+<td>0.7 m</td>
+<td>1 m</td>
+</tr>
+<tr>
+<td>Case 26, UMI, FR1,Time offset = 1 ns, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.38 m</td>
+<td>0.55 m</td>
+<td>0.7m</td>
+<td>1 m</td>
+</tr>
+<tr>
+<td>Case 26, UMI, FR1,Time offset = 2 ns, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.4 m</td>
+<td>0.58 m</td>
+<td>0.6 m</td>
+<td>1.5 m</td>
+</tr>
+<tr>
+<td>Case 26, UMI, FR1,Time offset = 5 ns, Frequency-domain
+Stitching</td>
+<td>(Optional) All UEs</td>
+<td>0.5 m</td>
+<td>0.8 m</td>
+<td>1 m</td>
+<td>1.5 m</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 20%" />
+<col style="width: 17%" />
+<col style="width: 14%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 27, InF FR1 DH ISD20, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 1.8MHz Gap, Phase Offset = 0</td>
+<td>0.117m</td>
+<td>4.9m</td>
+<td>13.2m</td>
+<td>24.4m</td>
+</tr>
+<tr>
+<td>Case 27, InF FR1 DH ISD20, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 1.8MHz Gap, Phase Offset = 45</td>
+<td>0.108m</td>
+<td>5.3m</td>
+<td>13.3m</td>
+<td>25.6m</td>
+</tr>
+<tr>
+<td>Case 27, InF FR1 DH ISD20, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 1.8MHz Gap, Phase Offset = 90</td>
+<td>0.126m</td>
+<td>6.09m</td>
+<td>13.8m</td>
+<td>25.5m</td>
+</tr>
+<tr>
+<td>Case 27, InF FR1 DH ISD20, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 100MHz Gap, Phase Offset = 0</td>
+<td>0.067m</td>
+<td>4.47m</td>
+<td>14.26m</td>
+<td>25.7m</td>
+</tr>
+<tr>
+<td>Case 27, InF FR1 DH ISD20, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 100MHz Gap, Phase Offset = 45</td>
+<td>0.09m</td>
+<td>3.79m</td>
+<td>13.1m</td>
+<td>25.46m</td>
+</tr>
+<tr>
+<td>Case 27, InF FR1 DH ISD20, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 100MHz Gap, Phase Offset = 90</td>
+<td>1.04m</td>
+<td>7.02m</td>
+<td>15.1m</td>
+<td>28.9m</td>
+</tr>
+<tr>
+<td>Case 27, InF FR1 SH ISD50, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 1.8MHz Gap, Phase Offset = 0</td>
+<td>0.04m</td>
+<td>0.07m</td>
+<td>0.17m</td>
+<td>3.4m</td>
+</tr>
+<tr>
+<td>Case 27, InF FR1 SH ISD50, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 1.8MHz Gap, Phase Offset = 45</td>
+<td>0.04m</td>
+<td>0.07m</td>
+<td>0.17m</td>
+<td>2.9m</td>
+</tr>
+<tr>
+<td>Case 27, InF FR1 SH ISD50, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 1.8MHz Gap, Phase Offset = 90</td>
+<td>0.04m</td>
+<td>0.08m</td>
+<td>0.22m</td>
+<td>3.4m</td>
+</tr>
+<tr>
+<td>Case 27, InF FR1 SH ISD50, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 100MHz Gap, Phase Offset = 0</td>
+<td>0.02m</td>
+<td>0.06m</td>
+<td>0.14m</td>
+<td>4.25m</td>
+</tr>
+<tr>
+<td>Case 27, InF FR1 SH ISD50, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 100MHz Gap, Phase Offset = 45</td>
+<td>0.03m</td>
+<td>0.06m</td>
+<td>0.21m</td>
+<td>4.26m</td>
+</tr>
+<tr>
+<td>Case 27, InF FR1 SH ISD50, Link Quality, Freq. Agg. Of two 100MHz
+CCs with 100MHz Gap, Phase Offset = 90</td>
+<td>0.03m</td>
+<td>0.06m</td>
+<td>0.83m</td>
+<td>4.43m</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 18%" />
+<col style="width: 15%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th> Case ID</th>
+<th><p>Phase Shift</p>
+<p><span class="math display">\[\theta\]</span></p></th>
+<th><p>Time offset</p>
+<p>t</p></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="6">Case 28 InF-SH, FR2, DL-TDOA, LQ-based</td>
+<td>0</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>0.03</td>
+<td>0.14</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>0.03</td>
+<td>0.15</td>
+</tr>
+<tr>
+<td>20</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>0.03</td>
+<td>0.12</td>
+</tr>
+<tr>
+<td>40</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>0.02</td>
+<td>0.08</td>
+<td>1.37</td>
+</tr>
+<tr>
+<td>60</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>0.02</td>
+<td>0.18</td>
+<td>1.14</td>
+</tr>
+<tr>
+<td>80</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>0.02</td>
+<td>0.07</td>
+<td>0.96</td>
+</tr>
+<tr>
+<td rowspan="6">Case 29 InF-DH, FR2, DL-TDOA, LQ-based</td>
+<td>0</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>2.72</td>
+<td>12.41</td>
+<td>28.39</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>2.82</td>
+<td>12.43</td>
+<td>29.53</td>
+</tr>
+<tr>
+<td>20</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>2.82</td>
+<td>12.41</td>
+<td>28.39</td>
+</tr>
+<tr>
+<td>40</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>2.88</td>
+<td>12.42</td>
+<td>28.33</td>
+</tr>
+<tr>
+<td>60</td>
+<td>0.0ns</td>
+<td>0.02</td>
+<td>3.95</td>
+<td>13.62</td>
+<td>30.92</td>
+</tr>
+<tr>
+<td>80</td>
+<td>0.0ns</td>
+<td>0.02</td>
+<td>3.65</td>
+<td>13.60</td>
+<td>29.54</td>
+</tr>
+<tr>
+<td rowspan="6">Case 30 UMi, FR2, DL-TDOA, LQ-based</td>
+<td>0</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>0.02</td>
+<td>0.05</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>0.02</td>
+<td>0.05</td>
+</tr>
+<tr>
+<td>20</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>0.02</td>
+<td>0.04</td>
+</tr>
+<tr>
+<td>40</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>0.03</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>60</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>0.03</td>
+<td>0.11</td>
+</tr>
+<tr>
+<td>80</td>
+<td>0.0ns</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>0.02</td>
+<td>0.07</td>
+</tr>
+<tr>
+<td rowspan="6">Case 31 InH, FR2, DL-TDOA, LQ-based</td>
+<td>0</td>
+<td>0.0ns</td>
+<td>0.04</td>
+<td>0.08</td>
+<td>0.17</td>
+<td>0.42</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0.0ns</td>
+<td>0.04</td>
+<td>0.09</td>
+<td>0.20</td>
+<td>0.53</td>
+</tr>
+<tr>
+<td>20</td>
+<td>0.0ns</td>
+<td>0.04</td>
+<td>0.09</td>
+<td>0.20</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td>40</td>
+<td>0.0ns</td>
+<td>0.05</td>
+<td>0.12</td>
+<td>0.35</td>
+<td>0.72</td>
+</tr>
+<tr>
+<td>60</td>
+<td>0.0ns</td>
+<td>0.06</td>
+<td>0.21</td>
+<td>0.52</td>
+<td>0.94</td>
+</tr>
+<tr>
+<td>80</td>
+<td>0.0ns</td>
+<td>0.07</td>
+<td>0.28</td>
+<td>0.53</td>
+<td>0.97</td>
+</tr>
+<tr>
+<td rowspan="7"><p>Case 32</p>
+<p>UMi, FR2, DL-TDOA, RANSAC</p></td>
+<td>0</td>
+<td>0.0ns</td>
+<td>0.011</td>
+<td>0.018</td>
+<td>0.025</td>
+<td>0.040</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0.1ns</td>
+<td>0.011</td>
+<td>0.018</td>
+<td>0.026</td>
+<td>0.043</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0.5ns</td>
+<td>0.011</td>
+<td>0.018</td>
+<td>0.029</td>
+<td>0.046</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1.0ns</td>
+<td>0.012</td>
+<td>0.022</td>
+<td>0.032</td>
+<td>0.052</td>
+</tr>
+<tr>
+<td>0</td>
+<td>5.0ns</td>
+<td>0.016</td>
+<td>0.030</td>
+<td>0.050</td>
+<td>0.120</td>
+</tr>
+<tr>
+<td>0</td>
+<td>10.0ns</td>
+<td>0.021</td>
+<td>0.038</td>
+<td>0.066</td>
+<td>0.220</td>
+</tr>
+<tr>
+<td>0</td>
+<td>20.0ns</td>
+<td>0.035</td>
+<td>0.059</td>
+<td>0.111</td>
+<td>0.269</td>
+</tr>
+<tr>
+<td rowspan="7">Case 33 InH, FR2, DL-TDOA, RANSAC</td>
+<td>0</td>
+<td>0.0ns</td>
+<td>0.006</td>
+<td>0.009</td>
+<td>0.015</td>
+<td>0.024</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0.1ns</td>
+<td>0.006</td>
+<td>0.009</td>
+<td>0.015</td>
+<td>0.027</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0.5ns</td>
+<td>0.006</td>
+<td>0.009</td>
+<td>0.014</td>
+<td>0.027</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1.0ns</td>
+<td>0.006</td>
+<td>0.011</td>
+<td>0.017</td>
+<td>0.027</td>
+</tr>
+<tr>
+<td>0</td>
+<td>5.0ns</td>
+<td>0.008</td>
+<td>0.013</td>
+<td>0.028</td>
+<td>0.066</td>
+</tr>
+<tr>
+<td>0</td>
+<td>10.0ns</td>
+<td>0.008</td>
+<td>0.014</td>
+<td>0.027</td>
+<td>0.057</td>
+</tr>
+<tr>
+<td>0</td>
+<td>20.0ns</td>
+<td>0.009</td>
+<td>0.015</td>
+<td>0.031</td>
+<td>0.070</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 44%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th>Case ID</th>
+<th>Kinematic constraint condition</th>
+<th>50%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="5"><p>Case 34</p>
+<p>InF-SH, FR2,</p>
+<p>DL-TDOA, RANSAC</p></td>
+<td>XY is unknown in the estimation. XY is unknown in the RMS
+calculation</td>
+<td>0.024</td>
+<td>0.033</td>
+<td>0.049</td>
+</tr>
+<tr>
+<td>X is unknown in the estimation. X is unknown in the RMS
+calculation</td>
+<td>0.012</td>
+<td>0.017</td>
+<td>0.024</td>
+</tr>
+<tr>
+<td>XY is unknown in the estimation. X is unknown in the RMS
+calculation</td>
+<td>0.012</td>
+<td>0.017</td>
+<td>0.024</td>
+</tr>
+<tr>
+<td>Y is unknown in the estimation. Y is unknown in the RMS
+calculation</td>
+<td>0.017</td>
+<td>0.024</td>
+<td>0.031</td>
+</tr>
+<tr>
+<td>XY is unknown in the estimation. Y is unknown in the RMS
+calculation</td>
+<td>0.017</td>
+<td>0.026</td>
+<td>0.036</td>
+</tr>
+<tr>
+<td rowspan="5"><p>Case 35 InF-DH, FR2,</p>
+<p>DL-TDOA, RANSAC</p></td>
+<td>XY is unknown in the estimation. XY is unknown in the RMS
+calculation</td>
+<td>0.030</td>
+<td>0.038</td>
+<td>0.058</td>
+</tr>
+<tr>
+<td>X is unknown in the estimation. X is unknown in the RMS
+calculation</td>
+<td>0.014</td>
+<td>0.021</td>
+<td>0.029</td>
+</tr>
+<tr>
+<td>XY is unknown in the estimation. X is unknown in the RMS
+calculation</td>
+<td>0.016</td>
+<td>0.023</td>
+<td>0.034</td>
+</tr>
+<tr>
+<td>Y is unknown in the estimation. Y is unknown in the RMS
+calculation</td>
+<td>0.018</td>
+<td>0.028</td>
+<td>0.038</td>
+</tr>
+<tr>
+<td>XY is unknown in the estimation. Y is unknown in the RMS
+calculation</td>
+<td>0.018</td>
+<td>0.029</td>
+<td>0.044</td>
+</tr>
+<tr>
+<td rowspan="5"><p>Case 36 InH,</p>
+<p>FR2</p>
+<p>DL-TDOA, RANSAC</p></td>
+<td>XY is unknown in the estimation. XY is unknown in the RMS
+calculation</td>
+<td>0.031</td>
+<td>0.046</td>
+<td>0.071</td>
+</tr>
+<tr>
+<td>X is unknown in the estimation. X is unknown in the RMS
+calculation</td>
+<td>0.012</td>
+<td>0.019</td>
+<td>0.026</td>
+</tr>
+<tr>
+<td>XY is unknown in the estimation. X is unknown in the RMS
+calculation</td>
+<td>0.013</td>
+<td>0.019</td>
+<td>0.028</td>
+</tr>
+<tr>
+<td>Y is unknown in the estimation. Y is unknown in the RMS
+calculation</td>
+<td>0.022</td>
+<td>0.031</td>
+<td>0.044</td>
+</tr>
+<tr>
+<td>XY is unknown in the estimation. Y is unknown in the RMS
+calculation</td>
+<td>0.023</td>
+<td>0.035</td>
+<td>0.053</td>
+</tr>
+</tbody>
+</table>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 37, UMI, FR1,RTT+AoA, With Delta Tau, Perfect Sync, No Timing
+Errors, NR Rel-16 Baseline</td>
+<td>(Optional) All UEs</td>
+<td>2.6</td>
+<td>4.4</td>
+<td>5.8</td>
+<td>7.3</td>
+</tr>
+<tr>
+<td>Case 37, UMI, FR1,RTT, With Delta Tau, Perfect Sync, No Timing
+Errors, AoA &amp; UL PDP Enhancement</td>
+<td>(Optional) All UEs</td>
+<td>1.2</td>
+<td>1.8</td>
+<td>2.7</td>
+<td>3.9</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 38, UMI, FR1,DL-TDOA, With <span
+class="math inline">\(\Delta\tau\)</span>, Perfect Sync, No Timing
+Errors, NR Rel-16 Baseline</td>
+<td>(Optional) All UEs</td>
+<td>4.1</td>
+<td>5.2</td>
+<td>6.8</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Case 38, UMI, FR1,DL-TDOA, With <span
+class="math inline">\(\Delta\tau\)</span>, Perfect Sync, No Timing
+Errors, UL PDP Enhancement</td>
+<td>(Optional) All UEs</td>
+<td>3.6</td>
+<td>4.85</td>
+<td>6</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 39, UMI, FR1, RTT, With Delta Tau, Perfect Sync, No Timing
+Errors, NR Rel-16 Baseline</td>
+<td>(Optional) All UEs</td>
+<td>3.38</td>
+<td>4.9</td>
+<td>6.2</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Case 39, UMI, FR1, RTT, With Delta Tau, Perfect Sync, No Timing
+Errors, UL PDP Enhancement</td>
+<td>(Optional) All UEs</td>
+<td>1.6</td>
+<td>2.4</td>
+<td>3.4</td>
+<td>4.7</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 14%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 40, InF FR1 DH ISD20, 100MHz, LOS Genie + Link Quality</td>
+<td>0.017m</td>
+<td>0.025m</td>
+<td>0.035m</td>
+<td>0.046m</td>
+</tr>
+<tr>
+<td>Case 40, InF FR1 DH ISD20, 100MHz, RANSAC</td>
+<td>0.01m</td>
+<td>0.017m</td>
+<td>0.023m</td>
+<td>0.037m</td>
+</tr>
+</tbody>
+</table>
+<h4 id="c.2.1.12-results-from-9">C.2.1.12 Results from [9]</h4>
+<h5 id="c.2.1.12.1-description-of-evaluation-scenarios">C.2.1.12.1
+Description of evaluation scenarios</h5>
+<p>Evaluation assumptions for system level analysis of NR positioning
+accuracy enhancements are provided in Table C.2.1.1.12-1.</p>
+<p>Table C.2.1.1.12-1: NR positioning enhancements - evaluation
+scenarios and parameter</p>
+<table style="width:80%;">
+<colgroup>
+<col style="width: 0%" />
+<col style="width: 21%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">Parameter</th>
+<th>Case 1, InF-DH, FR1, 120x60m Clutter=40%, <span
+class="math inline">\(\mathbf{h}_{\mathbf{c}}\)</span>=<span
+class="math inline">\(\mathbf{\ }{\mathbf{2}\mathbf{m,\ \
+d}}_{\mathbf{c}}\)</span> = 2m</th>
+<th>Case 2, InF-DH, FR1, 120x60m Clutter=40%, <span
+class="math inline">\(\mathbf{\ }\mathbf{h}_{\mathbf{c}}\)</span>=<span
+class="math inline">\(\mathbf{\ }{\mathbf{3}\mathbf{m,\ \
+d}}_{\mathbf{c}}\)</span> = 5m</th>
+<th>Case 3, InF-DH, FR1, 120x60m Clutter=60%, <span
+class="math inline">\(\mathbf{h}_{\mathbf{c}}\)</span>=<span
+class="math inline">\(\mathbf{\ }{\mathbf{6}\mathbf{m,\ \
+d}}_{\mathbf{c}}\)</span> = 2m</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel model (baseline, otherwise state any modifications)</td>
+<td colspan="4">Baseline Channel Model based on common assumptions
+defined related to the channel models of 3GPP TRs 38.901 / 38.802 /
+37.857.</td>
+</tr>
+<tr>
+<td>Carrier frequency</td>
+<td colspan="4">3.5 GHz</td>
+</tr>
+<tr>
+<td>Subcarrier spacing</td>
+<td colspan="4">30KHz</td>
+</tr>
+<tr>
+<td>Reference Signal Transmission Bandwidth</td>
+<td colspan="4">100MHz</td>
+</tr>
+<tr>
+<td>Reference Signal Physical Structure and Resource Allocation (RE
+pattern) (reference to figure in contribution)</td>
+<td colspan="4">Comb-4</td>
+</tr>
+<tr>
+<td><p>Reference signal</p>
+<p>(type of sequence, number of ports, …)</p></td>
+<td colspan="4">DL-PRS</td>
+</tr>
+<tr>
+<td>Number of sites</td>
+<td colspan="4">18(1-sector, ceiling mount)</td>
+</tr>
+<tr>
+<td>Number of symbols used per occasion</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>number of occasions used per positioning estimate</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Power-boosting level</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Uplink power control (applied/not applied)</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>interference modelling (ideal muting, or other)</td>
+<td>Ideal Muting</td>
+<td>Ideal Muting</td>
+<td>Ideal Muting</td>
+<td>Ideal Muting</td>
+</tr>
+<tr>
+<td>Description of Measurement Algorithm (e.g. super resolution,
+interference cancellation, ….)</td>
+<td colspan="4">TOA estimation is based on the average power over the
+RMS delay-spread determined over the CIR window (CP length of one OFDM
+symbol). The first sample which exceeds the average-power threshold will
+determine the FP and TOA.</td>
+</tr>
+<tr>
+<td>Description of positioning technique / applied positioning algorithm
+(e.g. Least square, Taylor series, etc)</td>
+<td colspan="4"><p>Take TOA from the 10 strongest sites/links sorted by
+RSRP. We eliminate potential NLOS links by polarization methods
+presented in [22] and use the first 3 strongest TOA measurements for
+horizontal trilateration position estimation:</p>
+<p>A.) Baseline (No Polarization-LOS detection, no NLOS elimination)</p>
+<p>B.) Polarization-LOS detection (Angle-based with <span
+class="math inline">\(\rho_{angle} = 0.1\)</span>), Dual Polarized UE
+Receiver</p>
+<p>C.) Polarization-LOS detection (Power-based with <span
+class="math inline">\(\rho_{power} = 0.16\)</span>), Dual Polarized UE
+Receiver</p>
+<p>D.) Polarization-LOS detection (combined with <span
+class="math inline">\(\rho_{angle} = 0.16\)</span>, <span
+class="math inline">\(\rho_{power} = 0.26\)</span>), Dual Polarized UE
+Receiver</p>
+<p>E.) Polarization-LOS detection (<span
+class="math inline">\(d_{4}\)</span> with <span
+class="math inline">\(\rho_{4} = 0.13\)</span>), Single Polarized UE
+Receiver</p></td>
+</tr>
+<tr>
+<td>Network synchronization assumptions</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+<td>Perfect Sync</td>
+</tr>
+<tr>
+<td>UE/gNB Tx/Rx<br />
+Calibration Error</td>
+<td>No calibration error</td>
+<td>No calibration error</td>
+<td>No calibration error</td>
+<td>NO calibration error</td>
+</tr>
+<tr>
+<td>Beam-related assumption (beam sweeping / alignment assumptions at
+the tx and rx sides)</td>
+<td colspan="4">No Beam sweeping</td>
+</tr>
+<tr>
+<td>Precoding assumptions (codebook, nrof antenna elements used,
+etc)</td>
+<td colspan="4">Single Antenna Element, 2 ports with orthogonal linear
+polarizations (H and V)</td>
+</tr>
+<tr>
+<td>Additional notes, if any</td>
+<td colspan="4">UE height fixed to 1.5m, gNB height fixed to 8m</td>
+</tr>
+</tbody>
+</table>
+<h5
+id="c.2.1.12.2-positioning-accuracy-evaluation-results-for-nr-positioning-enhancements">C.2.1.12.2
+Positioning accuracy evaluation results for NR positioning
+enhancements</h5>
+<p>Evaluation results of horizontal location error for NR positioning
+enhancements are provided in Table C.2.1.12.2-1:</p>
+<p>Table C.2.1.12.2-1: NR positioning enhancements - horizontal location
+error results [m]</p>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 8%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Case 1A, InF-DH, FR1 {40%, <span
+class="math inline">\({2m,2m\}}_{\ }\)</span></p>
+<p>No Pol-LOS detection (Red)</p></td>
+<td>Convex UEs</td>
+<td>1.35</td>
+<td>1.75</td>
+<td>2.35</td>
+<td>3.82</td>
+</tr>
+<tr>
+<td><p>Case 1B, InF-DH, FR1 {40%, <span
+class="math inline">\({2m,2m\}}_{\ }\)</span></p>
+<p>Angle-based Pol-LOS (Black)</p></td>
+<td>Convex UEs</td>
+<td>1.32</td>
+<td>1.64</td>
+<td>2.11</td>
+<td>2.76</td>
+</tr>
+<tr>
+<td><p>Case 1C, InF-DH, FR1 {40%, <span
+class="math inline">\({2m,2m\}}_{\ }\)</span></p>
+<p>Power-based Pol-LOS (Magenta)</p></td>
+<td>Convex UEs</td>
+<td>1.26</td>
+<td>1.61</td>
+<td>2.06</td>
+<td>2.76</td>
+</tr>
+<tr>
+<td><p>Case 1D, InF-DH, FR1 {40%, <span
+class="math inline">\({2m,2m\}}_{\ }\)</span></p>
+<p>Combined Angle - Power Pol-LOS (Green)</p></td>
+<td>Convex UEs</td>
+<td>1.26</td>
+<td>1.58</td>
+<td>1.97</td>
+<td>2.66</td>
+</tr>
+<tr>
+<td>Case 1E, InF-DH, FR1 {40%, <span class="math inline">\({2m,2m\}}_{\
+}\)</span> 1-Rx Polarization Pol-LOS (Dashed-Blue)</td>
+<td>Convex UEs</td>
+<td>1.32</td>
+<td>1.68</td>
+<td>2.15</td>
+<td>2.93</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 8%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Case 2A, InF-DH, FR1 {40%, <span
+class="math inline">\({3m,5m\}}_{\ }\)</span></p>
+<p>No Pol-LOS detection (Red)</p></td>
+<td>Convex UEs</td>
+<td>1.43</td>
+<td>1.92</td>
+<td>2.61</td>
+<td>7.02</td>
+</tr>
+<tr>
+<td><p>Case 2B, InF-DH, FR1 {40%, <span
+class="math inline">\({3m,5m\}}_{\ }\)</span></p>
+<p>Angle-based Pol-LOS (Black)</p></td>
+<td>Convex UEs</td>
+<td>1.36</td>
+<td>1.73</td>
+<td>2.32</td>
+<td>3.16</td>
+</tr>
+<tr>
+<td><p>Case 2C, InF-DH, FR1 {40%, <span
+class="math inline">\({3m,5m\}}_{\ }\)</span></p>
+<p>Power-based Pol-LOS (Magenta)</p></td>
+<td>Convex UEs</td>
+<td>1.33</td>
+<td>1.75</td>
+<td>2.41</td>
+<td>3.75</td>
+</tr>
+<tr>
+<td><p>Case 2D, InF-DH, FR1 {40%, <span
+class="math inline">\({3m,5m\}}_{\ }\)</span></p>
+<p>Combined Angle - Power Pol-LOS (Green)</p></td>
+<td>Convex UEs</td>
+<td>1.32</td>
+<td>1.71</td>
+<td>2.24</td>
+<td>2.91</td>
+</tr>
+<tr>
+<td>Case 2E, InF-DH, FR1 {40%, <span class="math inline">\({3m,5m\}}_{\
+}\)</span> 1-Rx Polarization Pol-LOS (Dashed-Blue)</td>
+<td>Convex UEs</td>
+<td>1.36</td>
+<td>1.8</td>
+<td>2.4</td>
+<td>3.69</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 8%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Case 3A, InF-DH, FR1 {60%,<span
+class="math inline">\({6m,2m\}}_{\ }\)</span></p>
+<p>No Pol-LOS detection (Red)</p></td>
+<td>Convex UEs</td>
+<td>18.82</td>
+<td>24.51</td>
+<td>31.39</td>
+<td>38.02</td>
+</tr>
+<tr>
+<td><p>Case 3B, InF-DH, FR1 {60%, <span
+class="math inline">\({6m,2m\}}_{\ }\)</span></p>
+<p>Angle-based Pol-LOS (Black)</p></td>
+<td>Convex UEs</td>
+<td>18.39</td>
+<td>24.54</td>
+<td>31.38</td>
+<td>39.85</td>
+</tr>
+<tr>
+<td><p>Case 3C, InF-DH, FR1 {60%, <span
+class="math inline">\({6m,2m\}}_{\ }\)</span></p>
+<p>Power-based Pol-LOS (Magenta)</p></td>
+<td>Convex UEs</td>
+<td>19.24</td>
+<td>25.61</td>
+<td>32.64</td>
+<td>40.03</td>
+</tr>
+<tr>
+<td><p>Case 3D, InF-DH, FR1 {60%, <span
+class="math inline">\({6m,2m\}}_{\ }\)</span></p>
+<p>Combined Angle - Power Pol-LOS (Green)</p></td>
+<td>Convex UEs</td>
+<td>19.01</td>
+<td>25.12</td>
+<td>31.64</td>
+<td>40.03</td>
+</tr>
+<tr>
+<td>Case 3E, InF-DH, FR1 {60%, <span class="math inline">\({6m,2m\}}_{\
+}\)</span> 1-Rx Polarization Pol-LOS (Dashed-Blue)</td>
+<td>Convex UEs</td>
+<td>18.79</td>
+<td>23.85</td>
+<td>31.16</td>
+<td>40.63</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 8%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Horizontal Positioning Error</th>
+<th></th>
+<th>50%</th>
+<th>67%</th>
+<th>80%</th>
+<th>90%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Case 4A, InF-SH, FR1 {20%, <span
+class="math inline">\({2m,10m\}}_{\ }\)</span></p>
+<p>No Pol-LOS detection (Red)</p></td>
+<td>Convex UEs</td>
+<td>2</td>
+<td>3.02</td>
+<td>4.73</td>
+<td>6.88</td>
+</tr>
+<tr>
+<td><p>Case 4B, InF-SH, FR1 {20%, <span
+class="math inline">\({2m,10m\}}_{\ }\)</span></p>
+<p>Angle-based Pol-LOS (Black)</p></td>
+<td>Convex UEs</td>
+<td>1.94</td>
+<td>2.86</td>
+<td>4.42</td>
+<td>6.45</td>
+</tr>
+<tr>
+<td><p>Case 4C, InF-SH, FR1 {20%, <span
+class="math inline">\({2m,10m\}}_{\ }\)</span></p>
+<p>Power-based Pol-LOS (Magenta)</p></td>
+<td>Convex UEs</td>
+<td>1.83</td>
+<td>2.75</td>
+<td>4.28</td>
+<td>6.51</td>
+</tr>
+<tr>
+<td><p>Case 4D, InF-SH, FR1 {20%, <span
+class="math inline">\({2m,10m\}}_{\ }\)</span></p>
+<p>Combined Angle - Power Pol-LOS (Green)</p></td>
+<td>Convex UEs</td>
+<td>1.89</td>
+<td>2.83</td>
+<td>4.39</td>
+<td>6.53</td>
+</tr>
+<tr>
+<td>Case 4E, InF-SH, FR1 {20%, <span class="math inline">\({2m,10m\}}_{\
+}\)</span> 1-Rx Polarization Pol-LOS (Dashed-Blue)</td>
+<td>Convex UEs</td>
+<td>1.76</td>
+<td>2.73</td>
+<td>4.23</td>
+<td>6.61</td>
+</tr>
+</tbody>
+</table>
+<p>To see the improvement in NLOS link elimination out of the 3 used
+links for positioning estimation, we provide the percentile improvement
+in NLOS elimination in Table C.2.1.12.2-2:</p>
+<p>Table C.2.1.12.2-2: NR positioning enhancements – NLOS mitigation
+results</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 17%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="4">(Avg Number of NLOS paths out of the 3 selected, % NLOS
+elimination over Baseline)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case\LOS detection</td>
+<td>Case 1: InF-DH baseline {40%, <span
+class="math inline">\({2m,2m\}}_{\ }\)</span></td>
+<td>Case 2: InF-DH optional {40%, <span
+class="math inline">\({3m,5m\}}_{\ }\)</span></td>
+<td>Case 3: InF-DH optional {60%, <span
+class="math inline">\({6m,2m\}}_{\ }\)</span></td>
+<td>Case 4: InF-SH baseline {20%,<span
+class="math inline">\({2m,10m\}}_{\ }\)</span></td>
+</tr>
+<tr>
+<td>A) No Pol-LOS detection (Red)</td>
+<td>(0.1, -)</td>
+<td>(0.15, -)</td>
+<td>(2.85, -)</td>
+<td>(0.0045, -)</td>
+</tr>
+<tr>
+<td>B) Angle-based Pol-LOS (Black)</td>
+<td>(0.05, 53.94%)</td>
+<td>(0.1, 31.67%)</td>
+<td>(2.87, -0.53%)</td>
+<td>(0, 100%)*</td>
+</tr>
+<tr>
+<td>C) Power-based Pol-LOS (Magenta)</td>
+<td>(0.07, 35.86%)</td>
+<td>(0.11, 24.7%)</td>
+<td>(2.86, -0.24%)</td>
+<td>(0, 100%)<a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></td>
+</tr>
+<tr>
+<td>D) Combined Angle and Power Pol-LOS (Green)</td>
+<td>(0.03, 72.01%)</td>
+<td>(0.06, 56.97%)</td>
+<td>(2.86, -0.21%)</td>
+<td>(0, 100%)*</td>
+</tr>
+<tr>
+<td>E) 1-Rx Polarization Pol-LOS (Dashed-Blue)</td>
+<td>(0.07, 35.86%)</td>
+<td>(0.11, 29.28%)</td>
+<td>(2.86, -0.21%)</td>
+<td>(0.0024, 46.67%)*</td>
+</tr>
+</tbody>
+</table>
+<p>Figure C.2.1.12.2-1: Case 1: InF-DH baseline scenario with clutter
+density of 40% and <span
+class="math inline">\(\mathbf{h}_{\mathbf{c}}\)</span>=<span
+class="math inline">\(\mathbf{\ }{\mathbf{2}\mathbf{m,\ \
+d}}_{\mathbf{c}}\)</span> = 2m</p>
+<p>Figure C.2.1.12.2-2: Case 2: InF-DH baseline scenario with clutter
+density of 40% and<span class="math inline">\({\ h}_{c}\)</span>=<span
+class="math inline">\(\ {3m,\ \ d}_{c}\)</span> =5m</p>
+<p>Figure C.2.1.12-4: Case 4: InF-SH optional scenario with clutter
+density of 20% and <span class="math inline">\(h_{c}\)</span>=<span
+class="math inline">\(\ {2m,\ \ d}_{c}\)</span> = 10m</p>
+<p>Figure C.2.1.12.2-3: Case 3: InF-DH optional scenario with clutter
+density of 60% and <span class="math inline">\(h_{c}\)</span>=<span
+class="math inline">\(\ {6m,\ \ d}_{c}\)</span> = 2m</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>∗ Note, the total number of NLOS links in the baseline
+case for this scenario is only 4 and the number of LOS is 2592.<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>

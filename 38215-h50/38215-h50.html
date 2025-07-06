@@ -1,0 +1,2812 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38215-h50</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-symbols-and-abbreviations"
+id="toc-definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#control-of-ueng-ran-measurements"
+id="toc-control-of-ueng-ran-measurements">4 Control of UE/NG-RAN
+measurements</a></li>
+<li><a href="#measurement-capabilities-for-nr"
+id="toc-measurement-capabilities-for-nr">5 Measurement capabilities for
+NR</a>
+<ul>
+<li><a href="#ue-measurement-capabilities"
+id="toc-ue-measurement-capabilities">5.1 UE measurement capabilities</a>
+<ul>
+<li><a href="#ss-reference-signal-received-power-ss-rsrp"
+id="toc-ss-reference-signal-received-power-ss-rsrp">5.1.1 SS reference
+signal received power (SS-RSRP)</a></li>
+<li><a href="#csi-reference-signal-received-power-csi-rsrp"
+id="toc-csi-reference-signal-received-power-csi-rsrp">5.1.2 CSI
+reference signal received power (CSI-RSRP)</a></li>
+<li><a href="#ss-reference-signal-received-quality-ss-rsrq"
+id="toc-ss-reference-signal-received-quality-ss-rsrq">5.1.3 SS reference
+signal received quality (SS-RSRQ)</a></li>
+<li><a href="#csi-reference-signal-received-quality-csi-rsrq"
+id="toc-csi-reference-signal-received-quality-csi-rsrq">5.1.4 CSI
+reference signal received quality (CSI-RSRQ)</a></li>
+<li><a href="#ss-signal-to-noise-and-interference-ratio-ss-sinr"
+id="toc-ss-signal-to-noise-and-interference-ratio-ss-sinr">5.1.5 SS
+signal-to-noise and interference ratio (SS-SINR)</a></li>
+<li><a href="#csi-signal-to-noise-and-interference-ratio-csi-sinr"
+id="toc-csi-signal-to-noise-and-interference-ratio-csi-sinr">5.1.6 CSI
+signal-to-noise and interference ratio (CSI-SINR)</a></li>
+<li><a href="#void" id="toc-void">5.1.7 Void</a></li>
+<li><a href="#void-1" id="toc-void-1">5.1.8 Void</a></li>
+<li><a
+href="#ue-gnss-timing-of-cell-frames-for-ue-positioning-for-e-utra"
+id="toc-ue-gnss-timing-of-cell-frames-for-ue-positioning-for-e-utra">5.1.9
+UE GNSS Timing of Cell Frames for UE positioning for E-UTRA</a></li>
+<li><a href="#ue-gnss-code-measurements"
+id="toc-ue-gnss-code-measurements">5.1.10 UE GNSS code
+measurements</a></li>
+<li><a href="#ue-gnss-carrier-phase-measurements"
+id="toc-ue-gnss-carrier-phase-measurements">5.1.11 UE GNSS carrier phase
+measurements</a></li>
+<li><a href="#ieee-802.11-wlan-rssi"
+id="toc-ieee-802.11-wlan-rssi">5.1.12 IEEE 802.11 WLAN RSSI</a></li>
+<li><a href="#reference-signal-time-difference-rstd-for-e-utra"
+id="toc-reference-signal-time-difference-rstd-for-e-utra">5.1.13
+Reference signal time difference (RSTD) for E-UTRA</a></li>
+<li><a href="#sfn-and-frame-timing-difference-sftd"
+id="toc-sfn-and-frame-timing-difference-sftd">5.1.14 SFN and frame
+timing difference (SFTD)</a></li>
+<li><a href="#e-utra-rsrp" id="toc-e-utra-rsrp">5.1.15 E-UTRA
+RSRP</a></li>
+<li><a href="#e-utra-rsrq" id="toc-e-utra-rsrq">5.1.16 E-UTRA
+RSRQ</a></li>
+<li><a href="#e-utra-rs-sinr" id="toc-e-utra-rs-sinr">5.1.17 E-UTRA
+RS-SINR</a></li>
+<li><a href="#ss-reference-signal-received-power-per-branch-ss-rsrpb"
+id="toc-ss-reference-signal-received-power-per-branch-ss-rsrpb">5.1.18
+SS reference signal received power per branch (SS-RSRPB)</a></li>
+<li><a href="#srs-reference-signal-received-power-srs-rsrp"
+id="toc-srs-reference-signal-received-power-srs-rsrp">5.1.19 SRS
+reference signal received power (SRS-RSRP)</a></li>
+<li><a href="#cli-received-signal-strength-indicator-cli-rssi"
+id="toc-cli-received-signal-strength-indicator-cli-rssi">5.1.20 CLI
+Received signal strength indicator (CLI-RSSI)</a></li>
+<li><a href="#received-signal-strength-indicator-rssi"
+id="toc-received-signal-strength-indicator-rssi">5.1.21 Received Signal
+Strength Indicator (RSSI)</a></li>
+<li><a href="#psbch-reference-signal-received-power-psbch-rsrp"
+id="toc-psbch-reference-signal-received-power-psbch-rsrp">5.1.22 PSBCH
+reference signal received power (PSBCH-RSRP)</a></li>
+<li><a href="#pssch-reference-signal-received-power-pssch-rsrp"
+id="toc-pssch-reference-signal-received-power-pssch-rsrp">5.1.23 PSSCH
+reference signal received power (PSSCH-RSRP)</a></li>
+<li><a href="#psсch-reference-signal-received-power-pscch-rsrp"
+id="toc-psсch-reference-signal-received-power-pscch-rsrp">5.1.24 PSСCH
+reference signal received power (PSCCH-RSRP)</a></li>
+<li><a href="#sidelink-received-signal-strength-indicator-sl-rssi"
+id="toc-sidelink-received-signal-strength-indicator-sl-rssi">5.1.25
+Sidelink received signal strength indicator (SL RSSI)</a></li>
+<li><a href="#sidelink-channel-occupancy-ratio-sl-cr"
+id="toc-sidelink-channel-occupancy-ratio-sl-cr">5.1.26 Sidelink channel
+occupancy ratio (SL CR)</a></li>
+<li><a href="#sidelink-channel-busy-ratio-sl-cbr"
+id="toc-sidelink-channel-busy-ratio-sl-cbr">5.1.27 Sidelink channel busy
+ratio (SL CBR)</a></li>
+<li><a href="#dl-prs-reference-signal-received-power-dl-prs-rsrp"
+id="toc-dl-prs-reference-signal-received-power-dl-prs-rsrp">5.1.28 DL
+PRS reference signal received power (DL PRS-RSRP)</a></li>
+<li><a href="#dl-reference-signal-time-difference-dl-rstd"
+id="toc-dl-reference-signal-time-difference-dl-rstd">5.1.29 DL reference
+signal time difference (DL RSTD)</a></li>
+<li><a href="#ue-rx-tx-time-difference"
+id="toc-ue-rx-tx-time-difference">5.1.30 UE Rx – Tx time
+difference</a></li>
+<li><a href="#ss-reference-signal-antenna-relative-phase-ss-rsarp"
+id="toc-ss-reference-signal-antenna-relative-phase-ss-rsarp">5.1.31 SS
+reference signal antenna relative phase (SS-RSARP)</a></li>
+<li><a href="#utra-fdd-cpich-rscp" id="toc-utra-fdd-cpich-rscp">5.1.32
+UTRA FDD CPICH RSCP</a></li>
+<li><a href="#utra-fdd-carrier-rssi"
+id="toc-utra-fdd-carrier-rssi">5.1.33 UTRA FDD carrier RSSI</a></li>
+<li><a href="#utra-fdd-cpich-ecno" id="toc-utra-fdd-cpich-ecno">5.1.34
+UTRA FDD CPICH Ec/No</a></li>
+<li><a href="#dl-prs-reference-signal-received-path-power-dl-prs-rsrpp"
+id="toc-dl-prs-reference-signal-received-path-power-dl-prs-rsrpp">5.1.35
+DL PRS reference signal received path power (DL PRS-RSRPP)</a></li>
+</ul></li>
+<li><a href="#ng-ran-measurement-abilities"
+id="toc-ng-ran-measurement-abilities">5.2 NG-RAN measurement
+abilities</a>
+<ul>
+<li><a href="#sss-transmit-power" id="toc-sss-transmit-power">5.2.1 SSS
+transmit power</a></li>
+<li><a href="#ul-relative-time-of-arrival-tul-rtoa"
+id="toc-ul-relative-time-of-arrival-tul-rtoa">5.2.2 UL Relative Time of
+Arrival (T<sub>UL-RTOA</sub>)</a></li>
+<li><a href="#gnb-rx-tx-time-difference"
+id="toc-gnb-rx-tx-time-difference">5.2.3 gNB Rx – Tx time
+difference</a></li>
+<li><a href="#ul-angle-of-arrival-ul-aoa"
+id="toc-ul-angle-of-arrival-ul-aoa">5.2.4 UL Angle of Arrival (UL
+AoA)</a></li>
+<li><a href="#ul-srs-reference-signal-received-power-ul-srs-rsrp"
+id="toc-ul-srs-reference-signal-received-power-ul-srs-rsrp">5.2.5 UL SRS
+reference signal received power (UL SRS-RSRP)</a></li>
+<li><a href="#ul-srs-reference-signal-received-path-power-ul-srs-rsrpp"
+id="toc-ul-srs-reference-signal-received-path-power-ul-srs-rsrpp">5.2.6
+UL SRS reference signal received path power (UL SRS-RSRPP)</a></li>
+<li><a href="#timing-advance-tadv" id="toc-timing-advance-tadv">5.2.7
+Timing advance (T<sub>ADV</sub>)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<p>3GPP TS 38.215 V17.5.0 (2024-06)</p>
+<p>Technical Specification</p>
+<p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>NR;</p>
+<p>Physical layer measurements</p>
+<p>(Release 17)</p>
+<p><img src="media/image1.jpeg" style="width:1.32292in;height:0.91667in"
+alt="5G-logo_175px" /> <img src="media/image2.png"
+style="width:1.78125in;height:1.04167in" alt="3GPP-logo_web" /></p>
+<p>The present document has been developed within the 3<sup>rd</sup>
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Report is provided for future development work within 3GPP only.
+The Organizational Partners accept no liability for any use of this
+Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</p>
+<blockquote>
+<p>Keywords</p>
+<p>3GPP, New Radio, Layer 1</p>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p>http://www.3gpp.org</p>
+</blockquote>
+<p><em><strong>Copyright Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2024, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">4</a></p>
+<p>1 Scope <a href="#scope">5</a></p>
+<p>2 References <a href="#references">5</a></p>
+<p>3 Definitions, symbols and abbreviations <a
+href="#definitions-symbols-and-abbreviations">5</a></p>
+<p>3.1 Definitions <a href="#definitions">5</a></p>
+<p>3.2 Symbols <a href="#symbols">6</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">6</a></p>
+<p>4 Control of UE/NG-RAN measurements <a
+href="#control-of-ueng-ran-measurements">6</a></p>
+<p>5 Measurement capabilities for NR <a
+href="#measurement-capabilities-for-nr">7</a></p>
+<p>5.1 UE measurement capabilities <a
+href="#ue-measurement-capabilities">7</a></p>
+<p>5.1.1 SS reference signal received power (SS-RSRP) <a
+href="#ss-reference-signal-received-power-ss-rsrp">8</a></p>
+<p>5.1.2 CSI reference signal received power (CSI-RSRP) <a
+href="#csi-reference-signal-received-power-csi-rsrp">9</a></p>
+<p>5.1.3 SS reference signal received quality (SS-RSRQ) <a
+href="#ss-reference-signal-received-quality-ss-rsrq">10</a></p>
+<p>5.1.4 CSI reference signal received quality (CSI-RSRQ) <a
+href="#csi-reference-signal-received-quality-csi-rsrq">11</a></p>
+<p>5.1.5 SS signal-to-noise and interference ratio (SS-SINR) <a
+href="#ss-signal-to-noise-and-interference-ratio-ss-sinr">11</a></p>
+<p>5.1.6 CSI signal-to-noise and interference ratio (CSI-SINR) <a
+href="#csi-signal-to-noise-and-interference-ratio-csi-sinr">12</a></p>
+<p>5.1.7 Void <a href="#void">12</a></p>
+<p>5.1.8 Void <a href="#void-1">12</a></p>
+<p>5.1.9 UE GNSS Timing of Cell Frames for UE positioning for E-UTRA <a
+href="#ue-gnss-timing-of-cell-frames-for-ue-positioning-for-e-utra">12</a></p>
+<p>5.1.10 UE GNSS code measurements <a
+href="#ue-gnss-code-measurements">12</a></p>
+<p>5.1.11 UE GNSS carrier phase measurements <a
+href="#ue-gnss-carrier-phase-measurements">13</a></p>
+<p>5.1.12 IEEE 802.11 WLAN RSSI <a
+href="#ieee-802.11-wlan-rssi">13</a></p>
+<p>5.1.13 Reference signal time difference (RSTD) for E-UTRA <a
+href="#reference-signal-time-difference-rstd-for-e-utra">13</a></p>
+<p>5.1.14 SFN and frame timing difference (SFTD) <a
+href="#sfn-and-frame-timing-difference-sftd">13</a></p>
+<p>5.1.15 E-UTRA RSRP <a href="#e-utra-rsrp">14</a></p>
+<p>5.1.16 E-UTRA RSRQ <a href="#e-utra-rsrq">14</a></p>
+<p>5.1.17 E-UTRA RS-SINR <a href="#e-utra-rs-sinr">15</a></p>
+<p>5.1.18 SS reference signal received power per branch (SS-RSRPB) <a
+href="#ss-reference-signal-received-power-per-branch-ss-rsrpb">15</a></p>
+<p>5.1.19 SRS reference signal received power (SRS-RSRP) <a
+href="#srs-reference-signal-received-power-srs-rsrp">16</a></p>
+<p>5.1.20 CLI Received signal strength indicator (CLI-RSSI) <a
+href="#cli-received-signal-strength-indicator-cli-rssi">16</a></p>
+<p>5.1.21 Received Signal Strength Indicator (RSSI) <a
+href="#received-signal-strength-indicator-rssi">16</a></p>
+<p>5.1.22 PSBCH reference signal received power (PSBCH-RSRP) <a
+href="#psbch-reference-signal-received-power-psbch-rsrp">17</a></p>
+<p>5.1.23 PSSCH reference signal received power (PSSCH-RSRP) <a
+href="#pssch-reference-signal-received-power-pssch-rsrp">17</a></p>
+<p>5.1.24 PSСCH reference signal received power (PSCCH-RSRP) <a
+href="#psсch-reference-signal-received-power-pscch-rsrp">18</a></p>
+<p>5.1.25 Sidelink received signal strength indicator (SL RSSI) <a
+href="#sidelink-received-signal-strength-indicator-sl-rssi">18</a></p>
+<p>5.1.26 Sidelink channel occupancy ratio (SL CR) <a
+href="#sidelink-channel-occupancy-ratio-sl-cr">18</a></p>
+<p>5.1.27 Sidelink channel busy ratio (SL CBR) <a
+href="#sidelink-channel-busy-ratio-sl-cbr">19</a></p>
+<p>5.1.28 DL PRS reference signal received power (DL PRS-RSRP) <a
+href="#dl-prs-reference-signal-received-power-dl-prs-rsrp">19</a></p>
+<p>5.1.29 DL reference signal time difference (DL RSTD) <a
+href="#dl-reference-signal-time-difference-dl-rstd">19</a></p>
+<p>5.1.30 UE Rx – Tx time difference <a
+href="#ue-rx-tx-time-difference">20</a></p>
+<p>5.1.31 SS reference signal antenna relative phase (SS-RSARP) <a
+href="#ss-reference-signal-antenna-relative-phase-ss-rsarp">20</a></p>
+<p>5.1.32 UTRA FDD CPICH RSCP <a href="#utra-fdd-cpich-rscp">21</a></p>
+<p>5.1.33 UTRA FDD carrier RSSI <a
+href="#utra-fdd-carrier-rssi">21</a></p>
+<p>5.1.34 UTRA FDD CPICH Ec/No <a href="#utra-fdd-cpich-ecno">21</a></p>
+<p>5.1.35 DL PRS reference signal received path power (DL PRS-RSRPP) <a
+href="#dl-prs-reference-signal-received-path-power-dl-prs-rsrpp">21</a></p>
+<p>5.2 NG-RAN measurement abilities <a
+href="#ng-ran-measurement-abilities">22</a></p>
+<p>5.2.1 SSS transmit power <a href="#sss-transmit-power">22</a></p>
+<p>5.2.2 UL Relative Time of Arrival (T<sub>UL-RTOA</sub>) <a
+href="#ul-relative-time-of-arrival-tul-rtoa">22</a></p>
+<p>5.2.3 gNB Rx – Tx time difference <a
+href="#gnb-rx-tx-time-difference">23</a></p>
+<p>5.2.4 UL Angle of Arrival (UL AoA) <a
+href="#ul-angle-of-arrival-ul-aoa">23</a></p>
+<p>5.2.5 UL SRS reference signal received power (UL SRS-RSRP) <a
+href="#ul-srs-reference-signal-received-power-ul-srs-rsrp">23</a></p>
+<p>5.2.6 UL SRS reference signal received path power (UL SRS-RSRPP) <a
+href="#ul-srs-reference-signal-received-path-power-ul-srs-rsrpp">24</a></p>
+<p>5.2.7 Timing advance (T<sub>ADV</sub>) <a
+href="#timing-advance-tadv">24</a></p>
+<p>Annex A: Change history <a href="#annex-a-change-history">25</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Specification has been produced by the 3<sup>rd</sup>
+Generation Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>The present document describes the physical layer measurements for
+NR.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>[1] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications"</p>
+<p>[2] 3GPP TS 38.201: "NR; Physical Layer – General Description"</p>
+<p>[3] 3GPP TS 38.211: "NR; Physical channels and modulation"</p>
+<p>[4] 3GPP TS 38.212: "NR; Multiplexing and channel coding"</p>
+<p>[5] 3GPP TS 38.213: "NR; Physical layer procedures for control
+channels"</p>
+<p>[6] 3GPP TS 38.214: "NR; Physical layer procedures for data
+channels"</p>
+<p>[7] 3GPP TS 38.321: "NR; Medium Access Control (MAC) protocol
+specification"</p>
+<p>[8] 3GPP TS 38.331: "NR; Radio Resource Control (RRC); Protocol
+specification"</p>
+<p>[9] 3GPP TS 38.104: "NR; Base Station (BS) radio transmission and
+reception"</p>
+<p>[10] 3GPP TS 36.331: "Evolved Universal Terrestrial Radio Access
+(E-UTRA); Radio Resource Control (RRC); Protocol specification"</p>
+<p>[11] IEEE 802.11, Part 11: "Wireless LAN Medium Access Control (MAC)
+and Physical Layer (PHY) specifications, IEEE Std."</p>
+<p>[12] 3GPP TS 38.133: "NR; Requirements for support of radio resource
+management"</p>
+<p>[13] 3GPP TS 36.211: "Evolved Universal Terrestrial Radio Access
+(E-UTRA); Physical channels and modulation"</p>
+<p>[14] 3GPP TS 38.509: "5GS; Special conformance testing functions for
+User Equipment (UE)"</p>
+<p>[15] 3GPP TS 38.901: "Study on channel model for frequencies from 0.5
+to 100 GHz"</p>
+<p>[16] 3GPP TS 38.455: "NR Positioning Protocol A (NRPPa)"</p>
+<p>[17] 3GPP TS 37.213: "Physical layer procedures for shared spectrum
+channel access"</p>
+<p>[18] 3GPP TS 38.305: "NG Radio Access Network (NG-RAN); Stage 2
+functional specification of User Equipment (UE) positioning in
+NG-RAN"</p>
+<h1 id="definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in TR 21.905 [1] and the following apply. A term defined in the
+present document takes precedence over the definition of the same term,
+if any, in TR 21.905 [1].</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+TR 21.905 [1] and the following apply. An abbreviation defined in the
+present document takes precedence over the definition of the same
+abbreviation, if any, in TR 21.905 [1].</p>
+<p>ARFCN Absolute Radio-Frequency Channel Number</p>
+<p>CLI Cross Link Interference</p>
+<p>CSI-RSRP CSI Reference Signal Received Power</p>
+<p>CSI-RSRQ CSI Reference Signal Received Quality</p>
+<p>E-UTRAN Evolved UTRAN</p>
+<p>GNSS Global Navigation Satellite System</p>
+<p>GSM Global System for Mobile communication</p>
+<p>LBT Listen before Talk</p>
+<p>SRS Sounding Reference Signal</p>
+<p>SS-RSRP Synchronization Signal Reference Signal Received Power</p>
+<p>SS-RSRQ Synchronization Signal Reference Signal Received Quality</p>
+<p>UTRAN Universal Terrestrial Radio Access Network</p>
+<h1 id="control-of-ueng-ran-measurements">4 Control of UE/NG-RAN
+measurements</h1>
+<p>In this clause the general measurement control concept of the higher
+layers is briefly described to provide an understanding on how L1
+measurements are initiated and controlled by higher layers.</p>
+<p>With the measurement specifications L1 provides measurement
+capabilities for the UE and NG-RAN. These measurements can be classified
+in different reported measurement types: intra-frequency,
+inter-frequency, inter-system, traffic volume, quality and UE internal
+measurements.</p>
+<p>In the L1 measurement definitions, see clause 5, the measurements are
+categorised as measurements in the UE or measurements in the NG-RAN.</p>
+<h1 id="measurement-capabilities-for-nr">5 Measurement capabilities for
+NR</h1>
+<h2 id="ue-measurement-capabilities">5.1 UE measurement
+capabilities</h2>
+<p>The structure of the table defining a UE measurement quantity is
+shown below.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Column field</strong></td>
+<td>Comment</td>
+</tr>
+<tr>
+<td><strong>Definition</strong></td>
+<td>Contains the definition of the measurement.</td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>States in which state(s) it shall be possible to perform this
+measurement. The following terms are used in the tables:</p>
+<blockquote>
+<p>RRC_IDLE;</p>
+<p>RRC_INACTIVE;</p>
+<p>RRC_CONNECTED;</p>
+</blockquote>
+<p>Intra-frequency appended to the RRC state:</p>
+<blockquote>
+<p>Shall be possible to perform in the corresponding RRC state on an
+intra-frequency cell;</p>
+</blockquote>
+<p>Inter-frequency appended to the RRC state:</p>
+<blockquote>
+<p>Shall be possible to perform in the corresponding RRC state on an
+inter-frequency cell</p>
+</blockquote>
+<p>Inter-RAT appended to the RRC state:</p>
+<blockquote>
+<p>Shall be possible to perform in the corresponding RRC state on an
+inter-RAT cell.</p>
+</blockquote>
+<p>If sidelink: it shall be possible to perform this measurement on
+sidelink.</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ss-reference-signal-received-power-ss-rsrp">5.1.1 SS reference
+signal received power (SS-RSRP)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>SS reference signal received power (SS-RSRP) is defined as the
+linear average over the power contributions (in [W]) of the resource
+elements that carry secondary synchronization signals. The measurement
+time resource(s) for SS-RSRP are confined within SS/PBCH Block
+Measurement Time Configuration (SMTC) window duration. If SS-RSRP is
+used for L1-RSRP as configured by reporting configurations as defined in
+TS 38.214 [6], the measurement time resources(s) restriction by SMTC
+window duration is not applicable.</p>
+<p>For SS-RSRP determination demodulation reference signals for physical
+broadcast channel (PBCH) and, if indicated by higher layers, CSI
+reference signals in addition to secondary synchronization signals may
+be used. SS-RSRP using demodulation reference signal for PBCH or CSI
+reference signal shall be measured by linear averaging over the power
+contributions of the resource elements that carry corresponding
+reference signals taking into account power scaling for the reference
+signals as defined in TS 38.213 [5]. If SS-RSRP is not used for L1-RSRP,
+the additional use of CSI reference signals for SS-RSRP determination is
+not applicable.</p>
+<p>SS-RSRP shall be measured only among the reference signals
+corresponding to SS/PBCH blocks with the same SS/PBCH block index and
+the same physical-layer cell identity.</p>
+<p>If SS-RSRP is not used for L1-RSRP and higher-layers indicate certain
+SS/PBCH blocks for performing SS-RSRP measurements, then SS-RSRP is
+measured only from the indicated set of SS/PBCH block(s).</p>
+<p>For frequency range 1, the reference point for the SS-RSRP shall be
+the antenna connector of the UE. For frequency range 2, SS-RSRP shall be
+measured based on the combined signal from antenna elements
+corresponding to a given receiver branch. For frequency range 1 and 2,
+if receiver diversity is in use by the UE, the reported SS-RSRP value
+shall not be lower than the corresponding SS-RSRP of any of the
+individual receiver branches.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>If SS-RSRP is used for L1-RSRP,</p>
+<p>RRC_CONNECTED intra-frequency.</p>
+<p>Otherwise,</p>
+<p>RRC_IDLE intra-frequency,</p>
+<p>RRC_IDLE inter-frequency,</p>
+<p>RRC_INACTIVE intra-frequency,</p>
+<p>RRC_INACTIVE inter-frequency,</p>
+<p>RRC_CONNECTED intra-frequency,</p>
+<p>RRC_CONNECTED inter-frequency</p></td>
+</tr>
+</tbody>
+</table>
+<p>NOTE 1: The number of resource elements within the measurement period
+that are used by the UE to determine SS-RSRP is left up to the UE
+implementation with the limitation that corresponding measurement
+accuracy requirements have to be fulfilled.</p>
+<p>NOTE 2: The power per resource element is determined from the energy
+received during the useful part of the symbol, excluding the CP.</p>
+<h3 id="csi-reference-signal-received-power-csi-rsrp">5.1.2 CSI
+reference signal received power (CSI-RSRP)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>CSI reference signal received power (CSI-RSRP), is defined as the
+linear average over the power contributions (in [W]) of the resource
+elements of the antenna port(s) that carry CSI reference signals
+configured for RSRP measurements within the considered measurement
+frequency bandwidth in the configured CSI-RS occasions.</p>
+<p>For CSI-RSRP determination CSI reference signals transmitted on
+antenna port 3000 according to TS 38.211 [3] shall be used. If CSI-RSRP
+is used for L1-RSRP, CSI reference signals transmitted on antenna ports
+3000, 3001 can be used for CSI-RSRP determination.</p>
+<p>For intra-frequency CSI-RSRP measurements, if the measurement gap is
+not configured, UE is not expected to measure the CSI-RS resource(s)
+outside of the active downlink bandwidth part.</p>
+<p>For frequency range 1, the reference point for the CSI-RSRP shall be
+the antenna connector of the UE. For frequency range 2, CSI-RSRP shall
+be measured based on the combined signal from antenna elements
+corresponding to a given receiver branch. For frequency range 1 and 2,
+if receiver diversity is in use by the UE, the reported CSI-RSRP value
+shall not be lower than the corresponding CSI-RSRP of any of the
+individual receiver branches.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>If CSI-RSRP is used for L1-RSRP,</p>
+<p>RRC_CONNECTED intra-frequency.</p>
+<p>Otherwise,</p>
+<p>RRC_CONNECTED intra-frequency,</p>
+<p>RRC_CONNECTED inter-frequency</p></td>
+</tr>
+</tbody>
+</table>
+<p>NOTE 1: The number of resource elements within the considered
+measurement frequency bandwidth and within the measurement period that
+are used by the UE to determine CSI-RSRP is left up to the UE
+implementation with the limitation that corresponding measurement
+accuracy requirements have to be fulfilled.</p>
+<p>NOTE 2: The power per resource element is determined from the energy
+received during the useful part of the symbol, excluding the CP.</p>
+<h3 id="ss-reference-signal-received-quality-ss-rsrq">5.1.3 SS reference
+signal received quality (SS-RSRQ)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>Secondary synchronization signal reference signal received
+quality (SS-RSRQ) is defined as the ratio of N×SS-RSRP / NR carrier
+RSSI, where N is the number of resource blocks in the NR carrier RSSI
+measurement bandwidth. The measurements in the numerator and denominator
+shall be made over the same set of resource blocks.</p>
+<p>NR carrier Received Signal Strength Indicator (NR carrier RSSI),
+comprises the linear average of the total received power (in [W])
+observed only in certain OFDM symbols of measurement time resource(s),
+in the measurement bandwidth, over N number of resource blocks from all
+sources, including co-channel serving and non-serving cells, adjacent
+channel interference, thermal noise etc. For cell selection, according
+to Clause 4.1 of TS 38.133 [12], the measurement time resources(s) for
+NR Carrier RSSI are not constrained. Otherwise, the measurement time
+resource(s) for NR Carrier RSSI are confined within SS/PBCH Block
+Measurement Time Configuration (SMTC) window duration.</p>
+<p>If indicated by higher-layers, if measurement gap is not used, the NR
+Carrier RSSI is measured in slots within the SMTC window duration that
+are indicated by the higher layer parameter <em>measurementSlots</em>
+and in OFDM symbols given by Table 5.1.3-1 and, if measurement gap is
+used, the NR Carrier RSSI is measured in slots within the SMTC window
+duration that are indicated by the higher layer parameter
+<em>measurementSlots</em> and in OFDM symbols given by Table 5.1.3-1
+that are overlapped with the measurement gap, which is defined in
+TS38.133 [12].</p>
+<blockquote>
+<p>- For intra-frequency measurements, NR Carrier RSSI is measured with
+timing reference corresponding to the serving cell in the frequency
+layer</p>
+<p>- For inter-frequency measurements, NR Carrier RSSI is measured with
+timing reference corresponding to any cell in the target frequency
+layer</p>
+</blockquote>
+<p>Otherwise not indicated by higher-layers, if measurement gap is not
+used, NR Carrier RSSI is measured from OFDM symbols within SMTC window
+duration and, if measurement gap is used, NR Carrier RSSI is measured
+from OFDM symbols corresponding to overlapped time span between SMTC
+window duration and the measurement gap.</p>
+<p>If higher-layers indicate certain SS/PBCH blocks for performing
+SS-RSRQ measurements, then SS-RSRP is measured only from the indicated
+set of SS/PBCH block(s).</p>
+<p>For frequency range 1, the reference point for the SS-RSRQ shall be
+the antenna connector of the UE. For frequency range 2, NR Carrier RSSI
+shall be measured based on the combined signal from antenna elements
+corresponding to a given receiver branch, where the combining for NR
+Carrier RSSI shall be the same as the one used for SS-RSRP measurements.
+For frequency range 1 and 2, if receiver diversity is in use by the UE,
+the reported SS-RSRQ value shall not be lower than the corresponding
+SS-RSRQ of any of the individual receiver branches.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>RRC_IDLE intra-frequency,</p>
+<p>RRC_IDLE inter-frequency,</p>
+<p>RRC_INACTIVE intra-frequency,</p>
+<p>RRC_INACTIVE inter-frequency,</p>
+<p>RRC_CONNECTED intra-frequency,</p>
+<p>RRC_CONNECTED inter-frequency</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 5.1.3-1: NR Carrier RSSI measurement symbols</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2" style="text-align: center;"><strong>OFDM signal
+indication <em>endSymbol</em></strong></th>
+<th rowspan="2" style="text-align: center;"><strong>Symbol
+indexes</strong></th>
+</tr>
+<tr>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">{0,1}</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><p>For 480 kHz and 960 kHz
+{0,1,2,..,11,12}; otherwise</p>
+<p>{0,1,2,..,10,11}</p></td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">{0,1,2,…, 5}</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">{0,1,2,…, 7}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="csi-reference-signal-received-quality-csi-rsrq">5.1.4 CSI
+reference signal received quality (CSI-RSRQ)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>CSI reference signal received quality (CSI-RSRQ) is defined as
+the ratio of N×CSI-RSRP to CSI-RSSI, where N is the number of resource
+blocks in the CSI-RSSI measurement bandwidth. The measurements in the
+numerator and denominator shall be made over the same set of resource
+blocks.</p>
+<p>CSI Received Signal Strength Indicator (CSI-RSSI), comprises the
+linear average of the total received power (in [W]) observed only in
+OFDM symbols of measurement time resource(s), in the measurement
+bandwidth, over N number of resource blocks from all sources, including
+co-channel serving and non-serving cells, adjacent channel interference,
+thermal noise etc. The measurement time resource(s) for CSI-RSSI
+corresponds to OFDM symbols containing configured CSI-RS occasions.</p>
+<p>For CSI-RSRQ determination CSI reference signals transmitted on
+antenna port 3000 according to TS 38.211 [3] shall be used.</p>
+<p>For intra-frequency CSI-RSRQ measurements, if the measurement gap is
+not configured, UE is not expected to measure the CSI-RS resource(s)
+outside of the active downlink bandwidth part.</p>
+<p>For frequency range 1, the reference point for the CSI-RSRQ shall be
+the antenna connector of the UE. For frequency range 2, CSI-RSSI shall
+be measured based on the combined signal from antenna elements
+corresponding to a given receiver branch, where the combining for
+CSI-RSSI shall be the same as the one used for CSI-RSRP measurements.
+For frequency range 1 and 2, if receiver diversity is in use by the UE,
+the reported CSI-RSRQ value shall not be lower than the corresponding
+CSI-RSRQ of any of the individual receiver branches.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>RRC_CONNECTED intra-frequency,</p>
+<p>RRC_CONNECTED inter-frequency</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ss-signal-to-noise-and-interference-ratio-ss-sinr">5.1.5 SS
+signal-to-noise and interference ratio (SS-SINR)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>SS signal-to-noise and interference ratio (SS-SINR), is defined
+as the linear average over the power contribution (in [W]) of the
+resource elements carrying secondary synchronisation signals divided by
+the linear average of the noise and interference power contribution (in
+[W]). If SS-SINR is used for L1-SINR reporting with dedicated
+interference measurement resources, the interference and noise is
+measured over resource(s) indicated by higher layers as described in TS
+38.214 [6]. Otherwise, the interference and noise are measured over the
+resource elements carrying secondary synchronisation signals within the
+same frequency bandwidth. The measurement time resource(s) for SS-SINR
+are confined within SS/PBCH Block Measurement Time Configuration (SMTC)
+window duration. If SS-SINR is used for L1-SINR as configured by
+reporting configurations defined in TS 38.214 [6], the measurement time
+resources(s) restriction by SMTC window duration is not applicable.</p>
+<p>For SS-SINR determination demodulation reference signals for physical
+broadcast channel (PBCH) in addition to secondary synchronization
+signals may be used.</p>
+<p>If SS-SINR is not used for L1-SINR and higher-layers indicate certain
+SS/PBCH blocks for performing SS-SINR measurements, then SS-SINR is
+measured only from the indicated set of SS/PBCH block(s).</p>
+<p>For frequency range 1, the reference point for the SS-SINR shall be
+the antenna connector of the UE. For frequency range 2, SS-SINR shall be
+measured based on the combined signal from antenna elements
+corresponding to a given receiver branch. For frequency range 1 and 2,
+if receiver diversity is in use by the UE, the reported SS-SINR value
+shall not be lower than the corresponding SS-SINR of any of the
+individual receiver branches.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>If SS-SINR is used for L1-SINR,</p>
+<p>RRC_CONNECTED intra-frequency.</p>
+<p>Otherwise,</p>
+<p>RRC_CONNECTED intra-frequency,</p>
+<p>RRC_CONNECTED inter-frequency</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="csi-signal-to-noise-and-interference-ratio-csi-sinr">5.1.6 CSI
+signal-to-noise and interference ratio (CSI-SINR)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>CSI signal-to-noise and interference ratio (CSI-SINR), is defined
+as the linear average over the power contribution (in [W]) of the
+resource elements carrying CSI reference signals divided by the linear
+average of the noise and interference power contribution (in [W]). If
+CSI-SINR is used for L1-SINR reporting with dedicated interference
+measurement resources, the interference and noise is measured over
+resource(s) indicated by higher layers as described in TS 38.214 [6].
+Otherwise, the interference and noise are measured over the resource
+elements carrying CSI reference signals within the same frequency
+bandwidth.</p>
+<p>For CSI-SINR determination CSI reference signals transmitted on
+antenna port 3000 according to TS 38.211 [3] shall be used. If CSI-SINR
+is used for L1-SINR, CSI reference signals transmitted on antenna ports
+3000, 3001 can be used for CSI-SINR determination.</p>
+<p>For intra-frequency CSI-SINR measurements not used for L1-SINR
+reporting, if the measurement gap is not configured, UE is not expected
+to measure the CSI-RS resource(s) outside of the active downlink
+bandwidth part.</p>
+<p>For frequency range 1, the reference point for the CSI-SINR shall be
+the antenna connector of the UE. For frequency range 2, CSI-SINR shall
+be measured based on the combined signal from antenna elements
+corresponding to a given receiver branch. For frequency range 1 and 2,
+if receiver diversity is in use by the UE, the reported CSI-SINR value
+shall not be lower than the corresponding CSI-SINR of any of the
+individual receiver branches.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>If CSI-SINR is used for L1-SINR,</p>
+<p>RRC_CONNECTED intra-frequency.</p>
+<p>Otherwise,</p>
+<p>RRC_CONNECTED intra-frequency,</p>
+<p>RRC_CONNECTED inter-frequency</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="void">5.1.7 Void</h3>
+<h3 id="void-1">5.1.8 Void</h3>
+<h3
+id="ue-gnss-timing-of-cell-frames-for-ue-positioning-for-e-utra">5.1.9
+UE GNSS Timing of Cell Frames for UE positioning for E-UTRA</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td>The timing between E-UTRA cell j and a GNSS-specific reference time
+for a given GNSS (e.g., GPS/Galileo/Glonass system time).
+T<sub>UE-GNSS</sub> is defined as the time of occurrence of a specified
+NG-RAN event according to GNSS time for a given GNSS Id. The specified
+NG-RAN event is the beginning of a particular frame (identified through
+its SFN) in the first detected path (in time) of the cell-specific
+reference signals of the cell j, where cell j is a cell chosen by the
+UE. The reference point for T<sub>UE-GNSSj</sub> shall be the antenna
+connector of the UE.</td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>RRC_CONNECTED inter-RAT</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ue-gnss-code-measurements">5.1.10 UE GNSS code measurements</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td>The GNSS code phase (integer and fractional parts) of the spreading
+code of the i<sup>th</sup> GNSS satellite signal. The reference point
+for the GNSS code phase shall be the antenna connector of the UE.</td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>Void (this measurement is not related to NG-RAN/E-UTRAN/UTRAN/GSM
+signals; its applicability is therefore independent of the UE RRC
+state)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ue-gnss-carrier-phase-measurements">5.1.11 UE GNSS carrier phase
+measurements</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td>The number of carrier-phase cycles (integer and fractional parts) of
+the i<sup>th</sup> GNSS satellite signal, measured since locking onto
+the signal. Also called Accumulated Delta Range (ADR). The reference
+point for the GNSS carrier phase shall be the antenna connector of the
+UE.</td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>Void (this measurement is not related to NG-RAN/E-UTRAN/UTRAN/GSM
+signals; its applicability is therefore independent of the UE RRC
+state)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ieee-802.11-wlan-rssi">5.1.12 IEEE 802.11 WLAN RSSI</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td>The IEEE 802.11 WLAN RSSI as used in RRC specification [10] refers
+to RSSI as defined in IEEE 802.11 specification [11] , measured from
+Beacon, DMG Beacon or FILS discovery frames (in passive scanning mode)
+or from probe response frames (in active scanning mode).</td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>RRC_CONNECTED inter-RAT,</p>
+<p>RRC_INACTIVE inter-RAT,</p>
+<p>RRC_IDLE inter-RAT</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="reference-signal-time-difference-rstd-for-e-utra">5.1.13
+Reference signal time difference (RSTD) for E-UTRA</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td>The relative timing difference between the E-UTRA neighbour cell j
+and the E-UTRA reference cell i, defined as T<sub>SubframeRxj</sub> –
+T<sub>SubframeRxi</sub>, where: T<sub>SubframeRxj</sub> is the time when
+the UE receives the start of one subframe from E-UTRA cell j
+T<sub>SubframeRxi</sub> is the time when the UE receives the
+corresponding start of one subframe from E-UTRA cell i that is closest
+in time to the subframe received from E-UTRA cell j. The reference point
+for the observed subframe time difference shall be the antenna connector
+of the UE.</td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>RRC_CONNECTED inter-RAT</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sfn-and-frame-timing-difference-sftd">5.1.14 SFN and frame
+timing difference (SFTD)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>The observed SFN and frame timing difference (SFTD) between an
+E-UTRA PCell and an NR PSCell (for EN-DC), or an NR PCell and an E-UTRA
+PSCell (for NE-DC), or an NR PCell and an NR PSCell (for NR-DC), or an
+NR PCell and NR neighbour cell (for UEs with NR PCell but no E-UTRA/NR
+PSCell) is defined as comprising the following two components:</p>
+<p>- SFN offset = (SFN<sub>PCell</sub> - SFN<sub>TRGCell</sub>) mod
+1024, where SFN<sub>PCell</sub> is the SFN of a PCell radio frame and
+SFN<sub>TRGCell</sub> is the SFN of the target cell radio frame of which
+the UE receives the start closest in time to the time when it receives
+the start of the PCell radio frame.</p>
+<p>- Frame boundary offset = <img src="media/image3.svg" />, where
+T<sub>FrameBoundaryPCell</sub> is the time when the UE receives the
+start of a radio frame from the PCell, T<sub>FrameBoundaryTRGCell</sub>
+is the time when the UE receives the start of the radio frame, from the
+target cell, that is closest in time to the radio frame received from
+the PCell. The unit of (T<sub>FrameBoundaryPCell</sub> -
+T<sub>FrameBoundaryTRGCell</sub>) is Ts.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>RRC_CONNECTED intra-frequency for EN-DC, NE-DC, NR-DC</p>
+<p>RRC_CONNECTED inter-frequency for UEs with NR PCell but no E-UTRA/NR
+PSCell</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="e-utra-rsrp">5.1.15 E-UTRA RSRP</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>E-UTRA Reference signal received power (E-UTRA RSRP), is defined
+as the linear average over the power contributions (in [W]) of the
+resource elements that carry cell-specific reference signals within the
+considered measurement frequency bandwidth.</p>
+<p>For E-UTRA RSRP determination the cell-specific reference signals R0
+according to TS 36.211 [3] shall be used. If the UE can reliably detect
+that R1 is available it may use R<sub>1</sub> in addition to
+R<sub>0</sub> to determine E-UTRA RSRP.</p>
+<p>If higher layers indicate measurements based on discovery signals,
+the UE shall measure E-UTRA RSRP in the subframes in the configured
+discovery signal occasions. For frame structure 1 and 2, if the UE can
+reliably detect that cell-specific reference signals are present in
+other subframes, the UE may use those subframes in addition to determine
+E-UTRA RSRP.</p>
+<p>The reference point for the E-UTRA RSRP shall be the antenna
+connector of the UE.</p>
+<p>If receiver diversity is in use by the UE, the reported value shall
+not be lower than the corresponding E-UTRA RSRP of any of the individual
+diversity branches.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>RRC_IDLE inter-RAT,</p>
+<p>RRC_INACTIVE inter-RAT,</p>
+<p>RRC_CONNECTED inter-RAT</p></td>
+</tr>
+</tbody>
+</table>
+<p>NOTE 1: The number of resource elements within the considered
+measurement frequency bandwidth and within the measurement period that
+are used by the UE to determine E-UTRA RSRP is left up to the UE
+implementation with the limitation that corresponding measurement
+accuracy requirements have to be fulfilled.</p>
+<p>NOTE 2: The power per resource element is determined from the energy
+received during the useful part of the symbol, excluding the CP.</p>
+<h3 id="e-utra-rsrq">5.1.16 E-UTRA RSRQ</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>E-UTRA Reference Signal Received Quality (E-UTRA RSRQ) is defined
+as the ratio N×E-UTRA RSRP/(E-UTRA carrier RSSI), where N is the number
+of RBs of the E-UTRA carrier RSSI measurement bandwidth. The
+measurements in the numerator and denominator shall be made over the
+same set of resource blocks.</p>
+<p>E-UTRA Carrier Received Signal Strength Indicator (E-UTRA RSSI),
+comprises the linear average of the total received power (in [W])
+observed only in certain OFDM symbols of measurement subframes, in the
+measurement bandwidth, over N number of resource blocks by the UE from
+all sources, including co-channel serving and non-serving cells,
+adjacent channel interference, thermal noise etc.</p>
+<p>Unless indicated otherwise by higher layers, E-UTRA RSSI is measured
+only from OFDM symbols containing reference symbols for antenna port 0
+of measurement subframes. If higher layers indicate all OFDM symbols for
+performing E-UTRA RSRQ measurements, then E-UTRA RSSI is measured from
+all OFDM symbols of the DL part of measurement subframes. If
+higher-layers indicate certain subframes for performing E-UTRA RSRQ
+measurements, then E-UTRA RSSI is measured from all OFDM symbols of the
+DL part of the indicated subframes.</p>
+<p>If higher layers indicate measurements based on discovery signals,
+E-UTRA RSSI is measured from all OFDM symbols of the DL part of the
+subframes in the configured discovery signal occasions.</p>
+<p>The reference point for the E-UTRA RSRQ shall be the antenna
+connector of the UE.</p>
+<p>If receiver diversity is in use by the UE, the reported value shall
+not be lower than the corresponding E-UTRA RSRQ of any of the individual
+diversity branches.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>RRC_IDLE inter-RAT,</p>
+<p>RRC_INACTIVE inter-RAT,</p>
+<p>RRC_CONNECTED inter-RAT</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="e-utra-rs-sinr">5.1.17 E-UTRA RS-SINR</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>E-UTRA reference signal-signal to noise and interference ratio
+(E-UTRA RS-SINR), is defined as the linear average over the power
+contribution (in [W]) of the resource elements carrying cell-specific
+reference signals divided by the linear average of the noise and
+interference power contribution (in [W]) over the resource elements
+carrying cell-specific reference signals within the same frequency
+bandwidth.</p>
+<p>For E-UTRA RS-SINR determination, the E-UTRA cell-specific reference
+signals R<sub>0</sub> according TS 36.211 [13] shall be used.</p>
+<p>The reference point for the E-UTRA RS-SINR shall be the antenna
+connector of the UE.</p>
+<p>If receiver diversity is in use by the UE, the reported value shall
+not be lower than the corresponding E-UTRA RS-SINR of any of the
+individual diversity branches.</p>
+<p>If higher-layer signalling indicates certain subframes for performing
+E-UTRA RS-SINR measurements, then E-UTRA RS-SINR is measured in the
+indicated subframes.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>RRC_CONNECTED inter-RAT</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ss-reference-signal-received-power-per-branch-ss-rsrpb">5.1.18
+SS reference signal received power per branch (SS-RSRPB)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>SS reference signal received power per branch (SS-RSRPB) is
+defined as the linear average over the power contributions (in [W]) of
+the resource elements that carry secondary synchronization signals (SS).
+The measurement time resource(s) for SS-RSRPB are confined within
+SS/PBCH Block Measurement Time Configuration (SMTC) window duration.</p>
+<p>For SS-RSRPB determination demodulation reference signals for
+physical broadcast channel (PBCH) in addition to secondary
+synchronization signals may be used. SS-RSRPB using demodulation
+reference signal for PBCH shall be measured by linear averaging over the
+power contributions of the resource elements that carry corresponding
+reference signals taking into account power scaling for the reference
+signals as defined in TS 38.213 [5].</p>
+<p>SS-RSRPB shall be measured only among the reference signals
+corresponding to SS/PBCH blocks with the same SS/PBCH block index and
+the same physical-layer cell identity.</p>
+<p>If higher-layers indicate certain SS/PBCH blocks for performing
+SS-RSRPB measurements, then SS-RSRPB is measured only from the indicated
+set of SS/PBCH block(s).</p>
+<p>For frequency range 1, SS-RSRPB shall be measured from each antenna
+connector of the UE. For frequency range 2, SS-RSRPB shall be measured
+for each receiver branch based on the combined signal from antenna
+elements corresponding to the receiver branch.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>RRC_CONNECTED intra-frequency</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE 1: The number of resource elements within the measurement period
+that are used by the UE to determine SS-RSRPB is left up to the UE
+implementation with the limitation that corresponding measurement
+accuracy requirements have to be fulfilled.</p>
+<p>NOTE 2: The power per resource element is determined from the energy
+received during the useful part of the symbol, excluding the CP.</p>
+<p>NOTE 3: This UE measurement is defined only for conformance test
+purposes. It is described along with test control entity signalling in
+[14].</p>
+<h3 id="srs-reference-signal-received-power-srs-rsrp">5.1.19 SRS
+reference signal received power (SRS-RSRP)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>SRS reference signal received power (SRS-RSRP) is defined as
+linear average of the power contributions (in [W]) of the resource
+elements carrying sounding reference signals (SRS). SRS‑RSRP shall be
+measured over the configured resource elements within the considered
+measurement frequency bandwidth in the configured measurement time
+occasions.</p>
+<p>For frequency range 1, the reference point for the SRS-RSRP shall be
+the antenna connector of the UE. For frequency range 2, SRS-RSRP shall
+be measured based on the combined signal from antenna elements
+corresponding to a given receiver branch. For frequency range 1 and 2,
+if receiver diversity is in use by the UE, the reported SRS-RSRP value
+shall not be lower than the corresponding SRS-RSRP of any of the
+individual receiver branches.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>RRC_CONNECTED intra-frequency</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cli-received-signal-strength-indicator-cli-rssi">5.1.20 CLI
+Received signal strength indicator (CLI-RSSI)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>CLI Received Signal Strength Indicator (CLI-RSSI), is defined as
+linear average of the total received power (in [W]) observed only in the
+configured OFDM symbols of the configured measurement time resource(s),
+in the configured measurement bandwidth from all sources, including
+co-channel serving and non-serving cells, adjacent channel interference,
+thermal noise etc.</p>
+<p>For frequency range 1, the reference point for the RSSI shall be the
+antenna connector of the UE. For frequency range 2, CLI-RSSI shall be
+measured based on the combined signal from antenna elements
+corresponding to a given receiver branch. For frequency range 1 and 2,
+if receiver diversity is in use by the UE, the reported CLI-RSSI value
+shall not be lower than the corresponding CLI-RSSI of any of the
+individual receiver branches.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>RRC_CONNECTED intra-frequency</td>
+</tr>
+</tbody>
+</table>
+<h3 id="received-signal-strength-indicator-rssi">5.1.21 Received Signal
+Strength Indicator (RSSI)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th><p>Received Signal Strength Indicator (RSSI), comprises the linear
+average of the total received power (in [W]) observed only per
+configured OFDM symbol and in the measurement bandwidth indicated by
+higher layers or corresponding to the channel bandwidth defined in
+Clause 4 of TS 37.213 [17], where the channel has the center frequency
+configured by <em>ARFCN-valueNR</em>, by the UE from all sources,
+including co-channel serving and non-serving cells, adjacent channel
+interference, thermal noise etc.</p>
+<p>Higher layers configure the <em>ARFCN-valueNR</em>, the reference
+numerology and the measurement duration, i.e., which OFDM symbol(s)
+should be measured by the UE.</p>
+<p>For frequency range 1, the reference point for the RSSI shall be the
+antenna connector of the UE. For frequency range 2, RSSI shall be
+measured for each receiver branch based on the combined signal from
+antenna elements corresponding to the receiver branch. For frequency
+range 1 and 2, if receiver diversity is in use by the UE, the reported
+RSSI value shall not be lower than the corresponding RSSI of any of the
+individual receiver branches.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>RRC_CONNECTED intra-frequency,</p>
+<p>RRC_CONNECTED inter-frequency</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="psbch-reference-signal-received-power-psbch-rsrp">5.1.22 PSBCH
+reference signal received power (PSBCH-RSRP)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th><p>PSBCH Reference Signal Received Power (PSBCH-RSRP) is defined as
+the linear average over the power contributions (in [W]) of the resource
+elements that carry demodulation reference signals associated with
+physical sidelink broadcast channel (PSBCH).</p>
+<p>For PSBCH-RSRP sidelink secondary synchronization signals in addition
+to demodulation reference signals for PSBCH may be used. PSBCH-RSRP
+using sidelink secondary synchronization signals shall be measured by
+linear averaging over the power contributions of the resource elements
+that carry corresponding reference signals.</p>
+<p>For frequency range 1, the reference point for the PSBCH RSRP shall
+be the antenna connector of the UE. For frequency range 2, PSBCH-RSRP
+shall be measured based on the combined signal from antenna elements
+corresponding to a given receiver branch. For frequency range 1 and 2,
+if receiver diversity is in use by the UE, the reported PSBCH-RSRP value
+shall not be lower than the corresponding PSBCH-RSRP of any of the
+individual receiver branches.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>Sidelink</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE 1: The number of resource elements within the considered
+measurement frequency bandwidth and within the measurement period that
+are used by the UE to determine PSBCH-RSRP is left up to the UE
+implementation with the limitation that corresponding measurement
+accuracy requirements have to be fulfilled.</p>
+<p>NOTE 2: The power per resource element is determined from the energy
+received during the useful part of the symbol, excluding the CP.</p>
+<p>NOTE 3: It is up to UE implementation to use PSBCH DMRS only or both
+S-SSS and PSBCH DMRS for PSBCH-RSRP.</p>
+<h3 id="pssch-reference-signal-received-power-pssch-rsrp">5.1.23 PSSCH
+reference signal received power (PSSCH-RSRP)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th><p>PSSCH Reference Signal Received Power (PSSCH-RSRP) is defined as
+the linear average over the power contributions (in [W]) of the resource
+elements of the antenna port(s) that carry demodulation reference
+signals associated with physical sidelink shared channel (PSSCH), summed
+over the antenna ports.</p>
+<p>Demodulation reference signals transmitted on antenna ports 1000 and
+1001 shall be used for PSSCH-RSRP determination if two antenna ports are
+indicated.</p>
+<p>For frequency range 1, the reference point for the PSSCH-RSRP shall
+be the antenna connector of the UE. For frequency range 2, PSSCH-RSRP
+shall be measured based on the combined signal from antenna elements
+corresponding to a given receiver branch. For frequency range 1 and 2,
+if receiver diversity is in use by the UE, the reported PSSCH-RSRP value
+shall not be lower than the corresponding PSSCH-RSRP of any of the
+individual receiver branches.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>Sidelink</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE 1: The power per resource element is determined from the energy
+received during the useful part of the symbol, excluding the CP.</p>
+<h3 id="psсch-reference-signal-received-power-pscch-rsrp">5.1.24 PSСCH
+reference signal received power (PSCCH-RSRP)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th><p>PSCCH Reference Signal Received Power (PSCCH-RSRP) is defined as
+the linear average over the power contributions (in [W]) of the resource
+elements that carry demodulation reference signals associated with
+physical sidelink control channel (PSCCH).</p>
+<p>For frequency range 1, the reference point for the PSCCH-RSRP shall
+be the antenna connector of the UE. For frequency range 2, PSCCH-RSRP
+shall be measured based on the combined signal from antenna elements
+corresponding to a given receiver branch. For frequency range 1 and 2,
+if receiver diversity is in use by the UE, the reported PSCCH-RSRP value
+shall not be lower than the corresponding PSCCH-RSRP of any of the
+individual receiver branches.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>Sidelink</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE 1: The power per resource element is determined from the energy
+received during the useful part of the symbol, excluding the CP.</p>
+<h3 id="sidelink-received-signal-strength-indicator-sl-rssi">5.1.25
+Sidelink received signal strength indicator (SL RSSI)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th><p>Sidelink Received Signal Strength Indicator (SL RSSI) is defined
+as the linear average of the total received power (in [W]) observed in
+the configured sub-channel in OFDM symbols of a slot configured for
+PSCCH and PSSCH, starting from the 2<sup>nd</sup> OFDM symbol.</p>
+<p>For frequency range 1, the reference point for the SL RSSI shall be
+the antenna connector of the UE. For frequency range 2, SL RSSI shall be
+measured based on the combined signal from antenna elements
+corresponding to a given receiver branch. For frequency range 1 and 2,
+if receiver diversity is in use by the UE, the reported SL RSSI value
+shall not be lower than the corresponding SL RSSI of any of the
+individual receiver branches.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>Sidelink</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sidelink-channel-occupancy-ratio-sl-cr">5.1.26 Sidelink channel
+occupancy ratio (SL CR)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th>Sidelink Channel Occupancy Ratio (SL CR) evaluated at slot
+<em>n</em> is defined as the total number of sub-channels used for its
+transmissions in slots [<em>n-a</em>, <em>n-1</em>] and granted in slots
+[<em>n</em>, <em>n+b</em>] divided by the total number of configured
+sub-channels in the transmission pool over [<em>n-a</em>,
+<em>n+b</em>].</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>Sidelink</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE 1: <em>a</em> is a positive integer and <em>b</em> is 0 or a
+positive integer; <em>a</em> and <em>b</em> are determined by UE
+implementation with <em>a+b+1 =</em> 1000 or 1000·2<sup>µ</sup> slots,
+according to higher layer parameter <em>sl-TimeWindowSizeCR</em>, b &lt;
+(a+b+1)/2, and n+b shall not exceed the last transmission opportunity of
+the grant for the current transmission.</p>
+<p>NOTE 2: SL CR is evaluated for each (re)transmission.</p>
+<p>NOTE 3: In evaluating SL CR, the UE shall assume the transmission
+parameter used at slot <em>n</em> is reused according to the existing
+grant(s) in slot [<em>n+1</em>, <em>n+b</em>] without packet
+dropping.</p>
+<p>NOTE 4: The slot index is based on physical slot index.</p>
+<p>NOTE 5: SL CR can be computed per priority level</p>
+<p>NOTE 6: A resource is considered granted if it is a member of a
+selected sidelink grant as defined in TS 38.321 [7].</p>
+<h3 id="sidelink-channel-busy-ratio-sl-cbr">5.1.27 Sidelink channel busy
+ratio (SL CBR)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th>SL Channel Busy Ratio (SL CBR) measured in slot <em>n</em> is
+defined as the portion of sub-channels in the resource pool whose SL
+RSSI measured by the UE exceed a (pre-)configured threshold provided by
+the higher layer parameter <em>sl-ThreshS-RSSI-CBR</em> sensed over a
+CBR measurement window [<em>n</em>-<em>a</em>, <em>n</em>-1], wherein
+<em>a</em> is equal to 100 or 100·2<sup>µ</sup> slots, according to
+higher layer parameter <em>sl-TimeWindowSizeCBR</em>. When UE is
+configured to perform partial sensing by higher layers (including when
+SL DRX is configured), SL RSSI is measured in slots where the UE
+performs partial sensing and where the UE performs PSCCH/PSSCH reception
+within the CBR measurement window. The calculation of SL CBR is limited
+within the slots for which the SL RSSI is measured. If the number of SL
+RSSI measurement slots within the CBR measurement window is below a
+(pre-)configured threshold, a (pre-)configured SL CBR value is
+used.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>Sidelink</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE 1: The slot index is based on physical slot index.</p>
+<h3 id="dl-prs-reference-signal-received-power-dl-prs-rsrp">5.1.28 DL
+PRS reference signal received power (DL PRS-RSRP)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>DL PRS reference signal received power (DL PRS-RSRP), is defined
+as the linear average over the power contributions (in [W]) of the
+resource elements that carry DL PRS reference signals configured for
+RSRP measurements within the considered measurement frequency
+bandwidth.</p>
+<p>For frequency range 1, the reference point for the DL PRS-RSRP shall
+be the antenna connector of the UE. For frequency range 2, DL PRS-RSRP
+shall be measured based on the combined signal from antenna elements
+corresponding to a given receiver branch. For frequency range 1 and 2,
+if receiver diversity is in use by the UE, the reported DL PRS-RSRP
+value shall not be lower than the corresponding DL PRS-RSRP of any of
+the individual receiver branches.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>RRC_CONNECTED,</p>
+<p>RRC_INACTIVE</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dl-reference-signal-time-difference-dl-rstd">5.1.29 DL reference
+signal time difference (DL RSTD)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th><p>DL reference signal time difference (DL RSTD) is the DL relative
+timing difference between the Transmission Point (TP) [18] <em>j</em>
+and the reference TP <em>i</em>, defined as T<sub>SubframeRxj</sub> –
+T<sub>SubframeRxi</sub>,</p>
+<p>Where:</p>
+<p>T<sub>SubframeRxj</sub> is the time when the UE receives the start of
+one subframe from TP <em>j</em>.</p>
+<p>T<sub>SubframeRxi</sub> is the time when the UE receives the
+corresponding start of one subframe from TP <em>i</em> that is closest
+in time to the subframe received from TP <em>j</em>.</p>
+<p>Multiple DL PRS resources can be used to determine the start of one
+subframe from a TP.</p>
+<p>For frequency range 1, the reference point for the DL RSTD shall be
+the antenna connector of the UE. For frequency range 2, the reference
+point for the DL RSTD shall be the antenna of the UE.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>RRC_CONNECTED,</p>
+<p>RRC_INACTIVE</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ue-rx-tx-time-difference">5.1.30 UE Rx – Tx time difference</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th><p>The UE Rx – Tx time difference is defined as T<sub>UE-RX</sub> –
+T<sub>UE-TX</sub></p>
+<p>Where:</p>
+<p>T<sub>UE-RX</sub> is the UE received timing of downlink subframe
+#<em>i</em> from a Transmission Point (TP) [18], defined by the first
+detected path in time.</p>
+<p>T<sub>UE-TX</sub> is the UE transmit timing of uplink subframe
+#<em>j</em> that is closest in time to the subframe #i received from the
+TP.</p>
+<p>Multiple DL PRS or CSI-RS for tracking resources, as instructed by
+higher layers, can be used to determine the start of one subframe of the
+first arrival path of the TP.</p>
+<p>For frequency range 1, the reference point for T<sub>UE-RX</sub>
+measurement shall be the Rx antenna connector of the UE and the
+reference point for T<sub>UE-TX</sub> measurement shall be the Tx
+antenna connector of the UE. For frequency range 2, the reference point
+for T<sub>UE‑RX</sub> measurement shall be the Rx antenna of the UE and
+the reference point for T<sub>UE‑TX</sub> measurement shall be the Tx
+antenna of the UE.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>RRC_CONNECTED,</p>
+<p>RRC_INACTIVE</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ss-reference-signal-antenna-relative-phase-ss-rsarp">5.1.31 SS
+reference signal antenna relative phase (SS-RSARP)</h3>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th><p>SS reference signal antenna relative phase (SS-RSARP) is defined
+as the difference of the average phase of the receive signals on the
+resource elements that carry secondary synchronization signals (SS)
+received by the reference individual receiver branch (Rx0) and the
+average phase of the receive signals on the resource elements that carry
+secondary synchronization signals (SS) received by one other individual
+receiver branch (Rx1 ... Rxn). The measurement time resource(s) for
+SS-RSARP are confined within SS/PBCH Block Measurement Time
+Configuration (SMTC) window duration.</p>
+<p>SS-RSARP shall be measured only among the reference signals
+corresponding to SS/PBCH blocks with the same SS/PBCH block index and
+the same physical-layer cell identity.</p>
+<p>If higher-layers indicate certain SS/PBCH blocks for performing
+SS-RSARP measurements, then SS-RSARP is measured only from the indicated
+set of SS/PBCH block(s).</p>
+<p>For frequency range 1, the reference point for the SS-RSARP shall be
+the antenna connector of the UE. For frequency range 2, SS-RSARP shall
+be measured based on the combined signal from antenna elements
+corresponding to a given receiver branch.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>RRC_CONNECTED intra-frequency</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE 1: The number of resource elements within the measurement period
+that are used by the UE to determine SS-RSARP is left up to the UE
+implementation with the limitation that corresponding measurement
+accuracy requirements have to be fulfilled.</p>
+<p>NOTE 2: The phase per resource element is determined from the energy
+received during the useful part of the symbol, excluding the CP.</p>
+<p>NOTE 3: This UE measurement is defined only for conformance test
+purposes. It is described along with test control entity signalling in
+[14].</p>
+<h3 id="utra-fdd-cpich-rscp">5.1.32 UTRA FDD CPICH RSCP</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td>Received Signal Code Power, the received power on one code measured
+on the Primary CPICH. The reference point for the RSCP shall be the
+antenna connector of the UE. If Tx diversity is applied on the Primary
+CPICH the received code power from each antenna shall be separately
+measured and summed together in [W] to a total received code power on
+the Primary CPICH. If receiver diversity is in use by the UE, the
+reported value shall not be lower than the corresponding CPICH RSCP of
+any of the individual receive antenna branches.</td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>RRC_CONNECTED inter-RAT</td>
+</tr>
+</tbody>
+</table>
+<h3 id="utra-fdd-carrier-rssi">5.1.33 UTRA FDD carrier RSSI</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td>The received wide band power, including thermal noise and noise
+generated in the receiver, within the bandwidth defined by the receiver
+pulse shaping filter. The reference point for the measurement shall be
+the antenna connector of the UE. If receiver diversity is in use by the
+UE, the reported value shall not be lower than the corresponding UTRA
+carrier RSSI of any of the individual receive antenna branches.</td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>RRC_CONNECTED inter-RAT</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>NOTE: This definition does not correspond to a reported measurement.
+This definition is just an intermediate definition used in the
+definition of UTRA FDD CPICH Ec/No.</p>
+</blockquote>
+<h3 id="utra-fdd-cpich-ecno">5.1.34 UTRA FDD CPICH Ec/No</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td>The received energy per chip divided by the power density in the
+band. If receiver diversity is not in use by the UE, the CPICH Ec/No is
+identical to CPICH RSCP/UTRA Carrier RSSI. Measurement shall be
+performed on the Primary CPICH. The reference point for the CPICH Ec/No
+shall be the antenna connector of the UE. If Tx diversity is applied on
+the Primary CPICH the received energy per chip (Ec) from each antenna
+shall be separately measured and summed together in [Ws] to a total
+received chip energy per chip on the Primary CPICH, before calculating
+the Ec/No. If receiver diversity is in use by the UE, the measured CPICH
+Ec/No value shall not be lower than the corresponding CPICH
+RSCP<em><sub>i</sub></em>/UTRA Carrier RSSI<em><sub>i</sub></em> of
+receive antenna branch <em>i</em>.</td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td>RRC_CONNECTED inter-RAT</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dl-prs-reference-signal-received-path-power-dl-prs-rsrpp">5.1.35
+DL PRS reference signal received path power (DL PRS-RSRPP)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>DL PRS reference signal received path power (DL PRS-RSRPP), is
+defined as the power of the linear average of the channel response at
+the i-th path delay of the resource elements that carry DL PRS signal
+configured for the measurement, where DL PRS-RSRPP for the 1st path
+delay is the power contribution corresponding to the first detected path
+in time.</p>
+<p>For frequency range 1, the reference point for the DL PRS-RSRPP shall
+be the antenna connector of the UE. For frequency range 2, DL PRS-RSRPP
+shall be measured based on the combined signal from antenna elements
+corresponding to a given receiver branch.</p>
+<p>For frequency range 1 and 2, if receiver diversity is in use by the
+UE for DL PRS-RSRPP measurements, the reported DL PRS-RSRPP value
+included in the higher layer parameter <em>NR-DL-AoD-MeasElement</em>
+for the first and additional measurements shall be provided for the same
+receiver branch(es) as applied for DL PRS-RSRP measurements.</p></td>
+</tr>
+<tr>
+<td><strong>Applicable for</strong></td>
+<td><p>RRC_CONNECTED,</p>
+<p>RRC_INACTIVE</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ng-ran-measurement-abilities">5.2 NG-RAN measurement
+abilities</h2>
+<p>The structure of the table defining a NG-RAN measurement quantity is
+shown below.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Column field</strong></td>
+<td>Comment</td>
+</tr>
+<tr>
+<td><strong>Definition</strong></td>
+<td>Contains the definition of the measurement.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sss-transmit-power">5.2.1 SSS transmit power</h3>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>SSS transmit power is determined as the linear average over the
+power contributions (in [W]) of the resource elements that carry
+secondary synchronization signals within the secondary synchronization
+signal (SSS) bandwidth.</p>
+<p>For downlink reference signal transmit power determination the
+secondary synchronization signal according TS 38.211 [3] can be
+used.</p>
+<p>For frequency range 1, the reference point for the downlink reference
+signal power measurement shall be the transmit antenna
+connector.</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ul-relative-time-of-arrival-tul-rtoa">5.2.2 UL Relative Time of
+Arrival (T<sub>UL-RTOA</sub>)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th><p>The UL Relative Time of Arrival (T<sub>UL-RTOA</sub>) is the
+beginning of subframe <em>i</em> containing SRS received in Reception
+Point (RP) [18] <em>j</em>, relative to the RTOA Reference Time
+[16].</p>
+<p>The UL RTOA reference time is defined as <span
+class="math inline">\(T_{0} + t_{SRS}\)</span>, where</p>
+<p>- <span class="math inline">\(T_{0}\)</span> is the nominal beginning
+time of SFN 0 provided by SFN Initialization Time [15, TS 38.455]</p>
+<p>- <span class="math inline">\(t_{SRS} = \left( 10n_{f} + n_{sf}
+\right) \times 10^{- 3}\)</span>, where <span
+class="math inline">\(n_{f}\)</span> and <span
+class="math inline">\(n_{sf}\)</span> are the system frame number and
+the subframe number of the SRS, respectively.</p>
+<p>Multiple SRS resources can be used to determine the beginning of one
+subframe containing SRS received at a RP.</p>
+<p>The reference point for T<sub>UL-RTOA</sub> shall be:</p>
+<p>- for type 1-C base station TS 38.104 [9]: the Rx antenna
+connector,</p>
+<p>- for type 1-O or 2-O base station TS 38.104 [9]: the Rx antenna
+(i.e. the centre location of the radiating region of the Rx
+antenna),</p>
+<p>- for type 1-H base station TS 38.104 [9]: the Rx Transceiver Array
+Boundary connector.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3 id="gnb-rx-tx-time-difference">5.2.3 gNB Rx – Tx time
+difference</h3>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th><p>The gNB Rx – Tx time difference is defined as T<sub>gNB-RX</sub>
+– T<sub>gNB-TX</sub></p>
+<p>Where:</p>
+<p>T<sub>gNB-RX</sub> is the Transmission and Reception Point (TRP) [18]
+received timing of uplink subframe #<em>i</em> containing SRS associated
+with UE, defined by the first detected path in time.</p>
+<p>T<sub>gNB-TX</sub> is the TRP transmit timing of downlink subframe
+#<em>j</em> that is closest in time to the subframe #<em>i</em> received
+from the UE.</p>
+<p>Multiple SRS resources can be used to determine the start of one
+subframe containing SRS.</p>
+<p>The reference point for T<sub>gNB-RX</sub> shall be:</p>
+<p>- for type 1-C base station TS 38.104 [9]: the Rx antenna
+connector,</p>
+<p>- for type 1-O or 2-O base station TS 38.104 [9]: the Rx antenna
+(i.e. the centre location of the radiating region of the Rx
+antenna),</p>
+<p>- for type 1-H base station TS 38.104 [9]: the Rx Transceiver Array
+Boundary connector.</p>
+<p>The reference point for T<sub>gNB-TX</sub> shall be:</p>
+<p>- for type 1-C base station TS 38.104 [9]: the Tx antenna
+connector,</p>
+<p>- for type 1-O or 2-O base station TS 38.104 [9]: the Tx antenna
+(i.e. the centre location of the radiating region of the Tx
+antenna),</p>
+<p>- for type 1-H base station TS 38.104 [9]: the Tx Transceiver Array
+Boundary connector.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3 id="ul-angle-of-arrival-ul-aoa">5.2.4 UL Angle of Arrival (UL
+AoA)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Definition</strong></th>
+<th><p>UL Angle of Arrival (UL AoA) is defined as the estimated azimuth
+angle (A-AoA) and vertical angle (Z-AoA) of a UE with respect to a
+reference direction, wherein the reference direction is defined:</p>
+<p>- In the global coordinate system (GCS), wherein estimated azimuth
+angle is measured relative to geographical North and is positive in a
+counter-clockwise direction and estimated vertical angle is measured
+relative to zenith and positive to horizontal direction</p>
+<p>- In the local coordinate system (LCS), wherein estimated azimuth
+angle is measured relative to x-axis of LCS and positive in a
+counter-clockwise direction and estimated vertical angle is measured
+relative to z-axis of LCS and positive to x-y plane direction. The
+bearing, downtilt and slant angles of LCS are defined according to TS
+38.901 [15].</p>
+<p>The UL-AoA is determined at the gNB antenna for an UL channel
+corresponding to this UE.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3 id="ul-srs-reference-signal-received-power-ul-srs-rsrp">5.2.5 UL SRS
+reference signal received power (UL SRS-RSRP)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>UL SRS reference signal received power (UL SRS-RSRP) is defined
+as linear average of the power contributions (in [W]) of the resource
+elements carrying sounding reference signals (SRS). UL SRS‑RSRP shall be
+measured over the configured resource elements within the considered
+measurement frequency bandwidth in the configured measurement time
+occasions.</p>
+<p>The reference point for UL SRS-RSRP shall be:</p>
+<p>- for type 1-C base station TS 38.104 [9]: the Rx antenna
+connector,</p>
+<p>- for type 1-O or 2-O base station TS 38.104 [9]: based on the
+combined signal from antenna elements corresponding to a given receiver
+branch,</p>
+<p>- for type 1-H base station TS 38.104 [9]: the Rx Transceiver Array
+Boundary connector.</p>
+<p>For frequency range 1 and 2, if receiver diversity is in use by the
+gNB, the reported UL SRS-RSRP value shall not be lower than the
+corresponding UL SRS-RSRP of any of the individual receiver
+branches.</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ul-srs-reference-signal-received-path-power-ul-srs-rsrpp">5.2.6
+UL SRS reference signal received path power (UL SRS-RSRPP)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td><p>UL SRS reference signal received path power (UL SRS-RSRPP) is
+defined as the power of the linear average of the channel response at
+the i-th path delay of the resource elements that carry the received UL
+SRS signal configured for the measurement, where UL SRS-RSRPP for 1st
+path delay is the power contribution corresponding to the first detected
+path in time</p>
+<p>The reference point for UL SRS-RSRPP shall be:</p>
+<p>- for type 1-C base station TS 38.104 [9]: the Rx antenna
+connector,</p>
+<p>- for type 1-O or 2-O base station TS 38.104 [9]: based on the
+combined signal from antenna elements corresponding to a given receiver
+branch</p>
+<p>- for type 1-H base station TS 38.104 [9]: the Rx Transceiver Array
+Boundary connector.</p>
+<p>For frequency range 1 and 2, if receiver diversity is in use by the
+gNB for UL SRS-RSRPP measurements:</p>
+<p>- The reported UL SRS-RSRPP value for the first and additional paths
+shall be provided for the same receiver branch(es) as applied for UL
+SRS-RSRP measurements, or</p>
+<p>- The reported UL SRS-RSRPP value for the first path shall not be
+lower than the corresponding UL SRS-RSRPP for the first path of any of
+the individual receiver branches and the reported UL SRS-RSRPP for the
+additional paths shall be provided for the same receiver branch(es) as
+applied UL SRS-RSRPP for the first path.</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="timing-advance-tadv">5.2.7 Timing advance (T<sub>ADV</sub>)</h3>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 84%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Definition</strong></th>
+<th style="text-align: left;"><p>Timing advance (T<sub>ADV</sub>) is
+defined as the time difference T<sub>ADV</sub> = (T<sub>gNB-RX</sub> –
+T<sub>gNB-TX</sub>),</p>
+<p>Where:</p>
+<p>T<sub>gNB-RX</sub> is the Transmission and Reception Point (TRP) [18]
+received timing of uplink subframe #<em>i</em> containing PRACH
+transmitted from UE, defined by the first detected path in time.</p>
+<p>T<sub>gNB-TX</sub> is the TRP transmit timing of downlink subframe
+#<em>j</em> that is closest in time to the subframe #<em>i</em> received
+from the UE.</p>
+<p>The detected PRACH is used to determine the start of one subframe
+containing that PRACH.</p>
+<p>The reference point for T<sub>gNB-RX</sub> shall be:</p>
+<p>- for type 1-C base station TS 38.104 [9]: the Rx antenna
+connector,</p>
+<p>- for type 1-O or 2-O base station TS 38.104 [9]: the Rx antenna
+(i.e. the centre location of the radiating region of the Rx
+antenna),</p>
+<p>- for type 1-H base station TS 38.104 [9]: the Rx Transceiver Array
+Boundary connector.</p>
+<p>The reference point for T<sub>gNB-TX</sub> shall be:</p>
+<p>- for type 1-C base station TS 38.104 [9]: the Tx antenna
+connector,</p>
+<p>- for type 1-O or 2-O base station TS 38.104 [9]: the Tx antenna
+(i.e. the centre location of the radiating region of the Tx
+antenna),</p>
+<p>- for type 1-H base station TS 38.104 [9]: the Tx Transceiver Array
+Boundary connector.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p class="heading" id="annex-a-change-history">Annex A:<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 50%" />
+<col style="width: 7%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>Meeting</strong></td>
+<td style="text-align: center;"><strong>TDoc</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Cat</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>New version</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-05</td>
+<td style="text-align: center;">RAN1#89</td>
+<td style="text-align: center;">R1-1709124</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Draft skeleton</td>
+<td style="text-align: center;">0.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-07</td>
+<td style="text-align: center;">AH_NR2</td>
+<td style="text-align: center;">R1-1712017</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Inclusion of agreements up to and
+including RAN1 NR Ad-Hoc #2</td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-08</td>
+<td style="text-align: center;">RAN1#90</td>
+<td style="text-align: center;">R1-1714100</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updates according to email discussion "
+[NRAH2-03-215] TS 38.215</td>
+<td style="text-align: center;">0.0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-08</td>
+<td style="text-align: center;">RAN1#90</td>
+<td style="text-align: center;">R1-1714660</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Clean version</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-08</td>
+<td style="text-align: center;">RAN1#90</td>
+<td style="text-align: center;">R1-1715325</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Inclusion of agreements from
+RAN1#90</td>
+<td style="text-align: center;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-08</td>
+<td style="text-align: center;">RAN1#90</td>
+<td style="text-align: center;">R1-1715333</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updates according to email discussion "
+[90-23-215] TS 38.215"</td>
+<td style="text-align: center;">0.1.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-09</td>
+<td style="text-align: center;">RAN#77</td>
+<td style="text-align: center;">RP-171999</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">For information to plenary</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-09</td>
+<td style="text-align: center;">AH_NR3</td>
+<td style="text-align: center;">R1-1716931</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Inclusion of agreements up to and
+including RAN1 NR Ad-Hoc #3</td>
+<td style="text-align: center;">1.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-09</td>
+<td style="text-align: center;">RAN1#90bis</td>
+<td style="text-align: center;">R1-1719108</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Clean version</td>
+<td style="text-align: center;">1.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-11</td>
+<td style="text-align: center;">RAN1#90bis</td>
+<td style="text-align: center;">R1-1719228</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Inclusion of agreements up to and
+including RAN1#90bis</td>
+<td style="text-align: center;">1.1.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-11</td>
+<td style="text-align: center;">RAN1#90bis</td>
+<td style="text-align: center;">R1-1719244</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updates according to email discussion "
+[90b-NR-01-38.215] "</td>
+<td style="text-align: center;">1.1.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-11</td>
+<td style="text-align: center;">RAN1#91</td>
+<td style="text-align: center;">R1-1721052</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Clean version</td>
+<td style="text-align: center;">1.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">RAN1#91</td>
+<td style="text-align: center;">R1-1721345</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Inclusion of agreements up to and
+including RAN1#91</td>
+<td style="text-align: center;">1.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">RAN#78</td>
+<td style="text-align: center;">RP-172296</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Endorsed version for approval by
+plenary</td>
+<td style="text-align: center;">2.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-12</td>
+<td style="text-align: center;">RAN#78</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Approved by plenary – Rel-15 spec under
+change control</td>
+<td style="text-align: center;">15.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-03</td>
+<td style="text-align: center;">RAN#79</td>
+<td style="text-align: center;">RP-180200</td>
+<td style="text-align: center;">0002</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR capturing the Jan18 ad-hoc and
+RAN1#92 meeting agreements</td>
+<td style="text-align: center;">15.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RAN#80</td>
+<td style="text-align: center;">RP-181172</td>
+<td style="text-align: center;">0003</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to 38.215 capturing the RAN1#92bis
+and RAN1#93 meeting agreements</td>
+<td style="text-align: center;">15.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-09</td>
+<td style="text-align: center;">RAN#81</td>
+<td style="text-align: center;">RP-181789</td>
+<td style="text-align: center;">0004</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR to 38.215 capturing the RAN1#94
+meetings agreements</td>
+<td style="text-align: center;">15.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-12</td>
+<td style="text-align: center;">RAN#82</td>
+<td style="text-align: center;">RP-182523</td>
+<td style="text-align: center;">0005</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Combined CR of all essential corrections
+to 38.215 from RAN1#94bis and RAN1#95</td>
+<td style="text-align: center;">15.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-06</td>
+<td style="text-align: center;">RAN#84</td>
+<td style="text-align: center;">RP-191278</td>
+<td style="text-align: center;">0006</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on SFTD measurements for NE-DC</td>
+<td style="text-align: center;">15.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-06</td>
+<td style="text-align: center;">RAN#84</td>
+<td style="text-align: center;">RP-191278</td>
+<td style="text-align: center;">0007</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction on SFTD measurement for NR-DC
+(Late drop)</td>
+<td style="text-align: center;">15.5.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192628</td>
+<td style="text-align: center;">0010</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of RSTD measurement for
+E-UTRA</td>
+<td style="text-align: center;">15.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192628</td>
+<td style="text-align: center;">0012</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to SFTD measurement</td>
+<td style="text-align: center;">15.6.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192634</td>
+<td style="text-align: center;">0008</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of cross layer interference
+measurements</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192636</td>
+<td style="text-align: center;">0013</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of NR-based access to
+unlicensed spectrum</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192638</td>
+<td style="text-align: center;">0014</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of V2X support</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192641</td>
+<td style="text-align: center;">0015</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of MIMO enhancements</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2019-12</td>
+<td style="text-align: center;">RAN#86</td>
+<td style="text-align: center;">RP-192643</td>
+<td style="text-align: center;">0016</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of NR positioning
+support</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-01</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">MCC clean-up fixing font issue in
+clauses 5.2.2/5.2.3 and 5.2.4.</td>
+<td style="text-align: center;">16.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RAN#87-e</td>
+<td style="text-align: center;">RP-200190</td>
+<td style="text-align: center;">0017</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to L1-SINR definitions</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RAN#87-e</td>
+<td style="text-align: center;">RP-200192</td>
+<td style="text-align: center;">0018</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to NR positioning
+support</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RAN#87-e</td>
+<td style="text-align: center;">RP-200183</td>
+<td style="text-align: center;">0019</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to cross layer interference
+measurements</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-03</td>
+<td style="text-align: center;">RAN#87-e</td>
+<td style="text-align: center;">RP-200187</td>
+<td style="text-align: center;">0020</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to V2X measurement
+definitions</td>
+<td style="text-align: center;">16.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88-e</td>
+<td style="text-align: center;">RP-200707</td>
+<td style="text-align: center;">0021</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of NR ATF measurements</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88-e</td>
+<td style="text-align: center;">RP-200683</td>
+<td style="text-align: center;">0023</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Correction on SS-RSRPB measurement</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88-e</td>
+<td style="text-align: center;">RP-200692</td>
+<td style="text-align: center;">0024</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to CSI-SINR definition</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88-e</td>
+<td style="text-align: center;">RP-200694</td>
+<td style="text-align: center;">0025</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction to UL Relative Time of
+Arrival definition</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88-e</td>
+<td style="text-align: center;">RP-200687</td>
+<td style="text-align: center;">0026</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to RSSI definition for
+NR-U</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88-e</td>
+<td style="text-align: center;">RP-200706</td>
+<td style="text-align: center;">0027</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of UE UTRAN FDD
+measurements for SRVCC from NR to UMTS</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88-e</td>
+<td style="text-align: center;">RP-200689</td>
+<td style="text-align: center;">0028</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to V2X measurement
+definitions</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-06</td>
+<td style="text-align: center;">RAN#88-e</td>
+<td style="text-align: center;">RP-200694</td>
+<td style="text-align: center;">0029</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to intra/inter-frequency
+measurement for NR positioning</td>
+<td style="text-align: center;">16.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RAN#89-e</td>
+<td style="text-align: center;">RP-201824</td>
+<td style="text-align: center;">0030</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of SS-RSARP definition</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RAN#89-e</td>
+<td style="text-align: center;">RP-201807</td>
+<td style="text-align: center;">0031</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to V2X measurement
+definitions</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RAN#89-e</td>
+<td style="text-align: center;">RP-201809</td>
+<td style="text-align: center;">0032</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to CSI-SINR definition</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-09</td>
+<td style="text-align: center;">RAN#89-e</td>
+<td style="text-align: center;">RP-201811</td>
+<td style="text-align: center;">0033</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to NR positioning
+measurement definitions</td>
+<td style="text-align: center;">16.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-12</td>
+<td style="text-align: center;">RAN#90-e</td>
+<td style="text-align: center;">RP-202398</td>
+<td style="text-align: center;">0034</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Alignment of RRC parameter names</td>
+<td style="text-align: center;">16.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN#94-e</td>
+<td style="text-align: center;">RP-212967</td>
+<td style="text-align: center;">0036</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of NR extensions to 71
+GHz</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN#94-e</td>
+<td style="text-align: center;">RP-212970</td>
+<td style="text-align: center;">0037</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of NR positioning
+enhancements</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021-12</td>
+<td style="text-align: center;">RAN#94-e</td>
+<td style="text-align: center;">RP-212968</td>
+<td style="text-align: center;">0039</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of enhanced Industrial
+Internet of Things (IoT) and ultra-reliable and low latency
+communication (URLLC) support for NR</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220862</td>
+<td style="text-align: center;">0038</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Introduction of Timing advance (TA)
+PRACH based solution for NR UL E-CID [NRTADV]</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220273</td>
+<td style="text-align: center;">0041</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">CR on reference point for UL
+SRS-RSRP</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220254</td>
+<td style="text-align: center;">0042</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to DL PRS-RSRPP and UL
+SRS-RSRPP measurement definitions</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220251</td>
+<td style="text-align: center;">0043</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to SS-RSRQ and RSSI
+measurement definitions</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RAN#95-e</td>
+<td style="text-align: center;">RP-220262</td>
+<td style="text-align: center;">0044</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Corrections to SL CBR measurement
+definition</td>
+<td style="text-align: center;">17.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-09</td>
+<td style="text-align: center;">RAN#97-e</td>
+<td style="text-align: center;">RP-222404</td>
+<td style="text-align: center;">0045</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">CR on PRS RSRPP reporting for
+38.215</td>
+<td style="text-align: center;">17.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-03</td>
+<td style="text-align: center;">RAN#99</td>
+<td style="text-align: center;">RP-230445</td>
+<td style="text-align: center;">0047</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Alignment CR for AOA positioning in
+38.215</td>
+<td style="text-align: center;">17.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-12</td>
+<td style="text-align: center;">RAN#102</td>
+<td style="text-align: center;">RP-233723</td>
+<td style="text-align: center;">0052</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Alignment CR for AOA positioning in
+38.215</td>
+<td style="text-align: center;">17.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-12</td>
+<td style="text-align: center;">RAN#102</td>
+<td style="text-align: center;">RP-233723</td>
+<td style="text-align: center;">0055</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Corrections to Applicable RRC States for
+Sidelink Measurements</td>
+<td style="text-align: center;">17.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-12</td>
+<td style="text-align: center;">RAN#102</td>
+<td style="text-align: center;">RP-233723</td>
+<td style="text-align: center;">0058</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">CR on applicability of sidelink
+measurements</td>
+<td style="text-align: center;">17.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024-06</td>
+<td style="text-align: center;">RAN#104</td>
+<td style="text-align: center;">RP-241059</td>
+<td style="text-align: center;">0066</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">Correction of references in
+TS38.215</td>
+<td style="text-align: center;">17.5.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

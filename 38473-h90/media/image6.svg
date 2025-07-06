@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="1.1547420965058237in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 1521 694" width="2.530782029950083in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.font0 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+.font1 { font-size: 82px; font-family: Arial, sans-serif; }
+.brush1 { fill: none; }
+.brush2 { fill: rgb(0,0,0); }
+.pen1 { stroke: none; }
+</style>
+    <g>
+        <g>
+            <clipPath id="clipPath0">
+                <rect height="694" width="1519" x="0" y="0"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath0)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="0" xml:lang="en" xml:space="preserve" y="-3179"> </text>
+        </g>
+        <g>
+            <clipPath id="clipPath1">
+                <rect height="694" width="1519" x="0" y="0"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath1)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="0" xml:lang="en" xml:space="preserve" y="-3073"> </text>
+        </g>
+        <g>
+            <clipPath id="clipPath2">
+                <rect height="694" width="1519" x="0" y="0"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath2)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="0" xml:lang="en" xml:space="preserve" y="85"> </text>
+        </g>
+        <polygon class="pen0 brush1" points="1023,0 1023,144 1444,144 1444,0"/>
+    </g>
+    <g>
+        <g>
+            <clipPath id="clipPath3">
+                <rect height="133" width="460" x="1056" y="15"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath3)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1056 1108 1174" xml:lang="en" xml:space="preserve" y="100">gNB</text>
+        </g>
+        <g>
+            <clipPath id="clipPath4">
+                <rect height="133" width="460" x="1056" y="15"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath4)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1235" xml:lang="en" xml:space="preserve" y="100">-</text>
+        </g>
+        <g>
+            <clipPath id="clipPath5">
+                <rect height="133" width="460" x="1056" y="15"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath5)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1266 1332" xml:lang="en" xml:space="preserve" y="100">CU</text>
+        </g>
+        <g>
+            <clipPath id="clipPath6">
+                <rect height="133" width="460" x="1056" y="15"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath6)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1397" xml:lang="en" xml:space="preserve" y="100"> </text>
+        </g>
+    </g>
+    <g>
+        <polyline class="pen0" fill="none" points="1322,157 1322,680"/>
+    </g>
+    <g>
+        <polygon class="pen1 brush2" points="1180,656 1180,689 1474,689 1474,656 1180,656"/>
+        <polygon class="pen0 brush1" points="1180,656 1180,689 1474,689 1474,656"/>
+    </g>
+    <g>
+        <polygon class="pen0 brush1" points="13,0 13,144 430,144 430,0"/>
+    </g>
+    <g>
+        <g>
+            <clipPath id="clipPath7">
+                <rect height="133" width="398" x="32" y="17"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath7)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="32 84 150" xml:lang="en" xml:space="preserve" y="102">gNB</text>
+        </g>
+        <g>
+            <clipPath id="clipPath8">
+                <rect height="133" width="398" x="32" y="17"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath8)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="211" xml:lang="en" xml:space="preserve" y="102">-</text>
+        </g>
+        <g>
+            <clipPath id="clipPath9">
+                <rect height="133" width="398" x="32" y="17"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath9)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="242 308" xml:lang="en" xml:space="preserve" y="102">DU</text>
+        </g>
+        <g>
+            <clipPath id="clipPath10">
+                <rect height="133" width="398" x="32" y="17"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath10)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="373" xml:lang="en" xml:space="preserve" y="102"> </text>
+        </g>
+    </g>
+    <g>
+        <polyline class="pen0" fill="none" points="135,157 135,656"/>
+    </g>
+    <g>
+        <polygon class="pen1 brush2" points="2,656 2,689 297,689 297,656 2,656"/>
+        <polygon class="pen0 brush1" points="2,656 2,689 297,689 297,656"/>
+    </g>
+    <g>
+        <path class="pen0 brush2" d="M 1257,399  L 158,399 158,390 1257,390 1257,399 z M 1248,370  L 1298,395 1248,420 1248,370 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <g>
+            <clipPath id="clipPath11">
+                <rect height="157" width="1023" x="185" y="276"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath11)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="185 246 312 378 450 516 542 568 634 700 726 792 852 909 934 1006" xml:lang="en" xml:space="preserve" y="361">ERROR INDICATION</text>
+        </g>
+        <g>
+            <clipPath id="clipPath12">
+                <rect height="157" width="1023" x="185" y="276"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath12)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1071" xml:lang="en" xml:space="preserve" y="361"> </text>
+        </g>
+    </g>
+    <g/>
+</svg>

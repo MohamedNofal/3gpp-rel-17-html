@@ -1,0 +1,3093 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>38913-h00</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#contents" id="toc-contents"><br />
+Contents</a></li>
+<li><a href="#foreword" id="toc-foreword"><br />
+Foreword</a></li>
+<li><a href="#scope" id="toc-scope"><br />
+1 Scope</a></li>
+<li><a href="#references" id="toc-references">2 References</a></li>
+<li><a href="#definitions-symbols-and-abbreviations"
+id="toc-definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</a>
+<ul>
+<li><a href="#definitions" id="toc-definitions">3.1 Definitions</a></li>
+<li><a href="#symbols" id="toc-symbols">3.2 Symbols</a></li>
+<li><a href="#abbreviations" id="toc-abbreviations">3.3
+Abbreviations</a></li>
+</ul></li>
+<li><a href="#introduction" id="toc-introduction">4
+Introduction</a></li>
+<li><a href="#objectives" id="toc-objectives">5 Objectives</a></li>
+<li><a href="#scenarios" id="toc-scenarios">6 Scenarios</a>
+<ul>
+<li><a href="#general" id="toc-general">6.0 General</a></li>
+<li><a href="#deployment-scenarios" id="toc-deployment-scenarios">6.1
+Deployment scenarios</a>
+<ul>
+<li><a href="#indoor-hotspot" id="toc-indoor-hotspot">6.1.1 Indoor
+hotspot</a></li>
+<li><a href="#dense-urban" id="toc-dense-urban">6.1.2 Dense
+urban</a></li>
+<li><a href="#rural" id="toc-rural">6.1.3 Rural</a></li>
+<li><a href="#urban-macro" id="toc-urban-macro">6.1.4 Urban
+macro</a></li>
+<li><a href="#high-speed" id="toc-high-speed">6.1.5 High speed</a></li>
+<li><a href="#extreme-long-distance-coverage-in-low-density-areas"
+id="toc-extreme-long-distance-coverage-in-low-density-areas">6.1.6
+Extreme long distance coverage in low density areas</a></li>
+<li><a href="#urban-coverage-for-massive-connection"
+id="toc-urban-coverage-for-massive-connection">6.1.7 Urban coverage for
+massive connection</a></li>
+<li><a href="#highway-scenario" id="toc-highway-scenario">6.1.8 Highway
+Scenario</a></li>
+<li><a href="#urban-grid-for-connected-car"
+id="toc-urban-grid-for-connected-car">6.1.9 Urban Grid for Connected
+Car</a></li>
+<li><a href="#commercial-air-to-ground-scenario"
+id="toc-commercial-air-to-ground-scenario">6.1.10 Commercial Air to
+Ground scenario</a></li>
+<li><a href="#light-aircraft-scenario"
+id="toc-light-aircraft-scenario">6.1.11 Light aircraft scenario</a></li>
+<li><a href="#satellite-extension-to-terrestrial"
+id="toc-satellite-extension-to-terrestrial">6.1.12 Satellite extension
+to Terrestrial</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#key-performance-indicators"
+id="toc-key-performance-indicators">7 Key performance indicators</a>
+<ul>
+<li><a href="#peak-data-rate" id="toc-peak-data-rate">7.1 Peak data
+rate</a></li>
+<li><a href="#peak-spectral-efficiency"
+id="toc-peak-spectral-efficiency">7.2 Peak Spectral efficiency</a></li>
+<li><a href="#bandwidth" id="toc-bandwidth">7.3 Bandwidth</a></li>
+<li><a href="#control-plane-latency" id="toc-control-plane-latency">7.4
+Control plane latency</a></li>
+<li><a href="#user-plane-latency" id="toc-user-plane-latency">7.5 User
+plane latency</a></li>
+<li><a href="#latency-for-infrequent-small-packets"
+id="toc-latency-for-infrequent-small-packets">7.6 Latency for infrequent
+small packets</a></li>
+<li><a href="#mobility-interruption-time"
+id="toc-mobility-interruption-time">7.7 Mobility interruption
+time</a></li>
+<li><a href="#inter-system-mobility" id="toc-inter-system-mobility">7.8
+Inter-system mobility</a></li>
+<li><a href="#reliability" id="toc-reliability">7.9 Reliability</a></li>
+<li><a href="#coverage" id="toc-coverage">7.10 Coverage</a>
+<ul>
+<li><a href="#extreme-coverage" id="toc-extreme-coverage">7.10.1 Extreme
+Coverage</a></li>
+</ul></li>
+<li><a href="#ue-battery-life" id="toc-ue-battery-life">7.11 UE battery
+life</a></li>
+<li><a href="#ue-energy-efficiency" id="toc-ue-energy-efficiency">7.12
+UE energy efficiency</a></li>
+<li><a href="#celltransmission-pointtrxp-spectral-efficiency"
+id="toc-celltransmission-pointtrxp-spectral-efficiency">7.13
+Cell/Transmission Point/TRxP spectral efficiency</a></li>
+<li><a href="#area-traffic-capacity" id="toc-area-traffic-capacity">7.14
+Area traffic capacity</a></li>
+<li><a href="#user-experienced-data-rate"
+id="toc-user-experienced-data-rate">7.15 User experienced data
+rate</a></li>
+<li><a href="#th-percentile-user-spectrum-efficiency"
+id="toc-th-percentile-user-spectrum-efficiency">7.16 5th percentile user
+spectrum efficiency</a></li>
+<li><a href="#connection-density" id="toc-connection-density">7.17
+Connection density</a></li>
+<li><a href="#mobility" id="toc-mobility">7.18 Mobility</a></li>
+<li><a href="#network-energy-efficiency"
+id="toc-network-energy-efficiency">7.19 Network energy
+efficiency</a></li>
+</ul></li>
+<li><a
+href="#requirements-for-architecture-and-migration-of-next-generation-radio-access-technologies"
+id="toc-requirements-for-architecture-and-migration-of-next-generation-radio-access-technologies">8
+Requirements for architecture and migration of Next Generation Radio
+Access Technologies</a></li>
+<li><a href="#supplementary-service-related-requirements"
+id="toc-supplementary-service-related-requirements">9
+Supplementary-Service related requirements</a>
+<ul>
+<li><a href="#multimedia-broadcastmulticast-service"
+id="toc-multimedia-broadcastmulticast-service">9.1 Multimedia
+Broadcast/Multicast Service</a></li>
+<li><a href="#locationpositioning-service"
+id="toc-locationpositioning-service">9.2 Location/Positioning
+Service</a></li>
+<li><a href="#critical-communications-services"
+id="toc-critical-communications-services">9.3 Critical Communications
+services</a>
+<ul>
+<li><a href="#public-safety-communications"
+id="toc-public-safety-communications">9.3.1 Public safety
+communications</a></li>
+<li><a href="#emergency-communications"
+id="toc-emergency-communications">9.3.2 Emergency
+communications</a></li>
+<li><a href="#public-warningemergency-alert-systems"
+id="toc-public-warningemergency-alert-systems">9.3.3 Public
+warning/emergency alert systems</a></li>
+</ul></li>
+<li><a href="#v2x-communication" id="toc-v2x-communication">9.4 V2X
+communication</a></li>
+</ul></li>
+<li><a href="#operational-requirements"
+id="toc-operational-requirements">10 Operational requirements</a>
+<ul>
+<li><a href="#general-1" id="toc-general-1">10.0 General</a></li>
+<li><a href="#spectrum" id="toc-spectrum">10.1 Spectrum</a>
+<ul>
+<li><a href="#void" id="toc-void">10.1.1 Void</a></li>
+<li><a href="#channel-bandwidth-scalability"
+id="toc-channel-bandwidth-scalability">10.1.2 Channel bandwidth
+scalability</a></li>
+<li><a href="#void-1" id="toc-void-1">10.1.3 Void</a></li>
+<li><a href="#duplexing-flexibility"
+id="toc-duplexing-flexibility">10.1.4 Duplexing flexibility</a></li>
+<li><a href="#support-of-shared-spectrum"
+id="toc-support-of-shared-spectrum">10.1.5 Support of shared
+spectrum</a></li>
+<li><a href="#spectrum-range" id="toc-spectrum-range">10.1.6 Spectrum
+range</a></li>
+</ul></li>
+<li><a href="#ul-link-budget" id="toc-ul-link-budget">10.2 UL Link
+Budget</a></li>
+<li><a href="#support-for-wide-range-of-services"
+id="toc-support-for-wide-range-of-services">10.3 Support for wide range
+of services</a></li>
+<li><a href="#co-existence-and-interworking-with-legacy-rats"
+id="toc-co-existence-and-interworking-with-legacy-rats">10.4
+Co-existence and interworking with legacy RATs</a>
+<ul>
+<li><a href="#co-existence-with-lte"
+id="toc-co-existence-with-lte">10.4.1 Co-existence with LTE</a></li>
+<li><a href="#co-existence-with-umts-and-gsmedge"
+id="toc-co-existence-with-umts-and-gsmedge">10.4.2 Co-existence with
+UMTS and GSM/EDGE</a></li>
+</ul></li>
+<li><a href="#v2x-communication-1" id="toc-v2x-communication-1">10.4.3
+V2X communication</a></li>
+<li><a href="#void-2" id="toc-void-2">10.5 Void</a></li>
+<li><a href="#interworking-with-non-3gpp-systems"
+id="toc-interworking-with-non-3gpp-systems">10.6 Interworking with
+non-3GPP systems</a>
+<ul>
+<li><a href="#general-2" id="toc-general-2">10.6.1 General</a></li>
+<li><a href="#interworking-with-wlan"
+id="toc-interworking-with-wlan">10.6.2 Interworking with WLAN</a></li>
+<li><a href="#void-3" id="toc-void-3">10.6.3 Void</a></li>
+</ul></li>
+<li><a href="#void-4" id="toc-void-4">10.7 Void</a></li>
+<li><a href="#easy-operation-and-self-organization-requirements"
+id="toc-easy-operation-and-self-organization-requirements">10.8 Easy
+operation and Self Organization requirements</a></li>
+<li><a href="#void-5" id="toc-void-5">10.9 Void</a></li>
+<li><a href="#cost-related-requirements"
+id="toc-cost-related-requirements">10.10 Cost-related requirements</a>
+<ul>
+<li><a href="#balance-of-complexity-and-performance"
+id="toc-balance-of-complexity-and-performance">10.10.1 Balance of
+complexity and performance</a></li>
+<li><a href="#low-cost-requirements"
+id="toc-low-cost-requirements">10.10.2 Low-cost requirements</a></li>
+</ul></li>
+<li><a href="#energy-related-requirements"
+id="toc-energy-related-requirements">10.11 Energy-related
+requirements</a></li>
+<li><a
+href="#security-and-privacy-related-requirement-relevant-for-radio-access"
+id="toc-security-and-privacy-related-requirement-relevant-for-radio-access">10.12
+Security and Privacy related requirement relevant for Radio
+Access</a></li>
+<li><a href="#void-6" id="toc-void-6">10.13 Void</a></li>
+<li><a href="#lawful-interception" id="toc-lawful-interception">10.14
+Lawful Interception</a></li>
+<li><a href="#backhaul-and-signalling-optimization-requirements"
+id="toc-backhaul-and-signalling-optimization-requirements">10.15
+Backhaul and signalling optimization requirements</a></li>
+<li><a href="#relay-requirements" id="toc-relay-requirements">10.16
+Relay requirements</a></li>
+<li><a href="#high-availability" id="toc-high-availability">10.17 High
+availability</a></li>
+<li><a href="#void-7" id="toc-void-7">10.18 Void</a></li>
+</ul></li>
+<li><a href="#testing-and-conformance-requirements"
+id="toc-testing-and-conformance-requirements">11 Testing and Conformance
+Requirements</a></li>
+</ul>
+</nav>
+<p>3GPP TR 38.913 V17.0.0 (2022-03)</p>
+<p>Technical Report</p>
+<p>3rd Generation Partnership Project;</p>
+<p>Technical Specification Group Radio Access Network;</p>
+<p>Study on Scenarios and Requirements for<br />
+Next Generation Access Technologies;</p>
+<p>(Release 17)</p>
+<p><img src="media/image1.jpeg" /> <img src="media/image2.png" /></p>
+<p>The present document has been developed within the 3<sup>rd</sup>
+Generation Partnership Project (3GPP <sup>TM</sup>) and may be further
+elaborated for the purposes of 3GPP.<br />
+The present document has not been subject to any approval process by the
+3GPP Organizational Partners and shall not be implemented.<br />
+This Report is provided for future development work within 3GPP only.
+The Organizational Partners accept no liability for any use of this
+Specification.<br />
+Specifications and Reports for implementation of the 3GPP <sup>TM</sup>
+system should be obtained via the 3GPP Organizational Partners'
+Publications Offices.</p>
+<blockquote>
+<p>Keywords</p>
+<p>Radio</p>
+<p><em><strong>3GPP</strong></em></p>
+<p>Postal address</p>
+<p>3GPP support office address</p>
+<p>650 Route des Lucioles - Sophia Antipolis</p>
+<p>Valbonne - FRANCE</p>
+<p>Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16</p>
+<p>Internet</p>
+<p><a href="http://www.3gpp.org">http://www.3gpp.org</a></p>
+</blockquote>
+<p><em><strong>Copyright Notification</strong></em></p>
+<p>No part may be reproduced except as authorized by written
+permission.<br />
+The copyright and the foregoing restriction extend to reproduction in
+all media.</p>
+<p>© 2022, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI,
+TTA, TTC).</p>
+<p>All rights reserved.</p>
+<p>UMTS™ is a Trade Mark of ETSI registered for the benefit of its
+members</p>
+<p>3GPP™ is a Trade Mark of ETSI registered for the benefit of its
+Members and of the 3GPP Organizational Partners<br />
+LTE™ is a Trade Mark of ETSI registered for the benefit of its Members
+and of the 3GPP Organizational Partners</p>
+<p>GSM® and the GSM logo are registered and owned by the GSM
+Association</p>
+<h1 class="TT" id="contents"><br />
+Contents</h1>
+<p>Foreword <a href="#foreword">5</a></p>
+<p>1 Scope <a href="#scope">6</a></p>
+<p>2 References <a href="#references">6</a></p>
+<p>3 Definitions, symbols and abbreviations <a
+href="#definitions-symbols-and-abbreviations">7</a></p>
+<p>3.1 Definitions <a href="#definitions">7</a></p>
+<p>3.2 Symbols <a href="#symbols">7</a></p>
+<p>3.3 Abbreviations <a href="#abbreviations">7</a></p>
+<p>4 Introduction <a href="#introduction">8</a></p>
+<p>5 Objectives <a href="#objectives">8</a></p>
+<p>6 Scenarios <a href="#scenarios">9</a></p>
+<p>6.0 General <a href="#general">9</a></p>
+<p>6.1 Deployment scenarios <a href="#deployment-scenarios">9</a></p>
+<p>6.1.1 Indoor hotspot <a href="#indoor-hotspot">10</a></p>
+<p>6.1.2 Dense urban <a href="#dense-urban">11</a></p>
+<p>6.1.3 Rural <a href="#rural">12</a></p>
+<p>6.1.4 Urban macro <a href="#urban-macro">13</a></p>
+<p>6.1.5 High speed <a href="#high-speed">14</a></p>
+<p>6.1.6 Extreme long distance coverage in low density areas <a
+href="#extreme-long-distance-coverage-in-low-density-areas">16</a></p>
+<p>6.1.7 Urban coverage for massive connection <a
+href="#urban-coverage-for-massive-connection">16</a></p>
+<p>6.1.8 Highway Scenario <a href="#highway-scenario">17</a></p>
+<p>6.1.9 Urban Grid for Connected Car <a
+href="#urban-grid-for-connected-car">19</a></p>
+<p>6.1.10 Commercial Air to Ground scenario <a
+href="#commercial-air-to-ground-scenario">21</a></p>
+<p>6.1.11 Light aircraft scenario <a
+href="#light-aircraft-scenario">21</a></p>
+<p>6.1.12 Satellite extension to Terrestrial <a
+href="#satellite-extension-to-terrestrial">21</a></p>
+<p>7 Key performance indicators <a
+href="#key-performance-indicators">23</a></p>
+<p>7.1 Peak data rate <a href="#peak-data-rate">23</a></p>
+<p>7.2 Peak Spectral efficiency <a
+href="#peak-spectral-efficiency">23</a></p>
+<p>7.3 Bandwidth <a href="#bandwidth">23</a></p>
+<p>7.4 Control plane latency <a href="#control-plane-latency">23</a></p>
+<p>7.5 User plane latency <a href="#user-plane-latency">24</a></p>
+<p>7.6 Latency for infrequent small packets <a
+href="#latency-for-infrequent-small-packets">24</a></p>
+<p>7.7 Mobility interruption time <a
+href="#mobility-interruption-time">24</a></p>
+<p>7.8 Inter-system mobility <a href="#inter-system-mobility">24</a></p>
+<p>7.9 Reliability <a href="#reliability">25</a></p>
+<p>7.10 Coverage <a href="#coverage">25</a></p>
+<p>7.10.1 Extreme Coverage <a href="#extreme-coverage">25</a></p>
+<p>7.11 UE battery life <a href="#ue-battery-life">26</a></p>
+<p>7.12 UE energy efficiency <a href="#ue-energy-efficiency">26</a></p>
+<p>7.13 Cell/Transmission Point/TRxP spectral efficiency <a
+href="#celltransmission-pointtrxp-spectral-efficiency">26</a></p>
+<p>7.14 Area traffic capacity <a
+href="#area-traffic-capacity">27</a></p>
+<p>7.15 User experienced data rate <a
+href="#user-experienced-data-rate">27</a></p>
+<p>7.16 5th percentile user spectrum efficiency <a
+href="#th-percentile-user-spectrum-efficiency">28</a></p>
+<p>7.17 Connection density <a href="#connection-density">28</a></p>
+<p>7.18 Mobility <a href="#mobility">29</a></p>
+<p>7.19 Network energy efficiency <a
+href="#network-energy-efficiency">29</a></p>
+<p>8 Requirements for architecture and migration of Next Generation
+Radio Access Technologies <a
+href="#requirements-for-architecture-and-migration-of-next-generation-radio-access-technologies">31</a></p>
+<p>9 Supplementary-Service related requirements <a
+href="#supplementary-service-related-requirements">32</a></p>
+<p>9.1 Multimedia Broadcast/Multicast Service <a
+href="#multimedia-broadcastmulticast-service">32</a></p>
+<p>9.2 Location/Positioning Service <a
+href="#locationpositioning-service">32</a></p>
+<p>9.3 Critical Communications services <a
+href="#critical-communications-services">33</a></p>
+<p>9.3.1 Public safety communications <a
+href="#public-safety-communications">33</a></p>
+<p>9.3.2 Emergency communications <a
+href="#emergency-communications">33</a></p>
+<p>9.3.3 Public warning/emergency alert systems <a
+href="#public-warningemergency-alert-systems">33</a></p>
+<p>9.4 V2X communication <a href="#v2x-communication">33</a></p>
+<p>10 Operational requirements <a
+href="#operational-requirements">34</a></p>
+<p>10.0 General <a href="#general-1">34</a></p>
+<p>10.1 Spectrum <a href="#spectrum">34</a></p>
+<p>10.1.1 Void <a href="#void">34</a></p>
+<p>10.1.2 Channel bandwidth scalability <a
+href="#channel-bandwidth-scalability">34</a></p>
+<p>10.1.3 Void <a href="#void-1">34</a></p>
+<p>10.1.4 Duplexing flexibility <a
+href="#duplexing-flexibility">34</a></p>
+<p>10.1.5 Support of shared spectrum <a
+href="#support-of-shared-spectrum">34</a></p>
+<p>10.1.6 Spectrum range <a href="#spectrum-range">34</a></p>
+<p>10.2 UL Link Budget <a href="#ul-link-budget">34</a></p>
+<p>10.3 Support for wide range of services <a
+href="#support-for-wide-range-of-services">34</a></p>
+<p>10.4 Co-existence and interworking with legacy RATs <a
+href="#co-existence-and-interworking-with-legacy-rats">34</a></p>
+<p>10.4.1 Co-existence with LTE <a
+href="#co-existence-with-lte">34</a></p>
+<p>10.4.2 Co-existence with UMTS and GSM/EDGE <a
+href="#co-existence-with-umts-and-gsmedge">35</a></p>
+<p>10.4.3 V2X communication <a href="#v2x-communication-1">35</a></p>
+<p>10.5 Void <a href="#void-2">35</a></p>
+<p>10.6 Interworking with non-3GPP systems <a
+href="#interworking-with-non-3gpp-systems">35</a></p>
+<p>10.6.1 General <a href="#general-2">35</a></p>
+<p>10.6.2 Interworking with WLAN <a
+href="#interworking-with-wlan">35</a></p>
+<p>10.6.3 Void <a href="#void-3">35</a></p>
+<p>10.7 Void <a href="#void-4">35</a></p>
+<p>10.8 Easy operation and Self Organization requirements <a
+href="#easy-operation-and-self-organization-requirements">35</a></p>
+<p>10.9 Void <a href="#void-5">36</a></p>
+<p>10.10 Cost-related requirements <a
+href="#cost-related-requirements">36</a></p>
+<p>10.10.1 Balance of complexity and performance <a
+href="#balance-of-complexity-and-performance">36</a></p>
+<p>10.10.2 Low-cost requirements <a
+href="#low-cost-requirements">36</a></p>
+<p>10.11 Energy-related requirements <a
+href="#energy-related-requirements">36</a></p>
+<p>10.12 Security and Privacy related requirement relevant for Radio
+Access <a
+href="#security-and-privacy-related-requirement-relevant-for-radio-access">36</a></p>
+<p>10.13 Void <a href="#void-6">36</a></p>
+<p>10.14 Lawful Interception <a href="#lawful-interception">36</a></p>
+<p>10.15 Backhaul and signalling optimization requirements <a
+href="#backhaul-and-signalling-optimization-requirements">36</a></p>
+<p>10.16 Relay requirements <a href="#relay-requirements">37</a></p>
+<p>10.17 High availability <a href="#high-availability">37</a></p>
+<p>10.18 Void <a href="#void-7">37</a></p>
+<p>11 Testing and Conformance Requirements <a
+href="#testing-and-conformance-requirements">38</a></p>
+<p>Annex A: Change history <a href="#annex-a-change-history">39</a></p>
+<h1 id="foreword"><br />
+Foreword</h1>
+<p>This Technical Report has been produced by the 3<sup>rd</sup>
+Generation Partnership Project (3GPP).</p>
+<p>The contents of the present document are subject to continuing work
+within the TSG and may change following formal TSG approval. Should the
+TSG modify the contents of the present document, it will be re-released
+by the TSG with an identifying change of release date and an increase in
+version number as follows:</p>
+<p>Version x.y.z</p>
+<p>where:</p>
+<p>x the first digit:</p>
+<p>1 presented to TSG for information;</p>
+<p>2 presented to TSG for approval;</p>
+<p>3 or greater indicates TSG approved document under change
+control.</p>
+<p>y the second digit is incremented for all changes of substance, i.e.
+technical enhancements, corrections, updates, etc.</p>
+<p>z the third digit is incremented when editorial only changes have
+been incorporated in the document.</p>
+<h1 id="scope"><br />
+1 Scope</h1>
+<p>This document is related to the technical report for this study item
+"Scenarios and Requirements for Next Generation Access Technologies"
+[1]. The objective of the study item is to identify the typical
+deployment scenarios associated with attributes such as carrier
+frequency, inter-site distance, user density, maximum mobility speed,
+etc, and to develop requirements for next generation access technologies
+for the identified deployment scenarios taking into account, but not
+limited to, the ITU-R discussion on IMT-2020 requirements.</p>
+<p>This document contains scenarios and requirements for next generation
+access technologies, which can be used as not only guidance to the
+technical work to be performed in 3GPP RAN WGs, but also input for ITU-R
+to take into account when developing IMT-2020 technical performance
+requirements.</p>
+<h1 id="references">2 References</h1>
+<p>The following documents contain provisions which, through reference
+in this text, constitute provisions of the present document.</p>
+<p>[1] 3GPP SID FS_NG_SReq: "Scenarios and Requirements for Next
+Generation Access Technologies" RP-152257, “New Study Item Proposal -
+Study on Scenarios and Requirements for Next Generation Access
+Technologies”, CMCC, RAN#70, Sitges, Spain, Dec. 7 - 11, 2015.</p>
+<p>[2] 3GPP TR 21.905: "Vocabulary for 3GPP Specifications".</p>
+<p>[3] 3GPP TR 22.891: "Feasibility Study on New Services and Markets
+Technology Enablers".</p>
+<p>[4] Recommendation ITU-R M.2083: <a
+href="http://www.itu.int/rec/R-REC-M.2083">IMT Vision - "Framework and
+overall objectives of the future development of IMT for 2020 and
+beyond"</a>​ (September 2015).</p>
+<p>[5] ITU-R report M.2135, Guidelines for evaluation of radio interface
+technologies for IMT-Advanced.</p>
+<p>[6] 3GPP TR 36.878: "Study on performance enhancements for high speed
+scenario in LTE".</p>
+<p>[7] 3GPP TR 23.799: " Study on Architecture for Next Generation
+System".</p>
+<p>[8] 3GPP TS 23.303: " Proximity-based services (ProSe); Stage 2".</p>
+<p>[9] 3GPP TS 22.179: "Mission Critical Push To Talk (MCPTT) over LTE;
+Stage 1".</p>
+<p>[10] 3GPP TS 22.468: "Group Communication System Enablers for LTE
+(GCSE_LTE)".</p>
+<p>[11] 3GPP TR 36.890: "Evolved Universal Terrestrial Radio Access
+(E-UTRA); Study on single-cell point-to-multipoint transmission for
+E-UTRA".</p>
+<p>[12] 3GPP TS 22.101: "Service aspects; Service principles".</p>
+<p>[13] 3GPP TS 22.071 "Location Services (LCS); Service description;
+Stage 1".</p>
+<p>[14] 3GPP TS 22.153: "Multimedia priority service".</p>
+<p>[15] 3GPP TS 22.268: "Public Warning System (PWS) requirements".</p>
+<p>[16] 3GPP TS 33.106: "3G security; Lawful interception
+requirements".</p>
+<p>[17] 3GPP TS 22.185: "Service requirements for V2X services".</p>
+<p>[18] 3GPP TS 22.886: "Study on enhancement of 3GPP Support for 5G V2X
+Services".</p>
+<p>[19] 3GPP TR 33.899: "Study on the security aspects of the next
+generation system".</p>
+<p>[20] 3GPP TS 22.280: "Mission Critical Services Common Requirements
+(MCCoRe); Stage 1".</p>
+<p>[21] 3GPP TS 22.281: "Mission Critical Video services over LTE".</p>
+<p>[22] 3GPP TS 22.282: "Mission Critical Data services over LTE".</p>
+<p>[23] 3GPP TS 22.346: "Isolated Evolved Universal Terrestrial Radio
+Access Network (E-UTRAN) operation for public safety; Stage 1".</p>
+<h1 id="definitions-symbols-and-abbreviations">3 Definitions, symbols
+and abbreviations</h1>
+<h2 id="definitions">3.1 Definitions</h2>
+<p>For the purposes of the present document, the terms and definitions
+given in 3GPP TR 21.905 [1] and the following apply. A term defined in
+the present document takes precedence over the definition of the same
+term, if any, in 3GPP TR 21.905 [1].</p>
+<p><strong>Transmission Reception Point (TRxP)</strong>: Antenna array
+with one or more antenna elements available to the network located at a
+specific geographical location for a specific area.</p>
+<h2 id="symbols">3.2 Symbols</h2>
+<p>For the purposes of the present document, the following symbols
+apply:</p>
+<p>t_gen The time during which data or access request is generated</p>
+<p>t_sendrx The time during which data or access request is sent or
+received</p>
+<h2 id="abbreviations">3.3 Abbreviations</h2>
+<p>For the purposes of the present document, the abbreviations given in
+3GPP TR 21.905 [2] and the following apply.<br />
+An abbreviation defined in the present document takes precedence over
+the definition of the same abbreviation, if any, in 3GPP
+TR 21.905 [2].</p>
+<p>ARPU Average Revenue Per User</p>
+<p>BBU Baseband Unit</p>
+<p>BS Base Station</p>
+<p>CAPEX Capital Expenditure</p>
+<p>CDF Cumulative Distribution Function</p>
+<p>CN Core Network</p>
+<p>D2D Device to Device</p>
+<p>DL Downlink</p>
+<p>DRX Discontinuous Reception</p>
+<p>EE Energy Efficiency</p>
+<p>eMBB enhanced Mobile BroadBand</p>
+<p>EMF Electric and Magnetic Fields</p>
+<p>eNB evolved Node B</p>
+<p>eV2X enhanced Vehicle to Everything</p>
+<p>FDD Frequency Division Duplex</p>
+<p>GCSE_LTE Group Communication System Enablers for LTE</p>
+<p>GEO <a
+href="https://en.wikipedia.org/wiki/Geostationary">Geostationary</a>
+orbit</p>
+<p>GNSS Global Navigation Satellite System</p>
+<p>HEO High Earth Orbit</p>
+<p>IMT International Mobile Telecommunicationss</p>
+<p>InH Indoor Hotspot</p>
+<p>ISD Inter-Site Distance</p>
+<p>ITU International Telecommunication Union</p>
+<p>ITU-R International Telecommunication Union Radiocommunication
+Sector</p>
+<p>KPI Key Performance Indicator</p>
+<p>LEO Low Earth Orbit</p>
+<p>MEO Medium Earth Orbit</p>
+<p>MBB Mobile BroadBand</p>
+<p>MaxCL Maximum Coupling Loss</p>
+<p>MCPTT Mission-Critical Push-To-Talk</p>
+<p>mMTC massive Machine Type Communications</p>
+<p>NR New Radio</p>
+<p>OPEX Operational Expenditure</p>
+<p>ProSe Proximity Services</p>
+<p>QoE Quality of Experience</p>
+<p>QoS Quality of Service</p>
+<p>RAN Radio Access Network</p>
+<p>RAT Radio Access Technology</p>
+<p>RF Radio Frequency</p>
+<p>RMa Rural Macro</p>
+<p>RRH Remote Radio Head</p>
+<p>RSU Roadside Unit</p>
+<p>RTT Round Trip Time</p>
+<p>Rx Receiver</p>
+<p>SA Service and System Aspect</p>
+<p>SC-PTM Single-Cell Point-to-Multipoint transmission</p>
+<p>SDU Service Data Unit</p>
+<p>SFN Single Frequency Network</p>
+<p>SINR Signal-to-Interference-plus-Noise Ratio</p>
+<p>SON Self Organized Network</p>
+<p>TDD Time Division Duplex</p>
+<p>TR Technical Report</p>
+<p>TRxP Transmission Reception Point</p>
+<p>Tx Transmitter</p>
+<p>UE User Equipment</p>
+<p>UL Uplink</p>
+<p>UMa Urban Macro</p>
+<p>UMi Urban Micro</p>
+<p>URLLC Ultra-Reliable and Low Latency Communications</p>
+<p>V2X Vehicle to Everything</p>
+<p>WG Working Group</p>
+<p>WLAN Wireless Local Area Network</p>
+<p>WRC World Radiocommunication Conference</p>
+<h1 id="introduction">4 Introduction</h1>
+<p>At the 3GPP TSG RAN #70 meeting, the Study Item description on
+"Scenarios and Requirements for Next Generation Access Technologies" was
+approved [1].</p>
+<p>The justification of the Study Item was that a fully mobile and
+connected society is expected in the near future, which will be
+characterized by a tremendous amount of growth in connectivity, traffic
+volume and a much broader range of usage scenarios. Some typical trends
+include explosive growth of data traffic, great increase of connected
+devices and continuous emergence of new services. Besides the market
+requirements, the mobile communication society itself also requires a
+sustainable development of the eco-system, which produces the needs to
+further improve system efficiencies, such as spectrum efficiency, energy
+efficiency, operational efficiency and cost efficiency. To meet the
+above ever-increasing requirements from market and mobile communication
+society, next generation access technologies are expected to emerge in
+the near future. A study item to identify typical deployment scenarios
+for next generation access technologies and the required capabilities in
+each corresponding deployment scenarios should be considered.</p>
+<h1 id="objectives">5 Objectives</h1>
+<p>In order to meet the deployment scenarios and requirements, studies
+for next generation access technologies should be carried out in at
+least, but not limited to, the following areas, designs for next
+generation access technologies RAN should strive for enough flexibility
+to support current envisaged and future requirements for the different
+use cases, e.g., from SA1 3GPP TR 22.891 [3], i.e., to support for wide
+range of services.</p>
+<h1 id="scenarios">6 Scenarios</h1>
+<h2 id="general">6.0 General</h2>
+<p>This subsection briefly introduces the three usage scenarios defined
+by ITU-R IMT for 2020 and beyond [4] is envisaged to expand and support
+diverse families of usage scenarios and applications that will continue
+beyond the current IMT. Furthermore, a broad variety of capabilities
+would be tightly coupled with these intended different usage scenarios
+and applications for IMT for 2020 and beyond. The families of usage
+scenarios for IMT for 2020 and beyond include:</p>
+<p>- eMBB (enhanced Mobile BroadBand)</p>
+<p>- mMTC (massive Machine Type Communications)</p>
+<p>- URLLC (Ultra-Reliable and Low Latency Communications)</p>
+<h2 id="deployment-scenarios">6.1 Deployment scenarios</h2>
+<p>Deployment scenarios for eMBB, mMTC and URLLC are described in this
+TR. Other deployment scenarios related to eV2X (enhanced Vehicle to
+Everything) services are also described in this TR. Not all requirements
+apply to all deployment scenarios described in the TR. The mapping
+between requirements and deployment scenarios is described per KPI in
+Chapter 7.However, some of eMBB deployment scenarios may possibly be
+reused to evaluate mMTC and URLLC, or some specific evaluation tests
+(e.g., link-level simulation) can be developed to check whether the
+requirements can be achieved.</p>
+<p>High-level descriptions on deployment scenarios including carrier
+frequency, aggregated system bandwidth, network layout / ISD, BS / UE
+antenna elements, UE distribution / speed and service profile are
+proposed in this TR. It is assumed that more detailed attributes and
+simulation parameters, for example, the channel model, BS / UE Tx power,
+number of antenna ports, etc. should be defined in the new RAT study
+item.</p>
+<h3 id="indoor-hotspot">6.1.1 Indoor hotspot</h3>
+<p>The indoor hotspot deployment scenario focuses on small coverage per
+site/TRxP (transmission and reception point) and high user throughput or
+user density in buildings. The key characteristics of this deployment
+scenario are high capacity, high user density and consistent user
+experience indoor.</p>
+<p>Some of its attributes are listed in Table 6.1.1-1.</p>
+<p>Table 6.1.1-1: Attributes for indoor hotspot</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Attributes</th>
+<th>Values or assumptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Carrier Frequency</p>
+<p>NOTE1</p></td>
+<td>Around 30 GHz or Around 70 GHz or Around 4 GHz</td>
+</tr>
+<tr>
+<td><p>Aggregated system bandwidth</p>
+<p>NOTE2</p></td>
+<td><p>Around 30GHz or Around 70GHz: Up to 1GHz (DL+UL) NOTE3</p>
+<p>Around 4GHz: Up to 200MHz (DL+UL)</p></td>
+</tr>
+<tr>
+<td>Layout</td>
+<td><p>Single layer:</p>
+<p>- Indoor floor</p>
+<p>(Open office)</p></td>
+</tr>
+<tr>
+<td>ISD</td>
+<td><p>20m</p>
+<p>(Equivalent to 12TRxPs per 120m x 50m)</p></td>
+</tr>
+<tr>
+<td>BS antenna elements NOTE4</td>
+<td><p>Around 30GHz or Around 70GHz: Up to 256 Tx and Rx antenna
+elements</p>
+<p>Around 4GHz: Up to 256 Tx and Rx antenna elements</p></td>
+</tr>
+<tr>
+<td>UE antenna elements NOTE4</td>
+<td><p>round 30GHz or Around 70GHz: Up to 32 Tx and Rx antenna
+elements</p>
+<p>Around 4GHz: Up to 8 Tx and Rx antenna elements</p></td>
+</tr>
+<tr>
+<td>User distribution and UE speed</td>
+<td><p>100% Indoor, 3km/h,</p>
+<p>10 users per TRxP</p></td>
+</tr>
+<tr>
+<td>Service profile</td>
+<td>NOTE: Whether to use full buffer traffic or non-full-buffer traffic
+depends on the evaluation methodology adopted for each KPI. For certain
+KPIs, full buffer traffic is desirable to enable comparison with
+IMT-Advanced values.</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE1: The options noted here are for evaluation purpose, and do not
+mandate the deployment of these options or preclude the study of other
+spectrum options. A range of bands from 24.25 GHz – 52.6 GHz identified
+for WRC-19 are currently being considered and around 30 GHz is chosen as
+a proxy for this range. A range of bands from 66 GHz – 86 GHz identified
+for WRC-19 are currently being considered and around 70 GHz is chosen as
+a proxy for this range. A range of bands from 3300 – 4990MHz identified
+for WRC-15 are currently being considered and around 4GHz is chosen as a
+proxy for this range.</p>
+<p>NOTE2: The aggregated system bandwidth is the total bandwidth
+typically assumed to derive the values for some KPIs such as area
+traffic capacity and user experienced data rate. It is allowed to
+simulate a smaller bandwidth than the aggregated system bandwidth and
+transform the results to a larger bandwidth. The transformation method
+should then be described, including the modelling of power
+limitations.</p>
+<p>NOTE3: "DL + UL" refers to either of the following two cases:</p>
+<p>1. FDD with symmetric bandwidth allocations between DL and UL.</p>
+<p>2. TDD with the aggregated system bandwidth used for either DL or UL
+via switching in time-domain.</p>
+<p>NOTE4: The maximum number of antenna elements is a working
+assumption. 3GPP needs to strive to meet the target with typical antenna
+configurations.</p>
+<h3 id="dense-urban">6.1.2 Dense urban</h3>
+<p>The dense urban microcellular deployment scenario focuses on macro
+TRxPs with or without micro TRxPs and high user densities and traffic
+loads in city centres and dense urban areas. The key characteristics of
+this deployment scenario are high traffic loads, outdoor and
+outdoor-to-indoor coverage. This scenario will be interference-limited,
+using macro TRxPs with or without micro TRxPs. A continuous cellular
+layout and the associated interference shall be assumed.</p>
+<p>Some of its attributes are listed in Table 6.1.2-1.</p>
+<p>Table 6.1.2-1: Attributes for dense urban</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th>Attributes</th>
+<th>Values or assumptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Carrier Frequency</p>
+<p>NOTE1</p></td>
+<td>Around 4GHz + Around 30GHz (two layers)</td>
+</tr>
+<tr>
+<td><p>Aggregated system bandwidth</p>
+<p>NOTE2</p></td>
+<td><p>Around 30GHz: Up to1GHz (DL+UL)</p>
+<p>Around 4GHz: Up to 200MHz (DL+UL)</p></td>
+</tr>
+<tr>
+<td>Layout</td>
+<td><p>Two layers:</p>
+<p>- Macro layer: Hex. Grid</p>
+<p>- Micro layer: Random drop</p>
+<p>Step 1 NOTE3: Around 4GHz in Macro layer</p>
+<p>Step 2 NOTE3: Both Around 4GHz &amp; Around 30GHz may be available in
+Macro &amp; Micro layers (including 1 macro layer, macro cell
+only)</p></td>
+</tr>
+<tr>
+<td>ISD</td>
+<td><p>Macro layer: 200m</p>
+<p>Micro layer: 3micro TRxPs per macro TRxP NOTE4,</p>
+<p>All micro TRxPs are all outdoor</p></td>
+</tr>
+<tr>
+<td>BS antenna elements NOTE5</td>
+<td><p>Around 30GHz: Up to 256 Tx and Rx antenna elements</p>
+<p>Around 4GHz: Up to 256 Tx and Rx antenna elements</p></td>
+</tr>
+<tr>
+<td>UE antenna elements NOTE5</td>
+<td><p>Around 30GHz: Up to 32 Tx and Rx antenna elements</p>
+<p>Around 4GHz: Up to 8 Tx and Rx antenna elements</p></td>
+</tr>
+<tr>
+<td>User distribution and UE speed</td>
+<td><p>Step1 NOTE3: Uniform/macro TRxP, 10 users per TRxP NOTE6,
+NOTE7</p>
+<p>Step2 NOTE3: Uniform/macro TRxP + Clustered/micro TRxP, 10 users per
+TRxP NoTE6,</p>
+<p>80% indoor (3km/h), 20% outdoor (30km/h)</p></td>
+</tr>
+<tr>
+<td>Service profile</td>
+<td>NOTE: Whether to use full buffer traffic or non-full-buffer traffic
+depends on the evaluation methodology adopted for each KPI. For certain
+KPIs, full buffer traffic is desirable to enable comparison with
+IMT-Advanced values.</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE1: The options noted here are for evaluation purpose, and do not
+mandate the deployment of these options or preclude the study of other
+spectrum options. A range of bands from 24.25 GHz – 52.6 GHz identified
+for WRC-19 are currently being considered and around 30 GHz is chosen as
+a proxy for this range. A range of bands from 3300 – 4990MHz identified
+for WRC-15 are currently being considered and around 4GHz is chosen as a
+proxy for this range.</p>
+<p>NOTE2: The aggregated system bandwidth is the total bandwidth
+typically assumed to derive the values for some KPIs such as area
+traffic capacity and user experienced data rate. It is allowed to
+simulate a smaller bandwidth than the aggregated system bandwidth and
+transform the results to a larger bandwidth. The transformation method
+should then be described, including the modelling of power
+limitations.</p>
+<p>NOTE3: Step 1 shall be used for the evaluation of spectral efficiency
+KPIs. Step2 shall be used for the evaluation of the other deployment
+scenario dependant KPIs.</p>
+<p>NOTE4: This value is the baseline and other number of micro TRxPs per
+macro TRxP (e.g., 6 or 10) is not precluded.</p>
+<p>NOTE5: The maximum number of antenna elements is a working
+assumption. 3GPP needs to strive to meet the target with typical antenna
+configurations.</p>
+<p>NOTE6: 10 users per TRxP is the baseline with full buffer traffic. 20
+users per macro TRxP with full buffer traffic is not precluded.</p>
+<h3 id="rural">6.1.3 Rural</h3>
+<p>The rural deployment scenario focuses on larger and continuous
+coverage. The key characteristics of this scenario are continuous wide
+area coverage supporting high speed vehicles. This scenario will be
+noise-limited and/or interference-limited, using macro TRxPs.</p>
+<p>Some of its attributes are listed in Table 6.1.3-1.</p>
+<p>Table 6.1.3-1: Attributes for rural scenario</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th>Attributes</th>
+<th>Values or assumptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carrier Frequency NOTE1</td>
+<td><p>Around 700MHz or Around 4GHz (for ISD 1)</p>
+<p>Around 700 MHz and Around 2 GHz combined (for ISD 2)</p></td>
+</tr>
+<tr>
+<td><p>Aggregated system bandwidth</p>
+<p>NOTE2</p></td>
+<td><p>Around 700MHz: Up to 20MHz(DL+UL) NOTE3</p>
+<p>Around 4GHz: Up to 200MHz (DL+UL)</p></td>
+</tr>
+<tr>
+<td>Layout</td>
+<td><p>Single layer:</p>
+<p>- Hex. Grid</p></td>
+</tr>
+<tr>
+<td>ISD</td>
+<td><p>ISD 1: 1732m</p>
+<p>ISD 2: 5000m</p></td>
+</tr>
+<tr>
+<td>BS antenna elements NOTE4</td>
+<td><p>Around 4GHz: Up to 256 Tx and Rx antenna elements</p>
+<p>Around 700MHz: Up to 64 Tx and Rx antenna elements</p></td>
+</tr>
+<tr>
+<td>UE antenna elements NOTE4</td>
+<td><p>Around 4GHz: Up to 8 Tx and Rx antenna elements</p>
+<p>Around 700MHz: Up to 4 Tx and Rx antenna elements</p></td>
+</tr>
+<tr>
+<td>User distribution and UE speed</td>
+<td>50% outdoor vehicles (120km/h) and 50% indoor (3km/h), 10 users per
+TRxP</td>
+</tr>
+<tr>
+<td>Service profile</td>
+<td>NOTE: Whether to use full buffer traffic or non-full-buffer traffic
+depends on the evaluation methodology adopted for each KPI. For certain
+KPIs, full buffer traffic is desirable to enable comparison with
+IMT-Advanced values.</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE1: The options noted here are for evaluation purpose, and do not
+mandate the deployment of these options or preclude the study of other
+spectrum options. A range of bands from 450MHz – 960MHz identified for
+WRC-15 are currently being considered and around 700MHz is chosen as a
+proxy for this range. A range of bands from 1427 – 2690MHz identified
+for WRC-15 are currently being considered and around 2GHz is chosen as a
+proxy for this range. A range of bands from 3300 – 4990MHz identified
+for WRC-15 are currently being considered and around 4GHz is chosen as a
+proxy for this range.</p>
+<p>NOTE2: The aggregated system bandwidth is the total bandwidth
+typically assumed to derive the values for some KPIs such as area
+traffic capacity and user experienced data rate. It is allowed to
+simulate a smaller bandwidth than the aggregated system bandwidth and
+transform the results to a larger bandwidth. The transformation method
+should then be described, including the modelling of power
+limitations.</p>
+<p>NOTE3: Consider larger aggregated system bandwidth if 20MHz cannot
+meet requirement.</p>
+<p>NOTE4: The maximum number of antenna elements is a working
+assumption. 3GPP needs to strive to meet the target with typical antenna
+configurations.</p>
+<h3 id="urban-macro">6.1.4 Urban macro</h3>
+<p>The urban macro deployment scenario focuses on large cells and
+continuous coverage. The key characteristics of this scenario are
+continuous and ubiquitous coverage in urban areas. This scenario will be
+interference-limited, using macro TRxPs (i.e. radio access points above
+rooftop level).</p>
+<p>Some of its attributes are listed in Table 6.1.4-1.</p>
+<p>Table 6.1.4-1: Attributes for urban macro</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th>Attributes</th>
+<th>Values or assumptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carrier Frequency NOTE1</td>
+<td>Around 2 GHz or Around 4 GHz or Around 30 GHz</td>
+</tr>
+<tr>
+<td><p>Aggregated system bandwidth</p>
+<p>NOTE2</p></td>
+<td><p>Around 4GHz: Up to 200 MHz (DL+UL)</p>
+<p>Around 30GHz: Up to 1GHz (DL+UL)</p></td>
+</tr>
+<tr>
+<td>Layout</td>
+<td><p>Single layer:</p>
+<p>- Hex. Grid</p></td>
+</tr>
+<tr>
+<td>ISD</td>
+<td>500m</td>
+</tr>
+<tr>
+<td>BS antenna elements NOTE3</td>
+<td><p>Around 30GHz: Up to 256 Tx and Rx antenna elements</p>
+<p>Around 4GHz or Around 2GHz: Up to 256 Tx and Rx antenna
+elements</p></td>
+</tr>
+<tr>
+<td>UE antenna elements NOTE3</td>
+<td><p>Around 30GHz: Up to 32 Tx and Rx antenna elements</p>
+<p>Around 4GHz: Up to 8 Tx and Rx antenna elements</p></td>
+</tr>
+<tr>
+<td>User distribution and UE speed</td>
+<td><p>20% Outdoor in cars: 30km/h,</p>
+<p>80% Indoor in houses: 3km/h</p>
+<p>10 users per TRxP NOTE4</p></td>
+</tr>
+<tr>
+<td>Service profile</td>
+<td>NOTE: Whether to use full buffer traffic or non-full-buffer traffic
+depends on the evaluation methodology adopted for each KPI. For certain
+KPIs, full buffer traffic is desirable to enable comparison with
+IMT-Advanced values.</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE1: The options noted here are for evaluation purpose, and do not
+mandate the deployment of these options or preclude the study of other
+spectrum options. A range of bands from 24.25 GHz – 52.6 GHz identified
+for WRC-19 are currently being considered and around 30 GHz is chosen as
+a proxy for this range. A range of bands from 1427 – 2690MHz identified
+for WRC-15 are currently being considered and around 2GHz is chosen as a
+proxy for this range. A range of bands from 3300 – 4990MHz identified
+for WRC-15 are currently being considered and around 4GHz is chosen as a
+proxy for this range.</p>
+<p>NOTE2: The aggregated system bandwidth is the total bandwidth
+typically assumed to derive the values for some KPIs such as area
+traffic capacity and user experienced data rate. It is allowed to
+simulate a smaller bandwidth than the aggregated system bandwidth and
+transform the results to a larger bandwidth. The transformation method
+should then be described, including the modelling of power
+limitations.</p>
+<p>NOTE3: The maximum number of antenna elements is a working
+assumption. 3GPP needs to strive to meet the target with typical antenna
+configurations.</p>
+<p>NOTE4: 10 users per TRxP is the baseline with full buffer traffic. 20
+users per TRxP with full buffer traffic is not precluded.</p>
+<h3 id="high-speed">6.1.5 High speed</h3>
+<p>The high speed deployment scenario focuses on continuous coverage
+along track in high speed trains. The key characteristics of this
+scenario are consistent passenger user experience and critical train
+communication reliability with very high mobility. In this deployment
+scenario, dedicated linear deployment along railway line and the
+deployments including SFN scenarios captured in Section 6.2 of 3GPP TR
+36.878 [6] are considered, and passenger UEs are located in train
+carriages. For the passenger UEs, if the antenna of relay node for
+eNB-to-Relay is located at top of one carriage of the train, the antenna
+of relay node for Relay-to-UE could be distributed to all carriages.</p>
+<p>Some of its attributes are listed in Table 6.1.5-1.</p>
+<p>Table 6.1.5-1: High Speed</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th>Attributes</th>
+<th>Values or assumptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carrier Frequency NOTE1</td>
+<td><p>Macro NOTE2 only: Around 4GHz</p>
+<p>Macro NOTE2+ relay nodes:</p>
+<p>1) For BS to relay: Around 4 GHz</p>
+<p>For relay to UE: Around 30 GHz or Around 70 GH or Around 4 GHz</p>
+<p>2) For BS to relay: Around 30 GHz</p>
+<p>For relay to UE: Around 30 GHz or Around 70 GHz or Around 4
+GHz</p></td>
+</tr>
+<tr>
+<td>Aggregated system bandwidth NOTE3</td>
+<td><p>Around 4GHz: Up to 200 MHz (DL+UL)</p>
+<p>Around 30GHz or Around 70GHz: Up to 1GHz (DL+UL)</p></td>
+</tr>
+<tr>
+<td>Layout</td>
+<td><p>Macro only:</p>
+<p>- Around 4GHz: Dedicated linear deployment along the railway line as
+in Figure 6.1.5-1.<br />
+RRH site to railway track distance: 100m</p>
+<p>Macro + relay nodes:</p>
+<p>- Around 4GHz: Dedicated linear deployment along the railway line as
+in Figure 6.1.5-1.</p>
+<p>RRH site to railway track distance: 100m</p>
+<p>- Around 30GHz: Dedicated linear deployment along the railway line as
+in Figure 6.1.5-2.</p>
+<p>RRH site to railway track distance: 5m.</p></td>
+</tr>
+<tr>
+<td>ISD</td>
+<td><p>- Around 4GHz: ISD 1732m between RRH sites, two TRxPs per RRH
+site. See Figure 6.1.5-1.</p>
+<p>- Around 30GHz: 1732m between BBU sites, 3 RRH sites connected to 1
+BBU, one TRxP per RRH site, inter RRH site distance (580m, 580m, 572m).
+See Figure 6.1.5-2.</p>
+<p>- Small cell within carriages: ISD = 25m.</p></td>
+</tr>
+<tr>
+<td>BS antenna elements NOTE4</td>
+<td><p>Around 30GHz: Up to 256 Tx and Rx antenna elements</p>
+<p>Around 4GHz: Up to 256 Tx and Rx antenna elements</p></td>
+</tr>
+<tr>
+<td>UE antenna elements NOTE4</td>
+<td><p>Relay Tx: Up to 256 antenna elements</p>
+<p>Relay Rx: Up to 256 antenna elements</p>
+<p>Around 30GHz: Up to 32 Tx and Rx antenna elements</p>
+<p>Around 4GHz: Up to 8 Tx and Rx antenna elements</p></td>
+</tr>
+<tr>
+<td>User distribution and UE speed</td>
+<td><p>100% of users in train</p>
+<p>For non-full buffer, 300 UEs per macro cell (assuming 1000 passengers
+per high-speed train and at least 10% activity ratio)</p>
+<p>Maximum mobility speed: 500km/h</p></td>
+</tr>
+<tr>
+<td>Service profile</td>
+<td><p>Alt 1: Full buffer</p>
+<p>Alt 2: FTP model 1/2/3 with packet size 0.5 Mbytes, 0.1 Mbytes (other
+value is not precluded)</p>
+<p>Other traffic models are not precluded, e.g., for critical train
+communications.</p></td>
+</tr>
+</tbody>
+</table>
+<p>NOTE1: The options noted here are for evaluation purpose, and do not
+mandate the deployment of these options or preclude the study of other
+spectrum options. A range of bands from 24.25 GHz – 52.6 GHz identified
+for WRC-19 are currently being considered and around 30 GHz is chosen as
+a proxy for this range. A range of bands from 66 GHz – 86 GHz identified
+for WRC-19 are currently being considered and around 70 GHz is chosen as
+a proxy for this range. A range of bands from 3300 – 4990MHz identified
+for WRC-15 are currently being considered and around 4GHz is chosen as a
+proxy for this range.</p>
+<p>NOTE2: For Macro, it is assumed RRH sharing the same cell ID or
+having different cell ID.</p>
+<p>NOTE3: The aggregated system bandwidth is the total bandwidth
+typically assumed to derive the values for some KPIs such as area
+traffic capacity and user experienced data rate. It is allowed to
+simulate a smaller bandwidth than the aggregated system bandwidth and
+transform the results to a larger bandwidth. The transformation method
+should then be described, including the modelling of power
+limitations.</p>
+<p>NOTE4: The maximum number of antenna elements is a working
+assumption. 3GPP needs to strive to meet the target with typical antenna
+configurations.</p>
+<p><img src="media/image3.png" /></p>
+<p>Figure 6.1.5-1: 4 GHz deployment</p>
+<p><img src="media/image4.png" /></p>
+<p>Figure 6.1.5-2: 30 GHz deployment</p>
+<h3 id="extreme-long-distance-coverage-in-low-density-areas">6.1.6
+Extreme long distance coverage in low density areas</h3>
+<p>The extreme Long Range deployment scenario is defined to allow for
+the Provision of services for very large areas with low density of users
+whether they are humans and machines (e.g. Low ARPU regions, wilderness,
+areas where only highways are located, etc). The key characteristics of
+this scenario are Macro cells with very large area coverage supporting
+basic data speeds and voice services, with low to moderate user
+throughput and low user density.</p>
+<p>Table 6.1.6-1: Attributes for extreme rural</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Attributes</strong></th>
+<th style="text-align: center;"><strong>Values or
+assumptions</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carrier Frequency</td>
+<td><p>Below 3 GHz</p>
+<p>With a priority on bands below 1GHz</p>
+<p>Around 700 MHz</p></td>
+</tr>
+<tr>
+<td>System Bandwidth</td>
+<td>40 MHz (DL+UL)</td>
+</tr>
+<tr>
+<td>Layout</td>
+<td><p>Single layer:</p>
+<p>Isolated Macro cells</p></td>
+</tr>
+<tr>
+<td>Cell range</td>
+<td><p>100 km range (Isolated cell) to be evaluated through system level
+simulations.</p>
+<p>Feasibility of Higher Range shall be evaluated through Link level
+evaluation (for example in some scenarios ranges up to 150-300km may be
+required).</p></td>
+</tr>
+<tr>
+<td>User density and UE speed</td>
+<td><p>User density: NOTE1</p>
+<p>Speed up to 160 km/h</p></td>
+</tr>
+<tr>
+<td>Traffic model</td>
+<td><p>Average data throughput at busy hours/user: 30 kbps</p>
+<p>User experienced data rate: up to 2 Mbps DL while stationary and 384
+kbps DL while moving NOTE2</p></td>
+</tr>
+</tbody>
+</table>
+<p>NOTE1: Evaluate how many users can be served per cell site when the
+range edge users are serviced with the target user experience data rate.
+A range of bands from 450MHz -960MHz identified for WRC-15 are currently
+being considered and around 700MHz is chosen as a proxy for this range.
+A range of bands from 1427 – 2690MHz identified for WRC-15 are currently
+being considered and around 2GHz is chosen as a proxy for this range. A
+range of bands from 3300 – 4990MHz identified for WRC-15 are currently
+being considered and around 4GHz is chosen as a proxy for this
+range.</p>
+<p>NOTE2: Target values for UL are lower than DL, 1/3 of DL is
+desirable.</p>
+<h3 id="urban-coverage-for-massive-connection">6.1.7 Urban coverage for
+massive connection</h3>
+<p>The urban coverage for massive connection scenario focuses on large
+cells and continuous coverage to provide mMTC. The key characteristics
+of this scenario are continuous and ubiquitous coverage in urban areas,
+with very high connection density of mMTC devices. This deployment
+scenario is for the evaluation of the KPI of connection density.</p>
+<p>Some of its attributes are listed in Table 6.1.7-1.</p>
+<p>Table 6.1.7-1: Attributes of urban coverage for massive
+connection</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Attributes</strong></th>
+<th style="text-align: center;"><strong>Values or
+assumptions</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carrier Frequency</td>
+<td>700MHz, 2100 MHz as an option</td>
+</tr>
+<tr>
+<td>Network deployment including ISD</td>
+<td>Macro only, ISD = 1732m, 500m</td>
+</tr>
+<tr>
+<td>Device deployment</td>
+<td>Indoor, and outdoor in-car devices</td>
+</tr>
+<tr>
+<td>Maximum mobility speed</td>
+<td><p>20% of users are outdoor in cars (100km/h) or 20% of users are
+outdoors (3km/h)</p>
+<p>80% of users are indoor (3km/h)</p>
+<p>Users dropped uniformly in entire cell</p></td>
+</tr>
+<tr>
+<td>Service profile</td>
+<td>Non-full buffer with small packets</td>
+</tr>
+<tr>
+<td>BS antenna elements</td>
+<td>2 and 4 Rx ports (8 Rx ports as optional)</td>
+</tr>
+<tr>
+<td>UE antenna elements</td>
+<td>1Tx</td>
+</tr>
+</tbody>
+</table>
+<h3 id="highway-scenario">6.1.8 Highway Scenario</h3>
+<p>The highway deployment scenario focuses on scenario of vehicles
+placed in highways with high speeds. The main KPIs evaluated under this
+scenario would be reliability/availability under high speeds/mobility
+(and thus frequent handover operations).</p>
+<p>Some of its attributes are listed in Table 6.1.8-1.</p>
+<p>Table 6.1.8-1: Attributes of Highway</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Attributes</strong></th>
+<th style="text-align: center;"><strong>Values or
+assumptions</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carrier Frequency NOTE1</td>
+<td><p>Macro only: Below 6 GHz (around 6 GHz)</p>
+<p>Macro + RSUs NOTE2:</p>
+<p>1) For BS to RSU: Below 6 GHz (around 6 GHz) NOTE3</p>
+<p>2) RSU to vehicles or among vehicles: below 6 GHz</p></td>
+</tr>
+<tr>
+<td>Aggregated system bandwidth NOTE4</td>
+<td><p>Up to 200MHz (DL+UL)</p>
+<p>Up to 100MHz (SL)</p></td>
+</tr>
+<tr>
+<td>Layout</td>
+<td><p>Option 1: Macro only</p>
+<p>Option 2: Macro + RSUs NOTE2</p></td>
+</tr>
+<tr>
+<td>ISD</td>
+<td><p>Macro cell: ISD = 1732m, 500m(Optional)</p>
+<p>Inter-RSU distance = 50m or 100m</p></td>
+</tr>
+<tr>
+<td>BS antenna elements</td>
+<td><p>Tx: Up to 256 Tx</p>
+<p>Rx: Up to 256 Rx</p></td>
+</tr>
+<tr>
+<td>UE antenna elements</td>
+<td><p>RSU Tx: Up to 8 Tx</p>
+<p>RSU Rx: Up to 8 Rx</p>
+<p>Vehicle Tx: Up to 8 Tx</p>
+<p>Vehicle Rx: Up to 8 Rx</p></td>
+</tr>
+<tr>
+<td><p>User distribution and UE speed</p>
+<p>NOTE5</p></td>
+<td><p>100% in vehicles</p>
+<p>Average inter-vehicle distance (between two vehicles’ center) in the
+same lane is 0.5sec or 1sec * average vehicle speed (average speed:
+100-300km/h)</p></td>
+</tr>
+<tr>
+<td><p>Traffic model</p>
+<p>NOTE5</p></td>
+<td><p>50 messagesNOTE6 per 1 second with absolute average speed of
+either</p>
+<blockquote>
+<p>- 100-250 km/h (relative speed: 200 – 500km/h), or</p>
+<p>- 30 km/h</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
+<p>NOTE1: The options noted here are for evaluation purpose, and do not
+mandate the deployment of these options or preclude the study of other
+spectrum options. A range of bands from 24.25 GHz – 52.6 GHz identified
+for WRC-19 are currently being considered and around 30 GHz is chosen as
+a proxy for this range. A range of bands from 66 GHz – 86 GHz identified
+for WRC-19 are currently being considered and around 70 GHz is chosen as
+a proxy for this range.</p>
+<p>NOTE2: SA1 defines RSU as a logical entity that combines V2X
+application logic with the functionality of an eNB (referred to as
+eNB-type RSU) or UE (referred to as UE-type RSU). Therefore a RSU can
+communicate with vehicles via D2D link or cellular DL/UL</p>
+<p>NOTE3: This frequency may or may not be evaluated depending on
+communication type between eNB and RSU.</p>
+<p>NOTE4: The aggregated system bandwidth is the total bandwidth
+typically assumed to derive the values for some KPIs such as area
+traffic capacity and user experienced data rate. It is allowed to
+simulate a smaller bandwidth than the aggregated system bandwidth and
+transform the results to a larger bandwidth. The transformation method
+should then be described, including the modelling of power
+limitations.</p>
+<p>NOTE5: The traffic models and UE distributions and speeds are
+tentative and could be modified after SA1 input.</p>
+<p>NOTE6: The message size needs further clarification for eMBB and
+other types of services (e.g. safety).</p>
+<p>Illustrative diagram of freeway mode is as follows</p>
+<p><img src="media/image5.svg" /></p>
+<p>Figure 6.1.8-1: Road configuration for highway scenario</p>
+<h3 id="urban-grid-for-connected-car">6.1.9 Urban Grid for Connected
+Car</h3>
+<p>The urban macro deployment scenario focuses on scenario of highly
+densely deployed vehicles placed in urban area. It could cover a
+scenario where freeways lead through an urban grid. The main KPI
+evaluated under this scenario are reliability/availability/latency in
+high network load and high UE density scenarios.</p>
+<p>Some of its attributes are listed in Table 6.1.9-1.</p>
+<p>Table 6.1.9-1: Attributes of urban grid for connected car</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th>Attributes</th>
+<th>Values or assumptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carrier Frequency NOTE1</td>
+<td><p>Macro only: Below 6 GHz (around 6 GHz)</p>
+<p>Macro + RSUs NOTE2:</p>
+<p>1) For BS to RSU: Below 6 GHz (around 6 GHz) NOTE3</p>
+<p>2) RSU to vehicles or among vehicles/pedestrians: below 6
+GHz</p></td>
+</tr>
+<tr>
+<td>Aggregated system bandwidth NOTE4</td>
+<td><p>Up to 200 MHz (DL+UL)</p>
+<p>Up to 100 MHz (SL)</p></td>
+</tr>
+<tr>
+<td>Layout</td>
+<td><p>Option 1: Macro only</p>
+<p>Option 2: Macro + RSUs NOTE2</p></td>
+</tr>
+<tr>
+<td>ISD</td>
+<td><p>Macro cell: ISD = 500m</p>
+<p>RSU at each intersection for Option 2. Other values (50m and 100m)
+should also be considered for option 2</p></td>
+</tr>
+<tr>
+<td>BS antenna elements</td>
+<td><p>Tx: Up to 256 Tx</p>
+<p>Rx: Up to 256 Rx</p></td>
+</tr>
+<tr>
+<td>UE antenna elements</td>
+<td><p>RSU Tx: Up to 8 Tx</p>
+<p>RSU Rx: Up to 8 Rx</p>
+<p>Vehicle Tx: Up to 8 Tx</p>
+<p>Vehicle Rx: Up to 8 Rx</p>
+<p>Pedestrian/bicycle Tx: Up to 8 Tx</p>
+<p>Pedestrian/bicycle Rx: Up to 8 Rx</p></td>
+</tr>
+<tr>
+<td>User distribution and UE speed NOTE5</td>
+<td><p>Urban grid model (car lanes and pedestrian/bicycle sidewalks are
+placed around a road block. 2 lanes in each direction, 4 lanes in total,
+1 sidewalk, one block size: 433m x 250m)</p>
+<p>Average inter-vehicle distance (between two vehicles’ center) in the
+same lane is 1sec * average vehicle speed (average speed 15 –
+120km/h)</p>
+<p>Pedestrian/bicycle dropping: average distance between UEs is
+20m</p></td>
+</tr>
+<tr>
+<td><p>Traffic model</p>
+<p>NOTE5</p></td>
+<td>50 messages NOTE6 per 1 second with 60km/h, 10 messages per 1 second
+with 15km/h</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE1: The options noted here are for evaluation purpose, and do not
+mandate the deployment of these options or preclude the study of other
+spectrum options. A range of bands from 24.25 GHz – 52.6 GHz identified
+for WRC-19 are currently being considered and around 30 GHz is chosen as
+a proxy for this range. A range of bands from 66 GHz – 86 GHz identified
+for WRC-19 are currently being considered and around 70 GHz is chosen as
+a proxy for this range</p>
+<p>NOTE2: SA1 defines RSU as a logical entity that combines V2X
+application logic with the functionality of an eNB (referred to as
+eNB-type RSU) or UE (referred to as UE-type RSU). Therefore a RSU can
+communicate with vehicles via D2D link or cellular DL/UL</p>
+<p>NOTE3: This frequency may or may not be evaluated depending on
+communication type between eNB and RSU.</p>
+<p>NOTE4: The aggregated system bandwidth is the total bandwidth
+typically assumed to derive the values for some KPIs such as area
+traffic capacity and user experienced data rate. It is allowed to
+simulate a smaller bandwidth than the aggregated system bandwidth and
+transform the results to a larger bandwidth. The transformation method
+should then be described, including the modelling of power
+limitations.</p>
+<p>NOTE5: The traffic models and UE distributions and speeds are
+tentative and could be modified after SA1 input.</p>
+<p>NOTE6: The message size needs further clarification for eMBB and
+other types of services (e.g. safety).</p>
+<p>Illustrative diagram of urban grid model with UE distribution is as
+follows:.</p>
+<p>Table 6.1.9-2: Details of vehicle UE drop and mobility model</p>
+<table>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 34%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Urban case</th>
+<th>Freeway case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of lanes</td>
+<td>2 in each direction (4 lanes in total in each street)</td>
+<td>3 in each direction (6 lanes in total in the freeway)</td>
+</tr>
+<tr>
+<td>Lane width</td>
+<td>3.5 m</td>
+<td>4 m</td>
+</tr>
+<tr>
+<td>Road grid size by the distance between intersections</td>
+<td>433 m * 250 m. NOTE1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Simulation area size</td>
+<td>Minimum 1299 m * 750 m NOTE2</td>
+<td>Freeway length &gt;= 2000 m. Wrap around should be applied to the
+simulation area.</td>
+</tr>
+<tr>
+<td>Vehicle density</td>
+<td colspan="2">Average inter-vehicle distance in the same lane is 2.5
+sec * absolute vehicle speed. Baseline: The same density/speed in all
+the lanes in one simulation.</td>
+</tr>
+<tr>
+<td>Absolute vehicle speed</td>
+<td>15 km/h, 60 km/h, 120 km/h</td>
+<td>250 km/h, 140 km/h, 70 km/h</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image6.svg" /></p>
+<p>Figure 6.1.9-1: Road configuration for urban grid</p>
+<p>NOTE1: 3 m is reserved for sidewalk per direction (i.e., no vehicle
+or building in this reserved space).</p>
+<p>NOTE2: This value is tentative and could be modified after
+SA1’further input.</p>
+<h3 id="commercial-air-to-ground-scenario">6.1.10 Commercial Air to
+Ground scenario</h3>
+<p>The commercial Air to Ground deployment scenario is defined to allow
+for the provision of services for commercial aircraft to enable both
+humans and machines aboard the aircraft to initiate and receive mobile
+services. It is not for the establishment of airborne based base
+stations.</p>
+<p>The key characteristics of this scenario are upward pointed Macro
+cells with very large area coverage supporting basic data and voice
+services, with moderate user throughput that are optimized for high
+altitude users that are travelling at very high speeds. The commercial
+airlines aircrafts are likely equipped with an aggregation point (e.g.
+Relay).</p>
+<p>Some of the characteristics of this deployment scenario are listed
+below.</p>
+<p>Table 6.1.10-1: Attributes for commercial Air to Ground Scenario</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th>Attributes</th>
+<th>Values or assumptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carrier Frequency</td>
+<td>Macro + relay: for BS to relay: Below 4 GHz</td>
+</tr>
+<tr>
+<td>System Bandwidth</td>
+<td>40 MHz (DL+UL)</td>
+</tr>
+<tr>
+<td>Layout</td>
+<td>Macro + relay nodes NOTE1</td>
+</tr>
+<tr>
+<td>Cell range</td>
+<td><p>Macro cell: 100 km range to be evaluated through system level
+simulations. Feasibility of Higher Range shall be evaluated through Link
+level evaluation.</p>
+<p>Relay: up to 80 m</p></td>
+</tr>
+<tr>
+<td>User density and UE speed</td>
+<td><p>End user density per Macro: NOTE2</p>
+<p>UE speed: Up to 1000 km/h</p>
+<p>Altitude: Up to 15 km</p></td>
+</tr>
+<tr>
+<td>Traffic model</td>
+<td>End User experienced data rate: 384kbps DL. NOTE3</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE1: BS to relay link should be the priority for study compared to
+relay to UE link.</p>
+<p>NOTE2: Evaluate how many users can be served per cell site when the
+range edge users are serviced with the target user experience data
+rate.</p>
+<p>NOTE3: Target values for UL are lower than DL, 1/3 of DL is
+desirable.</p>
+<h3 id="light-aircraft-scenario">6.1.11 Light aircraft scenario</h3>
+<p>The light aircraft scenario is defined to allow for the provision of
+services for general aviation aircrafts to enable both humans and
+machines aboard helicopters and small air plans to initiate and receive
+mobile services. It is not for the establishment of airborne based base
+stations.</p>
+<p>The key characteristics of this scenario are upward pointed Macro
+cells with very large area coverage supporting basic data and voice
+services, with moderate user throughput and low user density that are
+optimized for moderate altitude users that might be travelling at high
+speeds. The general regime aviation aircrafts are not equipped with
+relays.</p>
+<p>Some of the characteristics of this deployment scenario are listed
+below.</p>
+<p>Table 6.1.11-1: Attributes for Light aircraft Scenario</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th>Attributes</th>
+<th>Values or assumptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carrier Frequency</td>
+<td>Macro only: Below 4GHz</td>
+</tr>
+<tr>
+<td>System Bandwidth</td>
+<td>40 MHz (DL+UL)</td>
+</tr>
+<tr>
+<td>Layout</td>
+<td>Single layer: Macro cell</td>
+</tr>
+<tr>
+<td>Cell range</td>
+<td>100km range to be evaluated through system level simulations.
+Feasibility of Higher Range shall be evaluated through Link level
+evaluation.</td>
+</tr>
+<tr>
+<td>User density and UE speed</td>
+<td><p>End user density per aircraft: up to 6users</p>
+<p>UE speed: Up to 370km/h</p>
+<p>Altitude: Up to 3km</p></td>
+</tr>
+<tr>
+<td>Traffic model</td>
+<td>End user experienced data rate: 384kbps DL. NOTE1</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE1: Target values for UL are lower than DL, 1/3 of DL is
+desirable.</p>
+<h3 id="satellite-extension-to-terrestrial">6.1.12 Satellite extension
+to Terrestrial</h3>
+<p>This deployment scenario is defined to allow for the provision of
+services for those areas where the terrestrial service is not available
+and also for those services that can be more efficiently supported by
+the satellite systems such as broadcasting service. Satellite acts as a
+fill-in especially on roadways and rural areas where the terrestrial
+service isn’t available. The supported services via the Satellite system
+are not limited to just data and voice, but also for others such as
+machine type communications, broadcast and other delay tolerant
+services.</p>
+<p>Some of its attributes are listed in Table 6.1.12-1.</p>
+<p>Table 6.1.12-1: Examples for Satellite Deployment</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Attributes</th>
+<th>Deployment-1</th>
+<th>Deployment-2</th>
+<th>Deployment-3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Carrier Frequency</p>
+<p>NOTE1</p></td>
+<td>Around 1.5 or 2 GHz for both DL and UL</td>
+<td><p>Around 20 GHz for DL</p>
+<p>Around 30 GHz for UL</p></td>
+<td>Around 40 or 50 GHz</td>
+</tr>
+<tr>
+<td>Duplexing</td>
+<td>FDD</td>
+<td>FDD</td>
+<td>FDD</td>
+</tr>
+<tr>
+<td>Satellite architecture</td>
+<td><p>Bent-pipe</p>
+<p>NOTE2</p></td>
+<td><p>Bent-pipe,</p>
+<p>On-Board Processing</p></td>
+<td><p>Bent-pipe,</p>
+<p>On-Board Processing</p></td>
+</tr>
+<tr>
+<td>Typical satellite system positioning in the 5G architecture</td>
+<td>Access network</td>
+<td>Backhaul network</td>
+<td>Backhaul network</td>
+</tr>
+<tr>
+<td><p>System Bandwidth</p>
+<p>(DL + UL)</p></td>
+<td>Up to 2*10 MHz</td>
+<td>Up to 2*250 MHz</td>
+<td>Up to 2 * 1000 MHz</td>
+</tr>
+<tr>
+<td>Satellite Orbit</td>
+<td>GEO, LEO</td>
+<td>LEO, MEO, GEO</td>
+<td>LEO, MEO, GEO</td>
+</tr>
+<tr>
+<td>UE Distribution</td>
+<td>100% Outdoors</td>
+<td>100% Outdoors</td>
+<td>100% Outdoors</td>
+</tr>
+<tr>
+<td>UE Mobility</td>
+<td><p>Fixed, Portable, Mobile</p>
+<p>NOTE3</p></td>
+<td>Fixed, Portable, Mobile</td>
+<td>Fixed, Portable, Mobile</td>
+</tr>
+</tbody>
+</table>
+<p>NOTE1: The carrier frequencies noted here are for evaluation purpose
+only, satellites are deployed in wide range of frequency bands including
+L band (1-2GHz), S band (2-4GHz), C band (3.4-6.725 GHz), Ku band
+(10.7-14.8 GHz), Ka band (17.3-21.2 GHz, 27.0-31.0 GHz) and Q/V bands
+(37.5-43.5 GHz, 47.2-50.2 GHz and 50.4-51.4 GHz) and more. Here the
+around xGHz is used to denote the carrier frequency close to xGHz rather
+than used as band proxy to denote a band range.</p>
+<p>NOTE2: Bent pipe refers to the architecure where the satellite
+transponders are transparent—only amplify and change frequency but
+preserve the waveform. On Board Processing satellite transponders
+incorperate regeneration — including modulating and coding the
+waveform.</p>
+<p>NOTE3: Mobile consitutes of both hand-helds and other moving platform
+receivers such as automobiles, ships, planes etc. Currently the
+hand-helds are limited to L and S bands but the research is ongoing to
+support higher bands.</p>
+<h1 id="key-performance-indicators">7 Key performance indicators</h1>
+<p>This section describes the definitions of all KPIs.</p>
+<p>The KPI targets defined in this section as well as in Report ITU-R
+M.[IMT-2020. TECH PERF REQ] shall be supported by next generation access
+technologies. The evaluation methodology defined in Report ITU-R
+M.[IMT-2020.EVAL] shall be used to evaluate the targets specified in
+Report ITU-R M.[IMT-2020. TECH PERF REQ].</p>
+<h2 id="peak-data-rate">7.1 Peak data rate</h2>
+<p>Peak data rate is the highest theoretical data rate which is the
+received data bits assuming error-free conditions assignable to a single
+mobile station, when all assignable radio resources for the
+corresponding link direction are utilised (i.e., excluding radio
+resources that are used for physical layer synchronisation, reference
+signals or pilots, guard bands and guard times).</p>
+<p>The target for peak data rate should be 20Gbps for downlink and
+10Gbps for uplink.</p>
+<p>Analytical evaluation is used as the evaluation methodology.</p>
+<h2 id="peak-spectral-efficiency">7.2 Peak Spectral efficiency</h2>
+<p>Peak spectral efficiency is the highest theoretical data rate
+(normalised by bandwidth), which is the received data bits assuming
+error-free conditions assignable to a single mobile station, when all
+assignable radio resources for the corresponding link direction are
+utilised (i.e., excluding radio resources that are used for physical
+layer synchronisation, reference signals or pilots, guard bands and
+guard times).</p>
+<p>The target for peak spectral efficiency should be 30bps/Hz for
+downlink and 15bps/Hz for uplink.</p>
+<p>Higher frequency bands could have higher bandwidth but lower spectral
+efficiency and lower frequency bands could have lower bandwidth but
+higher spectral efficiency. Thus, peak data rate cannot be directly
+derived from peak spectral efficiency and bandwidth multiplication.</p>
+<p>Analytical evaluation is used as the evaluation methodology.</p>
+<h2 id="bandwidth">7.3 Bandwidth</h2>
+<p>Bandwidth means the maximal aggregated total system bandwidth. It may
+be supported by single or multiple RF carriers.</p>
+<p>It is a quantitative KPI.</p>
+<p>NOTE1: Target value for this KPI is not defined here: it may be
+derived by IMT-2020 requirements, or based on outcomes from RAN1/RAN4
+study/design.</p>
+<h2 id="control-plane-latency">7.4 Control plane latency</h2>
+<p>Control plane latency refers to the time to move from a battery
+efficient state (e.g., IDLE) to start of continuous data transfer (e.g.,
+ACTIVE).</p>
+<p>The target for control plane latency should be 10ms.</p>
+<p>Analytical evaluation is used as the evaluation methodology.</p>
+<p>NOTE1: For satellite communications link, the control plane should be
+able to support RTT of up to 600ms in the case of GEO and HEO, up to
+180ms in the case of MEO, and up to 50ms in the case of LEO satellite
+systems.</p>
+<h2 id="user-plane-latency">7.5 User plane latency</h2>
+<p>The time it takes to successfully deliver an application layer
+packet/message from the radio protocol layer 2/3 SDU ingress point to
+the radio protocol layer 2/3 SDU egress point via the radio interface in
+both uplink and downlink directions, where neither device nor Base
+Station reception is restricted by DRX.</p>
+<p>For URLLC, the target for user plane latency should be 0.5ms for UL,
+and 0.5ms for DL. Furthermore, if possible, the latency should also be
+low enough to support the use of the next generation access technologies
+as a wireless transport technology that can be used within the next
+generation access architecture.</p>
+<p>NOTE1: The reliability KPI also provides a latency value with an
+associated reliability requirement. The value above should be considered
+an average value and does not have an associated high reliability
+requirement.</p>
+<p>For eMBB, the target for user plane latency should be 4ms for UL, and
+4ms for DL.</p>
+<p>NOTE2: For eMBB value, the evaluation needs to consider all typical
+delays associated with the transfer of the data packets in an efficient
+way (e.g. applicable procedural delay when resources are not
+preallocated, averaged HARQ retransmission delay, impacts of network
+architecture).</p>
+<p>When a satellite link is involved in the communication with a user
+equipment, the target for user plane RTT can be as high as 600ms for GEO
+satellite systems, up to 180ms for MEO satellite systems, and up to 50ms
+for LEO satellite systems.</p>
+<p>NOTE3: For the satellite case, the evaluation needs to consider the
+max RTT that is associated with the GEO satellite systems.</p>
+<p>Analytical evaluation is used as the evaluation methodology.</p>
+<h2 id="latency-for-infrequent-small-packets">7.6 Latency for infrequent
+small packets</h2>
+<p>For infrequent application layer small packet/message transfer, the
+time it takes to successfully deliver an application layer
+packet/message from the radio protocol layer 2/3 SDU ingress point at
+the mobile device to the radio protocol layer 2/3 SDU egress point in
+the RAN, when the mobile device starts from its most "battery efficient"
+state.</p>
+<p>For the definition above, the latency shall be no worse than 10
+seconds on the uplink for a 20 byte application packet (with
+uncompressed IP header corresponding to 105 bytes physical layer)
+measured at the maximum coupling loss (MaxCL) of 164dB.</p>
+<p>Analytical evaluation is the baseline evaluation methodology and
+system level evaluation can be considered if needed.</p>
+<h2 id="mobility-interruption-time">7.7 Mobility interruption time</h2>
+<p>Mobility interruption time means the shortest time duration supported
+by the system during which a user terminal cannot exchange user plane
+packets with any base station during transitions.</p>
+<p>The target for mobility interruption time should be 0ms.</p>
+<p>This KPI is for both intra-frequency and inter-frequency mobility for
+intra-NR mobility.</p>
+<p>Mobility support can be relaxed for extreme rural scenarios for the
+Provision of minimal services for very low-ARPU areas: Inter RAT
+mobility functions can be removed. Intra-RAT mobility functions can be
+simplified if it helps decreasing the cost of infrastructure and
+devices. Basic idle mode mobility shall be supported as a minimum.</p>
+<p>Analytical evaluation is used as the evaluation methodology.</p>
+<h2 id="inter-system-mobility">7.8 Inter-system mobility</h2>
+<p>Inter-system mobility refers to the ability to support mobility
+between the IMT-2020 system and at least one IMT system.</p>
+<p>Evaluation methodology is based on inspection for this KPI.</p>
+<h2 id="reliability">7.9 Reliability</h2>
+<p>Reliability can be evaluated by the success probability of
+transmitting X bytes within a certain delay, which is the time it takes
+to deliver a small data packet from the radio protocol layer 2/3 SDU
+ingress point to the radio protocol layer 2/3 SDU egress point of the
+radio interface, at a certain channel quality (e.g., coverage-edge).</p>
+<p>A general URLLC reliability requirement for one transmission of a
+packet is 1-10<sup>-5</sup> for 32 bytes with a user plane latency of
+1ms.</p>
+<p>For eV2X, for communication availability and resilience and user
+plane latency of delivery of a packet of size 300 bytes, the
+requirements are as follows:</p>
+<p>- Reliability = 1-10<sup>-5</sup>, and user plane latency = 3-10
+msec, for direct communication via sidelink and communication range of
+(e.g., a few meters)</p>
+<p>- Reliability = 1-10<sup>-5</sup>, and user plane latency = 3-10
+msec, when the packet is relayed via BS.</p>
+<p>Note that target communication range and reliability requirement is
+dependent of deployment and operation scenario (e.g., the average
+inter-vehicle speed).</p>
+<p>Link level evaluation with deployment scenario specific operating
+point and system level simulation are to be performed for the
+evaluations of Indoor Hotspot, Urban Macro, Highway, and Urban grid for
+connected car.</p>
+<p>NOTE1: Other reliability requirements may be added, if needed, e.g.
+for critical communications relating to high-speed train, and more
+detailed requirements for eV2X should refer to the SA1 requirements in
+3GPP TS 22.886 [18].</p>
+<h2 id="coverage">7.10 Coverage</h2>
+<p>MaxCL in uplink and downlink between device and Base Station site
+(antenna connector(s)) for a data rate of 160bps, where the data rate is
+observed at the egress/ingress point of the radio protocol stack in
+uplink and downlink.</p>
+<p>The target for coverage should be 164dB.</p>
+<p>Link budget and/or link level analysis are used as the evaluation
+methodology.</p>
+<h3 id="extreme-coverage">7.10.1 Extreme Coverage</h3>
+<p>The coupling loss is defined as the total long-term channel loss over
+the link between the UE antenna ports and the eNode B antenna ports, and
+includes in practice antenna gains, path loss, shadowing, body loss,
+etc. The MaxCL is the limit value of the coupling loss at which the
+service can be delivered, and therefore defines the coverage of the
+service. The MaxCL is independent of the carrier frequency. It is
+defined in the UL and DL as:</p>
+<p>- UL MaxCL = UL Max Tx power - eNB Sensitivity</p>
+<p>- DL MaxCL = DL Max Tx power - UE Sensitivity</p>
+<p>The MaxCL is evaluated via link budget analysis (supported by link
+level simulations). The proposed MaxCL calculation template is given in
+following table 7.10.1-1:</p>
+<p>Table 7.10.1-1: MaxCL calculation template</p>
+<table>
+<colgroup>
+<col style="width: 77%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transmitter</td>
+<td></td>
+</tr>
+<tr>
+<td>(1) Tx power  (dBm)</td>
+<td></td>
+</tr>
+<tr>
+<td>Receiver</td>
+<td></td>
+</tr>
+<tr>
+<td>(2) Thermal noise density (dBm/Hz)</td>
+<td></td>
+</tr>
+<tr>
+<td>(3) Receiver noise figure (dB)</td>
+<td></td>
+</tr>
+<tr>
+<td>(4) Interference margin (dB)</td>
+<td></td>
+</tr>
+<tr>
+<td>(5) Occupied channel bandwidth (Hz)</td>
+<td></td>
+</tr>
+<tr>
+<td><p>(6) Effective noise power</p>
+<p>         = (2) + (3) + (4) + 10 log(5)  (dBm)</p></td>
+<td></td>
+</tr>
+<tr>
+<td>(7) Required SINR (dB)</td>
+<td></td>
+</tr>
+<tr>
+<td><p>(8) Receiver sensitivity</p>
+<p>         = (6) + (7) (dBm)</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>(9) MaxCL</p>
+<p>         = (1) - (8) (dB)</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The following assumptions are used.</p>
+<p>Table 7.10.1-2: MaxCL calculation assumptions</p>
+<table>
+<colgroup>
+<col style="width: 72%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>UE Tx power</th>
+<th>23dBm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DL Tx power</td>
+<td>46dBm</td>
+</tr>
+<tr>
+<td>eNB receiver noise figure</td>
+<td>5dB</td>
+</tr>
+<tr>
+<td>UE receiver noise figure</td>
+<td>9dB</td>
+</tr>
+<tr>
+<td>Interference margin</td>
+<td>0dB</td>
+</tr>
+</tbody>
+</table>
+<p>For a basic MBB service characterized by a downlink datarate of 2Mbps
+and an uplink datarate of 60kbps for stationary users, the target on
+maximum coupling loss is 140dB. For mobile users a downlink datarate of
+384kbps is acceptable.</p>
+<p>For a basic MBB service characterized by a downlink datarate of 1Mbps
+and an uplink datarate of 30kbps for stationary users, the target on
+maximum coupling loss is 143dB. At this coupling loss relevant downlink
+and uplink control channels should also perform adequately.</p>
+<p>As the evaluation methodology, link budget and/or link level analysis
+are used for extreme long distance coverage in low density areas.</p>
+<h2 id="ue-battery-life">7.11 UE battery life</h2>
+<p>UE battery life can be evaluated by the battery life of the UE
+without recharge. For mMTC, UE battery life in extreme coverage shall be
+based on the activity of mobile originated data transfer consisting of
+200bytes UL per day followed by 20bytes DL from MaxCL of 164dB, assuming
+a stored energy capacity of 5Wh.</p>
+<p>The target for UE battery life for mMTC should be beyond 10 years, 15
+years is desirable.</p>
+<p>Analytical evaluation is used as the evaluation methodology.</p>
+<h2 id="ue-energy-efficiency">7.12 UE energy efficiency</h2>
+<p>UE energy efficiency means the capability of a UE to sustain much
+better mobile broadband data rate while minimizing the UE modem energy
+consumption.</p>
+<p>It is a qualitative KPI</p>
+<p>Evaluation methodology should be based on inspection. More detailed
+quantitative assessment can be performed.</p>
+<h2 id="celltransmission-pointtrxp-spectral-efficiency">7.13
+Cell/Transmission Point/TRxP spectral efficiency</h2>
+<p>TRxP spectral efficiency NOTE1 is defined as the aggregate throughput
+of all users (the number of correctly received bits, i.e. the number of
+bits contained in the service data units (SDUs) delivered to Layer 3,
+over a certain period of time) divided by the channel bandwidth divided
+by the number of TRxPs. A 3 sector site consists of 3 TRxPs. In case of
+multiple discontinuous "carriers" (one carrier refers to a continuous
+block of spectrum), this KPI should be calculated per carrier. In this
+case, the aggregate throughput, channel bandwidth, and the number of
+TRxPs on the specific carrier are employed.</p>
+<p>It is a quantitative KPI NOTE2</p>
+<p>A joint system level evaluation is to be performed for Indoor
+Hotspot, Dense Urban, Rural, and Urban Macro.</p>
+<p>NOTE1: 3GPP should strive to meet the target with typical antenna
+configuration</p>
+<p>NOTE2: Target for 3x the cell spectral efficiency of IMT-Advanced
+targets for Indoor Hotspot, Dense Urban (step 1), Rural and Urban Macro
+for full buffer.</p>
+<p>Table 7.13-1: Spectrum efficiency in each deployment scenario for
+each Usage scenario</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Spectrum efficiency</th>
+<th style="text-align: left;">Indoor Hotspot</th>
+<th style="text-align: left;">Dense Urban</th>
+<th style="text-align: left;">Rural</th>
+<th style="text-align: left;">Urban Macro</th>
+<th style="text-align: left;">High Speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">eMBB</td>
+<td style="text-align: left;">3x IMT-A InH</td>
+<td style="text-align: left;">3x IMT-A UMi</td>
+<td style="text-align: left;">3x IMT-A RMa</td>
+<td style="text-align: left;">3x IMT-A UMa</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">mMTC</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">URLLC</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="area-traffic-capacity">7.14 Area traffic capacity</h2>
+<p>Area traffic capacity means total traffic throughput served per
+geographic area (in Mbit/s/m<sup>2</sup>). This metric can be evaluated
+by two different traffic models: Full buffer model and Non full buffer
+model</p>
+<p>- By full buffer model: Total traffic throughput served per
+geographic area (in Mbit/s/m<sup>2</sup>). The computation of this
+metric is based on full buffer traffic.</p>
+<p>- By non full buffer model: Total traffic throughput served per
+geographic area (in Mbit/s/m<sup>2</sup>). Both the user experienced
+data rate and the area traffic capacity need to be evaluated at the same
+time using the same traffic model.</p>
+<p>The area traffic capacity is a measure of how much traffic a network
+can carry per unit area. It depends on site density, bandwidth and
+spectrum efficiency. In the case of full buffer traffic and a single
+layer single band system, it may be expressed as:</p>
+<p>area capacity (bps/m<sup>2</sup>) = site density (site/m<sup>2</sup>)
+× bandwidth (Hz) × spectrum efficiency (bps/Hz/site)</p>
+<p>In order to improve area traffic capacity, 3GPP can develop standards
+with means for high spectrum efficiency. To this end, spectrum
+efficiency gains in the order of three times IMT-Advanced are targeted.
+Furthermore, 3GPP can develop standards with means for large bandwidth
+support. To this end, it is proposed that at least 1GHz aggregated
+bandwidth shall be supported.</p>
+<p>The available bandwidth and site density NOTE2, which both have a
+direct impact on the available area capacity, are however not under
+control of 3GPP.</p>
+<p>NOTE2: Site here refers to single transmission and reception point
+(TRxP).</p>
+<p>It is proposed to perform full buffer evaluation, using the spectrum
+efficiency results together with assumptions on available bandwidth and
+site density in order to derive a quantitative area traffic capacity KPI
+for information.</p>
+<h2 id="user-experienced-data-rate">7.15 User experienced data rate</h2>
+<p>User experienced data rate NOTE1 can be evaluated for non-full buffer
+traffic and for full buffer traffic.</p>
+<p>NOTE1: Non-full buffer simulations are preferred for the evaluation
+of this KPI.</p>
+<p>For non-full buffer traffic, user experienced data rate is the
+5%-percentile (5%) of the user throughput. User throughput (during
+active time) is defined as the size of a burst divided by the time
+between the arrival of the first packet of a burst and the reception of
+the last packet of the burst.</p>
+<p>For full buffer traffic, user experienced data rate is calculated
+as:</p>
+<p>user experienced data rate = 5% user spectrum efficiency ×
+bandwidth</p>
+<p>Here it should be noted that the 5% user spectrum efficiency depends
+on the number of active users sharing the channel (assumed to be 10 in
+the ITU evaluations ITU-R report M.2135 [5]), and that the 5% user
+spectrum efficiency for a fixed transmit power may vary with bandwidth.
+To keep a high 5% user spectrum efficiency and a few users sharing the
+channel, a dense network is beneficial, i.e. 5% user spectrum efficiency
+may vary also with site density (Site here refers to single TRxP).</p>
+<p>To improve user experienced data rates, 3GPP can develop standards
+with means for high 5% user spectrum efficiency. To this end, 5% user
+spectrum efficiency gains in the order of three times IMT-Advanced are
+proposed. Furthermore, 3GPP can develop standards with means for large
+bandwidth support. To this end, it is proposed that at least 1GHz
+aggregated bandwidth shall be supported.</p>
+<p>The available bandwidth and site density, which both have a strong
+impact on the available user experienced data rates, are however not
+under control of 3GPP.</p>
+<p>Based on this, the full buffer experienced user data rate is
+evaluated for information without numerical requirements.</p>
+<p>For non-full buffer evaluation, a joint system level evaluation is to
+be performed for Indoor Hotspot, Dense Urban, Rural, and Urban Macro.
+The non-full buffer user experienced data rate target is applicable at a
+certain area traffic level.</p>
+<h2 id="th-percentile-user-spectrum-efficiency">7.16 5th percentile user
+spectrum efficiency</h2>
+<p>5th percentile user spectrum efficiency means the 5% point of the
+cumulative distribution function (CDF) of the normalized user
+throughput. The (normalized) user throughput is defined as the average
+user throughput (the number of correctly received bits by users, i.e.,
+the number of bits contained in the SDU delivered to Layer 3, over a
+certain period of time, divided by the channel bandwidth and is measured
+in bit/s/Hz. The channel bandwidth for this purpose is defined as the
+effective bandwidth times the frequency reuse factor, where the
+effective bandwidth is the operating bandwidth normalised appropriately
+considering the uplink/downlink ratio. In case of multiple discontinuous
+“carriers” (one carrier refers to a continuous block of spectrum), this
+KPI should be calculated per carrier. In this case, the user throughput
+and channel bandwidth on the specific carrier are employed.</p>
+<p>It is a quantitative KPI NOTE1</p>
+<p>A joint system level evaluation is to be performed for Indoor
+Hotspot, Dense Urban, Rural, and Urban Macro.</p>
+<p>NOTE1: Target for 3x the cell edge spectral efficiency of
+IMT-Advanced targets for Indoor Hotspot, Dense Urban (step 1), Rural and
+Urban Macro for full buffer.</p>
+<p>Table 7.16-1: 5th percentile user spectrum efficiency in each
+deployment scenario for each usage scenario</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">5th percentile user spectrum
+efficiency</th>
+<th style="text-align: left;">Indoor Hotspot</th>
+<th style="text-align: left;">Dense Urban</th>
+<th style="text-align: left;">Rural</th>
+<th style="text-align: left;">Urban Macro</th>
+<th style="text-align: left;">High Speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">eMBB</td>
+<td style="text-align: left;">3x IMT-A InH</td>
+<td style="text-align: left;">3x IMT-A UMi</td>
+<td style="text-align: left;">3x IMT-A RMa</td>
+<td style="text-align: left;">3x IMT-A UMa</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">mMTC</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">URLLC</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="connection-density">7.17 Connection density</h2>
+<p>Connection density refers to total number of devices fulfilling a
+target QoS per unit area (per km2), where the target QoS is to ensure a
+system packet drop rate less than 1% under given packet arrival rate l
+and packet size S. Packet drop rate = (Number of packet in outage) /
+(number of generated packets), where a packet is in outage if this
+packet failed to be successfully received by destination receiver beyond
+packet dropping timer.</p>
+<p>The target for connection density should be 1 000 000
+device/km<sup>2</sup> in urban environment.</p>
+<p>3GPP should develop standards with means of high connection
+efficiency (measured as supported number of devices per TRxP per unit
+frequency resource) to achieve the desired connection density.</p>
+<p>Analytical, link level evaluation and system level evaluation are to
+be performed for Urban coverage for massive connection (Urban
+environment).</p>
+<h2 id="mobility">7.18 Mobility</h2>
+<p>Mobility means the maximum user speed at which a defined QoS can be
+achieved (in km/h).</p>
+<p>The target for mobility target should be 500km/h.</p>
+<p>Evaluation methodology should be link level evaluation with
+deployment scenario specific operating point.</p>
+<h2 id="network-energy-efficiency">7.19 Network energy efficiency</h2>
+<p>The capability is to minimize the RAN energy consumption while
+providing a much better area traffic capacity.</p>
+<p>Both qualitative and quantitative KPIs are proposed.</p>
+<p>Network energy efficiency shall be considered as a basic principle in
+the NR design</p>
+<p>The target is a design with:</p>
+<p>- the ability to efficiently deliver data, and</p>
+<p>- the ability to provide sufficiently granular network discontinuous
+transmission when there is no data to transmit and network availability
+is maintained</p>
+<p>- the ability to provide operator flexibility to adapt sleep
+durations of base stations depending on load, services and area</p>
+<p><u>In case of quantitative KPI, the following Network Energy
+Efficiency quantitative KPI (in bit per Joule) shall be used:</u></p>
+<p>a) to compare different solutions or mechanisms directly related to
+energy efficiency, when their impact is not obvious from qualitative
+analysis. When qualitative evaluation provide clear conclusions for the
+comparison of different network EE solutions and the evaluation of their
+impact, the comparison through the proposed quantitative KPI is not
+required.</p>
+<p>b) to compare the final NR system design with LTE to evaluate the
+overall improvement brought in terms of network EE</p>
+<p><u>Definition:</u></p>
+<p><img src="media/image7.png" /></p>
+<p><em>b<sub>k</sub></em> refers to the weights of every deployment
+scenario where the network energy efficiency is evaluated.</p>
+<p><img src="media/image8.png" /></p>
+<p><strong>V<sub>1</sub>=</strong> Refers to the traffic per second
+served by a base station (in bits/s)</p>
+<p><strong>EC<sub>1</sub> =</strong> Refers to the power consumed by a
+base station to serve <strong>V<sub>1</sub></strong> (in Watt =
+Joule/s).</p>
+<p><strong>a<sub>1</sub> =</strong> Refers to the weight for each
+traffic load level.</p>
+<p>Notes:</p>
+<p>The following assumptions are considered as starting point for the
+discussion in RAN WGs:</p>
+<p>- the IMEC model can be used as a starting point with possible
+enhancements or adjustment depending on considerations brought to RAN
+WGs. Similar other models are not precluded (Further discussion in RAN
+WGs needed). Other alternative models can be considered in RAN1 if
+needed.</p>
+<p>- Energy Efficiency Quantitative KPI should be evaluated by means of
+system level simulations at least in 2 deployment scenarios: one
+coverage limited environment (ex : Rural) AND one capacity limited
+environment (ex : Urban).</p>
+<p>- Evaluation should not be for peak hour but based on a 24 hour daily
+traffic profile. We recommend that at least 3 load levels should be
+evaluated</p>
+<p>- Cooling system impact on EE will not be discussed in 3GPP RAN</p>
+<p>Evaluation methodology is based on inspection as baseline and system
+level evaluation is to be performed if necessary. For system level
+evaluation, at least 2 deployment scenarios are considered; one is
+coverage limited environment (ex: Rural) and the other one is capacity
+limited environment (ex: Dense Urban). NOTE1</p>
+<p>NOTE1: Inspection is the method to qualitatively check the capability
+of the RAN to improve area traffic capacity with minimum RAN energy
+consumption, e.g., ensure no or limited increase of BS power with more
+antenna elements and larger bandwidth, etc. As qualitative evaluation,
+3GPP should ensure that the new RAT is based on energy efficient design
+principles. For quantitative evaluation, one can compare the quantity of
+information bits transmitted to/received from users, divided by the
+energy consumption of RAN.</p>
+<h1
+id="requirements-for-architecture-and-migration-of-next-generation-radio-access-technologies">8
+Requirements for architecture and migration of Next Generation Radio
+Access Technologies</h1>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall be designed to fulfil the following requirements:</p>
+<p>- The RAN architecture shall support tight interworking between the
+new RAT and LTE.</p>
+<p>- Considering high performing inter-RAT mobility and aggregation of
+data flows via at least dual connectivity between LTE and new RAT. This
+shall be supported for both collocated and non-collocated site
+deployments.</p>
+<p>- The RAN architecture shall support connectivity through multiple
+transmission points, either collocated or non-collocated.</p>
+<p>- The RAN architecture shall enable a separation of control plane
+signalling and user plane data from different sites.</p>
+<p>- The RAN architecture shall support interfaces supporting effective
+inter-site scheduling coordination.</p>
+<p>- Different options and flexibility for splitting the RAN
+architecture shall be allowed.</p>
+<p>- The RAN architecture shall allow for deployment flexibility e.g. to
+host relevant RAN, CN and application functions close together at the
+edges of the network, when needed, e.g. to enable context aware service
+delivery, low latency services, etc...</p>
+<p>- The RAN architecture shall allow for C-plane/U-plane
+separation.</p>
+<p>- The RAN architecture shall allow deployments using Network Function
+Virtualization.</p>
+<blockquote>
+<p>- The RAN architecture shall allow for the RAN and the CN to evolve
+independently.</p>
+<p>- The RAN architecture shall allow for the operation of Network
+Slicing3GPP TR 23.799 [7].</p>
+<p>- The RAN architecture shall support sharing of the RAN between
+multiple operators.</p>
+</blockquote>
+<p>- The design of the RAN architecture shall allow the deployment of
+new services rapidly and efficiently.</p>
+<p>- The design of the RAN architecture shall allow the support of 3GPP
+defined service classes (e.g. interactive, background, streaming and
+conversational).</p>
+<p>- The design of the RAN architecture shall enable lower CAPEX/OPEX
+with respect to current networks to achieve the same level of
+services.</p>
+<p>- RAN-CN interfaces and RAN internal interfaces (both between new RAT
+logical nodes/functions and between new RAT and LTE logical
+nodes/functions) shall be open for multi-vendor interoperability.</p>
+<p>- The RAN architecture shall support operator-controlled sidelink
+(device-to-device) operation, both in coverage and out of coverage.</p>
+<h1 id="supplementary-service-related-requirements">9
+Supplementary-Service related requirements</h1>
+<h2 id="multimedia-broadcastmulticast-service">9.1 Multimedia
+Broadcast/Multicast Service</h2>
+<p>The new RAT shall support existing Multicast/Broadcast services (e.g.
+download, streaming, group communication, TV, etc.) and new services
+(e.g. V2X, etc).</p>
+<p>The new RAT shall support dynamic adjustment of the
+Multicast/Broadcast area based on e.g. the user distribution or service
+requirements.</p>
+<p>The new RAT shall support concurrent delivery of both unicast and
+Multicast/Broadcast services to the users.</p>
+<p>The new RAT shall support efficient multiplexing with unicast
+transmissions in at least frequency domain and time domain.</p>
+<p>The new RAT shall support static and dynamic resource allocation
+between Multicast/Broadcast and unicast; the new RAT shall in particular
+allow support of up to 100% of DL resources for Multicast/Broadcast
+(100% meaning a dedicated MBMS carrier).</p>
+<p>The new RAT shall support Multicast/Broadcast network sharing between
+multiple participating MNOs, including the case of a dedicated MBMS
+network.</p>
+<p>The new RAT shall make it possible to cover large geographical areas
+up to the size of an entire country in SFN mode with network
+synchronization and shall allow cell radii of up to 100 km if required
+to facilitate that objective. It shall also support local, regional and
+national broadcast areas.</p>
+<p>The new RAT shall support Multicast/Broadcast services for fixed,
+portable and mobile UEs. Mobility up to 250 km/h shall be supported.</p>
+<p>The new RAT shall leverage usage of RAN equipment (hard- and
+software) including e.g. multi-antenna capabilities (e.g. MIMO) to
+improve Multicast/Broadcast capacity and reliability.</p>
+<p>The new RAT shall support Multicast/Broadcast services for mMTC
+devices.</p>
+<h2 id="locationpositioning-service">9.2 Location/Positioning
+Service</h2>
+<p>The NR should enable, and improve if suitable, state-of-art
+positioning techniques, such as RAN-embedded (Cell-ID, E-Cell ID, OTDOA,
+UTDOA, etc.) and RAN-external (GNSS, Bluetooth, WLAN, Terrestrial Beacon
+Systems (TBS), sensors, etc.). Additionally, potential D2D based
+positioning techniques should be considered.</p>
+<p>The NR positioning shall exploit high bandwidth, massive antenna
+systems, network architecture/ functionalities (e.g. heterogeneous
+networks, broadcast, MBMS) and deployment of massive number of devices.
+NR positioning shall support indoors and outdoors use cases.</p>
+<p>NR shall support regulatory positioning requirements.</p>
+<p>NR design targets for commercial positioning use cases include:</p>
+<p>1. Support for range of accuracy levels, latency levels and device
+categories</p>
+<p>2. Support accuracy and latency as defined in TR 22.862 for some use
+cases</p>
+<p>3. Reduced network complexity</p>
+<p>3. Reduced device cost</p>
+<p>4. Reduced device power consumption</p>
+<p>5. Efficient signalling over the air interface and in the network</p>
+<p>6. Support for hybrid positioning methods</p>
+<p>7. Scalability (support for large number of devices)</p>
+<p>8. High security</p>
+<p>9. High availability</p>
+<p>10. Support UE speed as defined in TR 22.862</p>
+<h2 id="critical-communications-services">9.3 Critical Communications
+services</h2>
+<h3 id="public-safety-communications">9.3.1 Public safety
+communications</h3>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall support D2D (e.g. ProSe in 3GPP TS 23.303 [8]).</p>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall support Mission Critical Communications for diverse types of
+services (e.g. MCPTT, MCVideo, MCData in 3GPP TS 22.179 [9], 3GPP TS
+22.280 [20], 3GPP TS 22.281 [21], and 3GPP TS 22.282 [22]).</p>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall support efficient group communications (e.g. GCSE_LTE, SC-PTM in
+3GPP TS 22.468 [10] and 3GPP TR 36.890 [11]).</p>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall support isolated communications (e.g. IOPS in 3GPP TS 22.346
+[23]).</p>
+<h3 id="emergency-communications">9.3.2 Emergency communications</h3>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall provide mechanisms to enable emergency calls including
+positioning/location for emergency calls (such as is found in 3GPP TS
+22.101 [12] section 10 for emergency calls and 3GPP TS 22.071 [13] for
+position/location) when appropriate.</p>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall provide mechanisms to enable Multimedia Priority Services (such as
+is found in 3GPP TS 22.153 [14]).</p>
+<h3 id="public-warningemergency-alert-systems">9.3.3 Public
+warning/emergency alert systems</h3>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall provide mechanisms to enable public warning services that provides
+warning/notifications to users meeting regional regulatory requirements
+(such as is found in 3GPP TS 22.268 [15]).</p>
+<h2 id="v2x-communication">9.4 V2X communication</h2>
+<p>The RAN design for NR V2X shall provide communication via
+infrastructure, including MBMS support, for V2X services (such as found
+in 3GPP TS 22.185 [17]) and advanced V2X services (such as found in the
+outcome of the SA1 study 3GPP TS 22.886 [18]).</p>
+<p>The RAN design for NR V2X shall provide communication via sidelink
+for V2X services (such as found in 3GPP TS 22.185 [17]) and advanced V2X
+services (such as found in the outcome of the SA1 study 3GPP TS 22.886
+[18]).</p>
+<h1 id="operational-requirements">10 Operational requirements</h1>
+<h2 id="general-1">10.0 General</h2>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall be designed to fulfill the following requirements:</p>
+<p>- RF requirements for multi-standard base stations shall be supported
+also for the new RAT.</p>
+<p>- The RAN nodes shall be designed to allow upgrade by software as
+much as possible.</p>
+<h2 id="spectrum">10.1 Spectrum</h2>
+<h3 id="void">10.1.1 Void</h3>
+<h3 id="channel-bandwidth-scalability">10.1.2 Channel bandwidth
+scalability</h3>
+<p>Bandwidth scalability means the ability to operate with different
+bandwidth allocations.</p>
+<p>It is a qualitative KPI.</p>
+<h3 id="void-1">10.1.3 Void</h3>
+<h3 id="duplexing-flexibility">10.1.4 Duplexing flexibility</h3>
+<p>Duplexing flexibility means the ability of the access technology to
+adapt its allocation of resources flexibly for uplink and downlink for
+both paired and unpaired frequency bands.</p>
+<h3 id="support-of-shared-spectrum">10.1.5 Support of shared
+spectrum</h3>
+<p>Next Generation Radio Access Technologies should support efficient
+mechanisms to share either licensed or unlicensed spectrum with other
+IMT/Non-IMT systems.</p>
+<h3 id="spectrum-range">10.1.6 Spectrum range</h3>
+<p>Next Generation Radio Access Technologies should support potential
+use of frequency range up to 100 GHz.</p>
+<h2 id="ul-link-budget">10.2 UL Link Budget</h2>
+<p>For eMBB, NR uplink should target at least the same link budget (i.e.
+MCL) as LTE uplink, under the same usage scenarios and similar
+deployment configurations (e.g., same carrier frequency).</p>
+<h2 id="support-for-wide-range-of-services">10.3 Support for wide range
+of services</h2>
+<p>Support for wide range of services means the system shall be
+inherently flexible enough to meet the connectivity requirements of a
+range of existing and future (as yet unknown) services to be deployable
+on a single continuous block of spectrum in an efficient manner.</p>
+<h2 id="co-existence-and-interworking-with-legacy-rats">10.4
+Co-existence and interworking with legacy RATs</h2>
+<h3 id="co-existence-with-lte">10.4.1 Co-existence with LTE</h3>
+<p>The New RAT should be able to support flexible allocation of
+resources (e.g. time, frequency) between the new RAT and LTE operating
+in the same block of spectrum (with possible bandwidths overlap).
+Resource allocation granularity in the time/frequency domain, as well as
+the potential guards between NR and LTE resources are to be determined
+by the study on the new RAT. The New RAT should be able to use these
+resources at least for downlink, uplink and sidelink. The solution
+should work whether LTE is supported by the same base station as the New
+RAT or the two RATs are supported by different base stations. The
+solution should not affect backward compatibility with legacy LTE
+terminals. These requirements are applicable for LTE Rel-8 and onwards,
+including NB-IoT.</p>
+<p>This flexible allocation of resources should enable a progressive
+downsize of operators assigned bandwidth used by LTE, and the
+corresponding increase in the bandwidth used by NR.</p>
+<p>Note: this requirement may be supported with different levels of
+flexibility depending on the LTE capability/release.</p>
+<p>The New RAT shall be able to co-exist with LTE on adjacent spectrum
+in the same band in the same geographical area, including collocated
+deployments of the same or different operators; where the ability to
+coexist is based upon an agreed maximum degradation of throughput that
+is found acceptable on LTE.</p>
+<p>These requirements are applicable for paired and unpaired
+spectrum.</p>
+<h3 id="co-existence-with-umts-and-gsmedge">10.4.2 Co-existence with
+UMTS and GSM/EDGE</h3>
+<p>The New RAT shall be able to co-exist with UMTS and GSM/EDGE on
+adjacent spectrum in the same band in the same geographical area,
+including collocated deployments of the same or different operators;
+where the ability to coexist is based upon an agreed maximum degradation
+of throughput and outage that is found acceptable on UMTS and GSM/EDGE,
+respectively.</p>
+<p>Coexistence on adjacent spectrum in the same geographical area should
+enable a progressive downsize of operators assigned bandwidth used by
+UMTS and GSM/EDGE, and the corresponding increase in the bandwidth used
+by NR.</p>
+<p>These requirements are applicable for paired and unpaired
+spectrum.</p>
+<h2 id="v2x-communication-1">10.4.3 V2X communication</h2>
+<p>It is not intended for NR V2X to replace the services offered by LTE
+V2X. Instead, the NR V2X shall complement LTE V2X for advanced V2X
+services and support interworking with LTE V2X.</p>
+<h2 id="void-2">10.5 Void</h2>
+<h2 id="interworking-with-non-3gpp-systems">10.6 Interworking with
+non-3GPP systems</h2>
+<h3 id="general-2">10.6.1 General</h3>
+<p>3GPP system shall support procedures for interworking with non 3GPP
+RATs.</p>
+<h3 id="interworking-with-wlan">10.6.2 Interworking with WLAN</h3>
+<p>The next generation access network shall support interworking with
+WLAN. The number of solutions selected should be minimized.</p>
+<h3 id="void-3">10.6.3 Void</h3>
+<h2 id="void-4">10.7 Void</h2>
+<h2 id="easy-operation-and-self-organization-requirements">10.8 Easy
+operation and Self Organization requirements</h2>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall be designed to fulfill the following requirements:</p>
+<p>- RAN shall support the deployment of RAN SON functions in a hybrid
+manner (distributed and centralized).</p>
+<p>- Collaboration and coordination among RAN SON functions need to be
+addressed.</p>
+<p>- User / application level QoS and QoE monitoring capability by UEs
+and network elements shall be supported.</p>
+<h2 id="void-5">10.9 Void</h2>
+<h2 id="cost-related-requirements">10.10 Cost-related requirements</h2>
+<h3 id="balance-of-complexity-and-performance">10.10.1 Balance of
+complexity and performance</h3>
+<p>The cost of introduction of massive MIMO technology is impacted by
+the analog parts, which are directly related with RF performance
+requirements. Since massive MIMO is seen as a key technology for NR, the
+requirements levels must be chosen carefully and careful consideration
+of how they are defined must be undertaken, in order to enable
+economically viable deployments. This applies for all types of NR
+deployments, but is of particular importance for massive MIMO nodes
+employing Active Antenna Systems, or Advanced Antenna Systems in a more
+general sense.</p>
+<p>In particular, some RF requirements may need more careful
+consideration, such as the out of band emission limits and the maximum
+ratio between overall system power and individual power per RF
+chain/antenna element. In addition to the implied complexity and cost,
+the RF requirements must be defined with co-existence and sharing
+performance in mind and respecting regulatory limits. Particular care
+has to be taken in how to define unwanted emission limits with respect
+to the increasing size of the massive MIMO configuration in a proper way
+that does not lead to excessively high unwanted emission.</p>
+<h3 id="low-cost-requirements">10.10.2 Low-cost requirements</h3>
+<p>3GPP shall support ultra-low cost network infrastructures, ultra-low
+cost devices, and ultra-low cost operation and maintenance to enable
+economically viable deployments for the Provision of minimal services
+(Data and Voice) for very low-ARPU areas.</p>
+<h2 id="energy-related-requirements">10.11 Energy-related
+requirements</h2>
+<h2
+id="security-and-privacy-related-requirement-relevant-for-radio-access">10.12
+Security and Privacy related requirement relevant for Radio Access</h2>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall ensure support for integrity and confidentiality protection of
+radio signalling messages, including messages between RAN and Core
+network nodes.</p>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall ensure the ability to support integrity and confidentiality
+protection of user plane messages, including messages between RAN and
+Core network nodes, with the use of such security to be configurable
+during security set-up.</p>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall ensure support for the allocation and use of identities to provide
+user privacy, e.g. reduce the need for sending any permanent identities
+in the clear.</p>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall ensure the efficient establishment of RAN security mechanisms.</p>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall ensure resilience against jamming.</p>
+<p>NOTE1: Security and Privacy-related system requirements are reflected
+in 3GPP TR 33.899 [19]. This TR includes security areas on "RAN
+security" and "Privacy security", which is a possible source of security
+and privacy related requirements for the Radio Access.</p>
+<h2 id="void-6">10.13 Void</h2>
+<h2 id="lawful-interception">10.14 Lawful Interception</h2>
+<p>The RAN design for the Next Generation Radio Access Technologies
+shall provide mechanisms to enable lawful intercept for appropriate
+services (as per 3GPP TS 33.106 [16]).</p>
+<h2 id="backhaul-and-signalling-optimization-requirements">10.15
+Backhaul and signalling optimization requirements</h2>
+<p>The RAN system shall have the capability to minimize the backhaul and
+signalling load in line with the requirements in section 5.48 of 3GPP TR
+22.891 [3]).</p>
+<h2 id="relay-requirements">10.16 Relay requirements</h2>
+<p>The design of the 5G RAN and Radio Interface Technology shall aim at
+supporting wireless relay functions.</p>
+<h2 id="high-availability">10.17 High availability</h2>
+<p>The RAN availability is characterized by its availability rate X,
+defined as follows: a base station is available for the targeted
+communication X% of the time. Unavailable communication for shorter
+period than [Y] ms shall not be counted.</p>
+<p>The NR specification’s ability to provide URLLC services shall not be
+compromised by the functions defined to improve the network or UE energy
+efficiency, or by system reconfigurations and software upgrades.</p>
+<h2 id="void-7">10.18 Void</h2>
+<h1 id="testing-and-conformance-requirements">11 Testing and Conformance
+Requirements</h1>
+<p>- Conformance requirements shall be defined for NR on all deployment
+bands</p>
+<p>- Features/components of NR shall be designed in such a way that it
+is feasible to define test specifications for these features/components
+for both UE and BS on all deployment bands</p>
+<p class="heading" id="annex-a-change-history">Annex A:<br />
+Change history</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 7%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 45%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr>
+<td colspan="8" style="text-align: center;"><strong>Change
+history</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: center;"><strong>TSG #</strong></td>
+<td style="text-align: center;"><strong>TSG Doc.</strong></td>
+<td style="text-align: center;"><strong>CR</strong></td>
+<td style="text-align: center;"><strong>Rev</strong></td>
+<td style="text-align: center;"><strong>Subject/Comment</strong></td>
+<td style="text-align: center;"><strong>Old</strong></td>
+<td style="text-align: center;"><strong>New</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2015-11</td>
+<td style="text-align: center;">RP-70</td>
+<td style="text-align: center;">RP-151761</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Draft skeleton for the TR</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">0. 0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2015-11</td>
+<td style="text-align: center;">RP-70</td>
+<td style="text-align: center;">RP-152183</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Revised the reference SI to the updated
+SI, removed the change mark</td>
+<td style="text-align: center;">0.0.0</td>
+<td style="text-align: center;">0.0.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-01</td>
+<td style="text-align: center;">RP-AH</td>
+<td style="text-align: center;">Rpa160013</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Revised the Skeleton TR based on the
+Report of email discussion Rpa-160012</td>
+<td style="text-align: center;">0.0.1</td>
+<td style="text-align: center;">0.0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-01</td>
+<td style="text-align: center;">RP-AH</td>
+<td style="text-align: center;">Rpa160070</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Merge all requirements into one section,
+renamed the section as key performance indicator</td>
+<td style="text-align: center;">0.0.2</td>
+<td style="text-align: center;">0.0.3</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-01</td>
+<td style="text-align: center;">RP-AH</td>
+<td style="text-align: center;">Rpa160071</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>Move support for wide range of
+service from KPI section into operational section</p>
+<p>Move spectral related sections from KPI section into operational
+section</p>
+<p>Remove E2E latency requirements;</p>
+<p>agreed skeleton TR</p></td>
+<td style="text-align: center;">0.0.3</td>
+<td style="text-align: center;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-01</td>
+<td style="text-align: center;">RP-AH</td>
+<td style="text-align: center;">Rpa160080</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Implementation of approved pCRs
+Rpa160077, Rpa160078 and Rpa160079 into the skeleton TR Rpa160071 as
+input for RAN email discussion [5G-AH-01]</td>
+<td style="text-align: center;">0.1.0</td>
+<td style="text-align: center;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-02</td>
+<td style="text-align: center;">RP-AH</td>
+<td style="text-align: center;">Rpa160081</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Minor editorial corrections on top of
+Rpa160080 (result of RAN email discussion [5G-AH-01])</td>
+<td style="text-align: center;">0.1.1</td>
+<td style="text-align: center;">0.1.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-02</td>
+<td style="text-align: center;">RP-AH</td>
+<td style="text-align: center;">Rpa160082</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">RAN agreed TR after ad hoc and email
+discussion [5G-AH-01]</td>
+<td style="text-align: center;">0.1.2</td>
+<td style="text-align: center;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-03</td>
+<td style="text-align: center;">RP-71</td>
+<td style="text-align: center;">RP-160688</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updated TR including all agreements of
+RAN #71, e.g. pCRs RP-160554, RP-160555, RP-160562, RP-160566,
+RP-160589, RP-160611, RP-160629, RP-160637, RP-160640, RP-160642,
+RP-160643, RP-160646, RP-160672</td>
+<td style="text-align: center;">0.2.0</td>
+<td style="text-align: center;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-03</td>
+<td style="text-align: center;">RP-71</td>
+<td style="text-align: center;">RP-160689</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">TR after RAN #71 that was agreed by
+email discussion [RAN#71-01]: changes from v0.2.1 plus editorial
+clean-up from MCC</td>
+<td style="text-align: center;">0.2.1</td>
+<td style="text-align: center;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-06</td>
+<td style="text-align: center;">RP-72</td>
+<td style="text-align: center;">RP-160810</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updated TR including all agreements of
+RAN #72, e.g. pCRs RP-160962, RP-160963, RP-160964, RP-160965,
+RP-161206, RP-160967, RP-161205, RP-161207, RP-160969, RP-160970,
+RP-161213, RP-161317, RP-161254, RP-161100, RP-161277, RP-161210,
+RP-161208, RP-161050</td>
+<td style="text-align: center;">0.3.0</td>
+<td style="text-align: center;">0.3.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-06</td>
+<td style="text-align: center;">RP-72</td>
+<td style="text-align: center;">RP-161134</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">RAN agreed TR after email discussion
+[RAN #72-01]</td>
+<td style="text-align: center;">0.3.1</td>
+<td style="text-align: center;">0.4.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-09</td>
+<td style="text-align: center;">RP-73</td>
+<td style="text-align: center;">RP-161927</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Updated TR including all agreements of
+RAN #73, e.g. pCRs RP-161543, RP-161544, RP-161545, RP-161837,
+RP-161838, RP-161918, RP-161833, RP-161834, RP-161835, RP-161836,
+RP-161842, RP-161847, RP-161849, RP-161866, RP-161886, RP-161888</td>
+<td style="text-align: center;">0.4.0</td>
+<td style="text-align: center;">0.4.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-10</td>
+<td style="text-align: center;">RP-73</td>
+<td style="text-align: center;">RP-161928</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><p>RAN approved TR after email
+discussion after RAN #73</p>
+<p>Note: Minor editorial cleanups compared to v0.4.1 included.</p></td>
+<td style="text-align: center;">0.4.1</td>
+<td style="text-align: center;">1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-10</td>
+<td style="text-align: center;">RP-73</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Approved version of the TR 38.913 (apart
+from cover page and history table identical with v1.0.0)</td>
+<td style="text-align: center;">1.0.0</td>
+<td style="text-align: center;">14.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-12</td>
+<td style="text-align: center;">RP-74</td>
+<td style="text-align: center;">RP-162566</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">Cleanup of TR 38.913 regarding last
+remaining open issues</td>
+<td style="text-align: center;">14.0.0</td>
+<td style="text-align: center;">14.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-12</td>
+<td style="text-align: center;">RP-74</td>
+<td style="text-align: center;">RP-162027</td>
+<td style="text-align: center;">0002</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Requirements on public safety
+communication</td>
+<td style="text-align: center;">14.0.0</td>
+<td style="text-align: center;">14.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016-12</td>
+<td style="text-align: center;">RP-74</td>
+<td style="text-align: center;">RP-162567</td>
+<td style="text-align: center;">0006</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">CR to TR 38.913 on Energy
+Efficiency</td>
+<td style="text-align: center;">14.0.0</td>
+<td style="text-align: center;">14.1.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-03</td>
+<td style="text-align: center;">RP-75</td>
+<td style="text-align: center;">RP-170287</td>
+<td style="text-align: center;">0008</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Appending some missed abbreviation for
+38.913</td>
+<td style="text-align: center;">14.1.0</td>
+<td style="text-align: center;">14.2.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017-06</td>
+<td style="text-align: center;">RP-76</td>
+<td style="text-align: center;">RP-170967</td>
+<td style="text-align: center;">0009</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Update to TR38.913 to take into account
+ITU-R KPIs</td>
+<td style="text-align: center;">14.2.0</td>
+<td style="text-align: center;">14.3.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018-06</td>
+<td style="text-align: center;">RP-80</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Upgraded to Release 15 - without
+technical change</td>
+<td style="text-align: center;">14.3.0</td>
+<td style="text-align: center;">15.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020-07</td>
+<td style="text-align: center;">RP-88e</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Upgraded to Release 16 - without
+technical change</td>
+<td style="text-align: center;">15.0.0</td>
+<td style="text-align: center;">16.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022-03</td>
+<td style="text-align: center;">RP-95e</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Upgraded to Release 17 - without
+technical change</td>
+<td style="text-align: center;">16.0.0</td>
+<td style="text-align: center;">17.0.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

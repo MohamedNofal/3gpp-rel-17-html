@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.22212581344902385in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 1280 512" width="0.5553145336225597in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 16; stroke-linejoin: round; }
+.font0 { font-size: 167px; font-family: "Times New Roman", serif; }
+.font1 { font-style: italic; font-size: 288px; font-family: "Times New Roman", serif; }
+.font2 { font-size: 261px; font-family: Symbol, serif; }
+.font3 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="64" x2="224" y1="96" y2="96"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="123 227 331 890 994 1098" xml:lang="en" xml:space="preserve" y="435">SSBSSB</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="69 816" xml:lang="en" xml:space="preserve" y="352">ii</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="570" xml:space="preserve" y="352">=</text>
+    </g>
+</svg>

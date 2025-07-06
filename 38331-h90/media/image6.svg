@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="2.247752247752248in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 2940 2250" width="2.937062937062937in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: none; }
+.pen2 { stroke: rgb(0,0,0); stroke-width: 10; stroke-linejoin: round; }
+.font0 { font-weight: bold; font-size: 125px; font-family: Arial; }
+.font1 { font-size: 116px; font-family: Arial; }
+.brush1 { fill: rgb(0,0,0); }
+</style>
+    <g>
+        <path class="pen1 brush0" d="M 0,0  L 10,0 10,10 0,10 0,0 z" fill-rule="nonzero"/>
+        <path class="pen1 brush0" d="M 2930,2240  L 2940,2240 2940,2250 2930,2250 2930,2240 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="530,-70 310,-70 310,2360 90,2360"/>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="2660,-70 2440,-70 2440,2360 2220,2360"/>
+    </g>
+    <g>
+        <path class="pen1 brush0" d="M 185,45  L 435,45 435,255 185,255 185,45 z" fill-rule="nonzero"/>
+        <polyline class="pen2" fill="none" points="185,45 435,45 435,255 185,255 185,45"/>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="213" xml:space="preserve" y="200">U</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="314" xml:space="preserve" y="200">E</text>
+    </g>
+    <g>
+        <path class="pen1 brush0" d="M 2135,45  L 2745,45 2745,255 2135,255 2135,45 z" fill-rule="nonzero"/>
+        <polyline class="pen2" fill="none" points="2135,45 2745,45 2745,255 2135,255 2135,45"/>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2164" xml:space="preserve" y="200">N</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2265" xml:space="preserve" y="200">e</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2343" xml:space="preserve" y="200">t</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2389" xml:space="preserve" y="200">w</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2498" xml:space="preserve" y="200">o</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2584" xml:space="preserve" y="200">r</text>
+    </g>
+    <g>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2638" xml:space="preserve" y="200">k</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1259" xml:space="preserve" y="690">M</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1368" xml:space="preserve" y="690">I</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1404" xml:space="preserve" y="690">B</text>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="410,735 2435,735"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 410,675  L 315,675 315,795 410,795 410,675 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1234" xml:space="preserve" y="1030">S</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1321" xml:space="preserve" y="1030">I</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1357" xml:space="preserve" y="1030">B</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1444" xml:space="preserve" y="1030">1</text>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="410,1075 430,1075"/>
+        <polyline class="pen2" fill="none" points="450,1075 470,1075"/>
+        <polyline class="pen2" fill="none" points="490,1075 510,1075"/>
+        <polyline class="pen2" fill="none" points="530,1075 550,1075"/>
+        <polyline class="pen2" fill="none" points="570,1075 590,1075"/>
+        <polyline class="pen2" fill="none" points="610,1075 630,1075"/>
+        <polyline class="pen2" fill="none" points="650,1075 670,1075"/>
+        <polyline class="pen2" fill="none" points="690,1075 710,1075"/>
+        <polyline class="pen2" fill="none" points="730,1075 750,1075"/>
+        <polyline class="pen2" fill="none" points="770,1075 790,1075"/>
+        <polyline class="pen2" fill="none" points="810,1075 830,1075"/>
+        <polyline class="pen2" fill="none" points="850,1075 870,1075"/>
+        <polyline class="pen2" fill="none" points="890,1075 910,1075"/>
+        <polyline class="pen2" fill="none" points="930,1075 950,1075"/>
+        <polyline class="pen2" fill="none" points="970,1075 990,1075"/>
+        <polyline class="pen2" fill="none" points="1010,1075 1030,1075"/>
+        <polyline class="pen2" fill="none" points="1050,1075 1070,1075"/>
+        <polyline class="pen2" fill="none" points="1090,1075 1110,1075"/>
+        <polyline class="pen2" fill="none" points="1130,1075 1150,1075"/>
+        <polyline class="pen2" fill="none" points="1170,1075 1190,1075"/>
+        <polyline class="pen2" fill="none" points="1210,1075 1230,1075"/>
+        <polyline class="pen2" fill="none" points="1250,1075 1270,1075"/>
+        <polyline class="pen2" fill="none" points="1290,1075 1310,1075"/>
+        <polyline class="pen2" fill="none" points="1330,1075 1350,1075"/>
+        <polyline class="pen2" fill="none" points="1370,1075 1390,1075"/>
+        <polyline class="pen2" fill="none" points="1410,1075 1430,1075"/>
+        <polyline class="pen2" fill="none" points="1450,1075 1470,1075"/>
+        <polyline class="pen2" fill="none" points="1490,1075 1510,1075"/>
+        <polyline class="pen2" fill="none" points="1530,1075 1550,1075"/>
+        <polyline class="pen2" fill="none" points="1570,1075 1590,1075"/>
+        <polyline class="pen2" fill="none" points="1610,1075 1630,1075"/>
+        <polyline class="pen2" fill="none" points="1650,1075 1670,1075"/>
+        <polyline class="pen2" fill="none" points="1690,1075 1710,1075"/>
+        <polyline class="pen2" fill="none" points="1730,1075 1750,1075"/>
+        <polyline class="pen2" fill="none" points="1770,1075 1790,1075"/>
+        <polyline class="pen2" fill="none" points="1810,1075 1830,1075"/>
+        <polyline class="pen2" fill="none" points="1850,1075 1870,1075"/>
+        <polyline class="pen2" fill="none" points="1890,1075 1910,1075"/>
+        <polyline class="pen2" fill="none" points="1930,1075 1950,1075"/>
+        <polyline class="pen2" fill="none" points="1970,1075 1990,1075"/>
+        <polyline class="pen2" fill="none" points="2010,1075 2030,1075"/>
+        <polyline class="pen2" fill="none" points="2050,1075 2070,1075"/>
+        <polyline class="pen2" fill="none" points="2090,1075 2110,1075"/>
+        <polyline class="pen2" fill="none" points="2130,1075 2150,1075"/>
+        <polyline class="pen2" fill="none" points="2170,1075 2190,1075"/>
+        <polyline class="pen2" fill="none" points="2210,1075 2230,1075"/>
+        <polyline class="pen2" fill="none" points="2250,1075 2270,1075"/>
+        <polyline class="pen2" fill="none" points="2290,1075 2310,1075"/>
+        <polyline class="pen2" fill="none" points="2330,1075 2350,1075"/>
+        <polyline class="pen2" fill="none" points="2370,1075 2390,1075"/>
+        <polyline class="pen2" fill="none" points="2410,1075 2430,1075"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 410,1015  L 315,1015 315,1135 410,1135 410,1015 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="591" xml:space="preserve" y="1370">S</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="678" xml:space="preserve" y="1370">y</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="743" xml:space="preserve" y="1370">s</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="808" xml:space="preserve" y="1370">t</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="844" xml:space="preserve" y="1370">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="916" xml:space="preserve" y="1370">m</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1024" xml:space="preserve" y="1370">I</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1061" xml:space="preserve" y="1370">n</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1133" xml:space="preserve" y="1370">f</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1169" xml:space="preserve" y="1370">o</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1241" xml:space="preserve" y="1370">r</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1285" xml:space="preserve" y="1370">m</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1393" xml:space="preserve" y="1370">a</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1465" xml:space="preserve" y="1370">t</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1501" xml:space="preserve" y="1370">i</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1530" xml:space="preserve" y="1370">o</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1602" xml:space="preserve" y="1370">n</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1675" xml:space="preserve" y="1370">R</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1769" xml:space="preserve" y="1370">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1841" xml:space="preserve" y="1370">q</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1913" xml:space="preserve" y="1370">u</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1986" xml:space="preserve" y="1370">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2058" xml:space="preserve" y="1370">s</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2123" xml:space="preserve" y="1370">t</text>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="315,1415 335,1415"/>
+        <polyline class="pen2" fill="none" points="355,1415 375,1415"/>
+        <polyline class="pen2" fill="none" points="395,1415 415,1415"/>
+        <polyline class="pen2" fill="none" points="435,1415 455,1415"/>
+        <polyline class="pen2" fill="none" points="475,1415 495,1415"/>
+        <polyline class="pen2" fill="none" points="515,1415 535,1415"/>
+        <polyline class="pen2" fill="none" points="555,1415 575,1415"/>
+        <polyline class="pen2" fill="none" points="595,1415 615,1415"/>
+        <polyline class="pen2" fill="none" points="635,1415 655,1415"/>
+        <polyline class="pen2" fill="none" points="675,1415 695,1415"/>
+        <polyline class="pen2" fill="none" points="715,1415 735,1415"/>
+        <polyline class="pen2" fill="none" points="755,1415 775,1415"/>
+        <polyline class="pen2" fill="none" points="795,1415 815,1415"/>
+        <polyline class="pen2" fill="none" points="835,1415 855,1415"/>
+        <polyline class="pen2" fill="none" points="875,1415 895,1415"/>
+        <polyline class="pen2" fill="none" points="915,1415 935,1415"/>
+        <polyline class="pen2" fill="none" points="955,1415 975,1415"/>
+        <polyline class="pen2" fill="none" points="995,1415 1015,1415"/>
+        <polyline class="pen2" fill="none" points="1035,1415 1055,1415"/>
+        <polyline class="pen2" fill="none" points="1075,1415 1095,1415"/>
+        <polyline class="pen2" fill="none" points="1115,1415 1135,1415"/>
+        <polyline class="pen2" fill="none" points="1155,1415 1175,1415"/>
+        <polyline class="pen2" fill="none" points="1195,1415 1215,1415"/>
+        <polyline class="pen2" fill="none" points="1235,1415 1255,1415"/>
+        <polyline class="pen2" fill="none" points="1275,1415 1295,1415"/>
+        <polyline class="pen2" fill="none" points="1315,1415 1335,1415"/>
+        <polyline class="pen2" fill="none" points="1355,1415 1375,1415"/>
+        <polyline class="pen2" fill="none" points="1395,1415 1415,1415"/>
+        <polyline class="pen2" fill="none" points="1435,1415 1455,1415"/>
+        <polyline class="pen2" fill="none" points="1475,1415 1495,1415"/>
+        <polyline class="pen2" fill="none" points="1515,1415 1535,1415"/>
+        <polyline class="pen2" fill="none" points="1555,1415 1575,1415"/>
+        <polyline class="pen2" fill="none" points="1595,1415 1615,1415"/>
+        <polyline class="pen2" fill="none" points="1635,1415 1655,1415"/>
+        <polyline class="pen2" fill="none" points="1675,1415 1695,1415"/>
+        <polyline class="pen2" fill="none" points="1715,1415 1735,1415"/>
+        <polyline class="pen2" fill="none" points="1755,1415 1775,1415"/>
+        <polyline class="pen2" fill="none" points="1795,1415 1815,1415"/>
+        <polyline class="pen2" fill="none" points="1835,1415 1855,1415"/>
+        <polyline class="pen2" fill="none" points="1875,1415 1895,1415"/>
+        <polyline class="pen2" fill="none" points="1915,1415 1935,1415"/>
+        <polyline class="pen2" fill="none" points="1955,1415 1975,1415"/>
+        <polyline class="pen2" fill="none" points="1995,1415 2015,1415"/>
+        <polyline class="pen2" fill="none" points="2035,1415 2055,1415"/>
+        <polyline class="pen2" fill="none" points="2075,1415 2095,1415"/>
+        <polyline class="pen2" fill="none" points="2115,1415 2135,1415"/>
+        <polyline class="pen2" fill="none" points="2155,1415 2175,1415"/>
+        <polyline class="pen2" fill="none" points="2195,1415 2215,1415"/>
+        <polyline class="pen2" fill="none" points="2235,1415 2255,1415"/>
+        <polyline class="pen2" fill="none" points="2275,1415 2295,1415"/>
+        <polyline class="pen2" fill="none" points="2315,1415 2335,1415"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 2340,1355  L 2435,1355 2435,1475 2340,1475 2340,1355 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="519" xml:space="preserve" y="1710">S</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="606" xml:space="preserve" y="1710">y</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="671" xml:space="preserve" y="1710">s</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="736" xml:space="preserve" y="1710">t</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="772" xml:space="preserve" y="1710">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="844" xml:space="preserve" y="1710">m</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="952" xml:space="preserve" y="1710">I</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="988" xml:space="preserve" y="1710">n</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1061" xml:space="preserve" y="1710">f</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1097" xml:space="preserve" y="1710">o</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1169" xml:space="preserve" y="1710">r</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1212" xml:space="preserve" y="1710">m</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1321" xml:space="preserve" y="1710">a</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1393" xml:space="preserve" y="1710">t</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1429" xml:space="preserve" y="1710">i</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1458" xml:space="preserve" y="1710">o</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1530" xml:space="preserve" y="1710">n</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1603" xml:space="preserve" y="1710"> </text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1639" xml:space="preserve" y="1710">m</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1747" xml:space="preserve" y="1710">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1819" xml:space="preserve" y="1710">s</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1884" xml:space="preserve" y="1710">s</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1949" xml:space="preserve" y="1710">a</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2022" xml:space="preserve" y="1710">g</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2094" xml:space="preserve" y="1710">e</text>
+    </g>
+    <g>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="2166" xml:space="preserve" y="1710">s</text>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="410,1755 430,1755"/>
+        <polyline class="pen2" fill="none" points="450,1755 470,1755"/>
+        <polyline class="pen2" fill="none" points="490,1755 510,1755"/>
+        <polyline class="pen2" fill="none" points="530,1755 550,1755"/>
+        <polyline class="pen2" fill="none" points="570,1755 590,1755"/>
+        <polyline class="pen2" fill="none" points="610,1755 630,1755"/>
+        <polyline class="pen2" fill="none" points="650,1755 670,1755"/>
+        <polyline class="pen2" fill="none" points="690,1755 710,1755"/>
+        <polyline class="pen2" fill="none" points="730,1755 750,1755"/>
+        <polyline class="pen2" fill="none" points="770,1755 790,1755"/>
+        <polyline class="pen2" fill="none" points="810,1755 830,1755"/>
+        <polyline class="pen2" fill="none" points="850,1755 870,1755"/>
+        <polyline class="pen2" fill="none" points="890,1755 910,1755"/>
+        <polyline class="pen2" fill="none" points="930,1755 950,1755"/>
+        <polyline class="pen2" fill="none" points="970,1755 990,1755"/>
+        <polyline class="pen2" fill="none" points="1010,1755 1030,1755"/>
+        <polyline class="pen2" fill="none" points="1050,1755 1070,1755"/>
+        <polyline class="pen2" fill="none" points="1090,1755 1110,1755"/>
+        <polyline class="pen2" fill="none" points="1130,1755 1150,1755"/>
+        <polyline class="pen2" fill="none" points="1170,1755 1190,1755"/>
+        <polyline class="pen2" fill="none" points="1210,1755 1230,1755"/>
+        <polyline class="pen2" fill="none" points="1250,1755 1270,1755"/>
+        <polyline class="pen2" fill="none" points="1290,1755 1310,1755"/>
+        <polyline class="pen2" fill="none" points="1330,1755 1350,1755"/>
+        <polyline class="pen2" fill="none" points="1370,1755 1390,1755"/>
+        <polyline class="pen2" fill="none" points="1410,1755 1430,1755"/>
+        <polyline class="pen2" fill="none" points="1450,1755 1470,1755"/>
+        <polyline class="pen2" fill="none" points="1490,1755 1510,1755"/>
+        <polyline class="pen2" fill="none" points="1530,1755 1550,1755"/>
+        <polyline class="pen2" fill="none" points="1570,1755 1590,1755"/>
+        <polyline class="pen2" fill="none" points="1610,1755 1630,1755"/>
+        <polyline class="pen2" fill="none" points="1650,1755 1670,1755"/>
+        <polyline class="pen2" fill="none" points="1690,1755 1710,1755"/>
+        <polyline class="pen2" fill="none" points="1730,1755 1750,1755"/>
+        <polyline class="pen2" fill="none" points="1770,1755 1790,1755"/>
+        <polyline class="pen2" fill="none" points="1810,1755 1830,1755"/>
+        <polyline class="pen2" fill="none" points="1850,1755 1870,1755"/>
+        <polyline class="pen2" fill="none" points="1890,1755 1910,1755"/>
+        <polyline class="pen2" fill="none" points="1930,1755 1950,1755"/>
+        <polyline class="pen2" fill="none" points="1970,1755 1990,1755"/>
+        <polyline class="pen2" fill="none" points="2010,1755 2030,1755"/>
+        <polyline class="pen2" fill="none" points="2050,1755 2070,1755"/>
+        <polyline class="pen2" fill="none" points="2090,1755 2110,1755"/>
+        <polyline class="pen2" fill="none" points="2130,1755 2150,1755"/>
+        <polyline class="pen2" fill="none" points="2170,1755 2190,1755"/>
+        <polyline class="pen2" fill="none" points="2210,1755 2230,1755"/>
+        <polyline class="pen2" fill="none" points="2250,1755 2270,1755"/>
+        <polyline class="pen2" fill="none" points="2290,1755 2310,1755"/>
+        <polyline class="pen2" fill="none" points="2330,1755 2350,1755"/>
+        <polyline class="pen2" fill="none" points="2370,1755 2390,1755"/>
+        <polyline class="pen2" fill="none" points="2410,1755 2430,1755"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 410,1695  L 315,1695 315,1815 410,1815 410,1695 z" fill-rule="nonzero"/>
+    </g>
+    <g>
+        <polyline class="pen2" fill="none" points="410,1915 430,1915"/>
+        <polyline class="pen2" fill="none" points="450,1915 470,1915"/>
+        <polyline class="pen2" fill="none" points="490,1915 510,1915"/>
+        <polyline class="pen2" fill="none" points="530,1915 550,1915"/>
+        <polyline class="pen2" fill="none" points="570,1915 590,1915"/>
+        <polyline class="pen2" fill="none" points="610,1915 630,1915"/>
+        <polyline class="pen2" fill="none" points="650,1915 670,1915"/>
+        <polyline class="pen2" fill="none" points="690,1915 710,1915"/>
+        <polyline class="pen2" fill="none" points="730,1915 750,1915"/>
+        <polyline class="pen2" fill="none" points="770,1915 790,1915"/>
+        <polyline class="pen2" fill="none" points="810,1915 830,1915"/>
+        <polyline class="pen2" fill="none" points="850,1915 870,1915"/>
+        <polyline class="pen2" fill="none" points="890,1915 910,1915"/>
+        <polyline class="pen2" fill="none" points="930,1915 950,1915"/>
+        <polyline class="pen2" fill="none" points="970,1915 990,1915"/>
+        <polyline class="pen2" fill="none" points="1010,1915 1030,1915"/>
+        <polyline class="pen2" fill="none" points="1050,1915 1070,1915"/>
+        <polyline class="pen2" fill="none" points="1090,1915 1110,1915"/>
+        <polyline class="pen2" fill="none" points="1130,1915 1150,1915"/>
+        <polyline class="pen2" fill="none" points="1170,1915 1190,1915"/>
+        <polyline class="pen2" fill="none" points="1210,1915 1230,1915"/>
+        <polyline class="pen2" fill="none" points="1250,1915 1270,1915"/>
+        <polyline class="pen2" fill="none" points="1290,1915 1310,1915"/>
+        <polyline class="pen2" fill="none" points="1330,1915 1350,1915"/>
+        <polyline class="pen2" fill="none" points="1370,1915 1390,1915"/>
+        <polyline class="pen2" fill="none" points="1410,1915 1430,1915"/>
+        <polyline class="pen2" fill="none" points="1450,1915 1470,1915"/>
+        <polyline class="pen2" fill="none" points="1490,1915 1510,1915"/>
+        <polyline class="pen2" fill="none" points="1530,1915 1550,1915"/>
+        <polyline class="pen2" fill="none" points="1570,1915 1590,1915"/>
+        <polyline class="pen2" fill="none" points="1610,1915 1630,1915"/>
+        <polyline class="pen2" fill="none" points="1650,1915 1670,1915"/>
+        <polyline class="pen2" fill="none" points="1690,1915 1710,1915"/>
+        <polyline class="pen2" fill="none" points="1730,1915 1750,1915"/>
+        <polyline class="pen2" fill="none" points="1770,1915 1790,1915"/>
+        <polyline class="pen2" fill="none" points="1810,1915 1830,1915"/>
+        <polyline class="pen2" fill="none" points="1850,1915 1870,1915"/>
+        <polyline class="pen2" fill="none" points="1890,1915 1910,1915"/>
+        <polyline class="pen2" fill="none" points="1930,1915 1950,1915"/>
+        <polyline class="pen2" fill="none" points="1970,1915 1990,1915"/>
+        <polyline class="pen2" fill="none" points="2010,1915 2030,1915"/>
+        <polyline class="pen2" fill="none" points="2050,1915 2070,1915"/>
+        <polyline class="pen2" fill="none" points="2090,1915 2110,1915"/>
+        <polyline class="pen2" fill="none" points="2130,1915 2150,1915"/>
+        <polyline class="pen2" fill="none" points="2170,1915 2190,1915"/>
+        <polyline class="pen2" fill="none" points="2210,1915 2230,1915"/>
+        <polyline class="pen2" fill="none" points="2250,1915 2270,1915"/>
+        <polyline class="pen2" fill="none" points="2290,1915 2310,1915"/>
+        <polyline class="pen2" fill="none" points="2330,1915 2350,1915"/>
+        <polyline class="pen2" fill="none" points="2370,1915 2390,1915"/>
+        <polyline class="pen2" fill="none" points="2410,1915 2430,1915"/>
+    </g>
+    <g>
+        <path class="pen1 brush1" d="M 410,1855  L 315,1855 315,1975 410,1975 410,1855 z" fill-rule="nonzero"/>
+    </g>
+    <g/>
+</svg>

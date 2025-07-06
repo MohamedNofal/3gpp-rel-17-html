@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.4720173535791757in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 2112 1088" width="0.9162689804772234in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 16; stroke-linejoin: round; }
+.font0 { font-size: 202px; font-family: "Times New Roman", serif; }
+.font1 { font-style: italic; font-size: 202px; font-family: "Times New Roman", serif; }
+.font2 { font-style: italic; font-size: 346px; font-family: "Times New Roman", serif; }
+.font3 { font-style: italic; font-size: 313px; font-family: Symbol, serif; }
+.font4 { font-size: 313px; font-family: Symbol, serif; }
+.font5 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="792" x2="2024" y1="512" y2="512"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1093 1243 1369 1439 1509 1621 1719 1792 1855" xml:lang="en" xml:space="preserve" y="736">CSI-part2</text>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1049 1161 1234 1307 1394 1492" xml:lang="en" xml:space="preserve" y="1007">offset</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="205" xml:lang="en" xml:space="preserve" y="707">T</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="1297" xml:lang="en" xml:space="preserve" y="366">R</text>
+        <text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="52" xml:lang="en" xml:space="preserve" y="608">c</text>
+        <text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="824" xml:space="preserve" y="908">b</text>
+        <text class="font4" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="486" xml:space="preserve" y="608">=</text>
+    </g>
+</svg>

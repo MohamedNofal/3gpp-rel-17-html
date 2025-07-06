@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="3.5833333333333335in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 3094 2150" width="5.156666666666666in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.font0 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+.font1 { font-size: 90px; font-family: "Times New Roman", serif; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 6; stroke-linejoin: round; }
+.font2 { font-size: 82px; font-family: Verdana, sans-serif; }
+.font3 { font-size: 61px; font-family: Verdana, sans-serif; }
+.font4 { font-size: 68px; font-family: Verdana, sans-serif; }
+.pen2 { stroke: none; }
+.brush1 { fill: rgb(0,0,0); }
+.pen3 { stroke: rgb(0,0,0); stroke-width: 6; stroke-linejoin: round; }
+.brush2 { fill: none; }
+.font5 { font-size: 55px; font-family: Verdana, sans-serif; }
+.font6 { font-size: 82px; font-family: Verdana, sans-serif; }
+.font7 { font-size: 60px; font-family: "Times New Roman", serif; }
+</style>
+    <g>
+        <g>
+            <clipPath id="clipPath0">
+                <rect height="2150" width="3094" x="1" y="3"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath0)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1" xml:lang="en" xml:space="preserve" y="3"> </text>
+        </g>
+        <rect class="pen1 brush0" height="239" width="904" x="1072" y="523"/>
+        <g>
+            <clipPath id="clipPath1">
+                <rect height="171" width="776" x="1136" y="556"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath1)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1305 1375 1432 1467 1537 1597 1624 1684" xml:lang="en" xml:space="preserve" y="555">RF Relay</text>
+        </g>
+        <g>
+            <clipPath id="clipPath2">
+                <rect height="171" width="776" x="1136" y="556"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath2)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1743" xml:lang="en" xml:space="preserve" y="555"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen1 brush0" height="239" width="499" x="4" y="523"/>
+        <g>
+            <clipPath id="clipPath3">
+                <rect height="171" width="372" x="67" y="556"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath3)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="115 146 193 240 287 317 343" xml:lang="en" xml:space="preserve" y="556">Input 1</text>
+        </g>
+        <g>
+            <clipPath id="clipPath4">
+                <rect height="171" width="372" x="67" y="556"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath4)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="391" xml:lang="en" xml:space="preserve" y="556"> </text>
+        </g>
+        <g>
+            <clipPath id="clipPath5">
+                <rect height="171" width="372" x="67" y="556"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath5)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="132 179 224 268 289 328" xml:lang="en" xml:space="preserve" y="647">device</text>
+        </g>
+        <g>
+            <clipPath id="clipPath6">
+                <rect height="171" width="372" x="67" y="556"/>
+            </clipPath>
+            <text class="font4" clip-path="url(#clipPath6)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="373" xml:lang="en" xml:space="preserve" y="640"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen1 brush0" height="238" width="499" x="1239" y="1910"/>
+        <g>
+            <clipPath id="clipPath7">
+                <rect height="171" width="372" x="1302" y="1943"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath7)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1350 1381 1428 1475 1522 1552 1578" xml:lang="en" xml:space="preserve" y="1943">Input 2</text>
+        </g>
+        <g>
+            <clipPath id="clipPath8">
+                <rect height="171" width="372" x="1302" y="1943"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath8)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1626" xml:lang="en" xml:space="preserve" y="1943"> </text>
+        </g>
+        <g>
+            <clipPath id="clipPath9">
+                <rect height="171" width="372" x="1302" y="1943"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath9)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1362 1420 1465 1509 1530 1569" xml:lang="en" xml:space="preserve" y="2034">Device</text>
+        </g>
+        <g>
+            <clipPath id="clipPath10">
+                <rect height="171" width="372" x="1302" y="1943"/>
+            </clipPath>
+            <text class="font4" clip-path="url(#clipPath10)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1614" xml:lang="en" xml:space="preserve" y="2027"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen1 brush0" height="239" width="500" x="2592" y="523"/>
+        <g>
+            <clipPath id="clipPath11">
+                <rect height="171" width="372" x="2656" y="556"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath11)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2712 2771 2818 2848 2895 2942" xml:lang="en" xml:space="preserve" y="556">Output</text>
+        </g>
+        <g>
+            <clipPath id="clipPath12">
+                <rect height="171" width="372" x="2656" y="556"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath12)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2972" xml:lang="en" xml:space="preserve" y="556"> </text>
+        </g>
+        <g>
+            <clipPath id="clipPath13">
+                <rect height="171" width="372" x="2656" y="556"/>
+            </clipPath>
+            <text class="font3" clip-path="url(#clipPath13)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2716 2774 2819 2863 2884 2923" xml:lang="en" xml:space="preserve" y="647">Device</text>
+        </g>
+        <g>
+            <clipPath id="clipPath14">
+                <rect height="171" width="372" x="2656" y="556"/>
+            </clipPath>
+            <text class="font4" clip-path="url(#clipPath14)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2968" xml:lang="en" xml:space="preserve" y="640"> </text>
+        </g>
+    </g>
+    <g>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,286 790,285 789,284 788,283 787,282 787,282 786,283 785,284 784,285 784,332 784,333 785,334 786,335 787,336 788,336 789,335 790,334 790,333"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,351 790,350 790,349 789,348 788,348 787,348 786,348 785,349 784,350 784,356 784,357 785,358 786,359 787,360 788,360 789,359 790,358 790,357"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,375 790,374 790,373 789,372 788,372 787,372 786,372 785,373 784,374 784,422 784,423 785,424 786,425 787,426 788,426 789,425 790,424 790,423"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,441 790,440 790,439 789,438 788,438 787,438 786,438 785,439 784,440 784,446 784,447 785,448 786,449 787,450 788,450 789,449 790,448 790,447"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,465 790,464 790,463 789,462 788,462 787,462 786,462 785,463 784,464 784,512 784,513 785,514 786,515 787,516 788,516 789,515 790,514 790,513"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,531 790,530 790,529 789,528 788,528 787,528 786,528 785,529 784,530 784,536 784,537 785,538 786,539 787,540 788,540 789,539 790,538 790,537"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,555 790,554 790,553 789,552 788,552 787,552 786,552 785,553 784,554 784,602 784,603 785,604 786,605 787,606 788,606 789,605 790,604 790,603"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,621 790,620 790,619 789,618 788,618 787,618 786,618 785,619 784,620 784,626 784,627 785,628 786,629 787,630 788,630 789,629 790,628 790,627"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,645 790,644 790,643 789,642 788,642 787,642 786,642 785,643 784,644 784,692 784,693 785,694 786,695 787,696 788,696 789,695 790,694 790,693"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,711 790,710 790,709 789,708 788,708 787,708 786,708 785,709 784,710 784,716 784,717 785,718 786,719 787,720 788,720 789,719 790,718 790,717"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,735 790,734 790,733 789,732 788,732 787,732 786,732 785,733 784,734 784,782 784,783 785,784 786,785 787,786 788,786 789,785 790,784 790,783"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,801 790,800 790,799 789,798 788,798 787,798 786,798 785,799 784,800 784,806 784,807 785,808 786,809 787,810 788,810 789,809 790,808 790,807"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,825 790,824 790,823 789,822 788,822 787,822 786,822 785,823 784,824 784,872 784,873 785,874 786,875 787,876 788,876 789,875 790,874 790,873"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,891 790,890 790,889 789,888 788,888 787,888 786,888 785,889 784,890 784,896 784,897 785,898 786,899 787,900 788,900 789,899 790,898 790,897"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,915 790,914 790,913 789,912 788,912 787,912 786,912 785,913 784,914 784,962 784,963 785,964 786,965 787,966 788,966 789,965 790,964 790,963"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="790,981 790,980 790,979 789,978 788,978 787,978 786,978 785,979 784,980 784,986 784,987 785,988 786,989 787,990 788,990 789,989 790,988 790,987"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1097,1622 1096,1622 1095,1623 1094,1624 1093,1625 1093,1625 1094,1626 1095,1627 1096,1628 1143,1628 1144,1628 1145,1628 1146,1627 1147,1626 1147,1625 1146,1624 1145,1623 1144,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1162,1622 1161,1622 1160,1623 1159,1624 1159,1625 1159,1626 1159,1627 1160,1628 1161,1628 1167,1628 1168,1628 1169,1628 1170,1627 1171,1626 1171,1625 1170,1624 1169,1623 1168,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1186,1622 1185,1622 1184,1623 1183,1624 1183,1625 1183,1626 1183,1627 1184,1628 1185,1628 1233,1628 1234,1628 1235,1628 1236,1627 1237,1626 1237,1625 1236,1624 1235,1623 1234,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1252,1622 1251,1622 1250,1623 1249,1624 1249,1625 1249,1626 1249,1627 1250,1628 1251,1628 1257,1628 1258,1628 1259,1628 1260,1627 1261,1626 1261,1625 1260,1624 1259,1623 1258,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1276,1622 1275,1622 1274,1623 1273,1624 1273,1625 1273,1626 1273,1627 1274,1628 1275,1628 1323,1628 1324,1628 1325,1628 1326,1627 1327,1626 1327,1625 1326,1624 1325,1623 1324,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1342,1622 1341,1622 1340,1623 1339,1624 1339,1625 1339,1626 1339,1627 1340,1628 1341,1628 1347,1628 1348,1628 1349,1628 1350,1627 1351,1626 1351,1625 1350,1624 1349,1623 1348,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1366,1622 1365,1622 1364,1623 1363,1624 1363,1625 1363,1626 1363,1627 1364,1628 1365,1628 1413,1628 1414,1628 1415,1628 1416,1627 1417,1626 1417,1625 1416,1624 1415,1623 1414,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1432,1622 1431,1622 1430,1623 1429,1624 1429,1625 1429,1626 1429,1627 1430,1628 1431,1628 1437,1628 1438,1628 1439,1628 1440,1627 1441,1626 1441,1625 1440,1624 1439,1623 1438,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1456,1622 1455,1622 1454,1623 1453,1624 1453,1625 1453,1626 1453,1627 1454,1628 1455,1628 1503,1628 1504,1628 1505,1628 1506,1627 1507,1626 1507,1625 1506,1624 1505,1623 1504,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1522,1622 1521,1622 1520,1623 1519,1624 1519,1625 1519,1626 1519,1627 1520,1628 1521,1628 1527,1628 1528,1628 1529,1628 1530,1627 1531,1626 1531,1625 1530,1624 1529,1623 1528,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1546,1622 1545,1622 1544,1623 1543,1624 1543,1625 1543,1626 1543,1627 1544,1628 1545,1628 1593,1628 1594,1628 1595,1628 1596,1627 1597,1626 1597,1625 1596,1624 1595,1623 1594,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1612,1622 1611,1622 1610,1623 1609,1624 1609,1625 1609,1626 1609,1627 1610,1628 1611,1628 1617,1628 1618,1628 1619,1628 1620,1627 1621,1626 1621,1625 1620,1624 1619,1623 1618,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1636,1622 1635,1622 1634,1623 1633,1624 1633,1625 1633,1626 1633,1627 1634,1628 1635,1628 1683,1628 1684,1628 1685,1628 1686,1627 1687,1626 1687,1625 1686,1624 1685,1623 1684,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1702,1622 1701,1622 1700,1623 1699,1624 1699,1625 1699,1626 1699,1627 1700,1628 1701,1628 1707,1628 1708,1628 1709,1628 1710,1627 1711,1626 1711,1625 1710,1624 1709,1623 1708,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1726,1622 1725,1622 1724,1623 1723,1624 1723,1625 1723,1626 1723,1627 1724,1628 1725,1628 1773,1628 1774,1628 1775,1628 1776,1627 1777,1626 1777,1625 1776,1624 1775,1623 1774,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1792,1622 1791,1622 1790,1623 1789,1624 1789,1625 1789,1626 1789,1627 1790,1628 1791,1628 1797,1628 1798,1628 1799,1628 1800,1627 1801,1626 1801,1625 1800,1624 1799,1623 1798,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1816,1622 1815,1622 1814,1623 1813,1624 1813,1625 1813,1626 1813,1627 1814,1628 1815,1628 1856,1628 1856,1628 1857,1627 1858,1626 1859,1625 1859,1625 1858,1624 1857,1623 1857,1622"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,286 2310,285 2309,284 2308,283 2307,282 2307,282 2306,283 2305,284 2304,285 2304,332 2304,333 2305,334 2306,335 2307,336 2308,336 2309,335 2310,334 2310,333"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,351 2310,350 2310,349 2309,348 2308,348 2307,348 2306,348 2305,349 2304,350 2304,356 2304,357 2305,358 2306,359 2307,360 2308,360 2309,359 2310,358 2310,357"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,375 2310,374 2310,373 2309,372 2308,372 2307,372 2306,372 2305,373 2304,374 2304,422 2304,423 2305,424 2306,425 2307,426 2308,426 2309,425 2310,424 2310,423"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,441 2310,440 2310,439 2309,438 2308,438 2307,438 2306,438 2305,439 2304,440 2304,446 2304,447 2305,448 2306,449 2307,450 2308,450 2309,449 2310,448 2310,447"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,465 2310,464 2310,463 2309,462 2308,462 2307,462 2306,462 2305,463 2304,464 2304,512 2304,513 2305,514 2306,515 2307,516 2308,516 2309,515 2310,514 2310,513"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,531 2310,530 2310,529 2309,528 2308,528 2307,528 2306,528 2305,529 2304,530 2304,536 2304,537 2305,538 2306,539 2307,540 2308,540 2309,539 2310,538 2310,537"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,555 2310,554 2310,553 2309,552 2308,552 2307,552 2306,552 2305,553 2304,554 2304,602 2304,603 2305,604 2306,605 2307,606 2308,606 2309,605 2310,604 2310,603"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,621 2310,620 2310,619 2309,618 2308,618 2307,618 2306,618 2305,619 2304,620 2304,626 2304,627 2305,628 2306,629 2307,630 2308,630 2309,629 2310,628 2310,627"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,645 2310,644 2310,643 2309,642 2308,642 2307,642 2306,642 2305,643 2304,644 2304,692 2304,693 2305,694 2306,695 2307,696 2308,696 2309,695 2310,694 2310,693"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,711 2310,710 2310,709 2309,708 2308,708 2307,708 2306,708 2305,709 2304,710 2304,716 2304,717 2305,718 2306,719 2307,720 2308,720 2309,719 2310,718 2310,717"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,735 2310,734 2310,733 2309,732 2308,732 2307,732 2306,732 2305,733 2304,734 2304,782 2304,783 2305,784 2306,785 2307,786 2308,786 2309,785 2310,784 2310,783"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,801 2310,800 2310,799 2309,798 2308,798 2307,798 2306,798 2305,799 2304,800 2304,806 2304,807 2305,808 2306,809 2307,810 2308,810 2309,809 2310,808 2310,807"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,825 2310,824 2310,823 2309,822 2308,822 2307,822 2306,822 2305,823 2304,824 2304,872 2304,873 2305,874 2306,875 2307,876 2308,876 2309,875 2310,874 2310,873"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,891 2310,890 2310,889 2309,888 2308,888 2307,888 2306,888 2305,889 2304,890 2304,896 2304,897 2305,898 2306,899 2307,900 2308,900 2309,899 2310,898 2310,897"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,915 2310,914 2310,913 2309,912 2308,912 2307,912 2306,912 2305,913 2304,914 2304,962 2304,963 2305,964 2306,965 2307,966 2308,966 2309,965 2310,964 2310,963"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2310,981 2310,980 2310,979 2309,978 2308,978 2307,978 2306,978 2305,979 2304,980 2304,986 2304,987 2305,988 2306,989 2307,990 2308,990 2309,989 2310,988 2310,987"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="503,633 503,652 729,652 729,633"/>
+        <polygon class="pen2 brush1" points="727,673 789,643 727,612"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1072,652 1072,633 846,633 846,652"/>
+        <polygon class="pen2 brush1" points="849,612 787,643 849,673"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1486,770 1467,770 1467,1566 1486,1566"/>
+        <polygon class="pen2 brush1" points="1446,1564 1477,1625 1507,1564"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1467,1924 1486,1924 1486,1684 1467,1684"/>
+        <polygon class="pen2 brush1" points="1507,1687 1477,1625 1446,1687"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="1975,633 1975,652 2248,652 2248,633"/>
+        <polygon class="pen2 brush1" points="2246,673 2307,643 2246,612"/>
+        <polygon class="pen2 brush1" fill-rule="nonzero" points="2591,652 2591,633 2341,633 2341,652"/>
+        <polygon class="pen2 brush1" points="2344,612 2283,643 2344,673"/>
+        <polyline class="pen3" fill="none" points="2093,190 993,190"/>
+        <polygon class="pen2 brush1" points="996,158 931,191 996,223"/>
+        <polyline class="pen3" fill="none" points="2054,452 953,452"/>
+        <polygon class="pen2 brush1" points="2052,485 2117,453 2052,420"/>
+        <polyline class="pen3" fill="none" points="930,713 1366,1258"/>
+        <polygon class="pen2 brush1" points="1339,1277 1405,1307 1390,1236"/>
+        <polyline class="pen3" fill="none" points="826,1047 1262,1592"/>
+        <polygon class="pen2 brush1" points="854,1029 787,999 803,1070"/>
+        <polyline class="pen3" fill="none" points="2165,713 1569,1265"/>
+        <polygon class="pen2 brush1" points="1550,1239 1523,1307 1594,1287"/>
+        <polyline class="pen3" fill="none" points="2237,1064 1642,1615"/>
+        <polygon class="pen2 brush1" points="2257,1091 2283,1023 2213,1043"/>
+        <rect class="pen2 brush2" height="238" width="238" x="550" y="476"/>
+        <g>
+            <clipPath id="clipPath15">
+                <rect height="178" width="117" x="610" y="505"/>
+            </clipPath>
+            <text class="font6" clip-path="url(#clipPath15)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="610" xml:lang="el" xml:space="preserve" y="504">Γ</text>
+        </g>
+        <g>
+            <clipPath id="clipPath16">
+                <rect height="178" width="117" x="610" y="505"/>
+            </clipPath>
+            <text class="font5" clip-path="url(#clipPath16)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="667" xml:lang="en" xml:space="preserve" y="537">1</text>
+        </g>
+        <g>
+            <clipPath id="clipPath17">
+                <rect height="178" width="117" x="610" y="505"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath17)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="710" xml:lang="en" xml:space="preserve" y="504"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush2" height="239" width="333" x="764" y="499"/>
+        <g>
+            <clipPath id="clipPath18">
+                <rect height="177" width="212" x="824" y="529"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath18)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="824" xml:lang="en" xml:space="preserve" y="532">S</text>
+        </g>
+        <g>
+            <clipPath id="clipPath19">
+                <rect height="177" width="212" x="824" y="529"/>
+            </clipPath>
+            <text class="font7" clip-path="url(#clipPath19)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="880 913" xml:lang="en" xml:space="preserve" y="562">11</text>
+        </g>
+        <g>
+            <clipPath id="clipPath20">
+                <rect height="177" width="212" x="824" y="529"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath20)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="947" xml:lang="en" xml:space="preserve" y="532"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush2" height="238" width="239" x="1452" y="1616"/>
+        <g>
+            <clipPath id="clipPath21">
+                <rect height="178" width="117" x="1513" y="1645"/>
+            </clipPath>
+            <text class="font6" clip-path="url(#clipPath21)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1513" xml:lang="el" xml:space="preserve" y="1644">Γ</text>
+        </g>
+        <g>
+            <clipPath id="clipPath22">
+                <rect height="178" width="117" x="1513" y="1645"/>
+            </clipPath>
+            <text class="font5" clip-path="url(#clipPath22)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1570" xml:lang="en" xml:space="preserve" y="1677">2</text>
+        </g>
+        <g>
+            <clipPath id="clipPath23">
+                <rect height="178" width="117" x="1513" y="1645"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath23)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1613" xml:lang="en" xml:space="preserve" y="1644"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush2" height="239" width="333" x="1429" y="1449"/>
+        <g>
+            <clipPath id="clipPath24">
+                <rect height="177" width="212" x="1489" y="1479"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath24)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1489" xml:lang="en" xml:space="preserve" y="1482">S</text>
+        </g>
+        <g>
+            <clipPath id="clipPath25">
+                <rect height="177" width="212" x="1489" y="1479"/>
+            </clipPath>
+            <text class="font7" clip-path="url(#clipPath25)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1545 1578" xml:lang="en" xml:space="preserve" y="1512">22</text>
+        </g>
+        <g>
+            <clipPath id="clipPath26">
+                <rect height="177" width="212" x="1489" y="1479"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath26)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1612" xml:lang="en" xml:space="preserve" y="1482"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush2" height="238" width="334" x="2022" y="476"/>
+        <g>
+            <clipPath id="clipPath27">
+                <rect height="178" width="212" x="2083" y="505"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath27)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2083" xml:lang="en" xml:space="preserve" y="508">S</text>
+        </g>
+        <g>
+            <clipPath id="clipPath28">
+                <rect height="178" width="212" x="2083" y="505"/>
+            </clipPath>
+            <text class="font7" clip-path="url(#clipPath28)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2139 2172" xml:lang="en" xml:space="preserve" y="538">33</text>
+        </g>
+        <g>
+            <clipPath id="clipPath29">
+                <rect height="178" width="212" x="2083" y="505"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath29)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2206" xml:lang="en" xml:space="preserve" y="508"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush2" height="238" width="238" x="2260" y="476"/>
+        <g>
+            <clipPath id="clipPath30">
+                <rect height="178" width="117" x="2320" y="505"/>
+            </clipPath>
+            <text class="font6" clip-path="url(#clipPath30)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2320" xml:lang="el" xml:space="preserve" y="504">Γ</text>
+        </g>
+        <g>
+            <clipPath id="clipPath31">
+                <rect height="178" width="117" x="2320" y="505"/>
+            </clipPath>
+            <text class="font5" clip-path="url(#clipPath31)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2377" xml:lang="en" xml:space="preserve" y="537">3</text>
+        </g>
+        <g>
+            <clipPath id="clipPath32">
+                <rect height="178" width="117" x="2320" y="505"/>
+            </clipPath>
+            <text class="font2" clip-path="url(#clipPath32)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="2420" xml:lang="en" xml:space="preserve" y="504"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush2" height="239" width="333" x="1334" y="0"/>
+        <g>
+            <clipPath id="clipPath33">
+                <rect height="178" width="212" x="1394" y="30"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath33)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1394" xml:lang="en" xml:space="preserve" y="33">S</text>
+        </g>
+        <g>
+            <clipPath id="clipPath34">
+                <rect height="178" width="212" x="1394" y="30"/>
+            </clipPath>
+            <text class="font7" clip-path="url(#clipPath34)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1450 1483" xml:lang="en" xml:space="preserve" y="63">13</text>
+        </g>
+        <g>
+            <clipPath id="clipPath35">
+                <rect height="178" width="212" x="1394" y="30"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath35)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1517" xml:lang="en" xml:space="preserve" y="33"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush2" height="238" width="333" x="1334" y="262"/>
+        <g>
+            <clipPath id="clipPath36">
+                <rect height="177" width="212" x="1394" y="292"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath36)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1394" xml:lang="en" xml:space="preserve" y="295">S</text>
+        </g>
+        <g>
+            <clipPath id="clipPath37">
+                <rect height="177" width="212" x="1394" y="292"/>
+            </clipPath>
+            <text class="font7" clip-path="url(#clipPath37)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1450 1483" xml:lang="en" xml:space="preserve" y="325">31</text>
+        </g>
+        <g>
+            <clipPath id="clipPath38">
+                <rect height="177" width="212" x="1394" y="292"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath38)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1517" xml:lang="en" xml:space="preserve" y="295"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush2" height="238" width="334" x="1072" y="856"/>
+        <g>
+            <clipPath id="clipPath39">
+                <rect height="178" width="212" x="1133" y="885"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath39)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1133" xml:lang="en" xml:space="preserve" y="888">S</text>
+        </g>
+        <g>
+            <clipPath id="clipPath40">
+                <rect height="178" width="212" x="1133" y="885"/>
+            </clipPath>
+            <text class="font7" clip-path="url(#clipPath40)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1189 1222" xml:lang="en" xml:space="preserve" y="918">21</text>
+        </g>
+        <g>
+            <clipPath id="clipPath41">
+                <rect height="178" width="212" x="1133" y="885"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath41)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1256" xml:lang="en" xml:space="preserve" y="888"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush2" height="239" width="334" x="882" y="1069"/>
+        <g>
+            <clipPath id="clipPath42">
+                <rect height="177" width="212" x="943" y="1099"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath42)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="943" xml:lang="en" xml:space="preserve" y="1102">S</text>
+        </g>
+        <g>
+            <clipPath id="clipPath43">
+                <rect height="177" width="212" x="943" y="1099"/>
+            </clipPath>
+            <text class="font7" clip-path="url(#clipPath43)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="999 1032" xml:lang="en" xml:space="preserve" y="1132">12</text>
+        </g>
+        <g>
+            <clipPath id="clipPath44">
+                <rect height="177" width="212" x="943" y="1099"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath44)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1066" xml:lang="en" xml:space="preserve" y="1102"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush2" height="238" width="334" x="1642" y="856"/>
+        <g>
+            <clipPath id="clipPath45">
+                <rect height="178" width="212" x="1703" y="885"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath45)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1703" xml:lang="en" xml:space="preserve" y="888">S</text>
+        </g>
+        <g>
+            <clipPath id="clipPath46">
+                <rect height="178" width="212" x="1703" y="885"/>
+            </clipPath>
+            <text class="font7" clip-path="url(#clipPath46)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1759 1792" xml:lang="en" xml:space="preserve" y="918">23</text>
+        </g>
+        <g>
+            <clipPath id="clipPath47">
+                <rect height="178" width="212" x="1703" y="885"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath47)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1826" xml:lang="en" xml:space="preserve" y="888"> </text>
+        </g>
+    </g>
+    <g>
+        <rect class="pen2 brush2" height="239" width="334" x="1737" y="1188"/>
+        <g>
+            <clipPath id="clipPath48">
+                <rect height="177" width="212" x="1798" y="1218"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath48)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1798" xml:lang="en" xml:space="preserve" y="1221">S</text>
+        </g>
+        <g>
+            <clipPath id="clipPath49">
+                <rect height="177" width="212" x="1798" y="1218"/>
+            </clipPath>
+            <text class="font7" clip-path="url(#clipPath49)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1854 1887" xml:lang="en" xml:space="preserve" y="1251">32</text>
+        </g>
+        <g>
+            <clipPath id="clipPath50">
+                <rect height="177" width="212" x="1798" y="1218"/>
+            </clipPath>
+            <text class="font1" clip-path="url(#clipPath50)" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1921" xml:lang="en" xml:space="preserve" y="1221"> </text>
+        </g>
+    </g>
+    <g/>
+</svg>

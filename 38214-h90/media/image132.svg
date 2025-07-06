@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="0.4027777777777778in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 576 928" width="0.25in">
+    <style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.pen1 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.brush1 { fill: rgb(0,0,0); }
+.pen2 { stroke: none; }
+.pen3 { stroke: rgb(0,0,0); stroke-width: 16; stroke-linejoin: round; }
+.font0 { font-size: 288px; font-family: "Times New Roman", serif; }
+.font1 { font-style: italic; font-size: 261px; font-family: Symbol, serif; }
+.brush2 { fill: rgb(0,0,0); }
+.font2 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+</style>
+    <g>
+        <line class="pen1" fill="none" x1="91" x2="124" y1="748" y2="729"/>
+        <line class="pen1" fill="none" x1="124" x2="202" y1="729" y2="857"/>
+        <line class="pen1" fill="none" x1="202" x2="286" y1="857" y2="520"/>
+        <line class="pen1" fill="none" x1="286" x2="481" y1="520" y2="520"/>
+        <polygon class="pen2 brush1" points="89,744 133,719 202,825 281,512 481,512 481,528 292,528 210,857 194,857 116,739 94,753"/>
+        <line class="pen3" fill="none" x1="64" x2="506" y1="464" y2="464"/>
+        <text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="205" xml:lang="en" xml:space="preserve" y="340">1</text>
+        <text class="font1" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: alphabetic;" x="251" xml:space="preserve" y="827">n</text>
+    </g>
+</svg>
