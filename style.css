@@ -1,0 +1,209 @@
+:root {
+    --primary-color: #003366;
+    --secondary-color: #f8f9fa;
+    --font-color: #333;
+    --border-color: #dee2e6;
+    --hover-bg-color: #e9ecef;
+    --active-bg-color: #007bff;
+    --active-font-color: #fff;
+}
+
+body, html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fff;
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    white-space: nowrap;
+}
+
+.search-container {
+    width: 40%;
+    min-width: 200px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    font-size: 1rem;
+}
+
+.main-layout {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.sidebar {
+    flex: 0 0 300px;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    overflow-y: auto;
+    border-right: 1px solid var(--border-color);
+    line-height: 1.5;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#doc-list, #toc ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#doc-list li, #toc li {
+    margin-bottom: 0.25rem;
+}
+
+#doc-list a, #toc a {
+    text-decoration: none;
+    color: var(--font-color);
+    display: block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+#doc-list a:hover, #toc a:hover {
+    background-color: var(--hover-bg-color);
+}
+
+#doc-list a.active, #toc a.active {
+    background-color: var(--active-bg-color);
+    color: var(--active-font-color);
+    font-weight: bold;
+}
+
+#doc-list .spec-group > summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5rem 0.25rem;
+    list-style: revert;
+}
+#doc-list .spec-group > summary:hover {
+    color: var(--primary-color);
+}
+
+#doc-list .spec-group ul {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+    border-left: 1px solid var(--border-color);
+}
+
+#content-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+#content-frame, #search-results-container, #welcome-message {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#welcome-message {
+    text-align: center;
+    padding-top: 5rem;
+    color: #6c757d;
+}
+
+#search-results-container {
+    overflow-y: auto;
+}
+
+#search-results {
+    list-style-type: none;
+    padding: 0;
+}
+
+#search-results li {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+}
+#search-results li:last-child {
+    border-bottom: none;
+}
+
+#search-results a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+#search-results a:hover .result-title {
+    text-decoration: underline;
+}
+
+.result-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.result-path {
+    font-size: 0.9rem;
+    color: #666;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* For TOC from documents */
+#toc nav {
+    font-size: 0.9rem;
+}
+#toc nav ul {
+    padding-left: 1em;
+}
+#toc nav li {
+    margin: 0.2em 0;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        flex: 0 0 200px;
+    }
+    header h1 {
+        font-size: 1rem;
+    }
+}
