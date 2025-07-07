@@ -13,19 +13,29 @@
             <div class="search-container">
                 <input type="search" id="search-input" placeholder="Search specifications...">
             </div>
+            <div class="viewer-controls">
+                <button id="toggle-sidebars" title="Toggle Sidebars">☰</button>
+                <label for="width-slider">Width</label>
+                <input type="range" id="width-slider" min="30" max="100" value="100" title="Adjust document width">
+                <label>Zoom</label>
+                <button id="zoom-out" title="Zoom Out">-</button>
+                <span id="zoom-level">100%</span>
+                <button id="zoom-in" title="Zoom In">+</button>
+            </div>
         </header>
 
         <div class="main-layout">
-            <nav id="doc-list-container" class="sidebar">
-                <h2>Specifications</h2>
-                <ul id="doc-list"><li>Loading...</li></ul>
-            </nav>
-
-            <nav id="toc-container" class="sidebar">
-                <h2>Table of Contents</h2>
-                <div id="toc"><p>Select a document to see its TOC.</p></div>
-            </nav>
-
+            <div id="sidebar-panel">
+                <nav id="doc-list-container" class="sidebar">
+                    <h2>Specifications</h2>
+                    <ul id="doc-list"><li>Loading...</li></ul>
+                </nav>
+                <nav id="toc-container" class="sidebar">
+                    <h2>Table of Contents</h2>
+                    <div id="toc"><p>Select a document to see its TOC.</p></div>
+                </nav>
+            </div>
+            <div id="resizer"></div>
             <main id="content-container">
                 <div id="welcome-message">
                     <h2>Welcome to the 3GPP Specification Viewer</h2>
@@ -40,6 +50,7 @@
             </main>
         </div>
     </div>
+    <button id="back-to-top" class="hidden" title="Go to top">↑</button>
 
     <script src="https://unpkg.com/lunr/lunr.min.js"></script>
     <script src="app.js"></script>

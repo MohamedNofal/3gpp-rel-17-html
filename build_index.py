@@ -22,7 +22,7 @@ def generate_index():
         spec_name = os.path.basename(dirpath)
         if dirpath == root_dir or spec_name == 'media' or spec_name.startswith('.'):
             continue
-
+        
         if spec_name not in manifest:
             # A more friendly title
             title = spec_name
@@ -31,7 +31,7 @@ def generate_index():
         for filename in sorted(filenames):
             if not filename.endswith('.html'):
                 continue
-            
+
             filepath = os.path.join(dirpath, filename).replace('\\', '/')
             
             # Create a title for the file entry from its name
@@ -63,6 +63,18 @@ def generate_index():
 
             toc_nav = soup.find('nav', id='TOC')
             if toc_nav:
+                # Add TOC as a searchable document
+                toc_text = toc_nav.get_text(separator=' ', strip=True)
+                if toc_text:
+                    search_docs.append({
+                        'id': f"{filepath}#TOC_entire",
+                        'title': f"TOC for {doc_title_from_tag}",
+                        'body': toc_text,
+                        'path': filepath, # Link to the document itself
+                        'doc_path': filepath,
+                        'doc_title': doc_title_from_tag
+                    })
+
                 toc_links = toc_nav.find_all('a', href=True)
                 toc_targets = {a['href'].lstrip('#') for a in toc_links}
                 
@@ -73,11 +85,13 @@ def generate_index():
 
                     start_node = body.find(id=section_id)
                     if not start_node: continue
-
+                    
+                    # Include heading text
+                    section_content = [start_node.get_text(separator=' ', strip=True)]
+                    
                     # Find content until next TOC section
-                    section_content = []
                     for element in start_node.find_next_siblings():
-                        if element.has_attr('id') and element['id'] in toc_targets:
+                        if element.name and element.name.startswith('h') and element.has_attr('id') and element['id'] in toc_targets:
                             break
                         section_content.append(element.get_text(separator=' ', strip=True))
                     
